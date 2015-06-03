@@ -21,10 +21,10 @@ Please note that these scripts all assume that you have a folder on your C drive
 Full listing of available scripts:
 </p>
 <ol>
-	<li><a href="/files/2004/ModBatchRen.zip">Modified Batch Render</a> (ModBatchRen.asc) &ndash; 3 KB</li>
-	<li><a href="/files/2004/PreviewSweep1.zip">Preview Sweep - using &lsquo;for&rsquo;</a> &ndash; 1 KB</li>
-	<li><a href="/files/2004/PreviewSweep2.zip">Preview Sweep - using &lsquo;repeat&rsquo;</a> &ndash; 1 KB</li>
-	<li><a href="/files/2004/RenSingle.zip">Render Single Flame</a> (RenSingle.asc) &ndash; 2 KB</li>
+	<li><a href="http://strivinglife.com/files/2004/ModBatchRen.zip">Modified Batch Render</a> (ModBatchRen.asc) &ndash; 3 KB</li>
+	<li><a href="http://strivinglife.com/files/2004/PreviewSweep1.zip">Preview Sweep - using &lsquo;for&rsquo;</a> &ndash; 1 KB</li>
+	<li><a href="http://strivinglife.com/files/2004/PreviewSweep2.zip">Preview Sweep - using &lsquo;repeat&rsquo;</a> &ndash; 1 KB</li>
+	<li><a href="http://strivinglife.com/files/2004/RenSingle.zip">Render Single Flame</a> (RenSingle.asc) &ndash; 2 KB</li>
 </ol>
 <p>
 &nbsp;

@@ -23,7 +23,7 @@ Comments regarding this program are greatly appreciated.  You can find my email 
 </p>
 <h4>Download:</h4>
 <p>
-<a href="/files/2003/TicTacToe1_0_0.exe">Tic-Tac-Toe</a> (24&nbsp;KB)
+<a href="http://strivinglife.com/files/2003/TicTacToe1_0_0.exe">Tic-Tac-Toe</a> (24&nbsp;KB)
 </p>
 <p>
 Created by James Skemp - http://jamesrskemp.net/<br />

@@ -61,7 +61,7 @@ This time, I&#39;ll actually create the XML document&#39;s layout, using element
 There it is. Based upon what we determined last time, we decided that there would be individual games within one larger grouping. For the individual game, there would be information relevant to that game. 
 </p>
 <p>
-You can <a href="/files/xml_creation/part2.xml" target="_blank">see this in action</a> in most current browsers. 
+You can <a href="http://strivinglife.com/files/xml_creation/part2.xml" target="_blank">see this in action</a> in most current browsers. 
 </p>
 <div class="tip">
 <p>

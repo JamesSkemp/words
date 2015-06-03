@@ -27,7 +27,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 </div>
 <h3 class="waking_life_chapter">[<a id="seven" name="seven" title="seven"></a>7 The Aging Paradox] </h3>
 <p>
-<a href="/files/images/WakingLife/WakingLife_07_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_07_1_t.jpg" alt="Waking Life: Chapter 7 - The Aging Paradox" width="250" height="140" align="right" /></a>(Two women are having lunch - English professor Lisa Moore and author Carole Dawson) 
+<a href="http://strivinglife.com/files/images/WakingLife/WakingLife_07_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_07_1_t.jpg" alt="Waking Life: Chapter 7 - The Aging Paradox" width="250" height="140" align="right" /></a>(Two women are having lunch - English professor Lisa Moore and author Carole Dawson) 
 </p>
 <p>
 Time just dissolves into quick-moving particles that are swirling away. Either I&#39;m moving fast or time is. Never both simultaneously. 

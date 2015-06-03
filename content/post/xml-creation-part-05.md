@@ -143,11 +143,11 @@ We can add a number of other styles to make the document a little more accessibl
 </blockquote>
 <div class="note">
 <p>
-You can also&nbsp;<a href="/files/xml_creation/part5.css" target="_blank">view the CSS file</a> for all of the above. 
+You can also&nbsp;<a href="http://strivinglife.com/files/xml_creation/part5.css" target="_blank">view the CSS file</a> for all of the above. 
 </p>
 </div>
 <p>
-This gives us a little cleaner output/display, which we can <a href="/files/xml_creation/part5.xml" target="_blank">view in our browser</a>. 
+This gives us a little cleaner output/display, which we can <a href="http://strivinglife.com/files/xml_creation/part5.xml" target="_blank">view in our browser</a>. 
 </p>
 <p>
 However, because&nbsp;we&#39;re using some advanced CSS features, not all browsers will display this the same (try Firefox 2 for the before/after functionality). 

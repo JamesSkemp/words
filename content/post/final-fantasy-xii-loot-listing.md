@@ -21,6 +21,6 @@ To that effect, I&#39;ve created a five page PDF that allows you to easily check
 Corrections or omissions are greatly appreciated.
 </p>
 <p>
-<a rel="attachment" href="/files/2007/01/finalfantasyxii_loot.pdf" title="Final Fantasy XII - Loot listing">Final Fantasy XII - Loot listing</a>
+<a rel="attachment" href="http://strivinglife.com/files/2007/01/finalfantasyxii_loot.pdf" title="Final Fantasy XII - Loot listing">Final Fantasy XII - Loot listing</a>
 </p>
 

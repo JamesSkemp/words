@@ -34,7 +34,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 *** 
 </p>
 <p>
-<a href="/files/images/WakingLife/WakingLife_02_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_02_1_t.jpg" alt="Waking Life: Chapter 2 - Anchors Aweigh" width="250" height="140" align="right" /></a>(Main character walks through the airport and telephones his friend - 322.0031. There&#39;s a girl there, and he sees her.) 
+<a href="http://strivinglife.com/files/images/WakingLife/WakingLife_02_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_02_1_t.jpg" alt="Waking Life: Chapter 2 - Anchors Aweigh" width="250" height="140" align="right" /></a>(Main character walks through the airport and telephones his friend - 322.0031. There&#39;s a girl there, and he sees her.) 
 </p>
 <p>
 Hey man, it&#39;s me. Um, I just got back into town. I thought maybe I could bum a ride off you or something, but that&#39;s cool. I could probably just take a cab, something like that. Um -- Yeah, I guess I&#39;ll hang out with you later, something like that. 
@@ -73,7 +73,7 @@ Well, just -- just give me an address or something, okay?
 Uh -- 
 </p>
 <p>
-<a href="/files/images/WakingLife/WakingLife_02_linklater_head.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_02_linklater_head_t.jpg" alt="Waking Life: Chapter 2 - Anchors Aweigh: Linklater without a head" width="250" height="140" align="right" /></a>(The guy sitting next to him in the back seat speaks up) Tell you what, go up three more streets, take a right, go two more blocks, drop this guy off on the next corner. 
+<a href="http://strivinglife.com/files/images/WakingLife/WakingLife_02_linklater_head.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_02_linklater_head_t.jpg" alt="Waking Life: Chapter 2 - Anchors Aweigh: Linklater without a head" width="250" height="140" align="right" /></a>(The guy sitting next to him in the back seat speaks up) Tell you what, go up three more streets, take a right, go two more blocks, drop this guy off on the next corner. 
 </p>
 <p>
 Where&#39;s that? 

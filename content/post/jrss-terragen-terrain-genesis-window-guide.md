@@ -17,6 +17,6 @@ Description: Information regarding the Landscape window in Terragen&trade; - spe
 This article is available in PDF format only.
 </p>
 <p>
-<a href="/files/terragen/terragenterrain.pdf" target="_blank">Read the article</a>.
+<a href="http://strivinglife.com/files/terragen/terragenterrain.pdf" target="_blank">Read the article</a>.
 </p>
 

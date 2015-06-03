@@ -86,5 +86,5 @@ COPY "C:\home\configuration\php_Apache_PHP4.ini" "c:\windows\php.ini"</code></pr
 <h3>Moving forward</h3>
 <p>I've created twelve (12) batch files in a matter similar to the above, and zipped them up for download. Feel free to modify them as necessary, for your own use.</p>
 <p>Keep in mind that these are very basic batch files. It's possible to clean these up significantly, with the full range of commands at your disposal. For now, however, this will get you going.</p>
-<p>Download <a title="Batch files for switching between our servers" rel="download" href="/files/2006/08/bat_20060826.zip">bat_20060826.zip</a> for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.</p>
+<p>Download <a title="Batch files for switching between our servers" rel="download" href="http://strivinglife.com/files/2006/08/bat_20060826.zip">bat_20060826.zip</a> for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.</p>
 <p><a href="http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/">View all of the steps to creating a local Web server, for development.</a></p>

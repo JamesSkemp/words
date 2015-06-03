@@ -20,12 +20,12 @@ These two sheets will allow you to have a guide you can use to cross off numbers
 <ul>
 	<li>
 	<div>
-	<a href="/files/2004/rankandfilecheat1.pdf" target="_blank">Cheat sheet #1</a>
+	<a href="http://strivinglife.com/files/2004/rankandfilecheat1.pdf" target="_blank">Cheat sheet #1</a>
 	</div>
 	</li>
 	<li>
 	<div>
-	<a href="/files/2004/rankandfilecheat1h.pdf">Cheat sheet #1 with highlighting</a>
+	<a href="http://strivinglife.com/files/2004/rankandfilecheat1h.pdf">Cheat sheet #1 with highlighting</a>
 	</div>
 	</li>
 </ul>

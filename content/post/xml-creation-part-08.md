@@ -44,7 +44,7 @@ tags = ["xml", "playstation"]
 </blockquote>
 <p>After refreshing the XML file, you shouldn't notice any changes. However, if you make a modification to the xsl:template for price, you'll notice that the changes are made to the two price outputs.</p>
 <p>If we were doing more with the date, we could do the same for these two elements.</p>
-<p>You can see <a href="/files/xml_creation/part8.xml" target="_blank">the XML file</a> for this, as well as <a href="/files/xml_creation/part8.xslt" target="_blank">the XSLT file</a>.</p>
+<p>You can see <a href="http://strivinglife.com/files/xml_creation/part8.xml" target="_blank">the XML file</a> for this, as well as <a href="http://strivinglife.com/files/xml_creation/part8.xslt" target="_blank">the XSLT file</a>.</p>
 <h3>In that case ... another way of sorting</h3>
 <p>Since we can use xsl:apply-templates, how about using this in place of our xsl:for-each?</p>
 <p>We begin with our current XSLT.</p>
@@ -150,7 +150,7 @@ tags = ["xml", "playstation"]
 &nbsp;&lt;/xsl:template&gt;
 &lt;/xsl:stylesheet&gt;
 </code></pre>
-<p>You can view the 'finished' <a href="/files/xml_creation/part8-2.xml" target="_blank">XML</a> and <a href="/files/xml_creation/part8-2.xslt" target="_blank">XSLT</a>.</p>
+<p>You can view the 'finished' <a href="http://strivinglife.com/files/xml_creation/part8-2.xml" target="_blank">XML</a> and <a href="http://strivinglife.com/files/xml_creation/part8-2.xslt" target="_blank">XSLT</a>.</p>
 <h3>Next time ... ?</h3>
 <p>At this point all I really need to do is finish adding the games that I own. While it would be nice to have some other features, it's not completely necessary.</p>
 <p><a href="http://jamesrskemp.net/video_games.xml" target="_blank">My video games</a>.</p>

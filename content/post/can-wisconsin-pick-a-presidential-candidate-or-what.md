@@ -1400,7 +1400,7 @@ Of the 27 elections mentioned in this table, Wisconsin gave its votes to the win
 	</tbody>
 </table>
 <p>
-Supplemental data: <a rel="attachment" href="/files/2006/08/wipresidentelect.xls" title="Wisconsin's Presidential Voting Record: 1900 - 2004">Wisconsin&#39;s Presidential Voting Record: 1900 - 2004</a> (Excel document)
+Supplemental data: <a rel="attachment" href="http://strivinglife.com/files/2006/08/wipresidentelect.xls" title="Wisconsin's Presidential Voting Record: 1900 - 2004">Wisconsin&#39;s Presidential Voting Record: 1900 - 2004</a> (Excel document)
 </p>
 <p>
 Updated February 5, 2005

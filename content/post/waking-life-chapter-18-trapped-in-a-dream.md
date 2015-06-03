@@ -19,7 +19,7 @@ tags = ["waking life"]
 </div>
 <h3 class="waking_life_chapter">[<a id="eighteen" title="eighteen" name="eighteen"></a>18 Trapped in a Dream]</h3>
 <p>(A guy is playing a pinball machine, seemingly the same guy who rode with him in the back of the boat car. This part is played by Richard Linklater, aka, the director.)</p>
-<p><a onclick="window.open(this.href);return false;" href="/files/images/WakingLife/WakingLife_18_1.jpg"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_18_1_t.jpg" alt="Waking Life: Chapter 11 - The Holy Moment" width="250" height="140" align="right" /></a>Hey, man.</p>
+<p><a onclick="window.open(this.href);return false;" href="http://strivinglife.com/files/images/WakingLife/WakingLife_18_1.jpg"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_18_1_t.jpg" alt="Waking Life: Chapter 11 - The Holy Moment" width="250" height="140" align="right" /></a>Hey, man.</p>
 <p>Hey.</p>
 <p>Weren't you in a boat car? You know, the guy, the guy with the hat? He gave me a ride in his car, or boat thing, and you were in the back seat with me?</p>
 <p>I mean, I'm not saying that you don't know what you're talking about, but I don't know what you're talking about.</p>

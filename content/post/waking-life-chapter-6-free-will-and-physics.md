@@ -66,7 +66,7 @@ What a bunch of garbage - liberal Democrat, conservative Republican. It&#39;s al
 *** 
 </p>
 <p>
-<a href="/files/images/WakingLife/WakingLife_06_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_06_1_t.jpg" alt="Waking Life: Chapter 6 - Free Will and Physics" width="250" height="140" align="right" /></a>(Old man sitting at a table. Otto Hofmann.) 
+<a href="http://strivinglife.com/files/images/WakingLife/WakingLife_06_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_06_1_t.jpg" alt="Waking Life: Chapter 6 - Free Will and Physics" width="250" height="140" align="right" /></a>(Old man sitting at a table. Otto Hofmann.) 
 </p>
 <p>
 The quest is to be liberated from the negative, which is really our own will to nothingness. And once having said yes to the instant, the affirmation is contagious. It bursts into a chain of affirmations that knows no limit. To say yes to one instant is to say yes to all of existence. 

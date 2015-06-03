@@ -18,9 +18,9 @@ Learning a program can be quite fun and rewarding, but can also be somewhat disa
 Guides can be downloaded in Adobe PDF format only.
 </p>
 <ul>
-	<li><a rel="attachment" href="/files/2006/09/fractalexplorergd.pdf" title="Fractal Explorer: Creating Your Own Fractals (version 2.02)">Guide covering Fractal Explorer 2.02</a></li>
-	<li><a rel="attachment" href="/files/2006/09/fractalexplorergd_124.pdf" title="Fractal Explorer: Creating Your Own Fractals (version 1.24)">Guide covering Fractal Explorer 1.24</a></li>
-	<li><a href="/files/2005/fedefaultspot.zip">Default spot file for Fractal Explorer (fedefaultspot.frs)</a> (right click and Save Target As)</li>
+	<li><a rel="attachment" href="http://strivinglife.com/files/2006/09/fractalexplorergd.pdf" title="Fractal Explorer: Creating Your Own Fractals (version 2.02)">Guide covering Fractal Explorer 2.02</a></li>
+	<li><a rel="attachment" href="http://strivinglife.com/files/2006/09/fractalexplorergd_124.pdf" title="Fractal Explorer: Creating Your Own Fractals (version 1.24)">Guide covering Fractal Explorer 1.24</a></li>
+	<li><a href="http://strivinglife.com/files/2005/fedefaultspot.zip">Default spot file for Fractal Explorer (fedefaultspot.frs)</a> (right click and Save Target As)</li>
 </ul>
 <p>
 Interested in creating fractals?  Then you may also be interested in <a href="http://fractovia.org/" title="Fractovia">Fractovia</a>, one of the best collections of fractal programs around.

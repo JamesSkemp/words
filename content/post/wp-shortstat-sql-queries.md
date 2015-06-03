@@ -59,7 +59,7 @@ If you run these queries, please backup your database, or this table, before you
 </blockquote>
 <div class="downloads">
 <p>
-Download these queries in txt format: <a href="/files/2006/04/mysql%20sql%20queries%20for%20wp_ss_stats.txt">WP-ShortStat SQL queries</a>
+Download these queries in txt format: <a href="http://strivinglife.com/files/2006/04/mysql%20sql%20queries%20for%20wp_ss_stats.txt">WP-ShortStat SQL queries</a>
 </p>
 </div>
 <p>

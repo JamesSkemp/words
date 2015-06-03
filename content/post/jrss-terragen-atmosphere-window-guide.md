@@ -17,6 +17,6 @@ Description: Information regarding the Atmosphere window in Terragen&trade;. Wri
 This article is available in PDF format only.
 </p>
 <p>
-<a href="/files/terragen/terragenatmosphere.pdf" target="_blank">Read the article</a>.
+<a href="http://strivinglife.com/files/terragen/terragenatmosphere.pdf" target="_blank">Read the article</a>.
 </p>
 

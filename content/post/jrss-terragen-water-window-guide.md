@@ -18,6 +18,6 @@ Description: Information regarding the Water window in Terragen&trade;. Written 
 This article is available in PDF format only.
 </p>
 <p>
-<a href="/files/terragen/terragenwater.pdf" target="_blank">Read the article</a>.
+<a href="http://strivinglife.com/files/terragen/terragenwater.pdf" target="_blank">Read the article</a>.
 </p>
 

@@ -27,7 +27,7 @@ Up until now we&#39;ve decided what we want to store, and how we want to store i
 Then, in <a href="/words/post/XML-creation-Part-03.aspx">part three</a>, we actually added some of the data we want to store. 
 </p>
 <p>
-While it displays, and is basically formatted correctly, <a href="/files/xml_creation/part3.xml" target="_blank">the XML file</a> won&#39;t <a href="http://www.validome.org/xml/validate/" target="_blank">validate</a>. Time to fix this. 
+While it displays, and is basically formatted correctly, <a href="http://strivinglife.com/files/xml_creation/part3.xml" target="_blank">the XML file</a> won&#39;t <a href="http://www.validome.org/xml/validate/" target="_blank">validate</a>. Time to fix this. 
 </p>
 <h3>Overview</h3>
 <p>
@@ -76,7 +76,7 @@ You&#39;ll want to use a better filename than what I&#39;ve used, when you reall
 </p>
 </div>
 <p>
-You can view the source of <a href="/files/xml_creation/part4.xml" target="_blank">the modified XML file</a> to see this. 
+You can view the source of <a href="http://strivinglife.com/files/xml_creation/part4.xml" target="_blank">the modified XML file</a> to see this. 
 </p>
 <h3>The Document Type Definitions (DTD)</h3>
 <p>
@@ -130,7 +130,7 @@ Following that we have <strong>&lt;!ELEMENT title (#PCDATA)&gt;</strong> . Inste
 Once we save this file to the place denoted in the XML file, we&#39;re ready to run it past validation. 
 </p>
 <p>
-Validome has a great validator, which handles a number of different formats. You can <a href="http://www.validome.org/xml/validate/?lang=en&amp;url=http://strivinglife.com/files/xml_creatio" target="_blank">view the results of validation</a> by entering your own URL, or <a href="/files/xml_creation/part4.xml" target="_blank">using mine</a>. 
+Validome has a great validator, which handles a number of different formats. You can <a href="http://www.validome.org/xml/validate/?lang=en&amp;url=http://strivinglife.com/files/xml_creatio" target="_blank">view the results of validation</a> by entering your own URL, or <a href="http://strivinglife.com/files/xml_creation/part4.xml" target="_blank">using mine</a>. 
 </p>
 <div class="note">
 <p>

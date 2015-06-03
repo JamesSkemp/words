@@ -45,7 +45,7 @@ Thumbnails will open up images captured on my screen (1024x768) with irrelevant 
 	</tbody>
 </table>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/001a.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/001a_small.jpg" border="0" alt="See a picture of this..." width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/001a.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/001a_small.jpg" border="0" alt="See a picture of this..." width="384" height="93" /></a><br />
 Figure 1
 </p>
 <h4><a name="item2" title="item2"></a>2. Let&#39;s now say that WinMX has begun to download from the person (in other words, they are available.</h4>
@@ -81,12 +81,12 @@ Figure 1
 	</tbody>
 </table>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/002a.jpg"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/002a_small.jpg" border="0" alt="See that here..." width="384" height="92" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/002a.jpg"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/002a_small.jpg" border="0" alt="See that here..." width="384" height="92" /></a><br />
 Figure 2
 </p>
 <h4><a name="item3" title="item3"></a>3. Right clicking on the File name (&#39;Prince - Purple Rain.mp3&#39; in the example above):</h4>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/003a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/003a_small.jpg" border="0" alt="See this here..." width="384" height="105" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/003a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/003a_small.jpg" border="0" alt="See this here..." width="384" height="105" /></a><br />
 Figure 3
 </p>
 <h4><a name="item4" title="item4"></a>4. What happens when you cannot download right away:</h4>
@@ -122,7 +122,7 @@ Figure 3
 	</tbody>
 </table>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/004a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/004a_small.jpg" border="0" alt="This this here..." width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/004a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/004a_small.jpg" border="0" alt="This this here..." width="384" height="93" /></a><br />
 Figure 4
 </p>
 <p>
@@ -146,12 +146,12 @@ Now, if someone other then User Y has a complete download (in other words, if Us
 </p>
 <h4><a name="item5" title="item5"></a>5. Right clicking on the user name of a person that is Remotely Queued:</h4>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/005a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/005a_small.jpg" border="0" alt="See that here..." width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/005a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/005a_small.jpg" border="0" alt="See that here..." width="384" height="93" /></a><br />
 Figure 5
 </p>
 <h4><a name="item6" title="item6"></a>6. Retrying someone that is queued:</h4>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/006a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/006a_small.jpg" border="0" alt="See it here!..." width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/006a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/006a_small.jpg" border="0" alt="See it here!..." width="384" height="93" /></a><br />
 Figure 6
 </p>
 <h4><a name="item7" title="item7"></a>7. &#39;Auto Find Sources&#39; in action:</h4>
@@ -159,7 +159,7 @@ Figure 6
 Take a look at the first file download, where it says in yellow &#39;Finding sources...&#39;. You continue to download from the user you are already downloading from, but WinMX looks for new users as well...
 </p>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/008a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/008a_small.jpg" border="0" alt="Wonder what happens if you click this... ;)" width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/008a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/008a_small.jpg" border="0" alt="Wonder what happens if you click this... ;)" width="384" height="93" /></a><br />
 Figure 7
 </p>
 <h4><a name="item8" title="item8"></a>8. Multiple users:</h4>
@@ -222,7 +222,7 @@ Figure 7
 	</tbody>
 </table>
 <p align="center">
-<a href="/files/2002/winmx/dwnldng/009a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/009a_small.jpg" border="0" alt="See multiple users in action..." width="384" height="93" /></a><br />
+<a href="http://strivinglife.com/files/2002/winmx/dwnldng/009a.jpg" target="_blank"><img src="http://strivinglife.com/files/2002/winmx/dwnldng/009a_small.jpg" border="0" alt="See multiple users in action..." width="384" height="93" /></a><br />
 Figure 8
 </p>
 <p>

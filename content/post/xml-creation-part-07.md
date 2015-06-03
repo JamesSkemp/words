@@ -99,7 +99,7 @@ Here we&#39;re checking to see if notes is empty, and if it is not, we&#39;re di
 </p>
 <h3>Where we&#39;re at now</h3>
 <p>
-Now we&#39;ve got <a href="/files/xml_creation/part7.xml" target="_blank">an XML document</a>, with <a href="/files/xml_creation/part7.xslt" target="_blank">XSLT</a>, that displays more like we&#39;d expect. 
+Now we&#39;ve got <a href="http://strivinglife.com/files/xml_creation/part7.xml" target="_blank">an XML document</a>, with <a href="http://strivinglife.com/files/xml_creation/part7.xslt" target="_blank">XSLT</a>, that displays more like we&#39;d expect. 
 </p>
 <h3>Next time ...</h3>
 <p>
