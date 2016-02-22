@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
 
     
-    <title>Tutorials / Guides - My New Hugo Site</title>
-    <meta property='og:title' content="Tutorials / Guides - My New Hugo Site">
+    <title>Tutorials / Guides - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Tutorials / Guides - James Skemp&#39;s Test Hugo-Generated Site">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides/">
+    <meta property="og:url" content="http://jamesskemp.github.io/blog/categories/tutorials-/-guides/">
     
     
 
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/blog/">James Skemp&#39;s Test Hugo-Generated Site</a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">
@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Tue, Apr 13, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/">Dynamically generating a list of videos for OSFLV Player with ASP.NET</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/">Dynamically generating a list of videos for OSFLV Player with ASP.NET</a></div>
   </header>
   <div class="body">I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked. This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0. Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head runat="server"&gt; &lt;title&gt;FLV video player&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;form id="form1" runat="server"&gt; &lt;div&gt; &lt;a href="Default.aspx"&gt;Refresh listing&lt;/a&gt;&lt;br/&gt; &lt;asp:DropDownList ID="DropDownList1" runat="server"&gt; &lt;/asp:DropDownList&gt; &lt;asp:Button ID="Button1" runat="server" Text="View" onclick="Button1_Click" /&gt; &lt;/div&gt; &lt;div id="videoPlayer" runat="server"&gt;&lt;/div&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; Default.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.IO; public partial class _Default : System.Web.UI.Page { int videoWidth = 1000; // = 200/170 ratio int videoHeight = 680; // 400x340 = default string playerLocation = "osflv_player_v3/player.swf"; protected void Page_Load(object sender, EventArgs e) { if (!IsPostBack) { DirectoryInfo directory = new DirectoryInfo(Server.MapPath("/videos")); FileInfo[] files = directory.GetFiles(); foreach (FileInfo file in files) { if (file.Extension == ".flv") { DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4)); } } } } protected void Button1_Click(object sender, EventArgs e) { string video = "/videos/" + DropDownList1.SelectedItem.Text + ".flv"; videoPlayer.InnerHtml = "&lt;object width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' id='flvPlayer2'&gt;"; videoPlayer.InnerHtml += "&lt;param name='allowFullScreen' value='true'&gt;"; videoPlayer.InnerHtml += "&lt;param name='movie' value='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5'&gt;"; videoPlayer.InnerHtml += ""; videoPlayer.InnerHtml += "&lt;embed src='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5' width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' allowFullScreen='true' type='application/x-shockwave-flash'&gt;"; videoPlayer.InnerHtml += "&lt;/object&gt;"; videoPlayer.InnerHtml += "&lt;br/&gt;&lt;span style='color:#ccc;'&gt;" + video + "&lt;/span&gt;"; } } A default Web.config file can be created and used, and a videos directory is checked for the listing of videos.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Apr 11, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Resonance-of-Fate-General-data-file/">Resonance of Fate: General data file</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/">Resonance of Fate: General data file</a></div>
   </header>
   <div class="body">Resonance of Fate, available for the Playstation 3 and Xbox 360 (I purchased for the former), has a vast amount of data associated with it, as RPGs usually do. Because I usually do, I started keeping track of levels and etcetera for the game, which is available as an XML data file. The data is currently raw (and as of this post need to finish adding data that I've got on paper and on another computer), without styling, but I've been sitting on the information for far too long.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Resonance-of-Fate-General-data-file/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,13 +94,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Mar 27, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/JavaScript-object-dump/">JavaScript object dump</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/JavaScript-object-dump/">JavaScript object dump</a></div>
   </header>
   <div class="body">I thought I posted this before, but I guess I did not. Here&rsquo;s one way to dump a JavaScript object for analysis (if you don&rsquo;t have access to Firebug, or a similar tool). Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the three spots one spot with whatever object you&rsquo;d like dumped. var objectInfo = &ldquo;&rdquo;; // Change ex to whatever object you want to debug.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/JavaScript-object-dump/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/JavaScript-object-dump/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -110,13 +110,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, Mar 12, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/">Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/">Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</a></div>
   </header>
   <div class="body">I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was. What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft's Web Platform Installer.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -126,13 +126,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Feb 1, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/">Connection String encryption (connectionString element) in ASP.NET</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Connection-String-encryption-connectionString-element-in-ASPNET/">Connection String encryption (connectionString element) in ASP.NET</a></div>
   </header>
   <div class="body">From what I've been able to determine, setting up an ODBC connection in Windows and using that for ASP.NET generally seems to be frowned upon. Instead, ASP.NET uses a Web.config&nbsp;file to store a number of settings, including all the connection strings you'll be using (whether you're using Windows authentication or user names and passwords). For example: &lt;?xml version="1.0"?&gt; &lt;configuration&gt; &lt;appSettings/&gt; &lt;connectionStrings&gt; &lt;add name="TestDatabase001Reader" connectionString="Data Source=192.168.56.102,1433;Initial Catalog=TestingDatabase001;User Id=DataReader;Password=DataReader" providerName="System.Data.SqlClient"/&gt; &lt;/connectionStrings&gt; &lt;system.web&gt; ...</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Connection-String-encryption-connectionString-element-in-ASPNET/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -142,13 +142,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Dec 31, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></div>
   </header>
   <div class="body">At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved. Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -158,13 +158,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Dec 27, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/">XML Schema Definition creation: Journal - Part 3: XSLT sample</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/">XML Schema Definition creation: Journal - Part 3: XSLT sample</a></div>
   </header>
   <div class="body">Having created an overview of how I wanted to craft a simple journal in XML, I next created an XML Schema Definition for the simple journal to validate against. Having now crafted a Web&nbsp;application to create the XML files I'm able to move onto the prettier aspects of display for the XML files. I've created a sample simple journal that uses an XSLT (XSL Transforms, or extensible stylesheet language transformations) to make the display a little prettier.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -174,13 +174,13 @@
       <article class="li">
   <header>
     <div class="date">Wed, Dec 23, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/">XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/">XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</a></div>
   </header>
   <div class="body">In the first part of this series I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010. This time I'm going to create the actual XML Schema Definition file with &lt;oXygen/&gt; XML Editor, version 11.1. I've been using &lt;oXygen/&gt; since January 2008, and wouldn't trade it for any other XML editor. If you don't have &lt;oXygen/&gt; you can still follow along.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -190,13 +190,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Dec 21, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/">XML Schema Definition creation: Journal - Part 1: Primary layout</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/">XML Schema Definition creation: Journal - Part 1: Primary layout</a></div>
   </header>
   <div class="body">In a previous series, I went over the process of creating a new XML document to store my video games. (Although in that case I used a DTD.) This time I&rsquo;m going to work on a schema to store quasi-journal entries, which I&rsquo;m hoping will help with my goal to write every day. What I hope to accomplish Ultimately I want to store a bit of text for any particular day.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -206,13 +206,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Dec 20, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/">Installing SQL Server Express 2008 on Windows Server 2003</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/">Installing SQL Server Express 2008 on Windows Server 2003</a></div>
   </header>
   <div class="body">SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution. In this article I'll be covering a custom install of SQL Server Express 2008 on Windows Server 2003. Server system For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -247,25 +247,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
       
     </div>
   </div>
@@ -277,25 +277,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      <a href="http://jamesskemp.github.io/blog/categories/software" class="list-group-item">software</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      <a href="http://jamesskemp.github.io/blog/categories/article" class="list-group-item">article</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/categories/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      <a href="http://jamesskemp.github.io/blog/categories/strivinglife" class="list-group-item">strivinglife</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://jamesskemp.github.io/blog/categories/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      <a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      <a href="http://jamesskemp.github.io/blog/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      <a href="http://jamesskemp.github.io/blog/categories/internet" class="list-group-item">internet</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      <a href="http://jamesskemp.github.io/blog/categories/gaming" class="list-group-item">gaming</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      <a href="http://jamesskemp.github.io/blog/categories/technology" class="list-group-item">technology</a>
       
     </div>
   </div>
@@ -306,25 +306,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/tags/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      <a href="http://jamesskemp.github.io/blog/tags/.net" class="list-group-item">.net</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      <a href="http://jamesskemp.github.io/blog/tags/xml" class="list-group-item">xml</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      <a href="http://jamesskemp.github.io/blog/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      <a href="http://jamesskemp.github.io/blog/tags/c" class="list-group-item">c#</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      <a href="http://jamesskemp.github.io/blog/tags/apache" class="list-group-item">apache</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      <a href="http://jamesskemp.github.io/blog/tags/playstation" class="list-group-item">playstation</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      <a href="http://jamesskemp.github.io/blog/tags/microsoft" class="list-group-item">microsoft</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      <a href="http://jamesskemp.github.io/blog/tags/waking-life" class="list-group-item">waking-life</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/ipod" class="list-group-item">ipod</a>
+      <a href="http://jamesskemp.github.io/blog/tags/iis" class="list-group-item">iis</a>
       
     </div>
   </div>
@@ -342,7 +342,7 @@
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 My New Hugo Site</p>
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windows Server 2003 on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/windows-server-2003/</link>
-    <description>Recent content in Windows Server 2003 on My New Hugo Site</description>
+    <title>Windows Server 2003 on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/windows-server-2003/</link>
+    <description>Recent content in Windows Server 2003 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Mar 2010 12:40:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windows-server-2003/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/windows-server-2003/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
       <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
 &lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
 &lt;h3&gt;Web Platform Installer&lt;/h3&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
       <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
 &lt;h3&gt;Server system&lt;/h3&gt;
@@ -86,10 +86,10 @@
     
     <item>
       <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
       <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
       <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
 &lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
 &lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
@@ -113,10 +113,10 @@
     
     <item>
       <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
       <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
 &lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
 &lt;h3&gt;Requirements&lt;/h3&gt;
@@ -187,10 +187,10 @@
     
     <item>
       <title>Installing CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3 on Windows Server 2003</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
       <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
 &lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;

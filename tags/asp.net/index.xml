@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Asp.Net on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/asp/index.net/</link>
-    <description>Recent content in Asp.Net on My New Hugo Site</description>
+    <title>Asp.Net on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/asp/index.net/</link>
+    <description>Recent content in Asp.Net on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Jan 2012 07:40:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Programming Entity Framework: Code First (2011)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Programming-Entity-Framework-Code-First-2011/</link>
       <pubDate>Thu, 05 Jan 2012 07:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Programming-Entity-Framework-Code-First-2011/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;, written by Julia Lerman and Rowan Miller.&lt;/p&gt;
 &lt;/div&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
       <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
       <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
 &lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
 &lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;
@@ -45,10 +45,10 @@
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
+      <link>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
       <pubDate>Sun, 15 Aug 2010 13:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
       <description>&lt;p&gt;In part one of this series we covered what we&#39;d be doing, and what data model we&#39;d be using.&lt;/p&gt;
 &lt;p&gt;In part two of this series we used LINQ to XML to query the XML file with the data we want to display.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I&#39;ll be implementing very basic caching.&lt;/p&gt;
@@ -240,10 +240,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
+      <link>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
       <pubDate>Sat, 14 Aug 2010 14:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model.aspx&#34;&gt;part one of this series&lt;/a&gt; we covered what we&#39;d be doing, and what model we&#39;d be using for the data.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll parse the XML file that contains the data we need, and populate the objects.&lt;/p&gt;
 &lt;h3&gt;Loading the XML file&lt;/h3&gt;
@@ -276,10 +276,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
+      <link>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
       <pubDate>Fri, 13 Aug 2010 22:50:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
       <description>&lt;p&gt;For a while now I&#39;ve been meaning to work with &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2010/02/07/built-in-charting-controls-vs-2010-and-net-4-series.aspx&#34;&gt;ASP.NET 4&#39;s built-in charting functionality&lt;/a&gt;. While I was going to use it alongside my gas tracking, I think I&#39;m instead going to use my &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;Odin Sphere leveling guide&lt;/a&gt;, so I don&#39;t have to create an XSLT for the output.&lt;/p&gt;
 &lt;p&gt;In this part of the series I&#39;ll outline the data model I&#39;ll be using, and preliminary setups.&lt;/p&gt;
 &lt;h3&gt;Method&lt;/h3&gt;
@@ -326,10 +326,10 @@ using System.Linq;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
       <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -422,10 +422,10 @@ $(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</link>
       <pubDate>Thu, 24 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -506,10 +506,10 @@ return newLoan;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</link>
       <pubDate>Tue, 22 Jun 2010 21:15:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -657,10 +657,10 @@ return paymentsUpdated;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
       <pubDate>Mon, 21 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
       <description>&lt;p&gt;A while ago (&lt;a href=&#34;http://strivinglife.com/words/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule.aspx&#34;&gt;a year and a quarter&lt;/a&gt;)&amp;nbsp;I created an &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt; in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.&lt;/p&gt;
 &lt;p&gt;For better or worse, some of the practices I put in place aren&#39;t the best, and either way I&#39;ve been meaning to tweak the interface so that I could do various comparisons. If I pay x dollars more a month, how much faster would I have it paid off? How much would I save in interest? How much am I paying in interest as it is? I also really wanted to work&amp;nbsp;with JSON and jQuery, for practice.&lt;/p&gt;
 &lt;p&gt;Now that I&#39;ve found &lt;a href=&#34;http://strivinglife.com/words/post/RESTful-WCF-Web-services-easily.aspx&#34;&gt;WCF WebHttp&lt;/a&gt;, I think I have everything I need to make it happen.&lt;/p&gt;
@@ -681,10 +681,10 @@ return paymentsUpdated;
     
     <item>
       <title>RESTful WCF Web services, easily</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</link>
+      <link>http://jamesskemp.github.io/blog/posts/RESTful-WCF-Web-services-easily/</link>
       <pubDate>Tue, 15 Jun 2010 22:47:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/RESTful-WCF-Web-services-easily/</guid>
       <description>&lt;p&gt;I know I should know them better so I&#39;ve been looking into WCF Web services, with a heavy lean towards an implementation based on REST principles.&lt;/p&gt;
 &lt;p&gt;After a good deal of research, where it was highly suggested that while ASP.NET MVC may make sense, WCF is still the way to go for Web services, I stumbled upon &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/endpoint/archive/2010/01/06/introducing-wcf-webhttp-services-in-net-4.aspx&#34;&gt;WCF WebHttp Services&lt;/a&gt;, which uses functionality released in .NET 4.&lt;/p&gt;
 &lt;p&gt;After a painless install via Visual Studio 2010&#39;s Extension Manager (&lt;a rel=&#34;external&#34; href=&#34;http://visualstudiogallery.msdn.microsoft.com/en-us/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd&#34;&gt;more information&lt;/a&gt;), and troubleshooting a stupid mistake on my end, I was able to quickly create a Web service that uses an assembly I had created to parse one of my &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; files and return a listing of tracks for a particular artist.&lt;/p&gt;
@@ -696,10 +696,10 @@ return paymentsUpdated;
     
     <item>
       <title>Dynamically generating a list of videos for OSFLV Player with ASP.NET</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
       <pubDate>Tue, 13 Apr 2010 08:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
       <description>&lt;p&gt;I&#39;ve had this code for a while, but here&#39;s some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what&#39;s picked.&lt;/p&gt;
 &lt;p&gt;This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.&lt;/p&gt;
 &lt;h3&gt;Default.aspx&lt;/h3&gt;
@@ -778,10 +778,10 @@ public partial class _Default : System.Web.UI.Page {
     
     <item>
       <title>Connection String encryption (connectionString element) in ASP.NET</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</link>
       <pubDate>Mon, 01 Feb 2010 22:10:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</guid>
       <description>&lt;p&gt;From what I&#39;ve been able to determine, setting up an ODBC connection in Windows and using that for ASP.NET generally seems to be frowned upon. Instead, ASP.NET uses a Web.config&amp;nbsp;file to store a number of settings, including all the connection strings you&#39;ll be using (whether you&#39;re using Windows authentication or user names and passwords).&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34;?&amp;gt;
@@ -892,10 +892,10 @@ namespace WebApplication1 {
     
     <item>
       <title>Simple Journal 1.0 Released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Simple-Journal-10/</link>
       <pubDate>Sun, 03 Jan 2010 18:53:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Simple-Journal-10/</guid>
       <description>&lt;p&gt;Version 1.0 of Simple Journal is now available for download.&lt;/p&gt;
 &lt;p&gt;Simple Journal is meant to be exactly that; a &lt;em&gt;very&lt;/em&gt; simple way to keep track of a journal.&lt;/p&gt;
 &lt;p&gt;Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.&lt;/p&gt;
@@ -915,10 +915,10 @@ namespace WebApplication1 {
     
     <item>
       <title>BlogEngine.NET running on Cassini Personal Web Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
       <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
 &lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
@@ -932,10 +932,10 @@ namespace WebApplication1 {
     
     <item>
       <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
       <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
       <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
 &lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
 &lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;

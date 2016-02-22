@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hp Pavilion A6360t on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-a6360t/</link>
-    <description>Recent content in Hp Pavilion A6360t on My New Hugo Site</description>
+    <title>Hp Pavilion A6360t on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/hp-pavilion-a6360t/</link>
+    <description>Recent content in Hp Pavilion A6360t on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Oct 2009 20:43:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-a6360t/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/hp-pavilion-a6360t/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Solved: Upgrading to Windows 7 on an HP a6360t with a second hard drive</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</link>
       <pubDate>Fri, 09 Oct 2009 20:43:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
       <description>&lt;p&gt;I purchased an HP Pavilion a6360t with Windows Vista Home&amp;nbsp;Premium&amp;nbsp;and later upgraded it (due to a conference) for free to Windows Vista Ultimate, and then added a second hard drive.&lt;/p&gt;
 &lt;p&gt;What would happen when I upgraded to Windows 7 Home Premium? Could I use the 64-bit version?&lt;/p&gt;
 &lt;p&gt;The answer to these questions is, due to testing, below:&lt;/p&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>HP Pavilion a6360t clean-up</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</link>
+      <link>http://jamesskemp.github.io/blog/posts/HP-Pavilion-a6360t-clean-up/</link>
       <pubDate>Tue, 04 Mar 2008 20:50:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/HP-Pavilion-a6360t-clean-up/</guid>
       <description>&lt;p&gt;
 With a new HP Pavilion a6360t, a number of things needed to be done to clean the machine up, from it&amp;#39;s default factory setup. 
 &lt;/p&gt;

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Asus on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/asus/</link>
-    <description>Recent content in Asus on My New Hugo Site</description>
+    <title>Asus on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/asus/</link>
+    <description>Recent content in Asus on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Aug 2015 22:21:19 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/asus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/asus/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows 10 touchpad fix for the ASUS X200M</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
       <pubDate>Fri, 07 Aug 2015 22:21:19 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
       <description>&lt;p&gt;I recently decided to upgrade my ASUS X200M, after successfully upgrading my mom&#39;s. Unfortunately, after upgrading my machine I ran into an issue where the touchpad was completely unresponsive, and I was forced to either use the touchscreen or a USB mouse.&lt;/p&gt;
 
 &lt;p&gt;After a bit of looking around I found &lt;a href=&#34;http://www.cnet.com/forums/post/48428cdd-d8a9-4ef4-8bed-c70357f55fec/&#34;&gt;a post on CNET&#39;s forums&lt;/a&gt; that detailed a way to fix unresponsive touchpads in Windows 10. While the original question was about an Asus Transformer T100, this also worked for the X200M.&lt;/p&gt;

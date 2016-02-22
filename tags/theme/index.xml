@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Theme on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/theme/</link>
-    <description>Recent content in Theme on My New Hugo Site</description>
+    <title>Theme on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/theme/</link>
+    <description>Recent content in Theme on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Nov 2008 00:15:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/theme/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New BlogEngine.NET Theme: 20081126</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/New-BlogEngineNET-Theme-20081126/</link>
+      <link>http://jamesskemp.github.io/blog/posts/New-BlogEngineNET-Theme-20081126/</link>
       <pubDate>Thu, 27 Nov 2008 00:15:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/New-BlogEngineNET-Theme-20081126/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/New-BlogEngineNET-Theme-20081126/</guid>
       <description>&lt;p&gt;I&#39;ve been working on a new theme for the site, since around 7 this evening ... and it&#39;s&amp;nbsp;finally rolled out.&lt;/p&gt;
 &lt;p&gt;This is along the lines of what I was thinking a couple weeks ago, but I actually grabbed some ideas from Microsoft&#39;s recent KB changes.&lt;/p&gt;
 &lt;p&gt;This is the first theme I&#39;ve created that used the widget functionality, and I can honestly say I&#39;m still &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.codeplex.com/blogengine/Thread/View.aspx?ThreadId=33113&#34; target=&#34;_blank&#34;&gt;not that impressed&lt;/a&gt; with it.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>BlogEngine.NET Theme - MWRT-002</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-Theme-MWRT-002/</link>
+      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-Theme-MWRT-002/</link>
       <pubDate>Sat, 13 Oct 2007 17:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-Theme-MWRT-002/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-Theme-MWRT-002/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;Updated for BlogEngine.NET 1.3!&lt;/p&gt;
 &lt;/div&gt;
@@ -39,17 +39,17 @@
 &lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.2.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.2&lt;/a&gt; (tested with 1.2.0.0).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.3.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.3&lt;/a&gt; (tested with 1.3.0.0).&lt;/p&gt;
 &lt;p&gt;Comments appreciated.&lt;/p&gt;
-&lt;p&gt;Other themes include &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other themes include &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;9/16/2009&lt;/strong&gt;: Comments are now closed. Please leave comments on &lt;a href=&#34;http://strivinglife.com/words/post/James-Skemps-BlogEngineNET-themes.aspx&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Swan Dive updated for BlogEngine.NET 1.2 release</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Swan-Dive-updated-for-BlogEngineNET-12-release/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Swan-Dive-updated-for-BlogEngineNET-12-release/</link>
       <pubDate>Sun, 30 Sep 2007 20:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Swan-Dive-updated-for-BlogEngineNET-12-release/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Swan-Dive-updated-for-BlogEngineNET-12-release/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://www.dotnetblogengine.net/post/Release-of-BlogEngineNET-12.aspx&#34;&gt;BlogEngine.NET 1.2.0.0 has been released&lt;/a&gt;.
 &lt;/p&gt;
@@ -60,17 +60,17 @@ In &amp;#39;honor&amp;#39; of this release, I&amp;#39;ve updated Swan Dive, usin
 Any questions or concerns can be directed to me via the comments on the original post.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;View the original post, and download Swan Dive&lt;/a&gt;.
+&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;View the original post, and download Swan Dive&lt;/a&gt;.
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>BlogEngine.NET 1.1 Theme - Swan Dive</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-11-Theme-Swan-Dive/</link>
+      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-11-Theme-Swan-Dive/</link>
       <pubDate>Wed, 25 Jul 2007 10:46:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-11-Theme-Swan-Dive/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-11-Theme-Swan-Dive/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;Updated for BlogEngine.NET 1.3!&lt;/p&gt;
 &lt;p&gt;Update 8/16/2008: This theme should work fine on BlogEngine.NET 1.4.5 or lower, using the 1.3 link.&lt;/p&gt;

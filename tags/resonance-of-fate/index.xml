@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resonance Of Fate on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/resonance-of-fate/</link>
-    <description>Recent content in Resonance Of Fate on My New Hugo Site</description>
+    <title>Resonance Of Fate on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/resonance-of-fate/</link>
+    <description>Recent content in Resonance Of Fate on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 11 Apr 2010 12:20:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/resonance-of-fate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/resonance-of-fate/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Resonance of Fate: General data file</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Resonance-of-Fate-General-data-file/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/</link>
       <pubDate>Sun, 11 Apr 2010 12:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Resonance-of-Fate-General-data-file/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/</guid>
       <description>&lt;p&gt;Resonance of Fate, available for the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BRYHY0?tag=strivinglifen-20&#34;&gt;Playstation 3&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BRWUA8?tag=strivinglifen-20&#34;&gt;Xbox 360&lt;/a&gt; (I purchased for the former), has a vast amount of data associated with it, as RPGs usually do.&lt;/p&gt;
 &lt;p&gt;Because I usually do, I started keeping track of levels and etcetera for the game, which is available as an XML data file.&lt;/p&gt;
 &lt;p&gt;The data is currently raw (and as of this post need to finish adding data that I&#39;ve got on paper and on another computer), without styling, but I&#39;ve been sitting on the information for far too long.&lt;/p&gt;

@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
 
     
-    <title>Iis - My New Hugo Site</title>
-    <meta property='og:title' content="Iis - My New Hugo Site">
+    <title>Iis - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Iis - James Skemp&#39;s Test Hugo-Generated Site">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/tags/iis/">
+    <meta property="og:url" content="http://jamesskemp.github.io/blog/tags/iis/">
     
     
 
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/blog/">James Skemp&#39;s Test Hugo-Generated Site</a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">
@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, Feb 18, 2011</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/">Supporting HTML5 manifest files on IIS 7 using Web.config</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/">Supporting HTML5 manifest files on IIS 7 using Web.config</a></div>
   </header>
   <div class="body">Having recently picked up an iPod Touch, to replace my Classic, I've become very interested in HTML5's ability to navigate content offline. In my environment I decided to create a separate directory for my manifest files. I'm also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF. So that that isn't an issue, I created a Web.config file in the manifest directory with the below contents.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Wed, Dec 29, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/">Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/">Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</a></div>
   </header>
   <div class="body">A raw dump of information on how to create a certificate authority and etcetera. Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file) Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048 Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer Step 4: Create DER for public consumption "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\_ca.cer -outform DER -out certs\_ca.der Step 5: Create request from IIS IIS &gt; click on main server, Server Certificates &gt; populate all for request save to requests directory locally Step 6: Handle request "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs Step 7: Convert for IIS "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer Step 8: Add to IIS back in iis, complete request.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,7 +94,7 @@
       <article class="li">
   <header>
     <div class="date">Wed, Sep 1, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/">Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/">Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</a></div>
   </header>
   <div class="body"><p>I've already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn't able to get content saved via the file_put_contents function.</p>
 <p>It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.</p>
@@ -108,13 +108,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Aug 28, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/">Windows 7 Home Premium changes for IIS 7.5 access of Users directories</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/">Windows 7 Home Premium changes for IIS 7.5 access of Users directories</a></div>
   </header>
   <div class="body">Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory. Background I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -124,13 +124,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Jun 5, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/">Windows Server 2008 R2 Enterprise Edition - setup for Web development</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/">Windows Server 2008 R2 Enterprise Edition - setup for Web development</a></div>
   </header>
   <div class="body">This afternoon I setup a machine for the following purposes: to serve as a test bed for Web development to serve as an always-available Subversion repository server to serve as a repository for shared downloads, across all my machines As time goes by the scope of the server may also change. But for now, this will work just fine. Choosing an edition The first step was to install Windows Server 2008 R2.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -140,13 +140,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Jan 3, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/">Cassini 3.5.0.2 - built and ready to go</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/">Cassini 3.5.0.2 - built and ready to go</a></div>
   </header>
   <div class="body">Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&nbsp;a full-fledged instance of IIS. While Cassini should not be used in production environments, it's more than enough to run for minor development, or even minor projects. The last official version of Cassini at the time of this writing&nbsp;is 3.5.0.2. Since he's released the source, you can build your own, but what if you just want to download a pre-built version?</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -156,13 +156,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Nov 12, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/">BlogEngine.NET running on Cassini Personal Web Server</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/">BlogEngine.NET running on Cassini Personal Web Server</a></div>
   </header>
   <div class="body">While Cassini is a built-in Web server part of Microsoft Visual Studio, it's also available as a stand-alone application, thanks to the work of Dmitry Robsman. The current version can be downloaded from this post regarding version 3.5.0.2 but requires that you first build the solution (the code is available under a MS-PL license). Cassini++ is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry's release).</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -172,13 +172,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Nov 7, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/">Log Parser Plus - version 0.3 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/">Log Parser Plus - version 0.3 released</a></div>
   </header>
   <div class="body">Version 0.3.1 of Log Parser Plus now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed. Currently under development, Log Parser Plus (not be confused with the Web site LogParserPlus.com) is a tool to (hopefully) help work with Microsoft Log Parser. Download Log Parser Plus 0.3 BETA. You will need to download and install Microsoft Log Parser for this application to run, as well as .NET Framework 2.0.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -188,13 +188,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Nov 2, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/">Log Parser Plus - version 0.2.1 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/">Log Parser Plus - version 0.2.1 released</a></div>
   </header>
   <div class="body">This is no longer the current version. View information about the current version of Log Parser Plus. Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more. While a number of applications exist to help use Log Parser, as well as a number of sites containing Log Parser queries, I haven&rsquo;t been very happy with them. In an attempt to make it even easier to work with Log Parser, I present version 0.2.1 BETA of Log Parser Plus (not to be confused with the Web site, LogParserPlus.com).</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -204,13 +204,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Sep 24, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/">IIS Logs to SQLite - version 0.1 beta released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/">IIS Logs to SQLite - version 0.1 beta released</a></div>
   </header>
   <div class="body">Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I've created IIS Logs to SQLite, which will parse IIS logs and import them into the SQLite database and table of your choice. The first beta version of this application is now available. Download IIS Logs to SQLite version 0.1. This application requires the .NET Framework version 3.5 (check your version of .NET Framework). Note that for a larger amount of logs, memory usage can spike.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -245,25 +245,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
       
     </div>
   </div>
@@ -275,25 +275,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      <a href="http://jamesskemp.github.io/blog/categories/software" class="list-group-item">software</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      <a href="http://jamesskemp.github.io/blog/categories/article" class="list-group-item">article</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/categories/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      <a href="http://jamesskemp.github.io/blog/categories/strivinglife" class="list-group-item">strivinglife</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://jamesskemp.github.io/blog/categories/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      <a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      <a href="http://jamesskemp.github.io/blog/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      <a href="http://jamesskemp.github.io/blog/categories/internet" class="list-group-item">internet</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      <a href="http://jamesskemp.github.io/blog/categories/gaming" class="list-group-item">gaming</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      <a href="http://jamesskemp.github.io/blog/categories/technology" class="list-group-item">technology</a>
       
     </div>
   </div>
@@ -304,25 +304,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/tags/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      <a href="http://jamesskemp.github.io/blog/tags/.net" class="list-group-item">.net</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      <a href="http://jamesskemp.github.io/blog/tags/xml" class="list-group-item">xml</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      <a href="http://jamesskemp.github.io/blog/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      <a href="http://jamesskemp.github.io/blog/tags/c" class="list-group-item">c#</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      <a href="http://jamesskemp.github.io/blog/tags/apache" class="list-group-item">apache</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      <a href="http://jamesskemp.github.io/blog/tags/playstation" class="list-group-item">playstation</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      <a href="http://jamesskemp.github.io/blog/tags/microsoft" class="list-group-item">microsoft</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      <a href="http://jamesskemp.github.io/blog/tags/waking-life" class="list-group-item">waking-life</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      <a href="http://jamesskemp.github.io/blog/tags/iis" class="list-group-item">iis</a>
       
     </div>
   </div>
@@ -340,7 +340,7 @@
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 My New Hugo Site</p>
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>

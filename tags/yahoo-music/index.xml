@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yahoo Music on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/yahoo-music/</link>
-    <description>Recent content in Yahoo Music on My New Hugo Site</description>
+    <title>Yahoo Music on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/yahoo-music/</link>
+    <description>Recent content in Yahoo Music on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Sep 2009 21:30:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/yahoo-music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/yahoo-music/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</link>
       <pubDate>Sat, 12 Sep 2009 21:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</guid>
       <description>&lt;p&gt;Similar to my post on &lt;a href=&#34;http://strivinglife.com/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML.aspx&#34;&gt;parsing Last.fm&#39;s artist.getSimilar&lt;/a&gt;, I&#39;ve been working with Yahoo! Music&#39;s Web services today.&lt;/p&gt;
 &lt;p&gt;Unfortunately, Yahoo!&#39;s services aren&#39;t quite as friendly as those made available by Last.fm.&lt;/p&gt;
 &lt;p&gt;So that I remember, and others don&#39;t have to tackle this as well, here&#39;s the class I&#39;ve created. (&lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/JamesRSkemp.WebServices.YahooMusic.cs.txt&#34;&gt;Download JamesRSkemp.WebServices.YahooMusic.cs&lt;/a&gt;.)&lt;/p&gt;

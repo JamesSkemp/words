@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/git/</link>
-    <description>Recent content in Git on My New Hugo Site</description>
+    <title>Git on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/git/</link>
+    <description>Recent content in Git on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2013 08:58:25 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Rough guide on manually setting up Git on Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
       <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
       <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
 
 &lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
@@ -58,10 +58,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Git/posh-git commands</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Git-posh-git-commands/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</link>
       <pubDate>Wed, 25 Sep 2013 20:58:10 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Git-posh-git-commands/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</guid>
       <description>&lt;p&gt;This is a rough list, in no particular order (yet), but here&#39;s the commands I&#39;ve found useful after being converted to posh-git after &lt;a href=&#34;https://plus.google.com/110143205597803895575/posts/Qk4Cfs5Yi9P&#34;&gt;my Google+ post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git add -u
@@ -100,10 +100,10 @@ git config -l
     
     <item>
       <title>Brief thoughts after 1 month of GitHub</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
       <pubDate>Fri, 01 Mar 2013 08:18:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
       <description>&lt;p&gt;I&#39;ve been using GitHub for a little more than a month now, and it&#39;s been about 2 weeks since I shut down the machine running my local Subversion instance.&lt;/p&gt;
 &lt;p&gt;GitHub for Windows needs some work, but given that Phil Haack is/was working on the Windows aspect, I feel pretty confident that it&#39;ll continue to get better.&lt;/p&gt;
 &lt;p&gt;Moving to a system that allows for public repositories also allowed me to publish some really old code, that might be of benefit to someone. However, I am now paying $7 a month something that I wasn&#39;t before. There is a free Git provider that I&#39;ve looked at (and that I might use as a backup), but there&#39;s a benefit to having everything in one place. And GitHub seems pretty solid in the Git space.&lt;/p&gt;
@@ -113,10 +113,10 @@ git config -l
     
     <item>
       <title>Converting from Subversion to Git on Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
       <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
 &lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;

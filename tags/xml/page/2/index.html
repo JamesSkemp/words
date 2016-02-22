@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
 
     
-    <title>Xml - My New Hugo Site</title>
-    <meta property='og:title' content="Xml - My New Hugo Site">
+    <title>Xml - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Xml - James Skemp&#39;s Test Hugo-Generated Site">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/tags/xml/">
+    <meta property="og:url" content="http://jamesskemp.github.io/blog/tags/xml/">
     
     
 
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/blog/">James Skemp&#39;s Test Hugo-Generated Site</a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">
@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Aug 14, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/">ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/">ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</a></div>
   </header>
   <div class="body">In part one of this series we covered what we'd be doing, and what model we'd be using for the data. This time we'll parse the XML file that contains the data we need, and populate the objects. Loading the XML file The XML file we'll be loading is located at&nbsp;http://jamesrskemp.com/files/OdinSphere.xml, and to keep it simple, we'll load it in assuming we're on a different server/domain. First we'll need to add the following so we can make use of XDocument.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, Aug 13, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/">ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/">ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</a></div>
   </header>
   <div class="body">For a while now I've been meaning to work with ASP.NET 4's built-in charting functionality. While I was going to use it alongside my gas tracking, I think I'm instead going to use my Odin Sphere leveling guide, so I don't have to create an XSLT for the output. In this part of the series I'll outline the data model I'll be using, and preliminary setups. Method So that this can easily be deployed anywhere, I'm going to opt not to use the control itself, but rather programmatically create the charts/graphs.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,13 +94,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Jun 10, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">Vehicle gas DTD .NET objects and XML parsing with LINQ</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">Vehicle gas DTD .NET objects and XML parsing with LINQ</a></div>
   </header>
   <div class="body">The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted. At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen). I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out. C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } } public class Fillup { public int Id { get; set; } public DateTime Date { get; set; } public int MilesTotal { get; set; } public Decimal MilesDriven { get; set; } public Decimal Gallons { get; set; } public Decimal CostPerGallon { get; set; } public Decimal CostTotal { get; set; } public String Notes { get; set; } }&lt;/code&gt;&lt;/pre&gt; LINQ to XML XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;); IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;) select new Vehicle { Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value), Make = vehicle.Element(&ldquo;make&rdquo;).Value, Model = vehicle.Element(&ldquo;model&rdquo;).Value, Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value), Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;) select new Fillup { Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value), Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture), MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value), MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value), Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value), CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value), CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value), Notes = fillup.Element(&ldquo;notes&rdquo;).Value } }; As always, suggestions appreciated.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -110,13 +110,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, May 8, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/">iTunes Playlists to Xml - version 1.6 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-16-released/">iTunes Playlists to Xml - version 1.6 released</a></div>
   </header>
   <div class="body">Version 1.6 of iTunes Playlists to Xml is now available for download. Download iTunes Playlists to Xml 1.6. Installing and more information If you're new to iTunes Playlists to Xml, I've created a 'product page' for iTunes Playlists to Xml with all the information needed to get started. Upgrading To upgrade from any version of 1.4 or 1.5&nbsp;you need to replace the following files with those in the above archive: AlbumName.xslt iTunesPlaylists2Xml.xslt iTunesPlaylistsToXml.exe NameArtistAlbumPlay.xslt Your configuration file&nbsp;should be upgraded with the new functionality automatically.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-16-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -126,13 +126,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Jan 10, 2010</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/">iTunes Playlists to Xml - version 1.5.3 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-153-released/">iTunes Playlists to Xml - version 1.5.3 released</a></div>
   </header>
   <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. Version 1.5.3 of iTunes Playlists to Xml is now available for download. Download iTunes Playlists to Xml 1.5.3. Installing and more information If you&rsquo;re new to iTunes Playlists to Xml, I&rsquo;ve created a &lsquo;product page&rsquo; for iTunes Playlists to Xml with all the information needed to get started. Upgrading To upgrade from any version of 1.4 or 1.5&nbsp;you simply need to replace the iTunesPlaylistsToXml.exe file with the one in the above archive.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-153-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -142,13 +142,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Dec 31, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></div>
   </header>
   <div class="body">At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved. Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -158,13 +158,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Dec 27, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/">XML Schema Definition creation: Journal - Part 3: XSLT sample</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/">XML Schema Definition creation: Journal - Part 3: XSLT sample</a></div>
   </header>
   <div class="body">Having created an overview of how I wanted to craft a simple journal in XML, I next created an XML Schema Definition for the simple journal to validate against. Having now crafted a Web&nbsp;application to create the XML files I'm able to move onto the prettier aspects of display for the XML files. I've created a sample simple journal that uses an XSLT (XSL Transforms, or extensible stylesheet language transformations) to make the display a little prettier.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -174,13 +174,13 @@
       <article class="li">
   <header>
     <div class="date">Wed, Dec 23, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/">XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/">XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</a></div>
   </header>
   <div class="body">In the first part of this series I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010. This time I'm going to create the actual XML Schema Definition file with &lt;oXygen/&gt; XML Editor, version 11.1. I've been using &lt;oXygen/&gt; since January 2008, and wouldn't trade it for any other XML editor. If you don't have &lt;oXygen/&gt; you can still follow along.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -190,13 +190,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Dec 21, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/">XML Schema Definition creation: Journal - Part 1: Primary layout</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/">XML Schema Definition creation: Journal - Part 1: Primary layout</a></div>
   </header>
   <div class="body">In a previous series, I went over the process of creating a new XML document to store my video games. (Although in that case I used a DTD.) This time I&rsquo;m going to work on a schema to store quasi-journal entries, which I&rsquo;m hoping will help with my goal to write every day. What I hope to accomplish Ultimately I want to store a bit of text for any particular day.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -206,13 +206,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Dec 6, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published/">Determine BlogEngine.NET comments that haven&#39;t been published</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published/">Determine BlogEngine.NET comments that haven&#39;t been published</a></div>
   </header>
   <div class="body">Unfortunately, BlogEngine.NET doesn't currently have a very good way to determine, at a glance, all of the comments that haven't been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me. You can download the built executable, or play with the code, which is included below. Download the executable&nbsp;(7-Zip format).</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -247,25 +247,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
       
     </div>
   </div>
@@ -277,25 +277,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      <a href="http://jamesskemp.github.io/blog/categories/software" class="list-group-item">software</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      <a href="http://jamesskemp.github.io/blog/categories/article" class="list-group-item">article</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/categories/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      <a href="http://jamesskemp.github.io/blog/categories/strivinglife" class="list-group-item">strivinglife</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://jamesskemp.github.io/blog/categories/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      <a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      <a href="http://jamesskemp.github.io/blog/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      <a href="http://jamesskemp.github.io/blog/categories/internet" class="list-group-item">internet</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      <a href="http://jamesskemp.github.io/blog/categories/gaming" class="list-group-item">gaming</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      <a href="http://jamesskemp.github.io/blog/categories/technology" class="list-group-item">technology</a>
       
     </div>
   </div>
@@ -306,25 +306,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/tags/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      <a href="http://jamesskemp.github.io/blog/tags/.net" class="list-group-item">.net</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      <a href="http://jamesskemp.github.io/blog/tags/xml" class="list-group-item">xml</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      <a href="http://jamesskemp.github.io/blog/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      <a href="http://jamesskemp.github.io/blog/tags/c" class="list-group-item">c#</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      <a href="http://jamesskemp.github.io/blog/tags/apache" class="list-group-item">apache</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      <a href="http://jamesskemp.github.io/blog/tags/playstation" class="list-group-item">playstation</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      <a href="http://jamesskemp.github.io/blog/tags/microsoft" class="list-group-item">microsoft</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      <a href="http://jamesskemp.github.io/blog/tags/waking-life" class="list-group-item">waking-life</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      <a href="http://jamesskemp.github.io/blog/tags/iis" class="list-group-item">iis</a>
       
     </div>
   </div>
@@ -342,7 +342,7 @@
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 My New Hugo Site</p>
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>

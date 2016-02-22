@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Playstation 2 on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/playstation-2/</link>
-    <description>Recent content in Playstation 2 on My New Hugo Site</description>
+    <title>Playstation 2 on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/playstation-2/</link>
+    <description>Recent content in Playstation 2 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Sep 2014 14:19:21 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/playstation-2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/playstation-2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Devil Kings (2005)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Devil-Kings-2005/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Devil-Kings-2005/</link>
       <pubDate>Sat, 06 Sep 2014 14:19:21 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Devil-Kings-2005/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Devil-Kings-2005/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/dp/B000A8NXCO?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;Devil Kings&lt;/a&gt;, released in 2005 for the PlayStation 2.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;Perfectly acceptable example of the genre&lt;/h3&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>On why I purchased another PlayStation 2</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/On-why-I-purchased-another-PlayStation-2/</link>
+      <link>http://jamesskemp.github.io/blog/posts/On-why-I-purchased-another-PlayStation-2/</link>
       <pubDate>Sat, 02 Oct 2010 20:39:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/On-why-I-purchased-another-PlayStation-2/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/On-why-I-purchased-another-PlayStation-2/</guid>
       <description>&lt;p&gt;This afternoon I picked up a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000TLU67W/?tag=strivinglifen-20&#34;&gt;PlayStation 2 slim model&lt;/a&gt; from Best Buy. I&#39;ve already got a fat PS2, from way back in 2004 (after a bit of research, it looks like January, and that I paid about $200 for it), that still works pretty darn good, although the controllers are a bit ... discouraging.&lt;/p&gt;
 &lt;p&gt;My PlayStation 3 is also backwards compatible, so between the two I should be able to play my 52 PlayStation 2 (plus those I purchase in the future, as purchase I will)&amp;nbsp;games for many years into the future.&lt;/p&gt;
 &lt;p&gt;Yet for some reason a couple of months ago I promised myself that when I next received a check from Google I&#39;d use that $100 to purchase a new PlayStation 2.&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>Review: Odin Sphere</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Odin-Sphere/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Odin-Sphere/</link>
       <pubDate>Sun, 12 Sep 2010 14:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Odin-Sphere/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Odin-Sphere/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000IONGU4?tag=strivinglifen-20&#34;&gt;Odin Sphere&lt;/a&gt;, for the Playstation 2.&lt;/p&gt;
 &lt;/div&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title>Onimusha: Dawn of Dreams data</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Onimusha-Dawn-of-Dreams-data/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Onimusha-Dawn-of-Dreams-data/</link>
       <pubDate>Fri, 03 Sep 2010 20:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Onimusha-Dawn-of-Dreams-data/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Onimusha-Dawn-of-Dreams-data/</guid>
       <description>&lt;p&gt;From the archives, I&#39;ve created an &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2010/09/03/OnimushaDawnOfDreams.xsd&#34;&gt;XML Schema&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/OnimushaDawnOfDreams.xml&#34;&gt;XML data file for Onimusha: Dawn of Dreams&lt;/a&gt;, for the Playstation 2. Currently the data only includes armor leveling information, from level 1 to 100.&lt;/p&gt;
 &lt;p&gt;The data comes from an OpenDocument Spreadsheet (OnimushaDawnofDreams.ods) from way back in May of 2006.&lt;/p&gt;
 &lt;p&gt;My characters and core weapons being completely maxed (not to mention souls), I may decide to replay the game to track this information as well, or just upgrade weapons.&lt;/p&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Odin Sphere: Character data file</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Odin-Sphere-Character-data-file/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Odin-Sphere-Character-data-file/</link>
       <pubDate>Fri, 30 Jul 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Odin-Sphere-Character-data-file/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Odin-Sphere-Character-data-file/</guid>
       <description>&lt;p&gt;Similar to my &lt;a href=&#34;http://strivinglife.com/words/post/Resonance-of-Fate-General-data-file.aspx&#34;&gt;Resonance of Fate data file&lt;/a&gt;&amp;nbsp;and &lt;a href=&#34;http://strivinglife.com/words/post/Muramasa-The-Demon-Blade-Complete-weapon-listing.aspx&#34;&gt;Muramasa demon blade listing&lt;/a&gt;, I&#39;ve begun work on converting a notepad file&#39;s data to XML.&lt;/p&gt;
 &lt;p&gt;The data is still raw, but ... I plan on completing it as much as I can.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;View/download the Odin Sphere data file&lt;/a&gt;.&lt;/p&gt;

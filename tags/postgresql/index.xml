@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Postgresql on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/postgresql/</link>
-    <description>Recent content in Postgresql on My New Hugo Site</description>
+    <title>Postgresql on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/postgresql/</link>
+    <description>Recent content in Postgresql on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Jun 2007 08:50:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ubuntu Quickie: MySQL and PostgreSQL passwords</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</link>
       <pubDate>Sat, 23 Jun 2007 08:50:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</guid>
       <description>&lt;p&gt;&lt;p&gt;Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.&lt;/p&gt;
 &lt;h3&gt;MySQL&lt;/h3&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mysql -u root
@@ -31,10 +31,10 @@ ALTER USER postgres WITH PASSWORD &amp;lsquo;&lt;strong&gt;&lt;em&gt;password&lt
     
     <item>
       <title>Reference: PostgreSQL 8.2 commands on Ubuntu</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</link>
       <pubDate>Sat, 23 Jun 2007 08:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</guid>
       <description>&lt;p&gt;&lt;p&gt;
 Below are the PostgreSQL 8.2 commands on Ubuntu.
 &lt;/p&gt;
@@ -123,10 +123,10 @@ Copy, Large Object
     
     <item>
       <title>Ubuntu Quickie: Installing MySQL and PostgreSQL</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</link>
       <pubDate>Thu, 21 Jun 2007 21:05:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</guid>
       <description>&lt;p&gt;For SQL on Ubuntu Linux, I decided it was easiest to just use the repositories to just install MySQL and PostgreSQL.&lt;/p&gt;
 &lt;p&gt;There was a couple of reasons for this. First, MySQL docs recommend it.&lt;!--adsense--&gt;&lt;/p&gt;
 &lt;p&gt;Second, there&#39;s not that much that I really want to configure in SQL.&lt;/p&gt;
@@ -161,10 +161,10 @@ Copy, Large Object
     
     <item>
       <title>PHP Forum Software Showdown Part 6: phpBB</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
+      <link>http://jamesskemp.github.io/blog/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
       <pubDate>Sat, 25 Nov 2006 18:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
       <description>&lt;p&gt;It&#39;s that time again. This time, we&#39;ll be looking at &lt;a rel=&#34;external&#34; href=&#34;http://www.phpbb.com/&#34;&gt;phpBB&lt;/a&gt;. &amp;ldquo;phpBB is a high powered, fully scalable, and highly customizable Open Source bulletin board package. phpBB has a user-friendly interface, simple and straightforward administration panel, and helpful FAQ. Based on the powerful PHP server language and your choice of MySQL, MS-SQL, PostgreSQL or Access/ODBC database servers, phpBB is the ideal free community solution for all web sites.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Lot&#39;s of features, so let&#39;s get to it. In this article, we&#39;ll be installing phpBB version 2.0.21, which is the latest version, as of June 9, 2006. A beta version of 3.0 came out a very short period before this article was written, otherwise I don&#39;t know that phpBB would have made it. Anywho, on with it.&lt;/p&gt;
 &lt;h3&gt;File and folder size&lt;/h3&gt;
@@ -212,17 +212,17 @@ TO &lt;strong&gt;phpBB&lt;/strong&gt; IDENTIFIED BY &#39;&lt;strong&gt;phpbb&lt;
 &lt;p&gt;They do have archived files with the changed and patched files only available for download, which is quite nice.&lt;/p&gt;
 &lt;h3&gt;The temporary conclusion&lt;/h3&gt;
 &lt;p&gt;phpBB is pretty much like the others that we&#39;ve reviewed. But, now that we&#39;ve gone over all of them, as far as installation and first impressions, it&#39;s time to dig into them deeper.&lt;/p&gt;
-&lt;p&gt;Stay tuned for the next &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review article, where we start busting heads.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review article, where we start busting heads.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 5: PunBB</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
+      <link>http://jamesskemp.github.io/blog/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
       <pubDate>Fri, 24 Nov 2006 09:00:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
       <description>&lt;p&gt;
 Almost there. This time, we&amp;#39;ll be looking at &lt;a href=&#34;http://www.punbb.org/&#34;&gt;PunBB&lt;/a&gt;. First, I did donate to PunBB development some time ago. At the time, I liked PunBB, and received some great support. It&amp;#39;s been sometime since that time, so I don&amp;#39;t know how things stand.
 &lt;/p&gt;
@@ -363,22 +363,22 @@ They do have archived files with the changed files only available for download, 
 PunBB is pretty much like the others that we&amp;#39;ve reviewed. Until we get into the last forum, and start comparing all six, we&amp;#39;ll leave it at that.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
-&lt;p&gt;In previous guides, we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
+&lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
 &lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
 &lt;p&gt;Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)&lt;/p&gt;
 &lt;ul&gt;
@@ -418,7 +418,7 @@ Stay tuned for the next &lt;a href=&#34;http://replace-this-with-your-hugo-site.
 &lt;p&gt;Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it&#39;s not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.&lt;/p&gt;
 &lt;p&gt;This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.&lt;/p&gt;
 &lt;h3&gt;Hooking up PHP 4.4.2&lt;/h3&gt;
-&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
+&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
 &lt;p&gt;Since we&#39;ve already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it&#39;s just a matter of hooking up Apache 2.0.x to recognize it.&lt;/p&gt;
 &lt;p&gt;First, we&#39;ll need to make sure we&#39;ve got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.&lt;/p&gt;
 &lt;p&gt;Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.&lt;/p&gt;
@@ -486,19 +486,19 @@ Stay tuned for the next &lt;a href=&#34;http://replace-this-with-your-hugo-site.
 &lt;p&gt;So, let the hardest part begin.&lt;/p&gt;
 &lt;h3&gt;Connecting to MySQL and PostgreSQL&lt;/h3&gt;
 &lt;p&gt;Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you&#39;re all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it&#39;s own requests (via the php.ini file).&lt;/p&gt;
-&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
+&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
 &lt;h3&gt;Coming in Part 4 ...&lt;/h3&gt;
 &lt;p&gt;In Part 4, I&#39;ll be going over how to create the batch files that we&#39;ll need to work with the httpd.conf and php.ini files that we&#39;ve created. While I could detail it here, better to just put it in it&#39;s own article/post, as that makes things much easier (if not for you, then at least for me ;)).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sun, 19 Mar 2006 06:18:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;Having already &lt;a href=&#34;http://strivinglife.com/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;added MySQL support for ColdFusion MX&lt;/a&gt;, it&#39;s time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we&#39;ll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we&#39;ll need to install some additional features to ColdFusion MX.&lt;/p&gt;
 &lt;p&gt;(This guide assumes you&#39;ve already &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed PostgreSQL&lt;/a&gt;.)&lt;/p&gt;
 &lt;h3&gt;Downloading and installing the JDBC Driver&lt;/h3&gt;
@@ -549,11 +549,11 @@ CREATE UNIQUE INDEX TestDatabase_TestColumn1_TestColumn2_uidx ON TestDatabase (T
     
     <item>
       <title>Installing PostgreSQL on a local Windows-based, Apache, server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Wed, 15 Mar 2006 23:32:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;While we&#39;ve already &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;setup MySQL&lt;/a&gt;, another popular SQL server is PostgreSQL. Like MySQL, PostgreSQL is absolutely free, and will allow us to create databases on our local server.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</guid>
+      <description>&lt;p&gt;While we&#39;ve already &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;setup MySQL&lt;/a&gt;, another popular SQL server is PostgreSQL. Like MySQL, PostgreSQL is absolutely free, and will allow us to create databases on our local server.&lt;/p&gt;
 &lt;h3&gt;Downloading PostgreSQL&lt;/h3&gt;
 &lt;p&gt;We&#39;ll be downloading the most current version of PostgreSQL, which is 8.1.3 at the time of this writing. You can download the installation file from &lt;a rel=&#34;external&#34; href=&#34;http://www.postgresql.org/ftp/win32&#34;&gt;http://www.postgresql.org/ftp/win32&lt;/a&gt;. We&#39;ll want to download the regular zip file, called postgresql-8.1.3-1.zip, and weighing in at 21 MB. You&#39;ll want to save this to the same folder you save your other installers &amp;ndash; c:\home\downloads\ if you&#39;ve been following along.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
@@ -605,16 +605,16 @@ pg_close($connection);
 ?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Save this to your default Web server directory &amp;ndash; c:\home\. Now visit &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost/postgresqlconnection.php&#34;&gt;http://localhost/postgresqlconnection.php&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Congrats, you should see &#34;Connected to PostgreSQL.&#34; and have now setup PostgreSQL to work with PHP.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A local, Apache Web server, on a Windows XP computer</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
+      <link>http://jamesskemp.github.io/blog/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
       <pubDate>Mon, 27 Feb 2006 03:23:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
       <description>&lt;p&gt;My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I&#39;ve decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I&#39;ve opted to use it as the core, instead of IIS, or the like.&lt;/p&gt;
 &lt;p&gt;I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case. I do have copies of the versions I&#39;ve installed below, and would be happy to provide those copies that no longer exist elsewhere; just ask.&lt;/p&gt;
 &lt;h3&gt;Our local Web server uses the following technology.&lt;/h3&gt;
@@ -628,23 +628,23 @@ pg_close($connection);
 &lt;/li&gt;
 &lt;li&gt;Apache 2.0.59 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;.htaccess file 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Perl&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Perl-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;ActivePerl 5.8.7.815&lt;/a&gt;, ActivePerl 5.8.8.817&lt;/li&gt;
 &lt;/ul&gt;
@@ -661,7 +661,7 @@ pg_close($connection);
 &lt;li&gt;&lt;strong&gt;PHP&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-PHP-(442-to-444-and-514-to-520).aspx&#34;&gt;Upgrading PHP 4.x and/or PHP 5.x&lt;/a&gt; (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Python-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;Changing our PHP directory name/location&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -678,7 +678,7 @@ pg_close($connection);
 &lt;li&gt;MySQL 4.1.18: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.net/wordpress/?p=69&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/2006/06/20/154/upgrading-phpmyadmin-270-pl2-to-281-on-a-local-windows-based-apache-server/&#34;&gt;phpMyAdmin 2.8.1&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-Administrator-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;MySQL Administrator 1.1.9&lt;/a&gt;&lt;/li&gt;
@@ -687,44 +687,44 @@ pg_close($connection);
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ColdFusion&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Versioning control&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Subversion, TortoiseSVN and Dreamweaver 8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
