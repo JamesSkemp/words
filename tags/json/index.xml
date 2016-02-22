@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/json/</link>
+    <description>Recent content in Json on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Jul 2010 14:57:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Function to Parse a Microsoft JSON DateTime returned from a WCF service in JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</link>
+      <pubDate>Sun, 04 Jul 2010 14:57:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</guid>
+      <description>&lt;p&gt;When a DateTime is converted to JSON in a WCF Web service (WebHttp in this particular case) it&#39;s semi-difficult to convert that to something we can use when we return the date to a client via JavaScript. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#34;LastPlayed&#34;:&#34;\/Date(1278187099000-0400)\/&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After almost an hour of research and goofing around with this, I&#39;ve come up with the following, which seems to work just fine on Internet Explorer 8, Firefox 3.6, and Chrome 5.0.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;function parseMicrosoftJsonDateTime(content) {
+    try {
+        content = content.replace(/\//g, &#39;&#39;);
+        var contentDate = eval(&#39;new &#39; + content);
+        return contentDate.toDateString() + &#39; &#39; + contentDate.toTimeString();
+    } catch (ex) {
+        return content;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see if it fails at any point I just return whatever was passed. Otherwise since the only thing bothering us are the two /s, I&#39;m first removing all of those. Then I&#39;m creating a new variable, which ends up call new Date(x). This date variable can then be converted to a string via standard JavaScript functionality.&lt;/p&gt;
+&lt;p&gt;There may be a better way to handle this, but this is fairly quick, and works just as I need it to.&lt;/p&gt;
+&lt;h3&gt;Sample outputs&lt;/h3&gt;
+&lt;p&gt;Internet Explorer 8: Sat Jul 3 2010 14:58:18 CDT&lt;/p&gt;
+&lt;p&gt;Chrome 5.0 and Firefox 3.6: Sat Jul 03 2010 14:58:18 GMT-0500 (Central Daylight Time)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this series we&amp;rsquo;ve started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.&lt;/p&gt;
+&lt;p&gt;In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.&lt;/p&gt;
+&lt;p&gt;In this final part we&amp;rsquo;ll be using jQuery to request information from the service, in JSON format, and display that information to users.&lt;/p&gt;
+&lt;h3&gt;Why JSON?&lt;/h3&gt;
+&lt;p&gt;For maximum flexibility, and because I myself will be hosting the services on their own domain/sub-domain, we&amp;rsquo;ll be taking advantage of jQuery&amp;rsquo;s ability to make JSONP - JSON with Padding - requests, allowing us to pull data, no matter what our domain.&lt;/p&gt;
+&lt;h3&gt;Getting started with jQuery&lt;/h3&gt;
+&lt;p&gt;jQuery is such an advanced library that I can&amp;rsquo;t cover much in this article. See &lt;a rel=&#34;external&#34; href=&#34;http://jquery.com/&#34;&gt;the official jQuery site&lt;/a&gt; for more information, including tutorials. For our purposes you&amp;rsquo;ll want to download a copy of&amp;nbsp;jQuery 1.4.2 (or whatever the current release is, assuming things haven&amp;rsquo;t changed too terribly since the time of this writing) for production.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll then create a very simple HTML page that we&amp;rsquo;ll modify for our tutorial.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;&lt;a href=&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;html xmlns=&amp;ldquo;&lt;a href=&#34;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Test page&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;ldquo;pulledData&amp;rdquo;&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo; src=&amp;ldquo;&lt;a href=&#34;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#34;&gt;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/a&gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo;&amp;gt;
+    function processData(data) {
+        try {
+            // JavaScript will go either here - in the &lt;em&gt;function&lt;/em&gt;
+        } catch (ex) {
+            alert(&amp;ldquo;Error: &amp;ldquo; + ex.Message);
+        }
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;try {
+    if ($) {
+        // or JavaScript will go here - in the *request*
+    }
+} catch (ex) {
+    alert(&amp;quot;Error: &amp;quot; + ex.Message);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Verifying the service can be called with jQuery, on the same domain&lt;/h3&gt;
+&lt;p&gt;With our base jQuery file, let&amp;rsquo;s verify the Web service, by making a simple request for a loan: &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; (remember to change the port as needed). Assuming this is running fine, which it should be, we can move onto attempting to query this with jQuery.&lt;/p&gt;
+&lt;p&gt;In the same project as the above service, add our base html file, from above, and add the following to the second block, making sure that the port is correct.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;$.ajax({
+    type: &amp;ldquo;GET&amp;rdquo;,
+    url: &amp;lsquo;&lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&lt;/a&gt;,
+    dataType: &amp;lsquo;xml&amp;rsquo;,
+    success: function (data) { processData(data); }
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then add the following to the function.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;hey&amp;rsquo;);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So in our first block we&amp;rsquo;re calling the service once the page is ready, and our function on success. The function then gives a very simple alert, so we easily know that the call has succeeded. If we run this on the same domain (localhost and a port), we should get the alert message. However, opening it by itself (by double-clicking on it in Windows Explorer) will result in no messages at all.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s tweak this now to use JSON instead. Tweak the second block so that the dataType line is as follows.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;json&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In our function, add, or replace the existing alert, with the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;Loan name: &amp;lsquo; + data.Name);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending upon the name you&amp;rsquo;ve given the loan, you should see an alert message in Chrome or Firefox, with that name. However, if we now try to open this from a different domain, or just via Windows Explorer, we&amp;rsquo;ll see that our loan name is undefined. If we were to look at the response returned from the service, we&amp;rsquo;d see it&amp;rsquo;s blank.&lt;/p&gt;
+&lt;h3&gt;JSONP&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s update the dataType once again.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;jsonp&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Refresh now and nothing happens, on anything. However, if we were to take a look at the response we&amp;rsquo;d see that in fact something is returned, it just happens to be XML, which doesn&amp;rsquo;t help us here. And if we switch the dataType to xml, now we can&amp;rsquo;t use it cross-domain (not to mention we lose out on JSON).&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;The fix, found after hours of research and changing settings, requires modifications to our service.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s change the dataType back to JSONP. Since our request no longer passed application/json as an accept-header, the Web service returns the default format, which happens to be XML, which in turn means nothing works. But we can switch the default format type.&lt;/p&gt;
+&lt;p&gt;Open Web.config in the service and modify the lone standardEndpoint element to the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The important part is the new attribute at the end. Build the service and test it again and you&amp;rsquo;ll find that the jQuery called from the same server now works, while the jQuery from a different domain does not.&lt;/p&gt;
+&lt;p&gt;So we&amp;rsquo;re close, but not quite there.&lt;/p&gt;
+&lt;h3&gt;Localhost no longer&lt;/h3&gt;
+&lt;p&gt;Unfortunately, this is where we can no longer test locally. The missing item is the crossDomainScriptAccessEnabled attribute on the standardEndpoint element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo; crossDomainScriptAccessEnabled=&amp;ldquo;true&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we&amp;rsquo;re authenticated, however, this will horribly fail, which can be shown by just browsing to the service via &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; and getting a message&amp;nbsp;that &amp;ldquo;Cross domain javascript callback is not supported in authenticated services.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;If you have a server that supports it, go ahead and build the service and push it, with those two new attributes. If you don&amp;rsquo;t, change your jQuery url so that it points to services.jamesrskemp.com, and change the name parameter to your email. (Obviously, if you&amp;rsquo;ve pushed the service to your own server, go ahead and use your domain in place of mine.)&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Update: Of course, we can also switch off authentication and be able to access this via localhost again. Just add the following to your Web.config within the System.Web element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;authentication mode=&amp;ldquo;None&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;With that done you can now refresh either the copy on the same domain, or a local copy, and have the service return the loan name passed.&lt;/p&gt;
+&lt;p&gt;Now we can modify our function as follows, to get a semi-nice output:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;var outputContent = &amp;ldquo;&amp;rdquo;;
+outputContent += &amp;ldquo;Loan name: &amp;ldquo; + data.Name + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+outputContent += &amp;ldquo;Starting balance: &amp;ldquo; + data.Total + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+$.each(data.Payments, function (i, payment) { outputContent += &amp;ldquo;After a payment of &amp;rdquo; + payment.Total + &amp;ldquo;, the remaining amount is $&amp;rdquo; + payment.LoanRemaining + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;});
+$(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/ServiceExamples/FormulasService_Loan.htm&#34;&gt;see this in action&lt;/a&gt;&amp;nbsp;on my media sub-domain,&amp;nbsp;with possible improvements after this article is finished.&lt;/p&gt;
+&lt;p&gt;And with that, you should have more than enough information to get cracking on your own services, with your own jQuery implementations.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

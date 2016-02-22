@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Regular Expression tester - ASP.NET - My New Hugo Site</title>
+    <meta property='og:title' content="Regular Expression tester - ASP.NET - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Regular-Expression-tester-ASPNET/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2008-05-04T21:50:00-05:00">
+        <meta itemprop="headline" content="Regular Expression tester - ASP.NET">
+        <meta itemprop="description" content="I&#39;ve posted code in ColdFusion and JavaScript for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. RegularExpression.aspx &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt; &nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt; &nbsp;&nbsp;form { &nbsp;&nbsp;&nbsp;margin:0; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;} &nbsp;&nbsp;form label, .label_kludge { &nbsp;&nbsp;&nbsp;display:block; &nbsp;&nbsp;&nbsp;float:left; &nbsp;&nbsp;&nbsp;width:180px; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;&nbsp;margin:5px 0 0; &nbsp;&nbsp;&nbsp;text-align:right; &nbsp;&nbsp;} &nbsp;&nbsp;form input, form textarea, form select { &nbsp;&nbsp;&nbsp;width:200px; &nbsp;&nbsp;&nbsp;margin:5px 0 0 10px; &nbsp;&nbsp;} &nbsp;&nbsp;textarea { &nbsp;&nbsp;&nbsp;overflow:auto; &nbsp;&nbsp;} &nbsp;&nbsp;form br { &nbsp;&nbsp;&nbsp;clear:left; &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &nbsp;&lt;h1&gt;ASP.NET 3.5 Regular Expression Tester&lt;/h1&gt; &nbsp;&nbsp;&nbsp; &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;div&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:Label ID=&quot;lbl_RegularExpression&quot; runat=&quot;server&quot; Text=&quot;Regular Expression:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;RegularExpression&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:TextBox ID=&quot;RegularExpression&quot; runat=&quot;server&quot; Width=&quot;350&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator1&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;RegularExpression&quot; Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a regular expression.&quot; SetFocusOnError=&quot;True&quot;&gt;You &nbsp;&nbsp;must enter a regular expression.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_TestString&quot; runat=&quot;server&quot; Text=&quot;Test String:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;TestString&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:TextBox ID=&quot;TestString&quot; runat=&quot;server&quot; Width=&quot;350px&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator2&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a string to test the regular expression against.&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;TestString&quot;&gt;You &nbsp;&nbsp;must enter a string to test the regular expression against.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_CaseSensitive&quot; runat=&quot;server&quot; Text=&quot;Case Sensitive:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;CaseSensitive&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:CheckBox ID=&quot;CaseSensitive&quot; runat=&quot;server&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;span class=&quot;label_kludge&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;asp:Button ID=&quot;btn_Test&quot; &nbsp;&nbsp;&nbsp;runat=&quot;server&quot; Text=&quot;Test&quot; onclick=&quot;btn_Test_Click&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_Results&quot; runat=&quot;server&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/div&gt; &nbsp;&nbsp;&nbsp; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; RegularExpression.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.Text.RegularExpressions; public partial class _Default : System.Web.UI.Page { &nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e) { &nbsp;&nbsp;if (this.IsPostBack) { &nbsp;&nbsp;&nbsp;Boolean MatchCheck; &nbsp;&nbsp;&nbsp;if (this.CaseSensitive.Checked) { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text); &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text, RegexOptions.IgnoreCase); &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;if (MatchCheck) { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: match found&quot;; &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: no match found&quot;; &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; } &nbsp;protected void btn_Test_Click(object sender, EventArgs e) {&nbsp; &nbsp;} } See it in action!">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Regular-Expression-tester-ASPNET/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-05-04T21:50:00-05:00">Sun, May 4, 2008</time>
+          <h1 class="article-title">Regular Expression tester - ASP.NET</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+I&#39;ve posted code in <a href="/words/post/Regular-Expression-tester-ColdFusion.aspx" target="_blank">ColdFusion</a> and <a href="/words/post/Regular-Expression-tester-JavaScript.aspx" target="_blank">JavaScript</a> for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. 
+</p>
+<h3>RegularExpression.aspx</h3>
+<blockquote>
+    <p>
+    &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; 
+    </p>
+    <p>
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; 
+    </p>
+    <p>
+    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;<br />
+    &lt;head runat=&quot;server&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt;<br />
+    &nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt;<br />
+    &nbsp;&nbsp;form {<br />
+    &nbsp;&nbsp;&nbsp;margin:0;<br />
+    &nbsp;&nbsp;&nbsp;padding:0;<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;form label, .label_kludge {<br />
+    &nbsp;&nbsp;&nbsp;display:block;<br />
+    &nbsp;&nbsp;&nbsp;float:left;<br />
+    &nbsp;&nbsp;&nbsp;width:180px;<br />
+    &nbsp;&nbsp;&nbsp;padding:0;<br />
+    &nbsp;&nbsp;&nbsp;margin:5px 0 0;<br />
+    &nbsp;&nbsp;&nbsp;text-align:right;<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;form input, form textarea, form select {<br />
+    &nbsp;&nbsp;&nbsp;width:200px;<br />
+    &nbsp;&nbsp;&nbsp;margin:5px 0 0 10px;<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;textarea {<br />
+    &nbsp;&nbsp;&nbsp;overflow:auto;<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;form br {<br />
+    &nbsp;&nbsp;&nbsp;clear:left;<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;&nbsp; &lt;/style&gt;<br />
+    &lt;/head&gt;<br />
+    &lt;body&gt;<br />
+    &nbsp;&lt;h1&gt;ASP.NET 3.5 Regular Expression Tester&lt;/h1&gt;<br />
+    &nbsp;&nbsp;&nbsp; &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp; &lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp; <br />
+    &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:Label ID=&quot;lbl_RegularExpression&quot; runat=&quot;server&quot; Text=&quot;Regular Expression:&quot; <br />
+    &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;RegularExpression&quot;&gt;&lt;/asp:Label&gt;<br />
+    &nbsp;&nbsp;&lt;asp:TextBox ID=&quot;RegularExpression&quot; runat=&quot;server&quot; Width=&quot;350&quot;&gt;&lt;/asp:TextBox&gt;<br />
+    &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator1&quot; runat=&quot;server&quot; <br />
+    &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;RegularExpression&quot; Display=&quot;Dynamic&quot; <br />
+    &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a regular expression.&quot; SetFocusOnError=&quot;True&quot;&gt;You <br />
+    &nbsp;&nbsp;must enter a regular expression.&lt;/asp:RequiredFieldValidator&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_TestString&quot; runat=&quot;server&quot; Text=&quot;Test String:&quot; <br />
+    &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;TestString&quot;&gt;&lt;/asp:Label&gt;<br />
+    &nbsp;&nbsp;&nbsp; <br />
+    &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:TextBox ID=&quot;TestString&quot; runat=&quot;server&quot; Width=&quot;350px&quot;&gt;&lt;/asp:TextBox&gt;<br />
+    &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator2&quot; runat=&quot;server&quot; <br />
+    &nbsp;&nbsp;&nbsp;Display=&quot;Dynamic&quot; <br />
+    &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a string to test the regular expression against.&quot; <br />
+    &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;TestString&quot;&gt;You <br />
+    &nbsp;&nbsp;must enter a string to test the regular expression against.&lt;/asp:RequiredFieldValidator&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_CaseSensitive&quot; runat=&quot;server&quot; Text=&quot;Case Sensitive:&quot; <br />
+    &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;CaseSensitive&quot;&gt;&lt;/asp:Label&gt;<br />
+    &nbsp;&nbsp;&lt;asp:CheckBox ID=&quot;CaseSensitive&quot; runat=&quot;server&quot; /&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&lt;span class=&quot;label_kludge&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;asp:Button ID=&quot;btn_Test&quot; <br />
+    &nbsp;&nbsp;&nbsp;runat=&quot;server&quot; Text=&quot;Test&quot; onclick=&quot;btn_Test_Click&quot; /&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_Results&quot; runat=&quot;server&quot;&gt;&lt;/asp:Label&gt;<br />
+    &nbsp;&nbsp;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&nbsp; <br />
+    &nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp; &lt;/form&gt;<br />
+    &lt;/body&gt;<br />
+    &lt;/html&gt; 
+    </p>
+</blockquote>
+<h3>RegularExpression.aspx.cs</h3>
+<blockquote>
+    <p>
+    using System;<br />
+    using System.Configuration;<br />
+    using System.Data;<br />
+    using System.Linq;<br />
+    using System.Web;<br />
+    using System.Web.Security;<br />
+    using System.Web.UI;<br />
+    using System.Web.UI.HtmlControls;<br />
+    using System.Web.UI.WebControls;<br />
+    using System.Web.UI.WebControls.WebParts;<br />
+    using System.Xml.Linq;<br />
+    using System.Text.RegularExpressions; 
+    </p>
+    <p>
+    public partial class _Default : System.Web.UI.Page <br />
+    {<br />
+    &nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e) {<br />
+    &nbsp;&nbsp;if (this.IsPostBack) {<br />
+    &nbsp;&nbsp;&nbsp;Boolean MatchCheck;<br />
+    &nbsp;&nbsp;&nbsp;if (this.CaseSensitive.Checked) {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text);<br />
+    &nbsp;&nbsp;&nbsp;} else {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text, RegexOptions.IgnoreCase);<br />
+    &nbsp;&nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;&nbsp;if (MatchCheck) {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: match found&quot;;<br />
+    &nbsp;&nbsp;&nbsp;} else {<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: no match found&quot;;<br />
+    &nbsp;&nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;}<br />
+    &nbsp;&nbsp;&nbsp; }<br />
+    &nbsp;protected void btn_Test_Click(object sender, EventArgs e) {&nbsp;<br />
+    &nbsp;}<br />
+    } 
+    </p>
+</blockquote>
+<h3>See it in action!</h3>
+<p>
+Want to see it in action? You can do so on <a href="http://jamesrskemp.com/testing/asp.net/RegularExpression.aspx" target="_blank">JamesRSkemp.com</a>. 
+</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="tag">.net</a> <a href="http://replace-this-with-your-hugo-site.com/tags/c#" class="tag">c#</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fRegular-Expression-tester-ASPNET%2f&t=Regular%20Expression%20tester%20-%20ASP.NET" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fRegular-Expression-tester-ASPNET%2f&text=Regular%20Expression%20tester%20-%20ASP.NET&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fRegular-Expression-tester-ASPNET%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fRegular-Expression-tester-ASPNET%2f&title=Regular%20Expression%20tester%20-%20ASP.NET" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Tic-Tac-Toe in Visual Basic 6 - My New Hugo Site</title>
+    <meta property='og:title' content="Tic-Tac-Toe in Visual Basic 6 - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2010-07-24T12:00:00-05:00">
+        <meta itemprop="headline" content="Tic-Tac-Toe in Visual Basic 6">
+        <meta itemprop="description" content="Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6. Below is the code from MainWin.frm, which should be sufficient to create the application. This code is covered by a Creative Commons Attribution-NonCommercial 3.0 license. VERSION 5.00 Begin VB.Form Form1 Caption = &#34;Tic-Tac-Toe&#34; ClientHeight = 3255 ClientLeft = 4410 ClientTop = 3255 ClientWidth = 4080 LinkTopic = &#34;Form1&#34; ScaleHeight = 3255 ScaleWidth = 4080 Begin VB.CommandButton AboutThis Caption = &#34;&amp;About&#34; Height = 495 Left = 2760 TabIndex = 12 Top = 2760 Width = 1215 End Begin VB.CommandButton Command10 Caption = &#34;&amp;Clear/Restart&#34; Height = 495 Left = 1440 TabIndex = 9 Top = 2760 Width = 1215 End Begin VB.CommandButton Command9 Caption = &#34;Empty&#34; Height = 495 Left = 2760 TabIndex = 8 Top = 2040 Width = 1215 End Begin VB.CommandButton Command8 Caption = &#34;Empty&#34; Height = 495 Left = 1440 TabIndex = 7 Top = 2040 Width = 1215 End Begin VB.CommandButton Command7 Caption = &#34;Empty&#34; Height = 495 Left = 120 TabIndex = 6 Top = 2040 Width = 1215 End Begin VB.CommandButton Command6 Caption = &#34;Empty&#34; Height = 495 Left = 2760 TabIndex = 5 Top = 1440 Width = 1215 End Begin VB.CommandButton Command5 Caption = &#34;Empty&#34; Height = 495 Left = 1440 TabIndex = 4 Top = 1440 Width = 1215 End Begin VB.CommandButton Command4 Caption = &#34;Empty&#34; Height = 495 Left = 120 TabIndex = 3 Top = 1440 Width = 1215 End Begin VB.CommandButton Command3 Caption = &#34;Empty&#34; Height = 495 Left = 2760 TabIndex = 2 Top = 840 Width = 1215 End Begin VB.CommandButton Command2 Caption = &#34;Empty&#34; Height = 495 Left = 1440 TabIndex = 1 Top = 840 Width = 1215 End Begin VB.CommandButton Command1 Caption = &#34;Empty&#34; Height = 495 Left = 120 TabIndex = 0 Top = 840 Width = 1215 End Begin VB.Label Label2 Caption = &#34;2) Press &#39;Clear/Restart&#39; to clear the board.&#34;">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2010-07-24T12:00:00-05:00">Sat, Jul 24, 2010</time>
+          <h1 class="article-title">Tic-Tac-Toe in Visual Basic 6</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6.</p>
+<p>Below is the code from MainWin.frm, which should be sufficient to create the application.</p>
+<p>This code is covered by a <a rel="external" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 license</a>.</p>
+<pre class="code"><code class="vb">VERSION 5.00
+Begin VB.Form Form1 
+   Caption         =   "Tic-Tac-Toe"
+   ClientHeight    =   3255
+   ClientLeft      =   4410
+   ClientTop       =   3255
+   ClientWidth     =   4080
+   LinkTopic       =   "Form1"
+   ScaleHeight     =   3255
+   ScaleWidth      =   4080
+   Begin VB.CommandButton AboutThis 
+      Caption         =   "&amp;About"
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   12
+      Top             =   2760
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command10 
+      Caption         =   "&amp;Clear/Restart"
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   9
+      Top             =   2760
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command9 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   8
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command8 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   7
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command7 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   120
+      TabIndex        =   6
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command6 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   5
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command5 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   4
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command4 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   120
+      TabIndex        =   3
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command3 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   2
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command2 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   1
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   "Empty"
+      Height          =   495
+      Left            =   120
+      TabIndex        =   0
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.Label Label2 
+      Caption         =   "2) Press 'Clear/Restart' to clear the board."
+      Height          =   255
+      Left            =   120
+      TabIndex        =   11
+      Top             =   360
+      Width           =   3855
+   End
+   Begin VB.Label Label1 
+      Caption         =   "1) Click once for an 'X', twice for an 'O'."
+      Height          =   255
+      Left            =   120
+      TabIndex        =   10
+      Top             =   120
+      Width           =   3855
+   End
+End
+Attribute VB_Name = "Form1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub AboutThis_Click()
+ MsgBox "Copyright 2003 James Skemp - http://jamesrskemp.net/", vbOKOnly, About
+End Sub
+
+Private Sub Command1_Click()
+ If Command1.Caption = "Empty" Then
+  Command1.Caption = "X"
+ ElseIf Command1.Caption = "X" Then
+  Command1.Caption = "O"
+ Else: Command1.Caption = "Empty"
+ End If
+End Sub
+
+
+Private Sub Command10_Click()
+ Command1.Caption = "Empty"
+ Command2.Caption = "Empty"
+ Command3.Caption = "Empty"
+ Command4.Caption = "Empty"
+ Command5.Caption = "Empty"
+ Command6.Caption = "Empty"
+ Command7.Caption = "Empty"
+ Command8.Caption = "Empty"
+ Command9.Caption = "Empty"
+End Sub
+
+Private Sub Command11_Click()
+
+End Sub
+
+Private Sub Command2_Click()
+ If Command2.Caption = "Empty" Then
+  Command2.Caption = "X"
+ ElseIf Command2.Caption = "X" Then
+  Command2.Caption = "O"
+ Else: Command2.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command3_Click()
+ If Command3.Caption = "Empty" Then
+  Command3.Caption = "X"
+ ElseIf Command3.Caption = "X" Then
+  Command3.Caption = "O"
+ Else: Command3.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command4_Click()
+ If Command4.Caption = "Empty" Then
+  Command4.Caption = "X"
+ ElseIf Command4.Caption = "X" Then
+  Command4.Caption = "O"
+ Else: Command4.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command5_Click()
+ If Command5.Caption = "Empty" Then
+  Command5.Caption = "X"
+ ElseIf Command5.Caption = "X" Then
+  Command5.Caption = "O"
+ Else: Command5.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command6_Click()
+ If Command6.Caption = "Empty" Then
+  Command6.Caption = "X"
+ ElseIf Command6.Caption = "X" Then
+  Command6.Caption = "O"
+ Else: Command6.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command7_Click()
+ If Command7.Caption = "Empty" Then
+  Command7.Caption = "X"
+ ElseIf Command7.Caption = "X" Then
+  Command7.Caption = "O"
+ Else: Command7.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command8_Click()
+ If Command8.Caption = "Empty" Then
+  Command8.Caption = "X"
+ ElseIf Command8.Caption = "X" Then
+  Command8.Caption = "O"
+ Else: Command8.Caption = "Empty"
+ End If
+
+End Sub
+
+Private Sub Command9_Click()
+ If Command9.Caption = "Empty" Then
+  Command9.Caption = "X"
+ ElseIf Command9.Caption = "X" Then
+  Command9.Caption = "O"
+ Else: Command9.Caption = "Empty"
+ End If
+
+End Sub
+
+</code></pre>
+<p>Honestly, I like <a href="http://strivinglife.com/words/post/Pascal-Programming-JRSs-Tic-Tac-Toe.aspx">the one I did in Pascal</a> much better, since the computer is fairly good.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/visual%20basic" class="tag">visual basic</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fTic-Tac-Toe-in-Visual-Basic-6%2f&t=Tic-Tac-Toe%20in%20Visual%20Basic%206" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fTic-Tac-Toe-in-Visual-Basic-6%2f&text=Tic-Tac-Toe%20in%20Visual%20Basic%206&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fTic-Tac-Toe-in-Visual-Basic-6%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fTic-Tac-Toe-in-Visual-Basic-6%2f&title=Tic-Tac-Toe%20in%20Visual%20Basic%206" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioform on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/bioform/</link>
+    <description>Recent content in Bioform on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Apr 2003 01:01:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/bioform/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bioform 0.99g: Basic Worms</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Bioform-099g-Basic-Worms/</link>
+      <pubDate>Thu, 17 Apr 2003 01:01:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Bioform-099g-Basic-Worms/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The following covers the following worms in Bioform 0.99g.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Worms:
+&lt;ul&gt;
+&lt;li&gt;Spiral Worm&lt;/li&gt;
+&lt;li&gt;Curl Worm&lt;/li&gt;
+&lt;li&gt;Double Spiral&lt;/li&gt;
+&lt;li&gt;Predef Worm (not yet contained here)&lt;/li&gt;
+&lt;li&gt;Worm Predef (not yet contained here)&lt;/li&gt;
+&lt;li&gt;Form Worm&lt;/li&gt;
+&lt;li&gt;TwoD Worm&lt;/li&gt;
+&lt;li&gt;Torus Spline&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configs:
+&lt;ul&gt;
+&lt;li&gt;Fan&lt;/li&gt;
+&lt;li&gt;Wheel&lt;/li&gt;
+&lt;li&gt;Trilobyt&lt;/li&gt;
+&lt;li&gt;Anemone&lt;/li&gt;
+&lt;li&gt;Horn&lt;/li&gt;
+&lt;li&gt;Hull&lt;/li&gt;
+&lt;li&gt;Cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table style=&#34;width: 100%; border-collapse: collapse;&#34; border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34; align=&#34;center&#34; bordercolor=&#34;#c0c0c0&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;none&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Fan&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Wheel&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Trilobyt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Curl Worm&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Double Spiral&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Form Worm&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;TwoD Worm&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Torus Spline&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Fan.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Wheel.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Trilobyt.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;none&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Fan&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Wheel&lt;/td&gt;
+&lt;td width=&#34;20%&#34; align=&#34;center&#34;&gt;Trilobyt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table id=&#34;AutoNumber1&#34; style=&#34;width: 100%; border-collapse: collapse;&#34; border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34; bordercolor=&#34;#c0c0c0&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;none&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Anemone&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Horn&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Hull&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Cluster&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Curl Worm&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Double Spiral&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Form Worm&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;TwoD Worm&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Torus Spline&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Anemone.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Horn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Hull.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Cluster.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;none&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Anemone&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Horn&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Hull&lt;/td&gt;
+&lt;td width=&#34;17%&#34; align=&#34;center&#34;&gt;Cluster&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Select Additional Images:&lt;/p&gt;
+&lt;table id=&#34;AutoNumber2&#34; style=&#34;width: 100%; border-collapse: collapse;&#34; border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Curl Worm - Fan - Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_Fan_SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Curl Worm - Fan &amp;amp; Horn&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_FanHorn.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Curl Worm - Fan &amp;amp; Horn - Torus Spline&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_FanHorn_TorusSpline.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Curl Worm - Fan &amp;amp; Horn &amp;amp; Cluster - Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_FanHornCluster_SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Curl Worm - Fan &amp;amp; Horn &amp;amp; Cluster - SpiralWorm-Spik1&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm_FanHornCluster_SpiralWorm-Spik1.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;CurlWorm-Spik1 - Fan &amp;amp; Horn &amp;amp; Cluster - Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm-Spik1_FanHornCluster_SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Spiral Worm - Fan - Curl Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Fan_CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Spiral Worm - Fan - TwoD Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Fan_TwoDWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Spiral Worm - Horn - Curl Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Horn_CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Spiral Worm - Horn - Double Spiral&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm_Horn_DoubleSpiral.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;Torus Spline - Anemone - Curl Worm&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline_Anemone_CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td width=&#34;25%&#34; align=&#34;center&#34;&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;To sum up:&lt;/p&gt;
+&lt;div&gt;
+&lt;table id=&#34;AutoNumber1&#34; style=&#34;width: 640px; border-collapse: collapse;&#34; border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34; bordercolor=&#34;#c0c0c0&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34;&gt;Spiral Worm&lt;/td&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/SpiralWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/FormWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34;&gt;Form Worm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34;&gt;Curl Worm&lt;/td&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/CurlWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TwoDWorm.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34;&gt;TwoD Worm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34;&gt;Double Spiral&lt;/td&gt;
+&lt;td width=&#34;159&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/DoubleSpiral.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34; bgcolor=&#34;#000000&#34;&gt;&lt;img src=&#34;http://media.jamesrskemp.com/graphics/bioform/basicworms/TorusSpline.jpg&#34; border=&#34;0&#34; alt=&#34;&#34; width=&#34;156&#34; height=&#34;122&#34; /&gt;&lt;/td&gt;
+&lt;td width=&#34;160&#34; align=&#34;center&#34;&gt;Torus Spline&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book Review on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/book-review/</link>
+    <description>Recent content in Book Review on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Aug 2011 14:04:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Professional ASP.NET MVC 3</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-3/</link>
+      <pubDate>Sat, 20 Aug 2011 14:04:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-3/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt;, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Having used ASP.NET MVC since around the time 1.0 was released I was a little interested in what Professional ASP.NET MVC 3 would bring to someone like myself. Would this book provide enough new content to someone like me who&amp;rsquo;s tried to keep up on the framework? So when I was contacted by someone at Wiley to receive a copy for review I was of course interested.&lt;/p&gt;
+&lt;p&gt;The following review will take into consideration my particular experience with the framework. For new users I highly recommend you stick with the music store tutorial available from the official ASP.NET MVC Web site. Unlike &lt;a href=&#34;http://strivinglife.com/words/post/Review-Professional-ASPNET-MVC-10.aspx&#34;&gt;Professional ASP.NET MVC 1.0&lt;/a&gt; this book does not contain a full tutorial to get you started. Also, this is one of my longer reviews, so if you just want to skip ahead the last three chapters provide a summary of my thoughts.&lt;/p&gt;
+&lt;p&gt;Professional ASP.NET MVC 3 consists of 14 chapters and an index, over the course of 400 pages. There are significantly fewer images than one might expect, but don&amp;rsquo;t worry, that&amp;rsquo;s a good thing, as there&amp;rsquo;s a good deal of text and code.&lt;/p&gt;
+&lt;p&gt;Speaking of code you&amp;rsquo;ll find they&amp;rsquo;ve used NuGet to distribute some code examples, but this seems to be based on whether the author choose to use it than being something consistent throughout the book. (I think you too will know which author wrote particular chapters/sections based upon whether NuGet code is available.) Speaking of authors there are four who worked together on this book, and I was pleasantly surprised to see that each chapter&amp;rsquo;s author was noted.&lt;/p&gt;
+&lt;p&gt;As is the case with Wrox books, the physical book itself is top notch.&lt;/p&gt;
+&lt;p&gt;Given that this version of the book isn&amp;rsquo;t for beginners I was a little alarmed after reading chapters 1 and 2, as they contained a large amount of introductory content within.&amp;nbsp;Chapter 3 finally started including some newer information within, but again there was still a lot of introductory content contained within. I&amp;rsquo;ve noted that chapter 4 seems to go back to the review of introductory topics, like chapter 1 and 2.&lt;/p&gt;
+&lt;p&gt;In fact, I would argue that it isn&amp;rsquo;t until chapter 7 that we start getting into the more &amp;lsquo;professional&amp;rsquo; topics, with information about securing your application (including a note about vulnerabilities with MVC 2 code, which I hadn&amp;rsquo;t seen mentioned previously). I also found chapter 8, regarding AJAX, to be a rather great chapter.&lt;/p&gt;
+&lt;p&gt;Chapter 9 takes us back to more introductory topics when it discusses routing, but it does contain a deeper look into more advanced routing, and is written by Phil Haack, so you couldn&amp;rsquo;t ask for much more.&lt;/p&gt;
+&lt;p&gt;Chapter 10 covers NuGet, but outside of creating and distributing packages (which most people won&amp;rsquo;t do), the information can easily be found in introductory tutorials.&lt;/p&gt;
+&lt;p&gt;And now we get to the part where the more advanced topics are covered. Chapters 11 through 13 cover dependency injection, unit testing, and extending MVC. For the first two these are items which &amp;lsquo;professional&amp;rsquo; developers should be using, according to some schools of thought. However, if you&amp;rsquo;ve already researched these items and made the decision not to go down this path (at this time or ever), these chapters won&amp;rsquo;t sway you.&lt;/p&gt;
+&lt;p&gt;Chapter 11 could really benefit with a unified example, and chapter 12&amp;rsquo;s shining point are the ASP.NET MVC-specific tips and tricks. Chapter 13 covers the extendability of MVC, but it is my opinion that the majority of people won&amp;rsquo;t have to go down this route very often, if it all.&lt;/p&gt;
+&lt;p&gt;Finally we get to the last chapter, chapter 14. The title, &amp;ldquo;Advanced Topics,&amp;rdquo; would work much better as a section. Instead we have a number of topics consolidated into one chapter instead of mini-chapters for each. What&amp;rsquo;s really telling is the first chapter where we read that &amp;ldquo;[t]here are a lot of really cool advanced topics we glossed over to avoid getting lost in the weeds as we covered the fundamentals of ASP.NET MVC.&amp;rdquo; Is this an ASP.NET MVC fundamentals, or professional book?&lt;/p&gt;
+&lt;p&gt;Maybe I&amp;rsquo;m reading too much into it, but this really seems to suggest that this isn&amp;rsquo;t so much a &amp;lsquo;professional ASP.NET MVC&amp;rsquo; book, but rather a collection of really cool or advanced features of ASP.NET MVC. So this is not like their &amp;lsquo;Beginning/Professional _&amp;rsquo; series of books, but rather another type altogether. So, unlike that series, just because you&amp;rsquo;ve read the music store tutorial does not necessarily mean that your next step is this book. Instead you&amp;rsquo;re much more likely to find what you need next online, perhaps even on the blogs of the writers. Later, as you try to move closer to the metal you might find use for the techniques covered in this book, but once again you&amp;rsquo;re more likely to find what you need already online (and rare is the need for more than one of the book&amp;rsquo;s topics to be required at that particular moment in time).&lt;/p&gt;
+&lt;p&gt;As such, as much as I&amp;rsquo;d like to give this book 4 stars I find myself needing to give it only 3. I consider this much more of a reference book when you need to start digging in closer to the metal. Perhaps if the book took the music store application (something it starts with and then seems to forget as the book progresses) and built upon it with the more advanced information contained within the book would have a wider appeal. But as it is the content of the book ranges oddly between beginner topics and much more specific information.&lt;/p&gt;
+&lt;p&gt;For these reasons I give &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt; 3 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: jQuery Mobile by Jon Reid</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-jQuery-Mobile-by-Jon-Reid/</link>
+      <pubDate>Sun, 17 Jul 2011 08:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-jQuery-Mobile-by-Jon-Reid/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1449306683?tag=strivinglifen-20&#34;&gt;jQuery Mobile&lt;/a&gt;, written by Jon Reid.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;A great introduction to jQuery Mobile development&lt;/h3&gt;
+&lt;p&gt;While &lt;a rel=&#34;external&#34; href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt; has not yet had a final release, a number of alphas, and most recently a beta, have been released.&lt;/p&gt;
+&lt;p&gt;When a new technology or framework is released it&amp;rsquo;s sometimes difficult to determine when the best time is to start learning about it. Generally I try to stay away until a final version is released, but since this project is tied to jQuery, I can only assume that good things will come from this framework. Additionally, they generally take things fairly slow when they release new versions, so even though this book covers an alpha release of jQuery Mobile, and is therefore a little out of date, I didn&amp;rsquo;t think it would be too difficult to catch up.&lt;/p&gt;
+&lt;p&gt;And indeed it was not. Working through this small book over the course of a week, using the most recent release of jQuery Mobile, required the minorest of changes. In fact the only thing that really jumps out at me is that the back button is not enabled by default, per a recent change.&lt;/p&gt;
+&lt;p&gt;The contents of the book get you started with jQuery Mobile, assuming some very basic knowledge of jQuery. It starts with an introduction of the framework, then moves onto the structure of your content, page elements, theming, interacting with jQuery Mobile via JavaScript, and finally ends with a fully functional Twitter-based application.&lt;/p&gt;
+&lt;p&gt;Within the first three chapters I had ported some of my own content over to a jQuery Mobile application, so you can easily be up-and-running after just a few hours. However, the creation of an actual application during the last chapter was extremely beneficial, as it suggests a development plan for creating your own applications.&lt;/p&gt;
+&lt;p&gt;While I can&amp;rsquo;t say I&amp;rsquo;ve read any of Jon Reid&amp;rsquo;s works before (his name sounds semi-familiar though), I found his writing to be extremely easy to read.&lt;/p&gt;
+&lt;p&gt;For these reasons I say jQuery Mobile is a great introduction and will easily get you up to speed on the principals behind jQuery Mobile. Despite covering a pre-release version, I highly recommend this to anyone who wants an introduction to jQuery Mobile, given the length and price of the book. I think the principles laid out in this book will continue to serve you during development, so I give this book a 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: The 12 Chinese Animals</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-The-12-Chinese-Animals/</link>
+      <pubDate>Sun, 25 Jul 2010 18:40:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-The-12-Chinese-Animals/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;This is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/184819031X?tag=strivinglifen-20&#34;&gt;The 12 Chinese Animals&lt;/a&gt;, written by Master Zhongxian Wu.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Like everyone who&amp;rsquo;s been to a Chinese restaurant, I&amp;rsquo;m well aware of the 12 animals. Thanks to Philip K. Dick I&amp;rsquo;ve got a couple copies of the I Ching around the house, and enjoyed learning about the Asian philosophies during college.&lt;/p&gt;
+&lt;p&gt;This last aspect of me was pleasantly surprised reading through this short work, as the author does a good job of explaining that there are not only animals for the years one is born, but also for the month, day, and hour. This book touches on their meaning for three of these four, as the daily aspect is seemingly too complex. (Unfortunately, I didn&amp;rsquo;t really get a good idea of where to go if I wanted to find out more, making it hard for me to even call this an introductory work, and a simple search online didn&amp;rsquo;t turn up much either.)&lt;/p&gt;
+&lt;p&gt;I say the book touches upon their meaning because the latter part of the book, which consists of almost 80% of the volume, is basically the same couple of pages repeated, with very minor changes based on the animal. To me, it reads as a simple regurgitation of a formula. To be kinder, it would be hard not to do this, and they do have nice sections at the end containing a position and chant for meditation, and he speaks of the animals relationship to the I Ching.&lt;/p&gt;
+&lt;p&gt;All-in-all, though, unless you share this information with someone else, I have a hard time seeing anyone coming back to this more than once. For that reasoning I must give this book 3 stars of 5.&lt;/p&gt;
+&lt;p&gt;Because of his writing, if the first few chapters were expanded with more historical and philosophical information, I would feel better about giving this 4 stars.&lt;/p&gt;
+&lt;p&gt;I can&amp;rsquo;t be sure whether the physical product I have will be the same as the final product, but it seems fairly certain, so I&amp;rsquo;ll comment briefly on that.&lt;/p&gt;
+&lt;p&gt;The binding of this book seems extremely solid, and the printing is nice and crisp. The pages are nice and smooth, of a slightly thicker width than I would have expected. It&amp;rsquo;s definitely built to last.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: Manufacturing Depression: The Secret History of a Modern Disease</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</link>
+      <pubDate>Fri, 28 May 2010 18:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;This is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1416569790?tag=strivinglifen-20&#34;&gt;Manufacturing Depression: The Secret History of a Modern Disease&lt;/a&gt;, written by Gary Greenberg.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;I selected this book based on the following lines of a highlighted review:&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;He offers a measured dose of philosophy in contemplating whether unhappiness should be regarded as a disease or instead as an essential part of being human. Ultimately, his book is a sobering critique of the marketing wizards who have overhyped the dubious benefits of antidepressants and of an American public all too eager for quick fixes to life&amp;rsquo;s inevitable challenges and disappointments.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Unfortunately, the philosophical aspects are barely touched upon, focusing instead on the historical aspects, and current state of affairs. Despite this, Greenberg&amp;rsquo;s writing style is fairly nice, albeit at times disjointed, making this an interesting read, especially in regards to the history of depression and attempts to treat the disease.&lt;/p&gt;
+&lt;p&gt;For whatever reason, however, it was extremely difficult for me to pick up the book and start reading it, despite enjoying the previous day&amp;rsquo;s chapter(s).&lt;/p&gt;
+&lt;p&gt;Greenberg merely alludes to the philosophical aspects of depression, so I&amp;rsquo;d recommend this book more towards those interested in the historical aspects. Those who believe they suffer from depression and (may) need pills to feel better/normal, may also enjoy reading this book. Despite getting into technical discussions on the body, the book is suited for the average reader.&lt;/p&gt;
+&lt;p&gt;3 of 5 stars as I enjoyed the book while I was reading it, but had a hard time picking it up to read another chapter.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: Rant: An Oral Biography of Buster Casey</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</link>
+      <pubDate>Sun, 25 Apr 2010 18:37:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;This is a book review of &lt;a href=&#34;http://www.amazon.com/dp/0307275833?tag=strivinglifen-20&#34;&gt;Rant: An Oral Biography of Buster Casey&lt;/a&gt;, written by Chuck Palahniuk.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/dp/0307275833?tag=strivinglifen-20&#34;&gt;Rant&lt;/a&gt;, like the rest of Chuck Palahniuk&amp;rsquo;s works of fiction, features sex, facts which may or may not be true, and distinctive characters.&lt;/p&gt;
+&lt;p&gt;However, while told in an interesting way, through the voices of over a dozen characters, Rant seems more of the same-old Chuck Palahniuk, and I fear I may have read the last of his work.&lt;/p&gt;
+&lt;p&gt;Rant tells the story of Buster &amp;ldquo;Rant&amp;rdquo; Casey from childhood on, through those who knew him by some means or another. While initially hard to get into, because of the many voices telling the story, and how some parts seem irrelevant, as it progresses it becomes easier to stick with it.&lt;/p&gt;
+&lt;p&gt;The story certainly reads like Palahniuk, requiring a bit more thought on the reader&amp;rsquo;s part, then most books require, and even includes an interesting paradox at the end.&lt;/p&gt;
+&lt;p&gt;Unfortunately, having read all of his previous fiction, I couldn&amp;rsquo;t find much in the way of new ideas, such as those that had invigorated me when I had read &lt;a href=&#34;http://www.amazon.com/dp/0393327345?tag=strivinglifen-20&#34;&gt;Fight Club&lt;/a&gt; and &lt;a href=&#34;http://www.amazon.com/dp/0385722192?tag=strivinglifen-20&#34;&gt;Lullaby&lt;/a&gt;, and which puts this in the small pile of books that I will not read again (4 star or higher).&lt;/p&gt;
+&lt;p&gt;The ideas are fresh for those who haven&amp;rsquo;t seen them before, but otherwise Palahniuk offers nothing too special in this work, with the questionable factoids being the special part. Recommended for those who can&amp;rsquo;t get enough of Palahniuk&amp;rsquo;s works; for those new to him, or unsure, read one of his older, more popular works.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: Pride and Prejudice and Zombies: Dawn of the Dreadfuls</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</link>
+      <pubDate>Sat, 17 Apr 2010 17:33:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;This is a book review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1594744548?tag=strivinglifen-20&#34;&gt;Pride and Prejudice and Zombies: Dawn of the Dreadfuls&lt;/a&gt;, written by Steve Hockensmith.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;First, I haven&amp;rsquo;t read &lt;a href=&#34;http://www.amazon.com/dp/1594743347?tag=strivinglifen-20&#34;&gt;Pride and Prejudice and Zombies&lt;/a&gt;, and didn&amp;rsquo;t realize that this was a prequel to that tale.&lt;/p&gt;
+&lt;p&gt;However, as one who has been known to enjoy a zombie movie, now and again, this short tale was rather delightful.&lt;/p&gt;
+&lt;p&gt;The language only flirts with being period, so there&amp;rsquo;s no worry of slogging through any of that. Instead, it&amp;rsquo;s treated as a rather modern telling of a zombie tale, set long ago, unlike the first, which sounded to be more of a tweaking of Pride and Prejudice.&lt;/p&gt;
+&lt;p&gt;The pictures - black and white, hand-drawn, with lined shading (whatever that&amp;rsquo;s officially called) - is rather nice, and present scenes (although not completely accurate) taken from the book. Thankfully, these are always after the events take place in the book, so the only way these&amp;rsquo;ll spoil the story is if you go looking ahead.&lt;/p&gt;
+&lt;p&gt;I found it to be a very quick read, once I picked it up, thanks to relatively quick pace and very little extraneous story.&lt;/p&gt;
+&lt;p&gt;As for the characters, we get to know about a dozen, although only half of that are of any interest, and even that group adds and loses numbers, as the book progresses. (For example, only one of the sisters is really of any interest at the beginning of the book, but by the end two are.)&lt;/p&gt;
+&lt;p&gt;As for whether I&amp;rsquo;ll pick up Pride and Prejudice and Zombies, having read this, I probably won&amp;rsquo;t. This was a fun read, but I suppose I enjoy watching them more &amp;hellip;&lt;/p&gt;
+&lt;p&gt;So, if you enjoy zombies, and have interest in reading a (short, quick) story about them, pick this up. Otherwise, don&amp;rsquo;t bother.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

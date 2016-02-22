@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firebug on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/firebug/</link>
+    <description>Recent content in Firebug on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jul 2007 09:33:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/firebug/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>BlogEngine.NET Theme - StrivingLife (almost done)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-Theme-StrivingLife-%28almost-done%29/</link>
+      <pubDate>Sat, 14 Jul 2007 09:33:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-Theme-StrivingLife-%28almost-done%29/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve almost completed converting the WordPress theme to a BlogEngine.NET theme.
+&lt;/p&gt;
+&lt;p&gt;
+The only hard part is when BlogEngine.NET (or ASP.NET) restricts write access to the CSS file. In these cases I have to tweak the CSS file using Firebug. It&amp;#39;s a bit of a chore, since BlogEngine.NET compresses the CSS file so much (which is a good thing, in the long term), but since I&amp;#39;m also changing the file locally in Dreamweaver, it&amp;#39;s just a matter of copying and pasting (over the Firebug CSS content).  
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

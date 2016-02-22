@@ -1,0 +1,1176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waking Life on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/waking-life/</link>
+    <description>Recent content in Waking Life on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Sep 2008 11:45:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/waking-life/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Display parts of the Waking Life Transcript on your site</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Display-parts-of-the-Waking-Life-Transcript-on-your-site/</link>
+      <pubDate>Mon, 01 Sep 2008 11:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Display-parts-of-the-Waking-Life-Transcript-on-your-site/</guid>
+      <description>&lt;p&gt;
+A lot of people like to pull full passages from &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life&lt;/a&gt;, as it&amp;#39;s a very quotable movie. 
+&lt;/p&gt;
+&lt;p&gt;
+However, the problem with that is that if things change there&amp;#39;s a whole lot of sites that are out-of-date. And, sometimes people forget to add attribution ...
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve been thinking about ways to make this easier, and believe I&amp;#39;ve come up with an idea. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strike&gt;Looking at the numbers, I&amp;#39;m working from the most popular to the least popular chapters, with the goal of having all available.&lt;/strike&gt; The full chapters are available, at least. I&amp;#39;ll be adding chapter parts as time permits / demand warrants.
+&lt;/p&gt;
+&lt;p&gt;
+To display passages from Waking Life on your site, using the following piece(s) of HTML, depending upon what you want to display: 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 1:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Part 1: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script01_1-2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Part 2: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script01_2-2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script01.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 2:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script02.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 3:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Part 1: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script03_1-3.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &lt;/li&gt;
+    &lt;li&gt;Part 2: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script03_2-3.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &lt;/li&gt;
+    &lt;li&gt;Part 3:&amp;nbsp;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script03_3-3.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &lt;/li&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script03.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 4:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script04.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;nbsp;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 5:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Part 1: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script05_1-2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Part 2: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script05_2-2.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script05.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 6:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Part 1: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script06_1-4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Part 2: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script06_2-4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Part 3: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script06_3-4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Part 4: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script06_4-4.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+    &lt;li&gt;Full chapter:&amp;nbsp;&amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script06.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 7:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script07.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 8:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script08.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 9:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script09.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 10:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script10.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 11:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script11.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 12:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script12.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 13:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script13.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 14:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script14.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 15:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script15.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 16:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script16.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 17:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script17.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 18:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script18.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 19:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script19.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;Chapter 20:&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Full chapter: &amp;lt;script type=&amp;quot;text/javascript&amp;quot; src=&amp;quot;http://strivinglife.com/WakingLife/Script20.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Minimal styling has been applied, so you&amp;#39;re free to make the content fit within your site rather easily. 
+&lt;/p&gt;
+&lt;p&gt;
+Questions? Comments? For assistance, please feel free to contact me or leave a comment below. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Director&#39;s Audio Commentary - Script</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Directors-Audio-Commentary-Script/</link>
+      <pubDate>Sun, 01 Jun 2008 09:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Directors-Audio-Commentary-Script/</guid>
+      <description>&lt;p&gt;
+Description: Transcript of the Director&amp;#39;s Audio Commentary, of Waking Life,&amp;nbsp;based upon the subtitles from the DVD release.
+&lt;/p&gt;
+&lt;p&gt;
+This first version will be a simple rip of the subtitles, however, as able, they will be reviewed, corrected, and supplemented, as necessary.
+&lt;/p&gt;
+&lt;p&gt;
+Please see also the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life script - still the most popular content</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-script-still-the-most-popular-content/</link>
+      <pubDate>Mon, 12 Jun 2006 19:58:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-script-still-the-most-popular-content/</guid>
+      <description>&lt;p&gt;
+Did you know that the most popular content on this site is the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;revised Waking Life movie transcript&lt;/a&gt; that I host on this very site?  It&amp;#39;s true, it&amp;#39;s the most visited content on this site.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Of course, having seen Waking Life more than just a couple times, and having watched scenes, and parts of scenes, over and over again, it comes as little surprise to me.  What is surprising is that the movie isn&amp;#39;t an even bigger hit.
+&lt;/p&gt;
+&lt;p&gt;
+Hopefully Linklater&amp;#39;s view on Philip K. Dick&amp;#39;s A Scanner Darkly is equally good.  Of course, if he makes a movie true to Dick&amp;#39;s work, then he&amp;#39;s got a winner on his hand.  And, if the trailer is any sign of the movie, he&amp;#39;s got gold.  Too bad it won&amp;#39;t be out until early July ... but, I suppose that&amp;#39;s how they can keep getting the movies out.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 9 - What&#39;s the Story?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-9-Whats-the-Story/</link>
+      <pubDate>Thu, 25 May 2006 20:23:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-9-Whats-the-Story/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;nine&#34; name=&#34;nine&#34; title=&#34;nine&#34;&gt;&lt;/a&gt;9 What&amp;#39;s the Story?] &lt;/h3&gt;
+&lt;p&gt;
+(A boy and girl are sitting in a coffee shop, possibly at a bookstore like Borders or Barnes &amp;amp; Noble, or more likely a bar. Alex Nixon and Violet Nichols, respectively.) 
+&lt;/p&gt;
+&lt;p&gt;
+What are you writing? 
+&lt;/p&gt;
+&lt;p&gt;
+A novel. 
+&lt;/p&gt;
+&lt;p&gt;
+What&amp;#39;s the story? 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_09_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_09_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 9 - What&#39;s the Story?&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;There&amp;#39;s no story. It&amp;#39;s just ... people, gestures, moments, bits of rapture, fleeting emotions. In short, the greatest stories ever told. 
+&lt;/p&gt;
+&lt;p&gt;
+Are you in the story? 
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t think so. But then, I&amp;#39;m kind of reading it and then writing it. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(A guy in a bar, actor Steven Prince, talking with a bartender, Ken Webster.) 
+&lt;/p&gt;
+&lt;p&gt;
+It was in the middle of the desert, in the middle of nowhere, but on the way to Vegas, so, you know, every once in a while a car would pull in, get gas. It was the last gas stop before Vegas. Office had the chair, had a cash register, and that was all the room there was in that office. I was asleep, and I heard a noise. You know, just like in my mind. So I got up, and I walked out, and I stood on the curb of where the gas station ends, you know, the driveway there. I&amp;#39;m rubbing the sand out of my eyes, trying to see what&amp;#39;s going on, and way down at the very end of the gas station they had tire racks. Chains around them, you know. And I see there&amp;#39;s an Econoline van down there. And there&amp;#39;s a guy with his T-shirt off, and he&amp;#39;s packing his Econoline van with all these tires. He&amp;#39;s got the last two tires in his hands, pushes them into the thing, and then I, of course, I go, &amp;quot;Hey, you!&amp;quot; This guy turns around, he&amp;#39;s got no shirt on, he&amp;#39;s sweating, he&amp;#39;s built like a brick shithouse, pulls out a knife, it&amp;#39;s 12 inches long, and then starts running at me as fast as he can, going AAAAAAAHHHHH. I&amp;#39;m still ... &amp;quot;This is wrong.&amp;quot; I walked in, stuck my hand behind the cash register where the owner kept a .41 revolver, pull it out, cocked the trigger, and just as I turned around, he was comin&amp;#39; through the door. And I could see his eyes. I&amp;#39;ll never forget this guy&amp;#39;s eyes. And he just had bad thoughts about me in his eyes. And I fired a round, and it hit him. Boom. Right in the chest. Bang. He went - as fast as he was coming in the door, he went out the door. Went right up between the two pumps, ethyl and regular. And he must&amp;#39;ve been on drugs, on speed or something, you know, because he stood up and he still had the knife, and the blood was just all over his chest, and he stood up and he went like that, just moved a little like that. And I was pretty much in shock, so I just held the trigger back and fanned the hammer. It&amp;#39;s one of these old-time ... Poom, Poom, Poom, Poom, Poom! And I blew him out of the gas station. And ever since then, I always carry this. 
+&lt;/p&gt;
+&lt;p&gt;
+(He pulls out a revolver.) 
+&lt;/p&gt;
+&lt;p&gt;
+I hear that. A well-armed populace is the best defense against tyranny. 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll drink to that. And you know, I haven&amp;#39;t fired this for such a long time, I don&amp;#39;t even know if it&amp;#39;ll work. 
+&lt;/p&gt;
+&lt;p&gt;
+Why don&amp;#39;t you pull the trigger and find out? 
+&lt;/p&gt;
+&lt;p&gt;
+(He shoots the bartender in the chest. The bartender gets up, grabs the gun hidden behind the counter, and shoots the other guy in the head. Both fall dead. Puddles of blood form and red flows down the screen.) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(Main character wakes up, washes his face, grabs the phone, and dials.) 
+&lt;/p&gt;
+&lt;p&gt;
+Hey man. I guess you already took off or something. But, uh, remind me to tell you about this dream I had last night &amp;#39;cause there&amp;#39;s some really funny stuff in it. All right, man. Uh, I guess I&amp;#39;ll catch you later. Okay. 
+&lt;/p&gt;
+&lt;p&gt;
+(Main character grabs the remote and begins changing the channels on TV.) 
+&lt;/p&gt;
+&lt;p&gt;
+... bareback riding. Copenhagen William and his horse Same Deal. 
+&lt;/p&gt;
+&lt;p&gt;
+... for a hat band. Sew it into the inside of the ... 
+&lt;/p&gt;
+&lt;p&gt;
+For I do not await the future, anticipating salvation, absolution, not even enlightenment through process. I, I subscribe to the premise that this ... this flawed perfection is sufficient and complete in every single ineffable moment. 
+&lt;/p&gt;
+&lt;p&gt;
+The Blonde Bee, the Firefly, Praying Mantis ... 
+&lt;/p&gt;
+&lt;p&gt;
+... lunatic macaroni munchkin with my googat ... 
+&lt;/p&gt;
+&lt;p&gt;
+... venerable tradition of sorcerers, shamans and other visionaries who have developed and perfected the art of dream travel, the so-called lucid dream state where by consciously controlling your dreams, you&amp;#39;re able to discover things beyond your capacity to apprehend in your awake state. 
+&lt;/p&gt;
+&lt;p&gt;
+... series, winning back-to-back ... 
+&lt;/p&gt;
+&lt;p&gt;
+... why don&amp;#39;t you tell us about what Felix is doing ... 
+&lt;/p&gt;
+&lt;p&gt;
+... a single ego is an absurdly narrow vantage from which to view this ... this experience. And where most consider their individual relationship to the universe, I contemplate relationships ... of my various selves to one another. 
+&lt;/p&gt;
+&lt;p&gt;
+While most people with mobility problems are having trouble just getting around, at age 92, Joy Cullison&amp;#39;s out seeing the world. Now I&amp;#39;m free to see the world. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/08/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/10/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/09/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/09/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 8 - Noise and Silence</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-8-Noise-and-Silence/</link>
+      <pubDate>Thu, 25 May 2006 20:21:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-8-Noise-and-Silence/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;eight&#34; name=&#34;eight&#34; title=&#34;eight&#34;&gt;&lt;/a&gt;8 Noise and Silence] &lt;/h3&gt;
+&lt;p&gt;
+(There&amp;#39;s a chimp sitting next to a projector. The words &amp;quot;NOISE AND SILENCE&amp;quot; are written onto the screen and the chimp begins lecturing. Voice of Steve Fitch.) 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_08_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_08_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 8 - Noise and Silence&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;Our critique began as all critiques begin: with doubt. Doubt became our narrative. Ours was a quest for a new story, our own. And we grasped toward this new history driven by the suspicion that ordinary language couldn&amp;#39;t tell it. Our past appeared frozen in the distance, and our every gesture and accent signified the negation of the old world and the reach for a new one. The way we lived created a new situation, one of exuberance and friendship, that of a subversive microsociety, in the heart of a society which ignored it. Art was not the goal but the occasion and the method for locating our specific rhythm and buried possibilities of our time. The discovery of a true communication was what it was about, or at least the quest for such a communication. The adventure of finding it and losing it. We the unappeased, the unaccepting continued looking, filling in the silences with our own wishes, fears and fantasies. Driven forward by the fact that no matter how empty the world seemed, no matter how degraded and used up the world appeared to us, we knew that anything was still possible. And, given the right circumstances, a new world was just as likely as an old one. 
+&lt;/p&gt;
+&lt;p&gt;
+(The lecturing chimp eats his notes and &amp;quot;TO BEGIN AGAIN ... FROM THE BEGINNING&amp;quot; is placed on the screen. A young male&amp;#39;s face is flashed on the screen, and the projector runs out of film.) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(Main character sitting with a man in a bar/restaurant. University of Texas at Austin philosophy professor Louis Mackey.) 
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+There are two kinds of sufferers in this world: those who suffer from a lack of life and those who suffer from an overabundance of life. I&amp;#39;ve always found myself in the second category. When you come to think of it, almost all human behavior and activity is not essentially any different from animal behavior. The most advanced technologies and craftsmanship bring us, at best, up to the super-chimpanzee level. Actually, the gap between, say, Plato or Nietzsche and the average human is greater than the gap between that chimpanzee and the average human. The realm of the real spirit, the true artist, the saint, the philosopher, is rarely achieved. 
+&lt;/p&gt;
+&lt;p&gt;
+Why so few? Why is world history and evolution not stories of progress but rather this endless and futile addition of zeroes. No greater values have developed. Hell, the Greeks 3,000 years ago were just as advanced as we are. So what are these barriers that keep people from reaching anywhere near their real potential? The answer to that can be found in another question, and that&amp;#39;s this: Which is the most universal human characteristic - fear or laziness? 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/07/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/09/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/08/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/08/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 4 - Alienation</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-4-Alienation/</link>
+      <pubDate>Thu, 25 May 2006 20:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-4-Alienation/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Revisions by James Richard Skemp III&lt;br /&gt;
+This chapter last modified: January 27, 2007 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy! 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;four&#34; name=&#34;four&#34; title=&#34;four&#34;&gt;&lt;/a&gt;4 Alienation] &lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_04_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_04_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 4 - Alienation&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;(The main character enters a house. Next, we see him taking off his shoes, laying down, and picking up a book, yet the pages appear to be blank. He looks at his alarm clock, and the numbers do not focus, but rather dance around. He lays back and we seem to hear the wind, as if we&amp;#39;re near the ocean, after which the main character floats off his bed and through the roof, proceeding to fly over the burbs. We next seem to move from the sky to the ground ...) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(Main character walking down the street with a man who is holding a can of gasoline - J.C. Shakespeare.)
+&lt;/p&gt;
+&lt;p&gt;
+A self-destructive man feels completely alienated, utterly alone. He&amp;#39;s an outsider to the human community. He thinks to himself, &amp;quot;I must be insane.&amp;quot; What he fails to realize is that society has, just as he does, a vested interest in considerable losses and catastrophes. These wars, famines, floods and quakes meet well-defined needs. Man wants chaos. In fact, he&amp;#39;s gotta have it. Depression, strife, riots, murder, all this dread. We&amp;#39;re irresistibly drawn to that almost orgiastic state created out of death and destruction. It&amp;#39;s in all of us. We revel in it. Sure, the media tries to put a sad face on these things, painting them up as great human tragedies. But we all know the function of the media has never been to eliminate the evils of the world, no. Their job is to persuade us to accept those evils and get used to living with them. The powers that be want us to be passive observers. Hey, you got a match? And they haven&amp;#39;t given us any other options outside the occasional, purely symbolic, participatory act of voting. You want the puppet on the right or the puppet on the left? I feel that the time has come to project my own inadequacies and dissatisfactions into the sociopolitical and scientific schemes, let my own lack of a voice be heard. 
+&lt;/p&gt;
+&lt;p&gt;
+(He pours gasoline all over himself and lights himself on fire.) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/03/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/05/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy! 
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/04/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/04/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 15 - We Are the Authors</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-15-We-Are-the-Authors/</link>
+      <pubDate>Thu, 25 May 2006 19:58:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-15-We-Are-the-Authors/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy! 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;fifteen&#34; name=&#34;fifteen&#34; title=&#34;fifteen&#34;&gt;&lt;/a&gt;15 We Are the Authors] &lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_15_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_15_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 15 - We Are the Authors&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;(The main character is now on a subway, and from his body language, it seems he&amp;#39;s expected it to stop before it has.) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(We see a bridge from afar, and move to it. Now on the bridge, we see a shining light, from which a crazy looking guy with a big afro appears. This is poet Timothy &amp;quot;Speed&amp;quot; Levitch.) 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;quot;On this bridge,&amp;quot; Lorca warns, &amp;quot;life is not a dream. Beware. And beware. And beware.&amp;quot; And so many think because Then happened, Now isn&amp;#39;t. But didn&amp;#39;t I mention the ongoing &amp;quot;wow&amp;quot; is happening right now? We are all co-authors of this dancing exuberance where even our inabilities are having a roast. We are the authors of ourselves, co-authoring a gigantic Dostoevsky novel, starring clowns. This entire thing we&amp;#39;re involved with called the world, is an opportunity to exhibit how exciting alienation can be. Life is a matter of a miracle that is collected over time by moments, flabbergasted to be in each other&amp;#39;s presence. The world is an exam to see if we can rise into direct experience. Our eyesight is here as a test to see if we can see beyond it. Matter is here as a test for our curiosity. Doubt is here as an exam for our vitality. Thomas Mann wrote that he would rather participate in life than write 100 stories. Giacometti was once run down by a car, and he recalled falling into a lucid faint, a sudden exhilaration, as he realized that at last something was happening to him. An assumption develops that you cannot understand life and live life simultaneously. I do not agree entirely. Which is to say I do not exactly disagree. I would say that life understood &lt;em&gt;is&lt;/em&gt; life lived. But the paradoxes bug me, and I can learn to love and make love to the paradoxes that bug me. And on really romantic evenings of self, I go salsa dancing with my confusion. Before you drift off, don&amp;#39;t forget. Which is to say, remember. Because remembering is so much more a psychotic activity than forgetting. Lorca, in that same poem said that the iguana will bite those who do not dream. And as one realizes that one is a dream figure in another person&amp;#39;s dream, that is self awareness. 
+&lt;/p&gt;
+&lt;p&gt;
+(The 60&amp;#39;s-like stars twinkle around his head, and he wanders off in an ecstatic trance.) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/14/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/16/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy! 
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/15/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/15/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 11 - The Holy Moment</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-11-The-Holy-Moment/</link>
+      <pubDate>Thu, 25 May 2006 19:56:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-11-The-Holy-Moment/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Thoughts-and-comments-on-Waking-Life-The-Holy-Moment.aspx&#34;&gt;Thoughts and comments on this chapter.&lt;/a&gt; 
+&lt;/p&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;eleven&#34; name=&#34;eleven&#34; title=&#34;eleven&#34;&gt;&lt;/a&gt;11 The Holy Moment] &lt;/h3&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(We enter a movie theatre where, on the screen, we see a film of two men who are talking with one another. The first speaker is filmmaker Caveh Zahedi - to the right in the image below - and the second is poet David Jewell.) 
+&lt;/p&gt;
+&lt;p&gt;
+THE HOLY MOMENT 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_11_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_11_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 11 - The Holy Moment&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;Cinema, in its essence, is, well it&amp;#39;s about an introduction to reality, which is that, like, reality is actually reproduced. And for him, it might sound like a storytelling medium, really. And he feels like, um ... like ... like ... like literature is better for telling a story. You know, and if you tell a story or even like a joke, like you know &amp;quot;This guy walks into a bar and, you know, he sees a dwarf.&amp;quot; That works really well because you&amp;#39;re imagining this guy and this dwarf in the bar and there&amp;#39;s this kind of imaginative aspect to it. But in film, you don&amp;#39;t have that because you actually are filming a specific guy, in a specific bar, with a specific dwarf, of a specific height, who looks a certain way, right? 
+&lt;/p&gt;
+&lt;p&gt;
+So like, um, for Bazin, what the ontology of film has to do is it has to deal with, you know, with what photography also has an ontology of, except that it adds this dimension of time to it, and this greater realism. And so, like, it&amp;#39;s about that guy, at that moment, in that space. And, you know, Bazin is like a Christian, so he, like, believes that, you know, God obviously ended up like, everything ... he believes, for him reality and God are the same. You know, like ... and so what film is actually capturing is like God incarnate, creating. And this very moment, God is manifesting as this. And what the film would capture if it was filming us right now would be like God as this table, and God as you, and God as me, and God looking the way we look right now, and saying and thinking what we&amp;#39;re thinking right now, because we are all God manifest in that sense. So film is actually like a record of God, or of the face of God, or of the ever-changing face of God. You have a mosquito. Do you want me to get it for you? You got it. 
+&lt;/p&gt;
+&lt;p&gt;
+I got it? 
+&lt;/p&gt;
+&lt;p&gt;
+Yeah, you got it. 
+&lt;/p&gt;
+&lt;p&gt;
+And like the whole Hollywood thing is just taking film and trying to make it like the storytelling medium where you take these books or stories, and then you like, you know, and then you have the script, and you try to find a person who sort of fits the thing. But it&amp;#39;s ridiculous, because it&amp;#39;s not, it shouldn&amp;#39;t be based on the script. It should be based on the person, you know, or the thing. And in that sense, they are almost right to have this whole star system, because then it&amp;#39;s about that person, you know, instead of, like, the story. 
+&lt;/p&gt;
+&lt;p&gt;
+Truffaut always said the best films aren&amp;#39;t made ... the films ... The best scripts don&amp;#39;t make the best films, because they have that kind of literary narrative thing that you&amp;#39;re sort of a slave to. The best films are the ones that aren&amp;#39;t tied to that slavishly. So I don&amp;#39;t know. The whole narrative thing seems to me like, um ... Obviously, there&amp;#39;s narrativity to cinema &amp;#39;cause it&amp;#39;s in time, just the way there&amp;#39;s narrativity to music. But, you know, you don&amp;#39;t first think of the story of the song, and then make the song. It has to come out of that moment. And that&amp;#39;s what film has. It&amp;#39;s just that moment, which is holy. You know, like this moment, it&amp;#39;s holy. But we walk around like it&amp;#39;s not holy. We walk around like there&amp;#39;s some holy moments and there are all the other moments that are not holy, right, but this moment is holy, right? And if film can let us see that, like frame it so that we see, like, &amp;quot;Ah, this moment. Holy.&amp;quot; And it&amp;#39;s like &amp;quot;Holy, holy, holy&amp;quot; moment by moment. But, like, who can live that way? Who can go, like, &amp;quot;Wow, holy&amp;quot;? Because if I were to look at you and just really let you be holy, I don&amp;#39;t know, I would, like, stop talking. 
+&lt;/p&gt;
+&lt;p&gt;
+Well, you&amp;#39;d be in the moment, I mean .... 
+&lt;/p&gt;
+&lt;p&gt;
+Yeah 
+&lt;/p&gt;
+&lt;p&gt;
+The moment is holy. 
+&lt;/p&gt;
+&lt;p&gt;
+Yeah, but I&amp;#39;d be open. And then I&amp;#39;d look in your eyes, and I&amp;#39;d cry, and I&amp;#39;d like feel all this stuff and that&amp;#39;s like not polite. I mean it would make you feel uncomfortable. 
+&lt;/p&gt;
+&lt;p&gt;
+Well you could laugh too. I mean, why would you cry? 
+&lt;/p&gt;
+&lt;p&gt;
+Well, &amp;#39;cause ... I don&amp;#39;t know. For me, I tend to cry. 
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+Uh-huh. Well ... Is, is full ... 
+&lt;/p&gt;
+&lt;p&gt;
+Well, let&amp;#39;s do it right now. Let&amp;#39;s have a holy moment. 
+&lt;/p&gt;
+&lt;p&gt;
+Okay. 
+&lt;/p&gt;
+&lt;p&gt;
+(Long moments pass with them staring at each other) 
+&lt;/p&gt;
+&lt;p&gt;
+Everything is layers, isn&amp;#39;t it? 
+&lt;/p&gt;
+&lt;p&gt;
+Yeah. 
+&lt;/p&gt;
+&lt;p&gt;
+I mean, there&amp;#39;s the holy moment and then there&amp;#39;s the awareness of trying to have the holy moment, in the same way that the film is the actual moment really happening, but then the character pretending to be in a different reality. And it&amp;#39;s all these layers. And, uh, I was in and out of the holy moment looking at you. Can&amp;#39;t be in a holy ... You&amp;#39;re unique that way, Caveh. That&amp;#39;s one of the reasons I enjoy you. You can ... bring me into that. 
+&lt;/p&gt;
+&lt;p&gt;
+(They turn into cloud people looking at each other) 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/10/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/12/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Thoughts-and-comments-on-Waking-Life-The-Holy-Moment.aspx&#34;&gt;Thoughts and comments on this chapter.&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/11/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/11/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 7 - The Aging Paradox</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-7-The-Aging-Paradox/</link>
+      <pubDate>Thu, 25 May 2006 19:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-7-The-Aging-Paradox/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;seven&#34; name=&#34;seven&#34; title=&#34;seven&#34;&gt;&lt;/a&gt;7 The Aging Paradox] &lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_07_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_07_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 7 - The Aging Paradox&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;(Two women are having lunch - English professor Lisa Moore and author Carole Dawson) 
+&lt;/p&gt;
+&lt;p&gt;
+Time just dissolves into quick-moving particles that are swirling away. Either I&amp;#39;m moving fast or time is. Never both simultaneously. 
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s such a strange paradox. I mean, while, technically, I&amp;#39;m closer to the end of my life than I&amp;#39;ve ever been, I actually feel more than ever that I have all the time in the world. When I was younger, there was a desperation, a desire for certainty, like there was an end to the path, and I had to get there. 
+&lt;/p&gt;
+&lt;p&gt;
+I know what you mean, because I can remember thinking, &amp;quot;Oh, someday, like in my mid-thirties maybe, everything&amp;#39;s going to just somehow gel and settle, just end.&amp;quot; It was like there was this plateau, and it was waiting for me, and I was climbing up it, and when I got to the top, all growth and change would stop. Even exhilaration. But that hasn&amp;#39;t happened like that, thank goodness. I think that what we don&amp;#39;t take into account when we&amp;#39;re young is our endless curiosity. That&amp;#39;s what&amp;#39;s so great about being human. 
+&lt;/p&gt;
+&lt;p&gt;
+Yeah, yeah. Well do you know that thing Benedict Anderson says about identity? 
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+No. 
+&lt;/p&gt;
+&lt;p&gt;
+Well, he&amp;#39;s talking about like, say, a baby picture. So you pick up this picture, this two-dimensional image, and you say, &amp;quot;That&amp;#39;s me.&amp;quot; Well, to connect this baby in this weird little image with yourself living and breathing in the present, you have to make up a story like, &amp;quot;This was me when I was a year old, and then later I had long hair, and then we moved to Riverdale, and now here I am.&amp;quot; So it takes a story that&amp;#39;s actually a fiction to make you and the baby in the picture identical to create your identity. 
+&lt;/p&gt;
+&lt;p&gt;
+And the funny thing is, our cells are completely regenerating every seven years. We&amp;#39;ve already become completely different people several times over, and yet we always remain quintessentially ourselves. 
+&lt;/p&gt;
+&lt;p&gt;
+Hmm. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/06/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/08/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/07/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/07/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 3 - Life Lessons</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-3---Life-Lessons/</link>
+      <pubDate>Thu, 25 May 2006 19:44:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-3---Life-Lessons/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Revisions by James Richard Skemp III&lt;br /&gt;
+This chapter last modified: May 25, 2006 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy! 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;three&#34; name=&#34;three&#34; title=&#34;three&#34;&gt;&lt;/a&gt;3 Life Lessons] &lt;/h3&gt;
+&lt;p&gt;
+(Philosophy professor Robert Solomon, at the University of Texas at Austin) 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_03_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_03_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 4 - Life Lessons&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;The reason why I refuse to take existentialism as just another French fashion or historical curiosity is that I think it has something very important to offer us for the new century. I&amp;#39;m afraid we&amp;#39;re losing the real virtues of living life passionately, sense of taking responsibility for who you are, the ability to make something of yourself and feeling good about life. Existentialism is often discussed as if it&amp;#39;s a philosophy of despair. But I think the truth is just the opposite. Sartre once interviewed said he never really felt a day of despair in his life. But one thing that comes out from reading these guys is not a sense of anguish about life so much as a real kind of exuberance of feeling on top of it. It&amp;#39;s like your life is yours to create. I&amp;#39;ve read the postmodernists with some interest, even admiration. But when I read them, I always have this awful nagging feeling that something absolutely essential is getting left out. The more that you talk about a person as a social construction or as a confluence of forces or as fragmented or marginalized, what you do is you open up a whole new world of excuses. And when Sartre talks about responsibility, he&amp;#39;s not talking about something abstract. He&amp;#39;s not talking about the kind of self or soul that theologians would argue about. It&amp;#39;s something very concrete. It&amp;#39;s you and me talking. Making decisions. Doing things and taking the consequences. It might be true that there are six billion people in the world and counting. Nevertheless, what you do makes a difference. It makes a difference, first of all, in material terms. Makes a difference to other people and it sets an example. In short, I think the message here is that we should never simply write ourselves off and see ourselves as the victim of various forces. It&amp;#39;s always our decision who we are. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(A blonde woman is talking in a house - Kim Krizan, screenwriter) 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_03_2.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_03_2_t.jpg&#34; alt=&#34;Waking Life: Chapter 4 - Life Lessons&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;Creation seems to come out of imperfection. It seems to come out of a striving and a frustration. And this is where I think language came from. I mean, it came from our desire to transcend our isolation and have some sort of connection with one another. And it had to be easy when it was just simple survival. Like, you know, &amp;quot;water.&amp;quot; We came up with a sound for that. Or &amp;quot;Saber-toothed tiger right behind you.&amp;quot; We came up with a sound for that. But when it gets really interesting, I think, is when we use that same system of symbols to communicate all the abstract and intangible things that we&amp;#39;re experiencing. What is, like, frustration? Or what is anger or love? When I say &amp;quot;love,&amp;quot; the sound comes out of my mouth and it hits the other person&amp;#39;s ear, travels through this Byzantine conduit in their brain, you know, through their memories of love or lack of love, and they register what I&amp;#39;m saying and they say yes, they understand. But how do I know they understand? Because words are inert. They&amp;#39;re just symbols. They&amp;#39;re dead, you know? And so much of our experience is intangible. So much of what we perceive cannot be expressed. It&amp;#39;s unspeakable. And yet, you know, when we communicate with one another, and we feel that we&amp;#39;ve connected, and we think that we&amp;#39;re understood, I think we have a feeling of almost spiritual communion. And that feeling might be transient, but I think it&amp;#39;s what we live for. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(A very intense man is talking in front of a fish tank, gesturing wildly - Eamonn Healy, Chemistry professor at University of Texas at Austin) 
+&lt;/p&gt;
+&lt;p&gt;
+If we&amp;#39;re looking at the highlights of human development, you have to look at the evolution of the organism and then at the development of its interaction with the environment. Evolution of the organism will begin with the evolution of life perceived through the hominid coming to the evolution of mankind. Neanderthal and Cro-Magnon man. Now, interestingly, what you&amp;#39;re looking at here are three strings: biological, anthropological -- development of the cities -- and cultural, which is human expression. 
+&lt;/p&gt;
+&lt;p&gt;
+Now, what you&amp;#39;ve seen here is the evolution of populations, not so much the evolution of individuals. And in addition, if you look at the time scales that are involved here -- two billion years for life, six million years for the hominid, 100,000 years for mankind as we know it -- you&amp;#39;re beginning to see the telescoping nature of the evolutionary paradigm. And then when you get to agricultural, when you get to scientific revolution and industrial revolution, you&amp;#39;re looking at 10,000 years, 400 years, 150 years. Uou&amp;#39;re seeing a further telescoping of this evolutionary time. What that means is that as we go through the new evolution, it&amp;#39;s gonna telescope to the point we should be able to see it manifest itself within our lifetime, within this generation. 
+&lt;/p&gt;
+&lt;p&gt;
+The new evolution stems from information, and it stems from two types of information: digital and analog. The digital is artificial intelligence. The analog results from molecular biology, the cloning of the organism. And you knit the two together with neurobiology. Before on the old evolutionary paradigm, one would die and the other would grow and dominate. But under the new paradigm, they would exist as a mutually supportive, noncompetitive grouping. Okay, independent from the external. 
+&lt;/p&gt;
+&lt;p&gt;
+And what is interesting here is that evolution now becomes an individually centered process, emanating from the needs and desires of the individual, and not an external process, a passive process where the individual is just at the whim of the collective. So, you produce a neo-human, okay, with a new individuality and a new consciousness. But that&amp;#39;s only the beginning of the evolutionary cycle because as the next cycle proceeds, the input is now this new intelligence. As intelligence piles on intelligence, as ability piles on ability, the speed changes. Until what? Until we reach a crescendo in a way could be imagined as an enormous instantaneous fulfillment of human? human and neo-human potential. It could be something totally different. It could be the amplification of the individual, the multiplication of individual existences. Parallel existences now with the individual no longer restricted by time and space. 
+&lt;/p&gt;
+&lt;p&gt;
+And the manifestations of this neo-human-type evolution, manifestations could be dramatically counter-intuitive. That&amp;#39;s the interesting part. The old evolution is cold. It&amp;#39;s sterile. It&amp;#39;s efficient, okay? And its manifestations of those social adaptations. We&amp;#39;re talking about parasitism, dominance, morality, okay? Uh, war, predation, these would be subject to de-emphasis. These will be subject to de-evolution. The new evolutionary paradigm will give us the human traits of truth, of loyalty, of justice, of freedom. These will be the manifestations of the new evolution. And that is what we would hope to see from this. That would be nice. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/02/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/04/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/03/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/03/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 6 - Free Will and Physics</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-6-Free-Will-and-Physics/</link>
+      <pubDate>Thu, 25 May 2006 19:34:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-6-Free-Will-and-Physics/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;six&#34; name=&#34;six&#34; title=&#34;six&#34;&gt;&lt;/a&gt;6 Free Will and Physics] &lt;/h3&gt;
+&lt;p&gt;
+(Philosopher professor talking in his office - University of Texas: Austin philosophy professor David Sosa) 
+&lt;/p&gt;
+&lt;p&gt;
+In a way, in our contemporary world view, it&amp;#39;s easy to think that science has come to take the place of God. But some philosophical problems remain as troubling as ever. Take the problem of free will. This problem has been around for a long time, since before Aristotle in 350 B.C. St. Augustine, St. Thomas Aquinas, these guys all worried about how we can be free if God already knows in advance everything you&amp;#39;re gonna do. Nowadays we know that the world operates according to some fundamental physical laws, and these laws govern the behavior of every object in the world. Now, these laws, because they&amp;#39;re so trustworthy, they enable incredible technological achievements. But look at yourself. We&amp;#39;re just physical systems too, right? We&amp;#39;re just complex arrangements of carbon molecules. We&amp;#39;re mostly water, and our behavior isn&amp;#39;t gonna be an exception to these basic physical laws. So it starts to look like whether its God setting things up in advance and knowing everything you&amp;#39;re gonna do or whether it&amp;#39;s these basic physical laws governing everything, there&amp;#39;s not a lot of room left for freedom. 
+&lt;/p&gt;
+&lt;p&gt;
+So now you might be tempted to just ignore the question, ignore the mystery of free will. Say &amp;quot;Oh, well, it&amp;#39;s just an historical anecdote. It&amp;#39;s sophomoric. It&amp;#39;s a question with no answer. Just forget about it.&amp;quot; But the question keeps staring you right in the face. You think about individuality for example, who you are. Who you are is mostly a matter of the free choices that you make. Or take responsibility. You can only be held responsible, you can only be found guilty, or you can only be admired or respected for things you did of your own free will. So the question keeps coming back, and we don&amp;#39;t really have a solution to it. It starts to look like all our decisions are really just a charade. 
+&lt;/p&gt;
+&lt;p&gt;
+Think about how it happens. There&amp;#39;s some electrical activity in your brain. Your neurons fire. They send a signal down into your nervous system. It passes along down into your muscle fibers. They twitch. You might, say, reach out your arm. It looks like it&amp;#39;s a free action on your part, but every one of those - every part of that process is actually governed by physical law, chemical laws, electrical laws, and so on. 
+&lt;/p&gt;
+&lt;p&gt;
+So now it just looks like the big bang set up the initial conditions, and the whole rest of human history, and even before, is really just the playing out of subatomic particles according to these basic fundamental physical laws. We think we&amp;#39;re special. We think we have some kind of special dignity, but that now comes under threat. I mean, that&amp;#39;s really challenged by this picture. 
+&lt;/p&gt;
+&lt;p&gt;
+So you might be saying, &amp;quot;Well, wait a minute. What about quantum mechanics? I know enough contemporary physical theory to know it&amp;#39;s not really like that. It&amp;#39;s really a probabilistic theory. There&amp;#39;s room. It&amp;#39;s loose. It&amp;#39;s not deterministic.&amp;quot; And that&amp;#39;s going to enable us to understand free will. But if you look at the details, it&amp;#39;s not really going to help because what happens is you have some very small quantum particles, and their behavior is apparently a bit random. They swerve. Their behavior is absurd in the sense that its unpredictable and we can&amp;#39;t understand it based on anything that came before. It just does something out of the blue, according to a probabilistic framework. But is that going to help with freedom? I mean, should our freedom be just a matter of probabilities, just some random swerving in a chaotic system? That starts to seem like it&amp;#39;s worse. I&amp;#39;d rather be a gear in a big deterministic physical machine than just some random swerving. 
+&lt;/p&gt;
+&lt;p&gt;
+So we can&amp;#39;t just ignore the problem. We have to find room in our contemporary world view for persons with all that that entails; not just bodies, but persons. And that means trying to solve the problem of freedom, finding room for choice and responsibility, and trying to understand individuality. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(Guy with a bullhorn is driving through the city streets yelling - Libertarian talk show host Alex Jones) 
+&lt;/p&gt;
+&lt;p&gt;
+You can&amp;#39;t fight city hall, death and taxes. Don&amp;#39;t talk about politics or religion. This is all the equivalent of enemy propaganda rolling across the picket line. &amp;quot;Lay down, G.I. Lay down, G.I.&amp;quot; We saw it all through the 20th Century. And now in the 21st Century, it&amp;#39;s time to stand up and realize that we should not allow ourselves to be crammed into this rat maze. We should not submit to dehumanization. I don&amp;#39;t know about you, but I&amp;#39;m concerned with what&amp;#39;s happening in this world. I&amp;#39;m concerned with the structure. I&amp;#39;m concerned with the systems of control, those that control my life and those that seek to control it even more! I want freedom! That&amp;#39;s what I want! And that&amp;#39;s what you should want! 
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s up to each and every one of us to turn loose and show them the greed, the hatred, the envy, and yes, the insecurities because that is the central mode of control - make us feel pathetic, small so we&amp;#39;ll willingly give up our sovereignty, our liberty, our destiny. We have got to realize that we&amp;#39;re being conditioned on a mass scale. Start challenging this corporate slave state! The 21st Century is going to be a new century, not the century of slavery, not the century of lies and issues of no significance and classism and statism and all the rest of the modes of control! It&amp;#39;s going to be the age of humankind standing up for something pure and something right! 
+&lt;/p&gt;
+&lt;p&gt;
+What a bunch of garbage - liberal Democrat, conservative Republican. It&amp;#39;s all there to control you. Two sides of the same coin. Two management teams bidding for control! The C.E.O. job of Slavery, Incorporated! The truth is out there in front of you, but they lay out this buffet of lies. I&amp;#39;m sick of it, and I&amp;#39;m not going to take a bite out of it! Do you got me? Resistance is not futile. We&amp;#39;re gonna win this thing. Humankind is too good! We&amp;#39;re not a bunch of underachievers! We&amp;#39;re gonna stand up and we&amp;#39;re gonna be human beings! We&amp;#39;re gonna get fired up about the real things, the things that matter: creativity and the dynamic human spirit that refuses to submit! Well that&amp;#39;s it! That&amp;#39;s all I got to say! It&amp;#39;s in your court. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_06_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_06_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 6 - Free Will and Physics&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;(Old man sitting at a table. Otto Hofmann.) 
+&lt;/p&gt;
+&lt;p&gt;
+The quest is to be liberated from the negative, which is really our own will to nothingness. And once having said yes to the instant, the affirmation is contagious. It bursts into a chain of affirmations that knows no limit. To say yes to one instant is to say yes to all of existence. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;p&gt;
+(African-American writer Aklilu Gebrewold) 
+&lt;/p&gt;
+&lt;p&gt;
+The main character is what I call &amp;quot;the mind&amp;quot;. Its mastery, its capacity to represent. Throughout history, attempts have been made to contain those experiences which happen at the end of the limit where the mind is vulnerable. But I think we are in a very significant moment in history. Those moments, those what you might call liminal, limit, frontier, edge zone experiences are actually now becoming the norm. These multiplicities and distinctions and differences that have given great difficulty to the old mind are actually through entering into their very essence, tasting and feeling their uniqueness. One might make a breakthrough to that common something that holds them together. 
+&lt;/p&gt;
+&lt;p&gt;
+And so the main character is, to this new mind, greater, greater mind. A mind that yet is to be. And when we are obviously entered into that mode, you can see a radical subjectivity, radical attunement to individuality, uniqueness to that which the mind is, opens itself to a vast objectivity. So the story is the story of the cosmos now. The moment is not just a passing empty nothing, yet - and this is the way in which these secret passages happen - yes, it&amp;#39;s empty with such fullness that the great moment, the great life of the universe, is pulsating in it. And each one, each object, each place, each act leaves a mark. And that story is singular. But, in fact, it&amp;#39;s story after story. 
+&lt;/p&gt;
+&lt;p&gt;
+*** 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/05/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/07/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/06/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/06/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life Script with Revisions</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Script-with-Revisions/</link>
+      <pubDate>Sun, 09 Apr 2006 09:43:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Script-with-Revisions/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Revisions by James Richard Skemp III&lt;br /&gt;
+Revision begun: December 24 2004 
+&lt;/p&gt;
+&lt;p&gt;
+Modified: June 4 2005; June 15 2005; June 16 2005; June 21 2005; July 22 2005; August 25 2005; September 27 2005; October 17 2005; October 21 2005; May 25, 2006; August 20, 2006; January 27, 2007 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, Ed Sandberg, and &lt;a rel=&#34;nofollow&#34; href=&#34;http://slalom-speaking.blogspot.com/&#34;&gt;Mark W&lt;/a&gt; for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Please note that these chapters do contain small images from the film. For the sake of all users, images have been limited to no more than two per chapter. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;p&gt;
+Click on the below chapters to access the complete transcript for the chapter, as well as read any comments that may have been left.
+&lt;/p&gt;
+&lt;p&gt;
+Please feel free to point out any problems you may find with the transcript, as well as leave comments with your thoughts on portions of the movie (I&amp;#39;ll say this again below because I mean it :D ).
+&lt;/p&gt;
+&lt;h4&gt;Table of Contents (based on Waking Life DVD scene chapters)&lt;/h4&gt;
+&lt;ol&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/01/&#34;&gt;Dream is Destiny&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/02/&#34;&gt;Anchors Aweigh&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/03/&#34;&gt;Life Lessons&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/04/&#34;&gt;Alienation&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/05/&#34;&gt;Death and Reality&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/06/&#34;&gt;Free Will and Physics&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/07/&#34;&gt;The Aging Paradox&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/08/&#34;&gt;Noise &amp;amp; Silence&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/09/&#34;&gt;What&amp;#39;s the Story?&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/10/&#34;&gt;Dreams&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/11/&#34;&gt;The Holy Moment&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;br /&gt;
+    &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Thoughts-and-comments-on-Waking-Life-The-Holy-Moment.aspx&#34;&gt;Read my thoughts and share your own&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/12/&#34;&gt;Society Is a Fraud&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/13/&#34;&gt;Dreamers&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/14/&#34;&gt;Ants&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/15/&#34;&gt;We Are the Authors&lt;/a&gt; &lt;sup&gt;&lt;em&gt;2&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/16/&#34;&gt;Meet Yourself&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/17/&#34;&gt;Performance&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/18/&#34;&gt;Trapped in a Dream&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/19/&#34;&gt;Wake Up!&lt;/a&gt; &lt;sup&gt;&lt;em&gt;1&lt;/em&gt;&lt;/sup&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/20/&#34;&gt;End Titles&lt;/a&gt; &lt;em&gt;(not included here)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;sup&gt;1&lt;/sup&gt; Last reviewed October 2005.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;sup&gt;2&lt;/sup&gt; Addition of character&amp;#39;s names in May 2006.
+&lt;/p&gt;
+&lt;p&gt;
+Image(s) added November 2006 and January 2007. Minor changes (scene information explanations were expanded in select chapters) also in January 2007.
+&lt;/p&gt;
+&lt;p&gt;
+If you notice any problems with the movie&amp;#39;s transcript, please just let me know. Also, if you have any comments or thoughts that you&amp;#39;d like to share on a particular portion of the movie (or the movie in general), please don&amp;#39;t hesitate to share them with the public via the comment system, or send them privately to &lt;strong&gt;strivinglife [at] gmail [dot] com&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Images used on individual script pages are copyright their respective owners. Select images are displayed here for informational and educational purposes only. See more of the film by purchasing a copy for yourself, or renting the movie from your local video store(s).
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+&lt;strong&gt;Can you help?&lt;/strong&gt; Ryan C. asks for movies in a vein similar to &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/ghost-in-the-shell-2-innocence-script/&#34;&gt;Ghost in the Shell 2&lt;/a&gt; and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life&lt;/a&gt;). He suggests &lt;cite&gt;Mindwalk&lt;/cite&gt; and &lt;cite&gt;My Dinner With Andre&lt;/cite&gt; as two such movies. Can you, readers, recommend any other movies like these?
+&lt;/p&gt;
+&lt;p&gt;
+How about books? Simon K. asks for suggestions of both books and movies similar to Waking Life.
+&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 20 - End Titles</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-20-End-Titles/</link>
+      <pubDate>Fri, 21 Oct 2005 00:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-20-End-Titles/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;twenty&#34; name=&#34;twenty&#34; title=&#34;twenty&#34;&gt;&lt;/a&gt;20 End Titles] &lt;/h3&gt;
+&lt;p&gt;
+(Credits appear and music continues. It&amp;#39;s worth sitting through to the end not only for the music, but also for a glimpse back at the animation styles from the film.) 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/19/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/20/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/20/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 19 - Wake Up!</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-19-Wake-Up%21/</link>
+      <pubDate>Fri, 21 Oct 2005 00:19:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-19-Wake-Up%21/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;
+Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&amp;#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
+&lt;/p&gt;
+&lt;p&gt;
+Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&amp;#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &amp;#39;like, like, you know,&amp;#39; sections ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;nineteen&#34; name=&#34;nineteen&#34; title=&#34;nineteen&#34;&gt;&lt;/a&gt;19 Wake Up!] &lt;/h3&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_19_1.jpg&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_19_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 19 - Wake Up!&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;(The main character wakes up, is seen walking down a couple streets, exquisite piano music is playing, he walks towards a house, checks the door, walks to the driveway where a car is parked. He looks up at the sky and starts to float upwards, tries to grab onto the car door handle, misses twice, keeps floating up and floats away to nothing.) 
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/18/&#34;&gt;previous chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/20/&#34;&gt;next chapter&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt; 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&amp;#39;s easy!
+&lt;/p&gt;
+&lt;p&gt;
+For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
+&lt;/p&gt;
+&lt;p&gt;
+Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/19/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/19/&lt;/a&gt;&amp;nbsp; 
+&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Waking Life: Chapter 18 - Trapped in a Dream</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-18-Trapped-in-a-Dream/</link>
+      <pubDate>Fri, 21 Oct 2005 00:18:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Waking-Life-Chapter-18-Trapped-in-a-Dream/</guid>
+      <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
+&lt;p&gt;Description: Script of the movie &lt;em&gt;Waking Life&lt;/em&gt;, based on Tara Carreon&#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles.&lt;/p&gt;
+&lt;p&gt;Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &#39;like, like, you know,&#39; sections ;)&lt;/p&gt;
+&lt;p&gt;Read the entire &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life movie transcript, with revisions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&#39;s easy!&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 class=&#34;waking_life_chapter&#34;&gt;[&lt;a id=&#34;eighteen&#34; title=&#34;eighteen&#34; name=&#34;eighteen&#34;&gt;&lt;/a&gt;18 Trapped in a Dream]&lt;/h3&gt;
+&lt;p&gt;(A guy is playing a pinball machine, seemingly the same guy who rode with him in the back of the boat car. This part is played by Richard Linklater, aka, the director.)&lt;/p&gt;
+&lt;p&gt;&lt;a onclick=&#34;window.open(this.href);return false;&#34; href=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_18_1.jpg&#34;&gt;&lt;img src=&#34;http://replace-this-with-your-hugo-site.com/files/images/WakingLife/WakingLife_18_1_t.jpg&#34; alt=&#34;Waking Life: Chapter 11 - The Holy Moment&#34; width=&#34;250&#34; height=&#34;140&#34; align=&#34;right&#34; /&gt;&lt;/a&gt;Hey, man.&lt;/p&gt;
+&lt;p&gt;Hey.&lt;/p&gt;
+&lt;p&gt;Weren&#39;t you in a boat car? You know, the guy, the guy with the hat? He gave me a ride in his car, or boat thing, and you were in the back seat with me?&lt;/p&gt;
+&lt;p&gt;I mean, I&#39;m not saying that you don&#39;t know what you&#39;re talking about, but I don&#39;t know what you&#39;re talking about.&lt;/p&gt;
+&lt;p&gt;No, you see, you guys let me off at this really specific spot that you gave him directions to let me off at, I get out, and end up getting hit by a car, but then, I just woke up because I was dreaming, and later than that, I found out that I was still dreaming, dreaming that I&#39;d woken up.&lt;/p&gt;
+&lt;p&gt;Oh yeah, those are called false awakenings. I used to have those all the time.&lt;/p&gt;
+&lt;p&gt;Yeah, but I&#39;m still in it now. I, I can&#39;t get out of it. It&#39;s been going on forever, I keep waking up, but, but I&#39;m just waking up into another dream. I&#39;m starting to get creeped out, too. Like I&#39;m talking to dead people. This woman on TV&#39;s telling me about how death is this dreamtime that exists outside of life. I mean, (desperate sigh) I&#39;m starting to think that I&#39;m dead.&lt;/p&gt;
+&lt;p&gt;I&#39;m gonna tell you about a dream I once had. I know that&#39;s, when someone says that, then usually you&#39;re in for a very boring next few minutes, and you might be, but it sounds like, you know, what else are you going to do, right? Anyway, I read this essay by Philip K. Dick.&lt;/p&gt;
+&lt;p&gt;What, you read it in your dream?&lt;/p&gt;
+&lt;p&gt;No, no. I read it before the dream. It was the preamble to the dream. It was about that book, um &lt;em&gt;Flow My Tears the Policeman Said&lt;/em&gt;. You know that one?&lt;/p&gt;
+&lt;p&gt;Uh, yeah yeah, he won an award for that one.&lt;/p&gt;
+&lt;p&gt;Right, right. That&#39;s the one he wrote really fast. It just like flowed right out of him. He felt he was sort of channeling it, or something. But anyway, about four years after it was published, he was at this party, and he met this woman who had the same name as the woman character in the book. And she had a boyfriend with the same name as the boyfriend character in the book, and she was having an affair with this guy, the chief of police, and he had the same name as the chief of police in his book. So she&#39;s telling him all of this stuff from her life, and everything she&#39;s saying is right out of his book. So that&#39;s totally freaking him out, but, what can he do?&lt;/p&gt;
+&lt;p&gt;And then shortly after that, he was going to mail a letter, and he saw this kind of, um, you know, dangerous, shady looking guy standing by his car, but instead of avoiding him, which he says he would have usually done, he just walked right up to him and said, &#34;Can I help you?&#34; And the guy said, &#34;Yeah. I, I ran out of gas.&#34; So he pulls out his wallet, and he hands him some money, which he says he never would have done, and then he gets home and thinks, wait a second, this guy, you know, he can&#39;t get to a gas station, he&#39;s out of gas. So he gets back in his car, he goes and finds the guy, takes him to the gas station, and as he&#39;s pulling up at the gas station, he realizes, &#34;Hey, this is in my book too. This exact station, this exact guy. Everything.&#34;&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;So this whole episode is kind of creepy, right? And he&#39;s telling his priest about it, you know, describing how he wrote this book, and then four years later all these things happened to him. And as he&#39;s telling it to him, the priest says, &#34;That&#39;s the Book of Acts. You&#39;re describing the Book of Acts.&#34; And he&#39;s like, &#34;I&#39;ve never read the Book of Acts.&#34; So he, you know, goes home and reads the Book of Acts, and it&#39;s like uncanny. Even the characters&#39; names are the same as in the Bible. And the Book of Acts takes place in 50 A.D., when it was written, supposedly. So Philip K. Dick had this theory that time was an illusion and that we were all actually in 50 A.D., and the reason he had written this book was that he had somehow momentarily punctured through this illusion, this veil of time, and what he had seen there was what was going on in the Book of Acts.&lt;/p&gt;
+&lt;p&gt;And he was really into Gnosticism, and this idea that this demiurge, or demon, had created this illusion of time to make us forget that Christ was about to return, and the kingdom of God was about to arrive. And that we&#39;re all in 50 A.D., and there&#39;s someone trying to make us forget that God is imminent. And that&#39;s what time is. That&#39;s what all of history is. It&#39;s just this kind of continuous, you know, daydream, or distraction.&lt;/p&gt;
+&lt;p&gt;And so I read that, and I was like, well that&#39;s weird. And than that night I had a dream and there was this guy in the dream who was supposed to be a psychic. But I was skeptical. I was like, you know, he&#39;s not really a psychic, you know I&#39;m thinking to myself. And then suddenly I start floating, like levitating, up to the ceiling. And as I almost go through the roof, I&#39;m like, &#34;Okay, Mr. Psychic. I believe you. You&#39;re a psychic. Put me down please.&#34; And I float down, and as my feet touch the ground, the psychic turns into this woman in a green dress. And this woman is Lady Gregory.&lt;/p&gt;
+&lt;p&gt;Now Lady Gregory was Yeats&#39; patron, this, you know, Irish person. And though I&#39;d never seen her image, I was just sure that this was the face of Lady Gregory. So we&#39;re walking along, and Lady Gregory turns to me and says, &#34;Let me explain to you the nature of the universe. Now Philip K. Dick is right about time, but he&#39;s wrong that it&#39;s 50 A.D. Actually, there&#39;s only one instant, and it&#39;s right now, and it&#39;s eternity. And it&#39;s an instant in which God is posing a question, and that question is basically, &#39;Do you want to, you know, be one with eternity? Do you want to be in heaven?&#39; And we&#39;re all saying, &#39;No thank you. Not just yet.&#39; And so time is actually just this constant saying &#39;No&#39; to God&#39;s invitation. I mean that&#39;s what time is. I mean, and it&#39;s no more 50 A.D. than it&#39;s two thousand and one. And there&#39;s just this one instant, and that&#39;s what we&#39;re always in.&#34;&lt;/p&gt;
+&lt;p&gt;And then she tells me that actually this is the narrative of everyone&#39;s life. That, you know, behind the phenomenal difference, there is but one story, and that&#39;s the story of moving from the &#34;no&#34; to the &#34;yes.&#34; All of life is like, &#34;No thank you. No thank you. No thank you.&#34; then ultimately it&#39;s, &#34;Yes, I give in. Yes, I accept. Yes, I embrace.&#34; I mean, that&#39;s the journey. I mean, everyone gets to the &#34;yes&#34; in the end, right?&lt;/p&gt;
+&lt;p&gt;Right.&lt;/p&gt;
+&lt;p&gt;So we continue walking, and my dog runs over to me. And so I&#39;m petting him, really happy to see him, you know, he&#39;s been dead for years. So I&#39;m petting him and I realize there&#39;s this kind of gross oozing stuff coming out of his stomach. And I look over at Lady Gregory, and she sort of coughs. She&#39;s like [cough] [cough] &#34;Oh, excuse me.&#34; And there&#39;s vomit, like dribbling down her chin, and it smells really bad. And I think, &#34;Well, wait a second, that&#39;s not just the smell of vomit,&#34; which is, doesn&#39;t smell very good, &#34;that&#39;s the smell of like dead person vomit.&#34; You know, so it&#39;s like doubly foul. And then I realize I&#39;m actually in the land of the dead, and everyone around me is dead. My dog had been dead for over ten years, Lady Gregory had been dead a lot longer than that. When I finally woke up, I was like, whoa, that wasn&#39;t a dream, that was a visitation to this real place, the land of the dead.&lt;/p&gt;
+&lt;p&gt;So what happened? I mean how did you finally get out of it?&lt;/p&gt;
+&lt;p&gt;Oh man. It was just like one of those like life altering experiences. I mean I could never really look at the world the same way again, after that.&lt;/p&gt;
+&lt;p&gt;Yeah, but I mean like how did you, how did you finally get out of the dream? See, that&#39;s my problem. I&#39;m like trapped. I keep, I keep thinking that I&#39;m waking up, but I&#39;m still in a dream. It seems like it&#39;s going on forever. I can&#39;t get out of it, and I want to wake up for real. How do you really wake up?&lt;/p&gt;
+&lt;p&gt;I don&#39;t know, I don&#39;t know. I&#39;m not very good at that anymore. But, um, if that&#39;s what you&#39;re thinking, I mean you, you probably should. I mean, you know if you can wake up, you should, because you know someday, you know, you won&#39;t be able to. So just, um ... But it&#39;s easy. You know. Just, just wake up.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/17/&#34;&gt;previous chapter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Read the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/19/&#34;&gt;next chapter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/&#34;&gt;Waking Life Script with Revisions&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx&#34;&gt;Learn how to display this transcript on your blog or site&lt;/a&gt;. It&#39;s easy!&lt;/p&gt;
+&lt;p&gt;For the sake of version control and in the interest of not having multiple versions floating about the Internet, please &lt;strong&gt;link&lt;/strong&gt; to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :)&lt;/p&gt;
+&lt;p&gt;Permanent link: &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/waking-life-transcript-with-revisions/18/&#34;&gt;http://strivinglife.com/waking-life-transcript-with-revisions/18/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

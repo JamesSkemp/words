@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualsvn on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/visualsvn/</link>
+    <description>Recent content in Visualsvn on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Nov 2011 19:30:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/visualsvn/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Migration from CollabNet Subversion to VisualSVN Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
+      <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
+      <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
+&lt;p&gt;
+&lt;h3&gt;VisualSVN migration&lt;/h3&gt;
+&lt;p&gt;&lt;ol&gt;
+&lt;li&gt;Installed VisualSVN. Repositories saved to C:\Repositories&lt;/li&gt;
+&lt;li&gt;Setup existing users.&lt;/li&gt;
+&lt;li&gt;Import existing repositories.&lt;/li&gt;
+&lt;li&gt;Should already be upgraded, but upgrade to 1.5, just in case.&lt;/li&gt;
+&lt;li&gt;Upgrade TortoiseSVN.&lt;/li&gt;
+&lt;li&gt;Upgrade working copies to 1.7.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

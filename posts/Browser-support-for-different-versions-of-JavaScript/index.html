@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Browser support for different versions of JavaScript - My New Hugo Site</title>
+    <meta property='og:title' content="Browser support for different versions of JavaScript - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2007-01-19T22:04:00-06:00">
+        <meta itemprop="headline" content="Browser support for different versions of JavaScript">
+        <meta itemprop="description" content="
+After a number of Google searches, I&#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&#39;ll be going over this information, and trying to dig up more.
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2007-01-19T22:04:00-06:00">Fri, Jan 19, 2007</time>
+          <h1 class="article-title">Browser support for different versions of JavaScript</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+After a number of Google searches, I&#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&#39;ll be going over this information, and trying to dig up more.<!--adsense-->
+</p>
+<p>
+<a rel="nofollow" href="http://www.anybrowser.com/javascript.html" onclick="window.open(this.href);return false;">AnyBrowser.com</a> provides information for IE 2 to IE 5, Netscape 2 to Netscape 6, and AOL 3 to 5.  This covers JavaScript 1.3 (IE 5 and AOL 5) and JavaScript 1.4 (Netscape 6).
+</p>
+<p>
+<a rel="nofollow" href="http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:About" onclick="window.open(this.href);return false;">Mozilla.org</a> provides information for JavaScript 1.0 to JavaScript 1.7, but only for Netscape and Mozilla/Firefox.  JavaScript 1.5 is Navigator 6 and Mozilla 0.6x-0.9x, JavaScript 1.6 is Firefox 1.5, and JavaScript 1.7 is Firefox 2.
+</p>
+<div class="note">
+<p>
+Interestingly, JavaScript 1.4 is listed as n/a on Mozilla, and Netscape 6 under JavaScript 1.5, but AnyBrowser has 6 under 1.4 ...
+</p>
+</div>
+<p>
+Using the Web as my guide, I&#39;ve determined two ways that I believe will test for JavaScript 1.6 and JavaScript 1.7 support, based upon the following two pages.
+</p>
+<ul>
+    <li><a rel="nofollow" href="http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6" onclick="window.open(this.href);return false;">http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6</a></li>
+    <li><a rel="nofollow" href="http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7" onclick="window.open(this.href);return false;">http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7</a></li>
+</ul>
+<p>
+For JavaScript 1.6, I&#39;ll be using the following code snippet.
+</p>
+<blockquote>
+    <p>
+    var num = 15;<br />
+    document.write(String.replace(num, /5/, &#39;2&#39;) + &quot; (should be &#39;12&#39;)&lt;br /&gt;\n&quot;);
+    </p>
+</blockquote>
+<p>
+For JavaScript 1.7, I&#39;ll be using this code, as well as the previous code.
+</p>
+<blockquote>
+    <p>
+    var x = 5;<br />
+    var y = 0;<br />
+    document.write( let(x = x + 10, y = 12) x+y + &quot; (should be &#39;27&#39;)&lt;br /&gt;\n&quot;);<br />
+    document.write(x+y + &quot;&lt;br /&gt;\n&quot;);
+    </p>
+</blockquote>
+<p>
+The testing page is available on my <a href="http://strivinglife.cfdeveloper.co.uk/javascript_text.cfm" onclick="window.open(this.href);return false;">CFDeveloper site</a>.
+</p>
+<p>
+First, if you know of any code that I can use to test JavaScript 1.5 and 1.4 support, please post or email to me, so I can add that to my testing page.
+</p>
+<p>
+Second, if you can test a different browser/version, please also post your results.
+</p>
+<h4>Testing results</h4>
+<p>
+My testing of Firefox 2.0.0.1, Internet Explorer 7.0.5730.11, and Opera 9.10.  Since the current version of Netscape uses either IE or FF for rendering, I&#39;ve skipped any testing of it.
+</p>
+<p>
+<strong>Firefox 2.0.0.1</strong> displays one line for JavaScript 1.5 and less.  These are simple document.write()s, so they should display in most browsers.  Version information is passed through language, not the type, and the type is text/javascript.  In addition, it displays the scripts for 1.6 and 1.7 whether the type is text/javascript or application/javascript, and the version is stated.  For 1.6, it doesn&#39;t display the 1.7 code if the type is text/javascript, with no version.  It does for 1.6.  So, 1.6 has three groups of two lines, while 1.7 has two groups of four lines.  From what I can tell, this is expected behaviour.
+</p>
+<p>
+<strong>Internet Explorer 7.0.5730.11</strong> and <strong>Opera 9.10</strong> have the same display for this page.  Through JavaScript 1.5, they each have one line for each - which is to be expected.  For 1.6, they have a single line, which is the first, and simple, document.write() of some text.  No version is passed, and the type is set to text/javascript.  At this point, nothing else is displayed.  For 1.7, nothing is displayed.
+</p>
+<p>
+If, for 1.6, we change &lt;script language=&quot;javascript1.6&quot; type=&quot;text/javascript&quot;&gt; to &lt;script language=&quot;javascript1.6&quot; type=&quot;application/javascript&quot;&gt;, only Opera keeps the initial document.write for 1.6.  Internet Explorer displays nothing under the 1.6 heading.
+</p>
+<h4>Current conclusions</h4>
+<p>
+Based upon this initial testing, it appears that application/javascript, and setting the version in the type, is not supported by the current version of Internet Explorer.  In addition, Firefox is the only one of the three browsers tested that supports up to JavaScript 1.7.  Based upon how IE and Opera behaved with the JavaScript 1.6 test, I&#39;d say that there is no support for 1.6 features, but that doesn&#39;t stop them from giving it a go.  If they run into a problem, they appear to quit looking through the script block.
+</p>
+<p>
+I&#39;d be very interested in documentation regarding this, so if you know more, please do post what you can share.
+</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/firefox" class="tag">firefox</a> <a href="http://replace-this-with-your-hugo-site.com/tags/internet%20explorer" class="tag">internet explorer</a> <a href="http://replace-this-with-your-hugo-site.com/tags/javascript" class="tag">javascript</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fBrowser-support-for-different-versions-of-JavaScript%2f&t=Browser%20support%20for%20different%20versions%20of%20JavaScript" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fBrowser-support-for-different-versions-of-JavaScript%2f&text=Browser%20support%20for%20different%20versions%20of%20JavaScript&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fBrowser-support-for-different-versions-of-JavaScript%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fBrowser-support-for-different-versions-of-JavaScript%2f&title=Browser%20support%20for%20different%20versions%20of%20JavaScript" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

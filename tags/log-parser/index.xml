@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log Parser on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/log-parser/</link>
+    <description>Recent content in Log Parser on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Sep 2010 09:41:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/log-parser/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The benefits of using a file for Log Parser SQL queries</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
+      <pubDate>Sun, 26 Sep 2010 09:41:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
+      <description>&lt;p&gt;One of the things I always forget about when I&#39;m using Microsoft Log Parser is that you can define your SQL query in a file and run it, instead of putting it in the command line.&lt;/p&gt;
+&lt;p&gt;For example, the following will run whatever SQL is defined in strivinglife.robots.sql.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;logparser&#34;&gt;logparser -i:w3c -o:xml file:strivinglife.robots.sql&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where this comes in handy is for something like the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Examples&#34;&gt;Log Parser query&lt;/a&gt; I defined today, that parses IIS logs for requests to the robots.txt file and outputs the ip address and user-agent of the request, with a total count from that combination.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;sql&#34;&gt;SELECT c-ip AS [ClientIp], cs(user-agent) AS [ClientUserAgent], COUNT(*) AS [Requests]
+--USING
+INTO strivinglife.robots.xml
+FROM \\server1\projects\logs\server2008\w3svc5\u_ex1009*.log
+WHERE cs-uri-stem = &#39;/robots.txt&#39;
+GROUP BY ClientIp, ClientUserAgent
+--HAVING
+ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because&amp;nbsp;my output is XML, and I don&#39;t want the parens to turn into underscores (as well as&amp;nbsp;so that I know what my element names are) I alias the columns to particular names.&amp;nbsp;(The commented lines are from my template file.)&lt;/p&gt;
+&lt;p&gt;This then gives me an output that I can parse and display, for example, on a Web page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser Plus - version 0.3 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</link>
+      <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Currently under development, Log Parser Plus (not be confused with the Web site &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;) is a tool to (hopefully) help work with Microsoft Log Parser.&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.zip&#34;&gt;Log Parser Plus 0.3 BETA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You will need to download and install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;Microsoft Log Parser&lt;/a&gt; for this application to run, as well as .NET Framework 2.0.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Log-Parser-Plus-version-021-released.aspx&#34;&gt;More information&lt;/a&gt; can be found in the post regarding the initial, 0.2.1, release.&lt;/p&gt;
+&lt;p&gt;Comments and concerns are welcomed.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser Plus - version 0.2.1 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</link>
+      <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
+&lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more.&lt;/p&gt;
+&lt;p&gt;While a number of applications exist to help use Log Parser, as well as a number of sites containing &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser queries&lt;/a&gt;, I haven&amp;rsquo;t been very happy with them.&lt;/p&gt;
+&lt;p&gt;In an attempt to make it even easier to work with Log Parser, I present version 0.2.1 BETA of Log Parser Plus (not to be confused with the Web site, &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.2.1.zip&#34;&gt;Log Parser Plus 0.2.1 BETA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Log Parser Plus 0.2.1 BETA is, as noted, currently under development. It lacks proper threading, and could use a number of user interface tweaks. Since I use IIS for personal and business purposes, I will be working towards version 1.0 and beyond.&lt;/p&gt;
+&lt;p&gt;Microsoft Log Parser is required, and can be &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;downloaded from Microsoft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions, comments, and concerns are appreciated.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Log Parser custom brush for Syntax Highlighter</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</link>
+      <pubDate>Sun, 18 Oct 2009 13:41:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</guid>
+      <description>&lt;p&gt;It still needs a touch of work, but a basic custom brush for &lt;a rel=&#34;external&#34; href=&#34;http://alexgorbatchev.com/wiki/SyntaxHighlighter&#34;&gt;Syntax Highlighter&lt;/a&gt; is available for download.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/js/shBrushLogParser.js&#34;&gt;Download the Microsoft Log Parser custom brush for Syntax Highlighter 2.0.320&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Example included below and at &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Examples/Queries.aspx&#34;&gt;LogParserPlus.com&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;logparser&#34;&gt;logparser -rtp:-1 &#34;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 200sReport.txt FROM ex0902*.log WHERE (sc-status &amp;gt;= 200 AND sc-status &amp;lt; 300) ORDER BY sc-status, date, cs-uri-stem, cs-uri-query&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Comments and suggestions are welcomed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IIS Logs to SQLite - version 0.1 beta released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
+      <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
+      <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
+&lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This application requires the .NET Framework version 3.5 (&lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;check your version of .NET Framework&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Note that for a larger amount of logs, memory usage can spike.&lt;/p&gt;
+&lt;p&gt;In a future version I may (read: will) allow the columns to be exported to be selected by the user, instead of the &#39;all&#39; dump that I currently do.&lt;/p&gt;
+&lt;p&gt;There&#39;s some other interface cleanup items as well, and there&#39;s at least one known bug (using a custom log file or path that returns no matches).&lt;/p&gt;
+&lt;p&gt;This might be the direction I end up taking my Log Parser Plus application.&lt;/p&gt;
+&lt;p&gt;Plug: Read more about Microsoft Log Parser and find example queries at &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Log Parser timestamp formats</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Log-Parser-timestamp-formats/</link>
+      <pubDate>Fri, 06 Feb 2009 20:32:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Log-Parser-timestamp-formats/</guid>
+      <description>&lt;p&gt;The following article covers the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Functions#function_TO_TIMESTAMP&#34;&gt;timestamp&lt;/a&gt; format specifiers accepted by Microsoft Log Parser.&lt;/p&gt;
+&lt;h3&gt;Date&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Year&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;y, yy, yyy, yyyy = last 1, 2, 3, or 4 digits, relative to 2000&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Month&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;M = no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;MM = leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;MP = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;MX = no leading zero, or with or without zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;MMM = 3-character abbreviation&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;MMMM = full name of month&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Day&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;d = no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;dd = leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;dp = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;dx = no leading zero, or with or without zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;ddd = 3-character abbreviation&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;dddd = full name of day&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Time&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;Hour&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;h or H = no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;hh or HH = leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;hp or HP = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;hx or HX = leading zero, or with or without leading zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Minute&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;m = no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;mm = leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;mp = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;mx = leading zero, or with or without leading zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Second&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;s&amp;nbsp;= no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;ss&amp;nbsp;= leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;sp = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;sx = leading zero, or with or without leading zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Millisecond&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;l&amp;nbsp;= no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;ll&amp;nbsp;= leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;lp = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;lx = leading zero, or with or without leading zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Nanosecond&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;n&amp;nbsp;= no leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;nn&amp;nbsp;= leading zero&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;np = leading space&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;nx = leading zero, or with or without leading zero when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Other&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;div&gt;tt = AM/PM&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;? = space, or any character (wildcard) when parsing&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;any other character, not listed above, is listed verbatim&amp;nbsp;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For more about Log Parser, visit &lt;a href=&#34;http://LogParserPlus.com&#34;&gt;LogParserPlus.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parse FileZilla Server logs with Log Parser</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Parse-FileZilla-Server-logs-with-Log-Parser/</link>
+      <pubDate>Sun, 23 Nov 2008 22:15:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Parse-FileZilla-Server-logs-with-Log-Parser/</guid>
+      <description>&lt;p&gt;
+While FileZilla Server is one of the best FTP servers available, it&amp;#39;s logging leaves much to be desired.
+&lt;/p&gt;
+&lt;p&gt;
+However, after a couple of hours, I&amp;#39;ve created a script for Log Parser that will generate a W3C log from FileZilla Server&amp;#39;s logs.
+&lt;/p&gt;
+&lt;p&gt;
+Save the following to a file, for example, FileZillaServer.sql:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    SELECT&lt;br /&gt;
+    &amp;nbsp;SUBSTR(Text, 1, SUB(INDEX_OF(Text, &amp;#39;)&amp;#39;), 1)) AS RequestNumber&lt;br /&gt;
+    &amp;nbsp;, TO_TIMESTAMP(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;TRIM(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;SUBSTR(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Text&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;, ADD(INDEX_OF(Text, &amp;#39;)&amp;#39;), 1)&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;, SUB(INDEX_OF(Text, &amp;#39;-&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;)&amp;#39;), 4))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;)&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;)&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;, &amp;#39;M/d/yyyy?H:mm:ss&amp;#39;&lt;br /&gt;
+    &amp;nbsp;) AS DateTime&lt;br /&gt;
+    &amp;nbsp;--, TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;, TRIM(SUBSTR(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;, 0&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;, LAST_INDEX_OF(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;, &amp;#39;(&amp;#39;&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;)&lt;br /&gt;
+    &amp;nbsp;)) AS User&lt;br /&gt;
+    &amp;nbsp;, SUBSTR(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;, ADD(LAST_INDEX_OF(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;, &amp;#39;(&amp;#39;&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;), 1)&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;, SUB(LAST_INDEX_OF(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;, &amp;#39;)&amp;#39;&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;), ADD(LAST_INDEX_OF(&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1), SUB(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), ADD(INDEX_OF(Text, &amp;#39;-&amp;#39;), 1))))&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;, &amp;#39;(&amp;#39;&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;), 1))&lt;br /&gt;
+    &amp;nbsp;) AS IpAddress&lt;br /&gt;
+    &amp;nbsp;, SUBSTR(Text, ADD(INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;), 2), SUB(STRLEN(Text), INDEX_OF(Text, &amp;#39;&amp;gt;&amp;#39;))) AS Request&lt;br /&gt;
+    &lt;strong&gt;INTO FileZilla.log&lt;/strong&gt;&lt;br /&gt;
+    &lt;strong&gt;FROM fzs-*.log&lt;/strong&gt;&lt;br /&gt;
+    WHERE Text LIKE &amp;#39;(%&amp;#39;&lt;br /&gt;
+    &amp;nbsp;AND Request NOT LIKE &amp;#39;Connected,%&amp;#39;&lt;br /&gt;
+    &amp;nbsp;AND Request NOT LIKE &amp;#39;221 %&amp;#39;&lt;br /&gt;
+    &amp;nbsp;AND Request NOT LIKE &amp;#39;disconnected%&amp;#39;&lt;br /&gt;
+    &amp;nbsp;AND Request NOT LIKE &amp;#39;QUIT%&amp;#39;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Items in &lt;strong&gt;bold&lt;/strong&gt; can be easily changed.
+&lt;/p&gt;
+&lt;p&gt;
+Then call the SQL with:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser -rtp:-1 -i:TEXTLINE -o:W3C file:FileZillaServer.sql
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This returns the following fields:
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    RequestNumber (string)
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    DateTime (timestamp)
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    User (string)
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    IpAddress (string)
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Request (string)
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;
+In my attempt to parse the files, I ran into an issue with generating the timestamp. While AM/PM is added to the time,&amp;nbsp;the time is actually&amp;nbsp;output in 24-hour time.
+&lt;/p&gt;
+&lt;p&gt;
+Ignoring the fact that it therefore seems unnecessary to include AM/PM as well, Log Parser seems to run into issues if you try to TO_TIMESTAMP with the AM/PM included, and 24-hour time. In particular, it chokes on hour 0 and 13-23, if there&amp;#39;s also AM or PM.
+&lt;/p&gt;
+&lt;p&gt;
+Changing the code to pull AM/PM resolved the issue with NULLs (-) being returned.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to get started with Microsoft Log Parser</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-get-started-with-Microsoft-Log-Parser/</link>
+      <pubDate>Fri, 07 Nov 2008 14:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-get-started-with-Microsoft-Log-Parser/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;ve &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/?tag=/log+parser&#34;&gt;written about Microsoft Log Parser&lt;/a&gt; before, and even started &lt;a href=&#34;http://logparserplus.com/&#34;&gt;a site around it&lt;/a&gt;. But, I noticed the other day that I hadn&amp;#39;t written on how to get started with this powerful tool. 
+&lt;/p&gt;
+&lt;h3&gt;Getting Log Parser&lt;/h3&gt;
+&lt;p&gt;
+The current version of Log Parser is version 2.2, which you can &lt;a href=&#34;http://www.microsoft.com/technet/scriptcenter/tools/logparser/default.mspx&#34; target=&#34;_blank&#34;&gt;download from Microsoft&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;h3&gt;Installing Log Parser&lt;/h3&gt;
+&lt;p&gt;
+While it says&amp;nbsp;supported operating systems are&amp;nbsp;&amp;quot;Windows 2000; Windows Server 2003; Windows XP Professional Edition,&amp;quot; it appears to run fine on Windows XP Home Edition and Windows Vista (at least Ultimate has been personally confirmed). 
+&lt;/p&gt;
+&lt;p&gt;
+While it will install to C:\Program Files\Log Parser 2.2\ by default, you can grab the core executable&amp;nbsp;and move&amp;nbsp;it anywhere you&amp;#39;d like, including to a USB flash drive, for parsing on other systems. 
+&lt;/p&gt;
+&lt;h3&gt;Running Log Parser (easily)&lt;/h3&gt;
+&lt;p&gt;
+Log Parser is run from the command line. By making one addition to your system(s), you can easily run Log Parser from any directory. 
+&lt;/p&gt;
+&lt;p&gt;
+To allow the Log Parser executable to be run from any directory, through the command line, right-click on My Computer and select Properties. On the Advanced tab is an Environment Variables button. 
+&lt;/p&gt;
+&lt;p&gt;
+Under System variables you&amp;#39;ll find a Path variable, with an existing value. If you add the full path to logparser.exe, you can simply type &lt;strong&gt;logparser&lt;/strong&gt; from the command line to&amp;nbsp;run the executable. 
+&lt;/p&gt;
+&lt;p&gt;
+For example: 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    ;C:\Program Files\Log Parser 2.2\&amp;nbsp; 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Each path must be separated by a semi-colon (;). 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Starting Log Parser&lt;/h3&gt;
+&lt;p&gt;
+With this done, you can now&amp;nbsp;go to Start &amp;gt; Run ...&amp;nbsp;- or press&amp;nbsp;the Windows key and&amp;nbsp;R&amp;nbsp;- and Open &lt;strong&gt;cmd&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+To verify that Log Parser is available, type &lt;strong&gt;logparser -h&lt;/strong&gt;, which should show a listing of available commands.
+&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;
+Visit &lt;a href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt; to see a listing of available functions and a list of examples and tutorials, and to share your queries.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LogParserPlus.com - Updates for 2008.11.04</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/LogParserPluscom-Updates-for-20081104/</link>
+      <pubDate>Wed, 05 Nov 2008 08:18:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/LogParserPluscom-Updates-for-20081104/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt; was updated last night, during the election coverage, with the following changes:
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    All functions now have descriptions (pulled almost completely from the included help file).
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Expressions have been added.
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Visit &lt;a href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt; for all of this information, and more, as it becomes available.
+&lt;/p&gt;
+&lt;p&gt;
+(Next addition will be samples for the functions, and the start of a fleshed-out queries listing.)
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LogParserPlus.com launched</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/LogParserPluscom-launched/</link>
+      <pubDate>Fri, 26 Sep 2008 18:01:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/LogParserPluscom-launched/</guid>
+      <description>&lt;p&gt;
+Since I now have actual content, there can be more visitors to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt;, outside of the government.
+&lt;/p&gt;
+&lt;p&gt;
+In additon to posting the articles here, I&amp;#39;ll be posting a number of articles to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt; in an attempt to make Microsoft&amp;#39;s Log Parser utility that much easier.
+&lt;/p&gt;
+&lt;p&gt;
+The initial focus will be on IIS-related queries, but who knows where it&amp;#39;ll end up.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A brief overview of IIS 6.0 and the W3C extended log format</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</link>
+      <pubDate>Sat, 03 Nov 2007 21:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</guid>
+      <description>&lt;p&gt;
+In Microsoft Internet Information Services (IIS) 6.0, you can choose to use a number of different formats for your access logs. 
+&lt;/p&gt;
+&lt;p&gt;
+Access logs contain information about what files are requested, whether the request was successful or not. 
+&lt;/p&gt;
+&lt;p&gt;
+Of all the available formats, the World Wide Web Consortium (W3C) extended log file format is by far the most flexible format available, as you can select the information that you would like to log. Of course, with that added flexibility, you also have larger log files, with the more you decide to log. Since logging is handled by the server (specifically IIS), no matter what kind of files you serve, the hardest part is determining what you&amp;#39;d like to log, and then doing something with that data. 
+&lt;/p&gt;
+&lt;h3&gt;Overview of the fields&lt;/h3&gt;
+&lt;p&gt;
+W3C extended log fields&amp;nbsp;are server and/or client-related. For example, there is the IP address that I use, the IP address that the server uses, and the browser that I use to access the server/content. 
+&lt;/p&gt;
+&lt;p&gt;
+Working through the ordering in IIS, these fields are as follows: 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Date ( date ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Time ( time ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Client IP Address ( c-ip ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    User Name ( cs-username ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Service Name ( s-sitename ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Server Name ( s-computername ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Server IP Address ( s-ip ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Server Port ( s-port ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Method ( cs-method ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    URI Stem ( cs-uri-stem ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    URI Query ( cs-uri-query ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Protocol Status ( sc-status ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Protocol Substatus ( sc-substatus ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Win32 Status (&amp;nbsp;sc-win32-status ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Bytes Sent (&amp;nbsp;sc-bytes ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Bytes Received (&amp;nbsp;cs-bytes ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Time Taken (&amp;nbsp;time-taken ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Protocol Version (&amp;nbsp;cs-version ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Host (&amp;nbsp;cs-host ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    User Agent (&amp;nbsp;cs(User-Agent) ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Cookie (&amp;nbsp;cs(Cookie) ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Referer ( cs(Referer) ) 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+As you&amp;#39;ll notice, most fields begin with either c, cs, s, or sc. As you look at where they are used, you can see that: 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    &lt;strong&gt;c&lt;/strong&gt; is used for &lt;strong&gt;client&lt;/strong&gt;-related&amp;nbsp;fields 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    &lt;strong&gt;s&lt;/strong&gt; is used for &lt;strong&gt;server&lt;/strong&gt;-related fields 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    &lt;strong&gt;cs&lt;/strong&gt; signifies information sent by the &lt;strong&gt;client to the server&lt;/strong&gt; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    &lt;strong&gt;sc&lt;/strong&gt; signifies information sent by the &lt;strong&gt;server to the client&lt;/strong&gt; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;What the logs are named&lt;/h3&gt;
+&lt;p&gt;
+When the log files are created in the extended format, they are given a specific filename, based upon what you&amp;#39;ve configured for when they are created. 
+&lt;/p&gt;
+&lt;p&gt;
+By default, logs store daily information. So, each log will be given a filename based upon the current date, and will store 24 hours of data. However, logs can also be formatted to hold more or less data. Each, along with the format of the filename, is listed below. 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    EXTEND&lt;em&gt;NN&lt;/em&gt;.LOG 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        Logs are unlimited in size, or created/closed after a particular size 
+        &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    EX&lt;em&gt;YYMMDDHH&lt;/em&gt;.LOG 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        Hourly logs 
+        &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    EX&lt;em&gt;YYMMDD&lt;/em&gt;.LOG 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        Daily logs 
+        &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    EX&lt;em&gt;YYMMWW&lt;/em&gt;.LOG 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        Weekly logs 
+        &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    EX&lt;em&gt;YYMM&lt;/em&gt;.LOG 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        Monthly logs 
+        &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For most sites, you can continue to use the default of daily logs. However, if you have a large amount of traffic, you may consider hourly logs, or even based upon a file size. 
+&lt;/p&gt;
+&lt;h3&gt;Additional fields when using Log Parser&lt;/h3&gt;
+&lt;p&gt;
+Briefly, there are two additional fields that are available, when using Log Parser (2.2). 
+&lt;/p&gt;
+&lt;p&gt;
+These additional fields are as follows. 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    LogFilename 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    LogRow&amp;nbsp; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;strong&gt;LogFilename&lt;/strong&gt; contains the full path to the log file, while &lt;strong&gt;LogRow&lt;/strong&gt; contains the row in that log file, that the data came from. 
+&lt;/p&gt;
+&lt;h3&gt;Next time ...&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+Next time, we&amp;#39;ll cover which of these fields you may want to log, for what benefit. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser SQL query syntax (high-level)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-SQL-query-syntax-high-level/</link>
+      <pubDate>Thu, 25 Oct 2007 21:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-SQL-query-syntax-high-level/</guid>
+      <description>&lt;p&gt;
+The following is a high-level look at Log Parser&amp;#39;s (version 2.2) SQL syntax. This does assume that you understand the specifics of each part, but for those that do not, this will be covered in a future tutorial. (This is more for my use.)&amp;nbsp; &lt;strong&gt;Bolded&lt;/strong&gt; elements are required for any valid query, whereas the other elements are optional. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;strong&gt;SELECT&lt;/strong&gt;&lt;br /&gt;
+    USING&lt;br /&gt;
+    INTO&lt;br /&gt;
+    &lt;strong&gt;FROM&lt;/strong&gt;&lt;br /&gt;
+    WHERE&lt;br /&gt;
+    GROUP BY&lt;br /&gt;
+    HAVING&lt;br /&gt;
+    ORDER BY 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Again, details about the specific parts, with&amp;nbsp;real-world examples,&amp;nbsp;will be covered in a future tutorial. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser script: Percent of status codes across all hits/requests</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
+      <pubDate>Mon, 01 Oct 2007 23:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article.
+&lt;/p&gt;
+&lt;p&gt;
+First, I assume that the below is put in the same directory as the logs you would like to parse.&amp;nbsp;
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    SELECT sc-status AS [HTTP Status Code], count(&lt;em&gt;) AS Requests&lt;br /&gt;
+    INTO http_status_percent_graph-%date%.png&lt;br /&gt;
+    FROM ex%date%&lt;/em&gt;.log&lt;br /&gt;
+    GROUP BY [HTTP Status Code]&lt;br /&gt;
+    ORDER BY Requests DESC&lt;br /&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Once you&amp;#39;ve saved this, you can call the script like such, so long as you&amp;#39;re already in the directory you saved the SQL file.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser file:http_status_percent_graph.sql?date=0710 -o:chart -chartType:Pie -chartTitle:&amp;quot;Status as Percent of Requests&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+If you just want the numbers, you can use the following SQL.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    SELECT sc-status, count(&lt;em&gt;)&lt;br /&gt;
+    INTO http_status_codes-%date%.txt&lt;br /&gt;
+    FROM ex%date%&lt;/em&gt;.log&lt;br /&gt;
+    GROUP BY sc-status&lt;br /&gt;
+    ORDER BY sc-status
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+It too can be called via the command line (again, assuming you save the SQL file and run the following in the same directory as your log files).
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser -rtp:-1 file:http_status_codes.sql?date=0710&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Feel free to modify the scripts to your own need.
+&lt;/p&gt;
+&lt;h3&gt;Example chart&lt;/h3&gt;
+&lt;p style=&#34;text-align: center&#34;&gt;
+&lt;img style=&#34;width: 640px; height: 480px&#34; src=&#34;http://replace-this-with-your-hugo-site.com/files/2007/10/http_status_percent_graph-example.gif&#34; alt=&#34;Example of the status code chart&#34; title=&#34;Example of the status code chart&#34; /&gt;&lt;br /&gt;
+Example of the status code chart
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to ensure that performance counters continue after a restart</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
+      <pubDate>Wed, 19 Sep 2007 21:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
+      <description>&lt;p&gt;
+A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. 
+&lt;/p&gt;
+&lt;p&gt;
+A bit of research later, it appears that there is a way to have Windows restart the logging after a system restart. 
+&lt;/p&gt;
+&lt;p&gt;
+To enable this, it seems you just need to have the log stop after a certain amount of time (for example, after x hours, or x days). Then, check the box stating that &amp;quot;When a log file closes,&amp;quot; &amp;quot;Start a new log file.&amp;quot; 
+&lt;/p&gt;
+&lt;p&gt;
+This has the added benefit of keeping your log files manageable in size. 
+&lt;/p&gt;
+&lt;h3&gt;Information to log&lt;/h3&gt;
+&lt;p&gt;
+Unfortunately, I haven&amp;#39;t found much in the way of information regarding what counters should be logged. I believe I read a Microsoft article that suggested Bytes Total/sec for the Network Interface, and Processor(_Total)\% Processor Time. 
+&lt;/p&gt;
+&lt;p&gt;
+I was doing this for a couple of weeks, but have decided to try out the following instead, for a couple of weeks. Once I&amp;#39;ve got a baseline (looking at the old numbers and the new), I&amp;#39;ll disable the logging for a bit, or decrease the polling time, and then start it back up to see if that baseline remains. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    Memory\Available MBytes&lt;br /&gt;
+    Network Interface(x)\Bytes Received/Sec&lt;br /&gt;
+    Network Interface(x)\Bytes Sent/sec&lt;br /&gt;
+    Processor(_Total)\% Processor Time 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Some information removed, to protect the innocent.) 
+&lt;/p&gt;
+&lt;p&gt;
+Once you have these logging, it&amp;#39;s easy to use LogParser and avg(), min(), max() to generate some meaningful information. 
+&lt;/p&gt;
+&lt;h3&gt;Example SQL query&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+See the below example (some data replaced with &amp;#39;xxx&amp;#39;). Modify to taste, and save as a sql file, running it through Log Parser with &amp;#39;file&amp;#39;. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    /* 2007.09.19&amp;nbsp;&amp;nbsp;&amp;nbsp; J.Skemp&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; Created query. */&lt;br /&gt;
+    SELECT count(*) AS TotalCounters,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Get the initial and final datetime&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min([(pdh-csv 4.0) (eastern daylight time)(240)]) as DateFirst,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max([(pdh-csv 4.0) (eastern daylight time)(240)]) as DateLast,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Processor information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcAvg(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcMin(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcMax(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Memory information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(to_int([\\xxx\Memory\Available MBytes])) as MemAvailAvg(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(to_int([\\xxx\Memory\Available MBytes])) as MemAvailMin(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(to_int([\\xxx\Memory\Available MBytes])) as MemAvailMax(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Network (in) information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecAvg(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecMin(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecMax(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Network (out) information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentAvg(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentMin(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentMax(K)&lt;br /&gt;
+    -- Change file names accordingly&lt;br /&gt;
+    INTO temp_report.txt&lt;br /&gt;
+    FROM ServerInfo_*.csv 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Add/remove as necessary, for your logs. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Log Parser to find users accounts used to log into an FTP site</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
+      <pubDate>Thu, 13 Sep 2007 20:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
+      <description>&lt;p&gt;
+The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select cs-uri-stem, count(cs-method) from ex*.log where cs-method like &amp;#39;%USER&amp;#39; group by cs-uri-stem order by count(cs-method),cs-uri-stem&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This assumes that you&amp;#39;ve added Log Parser to your path, and that you&amp;#39;re running this from your log file directory.
+&lt;/p&gt;
+&lt;p&gt;
+This query will tell you what ip addresses successfully logged into your FTP site.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select c-ip, count(sc-status) from ex*.log where sc-status = &amp;#39;230&amp;#39; group by c-ip order by count(sc-status),c-ip&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Finally, this query will show you what ip addresses attempted to log into your FTP site, and will give a count of how many times.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select c-ip, count(*) from ex*.log group by c-ip order by count(*),c-ip&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+You can find other Log Parser articles on my site by viewing other items tagged with &lt;strong&gt;log parser&lt;/strong&gt; (link below). 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

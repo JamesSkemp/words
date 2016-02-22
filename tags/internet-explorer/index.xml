@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet Explorer on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/internet-explorer/</link>
+    <description>Recent content in Internet Explorer on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jun 2011 22:09:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Internet Explorer 10: Platform Preview 2 now available</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
+&lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
+&lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
+&lt;p&gt;And that&#39;s about all I have to say about that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Current, major, browsers</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</link>
+      <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</guid>
+      <description>&lt;p&gt;
+Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
+&lt;/p&gt;
+&lt;p&gt;
+Anywho, I&amp;#39;ve decided, looking at the numbers, that I would start adding a check on my sites to alert users if there browser is out of date, and tell them where they can get an updated version. 
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note that I refer to the desktop version of these browsers, and mention only the major browsers. From personal experience, I highly recommend Opera&amp;#39;s mobile browser(s). 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;recBrowserIE&#34;&gt;Internet Explorer&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 7.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 6.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 8.0&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/windows/internet-explorer/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+&lt;strong&gt;Update 12/21/2008:&lt;/strong&gt; After looking through my logs, I found a couple of instances where the MSIE 6 and MSIE 7 instances show up in the user-agent, as well as MSIE&amp;nbsp;6 and 8. This seems to be with users who have installed standalone versions of Internet Explorer. If you&amp;#39;re using a newer version of IE, but are seeing a message about using an older version, that may be the issue. See &lt;a rel=&#34;nofollow&#34; href=&#34;http://techpatterns.com/forums/about1028.html&#34; target=&#34;_blank&#34;&gt;this site&lt;/a&gt; for more information. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;recBrowserFF&#34;&gt;Firefox&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 2.0 (supported through mid-December 2008)&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 3.1&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://getfirefox.com/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Safari&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.2&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 3.1&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.apple.com/safari/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recBrowserC&#34;&gt;Chrome&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 1.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 0.4&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recBrowserO&#34;&gt;Opera&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 9.6&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 9.5&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt;&amp;nbsp;unknown &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.opera.com/browser/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other browsers&amp;nbsp;&lt;/h3&gt;
+&lt;h4&gt;Netscape&lt;/h4&gt;
+&lt;p&gt;
+For quite a while Netscape (Navigator)&amp;nbsp;was an extremely popular browser. However, it is no longer actively supported. 
+&lt;/p&gt;
+&lt;p&gt;
+If you continue to use Netscape most people will recommend that you upgrade to Firefox. 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browser environments for testing</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</link>
+      <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</guid>
+      <description>&lt;p&gt;
+In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
+&lt;/p&gt;
+&lt;h3&gt;Current versions&lt;/h3&gt;
+&lt;p&gt;
+Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
+&lt;/p&gt;
+&lt;p&gt;
+Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
+&lt;/p&gt;
+&lt;p&gt;
+Some&amp;nbsp;may think&amp;nbsp;I&amp;#39;m a bit&amp;nbsp;off, but I&amp;nbsp;consider Opera a fairly good browser, while Mozilla doesn&amp;#39;t much concern me. So, that gives us our top five browsers, all of which&amp;nbsp;can&amp;nbsp;be installed on Windows.&amp;nbsp;
+&lt;/p&gt;
+&lt;p&gt;
+So, any&amp;nbsp;test&amp;nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 7
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Safari 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Chrome 0
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Opera 9
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+There&amp;#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&amp;#39;s fairly standards-compliant.
+&lt;/p&gt;
+&lt;p&gt;
+This is also why I feel that not including Opera would be a very big mistake.
+&lt;/p&gt;
+&lt;p&gt;
+This rounds out our first virtual machine to 5 unique browsers.
+&lt;/p&gt;
+&lt;h3&gt;Previous versions&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+While it would be great if it wasn&amp;#39;t the case, you&amp;#39;ll always need to support older versions of popular browsers.
+&lt;/p&gt;
+&lt;p&gt;
+Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
+&lt;/p&gt;
+&lt;p&gt;
+Most other browsers don&amp;#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 6
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 2
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Upcoming versions&lt;/h3&gt;
+&lt;p&gt;
+This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
+&lt;/p&gt;
+&lt;p&gt;
+Primarily, that means the following should almost certainly be included.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 8
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+That&amp;#39;s right, Internet Explorer 8. That&amp;#39;s all I&amp;#39;d absolutely need, especially looking at stats.
+&lt;/p&gt;
+&lt;p&gt;
+However, to a great extent, Chrome, like most of Google&amp;#39;s other &lt;strike&gt;products&lt;/strike&gt; applications is truly a beta browser (and one that I&amp;#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
+&lt;/p&gt;
+&lt;h3&gt;What about Linux and Mac?&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&amp;nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&amp;#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&amp;#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
+&lt;/p&gt;
+&lt;p&gt;
+For Mac&amp;nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
+&lt;/p&gt;
+&lt;p&gt;
+For Safari Apple was kind enough to give Windows users this browser. As to whether it&amp;#39;s the same as the Mac version, well, it looks very similar. But, unless you&amp;#39;re willing to pay the Apple premium, the Windows version should suffice.
+&lt;/p&gt;
+&lt;p&gt;
+For these reasons, basic Web development doesn&amp;#39;t need to dive too deep into Linux and Mac environments.&lt;sup&gt;1&lt;/sup&gt;
+&lt;/p&gt;
+&lt;h3&gt;Mobile browsers?&lt;/h3&gt;
+&lt;p&gt;
+But what about browsers on mobile devices?
+&lt;/p&gt;
+&lt;p&gt;
+Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
+&lt;/p&gt;
+&lt;p&gt;
+To some extent &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+&lt;/p&gt;
+&lt;p&gt;
+The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
+&lt;/p&gt;
+&lt;p&gt;
+However, for the mobile version of Internet Explorer (which won&amp;#39;t be tracked by Analytics, as it doesn&amp;#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
+&lt;/p&gt;
+&lt;p&gt;
+As to the solution, I can&amp;#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&amp;#39;ll be virtualization for these environments much more readily available.
+&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;
+Above I&amp;#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
+&lt;/p&gt;
+&lt;p&gt;
+What do you think? What do you develop for?
+&lt;/p&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+&lt;/p&gt;
+&lt;p&gt;
+2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internet Explorer Virtual PC images - hidden, but back</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</link>
+      <pubDate>Thu, 04 Sep 2008 21:38:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
+      <description>&lt;p&gt;
+When Microsoft released IE 7 they also offered an image / virtual hard drive that could be used to test Internet Explorer 7, without installing it on your machine.
+&lt;/p&gt;
+&lt;p&gt;
+Good idea.
+&lt;/p&gt;
+&lt;p&gt;
+While they&amp;#39;re buried, Microsoft has released a number of&amp;nbsp;other images, which expire in January &amp;#39;09.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=21eabb90-958f-4b64-b5f1-73d0a413c8ef&amp;amp;DisplayLang=en&#34; target=&#34;_blank&#34;&gt;Internet Explorer Application Compatibility VPC Image&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Come on Microsoft, release some that don&amp;#39;t expire, but that have some other limited functionality. For example, they can only be used for x hours before the machine must be rebooted.
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps the hard drive could be restricted to some amount, so that only x MB/GB could be used.
+&lt;/p&gt;
+&lt;p&gt;
+Why not also allow this for other OS, including Server 2008/2003, Windows XP/Vista (multiple versions).
+&lt;/p&gt;
+&lt;p&gt;
+Allow developers more options for testing, and using, your technology, and it&amp;#39;s more likely that we&amp;#39;ll want to continue using the skills that we learn.
+&lt;/p&gt;
+&lt;p&gt;
+And, if we can test on more environments, then our products, whether they be Web-based or not, can be better tested and supported.
+&lt;/p&gt;
+&lt;p&gt;
+A win for everyone involved, I&amp;#39;d say.
+&lt;/p&gt;
+&lt;p&gt;
+(Besides, if people are going to pirate your apps, they&amp;#39;re going to do it. Why not make an easy and legit way for your future customers to get started and stay involved?)
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test your machine in previous versions of Internet Explorer (for Windows)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</link>
+      <pubDate>Sat, 15 Mar 2008 17:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</guid>
+      <description>&lt;p&gt;
+In the past I believe I discussed &lt;a rel=&#34;nofollow&#34; href=&#34;http://browsershots.org/&#34; target=&#34;_blank&#34;&gt;Browsershots&lt;/a&gt; as a great way to see what your site will look like in various browsers. 
+&lt;/p&gt;
+&lt;p&gt;
+However, I was looking for a quicker way to see a particular page in IE 6. After a bit of searching, I found &lt;a rel=&#34;nofollow&#34; href=&#34;http://ipinfo.info/netrenderer/index.php&#34; target=&#34;_blank&#34;&gt;IE NetRenderer&lt;/a&gt;. It only does Internet Explorer, but it does it extremely quick. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cisco Cache Cleaner and IE 7 on Windows XP Home</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</link>
+      <pubDate>Sun, 17 Feb 2008 09:00:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</guid>
+      <description>&lt;p&gt;
+If you have the pleasure of running Cisco&amp;#39;s Cache Cleaner on your home computer, you may run into an issue with your settings being set to something other than you&amp;#39;d prefer. 
+&lt;/p&gt;
+&lt;p&gt;
+While it may appear that Cache Cleaner clears out your data, it in fact only appears to turn auto-complete off. 
+&lt;/p&gt;
+&lt;p&gt;
+In Internet Explorer 7, go to Tools &amp;gt; Internet Options &amp;gt; Content &amp;gt; AutoComplete &amp;gt; Settings and turn the settings you want back on. 
+&lt;/p&gt;
+&lt;p&gt;
+Gurr. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Firebug: Don&#39;t enable for every site</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Firebug-Dont-enable-for-every-site/</link>
+      <pubDate>Fri, 08 Feb 2008 20:51:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Firebug-Dont-enable-for-every-site/</guid>
+      <description>&lt;p&gt;
+After a deal of searching, I&amp;#39;ve finally discovered why my Firefox browser was crashing so often. So often, in fact, that I have Internet Explorer 7 a chance (and it showed how much of a fight it can now put up).
+&lt;/p&gt;
+&lt;p&gt;
+The short story: don&amp;#39;t enable Firebug for all sites.
+&lt;/p&gt;
+&lt;p&gt;
+Gmail has recently been warning about this, stating that slow-downs are likely. One config setting, &lt;strong&gt;javascript.options.strict&lt;/strong&gt;, when set to true, can also cause issues with Google AdSense.
+&lt;/p&gt;
+&lt;p&gt;
+Now that I&amp;#39;ve switched that to false, and only enabled Firebug for the sites that matter (the last wasn&amp;#39;t necessary after changing the option, but it was nonetheless a good idea), I&amp;#39;m back and rolling with Firefox.
+&lt;/p&gt;
+&lt;p&gt;
+Now that I&amp;#39;ve been away for so long, though, I wonder if I should just uninstall all the versions I&amp;#39;ve got on my computer and just install Firefox 3 ...&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browser support for different versions of JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</link>
+      <pubDate>Fri, 19 Jan 2007 22:04:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
+      <description>&lt;p&gt;
+After a number of Google searches, I&amp;#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&amp;#39;ll be going over this information, and trying to dig up more.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.anybrowser.com/javascript.html&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;AnyBrowser.com&lt;/a&gt; provides information for IE 2 to IE 5, Netscape 2 to Netscape 6, and AOL 3 to 5.  This covers JavaScript 1.3 (IE 5 and AOL 5) and JavaScript 1.4 (Netscape 6).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:About&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;Mozilla.org&lt;/a&gt; provides information for JavaScript 1.0 to JavaScript 1.7, but only for Netscape and Mozilla/Firefox.  JavaScript 1.5 is Navigator 6 and Mozilla 0.6x-0.9x, JavaScript 1.6 is Firefox 1.5, and JavaScript 1.7 is Firefox 2.
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Interestingly, JavaScript 1.4 is listed as n/a on Mozilla, and Netscape 6 under JavaScript 1.5, but AnyBrowser has 6 under 1.4 ...
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Using the Web as my guide, I&amp;#39;ve determined two ways that I believe will test for JavaScript 1.6 and JavaScript 1.7 support, based upon the following two pages.
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For JavaScript 1.6, I&amp;#39;ll be using the following code snippet.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    var num = 15;&lt;br /&gt;
+    document.write(String.replace(num, /5/, &amp;#39;2&amp;#39;) + &amp;quot; (should be &amp;#39;12&amp;#39;)&amp;lt;br /&amp;gt;\n&amp;quot;);
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+For JavaScript 1.7, I&amp;#39;ll be using this code, as well as the previous code.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    var x = 5;&lt;br /&gt;
+    var y = 0;&lt;br /&gt;
+    document.write( let(x = x + 10, y = 12) x+y + &amp;quot; (should be &amp;#39;27&amp;#39;)&amp;lt;br /&amp;gt;\n&amp;quot;);&lt;br /&gt;
+    document.write(x+y + &amp;quot;&amp;lt;br /&amp;gt;\n&amp;quot;);
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The testing page is available on my &lt;a href=&#34;http://strivinglife.cfdeveloper.co.uk/javascript_text.cfm&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;CFDeveloper site&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+First, if you know of any code that I can use to test JavaScript 1.5 and 1.4 support, please post or email to me, so I can add that to my testing page.
+&lt;/p&gt;
+&lt;p&gt;
+Second, if you can test a different browser/version, please also post your results.
+&lt;/p&gt;
+&lt;h4&gt;Testing results&lt;/h4&gt;
+&lt;p&gt;
+My testing of Firefox 2.0.0.1, Internet Explorer 7.0.5730.11, and Opera 9.10.  Since the current version of Netscape uses either IE or FF for rendering, I&amp;#39;ve skipped any testing of it.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Firefox 2.0.0.1&lt;/strong&gt; displays one line for JavaScript 1.5 and less.  These are simple document.write()s, so they should display in most browsers.  Version information is passed through language, not the type, and the type is text/javascript.  In addition, it displays the scripts for 1.6 and 1.7 whether the type is text/javascript or application/javascript, and the version is stated.  For 1.6, it doesn&amp;#39;t display the 1.7 code if the type is text/javascript, with no version.  It does for 1.6.  So, 1.6 has three groups of two lines, while 1.7 has two groups of four lines.  From what I can tell, this is expected behaviour.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Internet Explorer 7.0.5730.11&lt;/strong&gt; and &lt;strong&gt;Opera 9.10&lt;/strong&gt; have the same display for this page.  Through JavaScript 1.5, they each have one line for each - which is to be expected.  For 1.6, they have a single line, which is the first, and simple, document.write() of some text.  No version is passed, and the type is set to text/javascript.  At this point, nothing else is displayed.  For 1.7, nothing is displayed.
+&lt;/p&gt;
+&lt;p&gt;
+If, for 1.6, we change &amp;lt;script language=&amp;quot;javascript1.6&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt; to &amp;lt;script language=&amp;quot;javascript1.6&amp;quot; type=&amp;quot;application/javascript&amp;quot;&amp;gt;, only Opera keeps the initial document.write for 1.6.  Internet Explorer displays nothing under the 1.6 heading.
+&lt;/p&gt;
+&lt;h4&gt;Current conclusions&lt;/h4&gt;
+&lt;p&gt;
+Based upon this initial testing, it appears that application/javascript, and setting the version in the type, is not supported by the current version of Internet Explorer.  In addition, Firefox is the only one of the three browsers tested that supports up to JavaScript 1.7.  Based upon how IE and Opera behaved with the JavaScript 1.6 test, I&amp;#39;d say that there is no support for 1.6 features, but that doesn&amp;#39;t stop them from giving it a go.  If they run into a problem, they appear to quit looking through the script block.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;d be very interested in documentation regarding this, so if you know more, please do post what you can share.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Three reasons Microsoft Firefox is a hoax</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</link>
+      <pubDate>Tue, 14 Nov 2006 08:32:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</guid>
+      <description>&lt;p&gt;
+Three reasons Microsoft Firefox is a hoax, in order of when I spotted them. 
+&lt;/p&gt;
+&lt;p&gt;
+1) &amp;quot;it&amp;#39;s better now ... like seriously ...&amp;quot; 
+&lt;/p&gt;
+&lt;p&gt;
+2) Site Ground banner in the bottom left corner. 
+&lt;/p&gt;
+&lt;p&gt;
+3) Create a better video, eh? Microsoft doesn&amp;#39;t need to reuse the same video they used elsewhere. 
+&lt;/p&gt;
+&lt;p&gt;
+4) Free email address?&amp;nbsp; How 90s/early 00s ... 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.theregister.co.uk/2006/11/14/ms_firefox/&#34; target=&#34;_blank&#34;&gt;The Register: http://www.theregister.co.uk/2006/11/14/ms_firefox/&lt;/a&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.msfirefox.com/microsoft-firefox/&#34; target=&#34;_blank&#34;&gt;Microsoft(R) Firefox | We&amp;#39;ve Made it Better&lt;/a&gt; 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s time to grow up - Why IE 7 means we all win</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</link>
+      <pubDate>Wed, 25 Oct 2006 18:59:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</guid>
+      <description>&lt;p&gt;
+Earlier today I ran across an article titled &amp;quot;IE7 vs. FireFox: Why Microsoft Lost the Battle,&amp;quot; which stated at the end that &amp;quot;All in all, IE evolution is not impressive at all. It will still have one advantage though: after installing/reinstalling XP or Vista, IE7 will be the first and only browser used to download Opera, BonEcho or FireFox&amp;hellip;&amp;quot; Unfortunately, this article, as well as the numerous other articles that state that Microsoft&amp;#39;s IE 7 is &amp;#39;too little, too late,&amp;#39; are way off base, which is quite the good thing.
+&lt;/p&gt;
+&lt;h3&gt;Points 1 and 2. The average user is not you, and all they really care about is getting online&lt;/h3&gt;
+&lt;p&gt;
+These two points go together quite naturally. First, just because you&amp;#39;ve got an &amp;#39;alternative&amp;#39; (defined here for Windows users, my target audience, as a browser other than Internet Explorer) doesn&amp;#39;t mean that the average user does, or that they even care to use one. My &amp;#39;over-40&amp;#39; year old mother doesn&amp;#39;t care what browser she&amp;#39;s using to connect to the Internet - she just wants to be able to get on and get shtuff done. I can install Firefox on her computer, and show her how to use it, but if Internet Explorer seems to work just as well, what does she care? 
+&lt;/p&gt;
+&lt;p&gt;
+Now I know when I would want to use Internet Explorer (6.0) and when I&amp;#39;d want to use Firefox, or Opera, or Netscape, but the average user doesn&amp;#39;t know that. And, if they run into a problem in Firefox, they may not know that it&amp;#39;s because the site hasn&amp;#39;t been coded correctly - since it worked in the old browser, it must be a problem with the new browser. 
+&lt;/p&gt;
+&lt;h3&gt;Point 3. Almost every average Windows machine in current use has some flavour of Internet Explorer installed&lt;/h3&gt;
+&lt;p&gt;
+If you listen to some people, Internet Explorer 7 was a complete waste of Microsoft&amp;#39;s time. &amp;quot;It still sucks.&amp;quot; Sure it does, I&amp;#39;m not going to disagree with you. But, even though it took Microsoft years to get off their hands and bring their browser up to speed, it was anything but a waste of time. 
+&lt;/p&gt;
+&lt;p&gt;
+While it&amp;#39;s true Internet Explorer 7 can only be installed on machines with current patches, using an older version of Windows is a security risk in itself. Is it shady that Microsoft doesn&amp;#39;t release IE 7 for older versions of Windows? Sure, but it makes good business sense. Almost every software developer has to, yes, &lt;em&gt;has to&lt;/em&gt;, decommission older versions at some point or another.&lt;!--adsense--&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+For Windows, the obvious reason that people don&amp;#39;t upgrade is because of the cost. Yet, there&amp;#39;s people out there that still use Netscape 4 for almost everything, even though the new version of Netscape is available for free download, and even though there are better browsers out there. 
+&lt;/p&gt;
+&lt;p&gt;
+But, by &amp;#39;letting&amp;#39; people use older technology, what are we really encouraging? Are we encouraging the free spirit, or stubbornness? Yes, Netscape has changed, and it is a different experience, but it&amp;#39;s time to upgrade. 
+&lt;/p&gt;
+&lt;p&gt;
+Yes, you need to upgrade to Windows XP SP 2, but there&amp;#39;s a good reason for that. By using an older version of Windows, you not only harm yourself, you also potentially harm everyone else. 
+&lt;/p&gt;
+&lt;p&gt;
+Some people don&amp;#39;t have a choice, of course, and there&amp;#39;s always the technical people who otherwise secure their computers because they know about the security risks. Yet, for the average person, we need to convince them to upgrade. &amp;quot;Yeah, you just use Firefox, that&amp;#39;s a safer browser and you won&amp;#39;t have to upgrade.&amp;quot; Does one hand know what the other is doing? 
+&lt;/p&gt;
+&lt;p&gt;
+Back to IE7, while those of us who are technical may not be impressed with IE7, as far as compliance or security, there are a lot of people who are just going to use whatever version of IE they&amp;#39;ve got on their computers. I&amp;#39;d rather they upgrade to IE7 then continue using IE6, because at least IE7 is an improvement, and a sign of better things to come. 
+&lt;/p&gt;
+&lt;h3&gt;Point 4. You&amp;#39;ve heard of Firefox 1.5.0.x, but you talk about IE 8 as the next release?&lt;/h3&gt;
+&lt;p&gt;
+Here&amp;#39;s what really gets me. People are slamming IE 7, talking about what they&amp;#39;d like to see in the next release, but they refer to it by IE 7.5, or IE 8. This is a &lt;em&gt;very bad thing&lt;/em&gt;. AOL does this, but we&amp;#39;re smarter than that. 
+&lt;/p&gt;
+&lt;p&gt;
+The majority of &amp;#39;good&amp;#39; software these days is not marked by a dot release, but rather by a dot-dot(-dot) release. There&amp;#39;s still a ways to go, such as Firefox skipping from 1.0 to 1.5 to 2.0, but, being fairly low in the major revision number, Firefox can get away with saying that the browser has changed in a big way. 
+&lt;/p&gt;
+&lt;p&gt;
+But, what I want to see before IE 8 is IE 7.0.1, and IE 7.1, and then maybe a 7.5. I want regular updates, not an update every year. And, let&amp;#39;s be honest, if you want all of those things you&amp;#39;re requesting, it&amp;#39;s going to take a year if they have to release them at once. 
+&lt;/p&gt;
+&lt;p&gt;
+Technical users: push for a roadmap from Microsoft for IE. Push for more minor release versions that add new functionality. Do &lt;em&gt;NOT&lt;/em&gt; push for the next release of IE to be 7.5 or 8.0, or you&amp;#39;ll get exactly what you asked for. 
+&lt;/p&gt;
+&lt;h3&gt;Point 5. Pushing IE 7 out as an automatic update is a &lt;em&gt;good thing&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;
+There&amp;#39;s a lot of noise about Microsoft pushing IE 7 out as an automatic update. I say this is a &lt;em&gt;good thing&lt;/em&gt;&amp;trade;. When a new version of AVG is released, it&amp;#39;s usually downloaded and installed onto my computer that day or the next. This is a &lt;em&gt;good thing&lt;/em&gt;&amp;trade; because it doesn&amp;#39;t require any action on my part to upgrade my security. 
+&lt;/p&gt;
+&lt;p&gt;
+If IE 7 was something that the average user had to manually install, they wouldn&amp;#39;t install it. Again, they want to browse. 
+&lt;/p&gt;
+&lt;p&gt;
+Yet, by pushing it out, Microsoft forces some action from the sleeping giants, like the banking industry, and a number of software publishers. Have you run into any sites that tell you that their software doesn&amp;#39;t work with the new IE 7? Do you think those sites work any better with Firefox, or Opera? 
+&lt;/p&gt;
+&lt;p&gt;
+Not only have they had advance notice that this was coming from Microsoft, but they also had the signs from the various alternative browsers gaining market support. But, still they slept on. You&amp;#39;ve got to break eggs to make an omelet, so I say let&amp;#39;s get cracking. 
+&lt;/p&gt;
+&lt;h3&gt;In short ...&lt;/h3&gt;
+&lt;p&gt;
+In short, Internet Explorer 7 is a good thing - it&amp;#39;s not something that we need to bash anyone about. IE7 may have taken a hell of a long time, but it&amp;#39;s a good sign. Not only does it have a positive effect on the average user, it also has a positive effect on every technical user, from tech support, to product support, to Web developers. After all, I&amp;#39;d rather design for an evolving browser market then one where the major player is asleep at the machine. Wouldn&amp;#39;t you? 
+&lt;/p&gt;
+&lt;h3&gt;Note&lt;/h3&gt;
+&lt;p&gt;
+I probably missed something, or didn&amp;#39;t word something correctly, because I was tired and cranky at the time I wrote this article. Let&amp;#39;s work together, later, to make sure the above is reasonable, eh? 
+&lt;/p&gt;
+&lt;p&gt;
+The article mentioned above, IE7 vs. FireFox: Why Microsoft Lost the Battle, can be found at &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.playfuls.com/news_04876_IE7_vs_FireFox_Why_Microsoft_Lost_the_Battle_.html&#34;&gt;http://www.playfuls.com/news_04876_IE7_vs_FireFox_Why_Microsoft_Lost_the_Battle_.html&lt;/a&gt;, and was accessed October 25, 2006. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Four working browsers (at least)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Four-working-browsers-%28at-least%29/</link>
+      <pubDate>Thu, 10 Aug 2006 21:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Four-working-browsers-%28at-least%29/</guid>
+      <description>&lt;p&gt;
+There&amp;#39;s just something about having four different browsers on your computer, to say the least.  I do believe I&amp;#39;ve Lynx installed as well, but it&amp;#39;s hardly used these days ... for better or worse.
+&lt;/p&gt;
+&lt;p&gt;
+Firefox 1.5.0.6&lt;br /&gt;
+Internet Explorer 7.0.5450.4 (i.e., 7.0 Beta 3)&lt;br /&gt;
+Opera 9.01-8552&lt;br /&gt;
+Netscape 8.1
+&lt;/p&gt;
+&lt;p&gt;
+Best of all?  My site displays great in all four.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+There are other browsers to test, of course, but the question is whether it&amp;#39;s really necessary to do so.  Both Flock and Mozilla seem like a waste to install, since they (like Netscape) are so much fluff.
+&lt;/p&gt;
+&lt;p&gt;
+Lynx is actually a pretty good browser for a developer, and what do you know, I do have a version from 10/2005 on my computer (2.8.5rel1).
+&lt;/p&gt;
+&lt;p&gt;
+Want a copy?  Download it from &lt;a href=&#34;http://strivinglife.net/lynx/&#34;&gt;http://strivinglife.net/lynx/&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+If I had a Mac, I&amp;#39;d test my site with Safari, but alas I do not.
+&lt;/p&gt;
+&lt;p&gt;
+If I had a Linux machine that connected to the Internet (perhaps fairly soon ...) then I would test Konqueror and the like.
+&lt;/p&gt;
+&lt;p&gt;
+The lessons are two-fold.
+&lt;/p&gt;
+&lt;p&gt;
+1) If you&amp;#39;re working on a site, test it in multiple browsers.  Honestly, with today&amp;#39;s world, there&amp;#39;s no reason people shouldn&amp;#39;t upgrade to the newest version of their preferred browser.  Not only do you get better security, but you also get a better browsing experience.  I recommend Firefox, but no matter which browser you choose, if it&amp;#39;s up-to-date, and still being supported (i.e., it&amp;#39;s not a dead browser, but patched to the latest version), it&amp;#39;s okay in my book (some are just better than others).
+&lt;/p&gt;
+&lt;p&gt;
+2) Keep your browser up-to-date.  You don&amp;#39;t need to have the bleeding edge beta releases (in fact, you probably don&amp;#39;t want to either), but at least keep your browser fully patched.  Don&amp;#39;t like how they upgraded the browser in a future release?  It&amp;#39;s not only selfish to keep using that old version, but also dangerous.  And you can always switch to a browser that allows more customization (like Firefox).
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Yes, I do like the Internet Explorer 7 ad</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</link>
+      <pubDate>Fri, 10 Feb 2006 22:05:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://bink.nu/Article6138.bink&#34;&gt;Bink.nu&lt;/a&gt; has a link to a WMV file of the IE 7 teaser video.  To say the least, it&amp;#39;s cute - in a very good way.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+However, from what I&amp;#39;ve read elsewhere, it doesn&amp;#39;t look like it&amp;#39;s got Firefox beat in any area, but ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

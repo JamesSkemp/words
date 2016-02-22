@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asp.Net on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/asp/index.net/</link>
+    <description>Recent content in Asp.Net on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2012 07:40:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/asp.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Programming Entity Framework: Code First (2011)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</link>
+      <pubDate>Thu, 05 Jan 2012 07:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;, written by Julia Lerman and Rowan Miller.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While I had heard of Julie Lerman and her book &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, after the release of code first I was on the fence on just how much I would get out of the existing book. With the release of&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I knew I&amp;rsquo;d learn something, so I picked up an electronic copy (PDF) and started digging in.&lt;/p&gt;
+&lt;p&gt;First, I should mention that I initially started working with Entity Framework via existing databases. I tried the pre-4 version, but ultimately tried to stay away until EF4 was released. I liked the Visual Studio interface to work with a database via EF, and created one site, still in production, that uses it, but I like being closer to the metal.&lt;/p&gt;
+&lt;p&gt;With the release of EF Code First I started digging in immediately, using it to create functionality on one site already in production, and most recently started working on another site, for eventual release into production. However, on this latter site I was working with more advanced models and kept running into weird EF issues.&lt;/p&gt;
+&lt;p&gt;After a few chapters in&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I had determined what my issue was, and how to fix it, which alone is worth the price. In addition, while I understood data annotations, I know have a pretty firm grasp on what I can do via the Fluent API, and how I can better control what EF does when it creates the data tables to store my model.&lt;/p&gt;
+&lt;p&gt;The size of the book may initially throw you off, but I honestly believe that this book contains as much material as a book almost twice the size. In addition, while I came into the book having already worked with Entity Framework, and code first, I believe this book can easily be picked up by someone new to both technologies.&lt;/p&gt;
+&lt;p&gt;Julia Lerman will be releasing another book, &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312969?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: DbContext&lt;/a&gt;, and I will honestly be picking that book up as well. At this point, however, I&amp;rsquo;m still on the fence on whether I&amp;rsquo;ll be picking up the &amp;lsquo;primary&amp;rsquo; book,&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, but I&amp;rsquo;m sure at some point I will.&lt;/p&gt;
+&lt;p&gt;This book will definitely have select chapters read again, and will server as a good reference, so I give this book 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
+      <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
+      <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
+&lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
+&lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that requires that Visual Studio 2010 run as administrator (I was afraid I was going to have to update each of my pinned solutions; thankfully you need to (and can only) update this on the main application shortcut), and my MVC 2 project was failing horribly.&lt;/p&gt;
+&lt;p&gt;Instead of trying to debug this further I kept searching and found another post on &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/2814101/unwanted-sqlite-inserted-in-bin&#34;&gt;Stack Overflow&lt;/a&gt;. After updating my&amp;nbsp;&#39;shared&#39; directory to contain a folder with all of the&amp;nbsp;ELMAH files and&amp;nbsp;another with just the necessary ones, I&#39;m happy to report the errors (warnings)&amp;nbsp;are gone.&lt;/p&gt;
+&lt;p&gt;My one site is still a mash of the old and new, so I had to manually remove the items from the Bin directory to verify, but things seem just fine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
+      <pubDate>Sun, 15 Aug 2010 13:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
+      <description>&lt;p&gt;In part one of this series we covered what we&#39;d be doing, and what data model we&#39;d be using.&lt;/p&gt;
+&lt;p&gt;In part two of this series we used LINQ to XML to query the XML file with the data we want to display.&lt;/p&gt;
+&lt;p&gt;This time we&#39;ll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I&#39;ll be implementing very basic caching.&lt;/p&gt;
+&lt;h3&gt;Preliminary requirement&lt;/h3&gt;
+&lt;p&gt;Before you can use the charting functionality you need to have a reference to System.Web.DataVisualization. We can then use this in our handler as below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Web.UI.DataVisualization.Charting;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we can do the heavy lifting of creating the basics of the chart:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Create a new chart, and set the basic properties of it.
+Chart hpChart = new Chart();
+hpChart.Width = 800;
+hpChart.Height = 500;
+hpChart.Titles.Add(&#34;Odin Sphere HP leveling&#34;);
+hpChart.Palette = ChartColorPalette.Bright;
+hpChart.Legends.Add(&#34;Main&#34;);
+hpChart.Legends[0].LegendStyle = LegendStyle.Row;
+hpChart.Legends[0].Docking = Docking.Bottom;
+// Create a new area for the main chart to display within.
+ChartArea mainArea = new ChartArea(&#34;Main chart&#34;);
+// Set the properties for the x-axis.
+mainArea.AxisX.Name = &#34;Level&#34;;
+mainArea.AxisX.Title = &#34;Level&#34;;
+mainArea.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+mainArea.AxisX.MinorGrid.Enabled = true;
+mainArea.AxisX.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+// Set the properties for the y-axis.
+mainArea.AxisY.Name = &#34;Hit points&#34;;
+mainArea.AxisY.Title = &#34;Hit points&#34;;
+mainArea.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+mainArea.AxisY.MinorGrid.Enabled = true;
+mainArea.AxisY.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+mainArea.AxisY.MinorGrid.Interval = 50;
+hpChart.ChartAreas.Add(mainArea);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With our chart created we can now add our data.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;foreach (Character character in characterData) {
+    // Add a new series of points for each character.
+    Series characterSeries = new Series();
+    characterSeries.Name = character.Name;
+    characterSeries.ChartType = SeriesChartType.Line;
+    foreach (HpLevel characterLevel in character.HpLevels) {
+        // Add a point for each level recorded.
+        characterSeries.Points.AddXY(characterLevel.Level, characterLevel.HitPoints);
+    }
+    hpChart.Series.Add(characterSeries);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we want to cache the chart, we&#39;ll add an informational message.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Add a new informational title.
+Title cacheTitle = new Title(&#34;Cached &#34; + DateTime.Now.ToString() + &#34; and based on http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+cacheTitle.Docking = Docking.Bottom;
+hpChart.Titles.Add(cacheTitle);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&#39;ll set the rendering type of the chart and add it to the cache.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;hpChart.RenderType = RenderType.BinaryStreaming;
+// Cache our object for an amount of time
+HttpRuntime.Cache.Add(&#34;OdinSphereChart&#34;, hpChart, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration, System.Web.Caching.CacheItemPriority.Low, null);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Everything above, as well as the XDocument load from part two, can be wrapped by a check for whether the chart is in the cache.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Determine whether the chart is already cached.
+if (HttpRuntime.Cache[&#34;OdinSphereChart&#34;] == null) {
+//...
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then we can finally output the chart to the user.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Output the cached chart to the browser.
+using (System.IO.MemoryStream stream = new System.IO.MemoryStream()) {
+    ((Chart)HttpRuntime.Cache[&#34;OdinSphereChart&#34;]).SaveImage(stream);
+    context.Response.ContentType = &#34;image/png&#34;;
+    context.Response.BinaryWrite(stream.GetBuffer());
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Final code&lt;/h3&gt;
+&lt;p&gt;At the end of our exercise, our handler (OdinSphere.ashx) looks something like the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%@ WebHandler Language=&#34;C#&#34; Class=&#34;OdinSphere&#34; %&amp;gt;
+
+using System;
+using System.Web;
+using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
+using System.Text;
+using System.Web.UI.DataVisualization.Charting;
+
+public class OdinSphere : IHttpHandler {
+
+    /// &amp;lt;summary&amp;gt;
+    /// One of the five playable characters in Odin Sphere, for the Playstation 2.
+    /// &amp;lt;/summary&amp;gt;
+    public class Character {
+        /// &amp;lt;summary&amp;gt;
+        /// Name of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public String Name { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// List of hit point leveling information.
+        /// &amp;lt;/summary&amp;gt;
+        public List&amp;lt;HpLevel&amp;gt; HpLevels { get; set; }
+    }
+
+    /// &amp;lt;summary&amp;gt;
+    /// Hit point information at a particular level.
+    /// &amp;lt;/summary&amp;gt;
+    public class HpLevel {
+        /// &amp;lt;summary&amp;gt;
+        /// Level of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public int Level { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// Hit points at a level, for a character.
+        /// &amp;lt;/summary&amp;gt;
+        public int HitPoints { get; set; }
+    }
+
+    public void ProcessRequest(HttpContext context) {
+        // Determine whether the chart is already cached.
+        if (HttpRuntime.Cache[&#34;OdinSphereChart&#34;] == null) {
+            // Grab the current data.
+            XDocument dataFile = XDocument.Load(&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+            IEnumerable&amp;lt;Character&amp;gt; characterData = from characters in dataFile.Descendants(&#34;Character&#34;)
+                                                   select new Character {
+                                                       Name = characters.Attribute(&#34;name&#34;).Value,
+                                                       HpLevels = (from levels in characters.Element(&#34;HP&#34;).Element(&#34;Levels&#34;).Descendants(&#34;Level&#34;)
+                                                                   select new HpLevel {
+                                                                       Level = int.Parse(levels.Attribute(&#34;id&#34;).Value),
+                                                                       HitPoints = int.Parse(levels.Attribute(&#34;hitPoints&#34;).Value)
+                                                                   }
+                                                       ).ToList()
+                                                   };
+
+            // Create a new chart, and set the basic properties of it.
+            Chart hpChart = new Chart();
+            hpChart.Width = 800;
+            hpChart.Height = 500;
+            hpChart.Titles.Add(&#34;Odin Sphere HP leveling&#34;);
+            hpChart.Palette = ChartColorPalette.Bright;
+            hpChart.Legends.Add(&#34;Main&#34;);
+            hpChart.Legends[0].LegendStyle = LegendStyle.Row;
+            hpChart.Legends[0].Docking = Docking.Bottom;
+            // Create a new area for the main chart to display within.
+            ChartArea mainArea = new ChartArea(&#34;Main chart&#34;);
+            // Set the properties for the x-axis.
+            mainArea.AxisX.Name = &#34;Level&#34;;
+            mainArea.AxisX.Title = &#34;Level&#34;;
+            mainArea.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            mainArea.AxisX.MinorGrid.Enabled = true;
+            mainArea.AxisX.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+            // Set the properties for the y-axis.
+            mainArea.AxisY.Name = &#34;Hit points&#34;;
+            mainArea.AxisY.Title = &#34;Hit points&#34;;
+            mainArea.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            mainArea.AxisY.MinorGrid.Enabled = true;
+            mainArea.AxisY.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+            mainArea.AxisY.MinorGrid.Interval = 50;
+            hpChart.ChartAreas.Add(mainArea);
+
+            foreach (Character character in characterData) {
+                // Add a new series of points for each character.
+                Series characterSeries = new Series();
+                characterSeries.Name = character.Name;
+                characterSeries.ChartType = SeriesChartType.Line;
+                foreach (HpLevel characterLevel in character.HpLevels) {
+                    // Add a point for each level recorded.
+                    characterSeries.Points.AddXY(characterLevel.Level, characterLevel.HitPoints);
+                }
+                hpChart.Series.Add(characterSeries);
+            }
+
+            // Add a new informational title.
+            Title cacheTitle = new Title(&#34;Cached &#34; + DateTime.Now.ToString() + &#34; and based on http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+            cacheTitle.Docking = Docking.Bottom;
+            hpChart.Titles.Add(cacheTitle);
+            
+            hpChart.RenderType = RenderType.BinaryStreaming;
+            // Cache our object for an amount of time
+            HttpRuntime.Cache.Add(&#34;OdinSphereChart&#34;, hpChart, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration, System.Web.Caching.CacheItemPriority.Low, null);
+        }
+
+        // Output the cached chart to the browser.
+        using (System.IO.MemoryStream stream = new System.IO.MemoryStream()) {
+            ((Chart)HttpRuntime.Cache[&#34;OdinSphereChart&#34;]).SaveImage(stream);
+            context.Response.ContentType = &#34;image/png&#34;;
+            context.Response.BinaryWrite(stream.GetBuffer());
+        }
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/testing/OdinSphere.ashx&#34;&gt;see this in action&lt;/a&gt; online.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
+      <pubDate>Sat, 14 Aug 2010 14:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model.aspx&#34;&gt;part one of this series&lt;/a&gt; we covered what we&#39;d be doing, and what model we&#39;d be using for the data.&lt;/p&gt;
+&lt;p&gt;This time we&#39;ll parse the XML file that contains the data we need, and populate the objects.&lt;/p&gt;
+&lt;h3&gt;Loading the XML file&lt;/h3&gt;
+&lt;p&gt;The XML file we&#39;ll be loading is located at&amp;nbsp;&lt;a href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;http://jamesrskemp.com/files/OdinSphere.xml&lt;/a&gt;, and to keep it simple, we&#39;ll load it in assuming we&#39;re on a different server/domain.&lt;/p&gt;
+&lt;p&gt;First we&#39;ll need to add the following so we can make use of XDocument.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Xml.Linq;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&#39;ll update ProcessRequest by loading the XML file.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument dataFile = XDocument.Load(&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then we&#39;ll parse it out into our custom objects.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;IEnumerable&amp;lt;Character&amp;gt; characterData = from characters in dataFile.Descendants(&#34;Character&#34;)
+    select new Character {
+        Name = characters.Attribute(&#34;name&#34;).Value,
+        HpLevels = (from levels in characters.Element(&#34;HP&#34;).Element(&#34;Levels&#34;).Descendants(&#34;Level&#34;)
+            select new HpLevel {
+                Level = int.Parse(levels.Attribute(&#34;id&#34;).Value),
+                HitPoints = int.Parse(levels.Attribute(&#34;hitPoints&#34;).Value)
+            }
+        ).ToList()
+    };&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With that done, we can now verify the data by displaying some very basic information on the page.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     context.Response.ContentType = &#34;text/plain&#34;;
+        foreach (Character character in characterData) {
+            context.Response.Write(character.Name + Environment.NewLine);
+            context.Response.Write(&#34;Maximum HP level = &#34; + character.HpLevels.Last().Level.ToString() + Environment.NewLine + Environment.NewLine);
+
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With that aspect verified, we can create and output our graphs, which we&#39;ll cover in part three.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
+      <pubDate>Fri, 13 Aug 2010 22:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
+      <description>&lt;p&gt;For a while now I&#39;ve been meaning to work with &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2010/02/07/built-in-charting-controls-vs-2010-and-net-4-series.aspx&#34;&gt;ASP.NET 4&#39;s built-in charting functionality&lt;/a&gt;. While I was going to use it alongside my gas tracking, I think I&#39;m instead going to use my &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;Odin Sphere leveling guide&lt;/a&gt;, so I don&#39;t have to create an XSLT for the output.&lt;/p&gt;
+&lt;p&gt;In this part of the series I&#39;ll outline the data model I&#39;ll be using, and preliminary setups.&lt;/p&gt;
+&lt;h3&gt;Method&lt;/h3&gt;
+&lt;p&gt;So that this can easily be deployed anywhere, I&#39;m going to opt not to use the control itself, but rather programmatically create the charts/graphs. I&#39;ll be&amp;nbsp;creating a generic handler (.ashx) to handle the output.&lt;/p&gt;
+&lt;p&gt;I&#39;ll be using LINQ to XML to query the XML file that stores the content and may implement some level of caching at some point.&lt;/p&gt;
+&lt;p&gt;My environment is Visual Studio 2010 and .NET Framework 4. The controls are available for 3.5 and 2008, however, and 2010 Express should also suffice.&lt;/p&gt;
+&lt;h3&gt;Data model&lt;/h3&gt;
+&lt;p&gt;For this chart I&#39;d like to chart each character&#39;s HP progression as they level, with each character displaying on the same graph.&lt;/p&gt;
+&lt;p&gt;This then gives us a List of Character, with each Character having a Name and a List of HpLevel, with HpLevel containing a Level and a HP total.&lt;/p&gt;
+&lt;p&gt;In our new Generic Handler (OdinSphere.ashx) we&#39;ll add the following within the existing public class:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; /// &amp;lt;summary&amp;gt;
+    /// One of the five playable characters in Odin Sphere, for the Playstation 2.
+    /// &amp;lt;/summary&amp;gt;
+    public class Character {
+        /// &amp;lt;summary&amp;gt;
+        /// Name of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public String Name { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// List of hit point leveling information.
+        /// &amp;lt;/summary&amp;gt;
+        public List&amp;lt;HpLevel&amp;gt; HpLevels { get; set; }
+    }
+
+    /// &amp;lt;summary&amp;gt;
+    /// Hit point information at a particular level.
+    /// &amp;lt;/summary&amp;gt;
+    public class HpLevel {
+        /// &amp;lt;summary&amp;gt;
+        /// Level of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public int Level { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// Hit points at a level, for a character.
+        /// &amp;lt;/summary&amp;gt;
+        public int HitPoints { get; set; }
+    }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These also require the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Collections.Generic;
+using System.Linq;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At this point we&#39;ve got our objects defined and set, so we can grab the data from the XML file and create our necessary objects ... which is exactly what we&#39;ll do in the second part of this series.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this series we&amp;rsquo;ve started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.&lt;/p&gt;
+&lt;p&gt;In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.&lt;/p&gt;
+&lt;p&gt;In this final part we&amp;rsquo;ll be using jQuery to request information from the service, in JSON format, and display that information to users.&lt;/p&gt;
+&lt;h3&gt;Why JSON?&lt;/h3&gt;
+&lt;p&gt;For maximum flexibility, and because I myself will be hosting the services on their own domain/sub-domain, we&amp;rsquo;ll be taking advantage of jQuery&amp;rsquo;s ability to make JSONP - JSON with Padding - requests, allowing us to pull data, no matter what our domain.&lt;/p&gt;
+&lt;h3&gt;Getting started with jQuery&lt;/h3&gt;
+&lt;p&gt;jQuery is such an advanced library that I can&amp;rsquo;t cover much in this article. See &lt;a rel=&#34;external&#34; href=&#34;http://jquery.com/&#34;&gt;the official jQuery site&lt;/a&gt; for more information, including tutorials. For our purposes you&amp;rsquo;ll want to download a copy of&amp;nbsp;jQuery 1.4.2 (or whatever the current release is, assuming things haven&amp;rsquo;t changed too terribly since the time of this writing) for production.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll then create a very simple HTML page that we&amp;rsquo;ll modify for our tutorial.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;&lt;a href=&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;html xmlns=&amp;ldquo;&lt;a href=&#34;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Test page&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;ldquo;pulledData&amp;rdquo;&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo; src=&amp;ldquo;&lt;a href=&#34;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#34;&gt;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/a&gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo;&amp;gt;
+    function processData(data) {
+        try {
+            // JavaScript will go either here - in the &lt;em&gt;function&lt;/em&gt;
+        } catch (ex) {
+            alert(&amp;ldquo;Error: &amp;ldquo; + ex.Message);
+        }
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;try {
+    if ($) {
+        // or JavaScript will go here - in the *request*
+    }
+} catch (ex) {
+    alert(&amp;quot;Error: &amp;quot; + ex.Message);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Verifying the service can be called with jQuery, on the same domain&lt;/h3&gt;
+&lt;p&gt;With our base jQuery file, let&amp;rsquo;s verify the Web service, by making a simple request for a loan: &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; (remember to change the port as needed). Assuming this is running fine, which it should be, we can move onto attempting to query this with jQuery.&lt;/p&gt;
+&lt;p&gt;In the same project as the above service, add our base html file, from above, and add the following to the second block, making sure that the port is correct.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;$.ajax({
+    type: &amp;ldquo;GET&amp;rdquo;,
+    url: &amp;lsquo;&lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&lt;/a&gt;,
+    dataType: &amp;lsquo;xml&amp;rsquo;,
+    success: function (data) { processData(data); }
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then add the following to the function.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;hey&amp;rsquo;);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So in our first block we&amp;rsquo;re calling the service once the page is ready, and our function on success. The function then gives a very simple alert, so we easily know that the call has succeeded. If we run this on the same domain (localhost and a port), we should get the alert message. However, opening it by itself (by double-clicking on it in Windows Explorer) will result in no messages at all.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s tweak this now to use JSON instead. Tweak the second block so that the dataType line is as follows.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;json&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In our function, add, or replace the existing alert, with the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;Loan name: &amp;lsquo; + data.Name);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending upon the name you&amp;rsquo;ve given the loan, you should see an alert message in Chrome or Firefox, with that name. However, if we now try to open this from a different domain, or just via Windows Explorer, we&amp;rsquo;ll see that our loan name is undefined. If we were to look at the response returned from the service, we&amp;rsquo;d see it&amp;rsquo;s blank.&lt;/p&gt;
+&lt;h3&gt;JSONP&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s update the dataType once again.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;jsonp&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Refresh now and nothing happens, on anything. However, if we were to take a look at the response we&amp;rsquo;d see that in fact something is returned, it just happens to be XML, which doesn&amp;rsquo;t help us here. And if we switch the dataType to xml, now we can&amp;rsquo;t use it cross-domain (not to mention we lose out on JSON).&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;The fix, found after hours of research and changing settings, requires modifications to our service.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s change the dataType back to JSONP. Since our request no longer passed application/json as an accept-header, the Web service returns the default format, which happens to be XML, which in turn means nothing works. But we can switch the default format type.&lt;/p&gt;
+&lt;p&gt;Open Web.config in the service and modify the lone standardEndpoint element to the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The important part is the new attribute at the end. Build the service and test it again and you&amp;rsquo;ll find that the jQuery called from the same server now works, while the jQuery from a different domain does not.&lt;/p&gt;
+&lt;p&gt;So we&amp;rsquo;re close, but not quite there.&lt;/p&gt;
+&lt;h3&gt;Localhost no longer&lt;/h3&gt;
+&lt;p&gt;Unfortunately, this is where we can no longer test locally. The missing item is the crossDomainScriptAccessEnabled attribute on the standardEndpoint element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo; crossDomainScriptAccessEnabled=&amp;ldquo;true&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we&amp;rsquo;re authenticated, however, this will horribly fail, which can be shown by just browsing to the service via &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; and getting a message&amp;nbsp;that &amp;ldquo;Cross domain javascript callback is not supported in authenticated services.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;If you have a server that supports it, go ahead and build the service and push it, with those two new attributes. If you don&amp;rsquo;t, change your jQuery url so that it points to services.jamesrskemp.com, and change the name parameter to your email. (Obviously, if you&amp;rsquo;ve pushed the service to your own server, go ahead and use your domain in place of mine.)&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Update: Of course, we can also switch off authentication and be able to access this via localhost again. Just add the following to your Web.config within the System.Web element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;authentication mode=&amp;ldquo;None&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;With that done you can now refresh either the copy on the same domain, or a local copy, and have the service return the loan name passed.&lt;/p&gt;
+&lt;p&gt;Now we can modify our function as follows, to get a semi-nice output:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;var outputContent = &amp;ldquo;&amp;rdquo;;
+outputContent += &amp;ldquo;Loan name: &amp;ldquo; + data.Name + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+outputContent += &amp;ldquo;Starting balance: &amp;ldquo; + data.Total + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+$.each(data.Payments, function (i, payment) { outputContent += &amp;ldquo;After a payment of &amp;rdquo; + payment.Total + &amp;ldquo;, the remaining amount is $&amp;rdquo; + payment.LoanRemaining + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;});
+$(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/ServiceExamples/FormulasService_Loan.htm&#34;&gt;see this in action&lt;/a&gt;&amp;nbsp;on my media sub-domain,&amp;nbsp;with possible improvements after this article is finished.&lt;/p&gt;
+&lt;p&gt;And with that, you should have more than enough information to get cracking on your own services, with your own jQuery implementations.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</link>
+      <pubDate>Thu, 24 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In the last part we created a Loan object, that we determined we would later use to power our Web service. Ths object has a handful of properties and a method to update a list of payments to bring the loan to $0.&lt;/p&gt;
+&lt;p&gt;This time we&amp;rsquo;re going to create a Web service to respond to requests from data.&lt;/p&gt;
+&lt;h3&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;As this seems to be built for .NET Framework 4, you&amp;rsquo;ll want to be running Visual Studio 2010 and .NET Framework 4.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll also want to add the WCF REST Service Template 40(CS) to Visual Studio 2010. You can install this by going to Tools &amp;gt; Extension Manager &amp;gt; Online Gallery &amp;gt; Templates &amp;gt; WCF. You can also view more information about this template in the &lt;a rel=&#34;external&#34; href=&#34;http://visualstudiogallery.msdn.microsoft.com/en-us/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd&#34;&gt;Visual Studio Gallery&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Modifying the WCF template&lt;/h3&gt;
+&lt;p&gt;With the WCF REST Service Template installed you can create a new project and select the template from Online Templates.&lt;/p&gt;
+&lt;p&gt;You can go ahead and build the template and give it a quick run, just to see how it behaves. With this template, our work is going to be cut significantly in half.&lt;/p&gt;
+&lt;p&gt;With the project ready, go ahead and either add a reference to the built assembly from part 1, or add the class directly.&lt;/p&gt;
+&lt;p&gt;Now we&amp;rsquo;ll create a new class for our new service (I&amp;rsquo;ve opted to call mine FormulasService.cs) and using the default Service1.cs, add in the necessary references.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.ServiceModel;
+using System.ServiceModel.Activation;
+using System.ServiceModel.Web;
+using System.ComponentModel;
+// depending upon your assembly name, this may be different
+using JamesRSkemp.Formulas;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;rsquo;ll also want to make sure your class has the appropriate attributes.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; [ServiceContract]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&amp;rsquo;ll register the service by opening Global.asax.cs and adding the following, with the string value and typeof&amp;nbsp;dependent upon what you&amp;rsquo;ve decided to call your service.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;RouteTable.Routes.Add(new ServiceRoute(&amp;ldquo;FormulasService&amp;rdquo;, new WebServiceHostFactory(), typeof(FormulasService)));&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that our references are added and our route is registered we can try browsing to our service. However, a service must have at least one method, so we&amp;rsquo;ll create a dummy one.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     // todo - remove
+        // need at least one method - may as well create a dummy one for validation
+        [WebGet(UriTemplate = &amp;ldquo;Dummy&amp;rdquo;)]
+        [Description(&amp;ldquo;Dummy operation.&amp;rdquo;)]
+        public String DummyMethod() {
+            return &amp;ldquo;It works.&amp;rdquo;;
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now if we build and start our project we should be able to browse to &lt;a href=&#34;http://localhost:50996/FormulasService/help&amp;nbsp;and&#34;&gt;http://localhost:50996/FormulasService/help&amp;nbsp;and&lt;/a&gt; &lt;a href=&#34;http://localhost:50996/FormulasService/Dummy&#34;&gt;http://localhost:50996/FormulasService/Dummy&lt;/a&gt; (swapping out the port accordingly) to see the wonderful documentation that&amp;rsquo;s built into WCF WebHttp services, and our own method.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve left in some todo items that you can complete later, but now that we&amp;rsquo;ve validated things are running okay, we can go ahead and add a new method, such as the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;[WebGet(UriTemplate = &amp;ldquo;Loan?name={name}&amp;amp;total={amount}&amp;amp;payment={payment}&amp;amp;yearlyPayments={paymentsPerYear}&amp;amp;yearlyInterest={interestPerYear}&amp;ldquo;)]
+[Description(&amp;ldquo;Create a new loan with set properties&amp;rdquo;)]
+public Amortization.Loan CreateLoan(String name, String amount, String payment, String paymentsPerYear, String interestPerYear) {
+    Double loanAmount, loanPayment, loanInterest;
+    int loanPaymentsPerYear;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Double.TryParse(amount, out loanAmount);
+Double.TryParse(payment, out loanPayment);
+int.TryParse(paymentsPerYear, out loanPaymentsPerYear);
+Double.TryParse(interestPerYear, out loanInterest);
+
+// todo - validation of items &amp;amp;gt; 0
+
+// todo - validation that the loan terms make sense (interest &amp;amp;lt; payments)
+
+// If everything looks okay, create a new loan.
+Amortization.Loan newLoan = new Amortization.Loan();
+newLoan.Name = name;
+newLoan.Total = loanAmount;
+newLoan.PaymentAmount = loanPayment;
+newLoan.PaymentsPerYear = loanPaymentsPerYear;
+newLoan.InterestPerYear = loanInterest;
+
+try {
+    newLoan.UpdatePayments();
+} catch (Exception ex) {
+    newLoan.Name = ex.Message + &amp;quot; | &amp;quot; + ex.StackTrace;
+    // todo, throw appropriate error here
+}
+
+return newLoan;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see, I&amp;rsquo;m allowing GET requests, and am having them pass everything we need to generate a loan, with payments. Note that the method uses strings instead of the appropriate type. Feel free to modify this, but the service &lt;em&gt;will&lt;/em&gt; throw an error.&lt;/p&gt;
+&lt;p&gt;Build and start the project and you should be able to browse to &lt;a href=&#34;http://localhost:50996/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:50996/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; (changing the port as needed) to view returned data, in XML format.&lt;/p&gt;
+&lt;p&gt;If we&amp;rsquo;d prefer, we can change this to return JSON instead, either by adding an attribute or modifying the standardEndpoint element in Web.config, by adding something like defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;For more information on how this works, read &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/endpoint/archive/2010/01/18/automatic-and-explicit-format-selection-in-wcf-webhttp-services.aspx&#34;&gt;Automatic and Explicit Format Selection in WCF WebHttp Services&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Next time &amp;hellip;&lt;/h3&gt;
+&lt;p&gt;Now that we have a working WCF WebHttp service, that responds to GET requests with XML data, we can look at how we can interact with this service with jQuery, and have the service return JSON results.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</link>
+      <pubDate>Tue, 22 Jun 2010 21:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As already noted in the table of contents, the end goal will to have a service that returns enough information to be able to generate an amortization&amp;nbsp;schedule for a loan. I&amp;rsquo;m not in financial services, and haven&amp;rsquo;t been very good in math since some point in high school, but this seems to work fairly well.&lt;/p&gt;
+&lt;p&gt;The first thing we&amp;rsquo;re going to do is generate an assembly that we&amp;rsquo;ll then use in the WCF WebHttp service. We&amp;rsquo;ll then create a service that works with this, and finally the jQuery to get information out of the service and display it.&lt;/p&gt;
+&lt;h3&gt;Defining the loan object&lt;/h3&gt;
+&lt;p&gt;A loan consists of a total amount due, an amount paid per payment, the number of payments made&amp;nbsp; and the interest rate, per year. While not necessary, since we may want multiple loans to be available at once, we&amp;rsquo;ll also say that loans can have a name, or description.&lt;/p&gt;
+&lt;p&gt;While Decimal may be better, that gives us something like this for our class.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;&lt;/p&gt;
+
+&lt;p&gt;namespace JamesRSkemp.Formulas {
+    public class Amortization {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /// &amp;amp;lt;summary&amp;amp;gt;
+    /// Loan, with a total amount due, payment amount, number of payments per year, and interest rate per year.
+    /// &amp;amp;lt;/summary&amp;amp;gt;
+    public class Loan {
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// Name of the loan.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public String Name { get; set; }
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// Total amount due on the loan.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public Double Total { get; set; }
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// The amount paid per payment.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public Double PaymentAmount { get; set; }
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// The number of payments made per year. Usually 12.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public int PaymentsPerYear { get; set; }
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// Percent of interest, per year.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public Double InterestPerYear { get; set; }
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// List of individual payments. Only populated/updated by UpdatePayments method.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public List&amp;amp;lt;Payment&amp;amp;gt; Payments { get; set; }
+
+        /// &amp;amp;lt;summary&amp;amp;gt;
+        /// Creates a new instance of a loan. By default sets the number of payments per year to 12.
+        /// &amp;amp;lt;/summary&amp;amp;gt;
+        public Loan() {
+            this.PaymentsPerYear = 12;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;rsquo;ll notice that I&amp;rsquo;m setting the number of payments per year to 12 when the object is initialized, as most loans tend to follow that.&lt;/p&gt;
+&lt;p&gt;We have payments defined separately, which I&amp;rsquo;ve defined as follows.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;/// &amp;lt;summary&amp;gt;
+/// Loan payment.
+/// &amp;lt;/summary&amp;gt;
+public class Payment {
+    /// &amp;lt;summary&amp;gt;
+    /// Total payment amount.
+    /// &amp;lt;/summary&amp;gt;
+    public Double Total { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Amount of payment applied to interest.
+    /// &amp;lt;/summary&amp;gt;
+    public Double Interest { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Amount of payment applied to the principal.
+    /// &amp;lt;/summary&amp;gt;
+    public Double Principal { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Amount of the loan remaining after this payment is made.
+    /// &amp;lt;/summary&amp;gt;
+    public Double LoanRemaining { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// New loan payment.
+    /// &amp;lt;/summary&amp;gt;
+    public Payment() {
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see that I&amp;rsquo;ve assumed a payment will have a total amount paid, with what amount went towards interest and what towards the principal. For tracking ease, I&amp;rsquo;ve also put the loan&amp;rsquo;s remaining amount on the payment as well, although this isn&amp;rsquo;t really necessary. Of course, we don&amp;rsquo;t have a date associated with the payment (which might be a good idea for expansion purposes), so perhaps it is.&lt;/p&gt;
+&lt;p&gt;Now we have to come up with some way to populate the payments. For this purpose I&amp;rsquo;ve added a method to Loan object which allows the payments to be populated, or updated.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;/// &amp;lt;summary&amp;gt;
+/// Updates payments on a loan.
+/// &amp;lt;/summary&amp;gt;
+/// &amp;lt;returns&amp;gt;If payments cannot be updated, returns false.&amp;lt;/returns&amp;gt;
+public Boolean UpdatePayments() {
+    Boolean paymentsUpdated = false;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if (this.Payments == null) {
+    this.Payments = new List&amp;amp;lt;Payment&amp;amp;gt;();
+} else {
+    this.Payments.Clear();
+}
+
+// Determine how much interest should be applied per payment.
+Double interestPerPayment = (this.InterestPerYear / 100) / this.PaymentsPerYear;
+
+// Store how much we need to pay. In this case, what the first payment will be.
+Double periodPaymentAmount = interestPerPayment * this.Total;
+
+if (periodPaymentAmount &amp;amp;gt;= this.PaymentAmount) {
+    throw new Exception(&amp;quot;The amount of interest on the first payment is greater than the amount that will be paid.&amp;quot;);
+} else {
+    Double totalRemaining = this.Total;
+
+    while (totalRemaining &amp;amp;gt; 0) {
+        Payment currentPayment = new Payment();
+        currentPayment.Total = this.PaymentAmount;
+        currentPayment.Interest = Math.Round(totalRemaining * interestPerPayment, 2);
+        currentPayment.Principal = Math.Round(currentPayment.Total - currentPayment.Interest, 2);
+        currentPayment.LoanRemaining = Math.Round(totalRemaining - currentPayment.Principal, 2);
+                    // If we now have a remaining amount on the loan less than 0, we&#39;ve paid too much.
+
+        if (currentPayment.LoanRemaining &amp;amp;lt; 0) {
+            currentPayment.Total += currentPayment.LoanRemaining;
+            currentPayment.Principal += currentPayment.LoanRemaining;
+            currentPayment.LoanRemaining = 0;
+        }
+
+        this.Payments.Add(currentPayment);
+
+        totalRemaining = currentPayment.LoanRemaining;
+        currentPayment = null;
+    }
+    paymentsUpdated = true;
+}
+
+return paymentsUpdated;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can see that this clears any existing payment information, then loops through and generates a list of payments, which are then associated with the loan. In case the remaining amount due is less than 0, we take that from the payment amount and principal paid to zero the loan.&lt;/p&gt;
+&lt;h3&gt;Testing this out&lt;/h3&gt;
+&lt;p&gt;At this point you&amp;rsquo;re more than willing to create a simple command-line client that references this assembly. You can also grab a copy of &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/JamesRSkemp.Formulas.Amortization.cs.txt&#34;&gt;JamesRSkemp.Formulas.Amortization&lt;/a&gt; online, and compare results with a slightly different version that I use in my &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Next time &amp;hellip;&lt;/h3&gt;
+&lt;p&gt;Now that we have this assembly ready we can look at the next piece, which will be to generate the WCF WebHttp service that actually makes use of this.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
+      <pubDate>Mon, 21 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
+      <description>&lt;p&gt;A while ago (&lt;a href=&#34;http://strivinglife.com/words/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule.aspx&#34;&gt;a year and a quarter&lt;/a&gt;)&amp;nbsp;I created an &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt; in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.&lt;/p&gt;
+&lt;p&gt;For better or worse, some of the practices I put in place aren&#39;t the best, and either way I&#39;ve been meaning to tweak the interface so that I could do various comparisons. If I pay x dollars more a month, how much faster would I have it paid off? How much would I save in interest? How much am I paying in interest as it is? I also really wanted to work&amp;nbsp;with JSON and jQuery, for practice.&lt;/p&gt;
+&lt;p&gt;Now that I&#39;ve found &lt;a href=&#34;http://strivinglife.com/words/post/RESTful-WCF-Web-services-easily.aspx&#34;&gt;WCF WebHttp&lt;/a&gt;, I think I have everything I need to make it happen.&lt;/p&gt;
+&lt;h3&gt;Final product&lt;/h3&gt;
+&lt;p&gt;When I&#39;m done I hope to have a WCF WebHttp service that will take a loan and return the total number of payments required to pay the loan off, with interest information. Variables will include the total loan amount, the annual percent, the number of payments per year, and the amount per payment. We&#39;ll be able to make requests to the service, via jQuery, and parse out the results for display on a page.&lt;/p&gt;
+&lt;h3&gt;Tools used&lt;/h3&gt;
+&lt;p&gt;To develop this I&#39;ll be using Visual Studio 2010 Professional, .NET Framework 4, and Windows Server 2008 R2, with&amp;nbsp;jQuery&amp;nbsp;1.4.2. For browser testing&amp;nbsp;I&#39;ll be using Internet Explorer 8 and Chrome 5.0.x.&lt;/p&gt;
+&lt;h3&gt;Steps&lt;/h3&gt;
+&lt;p&gt;The steps to create this product are listed below, with links to the articles that cover them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object.aspx&#34;&gt;Object determination and creation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service.aspx&#34;&gt;Web service determination, creation, and testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery.aspx&#34;&gt;jQuery implementation and enabling JSON results on our WCF RESTful Web service&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(Steps subject to change/consolidation as articles are written.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RESTful WCF Web services, easily</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</link>
+      <pubDate>Tue, 15 Jun 2010 22:47:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</guid>
+      <description>&lt;p&gt;I know I should know them better so I&#39;ve been looking into WCF Web services, with a heavy lean towards an implementation based on REST principles.&lt;/p&gt;
+&lt;p&gt;After a good deal of research, where it was highly suggested that while ASP.NET MVC may make sense, WCF is still the way to go for Web services, I stumbled upon &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/endpoint/archive/2010/01/06/introducing-wcf-webhttp-services-in-net-4.aspx&#34;&gt;WCF WebHttp Services&lt;/a&gt;, which uses functionality released in .NET 4.&lt;/p&gt;
+&lt;p&gt;After a painless install via Visual Studio 2010&#39;s Extension Manager (&lt;a rel=&#34;external&#34; href=&#34;http://visualstudiogallery.msdn.microsoft.com/en-us/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd&#34;&gt;more information&lt;/a&gt;), and troubleshooting a stupid mistake on my end, I was able to quickly create a Web service that uses an assembly I had created to parse one of my &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; files and return a listing of tracks for a particular artist.&lt;/p&gt;
+&lt;p&gt;I am more than a little disappointed that it took months for me to find this, but the flexibility it allows, and the joy of working with it, makes up for it almost entirely.&lt;/p&gt;
+&lt;h3&gt;Updates&lt;/h3&gt;
+&lt;p&gt;10:04 P.M.: See also &lt;a rel=&#34;external&#34; href=&#34;http://msdn.microsoft.com/en-us/library/bb412169.aspx&#34;&gt;WCF Web HTTP Programming Model&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamically generating a list of videos for OSFLV Player with ASP.NET</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
+      <pubDate>Tue, 13 Apr 2010 08:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
+      <description>&lt;p&gt;I&#39;ve had this code for a while, but here&#39;s some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what&#39;s picked.&lt;/p&gt;
+&lt;p&gt;This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.&lt;/p&gt;
+&lt;h3&gt;Default.aspx&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;%@ Page Language=&#34;C#&#34; AutoEventWireup=&#34;true&#34;  CodeFile=&#34;Default.aspx.cs&#34; Inherits=&#34;_Default&#34; %&amp;gt;
+
+&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
+
+&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
+&amp;lt;head runat=&#34;server&#34;&amp;gt;
+    &amp;lt;title&amp;gt;FLV video player&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;form id=&#34;form1&#34; runat=&#34;server&#34;&amp;gt;
+    &amp;lt;div&amp;gt;
+        &amp;lt;a href=&#34;Default.aspx&#34;&amp;gt;Refresh listing&amp;lt;/a&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;asp:DropDownList ID=&#34;DropDownList1&#34; runat=&#34;server&#34;&amp;gt;
+        &amp;lt;/asp:DropDownList&amp;gt;
+        &amp;lt;asp:Button ID=&#34;Button1&#34; runat=&#34;server&#34; Text=&#34;View&#34; onclick=&#34;Button1_Click&#34; /&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div id=&#34;videoPlayer&#34; runat=&#34;server&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Default.aspx.cs&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.IO;
+
+public partial class _Default : System.Web.UI.Page {
+
+    int videoWidth = 1000; // = 200/170 ratio
+    int videoHeight = 680; // 400x340 = default
+
+    string playerLocation = &#34;osflv_player_v3/player.swf&#34;;
+
+    protected void Page_Load(object sender, EventArgs e) {
+
+        if (!IsPostBack) {
+            DirectoryInfo directory = new DirectoryInfo(Server.MapPath(&#34;/videos&#34;));
+
+            FileInfo[] files = directory.GetFiles();
+
+            foreach (FileInfo file in files) {
+                if (file.Extension == &#34;.flv&#34;) {
+                    DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4));
+                }
+            }
+        }
+
+    }
+    protected void Button1_Click(object sender, EventArgs e) {
+        string video = &#34;/videos/&#34; + DropDownList1.SelectedItem.Text + &#34;.flv&#34;;
+
+        videoPlayer.InnerHtml = &#34;&amp;lt;object width=&#39;&#34; + videoWidth.ToString() + &#34;&#39; height=&#39;&#34; + videoHeight.ToString() + &#34;&#39; id=&#39;flvPlayer2&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;param name=&#39;allowFullScreen&#39; value=&#39;true&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;param name=&#39;movie&#39; value=&#39;&#34; + playerLocation + &#34;?movie=&#34; + video + &#34;&amp;amp;fgcolor=0x0b7ba4&amp;amp;bgcolor=0x333333&amp;amp;autoload=on&amp;amp;autorewind=on&amp;amp;autoplay=on&amp;amp;volume=5&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;embed src=&#39;&#34; + playerLocation + &#34;?movie=&#34; + video + &#34;&amp;amp;fgcolor=0x0b7ba4&amp;amp;bgcolor=0x333333&amp;amp;autoload=on&amp;amp;autorewind=on&amp;amp;autoplay=on&amp;amp;volume=5&#39; width=&#39;&#34; + videoWidth.ToString() + &#34;&#39; height=&#39;&#34; + videoHeight.ToString() + &#34;&#39; allowFullScreen=&#39;true&#39; type=&#39;application/x-shockwave-flash&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;/object&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;br/&amp;gt;&amp;lt;span style=&#39;color:#ccc;&#39;&amp;gt;&#34; + video + &#34;&amp;lt;/span&amp;gt;&#34;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A default Web.config file can be created and used, and a &lt;strong&gt;videos&lt;/strong&gt; directory is checked for the listing of videos.&lt;/p&gt;
+&lt;p&gt;For ease, I recommend using &lt;a href=&#34;http://strivinglife.com/words/post/Cassini-3502-built-and-ready-to-go.aspx&#34;&gt;Cassini&lt;/a&gt; to run the Web site on your own computer (creating a batch file similar to what is noted there).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Connection String encryption (connectionString element) in ASP.NET</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</link>
+      <pubDate>Mon, 01 Feb 2010 22:10:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Connection-String-encryption-connectionString-element-in-ASPNET/</guid>
+      <description>&lt;p&gt;From what I&#39;ve been able to determine, setting up an ODBC connection in Windows and using that for ASP.NET generally seems to be frowned upon. Instead, ASP.NET uses a Web.config&amp;nbsp;file to store a number of settings, including all the connection strings you&#39;ll be using (whether you&#39;re using Windows authentication or user names and passwords).&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34;?&amp;gt;
+&amp;lt;configuration&amp;gt;
+    &amp;lt;appSettings/&amp;gt;
+    &amp;lt;connectionStrings&amp;gt;
+        &amp;lt;add name=&#34;TestDatabase001Reader&#34; connectionString=&#34;Data Source=192.168.56.102,1433;Initial Catalog=TestingDatabase001;User Id=DataReader;Password=DataReader&#34; providerName=&#34;System.Data.SqlClient&#34;/&amp;gt;
+    &amp;lt;/connectionStrings&amp;gt;
+    &amp;lt;system.web&amp;gt;
+        ...
+    &amp;lt;/system.web&amp;gt;
+&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;However, it&#39;s also possible to store the connection strings in a completely different file by tweaking the connectionString in Web.config like so:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;connectionStrings configSource=&#34;ConnectionStrings.config&#34;&amp;gt;
+&amp;lt;/connectionStrings&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then ConnectionStrings.config would be created and consist of the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34;?&amp;gt;
+&amp;lt;connectionStrings&amp;gt;
+    &amp;lt;add name=&#34;TestDatabase001Reader&#34; connectionString=&#34;Data Source=192.168.56.102,1433;Initial Catalog=TestingDatabase001;User Id=DataReader;Password=DataReader&#34; providerName=&#34;System.Data.SqlClient&#34;/&amp;gt;
+&amp;lt;/connectionStrings&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The problem arises when the Web.config file is compromised, either by pushing it without a .config extension, sending it to someone else, or someone having browse access your Web site&#39;s directory. How do you encrypt these connection strings, and can you do so if you decide to store them in a separate file?&lt;/p&gt;
+&lt;p&gt;The following is how to verify that either way works just fine.&lt;/p&gt;
+&lt;h3&gt;SqlConnectionEncryption.aspx&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%@ Page Language=&#34;C#&#34; AutoEventWireup=&#34;true&#34; CodeBehind=&#34;SqlConnectionEncryption.aspx.cs&#34; Inherits=&#34;WebApplication1.SqlConnectionEncryption&#34; %&amp;gt;
+
+&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
+
+&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34; &amp;gt;
+&amp;lt;head runat=&#34;server&#34;&amp;gt;
+    &amp;lt;title&amp;gt;SQL Connection Encryption example&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;form id=&#34;form1&#34; runat=&#34;server&#34;&amp;gt;
+    &amp;lt;div&amp;gt;
+        &amp;lt;asp:GridView ID=&#34;GridView1&#34; runat=&#34;server&#34;&amp;gt;
+        &amp;lt;/asp:GridView&amp;gt;
+        &amp;lt;div id=&#34;Options&#34; runat=&#34;server&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;SqlConnectionEncryption.aspx.cs&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.Data.SqlClient;
+using System.Web.Configuration;
+
+namespace WebApplication1 {
+    public partial class SqlConnectionEncryption : System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
+
+            string action = Request.QueryString[&#34;action&#34;];
+
+            Options.InnerHtml = &#34;&#34;;
+
+            DataTable results = new DataTable();
+
+            using (SqlConnection connection = new SqlConnection()) {
+                connection.ConnectionString = ConfigurationManager.ConnectionStrings[&#34;TestDatabase001Reader&#34;].ToString();
+                SqlCommand command = new SqlCommand();
+                command.Connection = connection;
+                command.CommandText = &#34;SELECT * FROM NameTable&#34;;
+                command.CommandType = CommandType.Text;
+
+                connection.Open();
+                results.Load(command.ExecuteReader());
+                connection.Close();
+            }
+
+            if (results.Rows.Count &amp;gt; 0) {
+                GridView1.DataSource = results;
+                GridView1.DataBind();
+            }
+
+            Configuration config = WebConfigurationManager.OpenWebConfiguration(Request.ApplicationPath);
+            ConfigurationSection configSection = config.GetSection(&#34;connectionStrings&#34;);
+
+            if (!configSection.SectionInformation.IsProtected) {
+                configSection.SectionInformation.ProtectSection(&#34;RsaProtectedConfigurationProvider&#34;);
+                config.Save();
+                Options.InnerHtml += &#34;Configuration encrypted.&amp;lt;br /&amp;gt;&#34;;
+            } else {
+                //configSection.SectionInformation.UnprotectSection();
+                //config.Save();
+                //Options.InnerHtml += &#34;Configuration unencrypted.&amp;lt;br /&amp;gt;&#34;;
+                Options.InnerHtml += &#34;Configuration already encrypted.&amp;lt;br /&amp;gt;&#34;;
+            }
+
+            Options.InnerHtml += &#34;Web configuration path: &#34; + config.FilePath + &#34;&amp;lt;br /&amp;gt;&#34;;
+            Options.InnerHtml += &#34;Section path: &#34; + configSection.ElementInformation.Source + &#34;&amp;lt;br /&amp;gt;&#34;;
+            Options.InnerHtml += &#34;&amp;lt;br /&amp;gt;&#34;;
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending upon your Web.config setup, you&#39;ll either see Web.config for both, or Web.config for one and ConnectionStrings.config for the other.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple Journal 1.0 Released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</link>
+      <pubDate>Sun, 03 Jan 2010 18:53:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</guid>
+      <description>&lt;p&gt;Version 1.0 of Simple Journal is now available for download.&lt;/p&gt;
+&lt;p&gt;Simple Journal is meant to be exactly that; a &lt;em&gt;very&lt;/em&gt; simple way to keep track of a journal.&lt;/p&gt;
+&lt;p&gt;Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/SimpleJournal_1.0.zip&#34;&gt;Download Simple Journal 1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use Simple Journal extract the contents of the zip file to a directory and start _startCassini.bat. You&#39;ll see a dummy start page, with a link to the administrative area.&lt;/p&gt;
+&lt;p&gt;Click on Create new journal to create a new journal. The journal will be saved, by default, in the root of the install directory. Entries can be added using the appropriate administrative page.&lt;/p&gt;
+&lt;div class=&#34;warning&#34;&gt;
+&lt;p&gt;By default there is &lt;em&gt;no security on the administrative pages&lt;/em&gt;. Unless you want &lt;em&gt;anyone&lt;/em&gt; to be able to edit entries, &lt;strong&gt;DO NOT&lt;/strong&gt; push the Admin directory to a publically available Web site. This application is meant to run on an individual computer or USB drive. However, there&#39;s nothing to stop you from publishing the individual XML files and the XSL file (keeping these in the same directory).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You&#39;ll need &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;the current version of the .NET Framework&lt;/a&gt; to run this application. No other requirements should be necessary.&lt;/p&gt;
+&lt;p&gt;Questions and comments welcome and appreciated.&lt;/p&gt;
+&lt;h3&gt;Related articles&lt;/h3&gt;
+&lt;p&gt;Simple Journal was created as a way for me to write something every day, without worrying about quality or purpose.&lt;/p&gt;
+&lt;p&gt;I also covered creating the XML layout in a series of three articles; view&amp;nbsp;part &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor.aspx&#34;&gt;2&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample.aspx&#34;&gt;3&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BlogEngine.NET running on Cassini Personal Web Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
+      <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
+      <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
+&lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
+&lt;p&gt;I decided to start with Dmitry&#39;s release and downloaded and built the application. Since I&#39;m looking into building extensions for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34;&gt;BlogEngine.NET&lt;/a&gt; (to work against some spam issues and for general knowledge), as well as wanting to work on themes, I decided to see if I could get BE working on Cassini.&lt;/p&gt;
+&lt;p&gt;And it does, right out of the box (version 1.5.0.7).&lt;/p&gt;
+&lt;p&gt;On a Windows XP Professional box memory usage jumped to approximately 100 MB (which is about what I see on my own blog, with a little over 780 posts). On my Windows 7 Home Premium (64-bit) machine, however, memory usage sat under 40 MB.&lt;/p&gt;
+&lt;p&gt;Either way, I was able to login just fine.&lt;/p&gt;
+&lt;p&gt;Next I&#39;ll probably see if I can get an MVC Web site up and running on Cassini as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
+&lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
+&lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
+&lt;p&gt;However, when attempting to add this to my MVC site I kept running into issues, the last of which was an &#34;Unable to open the database file.&#34;&lt;/p&gt;
+&lt;p&gt;The first issue was with the type declared in the examples on the page above; &lt;strong&gt;TechInfoSystems.Data.SQLiteProvider&lt;/strong&gt; should be removed completely, as he suggests just&amp;nbsp;adding the three classes to your site.&lt;/p&gt;
+&lt;p&gt;The second and last issue was that pesky database issue. At first I didn&#39;t think the app_data directory was getting pushed over, so I verified that I was pushing that as part of the Publish process (how they recommend you push a MVC site to production).&lt;/p&gt;
+&lt;p&gt;Upon further review it looks like the App_Data directory was placed inside the Bin directory. Google didn&#39;t help me much on whether that was the expected behavior, but it consistently did that. I added a ton of permissions to NETWORK SERVICE on the bin\app_data directory, but still the same pesky error.&lt;/p&gt;
+&lt;p&gt;So I commented out the membership, profile, and role items completely from web.config and added the following code to the Index view.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%= AppDomain.CurrentDomain.GetData(&#34;DataDirectory&#34;).ToString() %&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lo and behold, it was looking for it in the root of the site, exactly where I was expecting the App_Data directory to publish to.&lt;/p&gt;
+&lt;p&gt;Move the App_Data folder and sure enough, the site works (after uncommenting the Web.config provider information, of course) and I&#39;m able to create a new user.&lt;/p&gt;
+&lt;p&gt;So, why does the publish process require me to move the App_Data directory?&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;In order to get the database pushing correctly I changed Copy to Output from Do not copy to Copy always. However, what really needed to happen was the Build Action needed to be changed to Content.&lt;/p&gt;
+&lt;p&gt;An App_Data directory is now created correctly, and the SQLite database is correctly placed in the directory.&lt;/p&gt;
+&lt;h3&gt;Another gotcha&lt;/h3&gt;
+&lt;p&gt;If you want troubles, change the applicationName in the Web.config for all three items. If you do this, you&#39;ll run into errors like &#34;Attempt to write a read-only database attempt to write a readonly database&#34; with a line reference suggesting there&#39;s an issue with roleManager. Comment that out, or that and membership and&amp;nbsp;profile, and things will seem okay.&lt;/p&gt;
+&lt;p&gt;The issue is that the applicationName (SQLite ASP.NET Provider) is baked into the sample SQLite database. Durr.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

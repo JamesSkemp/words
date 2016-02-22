@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Importing an existing Web site into Subversion - My New Hugo Site</title>
+    <meta property='og:title' content="Importing an existing Web site into Subversion - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Importing-an-existing-Web-site-into-Subversion/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2008-07-13T11:30:00-05:00">
+        <meta itemprop="headline" content="Importing an existing Web site into Subversion">
+        <meta itemprop="description" content="Last time, I played around with Subversion in order to determine just how Subversion worked. This time I&#39;m actually going to create a repository for a site to store the current version, and work through making a couple of updates. Existing site structure The site that I&#39;ll be working with is DoNotDenyMyUnicorn.com. It&#39;s a small, stable, site, that has just a few files. It&#39;s also relatively clean, with no previous versions floating about.">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Importing-an-existing-Web-site-into-Subversion/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-07-13T11:30:00-05:00">Sun, Jul 13, 2008</time>
+          <h1 class="article-title">Importing an existing Web site into Subversion</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Last time, <a href="/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">I played around with Subversion</a> in order to determine just how Subversion worked.</p>
+<p>This time I'm actually going to create a repository for a site to store the current version, and work through making a couple of updates.</p>
+<h3>Existing site structure</h3>
+<p>The site that I'll be working with is <a href="http://donotdenymyunicorn.com/" target="_blank">DoNotDenyMyUnicorn.com</a>. It's a small, stable, site, that has just a few files. It's also relatively clean, with no previous versions floating about.</p>
+<p>The directory for the site currently exists on another box, at C:\inetpub\wwwroot\donotdenymyunicorn\ and consists of 8 files in that directory.</p>
+<ol>
+<li>
+<div>index.html</div>
+</li>
+<li>
+<div>main234x60.gif</div>
+</li>
+<li>
+<div>print.css</div>
+</li>
+<li>
+<div>robots.txt</div>
+</li>
+<li>
+<div>screen.css</div>
+</li>
+<li>
+<div>sitemap.xml</div>
+</li>
+<li>
+<div>StrivingLifeGmail.png</div>
+</li>
+<li>
+<div>(a Google-related file)</div>
+</li>
+</ol>
+<h3>The new development structure</h3>
+<p>I won't be changing the structure of the site, but since I'll be moving the files to my Vista box, I'll have a slightly different structure.</p>
+<p>First, I'll be storing the repository at B:\repos\DoNotDenyMyUnicorn\</p>
+<div class="note">
+<p>You'll note that I'm using seperate repositories for each of my sites. However, I could create one repository for all my sites if I wanted to.</p>
+</div>
+<p>The development files will be stored at B:\projects\DoNotDenyMyUnicorn\</p>
+<h3>My workflow</h3>
+<p>Since I'm the only one working on my sites, I'll be keeping things simple. I'll do all my development work in B:\projects\ and push files once they've been tested and commited to the repository.</p>
+<p>Depending upon what issues I run into, this may change, but this is what I'm planning for now.</p>
+<h3>Creating the repository</h3>
+<p>The first thing to do is create the repository we'll be using. The location of the repository will be B:\repos\DoNotDenyMyUnicorn\ , so the first thing to do is make sure that the directory exists. In my case, I need to create the DoNotDenyMyUnicorn folder.</p>
+<p>With that done, I can right-click on the DoNotDenyMyUnicorn folder and select TortoiseSVN &gt; Create repository here... (type of Native filesystem, of course).</p>
+<h3>Creating the working/development directory</h3>
+<p>Now that I've got the repository created, it's time to put data into it.</p>
+<p>As I said before, the development directory will be at B:\projects\DoNotDenyMyUnicorn\ .</p>
+<p>Now I have a couple of options. I can either import my existing content into Subversion, or I can create a working copy, add my data, and commit it.</p>
+<p>In this case I'm going to create a working copy, since that makes more sense to me.</p>
+<p>So, I right-click on the DoNotDenyMyUnicorn directory in B:\repos\ and select SVN Checkout...</p>
+<p>I'll confirm that the URL is correct (file:///B:/repos/DoNotDenyMyUnicorn) and browse to the Checkout directory of B:\projects\DoNotDenyMyUnicorn .</p>
+<p><img title="Checking out a working copy" src="http://media.strivinglife.com/graphics/svn_web/RepoCheckout_DNDMU.jpg" alt="Checking out a working copy" width="400" height="278" /></p>
+<p>Pressing OK, I've now got revision 0 in my projects directory.</p>
+<p>Next I'll grab the eight files from my XP machine, and copy them into B:\projects\DoNotDenyMyUnicorn\ .</p>
+<p>I can now either 'Add...' each of the files I want under version control, or just right-click in/on the DoNotDenyMyUnicorn directory to select SVN Commit...</p>
+<p>Depending upon whether I already added the files, I may need to select the files I want added, but since I want them all, a simple check of "Select / deselect all" selects the eight files.</p>
+<p>I'll type a meaningful message ("Initial check-in.") and press OK.</p>
+<p>This should add the 8 files, and create revision 1.</p>
+<div class="tip">
+<p>If&nbsp;you don't see any TortoiseSVN status icons on the file icons, you may try refreshing Explorer with F5.</p>
+</div>
+<h3>Making changes</h3>
+<p>Now there's just a few minor things that I want to change about the existing DoNotDenyMyUnicorn. I used Visual Studio 2008, but the editor doesn't really matter.</p>
+<p>Once I've made my changes, I'll need to commit them to the repository.</p>
+<div class="tip">
+<p>Remember that if you have multiple developers, it's a good&nbsp;idea&nbsp;to see if any other updates have taken place since your last update.&nbsp;</p>
+</div>
+<p>This is as simple as either committing the changes by selecting, or by committing the entire project directory (DoNotDenyMyUnicorn, in B:\projects\) and letting SVN take care of the rest.</p>
+<p>In my case I just had the one change.</p>
+<p>Once I committed, I pushed the changed files up to my remote Windows server.</p>
+<p>While doing so, I noticed that I had a favicon, that I didn't have on my devel site. Whoops.</p>
+<p>It was easy enough to download that into my project directory, and add/commit that to the repository.</p>
+<h3>Conclusions</h3>
+<p>While this doesn't handle trunks, branches, tags, or any of that other fun stuff, for a simple Web site, as <a href="http://donotdenymyunicorn.com/" target="_blank">DoNotDenyMyUnicorn.com</a> is, it's easy enough to move files into version control - much easier than I originally thought.</p>
+<p>However, while we didn't talk about it, it's a very good idea to make sure that you have clean directories, without temp files, previous versions, and 'correct' directories. You can always exclude these from versioning, but a clean directory is a developer's favorite directory.</p>
+<h3>Next steps</h3>
+<p>My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or <a href="/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">test Subversion out</a>.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/subversion" class="tag">subversion</a> <a href="http://replace-this-with-your-hugo-site.com/tags/svn" class="tag">svn</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fImporting-an-existing-Web-site-into-Subversion%2f&t=Importing%20an%20existing%20Web%20site%20into%20Subversion" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fImporting-an-existing-Web-site-into-Subversion%2f&text=Importing%20an%20existing%20Web%20site%20into%20Subversion&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fImporting-an-existing-Web-site-into-Subversion%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fImporting-an-existing-Web-site-into-Subversion%2f&title=Importing%20an%20existing%20Web%20site%20into%20Subversion" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

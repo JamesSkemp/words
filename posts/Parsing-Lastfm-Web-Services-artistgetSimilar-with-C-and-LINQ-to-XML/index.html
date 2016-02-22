@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML - My New Hugo Site</title>
+    <meta property='og:title' content="Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2009-09-12T16:33:00-05:00">
+        <meta itemprop="headline" content="Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML">
+        <meta itemprop="description" content="The following covers how to parse the XML response of artist.getSimilar, from Last.fm&#39;s Web Services. Setup and assumptions The first step is sign up for a free API account at Last.fm. You&#39;ll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality. When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2009-09-12T16:33:00-05:00">Sat, Sep 12, 2009</time>
+          <h1 class="article-title">Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services.</p>
+<h3>Setup and assumptions</h3>
+<p>The first step is sign up for a free <a rel="external" href="http://www.last.fm/api">API account at Last.fm</a>.</p>
+<p>You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality.</p>
+<p>When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.</p>
+<h3>Creating the base class</h3>
+<p>The first thing I've done is created a new class file in my project called Lastfm.cs, resulting in the following.</p>
+<pre class="code"><code class="csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace JamesRSkemp.WebServices {
+    class Lastfm {
+        private const string LastFmApiKey = "EnterYourApiKeyHere";
+
+    }
+}</code></pre>
+<p>We'll add a new method to the Lastfm class to return the base Url we'll need to make Web service requests.</p>
+<pre class="code"><code class="csharp">     /// &lt;summary&gt;
+        /// Get the base Url that we'll use to make Web service requests.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;The base Url to use to make Web service requests.&lt;/returns&gt;
+        static private string GetBaseRequestUrl() {
+            string baseUrl = "http://ws.audioscrobbler.com/2.0/?api_key=" + LastFmApiKey;
+            return baseUrl;
+        }</code></pre>
+<p>Next we'll create a method to make a request to a Web service and return the full response.</p>
+<pre class="code"><code class="csharp">     /// &lt;summary&gt;
+        /// Gets the data from an HTTP request.
+        /// &lt;/summary&gt;
+        /// &lt;param name="requestUrl"&gt;The full Url of the request to make.&lt;/param&gt;
+        /// &lt;returns&gt;Returns a string with the text returned from the request.&lt;/returns&gt;
+        private string GetServiceResponse(string requestUrl) {
+            string httpResponse = "";
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Timeout = 15000;
+            HttpWebResponse response = null;
+            StreamReader reader = null;
+
+            try {
+                response = (HttpWebResponse)request.GetResponse();
+                reader = new StreamReader(response.GetResponseStream());
+
+                httpResponse = reader.ReadToEnd();
+            } finally {
+                if (reader != null) {
+                    reader.Close();
+                }
+                if (response != null) {
+                    response.Close();
+                }
+            }
+
+            return httpResponse;
+        }</code></pre>
+<p>The following references must also be added.</p>
+<pre class="code"><code class="csharp">using System.Net;
+using System.IO;</code></pre>
+<p>When we use this class, we want to have our data returned in an easy to use format. For ease, we'll have it return a DataTable. We'll have to add the appropriate reference first.</p>
+<pre class="code"><code class="csharp">using System.Data;</code></pre>
+<p>We can then began our method as follows.</p>
+<pre class="code"><code class="csharp">     public DataTable GetSimilarArtists(string artistName) {
+            if (String.IsNullOrEmpty(artistName)) {
+                throw new Exception("Artist name must be populated.");
+            } else {
+                string requestUrl = GetBaseRequestUrl();
+                requestUrl += "&amp;method=artist.getSimilar&amp;artist=" + System.Web.HttpUtility.UrlEncode(artistName.Trim());
+
+                string serviceResponse = GetServiceResponse(requestUrl);
+
+                DataTable similarArtists = new DataTable();
+                
+                // TODO
+
+                return similarArtists;
+            }
+        }</code></pre>
+<p>If we were to make a request now, we'd see that the data returned is formatted similar to the following, for a request for <strong>Bruce Springsteen</strong>. (For ease and sanity, data truncated.)</p>
+<pre class="code"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;lfm status="ok"&gt;
+&lt;similarartists artist="Bruce Springsteen"&gt;
+&lt;artist&gt;
+    &lt;name&gt;Bruce Springsteen &amp; The E Street Band&lt;/name&gt;
+    &lt;mbid&gt;5a1283bf-81d5-4700-8919-683eeaaf2beb&lt;/mbid&gt;
+    &lt;match&gt;100&lt;/match&gt;
+    &lt;url&gt;www.last.fm/music/Bruce%2BSpringsteen%2B%2526%2BThe%2BE%2BStreet%2BBand&lt;/url&gt;
+    &lt;image size="small"&gt;http://userserve-ak.last.fm/serve/34/8415485.jpg&lt;/image&gt;
+    &lt;image size="medium"&gt;http://userserve-ak.last.fm/serve/64/8415485.jpg&lt;/image&gt;
+    &lt;image size="large"&gt;http://userserve-ak.last.fm/serve/126/8415485.jpg&lt;/image&gt;
+    &lt;image size="extralarge"&gt;http://userserve-ak.last.fm/serve/252/8415485.jpg&lt;/image&gt;
+    &lt;image size="mega"&gt;http://userserve-ak.last.fm/serve/500/8415485/Bruce+Springsteen++The+E+Street+Band+estreet.jpg&lt;/image&gt;
+    &lt;streamable&gt;1&lt;/streamable&gt;
+&lt;/artist&gt;
+[...]
+&lt;/similarartists&gt;&lt;/lfm&gt;</code></pre>
+<p>We'd first need to add a reference so that we can parse through the returned response.</p>
+<pre class="code"><code class="csharp">using System.Xml.Linq;</code></pre>
+<p>We can now create our LINQ to XML query to access the similar artist's name and match percentage.</p>
+<pre class="code"><code class="csharp">             var xmlResponse = XElement.Parse(serviceResponse);
+
+                // Parse through the returned Xml for the name and match value for each similar artist.
+                var artists = from artistsSimilar in xmlResponse.Descendants("artist")
+                              select new {
+                                  name = artistsSimilar.Element("name").Value,
+                                  match = artistsSimilar.Element("match").Value
+                              };</code></pre>
+<p>Next we can create the DataTable that we'll use to store the name and math values.</p>
+<pre class="code"><code class="csharp">             DataTable similarArtists = new DataTable();
+                similarArtists.Columns.Add("Artist");
+                similarArtists.Columns.Add("Match", System.Type.GetType("System.Double"));</code></pre>
+<p>Finally we can loop through each result returned from our LINQ to XML query, adding a new row to the table, for each.</p>
+<pre class="code"><code class="csharp">             if (artists.Count() &gt; 0) {
+                    DataRow artistsRow;
+                    foreach (var artist in artists) {
+                        artistsRow = similarArtists.NewRow();
+                        artistsRow["Artist"] = artist.name;
+                        artistsRow["Match"] = artist.match;
+                        similarArtists.Rows.Add(artistsRow);
+                    }
+                }</code></pre>
+<p>Finally we return the populated DataTable.</p>
+<pre class="code"><code class="csharp">             return similarArtists;</code></pre>
+<p>Assuming a Windows Form Application with a text box (textBox1), a DataGridView (dataGridView1), and a button (button1), we could do the following (assuming the appropriate references have been added).</p>
+<pre class="code"><code class="csharp">     private void button1_Click(object sender, EventArgs e) {
+            if (!String.IsNullOrEmpty(textBox1.Text)) {
+                Lastfm lastFmRequest = new Lastfm();
+
+                DataTable results = lastFmRequest.GetSimilarArtists(textBox1.Text);
+
+                dataGridView1.DataSource = results;
+            } else {
+                MessageBox.Show("You must enter an artist to continue.");
+                textBox1.Focus();
+            }
+        }</code></pre>
+<p>Taken together, that results in the following. (<a rel="download" href="http://media.jamesrskemp.com/articles/JamesRSkemp.WebServices.Lastfm.cs.txt">Download JamesRSkemp.WebServices.Lastfm.cs</a>.)</p>
+<pre class="code"><code class="csharp">/*
+Created by James Skemp - <a href="http://jamesrskemp.com/">http://jamesrskemp.com/</a>
+Version 1.0
+More information at http://strivinglife.com/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML.aspx
+Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using System.IO;
+using System.Data;
+using System.Xml.Linq;
+
+namespace JamesRSkemp.WebServices {
+    class Lastfm {
+        /// &lt;summary&gt;
+        /// Key used to access Last.fm Web services.
+        /// &lt;/summary&gt;
+        private const string LastFmApiKey = "EnterYourApiKeyHere";
+
+        /// &lt;summary&gt;
+        /// Return artists similar to the one passed, with a match percentage.
+        /// &lt;/summary&gt;
+        /// &lt;param name="artistName"&gt;The name of the artist to use for the request.&lt;/param&gt;
+        /// &lt;returns&gt;DataTable with artist names and match percentage, as a Double.&lt;/returns&gt;
+        public DataTable GetSimilarArtists(string artistName) {
+            if (String.IsNullOrEmpty(artistName)) {
+                throw new Exception("Artist name must be populated.");
+            } else {
+                string requestUrl = GetBaseRequestUrl();
+                requestUrl += "&amp;method=artist.getSimilar&amp;artist=" + System.Web.HttpUtility.UrlEncode(artistName.Trim());
+
+                string serviceResponse = GetServiceResponse(requestUrl);
+
+                var xmlResponse = XElement.Parse(serviceResponse);
+
+                // Parse through the returned Xml for the name and match value for each similar artist.
+                var artists = from artistsSimilar in xmlResponse.Descendants("artist")
+                              select new {
+                                  name = artistsSimilar.Element("name").Value,
+                                  match = artistsSimilar.Element("match").Value
+                              };
+
+                DataTable similarArtists = new DataTable();
+                similarArtists.Columns.Add("Artist");
+                similarArtists.Columns.Add("Match", System.Type.GetType("System.Double"));
+
+                if (artists.Count() &gt; 0) {
+                    DataRow artistsRow;
+                    foreach (var artist in artists) {
+                        artistsRow = similarArtists.NewRow();
+                        artistsRow["Artist"] = artist.name;
+                        artistsRow["Match"] = artist.match;
+                        similarArtists.Rows.Add(artistsRow);
+                    }
+                }
+
+                return similarArtists;
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// Get the base Url that we'll use to make Web service requests.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;The base Url to use to make Web service requests.&lt;/returns&gt;
+        private string GetBaseRequestUrl() {
+            string baseUrl = "http://ws.audioscrobbler.com/2.0/?api_key=" + LastFmApiKey;
+            return baseUrl;
+        }
+
+        /// &lt;summary&gt;
+        /// Gets the data from an HTTP request.
+        /// &lt;/summary&gt;
+        /// &lt;param name="requestUrl"&gt;The full Url of the request to make.&lt;/param&gt;
+        /// &lt;returns&gt;Returns a string with the text returned from the request.&lt;/returns&gt;
+        private string GetServiceResponse(string requestUrl) {
+            string httpResponse = "";
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Timeout = 15000;
+            HttpWebResponse response = null;
+            StreamReader reader = null;
+
+            try {
+                response = (HttpWebResponse)request.GetResponse();
+                reader = new StreamReader(response.GetResponseStream());
+
+                httpResponse = reader.ReadToEnd();
+            } finally {
+                if (reader != null) {
+                    reader.Close();
+                }
+                if (response != null) {
+                    response.Close();
+                }
+            }
+
+            return httpResponse;
+        }
+    }
+}</code></pre>
+<p>Advanced error handling is missing, but this should give you a basic idea of how you can go about easily accessing Last.fm's Web Services, and parsing returned data.</p>
+<h3>Final thoughts</h3>
+<p>Questions? Comments? Concerns? Please add a comment below.</p>
+<p><strong>Updated 9/12/2009, 15:55:</strong> I was doing it in my implementation, but added simple check for a populated textBox1 to the above code.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="tag">.net</a> <a href="http://replace-this-with-your-hugo-site.com/tags/c#" class="tag">c#</a> <a href="http://replace-this-with-your-hugo-site.com/tags/linq%20to%20xml" class="tag">linq to xml</a> <a href="http://replace-this-with-your-hugo-site.com/tags/last.fm" class="tag">last.fm</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fParsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML%2f&t=Parsing%20Last.fm%20Web%20Services%27%20artist.getSimilar%20with%20C%23%20and%20LINQ%20to%20XML" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fParsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML%2f&text=Parsing%20Last.fm%20Web%20Services%27%20artist.getSimilar%20with%20C%23%20and%20LINQ%20to%20XML&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fParsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fParsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML%2f&title=Parsing%20Last.fm%20Web%20Services%27%20artist.getSimilar%20with%20C%23%20and%20LINQ%20to%20XML" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

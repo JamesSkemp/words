@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Server 2008 on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/windows-server-2008/</link>
+    <description>Recent content in Windows Server 2008 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Jun 2010 10:00:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windows-server-2008/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows Server 2008 R2 Enterprise Edition - setup for sharing files</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
+      <pubDate>Sun, 06 Jun 2010 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
+      <description>&lt;p&gt;When I first started downloading files, almost a decade and a half ago, I would just download everything to one directory, using whatever name the file originally had when I was downloading it.&lt;/p&gt;
+&lt;p&gt;In the last couple of years I&#39;ve been trying (despite Chrome&#39;s default method trying to push be back)&amp;nbsp;to be much better about saving files, by creating a directory with the full name of the application - &#34;Microsoft Web Platform Installer&#34; - and then saving the file(s) into that directory.&lt;/p&gt;
+&lt;p&gt;However, I do lose track of how many previous versions I have of particular applications (I try to only have the current and one version back) and how much total I&#39;m storing.&lt;/p&gt;
+&lt;p&gt;Since my server is setup for the Web and Subversion, it was time to look at the next step, which is storing files to it, so that I can access with my other machines.&lt;/p&gt;
+&lt;p&gt;Luckily Windows Server 2008 has a File Services role which allows the setup of shared folders over a network. The File Server role service is necessary, and based on what it seems to provide (not having worked with it before), File Server Resource Manager (FSRM) seemed to be a good bet as well.&lt;/p&gt;
+&lt;p&gt;Storage Monitoring gives another screen that allows for a volume to be monitored, and reports to be generated, but since at this point I want to monitor directories instead of volumes, I opted to skip past that by just pressing Next.&lt;/p&gt;
+&lt;p&gt;With that done I&#39;m left with the question, especially (I think) since I&#39;ll probably put in a second hard drive in the next couple of months, whether I should create a Virtual Hard Drive (VHD) with the downloads stored to it. At this point I&#39;m at about 40 GB of files, though, and I&#39;m not sure it would really be a benefit. So while more research is needed into the benefits of VHD, I opted to just create a new directory in the root of C called downloads.&lt;/p&gt;
+&lt;p&gt;Now I want my PCs and laptop to be able to access this directory, as well as save files to it. I create a new user (Server Manager &amp;gt; Configuration &amp;gt; Local Users and Groups &amp;gt; Users) that the three will all use to access the machine (and I&#39;m okay with one account being shared over the three machines). Users cannot change the password &lt;span style=&#34;text-decoration: line-through;&#34;&gt;and it&#39;ll never expire&lt;/span&gt;. With the account setup I share C:\downloads\ with the new account, giving it Read/Write permissions.&lt;/p&gt;
+&lt;p&gt;Since it was initially setup as being on a public network (just by default), I&#39;m prompted on whether I want to turn on network discovery and file sharing for public networks, of if I&#39;m connected to a private network (home/workplace). In my case it&#39;s definitely the latter. Even though network discovery continued to be turned off, I was still able to access the share using the user account I had setup (so long as I didn&#39;t try adding the domain to the end).&lt;/p&gt;
+&lt;p&gt;With that done I opened File Server Resource Manager and added a quota to C:\downloads\. The built-in templates didn&#39;t work for me, so I created one with a 50 GB soft limit, that generates an event log entry if the quota is reached, and generates&amp;nbsp;reports for large files and least recently accessed files, when usage reaches the default of 85%.&lt;/p&gt;
+&lt;p&gt;And now it&#39;s just a matter of move files to the server.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
+&lt;li&gt;to serve as an always-available Subversion repository server&lt;/li&gt;
+&lt;li&gt;to serve as a repository for shared downloads, across all my machines&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As time goes by the scope of the server may also change. But for now, this will work just fine.&lt;/p&gt;
+&lt;h3&gt;Choosing an edition&lt;/h3&gt;
+&lt;p&gt;The first step was to install Windows Server 2008 R2. Being able to choose between any of the editions, it was between Enterprise, Standard, and Web. While I began to lean towards Web based upon the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-specs.aspx&#34;&gt;edition comparison by technical specification&lt;/a&gt;, when I looked at &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-roles.aspx&#34;&gt;edition comparison by server role&lt;/a&gt;, Web&amp;nbsp;dropped out of the race. Since my external host provides an Enterprise edition server, Enterprise is what I finally chose.&lt;/p&gt;
+&lt;h3&gt;Initial setup before&amp;nbsp;disconnecting the (physical) monitor&lt;/h3&gt;
+&lt;p&gt;After a short time, Windows Server 2008 R2 Enterprise edition was installed and ready for configuration, after entering an Administrator password.&lt;/p&gt;
+&lt;p&gt;The first thing I did was activate Windows, correct the time zone, and change the computer name to something a bit more manageable, which required a restart.&lt;/p&gt;
+&lt;p&gt;The&amp;nbsp;next step was to configure (checking for updates,&amp;nbsp;but not installing them automatically)&amp;nbsp;and&amp;nbsp;install updates, of which there were 30.&lt;/p&gt;
+&lt;p&gt;Since&amp;nbsp;I want to ultimately remove the monitor from this change, I enabled remote desktop. Since I&#39;ve only got the one network connection, I didn&#39;t need to tweak it any further.&lt;/p&gt;
+&lt;p&gt;While I was in System Properties and switched over to the Advanced tab and hit the Settings... button under Performance. I don&#39;t care about how it looks, so I switched from &#34;Let Windows choose what&#39;s best for my computer&#34; to &#34;Adjust for best performance,&#34; which just unchecked all the checkboxes. I now tested connecting in from my Windows 7 Home Premium machine, and sure enough I was able to&amp;nbsp;bump my other machine and remote in.&lt;/p&gt;
+&lt;p&gt;With that tested, it was time to shut off the machine, unplug the monitor and USB keyboard and mouse, and see if I could remote in.&lt;/p&gt;
+&lt;h3&gt;Success means shutting off services&lt;/h3&gt;
+&lt;p&gt;With the machine correctly booting up, even though it had no monitor, keyboard, nor mouse hooked up, it was time to start optimizing the server by shutting off services.&lt;/p&gt;
+&lt;p&gt;Print Spooler was the first to be stopped and disabled. And that was about it. At only 470 MB used, that&#39;s not too shabby.&lt;/p&gt;
+&lt;h3&gt;Adding server roles - Web server&lt;/h3&gt;
+&lt;p&gt;With Print Spooler disabled it was time to start setting up server roles. I want to start simple, I first selected Web Server (IIS). While I&#39;ve run through this before, this time I actually read the notes and saw an item about Windows System Resource Manager (WSRM) that &#34;can help ensure equitable servicing of Web server traffice, especially when there are multiple roles on this computer.&#34; That sounds like what I&#39;ll eventually be doing, so I&#39;ve made a note to look into this later.&lt;/p&gt;
+&lt;p&gt;By default a number of role services are selected, and since I know I want to do ASP.NET development, I added that (and the&amp;nbsp;items it requires)&amp;nbsp;and HTTP Redirection, since it&#39;s come up before. I end up with the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Web Server (IIS)&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Web Server&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;Common HTTP Features 
+&lt;ul&gt;
+&lt;li&gt;Static Content&lt;/li&gt;
+&lt;li&gt;Default Document&lt;/li&gt;
+&lt;li&gt;Directory Browsing&lt;/li&gt;
+&lt;li&gt;HTTP Errors&lt;/li&gt;
+&lt;li&gt;HTTP Redirection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application Development 
+&lt;ul&gt;
+&lt;li&gt;ASP.NET&lt;/li&gt;
+&lt;li&gt;.NET Extensibility&lt;/li&gt;
+&lt;li&gt;ISAPI Extensions&lt;/li&gt;
+&lt;li&gt;ISAPI Filters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Health and Diagnostics 
+&lt;ul&gt;
+&lt;li&gt;HTTP Logging&lt;/li&gt;
+&lt;li&gt;Request Monitor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Security 
+&lt;ul&gt;
+&lt;li&gt;Request Filtering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance 
+&lt;ul&gt;
+&lt;li&gt;Static Content Compression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Management Tools&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;IIS Management Console&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once the installation was finished successfully (without the need of a reboot), I was successfully able to browse to the site on my Windows 7 machine.&lt;/p&gt;
+&lt;h3&gt;The &#39;easy button&#39;&lt;/h3&gt;
+&lt;p&gt;With that done, it was time to install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/downloads/platform.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt;&amp;nbsp;(WPI), also know as &lt;a href=&#34;http://strivinglife.com/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button.aspx&#34;&gt;the easy button&lt;/a&gt;. Since Internet Explorer runs in a high-security mode in Server 2008, I had to download a copy on my Windows 7 machine and copy and paste it over to the Server, via Remote Desktop.&lt;/p&gt;
+&lt;p&gt;Since Server 2008 R2 doesn&#39;t come with .NET Frameworks&amp;nbsp;3.5 SP 1 or 4 installed, I started with 3.5 SP1. For whatever reason Logging Tools was also selected, but seemingly no download was required.&lt;/p&gt;
+&lt;p&gt;Surprisingly I didn&#39;t have to reboot after installing .NET 3.5 SP1, so I went on to version 4. For whatever reason, this install took a good deal of time (in the&amp;nbsp;double-digits), and since I didn&#39;t keep my attention solely on it, missed the restart prompt in the bottom right corner. But, after the restart that was too was finished.&lt;/p&gt;
+&lt;p&gt;URL Rewrite 2.0, ASP.NET MVC 2, and PHP 5.2.13 were all next (which ended up requiring CGI to be installed as well).&lt;/p&gt;
+&lt;p&gt;While tempted to install SQL Server Express, I opted to hold off, since I can install something&amp;nbsp;a bit higher-end, depending upon how they compare for what I need.&lt;/p&gt;
+&lt;h3&gt;CollabNet Subversion Server&lt;/h3&gt;
+&lt;p&gt;As I&#39;ve been doing more and more, I opted to use CollabNet Subversion Server to install Apache and Subversion, which means another copy and paste through Remote Desktop.&lt;/p&gt;
+&lt;p&gt;The installation steps haven&#39;t changed, so I used &lt;a href=&#34;http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx&#34;&gt;an older installation guide I had written&lt;/a&gt;, turned off update notifications, and restart the server.&lt;/p&gt;
+&lt;p&gt;As I&#39;ve grown to expect, once the server was restarted I was able to access port 8080 locally, but not on my own machine, due to firewall settings. After allowing C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\httpd.exe (Apache HTTP Server) to communicate through Windows Firewall, that was now working.&lt;/p&gt;
+&lt;p&gt;Since I install PHP in a previous step I could go ahead and allow Apache to use it, but for now I&#39;m going to keep moving forward and setup my existing (used) repositories.&lt;/p&gt;
+&lt;h3&gt;Subversion security and repositories&lt;/h3&gt;
+&lt;p&gt;Since I&#39;ve only got one hard drive (at the moment) on the server, in the C drive root I created a new svn_resources directory. Opening cmd and moving to C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\ we can access the htpasswd.exe executable. Using the &#39;official&#39; book as the standard, I entered the following to create an account for my main development machine (an HP Pavilion a6360t).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd.exe -cm c:\svn_resources\svn-auth-file james-a6360t&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After entering my password twice, I now had an authentication file, and I can now add security to my repositories, via updating&amp;nbsp;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\conf\httpd.conf (you may also want to start Apache Monitor and restart the instance).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Location /svn&amp;gt;
+    DAV svn
+    SVNParentPath C:\svn_repository
+    AuthType Basic
+    AuthName &#34;Subversion repository&#34;
+    AuthUserFile C:\svn_resources\svn-auth-file
+    Require valid-user
+&amp;lt;/Location&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I setup my laptop with another account, and with that done it&#39;s time to start &lt;a href=&#34;http://strivinglife.com/words/post/Subversion-and-TortoiseSVN-Moving-a-repository.aspx&#34;&gt;moving over the repositories&lt;/a&gt;. Since I have so many, I focused on just the handful that I&#39;m actively working on, and holding off on the rest.&lt;/p&gt;
+&lt;p&gt;Whew.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;In addition to looking into WSRM, I still need to move my downloads over to the server (which possibly means setting this up with a file server role), adding SQL Server, and possibly adding PHP functionality to Apache ... just in case.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Web Platform Installer = the easy button</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</link>
+      <pubDate>Fri, 14 May 2010 16:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
+      <description>&lt;p&gt;I like working close to the metal. It&#39;s enjoyable, even when it&#39;s difficult. Heck, overcoming the difficulty is sometimes the only fun thing about a project!&lt;/p&gt;
+&lt;p&gt;But Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt; makes tasks so much easier to perform. And as much as I hate to admit it, I really like it.&lt;/p&gt;
+&lt;p&gt;For the last handful of hours I&#39;ve been getting a Windows Server 2008 R2 machine where I want it. This involves installing ASP.NET 4, ASP.NET MVC 2, FileZilla Server, disabling services I won&#39;t be using, and etcetera.&lt;/p&gt;
+&lt;p&gt;Thanks to Web Platform Installer the first two were easy to install (not that they&#39;re particularly difficult) in just a couple of clicks, and PHP (a slightly older version of which was already installed when they handed it off) was upgraded with just a few additional minutes required.&lt;/p&gt;
+&lt;p&gt;Very nice Microsoft. Very nice.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
+&lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
+&lt;h3&gt;Server system&lt;/h3&gt;
+&lt;p&gt;For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM. All updates were downloaded and installed.&lt;/p&gt;
+&lt;h3&gt;Downloading the installers&lt;/h3&gt;
+&lt;p&gt;SQL Server Express 2008 can be installed using the Microsoft Web Platform Installer, or a &#39;custom&#39; install can be downloaded. For the most flexibility and experience, I&#39;ll be covering the install using the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/express/sql/download/&#34;&gt;Runtime with Management Tools&lt;/a&gt; option.&lt;/p&gt;
+&lt;p&gt;You&#39;ll also want to grab the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=10EE29AF-7C3A-4057-8367-C9C1DAB6E2BF&#34;&gt;Windows PowerShell 1.0 installer&lt;/a&gt; for Windows Server 2003, if you haven&#39;t installed it already. If you&#39;re not sure, you can hold off until later in the install.&lt;/p&gt;
+&lt;h3&gt;Installing Microsoft SQL Server Express 2008&lt;/h3&gt;
+&lt;p&gt;After starting the installer you&#39;ll eventually reach the Installation tab, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall01.jpg&#34;&gt;Figure 1&lt;/a&gt;. For our simple installation, we&#39;ll use the first option of &#34;New SQL Server stand-alone installation or add features to an existing installation.&#34;&lt;/p&gt;
+&lt;p&gt;A quick check will be run to determine if there might be any issues installing setup files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall02.jpg&#34;&gt;Figure 2&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Since we we&#39;re installing the Express edition of SQL Server 2008, we won&#39;t need to enter a product key (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall03.jpg&#34;&gt;Figure 3&lt;/a&gt;), so we can continue and install the setup support files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall04.jpg&#34;&gt;Figure 4&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Once that&#39;s complete we start the actual install. A number of checks are run, one of which is for Windows PowerShell, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Run the installer (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall06.jpg&#34;&gt;Figure 6&lt;/a&gt;) if needed and re-run the check once it&#39;s complete. If you have any other issues, you should fix those until you can continue (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall07.jpg&#34;&gt;Figure 7&lt;/a&gt;).&lt;/p&gt;
+&lt;h4&gt;Feature Selection&lt;/h4&gt;
+&lt;p&gt;Next we&#39;ll need to choose what features we want to install (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall08.jpg&#34;&gt;Figure 8&lt;/a&gt;). Since we want an instance of SQL Server, we&#39;ll choose Database Engine Services. We&#39;ll also choose Management Tools - Basic so that we can manage our instance (databases, tables, users, etcetera) via a GUI. If you want, you can install the management tools on another machine, if you&#39;d prefer not having them on the server.&lt;/p&gt;
+&lt;h4&gt;Instance Configuration&lt;/h4&gt;
+&lt;p&gt;We&#39;ll stick with the default instance name, id, and root directory, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall09.jpg&#34;&gt;Figure 9&lt;/a&gt;. The default generally works just fine.&lt;/p&gt;
+&lt;h4&gt;Disk Space Requirements&lt;/h4&gt;
+&lt;p&gt;Space requirements will be checked. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall10.jpg&#34;&gt;Figure 10&lt;/a&gt; if you need to see.&lt;/p&gt;
+&lt;h4&gt;Server Configuration&lt;/h4&gt;
+&lt;p&gt;At the next stage we&#39;ll setup the accounts that SQL Server Database Engine and SQL Server Browser run under. By default the local service account is used for the latter, and nothing by default is selected for the former. Startup types are also set here. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall11.jpg&#34;&gt;Figure 11&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default the Network Service account is typically used, for the former, so we&#39;ll use that here, with no password needed. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall12.jpg&#34;&gt;Figure 12&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Database Engine Configuration&lt;/h4&gt;
+&lt;p&gt;The next step is to setup accounts. Windows authentication mode is more secure, but if using Web applications, you&#39;ll probably need to switch to Mixed Mode. Enter a password for the built-in account (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall13.jpg&#34;&gt;Figure 13&lt;/a&gt;). To continue you&#39;ll also need to specify a SQL Server administrator. Adding the current user (which is what I did) is the easiest if using a virtual machine. This leaves us at something like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall14.jpg&#34;&gt;Figure 14&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Error and Usage Reporting&lt;/h4&gt;
+&lt;p&gt;If you want, you can sent error reports and feature usage data to Microsoft automatically. By default (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall15.jpg&#34;&gt;Figure 15&lt;/a&gt;) the items are unchecked.&lt;/p&gt;
+&lt;h4&gt;Installation Rules&lt;/h4&gt;
+&lt;p&gt;A quick check will be done to determine if the install will work or not. Fix any issues that may come up, and once everything passes or is skipped (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall16.jpg&#34;&gt;Figure 16&lt;/a&gt;), continue with the install.&lt;/p&gt;
+&lt;h4&gt;Ready to Install&lt;/h4&gt;
+&lt;p&gt;At this point you&#39;ll be given an overview of your selected options. Once you&#39;re ready, press the Install button. (See Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall17.jpg&#34;&gt;17&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall18.jpg&#34;&gt;18&lt;/a&gt;.)&lt;/p&gt;
+&lt;h4&gt;Installation Progress and Complete&lt;/h4&gt;
+&lt;p&gt;The installation will begin and should complete (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall19.jpg&#34;&gt;Figure 19&lt;/a&gt;). The final screen will display a link to the summary log, information about the setup/next steps, and any supplemental information (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall20.jpg&#34;&gt;Figure 20&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Verifying the install&lt;/h3&gt;
+&lt;p&gt;At this point you should be able to start Microsoft SQL Server Management Studio and log into the local instance, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall21.jpg&#34;&gt;Figure 21&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also check to see if the service is running by opening Windows Task Manager and looking for sqlservr.exe and sqlwriter.exe (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall22.jpg&#34;&gt;Figure 22&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;And that&#39;s all there is to it.&lt;/p&gt;
+&lt;h3&gt;Update: Installing to Windows Server 2008&lt;/h3&gt;
+&lt;p&gt;Differences for installing on Windows Server 2008 (SP2):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows PowerShell can be installed from Server Manager &amp;gt; Features &amp;gt; Windows PowerShell.&lt;/li&gt;
+&lt;li&gt;Setting up the Windows Firewall is covered by &lt;a rel=&#34;external&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=94001&#34;&gt;Configuring the Windows Firewall to Allow SQL Server Access&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No other changes need be made.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
+      <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
+      <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
+&lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
+&lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;
+&lt;p&gt;To shutdown the machine at the prompt, enter the following at the command line:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code&gt;Shutdown -s -t 0&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This shuts the machine down after 0 seconds. Enter -r instead of -s to do a reboot.&lt;/p&gt;
+&lt;p&gt;I haven&#39;t played with the core install beyond this.&lt;/p&gt;
+&lt;p&gt;The full install will immediately tell you, much like Server 2003, what you should do after installing. Run updates, select your timezone, etcetera.&lt;/p&gt;
+&lt;p&gt;No features or roles will be enabled, unless you update the .NET Framework (which will be recommended) and then you&#39;ll have .NET enabled afterwards.&lt;/p&gt;
+&lt;p&gt;Since I wanted to setup base installs, I decided to have Windows &#34;Check for updates but let me choose whether to download and install them.&#34;&lt;/p&gt;
+&lt;p&gt;Additions installed fine on full install, but I didn&#39;t try on the core installation.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

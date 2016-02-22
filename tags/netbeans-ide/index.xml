@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netbeans Ide on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/netbeans-ide/</link>
+    <description>Recent content in Netbeans Ide on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Aug 2010 10:28:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/netbeans-ide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Personal NetBeans IDE 6.9.1 setting tweaks</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
+      <pubDate>Sun, 29 Aug 2010 10:28:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
+      <description>&lt;p&gt;&lt;p&gt;For my own personal reference, I&amp;rsquo;ve made the following tweaks to the default install of &lt;a rel=&#34;external&#34; href=&#34;http://netbeans.org/&#34;&gt;NetBeans&lt;/a&gt; IDE 6.9.1.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tools
+&lt;ul&gt;
+&lt;li&gt;Options
+&lt;ul&gt;
+&lt;li&gt;Editor
+&lt;ul&gt;
+&lt;li&gt;Formatting
+&lt;ul&gt;
+&lt;li&gt;Language: All Languages / Category: Tabs and Indents
+&lt;ul&gt;
+&lt;li&gt;Expand Tabs to Spaces: unchecked (from checked)&lt;/li&gt;
+&lt;li&gt;Number of Spaces per Indent: 4 (default)&lt;/li&gt;
+&lt;li&gt;Tab Size: 4 (from 8)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

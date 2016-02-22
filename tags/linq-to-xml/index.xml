@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linq To Xml on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/linq-to-xml/</link>
+    <description>Recent content in Linq To Xml on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2010 08:35:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/linq-to-xml/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>iTunes Playlists to Xml: Parsing categories with LINQ</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
+      <pubDate>Wed, 20 Oct 2010 08:35:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
+      <description>&lt;p&gt;&lt;p&gt;I recently had the need to determine what types of music I had within my collection of music. Since I&amp;nbsp;created &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; so that I could export out my library on my iPod, it was easy enough to run that and then open &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; to run the following query.&lt;/p&gt;
+&lt;p&gt;Obviously, you must export the Genre field in order for the following query to work.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Location to the XML from iTunes Playlists to XML
+String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.xml&amp;rdquo;;&lt;/p&gt;
+
+&lt;p&gt;XDocument xml = XDocument.Load(playlistXml);&lt;/p&gt;
+
+&lt;p&gt;var categories = from track in xml.Descendants(&amp;ldquo;track&amp;rdquo;)
+    group track by track.Element(&amp;ldquo;genre&amp;rdquo;).Value into t
+    orderby t.Key
+    //orderby t.Count() descending
+    select new {
+        Category = t.Key,
+        Count = t.Count()
+    };&lt;/p&gt;
+
+&lt;p&gt;categories.Dump();&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that you can switch the orderby lines depending upon how you want to sort the returned data.&lt;/p&gt;
+&lt;p&gt;This may be something I eventually build into my application, along with other reporting features. I know that I&amp;rsquo;d love to have some comparision functionality, either built-in or as another application, so that I can see how my music tastes change, or if I&amp;rsquo;m consistent.&lt;/p&gt;
+&lt;h3&gt;Sample output&lt;/h3&gt;
+&lt;p&gt;With some cleanup, sample output is as follows.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Alternative - 279&lt;/li&gt;
+&lt;li&gt;Alternative &amp;amp; Punk - 154&lt;/li&gt;
+&lt;li&gt;Alternative Rock - 282&lt;/li&gt;
+&lt;li&gt;Blues - 120&lt;/li&gt;
+&lt;li&gt;Books &amp;amp; Spoken - 145&lt;/li&gt;
+&lt;li&gt;Children&amp;rsquo;s Music - 12&lt;/li&gt;
+&lt;li&gt;Classical - 255&lt;/li&gt;
+&lt;li&gt;Country - 104&lt;/li&gt;
+&lt;li&gt;Dance - 76&lt;/li&gt;
+&lt;li&gt;Dance &amp;amp; DJ - 220&lt;/li&gt;
+&lt;li&gt;Easy Listening - 20&lt;/li&gt;
+&lt;li&gt;Electronic - 278&lt;/li&gt;
+&lt;li&gt;Electronica/Dance - 91&lt;/li&gt;
+&lt;li&gt;Folk - 319&lt;/li&gt;
+&lt;li&gt;French Pop - 90&lt;/li&gt;
+&lt;li&gt;Gospel &amp;amp; Religious - 18&lt;/li&gt;
+&lt;li&gt;Hard Rock &amp;amp; Metal - 6&lt;/li&gt;
+&lt;li&gt;Hip Hop/Rap - 88&lt;/li&gt;
+&lt;li&gt;Holiday - 18&lt;/li&gt;
+&lt;li&gt;House - 4&lt;/li&gt;
+&lt;li&gt;Industrial - 107&lt;/li&gt;
+&lt;li&gt;Industrial Metal - 17&lt;/li&gt;
+&lt;li&gt;Jazz - 30&lt;/li&gt;
+&lt;li&gt;J-Pop - 48&lt;/li&gt;
+&lt;li&gt;J-Rock - 23&lt;/li&gt;
+&lt;li&gt;Lo-Fi - 35&lt;/li&gt;
+&lt;li&gt;Metal - 82&lt;/li&gt;
+&lt;li&gt;New Age - 270&lt;/li&gt;
+&lt;li&gt;Pop - 1225&lt;/li&gt;
+&lt;li&gt;Pop/Rock - 26&lt;/li&gt;
+&lt;li&gt;R&amp;amp;B - 105&lt;/li&gt;
+&lt;li&gt;R&amp;amp;B/Soul - 81&lt;/li&gt;
+&lt;li&gt;Reggae - 30&lt;/li&gt;
+&lt;li&gt;Rock - 3125&lt;/li&gt;
+&lt;li&gt;Soundtrack - 348&lt;/li&gt;
+&lt;li&gt;World - 57&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;At &lt;a href=&#34;http://strivinglife.com/words/post/2007-VW-Rabbit-10000-miles.aspx&#34;&gt;some point in 2007&lt;/a&gt; I started &lt;a href=&#34;http://jamesrskemp.net/vehicle_gas.xml&#34;&gt;keeping track of my gas mileage&lt;/a&gt; in an XML file, with a custom DTD for validation (and intellisense in oXygen).&lt;/p&gt;
+&lt;p&gt;I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.&lt;/p&gt;
+&lt;h3&gt;C# objects&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; public class Vehicle {
+        public int Id { get; set; }
+        public String Make { get; set; }
+        public String Model { get; set; }
+        public int Year { get; set; }
+        public IEnumerable Fillups { get; set; }
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Fillup {
+    public int Id { get; set; }
+    public DateTime Date { get; set; }
+    public int MilesTotal { get; set; }
+    public Decimal MilesDriven { get; set; }
+    public Decimal Gallons { get; set; }
+    public Decimal CostPerGallon { get; set; }
+    public Decimal CostTotal { get; set; }
+    public String Notes { get; set; }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;h3&gt;LINQ to XML&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument vehicleGasXml = XDocument.Load(@&amp;ldquo;C:\path\to\vehicle_gas.xml&amp;rdquo;);&lt;/p&gt;
+
+&lt;p&gt;IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&amp;ldquo;vehicle&amp;rdquo;)
+    select new Vehicle {
+        Id = int.Parse(vehicle.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
+        Make = vehicle.Element(&amp;ldquo;make&amp;rdquo;).Value,
+        Model = vehicle.Element(&amp;ldquo;model&amp;rdquo;).Value,
+        Year = int.Parse(vehicle.Element(&amp;ldquo;year&amp;rdquo;).Value),
+        Fillups = from fillup in vehicle.Descendants(&amp;ldquo;fillup&amp;rdquo;)
+            select new Fillup {
+              Id = int.Parse(fillup.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
+              Date = DateTime.ParseExact(fillup.Element(&amp;ldquo;date&amp;rdquo;).Value, &amp;ldquo;yyyy-MM-dd&amp;rdquo;, System.Globalization.CultureInfo.InvariantCulture),
+              MilesTotal = int.Parse(fillup.Element(&amp;ldquo;milesCar&amp;rdquo;).Value),
+              MilesDriven = decimal.Parse(fillup.Element(&amp;ldquo;milesDriven&amp;rdquo;).Value),
+              Gallons = decimal.Parse(fillup.Element(&amp;ldquo;gallons&amp;rdquo;).Value),
+              CostPerGallon = decimal.Parse(fillup.Element(&amp;ldquo;costGallon&amp;rdquo;).Value),
+              CostTotal = decimal.Parse(fillup.Element(&amp;ldquo;costTotal&amp;rdquo;).Value),
+              Notes = fillup.Element(&amp;ldquo;notes&amp;rdquo;).Value
+            }
+    };&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As always, suggestions appreciated. (Although I&amp;rsquo;ve already got code that, using .NET 4, creates some rather nice charts with the information contained within a document such as this, and consider this close to complete; name information isn&amp;rsquo;t grabbed, but I&amp;rsquo;m not sure that&amp;rsquo;s altogether necessary &amp;hellip;)&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
+      <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
+      <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
+
+string[] postFiles = System.IO.Directory.GetFiles(postsDirectory);
+
+DataTable comments = new DataTable();
+    comments.Columns.Add(&#34;Post&#34;);
+    comments.Columns.Add(&#34;CommentApproved&#34;);
+    comments.Columns.Add(&#34;FileId&#34;);
+    comments.Columns.Add(&#34;IpAddress&#34;);
+
+XDocument postXml;
+
+foreach (string postFile in postFiles) {
+    postXml = XDocument.Load(postFile);
+
+    var posts = from postData in postXml.Descendants(&#34;post&#34;)
+        select new {
+            Title = postData.Element(&#34;title&#34;).Value,
+            CommentItems = (from commentItems in postData.Element(&#34;comments&#34;).Elements(&#34;comment&#34;)
+                select commentItems).ToList()
+        };
+
+    foreach (var post in posts) {
+        if (post.CommentItems.Count &amp;gt; 0) {
+            foreach (var commentItem in post.CommentItems) {
+                if (commentItem.Attribute(&#34;approved&#34;) != null &amp;amp;&amp;amp; commentItem.Attribute(&#34;approved&#34;).Value == &#34;False&#34;) {
+                    DataRow comment = comments.NewRow();
+                    comment[&#34;Post&#34;] = post.Title;
+                    comment[&#34;CommentApproved&#34;] = commentItem.Attribute(&#34;approved&#34;).Value;
+                    comment[&#34;IpAddress&#34;] = commentItem.Element(&#34;ip&#34;).Value;
+                    comment[&#34;FileId&#34;] = &#34;/post.aspx?id=&#34; + System.IO.Path.GetFileNameWithoutExtension(postFile);
+                    comments.Rows.Add(comment);
+                }
+            }
+
+        }
+    }
+}
+
+postXml = null;
+
+comments.Dump();&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&#39;ll want to change postsDirectory accordingly.&lt;/p&gt;
+&lt;p&gt;This will output all unapproved comments, the post they are associated with, the post GUID, and the commentor&#39;s IP address.&lt;/p&gt;
+&lt;p&gt;It&#39;s relatively easy to expand this to display more or less information, as desired. For example, &lt;strong&gt;website&lt;/strong&gt; and &lt;strong&gt;author&lt;/strong&gt; can be swapped in in place of &lt;strong&gt;ip&lt;/strong&gt; in the last foreach.&lt;/p&gt;
+&lt;p&gt;Comments/questions/etcetera welcome and appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Determine BlogEngine.NET comments that haven&#39;t been published</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
+      <pubDate>Sun, 06 Dec 2009 15:55:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
+      <description>&lt;p&gt;Unfortunately, BlogEngine.NET doesn&#39;t currently have a very good way to determine, at a glance, all of the comments that haven&#39;t been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.&lt;/p&gt;
+&lt;p&gt;You can download the built executable, or play with the code, which is included below.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/TestBlogEngine.7z&#34;&gt;Download the executable&lt;/a&gt;&amp;nbsp;(7-Zip format). Requires &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework 3.5&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The form I created consisted of a TextBox, Button, and a DataGridView, with the default names.&lt;/p&gt;
+&lt;/div&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace TestBlogEngine {
+    public partial class Form1 : Form {
+        public Form1() {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e) {
+            OpenFileDialog sampleFile = new OpenFileDialog();
+            sampleFile.Filter = &#34;xml files (*.xml)|*.xml|All files (*.*)|*.*&#34;;
+
+            if (sampleFile.ShowDialog() == DialogResult.OK) {
+                textBox1.Text = sampleFile.FileName;
+
+                string postsDirectory = System.IO.Path.GetDirectoryName(sampleFile.FileName);
+                sampleFile.Dispose();
+
+                string[] postFiles = System.IO.Directory.GetFiles(postsDirectory);
+
+                DataTable comments = new DataTable();
+                comments.Columns.Add(&#34;Post&#34;);
+                comments.Columns.Add(&#34;CommentApproved&#34;);
+                comments.Columns.Add(&#34;FileId&#34;);
+
+                XDocument postXml;
+
+                foreach (string postFile in postFiles) {
+                    postXml = XDocument.Load(postFile);
+
+                    var posts = from postData in postXml.Descendants(&#34;post&#34;)
+                        select new {
+                            Title = postData.Element(&#34;title&#34;).Value,
+                            CommentItems = (from commentItems in postData.Element(&#34;comments&#34;).Elements(&#34;comment&#34;)
+                                select commentItems).ToList()
+                        };
+
+                    foreach (var post in posts) {
+                        if (post.CommentItems.Count &amp;gt; 0) {
+                            foreach (var commentItem in post.CommentItems) {
+                                if (commentItem.Attribute(&#34;approved&#34;) != null &amp;amp;&amp;amp; commentItem.Attribute(&#34;approved&#34;).Value == &#34;False&#34;) {
+                                    DataRow comment = comments.NewRow();
+                                    comment[&#34;Post&#34;] = post.Title;
+                                    comment[&#34;CommentApproved&#34;] = commentItem.Attribute(&#34;approved&#34;).Value;
+                                    comment[&#34;FileId&#34;] = &#34;/post.aspx?id=&#34; + System.IO.Path.GetFileNameWithoutExtension(postFile);
+                                    comments.Rows.Add(comment);
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                postXml = null;
+
+                dataGridView1.DataSource = comments;
+
+            }
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;EDIT: Scott Guthrie&#39;s excellent &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2007/08/07/using-linq-to-xml-and-how-to-build-a-custom-rss-feed-reader-with-it.aspx&#34;&gt;Using LINQ to XML (and how to build a custom RSS Feed Reader with it)&lt;/a&gt; is &lt;em&gt;the&lt;/em&gt; article that I keep going back to when I forget LINQ to XML basics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</link>
+      <pubDate>Sat, 12 Sep 2009 21:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</guid>
+      <description>&lt;p&gt;Similar to my post on &lt;a href=&#34;http://strivinglife.com/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML.aspx&#34;&gt;parsing Last.fm&#39;s artist.getSimilar&lt;/a&gt;, I&#39;ve been working with Yahoo! Music&#39;s Web services today.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Yahoo!&#39;s services aren&#39;t quite as friendly as those made available by Last.fm.&lt;/p&gt;
+&lt;p&gt;So that I remember, and others don&#39;t have to tackle this as well, here&#39;s the class I&#39;ve created. (&lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/JamesRSkemp.WebServices.YahooMusic.cs.txt&#34;&gt;Download JamesRSkemp.WebServices.YahooMusic.cs&lt;/a&gt;.)&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;/*
+Created by James Skemp - http://jamesrskemp.com/
+Version 1.0
+More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx
+Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using System.IO;
+using System.Xml.Linq;
+using System.Data;
+
+namespace JamesRSkemp.WebServices {
+    class YahooMusic {
+        /// &amp;lt;summary&amp;gt;
+        /// Key used to access Yahoo! Music Web services.
+        /// &amp;lt;/summary&amp;gt;
+        private string AppId = &#34;&#34;;
+
+        /// &amp;lt;summary&amp;gt;
+        /// Create a new YahooMusic object.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;appId&#34;&amp;gt;Application ID from Yahoo! Developer Network.&amp;lt;/param&amp;gt;
+        public YahooMusic(string appId) {
+            if (appId.Trim() != &#34;&#34;) {
+                AppId = appId;
+            } else {
+                throw new Exception(&#34;You must pass a valid API identifier.&#34;);
+            }
+        }
+
+        /// &amp;lt;summary&amp;gt;
+        /// Return artists similar to the one passed, with a match percentage.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;artistName&#34;&amp;gt;The name of the artist to use for the request.&amp;lt;/param&amp;gt;
+        /// &amp;lt;returns&amp;gt;DataTable with artist names.&amp;lt;/returns&amp;gt;
+        public DataTable GetSimilarArtists(string artistName) {
+
+            string requestUrl = &#34;http://us.music.yahooapis.com/artist/v1/list/search/artist/&#34;
+                + System.Web.HttpUtility.UrlEncode(artistName.Trim())
+                + &#34;?appid=&#34; + AppId + &#34;&amp;amp;response=topsimilar&#34;;
+
+            string serviceResponse = GetServiceResponse(requestUrl);
+
+            var xmlResponse = XElement.Parse(serviceResponse);
+
+            var artistsCount = from Artists in xmlResponse.Descendants(&#34;TopSimilarArtists&#34;).Descendants(&#34;Artist&#34;)
+                               select new {
+                                   name = Artists.Attribute(&#34;name&#34;).Value
+                               };
+
+            DataTable similarArtists = new DataTable();
+            similarArtists.Columns.Add(&#34;Artist&#34;);
+
+            if (artistsCount.Count() &amp;gt; 0) {
+                DataRow artistsRow;
+
+                foreach (var artist in artistsCount) {
+                    artistsRow = similarArtists.NewRow();
+                    artistsRow[&#34;Artist&#34;] = artist.name;
+                    similarArtists.Rows.Add(artistsRow);
+                }
+            }
+
+            return similarArtists;
+        }
+
+        /// &amp;lt;summary&amp;gt;
+        /// Gets the data from an HTTP request.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;requestUrl&#34;&amp;gt;The full Url of the request to make.&amp;lt;/param&amp;gt;
+        /// &amp;lt;returns&amp;gt;Returns a string with the text returned from the request.&amp;lt;/returns&amp;gt;
+        private string GetServiceResponse(string requestUrl) {
+            string httpResponse = &#34;&#34;;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Timeout = 15000;
+            HttpWebResponse response = null;
+            StreamReader reader = null;
+
+            try {
+                response = (HttpWebResponse)request.GetResponse();
+                reader = new StreamReader(response.GetResponseStream());
+
+                httpResponse = reader.ReadToEnd();
+            } finally {
+                if (reader != null) {
+                    reader.Close();
+                }
+                if (response != null) {
+                    response.Close();
+                }
+            }
+
+            return httpResponse;
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One issue I do have is that I can&#39;t figure out how to get the count attribute off the root element that&#39;s returned. Try and search as I might, I can&#39;t figure it out.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
+      <pubDate>Sat, 12 Sep 2009 16:33:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
+      <description>&lt;p&gt;The following covers how to parse the XML response of artist.getSimilar, from Last.fm&#39;s Web Services.&lt;/p&gt;
+&lt;h3&gt;Setup and assumptions&lt;/h3&gt;
+&lt;p&gt;The first step is sign up for a free &lt;a rel=&#34;external&#34; href=&#34;http://www.last.fm/api&#34;&gt;API account at Last.fm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You&#39;ll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality.&lt;/p&gt;
+&lt;p&gt;When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.&lt;/p&gt;
+&lt;h3&gt;Creating the base class&lt;/h3&gt;
+&lt;p&gt;The first thing I&#39;ve done is created a new class file in my project called Lastfm.cs, resulting in the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace JamesRSkemp.WebServices {
+    class Lastfm {
+        private const string LastFmApiKey = &#34;EnterYourApiKeyHere&#34;;
+
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;ll add a new method to the Lastfm class to return the base Url we&#39;ll need to make Web service requests.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     /// &amp;lt;summary&amp;gt;
+        /// Get the base Url that we&#39;ll use to make Web service requests.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;returns&amp;gt;The base Url to use to make Web service requests.&amp;lt;/returns&amp;gt;
+        static private string GetBaseRequestUrl() {
+            string baseUrl = &#34;http://ws.audioscrobbler.com/2.0/?api_key=&#34; + LastFmApiKey;
+            return baseUrl;
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&#39;ll create a method to make a request to a Web service and return the full response.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     /// &amp;lt;summary&amp;gt;
+        /// Gets the data from an HTTP request.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;requestUrl&#34;&amp;gt;The full Url of the request to make.&amp;lt;/param&amp;gt;
+        /// &amp;lt;returns&amp;gt;Returns a string with the text returned from the request.&amp;lt;/returns&amp;gt;
+        private string GetServiceResponse(string requestUrl) {
+            string httpResponse = &#34;&#34;;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Timeout = 15000;
+            HttpWebResponse response = null;
+            StreamReader reader = null;
+
+            try {
+                response = (HttpWebResponse)request.GetResponse();
+                reader = new StreamReader(response.GetResponseStream());
+
+                httpResponse = reader.ReadToEnd();
+            } finally {
+                if (reader != null) {
+                    reader.Close();
+                }
+                if (response != null) {
+                    response.Close();
+                }
+            }
+
+            return httpResponse;
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following references must also be added.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Net;
+using System.IO;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When we use this class, we want to have our data returned in an easy to use format. For ease, we&#39;ll have it return a DataTable. We&#39;ll have to add the appropriate reference first.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Data;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can then began our method as follows.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     public DataTable GetSimilarArtists(string artistName) {
+            if (String.IsNullOrEmpty(artistName)) {
+                throw new Exception(&#34;Artist name must be populated.&#34;);
+            } else {
+                string requestUrl = GetBaseRequestUrl();
+                requestUrl += &#34;&amp;amp;method=artist.getSimilar&amp;amp;artist=&#34; + System.Web.HttpUtility.UrlEncode(artistName.Trim());
+
+                string serviceResponse = GetServiceResponse(requestUrl);
+
+                DataTable similarArtists = new DataTable();
+                
+                // TODO
+
+                return similarArtists;
+            }
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we were to make a request now, we&#39;d see that the data returned is formatted similar to the following, for a request for &lt;strong&gt;Bruce Springsteen&lt;/strong&gt;. (For ease and sanity, data truncated.)&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;lfm status=&#34;ok&#34;&amp;gt;
+&amp;lt;similarartists artist=&#34;Bruce Springsteen&#34;&amp;gt;
+&amp;lt;artist&amp;gt;
+    &amp;lt;name&amp;gt;Bruce Springsteen &amp;amp; The E Street Band&amp;lt;/name&amp;gt;
+    &amp;lt;mbid&amp;gt;5a1283bf-81d5-4700-8919-683eeaaf2beb&amp;lt;/mbid&amp;gt;
+    &amp;lt;match&amp;gt;100&amp;lt;/match&amp;gt;
+    &amp;lt;url&amp;gt;www.last.fm/music/Bruce%2BSpringsteen%2B%2526%2BThe%2BE%2BStreet%2BBand&amp;lt;/url&amp;gt;
+    &amp;lt;image size=&#34;small&#34;&amp;gt;http://userserve-ak.last.fm/serve/34/8415485.jpg&amp;lt;/image&amp;gt;
+    &amp;lt;image size=&#34;medium&#34;&amp;gt;http://userserve-ak.last.fm/serve/64/8415485.jpg&amp;lt;/image&amp;gt;
+    &amp;lt;image size=&#34;large&#34;&amp;gt;http://userserve-ak.last.fm/serve/126/8415485.jpg&amp;lt;/image&amp;gt;
+    &amp;lt;image size=&#34;extralarge&#34;&amp;gt;http://userserve-ak.last.fm/serve/252/8415485.jpg&amp;lt;/image&amp;gt;
+    &amp;lt;image size=&#34;mega&#34;&amp;gt;http://userserve-ak.last.fm/serve/500/8415485/Bruce+Springsteen++The+E+Street+Band+estreet.jpg&amp;lt;/image&amp;gt;
+    &amp;lt;streamable&amp;gt;1&amp;lt;/streamable&amp;gt;
+&amp;lt;/artist&amp;gt;
+[...]
+&amp;lt;/similarartists&amp;gt;&amp;lt;/lfm&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&#39;d first need to add a reference so that we can parse through the returned response.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Xml.Linq;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now create our LINQ to XML query to access the similar artist&#39;s name and match percentage.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;             var xmlResponse = XElement.Parse(serviceResponse);
+
+                // Parse through the returned Xml for the name and match value for each similar artist.
+                var artists = from artistsSimilar in xmlResponse.Descendants(&#34;artist&#34;)
+                              select new {
+                                  name = artistsSimilar.Element(&#34;name&#34;).Value,
+                                  match = artistsSimilar.Element(&#34;match&#34;).Value
+                              };&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we can create the DataTable that we&#39;ll use to store the name and math values.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;             DataTable similarArtists = new DataTable();
+                similarArtists.Columns.Add(&#34;Artist&#34;);
+                similarArtists.Columns.Add(&#34;Match&#34;, System.Type.GetType(&#34;System.Double&#34;));&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally we can loop through each result returned from our LINQ to XML query, adding a new row to the table, for each.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;             if (artists.Count() &amp;gt; 0) {
+                    DataRow artistsRow;
+                    foreach (var artist in artists) {
+                        artistsRow = similarArtists.NewRow();
+                        artistsRow[&#34;Artist&#34;] = artist.name;
+                        artistsRow[&#34;Match&#34;] = artist.match;
+                        similarArtists.Rows.Add(artistsRow);
+                    }
+                }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally we return the populated DataTable.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;             return similarArtists;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assuming a Windows Form Application with a text box (textBox1), a DataGridView (dataGridView1), and a button (button1), we could do the following (assuming the appropriate references have been added).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     private void button1_Click(object sender, EventArgs e) {
+            if (!String.IsNullOrEmpty(textBox1.Text)) {
+                Lastfm lastFmRequest = new Lastfm();
+
+                DataTable results = lastFmRequest.GetSimilarArtists(textBox1.Text);
+
+                dataGridView1.DataSource = results;
+            } else {
+                MessageBox.Show(&#34;You must enter an artist to continue.&#34;);
+                textBox1.Focus();
+            }
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Taken together, that results in the following. (&lt;a rel=&#34;download&#34; href=&#34;http://media.jamesrskemp.com/articles/JamesRSkemp.WebServices.Lastfm.cs.txt&#34;&gt;Download JamesRSkemp.WebServices.Lastfm.cs&lt;/a&gt;.)&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;/*
+Created by James Skemp - &lt;a href=&#34;http://jamesrskemp.com/&#34;&gt;http://jamesrskemp.com/&lt;/a&gt;
+Version 1.0
+More information at http://strivinglife.com/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML.aspx
+Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/
+*/
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net;
+using System.IO;
+using System.Data;
+using System.Xml.Linq;
+
+namespace JamesRSkemp.WebServices {
+    class Lastfm {
+        /// &amp;lt;summary&amp;gt;
+        /// Key used to access Last.fm Web services.
+        /// &amp;lt;/summary&amp;gt;
+        private const string LastFmApiKey = &#34;EnterYourApiKeyHere&#34;;
+
+        /// &amp;lt;summary&amp;gt;
+        /// Return artists similar to the one passed, with a match percentage.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;artistName&#34;&amp;gt;The name of the artist to use for the request.&amp;lt;/param&amp;gt;
+        /// &amp;lt;returns&amp;gt;DataTable with artist names and match percentage, as a Double.&amp;lt;/returns&amp;gt;
+        public DataTable GetSimilarArtists(string artistName) {
+            if (String.IsNullOrEmpty(artistName)) {
+                throw new Exception(&#34;Artist name must be populated.&#34;);
+            } else {
+                string requestUrl = GetBaseRequestUrl();
+                requestUrl += &#34;&amp;amp;method=artist.getSimilar&amp;amp;artist=&#34; + System.Web.HttpUtility.UrlEncode(artistName.Trim());
+
+                string serviceResponse = GetServiceResponse(requestUrl);
+
+                var xmlResponse = XElement.Parse(serviceResponse);
+
+                // Parse through the returned Xml for the name and match value for each similar artist.
+                var artists = from artistsSimilar in xmlResponse.Descendants(&#34;artist&#34;)
+                              select new {
+                                  name = artistsSimilar.Element(&#34;name&#34;).Value,
+                                  match = artistsSimilar.Element(&#34;match&#34;).Value
+                              };
+
+                DataTable similarArtists = new DataTable();
+                similarArtists.Columns.Add(&#34;Artist&#34;);
+                similarArtists.Columns.Add(&#34;Match&#34;, System.Type.GetType(&#34;System.Double&#34;));
+
+                if (artists.Count() &amp;gt; 0) {
+                    DataRow artistsRow;
+                    foreach (var artist in artists) {
+                        artistsRow = similarArtists.NewRow();
+                        artistsRow[&#34;Artist&#34;] = artist.name;
+                        artistsRow[&#34;Match&#34;] = artist.match;
+                        similarArtists.Rows.Add(artistsRow);
+                    }
+                }
+
+                return similarArtists;
+            }
+        }
+
+        /// &amp;lt;summary&amp;gt;
+        /// Get the base Url that we&#39;ll use to make Web service requests.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;returns&amp;gt;The base Url to use to make Web service requests.&amp;lt;/returns&amp;gt;
+        private string GetBaseRequestUrl() {
+            string baseUrl = &#34;http://ws.audioscrobbler.com/2.0/?api_key=&#34; + LastFmApiKey;
+            return baseUrl;
+        }
+
+        /// &amp;lt;summary&amp;gt;
+        /// Gets the data from an HTTP request.
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&#34;requestUrl&#34;&amp;gt;The full Url of the request to make.&amp;lt;/param&amp;gt;
+        /// &amp;lt;returns&amp;gt;Returns a string with the text returned from the request.&amp;lt;/returns&amp;gt;
+        private string GetServiceResponse(string requestUrl) {
+            string httpResponse = &#34;&#34;;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(requestUrl);
+            request.Timeout = 15000;
+            HttpWebResponse response = null;
+            StreamReader reader = null;
+
+            try {
+                response = (HttpWebResponse)request.GetResponse();
+                reader = new StreamReader(response.GetResponseStream());
+
+                httpResponse = reader.ReadToEnd();
+            } finally {
+                if (reader != null) {
+                    reader.Close();
+                }
+                if (response != null) {
+                    response.Close();
+                }
+            }
+
+            return httpResponse;
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Advanced error handling is missing, but this should give you a basic idea of how you can go about easily accessing Last.fm&#39;s Web Services, and parsing returned data.&lt;/p&gt;
+&lt;h3&gt;Final thoughts&lt;/h3&gt;
+&lt;p&gt;Questions? Comments? Concerns? Please add a comment below.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Updated 9/12/2009, 15:55:&lt;/strong&gt; I was doing it in my implementation, but added simple check for a populated textBox1 to the above code.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Winmx on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/winmx/</link>
+    <description>Recent content in Winmx on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Aug 2003 00:00:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/winmx/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>WinMX Help: How to read those Double-Byte filenames, User ID&#39;s and Messages</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/WinMX-Help-How-to-read-those-Double-Byte-filenames-User-IDs-and-Messages/</link>
+      <pubDate>Wed, 20 Aug 2003 00:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/WinMX-Help-How-to-read-those-Double-Byte-filenames-User-IDs-and-Messages/</guid>
+      <description>&lt;p&gt;
+This content is copyright Byte_Bucket(AT)hotmail(DOT)com.
+&lt;/p&gt;
+&lt;p&gt;
+Created:  20-Aug-2003
+&lt;/p&gt;
+&lt;blockquote&gt;
+    Revisions/Corrections to: Byte_Bucket(AT)hotmail(DOT)com&lt;br /&gt;
+    Please take your questions to Google.com and Windows online help.
+&lt;/blockquote&gt;
+&lt;p style=&#34;text-align: center&#34;&gt;
+WinMX Help
+&lt;/p&gt;
+&lt;p&gt;
+How to read those Double-Byte filenames, User ID&amp;#39;s and Messages
+&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;
+PURPOSE: you are interested in, say, Japanese language titles but you can&amp;#39;t read the file names - or user ID&amp;#39;s for that matter.
+&lt;/p&gt;
+&lt;p&gt;
+SCOPE:  Verified only on WinXP Pro with WinMX v 3.31&lt;br /&gt;
+This works for Japanese fonts. If it does not work for other langauge fonts then follow the same approach but experiment with other fonts.
+&lt;/p&gt;
+&lt;p&gt;
+WHO IS THIS FOR:&lt;br /&gt;
+Only users who are literate in the target foreign language will find this helpful as no translation-to-english solution is described here.
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+Users not literate in the target foreign language but who really want to be international about their sharing habits may take these steps and be pleasantly surprised when you discover that many (but not all) of those double-byte filenames are actually typed by the non-english user in ENGLISH/ROMAN characters but are encoded as a double-byte font. This was a surprise for me.
+&lt;/p&gt;
+&lt;p&gt;
+IGNORE/CLEAR if you MUST but REMEMBER...&lt;br /&gt;
+It seems common practice for people literate in only the english language to clear/ignore users with multi-byte characters in their user ID or in their filenames.  This is as unfortunate to the international file sharing community as it would be if the United Nations or other diplomatic circles were to choose to NOT invest in interpreters or translators.
+&lt;/p&gt;
+&lt;p&gt;
+So long as you are using &amp;quot;Find Alternates&amp;quot; or something similar to search for files based on the target file HASH CODE then it should always be safe (and time-saving) for an english-only user to leverage the available bandwidth of an East Asian, Eastern European or Arabic source. If I were a Japanese user looking for alternates of the same file I&amp;#39;d sure be using this technique to leverage the available bandwidth of non-Japanese users. Of course I&amp;#39;d also make an effort to message english users with english as best I could but that is a much longer and more prickly story to tell !
+&lt;/p&gt;
+&lt;p&gt;
+OVERVIEW:&lt;br /&gt;
+The double-byte fonts are required to encode the thousands of characters that make up such font sets as those used for various East Asian, East &amp;amp; West European, Arabic, Hebrew and maybe some other langauges that I don&amp;#39;t know of.  The key to making these legible is to choose the correct font on YOUR SYSTEM to view these filenames. You can only choose the correct font if you have it installed and so if you are using an English-only OS build with no special action taken to view foreign language fonts then you will first need to:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    Open Regional and Language Options in Control Panel.&lt;br /&gt;
+    {use Windows help for detail instructions}
+&lt;/blockquote&gt;
+&lt;p&gt;
+In WinXP&amp;#39;s &amp;quot;Regional and Language Options&amp;quot; there is a simple check box to
+&lt;/p&gt;
+&lt;blockquote&gt;
+    [ ] Install files for East Asian languages
+&lt;/blockquote&gt;
+&lt;p&gt;
+METHOD:&lt;br /&gt;
+I&amp;#39;m going to assume that you have taken steps above to install whatever language it is you are interested in and that you can at least view that language font in some window such as Internet Explorer or even MS-Word.
+&lt;/p&gt;
+&lt;p&gt;
+Select the font in such a window as above and query the font format to see which font is being used. Chances are this is what you will want to assign from within WinMX settings dialog window. In my case this was &amp;quot;MS UI Gothic&amp;quot;  Note also that (within WinXP at least) there is a script box that alows you to select from among {Western, Japanese, Greek, Turkish, Baltic, central European, Cyrillic. etc.}  Be sure to select Japanese or whatever is relevant for your target language.  Don&amp;#39;t worry the foreign language font set will still allow you to see the standard english ASCII characters - they may simply be in a less than familiar font than you are accustomed to. Often ASCII/english characters (romaji) will be spaced differently than you are accustomed to.
+&lt;/p&gt;
+&lt;p&gt;
+OK having noted this font down go to WinMX settings window and open to the Appearance page. You should find the folowing buttons at the bottom of the list of buttons:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    [Change Normal Font...]&lt;br /&gt;
+    [Change Dynamic Font...]&lt;br /&gt;
+    [Change Large Font...]&lt;br /&gt;
+    [Load Language from File...] **&lt;br /&gt;
+    [Reset Language to English]&lt;br /&gt;
+    &amp;lt;bottom of list&amp;gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+**NOTE: Don&amp;#39;t play with the Load Language button without first memorizing how to navigate back to the [Reset Language to English] button. You may need that when you can no longer read your WinMX menu bars and buttons!
+&lt;/p&gt;
+&lt;p&gt;
+I needed to change  Normal Font, Dynamic Font and Large Font to make filenames, user ID&amp;#39;s, message text and window headers all legible in the target foreign (Japanese) font. For the 1280x1024 screen resolution that I use I found the following recipe:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    Normal Font = Arial Unicode MS + Regular + 8pt&lt;br /&gt;
+    Dynamic Font = Arial Unicode MS + Regular + 10pt&lt;br /&gt;
+    Large Font = Arial Unicode MS + Bold + 12pt
+&lt;/blockquote&gt;
+&lt;p&gt;
+was a reasonable font set to use to view both Japanese and English filenames. In my experience for Japanese any of
+&lt;/p&gt;
+&lt;blockquote&gt;
+    MS Gothic,&lt;br /&gt;
+    MS Mincho,&lt;br /&gt;
+    MS PGothic,&lt;br /&gt;
+    MS PMincho,&lt;br /&gt;
+    MS UI Gothic,&lt;br /&gt;
+    Arial Unicode MS
+&lt;/blockquote&gt;
+&lt;p&gt;
+will work fine so long as you specify the Japanese script. Also be aware of the same named fonts preceded by the @ character. These will appear rotated 90 degrees and is not what you want in WinMX.
+&lt;/p&gt;
+&lt;p&gt;
+Just click the button and select the Font type and Script type that you noted down earlier and then close the window.
+&lt;/p&gt;
+&lt;p&gt;
+WinMX requires that you close(Exit) and restart the application before the change will take effect. Yeah a bit of a pain when you&amp;#39;ve finally made headway in someone&amp;#39;s queue, right!  **** Just be sure that when you close WinMX that you are truly exiting the application and not just allowing it to minimize to the Systray. **** If the latter then right click on the systray icon and click &amp;quot;Exit&amp;quot; and then &amp;quot;Exit now&amp;quot; from to truly close the WinMX application.
+&lt;/p&gt;
+&lt;p&gt;
+When WinMX restarts you&amp;#39;ll go through the rigmarole of scanning your library and connecting to the P2P network and as you do so you will probably notice that the text in all your menu bars and buttons are now using a different (hopefully english!) font than before. If you don&amp;#39;t like the size of the new english fonts then repeat the process above but pay attention to the font size this time. If you don&amp;#39;t like the font (period) then try another from the set above. Be aware that size is important when it comes to squeezing the right numberof lines of text into a dialog box or an instant message window or a menu bar button. Too large a font will appear truncated. 
+&lt;/p&gt;
+&lt;p&gt;
+Test this new font in your Shared Files view if you already have files downloaded with double-byte fonts in the file names.  If you use what I have then you&amp;#39;ll notice the Yen currency-sign is used wherever backslash woud otherwise appear in folder pathnames. If you are familiar wit the foreign laguage fonts then this will be no surprise to you. Just accept it!
+&lt;/p&gt;
+&lt;p&gt;
+So now that you&amp;#39;ve gone through all this you can see the Japanese kanji/kana (or whatever) characters in the filenames - if you can&amp;#39;t read the target language then you&amp;#39;ll need help with one of the many translation web sites available. Google is always your best friend but for the Japanese language the site that I recommend is http://www.rikai.com  (read at that site for instructions in english)   Just select the file name and use whatever your favorite trick is for copying it to the clip board. (I use rename file then a Ctl-C keyboard shortcut.) Open up the rikai.com web page and paste the clipboard contents into the input window and click go or whatever and voila/naruhodo or whatever there is your same foreign font but as you hover your mouse over it then you&amp;#39;ll see English traslations of the words that it recognizes. Hiragana and Katakana words are not always recognizable and especially propoer nouns (names) printed in Katakana cannot be interpretted - you need to learn the 50 sounds of the kana alphabet for that!
+&lt;/p&gt;
+&lt;p&gt;
+KNOWN LIMITATIONS:&lt;br /&gt;
+As best as I can tell after a day of testing, this method works for INCOMING double byte fonts for the Japanese language. So I can read User IDs, filenames, chat channel titles and topics and even user messages that have been sent using the double-byte fonts required for Japanese language. The one inbound text traffic that it _does_not_work_ for is the Chat Channel dialog which continues to be mojibake/gibberish.
+&lt;/p&gt;
+&lt;p&gt;
+Also this does not work for outbound text traffic that the user types using such tools as the IME (Input Method Emulator).
+&lt;/p&gt;
+&lt;p&gt;
+Japanese characters that you type into a message using IME appears legible while IME is active on the current text selection but once you advance to the next word or sentence the font becomes mojibake/gibberish. When sent to a Chat channel or to an individual user via the instant message tool it is seen by the recipient as mojibake/gibberish also.
+&lt;/p&gt;
+&lt;p&gt;
+If anyone reading this far has a solution for this outbound multi-byte scenario then I&amp;#39;d appreciate being contacted at the email address at the top of this memo.
+&lt;/p&gt;
+&lt;p style=&#34;text-align: center&#34;&gt;
+---    enjoy !    ---
+&lt;/p&gt;
+&lt;p&gt;
+This content is copyright Byte_Bucket(AT)hotmail(DOT)com.
+&lt;/p&gt;
+&lt;p&gt;
+If you have any corrections for this article, please send them to &lt;strong&gt;Byte_Bucket(AT)hotmail(DOT)com&lt;/strong&gt; and &lt;strong&gt;strivinglife[AT]gmail[DOT]com&lt;/strong&gt; (or leave a comment below).
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

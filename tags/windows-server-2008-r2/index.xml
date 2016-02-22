@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Server 2008 R2 on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/windows-server-2008-r2/</link>
+    <description>Recent content in Windows Server 2008 R2 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Aug 2012 14:51:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windows-server-2008-r2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Upgrading to .NET 4 on an IIS site supporting a .NET 2.0 child application</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</link>
+      <pubDate>Sun, 05 Aug 2012 14:51:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</guid>
+      <description>&lt;p&gt;Today I decided to finally make progress on a couple pending applications. As part of that process I needed to upgrade one of my sites to .NET 4. Unfortunately it has a child application that needs to say as .NET 2.0/3.5. After approximately 30 minutes of downtime, I finally got things configured correctly (seemingly). Here&#39;s what I ended up having to do.&lt;/p&gt;
+&lt;p&gt;This assumes IIS 7.5.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Wrap the system.web and system.webServer elements in the parent Web.config with the following:&lt;br /&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;location path=&#34;.&#34; inheritInChildApplications=&#34;false&#34; allowOverride=&#34;true&#34;&amp;gt;
+...
+&amp;lt;/location&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;If you have the following set in system.webServer, you&#39;ll want to &lt;em&gt;move&lt;/em&gt; that outside of the location wrapper you added in step 1. Otherwise the site doesn&#39;t appear to capture that, and you&#39;ll 500.&lt;br /&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;validation validateIntegratedModeConfiguration=&#34;false&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;Change the application pool settings on the parent application to .NET Framework 4.0 and push the above change.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That was the only change it appears I needed to make. Instead I made a number of minor changes, all over the place, which resulted in the downtime.&lt;/p&gt;
+&lt;p&gt;In my particular case I also had both the parent and child applications running on the same application pool. I ended up creating a new application pool for the child application, switched it over to that&lt;span style=&#34;text-decoration: line-through;&#34;&gt;, but neglected to set the identity as NETWORK SERVICE, which resulted in a few moments of questioning&lt;/span&gt;. Actually, I correctly set this to the application pool identity, but had actually neglected to give the correct directories the new permissions (since I changed the applicaton pool).&lt;/p&gt;
+&lt;p&gt;Needless to say, I&#39;ll be very happy when I re-write the child application over to .NET 4.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
+&lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
+&lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
+&lt;p&gt;Files: database.txt (empty), serial.txt (01, then&amp;nbsp;new line), openssl.cnf (based on OpenSSL file)&lt;/p&gt;
+&lt;h3&gt;Step 2: Create key&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; genrsa -des3 -out keys/_ca.key 2048&lt;/p&gt;
+&lt;h3&gt;Step 3: Create certificate authority certificate&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer&lt;/p&gt;
+&lt;h3&gt;Step 4: Create DER for public consumption&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\_ca.cer -outform DER -out certs\_ca.der&lt;/p&gt;
+&lt;h3&gt;Step 5: Create request from IIS&lt;/h3&gt;
+&lt;p&gt;IIS &amp;gt; click on main server, Server Certificates &amp;gt; populate all for request&lt;/p&gt;
+&lt;p&gt;save to requests directory locally&lt;/p&gt;
+&lt;h3&gt;Step 6: Handle request&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs&lt;/p&gt;
+&lt;h3&gt;Step 7: Convert for IIS&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer&lt;/p&gt;
+&lt;h3&gt;Step 8: Add to IIS&lt;/h3&gt;
+&lt;p&gt;back in iis, complete request. use *.x.com if a wildcard for friendly name&lt;/p&gt;
+&lt;p&gt;install _ca.der certificate to Trusted Root Certification Authorities (do on clients as well - see this &lt;a rel=&#34;external&#34; href=&#34;http://www.openssl.org/support/faq.html#USER12&#34;&gt;official FAQ&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;associate actual site with certificate&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
+&lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
+      <pubDate>Sat, 26 Jun 2010 21:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
+      <description>&lt;p&gt;This weekend I finally installed SQL Server 2008 R2 to my Windows Server 2008 R2 machine. After a bit of back-and-forth about which version to install (since my MSDN subscription allows me to install seemingly every version), I opted to just install SQL Server Express 2008 R2. Being part of the Web Platform Installer, the entire process was extremely easy.&lt;/p&gt;
+&lt;p&gt;Step 1: Start Web Platform Installer.&lt;/p&gt;
+&lt;p&gt;Step 2: Select SQL Server Express 2008 R2 and SQL Server 2008 R2 Management Studio Express from under Database.&lt;/p&gt;
+&lt;p&gt;Step 3: Press Install.&lt;/p&gt;
+&lt;p&gt;Step 4: Enter a password for the sa account (since Mixed Mode is what we want for development purposes).&lt;/p&gt;
+&lt;p&gt;Step 5: Open Windows Firewall and allow C:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\Binn\sqlservr.exe .&lt;/p&gt;
+&lt;p&gt;Step 6: Open SQL Server Configuration Manager and turn on the TCP/IP protocol, under Protocols from SQLEXPRESS.&lt;/p&gt;
+&lt;p&gt;Step 7: Open the TCP/IP protocol and verify that under IPAll TCP Dynamic Ports is set to something over 0. Make note of the port (in my case it was 49306).&lt;/p&gt;
+&lt;p&gt;Step 8: Still in Configuration Manager, click on SQL Server Services and restart the SQL Server process (the only one that&#39;s running).&lt;/p&gt;
+&lt;p&gt;Step 9: Connect to the instance via Microsoft SQL Server Management Studio, from the server (server name is &lt;strong&gt;.\sqlexpress&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Step 10: Open LINQPad (4.0 in my case).&lt;/p&gt;
+&lt;p&gt;Step 11: On the left-hand side select &#39;Add connection.&#39;&lt;/p&gt;
+&lt;p&gt;Step 12: LINQ to SQL should already be selected, so press Next.&lt;/p&gt;
+&lt;p&gt;Step 13: Set the server to the IP of your server \SQLEXPRESS,port. For example: 192.168.1.104\SQLEXPRESS,49306&lt;/p&gt;
+&lt;p&gt;Step 14: Select SQL Authentication from Log on details, and enter your credentials. Press OK when finished.&lt;/p&gt;
+&lt;p&gt;And with that, you&#39;re set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Working with Virtual Hard Disks in Windows 7 and Server 2008 R2</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</link>
+      <pubDate>Sun, 20 Jun 2010 19:02:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
+      <description>&lt;p&gt;A new feature in Windows 7 and Windows Server 2008 R2 is the ability to work with Virtual Hard Disks (VHDs) directly within the OS, by booting from them or mounting them as additional drives.&lt;/p&gt;
+&lt;p&gt;While I&#39;ve had a good deal of experience with using VHDs in virtual environments, being able to work with VHDs directly is fairly new, and leaves some question as to how useful it could potentially be, since I&#39;m happy using VirtualBox to work with virtual machines when I need to do any testing.&lt;/p&gt;
+&lt;h3&gt;Creating a VHD&lt;/h3&gt;
+&lt;p&gt;It&#39;s extremely easy to create a new virtual hard disk.&lt;/p&gt;
+&lt;p&gt;Open the start menu and type &#34;disk,&#34; then find &#34;Create and format hard disk partitions&#34; to open Disk Management. Under Action select Create VHD. Browse to or enter a location where to store the disk, what size to create,&amp;nbsp;and select the format of disk to use (fixed size being universally recommended, from what I can).&lt;/p&gt;
+&lt;p&gt;An unallocated disk will be added to the bottom half of the Disk Management window, and will be noted as &#39;not initialized.&#39; Right click on the left-side - not on the display of the disk - and select &#34;Initialize Disk&#34; from the menu.&lt;/p&gt;
+&lt;p&gt;Take note of the note, and either change the partitation style (seemingly more applicable for larger disks) and press OK.&lt;/p&gt;
+&lt;p&gt;Next right-click on the display of the disk and select &#34;New Simple Volume...&#34; from the menu. A wizard will start which will walk you through the process of specifying a volume size, assigning a drive letter, and formatting the volume.&lt;/p&gt;
+&lt;p&gt;After a format the disk will be attached and AutoPlay should trigger.&lt;/p&gt;
+&lt;h3&gt;Working with the VHD&lt;/h3&gt;
+&lt;p&gt;Now that you have a VHD created and attached you can add new files to the drive, as you would with any other. Once you&#39;re finished with the disk you can detach the VHD back in Disk Management. (You also have the ability to delete it after removing it, if you so desire.)&lt;/p&gt;
+&lt;p&gt;If you need to add it back on later you can select Action &amp;gt; Attach VHD to browse to the location of the virtual hard disk, and can even make it read only if needed.&lt;/p&gt;
+&lt;h3&gt;Working with VHDs in VirtualBox&lt;/h3&gt;
+&lt;p&gt;Unfortunately it doesn&#39;t appear that detached VHDs can be used in Sun&#39;s VirtualBox as additional drives.&lt;/p&gt;
+&lt;h3&gt;Encryption and security considerations&lt;/h3&gt;
+&lt;p&gt;Short of a higher-end version of Windows 7, or a third-party application, it doesn&#39;t appear that any level of encryption is available on created VHDs, which limits their use as storing secured documents. However, excluding times when the VHD is attached, Windows (7) doesn&#39;t appear to search within them, which means they may still serve against non-technical users.&lt;/p&gt;
+&lt;h3&gt;Portability&lt;/h3&gt;
+&lt;p&gt;The fact that they can&#39;t be attached directly via VirtualBox is unfortunate, but doesn&#39;t mean that the VHDs couldn&#39;t serve to consolidate information into a single file, which could then be copied from computer to computer, as needed. While we lose out on compression, in the case of using some sort of compressed file format, we seemingly get faster access to the content.&lt;/p&gt;
+&lt;p&gt;Definitely further testing is required.&lt;/p&gt;
+&lt;h3&gt;Additional information&lt;/h3&gt;
+&lt;p&gt;Microsoft has a &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?familyid=D2AFACBB-5AF6-45C2-B275-932116E27B0B&amp;amp;displaylang=en&#34;&gt;Virtual Hard Disk Getting Started Guide&lt;/a&gt;, but it focuses more on the administrative benefits of using VHDs for building new PCs, or testing, as opposed to using them as virtual drives.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 R2 Enterprise Edition - setup for sharing files</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
+      <pubDate>Sun, 06 Jun 2010 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
+      <description>&lt;p&gt;When I first started downloading files, almost a decade and a half ago, I would just download everything to one directory, using whatever name the file originally had when I was downloading it.&lt;/p&gt;
+&lt;p&gt;In the last couple of years I&#39;ve been trying (despite Chrome&#39;s default method trying to push be back)&amp;nbsp;to be much better about saving files, by creating a directory with the full name of the application - &#34;Microsoft Web Platform Installer&#34; - and then saving the file(s) into that directory.&lt;/p&gt;
+&lt;p&gt;However, I do lose track of how many previous versions I have of particular applications (I try to only have the current and one version back) and how much total I&#39;m storing.&lt;/p&gt;
+&lt;p&gt;Since my server is setup for the Web and Subversion, it was time to look at the next step, which is storing files to it, so that I can access with my other machines.&lt;/p&gt;
+&lt;p&gt;Luckily Windows Server 2008 has a File Services role which allows the setup of shared folders over a network. The File Server role service is necessary, and based on what it seems to provide (not having worked with it before), File Server Resource Manager (FSRM) seemed to be a good bet as well.&lt;/p&gt;
+&lt;p&gt;Storage Monitoring gives another screen that allows for a volume to be monitored, and reports to be generated, but since at this point I want to monitor directories instead of volumes, I opted to skip past that by just pressing Next.&lt;/p&gt;
+&lt;p&gt;With that done I&#39;m left with the question, especially (I think) since I&#39;ll probably put in a second hard drive in the next couple of months, whether I should create a Virtual Hard Drive (VHD) with the downloads stored to it. At this point I&#39;m at about 40 GB of files, though, and I&#39;m not sure it would really be a benefit. So while more research is needed into the benefits of VHD, I opted to just create a new directory in the root of C called downloads.&lt;/p&gt;
+&lt;p&gt;Now I want my PCs and laptop to be able to access this directory, as well as save files to it. I create a new user (Server Manager &amp;gt; Configuration &amp;gt; Local Users and Groups &amp;gt; Users) that the three will all use to access the machine (and I&#39;m okay with one account being shared over the three machines). Users cannot change the password &lt;span style=&#34;text-decoration: line-through;&#34;&gt;and it&#39;ll never expire&lt;/span&gt;. With the account setup I share C:\downloads\ with the new account, giving it Read/Write permissions.&lt;/p&gt;
+&lt;p&gt;Since it was initially setup as being on a public network (just by default), I&#39;m prompted on whether I want to turn on network discovery and file sharing for public networks, of if I&#39;m connected to a private network (home/workplace). In my case it&#39;s definitely the latter. Even though network discovery continued to be turned off, I was still able to access the share using the user account I had setup (so long as I didn&#39;t try adding the domain to the end).&lt;/p&gt;
+&lt;p&gt;With that done I opened File Server Resource Manager and added a quota to C:\downloads\. The built-in templates didn&#39;t work for me, so I created one with a 50 GB soft limit, that generates an event log entry if the quota is reached, and generates&amp;nbsp;reports for large files and least recently accessed files, when usage reaches the default of 85%.&lt;/p&gt;
+&lt;p&gt;And now it&#39;s just a matter of move files to the server.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
+&lt;li&gt;to serve as an always-available Subversion repository server&lt;/li&gt;
+&lt;li&gt;to serve as a repository for shared downloads, across all my machines&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As time goes by the scope of the server may also change. But for now, this will work just fine.&lt;/p&gt;
+&lt;h3&gt;Choosing an edition&lt;/h3&gt;
+&lt;p&gt;The first step was to install Windows Server 2008 R2. Being able to choose between any of the editions, it was between Enterprise, Standard, and Web. While I began to lean towards Web based upon the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-specs.aspx&#34;&gt;edition comparison by technical specification&lt;/a&gt;, when I looked at &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-roles.aspx&#34;&gt;edition comparison by server role&lt;/a&gt;, Web&amp;nbsp;dropped out of the race. Since my external host provides an Enterprise edition server, Enterprise is what I finally chose.&lt;/p&gt;
+&lt;h3&gt;Initial setup before&amp;nbsp;disconnecting the (physical) monitor&lt;/h3&gt;
+&lt;p&gt;After a short time, Windows Server 2008 R2 Enterprise edition was installed and ready for configuration, after entering an Administrator password.&lt;/p&gt;
+&lt;p&gt;The first thing I did was activate Windows, correct the time zone, and change the computer name to something a bit more manageable, which required a restart.&lt;/p&gt;
+&lt;p&gt;The&amp;nbsp;next step was to configure (checking for updates,&amp;nbsp;but not installing them automatically)&amp;nbsp;and&amp;nbsp;install updates, of which there were 30.&lt;/p&gt;
+&lt;p&gt;Since&amp;nbsp;I want to ultimately remove the monitor from this change, I enabled remote desktop. Since I&#39;ve only got the one network connection, I didn&#39;t need to tweak it any further.&lt;/p&gt;
+&lt;p&gt;While I was in System Properties and switched over to the Advanced tab and hit the Settings... button under Performance. I don&#39;t care about how it looks, so I switched from &#34;Let Windows choose what&#39;s best for my computer&#34; to &#34;Adjust for best performance,&#34; which just unchecked all the checkboxes. I now tested connecting in from my Windows 7 Home Premium machine, and sure enough I was able to&amp;nbsp;bump my other machine and remote in.&lt;/p&gt;
+&lt;p&gt;With that tested, it was time to shut off the machine, unplug the monitor and USB keyboard and mouse, and see if I could remote in.&lt;/p&gt;
+&lt;h3&gt;Success means shutting off services&lt;/h3&gt;
+&lt;p&gt;With the machine correctly booting up, even though it had no monitor, keyboard, nor mouse hooked up, it was time to start optimizing the server by shutting off services.&lt;/p&gt;
+&lt;p&gt;Print Spooler was the first to be stopped and disabled. And that was about it. At only 470 MB used, that&#39;s not too shabby.&lt;/p&gt;
+&lt;h3&gt;Adding server roles - Web server&lt;/h3&gt;
+&lt;p&gt;With Print Spooler disabled it was time to start setting up server roles. I want to start simple, I first selected Web Server (IIS). While I&#39;ve run through this before, this time I actually read the notes and saw an item about Windows System Resource Manager (WSRM) that &#34;can help ensure equitable servicing of Web server traffice, especially when there are multiple roles on this computer.&#34; That sounds like what I&#39;ll eventually be doing, so I&#39;ve made a note to look into this later.&lt;/p&gt;
+&lt;p&gt;By default a number of role services are selected, and since I know I want to do ASP.NET development, I added that (and the&amp;nbsp;items it requires)&amp;nbsp;and HTTP Redirection, since it&#39;s come up before. I end up with the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Web Server (IIS)&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Web Server&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;Common HTTP Features 
+&lt;ul&gt;
+&lt;li&gt;Static Content&lt;/li&gt;
+&lt;li&gt;Default Document&lt;/li&gt;
+&lt;li&gt;Directory Browsing&lt;/li&gt;
+&lt;li&gt;HTTP Errors&lt;/li&gt;
+&lt;li&gt;HTTP Redirection&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Application Development 
+&lt;ul&gt;
+&lt;li&gt;ASP.NET&lt;/li&gt;
+&lt;li&gt;.NET Extensibility&lt;/li&gt;
+&lt;li&gt;ISAPI Extensions&lt;/li&gt;
+&lt;li&gt;ISAPI Filters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Health and Diagnostics 
+&lt;ul&gt;
+&lt;li&gt;HTTP Logging&lt;/li&gt;
+&lt;li&gt;Request Monitor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Security 
+&lt;ul&gt;
+&lt;li&gt;Request Filtering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Performance 
+&lt;ul&gt;
+&lt;li&gt;Static Content Compression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Management Tools&lt;/strong&gt; 
+&lt;ul&gt;
+&lt;li&gt;IIS Management Console&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once the installation was finished successfully (without the need of a reboot), I was successfully able to browse to the site on my Windows 7 machine.&lt;/p&gt;
+&lt;h3&gt;The &#39;easy button&#39;&lt;/h3&gt;
+&lt;p&gt;With that done, it was time to install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/downloads/platform.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt;&amp;nbsp;(WPI), also know as &lt;a href=&#34;http://strivinglife.com/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button.aspx&#34;&gt;the easy button&lt;/a&gt;. Since Internet Explorer runs in a high-security mode in Server 2008, I had to download a copy on my Windows 7 machine and copy and paste it over to the Server, via Remote Desktop.&lt;/p&gt;
+&lt;p&gt;Since Server 2008 R2 doesn&#39;t come with .NET Frameworks&amp;nbsp;3.5 SP 1 or 4 installed, I started with 3.5 SP1. For whatever reason Logging Tools was also selected, but seemingly no download was required.&lt;/p&gt;
+&lt;p&gt;Surprisingly I didn&#39;t have to reboot after installing .NET 3.5 SP1, so I went on to version 4. For whatever reason, this install took a good deal of time (in the&amp;nbsp;double-digits), and since I didn&#39;t keep my attention solely on it, missed the restart prompt in the bottom right corner. But, after the restart that was too was finished.&lt;/p&gt;
+&lt;p&gt;URL Rewrite 2.0, ASP.NET MVC 2, and PHP 5.2.13 were all next (which ended up requiring CGI to be installed as well).&lt;/p&gt;
+&lt;p&gt;While tempted to install SQL Server Express, I opted to hold off, since I can install something&amp;nbsp;a bit higher-end, depending upon how they compare for what I need.&lt;/p&gt;
+&lt;h3&gt;CollabNet Subversion Server&lt;/h3&gt;
+&lt;p&gt;As I&#39;ve been doing more and more, I opted to use CollabNet Subversion Server to install Apache and Subversion, which means another copy and paste through Remote Desktop.&lt;/p&gt;
+&lt;p&gt;The installation steps haven&#39;t changed, so I used &lt;a href=&#34;http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx&#34;&gt;an older installation guide I had written&lt;/a&gt;, turned off update notifications, and restart the server.&lt;/p&gt;
+&lt;p&gt;As I&#39;ve grown to expect, once the server was restarted I was able to access port 8080 locally, but not on my own machine, due to firewall settings. After allowing C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\httpd.exe (Apache HTTP Server) to communicate through Windows Firewall, that was now working.&lt;/p&gt;
+&lt;p&gt;Since I install PHP in a previous step I could go ahead and allow Apache to use it, but for now I&#39;m going to keep moving forward and setup my existing (used) repositories.&lt;/p&gt;
+&lt;h3&gt;Subversion security and repositories&lt;/h3&gt;
+&lt;p&gt;Since I&#39;ve only got one hard drive (at the moment) on the server, in the C drive root I created a new svn_resources directory. Opening cmd and moving to C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\ we can access the htpasswd.exe executable. Using the &#39;official&#39; book as the standard, I entered the following to create an account for my main development machine (an HP Pavilion a6360t).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd.exe -cm c:\svn_resources\svn-auth-file james-a6360t&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After entering my password twice, I now had an authentication file, and I can now add security to my repositories, via updating&amp;nbsp;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\conf\httpd.conf (you may also want to start Apache Monitor and restart the instance).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Location /svn&amp;gt;
+    DAV svn
+    SVNParentPath C:\svn_repository
+    AuthType Basic
+    AuthName &#34;Subversion repository&#34;
+    AuthUserFile C:\svn_resources\svn-auth-file
+    Require valid-user
+&amp;lt;/Location&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I setup my laptop with another account, and with that done it&#39;s time to start &lt;a href=&#34;http://strivinglife.com/words/post/Subversion-and-TortoiseSVN-Moving-a-repository.aspx&#34;&gt;moving over the repositories&lt;/a&gt;. Since I have so many, I focused on just the handful that I&#39;m actively working on, and holding off on the rest.&lt;/p&gt;
+&lt;p&gt;Whew.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;In addition to looking into WSRM, I still need to move my downloads over to the server (which possibly means setting this up with a file server role), adding SQL Server, and possibly adding PHP functionality to Apache ... just in case.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

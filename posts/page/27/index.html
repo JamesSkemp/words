@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Posts - My New Hugo Site</title>
+    <meta property='og:title' content="Posts - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Posts</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Oct 30, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-141-released/">iTunes Playlists to Xml - version 1.4.1 released</a></div>
+  </header>
+  <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. Version 1.4.1 of iTunes Playlists to Xml is now available for download. Download iTunes Playlists to Xml 1.4.1. Installing and more information If you&rsquo;re new to iTunes Playlists to Xml, I&rsquo;ve created a &lsquo;product page&rsquo; for iTunes Playlists to Xml with all the information needed to get started. Upgrading To upgrade from version 1.4 you simply need to replace the iTunesPlaylistsToXml.exe file with the one in the above archive.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-141-released/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Oct 26, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Two-simple-ColdFusion-calendar-outputs/">Two simple ColdFusion calendar outputs</a></div>
+  </header>
+  <div class="body">Here's&nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality). Tables-based &lt;cfparam name="URL.CalendarMonth" default="#Month(now())#" type="integer" /&gt; &lt;cfparam name="URL.CalendarYear" default="#Year(now())#" type="integer" /&gt; &lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&gt; &lt;cfset URL.CalendarMonth = Month(now()) /&gt; &lt;/cfif&gt; &lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&gt; &lt;table style="width:375px;" summary="Calendar of events for &lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, 'mmmm yyyy')#&lt;/cfoutput&gt;."&gt; &lt;thead&gt; &lt;tr&gt; &lt;th colspan="7"&gt;&lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, "mmmm yyyy")#&lt;/cfoutput&gt;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;S&lt;/th&gt; &lt;th&gt;M&lt;/th&gt; &lt;th&gt;T&lt;/th&gt; &lt;th&gt;W&lt;/th&gt; &lt;th&gt;Th&lt;/th&gt; &lt;th&gt;F&lt;/th&gt; &lt;th&gt;S&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;cfloop from="1" to="#DaysInMonth(VARIABLES.Calendar.StartDate)#" index="iDay"&gt; &lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&gt; &lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 1 OR iDay EQ 1&gt;&lt;!--- This is Sunday, or the first day.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Two-simple-ColdFusion-calendar-outputs/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Oct 25, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/">Using SQLite as a membership, profile, and role provider in ASP.NET MVC</a></div>
+  </header>
+  <div class="body">I'd really like to implement membership providers in my Web applications, but just don't have the user-base that requires SQL Server (Express), nor the memory on my production server. Having looked at SQLite before, I figured it would be exactly what I'd need, without going to the alternative of XML. After some research I found Roger Martin's SQLite Membership, Role, and Profile Providers, and finally decided yesterday to implement these on a dummy MVC site.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Oct 24, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/">Steps to setting up a Windows Server 2003 Web Server on VirtualBox</a></div>
+  </header>
+  <div class="body">The following goes through the steps needed to setup&nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine. Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven't made the switch yet. Requirements Sun VirtualBox. We want this in particular for the great networking functionality, but other apps, like Microsoft Virtual PC, will work fine as well.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Oct 24, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/My-entertainment-setup-October-2009/">My entertainment setup, October 2009</a></div>
+  </header>
+  <div class="body">Overall, I think I'm pretty happy with my entertainment center setup, which is pictured and detailed below. The photo The gear (For items no longer available, I've linked to a similar product.) Essentials Sony Bravia KDL-32M3000 Yamaha HTR-6130 APC Back-UPS XS 1300 A serious UPS solution is required, in my opinion. Since I don't have a PC connected into this (and don't want to) I went with a model featuring a LCD.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/My-entertainment-setup-October-2009/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Oct 18, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/">Microsoft Log Parser custom brush for Syntax Highlighter</a></div>
+  </header>
+  <div class="body"><p>It still needs a touch of work, but a basic custom brush for <a rel="external" href="http://alexgorbatchev.com/wiki/SyntaxHighlighter">Syntax Highlighter</a> is available for download.</p>
+<p><a rel="external download" href="http://media.jamesrskemp.com/js/shBrushLogParser.js">Download the Microsoft Log Parser custom brush for Syntax Highlighter 2.0.320</a>.</p>
+<p>Example included below and at <a rel="external" href="http://logparserplus.com/Examples/Queries.aspx">LogParserPlus.com</a>:</p>
+<pre class="code"><code class="logparser">logparser -rtp:-1 "SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 200sReport.txt FROM ex0902*.log WHERE (sc-status &gt;= 200 AND sc-status &lt; 300) ORDER BY sc-status, date, cs-uri-stem, cs-uri-query"</code></pre>
+<p>Comments and suggestions are welcomed.</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Oct 18, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-10/">Review: Professional ASP.NET MVC 1.0</a></div>
+  </header>
+  <div class="body">The following is a review of Professional ASP.NET MVC 1.0, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie. I received a free copy of this book for review purposes from Amazon Vine, but was planning on purchasing the book nonetheless (I just had the good fortune to get a copy before they were all taken). A great introduction to ASP.NET MVC Professional ASP.NET MVC 1.0 was my first real look at ASP.NET MVC.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-10/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Oct 17, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/A-Brief-Thought-on-Time-Travel/">A Brief Thought on Time Travel</a></div>
+  </header>
+  <div class="body"><p>To those who cannot travel outside the normal flow of time, it matters not whether time travel is possible, for they would be unable to determine if the past had changed (assuming it even possible).</p>
+<p>This thought came to me a moment ago, as I was about to watch the eighth episode of Cosmos.</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Oct 17, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Review-Muramasa-The-Demon-Blade/">Review: Muramasa: The Demon Blade</a></div>
+  </header>
+  <div class="body">The following is a review of Muramasa: The Demon Blade, for the Nintendo Wii. Let&rsquo;s get it out of the way; Muramasa: The Demon Blade is the game that finally made my purchase of the Wii worthwhile. Muramasa is in some ways similar to Super Metroid in that you progress around the game by moving from screen to screen, with enemy battles occuring randomly, as you move towards the act&rsquo;s boss.</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Muramasa-The-Demon-Blade/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Wed, Oct 14, 2009</div>
+    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Linda-Hamilton-80s-or-90s/">Linda Hamilton - 80s or 90s?</a></div>
+  </header>
+  <div class="body">Previously posted on Facebook: 80's Linda Hamilton; sure, she did T2 in the 90s, but I bet if you think Linda Hamilton, you think 80s. Am I wrong? Rob Lumley brings up Terminator 2 as being his reason he'd go with 90s Hamilton. I'd agree with you on the Terminator franchise, but, obviously, not with Hamilton being better in the 90s solely because of T2. Look at IMDb - http://www.imdb.com/name/nm0000157/ TV, movies, TV, movie (T2), and then back to TV, never to return to movies (meaning non-direct to VHS/DVD).</div>
+
+  
+  <footer>
+    <a href="http://replace-this-with-your-hugo-site.com/posts/Linda-Hamilton-80s-or-90s/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="/posts/page/26">Previous</a></li>
+    
+
+    
+    <li><a href="/posts/page/28">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

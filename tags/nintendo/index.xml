@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nintendo on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/nintendo/</link>
+    <description>Recent content in Nintendo on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Dec 2012 14:50:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/nintendo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: 72 Pin Connector for NES 8 BIT Nintendo System</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-72-Pin-Connector-for-NES-8-BIT-Nintendo-System/</link>
+      <pubDate>Sun, 30 Dec 2012 14:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-72-Pin-Connector-for-NES-8-BIT-Nintendo-System/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002DLOM6C?tag=strivinglifen-20&#34;&gt;72 Pin Connector for NES 8 BIT Nintendo System (Bulk Packaging)&lt;/a&gt;, by Classic Game Source.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Our Nintendo was purchased new (as far as I know), way back when they were still being sold in stores.&lt;/p&gt;
+&lt;p&gt;However, we haven&amp;rsquo;t played it all that much, since, like many others, the console would blink instead of playing the game.&lt;/p&gt;
+&lt;p&gt;Last weekend I visited my sister, who has it now, and I couldn&amp;rsquo;t get it come on at all. A common issue seems to be the 72-pin connector, so I decided to finally take it back with me and give that a shot.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t recall our NES ever starting a game as soon as you press the power, so I was absolutely shocked (but not enough to hold back my shout of joy) when it started a game immediately.&lt;/p&gt;
+&lt;p&gt;Some suggest pulling the pins back into position, but quite honestly our pins were completely flat (no resistance when sliding in a game) and I&amp;rsquo;m sure the time it would have taken would have been more than the $12 I paid for a new one.&lt;/p&gt;
+&lt;p&gt;Read a good guide on replacing it (I used &lt;a rel=&#34;external&#34; href=&#34;http://www.hitgaming.com/connectorinstall2.html&#34;&gt;Hitgaming&lt;/a&gt;&amp;rsquo;s, which comes up for a Google search for &amp;lsquo;nes replace 72 pin connector&amp;rsquo;) and enjoy playing your NES again!&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

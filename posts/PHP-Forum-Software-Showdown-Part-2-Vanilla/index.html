@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>PHP Forum Software Showdown Part 2: Vanilla - My New Hugo Site</title>
+    <meta property='og:title' content="PHP Forum Software Showdown Part 2: Vanilla - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-2-Vanilla/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2006-11-20T09:00:00-06:00">
+        <meta itemprop="headline" content="PHP Forum Software Showdown Part 2: Vanilla">
+        <meta itemprop="description" content="
+While the Vanilla forum&#39;s are fairly unknown, it&#39;s been around for a little over a year. &ldquo;Vanilla is an open-source, standards-compliant, multi-lingual, fully extensible discussion forum for the web.&rdquo; The version we&#39;ll be installing, 1.0.1, was released in late-August 2006.
+
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-2-Vanilla/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-11-20T09:00:00-06:00">Mon, Nov 20, 2006</time>
+          <h1 class="article-title">PHP Forum Software Showdown Part 2: Vanilla</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+While the <a href="http://getvanilla.com/">Vanilla</a> forum&#39;s are fairly unknown, it&#39;s been around for a little over a year. &ldquo;Vanilla is an open-source, standards-compliant, multi-lingual, fully extensible discussion forum for the web.&rdquo; The version we&#39;ll be installing, 1.0.1, was released in late-August 2006.
+</p>
+
+<p><h4>File and folder size</h4>
+<p>
+The zip file for Vanilla 1.0.1 (which is the only download type) weighs in at just under 400 KB. Unzipped, it&#39;s almost 1.2 MB in size. Overall, that&#39;s pretty small.<!--adsense-->
+</p>
+<h4>Requirements</h4>
+<p>
+Vanilla requires PHP 4.1+ and MySQL 3.23+. Compared to the other forums we&#39;ll be going over, these requirements are pretty low (especially the MySQL requirement).
+</p>
+<h4>Installing on our local Web server</h4>
+<p>
+Unlike past articles, for these forum reviews we&#39;re going to create the necessary users and databases using the command line interface of MySQL. If you&#39;re going to be installing these forums to a remote system, just create the user(s) and database(s) as usual (and that goes for if you&#39;re installing it locally as well).
+</p>
+<h4>Creating the user and database via the command-line</h4>
+<p>
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+</p>
+<blockquote>
+    <p>
+    mysql -h localhost -u root -p
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be prompted to enter your password, which you&#39;ll have already setup. Enter your password and press Enter.
+</p>
+<p>
+At this point, you&#39;re logged into MySQL. Now, we can create our database, create our user, and grant the user privilege to modify the database we created.
+</p>
+<p>
+Since we&#39;re installing Vanilla, we&#39;ll create a database called Vanilla.
+</p>
+<blockquote>
+    <p>
+     create database Vanilla;
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be told that &ldquo;Query OK, 1 row affected&rdquo;, followed by the execution time.
+</p>
+<p>
+Now, we&#39;ll create a user with privileges to access the database. Note that other than the bold text, this command is case-insensitive. Also, you may want to change &#39;<strong>vanilla</strong>&#39; to something different (as this is the user&#39;s password).
+</p>
+<p>
+Before you enter this, look it over, and then read the paragraph following, for an explanation.
+</p>
+<blockquote>
+    <p>
+     GRANT select, insert, update, delete, index, alter, create, drop<br />
+    ON <strong>Vanilla</strong>.<em><br />
+    TO <strong>Vanilla</strong> IDENTIFIED BY &#39;<strong>vanilla</strong>&#39;;
+    </p>
+</blockquote>
+<p>
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>Vanilla</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>Vanilla</strong> IDENTIFIED BY &#39;<strong>vanilla</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+</p>
+<p>
+If the query is OK, enter the following command.
+</p>
+<blockquote>
+    <p>
+     UPDATE mysql.user SET Password = OLD_PASSWORD(&#39;vanilla&#39;) WHERE User = &#39;Vanilla&#39;;
+    </p>
+</blockquote>
+<p>
+If this query is OK, and it works, type <strong>exit</strong>, and press Enter. Now attempt to login to the Vanilla user. Once you&#39;ve logged in, enter the following command.
+</p>
+<blockquote>
+    <p>
+     show databases;
+    </p>
+</blockquote>
+<p>
+You should be given an ASCII table that shows there&#39;s a database of vanilla. Yippee.
+</p>
+<p>
+Now, let&#39;s install Vanilla.
+</p>
+<!--nextpage-->
+<h4>Installing Vanilla</h4>
+<p>
+First, unzip the downloaded zip file. The files are all included in a Vanilla.1.0.1 folder. For this guide, we&#39;ll be keeping it in that folder, since we&#39;ll be installing a number of forums, but changing the name to remove the version information.<!--adsense-->
+</p>
+<p>
+Once Vanilla has been decompressed, navigate to the Vanilla root folder in your browser. Since you haven&#39;t setup Vanilla yet, it will redirect you to the installer, which is located at, in my install, <a href="http://localhost/projects/vanilla/setup/index.html">http://localhost/projects/vanilla/setup/index.html</a>.
+</p>
+<p>
+Here, there&#39;s a couple of options. You can either install fresh (which is what we&#39;ll be doing) or find out how to upgrade from a previous version. For now, let&#39;s click on the link to &ldquo;install a completely brand new version of Vanilla&rdquo;. These steps will walk you through the setup almost completely.
+</p>
+<p>
+First, you&#39;ll need to assure that permissions have been setup correctly on files and folders. We&#39;re okay in this respect, so check the permissions and continue.
+</p>
+<p>
+Next, you&#39;ll need to enter in information regarding MySQL. If you&#39;ve been following along, these are as follows.
+</p>
+<p>
+MySQL Server: localhost<br />
+MySQL Database Name: Vanilla<br />
+MySQL User: Vanilla<br />
+MySQL Password: vanilla
+</p>
+<p>
+Click on the link to continue.
+</p>
+<p>
+Finally, you&#39;ll need to create an administrative account, setup a contact email, and confirm cookie options. What follows are my options, but customize as needed. Note that for password, I simply used the password I was given for bbPress.
+</p>
+<p>
+Username: admin<br />
+Password: cbe15b<br />
+Support Contact Name: James Skemp<br />
+Support Email Address: strivinglife@gmail.com<br />
+Forum Name: Vanilla<br />
+Cookie Domain: localhost<br />
+Cookie Path: /projects/vanilla/
+</p>
+<p>
+One final click, and you&#39;re ready to go. You can either login, as they direct, or just take a look at the main page. <a href="http://localhost/projects/vanilla/">http://localhost/projects/vanilla/</a>
+</p>
+<!--nextpage-->
+<h4>How&#39;s the code look?</h4>
+<p>
+All-in-all, the code validates beautifully, and is a pleasure to read. The random code files I pulled up were extremely well documented. I&#39;ve rarely seen code such as this.<!--adsense-->
+</p>
+<h4>Default layout and administrative interface</h4>
+<p>
+Like the code, the default layout is beautiful. Simple, simple, simple. The administrative interface uses the same wrapper as the main site, so ditto for it. And, what&#39;s this, no tables?
+</p>
+<p>
+Unfortunately, entering into some options, you lose your left-side navigation, and there&#39;s no way to go back via a link. Fortunately, this isn&#39;t the case for all of the options.
+</p>
+<p>
+No forums or topics are already setup, for better or worse. On the one hand, it makes clean-up easy, but it also means you have to do this yourself just to get a look.
+</p>
+<h4>Upgrading</h4>
+<p>
+Checking for updates is quite easy from the interface. Unfortunately, upgrading basically involves reinstalling Vanilla. If you&#39;ve made modifications, you&#39;ll need to re-add them. However, they do say that you can see what files have changed, which means you can do a compare to add in the new changes. Not too shabby.
+</p>
+<h4>The temporary conclusion</h4>
+<p>
+I like Vanilla based on my first impression. Editing configuration files is no fun, especially for people who can&#39;t code. Vanilla makes all of this really easy.
+</p>
+<p>
+Yet, on the other hand, it&#39;s MySQL connection step doesn&#39;t provide much help to the person who doesn&#39;t know any of this. Default to localhost, since that will usually be what the user needs.
+</p>
+<p>
+Before we dig any further, we&#39;ll need to install some more forums.
+</p>
+<p>
+Stay tuned for the next <a href="/words/post/PHP-Forum-Software-Showdown.aspx">PHP Forum</a> review.
+</p>
+<p>
+<a href="/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/php" class="tag">php</a> <a href="http://replace-this-with-your-hugo-site.com/tags/mysql" class="tag">mysql</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-2-Vanilla%2f&t=PHP%20Forum%20Software%20Showdown%20Part%202%3a%20Vanilla" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-2-Vanilla%2f&text=PHP%20Forum%20Software%20Showdown%20Part%202%3a%20Vanilla&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-2-Vanilla%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-2-Vanilla%2f&title=PHP%20Forum%20Software%20Showdown%20Part%202%3a%20Vanilla" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

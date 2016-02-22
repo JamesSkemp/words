@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windiff on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/windiff/</link>
+    <description>Recent content in Windiff on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Nov 2005 20:11:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windiff/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ever had a reason to compare two files?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Ever-had-a-reason-to-compare-two-files/</link>
+      <pubDate>Mon, 21 Nov 2005 20:11:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Ever-had-a-reason-to-compare-two-files/</guid>
+      <description>&lt;p&gt;I talked about WinMerge a couple of posts ago (which has been updated, by the way, and which I&amp;#39;ve used a number of times for work), and now I&amp;#39;m going to talk about the equally free WinDiff.&lt;!--adsense--&gt;&lt;br /&gt;
+&lt;br /&gt;
+Basically, you can get the real background information from &lt;a href=&#34;http://www.ss64.com/nt/windiff.html&#34;&gt;http://www.ss64.com/nt/windiff.html&lt;/a&gt;, as well as two important links:&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;http://www.grigsoft.com/download-windiff.htm&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.grigsoft.com/download-windiff.htm&#34;&gt;http://www.grigsoft.com/download-windiff.htm&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&#34;http://www.codeproject.com/tools/runwindiff.asp&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.codeproject.com/tools/runwindiff.asp&#34;&gt;http://www.codeproject.com/tools/runwindiff.asp&lt;/a&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;The GUI (the second link) is highly recommended, as it&amp;#39;s a great addition.&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;That&amp;#39;s it.&amp;nbsp; I&amp;#39;m alive, but busy doing other things, not specifically related to StrivingLife.net - some technical (Gavin&amp;#39;s content), some not (Shadow Hearts: Covenant ;) ).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

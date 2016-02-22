@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/css/</link>
+    <description>Recent content in Css on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Mar 2011 19:20:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Smashing CSS</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Smashing-CSS/</link>
+      <pubDate>Fri, 25 Mar 2011 19:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Smashing-CSS/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/047068416X?tag=strivinglifen-20&#34;&gt;Smashing CSS&lt;/a&gt;, written by Eric A. Meyer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Mixed signals lead to a mixed review&lt;/h3&gt;
+&lt;p&gt;I think this may technically be the first Eric Meyer book I&amp;rsquo;ve ever read. I&amp;rsquo;ve read a number of his articles online, in various forums, but just haven&amp;rsquo;t gone out of my way to read one of his books.&lt;/p&gt;
+&lt;p&gt;So I&amp;rsquo;m not sure exactly what I was expecting, but I do know it was more then I believe I got.&lt;/p&gt;
+&lt;p&gt;First, the book itself is beautiful. The pages are crisp, smooth, and colorful. The binding seems very well put together, suggesting this will last a good number of years. At a list price of $40 and running at ~270 pages, the page count seems a little low, but &amp;hellip; it all depends upon the content, right?&lt;/p&gt;
+&lt;p&gt;Before I get into the content, I&amp;rsquo;ve been using CSS for a number of years, although only &amp;lsquo;strongly&amp;rsquo; since around 2004. But I didn&amp;rsquo;t really look too much into CSS 2.1 or 3, and have only begun looking at HTML5 in the last handful of months, so I expected the book to have a good deal of items I could learn from. And of course, it&amp;rsquo;s Eric Meyer, so surely he&amp;rsquo;s got some great tips.&lt;/p&gt;
+&lt;p&gt;The book is broken up into Fundamentals, Essentials, and Cutting Edge. The first covers Tools and Selectors, the second Tips, Layouts and Effects, and the third Tables and &amp;lsquo;The (Near) Future.&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;The first two chapters were pretty much old news to me. I&amp;rsquo;m well aware of the various tools and how selectors work, although some of the CSS 2.&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;3&lt;/sub&gt; items were valuable enough, but nothing that wasn&amp;rsquo;t completely new to me.&lt;/p&gt;
+&lt;p&gt;The chapter of tips was okay, but again, nothing really new here, with far too much about lists, in my personal opinion.&lt;/p&gt;
+&lt;p&gt;However, chapter four, covering layouts, really got me interested. To quote, chapter four is when the book &amp;ldquo;started getting good.&amp;rdquo; The various layouts which we&amp;rsquo;ve always struggled with in CSS are nicely laid out in one place. Hurrah!&lt;/p&gt;
+&lt;p&gt;Then chapter five starts, where we learn about effects. Unfortunately, the chapter starts out with CSS that&amp;rsquo;s been in place since 2001. It may be &amp;ldquo;an oldie but a goldie,&amp;rdquo; but &amp;hellip; it was a bit of a scary start. Then we get into CSS pop-ups and navigation, and some rather cool &amp;lsquo;box punching.&amp;rsquo; Then we&amp;rsquo;re back to old-school rounded corners, followed by the CSS3 way to do these.&lt;/p&gt;
+&lt;p&gt;Which is as good a time as any to point out that perhaps &amp;lsquo;Smashing CSS&amp;rsquo; suggests that the goal of this book is fairly vague, or wide. More on this in a moment.&lt;/p&gt;
+&lt;p&gt;In chapter six we&amp;rsquo;re introduced to tables, although, as scary as that sounds, it&amp;rsquo;s really about making tabular data look good. He has an example of using tabular data on a map which seems a bit &amp;hellip; forced, but the charting example is fine enough. (Hopefully people realize that this is for simple things, and don&amp;rsquo;t overlook more powerful JavaScript alternatives.)&lt;/p&gt;
+&lt;p&gt;Finally we have chapter seven, which covers (worth quoting again) &amp;ldquo;The (Near) Future.&amp;rdquo; An odd title for what I thought the book was going to be about, but &amp;hellip; okay. We have three pages of content about HTML5, we touch on media queries a bit (I did have a couple &amp;lsquo;ah ha!&amp;rsquo; moments, when cool design ideas popped out), and then colors, shadows, multiple backgrounds, and transforms, the last of which featured some pretty boring grey boxes. A real disappointment, but it served to solidify that there&amp;rsquo;s not much practical use for this functionality now.&lt;/p&gt;
+&lt;p&gt;And then &amp;hellip; no closing. Which left me honestly wondering what I thought the purpose of this book was. There&amp;rsquo;s old-school tricks, some new features, a nice section on layouts, a listing of tools (which can be found on dozens, if not more, sites online), &amp;hellip; But what&amp;rsquo;s the purpose?&lt;/p&gt;
+&lt;p&gt;So I reviewed the back of the book again, and really it&amp;rsquo;s just a hodge-podge of techniques. And it also appears jQuery was going to be discussed, but JavaScript is intentionally left out in many places (and jQuery only shows up once in the index).&lt;/p&gt;
+&lt;p&gt;So, I just don&amp;rsquo;t know.&lt;/p&gt;
+&lt;p&gt;Finally, there&amp;rsquo;s a number of typos, incorrect graphics, and grammar mistakes throughout the book. Only a little more than a dozen, so nothing too horrible. Only one mistake stopped me from understanding a bit of the book, but I honestly didn&amp;rsquo;t care that much about the technique being shown (icicles moving at different speeds), so no big loss.&lt;/p&gt;
+&lt;p&gt;Overall, because of the lack of a defined purpose, that ties the book together (in my opinion), I have to give the book 3 of 5 stars.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a good book, but chapter 4 is really the only thing I&amp;rsquo;m going to flip back to. I could certainly see myself giving someone newer the book to read chapter 2 and 3. As for chapters 5-7, &amp;hellip; I think enough time has passed since the book has been published that online resources provide more than chapter 7, and I can think of nothing in the other two that I&amp;rsquo;m not already doing, or have no plans to do.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;d recommend this book much more for those who are beginning with CSS. If you&amp;rsquo;re looking for HTML5 and CSS3 information, look elsewhere.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two simple ColdFusion calendar outputs</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Two-simple-ColdFusion-calendar-outputs/</link>
+      <pubDate>Mon, 26 Oct 2009 21:28:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Two-simple-ColdFusion-calendar-outputs/</guid>
+      <description>&lt;p&gt;Here&#39;s&amp;nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality).&lt;/p&gt;
+&lt;h3&gt;Tables-based&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
+&amp;lt;cfparam name=&#34;URL.CalendarYear&#34; default=&#34;#Year(now())#&#34; type=&#34;integer&#34; /&amp;gt;
+
+&amp;lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&amp;gt;
+    &amp;lt;cfset URL.CalendarMonth = Month(now()) /&amp;gt;
+&amp;lt;/cfif&amp;gt;
+
+&amp;lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&amp;gt;
+
+&amp;lt;table style=&#34;width:375px;&#34; summary=&#34;Calendar of events for &amp;lt;cfoutput&amp;gt;#DateFormat(VARIABLES.Calendar.StartDate, &#39;mmmm yyyy&#39;)#&amp;lt;/cfoutput&amp;gt;.&#34;&amp;gt;
+    &amp;lt;thead&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;th colspan=&#34;7&#34;&amp;gt;&amp;lt;cfoutput&amp;gt;#DateFormat(VARIABLES.Calendar.StartDate, &#34;mmmm yyyy&#34;)#&amp;lt;/cfoutput&amp;gt;&amp;lt;/th&amp;gt;
+        &amp;lt;/tr&amp;gt;
+        &amp;lt;tr&amp;gt;
+            &amp;lt;th&amp;gt;S&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;M&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;T&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;W&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;Th&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;F&amp;lt;/th&amp;gt;
+            &amp;lt;th&amp;gt;S&amp;lt;/th&amp;gt;
+        &amp;lt;/tr&amp;gt;
+    &amp;lt;/thead&amp;gt;
+    &amp;lt;tbody&amp;gt;
+        &amp;lt;cfloop from=&#34;1&#34; to=&#34;#DaysInMonth(VARIABLES.Calendar.StartDate)#&#34; index=&#34;iDay&#34;&amp;gt;
+            &amp;lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&amp;gt;
+            &amp;lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 1 OR iDay EQ 1&amp;gt;&amp;lt;!--- This is Sunday, or the first day. ---&amp;gt;
+                &amp;lt;tr&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+            &amp;lt;cfif iDay EQ 1&amp;gt;&amp;lt;!--- If it&#39;s the first day, determine how many empty cells we need. ---&amp;gt;
+                &amp;lt;cfoutput&amp;gt;#RepeatString(&#34;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&#34;, DayOfWeek(VARIABLES.Calendar.StartDate) - 1)#&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+                &amp;lt;cfoutput&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span title=&#34;#DateFormat(VARIABLES.Calendar.CurrentDate, &#39;mmmm d, yyyy&#39;)#&#34;&amp;gt;#iDay#&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;cfif iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;
+                &amp;lt;cfoutput&amp;gt;#RepeatString(&#34;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&#34;, 7 - DayOfWeek(VARIABLES.Calendar.CurrentDate))#&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+            &amp;lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 7 OR iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;&amp;lt;!--- This is Saturday, or the last day. ---&amp;gt;
+                &amp;lt;/tr&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+        &amp;lt;/cfloop&amp;gt;
+    &amp;lt;/tbody&amp;gt;
+&amp;lt;/table&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Ordered list and CSS&lt;/h3&gt;
+&lt;p&gt;The following is a rough version of an ordered list and CSS-based calendar.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
+&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=iso-8859-1&#34; /&amp;gt;
+&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
+    &amp;lt;style type=&#34;text/css&#34;&amp;gt;
+    .olCalendar {
+        width:375px;
+    }
+    .olCalendar ol li {
+        display:block;
+        float:left;
+        list-style-position:inside;
+        margin:0;
+        width:45px;
+    }
+    .olCalendar li.noDate {
+        list-style-image:none;
+    }
+    &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
+&amp;lt;cfparam name=&#34;URL.CalendarYear&#34; default=&#34;#Year(now())#&#34; type=&#34;integer&#34; /&amp;gt;
+
+&amp;lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&amp;gt;
+    &amp;lt;cfset URL.CalendarMonth = Month(now()) /&amp;gt;
+&amp;lt;/cfif&amp;gt;
+
+&amp;lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&amp;gt;
+&amp;lt;div class=&#34;olCalendar&#34;&amp;gt;
+    &amp;lt;ol start=&#34;&amp;lt;cfoutput&amp;gt;#2 - DayOfWeek(VARIABLES.Calendar.StartDate)#&amp;lt;/cfoutput&amp;gt;&#34;&amp;gt;
+        &amp;lt;cfloop from=&#34;1&#34; to=&#34;#DaysInMonth(VARIABLES.Calendar.StartDate)#&#34; index=&#34;iDay&#34;&amp;gt;
+            &amp;lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&amp;gt;
+            &amp;lt;cfif iDay EQ 1&amp;gt;&amp;lt;!--- If it&#39;s the first day, determine how many empty cells we need. ---&amp;gt;
+                &amp;lt;cfoutput&amp;gt;#RepeatString(&#39;&amp;lt;li class=&#34;noDate&#34;&amp;gt;&amp;nbsp;&amp;lt;/li&amp;gt;&#39;, DayOfWeek(VARIABLES.Calendar.StartDate) - 1)#&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+                &amp;lt;cfoutput&amp;gt;&amp;lt;li class=&#34;#LCase(DayOfWeekAsString(DayOfWeek(VARIABLES.Calendar.CurrentDate)))#&#34;&amp;gt;&amp;lt;span title=&#34;#DateFormat(VARIABLES.Calendar.CurrentDate, &#39;mmmm d, yyyy&#39;)#&#34;&amp;gt;#iDay#&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;cfif iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;
+                &amp;lt;cfoutput&amp;gt;#RepeatString(&#39;&amp;lt;li class=&#34;noDate&#34;&amp;gt;&amp;nbsp;&amp;lt;/li&amp;gt;&#39;, 7 - DayOfWeek(VARIABLES.Calendar.CurrentDate))#&amp;lt;/cfoutput&amp;gt;
+            &amp;lt;/cfif&amp;gt;
+        &amp;lt;/cfloop&amp;gt;
+    &amp;lt;/ol&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But, let&#39;s be honest, this version sucks. I think tables are a necessary evil in this regard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;EDIT 12/21/2009&lt;/strong&gt;: Corrected StartDate/CurrentDate mistake with repeating td elements.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamic user-controlled layout in a CMS</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dynamic-user-controlled-layout-in-a-CMS/</link>
+      <pubDate>Sun, 25 May 2008 15:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dynamic-user-controlled-layout-in-a-CMS/</guid>
+      <description>&lt;p&gt;This article is meant to hold some of the thoughts that I&#39;ve been having about allowing a user to control the layout of a page, in particular for use within a content management system (CMS). The system would need to be able to support a user creating templates easily, but hopefully without the use of tables.&lt;/p&gt;
+&lt;p&gt;In the &lt;a rel=&#34;external&#34; href=&#34;http://www.w3.org/TR/css3-layout/&#34;&gt;CSS Advanced Layout Module&lt;/a&gt;, there is a draft specification for Template-based positioning.&lt;/p&gt;
+&lt;p&gt;This uses @, . and letters to specify not only how the content is to appear, but also where the content appears. That is,&amp;nbsp;.&amp;nbsp;are used for whitespace and letters and @ are used for content placeholders.&lt;/p&gt;
+&lt;p&gt;For example, a first page of a newspaper might have the following&amp;nbsp;template (bottom of &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.w3.org/TR/css3-layout/#templates&#34;&gt;3.7&lt;/a&gt;):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;display: &#34;A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&#34; / 5cm&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;.&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&#34; / 0.25cm&lt;br /&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&amp;nbsp; F&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&amp;nbsp; F&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&amp;nbsp; F&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; * 3em * 3em * 3em * 3em *&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This would give a header (A), an article&amp;nbsp;spanning the full&amp;nbsp;left-side of the page (B), two main stories (C and D), and two smaller stories (E and F). The specification also has information about sizing, which you see at the far right and bottom.&lt;/p&gt;
+&lt;p&gt;While I like this, ultimately for the Web you&#39;ll have content that fills it&#39;s slots, usually. So, we could simplify this, I think, by making it as follows:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;display: &#34;A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;.&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&amp;nbsp; .&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&amp;nbsp; F&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In addition to dropping the sizing information, I&#39;ve removed any duplicate row. While it doesn&#39;t immediately give us an indication of what the page will look like, as the first case does, it&#39;s actually pretty close - we still can determine what the content is, and how it spans.&lt;/p&gt;
+&lt;p&gt;However, I&#39;m not sure that this adequately states the layout that is desired. If you examine the image that was used, copied below, you&#39;ll notice something.&lt;/p&gt;
+&lt;p style=&#34;text-align: center&#34;&gt;&lt;img title=&#34;W3C example newspaper layout&#34; src=&#34;http://media.jamesrskemp.com/graphics/w3c_newspaper.png&#34; alt=&#34;W3C example newspaper layout&#34; width=&#34;512&#34; height=&#34;724&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;First, using the far left-side column as our guide, we&#39;ve actually got five columns on this page (look at the very last &#39;line&#39; on the page). In other words, the following line is incorrect.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&amp;nbsp; F&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Instead, this should actually be as follows.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&#34;B&amp;nbsp; .&amp;nbsp; E&amp;nbsp; E&amp;nbsp; .&amp;nbsp; F&amp;nbsp; F&#34;&amp;nbsp;&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Obviously, this would continue on up through all the lines.&lt;/p&gt;
+&lt;p&gt;Also, spacing can be determined via other CSS methods, and should not be a part of the template itself. It seems unnecessary to using periods for spacing, when we&#39;ve already defined content areas.&lt;/p&gt;
+&lt;p&gt;Therefore, I believe we could end up with something like the following, using this system.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;display: &#34;A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&amp;nbsp; A&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&amp;nbsp; C&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&amp;nbsp; D&#34;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &#34;B&amp;nbsp;&amp;nbsp;E&amp;nbsp; E&amp;nbsp; F&amp;nbsp; F&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This states the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Content&amp;nbsp;A should span the entire top of the page.&amp;nbsp;Below this, content B should span the entire left-side of the page, with content C, D, E and F on the right. Content C is displayed first, on its own row, followed by content D, with the same behaviour. Finally, content E and F are displayed, to the left and right, respectively, of the other. Content C and D should be twice as wide as content E and F. Likewise, content E/F should be twice as wide as content B.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To continue, what would need to be parsed is the content within the quotes, and whitespace doesn&#39;t really matter. Therefore, we have the following as the core &#39;code.&#39;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A&amp;nbsp;A&amp;nbsp;A&amp;nbsp;A&amp;nbsp;A&lt;br /&gt;B&amp;nbsp;C&amp;nbsp;C&amp;nbsp;C&amp;nbsp;C&lt;br /&gt;B&amp;nbsp;D&amp;nbsp;D&amp;nbsp;D&amp;nbsp;D&lt;br /&gt;B&amp;nbsp;E&amp;nbsp;E F F&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To the computer, assuming no more than 26 elements on a page (or 52 if lowercase characters were determined to be different than uppercase), this would be the same:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AAAAA&lt;br /&gt;BCCCC&lt;br /&gt;BDDDD&lt;br /&gt;BEEFF&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, since spacing helps us, and to allow for the most content, we&#39;ll leave spaces in. (This could also allow a greater number of &#39;blocks&#39; to be added to a page, even excluding allowing uppercase to be different than lowercase. For example, allowing&amp;nbsp;AA and AB to be used.)&lt;/p&gt;
+&lt;p&gt;Getting back on track, I believe there&#39;s a different, and better, way to call out this content.&lt;/p&gt;
+&lt;p&gt;As stated above, we basically have a 5-column layout, of &lt;em&gt;x&lt;/em&gt; width. The layout contains six elements of variable height.&lt;/p&gt;
+&lt;p&gt;The first row consists of one block spanning all five columns.&lt;/p&gt;
+&lt;p&gt;The second row consists of two blocks, one spanning one column, another spanning four.&lt;/p&gt;
+&lt;p&gt;The third row also consists of two blocks, one continuing to span one column, another spanning four.&lt;/p&gt;
+&lt;p&gt;Finally, the fourth row consists of three elements. The first column continues the element from the previous two rows, while the next, and last, two span two columns each.&lt;/p&gt;
+&lt;p&gt;Using only numbers, we have a layout something like the following.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;br /&gt;1 4&lt;br /&gt;1 4&lt;br /&gt;1 2 2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, based upon this layout alone, we don&#39;t know what content belongs where. Also, we can&#39;t clearly see that there is a left-side column that spans three rows. Using the following, however, might suggest that.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;br /&gt;1 4&lt;br /&gt;0 4&lt;br /&gt;0 2 2&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I use a 0 here because while there is an element there, it is not the first instance, or primary location, of that element. This system instantly gives us access to not only the placement of elements, in a general way, but also how many &#39;blocks&#39; the content consists of.&lt;/p&gt;
+&lt;p&gt;If we&amp;nbsp;were to&amp;nbsp;create a layout for the standard three-column template, with a full header and footer, we&#39;d have something like the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3&lt;br /&gt;1 1 1&lt;br /&gt;3&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here,&amp;nbsp;while the blocks are designed by the template to be the same size, we could use CSS to&amp;nbsp;effectively make the middle column much larger,&amp;nbsp;instead of using the following:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;br /&gt;1 3 1&lt;br /&gt;5&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Using these same CSS techniques,&amp;nbsp;a standard two-column interface:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2&lt;br /&gt;1 1&lt;br /&gt;2&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Perhaps in the three-column interface we no longer want the footer to display under the left-side column?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3&lt;br /&gt;1 1 1&lt;br /&gt;0 2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Don&#39;t display it under the right column either?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;3&lt;br /&gt;1 1 1&lt;br /&gt;0 1 0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now what if we want to put the left-side column up within the header, and put back our footer to span the full length of the bottom of the page?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1 2&lt;br /&gt;0 1 1&lt;br /&gt;3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;How about on the right-side instead?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2 1&lt;br /&gt;1 1 0&lt;br /&gt;3&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Since the first row would always contain the number of columns, we could simply do the necessary math to determine the number of core columns. If there is more than one number, you simply add all numbers together.&lt;/p&gt;
+&lt;p&gt;This also allows you to put&amp;nbsp;the entire&amp;nbsp;layouts information in one string. Using our last example, we&amp;nbsp;could have something like &#34;2 1; 1 1 0; 3;&#34;&amp;nbsp;(adding semi-colons at the end of every line, even the ending one). Or, &#34;2 1, 1 1 0, 3,&#34; or any other character we may desire as a standard.&lt;/p&gt;
+&lt;p&gt;However, there&#39;s one thing that we may have missed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AAAAA&lt;br /&gt;BCCCC&lt;br /&gt;BDDDD&lt;br /&gt;BEEFF&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;br /&gt;1 4&lt;br /&gt;0 4&lt;br /&gt;0 2 2&amp;nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As you can see, there&#39;s no easy way to link elements up with the content that they contain. What if we wanted to switch the second and third rows? With the first instance, that would be done, while in the second, it would need to be done outside of the core template.&lt;/p&gt;
+&lt;p&gt;On the one hand, the &#39;separate content from display&#39; hand, that&#39;s okay. On the other hand, there&#39;s something to be said about keeping these things together.&lt;/p&gt;
+&lt;p&gt;Using the W3C proposal as a guideline, we could solve this by adding characters to our numbers.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5:A&lt;br /&gt;1:B 4:C&lt;br /&gt;0:B 4:D&lt;br /&gt;0:B 2:E 2:F&lt;/p&gt;
+&lt;p&gt;5:A&amp;nbsp;, 1:B 4:C&amp;nbsp;,&amp;nbsp;0:B 4:D , 0:B 2:E 2:F ,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It&#39;s questionable whether it&#39;s necessary to have 0:B instead of 0. However this would make it easier to add CSS without the use of another parser, such as a CMS (which would read/write this, as well as allow classes and ids to be assigned to the elements).&lt;/p&gt;
+&lt;p&gt;Also, the colons could change to something more applicable, such as a . or # (# would be similar to the existing CSS practice of using this for id declarations in CSS).&lt;/p&gt;
+&lt;p&gt;Thoughts? Are there instances where this wouldn&#39;t work? Would this be a suitable way for someone to learn how to create a layout, or is it at least easier than the W3C proposal ( :) )?&lt;/p&gt;
+&lt;p&gt;My next step with this will be to determine if&amp;nbsp;a solution could be created that would read a string formatted like this, and then create a page based upon it, probably using tables before moving onto CSS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Found: 40 free HTML/CSS templates</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Found-40-free-HTMLCSS-templates/</link>
+      <pubDate>Fri, 24 Mar 2006 20:01:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Found-40-free-HTMLCSS-templates/</guid>
+      <description>&lt;p&gt;Alessandro Fulciniti, along with an unnamed number of people, have create 40 CSS-based templates, free for download, available at &lt;a rel=&#34;nofollow&#34; href=&#34;http://blog.html.it/layoutgala/&#34; target=&#34;_blank&#34;&gt;http://blog.html.it/layoutgala/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;They&#39;ve got near every possible layout that I can think of, along with a number more. Stick on a stylesheet, and you&#39;re golden.&lt;/p&gt;
+&lt;p&gt;The only real problem I see is that navigation items should, according to some sources, come before the main content area. After all if the CSS disappears, then you&#39;ll still want navigation to come first.&lt;/p&gt;
+&lt;p&gt;But will you really? After all, search bots check the beginning of pages first for content, and work their way down. And, people are probably coming to your site via search engines, so they&#39;ll be interested in the content, before they take a look at the rest of your site.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

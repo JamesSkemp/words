@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hp on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/hp/</link>
+    <description>Recent content in Hp on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Oct 2008 11:50:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/hp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Connecting to a WRT54G with a HP iPAQ 110</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Connecting-to-a-WRT54G-with-a-HP-iPAQ-110/</link>
+      <pubDate>Sat, 04 Oct 2008 11:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Connecting-to-a-WRT54G-with-a-HP-iPAQ-110/</guid>
+      <description>&lt;p&gt;
+After playing around with settings, I was finally able to access my wireless network with my HP iPAQ 110. Here&amp;#39;s what I did. 
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;Under Wireless &amp;gt; Wireless Security, set the model to WEP, setting a passphrase and generating keys.&lt;/li&gt;
+    &lt;li&gt;Make sure your wireless is enabled.&lt;/li&gt;
+    &lt;li&gt;Once the network shows in your iPAQ, set the Authentication to Shared and the Data Encryption to WEP.&lt;/li&gt;
+    &lt;li&gt;Select the key index and enter the key equal to the Default Transmit Key from the WRT54G.&lt;/li&gt;
+    &lt;li&gt;Check &amp;quot;Use IEEE 802.1x network access control&amp;quot;, and an EAP type of PEAP.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+That&amp;#39;s it - you should be able to connect now. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: HP GL313AA#ABA 2-piece USB Speakers</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-HP-GL313AA-ABA-2-piece-USB-Speakers/</link>
+      <pubDate>Sat, 12 Jul 2008 23:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-HP-GL313AA-ABA-2-piece-USB-Speakers/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+The following is a review&amp;nbsp;for HP Multimedia Speakers, specifically &lt;a href=&#34;http://www.amazon.com/gp/product/B000VEAZ8M?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;HP GL313AA#ABA 2-piece USB Speakers&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+I don&amp;#39;t play PC games any more, and I watch (most) movies on my nice television. So, what I really wanted from these little speakers was to be able to listen to iTunes every once in a while, and watch assorted videos online (YouTube, Video.Google, and even Netflix every once in a while).
+&lt;/p&gt;
+&lt;p&gt;
+These speakers are perfect for exactly that.
+&lt;/p&gt;
+&lt;p&gt;
+The small size means that they don&amp;#39;t take up too much real-estate on my desk (about 3.5 inches wide and 3 inches deep), but they&amp;#39;re nice enough that I can enjoy listening to music or videos.
+&lt;/p&gt;
+&lt;p&gt;
+And, with USB, that means not having to worry about a lot of cords.
+&lt;/p&gt;
+&lt;p&gt;
+Overall, I&amp;#39;ve been very happy with this purchase.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Playstation 3 and the HP Pocket Media Drive</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Playstation-3-and-the-HP-Pocket-Media-Drive/</link>
+      <pubDate>Sun, 30 Mar 2008 15:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Playstation-3-and-the-HP-Pocket-Media-Drive/</guid>
+      <description>&lt;p&gt;
+When I purchased my new HP a6360t, I also added in a HP Pocket Media Drive Bay, which allows me to directly connect in a HP Pocket Media Drive. 
+&lt;/p&gt;
+&lt;p&gt;
+In turn I&amp;#39;m easily able to add 160GB or 250GB of additional drive space, whenever I need it, to store various media (documents, music, photos, videos, etcetera). 
+&lt;/p&gt;
+&lt;p&gt;
+One thing I was curious about was whether the drive I had, a &lt;a href=&#34;http://www.amazon.com/gp/product/B000UDCFVY?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000UDCFVY&#34; target=&#34;_blank&#34;&gt;HP 160GB Pocket Media Drive&lt;/a&gt;, could be directly connected to my Playstation 3. 
+&lt;/p&gt;
+&lt;p&gt;
+Unfortunately, it looks like they cannot be directly connected. 
+&lt;/p&gt;
+&lt;p&gt;
+If you attempt to do so, the drive appears to not have enough power to fully spin up. The front drive light flashes a couple of times while the drive spins, but then both stop, only to start back up in a few moments. Repeat.
+&lt;/p&gt;
+&lt;p&gt;
+While it&amp;#39;s unfortunate that this doesn&amp;#39;t work, I suppose it could be expected. But, it is a little unfortunate. Perhaps with an external power supply, or if both cables were plugged in, things might function ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HP w2207h audio</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/HP-w2207h-audio/</link>
+      <pubDate>Sat, 08 Mar 2008 13:45:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/HP-w2207h-audio/</guid>
+      <description>&lt;p&gt;
+Tip: If using the HDMI cable to connect your HP w2207h to a computer (such as the HP Pavilion a6360t), you do not need to connect the monitor to the computer&amp;#39;s audio card. 
+&lt;/p&gt;
+&lt;p&gt;
+Duh. 
+&lt;/p&gt;
+&lt;p&gt;
+If you switch this, you may also need to close out of programs,&amp;nbsp;such as Internet Explorer 7,&amp;nbsp;in order for them to use the correct audio device. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HP Pavilion a6360t clean-up</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</link>
+      <pubDate>Tue, 04 Mar 2008 20:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</guid>
+      <description>&lt;p&gt;
+With a new HP Pavilion a6360t, a number of things needed to be done to clean the machine up, from it&amp;#39;s default factory setup. 
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstall Norton Internet Security (there&amp;#39;s an uninstall option through the program&amp;#39;s Start menu). After a restart, I still needed to go back and delete the empty directory from the Start menu. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstall My HP Games through the Control Panel. Each one needed to be selected individually. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstalled Yahoo! Toolbar through the Control Panel. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Went into the preferences for the HP Advisor and unchecked &amp;quot;Animate application state transitions,&amp;quot; &amp;quot;Show notification balloon for docking transition&amp;quot; and &amp;quot;Show notification balloon for system tray transition.&amp;quot; Changed Default view from &amp;quot;Mini-dock&amp;quot; to &amp;quot;System Tray&amp;quot;. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Deleted the following icons from the desktop; &amp;quot;eBay,&amp;quot; &amp;quot;Internet &amp;amp; Digital Services,&amp;quot; &amp;quot;MSN,&amp;quot; &amp;quot;Snapfish Photos - First 25 Prints Free,&amp;quot; &amp;quot;Try Microsoft Office for 60 days.&amp;quot; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Opened IE and turned off automatic phishing filter. Added Google as a search provider, made it my default, and deleted Ask.com and Yahoo! Search. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Removed all home pages from IE. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Downloaded AVG 7.5 Free, and installed it. Removed AVG shortcut from desktop. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Switched to &amp;#39;watching&amp;#39; NCIS. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Removed HP Advisor toolbar from taskbar. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Changed Windows Update to &amp;quot;Check for updates but let me choose whether to download and install them.&amp;quot; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    As of now, there are 59 processes. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstalled Snapfish Picture Mover. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Deleted &amp;#39;eBay&amp;#39; and &amp;#39;Snapfish Photos - First 25 Prints Free&amp;#39; shortcuts from Start menu. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Added CPU Meter gadget to Sidebar, and&amp;nbsp;closed the Feed Headlines gadget. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Installed HP Pocket Media Drive (160GB) and restarted computer. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Unchecked &amp;quot;Launch HP Advisor automatically on start-up&amp;quot; since it keeps opening a dock window. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Creating a backup set of DVDs (3 needed) to bring this machine back to it&amp;#39;s factory condition. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HP media drives - pocket versus personal</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/HP-media-drives-pocket-versus-personal/</link>
+      <pubDate>Tue, 19 Feb 2008 22:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/HP-media-drives-pocket-versus-personal/</guid>
+      <description>&lt;p&gt;
+Hewlett-Packard (HP) offers a couple of different media drives for sale. These include the HP Personal Media Drives, and HP Pocket Media Drives. Unfortunately, based solely on their site, there&amp;#39;s no clear indication of which drive offers exactly what. 
+&lt;/p&gt;
+&lt;p&gt;
+In order to determine which is which, I ended up consulting both the HP site, and Amazon.com. 
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+I did take a look at BestBuy.com, but it seems they don&amp;#39;t sell these drives. I&amp;#39;m not sure what to make of that. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;A newer computer&lt;/h3&gt;
+&lt;p&gt;
+Since I&amp;#39;ve receive a tax refund in the next two weeks, I&amp;#39;ve been looking at purchasing a computer solely for business-related purposes. My current HP Pavilion a620n has served me rather well, but I purchased it shortly after I graduated from college, so it ended up with a deal of software from that period. 
+&lt;/p&gt;
+&lt;p&gt;
+While looking for a newer computer, I took a look at HP&amp;#39;s media drives. The model of computer I was looking at had the option to include the HP Pocket Media Drive bay. I&amp;#39;ve seen these before, so I started digging into it further, which lead me to the current question. 
+&lt;/p&gt;
+&lt;p&gt;
+From what I can tell, newer HP Pavilion&amp;#39;s offer the HP Pocket Media Drive bay - I haven&amp;#39;t seen an HP Personal Media Drive bay. 
+&lt;/p&gt;
+&lt;p&gt;
+Also, looking at support documentation, it seems that the HP Pocket Media Drive does not require a separate power supply, while the Personal Media Drive does. 
+&lt;/p&gt;
+&lt;h3&gt;Amazon.com&lt;/h3&gt;
+&lt;p&gt;
+The next question, since HP search wasn&amp;#39;t showing many results, save for the &lt;a rel=&#34;nofollow&#34; href=&#34;http://h71036.www7.hp.com/hho/cache/303356-0-0-225-121.html&#34; target=&#34;_blank&#34;&gt;HP Personal Media Drive&lt;/a&gt;, was to check Amazon.com. 
+&lt;/p&gt;
+&lt;p&gt;
+Luckily, Amazon offered a bit more help. 
+&lt;/p&gt;
+&lt;p&gt;
+A quick search turned up the following. 
+&lt;/p&gt;
+&lt;h4&gt;HP Pocket Media Drive&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B000UDCFVY?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000UDCFVY&#34; target=&#34;_blank&#34;&gt;HP PD1600 Pocket Media Drive 160 GB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;HP Personal Media Drive&lt;/h4&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B000IN09BO?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000IN09BO&#34; target=&#34;_blank&#34;&gt;HP HD1600S Personal Media Drive 160GB&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B000IN0978?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000IN0978&#34; target=&#34;_blank&#34;&gt;HP HD3000S Personal Media Drive 300GB&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B000IMYIBM?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000IMYIBM&#34; target=&#34;_blank&#34;&gt;HP HD5000S Personal Media Drive 500GB&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/B000UD6E48?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000UD6E48&#34; target=&#34;_blank&#34;&gt;HP HD7500S Personal Media Drive 750GB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+First, the 160 GB Pocket drive is $20 more than the 160 GB Personal drive. The Personal drives are also larger in size than the Pocket drives. 
+&lt;/p&gt;
+&lt;p&gt;
+Looking at the date the products were first available on Amazon, the 160, 300, and 500 GB Personal Media Drives were made available back in October 2001. On the other hand, the 160 GB Pocket and 750 GB Personal Media Drives were available in August 2007. 
+&lt;/p&gt;
+&lt;h3&gt;Conclusions&lt;/h3&gt;
+&lt;p&gt;
+Based not only on the Amazon listing dates, but also the current HP availability on new computers, my (educated) guess is that the HP Pocket Media Drives are the new wave of HP Media Drives. 
+&lt;/p&gt;
+&lt;p&gt;
+However, HP seems to be supporting newer models of the HP Personal Media Drives, as evident from the &lt;a href=&#34;http://www.amazon.com/gp/product/B000UD6E48?ie=UTF8&amp;amp;tag=strivinglifen-20&amp;amp;linkCode=as2&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B000UD6E48&#34; target=&#34;_blank&#34;&gt;750 GB model&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+While Amazon.com does not offer it, HP.com does sell a 250 GB model of the HP Pocket Media Drive. This suggests also that the Pocket Media Drives are of a newer make, as I would expect Amazon to have products that HP does not, since the former is more likely to have stock in older products (not to say that Amazon isn&amp;#39;t up-to-date, but rather that they cover a large variety of products). 
+&lt;/p&gt;
+&lt;p&gt;
+Thankfully, both the HP Pocket Media Drives and HP Personal Media Drives offer USB support, which means that even if you don&amp;#39;t have a bay, you can still benefit from this technology. And, based upon Amazon reviews, these are pretty solid products. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

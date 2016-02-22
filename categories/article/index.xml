@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Article on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/article/</link>
+    <description>Recent content in Article on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Apr 2011 19:43:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/article/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTML5 / LocalStorage Web application manager tool</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/HTML5-LocalStorage-Web-application-manager-tool/</link>
+      <pubDate>Sat, 02 Apr 2011 19:43:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/HTML5-LocalStorage-Web-application-manager-tool/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34;&gt;previously mentioned&lt;/a&gt; I&#39;ve been spending a good amount of time looking at HTML5/local storage in my free time.&lt;/p&gt;
+&lt;p&gt;For testing purposes, I ended up putting a number of items within &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;my video games offline application&lt;/a&gt;, which is fine, but results in some extraneous information on the page.&lt;/p&gt;
+&lt;p&gt;To clean this up, as well as to allow for additional functionality, I&#39;ve gone ahead and created a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/AppManager.html&#34;&gt;Web application manager&lt;/a&gt; for my media.jamesrskemp.com Web site.&lt;/p&gt;
+&lt;p&gt;It has a pretty simple interface, and still requires some work, but I&#39;m ultimately pretty happy with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting feature with parsing XML with jQuery on Safari</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
+&lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
+&lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;My main intention is to make this available on my iPod Touch, so I was a bit dismayed when I found that the listing didn&#39;t display the title of the game. Everything else displayed just fine, but not the titles. Naturally, after some searching about I posted my question to Stack Overflow - &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/5427259/xmldocument-via-jquery-ajax-call-stored-as-string-in-localstorage-results-in-sa&#34;&gt;XMLDocument (via jQuery ajax call) stored as string in localStorage results in Safari not finding title elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After further research, it looks like I was missing a parseXML call, which results in the data correctly being pulled/displayed in Safari.&lt;/p&gt;
+&lt;p&gt;I decided to do some further testing on this issue, and I believe I&#39;ve discovered why it&#39;s displaying as it is.&lt;/p&gt;
+&lt;h3&gt;The test code&lt;/h3&gt;
+&lt;p&gt;I created a bit of test code - &lt;a href=&#34;http://jamesrskemp.com/testing/jQueryXmlParsing.html&#34;&gt;jQuery XML parsing&lt;/a&gt; - and that I&#39;ve posted below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;jQuery XML Parsing testing - JamesRSkemp.com&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;jQuery XML Parsing testing&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The following test code was created to test Internet Explorer 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), and Safari on iOS 4.3. Read more in &amp;lt;a href=&#34;http://strivinglife.com/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34; rel=&#34;external&#34;&amp;gt;Interesting feature with parsing XML with jQuery on Safari&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+    &amp;lt;noscript&amp;gt;You must have JavaScript enabled to view this test.&amp;lt;/noscript&amp;gt;
+    &amp;lt;div id=&#34;TestOutput&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        // We&#39;ll store an example of an XML file as a string of text.
+        var xmlContent = &#34;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;&amp;lt;Books&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;/Books&amp;gt;&#34;;
+        var testOutputText = &#34;&#34;;
+
+        var simpleCall = $(xmlContent);
+        var simpleParse = $.parseXML(xmlContent);
+        var parse = $($.parseXML(xmlContent));
+
+        try {
+            testOutputText += &#34;Type of $(xmlContent): &#34; + typeof simpleCall + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleCall.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleCall.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleCall === &#39;object&#39;) {
+                for (var prop in simpleCall) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleCall[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleCall.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $.parseXML(xmlContent): &#34; + typeof simpleParse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleParse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleParse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleParse === &#39;object&#39;) {
+                for (var prop in simpleParse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleParse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $($.parseXML(xmlContent)): &#34; + typeof parse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + parse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + parse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof parse === &#39;object&#39;) {
+                for (var prop in parse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            parse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        $(&#39;#TestOutput&#39;).append(testOutputText);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;What the test does&lt;/h3&gt;
+&lt;p&gt;I did a couple of things with this test.&lt;/p&gt;
+&lt;p&gt;First, I created a string with the following XML, and saved it as xmlContent.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;
+&amp;lt;Books&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+&amp;lt;/Books&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I created three variables, storing different things. First, I did $(xmlContent), then $.parseXML(xmlContent), and finally $($.parseXML(xmlContent)).&lt;/p&gt;
+&lt;h3&gt;The results&lt;/h3&gt;
+&lt;p&gt;Interestingly, on IE 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), the first and third tests return the type of &lt;strong&gt;object Object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the second test we have &lt;strong&gt;object Document&lt;/strong&gt; on IE 9, Chrome 10, Safari 5, and Safari on iOS 4.3, and &lt;strong&gt;object XMLDocument&lt;/strong&gt; on Firefox 4 and Opera 11.&lt;/p&gt;
+&lt;p&gt;But for the first test, while we have a length of &lt;em&gt;2&lt;/em&gt; on IE 9, Chrome 10, Firefox 4, and Opera 11, we only have a length of 1 on Safari 5 and Safari on iOS 4.3.&lt;/p&gt;
+&lt;p&gt;The fix, then, is to make sure to use the last of the three, but it seems odd that this wouldn&#39;t work on only one of the tested browsers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Supporting HTML5 manifest files on IIS 7 using Web.config</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
+      <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
+      <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
+&lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
+&lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;
+&amp;lt;configuration&amp;gt;
+    &amp;lt;system.webServer&amp;gt;
+        &amp;lt;staticContent&amp;gt;
+            &amp;lt;remove fileExtension=&#34;.manifest&#34; /&amp;gt;
+            &amp;lt;mimeMap fileExtension=&#34;.manifest&#34; mimeType=&#34;text/cache-manifest&#34; /&amp;gt;
+        &amp;lt;/staticContent&amp;gt;
+    &amp;lt;/system.webServer&amp;gt;
+&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any number of online sites can then be used to confirm that the file is passed with the correct type.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Kinect is selling really well; but is that good for gamers?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
+      <pubDate>Mon, 29 Nov 2010 21:20:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
+      <description>&lt;p&gt;Techmeme had a couple of interesting titles this evening. &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://www.readwriteweb.com/archives/kinect_is_selling_2x_as_fast_as_the_ipad.php&#34;&gt;Kinect is Selling 2X as Fast as the iPad&lt;/a&gt;&#34; and &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://blogs.barrons.com/techtraderdaily/2010/11/29/microsoft-over-25m-kinect-sold/&#34;&gt;Microsoft: Over 2.5M Kinect Sold&lt;/a&gt;.&#34;&lt;/p&gt;
+&lt;p&gt;Even if I thought I had the space for it (I&#39;d have to move furniture every time I wanted to play it in my current apartment) I still wouldn&#39;t pick up the Kinect.&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;First there&#39;s the price. At $150 you might as well buy a PSP (which I did) or a Nintendo DSi. Either of which would solve the second issue, which is a lack of good games for that $150 you threw down.&lt;/p&gt;
+&lt;p&gt;Now there&#39;s a couple of reasons it&#39;s done so well. First, it&#39;s fairly unique as a gaming device. Second, they&#39;ve marketed it to almost no end (I wonder how many devices they just gave away during their blitz?). Third, it&#39;s fast approaching the holiday season, which means parents buying gifts for kids.&lt;/p&gt;
+&lt;p&gt;You also have those who are using the device for purposes other than those intended, but that&#39;s admitedly a very small chunk of that number.&lt;/p&gt;
+&lt;p&gt;But what&#39;s unfortunate is that it&#39;s doing so well, when there&#39;s so few games, which makes me afraid that the price on the device will drop rapidly, simply because it&#39;s become a niche device with no games developed for it, and those that are in line with what you can get on the Wii.&lt;/p&gt;
+&lt;p&gt;In short, games that the older &#39;style&#39; of gamer won&#39;t want to play.&lt;/p&gt;
+&lt;p&gt;Sony&#39;s Move seems like a better technology, as it builds upon the success (and science, if you will) of the Wii&#39;s controller, but moves it to a platform that can deliver much better graphically. Unfortunately, it too suffers from too few launch titles, although seemingly offers more in the next year. And of course a number of existing games have already been updated to now offer Move support (such as Heavy Rain). But, it hasn&#39;t been marketed anywhere near as much as the Kinect has, and it doesn&#39;t draw a big audience because it&#39;s too similar to the Wii.&lt;/p&gt;
+&lt;p&gt;The Wii, which suffers from a large number of shovelware titles, made only to take advantage of the uniqueness of the console&#39;s controller.&lt;/p&gt;
+&lt;p&gt;But perhaps history won&#39;t repeat itself ...&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>23&#43; hours with the PlayStation Portable: Initial thoughts</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/23-plus-hours-with-the-PlayStation-Portable-Initial-thoughts/</link>
+      <pubDate>Mon, 15 Nov 2010 22:33:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/23-plus-hours-with-the-PlayStation-Portable-Initial-thoughts/</guid>
+      <description>&lt;p&gt;On the first of the month I purchased a Sony PlayStation Portable, which was delivered to me on the 4th.&lt;/p&gt;
+&lt;p&gt;Since then I&#39;ve used it, mostly for play, for approximately 24 hours. Approximately 23 hours and 12 minutes of that was with my first game, Crisis Core; Final Fantasy VII, and the rest (which was probably over an hour) was initial setups, as well as the playing of a handful of demos, and Castlevania: Symphony of the Night, which I had purchased for play on my PS3 a long while ago.&lt;/p&gt;
+&lt;p&gt;Below are my thoughts on my purchase, after approximately 24 hours, over the course of approximately 12 days.&lt;/p&gt;
+&lt;h3&gt;The initial debate&lt;/h3&gt;
+&lt;p&gt;Initially &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Oh-why-cant-I-find-a-reason-to-buy-a-current-gen-portable-console.aspx&#34;&gt;I had debated getting a Nintendo DSi or a Sony PlayStation Portable&lt;/a&gt; (henceworth PSP). Granted, I had discussed possibly getting an Apple product as well, but the games for their systems are far too casual for my tastes, and the cost of entry is far too high.&lt;/p&gt;
+&lt;p&gt;So it was down to a DSi, which would be replaced in a handful of months by the Nintendo 3DS, or a PSP, with its questionably-sized U.S. selection. Of course there&#39;s also the PSPgo, which has been getting a bit of slack, but UMDs cannot be used in the device, and not all games are available for download. The PSP 2 seems to have&amp;nbsp;a similar fate, so since the &#39;regular&#39; PSP can play both &#39;types&#39; of games now, the future doesn&#39;t matter as much.&lt;/p&gt;
+&lt;h3&gt;The winner seems clear ...&lt;/h3&gt;
+&lt;p&gt;So given that the 3DS was the product to purchase, if any Nintendo portable device, and the current PSP-3000 device was the Sony product to purchase, you would think the winner would be obvious. Yet, the question then becomes whether the cost to purchase is too high.&lt;/p&gt;
+&lt;h3&gt;Cost of entry (for the PSP)&lt;/h3&gt;
+&lt;p&gt;While the Metal Gear Solid bundle looked good, at it&#39;s $200 price with a game, memory stick, and free movie included, the big question was whether I&#39;d be able to play the game, or if I&#39;d just end up selling it. I&#39;d also be getting a green PSP, when I&#39;d much rather have a black machine.&lt;/p&gt;
+&lt;p&gt;There were bundles as well, but based on how the game was included - a non-standard case - I decided that if anything I&#39;d get the standalone version.&lt;/p&gt;
+&lt;p&gt;In order to play games I&#39;d need to purchase a memory card/stick, and since the PSP doesn&#39;t close in on itself, I&#39;d need some kind of case to protect it during travel.&lt;/p&gt;
+&lt;p&gt;While it could play the handful of games I currently purchased (PSOne Classics) on the PlayStation Network, I&#39;d probably want to pick up a game or two, as well.&lt;/p&gt;
+&lt;p&gt;So that gives us:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001KMRN0M?tag=strivinglifen-20&#34;&gt;PSP 3000 Core Pack&lt;/a&gt; = $169.99&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B0013AX2JM?tag=strivinglifen-20&#34;&gt;4 GB Memory Stick PRO Duo&lt;/a&gt; = $15.87&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000ASBKHE?tag=strivinglifen-20&#34;&gt;PSP Travel Case&lt;/a&gt; = $8.99&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B0014X7SQ6?tag=strivinglifen-20&#34;&gt;Crisis Core: Final Fantasy VII&lt;/a&gt; = $9.96&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000R39IKI?tag=strivinglifen-20&#34;&gt;Brave Story: New Traveler&lt;/a&gt; = $19.99&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first game was an obvious choice, while the second was supposedly one of the best of its kind on the system. Before shipping was included, the total cost was $224.&lt;/p&gt;
+&lt;p&gt;Now a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001T8W2LW?tag=strivinglifen-20&#34;&gt;DSi&lt;/a&gt; would have started at $150, and I wouldn&#39;t have needed memory (already had a spare card) nor a case. I would have purchased &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002I0EH6I?tag=strivinglifen-20&#34;&gt;Dragon Quest IX&lt;/a&gt;, at approximately $35, and would have had enough to purchase an older game, like &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B00136MBHA?tag=strivinglifen-20&#34;&gt;The World Ends With You&lt;/a&gt;, or an Atlus offering.&lt;/p&gt;
+&lt;p&gt;But again, the DSi isn&#39;t an option, so it was more on whether the $225 would be an okay cost. Since I had recently made over $250 selling some of my old possessions, I certainly had the money to spend. So I finally did.&lt;/p&gt;
+&lt;h3&gt;Additional purchases&lt;/h3&gt;
+&lt;p&gt;After my initial purchases I of course decided that I had to pick up a couple more things. The first was an &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002L2X958?tag=strivinglifen-20&#34;&gt;8 GB Pro Duo&lt;/a&gt; memory stick, as the number of games on the PlayStation Network that I decided I may be interested in totals far more than 4 GB of space. With Sony&#39;s Media Go application it would be relatively easy to transfer files between my laptop/network and my PSP, but I may not always been in a situtation where that&#39;s an option. (Although, as I&#39;ll possibly note later, the battery life of the PSP isn&#39;t all that wonderful, so it may be rather likely after all.)&lt;/p&gt;
+&lt;p&gt;I also purchased &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001CM62UM?tag=strivinglifen-20&#34;&gt;Star Ocean: First Departure&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001CM0PJ6?tag=strivinglifen-20&#34;&gt;Star Ocean: Second Evolution&lt;/a&gt;, since both received good reviews. I was tempted to pick up one of the Personas instead, but ...&lt;/p&gt;
+&lt;p&gt;At this point I&#39;ve blown my budget, so this will probably be it until late December or January.&lt;/p&gt;
+&lt;h3&gt;The experience&lt;/h3&gt;
+&lt;p&gt;Thus far I&#39;ve been extremely happy with the PSP experience. The device itself is beautiful, and after my first day of play (a couple of hours) my hands were a bit sore from how I was holding the device, but I&#39;ve since gotten used to it.&lt;/p&gt;
+&lt;p&gt;The sound is great, and thus far I haven&#39;t missed the second, right, analog stick. In fact, I&#39;ve been staying away from the only analog stick, as much as I can. A couple of demos have required the use of it, but since I&#39;ve been playing mostly Crisis Core, which allows for either, it hasn&#39;t got much use.&lt;/p&gt;
+&lt;p&gt;It&#39;s also a little strange not to have additional buttons on the top of the console/controller, but again, I have yet to play any games that required an L2 or R2 button.&lt;/p&gt;
+&lt;p&gt;I had been shutting of the console &#39;incorrectly,&#39; due to not completely reading the manual all the way through. Instead of holding the power button up for 3 seconds I was pushing it up briefly, as you do when you turn it on. I haven&#39;t quite played every day, but haven&#39;t noticed any issue with the battery life because of it. (Supposedly it still takes some charge from the battery.)&lt;/p&gt;
+&lt;p&gt;I&#39;ve also noticed that it&#39;s extremely difficult to tell how much battery is left, unless you exit out of your current game entirely and view the system menu. I&#39;ve only had the console &#39;die&#39; on me once, and that was graceful, in that after plugging it in I was able to continue my game right where I had left off. In fact, that&#39;s actually the really cool thing about the console.&lt;/p&gt;
+&lt;h3&gt;Past portable console experience&lt;/h3&gt;
+&lt;p&gt;At this point I should probably point out that I wanted a GameBoy, and my cousins had one, but we ended up purchasing a Game Gear. As you may be aware, it was much like a PSP, except the batteries didn&#39;t come with the device, probably weren&#39;t rechargeable (not until later were mine), and the battery life sucked.&lt;/p&gt;
+&lt;p&gt;Sadly, I think I ended up tossing the device and the battery pack we had ended up purchasing for it. And I don&#39;t really feel that bad about losing it. (The power pack had bent prongs, if I remember correctly.)&lt;/p&gt;
+&lt;p&gt;Anywho, that&#39;s my experience. I was tempted to purchase one of the Nintendo devices before, but after the 64 (another console I didn&#39;t feel that bad about selling), I just haven&#39;t been a big fan of Nintendo&#39;s consoles. Sure, I bought a Wii, but only after I had purchased a PlayStation 3 and an Xbox 360, and really just for the hardcore games (No More Heroes) and especially the virtual console. (Yes, I could just play the games on my PC, but like music, I want to support the people that made the games possible, whenever I can. That means let me spend my money on it!)&lt;/p&gt;
+&lt;h3&gt;The experience, continued&lt;/h3&gt;
+&lt;p&gt;But really, the battery hasn&#39;t been that bad for more casual play, and I&#39;m sure Crisis Core is taxing the system more than a little.&lt;/p&gt;
+&lt;p&gt;The screen quality is great, as is the video, but I have already got fingerprints on the screen around the main buttons, and my lens cloth doesn&#39;t seem to have done much in the way of cleaning this. I&#39;m also still trying to get the hang of the best place to hold the console so that I can get the best sound (it&#39;s pretty obvious where that sweet spot is) and screen quality, without tiring my arms. (Yeah, that does sound a bit wimpy, but I&#39;ll be the first to admit I don&#39;t lift much in my daily affairs.)&lt;/p&gt;
+&lt;h3&gt;My PlayStation 1 library&lt;/h3&gt;
+&lt;p&gt;The last point worth mentioning is that when&amp;nbsp;I had researched the device I had read that custom firmware exists to allow people the ability to play, for example, SNES games on the PSP. In fact, the device is something of a hacker&#39;s playground, with piracy on the device rather high, and a number of publishers sticking with UMDs because of that. Supposedly the PSP 2 will offer more protection in that regard, but ...&lt;/p&gt;
+&lt;p&gt;What I was really interested in was whether I&#39;d be able to potentially play games in my PlayStation 1 library on the device. From what I can tell it is possible, but it requires custom firmware. It&#39;s truly unfortunate that I can&#39;t play games that I had previously purchased on the device, unless I go custom.&lt;/p&gt;
+&lt;p&gt;As noted above, I like to support creators whenever I can, but if I can&#39;t re-purchased Xenogears, or Parasite Eve 1/2, or Tony Hawk, then I&#39;m extremely tempted to hack my device. And even games that can be purchased, that I already own, like the Final Fantasy series, are difficult for me to justify purchasing again.&lt;/p&gt;
+&lt;p&gt;But, based on my experience with Castlevania: SotN, the PSP may just not be the best console to re-play those games after all, so it may not even make all that much sense to go through the trouble, especially since it&#39;s difficult to know exactly what each custom firmware offering offers.&lt;/p&gt;
+&lt;h3&gt;Trophy support&lt;/h3&gt;
+&lt;p&gt;The one other thing worth mentioning is the PSP&#39;s trophies. Or rather, the lack thereof.&lt;/p&gt;
+&lt;p&gt;At first I was a little disappointed that these weren&#39;t available, but having now put in almost 23 and a half hours with Crisis Core, and having enjoyed every minute of it, I&#39;ve got to admit that I miss not having trophies in games. As I used to do, I&#39;m trying to get close to 100% in the game for the sole reason that I want to, not that I&#39;ll get a trophy or achievement for it. Sadly I have started reading a walkthrough (which I&#39;m going to stop, although at this point I&#39;m pretty close to the end anyways, so hurrah at least for not looking at one for ~85% of the time currently invested), but I did that during my second playthrough of Final Fantasy VII, and I don&#39;t believe there&#39;s any problem with using one to get the full experience out of a game (as opposed to missing one stupid thing and getting upset, like in Final Fantasy X and others).&lt;/p&gt;
+&lt;h3&gt;Current conclusion?&lt;/h3&gt;
+&lt;p&gt;Overall, I&#39;m extremely happy with my decision to purchase a Sony PSP 3000, and given everything would have done it again (perhaps only purchasing&amp;nbsp;two 8 GB cards instead of one 4 GB and one 8 GB). And given that the games I&#39;m really interested in are yet to come (like The Third Birthday), and it&#39;s unlikely the the 3000 will drop in price (excluding possibly around the holidays), I feel this was the perfect time to make my purchase.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sin City / color in movies</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Sin-City-color-in-movies/</link>
+      <pubDate>Sat, 23 Oct 2010 10:42:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Sin-City-color-in-movies/</guid>
+      <description>&lt;p&gt;A thread from Facebook that I don&#39;t want to lose. To be updated as more responses come in.&lt;/p&gt;
+&lt;h3&gt;Initial post&lt;/h3&gt;
+&lt;p&gt;Ah, color in movies. Like the bar scene - &lt;a rel=&#34;external&#34; href=&#34;http://www.youtube.com/watch?v=sbl2LxNZ2eY&#34;&gt;http://www.youtube.com/watch?v=sbl2LxNZ2eY&lt;/a&gt; - in Sin City and near the end of Avalon - &lt;a rel=&#34;external&#34; href=&#34;http://www.youtube.com/watch?v=P28-PPzCI3k&#34;&gt;http://www.youtube.com/watch?v=P28-PPzCI3k&lt;/a&gt; - and the obvious ones in the Wizard of Oz.&lt;/p&gt;
+&lt;p&gt;Any other good examples?&lt;/p&gt;
+&lt;h3&gt;Response from &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com&#34;&gt;Rob Lumley&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You seem to be mentioning when a particular color stands out. Another obvious one is the end of Schindler&#39;s List.&lt;/p&gt;
+&lt;p&gt;Color in general in movies is interesting. I&#39;m always intrigued with the palette of colors a DIrector chooses. For example, Michael Mann&#39;s Heat uses a lot of blues/grays.&lt;/p&gt;
+&lt;h3&gt;My response&lt;/h3&gt;
+&lt;p&gt;I debated putting Wizard of Oz on there, and after more thought, shouldn&#39;t have.&lt;/p&gt;
+&lt;p&gt;With Avalon I think it&#39;s the shock factor. The entire movie, up until then, is in a sepia-like tone. But when she (spoilers) opens the door into the &#39;highest level&#39; and color fills the screen, you realize that the entire movie *is* in color. Of course, I&#39;m sure there&#39;s more to it than just that, but I&#39;ve yet to re-watch it.&lt;/p&gt;
+&lt;p&gt;With Sin City it&#39;s far deeper than that. The movie is mostly in black and white, excluding certain aspects of some people. Marv&#39;s story seems to feature more purely black and white moments, like when he&#39;s in his parole officer&#39;s apartment, where the white of the bandages really seem to pop off the screen.&lt;/p&gt;
+&lt;p&gt;With the above scene, however, you first see color start to bleed into the world. It makes sense a few scenes later when he admits that he loves her. While her love for him may be more hero/savior worship, you know his love transcends that. I think the clearest evidence of that is this scene where we see his world view, of Basin City, change. Color seeps in until he realizes that he&#39;s just put her life at risk. With this the color fades quickly.&lt;/p&gt;
+&lt;p&gt;Like Avalon, Sin City isn&#39;t *shot* in a particular hue, for the characters, the world really is that way.&lt;/p&gt;
+&lt;p&gt;I typically don&#39;t follow individual directors, but Mann is one that I do. (It&#39;s too bad the Miami Vice movie was such a disappointment.) Heat&#39;s a *long* movie, but one that features very little filler. I guess I didn&#39;t pay that much importance to the palette choice (although certainly, based on the Miami Vice series, I knew that was one of the things he uses), just because I find his characters much more interesting. Like Collateral. Features perhaps a bit more filler than it could, but the characters, I think, make up for it.&lt;/p&gt;
+&lt;p&gt;Didn&#39;t watch Schindler&#39;s List in school, so while it&#39;s on my list, I can&#39;t comment on that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extended iTunes Track class for PHP</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</link>
+      <pubDate>Sun, 26 Sep 2010 20:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</guid>
+      <description>&lt;p&gt;In a previous article, I had outlined&amp;nbsp;&lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Track-class-in-C-sharp-and-PHP.aspx&#34;&gt;classes in C# and PHP to handle&amp;nbsp;iTunes Playlists to Xml outputs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Having let it sit on the back burner for long enough, I finally went back to the PHP class and finalized the constructor. I also added two functions for sorting.&lt;/p&gt;
+&lt;p&gt;Below I have the current code for the class (a &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/Track.php.txt&#34;&gt;current version of the Track class for PHP&lt;/a&gt; will always be available elsewhere) and then an example implementation.&lt;/p&gt;
+&lt;h3&gt;Track class for PHP, version 1.0&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php
+/**
+ * Music track object.
+ *
+ * @author James Skemp - http://jamesrskemp.com
+ * @license http://creativecommons.org/licenses/by/3.0/us/
+ * @version 1.0
+ */
+class Track {
+    /**
+     * How long the track is.
+     * @var string
+     */
+    var $Time;
+    /**
+     * Name or title of the track.
+     * @var string
+     */
+    var $Name;
+    /**
+     * Name of the artist.
+     * @var string
+     */
+    var $Artist;
+    /**
+     * Rating assigned to the track by the playlist&#39;s owner.
+     * @var int
+     */
+    var $Rating;
+    /**
+     * Number of times the track has been played.
+     * @var int
+     */
+    var $PlayCount;
+    /**
+     * Date and time the track was last played (and finished).
+     */
+    var $LastPlayed;
+    /**
+     * Name of the album the track is from.
+     * @var string
+     */
+    var $Album;
+    /**
+     * True if the album the track is on is a compilation, false otherwise.
+     * @var bool
+     */
+    var $Compilation;
+    /**
+     * Order this track is on the album.
+     * @var int
+     */
+    var $TrackNumber;
+    /**
+     * Total number of tracks on the album.
+     * @var int
+     */
+    var $TrackCount;
+    /**
+     * The album disc the track is on.
+     * @var int
+     */
+    var $DiscNumber;
+    /**
+     * Total number of discs in the album.
+     * @var int
+     */
+    var $DiscCount;
+    /**
+     * Year the track/album was released/published.
+     * @var int
+     */
+    var $Year;
+    /**
+     * Genre of music the track falls into.
+     * @var string
+     */
+    var $Genre;
+    /**
+     * Date and time the track was added.
+     */
+    var $DateAdded;
+
+    public function  __get($name) {
+        return $this-&amp;gt;$name;
+    }
+
+    public function  __set($name, $value) {
+        $this-&amp;gt;$name = $value;
+    }
+
+    /**
+     * Constructs a Track object from an iTunes Playlists to Xml XML output file.
+     *
+     * @param object $xml
+     */
+    function __construct($xml) {
+        $this-&amp;gt;Name = (string)$xml-&amp;gt;name;
+        $this-&amp;gt;Album = (string)$xml-&amp;gt;album;
+        $this-&amp;gt;Artist = (string)$xml-&amp;gt;artist;
+        $this-&amp;gt;Time = (string)$xml[&#39;time&#39;];
+        $this-&amp;gt;Rating = (int)$xml-&amp;gt;rating;
+        $this-&amp;gt;PlayCount = (int)$xml-&amp;gt;playCount;
+        $this-&amp;gt;LastPlayed = (string)$xml-&amp;gt;lastPlayed;
+        $this-&amp;gt;Compilation = (bool)$xml-&amp;gt;compilation;
+        $this-&amp;gt;TrackNumber = (int)$xml-&amp;gt;trackNumber;
+        $this-&amp;gt;TrackCount = (int)$xml-&amp;gt;trackCount;
+        $this-&amp;gt;DiscNumber = (int)$xml-&amp;gt;discNumber;
+        $this-&amp;gt;DiscCount = (int)$xml-&amp;gt;discCount;
+        $this-&amp;gt;Year = (int)$xml-&amp;gt;year;
+        $this-&amp;gt;Genre = (string)$xml-&amp;gt;genre;
+        $this-&amp;gt;DateAdded = (string)$xml-&amp;gt;dateAdded;
+    }
+
+    /**
+     * Function for sorting Track objects by PlayCount, ascending. Uses LastPlayed for ties.
+     *
+     * @access public
+     * @param Track $x First object to compare.
+     * @param Track $y Second object to compare.
+     * @return integer Standard sorting returns.
+     */
+    public function SortPlayCountAsc($x, $y) {
+        if ($x-&amp;gt;PlayCount == $y-&amp;gt;PlayCount) {
+            if ($x-&amp;gt;LastPlayed == $y-&amp;gt;LastPlayed) {
+                return 0;
+            } else if ($x-&amp;gt;LastPlayed &amp;lt; $y-&amp;gt;LastPlayed) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else if ($x-&amp;gt;PlayCount &amp;lt; $y-&amp;gt;PlayCount) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+
+    /**
+     * Function for sorting Track objects by PlayCount, descending. Uses LastPlayed for ties.
+     *
+     * @access public
+     * @param Track $x First object to compare.
+     * @param Track $y Second object to compare.
+     * @return integer Standard sorting returns.
+     */
+    public function SortPlayCountDesc($x, $y) {
+        if ($x-&amp;gt;PlayCount == $y-&amp;gt;PlayCount) {
+            if ($x-&amp;gt;LastPlayed == $y-&amp;gt;LastPlayed) {
+                return 0;
+            } else if ($x-&amp;gt;LastPlayed &amp;gt; $y-&amp;gt;LastPlayed) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else if ($x-&amp;gt;PlayCount &amp;lt; $y-&amp;gt;PlayCount) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+}
+?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Usage example&lt;/h3&gt;
+&lt;p&gt;Update XML file location as necessary. Note also I&#39;m using the &lt;a rel=&#34;external&#34; href=&#34;http://www.iis.net/download/wincacheforphp&#34;&gt;Windows Cache Extension for PHP&lt;/a&gt;. Modify the initial if statement accordingly if running in an environment that does not have this enabled.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php include_once &#39;Track.php&#39;; ?&amp;gt;
+&amp;lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34;&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;&amp;gt;
+        &amp;lt;title&amp;gt;Track class example&amp;lt;/title&amp;gt;
+        &amp;lt;style type=&#34;text/css&#34;&amp;gt;
+            .error {
+                color:red;
+            }
+        &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            $tracks = array();
+
+            // Determine if we&#39;ve already grabbed this for the user and either pull or populate their cache.
+            if (!wincache_ucache_exists(&#39;tracksData&#39;)) {
+                $xml = @simplexml_load_file(&#39;playlistXml-2010-09-25T15-26-50.xml&#39;);
+
+                if (!$xml) {
+                    echo &#39;&amp;lt;p class=&#34;error&#34;&amp;gt;Could not load XML data.&amp;lt;/p&amp;gt;&#39;;
+                } else {
+                    echo &#34;Start creating array of tracks.&amp;lt;br /&amp;gt;&#34;;
+
+                    foreach($xml-&amp;gt;track as $trackXml) {
+                        $tracks[] = new Track($trackXml);
+                    }
+                    unset($trackXml);
+
+                    echo &#34;Finished creating array of tracks.&amp;lt;br /&amp;gt;&#34;;
+
+                    wincache_ucache_set(&#39;tracksData&#39;, $tracks);
+                }
+                unset($xml);
+            } else {
+                $tracks = wincache_ucache_get(&#39;tracksData&#39;);
+            }
+
+            echo &#34;Count = &#34;.count($tracks).&#34;&amp;lt;br /&amp;gt;&#34;;
+
+            usort($tracks, array(&#39;Track&#39;, &#39;SortPlayCountDesc&#39;));
+
+            echo &#34;&amp;lt;pre&amp;gt;&#34;;
+            //var_dump($tracks[2]);
+            echo &#34;&amp;lt;/pre&amp;gt;&#34;;
+
+            echo &#34;&amp;lt;pre&amp;gt;&#34;;
+            for ($i = 0; $i &amp;lt; 10; $i++) {
+                var_dump($tracks[$i]);
+            }
+            unset($i);
+
+            unset($tracks);
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Memory usage seems a bit high at the end of this script, but ... at this point I&#39;m not sure what the fix is.&lt;/p&gt;
+&lt;p&gt;The fact that PHP doesn&#39;t have an easy way to&amp;nbsp;store data in an&amp;nbsp;application cache (in memory) is rather disappointing, so other than fixing minor bugs, I don&#39;t expect I&#39;ll expand too much on this implementation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iTunes Track class in C# and PHP</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Track-class-in-C-sharp-and-PHP/</link>
+      <pubDate>Wed, 08 Sep 2010 22:25:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
+      <description>&lt;p&gt;I&#39;ve recently begun reading up on PHP again. As I&#39;m most fond of my iTunes Playlists to Xml application, I thought I&#39;d work with that application&#39;s output - XML files with playlist data - as I continued to dig into PHP (instead of stopping now that I know enough to tweak existing code and create new functionality).&lt;/p&gt;
+&lt;p&gt;Here&#39;s a basic Track object in C# and PHP. I&#39;ll of course be elaborating on these as time goes by (and already have code for the C# implementation).&lt;/p&gt;
+&lt;h3&gt;Track class in C#&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;/// &amp;lt;summary&amp;gt;
+/// Music track object.
+/// &amp;lt;/summary&amp;gt;
+public class Track {
+    #region Properties
+    /// &amp;lt;summary&amp;gt;
+    /// How long the track is.
+    /// &amp;lt;/summary&amp;gt;
+    public String Time { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Name or title of the track.
+    /// &amp;lt;/summary&amp;gt;
+    public String Name { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Name of the artist.
+    /// &amp;lt;/summary&amp;gt;
+    public String Artist { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Rating assigned to the track by the playlist&#39;s owner.
+    /// &amp;lt;/summary&amp;gt;
+    public int Rating { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Number of times the track has been played.
+    /// &amp;lt;/summary&amp;gt;
+    public int PlayCount { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Date and time the track was last played (and finished).
+    /// &amp;lt;/summary&amp;gt;
+    public DateTime LastPlayed { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Name of the album the track is from.
+    /// &amp;lt;/summary&amp;gt;
+    public String Album { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// True if the album the track is on is a compilation, false otherwise.
+    /// &amp;lt;/summary&amp;gt;
+    public Boolean Compilation { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Order this track is on the album.
+    /// &amp;lt;/summary&amp;gt;
+    public int TrackNumber { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Total number of tracks on the album.
+    /// &amp;lt;/summary&amp;gt;
+    public int TrackCount { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// The album disc the track is on.
+    /// &amp;lt;/summary&amp;gt;
+    public int DiscNumber { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Total number of discs in the album.
+    /// &amp;lt;/summary&amp;gt;
+    public int DiscCount { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Year the track/album was released/published.
+    /// &amp;lt;/summary&amp;gt;
+    public int Year { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Genre of music the track falls into.
+    /// &amp;lt;/summary&amp;gt;
+    public String Genre { get; set; }
+    /// &amp;lt;summary&amp;gt;
+    /// Date and time the track was added.
+    /// &amp;lt;/summary&amp;gt;
+    public DateTime DateAdded { get; set; }
+    #endregion
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Track class in PHP&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php
+/**
+ * Music track object.
+ *
+ * @author James Skemp
+ */
+class Track {
+    /**
+     * How long the track is.
+     * @var string
+     */
+    var $Time;
+    /**
+     * Name or title of the track.
+     * @var string
+     */
+    var $Name;
+    /**
+     * Name of the artist.
+     * @var string
+     */
+    var $Artist;
+    /**
+     * Rating assigned to the track by the playlist&#39;s owner.
+     * @var int
+     */
+    var $Rating;
+    /**
+     * Number of times the track has been played.
+     * @var int
+     */
+    var $PlayCount;
+    /**
+     * Date and time the track was last played (and finished).
+     */
+    var $LastPlayed;
+    /**
+     * Name of the album the track is from.
+     * @var string
+     */
+    var $Album;
+    /**
+     * True if the album the track is on is a compilation, false otherwise.
+     * @var bool
+     */
+    var $Compilation;
+    /**
+     * Order this track is on the album.
+     * @var int
+     */
+    var $TrackNumber;
+    /**
+     * Total number of tracks on the album.
+     * @var int
+     */
+    var $TrackCount;
+    /**
+     * The album disc the track is on.
+     * @var int
+     */
+    var $DiscNumber;
+    /**
+     * Total number of discs in the album.
+     * @var int
+     */
+    var $DiscCount;
+    /**
+     * Year the track/album was released/published.
+     * @var int
+     */
+    var $Year;
+    /**
+     * Genre of music the track falls into.
+     * @var string
+     */
+    var $Genre;
+    /**
+     * Date and time the track was added.
+     */
+    var $DateAdded;
+    
+    //todo
+}
+?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Comments appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shadow Hearts: Covenant leveling information</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Shadow-Hearts-Covenant-leveling-information/</link>
+      <pubDate>Mon, 06 Sep 2010 10:03:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Shadow-Hearts-Covenant-leveling-information/</guid>
+      <description>&lt;p&gt;As I continue to look through my old files I found leveling information for Shadow Hearts: Covenant, from December 2005 to January (1st)&amp;nbsp;2006.&lt;/p&gt;
+&lt;p&gt;I&#39;ve converted it from an ODS file to XML, and am making it available. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsCovenant.xml&#34;&gt;Shadow Hearts: Covenant leveling guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since I have a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsFromTheNewWorld.xml&#34;&gt;leveling guide for Shadow Hearts: From the New World&lt;/a&gt;&amp;nbsp;(&lt;a href=&#34;http://strivinglife.com/words/post/Shadow-Hearts-From-the-New-World-leveling-information.aspx&#34;&gt;previously written about&lt;/a&gt;), it almost makes sense to go back and play the original Shadow Hearts to get information for that game as well. I&#39;ve been meaning to replay it, so ...&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on the Kinect and Playstation Move</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</link>
+      <pubDate>Sun, 05 Sep 2010 14:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</guid>
+      <description>&lt;p&gt;Laying aside the question of whether these are merely in response to the amount of money being made by the Wii, and whether the technology will be as lasting as history suggests 3D televisions will be, I&#39;ve been thinking about the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BSA298?tag=strivinglifen-20&#34;&gt;Kinect&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002I0J4NE?tag=strivinglifen-20&#34;&gt;Move&lt;/a&gt; recently. Here are my thoughts.&lt;/p&gt;
+&lt;h3&gt;How well will they work?&lt;/h3&gt;
+&lt;p&gt;This is the biggest question. Ever since they were first shown on television there&#39;s been the question of what environments will support the Kinect. For the Move, with it&#39;s big glowing ball, there hasn&#39;t been much of a question, since everything suggests that it&#39;ll be easier to track (especially after learning that the ball consists of LEDs which can change based on the environment).&lt;/p&gt;
+&lt;p&gt;In this regard, unless I can see Kinect working in a Best Buy or GameStop, or at someone&#39;s house, there&#39;s almost no reason I&#39;d pick one of these up. The last thing I need after paying $150 is to find out that it won&#39;t work in my home.&lt;/p&gt;
+&lt;h3&gt;Hardware pricing&lt;/h3&gt;
+&lt;p&gt;Price doesn&#39;t just mean how much you pay out of the gate, but also what you get for hardware.&lt;/p&gt;
+&lt;p&gt;In the case of the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BSA298?tag=strivinglifen-20&#34;&gt;Kinect&lt;/a&gt; you currently pay $150 for the sensor and a game, with no other costs.&lt;/p&gt;
+&lt;p&gt;The &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002I0J4NE?tag=strivinglifen-20&#34;&gt;Playstation Move&lt;/a&gt; costs $100 for a Playstation Eye, main move controller, and game. The navigation controller costs $30, but a Playstation 3 controller can be used instead.&lt;/p&gt;
+&lt;p&gt;Where the Kinect wins out is that with the one sensor you can seemingly support up to two people, while to do the same with the Move you have to purchase another $50 &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002I0J51U?tag=strivinglifen-20&#34;&gt;Move controller&lt;/a&gt;. (At that price it might be easier to purchase another Starter Bundle and sell the game and Eye.)&lt;/p&gt;
+&lt;p&gt;On the other hand, if you already have an Eye and don&#39;t care about the starter game you can just purchase the Move controller. Which of course suggests another benefit, in that the Playstation Eye is hardly new technology, and is already used by a handful of existing games.&lt;/p&gt;
+&lt;p&gt;The complexity of the Microsoft solution is also a little disarming.&lt;/p&gt;
+&lt;h3&gt;Software&lt;/h3&gt;
+&lt;p&gt;For software we have a couple aspects.&lt;/p&gt;
+&lt;p&gt;Less obvious at first is the pricing of the games. Sony seems to be sticking to a lower price of $40 for their games, while Microsoft is sticking to a higher $50 price. Both are less than the $60 games normally go for, and since Wii game prices range from $40 to $50, are on par with Wii games.&lt;/p&gt;
+&lt;p&gt;Microsoft seems to be going more for a playful look with their avatars, in line with the Wii, while Sony is sticking with their hardware abilities and leaning towards realism.&lt;/p&gt;
+&lt;p&gt;We also have a larger number of Move games being announced for release.&lt;/p&gt;
+&lt;h3&gt;Launch date&lt;/h3&gt;
+&lt;p&gt;The Playstation Move is set to release in the middle of September, with the Kinect launching in the beginning of November. Necessarily we have to think about holiday sales. I personally think Microsoft is cutting it a little close in case issues come up. On the other hand, if the Move has issues out of the gate it may result in sales of the Kinect.&lt;/p&gt;
+&lt;p&gt;Honestly, I can&#39;t help but think that the Kinect won&#39;t be able to outsell the Playstation Move now, for more than a month or two at a time, because of that month and a half delay.&lt;/p&gt;
+&lt;h3&gt;Company support&lt;/h3&gt;
+&lt;p&gt;As was recently pointed out to me, the Playstation Move doesn&#39;t seem to be the main focus of Sony marketing, while the same cannot be said on the Microsoft front, who seem to be betting fairly heavy. With Microsoft generally seen as more hardcore/shooter focused, getting a chunk of the casual players would move a good deal of hardware, and a $300 price for their Kinect+console bundle certainly isn&#39;t that bad.&lt;/p&gt;
+&lt;p&gt;On the other hand, Sony is stressing the games, with really only the Move controller the truly new hardware.&lt;/p&gt;
+&lt;h3&gt;How they both trump the Wii&lt;/h3&gt;
+&lt;p&gt;Both the Kinect and Playstation Move trump the Wii, in my opinion.&lt;/p&gt;
+&lt;p&gt;Both consoles support better graphics, but more importantly, both do away with the waste of having to purchase batteries to power the controller. This is obvious for the Kinect, and in the case of the Playstation Move, like their other controllers, it can be charged via USB.&lt;/p&gt;
+&lt;h3&gt;Conclusions&lt;/h3&gt;
+&lt;p&gt;If I had to pick one I&#39;d pick the Playstation Move, without a doubt, because of the above. And if no other reason than that Heavy Rain looks pretty playable with Move controllers, I may actually do so.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XML standards - personal suggestions</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</link>
+      <pubDate>Fri, 03 Sep 2010 16:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</guid>
+      <description>&lt;p&gt;As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.&lt;/p&gt;
+&lt;h3&gt;Elements&lt;/h3&gt;
+&lt;p&gt;In the past I&#39;ve used camel case, but on a recent file used Pascal case instead. I think this was more becauase I&#39;ve started to using Pascal case for public items (variables), and camel case for private items, as that&#39;s fairly standard in development.&lt;/p&gt;
+&lt;p&gt;I generally stay away from underscores, as camel and Pascal case are both perfectly readable, in my opinion.&lt;/p&gt;
+&lt;p&gt;Hyphens seem to be generally frowned upon, due to various language restrictions.&lt;/p&gt;
+&lt;p&gt;Suggestion: camel case.&lt;/p&gt;
+&lt;h3&gt;XSD&lt;/h3&gt;
+&lt;p&gt;The other question was versioning of XSD (or DTD) files. According to&amp;nbsp;the 2004 article &lt;a rel=&#34;external&#34; href=&#34;http://www.ibm.com/developerworks/webservices/library/ws-version/&#34;&gt;Best practices for Web services versioning&lt;/a&gt;, the W3C recommends the company name, a date stamp (year and month), but IBM recommends (in the article) including the day as well.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been slowly moving these documents over to my media.jamesrskemp.com domain, under either a xsd or dtd folder. Looking at the W3C listing of &lt;a rel=&#34;external&#34; href=&#34;http://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;Recommended Doctype Declarations to use in your Web document&lt;/a&gt;, this doesn&#39;t seem to be all that horrible, realizing of course that the are DTD references and not XSD (true XML) references.&lt;/p&gt;
+&lt;p&gt;Another alternative would be xsd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.xsd and dtd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.dtd, but this is basically the same as using a sub-directory before (although it does simplify things).&lt;/p&gt;
+&lt;p&gt;Suggestion: http://&lt;em&gt;whatever&lt;/em&gt;/YYYY/MM/DD/file.ext, with all older items staying where they are.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tic-Tac-Toe using Pascal</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-using-Pascal/</link>
+      <pubDate>Sat, 24 Jul 2010 11:48:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-using-Pascal/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated).&lt;/p&gt;
+&lt;p&gt;This is the code in main.pas, which it seems is the only file really necessary.&lt;/p&gt;
+&lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons&amp;nbsp;Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;pascal&#34;&gt;program TicTacToe (input, output);
+label
+     begingame, picknumber, checkmove, checkforwin, compmove, winner, nobodywon, playagain, illegalmove, compcrash, endgame;
+var
+   playmove, turn, points : integer;
+   place1, place2, place3, place4, place5, place6, place7, place8, place9 : char;
+   currentplayer, ynagain, lastwinner : char;
+begin
+     writeln;
+     writeln(&amp;lsquo;JRSs Tic-Tac-Toe v1.1&amp;rsquo;);
+     writeln(&amp;lsquo;Created by James Skemp - &lt;a href=&#34;http://jamesrskemp.net/&#39;&#34;&gt;http://jamesrskemp.net/&#39;&lt;/a&gt;); {2003.11.09}
+     writeln(&amp;lsquo;Version 1.0: 2003.11.09&amp;rsquo;);
+     writeln(&amp;lsquo;Version 1.1: 2003.11.09&amp;rsquo;);
+     writeln;
+     points := 0;
+     lastwinner := &amp;lsquo;J&amp;rsquo;;
+     begingame:
+     turn := 0;
+     place1 := &amp;lsquo;1&amp;rsquo;;
+     place2 := &amp;lsquo;2&amp;rsquo;;
+     place3 := &amp;lsquo;3&amp;rsquo;;
+     place4 := &amp;lsquo;4&amp;rsquo;;
+     place5 := &amp;lsquo;5&amp;rsquo;;
+     place6 := &amp;lsquo;6&amp;rsquo;;
+     place7 := &amp;lsquo;7&amp;rsquo;;
+     place8 := &amp;lsquo;8&amp;rsquo;;
+     place9 := &amp;lsquo;9&amp;rsquo;;
+     if (lastwinner = &amp;lsquo;J&amp;rsquo;) then goto picknumber;
+     if (lastwinner = &amp;lsquo;X&amp;rsquo;) then goto compmove;
+     if ((lastwinner = &amp;lsquo;O&amp;rsquo;) and (points &amp;lt;10)) then goto picknumber;
+     if ((lastwinner = &amp;lsquo;O&amp;rsquo;) and (points &amp;gt;11)) then goto compmove;
+     picknumber:
+     currentplayer := &amp;lsquo;X&amp;rsquo;;
+     writeln;
+     writeln;
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place1,&amp;rsquo; | &amp;lsquo;,place2,&amp;rsquo; | &amp;lsquo;,place3,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;  &amp;mdash;+&amp;mdash;+&amp;mdash;&amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place4,&amp;rsquo; | &amp;lsquo;,place5,&amp;rsquo; | &amp;lsquo;,place6,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;  &amp;mdash;+&amp;mdash;+&amp;mdash;&amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place7,&amp;rsquo; | &amp;lsquo;,place8,&amp;rsquo; | &amp;lsquo;,place9,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln;
+     writeln(&amp;lsquo;Pick a number that you would like to take (you are &amp;ldquo;X&amp;rdquo;). &amp;lsquo;);
+     readln(playmove);
+     checkmove:
+     if ((playmove &amp;gt; 9) and (playmove &amp;lt;&amp;gt; 33)) or (playmove &amp;lt; 1) then
+      begin
+       writeln(&amp;lsquo;Whoops.  That&amp;rdquo;s an illegal move, try again.&amp;rsquo;);
+       writeln;
+       goto picknumber;
+      end;
+     if (playmove = 1) and (place1 = &amp;lsquo;1&amp;rsquo;) then
+      begin
+       place1 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 2) and (place2 = &amp;lsquo;2&amp;rsquo;) then
+      begin
+       place2 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 3) and (place3 = &amp;lsquo;3&amp;rsquo;) then
+      begin
+       place3 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 4) and (place4 = &amp;lsquo;4&amp;rsquo;) then
+      begin
+       place4 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 5) and (place5 = &amp;lsquo;5&amp;rsquo;) then
+      begin
+       place5 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 6) and (place6 = &amp;lsquo;6&amp;rsquo;) then
+      begin
+       place6 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 7) and (place7 = &amp;lsquo;7&amp;rsquo;) then
+      begin
+       place7 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 8) and (place8 = &amp;lsquo;8&amp;rsquo;) then
+      begin
+       place8 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 9) and (place9 = &amp;lsquo;9&amp;rsquo;) then
+      begin
+       place9 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 33) then
+      begin
+       writeln(&amp;lsquo;Hi James&amp;rsquo;);
+       goto playagain;
+      end
+     else
+      goto illegalmove;
+     compmove:
+     currentplayer := &amp;lsquo;O&amp;rsquo;;
+     writeln;
+     writeln(&amp;lsquo;Computer&amp;rdquo;s move &amp;lsquo;);
+     {Check for Horizontal win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place2 = &amp;lsquo;O&amp;rsquo;) and (place3 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place2 = &amp;lsquo;2&amp;rsquo;) and (place3 = &amp;lsquo;O&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place2 = &amp;lsquo;O&amp;rsquo;) and (place3 = &amp;lsquo;3&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;4&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;7&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Vertical win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place4 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place4 = &amp;lsquo;4&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place4 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;2&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for diagonal win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Horizontal block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place2 = &amp;lsquo;X&amp;rsquo;) and (place3 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place2 = &amp;lsquo;2&amp;rsquo;) and (place3 = &amp;lsquo;X&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place2 = &amp;lsquo;X&amp;rsquo;) and (place3 = &amp;lsquo;3&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;4&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;7&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Vertical block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place4 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place4 = &amp;lsquo;4&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place4 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;2&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for diagonal block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if (turn = 0) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for favorite turn 2 places}
+     if ((turn = 2) and (place1 = &amp;lsquo;X&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((turn = 2) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((turn = 2) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Go for place 5 if open}
+     if (place5 = &amp;lsquo;5&amp;rsquo;) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for stupid moves}
+     {&amp;hellip;}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; if (place3 = &#39;3&#39;) then begin place3 := &#39;O&#39;; goto checkforwin; end;
+ if (place9 = &#39;9&#39;) then begin place9 := &#39;O&#39;; goto checkforwin; end;
+ if (place1 = &#39;1&#39;) then begin place1 := &#39;O&#39;; goto checkforwin; end;
+ if (place7 = &#39;7&#39;) then begin place7 := &#39;O&#39;; goto checkforwin; end;
+ if (place4 = &#39;4&#39;) then begin place4 := &#39;O&#39;; goto checkforwin; end;
+ if (place2 = &#39;2&#39;) then begin place2 := &#39;O&#39;; goto checkforwin; end;
+ if (place6 = &#39;6&#39;) then begin place6 := &#39;O&#39;; goto checkforwin; end;
+ if (place8 = &#39;8&#39;) then begin place8 := &#39;O&#39;; goto checkforwin; end;
+
+ goto compcrash;
+
+ checkforwin:
+  turn := turn + 1;
+  if ((place1 = place2) and (place1 = place3)) then goto winner;
+  if ((place1 = place4) and (place1 = place7)) then goto winner;
+  if ((place1 = place5) and (place1 = place9)) then goto winner;
+  if ((place2 = place5) and (place2 = place8)) then goto winner;
+  if ((place3 = place5) and (place3 = place7)) then goto winner;
+  if ((place3 = place6) and (place3 = place9)) then goto winner;
+  if ((place4 = place5) and (place4 = place6)) then goto winner;
+  if ((place7 = place8) and (place7 = place9)) then goto winner;
+
+  if turn = 9 then goto nobodywon;
+ if currentplayer = &#39;X&#39; then
+  begin
+   currentplayer := &#39;O&#39;;
+   goto compmove;
+  end
+ else
+  begin
+   currentplayer :=&#39;X&#39;;
+   goto picknumber;
+  end;
+
+ winner:
+  writeln;
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place1,&#39; | &#39;,place2,&#39; | &#39;,place3,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place4,&#39; | &#39;,place5,&#39; | &#39;,place6,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place7,&#39; | &#39;,place8,&#39; | &#39;,place9,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln;
+  if currentplayer = &#39;X&#39; then
+   begin
+    writeln;
+    writeln(&#39;You&#39;&#39;ve won!  Congrats :)&#39;);
+    points := points + 1;
+    lastwinner := &#39;X&#39;;
+    goto playagain;
+   end
+  else
+   begin
+    writeln;
+    writeln(&#39;Sorry :( but you have lost...&#39;);
+    points := points - 1;
+    lastwinner := &#39;O&#39;;
+    goto playagain;
+   end;
+
+ nobodywon:
+  writeln;
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place1,&#39; | &#39;,place2,&#39; | &#39;,place3,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place4,&#39; | &#39;,place5,&#39; | &#39;,place6,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place7,&#39; | &#39;,place8,&#39; | &#39;,place9,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln;
+ writeln(&#39;Sorry, nobody won this game.&#39;);
+ points := points + 0;
+ lastwinner := lastwinner;
+ goto playagain;
+
+ playagain:
+ writeln;
+ writeln(&#39;Would you like to play again? Y or 1 for Yes, N or 0 (zero) for No.&#39;);
+ read(ynagain);
+ if ((ynagain = &#39;Y&#39;) or (ynagain = &#39;y&#39;) or (ynagain = &#39;1&#39;)) then goto begingame else goto endgame;
+
+ illegalmove:
+ writeln(&#39;Sorry, that&#39;&#39;s an illegal move.&#39;);
+ goto picknumber;
+
+ compcrash:
+ writeln(&#39;Ekk! The computer went crazy and started shooting! You died...&#39;);
+ points := points - 1;
+ goto playagain;
+
+ endgame:
+ writeln(&#39;Your ending points were: &#39;,points);
+ writeln(&#39;Press Enter or Return to quit&#39;);
+ readln;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;end.
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dead? The digital download is barely out of its teens</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
+      <pubDate>Sat, 22 May 2010 09:47:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
+      <description>&lt;p&gt;Yesterday Slate posted an article by Farhad Manjoo titled &lt;a rel=&#34;external&#34; href=&#34;http://www.slate.com/id/2254532/pagenum/all/&#34;&gt;The Digital Download Is Dead: How Google&#39;s music-streaming venture will change the gadget and entertainment worlds forever&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After first, rightly, attacking Apple&#39;s iTunes and iPod (and related) platforms as being slow and unwieldy, especially on the predominate operating system Windows (not even mentioning Linux), and overall behind on the times, Farhad moves us from syncing our music collections out to the cloud. Which isn&#39;t much of a surprise given that, despite some rather large issues, the cloud has been &#39;in&#39; for a couple of years now. But even more surprising Farhad argues at the end of the article that &#34;[i]n the future, not only will you not get a CD when you buy an album, you won&#39;t even get a digital file.&#34;&lt;/p&gt;
+&lt;p&gt;But there&#39;s an elephant in the room. A rather large one, taking up every available inch of space. Namely the global music industry.&lt;/p&gt;
+&lt;p&gt;At the moment I&#39;m listening to X Japan. If I do a search for this band I find the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon MP3: Two albums available - Blue Blood and Jealousy.&lt;/li&gt;
+&lt;li&gt;Amazon music: 236 results, seemingly with most of their releases covered (but I wasn&#39;t about to page through all those results). Of special note is the magical word &#39;Import&#39; next to the majority of the albums.&lt;/li&gt;
+&lt;li&gt;iTunes: Same two albums as Amazon MP3 and the I.V. Single.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s better examples, I just happened to be listening to X Japan at the moment. Go ahead and look up some popular European bands and see if you can find their music on Amazon or iTunes, or any one of the other online sellers of music (for the United States). Chances are you&#39;ll find a good deal of music that you can&#39;t purchase, unless you&#39;re willing to pay import prices for a physical CD.&lt;/p&gt;
+&lt;p&gt;Now with this in mind, Farhad expects physical media to disappear, &lt;em&gt;in the future&lt;/em&gt;. In lieu of an extremely ambigious timeframe, let&#39;s substitute that with &#39;in the next 5 years&#39; or &#39;in the next decade.&#39; With the music industry as slow as it is, do we expect not only for the industry to move to the cloud, but to also deal with the &#39;import&#39; situtation in a respectable way?&lt;/p&gt;
+&lt;p&gt;Instead of moving away from digital downloads, which by the way work better (for me) than a cloud service - and service it will be, with the associated recurring costs - I&#39;d much rather the industry finish show that they&#39;re willing to embrace digital &lt;em&gt;media&lt;/em&gt; and its promise. As things stand now they &lt;em&gt;haven&#39;t&lt;/em&gt; embraced digital media, and won&#39;t until everything (give or take) that&#39;s available in physical form is available digitally.&lt;/p&gt;
+&lt;p&gt;Now if you want to move to the cloud at that point, or alongside the expansion of digital downloads, fine. Go right ahead. Other groups have certainly tried, but until the global market elephant is removed from the room, any new services will run into the exact same issue.&lt;/p&gt;
+&lt;p&gt;And until we see &#39;foreign&#39; music available digitally to &#39;all,&#39; please don&#39;t suggest we get rid of physical media, or the issues now will just get pushed to the cloud.&lt;/p&gt;
+&lt;h3&gt;Side note: the gaming industry&lt;/h3&gt;
+&lt;p&gt;A similar debate is going on in the gaming industry. Digital downloads of games is finally becoming more and more prevelant, not only with DLC, but the making of &#39;classic&#39; games available for purchase and download, whether that be through the Playstation Store, Xbox Live, or Good Old Games (GOG.com). They too are looking at cloud-based services, but they too have an issue with imports.&lt;/p&gt;
+&lt;p&gt;Progress is moving forward, not stepping to the side, and until the promise of digital media/downloads is embraced, anything based on it will suffer the same issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Netflix on the Wii - my experience</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Netflix-on-the-Wii-my-experience/</link>
+      <pubDate>Thu, 13 May 2010 21:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Netflix-on-the-Wii-my-experience/</guid>
+      <description>&lt;p&gt;After receiving my instant streaming disc for the Wii a long while back, I finally popped it in my Wii and gave it a try.&lt;/p&gt;
+&lt;p&gt;For this experiment I watched three episodes of 30 Rock: Season 1. I wasn&#39;t expecting much for quality, and each episode isn&#39;t very long, so I thought I was giving the Wii a very good chance.&lt;/p&gt;
+&lt;p&gt;Overall, I was extremely impressed in the entire experience, and definitely think Nintendo&#39;s own video channels can learn a lot.&lt;/p&gt;
+&lt;p&gt;Unlike on the PS3 and Xbox 360, most of the functionality to browse and watch videos is available right from the control, with on-screen cues. For example, to start watching a video, press &#39;1.&#39; However, I didn&#39;t pause the videos, and am not exactly sure how that would be done (but assume the A button).&lt;/p&gt;
+&lt;p&gt;The quality of the videos was much better than I expected, with TV-quality picture and sound. I do have a widescreen television (Sony Bravia) and while most content on the Wii displays in a standard-sized box, I had to manually switch to widescreen to view the video as expected, but since I have to do that for everything but the Xbox Netflix experience, I was expecting that.&lt;/p&gt;
+&lt;p&gt;Unfortunately, since the Wii&#39;s control is the only console that I have that doesn&#39;t offer a rechargeable solution, I probably will not watch another Netflix streaming video on it. If it was my own choice to watch Netflix streaming videos on my television, however, I absolutely would.&lt;/p&gt;
+&lt;p&gt;Nice job Netflix.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web Application Development Guidelines</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Web-Application-Development-Guidelines/</link>
+      <pubDate>Sat, 27 Feb 2010 13:25:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Web-Application-Development-Guidelines/</guid>
+      <description>&lt;p&gt;&lt;p&gt;While Web application development is just as complex as other application development, if not more so, it&amp;rsquo;s fairly difficult to find information on best practices while doing Web development.&lt;/p&gt;
+&lt;p&gt;In order to move towards implementation of Subversion, I needed to write up documentation on how we&amp;rsquo;d use it. After a couple drafts, which I ended up scrapping almost completely, I came up with the below.&lt;/p&gt;
+&lt;p&gt;In the interest of sharing, I&amp;rsquo;ve included the full document below, after removing the few instances where I had to specify a non-Subversion application (our help desk application). Comments and suggestions are appreciated.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;WebAppDevGuidelines&#34;&gt;
+&lt;h3&gt;Web application development guidelines&lt;/h3&gt;
+&lt;h4&gt;Purpose&lt;/h4&gt;
+&lt;p&gt;The purpose of this document is to outline the development process for all Web applications.&lt;/p&gt;
+&lt;p&gt;Any concerns that arise that are not covered by this document should be brought to the attention of the core development team, analyzed and answered, and added to this document.&lt;/p&gt;
+&lt;h4&gt;Contents&lt;/h4&gt;
+&lt;ul style=&#34;list-style-type:disc;&#34;&gt;
+&lt;li&gt;Overview of development process for new or upgraded functionality&lt;/li&gt;
+&lt;li&gt;Server usage - Development/Staging/Production&lt;/li&gt;
+&lt;li&gt;Development planning and steps&lt;/li&gt;
+&lt;li&gt;Code testing procedures&lt;/li&gt;
+&lt;li&gt;Version control usage&lt;/li&gt;
+&lt;li&gt;Bug collection and fixing&lt;/li&gt;
+&lt;li&gt;Finalizing code and pushing to production&lt;/li&gt;
+&lt;li&gt;Revision history&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Overview of development process for new or upgraded functionality&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New or changed functionality outlined
+&lt;ul&gt;
+&lt;li&gt;If the changed functionality is a bug fix to production code, the normal process of reporting bugs (see &lt;em&gt;Bug collection and fixing&lt;/em&gt;) should be followed. See also &lt;strong&gt;steps 10 to 14&lt;/strong&gt; below.&lt;/li&gt;
+&lt;li&gt;Otherwise if the changes are a project, before any development can begin, the following must be created and approved; an official written request for a change to existing functionality, or new functionality, and wireframe(s) containing all displayed elements and functionality,&lt;/li&gt;
+&lt;li&gt;Based on the approved request and wireframes a project plan will be created that includes pieces of functionality that will be created and timelines for creating them.&lt;/li&gt;
+&lt;li&gt;Once the project plan has been approved, actual development can begin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Development planning
+&lt;ul&gt;
+&lt;li&gt;While already outlined during step 1, actual planning of data and design should begin at this point.&lt;/li&gt;
+&lt;li&gt;When possible, the data should be the first point of reference, with the data access being the next point, and output for the user being the last.&lt;/li&gt;
+&lt;li&gt;Any changes to elements contained in step 1 at or after this point will necessitate that development restart at this point again, with a re-evaluation of the existing plan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Create a new branch for development
+&lt;ul&gt;
+&lt;li&gt;As it&amp;rsquo;s always possible for changes to need to be made to existing functionality while new functionality is being developed, generally a new &lt;a href=&#34;#DefinitionBranch&#34;&gt;branch&lt;/a&gt; should be created for projects. This insures that in case production is lost, we can easily re-build it from source control.&lt;/li&gt;
+&lt;li&gt;An abbreviated version of the project name should be used when creating the branch.&lt;/li&gt;
+&lt;li&gt;Generally all users can use the same branch for development, as ideally nothing should be moved into production until everything is.
+&lt;ul&gt;
+&lt;li&gt;Exceptions are allowed, such as in the case of the data structure, once it has been finalized. However, realistically this should be done only for completely new functionality (as opposed to updating a table), since moving back to &lt;strong&gt;step 1&lt;/strong&gt; is always a possibility.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Write code
+&lt;ul&gt;
+&lt;li&gt;Develop code for a set piece of functionality.
+&lt;ul&gt;
+&lt;li&gt;Code includes all dynamic and static code, such as HTML, ASP.NET, CSS, JavaScript, SQL queries, and etcetera.&lt;/li&gt;
+&lt;li&gt;Whenever possible data should be chunked into the smallest testable part possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Initial test of code on development server
+&lt;ul&gt;
+&lt;li&gt;A quick test of code should be performed to insure that it builds (if applicable) and works. If it does not, return to &lt;strong&gt;step 4&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;All testing should be done on the development server only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code check-in
+&lt;ul&gt;
+&lt;li&gt;Once functionality has been written and works at a basic level, code must be checked into source control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Write additional code
+&lt;ul&gt;
+&lt;li&gt;Return to &lt;strong&gt;step 5&lt;/strong&gt; for each functionality item that must be created before robust testing can occur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Testing on staging server
+&lt;ul&gt;
+&lt;li&gt;Once functionality has been written and initial tests have passed to an acceptable level, code should be published to the staging server for user testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bug collection
+&lt;ul&gt;
+&lt;li&gt;All user feedback from step 8 should be collected, preferably by a single source, and perused by the development team as a whole.&lt;/li&gt;
+&lt;li&gt;Bugs should be categorized by priority, with those impacting functionality by default having a higher priority than all other concerns.&lt;/li&gt;
+&lt;li&gt;When possible, bugs should be broken into functional groups and tested separately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bug fixes on development server
+&lt;ul&gt;
+&lt;li&gt;Bugs are corrected and new versions of the application are pushed to the development server for testing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code check-in
+&lt;ul&gt;
+&lt;li&gt;Once bugs have been corrected and testing has occurred, code must be checked into version control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Testing on staging server (iteration &lt;em&gt;x&lt;/em&gt;)
+&lt;ul&gt;
+&lt;li&gt;Code is once again published to the staging server for user testing once again. General testing should once again be performed, in addition to bug fix testing.&lt;/li&gt;
+&lt;li&gt;Return to &lt;strong&gt;step 9&lt;/strong&gt; as needed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Release finalized
+&lt;ul&gt;
+&lt;li&gt;Once testing has finished, and all bugs have been squashed, release should be finalized.&lt;/li&gt;
+&lt;li&gt;If the new functionality is sufficient in scope, the release code should be uniquely tagged.&lt;/li&gt;
+&lt;li&gt;The go-live date should be discussed and finalized, with a soft-launch preferred when possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Functionality pushed to production server(s)
+&lt;ul&gt;
+&lt;li&gt;On the go-live date the new functionality should be published to production.&lt;/li&gt;
+&lt;li&gt;The first part of the publication process is to merge the branch used for development into the main trunk of code. At that point that can be used to publish to the production server(s).
+&lt;ul&gt;
+&lt;li&gt;If desired, the release currently on production can be tagged first, to ease on rolling back.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If more than one production server is involved, code should be pushed to one server at a time.&lt;/li&gt;
+&lt;li&gt;Testing should occur immediately after the push and any bugs should be evaluated for severity. If necessary, production servers can be removed from rotation, or a previous version published.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Server usage &amp;ndash; Development/Staging/Production&lt;/h4&gt;
+&lt;p&gt;To insure that development can occur without impacting existing processes, the following server guidelines should be followed.&lt;/p&gt;
+&lt;h5&gt;Development server&lt;/h5&gt;
+&lt;p&gt;A development server should be used for development of new or updated functionality. A development server should be accessible to only those who develop this functionality or those who perform early testing. In practice, this should only be internal staff on the Web team.&lt;/p&gt;
+&lt;h5&gt;Staging server&lt;/h5&gt;
+&lt;p&gt;A staging server should be used once developed functionality is ready for final user testing. A staging server should be accessible to any users who will need to test functionality before it can be pushed to production, and therefore this server should be accessible outside the organization.&lt;/p&gt;
+&lt;p&gt;Access to the code directories should be accessible only to the smallest subset of developers.&lt;/p&gt;
+&lt;p&gt;Changes should &lt;em&gt;never&lt;/em&gt; be made on, or pushed to, the staging server without first being tested on the development server, no matter how minor (this includes changes to images that are part of the template).&lt;/p&gt;
+&lt;h5&gt;Production server&lt;/h5&gt;
+&lt;p&gt;A production server contains the finalized version of all code. Production servers are accessible to all users and may contain new content or data.&lt;/p&gt;
+&lt;p&gt;Like a staging server, the code directories should be accessible only to the smallest subset of developers.&lt;/p&gt;
+&lt;p&gt;Changes &lt;em&gt;can&lt;/em&gt; be pushed to the production server without going through development and staging, but only in the case of static content like user edited images and content. This content should be limited, however, to pre-determined locations, and should be copied down to the development server on a regular basis.&lt;/p&gt;
+&lt;h4&gt;Development planning and steps&lt;/h4&gt;
+&lt;h5&gt;Planning&lt;/h5&gt;
+&lt;p&gt;Once the requirements, wireframe(s) (if necessary for the project) and project plan have all been approved, general development planning can begin.&lt;/p&gt;
+&lt;p&gt;Generally planning should move from the data to the display. This suggest that generally the necessary data storage and procedures should be setup first, objects and methods should be built on top of that, output should be created next, and finally the output should be styled.&lt;/p&gt;
+&lt;p&gt;If possible, a discussion on display should be done early, based on the wireframe(s) provided.&lt;/p&gt;
+&lt;h5&gt;Development steps&lt;/h5&gt;
+&lt;p&gt;Again, assuming that development will move from the data to the display of that data, the following will be the general flow of development.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A new &lt;a href=&#34;#DefinitionBranch&#34;&gt;branch&lt;/a&gt; should be created for the code. All code in the following steps will be placed within this branch.
+&lt;ul&gt;
+&lt;li&gt;By creating a branch we insure that all changes are tied together and can be made without impacting any other changes.&lt;/li&gt;
+&lt;li&gt;The branch should be named using an abbreviated version of the project name, with expanded notes entered when creating the branch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If applicable, the requirements and wireframes should be reviewed in order to determine the data structure that makes the most sense. This should also include any SQL views and procedures necessary to interact with the data.
+&lt;ul&gt;
+&lt;li&gt;In order to be finalized, the views and procedures should be fully tested.&lt;/li&gt;
+&lt;li&gt;Scripts to setup the tables, views, procedures, and etcetera should be saved and placed under source control, in the branch created in &lt;strong&gt;step 1&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Once the data structure and interactivity with this structure has been finalized, the objects and methods the Web application will implement should be setup.
+&lt;ul&gt;
+&lt;li&gt;Whenever possible this functionality should be created in such a way that it can be tested via a test page or application. Such a page/application should be used for testing only, and should &lt;em&gt;not&lt;/em&gt; be re-purposed for production usage (but can remain for testing purposes).&lt;/li&gt;
+&lt;li&gt;Once this functionality has been finalized, the code for it should be placed under source control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;As soon as the objects and methods to interactive with the data have been created, and basic testing has been performed, the user display should be evaluated from the wireframe(s) and outlined.
+&lt;ul&gt;
+&lt;li&gt;Styles, classes, and ids do not generally need to be determined at this time, but higher-level elements (block versus inline) should be.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;With a basic understanding of how the output will be styled, development on displaying the data can begin.
+&lt;ul&gt;
+&lt;li&gt;Whenever possible, functionality should be broken up into smaller chunks and tested, so that it can be checked into source control as soon as possible.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Once the necessary data is displaying, the display should be styled per the wireframe(s), following styling standards.&lt;/li&gt;
+&lt;li&gt;Once all data is displaying and styled correctly, the code should be published to the staging server and testing can begin.&lt;/li&gt;
+&lt;li&gt;Once testing results have been received, compiled, and evaluated, any necessary bug fixes should be made.
+&lt;ul&gt;
+&lt;li&gt;Again, whenever possible changes should be made to self-contained blocks and tested, with the changes checked into source control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Previous steps should repeat until all bugs have been fixed or deferred.&lt;/li&gt;
+&lt;li&gt;Once all bugs have been resolved a go-live date should be set.&lt;/li&gt;
+&lt;li&gt;Shortly before the go-live date is reached an evaluation should be made on whether changes impact the project&amp;rsquo;s branch. If so, these changes should be merged into the branch before the go-live date.&lt;/li&gt;
+&lt;li&gt;When the go-live date is reached, the branch should be merged into the trunk, a &lt;a href=&#34;#DefinitionTag&#34;&gt;tag&lt;/a&gt; (snapshot) should be created if necessary, and changes should be published to production.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Code testing procedures&lt;/h4&gt;
+&lt;p&gt;Testing of code occurs during the development process on the development server, as well as by users on the staging server.&lt;/p&gt;
+&lt;p&gt;For code that is part of a project, the specific testing needs should be determined based upon the wireframe and requirements guide, and on previously reported bugs, when applicable. Even if initial testing has already been performed, each test should touch upon the already tested functionality to insure future changes have not changed other aspects of the code.&lt;/p&gt;
+&lt;p&gt;To aid in this, breaking changes up by function should be a key goal of development.&lt;/p&gt;
+&lt;h4&gt;Version control usage&lt;/h4&gt;
+&lt;h5&gt;Version control system and tools to be used&lt;/h5&gt;
+&lt;p&gt;Based on our environment and requirements, Subversion is to be used as the core version control system. All tools used must operate with Subversion without decreasing the level of security of the system. This requires that all new tools be fully vetted before being made a part of our system.&lt;/p&gt;
+&lt;p&gt;At this time the allowed components are CollabNet Subversion Server and TortoiseSVN.&lt;/p&gt;
+&lt;h5&gt;General repository considerations&lt;/h5&gt;
+&lt;p&gt;Repositories should be treated as separate products. Generally this means that completely distinct Web applications should be stored in their own repositories. On the other hand, if there&amp;rsquo;s a need to tie changes made to one project to another, the projects should be in the same repository. If in doubt, projects should be stored within the same repository, and user access should be setup as needed.&lt;/p&gt;
+&lt;h5&gt;Submitting commits&lt;/h5&gt;
+&lt;p&gt;Ultimately the purpose of version control is to make it easy to roll back changes to systems, as well as to track changes so that they can all be tied together as one larger change.&lt;/p&gt;
+&lt;p&gt;Since experimentation is an essential part of development, it is important that all changes be put under version control as soon as possible, and that they contain detailed, but concise notes, leaning towards too much data as opposed to too little.&lt;/p&gt;
+&lt;p&gt;For purposes of our usage, functional code should &lt;em&gt;always&lt;/em&gt; be checked into version control as soon as possible, which realistically means immediately after it has been tested at a basic level. If changes depend upon each other (for example, a table change impacting procedures that update it) these changes should be checked in at the same time, as a single update, in order to minimize breaking changes.&lt;/p&gt;
+&lt;p&gt;Additionally, a branch should be created for purely experimental pieces of functionality. Generally, unless the code can be lost without harm, code should be placed into version control.&lt;/p&gt;
+&lt;h5&gt;System setups&lt;/h5&gt;
+&lt;p&gt;&lt;em&gt;Specifics will be determined once a server is available for installation of Subversion and testing can begin.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Generally, a single Windows server will be used for Subversion, which will run on top of Apache, on a port other than 80 (allowing for IIS to continue running on the server). Generally this means a port in the 8000s.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Apache will be setup so that all access is logged, and so that only those individuals absolutely required access to the repositories will have access. Each individual will have their own account and password, and these same users will have tools installed to their machines to allow access to these repositories.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Scheduled tasks will be setup to perform normal maintenance on the repositories, including daily backups of all repositories.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;On a regular basic, new versions of server and client tools are to be checked for, and as needed, tested and installed.&lt;/em&gt;&lt;/p&gt;
+&lt;h5&gt;System maintenance&lt;/h5&gt;
+&lt;p&gt;Because of the importance of version control, regular maintenance should be performed on both the core systems as well as individual developer&amp;rsquo;s machines. This maintenance includes regular backups and upgrades to relevant software.&lt;/p&gt;
+&lt;p&gt;Backups are to be tested on at least a monthly basis to insure the repositories can be recreated if necessary. They should also be stored on a different system, as well as potentially in a different physical location.&lt;/p&gt;
+&lt;p&gt;Upgrades to relevant software should be tested before being rolled out. Testing can include the migration of a copy of the repository to an environment with the new software, if needed.&lt;/p&gt;
+&lt;h4&gt;Bug collection and fixing&lt;/h4&gt;
+&lt;h5&gt;General considerations&lt;/h5&gt;
+&lt;p&gt;In general, bugs concerning the data should be the primary concern, with display being secondary.&lt;/p&gt;
+&lt;p&gt;Bugs that are obviously bugs should be fixed as soon as possible, but should still be tested on development and staging. If in doubt, especially as concerns &amp;lsquo;display bugs,&amp;rsquo; issues should be reported back to the development team for analysis and prioritization.&lt;/p&gt;
+&lt;h5&gt;Bugs in production code&lt;/h5&gt;
+&lt;p&gt;With the exception of user-added content, bugs in production code should be solved and tested in development before being moved to production. If needed, the code or data should be removed completely, instead of pushing into place a hasty revision.&lt;/p&gt;
+&lt;p&gt;With the exception of bugs resulting from still-active projects, the normal process of reporting bugs should be used.&lt;/p&gt;
+&lt;p&gt;Often, for issues of a small scope, such as minor changes to display (padding), full testing on staging can be skipped, but should still be pushed to staging.&lt;/p&gt;
+&lt;h5&gt;Bugs arising from development&lt;/h5&gt;
+&lt;p&gt;As new functionality is created, or existing functionality is updated, the possibility of bugs being introduced is high.&lt;/p&gt;
+&lt;p&gt;Since all user testing is performed against a staging server, users will never test against a currently-in-development version of code, but will instead test against ready-for-production code.&lt;/p&gt;
+&lt;p&gt;Because of this, all bugs during development will be reported to a single source. That individual will collect all reported bugs and generally categorize them into a few basic categories, including whether the bug is with functionality or display (if determinable) and priority. The categorized listing of bugs will be reported back to a larger group for analysis and final prioritization.&lt;/p&gt;
+&lt;p&gt;Assuming there is a collection of bugs, and they are to be fixed before the changes are pushed to production, these issues will be fixed on the development server, an initial round of testing will be performed, and the changes will be pushed back to the staging server for another round of testing.&lt;/p&gt;
+&lt;p&gt;This process is to repeat until such a time when all bugs are fixed and no additional bugs are reported, or it is determined that the reported bugs will be fixed in the next version of the code.&lt;/p&gt;
+&lt;h4&gt;Finalizing code and pushing to production&lt;/h4&gt;
+&lt;p&gt;Once new code has gone through the necessary rounds of testing on the development and staging servers, and all bugs have been resolved or otherwise tabled for later resolution, a date should be set for pushing the changes to production.&lt;/p&gt;
+&lt;p&gt;Once the go-live date is reached, the branch initially created for development should be merged. If any changes need to be made because of this merge, they should be made, and if needed, additional testing on the development and staging server should be performed before the code is published to production.&lt;/p&gt;
+&lt;p&gt;Generally if more than one production server is involved, code should be pushed to one server at a time. Additionally, data should be pushed before any code that works on that data.&lt;/p&gt;
+&lt;h4&gt;Terminology&lt;/h4&gt;
+&lt;h5&gt;&lt;a name=&#34;DefinitionBranch&#34;&gt;&lt;/a&gt;Branch&lt;/h5&gt;
+&lt;p&gt;In source control, a branch can be considered as &amp;ldquo;a line of development that exists independently of another line, yet still shares a common history if you look far enough back in time. A branch always begins life as a copy of something, and moves on from there, generating its own history.&amp;rdquo; [&lt;a rel=&#34;external&#34; href=&#34;http://svnbook.red-bean.com/en/1.5/svn.branchmerge.whatis.html&#34;&gt;Source&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Typically the life-span of a branch is relatively short, as branches are generally merged back into the trunk, or core code, once the code developed within it is final.&lt;/p&gt;
+&lt;h5&gt;Repository&lt;/h5&gt;
+&lt;p&gt;In source control, a repository is &amp;ldquo;a central store of data. The repository stores information in the form of a filesystem tree&amp;mdash;a typical hierarchy of files and directories. Any number of clients connect to the repository, and then read or write to these files. By writing data, a client makes the information available to others; by reading data, the client receives information from others.&amp;rdquo; [&lt;a rel=&#34;external&#34; href=&#34;http://svnbook.red-bean.com/en/1.5/svn.basic.repository.html&#34;&gt;Source&lt;/a&gt;]&lt;/p&gt;
+&lt;h5&gt;&lt;a name=&#34;DefinitionTag&#34;&gt;&lt;/a&gt;Tag&lt;/h5&gt;
+&lt;p&gt;In source control, a tag is &amp;ldquo;just a &amp;ldquo;snapshot&amp;rdquo; of a project in time.&amp;rdquo; [&lt;a rel=&#34;external&#34; href=&#34;http://svnbook.red-bean.com/en/1.5/svn.branchmerge.tags.html&#34;&gt;Source&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;Most source control systems have built-in revisions. In Subversion, whenever code is committed the revision number is increased by 1, and allows one to refer to the state of all code at that time. Tags allow you to refer to a particular revision not by number (revision 514), but rather by name (Internal_ad_rotation_1).&lt;/p&gt;
+&lt;h4&gt;Revision history&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;January 28, 2010&lt;/strong&gt; &amp;ndash; James Skemp: Guidelines started&lt;br /&gt;&lt;strong&gt;February 10, 2010&lt;/strong&gt; &amp;ndash; James Skemp: Guidelines updated and expanded with initial feedback&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analytics on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/analytics/</link>
+    <description>Recent content in Analytics on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Nov 2008 22:40:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Browser environments for testing</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</link>
+      <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</guid>
+      <description>&lt;p&gt;
+In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
+&lt;/p&gt;
+&lt;h3&gt;Current versions&lt;/h3&gt;
+&lt;p&gt;
+Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
+&lt;/p&gt;
+&lt;p&gt;
+Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
+&lt;/p&gt;
+&lt;p&gt;
+Some&amp;nbsp;may think&amp;nbsp;I&amp;#39;m a bit&amp;nbsp;off, but I&amp;nbsp;consider Opera a fairly good browser, while Mozilla doesn&amp;#39;t much concern me. So, that gives us our top five browsers, all of which&amp;nbsp;can&amp;nbsp;be installed on Windows.&amp;nbsp;
+&lt;/p&gt;
+&lt;p&gt;
+So, any&amp;nbsp;test&amp;nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 7
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Safari 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Chrome 0
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Opera 9
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+There&amp;#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&amp;#39;s fairly standards-compliant.
+&lt;/p&gt;
+&lt;p&gt;
+This is also why I feel that not including Opera would be a very big mistake.
+&lt;/p&gt;
+&lt;p&gt;
+This rounds out our first virtual machine to 5 unique browsers.
+&lt;/p&gt;
+&lt;h3&gt;Previous versions&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+While it would be great if it wasn&amp;#39;t the case, you&amp;#39;ll always need to support older versions of popular browsers.
+&lt;/p&gt;
+&lt;p&gt;
+Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
+&lt;/p&gt;
+&lt;p&gt;
+Most other browsers don&amp;#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 6
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 2
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Upcoming versions&lt;/h3&gt;
+&lt;p&gt;
+This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
+&lt;/p&gt;
+&lt;p&gt;
+Primarily, that means the following should almost certainly be included.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 8
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+That&amp;#39;s right, Internet Explorer 8. That&amp;#39;s all I&amp;#39;d absolutely need, especially looking at stats.
+&lt;/p&gt;
+&lt;p&gt;
+However, to a great extent, Chrome, like most of Google&amp;#39;s other &lt;strike&gt;products&lt;/strike&gt; applications is truly a beta browser (and one that I&amp;#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
+&lt;/p&gt;
+&lt;h3&gt;What about Linux and Mac?&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&amp;nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&amp;#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&amp;#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
+&lt;/p&gt;
+&lt;p&gt;
+For Mac&amp;nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
+&lt;/p&gt;
+&lt;p&gt;
+For Safari Apple was kind enough to give Windows users this browser. As to whether it&amp;#39;s the same as the Mac version, well, it looks very similar. But, unless you&amp;#39;re willing to pay the Apple premium, the Windows version should suffice.
+&lt;/p&gt;
+&lt;p&gt;
+For these reasons, basic Web development doesn&amp;#39;t need to dive too deep into Linux and Mac environments.&lt;sup&gt;1&lt;/sup&gt;
+&lt;/p&gt;
+&lt;h3&gt;Mobile browsers?&lt;/h3&gt;
+&lt;p&gt;
+But what about browsers on mobile devices?
+&lt;/p&gt;
+&lt;p&gt;
+Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
+&lt;/p&gt;
+&lt;p&gt;
+To some extent &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+&lt;/p&gt;
+&lt;p&gt;
+The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
+&lt;/p&gt;
+&lt;p&gt;
+However, for the mobile version of Internet Explorer (which won&amp;#39;t be tracked by Analytics, as it doesn&amp;#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
+&lt;/p&gt;
+&lt;p&gt;
+As to the solution, I can&amp;#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&amp;#39;ll be virtualization for these environments much more readily available.
+&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;
+Above I&amp;#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
+&lt;/p&gt;
+&lt;p&gt;
+What do you think? What do you develop for?
+&lt;/p&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+&lt;/p&gt;
+&lt;p&gt;
+2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wowsa - what happened to Google Analytics? (November 2008 edition)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
+      <pubDate>Tue, 11 Nov 2008 21:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
+      <description>&lt;p&gt;
+Google has done it again.
+&lt;/p&gt;
+&lt;p&gt;
+Logging in this evening, I immediately noticed the change to Google Analytics. Now you can see, when you first log in, the visits, average time, bounce rate, completed goals, and % change (default visits) for your sites.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s weird in that it shows a number of rows, and not sites (which effectively means half as many sites as I expect, as each of my sites has two rows), but it&amp;#39;s very interesting.
+&lt;/p&gt;
+&lt;p&gt;
+(I&amp;#39;m also getting a mixed content warning (secure/unsecure), but I&amp;#39;m sure they&amp;#39;ll fix that shortly.)
+&lt;/p&gt;
+&lt;p&gt;
+The rest of the reports seem to be the same.
+&lt;/p&gt;
+&lt;p&gt;
+Very nice Google. Now if I can just get the invite to type Adsense with Analytics ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser script: Percent of status codes across all hits/requests</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
+      <pubDate>Mon, 01 Oct 2007 23:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article.
+&lt;/p&gt;
+&lt;p&gt;
+First, I assume that the below is put in the same directory as the logs you would like to parse.&amp;nbsp;
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    SELECT sc-status AS [HTTP Status Code], count(&lt;em&gt;) AS Requests&lt;br /&gt;
+    INTO http_status_percent_graph-%date%.png&lt;br /&gt;
+    FROM ex%date%&lt;/em&gt;.log&lt;br /&gt;
+    GROUP BY [HTTP Status Code]&lt;br /&gt;
+    ORDER BY Requests DESC&lt;br /&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Once you&amp;#39;ve saved this, you can call the script like such, so long as you&amp;#39;re already in the directory you saved the SQL file.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser file:http_status_percent_graph.sql?date=0710 -o:chart -chartType:Pie -chartTitle:&amp;quot;Status as Percent of Requests&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+If you just want the numbers, you can use the following SQL.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    SELECT sc-status, count(&lt;em&gt;)&lt;br /&gt;
+    INTO http_status_codes-%date%.txt&lt;br /&gt;
+    FROM ex%date%&lt;/em&gt;.log&lt;br /&gt;
+    GROUP BY sc-status&lt;br /&gt;
+    ORDER BY sc-status
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+It too can be called via the command line (again, assuming you save the SQL file and run the following in the same directory as your log files).
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser -rtp:-1 file:http_status_codes.sql?date=0710&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Feel free to modify the scripts to your own need.
+&lt;/p&gt;
+&lt;h3&gt;Example chart&lt;/h3&gt;
+&lt;p style=&#34;text-align: center&#34;&gt;
+&lt;img style=&#34;width: 640px; height: 480px&#34; src=&#34;http://replace-this-with-your-hugo-site.com/files/2007/10/http_status_percent_graph-example.gif&#34; alt=&#34;Example of the status code chart&#34; title=&#34;Example of the status code chart&#34; /&gt;&lt;br /&gt;
+Example of the status code chart
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to ensure that performance counters continue after a restart</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
+      <pubDate>Wed, 19 Sep 2007 21:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
+      <description>&lt;p&gt;
+A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. 
+&lt;/p&gt;
+&lt;p&gt;
+A bit of research later, it appears that there is a way to have Windows restart the logging after a system restart. 
+&lt;/p&gt;
+&lt;p&gt;
+To enable this, it seems you just need to have the log stop after a certain amount of time (for example, after x hours, or x days). Then, check the box stating that &amp;quot;When a log file closes,&amp;quot; &amp;quot;Start a new log file.&amp;quot; 
+&lt;/p&gt;
+&lt;p&gt;
+This has the added benefit of keeping your log files manageable in size. 
+&lt;/p&gt;
+&lt;h3&gt;Information to log&lt;/h3&gt;
+&lt;p&gt;
+Unfortunately, I haven&amp;#39;t found much in the way of information regarding what counters should be logged. I believe I read a Microsoft article that suggested Bytes Total/sec for the Network Interface, and Processor(_Total)\% Processor Time. 
+&lt;/p&gt;
+&lt;p&gt;
+I was doing this for a couple of weeks, but have decided to try out the following instead, for a couple of weeks. Once I&amp;#39;ve got a baseline (looking at the old numbers and the new), I&amp;#39;ll disable the logging for a bit, or decrease the polling time, and then start it back up to see if that baseline remains. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    Memory\Available MBytes&lt;br /&gt;
+    Network Interface(x)\Bytes Received/Sec&lt;br /&gt;
+    Network Interface(x)\Bytes Sent/sec&lt;br /&gt;
+    Processor(_Total)\% Processor Time 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Some information removed, to protect the innocent.) 
+&lt;/p&gt;
+&lt;p&gt;
+Once you have these logging, it&amp;#39;s easy to use LogParser and avg(), min(), max() to generate some meaningful information. 
+&lt;/p&gt;
+&lt;h3&gt;Example SQL query&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+See the below example (some data replaced with &amp;#39;xxx&amp;#39;). Modify to taste, and save as a sql file, running it through Log Parser with &amp;#39;file&amp;#39;. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    /* 2007.09.19&amp;nbsp;&amp;nbsp;&amp;nbsp; J.Skemp&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; Created query. */&lt;br /&gt;
+    SELECT count(*) AS TotalCounters,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Get the initial and final datetime&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min([(pdh-csv 4.0) (eastern daylight time)(240)]) as DateFirst,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max([(pdh-csv 4.0) (eastern daylight time)(240)]) as DateLast,&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Processor information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcAvg(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcMin(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(to_real([\\xxx\Processor(_Total)\% Processor Time])) as ProcMax(%),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Memory information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(to_int([\\xxx\Memory\Available MBytes])) as MemAvailAvg(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(to_int([\\xxx\Memory\Available MBytes])) as MemAvailMin(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(to_int([\\xxx\Memory\Available MBytes])) as MemAvailMax(MB),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Network (in) information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecAvg(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecMin(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(div(to_real([\\xxx\Network Interface(xxx)\Bytes Received/Sec]),1024)) as NetRecMax(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; -- Network (out) information&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; avg(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentAvg(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; min(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentMin(K),&lt;br /&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp; max(div(to_real([\\xxx\Network Interface(xxx)\Bytes Sent/sec]),1024)) as NetSentMax(K)&lt;br /&gt;
+    -- Change file names accordingly&lt;br /&gt;
+    INTO temp_report.txt&lt;br /&gt;
+    FROM ServerInfo_*.csv 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Add/remove as necessary, for your logs. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Log Parser to find users accounts used to log into an FTP site</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
+      <pubDate>Thu, 13 Sep 2007 20:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
+      <description>&lt;p&gt;
+The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select cs-uri-stem, count(cs-method) from ex*.log where cs-method like &amp;#39;%USER&amp;#39; group by cs-uri-stem order by count(cs-method),cs-uri-stem&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This assumes that you&amp;#39;ve added Log Parser to your path, and that you&amp;#39;re running this from your log file directory.
+&lt;/p&gt;
+&lt;p&gt;
+This query will tell you what ip addresses successfully logged into your FTP site.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select c-ip, count(sc-status) from ex*.log where sc-status = &amp;#39;230&amp;#39; group by c-ip order by count(sc-status),c-ip&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Finally, this query will show you what ip addresses attempted to log into your FTP site, and will give a count of how many times.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;select c-ip, count(*) from ex*.log group by c-ip order by count(*),c-ip&amp;quot;&amp;nbsp;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+You can find other Log Parser articles on my site by viewing other items tagged with &lt;strong&gt;log parser&lt;/strong&gt; (link below). 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser queries to find 400 and 500 http status codes</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/</link>
+      <pubDate>Sun, 09 Sep 2007 18:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+In a previous article, I discussed &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Find-404-errors-using-Log-Parser.aspx&#34;&gt;how to use Log Parser to find 404 errors in IIS log files&lt;/a&gt;. This time, I&amp;#39;ve made it a little broader, by giving some queries to find all 400 codes, and all 500 codes, through log files.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&#34;text-decoration: line-through&#34;&gt;There may be a better way to find these codes (instead of my IN statement), but a standard LIKE doesn&amp;#39;t seem to work.&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Again, these assume that you&amp;#39;ve currently got a command line open in the folder containing your IIS logs, and that you are logging the above information, as well as that logparser is setup in your PATH line.
+&lt;/p&gt;
+&lt;h4&gt;400 Status Codes&lt;/h4&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser -rtp:-1 &amp;quot;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 400sReport.txt FROM ex&lt;em&gt;.log WHERE (sc-status &amp;gt;= 400 AND sc-status &amp;lt; 500) ORDER BY sc-status, date, cs-uri-stem, cs-uri-query&amp;quot;&lt;br /&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4&gt;500 Status Codes&lt;/h4&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser -rtp:-1 &amp;quot;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 500sReport.txt FROM ex&lt;/em&gt;.log WHERE (sc-status &amp;gt;= 500 AND sc-status &amp;lt; 600) ORDER BY sc-status, date, cs-uri-stem, cs-uri-query&amp;quot;&lt;br /&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+A Google search for &lt;strong&gt;http status codes&lt;/strong&gt; will give a number of resources regarding exactly what these codes mean.&amp;nbsp;
+&lt;/p&gt;
+&lt;h4&gt;Updated 2007.09.10&lt;/h4&gt;
+&lt;p&gt;
+Added the correct parameter to display all date in one big &amp;#39;table&amp;#39;, so the column headings don&amp;#39;t repeat every 10 lines.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Find 404 errors using Log Parser</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Find-404-errors-using-Log-Parser/</link>
+      <pubDate>Sat, 04 Aug 2007 13:54:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Find-404-errors-using-Log-Parser/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+The following code will generate a listing of calls that generated a 404 error.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 404report.txt FROM ex&lt;em&gt;.log WHERE sc-status = 404 ORDER BY date, cs-uri-stem, cs-uri-query&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This assumes that you&amp;#39;ve currently got a command line open in the folder containing your IIS logs, and that you are logging the above information, as well as that logparser is setup in your PATH line.
+&lt;/p&gt;
+&lt;p&gt;
+A file called &amp;#39;404report.txt&amp;#39; will be generated in the folder containing your log files, which will list the above five fields. It&amp;#39;s possible to generate a count instead, but I have no done so above.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s one that generates a count with pages and referers listed, of 404 pages.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    logparser &amp;quot;SELECT cs-uri-stem AS page, cs(Referer) AS referer, count(&lt;/em&gt;) AS hits INTO 404report.txt FROM ex*.log WHERE sc-status = 404 GROUP BY page, referer ORDER BY page&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+All-in-all, I&amp;#39;m pretty impressed by this tool, once you have time to actually work with it.&amp;nbsp;
+&lt;/p&gt;
+&lt;h4&gt;Update, 2007.09.09&lt;/h4&gt;
+&lt;p&gt;
+Updated both codes to export to &lt;strong&gt;404report.txt&lt;/strong&gt;, instead of just &lt;strong&gt;report.txt&lt;/strong&gt;.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log file analysis of our Windows-based, Apache, Web sites</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</link>
+      <pubDate>Mon, 20 Feb 2006 20:58:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</guid>
+      <description>&lt;p&gt;
+In our previous articles, we walked through installing Apache to a Windows XP home computer.&amp;nbsp; This time, we&amp;#39;ll be setting up our log files for analysis, and installing a way to view the log file information.
+&lt;/p&gt;
+&lt;p&gt;
+Log files are created by Web sites to track page views and visitors.&amp;nbsp; For example, if we go to a page on one of our local Web sites with Firefox, like http://website.localhost/, it adds the following lines to a file called access.log.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    127.0.0.2 - - [18/Feb/2006:09:29:43 -0600] &amp;quot;GET / HTTP/1.1&amp;quot; 200 94&lt;br /&gt;
+    127.0.0.2 - - [18/Feb/2006:09:29:43 -0600] &amp;quot;GET /favicon.ico HTTP/1.1&amp;quot; 404 291&lt;br /&gt;
+    127.0.0.2 - - [18/Feb/2006:09:29:43 -0600] &amp;quot;GET /favicon.ico HTTP/1.1&amp;quot; 404 291
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+This tells us that someone requested the root page at 127.0.0.2 (which is website.localhost), and was able to get the file, and 94 bytes of it (the total size of the file, in this case).&amp;nbsp; They also requested a file called favicon.ico twice, but were unable to download the file (Apache returned a 404, or file not found, error).&amp;nbsp; The size of the file they received from those requests was 291 bytes.
+&lt;/p&gt;
+&lt;p&gt;
+While we can certainly read through this file line by line, there&amp;#39;s an easier way to handle these.
+&lt;/p&gt;
+&lt;p&gt;
+Before we install a program to look through these, let&amp;#39;s go ahead and setup our log files.&amp;nbsp; In order to do this, we&amp;#39;re going to open up the httpd.conf file once again.
+&lt;/p&gt;
+&lt;h3&gt;Setting up our log files&lt;/h3&gt;
+&lt;p&gt;
+If you followed our previous guides, you may have a shortcut in the C:\home\ folder.&amp;nbsp; Otherwise, you can access it via the Start menu, or by going to the file through Windows Explorer.
+&lt;/p&gt;
+&lt;p&gt;
+In the httpd.conf file, we&amp;#39;re going to search for logs.&amp;nbsp; If we do this enough, we&amp;#39;ll end up at a couple lines that states:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    # ErrorLog: The location of the error log file.&lt;br /&gt;
+    # If you do not specify an ErrorLog directive within a &amp;lt;VirtualHost&amp;gt;&lt;br /&gt;
+    # container, error messages relating to that virtual host will be&lt;br /&gt;
+    # logged here.&amp;nbsp; If you *do* define an error logfile for a &amp;lt;VirtualHost&amp;gt;&lt;br /&gt;
+    # container, that host&amp;#39;s errors will be logged there and not here.
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+So, if we want to, we can declare where we want to store log files in the VirtualHost container (which, recall, is at the end of the httpd.conf file).&amp;nbsp; If we go down a little further, first, we see some information about the format the logs file be stored in (LogFormat).
+&lt;/p&gt;
+&lt;p&gt;
+Find this line:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    CustomLog logs/access.log common
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+and change it to:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    #CustomLog logs/access.log common
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+In other words, we&amp;#39;ve commented it out.&amp;nbsp; Then, scroll down a couple lines and change
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    #CustomLog logs/access.log combined
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+to:
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    CustomLog logs/access.log combined
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+In other words, we&amp;#39;ve uncommented this line.&amp;nbsp; By commenting one line, and uncommenting another, we&amp;#39;ve effectively increased what is being stored in our log files.&amp;nbsp; If we save the httpd.conf file and restart Apache (using the Services control panel), and hit one of our pages again, we&amp;#39;ll notice a much longer line of information.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    127.0.0.2 - - [18/Feb/2006:09:37:55 -0600] &amp;quot;GET / HTTP/1.1&amp;quot; 200 94 &amp;quot;-&amp;quot; &amp;quot;Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.1) Gecko/20060111 Firefox/1.5.0.1&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+We now have referrer information and user agent information.&amp;nbsp; The first is helpful for understanding where people came from to get to the page, and the second is useful for understanding who is making the request.
+&lt;/p&gt;
+&lt;p&gt;
+Now that we&amp;#39;ve added more information to the logs, we&amp;#39;re going to change where the log files for our subdomains is stored.
+&lt;/p&gt;
+&lt;p&gt;
+The first thing to note is that if we tell Apache to store our files in a folder that doesn&amp;#39;t exist, it won&amp;#39;t be able to create the folder, and won&amp;#39;t be able to start.&amp;nbsp; So, we need to determine where we want to store our log files.&amp;nbsp; For now, let&amp;#39;s go ahead and create a folder for each of our Web sites, in the current log file folder.&amp;nbsp; With our current settings, this would be C:\Program Files\Apache Group\Apache\logs\.&amp;nbsp; In this folder, create a website and a website2 folder.
+&lt;/p&gt;
+&lt;p&gt;
+Now, go to the VirtualHost containers at the bottom of the httpd.conf file.&amp;nbsp; Add the following bold lines to the current content (which is not bold).
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &amp;lt;VirtualHost 127.0.0.2&amp;gt;&lt;br /&gt;
+    ServerName website.localhost&lt;br /&gt;
+    DocumentRoot C:\home\website\public_html&lt;br /&gt;
+    &lt;strong&gt;ErrorLog logs/website/error.log&lt;br /&gt;
+    TransferLog logs/website/access.log&lt;/strong&gt;&lt;br /&gt;
+    &amp;lt;/VirtualHost&amp;gt;&lt;br /&gt;
+    &lt;br /&gt;
+    &amp;lt;VirtualHost 127.0.0.3&amp;gt;&lt;br /&gt;
+    ServerName website2.localhost&lt;br /&gt;
+    DocumentRoot C:\home\website2\public_html&lt;br /&gt;
+    &lt;strong&gt;ErrorLog logs/website2/error.log&lt;br /&gt;
+    TransferLog logs/website2/access.log&lt;/strong&gt;&lt;br /&gt;
+    &amp;lt;/VirtualHost&amp;gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Save the httpd.conf file, and restart Apache.&amp;nbsp; If Windows tells you that it can&amp;#39;t start the service, make sure that you&amp;#39;ve created the folders and typed everything in correctly.&amp;nbsp; If we look in the website and website2 folders, we&amp;#39;ll see that empty error.log and access.log files have been created.&amp;nbsp; There is also one of each of these files in the main logs folder.&amp;nbsp; If we now hit our Web sites, we&amp;#39;ll notice that the size of the log files will increase slightly, and we&amp;#39;ll have information about what content we viewed.
+&lt;/p&gt;
+&lt;p&gt;
+Now, let&amp;#39;s hit each of our three Web sites a couple times.&amp;nbsp; http://localhost/, http://website.localhost/, http://website2.localhost/
+&lt;/p&gt;
+&lt;p&gt;
+Now, we have effectively created some data, albeit data from only a small number of pages.&amp;nbsp; Yet, it is data nonetheless, and since it&amp;#39;s so small, we&amp;#39;ll be able to easily look through our log files for information.
+&lt;/p&gt;
+&lt;p&gt;
+Before we go on, however, note that if you ever need to delete log files, you can do so by stopping Apache, deleting the files, and then starting Apache.
+&lt;/p&gt;
+&lt;h3&gt;Installing a log file analyzer&lt;/h3&gt;
+&lt;p&gt;
+For now, we&amp;#39;re going to install a fairly simple log analyzer, Analog.&amp;nbsp; You can download Analog at &lt;a href=&#34;http://www.analog.cx/&#34; target=&#34;_blank&#34;&gt;http://www.analog.cx/&lt;/a&gt;, or the nearest mirror (which I highly recommend you use).&amp;nbsp; For now, I recommend downloading the zip file, if possible.&amp;nbsp; Remember to download this into the folder you downloaded the Apache installer into.&amp;nbsp; The download is about 2 MB.
+&lt;/p&gt;
+&lt;p&gt;
+In this case, I&amp;#39;ve downloaded Analog 6.0.&amp;nbsp; Once you&amp;#39;ve downloaded Analog, extract the main Analog folder to C:\home\.&amp;nbsp; We&amp;#39;ll do this temporarily (just like how we&amp;#39;ll only be using Analog temporarily) for ease.
+&lt;/p&gt;
+&lt;p&gt;
+Once you&amp;#39;ve extracted the folder her, open up C:\home\analog 6.0\analog.cfg with Notepad.&amp;nbsp; The first uncommented line will read as follows.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    LOGFILE logfile.log
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+We&amp;#39;re going to put the following lines in it&amp;#39;s place.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    LOGFILE &amp;quot;C:\Program Files\Apache Group\Apache\logs\access.log&amp;quot; http://localhost&lt;br /&gt;
+    LOGFILE &amp;quot;C:\Program Files\Apache Group\Apache\logs\website\access.log&amp;quot; http://website.localhost&lt;br /&gt;
+    LOGFILE &amp;quot;C:\Program Files\Apache Group\Apache\logs\website2\access.log&amp;quot; http://website2.localhost
+&lt;/blockquote&gt;
+&lt;p&gt;
+Now save this file and run analog.exe.&amp;nbsp; Once it finishes, it will have created an errors.txt file, and a Report.html (both of which will be overwritten every time analog.exe is run).
+&lt;/p&gt;
+&lt;p&gt;
+Assuming you made the minor change, you should be able to open the Reports.html file up and see the number of times you hit the Web site.&amp;nbsp; If we hit the site some more and run analog.exe, we&amp;#39;ll see that our new visits are recorded.
+&lt;/p&gt;
+&lt;p&gt;
+And with that, we&amp;#39;ve successfully installed a very basic log file analyzer.&amp;nbsp; Unfortunately, it doesn&amp;#39;t give us the most interesting of results.&amp;nbsp; At this point, however, we&amp;#39;ll leave things as they are.&amp;nbsp; Note that if we add any additional Web sites, we&amp;#39;ll need to go back into the analog.cfg file and add them in as additional LOGFILE lines.
+&lt;/p&gt;
+&lt;p&gt;
+June 4, 2006: You may also find WebLog Expert Lite (currently 3.6) to also be of some use.&amp;nbsp; This program can be found at &lt;a href=&#34;http://www.weblogexpert.com/&#34; target=&#34;_blank&#34;&gt;http://www.weblogexpert.com/&lt;/a&gt; and comes in both a free (Lite) version and a commercial version (non-Lite).&amp;nbsp; Setup of the program is so easy that it hardly requires a tutorial.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>StrivingLife.net network popularity</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/StrivingLifenet-network-popularity/</link>
+      <pubDate>Fri, 07 Oct 2005 20:41:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/StrivingLifenet-network-popularity/</guid>
+      <description>&lt;p&gt;
+As I said this morning, site popularity can be determined by how many people are viewing the content, and how many people are using the content.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+With e-commerce sites, this is fairly easy to determine.  Tracking programs can be used to count the number of unique visitors to the site, as well as how many products are bought and sold.  The best e-commerce site will have a 1:1 ratio - every unique visitor will make a purchase.
+&lt;/p&gt;
+&lt;p&gt;
+Tracking a site that offers a free download is very similar.  However, we also have to throw in the possibility of support forums.  While support provides a service, it&amp;#39;s more difficult to determine whether the visitors needs have been met.  If you view some sites, like HP, you&amp;#39;ll notice that they actually ask you if they can send you an email to see how your visit went.  Assuming the visitor actually responds to the email and completes the entire survey, the visit to the site can be adequately tracked.  If everyone that visits the site gets an email, and everyone responds to it by saying that they are satisifed, then the 1:1 ratio has been met.
+&lt;/p&gt;
+&lt;p&gt;
+Now let&amp;#39;s take away the download aspect and just look at a site that provides information.  How do you track popularity on such a site?  Let&amp;#39;s take StrivingLife.net&amp;#39;s stats to come up with some possible ways.
+&lt;/p&gt;
+&lt;p&gt;
+First, you could simply go by the numbers.  Most stats track &lt;strong&gt;Unique visitors&lt;/strong&gt;, &lt;strong&gt;Number of visits&lt;/strong&gt;, &lt;strong&gt;Pages&lt;/strong&gt;, &lt;strong&gt;Hits&lt;/strong&gt;, and sometimes even &lt;strong&gt;Bandwidth&lt;/strong&gt;.  They may use different names, but what it boils down to is unique people visiting the site, the total number of visits to the site, the number of pages viewed, and the number of items viewed.  Bandwidth is basically how much of the files were used.  Unless you&amp;#39;ve got a number of downloads, or you need to track this, it&amp;#39;s not worth looking at too carefully, so we won&amp;#39;t any further.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    Note that there are a number of different explanations for what the various terms mean.  Here, since I&amp;#39;m using AWStats, I&amp;#39;ll be using their terminology.  See &lt;a href=&#34;http://awstats.sourceforge.net/docs/awstats_glossary.html&#34; title=&#34;AWStats Glossary&#34;&gt;http://awstats.sourceforge.net/docs/awstats_glossary.html&lt;/a&gt; for what this information.
+&lt;/blockquote&gt;
+&lt;p&gt;
+Going back, we can couple the four remaining items.  &lt;strong&gt;Unique visitors&lt;/strong&gt; goes with &lt;strong&gt;Number of visits&lt;/strong&gt;, while &lt;strong&gt;Pages&lt;/strong&gt; goes with &lt;strong&gt;Hits&lt;/strong&gt;.  For each couple, the first will be less than the second.  After all, a person can visit the site many times, but will be &amp;#39;unique&amp;#39; only the first visit.  Equally, a single page will consist of many hits.  For example, if you load a simple HTML page with two images, that counts as 3 hits - 1 page and 2 images.
+&lt;/p&gt;
+&lt;p&gt;
+For each of these, there are a number of caveats.  At which point is a person no longer unique?  Daily?  Monthly?  Hourly?  Equally, how long after the first visit do we consider a second visit?  30 minutes?  An hour?  A day?  Obviously, the answer to the second question depends upon the answer to the first.  Also, what is included in hits can differ by quite a lot.  Due to caching, or storing, of files, the hits could be much smaller than the actual value.
+&lt;/p&gt;
+&lt;p&gt;
+But, let&amp;#39;s look at the last three months (July to September 2005) according to StrivingLife.net&amp;#39;s stats, provided by AWStats 6.4:
+&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: none&#34;&gt;
+    &lt;li&gt;July 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 4781&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Number of visits&lt;/strong&gt;: 5610&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Pages&lt;/strong&gt;: 12987&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Hits&lt;/strong&gt;: 39208&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;August 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3834&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Number of visits&lt;/strong&gt;: 4703&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Pages&lt;/strong&gt;: 11104&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Hits&lt;/strong&gt;: 38536&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;September 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3615&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Number of visits&lt;/strong&gt;: 4908&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Pages&lt;/strong&gt;: 10750&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Hits&lt;/strong&gt;: 31994&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Now, what can this tell us?  First, that unique visitors are going down, while number of visits went down and is now going back up.  Pages are going down, and so are hits.
+&lt;/p&gt;
+&lt;p&gt;
+But wait, what about search engines?  Are the bots that move across the Web, searching for new and updated content included in these numbers?  If they are, we might be adding artificial visitors and hits to our counts.  Fortunately, AWStats strips these out.  However, not all stat programs will do this, so make sure you check whether the stats include robots or not.
+&lt;/p&gt;
+&lt;p&gt;
+Getting back, without having more information, we can&amp;#39;t really be sure what this data means.  Why are less people viewing the site, but visiting more?  Why did pages decrease slightly, but hits jump down so much?
+&lt;/p&gt;
+&lt;p&gt;
+But, why assume that July 2005 is normal?  What if June 2005 had a unique number in the 3000s?  Then we&amp;#39;re looking at an abnormally high value for July.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+So, let&amp;#39;s look at just the unique visitors for the last six months.
+&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: none&#34;&gt;
+    &lt;li&gt;April 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3528&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;May 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3967&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;June 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 4940&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;July 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 4781&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;August 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3834&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;September 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;Unique visitors&lt;/strong&gt;: 3615&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Perhaps visitors are, in fact, getting back to normal?  Since I can look at all four numbers for those six months, I can tell you that numbers were in fact overally high across the board for those two months.  Perhaps the audience is busier and no longer able to check the site as much as they were before?
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s a number of other things we could check to determine why these numbers are so high for June and July.  But to do so would be to move off the topic at hand - popularity.  We&amp;#39;ve got the numbers that we&amp;#39;re looking for, but it&amp;#39;s important to point out at the same time that popularity has to be looked at from a longer aspect.  For example, an average of three, six, and twelve month periods, would give a pretty good sample what traffic is really like.  This will allow major spikes to avoid overally complicating things.
+&lt;/p&gt;
+&lt;p&gt;
+Now, we&amp;#39;ve got our second item - remember our second item?  The usefulness of the content being provided - is the content on the StrivingLife.net network useful?  Since I don&amp;#39;t provide just a couple downloads, and I don&amp;#39;t sell items, how do we determine the usefulness of the site?
+&lt;/p&gt;
+&lt;p&gt;
+Since we&amp;#39;re dealing with information, we can ask a couple of questions.  First, how long are people on the site?  One might think that the longer people are on a site the better.  Second, how are people coming to the site?  If people are coming directly to the site, it&amp;#39;s more likely that they&amp;#39;ve bookmarked or memorized your site.  On another (not the other) hand, if people are following links to your site, maybe people are posting your site as a resource.  Finally, what are people viewing when they visit the site?  What pages are drawing the views, and what file types (images or text)?
+&lt;/p&gt;
+&lt;p&gt;
+We&amp;#39;ll look at the time issue first.  AWStats is nice enough to have this information displayed.  Some other programs will, some won&amp;#39;t.  AWStats breaks it up into seven different time periods, displayed below for the last three months.  Keep in mind that the total number and percentage is taken from the number of visits for that month.
+&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: none&#34;&gt;
+    &lt;li&gt;July 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;0s-30s&lt;/strong&gt;: 4488, 80%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30s-2mn&lt;/strong&gt;: 488, 8.6%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;2mn-5mn&lt;/strong&gt;: 258, 4.5%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;5mn-15mn&lt;/strong&gt;: 213, 3.7%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;15mn-30mn&lt;/strong&gt;: 84, 1.4%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30mn-1h&lt;/strong&gt;: 63, 1.1%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;1h+&lt;/strong&gt;: 16, 0.2%&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;August 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;0s-30s&lt;/strong&gt;: 3693, 78.5%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30s-2mn&lt;/strong&gt;: 465, 9.8%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;2mn-5mn&lt;/strong&gt;: 188, 3.9%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;5mn-15mn&lt;/strong&gt;: 178, 3.7%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;15mn-30mn&lt;/strong&gt;: 78, 1.6%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30mn-1h&lt;/strong&gt;: 75, 1.5%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;1h+&lt;/strong&gt;: 26, 0.5%&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;September 2005
+    &lt;ul style=&#34;list-style-type: none&#34;&gt;
+        &lt;li&gt;&lt;strong&gt;0s-30s&lt;/strong&gt;: 3807, 77.5%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30s-2mn&lt;/strong&gt;: 424, 8.6%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;2mn-5mn&lt;/strong&gt;: 200, 4%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;5mn-15mn&lt;/strong&gt;: 178, 3.6%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;15mn-30mn&lt;/strong&gt;: 74, 1.5%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;30mn-1h&lt;/strong&gt;: 130, 2.6%&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;1h+&lt;/strong&gt;: 95, 1.9%&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+Now the interesting thing about time is that it&amp;#39;s hard to really get good information for this.  For example, someone could visit a page, spend two hours reading the content, and then close the browser.  This would count under 0s-30s, unless something was automatically reloaded on the page (for example, a small portion of the page could refresh every minute - this might give a little better information) or they moved around the site.  AWStats ends a session after an hour of inactivity, so, if after an their two-hours of reading they visited another page on the site, it then count as another session altogether.  Another two-hours of reading?  Another visit under 0s-30s.
+&lt;/p&gt;
+&lt;p&gt;
+However, we can still use time statistics, if we multiple pages of content, and especially if single pieces of content span multiple pages.  Perhaps this is why we have to click a &amp;#39;next&amp;#39; link on a number of news sites.  Perhaps also we should take this suggestion.
+&lt;/p&gt;
+&lt;p&gt;
+Now, let&amp;#39;s look at the second item of how people are coming to the site.  There are two major ways people can get to sites.  First, people can click on a link.  This is one of the most common ways.  Second, people can type in your site&amp;#39;s URL, or domain, and view your content.  This is typically uncommon.  In fact, interestingly, people will sometimes even type a domain name into a search engine instead of typing it into the address bar.  Yes, I am guilty of doing that too.
+&lt;/p&gt;
+&lt;p&gt;
+But wait, what about bookmarks?  Here, I&amp;#39;ll be including them with links.  The reason I&amp;#39;ll be doing this is because I&amp;#39;m going to break-up the two major ways into a couple smaller groups.  Namely, bookmarks, internal links, search engines, and non-search external links.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Bookmarks&lt;/strong&gt;.  First, the obvious - if people are visiting you from bookmarks, you&amp;#39;ve successfully gotten onto the visitor&amp;#39;s computer.  Second, just because you&amp;#39;ve landed in their bookmarks doesn&amp;#39;t mean that they&amp;#39;ll ever visit you again.  Why?  Ask yourself how many bookmarks you have, and how many you visit on a regular basis.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Internal links&lt;/strong&gt; are links from within your site.  So, these won&amp;#39;t help all that much.  However, it&amp;#39;s important to point out that this is the only real way to determine how many people are viewing more than one page on your site.  After all, a single unique visitor could view the same page in multiple visits.
+&lt;/p&gt;
+&lt;p&gt;
+Typically, these two are grouped together, and that&amp;#39;s also the case with AWStats.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Search engines&lt;/strong&gt; and other external sites are the final two sources of visitors.  The first is pretty open to who it will send your way.  As long as you have the content that the potential visitor is looking for, the search engine will link to your page - if you mention Charlize Theron enough times chances are someone will come to your site looking for a picture of her.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;External sites&lt;/strong&gt;, on the other hand, are typically a little more picky.  Typically, again - typically, external sites will only link to your site if they (the site owner) finds something worthwhile or interesting on your site.  Sometimes sites try and act like a search engine, or a portal, in which case they&amp;#39;ll just grab what they can find.  However, that&amp;#39;s why it&amp;#39;s always important to follow links to determine what the site is talking about, and why they are linking to your site :)
+&lt;/p&gt;
+&lt;p&gt;
+Looking at these four ways, the more visitors coming to your site from non-search engine external sites, typically the better.  In turn, more people will come to your site via search, which may in turn mean more people will link to you, and etcetara.  However, getting on search is the primary goal (unless you can get your link on a popular site, in which case everything else will usually follow).
+&lt;/p&gt;
+&lt;p&gt;
+That said, we&amp;#39;re at the third way to check possible information popularity - what are people viewing?  What resources are being used?  Many times, one particular resource will stand above all the rest.  This, along with a high number of one-time visits, could mean that your site has one thing to offer, which may or may not be beneficial.  Your site may be popular, but perhaps for all the wrong reasons.
+&lt;/p&gt;
+&lt;p&gt;
+So, let&amp;#39;s look at the top ten resources from the StrivingLife.net network for September of 2005.
+&lt;/p&gt;
+&lt;p&gt;
+From left-to-right, we have the &lt;strong&gt;path to the file&lt;/strong&gt;, the number of &lt;strong&gt;views&lt;/strong&gt;, how many people viewed this as their &lt;strong&gt;first file&lt;/strong&gt;, followed by how many viewed this &lt;strong&gt;file last&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;/articles/rss/wakinglife.rss - 1049 - 637 - 652&lt;/li&gt;
+    &lt;li&gt;/index.shtml - 564 - 23 - 317&lt;/li&gt;
+    &lt;li&gt;/articles/wakinglifescript.shtml - 529 - 405 - 121&lt;/li&gt;
+    &lt;li&gt;/articles/pdf/wakinglifescript.pdf - 496 - 135 - 357&lt;/li&gt;
+    &lt;li&gt;/ - 334 - 256 - 162&lt;/li&gt;
+    &lt;li&gt;/jamesrskemp/html/jmsnavigationtoc.htm - 330 - 298 - 42&lt;/li&gt;
+    &lt;li&gt;/articles/index.shtml - 199 - 72 - 76&lt;/li&gt;
+    &lt;li&gt;/discussions/viewtopic.php - 198 - 9 - 16&lt;/li&gt;
+    &lt;li&gt;/articles/crosssumsnumbers.shtml - 196 - 138 - 55&lt;/li&gt;
+    &lt;li&gt;/jamesrskemp/html/jms2/jms2beautifulwomenaccordingtojamesskemp.h... 169 - 158 - 155&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+First, we notice that one file has significantly more views than the other files.  However, notice that there is not a 1 view : 1 entry : 1 exit ratio for this file.  What this suggests, and what two other resources on this list also support, is that while people are using one resource more than any other, they are not viewing the single resource and leaving.  Rather, they are using it to move onto other items.
+&lt;/p&gt;
+&lt;p&gt;
+Knowing something about the content, I know that the RSS feed in the first slot links to the HTML file in the 3rd slot, which in turn links to the PDF in the fourth slot.  While not everyone is moving from RSS to HTML to PDF, there looks to be a few that are.
+&lt;/p&gt;
+&lt;p&gt;
+The question now becomes, is this the trait that I expect?  Or, is there another section that I would rather see in the top five, or top ten, that isn&amp;#39;t there?  Since my site focuses on articles, and since this is an article, that&amp;#39;s one thing suggesting that my site is a source of information.  Next, the seventh slot is filled by my articles&amp;#39; main page - I&amp;#39;m pretty happy that that page is showing up in the top ten.  Finally, there&amp;#39;s another article in the top ten, which means I&amp;#39;m not a one-hit wonder site.
+&lt;/p&gt;
+&lt;br /&gt;
+&lt;p&gt;
+So now we&amp;#39;ve gotten to the point we set out to get to in the very beginning.  The question is, have we determined whether the network is popular.  Looking at previous numbers, I see growth, which I consider to be a good thing.  Looking at what is getting used, I&amp;#39;m also happy, as I believe the information I provide is being used.  Is the StrivingLife.net network popular?  Some things could certainly be more popular (looking at a complete list of URLs that were accessed shows me under-used content), but a number of my articles &lt;strong&gt;are&lt;/strong&gt; popular.  Without looking at other sites that provide the same information, and getting a look at their stats, I suppose I just can&amp;#39;t know for sure.
+&lt;/p&gt;
+&lt;p&gt;
+And therein lies the message: make a site for you, and strive for what you deem to be popular.  One million unique visitors a month?  A day?  Maybe one day, but growth is definitely a good thing, and you&amp;#39;ve got to start somewhere.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Network popularity</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Network-popularity/</link>
+      <pubDate>Fri, 07 Oct 2005 07:34:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Network-popularity/</guid>
+      <description>&lt;p&gt;
+On Wednesday I said I was going to talk about how popular the various sites are.  I didn&amp;#39;t get to that on Thursday, so I&amp;#39;ll be discussing that today.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+There are two ways to measure popularity.  How many people are viewing the content, and how many people are taking advantage of, or using, the content.
+&lt;/p&gt;
+&lt;p&gt;
+For business, or even easier, e-commerce sites, this makes things pretty easy.  On the one hand, you have to track people as they visit the site - how many people are coming to the site?  A good stats program will tell you all about this.
+&lt;/p&gt;
+&lt;p&gt;
+Secondly, how many people are making purchases?  If the e-commerce site allows people to make a purchase online, they also have an idea of how often people use their site to make a purchase.  If the site is only a front-end for a brick and mortar business, then things are a little more tricky.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    An aside to this is the fact that it is possible for a brick and mortar business to gauge the usefulness of a site that is merely for information purposes.  A different phone number could be used online to track how many people call the company because of the site.  Coupons or codes could be available online that, when printed off or remembered, could be used for a discount at the store.
+&lt;/blockquote&gt;
+&lt;p&gt;
+We can open this further and bring in sites that don&amp;#39;t sell a product, but rather offer one for free.  For example, the browser Firefox.  Mozilla, the group behind Firefox, has the habit of tracking how many times the browser has been downloaded.  However, the site also provides information, by way of (support) forums.
+&lt;/p&gt;
+&lt;p&gt;
+If you run a site that doesn&amp;#39;t sell a product, either directly or indirectly, it&amp;#39;s a little tougher to determine how popular a site is.  On the one hand, you can still use stats to track unique visitors and page views.
+&lt;/p&gt;
+&lt;p&gt;
+Tonight I&amp;#39;ll be finishing this discussion with ways that personal sites can track popularity, and share how &amp;#39;popular&amp;#39; the StrivingLife.net network pages are.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

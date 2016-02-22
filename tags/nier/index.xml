@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nier on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/nier/</link>
+    <description>Recent content in Nier on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Oct 2011 21:59:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/nier/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nier weapon data in XML (and LINQ sample query)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
+      <pubDate>Sun, 16 Oct 2011 21:59:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
+      <description>&lt;p&gt;&lt;p&gt;Going through the game &lt;a href=&#34;http://strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt; yet again, I wanted an easier way to track what weapon levels I had already upgraded to, and what items I still needed to unlock weapon items.&lt;/p&gt;
+&lt;p&gt;Phase one towards that goal is creating an XML file with weapon upgrade information which is available online: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&#34;&gt;Nier weapon data&lt;/a&gt;. An XML schema document for this information is also available: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2011/10/NierWeapons.xsd&#34;&gt;Nier weapon XSD&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Sample LINQ query&lt;/h3&gt;
+&lt;p&gt;The following query can be run from LINQPAD, and will either display all items with their counts, or a grouped listing of items with the total quantity needed.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument weaponsXml = XDocument.Load(@&amp;ldquo;&lt;a href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&amp;quot;&#34;&gt;http://media.jamesrskemp.com/xml/NierWeapons.xml&amp;quot;&lt;/a&gt;);&lt;/p&gt;
+
+&lt;p&gt;var items = weaponsXml
+    .Descendants()
+    .Elements(&amp;ldquo;Item&amp;rdquo;)
+    .Select(i =&amp;gt; new WeaponItem { Name = i.Attribute(&amp;ldquo;Name&amp;rdquo;).Value, Quantity = i.Attribute(&amp;ldquo;Quantity&amp;rdquo;) != null ? int.Parse(i.Attribute(&amp;ldquo;Quantity&amp;rdquo;).Value) : 1 })
+    .OrderBy(i =&amp;gt; i.Name).ThenBy(i =&amp;gt; i.Quantity)
+    ;&lt;/p&gt;
+
+&lt;p&gt;var itemsGrouped = items.GroupBy(i =&amp;gt; i.Name).Select(g =&amp;gt; new WeaponItem { Name = g.Key, Quantity = g.Sum(i =&amp;gt; i.Quantity) });&lt;/p&gt;
+
+&lt;p&gt;//items.Dump();
+itemsGrouped.Dump();&lt;/p&gt;
+
+&lt;p&gt;}
+public class WeaponItem {
+    public string Name {get;set;}
+    public int Quantity {get;set;}&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

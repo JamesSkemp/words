@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adb on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/adb/</link>
+    <description>Recent content in Adb on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Nov 2014 12:59:46 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/adb/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Enabling ADB on a Lenovo A7600-F TAB A10</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
+      <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
+      <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
+
+&lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;
+
+&lt;p&gt;Luckily StackOverflow had &lt;a href=&#34;http://stackoverflow.com/a/15609366/11912&#34; rel=&#34;external&#34;&gt;an answer to the question &#34;Google Android USB Driver and ADB&#34;&lt;/a&gt; that stepped through how to make this work.&lt;/p&gt;
+
+&lt;p&gt;The specific steps I followed for the Lenovo A7600-F TAB A10 were:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Downloaded the &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ThinkPad Tablet ADB Interface Driver&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Extract the contents of the zip to a new directory.&lt;/li&gt;
+&lt;li&gt;Update the &lt;code&gt;android_winusb.inf&lt;/code&gt; file with the code below, which is also available as a &lt;a href=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91&#34; rel=&#34;external&#34;&gt;Gist&lt;/a&gt;. This was added above the &lt;code&gt;;NVIDIA Tegra&lt;/code&gt; line.&lt;/li&gt;
+&lt;li&gt;This may not be necessary, but I also updated the file at &lt;code&gt;C:\Program Files (x86)\Android\sdk\extras\google\usb_driver\android_winusb.inf&lt;/code&gt; with the same code. I added it above the &lt;code&gt;;Project Tango (generic)&lt;/code&gt; line.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and then use &lt;code&gt;shutdown -o -r -t 0&lt;/code&gt; to reboot. I unfortunately didn&#39;t keep track of the exact steps, but it&#39;s close to what the SO answer had, so something like &#34;Click ‘Troubleshoot’. Click ‘Advanced Options’ Click ‘Windows Startup Settings’ Click Restart.&#34;&lt;/li&gt;
+&lt;li&gt;When you have the option, &#34;Disable driver signature enforcement,&#34; which I believe was option 7 in the menu.&lt;/li&gt;
+&lt;li&gt;Once you&#39;ve logged back into your machine you should be able to go into Device Manager, find the Lenovo tablet, and choose to update the device drivers. Point to the extracted zip directory. You might get a security warning, but you&#39;ll be able to install it.&lt;/li&gt;
+&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and navigate over to where adb is installed. In my particular case I&#39;m using Android Studio, and upgraded to 0.8.14, so mine is in &lt;code&gt;C:\Program Files (x86)\Android\sdk\platform-tools&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d&#34; rel=&#34;external&#34;&gt;Restart ADB&lt;/a&gt; and then check the devices. This is done by running &lt;code&gt;adb kill-server&lt;/code&gt; and &lt;code&gt;adb start-server&lt;/code&gt; to restart ADB, and then &lt;code&gt;adb devices&lt;/code&gt; to get a device listing.&lt;/li&gt;
+&lt;li&gt;I found that I had to unplug the USB cable from my computer first. You&#39;ll also have to accept the connection from the tablet.&lt;/li&gt;
+&lt;li&gt;Checking Device Manager should display &#34;Lenovo ThinkPad Tablet ADB Interface&#34; under Android Phone, and &#34;A7600-F&#34; under Portable Devices. You should also be able to run Android applications on the Lenovo A7600-F.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;script src=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91.js&#34;&gt;&lt;/script&gt;
+
+&lt;script src=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

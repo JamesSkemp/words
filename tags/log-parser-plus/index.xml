@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Log Parser Plus on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/log-parser-plus/</link>
+    <description>Recent content in Log Parser Plus on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jun 2011 23:30:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/log-parser-plus/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mvc-mini-profiler for users in a particular role</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
+      <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
+      <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
+&lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
+&lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
+&lt;p&gt;Next, I had to add the necessary code to my _layout.cshtml, which also required that I move my jQuery include to the head element. Unfortunate, but ... that&#39;s how it is.&lt;/p&gt;
+&lt;p&gt;Finally, since I only wanted this to show for users in a particular role I added the below to the global.asax.cs:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;protected void Application_BeginRequest()
+{
+    MiniProfiler.Start();
+}
+
+protected void Application_AuthorizeRequest(Object sender, EventArgs e)
+{
+    if (!User.IsInRole(&#34;Administrator&#34;))
+    {
+        MvcMiniProfiler.MiniProfiler.Stop(discardResults: true);
+    }
+}
+
+protected void Application_EndRequest()
+{
+    MiniProfiler.Stop();
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with that done, I can see that my pages load extremely quick (after the first time of course).&lt;/p&gt;
+&lt;p&gt;I definitely need to do some research to see if I can display the total time for all users, albeit in a slightly different position (footer of the page), as that&#39;s something I wouldn&#39;t mind showing to users.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser Plus June/July 2011 plans</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-June-July-2011-plans/</link>
+      <pubDate>Thu, 02 Jun 2011 21:07:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-June-July-2011-plans/</guid>
+      <description>&lt;p&gt;Somehow, while I wasn&#39;t looking, the Log Parser Plus Web site has grown to what I consider a nice size over the last handful of months.&lt;/p&gt;
+&lt;p&gt;As the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus Web site&lt;/a&gt; moves towards 2000 visits a month I&#39;ll be making a number of changes in an attempt to make it even more useful.&lt;/p&gt;
+&lt;p&gt;Some changes I&#39;ve already made:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Implemented &lt;a href=&#34;http://strivinglife.com/words/post/New-Log-Parser-Plus-Web-site-design.aspx&#34;&gt;a new design&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Added login functionality.&lt;/li&gt;
+&lt;li&gt;Added ELMAH support. (Administrative)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;My current plan with item number 2 is to potentially tie in OpenID functionality so that individuals can easily submit their own examples.&lt;/p&gt;
+&lt;p&gt;Additional changes planned for the coming weeks/months:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Migrate from XML sources to SQL. (Administrative)&lt;/li&gt;
+&lt;li&gt;Add information about XML parsing.&lt;/li&gt;
+&lt;li&gt;Add information about parsing text documents.&lt;/li&gt;
+&lt;li&gt;Add information about running SQL from a file instead of via the command line (my preferred way to run queries).&lt;/li&gt;
+&lt;li&gt;Add functionality for users to comment on individual examples. (May not happen, since I&#39;m not sure about demand.)&lt;/li&gt;
+&lt;li&gt;Add functionality to export queries to files, which goes along with item 4.&lt;/li&gt;
+&lt;li&gt;Review of the Log Parser book. (Having only skimmed it, this would be after I sat down and read it.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Have an idea about something else? I&#39;ve just added a page to collect &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Home/Feedback&#34;&gt;feedback on Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Log Parser Plus Web site design</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/New-Log-Parser-Plus-Web-site-design/</link>
+      <pubDate>Sun, 22 May 2011 12:40:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/New-Log-Parser-Plus-Web-site-design/</guid>
+      <description>&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;My Web site on Microsoft Log Parser&lt;/a&gt; gets a fair amount of monthly traffic, but I&#39;ve never really been happy with the design, which has been in place since I created the site back in September of 2008.&lt;/p&gt;
+&lt;p&gt;While I was fully intending on updating the site last week (as well as doing a slew of other productive things), I &lt;em&gt;finally&lt;/em&gt; did so this morning.&lt;/p&gt;
+&lt;h3&gt;Design 1&lt;/h3&gt;
+&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Content/Design-Version-1.png&#34;&gt;&lt;img style=&#34;width: 480px;&#34; src=&#34;http://logparserplus.com/Content/Design-Version-1.small.png&#34; alt=&#34;LogParserPlus.com initial design&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Design 2&lt;/h3&gt;
+&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Content/Design-Version-2.png&#34;&gt;&lt;img style=&#34;width: 480px;&#34; src=&#34;http://logparserplus.com/Content/Design-Version-2.small.png&#34; alt=&#34;LogParserPlus.com second (current) design&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Overall, I&#39;d say that&#39;s a positive change, for a non-designer such as myself. It&#39;s also the first of at least eight changes I&#39;ll be making to the site, in an attempt to increase traffic.&lt;/p&gt;
+&lt;p&gt;In addition to the new design I upgraded to jQuery 1.6.1, from jQuery 1.5.2, and am now using NuGet to manage that, and also put in place the async Google Analytics code, amongst other, behind-the-scenes, changes.&lt;/p&gt;
+&lt;p&gt;Now I just have to redesign my professional site, although realistically I&#39;ll probably add the new functionality I&#39;ve been wanting to add first ...&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser Plus - version 0.3 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</link>
+      <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Currently under development, Log Parser Plus (not be confused with the Web site &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;) is a tool to (hopefully) help work with Microsoft Log Parser.&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.zip&#34;&gt;Log Parser Plus 0.3 BETA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You will need to download and install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;Microsoft Log Parser&lt;/a&gt; for this application to run, as well as .NET Framework 2.0.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Log-Parser-Plus-version-021-released.aspx&#34;&gt;More information&lt;/a&gt; can be found in the post regarding the initial, 0.2.1, release.&lt;/p&gt;
+&lt;p&gt;Comments and concerns are welcomed.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Log Parser Plus - version 0.2.1 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</link>
+      <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
+&lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more.&lt;/p&gt;
+&lt;p&gt;While a number of applications exist to help use Log Parser, as well as a number of sites containing &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser queries&lt;/a&gt;, I haven&amp;rsquo;t been very happy with them.&lt;/p&gt;
+&lt;p&gt;In an attempt to make it even easier to work with Log Parser, I present version 0.2.1 BETA of Log Parser Plus (not to be confused with the Web site, &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.2.1.zip&#34;&gt;Log Parser Plus 0.2.1 BETA&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Log Parser Plus 0.2.1 BETA is, as noted, currently under development. It lacks proper threading, and could use a number of user interface tweaks. Since I use IIS for personal and business purposes, I will be working towards version 1.0 and beyond.&lt;/p&gt;
+&lt;p&gt;Microsoft Log Parser is required, and can be &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;downloaded from Microsoft&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Questions, comments, and concerns are appreciated.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

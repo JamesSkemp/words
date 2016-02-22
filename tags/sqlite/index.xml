@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sqlite on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/sqlite/</link>
+    <description>Recent content in Sqlite on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Aug 2010 13:44:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
+      <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
+      <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
+&lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
+&lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;
+&lt;p&gt;Unfortunately, that requires that Visual Studio 2010 run as administrator (I was afraid I was going to have to update each of my pinned solutions; thankfully you need to (and can only) update this on the main application shortcut), and my MVC 2 project was failing horribly.&lt;/p&gt;
+&lt;p&gt;Instead of trying to debug this further I kept searching and found another post on &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/2814101/unwanted-sqlite-inserted-in-bin&#34;&gt;Stack Overflow&lt;/a&gt;. After updating my&amp;nbsp;&#39;shared&#39; directory to contain a folder with all of the&amp;nbsp;ELMAH files and&amp;nbsp;another with just the necessary ones, I&#39;m happy to report the errors (warnings)&amp;nbsp;are gone.&lt;/p&gt;
+&lt;p&gt;My one site is still a mash of the old and new, so I had to manually remove the items from the Bin directory to verify, but things seem just fine.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
+&lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
+&lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
+&lt;p&gt;However, when attempting to add this to my MVC site I kept running into issues, the last of which was an &#34;Unable to open the database file.&#34;&lt;/p&gt;
+&lt;p&gt;The first issue was with the type declared in the examples on the page above; &lt;strong&gt;TechInfoSystems.Data.SQLiteProvider&lt;/strong&gt; should be removed completely, as he suggests just&amp;nbsp;adding the three classes to your site.&lt;/p&gt;
+&lt;p&gt;The second and last issue was that pesky database issue. At first I didn&#39;t think the app_data directory was getting pushed over, so I verified that I was pushing that as part of the Publish process (how they recommend you push a MVC site to production).&lt;/p&gt;
+&lt;p&gt;Upon further review it looks like the App_Data directory was placed inside the Bin directory. Google didn&#39;t help me much on whether that was the expected behavior, but it consistently did that. I added a ton of permissions to NETWORK SERVICE on the bin\app_data directory, but still the same pesky error.&lt;/p&gt;
+&lt;p&gt;So I commented out the membership, profile, and role items completely from web.config and added the following code to the Index view.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%= AppDomain.CurrentDomain.GetData(&#34;DataDirectory&#34;).ToString() %&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lo and behold, it was looking for it in the root of the site, exactly where I was expecting the App_Data directory to publish to.&lt;/p&gt;
+&lt;p&gt;Move the App_Data folder and sure enough, the site works (after uncommenting the Web.config provider information, of course) and I&#39;m able to create a new user.&lt;/p&gt;
+&lt;p&gt;So, why does the publish process require me to move the App_Data directory?&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;In order to get the database pushing correctly I changed Copy to Output from Do not copy to Copy always. However, what really needed to happen was the Build Action needed to be changed to Content.&lt;/p&gt;
+&lt;p&gt;An App_Data directory is now created correctly, and the SQLite database is correctly placed in the directory.&lt;/p&gt;
+&lt;h3&gt;Another gotcha&lt;/h3&gt;
+&lt;p&gt;If you want troubles, change the applicationName in the Web.config for all three items. If you do this, you&#39;ll run into errors like &#34;Attempt to write a read-only database attempt to write a readonly database&#34; with a line reference suggesting there&#39;s an issue with roleManager. Comment that out, or that and membership and&amp;nbsp;profile, and things will seem okay.&lt;/p&gt;
+&lt;p&gt;The issue is that the applicationName (SQLite ASP.NET Provider) is baked into the sample SQLite database. Durr.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iTunes Music to SQLite - version 0.1 beta released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Music-to-SQLite-version-01-beta-released/</link>
+      <pubDate>Thu, 24 Sep 2009 12:13:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Music-to-SQLite-version-01-beta-released/</guid>
+      <description>&lt;p&gt;While it was at the same stage as it is now back on the 19th, I&#39;m finally releasing the beta version of iTunes Music to SQLite.&lt;/p&gt;
+&lt;p&gt;This console application finds all Music playlists in iTunes and imports them into a SQLite database (called iTunesMusic.s3db).&lt;/p&gt;
+&lt;p&gt;You can change this by passing the database and source names as parameters.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;iTunesMusicToSQLite.exe &#34;datum.db&#34; &#34;James Skemp&#39;s 80 gig&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can run the executable and it will prompt for a key press before exiting, in case you want to view any messages.&lt;/p&gt;
+&lt;p&gt;This is a beta version, and was done more as a proof of concept than anything else, so this may be the only version released.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesMusicToSQLite_0.1.zip&#34;&gt;Download iTunes Music to SQLite 0.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;.NET Framework 3.5 is recommended, and may be required (&lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;check your version of .NET Framework&lt;/a&gt;).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IIS Logs to SQLite - version 0.1 beta released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
+      <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
+      <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
+&lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This application requires the .NET Framework version 3.5 (&lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;check your version of .NET Framework&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Note that for a larger amount of logs, memory usage can spike.&lt;/p&gt;
+&lt;p&gt;In a future version I may (read: will) allow the columns to be exported to be selected by the user, instead of the &#39;all&#39; dump that I currently do.&lt;/p&gt;
+&lt;p&gt;There&#39;s some other interface cleanup items as well, and there&#39;s at least one known bug (using a custom log file or path that returns no matches).&lt;/p&gt;
+&lt;p&gt;This might be the direction I end up taking my Log Parser Plus application.&lt;/p&gt;
+&lt;p&gt;Plug: Read more about Microsoft Log Parser and find example queries at &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

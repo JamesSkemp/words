@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Double Negation on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/double-negation/</link>
+    <description>Recent content in Double Negation on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jun 2007 11:03:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/double-negation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>On the Dangers of &#34;Is and Is Not Not&#34;</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/On-the-Dangers-of-Is-and-Is-Not-Not/</link>
+      <pubDate>Sun, 10 Jun 2007 11:03:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/On-the-Dangers-of-Is-and-Is-Not-Not/</guid>
+      <description>&lt;p&gt;
+Logically speaking, the rule of Double Negation tells us that p :: ~~p. In order words, if something is blue, it is not not blue. Unfortunately, this is one of the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Rules-for-Sentential-Logic.aspx&#34;&gt;rules for sentential logic&lt;/a&gt; that is philosophically troubling.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s a simple example to show this; happy. We then have the following:
+&lt;/p&gt;
+&lt;p&gt;
+happy :: not not happy
+&lt;/p&gt;
+&lt;p&gt;
+or
+&lt;/p&gt;
+&lt;p&gt;
+I am happy :: I am not not happy
+&lt;/p&gt;
+&lt;p&gt;
+or
+&lt;/p&gt;
+&lt;p&gt;
+I am happy :: I am not unhappy
+&lt;/p&gt;
+&lt;p&gt;
+Now, if we are in fact declaring that we are happy, there is no problem with double negation in this case. Yet, if the declaration is the other way, it&amp;#39;s not so easy to double negate.
+&lt;/p&gt;
+&lt;p&gt;
+In this case, it may be more because there is a third option; I am neither happy nor unhappy. In states of affairs in which there are only two options, double negation will serve us well. If something is blue, then it&amp;#39;s not not blue. If I&amp;#39;m unhappy, then I&amp;#39;m not happy.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s therefore important to realize cases in which there are not merely two options, but potentially three or more. In such cases, double negation will do us little good.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

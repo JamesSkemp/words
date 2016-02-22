@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/internet/</link>
+    <description>Recent content in Internet on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Jun 2011 22:09:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Internet Explorer 10: Platform Preview 2 now available</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
+&lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
+&lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
+&lt;p&gt;And that&#39;s about all I have to say about that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On Web sites that feature Facebook Comments</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
+      <pubDate>Fri, 24 Jun 2011 16:55:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
+      <description>&lt;p&gt;Over the past few months a number of sites have switched over to Facebook-powered comments. For the most part those sites are ones that I&#39;ve never commented one, nor will comment on. However, I recently discovered that a former co-worker, Rob Lumley, switched his site over to Facebook, and recently wrote an article about it titled &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com/facebook-comments-to-wordpress/&#34;&gt;Add Facebook Comments to WordPress&lt;/a&gt;. Since I don&#39;t use Facebook comments, I figured I&#39;d post the response I had written and tried to post anonymously, here instead.&lt;/p&gt;
+&lt;h3&gt;Rob&#39;s question&lt;/h3&gt;
+&lt;p&gt;For those of you who use or read this site, what do you think about Facebook comments? Does it increase or decrease your chances of commenting? Do you like not having to log in or create another user account? Or do you wish to stay anonymous?&lt;/p&gt;
+&lt;h3&gt;My response&lt;/h3&gt;
+&lt;p&gt;Decreases.&lt;/p&gt;
+&lt;p&gt;With all the security issues I stopped staying logged into Facebook at least a year ago. I also post very specific things to Facebook, and want very tight control over what&#39;s posted. And I quite frankly don&#39;t trust Facebook as a company.&lt;/p&gt;
+&lt;p&gt;I personally haven&#39;t left an anonymous comment in the last five years, if not more (a quick search returned comments I had left as far back as 2003, and I&#39;m sure you can find more even further). However, there are some who would prefer not to be associated with an unpopular stance, and I suppose their ability to be able to leave comments that are not associated with their real name. After all, if they really want to leave it in a completely non-anonymous setting, they could always create a dummy account.&lt;/p&gt;
+&lt;p&gt;I&#39;ve personally found &lt;a rel=&#34;external&#34; href=&#34;http://disqus.com/&#34;&gt;DISQUS&lt;/a&gt; to offer a nice alternative, and plan on moving all my sites to that (when I finally get around to it - I think it&#39;s just a checkbox to enable in my platform). You can import (and export) existing comments, anonymous comments are allowed, a large variety of authentication sources are allowed, and more.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been using it for &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt;, and while I don&#39;t get comments (not too surprising based on the content), there has been some interaction.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Well done, Amazon (re: Amazon Cloud)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Well-done-Amazon-re-Amazon-Cloud/</link>
+      <pubDate>Tue, 29 Mar 2011 07:41:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Well-done-Amazon-re-Amazon-Cloud/</guid>
+      <description>&lt;p&gt;Well done, Amazon.&lt;/p&gt;
+&lt;p&gt;They&#39;ve been saying for quite a while that music was heading towards the &#39;cloud,&#39; and while it seemed for a while that everyone was betting on Apple doing it first, you&#39;ve trumped them, with what seems like a very consumer-friendly service.&lt;/p&gt;
+&lt;p&gt;5 GB for everyone? Check.&lt;/p&gt;
+&lt;p&gt;Free upgrade to 20 GB if you buy an Amazon MP3 album? Check.&lt;/p&gt;
+&lt;p&gt;Amazon MP3s purchased and stored to the cloud (seemingly at purchase) don&#39;t count against your limit? Check.&lt;/p&gt;
+&lt;p&gt;And you can still download said MP3s to your computer later? Check.&lt;/p&gt;
+&lt;p&gt;Way to go, Amazon. I&#39;m still afraid Wisconsin is going to force you to charge tax on purchases at the time of purchase, and it&#39;s going to result in the closure of my Associates account (I like being able to hold off until the end of the year when I file my taxes, but realize most people don&#39;t report), but overall I&#39;m very happy to be a proud Amazon.com customer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting feature with parsing XML with jQuery on Safari</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
+&lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
+&lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;My main intention is to make this available on my iPod Touch, so I was a bit dismayed when I found that the listing didn&#39;t display the title of the game. Everything else displayed just fine, but not the titles. Naturally, after some searching about I posted my question to Stack Overflow - &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/5427259/xmldocument-via-jquery-ajax-call-stored-as-string-in-localstorage-results-in-sa&#34;&gt;XMLDocument (via jQuery ajax call) stored as string in localStorage results in Safari not finding title elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After further research, it looks like I was missing a parseXML call, which results in the data correctly being pulled/displayed in Safari.&lt;/p&gt;
+&lt;p&gt;I decided to do some further testing on this issue, and I believe I&#39;ve discovered why it&#39;s displaying as it is.&lt;/p&gt;
+&lt;h3&gt;The test code&lt;/h3&gt;
+&lt;p&gt;I created a bit of test code - &lt;a href=&#34;http://jamesrskemp.com/testing/jQueryXmlParsing.html&#34;&gt;jQuery XML parsing&lt;/a&gt; - and that I&#39;ve posted below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;jQuery XML Parsing testing - JamesRSkemp.com&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;jQuery XML Parsing testing&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The following test code was created to test Internet Explorer 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), and Safari on iOS 4.3. Read more in &amp;lt;a href=&#34;http://strivinglife.com/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34; rel=&#34;external&#34;&amp;gt;Interesting feature with parsing XML with jQuery on Safari&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+    &amp;lt;noscript&amp;gt;You must have JavaScript enabled to view this test.&amp;lt;/noscript&amp;gt;
+    &amp;lt;div id=&#34;TestOutput&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        // We&#39;ll store an example of an XML file as a string of text.
+        var xmlContent = &#34;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;&amp;lt;Books&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;/Books&amp;gt;&#34;;
+        var testOutputText = &#34;&#34;;
+
+        var simpleCall = $(xmlContent);
+        var simpleParse = $.parseXML(xmlContent);
+        var parse = $($.parseXML(xmlContent));
+
+        try {
+            testOutputText += &#34;Type of $(xmlContent): &#34; + typeof simpleCall + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleCall.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleCall.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleCall === &#39;object&#39;) {
+                for (var prop in simpleCall) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleCall[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleCall.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $.parseXML(xmlContent): &#34; + typeof simpleParse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleParse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleParse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleParse === &#39;object&#39;) {
+                for (var prop in simpleParse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleParse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $($.parseXML(xmlContent)): &#34; + typeof parse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + parse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + parse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof parse === &#39;object&#39;) {
+                for (var prop in parse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            parse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        $(&#39;#TestOutput&#39;).append(testOutputText);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;What the test does&lt;/h3&gt;
+&lt;p&gt;I did a couple of things with this test.&lt;/p&gt;
+&lt;p&gt;First, I created a string with the following XML, and saved it as xmlContent.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;
+&amp;lt;Books&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+&amp;lt;/Books&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I created three variables, storing different things. First, I did $(xmlContent), then $.parseXML(xmlContent), and finally $($.parseXML(xmlContent)).&lt;/p&gt;
+&lt;h3&gt;The results&lt;/h3&gt;
+&lt;p&gt;Interestingly, on IE 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), the first and third tests return the type of &lt;strong&gt;object Object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the second test we have &lt;strong&gt;object Document&lt;/strong&gt; on IE 9, Chrome 10, Safari 5, and Safari on iOS 4.3, and &lt;strong&gt;object XMLDocument&lt;/strong&gt; on Firefox 4 and Opera 11.&lt;/p&gt;
+&lt;p&gt;But for the first test, while we have a length of &lt;em&gt;2&lt;/em&gt; on IE 9, Chrome 10, Firefox 4, and Opera 11, we only have a length of 1 on Safari 5 and Safari on iOS 4.3.&lt;/p&gt;
+&lt;p&gt;The fix, then, is to make sure to use the last of the three, but it seems odd that this wouldn&#39;t work on only one of the tested browsers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On the case of weird image results for &#39;Dan Conderman&#39;</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</link>
+      <pubDate>Mon, 28 Feb 2011 20:27:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</guid>
+      <description>&lt;p&gt;If you&#39;ve done an image search for &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; lately you may have found an interesting search result for your &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; image search (on Google).&lt;/p&gt;
+&lt;p&gt;I&#39;m not exactly sure why &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; is showing this image, but since &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; likes Lady Gaga, and &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; has been known to ski in the snow ...&lt;/p&gt;
+&lt;p&gt;Are the script kiddies playing a trick on &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt;?&lt;/p&gt;
+&lt;p&gt;Will we see sites &#39;hacked&#39; with footer links to &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt;&#39;s newest image search result?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convert online image to base64 with C#</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Convert-online-image-to-base64-with-C-sharp/</link>
+      <pubDate>Sun, 12 Dec 2010 16:51:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Convert-online-image-to-base64-with-C-sharp/</guid>
+      <description>&lt;p&gt;The following code will convert an online image to a base64 string.&lt;/p&gt;
+&lt;p&gt;The code was specifically written for use in &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt;, hence the use of Dump().&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;String url = &#34;http://ecx.images-amazon.com/images/I/51MVXV3QQ6L._SL500_SS150_.jpg&#34;;
+
+Uri uri = new Uri(url);
+
+WebClient client = new WebClient();
+byte[] imageBytes = client.DownloadData(uri);
+
+string base64String = Convert.ToBase64String(imageBytes);
+
+base64String.Dump();
+
+base64String.Length.Dump();
+(&#34;&amp;lt;img src=&#39;data:image/jpg;base64,&#34; + &#34;&#39; /&amp;gt;&#34;).Length.Dump();
+
+client.Dispose();&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The length dumps are given to get an idea of what size would be added to a file if added inline.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: Beginning ASP.NET 4 In C# and VB</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While I&amp;rsquo;ve already read &lt;a href=&#34;http://www.amazon.com/dp/047018759X?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 3.5&lt;/a&gt; by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it.&lt;/p&gt;
+&lt;p&gt;Would I still feel strongly about &lt;a href=&#34;http://www.amazon.com/review/R1K5HZLKSEFQFA?tag=strivinglifen-20&#34;&gt;recommending his work&lt;/a&gt; as &lt;em&gt;the&lt;/em&gt; #1 choice for those new (or relatively new) to ASP.NET? Would it offer enough new content over the previous iteration that I&amp;rsquo;d recommend a new purchase if someone had the first?&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;First, if you&amp;rsquo;re just getting started with ASP.NET, this is once again &lt;em&gt;the&lt;/em&gt; book to start with. The way the book reads makes it extremely easy to keep up with where he&amp;rsquo;s at, and why. At the end you&amp;rsquo;ll end up with a functional site, having built it yourself, using a good deal of ASP.NET functionality.&lt;/p&gt;
+&lt;p&gt;The book also assumes little experience with HTML and CSS, which makes this book a fairly good start for anyone who wants to get started with creating Web sites (using ASP.NET), even going into the developer tool Visual Web Developer 2010.&lt;/p&gt;
+&lt;p&gt;The book itself is a &lt;em&gt;vast&lt;/em&gt; improvement over previous iterations, with a much more solid wrap and softer (but still thick) pages. (Although the pages must be somewhat thinner, since the previous iteration of this book is about the same depth as this one, even though this has ~70 more pages.)&lt;/p&gt;
+&lt;p&gt;The guitar on the cover has left me guessing a bit, all the way from &amp;lsquo;rock star&amp;rsquo; to &amp;lsquo;hero&amp;rsquo; to &amp;lsquo;he creates a music-related site&amp;rsquo; but if you don&amp;rsquo;t get stuck on such things, you&amp;rsquo;ll be fine.&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve purchased and read the previous iteration of this book, Beginning ASP.NET 3.5, you might be wondering if it makes sense to pick this up.&lt;/p&gt;
+&lt;p&gt;The only new chapter is one on jQuery (although Microsoft AJAX is still covered and used as before), and it&amp;rsquo;s primarily an introduction, which fits within the context of this book. Crawling the jQuery site for a little while will probably get you up to speed just as well. Otherwise, the rest has been updated to ASP.NET 4 and the current versions of software; little else has changed.&lt;/p&gt;
+&lt;p&gt;If you picked up the previous iteration and couldn&amp;rsquo;t get through it, then don&amp;rsquo;t bother with this, as it&amp;rsquo;s quite similar. Likewise for if you&amp;rsquo;ve moved beyond Beginning ASP.NET 3.5, and feel comfortable with the technology; ASP.NET 4 isn&amp;rsquo;t dug into so much here that you can&amp;rsquo;t get the information elsewhere with some basic searching.&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;To conclude, &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt; is &lt;em&gt;the&lt;/em&gt; book I &lt;em&gt;highly&lt;/em&gt; recommend to get started with ASP.NET (3.5 or 4). Imar knows the technology as well as how to teach it, from beginning to Web site created. 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What I&#39;d like to see in 201X in regard to browsers</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
+      <pubDate>Wed, 09 Dec 2009 10:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
+      <description>&lt;p&gt;&lt;h3&gt;Situation 1: WebKit&lt;/h3&gt;
+&lt;p&gt;Microsoft drops all active development on Internet Explorer 9. Instead, they throw their full support (development team)&amp;nbsp;behind WebKit.&lt;/p&gt;
+&lt;p&gt;Apple, with Safari, and Google, with Chrome, are already behind WebKit. Apple&amp;rsquo;s implementation on Windows, via Safari for Windows, is shoddy at best, and Google&amp;rsquo;s Chrome is a completely slimmed down version. By getting Microsoft&amp;rsquo;s support behind the engine you have an experienced team that has already developed for Windows.&lt;/p&gt;
+&lt;p&gt;You also have three operating systems covered (Microsoft = Windows, Apple = Mac, and Google ~= Linux), suggesting that users of these systems will have a great experience with the WebKit implementation.&lt;/p&gt;
+&lt;p&gt;This leaves Mozilla Firefox and Opera out of the mix, but Opera&amp;rsquo;s team has the mobile browser understood, and could bring that to the table, while Mozilla would have extension experience (not that the experience is all that great, but &amp;hellip;). Either way, the only thing that seems to tie Mozilla together is Google&amp;rsquo;s money, and if Google were to withdraw that support, and WebKit were to support extensions as Firefox does, Mozilla/Firefox may experience a peaceful end.&lt;/p&gt;
+&lt;h3&gt;Situtation 2: Standards&lt;/h3&gt;
+&lt;p&gt;Alternatively, perhaps this decade we can see standards being agreed upon, in particular as the HTML 5 &amp;lsquo;release&amp;rsquo; approaches.&lt;/p&gt;
+&lt;p&gt;While they&amp;rsquo;re at it, they may as well join together on the common cause of making the Web a safer place, and together build safe browsers (even if they each have their own).&lt;/p&gt;
+&lt;h3&gt;What will really happen?&lt;/h3&gt;
+&lt;p&gt;Unfortunately, while I&amp;rsquo;m hopeful enough to have these &amp;hellip; hopes, a decade just doesn&amp;rsquo;t seem long enough for either of these situations to actually occur.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Twitter hashtag - #walkingmusic</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Twitter-hashtag-walkingmusic/</link>
+      <pubDate>Fri, 24 Apr 2009 17:12:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Twitter-hashtag-walkingmusic/</guid>
+      <description>&lt;p&gt;
+In the spirit of Rob Lumley (rmlumley), who created &lt;a href=&#34;http://rmlumley.com/2009/04/twitter-hash-tag/&#34;&gt;#cubemusic&lt;/a&gt;, and after a great walk today, I&amp;#39;ve created an original hashtag: &lt;a href=&#34;http://search.twitter.com/search?q=%23walkingmusic&#34;&gt;#walkingmusic&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+For all those days I go for a walk (which I hope to be every Friday afternoon, at least), I&amp;#39;ll be noting afterwards what music I listened to on my walk. It&amp;#39;s very similar to #cubemusic, but not as likely to get you in trouble (even though I would assume there would be more than that to it). ;)
+&lt;/p&gt;
+&lt;p&gt;
+I use Twitter for the most simple of posts, but if you&amp;#39;d like to &lt;a href=&#34;http://twitter.com/strivinglife&#34;&gt;follow me&lt;/a&gt; ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Passing the time online, reading the news</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Passing-the-time-online-reading-the-news/</link>
+      <pubDate>Wed, 22 Apr 2009 07:55:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Passing-the-time-online-reading-the-news/</guid>
+      <description>&lt;p&gt;
+Often times, like this morning, I&amp;#39;ve got anywhere between 5 to 60 minutes of time to kill.
+&lt;/p&gt;
+&lt;p&gt;
+It doesn&amp;#39;t make sense to do anything truly productive, so I end up visiting a number of sites. techmeme.com, dailyrotation.com, news.google.com, etcetera. Then I get desperate and visit weather.gov.
+&lt;/p&gt;
+&lt;p&gt;
+However, once I&amp;#39;ve visited these, I run low on ideas of other sites, like these, that I can visit.
+&lt;/p&gt;
+&lt;p&gt;
+Any recommendations on sites that combine news, from a number of different sources, that is also interesting? I&amp;#39;m not looking for something like smashingmagazine.com, just short and to the point. And while I will visit YouTube to kill time, I&amp;#39;d rather do something semi-productive.
+&lt;/p&gt;
+&lt;p&gt;
+And yes, this is a filler post, of sorts.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Wastelands are big ...</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-Wastelands-are-big/</link>
+      <pubDate>Tue, 06 Jan 2009 21:56:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-Wastelands-are-big/</guid>
+      <description>&lt;p&gt;
+... so save yourself some time and checkout this &lt;a href=&#34;http://fallout.wikia.com/wiki/Fallout_3_map&#34; target=&#34;_blank&#34;&gt;very handy map of the Fallout 3 world&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Of course, the map isn&amp;#39;t required, by any means, but it was actually a really big help on getting to 100% understanding of the in-game &amp;#39;compass.&amp;#39;&amp;nbsp;
+&lt;/p&gt;
+&lt;p&gt;
+The rest of the wiki is also packed with information, even though, unlike a true wiki, members don&amp;#39;t seem to be able to edit items. (I noticed&amp;nbsp;a minor style&amp;nbsp;mistake that I could fix if I could edit an entry, but since I can&amp;#39;t&amp;nbsp;edit it, and can&amp;#39;t find contact information ...)
+&lt;/p&gt;
+&lt;p&gt;
+Tagged Xbox 360 since I don&amp;#39;t really care about Playstation&amp;#39;s trophies, so that&amp;#39;s what system I picked Fallout 3 up for.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>If Firefox recommends ad blocking software ...</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/If-Firefox-recommends-ad-blocking-software/</link>
+      <pubDate>Wed, 24 Dec 2008 14:19:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/If-Firefox-recommends-ad-blocking-software/</guid>
+      <description>&lt;p&gt;
+The other day I installed YSlow on my home machine.
+&lt;/p&gt;
+&lt;p&gt;
+When I did so I noticed that they were recommending the major ad blocking add-on, but I didn&amp;#39;t think too much of it.
+&lt;/p&gt;
+&lt;p&gt;
+I was reading an article that&amp;nbsp;questioned again (id est, old news)&amp;nbsp;whether Chrome would strain the Google/Mozilla relationship.
+&lt;/p&gt;
+&lt;p&gt;
+Since the ad blocking add-on blocks Google ads, I wonder if instead of Chrome, it&amp;#39;s these recommended add-ons that are causing the strain. If you were Google, would you want your ads blocked?
+&lt;/p&gt;
+&lt;p&gt;
+I checked a few moments ago and am not seeing the recommendation any longer, so I can&amp;#39;t reproduce at the moment, but nonetheless ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Current, major, browsers</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</link>
+      <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</guid>
+      <description>&lt;p&gt;
+Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
+&lt;/p&gt;
+&lt;p&gt;
+Anywho, I&amp;#39;ve decided, looking at the numbers, that I would start adding a check on my sites to alert users if there browser is out of date, and tell them where they can get an updated version. 
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Note that I refer to the desktop version of these browsers, and mention only the major browsers. From personal experience, I highly recommend Opera&amp;#39;s mobile browser(s). 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;recBrowserIE&#34;&gt;Internet Explorer&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 7.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 6.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 8.0&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/windows/internet-explorer/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+&lt;strong&gt;Update 12/21/2008:&lt;/strong&gt; After looking through my logs, I found a couple of instances where the MSIE 6 and MSIE 7 instances show up in the user-agent, as well as MSIE&amp;nbsp;6 and 8. This seems to be with users who have installed standalone versions of Internet Explorer. If you&amp;#39;re using a newer version of IE, but are seeing a message about using an older version, that may be the issue. See &lt;a rel=&#34;nofollow&#34; href=&#34;http://techpatterns.com/forums/about1028.html&#34; target=&#34;_blank&#34;&gt;this site&lt;/a&gt; for more information. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;recBrowserFF&#34;&gt;Firefox&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 2.0 (supported through mid-December 2008)&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 3.1&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://getfirefox.com/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Safari&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.2&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 3.1&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.apple.com/safari/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recBrowserC&#34;&gt;Chrome&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 1.0&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 0.4&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recBrowserO&#34;&gt;Opera&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 9.6&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 9.5&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt;&amp;nbsp;unknown &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://www.opera.com/browser/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Other browsers&amp;nbsp;&lt;/h3&gt;
+&lt;h4&gt;Netscape&lt;/h4&gt;
+&lt;p&gt;
+For quite a while Netscape (Navigator)&amp;nbsp;was an extremely popular browser. However, it is no longer actively supported. 
+&lt;/p&gt;
+&lt;p&gt;
+If you continue to use Netscape most people will recommend that you upgrade to Firefox. 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browser environments for testing</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</link>
+      <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</guid>
+      <description>&lt;p&gt;
+In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+&lt;/p&gt;
+&lt;p&gt;
+Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
+&lt;/p&gt;
+&lt;h3&gt;Current versions&lt;/h3&gt;
+&lt;p&gt;
+Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
+&lt;/p&gt;
+&lt;p&gt;
+Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
+&lt;/p&gt;
+&lt;p&gt;
+Some&amp;nbsp;may think&amp;nbsp;I&amp;#39;m a bit&amp;nbsp;off, but I&amp;nbsp;consider Opera a fairly good browser, while Mozilla doesn&amp;#39;t much concern me. So, that gives us our top five browsers, all of which&amp;nbsp;can&amp;nbsp;be installed on Windows.&amp;nbsp;
+&lt;/p&gt;
+&lt;p&gt;
+So, any&amp;nbsp;test&amp;nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 7
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Safari 3
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Chrome 0
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Opera 9
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+There&amp;#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&amp;#39;s fairly standards-compliant.
+&lt;/p&gt;
+&lt;p&gt;
+This is also why I feel that not including Opera would be a very big mistake.
+&lt;/p&gt;
+&lt;p&gt;
+This rounds out our first virtual machine to 5 unique browsers.
+&lt;/p&gt;
+&lt;h3&gt;Previous versions&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+While it would be great if it wasn&amp;#39;t the case, you&amp;#39;ll always need to support older versions of popular browsers.
+&lt;/p&gt;
+&lt;p&gt;
+Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
+&lt;/p&gt;
+&lt;p&gt;
+Most other browsers don&amp;#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 6
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Firefox 2
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Upcoming versions&lt;/h3&gt;
+&lt;p&gt;
+This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
+&lt;/p&gt;
+&lt;p&gt;
+Primarily, that means the following should almost certainly be included.
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Internet Explorer 8
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+That&amp;#39;s right, Internet Explorer 8. That&amp;#39;s all I&amp;#39;d absolutely need, especially looking at stats.
+&lt;/p&gt;
+&lt;p&gt;
+However, to a great extent, Chrome, like most of Google&amp;#39;s other &lt;strike&gt;products&lt;/strike&gt; applications is truly a beta browser (and one that I&amp;#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
+&lt;/p&gt;
+&lt;h3&gt;What about Linux and Mac?&amp;nbsp;&lt;/h3&gt;
+&lt;p&gt;
+The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&amp;nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&amp;#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&amp;#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
+&lt;/p&gt;
+&lt;p&gt;
+For Mac&amp;nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
+&lt;/p&gt;
+&lt;p&gt;
+For Safari Apple was kind enough to give Windows users this browser. As to whether it&amp;#39;s the same as the Mac version, well, it looks very similar. But, unless you&amp;#39;re willing to pay the Apple premium, the Windows version should suffice.
+&lt;/p&gt;
+&lt;p&gt;
+For these reasons, basic Web development doesn&amp;#39;t need to dive too deep into Linux and Mac environments.&lt;sup&gt;1&lt;/sup&gt;
+&lt;/p&gt;
+&lt;h3&gt;Mobile browsers?&lt;/h3&gt;
+&lt;p&gt;
+But what about browsers on mobile devices?
+&lt;/p&gt;
+&lt;p&gt;
+Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
+&lt;/p&gt;
+&lt;p&gt;
+To some extent &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+&lt;/p&gt;
+&lt;p&gt;
+The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
+&lt;/p&gt;
+&lt;p&gt;
+However, for the mobile version of Internet Explorer (which won&amp;#39;t be tracked by Analytics, as it doesn&amp;#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
+&lt;/p&gt;
+&lt;p&gt;
+As to the solution, I can&amp;#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&amp;#39;ll be virtualization for these environments much more readily available.
+&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;
+Above I&amp;#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
+&lt;/p&gt;
+&lt;p&gt;
+What do you think? What do you develop for?
+&lt;/p&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;p&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+&lt;/p&gt;
+&lt;p&gt;
+2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wowsa - what happened to Google Analytics? (November 2008 edition)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
+      <pubDate>Tue, 11 Nov 2008 21:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
+      <description>&lt;p&gt;
+Google has done it again.
+&lt;/p&gt;
+&lt;p&gt;
+Logging in this evening, I immediately noticed the change to Google Analytics. Now you can see, when you first log in, the visits, average time, bounce rate, completed goals, and % change (default visits) for your sites.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s weird in that it shows a number of rows, and not sites (which effectively means half as many sites as I expect, as each of my sites has two rows), but it&amp;#39;s very interesting.
+&lt;/p&gt;
+&lt;p&gt;
+(I&amp;#39;m also getting a mixed content warning (secure/unsecure), but I&amp;#39;m sure they&amp;#39;ll fix that shortly.)
+&lt;/p&gt;
+&lt;p&gt;
+The rest of the reports seem to be the same.
+&lt;/p&gt;
+&lt;p&gt;
+Very nice Google. Now if I can just get the invite to type Adsense with Analytics ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

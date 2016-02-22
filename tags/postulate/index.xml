@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postulate on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/postulate/</link>
+    <description>Recent content in Postulate on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jun 2010 08:10:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/postulate/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Postulate: Given the present, the future can be known, but the past only guessed</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Postulate-Given-the-present-the-future-can-be-known-but-the-past-only-guessed/</link>
+      <pubDate>Thu, 17 Jun 2010 08:10:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Postulate-Given-the-present-the-future-can-be-known-but-the-past-only-guessed/</guid>
+      <description>&lt;p&gt;I submit the following as a postulate:&lt;/p&gt;
+&lt;p&gt;Given knowledge of the present state of affairs, we can know the future, but not the past. Of the latter we can only make guesses and assumptions, albeit educated ones, but cannot know with certainity that they were the case.&lt;/p&gt;
+&lt;p&gt;Given that two vehicles are heading towards each other at speed, and neither will be able to stop in time, we can know that they will hit each other and cause a certain amount of damage, knowing the speeds they&#39;re going, the integrity of the vehicles, and etcetera.&lt;/p&gt;
+&lt;p&gt;However, we can only guess, assuming we did not know the state of affairs at the key points in the past, as to why they&#39;re headed towards each other. If a child is standing in the road, where one of the vehicles would otherwise be, or would have been, we could assume that the vehicle swerved to avoid striking the child. But given a &#39;snapshot&#39; of the present referred to above, we cannot know that to be the case.&lt;/p&gt;
+&lt;h3&gt;Why this is important&lt;/h3&gt;
+&lt;p&gt;Absolute knowledge of the current state of affairs is &lt;em&gt;not&lt;/em&gt; sufficient to&amp;nbsp;absolute knowledge of the past, even assuming cause and effect reigns supreme (which it seemingly must). Given a present, there are many pasts, but only one future.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netgear on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/netgear/</link>
+    <description>Recent content in Netgear on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jun 2014 19:22:13 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/netgear/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: NETGEAR Trek N300 Range Extender and Travel Router (PR2000)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-NETGEAR-Trek-N300-Range-Extender-and-Travel-Router-PR2000/</link>
+      <pubDate>Tue, 17 Jun 2014 19:22:13 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-NETGEAR-Trek-N300-Range-Extender-and-Travel-Router-PR2000/</guid>
+      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of the &lt;a href=&#34;http://www.amazon.com/gp/product/B00HQ883T4?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;NETGEAR Trek N300 Range Extender and Travel Router (PR2000)&lt;/a&gt;, which I received as part of the Amazone Vine program.&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3&gt;Works perfectly to convert a wired connection, with no loss of speed&lt;/h3&gt;
+
+&lt;p&gt;The NETGEAR Trek N300 Range Extender and Travel Router (PR2000) can assist as either a simple wifi router for a normally wired home network, as a wireless range extender, as a protected wireless hotspot on the go, or to convert a wired device to a wireless one. In my particular case I decided to focus on enabling one of my wired devices (Windows PC) to connect to my existing wireless.&lt;/p&gt;
+
+&lt;p&gt;In order to do this I connected the small device to my PC via the included USB cable, which supplies the necessary power. While it&#39;s also possible to plug the device into the wall, I opted to do it this way to really test the device, and so that I could use a very short ethernet cable, which I plugged into my computer, and the side of this device.&lt;/p&gt;
+
+&lt;p&gt;After switching the device on my computer started to connect to the device, and automatically pulled up the configuration page. After selecting my existing wireless network, and entering the necessary credentials, there was a 2 minute reboot (it counts down from 120 seconds) before my device connected to the wireless network. It should be noted that there&#39;s a small instruction booklet included that tells you how to setup all of the various configurations you might want this device to be in. Clear, clean, and concise.&lt;/p&gt;
+
+&lt;p&gt;I ran a couple tests of Speedtest on both my wired and wireless connections and experienced no real change in download or upload speeds.&lt;/p&gt;
+
+&lt;p&gt;The only issue I&#39;ve run into thus far is that at one point after starting up my computer I had no network connection. After powering the device off and back on, I entered the configuration interface, but while bouncing around within it my wireless connection was restored. At this point I believe it was a minor issue, that may have resolved itself had I not been so quick to start troubleshooting it.&lt;/p&gt;
+
+&lt;p&gt;This device also doesn&#39;t connect on &#39;n,&#39; but again, I experienced no issues with the speed.&lt;/p&gt;
+
+&lt;p&gt;I like the compact look of the device, and at this point might strongly recommend this as a simple wireless router, unless more than one ethernet port is required (since the device only has two, and you would need to plug one into your modem).&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll update as time goes by, since hardware can sometimes develop oddities, but at this point I give the &lt;a href=&#34;http://www.amazon.com/gp/product/B00HQ883T4?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;NETGEAR Trek N300 Range Extender and Travel Router (PR2000)&lt;/a&gt; a full 5 of 5 stars. Thus far it does exactly what it says it will do.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

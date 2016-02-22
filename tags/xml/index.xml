@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xml on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/xml/</link>
+    <description>Recent content in Xml on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Oct 2011 21:59:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/xml/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nier weapon data in XML (and LINQ sample query)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
+      <pubDate>Sun, 16 Oct 2011 21:59:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
+      <description>&lt;p&gt;&lt;p&gt;Going through the game &lt;a href=&#34;http://strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt; yet again, I wanted an easier way to track what weapon levels I had already upgraded to, and what items I still needed to unlock weapon items.&lt;/p&gt;
+&lt;p&gt;Phase one towards that goal is creating an XML file with weapon upgrade information which is available online: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&#34;&gt;Nier weapon data&lt;/a&gt;. An XML schema document for this information is also available: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2011/10/NierWeapons.xsd&#34;&gt;Nier weapon XSD&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Sample LINQ query&lt;/h3&gt;
+&lt;p&gt;The following query can be run from LINQPAD, and will either display all items with their counts, or a grouped listing of items with the total quantity needed.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument weaponsXml = XDocument.Load(@&amp;ldquo;&lt;a href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&amp;quot;&#34;&gt;http://media.jamesrskemp.com/xml/NierWeapons.xml&amp;quot;&lt;/a&gt;);&lt;/p&gt;
+
+&lt;p&gt;var items = weaponsXml
+    .Descendants()
+    .Elements(&amp;ldquo;Item&amp;rdquo;)
+    .Select(i =&amp;gt; new WeaponItem { Name = i.Attribute(&amp;ldquo;Name&amp;rdquo;).Value, Quantity = i.Attribute(&amp;ldquo;Quantity&amp;rdquo;) != null ? int.Parse(i.Attribute(&amp;ldquo;Quantity&amp;rdquo;).Value) : 1 })
+    .OrderBy(i =&amp;gt; i.Name).ThenBy(i =&amp;gt; i.Quantity)
+    ;&lt;/p&gt;
+
+&lt;p&gt;var itemsGrouped = items.GroupBy(i =&amp;gt; i.Name).Select(g =&amp;gt; new WeaponItem { Name = g.Key, Quantity = g.Sum(i =&amp;gt; i.Quantity) });&lt;/p&gt;
+
+&lt;p&gt;//items.Dump();
+itemsGrouped.Dump();&lt;/p&gt;
+
+&lt;p&gt;}
+public class WeaponItem {
+    public string Name {get;set;}
+    public int Quantity {get;set;}&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting feature with parsing XML with jQuery on Safari</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
+&lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
+&lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;My main intention is to make this available on my iPod Touch, so I was a bit dismayed when I found that the listing didn&#39;t display the title of the game. Everything else displayed just fine, but not the titles. Naturally, after some searching about I posted my question to Stack Overflow - &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/5427259/xmldocument-via-jquery-ajax-call-stored-as-string-in-localstorage-results-in-sa&#34;&gt;XMLDocument (via jQuery ajax call) stored as string in localStorage results in Safari not finding title elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After further research, it looks like I was missing a parseXML call, which results in the data correctly being pulled/displayed in Safari.&lt;/p&gt;
+&lt;p&gt;I decided to do some further testing on this issue, and I believe I&#39;ve discovered why it&#39;s displaying as it is.&lt;/p&gt;
+&lt;h3&gt;The test code&lt;/h3&gt;
+&lt;p&gt;I created a bit of test code - &lt;a href=&#34;http://jamesrskemp.com/testing/jQueryXmlParsing.html&#34;&gt;jQuery XML parsing&lt;/a&gt; - and that I&#39;ve posted below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;jQuery XML Parsing testing - JamesRSkemp.com&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;jQuery XML Parsing testing&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The following test code was created to test Internet Explorer 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), and Safari on iOS 4.3. Read more in &amp;lt;a href=&#34;http://strivinglife.com/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34; rel=&#34;external&#34;&amp;gt;Interesting feature with parsing XML with jQuery on Safari&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+    &amp;lt;noscript&amp;gt;You must have JavaScript enabled to view this test.&amp;lt;/noscript&amp;gt;
+    &amp;lt;div id=&#34;TestOutput&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        // We&#39;ll store an example of an XML file as a string of text.
+        var xmlContent = &#34;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;&amp;lt;Books&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;/Books&amp;gt;&#34;;
+        var testOutputText = &#34;&#34;;
+
+        var simpleCall = $(xmlContent);
+        var simpleParse = $.parseXML(xmlContent);
+        var parse = $($.parseXML(xmlContent));
+
+        try {
+            testOutputText += &#34;Type of $(xmlContent): &#34; + typeof simpleCall + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleCall.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleCall.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleCall === &#39;object&#39;) {
+                for (var prop in simpleCall) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleCall[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleCall.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $.parseXML(xmlContent): &#34; + typeof simpleParse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleParse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleParse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleParse === &#39;object&#39;) {
+                for (var prop in simpleParse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleParse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $($.parseXML(xmlContent)): &#34; + typeof parse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + parse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + parse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof parse === &#39;object&#39;) {
+                for (var prop in parse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            parse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        $(&#39;#TestOutput&#39;).append(testOutputText);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;What the test does&lt;/h3&gt;
+&lt;p&gt;I did a couple of things with this test.&lt;/p&gt;
+&lt;p&gt;First, I created a string with the following XML, and saved it as xmlContent.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;
+&amp;lt;Books&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+&amp;lt;/Books&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I created three variables, storing different things. First, I did $(xmlContent), then $.parseXML(xmlContent), and finally $($.parseXML(xmlContent)).&lt;/p&gt;
+&lt;h3&gt;The results&lt;/h3&gt;
+&lt;p&gt;Interestingly, on IE 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), the first and third tests return the type of &lt;strong&gt;object Object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the second test we have &lt;strong&gt;object Document&lt;/strong&gt; on IE 9, Chrome 10, Safari 5, and Safari on iOS 4.3, and &lt;strong&gt;object XMLDocument&lt;/strong&gt; on Firefox 4 and Opera 11.&lt;/p&gt;
+&lt;p&gt;But for the first test, while we have a length of &lt;em&gt;2&lt;/em&gt; on IE 9, Chrome 10, Firefox 4, and Opera 11, we only have a length of 1 on Safari 5 and Safari on iOS 4.3.&lt;/p&gt;
+&lt;p&gt;The fix, then, is to make sure to use the last of the three, but it seems odd that this wouldn&#39;t work on only one of the tested browsers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Storing watched movies and Netflix shipping/receiving in XML format</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</link>
+      <pubDate>Sun, 06 Mar 2011 13:21:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
+      <description>&lt;p&gt;Ever since I started &lt;a href=&#34;http://strivinglife.com/words/post/Netflix-shipping-for-Madison-WI.aspx&#34;&gt;my Netflix subscription in September 2006&lt;/a&gt; I&#39;ve been keeping track of what movies I receive and when.&lt;/p&gt;
+&lt;p&gt;Unfortunately, as the years have gone by I&#39;ve found it more and more difficult to easily look through the listings to see when I last watched a movie. Additionally, I&#39;ve no longer been keeping track of what ratings I give movies, and why.&lt;/p&gt;
+&lt;p&gt;The initial goal was really to track when Netflix shipped and received movies, as well as when I mailed and received. This would suggest a pretty easy XML schema, since the key parts are as follows.&lt;/p&gt;
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Date&lt;/li&gt;
+&lt;li&gt;Type of update (Netflix shipped/received, I mailed/received, I streamed)&lt;/li&gt;
+&lt;li&gt;Name of movie/disc&lt;/li&gt;
+&lt;li&gt;Year of movie/series&lt;/li&gt;
+&lt;li&gt;Location mailed to (if I&#39;m mailing)&lt;/li&gt;
+&lt;li&gt;Notes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;However, if I wish also to be able to store ratings, this format doesn&#39;t necessarily work, as multi-disc episodes, or re-watching a movie/show, would require the rating be placed multiple times.&lt;/p&gt;
+&lt;p&gt;Yet one might wonder if that&#39;s really that big of a deal, since we could always just pull the last rating, or rating could be optional to use whatever rating was given before.&lt;/p&gt;
+&lt;p&gt;Of course, if I make the listing Netflix centric then I always tie it to that service. While I have no plans on dropping my subscription (completely - I&#39;ve been tempted to go streaming only for a couple of months), it also means I can&#39;t track movies that I own.&lt;/p&gt;
+&lt;p&gt;Which then suggests we make the XML schema movie-focused.&lt;/p&gt;
+&lt;p&gt;Our list of Movies would consist of Movie objects, which have a Title, Year, and Rating. Then within that would be a list of times I&#39;ve watched the movie. Which might then really mean we do have two different XML files, since it doesn&#39;t necessarily make sense to keep track of that as part of the Movies XML.&lt;/p&gt;
+&lt;p&gt;For Netflix we could focus on Dates. We&#39;d also want to keep track of the type of media (physical or streaming), and if physical, whether it was coming or going.&lt;/p&gt;
+&lt;p&gt;What mailers they send out is also important, so we can determine whether there&#39;s a method to what mailers are shipped. For example, is it always the location you receive a disc from, or are different mailing locations used?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extended iTunes Track class for PHP</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</link>
+      <pubDate>Sun, 26 Sep 2010 20:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</guid>
+      <description>&lt;p&gt;In a previous article, I had outlined&amp;nbsp;&lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Track-class-in-C-sharp-and-PHP.aspx&#34;&gt;classes in C# and PHP to handle&amp;nbsp;iTunes Playlists to Xml outputs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Having let it sit on the back burner for long enough, I finally went back to the PHP class and finalized the constructor. I also added two functions for sorting.&lt;/p&gt;
+&lt;p&gt;Below I have the current code for the class (a &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/Track.php.txt&#34;&gt;current version of the Track class for PHP&lt;/a&gt; will always be available elsewhere) and then an example implementation.&lt;/p&gt;
+&lt;h3&gt;Track class for PHP, version 1.0&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php
+/**
+ * Music track object.
+ *
+ * @author James Skemp - http://jamesrskemp.com
+ * @license http://creativecommons.org/licenses/by/3.0/us/
+ * @version 1.0
+ */
+class Track {
+    /**
+     * How long the track is.
+     * @var string
+     */
+    var $Time;
+    /**
+     * Name or title of the track.
+     * @var string
+     */
+    var $Name;
+    /**
+     * Name of the artist.
+     * @var string
+     */
+    var $Artist;
+    /**
+     * Rating assigned to the track by the playlist&#39;s owner.
+     * @var int
+     */
+    var $Rating;
+    /**
+     * Number of times the track has been played.
+     * @var int
+     */
+    var $PlayCount;
+    /**
+     * Date and time the track was last played (and finished).
+     */
+    var $LastPlayed;
+    /**
+     * Name of the album the track is from.
+     * @var string
+     */
+    var $Album;
+    /**
+     * True if the album the track is on is a compilation, false otherwise.
+     * @var bool
+     */
+    var $Compilation;
+    /**
+     * Order this track is on the album.
+     * @var int
+     */
+    var $TrackNumber;
+    /**
+     * Total number of tracks on the album.
+     * @var int
+     */
+    var $TrackCount;
+    /**
+     * The album disc the track is on.
+     * @var int
+     */
+    var $DiscNumber;
+    /**
+     * Total number of discs in the album.
+     * @var int
+     */
+    var $DiscCount;
+    /**
+     * Year the track/album was released/published.
+     * @var int
+     */
+    var $Year;
+    /**
+     * Genre of music the track falls into.
+     * @var string
+     */
+    var $Genre;
+    /**
+     * Date and time the track was added.
+     */
+    var $DateAdded;
+
+    public function  __get($name) {
+        return $this-&amp;gt;$name;
+    }
+
+    public function  __set($name, $value) {
+        $this-&amp;gt;$name = $value;
+    }
+
+    /**
+     * Constructs a Track object from an iTunes Playlists to Xml XML output file.
+     *
+     * @param object $xml
+     */
+    function __construct($xml) {
+        $this-&amp;gt;Name = (string)$xml-&amp;gt;name;
+        $this-&amp;gt;Album = (string)$xml-&amp;gt;album;
+        $this-&amp;gt;Artist = (string)$xml-&amp;gt;artist;
+        $this-&amp;gt;Time = (string)$xml[&#39;time&#39;];
+        $this-&amp;gt;Rating = (int)$xml-&amp;gt;rating;
+        $this-&amp;gt;PlayCount = (int)$xml-&amp;gt;playCount;
+        $this-&amp;gt;LastPlayed = (string)$xml-&amp;gt;lastPlayed;
+        $this-&amp;gt;Compilation = (bool)$xml-&amp;gt;compilation;
+        $this-&amp;gt;TrackNumber = (int)$xml-&amp;gt;trackNumber;
+        $this-&amp;gt;TrackCount = (int)$xml-&amp;gt;trackCount;
+        $this-&amp;gt;DiscNumber = (int)$xml-&amp;gt;discNumber;
+        $this-&amp;gt;DiscCount = (int)$xml-&amp;gt;discCount;
+        $this-&amp;gt;Year = (int)$xml-&amp;gt;year;
+        $this-&amp;gt;Genre = (string)$xml-&amp;gt;genre;
+        $this-&amp;gt;DateAdded = (string)$xml-&amp;gt;dateAdded;
+    }
+
+    /**
+     * Function for sorting Track objects by PlayCount, ascending. Uses LastPlayed for ties.
+     *
+     * @access public
+     * @param Track $x First object to compare.
+     * @param Track $y Second object to compare.
+     * @return integer Standard sorting returns.
+     */
+    public function SortPlayCountAsc($x, $y) {
+        if ($x-&amp;gt;PlayCount == $y-&amp;gt;PlayCount) {
+            if ($x-&amp;gt;LastPlayed == $y-&amp;gt;LastPlayed) {
+                return 0;
+            } else if ($x-&amp;gt;LastPlayed &amp;lt; $y-&amp;gt;LastPlayed) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else if ($x-&amp;gt;PlayCount &amp;lt; $y-&amp;gt;PlayCount) {
+            return -1;
+        } else {
+            return 1;
+        }
+    }
+
+    /**
+     * Function for sorting Track objects by PlayCount, descending. Uses LastPlayed for ties.
+     *
+     * @access public
+     * @param Track $x First object to compare.
+     * @param Track $y Second object to compare.
+     * @return integer Standard sorting returns.
+     */
+    public function SortPlayCountDesc($x, $y) {
+        if ($x-&amp;gt;PlayCount == $y-&amp;gt;PlayCount) {
+            if ($x-&amp;gt;LastPlayed == $y-&amp;gt;LastPlayed) {
+                return 0;
+            } else if ($x-&amp;gt;LastPlayed &amp;gt; $y-&amp;gt;LastPlayed) {
+                return -1;
+            } else {
+                return 1;
+            }
+        } else if ($x-&amp;gt;PlayCount &amp;lt; $y-&amp;gt;PlayCount) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+}
+?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Usage example&lt;/h3&gt;
+&lt;p&gt;Update XML file location as necessary. Note also I&#39;m using the &lt;a rel=&#34;external&#34; href=&#34;http://www.iis.net/download/wincacheforphp&#34;&gt;Windows Cache Extension for PHP&lt;/a&gt;. Modify the initial if statement accordingly if running in an environment that does not have this enabled.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php include_once &#39;Track.php&#39;; ?&amp;gt;
+&amp;lt;!DOCTYPE HTML PUBLIC &#34;-//W3C//DTD HTML 4.01 Transitional//EN&#34;&amp;gt;
+&amp;lt;html&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34;&amp;gt;
+        &amp;lt;title&amp;gt;Track class example&amp;lt;/title&amp;gt;
+        &amp;lt;style type=&#34;text/css&#34;&amp;gt;
+            .error {
+                color:red;
+            }
+        &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+    &amp;lt;body&amp;gt;
+        &amp;lt;?php
+            $tracks = array();
+
+            // Determine if we&#39;ve already grabbed this for the user and either pull or populate their cache.
+            if (!wincache_ucache_exists(&#39;tracksData&#39;)) {
+                $xml = @simplexml_load_file(&#39;playlistXml-2010-09-25T15-26-50.xml&#39;);
+
+                if (!$xml) {
+                    echo &#39;&amp;lt;p class=&#34;error&#34;&amp;gt;Could not load XML data.&amp;lt;/p&amp;gt;&#39;;
+                } else {
+                    echo &#34;Start creating array of tracks.&amp;lt;br /&amp;gt;&#34;;
+
+                    foreach($xml-&amp;gt;track as $trackXml) {
+                        $tracks[] = new Track($trackXml);
+                    }
+                    unset($trackXml);
+
+                    echo &#34;Finished creating array of tracks.&amp;lt;br /&amp;gt;&#34;;
+
+                    wincache_ucache_set(&#39;tracksData&#39;, $tracks);
+                }
+                unset($xml);
+            } else {
+                $tracks = wincache_ucache_get(&#39;tracksData&#39;);
+            }
+
+            echo &#34;Count = &#34;.count($tracks).&#34;&amp;lt;br /&amp;gt;&#34;;
+
+            usort($tracks, array(&#39;Track&#39;, &#39;SortPlayCountDesc&#39;));
+
+            echo &#34;&amp;lt;pre&amp;gt;&#34;;
+            //var_dump($tracks[2]);
+            echo &#34;&amp;lt;/pre&amp;gt;&#34;;
+
+            echo &#34;&amp;lt;pre&amp;gt;&#34;;
+            for ($i = 0; $i &amp;lt; 10; $i++) {
+                var_dump($tracks[$i]);
+            }
+            unset($i);
+
+            unset($tracks);
+        ?&amp;gt;
+    &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Memory usage seems a bit high at the end of this script, but ... at this point I&#39;m not sure what the fix is.&lt;/p&gt;
+&lt;p&gt;The fact that PHP doesn&#39;t have an easy way to&amp;nbsp;store data in an&amp;nbsp;application cache (in memory) is rather disappointing, so other than fixing minor bugs, I don&#39;t expect I&#39;ll expand too much on this implementation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The benefits of using a file for Log Parser SQL queries</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
+      <pubDate>Sun, 26 Sep 2010 09:41:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
+      <description>&lt;p&gt;One of the things I always forget about when I&#39;m using Microsoft Log Parser is that you can define your SQL query in a file and run it, instead of putting it in the command line.&lt;/p&gt;
+&lt;p&gt;For example, the following will run whatever SQL is defined in strivinglife.robots.sql.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;logparser&#34;&gt;logparser -i:w3c -o:xml file:strivinglife.robots.sql&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Where this comes in handy is for something like the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Examples&#34;&gt;Log Parser query&lt;/a&gt; I defined today, that parses IIS logs for requests to the robots.txt file and outputs the ip address and user-agent of the request, with a total count from that combination.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;sql&#34;&gt;SELECT c-ip AS [ClientIp], cs(user-agent) AS [ClientUserAgent], COUNT(*) AS [Requests]
+--USING
+INTO strivinglife.robots.xml
+FROM \\server1\projects\logs\server2008\w3svc5\u_ex1009*.log
+WHERE cs-uri-stem = &#39;/robots.txt&#39;
+GROUP BY ClientIp, ClientUserAgent
+--HAVING
+ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because&amp;nbsp;my output is XML, and I don&#39;t want the parens to turn into underscores (as well as&amp;nbsp;so that I know what my element names are) I alias the columns to particular names.&amp;nbsp;(The commented lines are from my template file.)&lt;/p&gt;
+&lt;p&gt;This then gives me an output that I can parse and display, for example, on a Web page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shadow Hearts: Covenant leveling information</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Shadow-Hearts-Covenant-leveling-information/</link>
+      <pubDate>Mon, 06 Sep 2010 10:03:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Shadow-Hearts-Covenant-leveling-information/</guid>
+      <description>&lt;p&gt;As I continue to look through my old files I found leveling information for Shadow Hearts: Covenant, from December 2005 to January (1st)&amp;nbsp;2006.&lt;/p&gt;
+&lt;p&gt;I&#39;ve converted it from an ODS file to XML, and am making it available. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsCovenant.xml&#34;&gt;Shadow Hearts: Covenant leveling guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Since I have a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsFromTheNewWorld.xml&#34;&gt;leveling guide for Shadow Hearts: From the New World&lt;/a&gt;&amp;nbsp;(&lt;a href=&#34;http://strivinglife.com/words/post/Shadow-Hearts-From-the-New-World-leveling-information.aspx&#34;&gt;previously written about&lt;/a&gt;), it almost makes sense to go back and play the original Shadow Hearts to get information for that game as well. I&#39;ve been meaning to replay it, so ...&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Importing a custom namespace / custom type into an XSD</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Importing-a-custom-namespace-custom-type-into-an-XSD/</link>
+      <pubDate>Sun, 05 Sep 2010 09:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Importing-a-custom-namespace-custom-type-into-an-XSD/</guid>
+      <description>&lt;p&gt;I have a custom type that I use in a couple of my documents.&lt;/p&gt;
+&lt;p&gt;Unfortunately, in the past I was adding this to each xsd, as I needed it. However, I&#39;ve now figured out how to import it into xsd files as needed.&lt;/p&gt;
+&lt;h3&gt;Original schema&lt;/h3&gt;
+&lt;p&gt;Currently I&#39;m adding the following at the top of each xsd:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xs:schema xmlns:xs=&#34;http://www.w3.org/2001/XMLSchema&#34;&amp;gt;
+    &amp;lt;xs:simpleType name=&#34;customDateType&#34;&amp;gt;
+        &amp;lt;xs:restriction base=&#34;xs:string&#34;&amp;gt;
+            &amp;lt;xs:annotation&amp;gt;
+                &amp;lt;xs:documentation&amp;gt;&amp;lt;![CDATA[Allows for a year, a year and a month, or a year, month, and day, to be defined.]]&amp;gt;&amp;lt;/xs:documentation&amp;gt;
+            &amp;lt;/xs:annotation&amp;gt;
+            &amp;lt;xs:pattern value=&#34;\d{4}(-\d{2}){0,2}&#34;/&amp;gt;
+        &amp;lt;/xs:restriction&amp;gt;
+    &amp;lt;/xs:simpleType&amp;gt;
+    &amp;lt;!-- Remainder of schema goes here. --&amp;gt;
+&amp;lt;/xs:schema&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;New schema&lt;/h3&gt;
+&lt;p&gt;Instead of the above I create a new file, for example &lt;a href=&#34;http://media.jamesrskemp.com/xsd/2010/09/04/CustomDateType.xsd&#34;&gt;media.jamesrskemp.com/xsd/2010/09/04/CustomDateType.xsd&lt;/a&gt;, which looks like the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xs:schema xmlns:xs=&#34;http://www.w3.org/2001/XMLSchema&#34; targetNamespace=&#34;http://media.jamesrskemp.com/ns/CustomDateType&#34; version=&#34;1&#34;&amp;gt;
+    &amp;lt;xs:simpleType name=&#34;customDateType&#34;&amp;gt;
+        &amp;lt;xs:restriction base=&#34;xs:string&#34;&amp;gt;
+            &amp;lt;xs:annotation&amp;gt;
+                &amp;lt;xs:documentation&amp;gt;&amp;lt;![CDATA[Allows for a year, a year and a month, or a year, month, and day, to be defined.]]&amp;gt;&amp;lt;/xs:documentation&amp;gt;
+            &amp;lt;/xs:annotation&amp;gt;
+            &amp;lt;xs:pattern value=&#34;\d{4}(-\d{2}){0,2}&#34;/&amp;gt;
+        &amp;lt;/xs:restriction&amp;gt;
+    &amp;lt;/xs:simpleType&amp;gt;
+&amp;lt;/xs:schema&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I need to update the original XSD to refer to this. After some messing around with oXygen, it turns out it needs to look like this:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xs:schema xmlns:xs=&#34;http://www.w3.org/2001/XMLSchema&#34; xmlns:cdt=&#34;http://media.jamesrskemp.com/ns/CustomDateType&#34;&amp;gt;
+    &amp;lt;xs:import namespace=&#34;http://media.jamesrskemp.com/ns/CustomDateType&#34; schemaLocation=&#34;http://media.jamesrskemp.com/xsd/2010/09/04/CustomDateType.xsd&#34;/&amp;gt;
+    &amp;lt;!-- Remainder of schema continues here. --&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with those minor changes I, or anyone else, can use my custom type.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Onimusha: Dawn of Dreams data</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Onimusha-Dawn-of-Dreams-data/</link>
+      <pubDate>Fri, 03 Sep 2010 20:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Onimusha-Dawn-of-Dreams-data/</guid>
+      <description>&lt;p&gt;From the archives, I&#39;ve created an &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2010/09/03/OnimushaDawnOfDreams.xsd&#34;&gt;XML Schema&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/OnimushaDawnOfDreams.xml&#34;&gt;XML data file for Onimusha: Dawn of Dreams&lt;/a&gt;, for the Playstation 2. Currently the data only includes armor leveling information, from level 1 to 100.&lt;/p&gt;
+&lt;p&gt;The data comes from an OpenDocument Spreadsheet (OnimushaDawnofDreams.ods) from way back in May of 2006.&lt;/p&gt;
+&lt;p&gt;My characters and core weapons being completely maxed (not to mention souls), I may decide to replay the game to track this information as well, or just upgrade weapons.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XML standards - personal suggestions</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</link>
+      <pubDate>Fri, 03 Sep 2010 16:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</guid>
+      <description>&lt;p&gt;As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.&lt;/p&gt;
+&lt;h3&gt;Elements&lt;/h3&gt;
+&lt;p&gt;In the past I&#39;ve used camel case, but on a recent file used Pascal case instead. I think this was more becauase I&#39;ve started to using Pascal case for public items (variables), and camel case for private items, as that&#39;s fairly standard in development.&lt;/p&gt;
+&lt;p&gt;I generally stay away from underscores, as camel and Pascal case are both perfectly readable, in my opinion.&lt;/p&gt;
+&lt;p&gt;Hyphens seem to be generally frowned upon, due to various language restrictions.&lt;/p&gt;
+&lt;p&gt;Suggestion: camel case.&lt;/p&gt;
+&lt;h3&gt;XSD&lt;/h3&gt;
+&lt;p&gt;The other question was versioning of XSD (or DTD) files. According to&amp;nbsp;the 2004 article &lt;a rel=&#34;external&#34; href=&#34;http://www.ibm.com/developerworks/webservices/library/ws-version/&#34;&gt;Best practices for Web services versioning&lt;/a&gt;, the W3C recommends the company name, a date stamp (year and month), but IBM recommends (in the article) including the day as well.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been slowly moving these documents over to my media.jamesrskemp.com domain, under either a xsd or dtd folder. Looking at the W3C listing of &lt;a rel=&#34;external&#34; href=&#34;http://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;Recommended Doctype Declarations to use in your Web document&lt;/a&gt;, this doesn&#39;t seem to be all that horrible, realizing of course that the are DTD references and not XSD (true XML) references.&lt;/p&gt;
+&lt;p&gt;Another alternative would be xsd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.xsd and dtd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.dtd, but this is basically the same as using a sub-directory before (although it does simplify things).&lt;/p&gt;
+&lt;p&gt;Suggestion: http://&lt;em&gt;whatever&lt;/em&gt;/YYYY/MM/DD/file.ext, with all older items staying where they are.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
+      <pubDate>Sun, 15 Aug 2010 13:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
+      <description>&lt;p&gt;In part one of this series we covered what we&#39;d be doing, and what data model we&#39;d be using.&lt;/p&gt;
+&lt;p&gt;In part two of this series we used LINQ to XML to query the XML file with the data we want to display.&lt;/p&gt;
+&lt;p&gt;This time we&#39;ll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I&#39;ll be implementing very basic caching.&lt;/p&gt;
+&lt;h3&gt;Preliminary requirement&lt;/h3&gt;
+&lt;p&gt;Before you can use the charting functionality you need to have a reference to System.Web.DataVisualization. We can then use this in our handler as below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Web.UI.DataVisualization.Charting;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we can do the heavy lifting of creating the basics of the chart:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Create a new chart, and set the basic properties of it.
+Chart hpChart = new Chart();
+hpChart.Width = 800;
+hpChart.Height = 500;
+hpChart.Titles.Add(&#34;Odin Sphere HP leveling&#34;);
+hpChart.Palette = ChartColorPalette.Bright;
+hpChart.Legends.Add(&#34;Main&#34;);
+hpChart.Legends[0].LegendStyle = LegendStyle.Row;
+hpChart.Legends[0].Docking = Docking.Bottom;
+// Create a new area for the main chart to display within.
+ChartArea mainArea = new ChartArea(&#34;Main chart&#34;);
+// Set the properties for the x-axis.
+mainArea.AxisX.Name = &#34;Level&#34;;
+mainArea.AxisX.Title = &#34;Level&#34;;
+mainArea.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+mainArea.AxisX.MinorGrid.Enabled = true;
+mainArea.AxisX.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+// Set the properties for the y-axis.
+mainArea.AxisY.Name = &#34;Hit points&#34;;
+mainArea.AxisY.Title = &#34;Hit points&#34;;
+mainArea.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+mainArea.AxisY.MinorGrid.Enabled = true;
+mainArea.AxisY.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+mainArea.AxisY.MinorGrid.Interval = 50;
+hpChart.ChartAreas.Add(mainArea);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With our chart created we can now add our data.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;foreach (Character character in characterData) {
+    // Add a new series of points for each character.
+    Series characterSeries = new Series();
+    characterSeries.Name = character.Name;
+    characterSeries.ChartType = SeriesChartType.Line;
+    foreach (HpLevel characterLevel in character.HpLevels) {
+        // Add a point for each level recorded.
+        characterSeries.Points.AddXY(characterLevel.Level, characterLevel.HitPoints);
+    }
+    hpChart.Series.Add(characterSeries);
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we want to cache the chart, we&#39;ll add an informational message.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Add a new informational title.
+Title cacheTitle = new Title(&#34;Cached &#34; + DateTime.Now.ToString() + &#34; and based on http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+cacheTitle.Docking = Docking.Bottom;
+hpChart.Titles.Add(cacheTitle);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&#39;ll set the rendering type of the chart and add it to the cache.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;hpChart.RenderType = RenderType.BinaryStreaming;
+// Cache our object for an amount of time
+HttpRuntime.Cache.Add(&#34;OdinSphereChart&#34;, hpChart, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration, System.Web.Caching.CacheItemPriority.Low, null);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Everything above, as well as the XDocument load from part two, can be wrapped by a check for whether the chart is in the cache.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Determine whether the chart is already cached.
+if (HttpRuntime.Cache[&#34;OdinSphereChart&#34;] == null) {
+//...
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then we can finally output the chart to the user.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Output the cached chart to the browser.
+using (System.IO.MemoryStream stream = new System.IO.MemoryStream()) {
+    ((Chart)HttpRuntime.Cache[&#34;OdinSphereChart&#34;]).SaveImage(stream);
+    context.Response.ContentType = &#34;image/png&#34;;
+    context.Response.BinaryWrite(stream.GetBuffer());
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Final code&lt;/h3&gt;
+&lt;p&gt;At the end of our exercise, our handler (OdinSphere.ashx) looks something like the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%@ WebHandler Language=&#34;C#&#34; Class=&#34;OdinSphere&#34; %&amp;gt;
+
+using System;
+using System.Web;
+using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
+using System.Text;
+using System.Web.UI.DataVisualization.Charting;
+
+public class OdinSphere : IHttpHandler {
+
+    /// &amp;lt;summary&amp;gt;
+    /// One of the five playable characters in Odin Sphere, for the Playstation 2.
+    /// &amp;lt;/summary&amp;gt;
+    public class Character {
+        /// &amp;lt;summary&amp;gt;
+        /// Name of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public String Name { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// List of hit point leveling information.
+        /// &amp;lt;/summary&amp;gt;
+        public List&amp;lt;HpLevel&amp;gt; HpLevels { get; set; }
+    }
+
+    /// &amp;lt;summary&amp;gt;
+    /// Hit point information at a particular level.
+    /// &amp;lt;/summary&amp;gt;
+    public class HpLevel {
+        /// &amp;lt;summary&amp;gt;
+        /// Level of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public int Level { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// Hit points at a level, for a character.
+        /// &amp;lt;/summary&amp;gt;
+        public int HitPoints { get; set; }
+    }
+
+    public void ProcessRequest(HttpContext context) {
+        // Determine whether the chart is already cached.
+        if (HttpRuntime.Cache[&#34;OdinSphereChart&#34;] == null) {
+            // Grab the current data.
+            XDocument dataFile = XDocument.Load(&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+            IEnumerable&amp;lt;Character&amp;gt; characterData = from characters in dataFile.Descendants(&#34;Character&#34;)
+                                                   select new Character {
+                                                       Name = characters.Attribute(&#34;name&#34;).Value,
+                                                       HpLevels = (from levels in characters.Element(&#34;HP&#34;).Element(&#34;Levels&#34;).Descendants(&#34;Level&#34;)
+                                                                   select new HpLevel {
+                                                                       Level = int.Parse(levels.Attribute(&#34;id&#34;).Value),
+                                                                       HitPoints = int.Parse(levels.Attribute(&#34;hitPoints&#34;).Value)
+                                                                   }
+                                                       ).ToList()
+                                                   };
+
+            // Create a new chart, and set the basic properties of it.
+            Chart hpChart = new Chart();
+            hpChart.Width = 800;
+            hpChart.Height = 500;
+            hpChart.Titles.Add(&#34;Odin Sphere HP leveling&#34;);
+            hpChart.Palette = ChartColorPalette.Bright;
+            hpChart.Legends.Add(&#34;Main&#34;);
+            hpChart.Legends[0].LegendStyle = LegendStyle.Row;
+            hpChart.Legends[0].Docking = Docking.Bottom;
+            // Create a new area for the main chart to display within.
+            ChartArea mainArea = new ChartArea(&#34;Main chart&#34;);
+            // Set the properties for the x-axis.
+            mainArea.AxisX.Name = &#34;Level&#34;;
+            mainArea.AxisX.Title = &#34;Level&#34;;
+            mainArea.AxisX.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            mainArea.AxisX.MinorGrid.Enabled = true;
+            mainArea.AxisX.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+            // Set the properties for the y-axis.
+            mainArea.AxisY.Name = &#34;Hit points&#34;;
+            mainArea.AxisY.Title = &#34;Hit points&#34;;
+            mainArea.AxisY.MajorGrid.LineColor = System.Drawing.Color.DimGray;
+            mainArea.AxisY.MinorGrid.Enabled = true;
+            mainArea.AxisY.MinorGrid.LineColor = System.Drawing.Color.LightGray;
+            mainArea.AxisY.MinorGrid.Interval = 50;
+            hpChart.ChartAreas.Add(mainArea);
+
+            foreach (Character character in characterData) {
+                // Add a new series of points for each character.
+                Series characterSeries = new Series();
+                characterSeries.Name = character.Name;
+                characterSeries.ChartType = SeriesChartType.Line;
+                foreach (HpLevel characterLevel in character.HpLevels) {
+                    // Add a point for each level recorded.
+                    characterSeries.Points.AddXY(characterLevel.Level, characterLevel.HitPoints);
+                }
+                hpChart.Series.Add(characterSeries);
+            }
+
+            // Add a new informational title.
+            Title cacheTitle = new Title(&#34;Cached &#34; + DateTime.Now.ToString() + &#34; and based on http://jamesrskemp.com/files/OdinSphere.xml&#34;);
+            cacheTitle.Docking = Docking.Bottom;
+            hpChart.Titles.Add(cacheTitle);
+            
+            hpChart.RenderType = RenderType.BinaryStreaming;
+            // Cache our object for an amount of time
+            HttpRuntime.Cache.Add(&#34;OdinSphereChart&#34;, hpChart, null, DateTime.Now.AddMinutes(5), System.Web.Caching.Cache.NoSlidingExpiration, System.Web.Caching.CacheItemPriority.Low, null);
+        }
+
+        // Output the cached chart to the browser.
+        using (System.IO.MemoryStream stream = new System.IO.MemoryStream()) {
+            ((Chart)HttpRuntime.Cache[&#34;OdinSphereChart&#34;]).SaveImage(stream);
+            context.Response.ContentType = &#34;image/png&#34;;
+            context.Response.BinaryWrite(stream.GetBuffer());
+        }
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/testing/OdinSphere.ashx&#34;&gt;see this in action&lt;/a&gt; online.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
+      <pubDate>Sat, 14 Aug 2010 14:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model.aspx&#34;&gt;part one of this series&lt;/a&gt; we covered what we&#39;d be doing, and what model we&#39;d be using for the data.&lt;/p&gt;
+&lt;p&gt;This time we&#39;ll parse the XML file that contains the data we need, and populate the objects.&lt;/p&gt;
+&lt;h3&gt;Loading the XML file&lt;/h3&gt;
+&lt;p&gt;The XML file we&#39;ll be loading is located at&amp;nbsp;&lt;a href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;http://jamesrskemp.com/files/OdinSphere.xml&lt;/a&gt;, and to keep it simple, we&#39;ll load it in assuming we&#39;re on a different server/domain.&lt;/p&gt;
+&lt;p&gt;First we&#39;ll need to add the following so we can make use of XDocument.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Xml.Linq;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next we&#39;ll update ProcessRequest by loading the XML file.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument dataFile = XDocument.Load(&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And then we&#39;ll parse it out into our custom objects.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;IEnumerable&amp;lt;Character&amp;gt; characterData = from characters in dataFile.Descendants(&#34;Character&#34;)
+    select new Character {
+        Name = characters.Attribute(&#34;name&#34;).Value,
+        HpLevels = (from levels in characters.Element(&#34;HP&#34;).Element(&#34;Levels&#34;).Descendants(&#34;Level&#34;)
+            select new HpLevel {
+                Level = int.Parse(levels.Attribute(&#34;id&#34;).Value),
+                HitPoints = int.Parse(levels.Attribute(&#34;hitPoints&#34;).Value)
+            }
+        ).ToList()
+    };&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With that done, we can now verify the data by displaying some very basic information on the page.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;     context.Response.ContentType = &#34;text/plain&#34;;
+        foreach (Character character in characterData) {
+            context.Response.Write(character.Name + Environment.NewLine);
+            context.Response.Write(&#34;Maximum HP level = &#34; + character.HpLevels.Last().Level.ToString() + Environment.NewLine + Environment.NewLine);
+
+        }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;With that aspect verified, we can create and output our graphs, which we&#39;ll cover in part three.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
+      <pubDate>Fri, 13 Aug 2010 22:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
+      <description>&lt;p&gt;For a while now I&#39;ve been meaning to work with &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2010/02/07/built-in-charting-controls-vs-2010-and-net-4-series.aspx&#34;&gt;ASP.NET 4&#39;s built-in charting functionality&lt;/a&gt;. While I was going to use it alongside my gas tracking, I think I&#39;m instead going to use my &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;Odin Sphere leveling guide&lt;/a&gt;, so I don&#39;t have to create an XSLT for the output.&lt;/p&gt;
+&lt;p&gt;In this part of the series I&#39;ll outline the data model I&#39;ll be using, and preliminary setups.&lt;/p&gt;
+&lt;h3&gt;Method&lt;/h3&gt;
+&lt;p&gt;So that this can easily be deployed anywhere, I&#39;m going to opt not to use the control itself, but rather programmatically create the charts/graphs. I&#39;ll be&amp;nbsp;creating a generic handler (.ashx) to handle the output.&lt;/p&gt;
+&lt;p&gt;I&#39;ll be using LINQ to XML to query the XML file that stores the content and may implement some level of caching at some point.&lt;/p&gt;
+&lt;p&gt;My environment is Visual Studio 2010 and .NET Framework 4. The controls are available for 3.5 and 2008, however, and 2010 Express should also suffice.&lt;/p&gt;
+&lt;h3&gt;Data model&lt;/h3&gt;
+&lt;p&gt;For this chart I&#39;d like to chart each character&#39;s HP progression as they level, with each character displaying on the same graph.&lt;/p&gt;
+&lt;p&gt;This then gives us a List of Character, with each Character having a Name and a List of HpLevel, with HpLevel containing a Level and a HP total.&lt;/p&gt;
+&lt;p&gt;In our new Generic Handler (OdinSphere.ashx) we&#39;ll add the following within the existing public class:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; /// &amp;lt;summary&amp;gt;
+    /// One of the five playable characters in Odin Sphere, for the Playstation 2.
+    /// &amp;lt;/summary&amp;gt;
+    public class Character {
+        /// &amp;lt;summary&amp;gt;
+        /// Name of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public String Name { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// List of hit point leveling information.
+        /// &amp;lt;/summary&amp;gt;
+        public List&amp;lt;HpLevel&amp;gt; HpLevels { get; set; }
+    }
+
+    /// &amp;lt;summary&amp;gt;
+    /// Hit point information at a particular level.
+    /// &amp;lt;/summary&amp;gt;
+    public class HpLevel {
+        /// &amp;lt;summary&amp;gt;
+        /// Level of the character.
+        /// &amp;lt;/summary&amp;gt;
+        public int Level { get; set; }
+        /// &amp;lt;summary&amp;gt;
+        /// Hit points at a level, for a character.
+        /// &amp;lt;/summary&amp;gt;
+        public int HitPoints { get; set; }
+    }&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These also require the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System.Collections.Generic;
+using System.Linq;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;At this point we&#39;ve got our objects defined and set, so we can grab the data from the XML file and create our necessary objects ... which is exactly what we&#39;ll do in the second part of this series.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;At &lt;a href=&#34;http://strivinglife.com/words/post/2007-VW-Rabbit-10000-miles.aspx&#34;&gt;some point in 2007&lt;/a&gt; I started &lt;a href=&#34;http://jamesrskemp.net/vehicle_gas.xml&#34;&gt;keeping track of my gas mileage&lt;/a&gt; in an XML file, with a custom DTD for validation (and intellisense in oXygen).&lt;/p&gt;
+&lt;p&gt;I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.&lt;/p&gt;
+&lt;h3&gt;C# objects&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; public class Vehicle {
+        public int Id { get; set; }
+        public String Make { get; set; }
+        public String Model { get; set; }
+        public int Year { get; set; }
+        public IEnumerable Fillups { get; set; }
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Fillup {
+    public int Id { get; set; }
+    public DateTime Date { get; set; }
+    public int MilesTotal { get; set; }
+    public Decimal MilesDriven { get; set; }
+    public Decimal Gallons { get; set; }
+    public Decimal CostPerGallon { get; set; }
+    public Decimal CostTotal { get; set; }
+    public String Notes { get; set; }
+}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;h3&gt;LINQ to XML&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument vehicleGasXml = XDocument.Load(@&amp;ldquo;C:\path\to\vehicle_gas.xml&amp;rdquo;);&lt;/p&gt;
+
+&lt;p&gt;IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&amp;ldquo;vehicle&amp;rdquo;)
+    select new Vehicle {
+        Id = int.Parse(vehicle.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
+        Make = vehicle.Element(&amp;ldquo;make&amp;rdquo;).Value,
+        Model = vehicle.Element(&amp;ldquo;model&amp;rdquo;).Value,
+        Year = int.Parse(vehicle.Element(&amp;ldquo;year&amp;rdquo;).Value),
+        Fillups = from fillup in vehicle.Descendants(&amp;ldquo;fillup&amp;rdquo;)
+            select new Fillup {
+              Id = int.Parse(fillup.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
+              Date = DateTime.ParseExact(fillup.Element(&amp;ldquo;date&amp;rdquo;).Value, &amp;ldquo;yyyy-MM-dd&amp;rdquo;, System.Globalization.CultureInfo.InvariantCulture),
+              MilesTotal = int.Parse(fillup.Element(&amp;ldquo;milesCar&amp;rdquo;).Value),
+              MilesDriven = decimal.Parse(fillup.Element(&amp;ldquo;milesDriven&amp;rdquo;).Value),
+              Gallons = decimal.Parse(fillup.Element(&amp;ldquo;gallons&amp;rdquo;).Value),
+              CostPerGallon = decimal.Parse(fillup.Element(&amp;ldquo;costGallon&amp;rdquo;).Value),
+              CostTotal = decimal.Parse(fillup.Element(&amp;ldquo;costTotal&amp;rdquo;).Value),
+              Notes = fillup.Element(&amp;ldquo;notes&amp;rdquo;).Value
+            }
+    };&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As always, suggestions appreciated. (Although I&amp;rsquo;ve already got code that, using .NET 4, creates some rather nice charts with the information contained within a document such as this, and consider this close to complete; name information isn&amp;rsquo;t grabbed, but I&amp;rsquo;m not sure that&amp;rsquo;s altogether necessary &amp;hellip;)&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iTunes Playlists to Xml - version 1.6 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/</link>
+      <pubDate>Sat, 08 May 2010 15:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/</guid>
+      <description>&lt;p&gt;Version 1.6 of iTunes Playlists to Xml is now available for download.&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml_1.6.zip&#34;&gt;iTunes Playlists to Xml 1.6&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Installing and more information&lt;/h3&gt;
+&lt;p&gt;If you&#39;re new to iTunes Playlists to Xml, I&#39;ve created a &#39;product page&#39; for &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; with all the information needed to get started.&lt;/p&gt;
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+&lt;p&gt;To upgrade from &lt;strong&gt;any version of 1.4 or 1.5&lt;/strong&gt;&amp;nbsp;you need to replace the following files with those in the above archive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AlbumName.xslt&lt;/li&gt;
+&lt;li&gt;iTunesPlaylists2Xml.xslt&lt;/li&gt;
+&lt;li&gt;iTunesPlaylistsToXml.exe&lt;/li&gt;
+&lt;li&gt;NameArtistAlbumPlay.xslt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Your configuration file&amp;nbsp;should be upgraded with the new functionality automatically.&lt;/p&gt;
+&lt;p&gt;To upgrade from &lt;strong&gt;version 1.3 or earlier&lt;/strong&gt;, extract the contents of the zip replacing everything &lt;em&gt;but&lt;/em&gt; the iTunesPlaylistsToXml.exe.config file; when you start the application after upgrading the configuration file &lt;em&gt;should&lt;/em&gt; be automatically upgraded with all new settings. If you get a configuration error, then replace this file with the new version. Remember to update your name in the Settings menu.&lt;/p&gt;
+&lt;h3&gt;Changes from version 1.5.3&lt;/h3&gt;
+&lt;p&gt;With the release of .NET Framework 4 a few weeks ago, I figure it&#39;s safe to move from .NET Framework 2.0 to 3.5 in iTunes Playlists to Xml. Therefore, &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;&lt;strong&gt;.NET Framework&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; 3.5&amp;nbsp;is now required&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In addition to the new requirement, version 1.6 of iTunes Playlists to Xml adds the ability to save playlists to HTML, in addition to XML.&lt;/p&gt;
+&lt;h3&gt;Features for&amp;nbsp;future releases&lt;/h3&gt;
+&lt;p&gt;A future release will allow you to change the elements that are output by default via the user interface (it&#39;s possible now via the &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml.htm#advanced&#34;&gt;command line&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Suggestions&lt;/h3&gt;
+&lt;p&gt;As always, comments and suggestions are appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iTunes Playlists to Xml - version 1.5.3 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/</link>
+      <pubDate>Sun, 10 Jan 2010 16:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
+&lt;p&gt;This application has since been updated. &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;Read about the current version of iTunes Playlists to Xml.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Version 1.5.3 of iTunes Playlists to Xml is now available for download.&lt;/p&gt;
+&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml_1.5.3.zip&#34;&gt;iTunes Playlists to Xml 1.5.3&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Installing and more information&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re new to iTunes Playlists to Xml, I&amp;rsquo;ve created a &amp;lsquo;product page&amp;rsquo; for &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; with all the information needed to get started.&lt;/p&gt;
+&lt;h3&gt;Upgrading&lt;/h3&gt;
+&lt;p&gt;To upgrade from &lt;strong&gt;any version of 1.4 or 1.5&lt;/strong&gt;&amp;nbsp;you simply need to replace the &lt;strong&gt;iTunesPlaylistsToXml.exe&lt;/strong&gt; file with the one in the above archive. Your configuration file&amp;nbsp;should be upgraded with the new functionality automatically.&lt;/p&gt;
+&lt;p&gt;To upgrade from &lt;strong&gt;version 1.3 or earlier&lt;/strong&gt;, extract the contents of the zip replacing everything &lt;em&gt;but&lt;/em&gt; the iTunesPlaylistsToXml.exe.config file; when you start the application after upgrading the configuration file &lt;em&gt;should&lt;/em&gt; be automatically upgraded with all new settings. If you get a configuration error, then replace this file with the new version. Remember to update your name in the Settings menu.&lt;/p&gt;
+&lt;h3&gt;Changes from version 1.5.2&lt;/h3&gt;
+&lt;p&gt;Version 1.5.3 of iTunes Playlists to Xml adds the ability to always save the output with a particular file name, instead of the default which uses the current date and time.&lt;/p&gt;
+&lt;p&gt;This option can be set in the settings as the &amp;ldquo;Always save as&amp;rdquo; option.&lt;/p&gt;
+&lt;h3&gt;Features for&amp;nbsp;future releases&lt;/h3&gt;
+&lt;p&gt;A future release will allow you to change the elements that are output by default via the user interface (it&amp;rsquo;s possible now via the &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml.htm#advanced&#34;&gt;command line&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The next version may also require &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework&lt;/a&gt; version 3.5. If you feel strongly about this, please let me know by leaving&amp;nbsp;a comment below.&lt;/p&gt;
+&lt;h3&gt;Suggestions&lt;/h3&gt;
+&lt;p&gt;As always, comments and suggestions are appreciated.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
