@@ -1,5 +1,5 @@
 +++
-title = "On the Dangers of "Is and Is Not Not""
+title = "On the Dangers of \"Is and Is Not Not\""
 summary = "On the limitations of the rule of double negation in sentential logic."
 draft = false
 comments = true

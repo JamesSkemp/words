@@ -1,11 +1,11 @@
 +++
-title = ""France delivers nuclear threat""
+title = "France delivers nuclear threat"
 summary = "If terrorists are everywhere, can you use large-force weapons (like bombs) against them?"
 draft = false
 comments = true
 date = "2006-01-20T08:15:00-06:00"
 modified = "2007-07-19T09:32:20-05:00"
-slug = "France-delivers-nuclear-threat"
+slug = "france-delivers-nuclear-threat"
 blogengine = "66bcd1b2-9c4c-4666-b1df-a8379716073e"
 categories = ["political"]
 tags = []

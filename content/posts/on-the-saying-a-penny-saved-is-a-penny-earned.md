@@ -1,6 +1,6 @@
 +++
-title = "On the Saying "A Penny Saved is a Penny Earned""
-summary = "Brief discourse on the saying "A penny saved is a penny earned.""
+title = "On the Saying \"A Penny Saved is a Penny Earned\""
+summary = "Brief discourse on the saying \"A penny saved is a penny earned.\""
 draft = false
 comments = true
 date = "2003-12-01T01:01:00-06:00"

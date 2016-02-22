@@ -1,11 +1,11 @@
 +++
 title = "On the Saying 'God is Odd'"
-summary = "A brief discourse on the saying "God is odd"."
+summary = "A brief discourse on the saying \"God is odd\"."
 draft = false
 comments = true
 date = "2004-09-17T01:01:00-05:00"
 modified = "2007-10-15T22:20:57-05:00"
-slug = "On the Saying 'God is Odd'"
+slug = "On-the-saying-God-is-Odd"
 blogengine = "25bdc1e9-b162-4d53-a19e-4dc1d337e4c9"
 categories = ["article", "philosophy"]
 tags = ["listen"]

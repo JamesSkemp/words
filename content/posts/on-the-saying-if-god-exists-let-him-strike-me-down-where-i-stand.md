@@ -1,5 +1,5 @@
 +++
-title = "On the Saying "If God exists, let him strike me down where I stand""
+title = "On the Saying \"If God exists, let him strike me down where I stand\""
 summary = "Brief discourse on the saying 'If God exists, let him strike me down where I stand'."
 draft = false
 comments = true

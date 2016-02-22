@@ -1,11 +1,11 @@
 +++
 title = "Moving the location of PHP on your hard drive"
-summary = "In this article, we'll be moving our installation of PHP 4.4.2 from c:\php\ to c:\php4\. We'll be doing this primarily because we may like the ability to run multiple versions of PHP at one time, on our development server."
+summary = "In this article, we'll be moving our installation of PHP 4.4.2 from c:\\php\\ to c:\\php4\\. We'll be doing this primarily because we may like the ability to run multiple versions of PHP at one time, on our development server."
 draft = false
 comments = true
 date = "2006-07-01T07:26:00-05:00"
 modified = "2007-09-06T22:34:35-05:00"
-slug = "Moving-the-location-of-PHP-on-your-hard-drive"
+slug = "moving-the-location-of-PHP-on-your-hard-drive"
 blogengine = "bad3e3fc-b1b5-43ea-85e8-101854eca854"
 categories = ["software", "tutorials / guides"]
 tags = ["php", "apache"]

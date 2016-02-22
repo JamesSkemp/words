@@ -1,6 +1,6 @@
 +++
 title = "My new television, the Sony Bravia"
-summary = "Today, I purchased a new television, a Sony Bravia flat-panel LCD (the KDL-32M3000, which is a 32" model)."
+summary = "Today, I purchased a new television, a Sony Bravia flat-panel LCD (the KDL-32M3000, which is a 32\" model)."
 draft = false
 comments = true
 date = "2007-11-03T17:26:00-05:00"

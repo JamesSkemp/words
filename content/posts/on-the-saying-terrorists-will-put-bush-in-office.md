@@ -1,5 +1,5 @@
 +++
-title = "On the Saying "Terrorists Will Put Bush in Office""
+title = "On the Saying \"Terrorists Will Put Bush in Office\""
 summary = "Article regarding the (original) saying that terrorists will put George W. Bush in office in 2004."
 draft = false
 comments = true

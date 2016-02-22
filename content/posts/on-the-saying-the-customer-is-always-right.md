@@ -1,6 +1,6 @@
 +++
-title = "On the Saying "The Customer is Always Right""
-summary = "Short discourse on the saying that "the customer is always right," or correct."
+title = "On the Saying \"The Customer is Always Right\""
+summary = "Short discourse on the saying that \"the customer is always right,\" or correct."
 draft = false
 comments = true
 date = "2003-05-19T01:01:00-05:00"

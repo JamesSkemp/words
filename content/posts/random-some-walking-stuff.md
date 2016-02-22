@@ -1,5 +1,5 @@
 +++
-title = "Random - "some walking stuff""
+title = "Random - \"some walking stuff\""
 summary = "A couple of lines, from July 2003. Not sure if this is original or not, but a search turns up nothing."
 draft = false
 comments = true

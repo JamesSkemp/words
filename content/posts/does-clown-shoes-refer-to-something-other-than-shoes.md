@@ -1,11 +1,11 @@
 +++
 title = "Does 'Clown Shoes' Refer to Something Other Than Shoes?"
-summary = "What does 'clown shoes' refer to? Can someone say "That's clown shoes." and be done with their sentence, properly?"
+summary = "What does 'clown shoes' refer to? Can someone say \"That's clown shoes.\" and be done with their sentence, properly?"
 draft = false
 comments = true
 date = "2005-01-07T02:01:00-06:00"
 modified = "2007-10-15T22:18:27-05:00"
-slug = "Does 'Clown Shoes' Refer to Something Other Than Shoes?"
+slug = "does-clown-shoes-refer-to-something-other-than-shoes"
 blogengine = "c7c0299f-13d7-40a1-bc60-01286a76339c"
 categories = ["article", "Internet"]
 tags = ["listen"]

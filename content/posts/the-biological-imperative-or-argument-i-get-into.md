@@ -1,6 +1,6 @@
 +++
 title = "The Biological Imperative : or argument I get into"
-summary = "Robert Wood's "The Biological Imperative.""
+summary = "Robert Wood's \"The Biological Imperative.\""
 draft = false
 comments = true
 date = "2007-03-24T17:20:00-05:00"

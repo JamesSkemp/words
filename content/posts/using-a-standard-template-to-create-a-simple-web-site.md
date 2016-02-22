@@ -1,8 +1,6 @@
 +++
 title = "Using a standard template to create a simple Web site"
-summary = "As stated in a previous article, there's a site, http://blog.html.it/layoutgala/, that offers free templates.  Using these templates, you can easily create a site, so long as you have the content you need to fill the pages.
-
- In this article, we'll be putting some content into one of these templates, Layout 34, but we can use the methods we discuss here on any of the templates."
+summary = "As stated in a previous article, there's a site, http://blog.html.it/layoutgala/, that offers free templates.  Using these templates, you can easily create a site, so long as you have the content you need to fill the pages. In this article, we'll be putting some content into one of these templates, Layout 34, but we can use the methods we discuss here on any of the templates."
 draft = false
 comments = true
 date = "2006-04-02T19:33:00-05:00"

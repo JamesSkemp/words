@@ -1,6 +1,6 @@
 +++
 title = "On the Saying 'Is it better to live a lie, or know the truth and cry?'"
-summary = "On the saying, or really the question, that I may have coined, "Is it better to live a lie, or know the truth and cry?""
+summary = "On the saying, or really the question, that I may have coined, \"Is it better to live a lie, or know the truth and cry?\""
 draft = false
 comments = true
 date = "2005-04-27T00:00:00-05:00"

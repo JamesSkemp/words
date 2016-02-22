@@ -1,5 +1,5 @@
 +++
-title = ""Open" is to "close" as "start" is to:"
+title = "\"Open\" is to \"close\" as \"start\" is to:"
 summary = "Complete this, using one of three choices.  Open is to close as start is to ..."
 draft = false
 comments = true
