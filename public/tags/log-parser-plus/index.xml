@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Log Parser Plus on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/log-parser-plus/</link>
-    <description>Recent content in Log Parser Plus on My New Hugo Site</description>
+    <title>Log Parser Plus on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/log-parser-plus/</link>
+    <description>Recent content in Log Parser Plus on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Jun 2011 23:30:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/log-parser-plus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/log-parser-plus/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>mvc-mini-profiler for users in a particular role</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
+      <link>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
       <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
       <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
 &lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
 &lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
@@ -44,10 +44,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Log Parser Plus June/July 2011 plans</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-June-July-2011-plans/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-June-July-2011-plans/</link>
       <pubDate>Thu, 02 Jun 2011 21:07:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-June-July-2011-plans/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-June-July-2011-plans/</guid>
       <description>&lt;p&gt;Somehow, while I wasn&#39;t looking, the Log Parser Plus Web site has grown to what I consider a nice size over the last handful of months.&lt;/p&gt;
 &lt;p&gt;As the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus Web site&lt;/a&gt; moves towards 2000 visits a month I&#39;ll be making a number of changes in an attempt to make it even more useful.&lt;/p&gt;
 &lt;p&gt;Some changes I&#39;ve already made:&lt;/p&gt;
@@ -73,10 +73,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>New Log Parser Plus Web site design</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/New-Log-Parser-Plus-Web-site-design/</link>
+      <link>http://jamesskemp.github.io/blog/posts/New-Log-Parser-Plus-Web-site-design/</link>
       <pubDate>Sun, 22 May 2011 12:40:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/New-Log-Parser-Plus-Web-site-design/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/New-Log-Parser-Plus-Web-site-design/</guid>
       <description>&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;My Web site on Microsoft Log Parser&lt;/a&gt; gets a fair amount of monthly traffic, but I&#39;ve never really been happy with the design, which has been in place since I created the site back in September of 2008.&lt;/p&gt;
 &lt;p&gt;While I was fully intending on updating the site last week (as well as doing a slew of other productive things), I &lt;em&gt;finally&lt;/em&gt; did so this morning.&lt;/p&gt;
 &lt;h3&gt;Design 1&lt;/h3&gt;
@@ -91,10 +91,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Log Parser Plus - version 0.3 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/</link>
       <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
 &lt;/div&gt;
@@ -108,10 +108,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Log Parser Plus - version 0.2.1 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/</link>
       <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;

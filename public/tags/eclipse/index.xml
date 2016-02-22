@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Eclipse on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/eclipse/</link>
-    <description>Recent content in Eclipse on My New Hugo Site</description>
+    <title>Eclipse on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/eclipse/</link>
+    <description>Recent content in Eclipse on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Jun 2007 07:30:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Eclipse SDK 3.2.2 to Ubuntu 7.04</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Eclipse-SDK-322-to-Ubuntu-704/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Eclipse-SDK-322-to-Ubuntu-704/</link>
       <pubDate>Tue, 12 Jun 2007 07:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Eclipse-SDK-322-to-Ubuntu-704/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Eclipse-SDK-322-to-Ubuntu-704/</guid>
       <description>&lt;p&gt;
 Having already &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/11/366/installing-suns-java-development-kit-50-update-12-on-ubuntu-704/&#34;&gt;installed JDK 5.0 on Ubuntu&lt;/a&gt;, it&amp;#39;s time to install what I really wanted in the first place - Eclipse.
 &lt;/p&gt;
@@ -53,10 +53,10 @@ We still have to install Apache, at least, and because I am who I am, ColdFusion
     
     <item>
       <title>Installing Eclipse 3.2 to a Windows XP SP2 machine</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</link>
       <pubDate>Sat, 19 Aug 2006 08:10:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</guid>
       <description>&lt;p&gt;
 In this guide, we&amp;#39;ll be installing Eclipse 3.2. The environment I&amp;#39;ll be using is as follows.
 &lt;/p&gt;
@@ -125,7 +125,7 @@ Now you can open an existing HTML to see just what kind of formatting you&amp;#3
 And with that, you&amp;#39;ve successfully installed Eclipse. Take a look at the numerous areas available from the welcome page, see just what Eclipse can do.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development&lt;/a&gt;.
+&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development&lt;/a&gt;.
 &lt;/p&gt;
 </description>
     </item>

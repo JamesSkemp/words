@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visual Basic on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/visual-basic/</link>
-    <description>Recent content in Visual Basic on My New Hugo Site</description>
+    <title>Visual Basic on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/visual-basic/</link>
+    <description>Recent content in Visual Basic on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2010 12:00:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/visual-basic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/visual-basic/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tic-Tac-Toe in Visual Basic 6</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
       <pubDate>Sat, 24 Jul 2010 12:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
       <description>&lt;p&gt;Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6.&lt;/p&gt;
 &lt;p&gt;Below is the code from MainWin.frm, which should be sufficient to create the application.&lt;/p&gt;
 &lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;

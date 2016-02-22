@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
 
     
-    <title>.Net - My New Hugo Site</title>
-    <meta property='og:title' content=".Net - My New Hugo Site">
+    <title>.Net - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content=".Net - James Skemp&#39;s Test Hugo-Generated Site">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/tags/index.net/">
+    <meta property="og:url" content="http://jamesskemp.github.io/blog/tags/index.net/">
     
     
 
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/blog/">James Skemp&#39;s Test Hugo-Generated Site</a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">
@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Wed, Jun 24, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></div>
   </header>
   <div class="body">Granted, in the case where this came up, I should have moved away from a SqlDataSource, but I wrote it using one, and a re-write isn't possible at the moment. So, I had to find a way yesterday to programmatically set the command timeout of a select, using a SqlDataSource (that was programmatically written). After much research, I found that you have to set the timeout on selecting. After opening a dummy document to see if I could determine how it was normally done, I came up with something like the following: SqlDataSource dataSource = new SqlDataSource(); // code removed dataSource.Selecting += GenericSelecting; // code removed The GenericSelecting is as follows: protected void GenericSelecting(object sender, SqlDataSourceSelectingEventArgs e) { e.Command.CommandTimeout = 6000; } Excessive timeout, yes, but it works.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Jun 13, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-12-released/">iTunes Playlists to Xml - version 1.2 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-12-released/">iTunes Playlists to Xml - version 1.2 released</a></div>
   </header>
   <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. Version 1.2 of iTunes Playlists to Xml is now ready for download. Download iTunes Playlists to Xml version 1.2. This update should correct issues when the playlists are changed, as well as when the source is ejected. Instead of immediately connecting to iTunes, the application now allows (and requires) that you manually begin that process.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-12-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-12-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,13 +94,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Jun 6, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/">Programmatic MSSQL data source in ASP.NET (C#) without System.Web</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/">Programmatic MSSQL data source in ASP.NET (C#) without System.Web</a></div>
   </header>
   <div class="body">In a similar article I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive. So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code. First, the following must be included in.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -110,13 +110,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Jun 1, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></div>
   </header>
   <div class="body">I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server. If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values. SqlDataSource dataSource = new SqlDataSource(); dataSource.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString; dataSource.SelectCommand = "stored_proc"; dataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure; dataSource.SelectParameters.Add("id", value); dataSource.CacheDuration = 3600; DataView viewData = (DataView)dataSource.Select(DataSourceSelectArguments.Empty); DataTable tableData = viewData.ToTable(); //Stuff tableData = null; viewData = null; dataSource = null; From what I can tell, there's no close by doing a select this way; the connection must close after it's performed?</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -126,13 +126,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, May 15, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-11-released/">iTunes Playlists to Xml - version 1.1 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-11-released/">iTunes Playlists to Xml - version 1.1 released</a></div>
   </header>
   <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. Update: Version 1.1.1 is available for download, which corrects the progress bar bug, noted in the comments below. To upgrade, simply replace your executable with the one in the above zip file. Version 1.1 of iTunes Playlists to Xml has been released. Download iTunes Playlists to Xml version 1.1. This update now appends the saved xml file with the current date and time, for ease.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-11-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-11-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -142,7 +142,7 @@
       <article class="li">
   <header>
     <div class="date">Sun, Mar 29, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-10-released/">iTunes Playlists to Xml - version 1.0 released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-10-released/">iTunes Playlists to Xml - version 1.0 released</a></div>
   </header>
   <div class="body"><p><div class="warning">
 <p>This application has since been updated. <a href="http://jamesrskemp.com/apps/iTunesPlaylists2Xml/">Read about the current version of iTunes Playlists to Xml.</a></p>
@@ -161,13 +161,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Mar 16, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Test-application-in-ASPNET-C-sharp-Amortization-schedule/">Test application in ASP.NET (C#): Amortization schedule</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Test-application-in-ASPNET-C-sharp-Amortization-schedule/">Test application in ASP.NET (C#): Amortization schedule</a></div>
   </header>
   <div class="body">Having used a number of amortization schedule generators this past weekend, I thought I could do better. It&#39;s still in-progress, but after (exactly) 2 hours of work, it functions. View the Amortization schedule generator. Developed in ASP.NET C#, with a limited amount of JS. Unlike the site I crashed this weekend, this should tell you if you attempt to pay less per month than you owe in interest. At this point, I only allow 100 payments to be returned, just in case ...</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Test-application-in-ASPNET-C-sharp-Amortization-schedule/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Test-application-in-ASPNET-C-sharp-Amortization-schedule/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -177,13 +177,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Mar 5, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-06b-released/">iTunes Playlists to Xml - version 0.6b released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-06b-released/">iTunes Playlists to Xml - version 0.6b released</a></div>
   </header>
   <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. iTunes Playlists to Xml, version 0.6b, is now available for download. Download iTunes Playlists to Xml - version 0.6b. This version now handles the bug where playlists could be out of date, by alerting the user. This version also includes functionality to save the Xml file, as well as configure the name the application will use when generating the Xml file.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-06b-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-06b-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -193,13 +193,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Mar 5, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/Configuration-files-for-Windows-Forms-Applications/">Configuration files for Windows Forms Applications</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Configuration-files-for-Windows-Forms-Applications/">Configuration files for Windows Forms Applications</a></div>
   </header>
   <div class="body">Since I know I&#39;ll run across this again ... In my iTunes Playlists to Xml application I wanted to allow users the ability to persist their name across sessions. The supported method seems to be using application configuration files; in my case, something like iTunesApplication.exe.config. However, try as I could, I just couldn&#39;t find anything solid on how to create the configuration file. First, I had to add a reference to &quot;System.configuration&quot; (in References).</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/Configuration-files-for-Windows-Forms-Applications/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/Configuration-files-for-Windows-Forms-Applications/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -209,13 +209,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Mar 2, 2009</div>
-    <div class="title"><a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-04b-released/">iTunes Playlists to Xml - version 0.4b released</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-04b-released/">iTunes Playlists to Xml - version 0.4b released</a></div>
   </header>
   <div class="body">This application has since been updated. Read about the current version of iTunes Playlists to Xml. Having just released version 0.3b of iTunes Playlists to Xml, I&rsquo;ve got yet another release. This release includes menus, the ability to select what data you want in the Xml, and a schema for validation. Unfortunately, I&rsquo;ve discovered one bug (that would have existed before) with playlists getting updated in iTunes, between the refresh in this application, and the time it was clicked on.</div>
 
   
   <footer>
-    <a href="http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-04b-released/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-04b-released/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -250,25 +250,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/blog/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      <a href="http://jamesskemp.github.io/blog/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
       
     </div>
   </div>
@@ -280,25 +280,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      <a href="http://jamesskemp.github.io/blog/categories/software" class="list-group-item">software</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      <a href="http://jamesskemp.github.io/blog/categories/article" class="list-group-item">article</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/categories/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      <a href="http://jamesskemp.github.io/blog/categories/strivinglife" class="list-group-item">strivinglife</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://jamesskemp.github.io/blog/categories/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      <a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      <a href="http://jamesskemp.github.io/blog/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      <a href="http://jamesskemp.github.io/blog/categories/internet" class="list-group-item">internet</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      <a href="http://jamesskemp.github.io/blog/categories/gaming" class="list-group-item">gaming</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      <a href="http://jamesskemp.github.io/blog/categories/technology" class="list-group-item">technology</a>
       
     </div>
   </div>
@@ -309,25 +309,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/blog/tags/review" class="list-group-item">review</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      <a href="http://jamesskemp.github.io/blog/tags/.net" class="list-group-item">.net</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      <a href="http://jamesskemp.github.io/blog/tags/xml" class="list-group-item">xml</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      <a href="http://jamesskemp.github.io/blog/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      <a href="http://jamesskemp.github.io/blog/tags/c" class="list-group-item">c#</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      <a href="http://jamesskemp.github.io/blog/tags/apache" class="list-group-item">apache</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      <a href="http://jamesskemp.github.io/blog/tags/playstation" class="list-group-item">playstation</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      <a href="http://jamesskemp.github.io/blog/tags/microsoft" class="list-group-item">microsoft</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      <a href="http://jamesskemp.github.io/blog/tags/waking-life" class="list-group-item">waking-life</a>
       
-      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      <a href="http://jamesskemp.github.io/blog/tags/iis" class="list-group-item">iis</a>
       
     </div>
   </div>
@@ -345,7 +345,7 @@
 
     <footer class="site">
       <div class="container">
-        <p>&copy; 2016 My New Hugo Site</p>
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
         <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
         <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
       </div>

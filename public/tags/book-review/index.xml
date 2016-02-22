@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Book Review on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/book-review/</link>
-    <description>Recent content in Book Review on My New Hugo Site</description>
+    <title>Book Review on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/book-review/</link>
+    <description>Recent content in Book Review on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Aug 2011 14:04:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/book-review/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Professional ASP.NET MVC 3</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-3/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-3/</link>
       <pubDate>Sat, 20 Aug 2011 14:04:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Professional-ASPNET-MVC-3/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt;, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.&lt;/p&gt;
 &lt;/div&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Review: jQuery Mobile by Jon Reid</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-jQuery-Mobile-by-Jon-Reid/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-jQuery-Mobile-by-Jon-Reid/</link>
       <pubDate>Sun, 17 Jul 2011 08:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-jQuery-Mobile-by-Jon-Reid/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-jQuery-Mobile-by-Jon-Reid/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1449306683?tag=strivinglifen-20&#34;&gt;jQuery Mobile&lt;/a&gt;, written by Jon Reid.&lt;/p&gt;
 &lt;/div&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>Review: The 12 Chinese Animals</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-The-12-Chinese-Animals/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-The-12-Chinese-Animals/</link>
       <pubDate>Sun, 25 Jul 2010 18:40:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-The-12-Chinese-Animals/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-The-12-Chinese-Animals/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;This is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/184819031X?tag=strivinglifen-20&#34;&gt;The 12 Chinese Animals&lt;/a&gt;, written by Master Zhongxian Wu.&lt;/p&gt;
 &lt;/div&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title>Review: Manufacturing Depression: The Secret History of a Modern Disease</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</link>
       <pubDate>Fri, 28 May 2010 18:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Manufacturing-Depression-The-Secret-History-of-a-Modern-Disease/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;This is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1416569790?tag=strivinglifen-20&#34;&gt;Manufacturing Depression: The Secret History of a Modern Disease&lt;/a&gt;, written by Gary Greenberg.&lt;/p&gt;
 &lt;/div&gt;
@@ -95,10 +95,10 @@
     
     <item>
       <title>Review: Rant: An Oral Biography of Buster Casey</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</link>
       <pubDate>Sun, 25 Apr 2010 18:37:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Rant-An-Oral-Biography-of-Buster-Casey/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;This is a book review of &lt;a href=&#34;http://www.amazon.com/dp/0307275833?tag=strivinglifen-20&#34;&gt;Rant: An Oral Biography of Buster Casey&lt;/a&gt;, written by Chuck Palahniuk.&lt;/p&gt;
 &lt;/div&gt;
@@ -113,10 +113,10 @@
     
     <item>
       <title>Review: Pride and Prejudice and Zombies: Dawn of the Dreadfuls</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</link>
       <pubDate>Sat, 17 Apr 2010 17:33:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;This is a book review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1594744548?tag=strivinglifen-20&#34;&gt;Pride and Prejudice and Zombies: Dawn of the Dreadfuls&lt;/a&gt;, written by Steve Hockensmith.&lt;/p&gt;
 &lt;/div&gt;

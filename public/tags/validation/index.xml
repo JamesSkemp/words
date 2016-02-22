@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Validation on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/validation/</link>
-    <description>Recent content in Validation on My New Hugo Site</description>
+    <title>Validation on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/validation/</link>
+    <description>Recent content in Validation on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Jul 2008 20:45:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/validation/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Apache JMeter</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Apache-JMeter/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Review-Apache-JMeter/</link>
       <pubDate>Thu, 24 Jul 2008 20:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Apache-JMeter/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Review-Apache-JMeter/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 The following is&amp;nbsp;a book review of &lt;a href=&#34;http://www.amazon.com/gp/product/1847192955?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Apache JMeter&lt;/a&gt;, written by Emily H. Halili.
@@ -55,10 +55,10 @@ Emily promises an introduction to JMeter, as well as a step-by-step guide to usi
     
     <item>
       <title>The WordPress calendar is a table</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/The-WordPress-calendar-is-a-table/</link>
+      <link>http://jamesskemp.github.io/blog/posts/The-WordPress-calendar-is-a-table/</link>
       <pubDate>Mon, 15 Jan 2007 11:19:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/The-WordPress-calendar-is-a-table/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/The-WordPress-calendar-is-a-table/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s a number of problems with WordPress, as far as accessibility goes.  However, the easiest one to fix is the problem with the calendar, which displays in the default theme, as well as many custom ones (I&amp;#39;m sure).  It lacks a summary tag.
 &lt;/p&gt;
@@ -91,10 +91,10 @@ Now then, who can either point me in the right direction to suggest this change,
     
     <item>
       <title>Code cleanup and commenting - done right</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Code-cleanup-and-commenting-done-right/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Code-cleanup-and-commenting-done-right/</link>
       <pubDate>Sun, 18 Jun 2006 14:13:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Code-cleanup-and-commenting-done-right/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Code-cleanup-and-commenting-done-right/</guid>
       <description>&lt;p&gt;
 For the past hour, I&amp;#39;ve been looking at current ways to get my name out there for Web page cleanup and commenting.  In other words, I&amp;#39;d like to work with existing code to bring it closer to the standards, and comment it, if necessary.  I would think it would be of great benefit to those individuals who bought a solution from a vendor, and are looking at changes to that code, or cleanup so that there pages act alike in most browsers.  Unfortunately, I haven&amp;#39;t found a site to offer my wares.  I&amp;#39;ve also looked at open source projects that may need some free help, but, alas, nothing there either.
 &lt;/p&gt;
@@ -106,10 +106,10 @@ If someone happens upon this by way of a Google search (or any other search - Go
     
     <item>
       <title>Don&#39;t use ul when you should use blockquote</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Dont-use-ul-when-you-should-use-blockquote/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Dont-use-ul-when-you-should-use-blockquote/</link>
       <pubDate>Mon, 02 Jan 2006 09:45:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Dont-use-ul-when-you-should-use-blockquote/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Dont-use-ul-when-you-should-use-blockquote/</guid>
       <description>&lt;p&gt;
 I&amp;#39;m sorry, but I hate it when people use &amp;lt;ul&amp;gt; instead of &amp;lt;blockquote&amp;gt;.  &amp;lt;ul&amp;gt; is for list items, and should therefore be composed of list items (&amp;lt;li&amp;gt;s). If you&amp;#39;re not going to put &amp;lt;li&amp;gt;s for each item within a &amp;lt;ul&amp;gt; block, &lt;strong&gt;don&amp;#39;t use &amp;lt;ul&amp;gt;&lt;/strong&gt;&lt;!--adsense--&gt;
 &lt;/p&gt;

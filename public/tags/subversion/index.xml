@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Subversion on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/subversion/</link>
-    <description>Recent content in Subversion on My New Hugo Site</description>
+    <title>Subversion on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/subversion/</link>
+    <description>Recent content in Subversion on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Feb 2013 10:21:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/subversion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/subversion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Converting from Subversion to Git on Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
       <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
 &lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>Migration from CollabNet Subversion to VisualSVN Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
       <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
       <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
 &lt;p&gt;
 &lt;h3&gt;VisualSVN migration&lt;/h3&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
@@ -117,10 +117,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Subversion repository dump: WPF and Silverlight application, with MVVM (revision 25)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</link>
       <pubDate>Sun, 24 Oct 2010 15:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</guid>
       <description>&lt;p&gt;As&amp;nbsp;alluded to&amp;nbsp;in a previous post, &lt;a href=&#34;http://strivinglife.com/words/post/Excellent-Silverlight-WPF-MVVM-video-series.aspx&#34;&gt;in regards to an excellent Silverlight/WPF with MVVM tutorial&lt;/a&gt;, I&#39;ve begun looking into the MVVM pattern, as I begin moving towards WPF and Silverlight for applications.&lt;/p&gt;
 &lt;p&gt;Having fully watched the series twice, and begun a third watch working through the example, albeit with the Northwind sample database, I decided to share my labor with others.&lt;/p&gt;
 &lt;p&gt;To that end I present a Subversion repository dump with a fairly step-by-step look at how to go from nothing to a simple application with WPF and Silverlight support. Built in Visual Studio 2010, against .NET 4.&lt;/p&gt;
@@ -133,10 +133,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
       <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
       <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
@@ -240,10 +240,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Manually updating CollabNet Subversion Server and TortoiseSVN</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/</link>
       <pubDate>Tue, 27 Apr 2010 21:23:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/</guid>
       <description>&lt;p&gt;With CollabNet releasing a new version of Subversion Server (1.6.11), and TortoiseSVN having a release a few days earlier, it&#39;s time to do an actual update, instead of a comment like I did &lt;a href=&#34;http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx&#34;&gt;last time&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Environment&lt;/h3&gt;
 &lt;p&gt;I&#39;m currently running CollabNet Subversion Server version 1.6.9.1 on Windows 7 Home Premium, 64-bit.&lt;/p&gt;
@@ -267,10 +267,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Example batch file to dump Subversion repositories</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Example-batch-file-to-dump-Subversion-repositories/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Example-batch-file-to-dump-Subversion-repositories/</link>
       <pubDate>Thu, 19 Nov 2009 21:52:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Example-batch-file-to-dump-Subversion-repositories/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Example-batch-file-to-dump-Subversion-repositories/</guid>
       <description>&lt;p&gt;I have a large collection of repositories, and until now ran a single batch file that had to be updated each time I created a new repository, to add the new directory.&lt;/p&gt;
 &lt;p&gt;To combat that, I did some research and created a new batch file that does all the heavy lifting for me.&lt;/p&gt;
 &lt;p&gt;To save others time, I present it below.&lt;/p&gt;
@@ -286,10 +286,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Installing CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3 on Windows Server 2003</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
       <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
 &lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;
@@ -323,10 +323,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</link>
       <pubDate>Mon, 23 Mar 2009 20:40:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
       <description>&lt;p&gt;The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.&lt;/p&gt;
 &lt;p&gt;For this I&#39;ll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that&#39;s Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.&lt;/p&gt;
 &lt;ol&gt;
@@ -407,7 +407,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;div&gt;Typical install is fine, at the default location, but feel free to change as needed.&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;See my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;Install Apache 2.2.9 to Windows Vista (Ultimate)&lt;/a&gt; for a full guide.&lt;/div&gt;
+&lt;div&gt;See my &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;Install Apache 2.2.9 to Windows Vista (Ultimate)&lt;/a&gt; for a full guide.&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;
@@ -471,7 +471,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;div&gt;In the Subversion bin directory, copy &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; (or &lt;em&gt;libdb44.dll&lt;/em&gt; for Berkeley DB support) to the Apache bin directory.&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;If you need to make Apache changes (you haven&#39;t installed Subversion before), see my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Installing Subversion binaries for Apache 2.2.x&lt;/a&gt;, otherwise you should be set.&lt;/div&gt;
+&lt;div&gt;If you need to make Apache changes (you haven&#39;t installed Subversion before), see my &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Installing Subversion binaries for Apache 2.2.x&lt;/a&gt;, otherwise you should be set.&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;
@@ -494,7 +494,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;div&gt;Sigh.&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;The third window has changed, but otherwise see &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;Installing TortoiseSVN to Windows Vista&lt;/a&gt; for specifics.&lt;/div&gt;
+&lt;div&gt;The third window has changed, but otherwise see &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;Installing TortoiseSVN to Windows Vista&lt;/a&gt; for specifics.&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ol&gt;&lt;/li&gt;
 &lt;li&gt;
@@ -536,12 +536,12 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Subversion 1.5.3 and TortoiseSVN 1.5.4 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Subversion-153-and-TortoiseSVN-154-released/</link>
       <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Subversion-153-and-TortoiseSVN-154-released/</guid>
       <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
-&lt;p&gt;My install guides for &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
+&lt;p&gt;My install guides for &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
 &lt;div class=&#34;tip&#34;&gt;
 &lt;p&gt;If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.&lt;/p&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -550,10 +550,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Subversion and TortoiseSVN: Moving a repository</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-and-TortoiseSVN-Moving-a-repository/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Subversion-and-TortoiseSVN-Moving-a-repository/</link>
       <pubDate>Fri, 12 Sep 2008 20:18:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-and-TortoiseSVN-Moving-a-repository/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Subversion-and-TortoiseSVN-Moving-a-repository/</guid>
       <description>&lt;p&gt;This evening I had to rename a project folder, since I was creating a site with the same name.&lt;/p&gt;
 &lt;p&gt;Since I had the project (application) under Subversion, I also needed to move the repository.&lt;/p&gt;
 &lt;p&gt;Here&#39;s what I did:&lt;/p&gt;
@@ -569,17 +569,17 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Installing Subversion binaries for Apache 2.2.x</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-Subversion-binaries-for-Apache-22x/</link>
       <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</guid>
-      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-Subversion-binaries-for-Apache-22x/</guid>
+      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
 &lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
 &lt;h3&gt;Getting Subversion&lt;/h3&gt;
 &lt;p&gt;Obviously, the first thing to do is to &lt;a href=&#34;http://subversion.tigris.org/&#34; target=&#34;_blank&#34;&gt;get Subversion&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We&#39;re looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that&#39;s svn-win32-1.5.1.zip.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Once you&#39;ve downloaded the zip, extract the contents.&lt;/p&gt;
 &lt;h3&gt;Installing the binaries&lt;/h3&gt;
@@ -596,7 +596,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;If you want to use Berkeley DB, grab the libdb44.dll (or &lt;strong&gt;libdb*.dll&lt;/strong&gt;)&amp;nbsp;instead of the latter.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
+&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;br /&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -617,7 +617,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;You can now browse the current versions of the files under Subversion.&lt;/p&gt;
 &lt;h3&gt;TortoiseSVN&lt;/h3&gt;
 &lt;p&gt;While you&#39;re at it, you may want to install or update &lt;a href=&#34;http://tortoisesvn.net&#34; target=&#34;_blank&#34;&gt;TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I already covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
+&lt;p&gt;I already covered &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
 &lt;h3&gt;Upgrading existing repositories&lt;/h3&gt;
 &lt;p&gt;If you&#39;ve already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.&lt;/p&gt;
 &lt;p&gt;You can do this via the command line by running &lt;strong&gt;svnadmin upgrade \path\to\repository&lt;/strong&gt; , however, you should ensure that you have a backup before you do this. Also, you&#39;ll be unable to use tools that cannot access the 1.5 repos.&lt;/p&gt;
@@ -626,11 +626,11 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Importing an existing Web site into Subversion</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Importing-an-existing-Web-site-into-Subversion/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Importing-an-existing-Web-site-into-Subversion/</link>
       <pubDate>Sun, 13 Jul 2008 11:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Importing-an-existing-Web-site-into-Subversion/</guid>
-      <description>&lt;p&gt;Last time, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;I played around with Subversion&lt;/a&gt; in order to determine just how Subversion worked.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Importing-an-existing-Web-site-into-Subversion/</guid>
+      <description>&lt;p&gt;Last time, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;I played around with Subversion&lt;/a&gt; in order to determine just how Subversion worked.&lt;/p&gt;
 &lt;p&gt;This time I&#39;m actually going to create a repository for a site to store the current version, and work through making a couple of updates.&lt;/p&gt;
 &lt;h3&gt;Existing site structure&lt;/h3&gt;
 &lt;p&gt;The site that I&#39;ll be working with is &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt;. It&#39;s a small, stable, site, that has just a few files. It&#39;s also relatively clean, with no previous versions floating about.&lt;/p&gt;
@@ -706,17 +706,17 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;While this doesn&#39;t handle trunks, branches, tags, or any of that other fun stuff, for a simple Web site, as &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt; is, it&#39;s easy enough to move files into version control - much easier than I originally thought.&lt;/p&gt;
 &lt;p&gt;However, while we didn&#39;t talk about it, it&#39;s a very good idea to make sure that you have clean directories, without temp files, previous versions, and &#39;correct&#39; directories. You can always exclude these from versioning, but a clean directory is a developer&#39;s favorite directory.&lt;/p&gt;
 &lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;test Subversion out&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;test Subversion out&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Playing around with Subversion with a test repository</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Playing-around-with-Subversion-with-a-test-repository/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Playing-around-with-Subversion-with-a-test-repository/</link>
       <pubDate>Sat, 12 Jul 2008 18:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Playing-around-with-Subversion-with-a-test-repository/</guid>
-      <description>&lt;p&gt;I&#39;ve flirted with source/version/revision control since September 2006 (with &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/?tag=/subversion&#34;&gt;Subversion&lt;/a&gt;), but have never really dug in to actually do anthing with it. But now, that changes.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Playing-around-with-Subversion-with-a-test-repository/</guid>
+      <description>&lt;p&gt;I&#39;ve flirted with source/version/revision control since September 2006 (with &lt;a href=&#34;http://jamesskemp.github.io/blog/words/?tag=/subversion&#34;&gt;Subversion&lt;/a&gt;), but have never really dug in to actually do anthing with it. But now, that changes.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following guide was created using Subversion 1.4.6 and TortoiseSVN 1.4.8. However, this should still be applicable. Also, because of the number and size of the images, I&#39;ve limited the images shown directly in the guide. All links to these images should open in a new window.&lt;/p&gt;
 &lt;/div&gt;
@@ -726,13 +726,13 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I&#39;ve already covered this in previous posts, for Windows installations.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;These both cover Windows Vista installations, but &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;an older guide&lt;/a&gt; exists for Windows XP.&lt;/p&gt;
+&lt;p&gt;These both cover Windows Vista installations, but &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;an older guide&lt;/a&gt; exists for Windows XP.&lt;/p&gt;
 &lt;p&gt;TortoiseSVN isn&#39;t required, but I highly recommend it, and it&#39;s how I&#39;ll be working through this.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;Personally, I&#39;m a GUI&amp;nbsp;guy, for the most part. If I can have a GUI, I&#39;ll use it. Now if&amp;nbsp;I need to use the command line, or the command line will give me additional functionality, I&#39;ll use it (when I need to).&lt;/p&gt;
@@ -857,12 +857,12 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Installing TortoiseSVN to Windows Vista</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-TortoiseSVN-to-Windows-Vista/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-TortoiseSVN-to-Windows-Vista/</link>
       <pubDate>Sun, 08 Jun 2008 09:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-TortoiseSVN-to-Windows-Vista/</guid>
-      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Just recently I covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-TortoiseSVN-to-Windows-Vista/</guid>
+      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just recently I covered &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
 &lt;h3&gt;The setup&lt;/h3&gt;
 &lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
 &lt;h3&gt;Downloading TortoiseSVN&lt;/h3&gt;
@@ -876,7 +876,7 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;Post-Installation&lt;/h3&gt;
 &lt;p&gt;With TortoiseSVN installed, we can now interact with Subversion in a Windows-friendly way, instead of relying upon the command line.&lt;/p&gt;
 &lt;p&gt;In a later article, we&#39;ll actually use Subversion and TortoiseSVN to put a Web site under source control, as well as a Windows application (based upon the .NET Framework).&lt;/p&gt;
-&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
+&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
 </description>
     </item>
     

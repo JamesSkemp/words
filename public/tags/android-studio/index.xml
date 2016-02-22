@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android Studio on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/android-studio/</link>
-    <description>Recent content in Android Studio on My New Hugo Site</description>
+    <title>Android Studio on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/android-studio/</link>
+    <description>Recent content in Android Studio on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Mar 2015 19:02:56 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/android-studio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/android-studio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Configuring a libGDX project to run as a desktop application in Android Studio</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
       <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
 
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
 

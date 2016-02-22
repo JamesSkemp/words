@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web Development on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/web-development/</link>
-    <description>Recent content in Web Development on My New Hugo Site</description>
+    <title>Web Development on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/web-development/</link>
+    <description>Recent content in Web Development on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Feb 2010 13:25:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/web-development/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Web Application Development Guidelines</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Web-Application-Development-Guidelines/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Web-Application-Development-Guidelines/</link>
       <pubDate>Sat, 27 Feb 2010 13:25:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Web-Application-Development-Guidelines/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Web-Application-Development-Guidelines/</guid>
       <description>&lt;p&gt;&lt;p&gt;While Web application development is just as complex as other application development, if not more so, it&amp;rsquo;s fairly difficult to find information on best practices while doing Web development.&lt;/p&gt;
 &lt;p&gt;In order to move towards implementation of Subversion, I needed to write up documentation on how we&amp;rsquo;d use it. After a couple drafts, which I ended up scrapping almost completely, I came up with the below.&lt;/p&gt;
 &lt;p&gt;In the interest of sharing, I&amp;rsquo;ve included the full document below, after removing the few instances where I had to specify a non-Subversion application (our help desk application). Comments and suggestions are appreciated.&lt;/p&gt;
@@ -257,10 +257,10 @@
     
     <item>
       <title>What I&#39;d like to see in 201X in regard to browsers</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
+      <link>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
       <pubDate>Wed, 09 Dec 2009 10:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
       <description>&lt;p&gt;&lt;h3&gt;Situation 1: WebKit&lt;/h3&gt;
 &lt;p&gt;Microsoft drops all active development on Internet Explorer 9. Instead, they throw their full support (development team)&amp;nbsp;behind WebKit.&lt;/p&gt;
 &lt;p&gt;Apple, with Safari, and Google, with Chrome, are already behind WebKit. Apple&amp;rsquo;s implementation on Windows, via Safari for Windows, is shoddy at best, and Google&amp;rsquo;s Chrome is a completely slimmed down version. By getting Microsoft&amp;rsquo;s support behind the engine you have an experienced team that has already developed for Windows.&lt;/p&gt;
@@ -276,10 +276,10 @@
     
     <item>
       <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
       <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
 &lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
 &lt;h3&gt;Requirements&lt;/h3&gt;
@@ -350,12 +350,12 @@
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
-In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
@@ -472,7 +472,7 @@ But what about browsers on mobile devices?
 Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
 &lt;/p&gt;
 &lt;p&gt;
-To some extent &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+To some extent &lt;a href=&#34;http://jamesskemp.github.io/blog/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
 &lt;/p&gt;
 &lt;p&gt;
 The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
@@ -492,7 +492,7 @@ What do you think? What do you develop for?
 &lt;/p&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
 &lt;/p&gt;
 &lt;p&gt;
 2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.

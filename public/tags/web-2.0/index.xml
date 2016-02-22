@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web 2.0 on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/web-2/index.0/</link>
-    <description>Recent content in Web 2.0 on My New Hugo Site</description>
+    <title>Web 2.0 on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/web-2/index.0/</link>
+    <description>Recent content in Web 2.0 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Dec 2009 10:30:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/web-2.0/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/web-2.0/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What I&#39;d like to see in 201X in regard to browsers</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
+      <link>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
       <pubDate>Wed, 09 Dec 2009 10:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
       <description>&lt;p&gt;&lt;h3&gt;Situation 1: WebKit&lt;/h3&gt;
 &lt;p&gt;Microsoft drops all active development on Internet Explorer 9. Instead, they throw their full support (development team)&amp;nbsp;behind WebKit.&lt;/p&gt;
 &lt;p&gt;Apple, with Safari, and Google, with Chrome, are already behind WebKit. Apple&amp;rsquo;s implementation on Windows, via Safari for Windows, is shoddy at best, and Google&amp;rsquo;s Chrome is a completely slimmed down version. By getting Microsoft&amp;rsquo;s support behind the engine you have an experienced team that has already developed for Windows.&lt;/p&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>The State of the Web - A Trailer</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/The-State-of-the-Web-A-Trailer/</link>
+      <link>http://jamesskemp.github.io/blog/posts/The-State-of-the-Web-A-Trailer/</link>
       <pubDate>Sun, 22 Apr 2007 22:43:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/The-State-of-the-Web-A-Trailer/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/The-State-of-the-Web-A-Trailer/</guid>
       <description>&lt;p&gt;
 &amp;ldquo;It&amp;#39;s true that I have some of my best thoughts at night ... or at least, so they then seem.&amp;rdquo;
 &lt;/p&gt;
@@ -77,10 +77,10 @@ Teach men to fish. Teach men to think.
     
     <item>
       <title>Algorithms or human judgement?  Give me logic</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Algorithms-or-human-judgement-Give-me-logic/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Algorithms-or-human-judgement-Give-me-logic/</link>
       <pubDate>Sat, 23 Dec 2006 23:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Algorithms-or-human-judgement-Give-me-logic/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Algorithms-or-human-judgement-Give-me-logic/</guid>
       <description>&lt;p&gt;
 Earlier today, it was noted in the news that Wikipedia founder Jimmy Wales is working with Amazon on a search engine.&amp;nbsp; This new engine supposedly will use human judgement to weight results.&amp;nbsp; Naturally, sources are saying that this engine&amp;#39;s competition is Google.&amp;nbsp; While Web 2.0 has some good things going for it, this is one of the silliest ideas I&amp;#39;ve heard of in a long time.
 &lt;/p&gt;
@@ -129,10 +129,10 @@ A unicorn, perhaps.
     
     <item>
       <title>Status update on logging into my Root /Vault</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Status-update-on-logging-into-my-Root-Vault/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Status-update-on-logging-into-my-Root-Vault/</link>
       <pubDate>Sat, 22 Apr 2006 21:26:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Status-update-on-logging-into-my-Root-Vault/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Status-update-on-logging-into-my-Root-Vault/</guid>
       <description>&lt;p&gt;
 Thanks to some great support, I&amp;#39;m now able to log in to my Vault.&amp;nbsp; Now that I&amp;#39;m in, I&amp;#39;ll be bouncing around items a bit more.&amp;nbsp; There&amp;#39;s also some great articles that I&amp;#39;d like to comment on, that revolve around the project, so that&amp;#39;ll end up meaning new philosophy-related posts (instead of just the porting-over of old ones.
 &lt;/p&gt;
@@ -144,10 +144,10 @@ Hooray!
     
     <item>
       <title>Attention: Where do you put it?</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Attention-Where-do-you-put-it/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Attention-Where-do-you-put-it/</link>
       <pubDate>Tue, 18 Apr 2006 19:11:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Attention-Where-do-you-put-it/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Attention-Where-do-you-put-it/</guid>
       <description>&lt;p&gt;
 In some way, I found &lt;a href=&#34;http://www.AttentionTrust.org/&#34;&gt;AttentionTrust.org&lt;/a&gt;.  Basically, AttentionTrust operates under the principle that your attention is both yours, and of worth.
 &lt;/p&gt;
@@ -183,10 +183,10 @@ Anyways, once again, it sounds both interesting and promising.  More on this as 
     
     <item>
       <title>Web 2.0 and overload</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Web-20-and-overload/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Web-20-and-overload/</link>
       <pubDate>Sat, 22 Oct 2005 13:06:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Web-20-and-overload/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Web-20-and-overload/</guid>
       <description>&lt;p&gt;
 I&amp;#39;ve been reading a good deal today, before and after my excursion around Madison (on Homecoming game-day, even).  There are three that really stick out:&lt;!--adsense--&gt;
 &lt;/p&gt;

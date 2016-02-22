@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hp Pavilion Xe734 on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-xe734/</link>
-    <description>Recent content in Hp Pavilion Xe734 on My New Hugo Site</description>
+    <title>Hp Pavilion Xe734 on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/hp-pavilion-xe734/</link>
+    <description>Recent content in Hp Pavilion Xe734 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Aug 2006 19:19:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-xe734/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/hp-pavilion-xe734/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing Ubuntu really isn&#39;t that bad (assuming it can access the file system and your hard drive isn&#39;t toast)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</link>
       <pubDate>Fri, 18 Aug 2006 19:19:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</guid>
       <description>&lt;p&gt;
 After attempting at least twice before to install Ubuntu onto a computer, I&amp;#39;ve finally done so this evening.  As Gavin would say, &amp;quot;Woot!&amp;quot;
 &lt;/p&gt;
@@ -44,10 +44,10 @@ Either way, I think Ubuntu will be a good choice for her.  It may not give her a
     
     <item>
       <title>First Debian install = unsuccessful</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/First-Debian-install-3D-unsuccessful/</link>
+      <link>http://jamesskemp.github.io/blog/posts/First-Debian-install-3D-unsuccessful/</link>
       <pubDate>Sat, 20 May 2006 09:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/First-Debian-install-3D-unsuccessful/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/First-Debian-install-3D-unsuccessful/</guid>
       <description>&lt;p&gt;
 My first shot at installing Debian didn&amp;#39;t go quite so well.  I&amp;#39;m attempting to install on a HP Pavilion XE734, using pretty much the base system.  One addition appears to be a 3Com Fast Etherlink PCI card, from the late 90s ... (3C595-TX).&lt;!--adsense--&gt;
 &lt;/p&gt;

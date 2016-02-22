@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Religion on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/religion/</link>
-    <description>Recent content in Religion on My New Hugo Site</description>
+    <title>Religion on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/religion/</link>
+    <description>Recent content in Religion on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Feb 2010 07:40:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/religion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/religion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The gods in their place</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/The-gods-in-their-place/</link>
+      <link>http://jamesskemp.github.io/blog/posts/The-gods-in-their-place/</link>
       <pubDate>Mon, 08 Feb 2010 07:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/The-gods-in-their-place/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/The-gods-in-their-place/</guid>
       <description>&lt;p&gt;The gods&lt;br /&gt;in their place&lt;br /&gt;no not&lt;br /&gt; of my face.&lt;/p&gt;
 </description>
     </item>

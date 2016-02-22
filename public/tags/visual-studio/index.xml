@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Visual Studio on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/visual-studio/</link>
-    <description>Recent content in Visual Studio on My New Hugo Site</description>
+    <title>Visual Studio on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/visual-studio/</link>
+    <description>Recent content in Visual Studio on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Oct 2010 15:00:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Subversion repository dump: WPF and Silverlight application, with MVVM (revision 25)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</link>
       <pubDate>Sun, 24 Oct 2010 15:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/</guid>
       <description>&lt;p&gt;As&amp;nbsp;alluded to&amp;nbsp;in a previous post, &lt;a href=&#34;http://strivinglife.com/words/post/Excellent-Silverlight-WPF-MVVM-video-series.aspx&#34;&gt;in regards to an excellent Silverlight/WPF with MVVM tutorial&lt;/a&gt;, I&#39;ve begun looking into the MVVM pattern, as I begin moving towards WPF and Silverlight for applications.&lt;/p&gt;
 &lt;p&gt;Having fully watched the series twice, and begun a third watch working through the example, albeit with the Northwind sample database, I decided to share my labor with others.&lt;/p&gt;
 &lt;p&gt;To that end I present a Subversion repository dump with a fairly step-by-step look at how to go from nothing to a simple application with WPF and Silverlight support. Built in Visual Studio 2010, against .NET 4.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>Referring to JavaScript documentation in Visual Studio via reference</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</link>
       <pubDate>Sat, 03 Jul 2010 13:32:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</guid>
       <description>&lt;p&gt;While I don&#39;t use Microsoft or Google&#39;s CDNs for jQuery, I do have a separate sub-domain where I serve these files from (and will eventually use a CDN, I&#39;m sure). However, this means that in Visual Studio I miss out on the helpful documentation functionality.&lt;/p&gt;
 &lt;p&gt;Based on a comment on &lt;a rel=&#34;external&#34; href=&#34;http://encosia.com/2008/12/10/3-reasons-why-you-should-let-google-host-jquery-for-you/&#34;&gt;3 reasons why you should let Google host jQuery for you&lt;/a&gt; it turns out there&#39;s a fairly easy way to get Intellisense; simply include the following in your JavaScript file.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;/// &amp;lt;Reference Path=&#34;/Scripts/jquery-1.4.1-vsdoc.js&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
@@ -40,10 +40,10 @@
     
     <item>
       <title>How to change your default language in Visual Studio 2008 (the right way)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/</link>
+      <link>http://jamesskemp.github.io/blog/posts/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/</link>
       <pubDate>Wed, 02 Jul 2008 19:40:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/</guid>
       <description>&lt;p&gt;There&#39;s a number of resources online on how to change the default language in Visual Studio. However, none of them are correct.&lt;/p&gt;
 &lt;p&gt;They all state that you should reset your settings to default and then re-setup your settings. Huh?&lt;/p&gt;
 &lt;p&gt;Instead, if you modify the CurrentSettings.vssettings file, you can keep all your other settings, without the pain of having to re-import everything else.&lt;/p&gt;
@@ -59,10 +59,10 @@
     
     <item>
       <title>Keyboard shortcuts for Visual Studio that mimic Dreamweaver</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</link>
       <pubDate>Wed, 14 May 2008 14:15:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</guid>
       <description>&lt;p&gt;
 I like Dreamweaver. After Notepad, and various other apps like it, I used FrontPage, was scarred, and was saved by Dreamweaver. 
 &lt;/p&gt;
@@ -98,10 +98,10 @@ Does anyone out there know how to map these specific functions?
     
     <item>
       <title>My Visual Studio 2008 Preferences</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/My-Visual-Studio-2008-Preferences/</link>
+      <link>http://jamesskemp.github.io/blog/posts/My-Visual-Studio-2008-Preferences/</link>
       <pubDate>Sat, 19 Apr 2008 10:50:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/My-Visual-Studio-2008-Preferences/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/My-Visual-Studio-2008-Preferences/</guid>
       <description>&lt;p&gt;
 This is almost purely for my own benefit. 
 &lt;/p&gt;

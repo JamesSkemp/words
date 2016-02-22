@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cassini on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/cassini/</link>
-    <description>Recent content in Cassini on My New Hugo Site</description>
+    <title>Cassini on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/cassini/</link>
+    <description>Recent content in Cassini on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 May 2010 18:35:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/cassini/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/cassini/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Flying under the radar, Cassini 4.0 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Flying-under-the-radar-Cassini-40-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Flying-under-the-radar-Cassini-40-released/</link>
       <pubDate>Sat, 22 May 2010 18:35:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Flying-under-the-radar-Cassini-40-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Flying-under-the-radar-Cassini-40-released/</guid>
       <description>&lt;p&gt;Under seemingly new ownership, &lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/cassini/&#34;&gt;Cassini 4.0&lt;/a&gt; has been released, via Google Code.&lt;/p&gt;
 &lt;p&gt;Since a download isn&#39;t available, a link to a built version is included below.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/Cassini-v4r4.zip&#34;&gt;Download Cassini 4.0, based on revision 4&lt;/a&gt;.&lt;/p&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>Cassini 3.5.0.2 - built and ready to go</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/</link>
       <pubDate>Sun, 03 Jan 2010 18:10:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/</guid>
       <description>&lt;p&gt;Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&amp;nbsp;a full-fledged instance of IIS.&lt;/p&gt;
 &lt;p&gt;While Cassini should not be used in production environments, it&#39;s more than enough to run for minor development, or even minor projects.&lt;/p&gt;
 &lt;p&gt;The last official version of Cassini at the time of this writing&amp;nbsp;is &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;3.5.0.2&lt;/a&gt;. Since he&#39;s released the source, you can build your own, but what if you just want to download a pre-built version? Well now you can.&lt;/p&gt;
@@ -45,10 +45,10 @@
     
     <item>
       <title>BlogEngine.NET running on Cassini Personal Web Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
       <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
 &lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;

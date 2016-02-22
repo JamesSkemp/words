@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Itunes Playlists To Xml on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/itunes-playlists-to-xml/</link>
-    <description>Recent content in Itunes Playlists To Xml on My New Hugo Site</description>
+    <title>Itunes Playlists To Xml on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/itunes-playlists-to-xml/</link>
+    <description>Recent content in Itunes Playlists To Xml on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Oct 2010 08:35:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/itunes-playlists-to-xml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/itunes-playlists-to-xml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>iTunes Playlists to Xml: Parsing categories with LINQ</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
+      <link>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
       <pubDate>Wed, 20 Oct 2010 08:35:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;p&gt;I recently had the need to determine what types of music I had within my collection of music. Since I&amp;nbsp;created &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; so that I could export out my library on my iPod, it was easy enough to run that and then open &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; to run the following query.&lt;/p&gt;
 &lt;p&gt;Obviously, you must export the Genre field in order for the following query to work.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Location to the XML from iTunes Playlists to XML
@@ -79,10 +79,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Extended iTunes Track class for PHP</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Extended-iTunes-Track-class-for-PHP/</link>
       <pubDate>Sun, 26 Sep 2010 20:15:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Extended-iTunes-Track-class-for-PHP/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Extended-iTunes-Track-class-for-PHP/</guid>
       <description>&lt;p&gt;In a previous article, I had outlined&amp;nbsp;&lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Track-class-in-C-sharp-and-PHP.aspx&#34;&gt;classes in C# and PHP to handle&amp;nbsp;iTunes Playlists to Xml outputs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having let it sit on the back burner for long enough, I finally went back to the PHP class and finalized the constructor. I also added two functions for sorting.&lt;/p&gt;
 &lt;p&gt;Below I have the current code for the class (a &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/Track.php.txt&#34;&gt;current version of the Track class for PHP&lt;/a&gt; will always be available elsewhere) and then an example implementation.&lt;/p&gt;
@@ -316,10 +316,10 @@ class Track {
     
     <item>
       <title>iTunes Track class in C# and PHP</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Track-class-in-C-sharp-and-PHP/</link>
+      <link>http://jamesskemp.github.io/blog/posts/iTunes-Track-class-in-C-sharp-and-PHP/</link>
       <pubDate>Wed, 08 Sep 2010 22:25:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
       <description>&lt;p&gt;I&#39;ve recently begun reading up on PHP again. As I&#39;m most fond of my iTunes Playlists to Xml application, I thought I&#39;d work with that application&#39;s output - XML files with playlist data - as I continued to dig into PHP (instead of stopping now that I know enough to tweak existing code and create new functionality).&lt;/p&gt;
 &lt;p&gt;Here&#39;s a basic Track object in C# and PHP. I&#39;ll of course be elaborating on these as time goes by (and already have code for the C# implementation).&lt;/p&gt;
 &lt;h3&gt;Track class in C#&lt;/h3&gt;
@@ -481,10 +481,10 @@ class Track {
     
     <item>
       <title>iTunes Playlists to Xml - version 1.6 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-16-released/</link>
       <pubDate>Sat, 08 May 2010 15:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-16-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-16-released/</guid>
       <description>&lt;p&gt;Version 1.6 of iTunes Playlists to Xml is now available for download.&lt;/p&gt;
 &lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml_1.6.zip&#34;&gt;iTunes Playlists to Xml 1.6&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Installing and more information&lt;/h3&gt;
@@ -511,10 +511,10 @@ class Track {
     
     <item>
       <title>iTunes Playlists to Xml - version 1.5.3 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-153-released/</link>
       <pubDate>Sun, 10 Jan 2010 16:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlists-to-Xml-version-153-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Playlists-to-Xml-version-153-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This application has since been updated. &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;Read about the current version of iTunes Playlists to Xml.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -538,10 +538,10 @@ class Track {
     
     <item>
       <title>iTunes Playlists to Xml - version 1.5.1 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlist-to-Xml-version-151-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/iTunes-Playlist-to-Xml-version-151-released/</link>
       <pubDate>Sat, 14 Nov 2009 16:55:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/iTunes-Playlist-to-Xml-version-151-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Playlist-to-Xml-version-151-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This application has since been updated. &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;Read about the current version of iTunes Playlists to Xml.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -611,10 +611,10 @@ class Track {
     
     <item>
       <title>Project page for iTunes Playlists to Xml now created</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Project-page-for-iTunes-Playlists-to-Xml-now-created/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Project-page-for-iTunes-Playlists-to-Xml-now-created/</link>
       <pubDate>Mon, 07 Sep 2009 11:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Project-page-for-iTunes-Playlists-to-Xml-now-created/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Project-page-for-iTunes-Playlists-to-Xml-now-created/</guid>
       <description>&lt;p&gt;For releases of iTunes Playlists to Xml I&#39;ve just been creating new posts with details, but that doesn&#39;t make all that much sense.&lt;/p&gt;
 &lt;p&gt;So, I&#39;ve created an actual project/product page for the application.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml.htm&#34;&gt;View the project page for iTunes Playlists to Xml&lt;/a&gt;.&lt;/p&gt;

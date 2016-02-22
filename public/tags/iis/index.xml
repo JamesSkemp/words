@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iis on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/iis/</link>
-    <description>Recent content in Iis on My New Hugo Site</description>
+    <title>Iis on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/iis/</link>
+    <description>Recent content in Iis on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Feb 2011 18:24:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/iis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/iis/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Supporting HTML5 manifest files on IIS 7 using Web.config</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
       <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
       <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
 &lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
 &lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
@@ -63,10 +63,10 @@
     
     <item>
       <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
       <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
       <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
 &lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
 </description>
@@ -74,10 +74,10 @@
     
     <item>
       <title>Windows 7 Home Premium changes for IIS 7.5 access of Users directories</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</link>
       <pubDate>Sat, 28 Aug 2010 23:07:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
       <description>&lt;p&gt;Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory.&lt;/p&gt;
 &lt;h3&gt;Background&lt;/h3&gt;
 &lt;p&gt;I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).&lt;/p&gt;
@@ -93,10 +93,10 @@
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
       <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
       <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
@@ -200,10 +200,10 @@
     
     <item>
       <title>Cassini 3.5.0.2 - built and ready to go</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/</link>
       <pubDate>Sun, 03 Jan 2010 18:10:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Cassini-3502-built-and-ready-to-go/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Cassini-3502-built-and-ready-to-go/</guid>
       <description>&lt;p&gt;Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&amp;nbsp;a full-fledged instance of IIS.&lt;/p&gt;
 &lt;p&gt;While Cassini should not be used in production environments, it&#39;s more than enough to run for minor development, or even minor projects.&lt;/p&gt;
 &lt;p&gt;The last official version of Cassini at the time of this writing&amp;nbsp;is &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;3.5.0.2&lt;/a&gt;. Since he&#39;s released the source, you can build your own, but what if you just want to download a pre-built version? Well now you can.&lt;/p&gt;
@@ -218,10 +218,10 @@
     
     <item>
       <title>BlogEngine.NET running on Cassini Personal Web Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
       <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
 &lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
@@ -235,10 +235,10 @@
     
     <item>
       <title>Log Parser Plus - version 0.3 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/</link>
       <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-03-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-03-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
 &lt;/div&gt;
@@ -252,10 +252,10 @@
     
     <item>
       <title>Log Parser Plus - version 0.2.1 released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/</link>
       <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Log-Parser-Plus-version-021-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Log-Parser-Plus-version-021-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -271,10 +271,10 @@
     
     <item>
       <title>IIS Logs to SQLite - version 0.1 beta released</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
+      <link>http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
       <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
       <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
 &lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;
@@ -289,10 +289,10 @@
     
     <item>
       <title>Directories to parameters with IIS 6 and wildcard redirection</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/</link>
       <pubDate>Thu, 29 May 2008 22:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Some parameters have been changed to protect the innocent.&amp;nbsp;
@@ -350,12 +350,12 @@ The more I use&amp;nbsp;Microsoft products, the more impressed I am with the res
     
     <item>
       <title>Adding .NET functionality to Windows Vista Home Premium Internet Information Services</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</link>
       <pubDate>Sat, 22 Mar 2008 09:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
       <description>&lt;p&gt;
-I had previously covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
+I had previously covered &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
 &lt;/p&gt;
 &lt;p&gt;
 As before, you&amp;#39;ll want to select &lt;strong&gt;Control Panel&lt;/strong&gt; from the Start menu, then click on the &lt;strong&gt;Programs&lt;/strong&gt; link. Next, click on &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;. 
@@ -391,10 +391,10 @@ If you also want to&amp;nbsp;run classic ASP pages, you&amp;#39;ll need to check
     
     <item>
       <title>How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</link>
+      <link>http://jamesskemp.github.io/blog/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</link>
       <pubDate>Fri, 21 Mar 2008 15:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 This guide covers Windows Vista Home Premium SP1, and may differ for other versions.
@@ -559,10 +559,10 @@ Comments/corrections/etcetera greatly appreciated.
     
     <item>
       <title>Quick and dirty conversions to FLV (Flash Video)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</link>
       <pubDate>Sat, 23 Feb 2008 12:45:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
       <description>&lt;p&gt;
 I purchased a Casio EX-Z1200 a bit ago, which I&amp;#39;ve been playing around with. Overall, I&amp;#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&amp;#39;t the best for me. 
 &lt;/p&gt;
@@ -639,12 +639,12 @@ Further updates to follow.
     
     <item>
       <title>W3C extended log format fields and IIS 6.0</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/W3C-extended-log-format-fields-and-IIS-60/</link>
+      <link>http://jamesskemp.github.io/blog/posts/W3C-extended-log-format-fields-and-IIS-60/</link>
       <pubDate>Tue, 06 Nov 2007 21:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/W3C-extended-log-format-fields-and-IIS-60/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/W3C-extended-log-format-fields-and-IIS-60/</guid>
       <description>&lt;p&gt;
-In a previous article, I gave &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0&lt;/a&gt;. 
+In a previous article, I gave &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0&lt;/a&gt;. 
 &lt;/p&gt;
 &lt;p&gt;
 This time, I&amp;#39;d like to cover what each field provides, again in relation to IIS and a Web site, for statistical and debugging purposes. 
@@ -654,7 +654,7 @@ This time, I&amp;#39;d like to cover what each field provides, again in relation
 Again, we&amp;#39;ve covered what fields are available in the W3C extended log format in a previous article. 
 &lt;/p&gt;
 &lt;p&gt;
-Read&amp;nbsp;&lt;em&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;A brief overview of IIS 6.0 and the W3C extended log format&lt;/a&gt;&lt;/em&gt; for more information about these fields. 
+Read&amp;nbsp;&lt;em&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;A brief overview of IIS 6.0 and the W3C extended log format&lt;/a&gt;&lt;/em&gt; for more information about these fields. 
 &lt;/p&gt;
 &lt;h3&gt;Essential fields&lt;/h3&gt;
 &lt;p&gt;

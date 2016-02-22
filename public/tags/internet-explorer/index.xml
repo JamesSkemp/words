@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Internet Explorer on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/internet-explorer/</link>
-    <description>Recent content in Internet Explorer on My New Hugo Site</description>
+    <title>Internet Explorer on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/internet-explorer/</link>
+    <description>Recent content in Internet Explorer on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jun 2011 22:09:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/internet-explorer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Internet Explorer 10: Platform Preview 2 now available</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
       <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
       <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
 &lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
 &lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>Current, major, browsers</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</link>
       <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Current-major-browsers/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</guid>
       <description>&lt;p&gt;
 Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
 &lt;/p&gt;
@@ -95,12 +95,12 @@ If you continue to use Netscape most people will recommend that you upgrade to F
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
-In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
@@ -217,7 +217,7 @@ But what about browsers on mobile devices?
 Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
 &lt;/p&gt;
 &lt;p&gt;
-To some extent &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+To some extent &lt;a href=&#34;http://jamesskemp.github.io/blog/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
 &lt;/p&gt;
 &lt;p&gt;
 The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
@@ -237,7 +237,7 @@ What do you think? What do you develop for?
 &lt;/p&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
 &lt;/p&gt;
 &lt;p&gt;
 2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
@@ -247,10 +247,10 @@ What do you think? What do you develop for?
     
     <item>
       <title>Internet Explorer Virtual PC images - hidden, but back</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</link>
       <pubDate>Thu, 04 Sep 2008 21:38:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
       <description>&lt;p&gt;
 When Microsoft released IE 7 they also offered an image / virtual hard drive that could be used to test Internet Explorer 7, without installing it on your machine.
 &lt;/p&gt;
@@ -289,10 +289,10 @@ A win for everyone involved, I&amp;#39;d say.
     
     <item>
       <title>Test your machine in previous versions of Internet Explorer (for Windows)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</link>
       <pubDate>Sat, 15 Mar 2008 17:50:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Test-your-machine-in-previous-versions-of-Internet-Explorer-for-Windows/</guid>
       <description>&lt;p&gt;
 In the past I believe I discussed &lt;a rel=&#34;nofollow&#34; href=&#34;http://browsershots.org/&#34; target=&#34;_blank&#34;&gt;Browsershots&lt;/a&gt; as a great way to see what your site will look like in various browsers. 
 &lt;/p&gt;
@@ -304,10 +304,10 @@ However, I was looking for a quicker way to see a particular page in IE 6. After
     
     <item>
       <title>Cisco Cache Cleaner and IE 7 on Windows XP Home</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</link>
       <pubDate>Sun, 17 Feb 2008 09:00:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Cisco-Cache-Cleaner-and-IE-7-on-Windows-XP-Home/</guid>
       <description>&lt;p&gt;
 If you have the pleasure of running Cisco&amp;#39;s Cache Cleaner on your home computer, you may run into an issue with your settings being set to something other than you&amp;#39;d prefer. 
 &lt;/p&gt;
@@ -325,10 +325,10 @@ Gurr.
     
     <item>
       <title>Firebug: Don&#39;t enable for every site</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Firebug-Dont-enable-for-every-site/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Firebug-Dont-enable-for-every-site/</link>
       <pubDate>Fri, 08 Feb 2008 20:51:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Firebug-Dont-enable-for-every-site/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Firebug-Dont-enable-for-every-site/</guid>
       <description>&lt;p&gt;
 After a deal of searching, I&amp;#39;ve finally discovered why my Firefox browser was crashing so often. So often, in fact, that I have Internet Explorer 7 a chance (and it showed how much of a fight it can now put up).
 &lt;/p&gt;
@@ -349,10 +349,10 @@ Now that I&amp;#39;ve been away for so long, though, I wonder if I should just u
     
     <item>
       <title>Browser support for different versions of JavaScript</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Browser-support-for-different-versions-of-JavaScript/</link>
       <pubDate>Fri, 19 Jan 2007 22:04:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
       <description>&lt;p&gt;
 After a number of Google searches, I&amp;#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&amp;#39;ll be going over this information, and trying to dig up more.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -428,10 +428,10 @@ I&amp;#39;d be very interested in documentation regarding this, so if you know m
     
     <item>
       <title>Three reasons Microsoft Firefox is a hoax</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</link>
       <pubDate>Tue, 14 Nov 2006 08:32:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</guid>
       <description>&lt;p&gt;
 Three reasons Microsoft Firefox is a hoax, in order of when I spotted them. 
 &lt;/p&gt;
@@ -458,10 +458,10 @@ Three reasons Microsoft Firefox is a hoax, in order of when I spotted them.
     
     <item>
       <title>It&#39;s time to grow up - Why IE 7 means we all win</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</link>
+      <link>http://jamesskemp.github.io/blog/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</link>
       <pubDate>Wed, 25 Oct 2006 18:59:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/It%27s%20time%20to%20grow%20up%20-%20Why%20IE%207%20means%20we%20all%20win/</guid>
       <description>&lt;p&gt;
 Earlier today I ran across an article titled &amp;quot;IE7 vs. FireFox: Why Microsoft Lost the Battle,&amp;quot; which stated at the end that &amp;quot;All in all, IE evolution is not impressive at all. It will still have one advantage though: after installing/reinstalling XP or Vista, IE7 will be the first and only browser used to download Opera, BonEcho or FireFox&amp;hellip;&amp;quot; Unfortunately, this article, as well as the numerous other articles that state that Microsoft&amp;#39;s IE 7 is &amp;#39;too little, too late,&amp;#39; are way off base, which is quite the good thing.
 &lt;/p&gt;
@@ -536,10 +536,10 @@ The article mentioned above, IE7 vs. FireFox: Why Microsoft Lost the Battle, can
     
     <item>
       <title>Four working browsers (at least)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Four-working-browsers-%28at-least%29/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</link>
       <pubDate>Thu, 10 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Four-working-browsers-%28at-least%29/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s just something about having four different browsers on your computer, to say the least.  I do believe I&amp;#39;ve Lynx installed as well, but it&amp;#39;s hardly used these days ... for better or worse.
 &lt;/p&gt;
@@ -581,10 +581,10 @@ The lessons are two-fold.
     
     <item>
       <title>Yes, I do like the Internet Explorer 7 ad</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</link>
       <pubDate>Fri, 10 Feb 2006 22:05:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Yes-I-do-like-the-Internet-Explorer-7-ad/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://bink.nu/Article6138.bink&#34;&gt;Bink.nu&lt;/a&gt; has a link to a WMV file of the IE 7 teaser video.  To say the least, it&amp;#39;s cute - in a very good way.&lt;!--adsense--&gt;
 &lt;/p&gt;

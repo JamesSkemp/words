@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linqpad on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/linqpad/</link>
-    <description>Recent content in Linqpad on My New Hugo Site</description>
+    <title>Linqpad on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/linqpad/</link>
+    <description>Recent content in Linqpad on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Jun 2010 21:00:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/linqpad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/linqpad/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
       <pubDate>Sat, 26 Jun 2010 21:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
       <description>&lt;p&gt;This weekend I finally installed SQL Server 2008 R2 to my Windows Server 2008 R2 machine. After a bit of back-and-forth about which version to install (since my MSDN subscription allows me to install seemingly every version), I opted to just install SQL Server Express 2008 R2. Being part of the Web Platform Installer, the entire process was extremely easy.&lt;/p&gt;
 &lt;p&gt;Step 1: Start Web Platform Installer.&lt;/p&gt;
 &lt;p&gt;Step 2: Select SQL Server Express 2008 R2 and SQL Server 2008 R2 Management Studio Express from under Database.&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
       <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;

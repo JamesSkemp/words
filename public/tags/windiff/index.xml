@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Windiff on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/windiff/</link>
-    <description>Recent content in Windiff on My New Hugo Site</description>
+    <title>Windiff on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/windiff/</link>
+    <description>Recent content in Windiff on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Nov 2005 20:11:00 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windiff/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/windiff/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Ever had a reason to compare two files?</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Ever-had-a-reason-to-compare-two-files/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Ever-had-a-reason-to-compare-two-files/</link>
       <pubDate>Mon, 21 Nov 2005 20:11:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Ever-had-a-reason-to-compare-two-files/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Ever-had-a-reason-to-compare-two-files/</guid>
       <description>&lt;p&gt;I talked about WinMerge a couple of posts ago (which has been updated, by the way, and which I&amp;#39;ve used a number of times for work), and now I&amp;#39;m going to talk about the equally free WinDiff.&lt;!--adsense--&gt;&lt;br /&gt;
 &lt;br /&gt;
 Basically, you can get the real background information from &lt;a href=&#34;http://www.ss64.com/nt/windiff.html&#34;&gt;http://www.ss64.com/nt/windiff.html&lt;/a&gt;, as well as two important links:&lt;br /&gt;

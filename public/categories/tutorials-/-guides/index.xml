@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tutorials / Guides on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides/</link>
-    <description>Recent content in Tutorials / Guides on My New Hugo Site</description>
+    <title>Tutorials / Guides on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/categories/tutorials-/-guides/</link>
+    <description>Recent content in Tutorials / Guides on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Jan 2016 12:17:57 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
       <description>&lt;p&gt;The following is how I configured a Raspberry Pi 2 as a samba server, using a Seagate Backup Plus Slim, 1TB, drive.&lt;/p&gt;
 
 &lt;p&gt;For ease I purchased the &lt;a href=&#34;http://amzn.to/1MZjXM0&#34;&gt;CanaKit Raspberry Pi 2 Complete Starter Kit&lt;/a&gt;. It runs about $70 and includes enough to get up and running with the Raspberry Pi 2, with the Pi itself, a nice case, power supply, HDMI cable, WiFi adapter, and SD card with NOOBS/Raspbian installer.&lt;/p&gt;
@@ -131,10 +131,10 @@ ls
     
     <item>
       <title>Google Services on the Amazon Fire HD 8</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
       <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
 
 &lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
@@ -162,10 +162,10 @@ ls
     
     <item>
       <title>Example libGDX orthographic camera controller</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Example-libGDX-orthographic-camera-controller/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Example-libGDX-orthographic-camera-controller/</link>
       <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Example-libGDX-orthographic-camera-controller/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Example-libGDX-orthographic-camera-controller/</guid>
       <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
@@ -178,13 +178,13 @@ ls
     
     <item>
       <title>Configuring a libGDX project to run as a desktop application in Android Studio</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
       <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
 
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
 
@@ -208,10 +208,10 @@ ls
     
     <item>
       <title>Creating your first libGDX project with Android Studio 1.1.0</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
       <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
@@ -250,16 +250,16 @@ ls
 
 &lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling ADB on a Lenovo A7600-F TAB A10</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
       <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
       <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
 
 &lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;
@@ -290,10 +290,10 @@ ls
     
     <item>
       <title>Rough guide on manually setting up Git on Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
       <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
       <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
 
 &lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
@@ -337,10 +337,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Converting from Subversion to Git on Windows</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
       <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
 &lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
@@ -360,10 +360,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Windows Phone 7: Taking and restoring a SQL database</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
       <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
       <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
@@ -401,10 +401,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Script to simplify Netflix activity pages (in progress)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Script-to-simplify-Netflix-activity-pages/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Script-to-simplify-Netflix-activity-pages/</link>
       <pubDate>Sun, 18 Mar 2012 16:11:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Script-to-simplify-Netflix-activity-pages/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Script-to-simplify-Netflix-activity-pages/</guid>
       <description>&lt;p&gt;I love Netflix, but there&#39;s no easy way to get a listing of the movies I&#39;ve rated through the service.&lt;/p&gt;
 &lt;p&gt;To ease with that, I&#39;ve finally started on a script that will clean the Netflix output, so it&#39;s a bit easier to parse.&lt;/p&gt;
 &lt;p&gt;Fire up Chrome, visit either&amp;nbsp;https://www2.netflix.com/RentalActivity?all=true or&amp;nbsp;https://account.netflix.com/WiViewingActivity?all=true, open a console, and use the following two scripts:&lt;/p&gt;
@@ -423,10 +423,10 @@ $(&#39;.stbrMaskBg&#39;).css(&#39;background-image&#39;, &#39;none&#39;);&lt;/co
     
     <item>
       <title>Migration from CollabNet Subversion to VisualSVN Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
       <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
       <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
 &lt;p&gt;
 &lt;h3&gt;VisualSVN migration&lt;/h3&gt;
@@ -446,10 +446,10 @@ $(&#39;.stbrMaskBg&#39;).css(&#39;background-image&#39;, &#39;none&#39;);&lt;/co
     
     <item>
       <title>mvc-mini-profiler for users in a particular role</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
+      <link>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
       <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
       <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
 &lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
 &lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
@@ -479,10 +479,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>How to easily clear the window.applicationCache on select browsers</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
+      <link>http://jamesskemp.github.io/blog/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
       <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
       <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
 &lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
@@ -491,10 +491,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
@@ -521,10 +521,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;

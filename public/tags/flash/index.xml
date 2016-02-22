@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flash on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/flash/</link>
-    <description>Recent content in Flash on My New Hugo Site</description>
+    <title>Flash on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/flash/</link>
+    <description>Recent content in Flash on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Apr 2010 08:20:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/flash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Dynamically generating a list of videos for OSFLV Player with ASP.NET</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
       <pubDate>Tue, 13 Apr 2010 08:20:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
       <description>&lt;p&gt;I&#39;ve had this code for a while, but here&#39;s some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what&#39;s picked.&lt;/p&gt;
 &lt;p&gt;This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.&lt;/p&gt;
 &lt;h3&gt;Default.aspx&lt;/h3&gt;
@@ -93,10 +93,10 @@ public partial class _Default : System.Web.UI.Page {
     
     <item>
       <title>Quick and dirty conversions to FLV (Flash Video)</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</link>
       <pubDate>Sat, 23 Feb 2008 12:45:00 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
       <description>&lt;p&gt;
 I purchased a Casio EX-Z1200 a bit ago, which I&amp;#39;ve been playing around with. Overall, I&amp;#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&amp;#39;t the best for me. 
 &lt;/p&gt;
@@ -173,10 +173,10 @@ Further updates to follow.
     
     <item>
       <title>The Daily Show is now available online</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/The-Daily-Show-is-now-available-online/</link>
+      <link>http://jamesskemp.github.io/blog/posts/The-Daily-Show-is-now-available-online/</link>
       <pubDate>Fri, 19 Oct 2007 17:00:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/The-Daily-Show-is-now-available-online/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/The-Daily-Show-is-now-available-online/</guid>
       <description>&lt;p&gt;
 One of the view things I miss about cable is The Daily Show. Thankfully, I can now get my fix, as well as catch up on older shows, online, legally. 
 &lt;/p&gt;
@@ -203,15 +203,15 @@ In short, it needs some work to be as good a user-interface as elsewhere, but it
     
     <item>
       <title>New gallery posted</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</link>
+      <link>http://jamesskemp.github.io/blog/posts/New-gallery-posted/</link>
       <pubDate>Mon, 21 May 2007 22:14:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/New-gallery-posted/</guid>
       <description>&lt;p&gt;
 After a bit of looking around, for the best gallery application, I&amp;#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&amp;#39;m requiring version 8 or higher for mine), and it did cost some money, it&amp;#39;s a great little application.
 &lt;/p&gt;
 &lt;p&gt;
-You can see what I&amp;#39;ve currently got available at &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
+You can see what I&amp;#39;ve currently got available at &lt;a href=&#34;http://jamesskemp.github.io/blog/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
 &lt;/p&gt;
 &lt;p&gt;
 There&amp;#39;s still a lot I&amp;#39;ve got to play with, but, it&amp;#39;s at least got a start of 12 images (at this time). The gallery requires a pretty fast connection, but it is what it is.

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Holiday on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/holiday/</link>
-    <description>Recent content in Holiday on My New Hugo Site</description>
+    <title>Holiday on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/holiday/</link>
+    <description>Recent content in Holiday on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 14 May 2006 09:24:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/holiday/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/holiday/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Holidays and birthdays</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Holidays-and-birthdays/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Holidays-and-birthdays/</link>
       <pubDate>Sun, 14 May 2006 09:24:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Holidays-and-birthdays/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Holidays-and-birthdays/</guid>
       <description>&lt;p&gt;
 My birthday happens to be today, and when I started checking my email this morning, I was presented with 4 different birthday greetings, from 4 different forums.  I&amp;#39;m aware that forums have been doing this for a long time, so what struck me is the forums I signed up for, but don&amp;#39;t remember doing so :D  (That&amp;#39;s also a little security-scary&lt;sup&gt;&lt;a id=&#34;link1&#34; name=&#34;link1&#34; href=&#34;#note1&#34; title=&#34;link1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, but I know I&amp;#39;m signed up with many more that don&amp;#39;t appear to be sending birthday greetings.)
 &lt;/p&gt;

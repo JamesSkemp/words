@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Samurize on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/samurize/</link>
-    <description>Recent content in Samurize on My New Hugo Site</description>
+    <title>Samurize on James Skemp&#39;s Test Hugo-Generated Site</title>
+    <link>http://jamesskemp.github.io/blog/tags/samurize/</link>
+    <description>Recent content in Samurize on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Mar 2010 13:01:00 -0500</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/samurize/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/blog/tags/samurize/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Samurize configurations across my systems</title>
-      <link>http://replace-this-with-your-hugo-site.com/posts/Samurize-configurations-across-my-systems/</link>
+      <link>http://jamesskemp.github.io/blog/posts/Samurize-configurations-across-my-systems/</link>
       <pubDate>Sun, 21 Mar 2010 13:01:00 -0500</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/posts/Samurize-configurations-across-my-systems/</guid>
+      <guid>http://jamesskemp.github.io/blog/posts/Samurize-configurations-across-my-systems/</guid>
       <description>&lt;p&gt;One of the applications that I consistently run across all my machines is Serious Samurize. After first finding it, years and years ago, it&#39;s quickly become a requirement&amp;nbsp;for getting work done.&lt;/p&gt;
 &lt;p&gt;While some people may have much &lt;a rel=&#34;external&#34; href=&#34;http://forums.samurize.us/index.php?app=gallery&#34;&gt;prettier, and extensive, configurations&lt;/a&gt;, I prefer something that I can let sit on my screen on top of everything&amp;nbsp;(assuming Windows doesn&#39;t let other applications bump on top of it every once in a while), giving me only the information I need. However, each still ends up being slightly different.&lt;/p&gt;
 &lt;p&gt;What follows is a listing of my machines, a preview of what the config looks like, with details about placement and what&#39;s where.&lt;/p&gt;
