@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/blog/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/blog/css/custom.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
 
     
@@ -121,7 +121,7 @@
 <blockquote>
 <p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;<br />1.srv=localhost,&ldquo;default&rdquo;<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&ldquo;&rdquo;<br />2.srv=localhost,&ldquo;default&rdquo;<br />2.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
+<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://jamesskemp.github.io/blog/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
 <p>Save all necessary files and start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 6.1 Administrator Login.</p>
 <p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you&rsquo;re ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.</p>
 <!--nextpage-->
@@ -152,8 +152,8 @@
 <p>Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you&rsquo;ll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.</p>
 <p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you&rsquo;re ready to begin working on ColdFusion on Apache 2.0.x.</p>
 <h3>In the next part &hellip;</h3>
-<p>In <a href="/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we&rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
-<p><a href="/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p></p>
+<p>In <a href="http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we&rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
+<p><a href="http://jamesskemp.github.io/blog/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p></p>
 
         </div>
 
