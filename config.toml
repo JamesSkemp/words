@@ -3,3 +3,7 @@ languageCode = "en-us"
 title = "James Skemp's Test Hugo-Generated Site"
 theme = "beg"
 publishdir = "public"
+canonifyurls = true
+
+[params]
+  googleAnalyticsUserID = "UA-541034-4"
