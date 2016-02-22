@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/apache/</link>
+    <description>Recent content in Apache on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Dec 2010 20:42:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
+&lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
+&lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
+&lt;p&gt;Files: database.txt (empty), serial.txt (01, then&amp;nbsp;new line), openssl.cnf (based on OpenSSL file)&lt;/p&gt;
+&lt;h3&gt;Step 2: Create key&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; genrsa -des3 -out keys/_ca.key 2048&lt;/p&gt;
+&lt;h3&gt;Step 3: Create certificate authority certificate&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer&lt;/p&gt;
+&lt;h3&gt;Step 4: Create DER for public consumption&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\_ca.cer -outform DER -out certs\_ca.der&lt;/p&gt;
+&lt;h3&gt;Step 5: Create request from IIS&lt;/h3&gt;
+&lt;p&gt;IIS &amp;gt; click on main server, Server Certificates &amp;gt; populate all for request&lt;/p&gt;
+&lt;p&gt;save to requests directory locally&lt;/p&gt;
+&lt;h3&gt;Step 6: Handle request&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs&lt;/p&gt;
+&lt;h3&gt;Step 7: Convert for IIS&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer&lt;/p&gt;
+&lt;h3&gt;Step 8: Add to IIS&lt;/h3&gt;
+&lt;p&gt;back in iis, complete request. use *.x.com if a wildcard for friendly name&lt;/p&gt;
+&lt;p&gt;install _ca.der certificate to Trusted Root Certification Authorities (do on clients as well - see this &lt;a rel=&#34;external&#34; href=&#34;http://www.openssl.org/support/faq.html#USER12&#34;&gt;official FAQ&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;associate actual site with certificate&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
+&lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
+&lt;p&gt;At least for our implementation, the lines of code statistic, which seems to be stressed in StatSVN, is also fairly useless for specific commits, which in turn throws off the statistics for the entire repository. (We use third-party code, so being the user that committed that code at a couple of different points, that inflated my numbers.)&lt;/p&gt;
+&lt;p&gt;Having worked through part of the process at work, refined it at home, and performed a second implementation at work, I present the following steps to implement StatSVN with a CollabNet Subversion Server installation.&lt;/p&gt;
+&lt;p&gt;Note that these steps, with minor modifications, willl work fine with any Windows and Apache-based installation of Subversion.&lt;/p&gt;
+&lt;h3&gt;The basic steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If using authentication, create a user, if one isn&#39;t already created, that has access to the repositories and that can be used to checkout the repositories to report on.&lt;/li&gt;
+&lt;li&gt;If necessary, download and install the Java 4+ requirement for StatSVN.&lt;/li&gt;
+&lt;li&gt;Download and extract &lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt; to a directory of your choosing. For example, C:\statsvn&lt;/li&gt;
+&lt;li&gt;Create a directory to store the generated content from StatSVN.&lt;/li&gt;
+&lt;li&gt;Update Apache to allow access to the reports directory (from step 4).&lt;/li&gt;
+&lt;li&gt;Checkout or update a working copy of the repository to report on.&lt;/li&gt;
+&lt;li&gt;Generate the StatSVN reports for the working copy of the repository (from step 6).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To make this even easier, I&#39;m including the implementation I&#39;ve setup at home.&lt;/p&gt;
+&lt;h3&gt;Example implementation&lt;/h3&gt;
+&lt;p&gt;StatSVN directory: C:\statsvn&lt;/p&gt;
+&lt;p&gt;StatSVN outputs directory: C:\statsvn\output&lt;/p&gt;
+&lt;p&gt;Working copies of repositories are saved to the C:\statsvn directory (C:\statsvn\&lt;em&gt;repositoryName&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;From the command line at &lt;strong&gt;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin&lt;/strong&gt;&amp;nbsp;I ran the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd -m c:\svn_resources\svn-auth-file james-cq5320y&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I was then prompted for a password, which I entered twice. This now gives me an account I can use within a batch file to checkout/update repositories, that is specific to the server.&lt;/p&gt;
+&lt;p&gt;Next the Apache httpd.conf file needed to have the two following additions (where applicable):&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;Alias /stats C:\statsvn\output&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That allows http://server1:8080/stats to point to the appropriate directory.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Directory C:/statsvn/output&amp;gt;
+    Options Indexes
+    allow from all
+&amp;lt;/Directory&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the above allows the directory structure to be returned (the alternative is to manually create an index page, either static or dynamic), that anyone can access. (Since access to this server is only available on my network, this works fine for my situtation.)&lt;/p&gt;
+&lt;p&gt;Since we&#39;ve modified the Apache configuration we need to restart the service.&lt;/p&gt;
+&lt;p&gt;Next we create the batch file that will generate the StatSVN outputs.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+svn checkout http://localhost:8080/svn/%repositoryName% --username james-cq5320y --password PASSWORD
+cd %repositoryName%
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+REM pause&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After running this a couple of times I felt satisified that it was working correctly, so you&#39;ll see that I commented out the pause.&lt;/p&gt;
+&lt;p&gt;Of course, that works fine for the initial checkout. Once you have a working copy you can simply update, such as shown in the below batch file contents.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+cd %repositoryName%
+svn update
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+pause&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Optimizations&lt;/h3&gt;
+&lt;p&gt;Of course, some optimizations could be made, as currently this makes a bit of a mess of the StatSVN directory.&lt;/p&gt;
+&lt;p&gt;Because of this I&#39;d recommend creating a directory for the working copy and/or logs generated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</link>
+      <pubDate>Mon, 23 Mar 2009 20:40:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
+      <description>&lt;p&gt;The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.&lt;/p&gt;
+&lt;p&gt;For this I&#39;ll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that&#39;s Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Determine current setup.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that&#39;s 2.2.10 and 1.5.4, respectively.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Opening TortoiseSVN&#39;s menu and selecting About will display the current version. In my case that&#39;s 1.5.8.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Confirm that all applications will work with the new versions of the other applications.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Simply check each application&#39;s site. In this case, they all appear to work fine with each other.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Download all installers.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Apache: &lt;a href=&#34;http://httpd.apache.org/&#34;&gt;http://httpd.apache.org/&lt;/a&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Win32 Binary including OpenSSL 0.9.8i (MSI Installer)&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Subversion: &lt;a href=&#34;http://subversion.tigris.org/&#34;&gt;http://subversion.tigris.org/&lt;/a&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Win32 binaries for Apache 2.2.x&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;TortoiseSVN: &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34;&gt;http://tortoisesvn.tigris.org/&lt;/a&gt; or &lt;a href=&#34;http://tortoisesvn.net/&#34;&gt;http://tortoisesvn.net/&lt;/a&gt;&amp;nbsp;(you&#39;ll end up at the latter anyways)&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;32 Bit&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Backup Apache configuration.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;You can find the httpd.conf file in the conf directory, in the install directory.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Example: c:\Program Files\Apache Software Foundation\Apache2.2\conf\httpd.conf&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Stop Apache.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Open the Apache Service Monitor, select the Apache2.2 service, and press the Stop button.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Uninstall Apache.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Unfortunately, the installer for a higher version can&#39;t seem to run with Apache already installed. So, we have to uninstall it first.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Install Apache.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;localhost is your friend. If you&#39;re installing along-side IIS, keep it at the &#39;All Users, on Port 80, as a Service&#39; as we&#39;ll change this later.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Typical install is fine, at the default location, but feel free to change as needed.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;See my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;Install Apache 2.2.9 to Windows Vista (Ultimate)&lt;/a&gt; for a full guide.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Verify Apache settings.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;My install ran fine, with no configuration settings lost. However, if your httpd.conf is changed, you&#39;ll want to do a compare of your backup copy, with the new version.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;TortoiseMerge or WinMerge are two excellent applications that will help with this.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Remember to stop the Apache service if you need to make changes.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;For this guide, I assume you&#39;re running at localhost on port 8080.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;The Apache Service Monitor should also display the current version, when the service is selected.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Backup Subversion repositories.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;I do this in two ways.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;First, I backup all repository directories. In my case, I have all my repos in b:\repos\. I simply make a copy of this directory.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Next, I do a dump of all repositories. This basically means I run the following command: &lt;strong&gt;svnadmin dump StrivingLife &amp;gt; ..\repos_dump\StrivingLife.dump&lt;/strong&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;&lt;strong&gt;dir &amp;gt; list.txt&lt;/strong&gt; will give me a listing of all repos, which, after a bit of deleting and pasting, ends up with a usable batch file. Add &lt;strong&gt;PAUSE&lt;/strong&gt; to allow yourself some time to read over the results.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Stop Apache (if it&#39;s running).&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Extract the zip contents to your Subversion application directory.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Backup the old version of those files, if you so choose.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;I installed to C:\Program Files\Subversion\&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Copy necessary files from Subversion directory to Apache.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;In the Subversion bin directory, copy &lt;strong&gt;mod_authz_svn.so&lt;/strong&gt; and &lt;strong&gt;mod_dav_svn.so&lt;/strong&gt; to the Apache modules directory.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;In the Subversion bin directory, copy &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; (or &lt;em&gt;libdb44.dll&lt;/em&gt; for Berkeley DB support) to the Apache bin directory.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;If you need to make Apache changes (you haven&#39;t installed Subversion before), see my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Installing Subversion binaries for Apache 2.2.x&lt;/a&gt;, otherwise you should be set.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Start Apache.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Confirm SVN version in Apache Services Monitor.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;You may need to Exit and restart the monitor application to see the change.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Uninstall TortoiseSVN and restart your computer.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Install TortoiseSVN and restart your computer.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;Sigh.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;The third window has changed, but otherwise see &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;Installing TortoiseSVN to Windows Vista&lt;/a&gt; for specifics.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Do a test checkout, or browse some repositories.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Checkout a working copy of a repository. We&#39;ve got TortoiseSVN, so let&#39;s use it.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;You can also use the Repository Browser to take a look at some repos.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;You can also use your browser to browse the repos via the Apache component. Lots of options.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Use &lt;strong&gt;svnadmin verify &lt;em&gt;repoName&lt;/em&gt;&lt;/strong&gt; to use Subversion to verify revisions.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Consider upgrading your repositories.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;div&gt;svnadmin upgrade repoName is the shortcut to upgrade your repository, to get access to any new features.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;You&#39;ll want to be careful your tools can interact with the new repository version. In our case, we&#39;re fine doing so.&lt;/li&gt;
+&lt;li&gt;Taking the batch file we created to dump all our repositories, and tweaking it slightly, will enable us to upgrade all our repos as well.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Dumping and loading is another way, which keeps things a little cleaner.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div&gt;Celebrate, because you&#39;ve successfully upgraded.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Questions/comments/concerns are always appreciated.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;This &lt;em&gt;original&lt;/em&gt; piece of content was written from 7:40 PM (CT) to&amp;nbsp;9:45 PM (CT), on March 23 2009.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Subversion 1.5.3 and TortoiseSVN 1.5.4 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</link>
+      <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
+&lt;p&gt;My install guides for &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Subversion binaries for Apache 2.2.x</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</link>
+      <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</guid>
+      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
+&lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
+&lt;h3&gt;Getting Subversion&lt;/h3&gt;
+&lt;p&gt;Obviously, the first thing to do is to &lt;a href=&#34;http://subversion.tigris.org/&#34; target=&#34;_blank&#34;&gt;get Subversion&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&#39;re looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that&#39;s svn-win32-1.5.1.zip.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Once you&#39;ve downloaded the zip, extract the contents.&lt;/p&gt;
+&lt;h3&gt;Installing the binaries&lt;/h3&gt;
+&lt;p&gt;The&amp;nbsp;README included in the zip&amp;nbsp;basically covers what you need to do.&lt;/p&gt;
+&lt;p&gt;Determine where you want&amp;nbsp;to install Subversion. I decided to keep it in the Program Files directory, so I created a new Subversion folder&amp;nbsp;at C:\Program Files\Subversion.&lt;/p&gt;
+&lt;p&gt;Next, move the four directories and file, from the zip,&amp;nbsp;to this directory.&lt;/p&gt;
+&lt;p&gt;Now go to Start and right click on Computer, selecting Properties. Go to the Advanced tab and press the Environment Variables... button. At the end of the Path system variable, add the location of the Subversion bin directory. For example, C:\Program Files\Subversion\bin . Press OK all the way out.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;You should be able to open a command line and type &lt;strong&gt;svnadmin -?&lt;/strong&gt; and get a meaningful bunch of commands.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In a new instance of Windows Explorer, navigate to the &lt;strong&gt;modules&lt;/strong&gt; directory in the Apache install directory. For example, c:\Program Files\Apache Software Foundation\Apache2.2\modules.&lt;/p&gt;
+&lt;p&gt;Copy &lt;strong&gt;mod_authz_svn.so&lt;/strong&gt; and &lt;strong&gt;mod_dav_svn.so&lt;/strong&gt; from your Subversion install&#39;s &lt;strong&gt;bin&lt;/strong&gt; directory into the Apache &lt;strong&gt;modules&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;p&gt;Still in the Subversion&amp;nbsp;&lt;strong&gt;bin&lt;/strong&gt; directory, copy the &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; files into the Apache &lt;strong&gt;bin&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;If you want to use Berkeley DB, grab the libdb44.dll (or &lt;strong&gt;libdb*.dll&lt;/strong&gt;)&amp;nbsp;instead of the latter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;br /&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now add these two after the existing LoadModule lines (you may want to add a comment noting why&amp;nbsp;you&#39;ve added these):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LoadModule authz_svn_module modules/mod_authz_svn.so&lt;br /&gt;LoadModule dav_svn_module modules/mod_dav_svn.so&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now go to the bottom of the httpd.conf file and add the following information:&lt;/p&gt;
+&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath Drive:\path\to\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath B:\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&lt;/p&gt;
+&lt;p&gt;Restart Apache via the Apache Service Monitor.&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;If you get any errors, check your error logs (&lt;strong&gt;logs&lt;/strong&gt; directory in the Apache install directory).&lt;/p&gt;
+&lt;p&gt;Windows event logs (Administrative Tools &amp;gt; Event Viewer or &lt;strong&gt;eventvwr&lt;/strong&gt; from the command line) may also have relevant error information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Once Apache starts, browse to &lt;a href=&#34;http://localhost:8080/svn/repos/&#34;&gt;http://localhost:8080/svn/repos/&lt;/a&gt; (assuming you used that port and directory), and you should see a listing of your repositories.&lt;/p&gt;
+&lt;p&gt;You can now browse the current versions of the files under Subversion.&lt;/p&gt;
+&lt;h3&gt;TortoiseSVN&lt;/h3&gt;
+&lt;p&gt;While you&#39;re at it, you may want to install or update &lt;a href=&#34;http://tortoisesvn.net&#34; target=&#34;_blank&#34;&gt;TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I already covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
+&lt;h3&gt;Upgrading existing repositories&lt;/h3&gt;
+&lt;p&gt;If you&#39;ve already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.&lt;/p&gt;
+&lt;p&gt;You can do this via the command line by running &lt;strong&gt;svnadmin upgrade \path\to\repository&lt;/strong&gt; , however, you should ensure that you have a backup before you do this. Also, you&#39;ll be unable to use tools that cannot access the 1.5 repos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Apache 2.2.9 to Windows Vista (Ultimate)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
+      <pubDate>Fri, 15 Aug 2008 16:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
+      <description>&lt;p&gt;In this article I&#39;ll be covering an installation of Apache 2.2.9 to Windows Vista Ultimate. I&#39;ll be installing Apache so that you can run IIS as well (hence, Apache will be on a different port). You may want to do this if you want to run Subversion on Apache (as I do).&lt;/p&gt;
+&lt;h3&gt;Installing Apache 2.2&lt;/h3&gt;
+&lt;p&gt;Currently the &lt;a rel=&#34;external&#34; href=&#34;http://httpd.apache.org/&#34;&gt;Apache HTTP Server&lt;/a&gt; has both a 2.0 and 2.2 version. For new development, the 2.2 version is the recommended verison, as it contains many new features. If you currently have Apache 2.0 or 1.3, you may want to determine whether you still require those older versions (such as for module support).&lt;/p&gt;
+&lt;p&gt;For this installation I&#39;ll be using the current Win32 binary, with SSL (Apache 2.2.9 with OpenSSL 0.9.8h). Download and run the MSI.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;I won&#39;t be covering the SSL aspect here, so feel free to go with the installer that doesn&#39;t have it, if you won&#39;t be needing it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As with all installers, read through the screens, pressing Next as you go.&lt;/p&gt;
+&lt;p&gt;Eventually you&#39;ll come upon a Server Information screen, which you update like the below.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install Server Information&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_04.jpg&#34; alt=&#34;Apache 2.2.9 Install Server Information&#34; width=&#34;514&#34; height=&#34;392&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can change all of these settings later.&lt;/p&gt;
+&lt;p&gt;Note that while IIS runs on port 80 by default,&amp;nbsp;if you want Apache to run for all users, as a service, this is the&amp;nbsp;easiest way to do so. Later, as we&#39;ll see,&amp;nbsp;Apache&amp;nbsp;won&#39;t be able to start, since IIS is already using port 80. However, we can&amp;nbsp;change the port to get it working.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install - Apache fails to start&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_08.jpg&#34; alt=&#34;Apache 2.2.9 Install - Apache fails to start&#34; width=&#34;677&#34; height=&#34;340&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Getting Apache to start&lt;/h3&gt;
+&lt;p&gt;To do this you&#39;ll need to open the &lt;strong&gt;httpd.conf&lt;/strong&gt; file in the &lt;strong&gt;conf&lt;/strong&gt; directory, within the Apache install directory.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install - httpd.conf&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_11.jpg&#34; alt=&#34;Apache 2.2.9 Install - httpd.conf&#34; width=&#34;541&#34; height=&#34;342&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you&#39;ve installed to the system drive (usually C), you&#39;ll be unable to save changes unless you run your editor as an administrator.&lt;/p&gt;
+&lt;p&gt;It&#39;s easiest to go to the Start menu, type Notepad, right-click on the application when it appears, and &lt;strong&gt;Run as administrator&lt;/strong&gt;. You&#39;ll then be able to open the httpd.conf file and save your changes.&lt;/p&gt;
+&lt;h3&gt;What to change&lt;/h3&gt;
+&lt;p&gt;To have Apache listen on a different port you just need to find instances of port 80, and change them to another, un-used, port. 8080 is pretty common.&lt;/p&gt;
+&lt;p&gt;There will be one main instance, just a short distance down: &lt;strong&gt;Listen 80&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Change this to the new port (&lt;strong&gt;Listen 8080&lt;/strong&gt;) and you should be able to start Apache through the Monitor.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Of course, if you haven&#39;t installed IIS, you can leave the port as it is. Since the port is controlled by the httpd configuration file, it&#39;s relatively easy to update this as necessary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Testing&lt;/h3&gt;
+&lt;p&gt;Test the installation by visiting &lt;strong&gt;http://localhost:8080/.&lt;/strong&gt; Assuming everything worked, you&#39;ll be presented with a message stating that &#34;It works!&#34;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Errata: Apache JMeter</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Errata-Apache-JMeter/</link>
+      <pubDate>Thu, 24 Jul 2008 20:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Errata-Apache-JMeter/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+The following is errata for &lt;a href=&#34;http://www.amazon.com/gp/product/1847192955?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Apache JMeter&lt;/a&gt;, by Emily H. Halili, and has been submitted to Packt Publishing.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Review-Apache-JMeter.aspx&#34;&gt;Read my review&lt;/a&gt;.&amp;nbsp;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Page 4, 2nd to last sentence: &amp;#39;downlad&amp;#39; should be &amp;#39;download&amp;#39;
+&lt;/p&gt;
+&lt;p&gt;
+Page 13, last sentence: &amp;quot;You &lt;em&gt;too can&lt;/em&gt; contribute.&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 39, 1st paragraph, last sentence: &amp;quot;as &lt;em&gt;a&lt;/em&gt; failed request.&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 42, 1st paragraph, last sentence: &amp;quot;retrieve &lt;em&gt;a&lt;/em&gt; particular value&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 48, last list item: display shows &amp;quot;KB/sec&amp;quot; but the list item is &amp;quot;Kb/sec&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 48: Is the mean time in ms? sec? This would be beneficial to state on this page, in the explanations.
+&lt;/p&gt;
+&lt;p&gt;
+Page 49, 2nd paragraph, 3rd sentence: &amp;quot;elements, &lt;em&gt;the&lt;/em&gt; next important question&amp;quot; and &amp;quot;test out &lt;em&gt;in&lt;/em&gt; your&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 51, 1st paragraph, 1st sentence: &amp;quot;you are &lt;em&gt;now ready&lt;/em&gt; to&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 79, 2nd paragraph, 3rd line: &amp;quot;is unable to record &lt;em&gt;HTTPS&lt;/em&gt; requests&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Page 116: The third and fourth links are the same.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Configuring Apache for per-user pages</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Configuring-Apache-for-per-user-pages/</link>
+      <pubDate>Mon, 18 Jun 2007 20:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Configuring-Apache-for-per-user-pages/</guid>
+      <description>&lt;p&gt;
+In a previous post, &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;I covered installing Apache 2.2.4 on Ubuntu&lt;/a&gt;. Unfortunately, if you want to create content for this server, you need to either use the root account, or change the permissions on the /usr/local/apache2/htdocs directory. Let&amp;#39;s keep things that way.
+&lt;/p&gt;
+&lt;p&gt;
+First, open the Apache configuration file.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Now find the following line, and remove the pound sign from the beginning of the line.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code&#34;&gt;#Include conf/extra/httpd-userdir.conf&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Ctrl + X to save and exit.
+&lt;/p&gt;
+&lt;p&gt;
+If you want, you can open this file by running the following.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code&#34;&gt;sudo nano /usr/local/apache2/conf/extra/httpd-userdir.conf&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+But, there&amp;#39;s no real reason to do this.
+&lt;/p&gt;
+&lt;p&gt;
+So, changes made, restart Apache.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code&#34;&gt;sudo /usr/local/apache2/bin/apachectl restart&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+If you head over to http://localhost/, it&amp;#39;ll still display the files in your htdocs folder (including the ColdFusion file, if you&amp;#39;ve got that created, and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224.aspx&#34;&gt;ColdFusion up and running&lt;/a&gt;).
+&lt;/p&gt;
+&lt;p&gt;
+However, you can now create a folder in your user directory and have direct access to your own content.
+&lt;/p&gt;
+&lt;p&gt;
+For example, if you have a &lt;strong&gt;bob&lt;/strong&gt; user, you have a home directory at /home/bob/.
+&lt;/p&gt;
+&lt;p&gt;
+Create a public_html (the default setting, which can be changed in the above mentioned httpd-userdir.conf file). Now if you create files, you can access them by going to http://localhost/~bob/filename.ext
+&lt;/p&gt;
+&lt;p&gt;
+That&amp;#39;s it, you&amp;#39;re set. And yes, ColdFusion files will run (although it seems they run a tad bit slow ...).
+&lt;/p&gt;
+&lt;h4&gt;Update, June 18, 2007 @ 21:11&lt;/h4&gt;
+&lt;p&gt;
+Dan reminded me of no-ip, an account of which I had sitting around doing nothing. After messing around with it a bit, I&amp;#39;ve configured the &amp;quot;Dynamic Update Client.&amp;quot; &lt;span class=&#34;code_terminal&#34;&gt;sudo make install&lt;/span&gt; (after extracting) &lt;span class=&#34;code_terminal&#34;&gt;sudo noip2 -C&lt;/span&gt; (all covered in the readme) Defaults all around. I haven&amp;#39;t got this configured yet to start on startup. Dan, any good resources on this? Another good command, for a future reminder: &lt;span class=&#34;code&#34;&gt;sudo nmap -sV -O localhost&lt;/span&gt; to check which ports are open (80 and 631 on my machine); can&amp;#39;t figure out how to close port 631 yet, or why I really need CUPS 1.2 (printing related, but I don&amp;#39;t use a printer - I print to PDF if anything ...)
+&lt;/p&gt;
+&lt;h4&gt;Update, June 18, 2007 @ 21:55&lt;/h4&gt;
+&lt;p&gt;
+By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/product/0672328364/strivinglifen-20/&#34; target=&#34;_blank&#34;&gt;Apache Phrasebook&lt;/a&gt; was helpful for easily setting these up (and is an overall great resource, if you&amp;#39;re setting up / using Apache on Linux; the Windows information is there, but not as good as the Linux information).
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</link>
+      <pubDate>Fri, 15 Jun 2007 20:51:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
+      <description>&lt;p&gt;Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Downloaded 7.02 Developer Edition from Adobe (coldfusion-702-lin.bin) to src directory.&lt;!--adsense--&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cp coldfusion-702-lin.bin coldfusion.bak&lt;br /&gt;cat coldfusion.bak | sed &#34;s/export LD_ASSUME_KERNEL/#xport LD_ASSUME_KERNEL/&#34; &amp;gt; coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo sh coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Server Configuration. Choose a server configuration. Choose Apache.&lt;/p&gt;
+&lt;p&gt;httpd.conf directory = /usr/local/apache2/conf&lt;/p&gt;
+&lt;p&gt;Program binary = /usr/local/apache2/bin/httpd (default)&lt;/p&gt;
+&lt;p&gt;Control file = /usr/local/apache2/bin/apachectl (default)&lt;/p&gt;
+&lt;p&gt;Continue with installation.&lt;/p&gt;
+&lt;p&gt;Administrator = /usr/local/apache2/htdocs (default)&lt;/p&gt;
+&lt;p&gt;User = apache&lt;/p&gt;
+&lt;p&gt;Password = *****&lt;/p&gt;
+&lt;p&gt;Don&#39;t enable RDS.&lt;/p&gt;
+&lt;p&gt;Installation finished.&lt;/p&gt;
+&lt;p&gt;Downloaded 6/16/06 zip file from http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_17883&amp;amp;sliceId=2, with wsconfig (wsconfig.zip) and saved to src directory. Extracted to the same.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv /opt/coldfusionmx7/runtime/lib/wsconfig.jar /opt/coldfusionmx7/runtime/lib/wsconfig.bak&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;cd src&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv wsconfig.jar /opt/coldfusionmx7/runtime/lib&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/bin/coldfusion start&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/runtime/bin/wsconfig&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In the window that pops up, choose &#39;Add...&#39;&lt;/p&gt;
+&lt;p&gt;Configuration Directory: /usr/local/apache2/conf&lt;/p&gt;
+&lt;p&gt;Check &#39;Configure&#39; box.&lt;/p&gt;
+&lt;p&gt;Advanced.&lt;/p&gt;
+&lt;p&gt;Binary: /usr/local/apache2/bin/httpd&lt;/p&gt;
+&lt;p&gt;Control script: /usr/local/apache2/bin/apachectl&lt;/p&gt;
+&lt;p&gt;OK.&lt;/p&gt;
+&lt;p&gt;OK.&lt;/p&gt;
+&lt;p&gt;Restart.&lt;/p&gt;
+&lt;p&gt;Exit window.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ctrl + W for directoryindex, which should have index.cfm already added (your call if you want to add anything else at this point).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl restart&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;http://localhost/ should still work, and http://localhost/CFIDE/administrator/ will put you at the Administrator login to finish up there (the server should configure itself, and you should be able to click on a link to continue to the administrator).&lt;/p&gt;
+&lt;p&gt;Creating a quick file ...&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cd /usr/local/apache2/htdocs&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano test.cfm&lt;/span&gt;&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfset testvariable = &#34;Testing.&#34; /&amp;gt;
+&amp;lt;cfoutput&amp;gt;#testvariable#&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Save.&lt;/p&gt;
+&lt;p&gt;http://localhost/test.cfm&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quickie: Install Apache 2.2.4 on Ubuntu</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Quickie-Install-Apache-224-on-Ubuntu/</link>
+      <pubDate>Fri, 15 Jun 2007 19:04:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Quickie-Install-Apache-224-on-Ubuntu/</guid>
+      <description>&lt;p&gt;
+May not be the best, but ... here&amp;#39;s how I installed Apache 2.2.4 on Ubuntu (7.04), based on David Winter&amp;#39;s guide &lt;a rel=&#34;nofollow&#34; href=&#34;http://davidwinter.me.uk/articles/2006/10/17/building-apache-22-from-source-for-ubuntu-dapper/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Building Apache 2.2 from source for Ubuntu Dapper&lt;/em&gt;&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+All &lt;span class=&#34;code_terminal&#34;&gt;code&lt;/span&gt; from a terminal, unless otherwise noted.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo apt-get install build-essential&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;cd&lt;br /&gt;
+mkdir src&lt;br /&gt;
+cd src&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I downloaded zlib from http://www.zlib.net/ (zlib source code, version 1.2.3, tar.gz format) into the src folder, and extracted it to the same.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;cd zlib-1.2.3/&lt;br /&gt;
+./configure --prefix=/usr/local&lt;br /&gt;
+make&lt;br /&gt;
+sudo make install&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+At http://httpd.apache.org/download.cgi, I downloaded Unix Source: httpd-2.2.4.tar.gz, saved it to the src directory, and extracted it to the same.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;cd httpd-2.2.3/&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;make&lt;/span&gt; (which took a long time)
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo make install&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl start&lt;/span&gt;, followed by heading over to http://localhost/, which worked.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl stop&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apachectl&lt;br /&gt;
+sudo chmod +x /etc/init.d/apachectl&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /etc/init.d/apachectl&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The top of the page should look like this, after the bold text is added.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;#!/bin/sh&lt;br /&gt;
+#&lt;br /&gt;
+&lt;strong&gt;# chkconfig: - 85 15&lt;br /&gt;
+# description: Apache is a web server.&lt;/strong&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Ctrl + X will exit, during which you&amp;#39;ll be prompted to save (do so).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/sbin/update-rc.d apachectl defaults&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo adduser --system apache&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Find the following:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;User daemon&lt;br /&gt;
+Group daemon&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Change it to the following:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;User apache&lt;br /&gt;
+Group nogroup&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Save, as above.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl start&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span class=&#34;code_terminal&#34;&gt;ps -aux | grep httpd&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve yet to reboot the machine and verify that apache is running on this boxes&amp;#39; IP - I&amp;#39;ll do so later.
+&lt;/p&gt;
+&lt;p&gt;
+Now the question I have is, how would I go about removing Apache 2.2.4?  Research time ...
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</link>
+      <pubDate>Sat, 17 Mar 2007 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</guid>
+      <description>&lt;p&gt;
+In February 2006, I wrote an &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/16/45/installing-apache-to-a-windows-based-computer-locally/&#34;&gt;article covering the installation of Apache 1.3.34&lt;/a&gt;, which can be found on my site, StrivingLife.net. In August 2006, I covered &lt;a href=&#34;http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/&#34;&gt;the installation of Apache 2.0.59&lt;/a&gt;. This time, I&amp;#39;ll be covering the installation of the current version of Apache 2.2.x, Apache 2.2.4, to a Windows XP machine, for the purpose of local development.
+&lt;/p&gt;
+&lt;p&gt;
+While I&amp;#39;ll be covering an installation of Apache 2.2.4 that will work along with Apache 1.3.x and Apache 2.0.x, this guide will work equally well if you&amp;#39;re installing Apache 2.2.x by itself.
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+If you&amp;#39;ve been following along with my &lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;other tutorials on this local server setup&lt;/a&gt;, you may have setup Perl, PHP, MySQL, PostgreSQL, and/or ColdFusion, among other things. Later parts will cover these setups in further detail.
+&lt;/p&gt;
+&lt;h4&gt;My environment&lt;/h4&gt;
+&lt;p&gt;
+The computer I&amp;#39;ll be using for this installation is an HP Pavilion a620n, 2.20 GHz, 960 MB (1 GB) of RAM, and with Windows XP Home, SP2.
+&lt;/p&gt;
+&lt;h4&gt;Downloading Apache&lt;/h4&gt;
+&lt;p&gt;
+The first thing, obviously, is to download the current version of Apache 2.2.x from &lt;a href=&#34;http://www.apache.org/&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;http://www.apache.org/&lt;/a&gt;. At the time of this writing, Apache 2.2.4 is the current release, and &amp;quot;represents the best available version of Apache HTTP Server.&amp;quot;
+&lt;/p&gt;
+&lt;p&gt;
+Since we&amp;#39;re installing to Windows, we want to download the file apache_2.2.4-win32-x86-no_ssl.msi, which is under 4.5 MB in size. If you&amp;#39;ve been following along with the other tutorials, then you&amp;#39;ll want to save this file to the same location as your other download files. If you haven&amp;#39;t been following along, save the installation file to a directory where you can save all of your installation files.
+&lt;/p&gt;
+&lt;p&gt;
+While the file is downloading, if you&amp;#39;re currently running a version of Apache on your machine, stop the server, as we don&amp;#39;t want it running while we do the installation. If you have any other services running that may be running through port 80 (other Web servers), you&amp;#39;ll also want to stop those services. 
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;ve already installed Apache 2.2.x, you may want to backup the install directory (the default is C:\Program Files\Apache Software Foundation\Apache2.2\).
+&lt;/p&gt;
+&lt;h4&gt;Installing Apache 2.2.4&lt;/h4&gt;
+&lt;p&gt;
+Once the installation file has been downloaded, run the file to begin installation. Continue throught the first window, to the second, where you can read and accept the license agreement. On the next window there&amp;#39;s a bit of additional text to read.
+&lt;/p&gt;
+&lt;p&gt;
+Finally, you&amp;#39;ll be asked for server information. Since we&amp;#39;re installing this locally, we&amp;#39;ll be using &lt;strong&gt;localhost&lt;/strong&gt; as both the Network Domain, as well as the Server Name. In Administrator&amp;#39;s Email Address, enter your real email address. Last, install Apache HTTP Server 2.2 programs and shortcuts for &amp;quot;All Users, on Port 80, as a Service&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+You can now setup the server in a typical manner, or custom. Since we want to have control, select Custom.
+&lt;/p&gt;
+&lt;p&gt;
+On the first screen, you can select which features you want to install, and where they should be installed. We&amp;#39;ll be installing everything, and leaving the installation directory as C:\Program Files\Apache Software Foundation\Apache2.2\.
+&lt;/p&gt;
+&lt;p&gt;
+And that&amp;#39;s it. Press Install on the next screen to begin the installation.
+&lt;/p&gt;
+&lt;p&gt;
+Once the service has been created, you may recieve an alert from Windows Firewall regarding the Apache HTTP Server. Choose to Unblock this program.
+&lt;/p&gt;
+&lt;p&gt;
+In addition, if you&amp;#39;ve already installed Apache, and have the Apache monitor running, you&amp;#39;ll receive an error that the monitor is already running.
+&lt;/p&gt;
+&lt;p&gt;
+Once the installation has finished, press the Finish button.
+&lt;/p&gt;
+&lt;p&gt;
+Apache HTTP Server 2.2.4 will now be running, and by going to http://localhost/, you&amp;#39;ll see the text &amp;quot;It works!&amp;quot; in your browser.
+&lt;/p&gt;
+&lt;p&gt;
+If you do not see this, or the service does not start, you can find an error.log file in the logs directory in your Apache install directory which can help you troubleshoot your issue.
+&lt;/p&gt;
+&lt;h4&gt;Apache Service Monitor, and setting startup types &lt;/h4&gt;
+&lt;p&gt;
+In your taskbar, there will now be an icon from the Apache Service Monitor. Using the monitor, you can easily start and stop the Apache HTTP Server, as well as access other services.
+&lt;/p&gt;
+&lt;p&gt;
+For now, hit the Services button to bring up the Services console. Next, right click on the Apache2 service, and select Properties. What we&amp;#39;re going to do now is change the startup type from Automatic to Manual. This means that we&amp;#39;ll need to manually start Apache whenever we restart our computer, but it also means that the service isn&amp;#39;t unnecessarily running.
+&lt;/p&gt;
+&lt;p&gt;
+However, if you&amp;#39;ll be running Apache every time you login, you may want to let Apache startup automatically when you log in. Either way, it&amp;#39;s nice to know where you can change this.
+&lt;/p&gt;
+&lt;p&gt;
+While you&amp;#39;re here, note that you can also see what version of Apache is running, in the Description field. 
+&lt;/p&gt;
+&lt;h4&gt;Wait a second, what about the Apache 2.0.59 service?!?&lt;/h4&gt;
+&lt;p&gt;
+If you&amp;#39;ve installed Apache 2.0.59 previously, you may be wondering what happened to the Apache2 service for that version of Apache.
+&lt;/p&gt;
+&lt;p&gt;
+Unfortunately, Apache 2.0.59 and Apache 2.2.4 use the same service name. This means that any previous Apache2 services will be overwritten.
+&lt;/p&gt;
+&lt;p&gt;
+Luckily, with the help of Windows, Microsoft, and some advice from Mark Lennox (given in a &lt;a href=&#34;http://strivinglife.net/wordpress/2006/09/16/228/installing-subversion-and-tortoisesvn-to-a-windows-xp-home-edition-sp2-local-machine-with-dreamweaver-8/&#34;&gt;Subversion article&lt;/a&gt;), we can create a service for Apache 2.0.59 a couple of ways.
+&lt;/p&gt;
+&lt;p&gt;
+First, run cmd via the Run command (Window + R, or via the Start menu). At the prompt, enter the following. Please note that you&amp;#39;ll want to confirm that the path information is correct for you.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    sc create Apache2.0 binpath= &amp;quot;\&amp;quot;C:\Program Files\Apache Group\Apache2\bin\Apache.exe\&amp;quot; -k runservice&amp;quot; displayname= &amp;quot;Apache 2.0&amp;quot; depend= Tcpip/Afd
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+You can learn more &lt;a href=&#34;http://support.microsoft.com/kb/251192/&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;creating Windows services using the SC tool (Sc.exe)&lt;/a&gt; by reading support article 251192 on Microsoft.com.
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+You may also want to create new services for Apache 2.2.x, and Apache 1.3.x. However, keep in mind that once you change your configuration, you may need to remove/update the services that you create. Either way, the new services should display in the Apache Services Monitor.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    sc create Apache1.3 binpath= &amp;quot;\&amp;quot;C:\Program Files\Apache Group\Apache\Apache.exe\&amp;quot; --ntservice&amp;quot; displayname= &amp;quot;Apache 1.3&amp;quot; depend= Tcpip/Afd
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+(Note that there&amp;#39;s two dashes in front of &lt;strong&gt;ntservice&lt;/strong&gt;.)
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    sc create Apache2.2 binpath= &amp;quot;\&amp;quot;C:\Program Files\Apache Software Foundation\Apache2.2\bin\httpd.exe\&amp;quot; -k runservice&amp;quot; displayname= &amp;quot;Apache 2.2&amp;quot; depend= Tcpip/Afd
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+If you&amp;#39;ve been following along with my other tutorials, you may want to update your &lt;a href=&#34;http://strivinglife.net/wordpress/2006/08/28/207/installing-apache-2059-to-a-windows-based-computer-locally-part-4/&#34;&gt;batch files&lt;/a&gt; so that they stop all the Apache services (Apache, Apache2, Apache1.3, Apache2.0, Apache2.2) and start our new services, depending upon which version you want to run (currently, that would be either Apache1.3 or Apache2.0).
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;h4&gt;Configuring Apache with httpd.conf&lt;/h4&gt;
+&lt;p&gt;
+If we start Apache 2.2 back up, via services, and browse to http://localhost/ once again, we&amp;#39;ll see that &amp;quot;It works!&amp;quot; screen. That&amp;#39;s all well and good, but it&amp;#39;s using C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\ as the Web directory, from which is serves content, which is far too deep to dig.
+&lt;/p&gt;
+&lt;p&gt;
+It&amp;#39;s better to create another folder, with less pathing information. I&amp;#39;ve decided to use the shorter directory of C:\home\, however, you can create whatever folder you&amp;#39;d like. In this directory, you&amp;#39;ll store any files that you&amp;#39;ll want to be served by Apache. There&amp;#39;s exceptions to this statement, but, for now, we&amp;#39;ll let it slide.
+&lt;/p&gt;
+&lt;p&gt;
+Once you&amp;#39;ve created this directory, head over to the conf folder in the install directory of Apache 2.2.x (default of C:\Program Files\Apache Software Foundation\Apache2.2\conf\) and make a copy of the httpd.conf file. This copy will serve as the original, just in case something happens. This is a working version of the configuration file for Apache HTTP Server, so don&amp;#39;t overwrite it (but if you do, there&amp;#39;s a copy in the default folder). Now open the httpd.conf file.
+&lt;/p&gt;
+&lt;p&gt;
+With the httpd.conf file open, do a search for &lt;strong&gt;DocumentRoot&lt;/strong&gt;. The second instance will take you to a line that reads as follows.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    DocumentRoot &amp;quot;C:/Program Files/Apache Software Foundation/Apache2.2/htdocs&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Change the quoted text to your Web root folder (make note of the direction of the slashes, and absence of a slash at the end). Since I created a folder at C:\home, I&amp;#39;ll be using the following line.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    DocumentRoot &amp;quot;C:/home&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Find the next instance of &lt;strong&gt;DocumentRoot&lt;/strong&gt; and you&amp;#39;ll see this line of text two lines down.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &amp;lt;Directory &amp;quot;C:/Program Files/Apache Software Foundation/Apache2.2/htdocs&amp;quot;&amp;gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Change the directory as you did just moments ago.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &amp;lt;Directory &amp;quot;C:/home&amp;quot;&amp;gt; 
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Note that in this file you can also change what port Apache 2.2.x will listen on. There&amp;#39;s two instances of the port number, and a search for &lt;strong&gt;80&lt;/strong&gt; will turn up both, if you choose the options we did above. Otherwise, you&amp;#39;ll turn up four instances (as Apache will be listening on Port 8080).
+&lt;/p&gt;
+&lt;p&gt;
+Save the httpd.conf file and restart, or start, Apache.
+&lt;/p&gt;
+&lt;p&gt;
+If you go to http://localhost/ now, you&amp;#39;ll either see a directory listing, or a Web page, depending upon whether you have an index.html file in your Web root. If this worked, then you can make a backup copy of your newly working httpd.conf file.
+&lt;/p&gt;
+&lt;p&gt;
+And with that, you&amp;#39;ve setup Apache 2.2.4 on a local Web server.
+&lt;/p&gt;
+&lt;p&gt;
+In later guides, we&amp;#39;ll cover the setting up of a number of additional services, but for now, you can work static Web pages.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;ve followed some of &lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;my other tutorials&lt;/a&gt;, you can easily switch between versions of Apache, but you&amp;#39;ll need to configure any batch files you may use so that they stop the new Apache 2.2.x service.
+&lt;/p&gt;
+&lt;p&gt;
+Questions or comments can be left below, or emailed to me directly (email at the bottom of the page). Thanks for reading!
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upgrading PHP (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</link>
+      <pubDate>Sun, 26 Nov 2006 17:00:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</guid>
+      <description>&lt;p&gt;In this article, we&#39;ll be upgrading PHP on our local, Windows, Web server. In previous guides we installed PHP 4.4.2 as well as PHP 5.1.4, both on the same machine, with the ability to switch as we like. However, we&#39;ve yet to cover how to upgrade either installation (and upgrading is definitely a need).&lt;/p&gt;
+&lt;p&gt;At the time of this writing, the current versions of PHP are 4.4.4 and 5.2.0, for the 4.x and 5.x versions, respectively.&lt;/p&gt;
+&lt;p&gt;We&#39;ll be going over the upgrade for each version separately, so you can simply skip to which version you&#39;re currently using.&lt;/p&gt;
+&lt;h4&gt;Upgrading PHP 4.4.2 to PHP 4.4.4&lt;/h4&gt;
+&lt;p&gt;First off, make sure that Apache has been stopped.&lt;!--adsense--&gt;&lt;/p&gt;
+&lt;p&gt;Now, rename the directory where you&#39;ve installed PHP 4.x to ... have the suffix of &#39;-previous&#39; (for example, c:\php4-previous\). We&#39;ll do this, instead of installing over the directory so that we have a backup copy, as well as a &#39;clean&#39; version of the install directory.&lt;/p&gt;
+&lt;p&gt;Next, you should have, or should, download the Windows binary in zip format, for the most current version of PHP 4.x (4.4.4 at the time of this writing). Extract the contents of this folder so that you have the same directory structure as before.&lt;/p&gt;
+&lt;p&gt;For example, for the previous version of PHP, my php.exe file was at c:\php4\php.exe. For the new install, I&#39;ll want php.exe to be in the same location.&lt;/p&gt;
+&lt;p&gt;Once that&#39;s done, we&#39;ll want to grab the php4apache.dll and/or php4apache2.dll files from our previous install directory and put a copy of them into our new install directory.&lt;/p&gt;
+&lt;p&gt;For the new version of PHP 4.x, make a copy the php4ts.dll file and put the copy in the Windows folder (c:\windows\).&lt;/p&gt;
+&lt;p&gt;Next, there&#39;s the matter of the php.ini file. At this point, I did a compare of the new version&#39;s file with the previous version&#39;s file (php.ini-dist) using &lt;a href=&#34;http://strivinglife.net/wordpress/2006/10/16/249/winmerge-26-released/&#34;&gt;WinMerge&lt;/a&gt;. Luckily, the two files are identical, so there&#39;s no updating necessary.&lt;/p&gt;
+&lt;p&gt;At this point, you can start up Apache and hit your phpinfo page (code listed below). You should see that PHP&#39;s version has been updated to 4.4.4. If you&#39;d like, you can also test your connection to the database server of your choice (MySQL and/or PostgreSQL).&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;php&#34;&gt;&amp;lt;?php
+phpinfo();
+?&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now that we&#39;re set with our new version of PHP 4.x, you can either delete, or as I recommend, archive, your old PHP install directory, just in case something comes up in the next couple of weeks. Also, if you have any non-core extensions, you&#39;ll want to make sure that those get moved over as well.&lt;/p&gt;
+&lt;p&gt;Next, we&#39;ve got our PHP 5.x installation to upgrade.&lt;!--nextpage--&gt;&lt;/p&gt;
+&lt;h4&gt;Upgrading PHP 5.1.4 to PHP 5.2.0&lt;/h4&gt;
+&lt;p&gt;Upgrading PHP 5.x is almost exactly the same as upgrading PHP 4.x.&lt;/p&gt;
+&lt;p&gt;First, make sure that Apache has been stopped. Next, rename your current PHP 5.x directory (I added &#39;-previous&#39; to the end of my directory&#39;s name). If you don&#39;t already have a copy, download the Windows PHP 5.x binaries and extract them so that you preserve the same file structure as before.&lt;/p&gt;
+&lt;p&gt;For example, php.exe was located at c:\php5\php.exe for my previous version, so that&#39;s also where it should sit in the new directory.&lt;/p&gt;
+&lt;p&gt;Next, make a copy of the php5ts.dll file and put it into the Windows directory (c:\windows\ for example), overwriting the old one. If you installed any extensions, copy those extensions over from your previous install&#39;s directory to your new install&#39;s directory.&lt;/p&gt;
+&lt;p&gt;Now there&#39;s the matter of the php.ini file. At this point, I did a compare of the new version&#39;s file with the previous version&#39;s file (php.ini-dist) using &lt;a href=&#34;http://strivinglife.net/wordpress/2006/10/16/249/winmerge-26-released/&#34;&gt;WinMerge&lt;/a&gt; and there&#39;s a number of changes.&lt;/p&gt;
+&lt;p&gt;So, what you&#39;ll want to do is compare your PHP.ini file with the php.ini-dist file from the previous version, so we can get an idea of what changes were made. Now, make a copy of the new php.ini-dist and make the same changes you&#39;ve made for the old version.&lt;/p&gt;
+&lt;p&gt;For example, six changes had been made to my php.ini file, which I&#39;ve listed below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;doc_root
+extension_dir
+extension=php_mysql.dll
+extension=php_pgsql.dll
+session.save_path
+[Zend]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you&#39;ve ported over all of your changes, make a backup of your old php.ini file and replace it with the updated version. You can now restart Apache (2) and verify using phpinfo() that your version has been upgraded. You&#39;ll also want to check your database connection(s) as well.&lt;/p&gt;
+&lt;p&gt;And with that, you&#39;ve updated PHP 5.x.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is it past time for Microsoft to open IIS?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</link>
+      <pubDate>Sat, 23 Sep 2006 18:42:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
+      <description>&lt;p&gt;There&#39;s a reason PHP and Apache are so popular on the Web. It&#39;s the same reason that most beginner&#39;s, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With &lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;the right guide&lt;/a&gt;, a user can be up and running with Apache and PHP in a couple of hours.&lt;/p&gt;
+&lt;p&gt;Unfortunately, Microsoft&#39;s IIS (Internet Information Services) is something that few home-grown Web users have the honour of using. Instead, they have to wait until they take a formal class, or enter into a profession that allows them access to this technology. For a long time, the same could be said about MySQL/PostgreSQL and Microsoft SQL Server (respectively). But, no longer is that true.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SQL Server 2005 Express Edition is the next version of MSDE and is a free, easy-to-use, lightweight, and embeddable version of SQL Server 2005. Free to download, free to redistribute, free to embed, and easy for new developers to use immediately, SQL Server Express includes powerful features such as SQL Server 2005 Reporting Services, a server-based platform for creating and delivering traditional and interactive reports, and a graphical management tool, SQL Server 2005 Management Studio Express, for easily managing your database. Best of all, as your needs grow, your applications will seamlessly work with the rest of the SQL Server product family. (http://www.microsoft.com/sql/editions/express/, 09/23/2006)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Along with Microsoft&#39;s recent work on Internet Explorer 7, we can easily see the pressure that various open source initiatives are applying to Microsoft. Long the controlling force in a number of areas, Microsoft has found itself far behind the competition in a number of important areas.&lt;/p&gt;
+&lt;p&gt;Quite honestly, Internet Explorer 7 (currently a RC) is a vast improvement from Internet Explorer 6 and earlier. In fact, it&#39;s close relationship to the Windows operating system, and the ability to be rolled out as a Windows/Microsoft Update, gives IE 7 a number of benefits over the competition (which I consider to be Firefox and Opera, even if Opera has an extremely low market share). Yet, the only reason Microsoft took the initiative to improve IE was because of pressure from Firefox.&lt;/p&gt;
+&lt;p&gt;A truly interesting talking point is Internet Explorer for Mac. The last version of Internet Explorer for the Mac was 5.5, released way back in 2000. At the end of 2005, support was officially over, and development had stopped way back in June of 2003. Now, Microsoft recommend&#39;s Apple&#39;s Safari&#39;s to Mac users looking for IE for the Mac. (http://www.microsoft.com/Mac/ie/, 09/23/2006)&lt;/p&gt;
+&lt;p&gt;But, I didn&#39;t want to talk about Internet Explorer, I wanted to talk about IIS. As I said before, a home-grown developer doesn&#39;t have ready access to IIS or, until recently, SQL Server. Yet, with SQL Server released as an Express Edition, is it only a matter of time until we see an Express Edition of IIS? With .NET becoming the force that it is, as a developer, I hope so.&lt;/p&gt;
+&lt;p&gt;Looking for the pricing of IIS, we find that we have to purchase Windows Server 2003. Windows Server 2003 R2 Standard Edition is a mere $999, while the Windows Server 2003 Web Edition, 32-bit version is $399. (http://www.microsoft.com/windowsserver2003/howtobuy/licensing/pricing.mspx, 09/23/2006) Unfortunately, those are the lowest prices available.&lt;/p&gt;
+&lt;p&gt;Looking at another package, we have Adobe&#39;s (formally Macromedia&#39;s) ColdFusion MX 7 Developer Edition. &#34;ColdFusion MX 7 Developer is a free, fully functional version of ColdFusion for local development of applications that will be deployed on either Standard or Enterprise servers. In addition to localhost, access to applications running on a Developer Edition server is now possible from two client machines, making team development even easier.&#34; (http://www.adobe.com/products/coldfusion/productinfo/product_editions/, 09/23/2006) As a developer, do I really need more than this?&lt;/p&gt;
+&lt;p&gt;In addition, ColdFusion MX 6.1 is also available in a Developer&#39;s Edition. &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;Want to learn ColdFusion?&lt;/a&gt; With a Developer&#39;s Edition, you can, for the same cost as learning PHP with Apache and MySQL/PostgreSQL.&lt;/p&gt;
+&lt;p&gt;Microsoft appears to be on the right track, with SQL Server Express and the development of a better Internet Explorer, but I hope that they continue in the same spirit with IIS. After all, open the door&#39;s for developers and they&#39;ll grow into more and more of your products ...&lt;/p&gt;
+&lt;p&gt;Kind reader, what do you think?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
+      <pubDate>Mon, 28 Aug 2006 21:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
+      <description>&lt;p&gt;In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we&#39;re going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.&lt;/p&gt;
+&lt;h3&gt;What is a batch file?&lt;/h3&gt;
+&lt;p&gt;A batch file is basically a way to run a number of Windows prompts at once. In this particular case, we&#39;ll be using it to stop the Web server, copy, rename, and delete, files, and then start the necessary services up once again.&lt;!--adsense--&gt;&lt;/p&gt;
+&lt;p&gt;While we could do this manually, having just one, correctly setup, file to run is much easier, and much more logical.&lt;/p&gt;
+&lt;h3&gt;Assumptions&lt;/h3&gt;
+&lt;p&gt;I&#39;m going to assume that;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Your Web root folder is c:\home\.&lt;/li&gt;
+&lt;li&gt;If you installed PHP, you placed the php.ini file in the c:\windows\ folder. &lt;/li&gt;
+&lt;li&gt;If you installed Apache 1.3.x, you installed it to C:\Program Files\Apache Group\Apache\ &lt;/li&gt;
+&lt;li&gt;If you installed Apache 2.0.x, you installed it to C:\Program Files\Apache Group\Apache2\ &lt;/li&gt;
+&lt;li&gt;If you installed PHP, you have one working httpd.conf file for each version of PHP you installed, times each version of Apache you have installed. So, if you have two versions of PHP and one version of Apache, you should have two httpd.conf files. One for Apache with PHP 4, one for Apache with PHP 5. &lt;/li&gt;
+&lt;li&gt;If you installed PHP, you have one working php.ini file for each version of PHP you installed. &lt;/li&gt;
+&lt;li&gt;If you installed ColdFusion MX, you have one working httpd.conf file for each version of ColdFusion MX you installed, times each version of PHP you installed, times each version of Apache you installed, plus the number of ColdFusion MX versions you installed. So, if you installed two version of ColdFusion MX, one version of PHP, and one version of PHP, that&#39;s [(2 * 1 * 1) + 2] &lt;/li&gt;
+&lt;li&gt;Each of these httpd.conf files is in c:\home\configuration\. Likewise, each php.ini file necessary is in this same folder. There is also a blank text file called zblank.txt in this folder. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Creating the necessary batch files&lt;/h3&gt;
+&lt;p&gt;I&#39;m going to go through a batch file nice and slow, working through each line. This batch file will stop Apache 1.3.x. It will then prepare Apache 1.3.x to run PHP 4. We&#39;ll then create a text file that tells us that Apache 1.3.x, running PHP 4, is started.&lt;/p&gt;
+&lt;p&gt;First, the batch file.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net stop &#34;ColdFusion MX Application Server&#34;
+net stop &#34;ColdFusion MX 7 Application Server&#34;
+net stop &#34;Apache&#34;
+net stop &#34;Apache2&#34;
+DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_PHP5 is ready.txt&#34;
+COPY &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd_backup.conf&#34;
+COPY &#34;c:\home\configuration\httpd_Apache1.3_PHP4.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34;
+COPY &#34;C:\windows\php.ini&#34; &#34;c:\windows\php_backup.ini&#34;
+COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini&#34;
+net start &#34;Apache&#34;
+COPY &#34;C:\home\configuration\zblank.txt&#34; &#34;C:\home\zApache1.3_PHP4 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Start Notepad, and we&#39;ll walk through this beast of a batch file.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net stop &#34;ColdFusion MX Application Server&#34;
+net stop &#34;ColdFusion MX 7 Application Server&#34;
+net stop &#34;Apache&#34;
+net stop &#34;Apache2&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These four lines stop ColdFusion MX 6.1, ColdFusion MX 7, Apache 1.3.x, and Apache 2.0.x (in order). Of course, if you have not installed one of these, you can simply remove those lines. However, if you have installed any of these, you should keep these lines in place. After all, you never know what services may be running.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache1.3_PHP5 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_PHP4 is ready.txt&#34;
+DEL &#34;c:\home\zApache2.0_PHP5 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These lines delete the file referenced. In this case, we&#39;re deleting every possible text file that could exist. As before, if you have not installed one of the versions of Apache, or one of the versions of PHP, or one of the versions of ColdFusion MX, you can remove those lines.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd_backup.conf&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First, we create a backup of the httpd.conf file for Apache 1.3.x.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;c:\home\configuration\httpd_Apache1.3_PHP4.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Second, we make a copy of the working httpd.conf file that runs Apache 1.3.x with PHP 4.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\windows\php.ini&#34; &#34;c:\windows\php_backup.ini&#34;
+COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As with the httpd.conf file, we create a backup of the php.ini file, and then copy a working PHP 4 file into the correct directory.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net start &#34;Apache&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, we start the Apache 1.3.x service.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\home\configuration\zblank.txt&#34; &#34;C:\home\zApache1.3_PHP4 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we copy the blank text file and rename the copy so that we know which configuration is running.&lt;/p&gt;
+&lt;p&gt;Save the Notepad file as Apache1.3_PHP4.bat where ever makes the most sense to you. I put it in the configuration folder, but you could also put it in the c:\home\ folder, or another folder entirely (or on your Desktop).&lt;/p&gt;
+&lt;h3&gt;Moving forward&lt;/h3&gt;
+&lt;p&gt;I&#39;ve created twelve (12) batch files in a matter similar to the above, and zipped them up for download. Feel free to modify them as necessary, for your own use.&lt;/p&gt;
+&lt;p&gt;Keep in mind that these are very basic batch files. It&#39;s possible to clean these up significantly, with the full range of commands at your disposal. For now, however, this will get you going.&lt;/p&gt;
+&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
+&lt;p&gt;In previous guides, we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
+&lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
+&lt;p&gt;Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache 1.3.34&lt;/li&gt;
+&lt;li&gt;Apache 2.0.59&lt;/li&gt;
+&lt;li&gt;PHP 4.4.2&lt;/li&gt;
+&lt;li&gt;PHP 5.1.4&lt;/li&gt;
+&lt;li&gt;ColdFusion MX 6.1&lt;/li&gt;
+&lt;li&gt;ColdFusion MX 7.0.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This gives us a number of options on what our local Web server could be running at one time. For example, we could be running PHP 4, ColdFusion MX 6.1, and Apache 1.3.x or Apache 2.0.x. Likewise, we could use PHP 4 or PHP 5, or ColdFusion MX 6.1 or ColdFusion MX 7.0. Writing out a list of all of our possible combinations, we&#39;ve got something like the following.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Apache1.3_CF6.1_PHP4&lt;/li&gt;
+&lt;li&gt;Apache1.3_CF7.0_PHP4&lt;/li&gt;
+&lt;li&gt;Apache1.3_CF6.1_PHP5&lt;/li&gt;
+&lt;li&gt;Apache1.3_CF7.0_PHP5&lt;/li&gt;
+&lt;li&gt;Apache2.0_CF6.1_PHP4&lt;/li&gt;
+&lt;li&gt;Apache2.0_CF7.0_PHP4&lt;/li&gt;
+&lt;li&gt;Apache2.0_CF6.1_PHP5&lt;/li&gt;
+&lt;li&gt;Apache2.0_CF7.0_PHP5&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Of course, we could also run our local server without the ColdFusion MX component, or PHP component at all. For ease, however, we&#39;ll just stick with one of the above possibilities. What this means is that for each of the above that you want to run, you&#39;ll need to have an httpd.conf file.&lt;/p&gt;
+&lt;p&gt;If you followed my above guides, than you should already have the Apache 1.3.x configuration files (although with slightly different names). Once we have all eight configurations, we can write batch files to automate most of the process. For getting these up and running. With one click (and maybe just a little renaming), we can have the Web server that we want up and running.&lt;/p&gt;
+&lt;p&gt;Whatever you may have for Apache 1.3.x, I recommend you create a &#39;configuration&#39; folder in your DocumentRoot directory (so, c:\home\configuration\ if you&#39;ve been following along) where you can begin compiling httpd.conf files.&lt;/p&gt;
+&lt;p&gt;For example, I&#39;ve obviously followed by own guides, so I have four files thus far.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP5.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP5.conf &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We should also have either one or two php.ini files &amp;ndash; one for PHP 4 and one for PHP 5 &amp;ndash; that we&#39;ll also want to put copies of in this folder.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;php_Apache_PHP4.ini &lt;/li&gt;
+&lt;li&gt;php_Apache_PHP5.ini &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it&#39;s not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.&lt;/p&gt;
+&lt;p&gt;This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.&lt;/p&gt;
+&lt;h3&gt;Hooking up PHP 4.4.2&lt;/h3&gt;
+&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
+&lt;p&gt;Since we&#39;ve already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it&#39;s just a matter of hooking up Apache 2.0.x to recognize it.&lt;/p&gt;
+&lt;p&gt;First, we&#39;ll need to make sure we&#39;ve got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.&lt;/p&gt;
+&lt;p&gt;Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LoadModule php4_module &#34;c:/php4/php4apache2.dll&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now, do a search for AddType. After the first uncommented line (AddType application/x-gzip .gz .tgz), place the following.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;AddType application/x-httpd-php .php&lt;br /&gt;AddType application/x-httpd-php-source .phps&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finally, add &#39;index.php&#39; to the DirectoryIndex line, where ever you&#39;d like it be called in the order of things. Depending upon preference, you may also want to add index.htm, since Apache 2.0.x doesn&#39;t seem to want to include these.&lt;/p&gt;
+&lt;p&gt;Save httpd.conf. Now go to the c:\php4\ directory (or where you installed PHP 4) and copy the php4apache2.dll from the sapi folder into the root PHP folder. So, from c:\php4\sapi\ to c:\php4\.&lt;/p&gt;
+&lt;p&gt;For php.ini, everything should be setup correctly. However, you&#39;ll want to verify that the right php.ini file is in place.&lt;/p&gt;
+&lt;p&gt;Now start Apache2 from the Services panel (or the Apache Services Monitor) and you should find that the description lists PHP 4. If you go to &lt;a href=&#34;http://localhost/phpinfo.php&#34;&gt;http://localhost/phpinfo.php&lt;/a&gt; (if you created this file), you should also find that PHP is up and running.&lt;/p&gt;
+&lt;p&gt;Make sure both your ColdFusion MX 6.1 and ColdFusion MX 7.0 httpd.conf files have the httpd.conf changes made, and you can switch between either version.&lt;/p&gt;
+&lt;h3&gt;Connecting to PHP 5&lt;/h3&gt;
+&lt;p&gt;Assuming you&#39;ve already setup PHP 4 for Apache 2.0.x, using the instructions above, moving to PHP 5 is extremely easy. So easy, in fact, that it&#39;s scary. Make a copy of any httpd.conf files you may have for PHP 4. For example, the two I have in C:\Program Files\Apache Group\Apache2\conf\ are called httpd_CFMX6.1_PHP4.conf and httpd_CFMX7.0_PHP4.conf.&lt;/p&gt;
+&lt;p&gt;I&#39;ll copy both of these and rename them to httpd_CFMX6.1_PHP5.conf and httpd_CFMX7.0_PHP5.conf. That done open both up and do a search for php4, one file at a time. You&#39;ll find php4 three times, in the following line.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LoadModule php4_module &#34;c:/php4/php4apache2.dll&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Which you&#39;ll simply change to three &#39;5&#39;s.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LoadModule php5_module &#34;c:/php5/php5apache2.dll&#34;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now save the httpd.conf files. The php5apache2.dll file will already be in this location, so you should be set to go. Make a copy of either one of these, make sure that you&#39;re using the right php.ini file, restart Apache2, and verify that phpinfo() gives the correct information.&lt;/p&gt;
+&lt;p&gt;Wasn&#39;t that easy?&lt;/p&gt;
+&lt;h3&gt;Now that PHP 4 and/or PHP 5 are installed ...&lt;/h3&gt;
+&lt;p&gt;Now that we&#39;ve setup PHP 4 and/or PHP 5 with Apache 2.0.x, it&#39;s time to backup the necessary .conf files into our &#39;configuration&#39; folder.&lt;/p&gt;
+&lt;p&gt;At this point, you&#39;ll have up to ten files in this folder (c:\home\configuration\). Up to eight .conf files and up to two .ini files. I&#39;ve listed all ten possibilities below.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP5.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP5.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_CFMX6.1_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_CFMX6.1_PHP5.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_CFMX7.0_PHP4.conf &lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_CFMX7.0_PHP5.conf &lt;/li&gt;
+&lt;li&gt;php_Apache_PHP4.ini &lt;/li&gt;
+&lt;li&gt;php_Apache_PHP5.ini &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, let&#39;s create a blank text file called zblank.txt. Next, we should determine whether we want to have a version that does not run ColdFusion MX. If you want to, read the next section. Otherwise, skip the next section and read the following one.&lt;/p&gt;
+&lt;!--nextpage--&gt;
+&lt;h3&gt;Removing ColdFusion MX from our configurations&lt;/h3&gt;
+&lt;p&gt;To remove ColdFusion MX, you&#39;ll need four more httpd.conf files. Two for Apache 1.3.x and two for Apache 2.0.x, as each has two versions of PHP. Since it doesn&#39;t matter which one we take from, just copy the four httpd.conf files that reference CFMX6.1 in their file names.&lt;!--adsense--&gt;&lt;/p&gt;
+&lt;p&gt;Now, simply remove the &#39;Copy of &#39; and &#39;CFMX&lt;em&gt;x&lt;/em&gt;.&lt;em&gt;y&lt;/em&gt;&#39; from the four file names. You&#39;ll end up with the following.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;httpd_Apache1.3_PHP4.conf&lt;/li&gt;
+&lt;li&gt;httpd_Apache1.3_PHP5.conf&lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_PHP4.conf&lt;/li&gt;
+&lt;li&gt;httpd_Apache2.0_PHP5.conf &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s just a couple of things to remove from each of these conf files. The following block will need to be removed from the Apache 1.3.x files.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &#34;C:/CFusionMX/runtime/lib/wsconfig/1/mod_jrun.so&#34;&lt;br /&gt;&amp;lt;IfModule mod_jrun.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &#34;C:/CFusionMX/runtime/lib/wsconfig/1/jrunserver.store&#34;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And this block will need to be removed from the Apache 2.0.x files.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &#34;C:/CFusionMX/runtime/lib/wsconfig/2/mod_jrun20.so&#34;&lt;br /&gt;&amp;lt;IfModule mod_jrun20.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &#34;C:/CFusionMX/runtime/lib/wsconfig/2/jrunserver.store&#34;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Finally, make sure &#39;index.cfm index.cfml&#39; is removed from the DirectoryIndex lines in each file.&lt;/p&gt;
+&lt;p&gt;By allowing our Apache 2.0.x server, and Apache 1.3.x server, to run without checking for ColdFusion MX, we can keep it running quick, even if we decide not to start any versions of ColdFusion MX.&lt;/p&gt;
+&lt;p&gt;The only thing we have left is hooking up MySQL and PostgreSQL and creating batch files to use these httpd.conf and php.ini files to get the server we want up and running.&lt;/p&gt;
+&lt;p&gt;So, let the hardest part begin.&lt;/p&gt;
+&lt;h3&gt;Connecting to MySQL and PostgreSQL&lt;/h3&gt;
+&lt;p&gt;Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you&#39;re all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it&#39;s own requests (via the php.ini file).&lt;/p&gt;
+&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
+&lt;h3&gt;Coming in Part 4 ...&lt;/h3&gt;
+&lt;p&gt;In Part 4, I&#39;ll be going over how to create the batch files that we&#39;ll need to work with the httpd.conf and php.ini files that we&#39;ve created. While I could detail it here, better to just put it in it&#39;s own article/post, as that makes things much easier (if not for you, then at least for me ;)).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

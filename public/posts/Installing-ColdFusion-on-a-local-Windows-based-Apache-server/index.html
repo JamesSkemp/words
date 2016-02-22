@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Installing ColdFusion on a local Windows-based, Apache, server - My New Hugo Site</title>
+    <meta property='og:title' content="Installing ColdFusion on a local Windows-based, Apache, server - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2006-02-27T10:51:00-06:00">
+        <meta itemprop="headline" content="Installing ColdFusion on a local Windows-based, Apache, server">
+        <meta itemprop="description" content="
+
+Note: For information on installing, or upgrading to ColdFusion MX 7.0.1, see Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server.
+
+
+
+In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 6.1, Developer&#39;s Edition, on a local, Windows-based, Apache server. On this server, we&#39;ve setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code (however, not necessarily on the same sites that we&#39;ll be using PHP). We&#39;ll be doing this to experience a more corporate Web-programming language &ndash; corporate primarily because of the costs associated with ColdFusion.
+
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-02-27T10:51:00-06:00">Mon, Feb 27, 2006</time>
+          <h1 class="article-title">Installing ColdFusion on a local Windows-based, Apache, server</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><div class="note">
+<p>
+<em>Note: For information on installing, or upgrading to ColdFusion MX 7.0.1, see <a href="/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx">Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a>.</em>
+</p>
+</div>
+<p>
+In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 6.1, Developer&#39;s Edition, on a local, Windows-based, Apache server. On this server, we&#39;ve setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code (however, not necessarily on the same sites that we&#39;ll be using PHP). We&#39;ll be doing this to experience a more corporate Web-programming language &ndash; corporate primarily because of the costs associated with ColdFusion.
+</p>
+<!--adsense-->
+<p>
+From the marketing, we see that &quot;the [ColdFusion MX 6.1] Developer Edition, [is] a fully functional server for local development purposes only that helps you learn ColdFusion MX 6.1 or deploy to third-party hosting providers. Access is limited to localhost and one remote IP address.&quot;.
+</p>
+<p>
+We can download the Developer&#39;s Edition directly from Macromedia/Adobe - <a href="http://www.macromedia.com/software/coldfusionmx61/">http://www.macromedia.com/software/coldfusionmx61/</a>. However, you should know that the size of the download is over 150 MB. Also, as the above blurb notes, you most certainly cannot use the Developer&#39;s Edition on anything but a development machine. However, the code we write will work in a production environment.
+</p>
+<p>
+Also note that you could download and install the current 7.x version of ColdFusion (again, Developer Edition) instead of ColdFusion 6.1. I&#39;ll be installing 6.1 simply because I&#39;d like to work in the older environment for purposes of getting help, and helping others. Also, ColdFusion 7 is said, by Macromedia/Adobe, to be an easy upgrade. So, if 7 becomes the one we want to develop for, we can always make the switch.
+</p>
+<h3>Installing ColdFusion MX 6.1 Developer Edition</h3>
+<p>
+Once you&#39;ve downloaded the beast of an installation file, you&#39;ll need to install it to use the installed and running Apache Web server. Once you launch the installer, you&#39;ll be able to choose a language (English in my case). Read the introduction, and read and agree to the license agreement.
+</p>
+<p>
+On the next screen, Configure Installer, it will prompt you for a serial number, or will allow you to run the Developer Edition. On the next screen, we&#39;ll select Server configuration, followed by a screen asking us where to install ColdFusion MX. Leave this at the default directory of C:\CFusionMX.
+</p>
+<p>
+Now, we&#39;ll have to select a Web server. We&#39;ll be configuring ColdFusion to use Apache here, so select Add. Select Apache, if it isn&#39;t already selected. In the Configuration Directory field, you&#39;ll want the conf folder in the Apache folder, which is probably something like C:\Program Files\Apache Group\Apache\conf. In the third field, Directory and file name of server binary, you&#39;ll need to tell CF where to find the Apache.exe, which is probably at C:\Program Files\Apache Group\Apache\Apache.exe (if you are using Apache 1.3.x). Click Ok now that the three fields are filled out, followed by a Next.
+</p>
+<p>
+Now, we&#39;ll have to select the web root location for ColdFusion MX Administrator. This is used by ColdFusion to, interestingly enough, administer ColdFusion. We&#39;ll change this directory to our C:\home folder (which is what you&#39;ve set the <strong>DocumentRoot</strong> value to, if you&#39;ve been following along).
+</p>
+<div class="warning">
+<p>
+If you set DocumentRoot to something else, you&#39;ll want to make sure that you use that directory here as well.
+</p>
+<p>
+If you&#39;re not sure what you&#39;re using for your directory, go to the Apache install directory and open the conf\httpd.conf file. For example, C:\Program Files\Apache Group\Apache\conf\httpd.conf. Next, do a search for <strong>DocumentRoot</strong>.
+</p>
+<p>
+While you&#39;re here, you can also verify that this same directory is referred to a couple of lines down, which is &quot;&lt;Directory &quot;c:/home&quot;&gt;&quot;, where &#39;c:/home&#39; is your DocumentRoot directory.
+</p>
+<p>
+Thanks to Mike Bryce for pointing this out.
+</p>
+</div>
+<p>
+Finally, you&#39;ll be able to review the installation. Note that ColdFusion MX is going to take over 500 MB of space on your hard drive. This is, by far, the most demanding installation on our local Web server. Click Install to begin the installation.
+</p>
+<p>
+Around two hours later (or actually in less than five minutes), ColdFusion MX 6.1 will be up and running. You&#39;ll probably notice a hit to the memory, because ColdFusion is quite the memory hog. We&#39;ll discuss this before we close this post.
+</p>
+<p>
+Once you see the Installation Complete message, you&#39;ll be given the ColdFusion MX Administrator location. If you try to get to it now, however, you may be asked if you want to download the CFM file. Whoops &ndash; not a good thing. What we&#39;ll need to do is configure Apache to recognize CFM files.
+</p>
+<h3>Configure Apache for ColdFusion</h3>
+<p>
+Hopefully, you should be able to just restart Apache via the Services panel, and then visit <a href="http://localhost/CFIDE/administrator/index.cfm">http://localhost/CFIDE/administrator/index.cfm</a> one more time. If you don&#39;t see the Configuration and Settings Migration Wizard, then you&#39;ll need to open the httpd.conf file (using either the Start menu or a shortcut you may have created), and do a search for mod_jrun. Verify that the line that contains this text, and &quot;LoadModule&quot;, is not commented out with a # as the first character. If it is, remove the pound sign, save the file, and restart Apache. Hit <a href="http://localhost/CFIDE/administrator/index.cfm">http://localhost/CFIDE/administrator/index.cfm</a> once again.
+</p>
+<p>
+You can now do a search for DirectoryIndex, to verify that index.cfm has been added as a directory index. While you&#39;re here, you may also want to move it&#39;s placement up to after index.php, or even before if you&#39;d like.
+</p>
+<h3>Configure ColdFusion</h3>
+<p>
+Now, visit <a href="http://localhost/CFIDE/administrator/index.cfm">http://localhost/CFIDE/administrator/index.cfm</a>, and log in. You&#39;ll now be configuring ColdFusion settings. First, you&#39;ll have the option to disable RDS, which means absolutely nothing to me. An article on sitepoint, <a href="http://www.sitepoint.com/article/install-coldfusion-mx-windows/3">http://www.sitepoint.com/article/install-coldfusion-mx-windows/3</a>, says that there&#39;s little harm on allowing this on a development server. For the widest experience, we&#39;ll leave this as is, and use the same password we just created, for simplicity&#39;s sake.
+</p>
+<p>
+ColdFusion will then install ODBC Services, followed by asking you if you&#39;d like to install example applications. Since this may be helpful, we&#39;ll go ahead and do so. These are installed in C:\home\cfdocs\exampleapps. And with that, setup is complete. Press OK to load the ColdFusion Administrator (<a href="http://localhost/CFIDE/administrator/index.cfm">http://localhost/CFIDE/administrator/index.cfm</a>).
+</p>
+<p>
+At this point, if you&#39;ve been doing so, you may want to make a backup copy of the httpd.conf file (in C:\Program Files\Apache Group\Apache\conf). However, this is your call.
+</p>
+<p>
+Now that we&#39;ve installed ColdFusion, we can go about creating sites were we&#39;ll be developing with CF files. Remember that to do this you may want to add VirtualDirectory items into your httpd.conf file, and new IP mappings in your hosts file. For now, have some fun looking at the example applications.
+</p>
+<p>
+Finally, before I close this conversation, one point to add. As I mentioned above, you may have noticed a hit to your available memory after installing ColdFusion MX 6.1. If you open Windows Task Manager and take a look at the processes, you may notice that jrun.exe is using well over 50 MB. If you open up Services and Stop ColdFusion MX Application Server, you&#39;ll notice that this item disappears.
+</p>
+<p>
+Depending upon your system, and how often you&#39;ll be working with ColdFusion (or Apache for that matter), you may want to disable ColdFusion MX from beginning when your computer starts up.
+</p>
+<p>
+If you&#39;re interested in doing this, open the Services panel. Next, right click on the item you would like to stop from starting up on startup, and select Properties. Here, on the General tab, change Startup type from Automatic to Manual (not Disabled). This will ensure that this service only starts up when you manually start it. Note that if I manually start ColdFusion it takes about 30 seconds. If I let it start on startup, it increases my startup time by a little more than that. Again, if you won&#39;t be doing heavy development with ColdFusion, or if you restart your computer on a regular basis, think about changing ColdFusion, or Apache, to startup when you start them.
+</p>
+<p>
+On one final note, you may even want to stop these services when you&#39;re not actively developing with them. Not only will it save memory, it will also close any security holes that these programs may have &ndash; not that that is of major concern.
+</p>
+<p>
+In a future post, we&#39;ll discuss how to hook up MySQL with ColdFusion.
+</p>
+<p>
+<a href="/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="tag">apache</a> <a href="http://replace-this-with-your-hugo-site.com/tags/coldfusion" class="tag">coldfusion</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-ColdFusion-on-a-local-Windows-based-Apache-server%2f&t=Installing%20ColdFusion%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-ColdFusion-on-a-local-Windows-based-Apache-server%2f&text=Installing%20ColdFusion%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-ColdFusion-on-a-local-Windows-based-Apache-server%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-ColdFusion-on-a-local-Windows-based-Apache-server%2f&title=Installing%20ColdFusion%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

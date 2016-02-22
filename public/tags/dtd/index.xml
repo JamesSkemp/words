@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dtd on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/dtd/</link>
+    <description>Recent content in Dtd on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Sep 2010 16:20:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/dtd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XML standards - personal suggestions</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</link>
+      <pubDate>Fri, 03 Sep 2010 16:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-standards-personal-suggestions/</guid>
+      <description>&lt;p&gt;As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.&lt;/p&gt;
+&lt;h3&gt;Elements&lt;/h3&gt;
+&lt;p&gt;In the past I&#39;ve used camel case, but on a recent file used Pascal case instead. I think this was more becauase I&#39;ve started to using Pascal case for public items (variables), and camel case for private items, as that&#39;s fairly standard in development.&lt;/p&gt;
+&lt;p&gt;I generally stay away from underscores, as camel and Pascal case are both perfectly readable, in my opinion.&lt;/p&gt;
+&lt;p&gt;Hyphens seem to be generally frowned upon, due to various language restrictions.&lt;/p&gt;
+&lt;p&gt;Suggestion: camel case.&lt;/p&gt;
+&lt;h3&gt;XSD&lt;/h3&gt;
+&lt;p&gt;The other question was versioning of XSD (or DTD) files. According to&amp;nbsp;the 2004 article &lt;a rel=&#34;external&#34; href=&#34;http://www.ibm.com/developerworks/webservices/library/ws-version/&#34;&gt;Best practices for Web services versioning&lt;/a&gt;, the W3C recommends the company name, a date stamp (year and month), but IBM recommends (in the article) including the day as well.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been slowly moving these documents over to my media.jamesrskemp.com domain, under either a xsd or dtd folder. Looking at the W3C listing of &lt;a rel=&#34;external&#34; href=&#34;http://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;&gt;Recommended Doctype Declarations to use in your Web document&lt;/a&gt;, this doesn&#39;t seem to be all that horrible, realizing of course that the are DTD references and not XSD (true XML) references.&lt;/p&gt;
+&lt;p&gt;Another alternative would be xsd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.xsd and dtd.jamesrskemp.com/&lt;em&gt;date&lt;/em&gt;/file.dtd, but this is basically the same as using a sub-directory before (although it does simplify things).&lt;/p&gt;
+&lt;p&gt;Suggestion: http://&lt;em&gt;whatever&lt;/em&gt;/YYYY/MM/DD/file.ext, with all older items staying where they are.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

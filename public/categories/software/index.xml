@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/software/</link>
+    <description>Recent content in Software on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Oct 2013 08:58:25 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Rough guide on manually setting up Git on Windows</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
+      <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
+      <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
+
+&lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install the latest version of &lt;a href=&#34;http://msysgit.github.io/&#34; rel=&#34;external&#34;&gt;msysgit&lt;/a&gt; (currently 1.8.4).&lt;/li&gt;
+&lt;li&gt;Set execution policy (run as administrator).&lt;ul&gt;&lt;li&gt;&lt;code&gt;Set-ExecutionPolicy RemoteSigned&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Install posh-git&lt;ul&gt;&lt;li&gt;&lt;code&gt;(new-object Net.WebClient).DownloadString(&#34;http://psget.net/GetPsGet.ps1&#34;) | iex&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Possibly open the Powershell profile and add the Git path when Powershell runs.&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add to the top of the file:&lt;br /&gt;&lt;code&gt;$env:path += &#34;;&#34; + (Get-Item &#34;Env:ProgramFiles(x86)&#34;).Value + &#34;\Git\bin&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Thanks to &lt;a href=&#34;http://stackoverflow.com/a/17625052/11912&#34; rel=&#34;external&#34;&gt;G. Lombard&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Actually install posh-git.
+&lt;ul&gt;&lt;li&gt;&lt;code&gt;install-module posh-git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Verify/set global config options (user name and email).&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git config --global -l&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.name &#34;Your Name Here&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git config --global user.email &#34;your_email@example.com&#34;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;Update push behavior:&lt;ul&gt;&lt;li&gt;&lt;code&gt;git config --global push.default simple&lt;/code&gt;&lt;/li&gt;&lt;li&gt;See &lt;a href=&#34;http://stackoverflow.com/a/13148313/11912&#34;&gt;Warning: push.default is unset; its implicit value is changing in Git 2.0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Since I&#39;m using Powershell 3.0 (ISE), I decided to remove the &#39;Dark&#39; color versions of the displayed information:&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add the following at the end of the file:&lt;ul&gt;
+&lt;li&gt;&lt;code class=&#34;powershell&#34;&gt;$global:GitPromptSettings.BeforeIndexForegroundColor = [ConsoleColor]::Green&lt;br /&gt;
+$global:GitPromptSettings.IndexForegroundColor       = [ConsoleColor]::Green&lt;br /&gt;
+$global:GitPromptSettings.WorkingForegroundColor    = [ConsoleColor]::Red&lt;br /&gt;
+$global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;See also &lt;a href=&#34;http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx&#34; rel=&#34;external&#34;&gt;Git customizing colors for Windows including posh-git&lt;/a&gt;&lt;ul&gt;&lt;li&gt;This involved running these two commands:&lt;br /&gt;&lt;code&gt;git config --global color.status.changed &#34;magenta normal bold&#34;&lt;/code&gt;&lt;br /&gt;&lt;code&gt;git config --global color.status.untracked &#34;magenta normal bold&#34;&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Todo&lt;/h3&gt;
+
+&lt;p&gt;http://deanclatworthy.com/2013/01/how-to-avoid-relying-on-github-mirror-your-repository/&lt;/p&gt;
+
+&lt;p&gt;http://www.harecoded.com/migrating-github-repo-to-bitbucket-or-similar-services-2275467&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Goodbye BlogEngine.NET</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Goodbye-BlogEngine-NET/</link>
+      <pubDate>Sun, 22 Sep 2013 14:04:41 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Goodbye-BlogEngine-NET/</guid>
+      <description>&lt;p&gt;On &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
+
+&lt;p&gt;It was a great switch, as I was beginning to really dig into .NET, and I&#39;ve found there&#39;s no better way to learn something than actually doing something with it.&lt;/p&gt;
+
+&lt;p&gt;While I don&#39;t think I did much with the beta, I was in on 1.0 and was fairly active at first. Mads eventually switched focus, and there were much more vocal users, so I slowed down, and eventually stopped visiting the community.&lt;/p&gt;
+
+&lt;p&gt;This switch is long overdue, but a short while ago I started on the process of moving away from BlogEngine.NET, and late last night (or very early this morning) I pulled the switch.&lt;/p&gt;
+
+&lt;p&gt;I still have some work to do on the functionality to actually create/edit data, but at this point it&#39;s been running pretty solid, with considerably less of a memory footprint.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m hoping for a nicer design at some point, as well as additional tweaks to the functionality, but moving away from BlogEngine.NET is the first step towards those goals.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting from Subversion to Git on Windows</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
+      <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
+      <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
+&lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Unfortunately I had issues installing RubyGems. When I first installed Ruby I decided not to put it in my PATH. However, I couldn&#39;t install RubyGems.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\bin&amp;gt;ruby.exe ..\rubygems-1.8.25\setup.rb&lt;/pre&gt;
+&lt;p&gt;What I ended up having to do was call Ruby slightly differently.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\rubygems-1.8.25&amp;gt;..\bin\ruby.exe setup.rb&lt;/pre&gt;
+&lt;p&gt;However, it seems as though this step may not have even been necessary, since supposedly 1.9+ includes Gem support by default?&lt;/p&gt;
+&lt;p&gt;Then I got stuck (user credentials/user migration) and decided to search around, which caused me to find that TortoiseGit supported grabbing from SVN, but that requires msysgit. So I &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/msysgit/downloads/list?can=2&amp;amp;q=%22Full+installer+for+official+Git+for+Windows%22&#34;&gt;download msysgit&lt;/a&gt; and install it, unchecking a bunch of options since I don&#39;t intend on using TortoiseGit/msysgit after I get everything ported over.&lt;/p&gt;
+&lt;p&gt;Now I can download and install &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/tortoisegit/wiki/Download?tm=2&#34;&gt;TortoiseGit&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At this point I&#39;m wondering if I screw having old commit logs. I&#39;ve already been thinking for a while how poor Windows support with Git is.&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;p&gt;And I ended up just deciding to start fresh.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internet Explorer 10: Platform Preview 2 now available</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
+&lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
+&lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
+&lt;p&gt;And that&#39;s about all I have to say about that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DD-WRT and my Linksys WRT54GL</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/DD-WRT-and-my-Linksys-WRT54GL/</link>
+      <pubDate>Sat, 23 Apr 2011 17:24:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/DD-WRT-and-my-Linksys-WRT54GL/</guid>
+      <description>&lt;p&gt;I&#39;ve been sitting on a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000BTL0OA?tag=strivinglifen-20&#34;&gt;Linksys (Cisco) WRT54GL&lt;/a&gt; for a long while now. A long, long, while.&lt;/p&gt;
+&lt;p&gt;Originally I was going to replace my &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B00007KDVI?tag=strivinglifen-20&#34;&gt;WRT54G&lt;/a&gt;&amp;nbsp;(don&#39;t get me wrong, it still works great) and install DD-WRT for the additional features. However, I just never got around to it.&amp;nbsp;Today I finally dusted off the box (I had opened it) and started getting it setup.&lt;/p&gt;
+&lt;p&gt;Interestingly, the deeper I dug into DD-WRT the more confused I became. The main Web site contains a database of routers, with information on which firmware to install, but if you dig into the forums you&#39;ll find that the database, and the firmware, are out-of-date and buggy.&lt;/p&gt;
+&lt;p&gt;Luckily, although not too surprisingly, there&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.dd-wrt.com/wiki/index.php/Linksys_WRT54GL&#34;&gt;a Wiki on the Linksys WRT54GL&lt;/a&gt;, which made installation pretty dang simple.&lt;/p&gt;
+&lt;p&gt;I basically:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;plugged the router into my laptop via a wired connection,&lt;/li&gt;
+&lt;li&gt;disconnected from my existing wireless-enabled router,&lt;/li&gt;
+&lt;li&gt;verified I could access the router with the stock firmware&lt;/li&gt;
+&lt;li&gt;did a hard reset on the router (30-30-30)&lt;/li&gt;
+&lt;li&gt;installed the new firmware&lt;/li&gt;
+&lt;li&gt;had to manually change the password (it didn&#39;t prompt me)&lt;/li&gt;
+&lt;li&gt;was set, since I decided to stick with the &#39;micro&#39; (called such because of how large it is) install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The hardest part was then replicating my existing settings on the new router, although that wasn&#39;t terrible since I was able to just connect to both from my laptop and iPad. I didn&#39;t put in my custom DNS lookups (I&#39;m not using Charter), so that caused some issues, although even after adding those didn&#39;t work, a power cycle of my &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B00005T6GZ?tag=strivinglifen-20&#34;&gt;cable modem&lt;/a&gt; did.&lt;/p&gt;
+&lt;p&gt;All-in-all, it was &lt;em&gt;much&lt;/em&gt;&amp;nbsp;easier than I thought it was going to be, and, best of all, I don&#39;t have a bricked router.&lt;/p&gt;
+&lt;p&gt;According to inSSIDer, I already seem to have a better signal, so that&#39;s a good sign. I don&#39;t see myself investing too much time in additional settings, but ... it&#39;s there if I want to play around.&lt;/p&gt;
+&lt;p&gt;Oh, and if you&#39;re gotten this far, it&#39;s been a few months more than 2 years since I picked up the WRT54GL. Whoops.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to easily clear the window.applicationCache on select browsers</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
+      <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
+      <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
+&lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interesting feature with parsing XML with jQuery on Safari</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
+&lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
+&lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;My main intention is to make this available on my iPod Touch, so I was a bit dismayed when I found that the listing didn&#39;t display the title of the game. Everything else displayed just fine, but not the titles. Naturally, after some searching about I posted my question to Stack Overflow - &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/5427259/xmldocument-via-jquery-ajax-call-stored-as-string-in-localstorage-results-in-sa&#34;&gt;XMLDocument (via jQuery ajax call) stored as string in localStorage results in Safari not finding title elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After further research, it looks like I was missing a parseXML call, which results in the data correctly being pulled/displayed in Safari.&lt;/p&gt;
+&lt;p&gt;I decided to do some further testing on this issue, and I believe I&#39;ve discovered why it&#39;s displaying as it is.&lt;/p&gt;
+&lt;h3&gt;The test code&lt;/h3&gt;
+&lt;p&gt;I created a bit of test code - &lt;a href=&#34;http://jamesrskemp.com/testing/jQueryXmlParsing.html&#34;&gt;jQuery XML parsing&lt;/a&gt; - and that I&#39;ve posted below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;jQuery XML Parsing testing - JamesRSkemp.com&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;jQuery XML Parsing testing&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The following test code was created to test Internet Explorer 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), and Safari on iOS 4.3. Read more in &amp;lt;a href=&#34;http://strivinglife.com/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34; rel=&#34;external&#34;&amp;gt;Interesting feature with parsing XML with jQuery on Safari&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+    &amp;lt;noscript&amp;gt;You must have JavaScript enabled to view this test.&amp;lt;/noscript&amp;gt;
+    &amp;lt;div id=&#34;TestOutput&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        // We&#39;ll store an example of an XML file as a string of text.
+        var xmlContent = &#34;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;&amp;lt;Books&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;/Books&amp;gt;&#34;;
+        var testOutputText = &#34;&#34;;
+
+        var simpleCall = $(xmlContent);
+        var simpleParse = $.parseXML(xmlContent);
+        var parse = $($.parseXML(xmlContent));
+
+        try {
+            testOutputText += &#34;Type of $(xmlContent): &#34; + typeof simpleCall + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleCall.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleCall.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleCall === &#39;object&#39;) {
+                for (var prop in simpleCall) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleCall[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleCall.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $.parseXML(xmlContent): &#34; + typeof simpleParse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleParse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleParse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleParse === &#39;object&#39;) {
+                for (var prop in simpleParse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleParse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $($.parseXML(xmlContent)): &#34; + typeof parse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + parse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + parse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof parse === &#39;object&#39;) {
+                for (var prop in parse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            parse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        $(&#39;#TestOutput&#39;).append(testOutputText);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;What the test does&lt;/h3&gt;
+&lt;p&gt;I did a couple of things with this test.&lt;/p&gt;
+&lt;p&gt;First, I created a string with the following XML, and saved it as xmlContent.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;
+&amp;lt;Books&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+&amp;lt;/Books&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I created three variables, storing different things. First, I did $(xmlContent), then $.parseXML(xmlContent), and finally $($.parseXML(xmlContent)).&lt;/p&gt;
+&lt;h3&gt;The results&lt;/h3&gt;
+&lt;p&gt;Interestingly, on IE 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), the first and third tests return the type of &lt;strong&gt;object Object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the second test we have &lt;strong&gt;object Document&lt;/strong&gt; on IE 9, Chrome 10, Safari 5, and Safari on iOS 4.3, and &lt;strong&gt;object XMLDocument&lt;/strong&gt; on Firefox 4 and Opera 11.&lt;/p&gt;
+&lt;p&gt;But for the first test, while we have a length of &lt;em&gt;2&lt;/em&gt; on IE 9, Chrome 10, Firefox 4, and Opera 11, we only have a length of 1 on Safari 5 and Safari on iOS 4.3.&lt;/p&gt;
+&lt;p&gt;The fix, then, is to make sure to use the last of the three, but it seems odd that this wouldn&#39;t work on only one of the tested browsers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
+&lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
+&lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
+&lt;p&gt;Files: database.txt (empty), serial.txt (01, then&amp;nbsp;new line), openssl.cnf (based on OpenSSL file)&lt;/p&gt;
+&lt;h3&gt;Step 2: Create key&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; genrsa -des3 -out keys/_ca.key 2048&lt;/p&gt;
+&lt;h3&gt;Step 3: Create certificate authority certificate&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer&lt;/p&gt;
+&lt;h3&gt;Step 4: Create DER for public consumption&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\_ca.cer -outform DER -out certs\_ca.der&lt;/p&gt;
+&lt;h3&gt;Step 5: Create request from IIS&lt;/h3&gt;
+&lt;p&gt;IIS &amp;gt; click on main server, Server Certificates &amp;gt; populate all for request&lt;/p&gt;
+&lt;p&gt;save to requests directory locally&lt;/p&gt;
+&lt;h3&gt;Step 6: Handle request&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs&lt;/p&gt;
+&lt;h3&gt;Step 7: Convert for IIS&lt;/h3&gt;
+&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer&lt;/p&gt;
+&lt;h3&gt;Step 8: Add to IIS&lt;/h3&gt;
+&lt;p&gt;back in iis, complete request. use *.x.com if a wildcard for friendly name&lt;/p&gt;
+&lt;p&gt;install _ca.der certificate to Trusted Root Certification Authorities (do on clients as well - see this &lt;a rel=&#34;external&#34; href=&#34;http://www.openssl.org/support/faq.html#USER12&#34;&gt;official FAQ&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;associate actual site with certificate&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The problem with installing SQL Server Express via the Microsoft Web Platform Installer</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
+      <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
+&lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
+&lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
+&lt;p&gt;Very disappointing, to say the least.&lt;/p&gt;
+&lt;p&gt;For development purposes I probably won&#39;t use the Web Platform Installer to install SQL Server locally again, but will definitely use it for remote servers, assuming that I don&#39;t require the functionality built into the Advanced Services installer (which I undoubtedly will not). Of course, since I have an MSDN subscription, I believe I can install a more robust version of SQL Server for development purposes anyways, so perhaps this will push me over the edge.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
+&lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
+&lt;p&gt;At least for our implementation, the lines of code statistic, which seems to be stressed in StatSVN, is also fairly useless for specific commits, which in turn throws off the statistics for the entire repository. (We use third-party code, so being the user that committed that code at a couple of different points, that inflated my numbers.)&lt;/p&gt;
+&lt;p&gt;Having worked through part of the process at work, refined it at home, and performed a second implementation at work, I present the following steps to implement StatSVN with a CollabNet Subversion Server installation.&lt;/p&gt;
+&lt;p&gt;Note that these steps, with minor modifications, willl work fine with any Windows and Apache-based installation of Subversion.&lt;/p&gt;
+&lt;h3&gt;The basic steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If using authentication, create a user, if one isn&#39;t already created, that has access to the repositories and that can be used to checkout the repositories to report on.&lt;/li&gt;
+&lt;li&gt;If necessary, download and install the Java 4+ requirement for StatSVN.&lt;/li&gt;
+&lt;li&gt;Download and extract &lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt; to a directory of your choosing. For example, C:\statsvn&lt;/li&gt;
+&lt;li&gt;Create a directory to store the generated content from StatSVN.&lt;/li&gt;
+&lt;li&gt;Update Apache to allow access to the reports directory (from step 4).&lt;/li&gt;
+&lt;li&gt;Checkout or update a working copy of the repository to report on.&lt;/li&gt;
+&lt;li&gt;Generate the StatSVN reports for the working copy of the repository (from step 6).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To make this even easier, I&#39;m including the implementation I&#39;ve setup at home.&lt;/p&gt;
+&lt;h3&gt;Example implementation&lt;/h3&gt;
+&lt;p&gt;StatSVN directory: C:\statsvn&lt;/p&gt;
+&lt;p&gt;StatSVN outputs directory: C:\statsvn\output&lt;/p&gt;
+&lt;p&gt;Working copies of repositories are saved to the C:\statsvn directory (C:\statsvn\&lt;em&gt;repositoryName&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;From the command line at &lt;strong&gt;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin&lt;/strong&gt;&amp;nbsp;I ran the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd -m c:\svn_resources\svn-auth-file james-cq5320y&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I was then prompted for a password, which I entered twice. This now gives me an account I can use within a batch file to checkout/update repositories, that is specific to the server.&lt;/p&gt;
+&lt;p&gt;Next the Apache httpd.conf file needed to have the two following additions (where applicable):&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;Alias /stats C:\statsvn\output&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That allows http://server1:8080/stats to point to the appropriate directory.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Directory C:/statsvn/output&amp;gt;
+    Options Indexes
+    allow from all
+&amp;lt;/Directory&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the above allows the directory structure to be returned (the alternative is to manually create an index page, either static or dynamic), that anyone can access. (Since access to this server is only available on my network, this works fine for my situtation.)&lt;/p&gt;
+&lt;p&gt;Since we&#39;ve modified the Apache configuration we need to restart the service.&lt;/p&gt;
+&lt;p&gt;Next we create the batch file that will generate the StatSVN outputs.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+svn checkout http://localhost:8080/svn/%repositoryName% --username james-cq5320y --password PASSWORD
+cd %repositoryName%
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+REM pause&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After running this a couple of times I felt satisified that it was working correctly, so you&#39;ll see that I commented out the pause.&lt;/p&gt;
+&lt;p&gt;Of course, that works fine for the initial checkout. Once you have a working copy you can simply update, such as shown in the below batch file contents.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+cd %repositoryName%
+svn update
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+pause&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Optimizations&lt;/h3&gt;
+&lt;p&gt;Of course, some optimizations could be made, as currently this makes a bit of a mess of the StatSVN directory.&lt;/p&gt;
+&lt;p&gt;Because of this I&#39;d recommend creating a directory for the working copy and/or logs generated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
+&lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Personal NetBeans IDE 6.9.1 setting tweaks</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
+      <pubDate>Sun, 29 Aug 2010 10:28:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
+      <description>&lt;p&gt;&lt;p&gt;For my own personal reference, I&amp;rsquo;ve made the following tweaks to the default install of &lt;a rel=&#34;external&#34; href=&#34;http://netbeans.org/&#34;&gt;NetBeans&lt;/a&gt; IDE 6.9.1.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tools
+&lt;ul&gt;
+&lt;li&gt;Options
+&lt;ul&gt;
+&lt;li&gt;Editor
+&lt;ul&gt;
+&lt;li&gt;Formatting
+&lt;ul&gt;
+&lt;li&gt;Language: All Languages / Category: Tabs and Indents
+&lt;ul&gt;
+&lt;li&gt;Expand Tabs to Spaces: unchecked (from checked)&lt;/li&gt;
+&lt;li&gt;Number of Spaces per Indent: 4 (default)&lt;/li&gt;
+&lt;li&gt;Tab Size: 4 (from 8)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tic-Tac-Toe in Visual Basic 6</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
+      <pubDate>Sat, 24 Jul 2010 12:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
+      <description>&lt;p&gt;Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6.&lt;/p&gt;
+&lt;p&gt;Below is the code from MainWin.frm, which should be sufficient to create the application.&lt;/p&gt;
+&lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;vb&#34;&gt;VERSION 5.00
+Begin VB.Form Form1 
+   Caption         =   &#34;Tic-Tac-Toe&#34;
+   ClientHeight    =   3255
+   ClientLeft      =   4410
+   ClientTop       =   3255
+   ClientWidth     =   4080
+   LinkTopic       =   &#34;Form1&#34;
+   ScaleHeight     =   3255
+   ScaleWidth      =   4080
+   Begin VB.CommandButton AboutThis 
+      Caption         =   &#34;&amp;amp;About&#34;
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   12
+      Top             =   2760
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command10 
+      Caption         =   &#34;&amp;amp;Clear/Restart&#34;
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   9
+      Top             =   2760
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command9 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   8
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command8 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   7
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command7 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   120
+      TabIndex        =   6
+      Top             =   2040
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command6 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   5
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command5 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   4
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command4 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   120
+      TabIndex        =   3
+      Top             =   1440
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command3 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   2760
+      TabIndex        =   2
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command2 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   1440
+      TabIndex        =   1
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   &#34;Empty&#34;
+      Height          =   495
+      Left            =   120
+      TabIndex        =   0
+      Top             =   840
+      Width           =   1215
+   End
+   Begin VB.Label Label2 
+      Caption         =   &#34;2) Press &#39;Clear/Restart&#39; to clear the board.&#34;
+      Height          =   255
+      Left            =   120
+      TabIndex        =   11
+      Top             =   360
+      Width           =   3855
+   End
+   Begin VB.Label Label1 
+      Caption         =   &#34;1) Click once for an &#39;X&#39;, twice for an &#39;O&#39;.&#34;
+      Height          =   255
+      Left            =   120
+      TabIndex        =   10
+      Top             =   120
+      Width           =   3855
+   End
+End
+Attribute VB_Name = &#34;Form1&#34;
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Private Sub AboutThis_Click()
+ MsgBox &#34;Copyright 2003 James Skemp - http://jamesrskemp.net/&#34;, vbOKOnly, About
+End Sub
+
+Private Sub Command1_Click()
+ If Command1.Caption = &#34;Empty&#34; Then
+  Command1.Caption = &#34;X&#34;
+ ElseIf Command1.Caption = &#34;X&#34; Then
+  Command1.Caption = &#34;O&#34;
+ Else: Command1.Caption = &#34;Empty&#34;
+ End If
+End Sub
+
+
+Private Sub Command10_Click()
+ Command1.Caption = &#34;Empty&#34;
+ Command2.Caption = &#34;Empty&#34;
+ Command3.Caption = &#34;Empty&#34;
+ Command4.Caption = &#34;Empty&#34;
+ Command5.Caption = &#34;Empty&#34;
+ Command6.Caption = &#34;Empty&#34;
+ Command7.Caption = &#34;Empty&#34;
+ Command8.Caption = &#34;Empty&#34;
+ Command9.Caption = &#34;Empty&#34;
+End Sub
+
+Private Sub Command11_Click()
+
+End Sub
+
+Private Sub Command2_Click()
+ If Command2.Caption = &#34;Empty&#34; Then
+  Command2.Caption = &#34;X&#34;
+ ElseIf Command2.Caption = &#34;X&#34; Then
+  Command2.Caption = &#34;O&#34;
+ Else: Command2.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command3_Click()
+ If Command3.Caption = &#34;Empty&#34; Then
+  Command3.Caption = &#34;X&#34;
+ ElseIf Command3.Caption = &#34;X&#34; Then
+  Command3.Caption = &#34;O&#34;
+ Else: Command3.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command4_Click()
+ If Command4.Caption = &#34;Empty&#34; Then
+  Command4.Caption = &#34;X&#34;
+ ElseIf Command4.Caption = &#34;X&#34; Then
+  Command4.Caption = &#34;O&#34;
+ Else: Command4.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command5_Click()
+ If Command5.Caption = &#34;Empty&#34; Then
+  Command5.Caption = &#34;X&#34;
+ ElseIf Command5.Caption = &#34;X&#34; Then
+  Command5.Caption = &#34;O&#34;
+ Else: Command5.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command6_Click()
+ If Command6.Caption = &#34;Empty&#34; Then
+  Command6.Caption = &#34;X&#34;
+ ElseIf Command6.Caption = &#34;X&#34; Then
+  Command6.Caption = &#34;O&#34;
+ Else: Command6.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command7_Click()
+ If Command7.Caption = &#34;Empty&#34; Then
+  Command7.Caption = &#34;X&#34;
+ ElseIf Command7.Caption = &#34;X&#34; Then
+  Command7.Caption = &#34;O&#34;
+ Else: Command7.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command8_Click()
+ If Command8.Caption = &#34;Empty&#34; Then
+  Command8.Caption = &#34;X&#34;
+ ElseIf Command8.Caption = &#34;X&#34; Then
+  Command8.Caption = &#34;O&#34;
+ Else: Command8.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+Private Sub Command9_Click()
+ If Command9.Caption = &#34;Empty&#34; Then
+  Command9.Caption = &#34;X&#34;
+ ElseIf Command9.Caption = &#34;X&#34; Then
+  Command9.Caption = &#34;O&#34;
+ Else: Command9.Caption = &#34;Empty&#34;
+ End If
+
+End Sub
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Honestly, I like &lt;a href=&#34;http://strivinglife.com/words/post/Pascal-Programming-JRSs-Tic-Tac-Toe.aspx&#34;&gt;the one I did in Pascal&lt;/a&gt; much better, since the computer is fairly good.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tic-Tac-Toe using Pascal</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-using-Pascal/</link>
+      <pubDate>Sat, 24 Jul 2010 11:48:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tic-Tac-Toe-using-Pascal/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated).&lt;/p&gt;
+&lt;p&gt;This is the code in main.pas, which it seems is the only file really necessary.&lt;/p&gt;
+&lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons&amp;nbsp;Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;pascal&#34;&gt;program TicTacToe (input, output);
+label
+     begingame, picknumber, checkmove, checkforwin, compmove, winner, nobodywon, playagain, illegalmove, compcrash, endgame;
+var
+   playmove, turn, points : integer;
+   place1, place2, place3, place4, place5, place6, place7, place8, place9 : char;
+   currentplayer, ynagain, lastwinner : char;
+begin
+     writeln;
+     writeln(&amp;lsquo;JRSs Tic-Tac-Toe v1.1&amp;rsquo;);
+     writeln(&amp;lsquo;Created by James Skemp - &lt;a href=&#34;http://jamesrskemp.net/&#39;&#34;&gt;http://jamesrskemp.net/&#39;&lt;/a&gt;); {2003.11.09}
+     writeln(&amp;lsquo;Version 1.0: 2003.11.09&amp;rsquo;);
+     writeln(&amp;lsquo;Version 1.1: 2003.11.09&amp;rsquo;);
+     writeln;
+     points := 0;
+     lastwinner := &amp;lsquo;J&amp;rsquo;;
+     begingame:
+     turn := 0;
+     place1 := &amp;lsquo;1&amp;rsquo;;
+     place2 := &amp;lsquo;2&amp;rsquo;;
+     place3 := &amp;lsquo;3&amp;rsquo;;
+     place4 := &amp;lsquo;4&amp;rsquo;;
+     place5 := &amp;lsquo;5&amp;rsquo;;
+     place6 := &amp;lsquo;6&amp;rsquo;;
+     place7 := &amp;lsquo;7&amp;rsquo;;
+     place8 := &amp;lsquo;8&amp;rsquo;;
+     place9 := &amp;lsquo;9&amp;rsquo;;
+     if (lastwinner = &amp;lsquo;J&amp;rsquo;) then goto picknumber;
+     if (lastwinner = &amp;lsquo;X&amp;rsquo;) then goto compmove;
+     if ((lastwinner = &amp;lsquo;O&amp;rsquo;) and (points &amp;lt;10)) then goto picknumber;
+     if ((lastwinner = &amp;lsquo;O&amp;rsquo;) and (points &amp;gt;11)) then goto compmove;
+     picknumber:
+     currentplayer := &amp;lsquo;X&amp;rsquo;;
+     writeln;
+     writeln;
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place1,&amp;rsquo; | &amp;lsquo;,place2,&amp;rsquo; | &amp;lsquo;,place3,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;  &amp;mdash;+&amp;mdash;+&amp;mdash;&amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place4,&amp;rsquo; | &amp;lsquo;,place5,&amp;rsquo; | &amp;lsquo;,place6,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;  &amp;mdash;+&amp;mdash;+&amp;mdash;&amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln(&amp;rsquo;   &amp;lsquo;,place7,&amp;rsquo; | &amp;lsquo;,place8,&amp;rsquo; | &amp;lsquo;,place9,&amp;rsquo; &amp;lsquo;);
+     writeln(&amp;rsquo;     |   |   &amp;lsquo;);
+     writeln;
+     writeln(&amp;lsquo;Pick a number that you would like to take (you are &amp;ldquo;X&amp;rdquo;). &amp;lsquo;);
+     readln(playmove);
+     checkmove:
+     if ((playmove &amp;gt; 9) and (playmove &amp;lt;&amp;gt; 33)) or (playmove &amp;lt; 1) then
+      begin
+       writeln(&amp;lsquo;Whoops.  That&amp;rdquo;s an illegal move, try again.&amp;rsquo;);
+       writeln;
+       goto picknumber;
+      end;
+     if (playmove = 1) and (place1 = &amp;lsquo;1&amp;rsquo;) then
+      begin
+       place1 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 2) and (place2 = &amp;lsquo;2&amp;rsquo;) then
+      begin
+       place2 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 3) and (place3 = &amp;lsquo;3&amp;rsquo;) then
+      begin
+       place3 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 4) and (place4 = &amp;lsquo;4&amp;rsquo;) then
+      begin
+       place4 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 5) and (place5 = &amp;lsquo;5&amp;rsquo;) then
+      begin
+       place5 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 6) and (place6 = &amp;lsquo;6&amp;rsquo;) then
+      begin
+       place6 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 7) and (place7 = &amp;lsquo;7&amp;rsquo;) then
+      begin
+       place7 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 8) and (place8 = &amp;lsquo;8&amp;rsquo;) then
+      begin
+       place8 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 9) and (place9 = &amp;lsquo;9&amp;rsquo;) then
+      begin
+       place9 := &amp;lsquo;X&amp;rsquo;;
+       goto checkforwin;
+      end;
+     if (playmove = 33) then
+      begin
+       writeln(&amp;lsquo;Hi James&amp;rsquo;);
+       goto playagain;
+      end
+     else
+      goto illegalmove;
+     compmove:
+     currentplayer := &amp;lsquo;O&amp;rsquo;;
+     writeln;
+     writeln(&amp;lsquo;Computer&amp;rdquo;s move &amp;lsquo;);
+     {Check for Horizontal win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place2 = &amp;lsquo;O&amp;rsquo;) and (place3 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place2 = &amp;lsquo;2&amp;rsquo;) and (place3 = &amp;lsquo;O&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place2 = &amp;lsquo;O&amp;rsquo;) and (place3 = &amp;lsquo;3&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;4&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;7&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Vertical win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place4 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place4 = &amp;lsquo;4&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place4 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;2&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place8 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place6 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for diagonal win}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place9 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place7 = &amp;lsquo;O&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;O&amp;rsquo;) and (place5 = &amp;lsquo;O&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Horizontal block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place2 = &amp;lsquo;X&amp;rsquo;) and (place3 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place2 = &amp;lsquo;2&amp;rsquo;) and (place3 = &amp;lsquo;X&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place2 = &amp;lsquo;X&amp;rsquo;) and (place3 = &amp;lsquo;3&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;4&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place4 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;7&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place7 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for Vertical block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place4 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place4 = &amp;lsquo;4&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place4 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place4 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;2&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;)) then begin place2 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place8 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place2 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place8 = &amp;lsquo;8&amp;rsquo;)) then begin place8 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;6&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place6 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place6 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for diagonal block}
+     if ((place1 = &amp;lsquo;1&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place1 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place9 = &amp;lsquo;9&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;3&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;5&amp;rsquo;) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((place3 = &amp;lsquo;X&amp;rsquo;) and (place5 = &amp;lsquo;X&amp;rsquo;) and (place7 = &amp;lsquo;7&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if (turn = 0) then begin place3 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for favorite turn 2 places}
+     if ((turn = 2) and (place1 = &amp;lsquo;X&amp;rsquo;)) then begin place9 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((turn = 2) and (place7 = &amp;lsquo;X&amp;rsquo;)) then begin place1 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     if ((turn = 2) and (place9 = &amp;lsquo;X&amp;rsquo;)) then begin place7 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Go for place 5 if open}
+     if (place5 = &amp;lsquo;5&amp;rsquo;) then begin place5 := &amp;lsquo;O&amp;rsquo;; goto checkforwin; end;
+     {Check for stupid moves}
+     {&amp;hellip;}&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; if (place3 = &#39;3&#39;) then begin place3 := &#39;O&#39;; goto checkforwin; end;
+ if (place9 = &#39;9&#39;) then begin place9 := &#39;O&#39;; goto checkforwin; end;
+ if (place1 = &#39;1&#39;) then begin place1 := &#39;O&#39;; goto checkforwin; end;
+ if (place7 = &#39;7&#39;) then begin place7 := &#39;O&#39;; goto checkforwin; end;
+ if (place4 = &#39;4&#39;) then begin place4 := &#39;O&#39;; goto checkforwin; end;
+ if (place2 = &#39;2&#39;) then begin place2 := &#39;O&#39;; goto checkforwin; end;
+ if (place6 = &#39;6&#39;) then begin place6 := &#39;O&#39;; goto checkforwin; end;
+ if (place8 = &#39;8&#39;) then begin place8 := &#39;O&#39;; goto checkforwin; end;
+
+ goto compcrash;
+
+ checkforwin:
+  turn := turn + 1;
+  if ((place1 = place2) and (place1 = place3)) then goto winner;
+  if ((place1 = place4) and (place1 = place7)) then goto winner;
+  if ((place1 = place5) and (place1 = place9)) then goto winner;
+  if ((place2 = place5) and (place2 = place8)) then goto winner;
+  if ((place3 = place5) and (place3 = place7)) then goto winner;
+  if ((place3 = place6) and (place3 = place9)) then goto winner;
+  if ((place4 = place5) and (place4 = place6)) then goto winner;
+  if ((place7 = place8) and (place7 = place9)) then goto winner;
+
+  if turn = 9 then goto nobodywon;
+ if currentplayer = &#39;X&#39; then
+  begin
+   currentplayer := &#39;O&#39;;
+   goto compmove;
+  end
+ else
+  begin
+   currentplayer :=&#39;X&#39;;
+   goto picknumber;
+  end;
+
+ winner:
+  writeln;
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place1,&#39; | &#39;,place2,&#39; | &#39;,place3,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place4,&#39; | &#39;,place5,&#39; | &#39;,place6,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place7,&#39; | &#39;,place8,&#39; | &#39;,place9,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln;
+  if currentplayer = &#39;X&#39; then
+   begin
+    writeln;
+    writeln(&#39;You&#39;&#39;ve won!  Congrats :)&#39;);
+    points := points + 1;
+    lastwinner := &#39;X&#39;;
+    goto playagain;
+   end
+  else
+   begin
+    writeln;
+    writeln(&#39;Sorry :( but you have lost...&#39;);
+    points := points - 1;
+    lastwinner := &#39;O&#39;;
+    goto playagain;
+   end;
+
+ nobodywon:
+  writeln;
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place1,&#39; | &#39;,place2,&#39; | &#39;,place3,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place4,&#39; | &#39;,place5,&#39; | &#39;,place6,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;  ---+---+---&#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln(&#39;   &#39;,place7,&#39; | &#39;,place8,&#39; | &#39;,place9,&#39; &#39;);
+  writeln(&#39;     |   |   &#39;);
+  writeln;
+ writeln(&#39;Sorry, nobody won this game.&#39;);
+ points := points + 0;
+ lastwinner := lastwinner;
+ goto playagain;
+
+ playagain:
+ writeln;
+ writeln(&#39;Would you like to play again? Y or 1 for Yes, N or 0 (zero) for No.&#39;);
+ read(ynagain);
+ if ((ynagain = &#39;Y&#39;) or (ynagain = &#39;y&#39;) or (ynagain = &#39;1&#39;)) then goto begingame else goto endgame;
+
+ illegalmove:
+ writeln(&#39;Sorry, that&#39;&#39;s an illegal move.&#39;);
+ goto picknumber;
+
+ compcrash:
+ writeln(&#39;Ekk! The computer went crazy and started shooting! You died...&#39;);
+ points := points - 1;
+ goto playagain;
+
+ endgame:
+ writeln(&#39;Your ending points were: &#39;,points);
+ writeln(&#39;Press Enter or Return to quit&#39;);
+ readln;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;end.
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Setting up a task with SyncToy under a different account?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</link>
+      <pubDate>Sat, 17 Jul 2010 12:19:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</guid>
+      <description>&lt;p&gt;Every time I setup SyncToy I always, &lt;em&gt;always&lt;/em&gt;, forget to setup the folder pairs correctly.&lt;/p&gt;
+&lt;p&gt;SyncToy uses per-user folder pairs, which means that if you&#39;ll be running a scheduled task using a different user, you&#39;ll want to login as that user, setup the folder pairs in SyncToy, run the sync via SyncToy&#39;s interface, and then setup the task.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t do this you&#39;ll just end up with a 0x1 return code.&lt;/p&gt;
+&lt;p&gt;As far as I can tell, there&#39;s no way to have users share folder pairs, or use one set for all users (current version is 2.1).&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

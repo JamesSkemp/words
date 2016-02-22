@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Playing around with Subversion with a test repository - My New Hugo Site</title>
+    <meta property='og:title' content="Playing around with Subversion with a test repository - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Playing-around-with-Subversion-with-a-test-repository/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2008-07-12T18:00:00-05:00">
+        <meta itemprop="headline" content="Playing around with Subversion with a test repository">
+        <meta itemprop="description" content="I&#39;ve flirted with source/version/revision control since September 2006 (with Subversion), but have never really dug in to actually do anthing with it. But now, that changes. The following guide was created using Subversion 1.4.6 and TortoiseSVN 1.4.8. However, this should still be applicable. Also, because of the number and size of the images, I&#39;ve limited the images shown directly in the guide. All links to these images should open in a new window.">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Playing-around-with-Subversion-with-a-test-repository/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-07-12T18:00:00-05:00">Sat, Jul 12, 2008</time>
+          <h1 class="article-title">Playing around with Subversion with a test repository</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>I've flirted with source/version/revision control since September 2006 (with <a href="/words/?tag=/subversion">Subversion</a>), but have never really dug in to actually do anthing with it. But now, that changes.</p>
+<div class="note">
+<p>The following guide was created using Subversion 1.4.6 and TortoiseSVN 1.4.8. However, this should still be applicable. Also, because of the number and size of the images, I've limited the images shown directly in the guide. All links to these images should open in a new window.</p>
+</div>
+<h3>The basics of Subversion</h3>
+<p>The basics are that you have a <strong>repository</strong> to store files within. Files in the repository are not directly modified. Instead, you can <strong>check out</strong> a working copy of the files to work on. You can then <strong>check in</strong> (aka <strong>commit</strong>) your working files, at any time, so that they become a part of the repository. When you do this, a new <strong>revision</strong> is created. If multiple people are working on the same repository, you'll also need to <strong>update</strong> your working files and handle any <strong>conflicts</strong>.</p>
+<h3>Getting started with Subversion</h3>
+<p>I've already covered this in previous posts, for Windows installations.</p>
+<ul>
+<li>
+<div><a href="/words/post/Installing-Subversion-to-Windows-Vista.aspx">Subversion</a></div>
+</li>
+<li>
+<div><a href="/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx">TortoiseSVN</a></div>
+</li>
+</ul>
+<p>These both cover Windows Vista installations, but <a href="/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx">an older guide</a> exists for Windows XP.</p>
+<p>TortoiseSVN isn't required, but I highly recommend it, and it's how I'll be working through this.</p>
+<div class="note">
+<p>Personally, I'm a GUI&nbsp;guy, for the most part. If I can have a GUI, I'll use it. Now if&nbsp;I need to use the command line, or the command line will give me additional functionality, I'll use it (when I need to).</p>
+</div>
+<h3>Creating a test repository&nbsp;</h3>
+<p>The first thing to try is a 100% test repository. Again, this will be what keeps track of file versions.</p>
+<p>Determine where you'll store your repositories. I have a second hard drive that I'll be using, so my repositories will be stored in B:\repos\ . Substitute your directory structure whenever you see this.</p>
+<p>Next, create a new directory under B:\repos\, called repoTest.</p>
+<p>Right click on the directory and select TortoiseSVN &gt; Create repository here... (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_01.jpg" target="_blank">See this</a>.)</p>
+<p>When prompted, select Native filesystem (FSFS) for the repository type. (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_02.jpg" target="_blank">See this</a>.)</p>
+<div class="note">
+<p>From what I've read, there doesn't seem to be any reason to choose Berkeley database (BDB) as the type, as it's perk is that it's been around for a while, and is therefore more stable, but it will definitely corrupt if you use it for a network share.</p>
+</div>
+<p>With that, the repository is created.</p>
+<div class="warning">
+<p>Again, the repository is not updated directly. You can browse the repoTest directory to see what Subversion (SVN) has created, but don't mess with any of the files.</p>
+</div>
+<p>Now that you've got a repository, it's time to check out a version you can work with.</p>
+<h3>Creating a working directory</h3>
+<p>Right-click on the repoTest directory and select SVN Checkout... (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_04.jpg" target="_blank">See this</a>.)</p>
+<p>You'll be prompted for the URL of the repository (which should be correct - in this case, <strong>file:///B:/repos/repotest</strong>) and a Checkout directory. This directory is where you'll store your working copy. I created a new directory B:\projects\repoTest\.</p>
+<p><img title="Checking out from a repository" src="http://media.jamesrskemp.com/graphics/repotest/repotest_05.jpg" alt="Checking out from a repository" width="466" height="324" /></p>
+<p>Leave all other options as they are and press OK to continue.</p>
+<p>With that done, you should be shown a window stating that the checkout has finished.</p>
+<p>If you now browse to your checkout directory (in my case, B:\projects\) you'll notice that the repoTest directory has a new icon - a green circle with a check.</p>
+<h3>Adding files to the working directory</h3>
+<p>Let's now create a text file called 'file number 1.txt' in the working directory. For now, leave the file blank.</p>
+<p>Now go back up to the B:\projects\ directory and right-click on the repoTest folder. Select SVN Commit... (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_07.jpg" target="_blank">See this</a>.)</p>
+<p>Our new file is displayed in the lower half of the window that appears. Check the box next to the file name. Next, enter a meaningful message in the first text box. For example, "First check-in."&nbsp; (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_08.jpg" target="_blank">See this</a>.)</p>
+<p>Press OK to continue.</p>
+<p>A new window will appear showing that our file has been added and sent. We're also given a revision number, in this case, 1. (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_09.jpg" target="_blank">See this.</a>)</p>
+<h3>Checking out another copy&nbsp;</h3>
+<p>Now let's go back to our repository and checkout another copy.</p>
+<p>This simulates another user working on our repository.</p>
+<p>Once again, we can browse to B:\repos\ ,&nbsp;right-click on our repoTest directory, and select SVN Checkout... Or, we can also select TortoiseSVN &gt; Repo-browser . This browser enables you to see all the files in the repository, as well as additional details, like revision. (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_11.jpg" target="_blank">See this.</a>)</p>
+<p>If you right-click on the repository, you can select Checkout...</p>
+<p>Either way you checkout the repository, do so to a new folder, such as B:\projects\repoTest2\ . (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_12.jpg" target="_blank">See this.</a>)&nbsp;Press OK.</p>
+<p>This checks out all files currently committed to the repository. So, when we browse to our new working directory, we'll see&nbsp;'file number 1.txt' .</p>
+<h3>Where we're at&nbsp;</h3>
+<p>Right now we've&nbsp;got&nbsp;a single repository and two working directories. This is similar to what one might see if two individuals are working on a project.</p>
+<p>So,&nbsp;Lisa is B:\projects\repoTest\ and Trish is B:\projects\repoTest2\</p>
+<p>Let's treat these imaginary users as human beings, and call them by there names from here on out.</p>
+<h3>Lisa&nbsp;adds new files</h3>
+<p>Switch to Lisa's repository at B:\projects\repoTest\ . Let's&nbsp;say she creates two new files, called "file number 2.txt" and "file number 3.txt"&nbsp;in this directory.</p>
+<p>She also adds some text to file number 1, such as "Lisa has made a modification to this file."</p>
+<p>When&nbsp;she modifies file number 1, note that it now has a different icon, as the file has changed.</p>
+<p>Now we assume that she wants these to be a part of the repository, so in order to get them in there, she'd have to commit these changes.</p>
+<p>Select&nbsp;both of the new files&nbsp;and select TortoiseSVN &gt; Add...</p>
+<p>In the prompt that appears, verify both checkboxes next to the file names are selected, and press OK. You'll then be told that both files are added.</p>
+<div class="note">
+<p>If you still have the repository browser open, if you refresh the repository you'll note that the files haven't been added to the repository. Remember, additions still need to be committed.</p>
+</div>
+<p>You may have to refresh Explorer, but when you do so, you'll notice that the two new files have new icons - little blue plus signs.</p>
+<p>Right-click in the repoTest directory, or on the repoTest folder, and select SVN Commit...</p>
+<p>This time you'll see that you've modified one file and added two others. Make sure you put in a message, such as "Lisa updated file 1 and created files 2 and 3." You may note that when you type file, you've got the option to auto-complete with the file names. Pretty nice, eh? (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_19.jpg" target="_blank">See this.</a>)</p>
+<p>Go ahead and press OK, verify it completes, and press OK again. (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_20.jpg" target="_blank">See this.</a>)</p>
+<h3>What about Trish?</h3>
+<p>Now Lisa is up to date with the repository, since she's the only one making changes. But what about Trish?</p>
+<p>Let's switch to Trish's directory, B:\projects\repoTest2\ . She still just has file number 1.txt and it's still empty.</p>
+<p>Let's go ahead and open her version of file number 1.txt and make a change. For example, add "Trish modified this file."</p>
+<p>Right-click on the repoTest2 directory, or within it, and select SVN Commit... Make sure you enter a message!</p>
+<p>If you try to commit, the commit will fail. Unfortunately, Trish's version is out of date (it says so). (<a href="http://media.jamesrskemp.com/graphics/repotest/repotest_22.jpg" target="_blank">See this.</a>)</p>
+<h3>Getting Trish up-to-date</h3>
+<p>We have a couple of options for getting&nbsp;Trish up-to-date. The first is to right-click on&nbsp;'file number 1.txt' and select TortoiseSVN &gt; Check for modifications. We'll see that&nbsp;Trish's version has been modified, and by&nbsp;double-clicking,&nbsp;can see what&nbsp;modifications took place.</p>
+<p>However, that's what was modified from the version she checked out.</p>
+<p>Press the Check repository button and you'll see an even newer version, the version Lisa checked out.</p>
+<div class="note">
+<p>In&nbsp;this case, since I'm/we're using the same machine, the User will be the same. However, if we were on different machines, or using different user accounts, the name would be different, and it would be easier to see who made the changes.</p>
+</div>
+<p>If we now double-click on the file we'll see Lisa's changes compared with our changes.</p>
+<p>So now that we've got a conflict, what do we do?</p>
+<p>Let's&nbsp;get an updated version of this file by right-clicking on the file and selecting&nbsp;SVN Update.</p>
+<p>When we do so, we'll be told that a conflict exists, and will have a couple of&nbsp;files created in our working directory - 'file number 1.txt.mine,' 'file number 1.txt.r1,' and 'file number 1.txt.r2.'&nbsp;In addition, 'file number 1.txt' wll have a small warning icon.</p>
+<p>Right-click on this file and select TortoiseSVN &gt; Edit conflicts.</p>
+<p>From within TortoiseMerge, we can right click on either of the differences and select a couple of options.</p>
+<ol>
+<li>
+<div>Use a specific text block from one file or another.</div>
+</li>
+<li>
+<div>Use the whole file from one or another.</div>
+</li>
+<li>
+<div>Put our text before/after their text.</div>
+</li>
+</ol>
+<p>The merged/final version will display in the bottom half of the window.</p>
+<p>For now, let's go ahead and put Lisa's text before Trish's text.</p>
+<p>Right click on the changed block from 'mine'&nbsp;and select 'Use text block from "theirs" before "mine."</p>
+<p><img title="Merging changes" src="http://media.jamesrskemp.com/graphics/repotest/repotest_25.jpg" alt="Merging changes" width="446" height="153" /></p>
+<p>In the merged version, you'll see Lisa's text before Trish's. Close out of TortoiseMerge and save your changes when prompted, or press the save icon, or select File &gt; Save.</p>
+<p>Trish's working copy has now been modified with the updated text, however the file still is in conflict.</p>
+<p>Right-click on the file again and select TortoiseSVN &gt; Resolved... Verify that 'file number 1.txt' is checked, and press OK.</p>
+<div class="warning">
+<p>Make sure the file really has been resolved. If you haven't created a merged version, the code SVN adds to the file will still remain. Because of this, it may be better to press the appropriate button in TortoiseMerge, after saving the document.</p>
+</div>
+<p>Once you've done so, the extra files are removed from the directory. You'll now need to commit the file back into the repository. Now that the base copy is the same revision, the commit will complete.</p>
+<h3>What Trish should have done</h3>
+<p>However, there's still an issue with Trish's copy of the repository. She has no file 2 or 3.</p>
+<p>What Trish really needs to do is update her copy. She can do so by selecting SVN Update, after right-clicking on/in the repoTest2 folder.</p>
+<p>This will allow her to get all the updates that have happened since she first grabbed a copy.</p>
+<p>She can also, from this window, see a log (by pressing "Show log...") of revisions, with messages.</p>
+<h3>Workflow with&nbsp;more than one&nbsp;developer</h3>
+<p>Therefore, based upon this, it's a very good idea to make sure you're pulling updates from the repository on a regular basis.</p>
+<p>While there may indeed be times when you don't want to do this, this will allow you to see what other developers have been working on.</p>
+<p>She can also use a number of menu items to check on the repository without making commits. The log (Show log), repository browser (Repo-browser), and&nbsp;modifications (Check for modifications) can all be accessed at the directory or file level.</p>
+<p>In the case shown below, Lisa has made two additional revisions since Trish last checked files out, including adding two new files and modifying two that Trish already has.</p>
+<p><img title="Checking for changes" src="http://media.jamesrskemp.com/graphics/repotest/repotest_38.jpg" alt="Checking for changes" width="685" height="411" /></p>
+<p>If Trish hasn't made any changes, it's easy enough to SVN Update and get everything she needs. If she didn't modify any files that have changed, then she won't have to handle any merging of changes. If she has, then she'll just have to handle the conflict, which can involve just ignoring it by using her version (Mine), if she's actually got the version that should be used.</p>
+<h3>Deleting our working directories</h3>
+<p>At this point we've covered what we need to cover for working with Subversion, using a test repository, and two working directories.</p>
+<p>We can clean-up by deleting the B:\projects\repoTest\ and B:\projects\repoTest2\ directories.</p>
+<p>Since our repository still exists, we can still get a working copy of the repository. However, if we delete the repository directory, B:\repos\repoTest\, our repository is gone.</p>
+<p>Since we don't need it anymore, go ahead and delete this directory.</p>
+<h3>To conclude ...</h3>
+<p>Probably the best way to start with Subversion is to actually work on a dummy repository, as I've done above.</p>
+<h3>Next time</h3>
+<p>Next time I'll move an existing Web project into Subversion, since it's definitely time.</p>
+<p>Questions, comments, concerns, definitely appreciated.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/subversion" class="tag">subversion</a> <a href="http://replace-this-with-your-hugo-site.com/tags/svn" class="tag">svn</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPlaying-around-with-Subversion-with-a-test-repository%2f&t=Playing%20around%20with%20Subversion%20with%20a%20test%20repository" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPlaying-around-with-Subversion-with-a-test-repository%2f&text=Playing%20around%20with%20Subversion%20with%20a%20test%20repository&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPlaying-around-with-Subversion-with-a-test-repository%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPlaying-around-with-Subversion-with-a-test-repository%2f&title=Playing%20around%20with%20Subversion%20with%20a%20test%20repository" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

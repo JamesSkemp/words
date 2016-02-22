@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entity Framework Code First on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/entity-framework-code-first/</link>
+    <description>Recent content in Entity Framework Code First on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Jan 2012 07:40:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/entity-framework-code-first/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Programming Entity Framework: Code First (2011)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</link>
+      <pubDate>Thu, 05 Jan 2012 07:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Programming-Entity-Framework-Code-First-2011/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;, written by Julia Lerman and Rowan Miller.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While I had heard of Julie Lerman and her book &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, after the release of code first I was on the fence on just how much I would get out of the existing book. With the release of&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I knew I&amp;rsquo;d learn something, so I picked up an electronic copy (PDF) and started digging in.&lt;/p&gt;
+&lt;p&gt;First, I should mention that I initially started working with Entity Framework via existing databases. I tried the pre-4 version, but ultimately tried to stay away until EF4 was released. I liked the Visual Studio interface to work with a database via EF, and created one site, still in production, that uses it, but I like being closer to the metal.&lt;/p&gt;
+&lt;p&gt;With the release of EF Code First I started digging in immediately, using it to create functionality on one site already in production, and most recently started working on another site, for eventual release into production. However, on this latter site I was working with more advanced models and kept running into weird EF issues.&lt;/p&gt;
+&lt;p&gt;After a few chapters in&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I had determined what my issue was, and how to fix it, which alone is worth the price. In addition, while I understood data annotations, I know have a pretty firm grasp on what I can do via the Fluent API, and how I can better control what EF does when it creates the data tables to store my model.&lt;/p&gt;
+&lt;p&gt;The size of the book may initially throw you off, but I honestly believe that this book contains as much material as a book almost twice the size. In addition, while I came into the book having already worked with Entity Framework, and code first, I believe this book can easily be picked up by someone new to both technologies.&lt;/p&gt;
+&lt;p&gt;Julia Lerman will be releasing another book, &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312969?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: DbContext&lt;/a&gt;, and I will honestly be picking that book up as well. At this point, however, I&amp;rsquo;m still on the fence on whether I&amp;rsquo;ll be picking up the &amp;lsquo;primary&amp;rsquo; book,&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, but I&amp;rsquo;m sure at some point I will.&lt;/p&gt;
+&lt;p&gt;This book will definitely have select chapters read again, and will server as a good reference, so I give this book 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

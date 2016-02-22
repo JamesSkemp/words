@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/backup/</link>
+    <description>Recent content in Backup on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Oct 2009 21:14:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Applications I have to install on my core development machine</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Applications-I-have-to-install-on-my-core-development-machine/</link>
+      <pubDate>Fri, 09 Oct 2009 21:14:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Applications-I-have-to-install-on-my-core-development-machine/</guid>
+      <description>&lt;p&gt;Here&#39;s a listing of applications, as I run into them, that need to be installed on my core development machine.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;TortoiseSVN&lt;/li&gt;
+&lt;li&gt;iTunes&lt;/li&gt;
+&lt;li&gt;Oxygen Xml Editor&lt;/li&gt;
+&lt;li&gt;Visual Studio&lt;/li&gt;
+&lt;li&gt;CollabNet Subversion&lt;/li&gt;
+&lt;li&gt;FileZilla FTP client&lt;/li&gt;
+&lt;li&gt;Sun VirtualBox&lt;/li&gt;
+&lt;li&gt;Serious Samurize&lt;/li&gt;
+&lt;li&gt;7-Zip&lt;/li&gt;
+&lt;li&gt;Amazon MP3 Downloader&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Why bother creating this list? Because at the moment I&#39;ve just upgraded to Windows 7 and need to reinstall my programs. Above is the order I did it.&lt;/p&gt;
+&lt;h3&gt;Notepad&lt;/h3&gt;
+&lt;p&gt;On every computer I touch for more than 15 minutes, I always add Notepad to the Send to menu. But where is it on Windows 7?&lt;/p&gt;
+&lt;p&gt;In Windows Explorer, type the following to immediately go to the SendTo folder:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;shell:sendto&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That&#39;s easy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Backing up a computer to an HP Pocket Media Drive</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</link>
+      <pubDate>Sun, 04 Oct 2009 19:11:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</guid>
+      <description>&lt;p&gt;Recently I purchased another &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002C220YI?tag=strivinglifen-20&#34;&gt;HP Pocket Media Drive&lt;/a&gt;, with 500 GB of space (instead of the 160 GB drives I had purchased before).&lt;/p&gt;
+&lt;p&gt;Since I&#39;d like to plan out my backup strategy, and need to backup for my upcoming Windows 7 install (which since I have Vista Ultimate, will require a deal of work), I decided to write this post.&lt;/p&gt;
+&lt;h3&gt;My computer&#39;s setup&lt;/h3&gt;
+&lt;p&gt;Currently I have a primary 450 GB hard drive (advertised as 500 GB) and a 700 GB secondary drive that I put in (advertised as 750 GB).&lt;/p&gt;
+&lt;p&gt;The second drive was put in shortly after I purchased/recieved the system, so a good deal of data was placed on the primary drive initially. It calculates out to ~230 GB of used space on the primary drive, and only 30 GB used on the secondary.&lt;/p&gt;
+&lt;h3&gt;The secondary drive&lt;/h3&gt;
+&lt;p&gt;I started by putting projects that I was currently working on (Web or applications) and the Subversion repositories&amp;nbsp;on my secondary drive (&#39;B&#39; from now on) instead of my primary (&#39;C&#39;) drive. Projects are stored in a projects directory, while SVN repositories are stored in a repos directory, with a repos_dump folder for backup dumps.&lt;/p&gt;
+&lt;p&gt;External log files from my Web server were also downloaded and stored onto this B drive.&lt;/p&gt;
+&lt;p&gt;Later I moved over all downloads from C to B, and created directories within a downloads folder with the name of the base&amp;nbsp;application, or in some cases the company name. For example, 7-Zip, Apache HTTP Server, FileZilla, etcetera.&lt;/p&gt;
+&lt;p&gt;I&#39;ve experimented with other structures, such as by technology or always by company name, but this seems to break down after a while, or become too confusing.&lt;/p&gt;
+&lt;h3&gt;The primary drive&lt;/h3&gt;
+&lt;p&gt;The primary drive contains all installer-installed applications, and their related configuration files, photos that I have taken, and music that I have purchased/ripped.&lt;/p&gt;
+&lt;p&gt;For some applications, that didn&#39;t require source control, I saved the files locally to the C drive.&lt;/p&gt;
+&lt;h3&gt;First steps&lt;/h3&gt;
+&lt;p&gt;The first thing to do was to copy all of my photos over to my secondary drive. My intent will be to store everything that I want backed up on my secondary drive, allowing me to easily confirm that files are backed up as they should be.&lt;/p&gt;
+&lt;p&gt;This also means going through the applications that I use and doing a thorough investigation of what files I have created with those, and whether I wish them to be saved.&lt;/p&gt;
+&lt;p&gt;It&#39;s highly likely that some files I will be unable to copy to my second drive, without causing issues with the applications that use the files, so I&#39;ll need to make note of them.&lt;/p&gt;
+&lt;h3&gt;What I found&lt;/h3&gt;
+&lt;p&gt;Probably the largest issue was with my iTunes music library, with 34.6 GB of data. Moving this would require consolidating the library to a new location, but may result in the best experience. For now, I&#39;ve decided to hold off on this, since this only requires copying two directories to my external drive for backups.&lt;/p&gt;
+&lt;p&gt;VirtualBox also stored virtual machines in a directory in my user folder, by default. Microsoft Virtual PC files were the same.&lt;/p&gt;
+&lt;p&gt;Programs store configuration settings on the primary drive, like Visual Studio 2008 and the FileZilla FTP client, but both offer manual ways to back these settings up.&lt;/p&gt;
+&lt;p&gt;Favorites from browsers (Internet Explorer on my machine) also need to be backed up.&lt;/p&gt;
+&lt;h3&gt;Directory structure on the secondary drive&lt;/h3&gt;
+&lt;p&gt;To start with, I had a file structure like the following on my second drive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/downloads/&lt;/li&gt;
+&lt;li&gt;/LogFiles/&lt;/li&gt;
+&lt;li&gt;/photos/&lt;/li&gt;
+&lt;li&gt;/projects/&lt;/li&gt;
+&lt;li&gt;/repos/&lt;/li&gt;
+&lt;li&gt;/repos_dump/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So that I wasn&#39;t storing working files on my primary drive, I also created a working directory, and moved a number of folders/files from my Desktop to it. These won&#39;t be backed up, or will be backed up on an irregular basis.&lt;/p&gt;
+&lt;h3&gt;Directory structure on the backup drive&lt;/h3&gt;
+&lt;p&gt;By default the HP Pocket Media Drive that I purchased came with two directories and an installer in the root directory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;HP SureStore Application&lt;/li&gt;
+&lt;li&gt;HPSureStore.exe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have need for none of this, but instead of deleting, I decided to zip these files up into a &#39;zCameWithDrive.zip&#39; archive.&lt;/p&gt;
+&lt;p&gt;The next step is to determine what directory structure to use on the backup drive. For ease, I&#39;ve opted to just keep the same structure on the backup as I have on my secondary drive.&lt;/p&gt;
+&lt;p&gt;And then begins the copying process, from the secondary drive to the backup.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;I still have to deal with my music files (which I handle now by creating a music directory on the backup, and copying files from the primary drive), program configuration files, favorties, and more, but I&#39;ve got a good start, and hopefully you do as well.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

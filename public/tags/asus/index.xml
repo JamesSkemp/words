@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asus on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/asus/</link>
+    <description>Recent content in Asus on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Aug 2015 22:21:19 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/asus/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Windows 10 touchpad fix for the ASUS X200M</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
+      <pubDate>Fri, 07 Aug 2015 22:21:19 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
+      <description>&lt;p&gt;I recently decided to upgrade my ASUS X200M, after successfully upgrading my mom&#39;s. Unfortunately, after upgrading my machine I ran into an issue where the touchpad was completely unresponsive, and I was forced to either use the touchscreen or a USB mouse.&lt;/p&gt;
+
+&lt;p&gt;After a bit of looking around I found &lt;a href=&#34;http://www.cnet.com/forums/post/48428cdd-d8a9-4ef4-8bed-c70357f55fec/&#34;&gt;a post on CNET&#39;s forums&lt;/a&gt; that detailed a way to fix unresponsive touchpads in Windows 10. While the original question was about an Asus Transformer T100, this also worked for the X200M.&lt;/p&gt;
+
+&lt;p&gt;The steps are replicated below, since I trust my site to be up longer than CNET&#39;s forums.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Go to&lt;/p&gt;
+
+  &lt;ol&gt;
+  &lt;li&gt;Start (Windows Button)&lt;/li&gt;
+  &lt;li&gt;Settings&lt;/li&gt;
+  &lt;li&gt;Devices&lt;/li&gt;
+  &lt;li&gt;Mouse &amp;amp; Touchpad&lt;/li&gt;
+  &lt;li&gt;Scroll down to Related Settings and click &#34;Additional mouse options&#34;&lt;/li&gt;
+  &lt;li&gt;When the mouse properties window pops up, click on the ELAN tab&lt;/li&gt;
+  &lt;li&gt;Click your device and click &#34;Enable&#34;.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With these steps done my touchpad was once again responsive.&lt;/p&gt;
+
+&lt;p&gt;If you can&#39;t click, you may have to &lt;a href=&#34;http://support.asus.com/Download.aspx?SLanguage=en&amp;m=Smart+Gesture&#34;&gt;download Smart Gesture for Windows 10&lt;/a&gt; from the ASUS web site.&lt;/p&gt;
+
+&lt;p&gt;It appears that because I had an external mouse plugged into a USB port it was determining that it didn&#39;t need the touchpad to be on. While this sounds nice, I generally find myself keeping the USB receiver always plugged in, so in practice it&#39;s not ideal.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

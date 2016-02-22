@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vista on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/vista/</link>
+    <description>Recent content in Vista on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Oct 2008 18:05:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/vista/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Subversion 1.5.3 and TortoiseSVN 1.5.4 released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</link>
+      <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Subversion-153-and-TortoiseSVN-154-released/</guid>
+      <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
+&lt;p&gt;My install guides for &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.&lt;/p&gt;
+&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Subversion binaries for Apache 2.2.x</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</link>
+      <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-binaries-for-Apache-22x/</guid>
+      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
+&lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
+&lt;h3&gt;Getting Subversion&lt;/h3&gt;
+&lt;p&gt;Obviously, the first thing to do is to &lt;a href=&#34;http://subversion.tigris.org/&#34; target=&#34;_blank&#34;&gt;get Subversion&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We&#39;re looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that&#39;s svn-win32-1.5.1.zip.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;In &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Once you&#39;ve downloaded the zip, extract the contents.&lt;/p&gt;
+&lt;h3&gt;Installing the binaries&lt;/h3&gt;
+&lt;p&gt;The&amp;nbsp;README included in the zip&amp;nbsp;basically covers what you need to do.&lt;/p&gt;
+&lt;p&gt;Determine where you want&amp;nbsp;to install Subversion. I decided to keep it in the Program Files directory, so I created a new Subversion folder&amp;nbsp;at C:\Program Files\Subversion.&lt;/p&gt;
+&lt;p&gt;Next, move the four directories and file, from the zip,&amp;nbsp;to this directory.&lt;/p&gt;
+&lt;p&gt;Now go to Start and right click on Computer, selecting Properties. Go to the Advanced tab and press the Environment Variables... button. At the end of the Path system variable, add the location of the Subversion bin directory. For example, C:\Program Files\Subversion\bin . Press OK all the way out.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;You should be able to open a command line and type &lt;strong&gt;svnadmin -?&lt;/strong&gt; and get a meaningful bunch of commands.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In a new instance of Windows Explorer, navigate to the &lt;strong&gt;modules&lt;/strong&gt; directory in the Apache install directory. For example, c:\Program Files\Apache Software Foundation\Apache2.2\modules.&lt;/p&gt;
+&lt;p&gt;Copy &lt;strong&gt;mod_authz_svn.so&lt;/strong&gt; and &lt;strong&gt;mod_dav_svn.so&lt;/strong&gt; from your Subversion install&#39;s &lt;strong&gt;bin&lt;/strong&gt; directory into the Apache &lt;strong&gt;modules&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;p&gt;Still in the Subversion&amp;nbsp;&lt;strong&gt;bin&lt;/strong&gt; directory, copy the &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; files into the Apache &lt;strong&gt;bin&lt;/strong&gt; directory.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;If you want to use Berkeley DB, grab the libdb44.dll (or &lt;strong&gt;libdb*.dll&lt;/strong&gt;)&amp;nbsp;instead of the latter.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;br /&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now add these two after the existing LoadModule lines (you may want to add a comment noting why&amp;nbsp;you&#39;ve added these):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LoadModule authz_svn_module modules/mod_authz_svn.so&lt;br /&gt;LoadModule dav_svn_module modules/mod_dav_svn.so&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now go to the bottom of the httpd.conf file and add the following information:&lt;/p&gt;
+&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath Drive:\path\to\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath B:\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&lt;/p&gt;
+&lt;p&gt;Restart Apache via the Apache Service Monitor.&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;If you get any errors, check your error logs (&lt;strong&gt;logs&lt;/strong&gt; directory in the Apache install directory).&lt;/p&gt;
+&lt;p&gt;Windows event logs (Administrative Tools &amp;gt; Event Viewer or &lt;strong&gt;eventvwr&lt;/strong&gt; from the command line) may also have relevant error information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Once Apache starts, browse to &lt;a href=&#34;http://localhost:8080/svn/repos/&#34;&gt;http://localhost:8080/svn/repos/&lt;/a&gt; (assuming you used that port and directory), and you should see a listing of your repositories.&lt;/p&gt;
+&lt;p&gt;You can now browse the current versions of the files under Subversion.&lt;/p&gt;
+&lt;h3&gt;TortoiseSVN&lt;/h3&gt;
+&lt;p&gt;While you&#39;re at it, you may want to install or update &lt;a href=&#34;http://tortoisesvn.net&#34; target=&#34;_blank&#34;&gt;TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I already covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
+&lt;h3&gt;Upgrading existing repositories&lt;/h3&gt;
+&lt;p&gt;If you&#39;ve already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.&lt;/p&gt;
+&lt;p&gt;You can do this via the command line by running &lt;strong&gt;svnadmin upgrade \path\to\repository&lt;/strong&gt; , however, you should ensure that you have a backup before you do this. Also, you&#39;ll be unable to use tools that cannot access the 1.5 repos.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install Apache 2.2.9 to Windows Vista (Ultimate)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
+      <pubDate>Fri, 15 Aug 2008 16:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
+      <description>&lt;p&gt;In this article I&#39;ll be covering an installation of Apache 2.2.9 to Windows Vista Ultimate. I&#39;ll be installing Apache so that you can run IIS as well (hence, Apache will be on a different port). You may want to do this if you want to run Subversion on Apache (as I do).&lt;/p&gt;
+&lt;h3&gt;Installing Apache 2.2&lt;/h3&gt;
+&lt;p&gt;Currently the &lt;a rel=&#34;external&#34; href=&#34;http://httpd.apache.org/&#34;&gt;Apache HTTP Server&lt;/a&gt; has both a 2.0 and 2.2 version. For new development, the 2.2 version is the recommended verison, as it contains many new features. If you currently have Apache 2.0 or 1.3, you may want to determine whether you still require those older versions (such as for module support).&lt;/p&gt;
+&lt;p&gt;For this installation I&#39;ll be using the current Win32 binary, with SSL (Apache 2.2.9 with OpenSSL 0.9.8h). Download and run the MSI.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;I won&#39;t be covering the SSL aspect here, so feel free to go with the installer that doesn&#39;t have it, if you won&#39;t be needing it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As with all installers, read through the screens, pressing Next as you go.&lt;/p&gt;
+&lt;p&gt;Eventually you&#39;ll come upon a Server Information screen, which you update like the below.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install Server Information&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_04.jpg&#34; alt=&#34;Apache 2.2.9 Install Server Information&#34; width=&#34;514&#34; height=&#34;392&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;You can change all of these settings later.&lt;/p&gt;
+&lt;p&gt;Note that while IIS runs on port 80 by default,&amp;nbsp;if you want Apache to run for all users, as a service, this is the&amp;nbsp;easiest way to do so. Later, as we&#39;ll see,&amp;nbsp;Apache&amp;nbsp;won&#39;t be able to start, since IIS is already using port 80. However, we can&amp;nbsp;change the port to get it working.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install - Apache fails to start&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_08.jpg&#34; alt=&#34;Apache 2.2.9 Install - Apache fails to start&#34; width=&#34;677&#34; height=&#34;340&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Getting Apache to start&lt;/h3&gt;
+&lt;p&gt;To do this you&#39;ll need to open the &lt;strong&gt;httpd.conf&lt;/strong&gt; file in the &lt;strong&gt;conf&lt;/strong&gt; directory, within the Apache install directory.&lt;/p&gt;
+&lt;p&gt;&lt;img title=&#34;Apache 2.2.9 Install - httpd.conf&#34; src=&#34;http://media.jamesrskemp.com/graphics/apache_http/apache_2.2.9_install_11.jpg&#34; alt=&#34;Apache 2.2.9 Install - httpd.conf&#34; width=&#34;541&#34; height=&#34;342&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;If you&#39;ve installed to the system drive (usually C), you&#39;ll be unable to save changes unless you run your editor as an administrator.&lt;/p&gt;
+&lt;p&gt;It&#39;s easiest to go to the Start menu, type Notepad, right-click on the application when it appears, and &lt;strong&gt;Run as administrator&lt;/strong&gt;. You&#39;ll then be able to open the httpd.conf file and save your changes.&lt;/p&gt;
+&lt;h3&gt;What to change&lt;/h3&gt;
+&lt;p&gt;To have Apache listen on a different port you just need to find instances of port 80, and change them to another, un-used, port. 8080 is pretty common.&lt;/p&gt;
+&lt;p&gt;There will be one main instance, just a short distance down: &lt;strong&gt;Listen 80&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Change this to the new port (&lt;strong&gt;Listen 8080&lt;/strong&gt;) and you should be able to start Apache through the Monitor.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Of course, if you haven&#39;t installed IIS, you can leave the port as it is. Since the port is controlled by the httpd configuration file, it&#39;s relatively easy to update this as necessary.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Testing&lt;/h3&gt;
+&lt;p&gt;Test the installation by visiting &lt;strong&gt;http://localhost:8080/.&lt;/strong&gt; Assuming everything worked, you&#39;ll be presented with a message stating that &#34;It works!&#34;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Formatting drives in Windows Vista</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Formatting-drives-in-Windows-Vista/</link>
+      <pubDate>Wed, 18 Jun 2008 20:40:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Formatting-drives-in-Windows-Vista/</guid>
+      <description>&lt;p&gt;
+So Disk Management can&amp;#39;t be found using the Vista Start Search. 
+&lt;/p&gt;
+&lt;p&gt;
+However, you can&amp;nbsp;type in&amp;nbsp;Computer Management, and get to Disk Management from there. 
+&lt;/p&gt;
+&lt;p&gt;
+From what I was reading online, as long as the BIOS sees the drive, Windows should have popped up a message asking about formatting it. Too bad you have to go through this extra step - it would have been nice to have at least seen a small pop-up regarding this. 
+&lt;/p&gt;
+&lt;p&gt;
+Now I&amp;#39;ve just got to let the 750 GB hard drive format ... 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing TortoiseSVN to Windows Vista</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-TortoiseSVN-to-Windows-Vista/</link>
+      <pubDate>Sun, 08 Jun 2008 09:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-TortoiseSVN-to-Windows-Vista/</guid>
+      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just recently I covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
+&lt;h3&gt;The setup&lt;/h3&gt;
+&lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
+&lt;h3&gt;Downloading TortoiseSVN&lt;/h3&gt;
+&lt;p&gt;Since TortoiseSVN is for Windows, it makes it even easier to&amp;nbsp;find the version to download. Right on the &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34; target=&#34;_blank&#34;&gt;home page&lt;/a&gt; we&amp;nbsp;see a link for the download page, where we can get a copy of the most current version.&lt;/p&gt;
+&lt;p&gt;At the time of this writing that&#39;s version 1.4.8, built against version 1.4.6 of Subversion.&lt;/p&gt;
+&lt;p&gt;I&#39;ll be downloading the file TortoiseSVN-1.4.8.12137-win32-svn-1.4.6.msi.&lt;/p&gt;
+&lt;h3&gt;Installing TortoiseSVN&lt;/h3&gt;
+&lt;p&gt;Running the program, you&#39;ll work your way through a number of installation screens.&lt;/p&gt;
+&lt;h4&gt;Install screens&lt;/h4&gt;
+&lt;p&gt;&lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 1&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_01.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 1&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 2&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_02.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 2&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 3&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_03.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 3&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 4&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_04.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 4&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 5&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_05.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 5&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 376px; height: 176px;&#34; title=&#34;TortoiseSVN Setup Screen 6&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_06.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 6&#34; width=&#34;376&#34; height=&#34;176&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Post-Installation&lt;/h3&gt;
+&lt;p&gt;With TortoiseSVN installed, we can now interact with Subversion in a Windows-friendly way, instead of relying upon the command line.&lt;/p&gt;
+&lt;p&gt;In a later article, we&#39;ll actually use Subversion and TortoiseSVN to put a Web site under source control, as well as a Windows application (based upon the .NET Framework).&lt;/p&gt;
+&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Subversion to Windows Vista</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-to-Windows-Vista/</link>
+      <pubDate>Sat, 07 Jun 2008 15:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Subversion-to-Windows-Vista/</guid>
+      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;. This time I&#39;ll be installing Subversion on a Windows Vista Ultimate SP1 machine.&lt;/p&gt;
+&lt;h3&gt;The setup&lt;/h3&gt;
+&lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
+&lt;p&gt;I&#39;m already running IIS 7, so I won&#39;t be installing Apache to run Subversion.&lt;/p&gt;
+&lt;h3&gt;Downloading Subversion&lt;/h3&gt;
+&lt;p&gt;On the &lt;a rel=&#34;external&#34; href=&#34;http://subversion.tigris.org/&#34;&gt;official Subversion site&lt;/a&gt;, downloads can be found under Getting&amp;nbsp;Subversion &amp;gt; Downloads. I went for the &#34;friendly Installer program&#34; link, and downloaded the file svn-1.4.6-setup.exe.&lt;/p&gt;
+&lt;h3&gt;Installing Subversion&lt;/h3&gt;
+&lt;p&gt;Unless you&#39;ve turned it off, trying to run the installer will prompt you if you want to allow access to your computer. You do.&lt;/p&gt;
+&lt;p&gt;Continue through the installer screens, setting up Subversion as you&#39;d like.&lt;/p&gt;
+&lt;p&gt;I opted to install in the default directory of C:\Program Files\Subversion\ but without the desktop or quick launch icons.&lt;/p&gt;
+&lt;h4&gt;Install screens&lt;/h4&gt;
+&lt;p&gt;Below are the screens from the installer for Subversion 1.4.6.&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;width: 398px; height: 169px;&#34; title=&#34;Subversion Setup Screen 1&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_01.jpg&#34; alt=&#34;Subversion Setup Screen 1&#34; width=&#34;398&#34; height=&#34;169&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 2&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_02.jpg&#34; alt=&#34;Subversion Setup Screen 2&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 3&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_03.jpg&#34; alt=&#34;Subversion Setup Screen 3&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 4&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_04.jpg&#34; alt=&#34;Subversion Setup Screen 4&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 5&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_05.jpg&#34; alt=&#34;Subversion Setup Screen 5&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 6&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_06.jpg&#34; alt=&#34;Subversion Setup Screen 6&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_07.jpg&#34; alt=&#34;&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 8&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_08.jpg&#34; alt=&#34;Subversion Setup Screen 8&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 9&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_09.jpg&#34; alt=&#34;Subversion Setup Screen 9&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;Post-Installation&lt;/h3&gt;
+&lt;p&gt;If you run the following command at a prompt, you can&amp;nbsp;verify that your installation is complete. To run a command, select the Run command from the Start menu, or use the Start Search&amp;nbsp;and type &lt;strong&gt;cmd&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;svnadmin ?&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assuming you see a listing of available subcommands, you should be set.&lt;/p&gt;
+&lt;p&gt;At this point, I&#39;ve covered what I need to for installing Subversion to Windows Vista.&lt;/p&gt;
+&lt;p&gt;Next time I&#39;ll be covering TortoiseSVN, which will allow direct integration with Windows Explorer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to quickly hide all of the Windows Vista Ultimate language packs</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</link>
+      <pubDate>Thu, 24 Apr 2008 22:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</guid>
+      <description>&lt;p&gt;
+While there&amp;#39;s no way to hide them all at once,&amp;nbsp;you can make it a short chore to hide the Windows Vista Ultimate language packs that you don&amp;#39;t use. 
+&lt;/p&gt;
+&lt;p&gt;
+1) Right-click, H. 
+&lt;/p&gt;
+&lt;p&gt;
+2) Allow admin privileges. 
+&lt;/p&gt;
+&lt;p&gt;
+3) Right-click, H. 
+&lt;/p&gt;
+&lt;p&gt;
+4) Repeat step 3 for each language pack. 
+&lt;/p&gt;
+&lt;p&gt;
+It takes less than a minute. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upgrading Vista Home Premium to Vista Ultimate (right now)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</link>
+      <pubDate>Thu, 17 Apr 2008 21:15:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</guid>
+      <description>&lt;p&gt;
+About&amp;nbsp;30 minutes ago I started upgrading from Vista Home Premium to Vista Ultimate, using a NFS copy of Ultimate I received at the Heroes Happen {Here} event in &amp;#39;Madison&amp;#39; (today). 
+&lt;/p&gt;
+&lt;p&gt;
+For the most part, everything is backed up, so it should be a painless install, no matter what happens. 
+&lt;/p&gt;
+&lt;p&gt;
+Five steps; 
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Copying Windows files 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Gathering files 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Expanding files 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Installing features and updates 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Completing upgrade 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+What&amp;#39;s initially scary is the &amp;quot;Your upgrade may take several hours to complete.&amp;quot; line at the bottom of the screen. 
+&lt;/p&gt;
+&lt;p&gt;
+But, I&amp;#39;ve got Zatoichi 9 that I&amp;#39;m watching, so ... it shouldn&amp;#39;t be all that bad. 
+&lt;/p&gt;
+&lt;p&gt;
+(I do wish I would have installed Visual Studio 2008 after I had upgraded, though, but I wasn&amp;#39;t sure that I&amp;#39;d be able to, so ...) 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adding .NET functionality to Windows Vista Home Premium Internet Information Services</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</link>
+      <pubDate>Sat, 22 Mar 2008 09:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
+      <description>&lt;p&gt;
+I had previously covered &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
+&lt;/p&gt;
+&lt;p&gt;
+As before, you&amp;#39;ll want to select &lt;strong&gt;Control Panel&lt;/strong&gt; from the Start menu, then click on the &lt;strong&gt;Programs&lt;/strong&gt; link. Next, click on &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Expand &lt;strong&gt;Internet Information Services&lt;/strong&gt;, followed by the &lt;strong&gt;World Wide Web Services&lt;/strong&gt; and &lt;strong&gt;Application Development Features&lt;/strong&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Since we want to be able to run ASP.NET applications, we&amp;#39;ll need to check the ASP.NET checkbox. This will also enable the following three features. 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    .NET Extensibility 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    ISAPI Extensions 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    ISAPI Filters&amp;nbsp; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+If you also want to&amp;nbsp;run classic ASP pages, you&amp;#39;ll need to check the ASP checkbox as well. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</link>
+      <pubDate>Fri, 21 Mar 2008 15:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+This guide covers Windows Vista Home Premium SP1, and may differ for other versions.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ll also only be covering the basic, default, installation. A guide covering the addition of additional features, like .NET capabilities, may be released as well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+While limited, Windows Vista Home Premium allows Internet Information Services (IIS) 7 to be installed with little fuss, using the Control Panel interface.
+&lt;/p&gt;
+&lt;p&gt;
+First, select &lt;strong&gt;Start&lt;/strong&gt; &amp;gt; &lt;strong&gt;Control Panel&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Next click on the &lt;strong&gt;Programs&lt;/strong&gt; item, followed by &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+A Windows Features window will come up, which will allow you to change the status of certain applications. Included amongst these is an &lt;strong&gt;Internet Information Services&lt;/strong&gt; item, which contains a number of sub-items.
+&lt;/p&gt;
+&lt;p&gt;
+Microsoft recommends you select this item, Internet Information Services, to install IIS. This is the default installation, and contains a minimum set of features. A full listing of items is below.
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&amp;hellip;&lt;/li&gt;
+    &lt;li&gt;Internet Information Services
+    &lt;ul&gt;
+        &lt;li&gt;Web Management Tools
+        &lt;ul&gt;
+            &lt;li&gt;IIS 6 Management Compatibility
+            &lt;ul&gt;
+                &lt;li&gt;IIS 6 Management Console&lt;/li&gt;
+                &lt;li&gt;IIS 6 Scripting Tools&lt;/li&gt;
+                &lt;li&gt;IIS 6 WMI Compatibility&lt;/li&gt;
+                &lt;li&gt;IIS Metabase and IIS 6 configuration compatiblity &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;IIS Management Console&lt;/li&gt;
+            &lt;li&gt;IIS Management Scripts and Tools&lt;/li&gt;
+            &lt;li&gt;IIS Management Service &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;World Wide Web Services
+        &lt;ul&gt;
+            &lt;li&gt;Application Development Features
+            &lt;ul&gt;
+                &lt;li&gt;.NET Extensibility&lt;/li&gt;
+                &lt;li&gt;ASP&lt;/li&gt;
+                &lt;li&gt;ASP.NET&lt;/li&gt;
+                &lt;li&gt;CGI&lt;/li&gt;
+                &lt;li&gt;ISAPI Extensions&lt;/li&gt;
+                &lt;li&gt;ISAPI Filters&lt;/li&gt;
+                &lt;li&gt;Server-Side Includes &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Common Http Features
+            &lt;ul&gt;
+                &lt;li&gt;Default Document&lt;/li&gt;
+                &lt;li&gt;Directory Browsing&lt;/li&gt;
+                &lt;li&gt;HTTP Errors&lt;/li&gt;
+                &lt;li&gt;HTTP Redirection&lt;/li&gt;
+                &lt;li&gt;Static Content &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Health and Diagnostics
+            &lt;ul&gt;
+                &lt;li&gt;Custom Logging&lt;/li&gt;
+                &lt;li&gt;HTTP Logging&lt;/li&gt;
+                &lt;li&gt;Logging Tools&lt;/li&gt;
+                &lt;li&gt;Request Monitor&lt;/li&gt;
+                &lt;li&gt;Tracing &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Performance Features
+            &lt;ul&gt;
+                &lt;li&gt;Http Compression Dynamic&lt;/li&gt;
+                &lt;li&gt;Static Content Compression &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Security
+            &lt;ul&gt;
+                &lt;li&gt;Basic Authentication&lt;/li&gt;
+                &lt;li&gt;IP Security&lt;/li&gt;
+                &lt;li&gt;Request Filtering&lt;/li&gt;
+                &lt;li&gt;URL Authorization &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+When you select the &lt;strong&gt;Internet Information Services&lt;/strong&gt; item, the following items are automatically selected.
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Internet Information Services
+    &lt;ul&gt;
+        &lt;li&gt;Web Management Tools
+        &lt;ul&gt;
+            &lt;li&gt;IIS Management Console&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;World Wide Web Services
+        &lt;ul&gt;
+            &lt;li&gt;Application Development Features&lt;/li&gt;
+            &lt;li&gt;Common Http Features
+            &lt;ul&gt;
+                &lt;li&gt;Default Document&lt;/li&gt;
+                &lt;li&gt;Directory Browsing&lt;/li&gt;
+                &lt;li&gt;HTTP Errors&lt;/li&gt;
+                &lt;li&gt;Static Content&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Health and Diagnostics
+            &lt;ul&gt;
+                &lt;li&gt;HTTP Logging&lt;/li&gt;
+                &lt;li&gt;Request Monitor&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Performance Features
+            &lt;ul&gt;
+                &lt;li&gt;Static Content Compression &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Security
+            &lt;ul&gt;
+                &lt;li&gt;Request Filtering&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+By default, then, you&amp;#39;ve got the ability to manage the server through the IIS Management Console. You can also serve, and compress, static content.
+&lt;/p&gt;
+&lt;p&gt;
+If you apply these additions, you&amp;#39;ll be able to browse to &lt;a href=&#34;http://localhost/&#34;&gt;http://localhost/&lt;/a&gt; &lt;em&gt;immediately&lt;/em&gt; after installation. A w3wp.exe process should also display in Windows Task Manager, running under the NETWORK SERVICE user name, and with the description of IIS Worker Process.
+&lt;/p&gt;
+&lt;p&gt;
+If you don&amp;#39;t already have it, you&amp;#39;ll probably want to add the System administrative tools item to your All Programs/Start menu(s). You can do this by right-clicking on an empty spot in the Start menu, selecting Properties, then Start Menu &amp;gt; Customize&amp;hellip; Near the bottom of the list you&amp;#39;ll have an option for System administrative tools, which you can display in a number of places.
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+I&amp;#39;ll be assuming you installed it on both the Start menu and All Programs menu.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Once this has been added you&amp;#39;ll find an IIS Manager option under Administrative Tools.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re used to older versions of IIS, like IIS 6, it may take a bit to get used to the new interface. But, it&amp;#39;s sure to be a rewarding experience.
+&lt;/p&gt;
+&lt;p&gt;
+Comments/corrections/etcetera greatly appreciated.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

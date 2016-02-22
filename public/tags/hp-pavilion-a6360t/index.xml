@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hp Pavilion A6360t on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-a6360t/</link>
+    <description>Recent content in Hp Pavilion A6360t on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Oct 2009 20:43:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/hp-pavilion-a6360t/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Solved: Upgrading to Windows 7 on an HP a6360t with a second hard drive</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</link>
+      <pubDate>Fri, 09 Oct 2009 20:43:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
+      <description>&lt;p&gt;I purchased an HP Pavilion a6360t with Windows Vista Home&amp;nbsp;Premium&amp;nbsp;and later upgraded it (due to a conference) for free to Windows Vista Ultimate, and then added a second hard drive.&lt;/p&gt;
+&lt;p&gt;What would happen when I upgraded to Windows 7 Home Premium? Could I use the 64-bit version?&lt;/p&gt;
+&lt;p&gt;The answer to these questions is, due to testing, below:&lt;/p&gt;
+&lt;h3&gt;Windows 7&lt;/h3&gt;
+&lt;p&gt;Upgrading, doing a custom/clean install on my primary drive required approximately 38 minutes. That&#39;s it. That&#39;s for about 170 GB of data on a 455 GB drive/partition.&lt;/p&gt;
+&lt;p&gt;A Windows.old directory &lt;em&gt;was&lt;/em&gt; created and contains PerfLogs, Program Files, Users, and Windows directories, however since I backed everything up, I believe these can be safely removed.&lt;/p&gt;
+&lt;h3&gt;64-bit&lt;/h3&gt;
+&lt;p&gt;Running an Intel tool to verify, I was rather certain that I would be able to run a 64-bit operating system. And I can.&lt;/p&gt;
+&lt;h3&gt;Second hard drive&lt;/h3&gt;
+&lt;p&gt;The second hard drive was untouched. I did notice some weirdness when I was downloading Microsoft&#39;s AV solution, where a temporary directory was created on my secondary drive, but everything on the drive is still there, as I wanted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HP Pavilion a6360t clean-up</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</link>
+      <pubDate>Tue, 04 Mar 2008 20:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/HP-Pavilion-a6360t-clean-up/</guid>
+      <description>&lt;p&gt;
+With a new HP Pavilion a6360t, a number of things needed to be done to clean the machine up, from it&amp;#39;s default factory setup. 
+&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstall Norton Internet Security (there&amp;#39;s an uninstall option through the program&amp;#39;s Start menu). After a restart, I still needed to go back and delete the empty directory from the Start menu. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstall My HP Games through the Control Panel. Each one needed to be selected individually. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstalled Yahoo! Toolbar through the Control Panel. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Went into the preferences for the HP Advisor and unchecked &amp;quot;Animate application state transitions,&amp;quot; &amp;quot;Show notification balloon for docking transition&amp;quot; and &amp;quot;Show notification balloon for system tray transition.&amp;quot; Changed Default view from &amp;quot;Mini-dock&amp;quot; to &amp;quot;System Tray&amp;quot;. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Deleted the following icons from the desktop; &amp;quot;eBay,&amp;quot; &amp;quot;Internet &amp;amp; Digital Services,&amp;quot; &amp;quot;MSN,&amp;quot; &amp;quot;Snapfish Photos - First 25 Prints Free,&amp;quot; &amp;quot;Try Microsoft Office for 60 days.&amp;quot; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Opened IE and turned off automatic phishing filter. Added Google as a search provider, made it my default, and deleted Ask.com and Yahoo! Search. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Removed all home pages from IE. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Downloaded AVG 7.5 Free, and installed it. Removed AVG shortcut from desktop. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Switched to &amp;#39;watching&amp;#39; NCIS. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Removed HP Advisor toolbar from taskbar. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Changed Windows Update to &amp;quot;Check for updates but let me choose whether to download and install them.&amp;quot; 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    As of now, there are 59 processes. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Uninstalled Snapfish Picture Mover. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Deleted &amp;#39;eBay&amp;#39; and &amp;#39;Snapfish Photos - First 25 Prints Free&amp;#39; shortcuts from Start menu. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Added CPU Meter gadget to Sidebar, and&amp;nbsp;closed the Feed Headlines gadget. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Installed HP Pocket Media Drive (160GB) and restarted computer. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Unchecked &amp;quot;Launch HP Advisor automatically on start-up&amp;quot; since it keeps opening a dock window. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    Creating a backup set of DVDs (3 needed) to bring this machine back to it&amp;#39;s factory condition. 
+    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

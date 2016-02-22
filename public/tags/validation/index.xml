@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Validation on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/validation/</link>
+    <description>Recent content in Validation on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jul 2008 20:45:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Apache JMeter</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Apache-JMeter/</link>
+      <pubDate>Thu, 24 Jul 2008 20:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Apache-JMeter/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+The following is&amp;nbsp;a book review of &lt;a href=&#34;http://www.amazon.com/gp/product/1847192955?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Apache JMeter&lt;/a&gt;, written by Emily H. Halili.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+First off, my experience with automated software/application testing is extremely limited. For the most part any testing I&amp;#39;ve done has been manual testing. Recently, however, I was introduced to, and began using, Microsoft&amp;#39;s Web Application Stress Tool.
+&lt;/p&gt;
+&lt;p&gt;
+Because of this level of experience, Emily Halili&amp;#39;s Apache JMeter was the perfect book for me, as it contains an analysis of automated testing (including when best to do it, versus manual testing), in addition to the introduction to Apache JMeter.
+&lt;/p&gt;
+&lt;p&gt;
+In short, by the end of this book you&amp;#39;ll not only be able to feel confident running a basic test of a Web application (a Web site), but you&amp;#39;ll also be in a very good position to expand into advanced JMeter tactics, as well as reach out into other aspects of online applications, such as database, FTP, and mail services. For these advanced techniques, and non-Web server testing, you will need to do research outside of this book. If you expect to be an advanced/power user of JMeter, you&amp;#39;ll be disappointed.
+&lt;/p&gt;
+&lt;p&gt;
+That said, this book is truly a great little&amp;nbsp;introduction to JMeter. While the material will almost definitely apply to other automated testing tools, basic JMeter functionality is the focus, in particular for Web site testing.
+&lt;/p&gt;
+&lt;p&gt;
+Reading it straight through, you can probably tackle the&amp;nbsp;entire book in four hours. There&amp;#39;s a couple of parts - the beginning of chapter 4 and chapters 6 and 7 - that will bog you down in a first read. Regarding chapter 4, in particular, it begins with an overview of the various elements/components that JMeter offers, and ends with a basic test plan for a Web site. To me, this seemed backwards, as I&amp;#39;d rather work just through the components that I need first, and then get an introduction to all of them. Sometimes it&amp;#39;s easier to see the big picture for how it all comes to together.
+&lt;/p&gt;
+&lt;p&gt;
+Chapter 7 is nice in that a sample (PHP) site is provided, via a download, and then a test is created against it. This is in fact something that could probably be created, very easily, for chapter 4 as well (as a static site) to supplement the test (bringing us all on the same page for when we do our first real test). Outside of that, I think chapter 7 could have easily been expanded, as the later topics seem to be covered very quickly, and the database and FTP aspects could be moved into another chapter.
+&lt;/p&gt;
+&lt;p&gt;
+This is my first Packt book, and I was quite impressed with the quality of the book. It&amp;#39;s small in dimensions, but the binding and pages seem extremely sturdy.
+&lt;/p&gt;
+&lt;p&gt;
+As to whether or not the list price is warranted, this is definitely a book that you&amp;#39;ll want to pick up online. At around 120 pages of content, and &lt;em&gt;delivering&lt;/em&gt; a basic understanding of JMeter, 40 USD is a bit high.
+&lt;/p&gt;
+&lt;p&gt;
+Because I believe they could easily have provided a basic site for download for chapter 4 (and even beyond), and the higher-end price, I&amp;#39;ve given this book 4 stars.
+&lt;/p&gt;
+&lt;p&gt;
+Emily promises an introduction to JMeter, as well as a step-by-step guide to using it, and on that she delivers.
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The WordPress calendar is a table</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-WordPress-calendar-is-a-table/</link>
+      <pubDate>Mon, 15 Jan 2007 11:19:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-WordPress-calendar-is-a-table/</guid>
+      <description>&lt;p&gt;
+There&amp;#39;s a number of problems with WordPress, as far as accessibility goes.  However, the easiest one to fix is the problem with the calendar, which displays in the default theme, as well as many custom ones (I&amp;#39;m sure).  It lacks a summary tag.
+&lt;/p&gt;
+&lt;p&gt;
+Basically, by defining a summary for a table, you provide a way for text-to-speech browsers to explain what a table consists of.  After all, if you&amp;#39;re using a table in your markup, you&amp;#39;re doing so not for layout purposes, but rather for informational purposes.  &lt;span&gt;Id est&lt;/span&gt;, a tabulated listing of data.
+&lt;/p&gt;
+&lt;p&gt;
+Since WordPress lacks a basic summary for the calendar&amp;#39;s table, this is something of a problem.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://diveintoaccessibility.org/day_20_providing_a_summary_for_tables.html&#34;&gt;Dive Into Accessibility&lt;/a&gt; offers a suggestion for a summary of a table, and I recommend WordPress also incorporate this same language.
+&lt;/p&gt;
+&lt;p&gt;
+On line 460 of /wp-includes/template-functions-general.php, the following line.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    echo &amp;#39;&amp;lt;table id=&amp;quot;wp-calendar&amp;quot;&amp;gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Should be changed to the following.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    echo &amp;#39;&amp;lt;table id=&amp;quot;wp-calendar&amp;quot; summary=&amp;quot;Monthly calendar with links to each day\&amp;#39;s posts&amp;quot;&amp;gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Now then, who can either point me in the right direction to suggest this change, or who wants to make the change for me?
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code cleanup and commenting - done right</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Code-cleanup-and-commenting-done-right/</link>
+      <pubDate>Sun, 18 Jun 2006 14:13:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Code-cleanup-and-commenting-done-right/</guid>
+      <description>&lt;p&gt;
+For the past hour, I&amp;#39;ve been looking at current ways to get my name out there for Web page cleanup and commenting.  In other words, I&amp;#39;d like to work with existing code to bring it closer to the standards, and comment it, if necessary.  I would think it would be of great benefit to those individuals who bought a solution from a vendor, and are looking at changes to that code, or cleanup so that there pages act alike in most browsers.  Unfortunately, I haven&amp;#39;t found a site to offer my wares.  I&amp;#39;ve also looked at open source projects that may need some free help, but, alas, nothing there either.
+&lt;/p&gt;
+&lt;p&gt;
+If someone happens upon this by way of a Google search (or any other search - Google just happens to bring in the most traffic for me), I&amp;#39;d be interested in hearing from you on whether you&amp;#39;re looking for something similar, or if you&amp;#39;re looking for someone to fill that position ;)
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t use ul when you should use blockquote</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dont-use-ul-when-you-should-use-blockquote/</link>
+      <pubDate>Mon, 02 Jan 2006 09:45:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dont-use-ul-when-you-should-use-blockquote/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;m sorry, but I hate it when people use &amp;lt;ul&amp;gt; instead of &amp;lt;blockquote&amp;gt;.  &amp;lt;ul&amp;gt; is for list items, and should therefore be composed of list items (&amp;lt;li&amp;gt;s). If you&amp;#39;re not going to put &amp;lt;li&amp;gt;s for each item within a &amp;lt;ul&amp;gt; block, &lt;strong&gt;don&amp;#39;t use &amp;lt;ul&amp;gt;&lt;/strong&gt;&lt;!--adsense--&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

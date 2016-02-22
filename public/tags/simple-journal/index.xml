@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Simple Journal on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/simple-journal/</link>
+    <description>Recent content in Simple Journal on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jan 2010 18:53:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/simple-journal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Simple Journal 1.0 Released</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</link>
+      <pubDate>Sun, 03 Jan 2010 18:53:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Simple-Journal-10/</guid>
+      <description>&lt;p&gt;Version 1.0 of Simple Journal is now available for download.&lt;/p&gt;
+&lt;p&gt;Simple Journal is meant to be exactly that; a &lt;em&gt;very&lt;/em&gt; simple way to keep track of a journal.&lt;/p&gt;
+&lt;p&gt;Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/SimpleJournal_1.0.zip&#34;&gt;Download Simple Journal 1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To use Simple Journal extract the contents of the zip file to a directory and start _startCassini.bat. You&#39;ll see a dummy start page, with a link to the administrative area.&lt;/p&gt;
+&lt;p&gt;Click on Create new journal to create a new journal. The journal will be saved, by default, in the root of the install directory. Entries can be added using the appropriate administrative page.&lt;/p&gt;
+&lt;div class=&#34;warning&#34;&gt;
+&lt;p&gt;By default there is &lt;em&gt;no security on the administrative pages&lt;/em&gt;. Unless you want &lt;em&gt;anyone&lt;/em&gt; to be able to edit entries, &lt;strong&gt;DO NOT&lt;/strong&gt; push the Admin directory to a publically available Web site. This application is meant to run on an individual computer or USB drive. However, there&#39;s nothing to stop you from publishing the individual XML files and the XSL file (keeping these in the same directory).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You&#39;ll need &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;the current version of the .NET Framework&lt;/a&gt; to run this application. No other requirements should be necessary.&lt;/p&gt;
+&lt;p&gt;Questions and comments welcome and appreciated.&lt;/p&gt;
+&lt;h3&gt;Related articles&lt;/h3&gt;
+&lt;p&gt;Simple Journal was created as a way for me to write something every day, without worrying about quality or purpose.&lt;/p&gt;
+&lt;p&gt;I also covered creating the XML layout in a series of three articles; view&amp;nbsp;part &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor.aspx&#34;&gt;2&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample.aspx&#34;&gt;3&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

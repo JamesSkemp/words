@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statsvn on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/statsvn/</link>
+    <description>Recent content in Statsvn on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2010 10:00:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/statsvn/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
+&lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
+&lt;p&gt;At least for our implementation, the lines of code statistic, which seems to be stressed in StatSVN, is also fairly useless for specific commits, which in turn throws off the statistics for the entire repository. (We use third-party code, so being the user that committed that code at a couple of different points, that inflated my numbers.)&lt;/p&gt;
+&lt;p&gt;Having worked through part of the process at work, refined it at home, and performed a second implementation at work, I present the following steps to implement StatSVN with a CollabNet Subversion Server installation.&lt;/p&gt;
+&lt;p&gt;Note that these steps, with minor modifications, willl work fine with any Windows and Apache-based installation of Subversion.&lt;/p&gt;
+&lt;h3&gt;The basic steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;If using authentication, create a user, if one isn&#39;t already created, that has access to the repositories and that can be used to checkout the repositories to report on.&lt;/li&gt;
+&lt;li&gt;If necessary, download and install the Java 4+ requirement for StatSVN.&lt;/li&gt;
+&lt;li&gt;Download and extract &lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt; to a directory of your choosing. For example, C:\statsvn&lt;/li&gt;
+&lt;li&gt;Create a directory to store the generated content from StatSVN.&lt;/li&gt;
+&lt;li&gt;Update Apache to allow access to the reports directory (from step 4).&lt;/li&gt;
+&lt;li&gt;Checkout or update a working copy of the repository to report on.&lt;/li&gt;
+&lt;li&gt;Generate the StatSVN reports for the working copy of the repository (from step 6).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To make this even easier, I&#39;m including the implementation I&#39;ve setup at home.&lt;/p&gt;
+&lt;h3&gt;Example implementation&lt;/h3&gt;
+&lt;p&gt;StatSVN directory: C:\statsvn&lt;/p&gt;
+&lt;p&gt;StatSVN outputs directory: C:\statsvn\output&lt;/p&gt;
+&lt;p&gt;Working copies of repositories are saved to the C:\statsvn directory (C:\statsvn\&lt;em&gt;repositoryName&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;From the command line at &lt;strong&gt;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin&lt;/strong&gt;&amp;nbsp;I ran the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd -m c:\svn_resources\svn-auth-file james-cq5320y&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I was then prompted for a password, which I entered twice. This now gives me an account I can use within a batch file to checkout/update repositories, that is specific to the server.&lt;/p&gt;
+&lt;p&gt;Next the Apache httpd.conf file needed to have the two following additions (where applicable):&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;Alias /stats C:\statsvn\output&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That allows http://server1:8080/stats to point to the appropriate directory.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Directory C:/statsvn/output&amp;gt;
+    Options Indexes
+    allow from all
+&amp;lt;/Directory&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the above allows the directory structure to be returned (the alternative is to manually create an index page, either static or dynamic), that anyone can access. (Since access to this server is only available on my network, this works fine for my situtation.)&lt;/p&gt;
+&lt;p&gt;Since we&#39;ve modified the Apache configuration we need to restart the service.&lt;/p&gt;
+&lt;p&gt;Next we create the batch file that will generate the StatSVN outputs.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+svn checkout http://localhost:8080/svn/%repositoryName% --username james-cq5320y --password PASSWORD
+cd %repositoryName%
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+REM pause&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After running this a couple of times I felt satisified that it was working correctly, so you&#39;ll see that I commented out the pause.&lt;/p&gt;
+&lt;p&gt;Of course, that works fine for the initial checkout. Once you have a working copy you can simply update, such as shown in the below batch file contents.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
+cd %repositoryName%
+svn update
+svn log -v --xml &amp;gt; ..\%repositoryName%.log
+cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
+pause&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Optimizations&lt;/h3&gt;
+&lt;p&gt;Of course, some optimizations could be made, as currently this makes a bit of a mess of the StatSVN directory.&lt;/p&gt;
+&lt;p&gt;Because of this I&#39;d recommend creating a directory for the working copy and/or logs generated.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

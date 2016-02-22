@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/javascript/</link>
+    <description>Recent content in Javascript on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 May 2011 21:50:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: JavaScript: The Definitive Guide, Sixth Edition, by David Flanagan</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-JavaScript-The-Definitive-Guide-Sixth-Edition-by-David-Flanagan/</link>
+      <pubDate>Mon, 23 May 2011 21:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-JavaScript-The-Definitive-Guide-Sixth-Edition-by-David-Flanagan/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596805527?tag=strivinglifen-20&#34;&gt;JavaScript: The Definitive Guide, Sixth Edition&lt;/a&gt;, written by David Flanagan. Also &lt;a rel=&#34;external&#34; href=&#34;http://oreilly.com/catalog/9780596805524/&#34;&gt;available on O&amp;rsquo;Reilly Media&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Provides a deep dive into JavaScript development&lt;/h3&gt;
+&lt;p&gt;JavaScript: The Definitive Guide is not just a complete reference of the language, like O&amp;rsquo;Reilly&amp;rsquo;s other &amp;lsquo;thick books,&amp;rsquo; but also provides a deep dive into JavaScript development. However, if you&amp;rsquo;re just starting out and will be using one of the various libraries (like jQuery), this book may not (yet) be for you.&lt;/p&gt;
+&lt;p&gt;First, the sixth edition is the first I&amp;rsquo;ve read, so I can&amp;rsquo;t speak to any changes. Instead, my review is focused on the book as a first-timer reader to the &amp;lsquo;series.&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;JavaScript: The Definitive Guide is broken up into four parts; Core JavaScript, Client-Side JavaScript, the Core JavaScript Reference, and the Client-Side Reference. If you&amp;rsquo;ve ever picked up one of O&amp;rsquo;Reilly&amp;rsquo;s other reference books, like &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596527403?tag=strivinglifen-20&#34;&gt;Dynamic HTML: The Definitive Reference&lt;/a&gt;, you know about what to expect from those last two parts - a deep reference to the language.&lt;/p&gt;
+&lt;p&gt;The first two parts, however, are a &amp;lsquo;deep dive&amp;rsquo; into the actual language itself. Unlike a mere reference book,&amp;nbsp;JavaScript: The Definitive Guide actually teaches you how to develop in JavaScript, starting at the core fundamentals, and working your way up to more advanced topics.&lt;/p&gt;
+&lt;p&gt;Part of the &amp;lsquo;deep dive&amp;rsquo; aspect also includes following best practices, making numerous references to Douglas Crockford&amp;rsquo;s &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Review-JavaScript-The-Good-Parts-by-Douglas-Crockford.aspx&#34;&gt;JavaScript: The Good Parts&lt;/a&gt;&amp;nbsp;throughout the first part of the book, which is about 30% of the book. Alone, the first part of the book provides an &lt;em&gt;excellent&lt;/em&gt;, near-complete, tutorial on the language.&lt;/p&gt;
+&lt;p&gt;Historical information is also included, which I found to be very interesting when it came up, as well as implementation-specific functionality, that has limited use at this time (and as such, I personally found it distracting, and began skimming over later instances, but it&amp;rsquo;s still nice that it&amp;rsquo;s provided).&lt;/p&gt;
+&lt;p&gt;The second part focuses on the Web aspects, which is quite honestly where most people will be making use of JavaScript. This part covers about what you&amp;rsquo;d expect, as well as jQuery, client-side storage, and HTML5 functionality.&lt;/p&gt;
+&lt;p&gt;The jQuery information is around 60 pages of content, covers version 1.4, and also includes a bit about jQueryUI (a very little bit). It&amp;rsquo;s quite refreshing to see jQuery included in the book, but as noted initially, if you&amp;rsquo;re looking at focusing just on using a library, it may be better to get a resource focused on just that.&lt;/p&gt;
+&lt;p&gt;The second part is approximately 40% of the book.&lt;/p&gt;
+&lt;p&gt;The third and fourth parts are similar to O&amp;rsquo;Reilly&amp;rsquo;s other reference books, and are therefore fairly detailed, with examples included. Depending upon your preference, you may find the reference valuable, or prefer searching online. The examples included give the book a slight advantage over the average Web site. Honestly, I generally prefer using online resources, so I don&amp;rsquo;t see myself consulting these later parts very often, if at all.&lt;/p&gt;
+&lt;p&gt;Finally we come to the actual book itself. I received an electronic copy of the book, through the O&amp;rsquo;Reilly Blogger Review Program, so I can&amp;rsquo;t speak to the quality of a physical copy. However, in the past I have generally found O&amp;rsquo;Reilly books to be well made, with bindings that last. I have a PDF copy of the book, which I read using GoodReader on an iPad, and was absolutely amazed by how much linking was setup within the book itself. Additionally, &lt;a rel=&#34;external&#34; href=&#34;http://oreilly.com/ebooks/&#34;&gt;O&amp;rsquo;Reilly&amp;rsquo;s electronic books&lt;/a&gt; are DRM free, with no watermarking, which shows real trust in, and respect for, their customers.&lt;/p&gt;
+&lt;p&gt;And now comes the rating.&lt;/p&gt;
+&lt;p&gt;After the first part of this book I was impressed by &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596805527?tag=strivinglifen-20&#34;&gt;JavaScript: The Definitive Guide&lt;/a&gt;, and could easily have stopped there and been happy. The jQuery inclusion was a nice touch, which may be sufficient to push people who weren&amp;rsquo;t thinking about using a library in their development to doing so, and may actually provide enough information for someone who wants to start learning JavaScript via jQuery. It is, in short, a true guide to JavaScript, and not just a reference book.&lt;/p&gt;
+&lt;p&gt;For these reasons, I must give JavaScript: The Definitive Guide, 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: JavaScript: The Good Parts by Douglas Crockford</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-JavaScript-The-Good-Parts-by-Douglas-Crockford/</link>
+      <pubDate>Fri, 29 Apr 2011 16:50:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-JavaScript-The-Good-Parts-by-Douglas-Crockford/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following is a&amp;nbsp;review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596517742?tag=strivinglifen-20&#34;&gt;JavaScript: The Good Parts&lt;/a&gt;, written by Douglas Crockford.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Focused discussion on the parts of JavaScript to learn more about&lt;/h3&gt;
+&lt;p&gt;At the beginning of last month Scott Hanselman had a Hanselminutes episode titled &amp;ldquo;JavaScript and jQuery: Moving beyond Alert().&amp;rdquo; During this episode he spoke with two JavaScript &amp;hellip;&amp;nbsp;(experts? gurus?)&amp;nbsp;users, and this book was mentioned as one to read if you wanted to get a better understanding of JavaScript. I primarily use jQuery, but since advanced JavaScript users recommend you go beyond that, I figured it was worth looking into what the author had to say.&lt;/p&gt;
+&lt;p&gt;Douglas Crockford also has videos available on Yahoo!, so I started there, where he talks about some of the items brought up in this book. However, since I couldn&amp;rsquo;t focus long enough on the videos, and find reading to be a better experience, I picked up a copy of his book.&lt;/p&gt;
+&lt;p&gt;There were two things I wanted to get out of this book. First, I wanted to understand the best way to write my code, to have the least impact on others. Second, I wanted to gain at least a couple good tips about how JavaScript works &amp;lsquo;under the hood.&amp;rsquo;&lt;/p&gt;
+&lt;p&gt;Having read the book I now have a better idea of what avenue to pursue for the first, to make my JavaScript code much more object-orientated (Closures). I also gained more than a dozen helpful tidbits reading the book, that did indeed further my knowledge of JavaScript, that will result in better code, no matter whether I use a library/framework or not.&lt;/p&gt;
+&lt;p&gt;The book is indeed short, and I was able to sit down with it and read it over the course of a handful of hours, although I expect to go back and read at least one of the chapters again (and keep the book around as a reference, since I purchased an electronic copy).&lt;/p&gt;
+&lt;p&gt;There are a handful of sections that are stepping stones to the functionality that should actually be used, and if you have no plans to use his JSLint analyzer, then one chapter will be unnecessary. However, while I was on the fence about passing code through it before, having now read his book, and the chapter where he details, again, the specifics on why JSLint flags certain JavaScript code, I believe I&amp;rsquo;ll now actually run some code through it, once I implement his other recommendations.&lt;/p&gt;
+&lt;p&gt;But, as noted above, I did indeed learn a number of new things about JavaScript, that will help me write better code.&lt;/p&gt;
+&lt;p&gt;As already mentioned, I purchased an electronic copy of the book, and therefore can&amp;rsquo;t speak to the quality of physical copies. However, I&amp;rsquo;ve generally found O&amp;rsquo;Reilly books to be well made.&lt;/p&gt;
+&lt;p&gt;Four of five stars, since I believe the free videos he did will help a number of people that learn that way, thereby making the purchase of this book unnecessary, as well as that he could have trimmed some of the extraneous material from this book to make it that much more concise.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Function to Parse a Microsoft JSON DateTime returned from a WCF service in JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</link>
+      <pubDate>Sun, 04 Jul 2010 14:57:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</guid>
+      <description>&lt;p&gt;When a DateTime is converted to JSON in a WCF Web service (WebHttp in this particular case) it&#39;s semi-difficult to convert that to something we can use when we return the date to a client via JavaScript. For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#34;LastPlayed&#34;:&#34;\/Date(1278187099000-0400)\/&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After almost an hour of research and goofing around with this, I&#39;ve come up with the following, which seems to work just fine on Internet Explorer 8, Firefox 3.6, and Chrome 5.0.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;function parseMicrosoftJsonDateTime(content) {
+    try {
+        content = content.replace(/\//g, &#39;&#39;);
+        var contentDate = eval(&#39;new &#39; + content);
+        return contentDate.toDateString() + &#39; &#39; + contentDate.toTimeString();
+    } catch (ex) {
+        return content;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see if it fails at any point I just return whatever was passed. Otherwise since the only thing bothering us are the two /s, I&#39;m first removing all of those. Then I&#39;m creating a new variable, which ends up call new Date(x). This date variable can then be converted to a string via standard JavaScript functionality.&lt;/p&gt;
+&lt;p&gt;There may be a better way to handle this, but this is fairly quick, and works just as I need it to.&lt;/p&gt;
+&lt;h3&gt;Sample outputs&lt;/h3&gt;
+&lt;p&gt;Internet Explorer 8: Sat Jul 3 2010 14:58:18 CDT&lt;/p&gt;
+&lt;p&gt;Chrome 5.0 and Firefox 3.6: Sat Jul 03 2010 14:58:18 GMT-0500 (Central Daylight Time)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaScript object dump</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/JavaScript-object-dump/</link>
+      <pubDate>Sat, 27 Mar 2010 06:43:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/JavaScript-object-dump/</guid>
+      <description>&lt;p&gt;&lt;p&gt;I thought I posted this before, but I guess I did not.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s one way to dump a JavaScript object for analysis (if you don&amp;rsquo;t have access to Firebug, or a similar tool).&lt;/p&gt;
+&lt;p&gt;Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the &lt;del&gt;three spots&lt;/del&gt; &lt;ins&gt;one spot&lt;/ins&gt; with whatever object you&amp;rsquo;d like dumped.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;jscript&#34;&gt;var objectInfo = &amp;ldquo;&amp;rdquo;;
+// Change ex to whatever object you want to debug.
+var objectToDebug = ex;
+for (var prop in objectToDebug) {
+    objectInfo += &amp;ldquo;property: &amp;ldquo; + prop + &amp;rdquo; value: [&amp;rdquo; + objectToDebug[prop] + &amp;ldquo;]\n&amp;rdquo;;
+}
+objectInfo += &amp;ldquo;toString(): &amp;ldquo; + &amp;rdquo; value: [&amp;rdquo; + objectToDebug.toString() + &amp;ldquo;]&amp;rdquo;;
+alert(objectInfo);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I&amp;rsquo;m almost positive I found this code (pre-modifications) somewhere, but can&amp;rsquo;t determine where that was (and having emailed myself this in December, lost my browsing history from that time). &lt;ins&gt;I&amp;rsquo;ve also updated the code to make use of variables, instead of the old method of adding the object to dump in a total of three spots.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;And here&amp;rsquo;s a function:&lt;/ins&gt;&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;jscript&#34;&gt;function dumpObject(o) {
+    var objectInfo = &amp;ldquo;&amp;rdquo;;
+    var objectToDebug = o;
+    for (var prop in objectToDebug) {
+        objectInfo += &amp;ldquo;property: &amp;ldquo; + prop + &amp;rdquo; value: [&amp;rdquo; + objectToDebug[prop] + &amp;ldquo;]\n&amp;rdquo;;
+    }
+    objectInfo += &amp;ldquo;toString(): &amp;ldquo; + &amp;rdquo; value: [&amp;rdquo; + objectToDebug.toString() + &amp;ldquo;]&amp;rdquo;;
+    alert(objectInfo);
+}&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regular Expression tester - JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Regular-Expression-tester-JavaScript/</link>
+      <pubDate>Mon, 21 Jan 2008 18:15:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Regular-Expression-tester-JavaScript/</guid>
+      <description>&lt;p&gt;In a previous post, I posted the code I used for &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Regular-Expression-tester-ColdFusion.aspx&#34;&gt;a ColdFusion regular expression tester&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This time I&#39;ve got an attempt at a JavaScript version. There&#39;s a number of TODOs, but ...&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34;
+ &amp;nbsp;&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&amp;gt;
+ &amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
+ &amp;lt;head&amp;gt;
+ &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=iso-8859-1&#34; /&amp;gt;
+ &amp;lt;title&amp;gt;JavaScript Regular Expression Tester&amp;lt;/title&amp;gt;
+ &amp;lt;style type=&#34;text/css&#34;&amp;gt;
+ &amp;nbsp;#form_help {
+ &amp;nbsp;&amp;nbsp;float:right;
+ &amp;nbsp;&amp;nbsp;font-size:.8em;
+ &amp;nbsp;&amp;nbsp;width:50%;
+ &amp;nbsp;}
+ &amp;nbsp;#form_results {
+ &amp;nbsp;&amp;nbsp;margin:1em;
+ &amp;nbsp;&amp;nbsp;width:45%;
+ &amp;nbsp;}
+ &amp;nbsp;.highlight {
+ &amp;nbsp;&amp;nbsp;background-color:#ff9;
+ &amp;nbsp;}
+ &amp;nbsp;#form_highlighttext {
+ &amp;nbsp;&amp;nbsp;border:1px dashed #ccc;
+ &amp;nbsp;&amp;nbsp;margin-left:1em;
+ &amp;nbsp;&amp;nbsp;width:45%;
+ &amp;nbsp;}
+ &amp;lt;/style&amp;gt;
+ &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+ &amp;nbsp;function RemoveHTML(TextContent) {
+ &amp;nbsp;&amp;nbsp;var str = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;str = TextContent;
+ &amp;nbsp;&amp;nbsp;str = str.replace(/&amp;lt;/g, &#34;&amp;amp;lt;&#34;);
+ &amp;nbsp;&amp;nbsp;
+ &amp;nbsp;&amp;nbsp;return str;
+ &amp;nbsp;}
+ &amp;nbsp;function TestExpression() {
+ &amp;nbsp;&amp;nbsp;var Expression = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;var ExpressionParameters = &#39;gm&#39;;
+ &amp;nbsp;&amp;nbsp;var ExpressionText = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;try {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_error&#39;).innerHTML = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_results&#39;).innerHTML = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_highlighttext&#39;).innerHTML = &#39;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;if (document.getElementById(&#39;InputExpression&#39;).value != &#39;&#39; &amp;amp;&amp;amp; document.getElementById(&#39;InputText&#39;).value != &#39;&#39;) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// TODO better check and error writing - use span with _s
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (document.getElementById(&#39;CheckCase&#39;).checked) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ExpressionParameters += &#39;i&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Expression = document.getElementById(&#39;InputExpression&#39;).value;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ExpressionText = document.getElementById(&#39;InputText&#39;).value;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters);
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText);
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (ExpressionTest == true) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_results&#39;).innerHTML = &#39;&amp;lt;p&amp;gt;The following results were found for your search:&amp;lt;/p&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// Testing it appears to run it, so ...
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ExpressionObject = new RegExp(Expression, ExpressionParameters);
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var StringPosition = 0;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var LastPosition = 0;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var CountResults = 0;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;var ExpressionResults = ExpressionObject.exec(ExpressionText);
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (ExpressionObject.global) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;while (ExpressionResults != null) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_results&#39;).innerHTML += &#39;&#39; + RemoveHTML(ExpressionResults[0]) + &#39; (&#39; + ExpressionResults.index + &#39; - &#39; + ExpressionObject.lastIndex + &#39;)&#39; + &#39;&amp;lt;br /&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (CountResults == 0) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;StringPosition = 0;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;} else {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;StringPosition = LastPosition;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_highlighttext&#39;).innerHTML += RemoveHTML(ExpressionText.substring(StringPosition, ExpressionResults.index)) + &#39;&amp;lt;span class=&#34;highlight&#34;&amp;gt;&#39; + RemoveHTML(ExpressionText.substring(ExpressionResults.index, ExpressionObject.lastIndex)) + &#39;&amp;lt;/span&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;LastPosition = ExpressionObject.lastIndex;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ExpressionResults = ExpressionObject.exec(ExpressionText);
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;CountResults++;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if (LastPosition &amp;amp;&amp;amp; LastPosition &amp;lt; ExpressionText.length) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_highlighttext&#39;).innerHTML += RemoveHTML(ExpressionText.substring(LastPosition, ExpressionText.length));
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;} else {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// TODO
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_results&#39;).innerHTML += &#39;&#39; + ExpressionResults[0] + &#39; (&#39; + ExpressionResults.index + &#39;)&#39; + &#39;&amp;lt;br /&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_results&#39;).innerHTML += &#39;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;//document.getElementById(&#39;form_highlighttext&#39;).innerHTML += ExpressionText.substring(StringPosition, ExpressionResults.index) + &#39;&amp;lt;span class=&#34;highlight&#34;&amp;gt;&#39; + ExpressionResults + &#39;&amp;lt;/span&amp;gt;&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;} else {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_error&#39;).innerHTML = &#39;No match found.&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;} else {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;document.getElementById(&#39;form_error&#39;).innerHTML = &#39;You must enter both an expression and text to check that expression against.&#39;;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;return false;
+ &amp;nbsp;&amp;nbsp;} catch(e) {
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;alert(e.message);
+ &amp;nbsp;&amp;nbsp;}
+ &amp;nbsp;}
+ &amp;lt;/script&amp;gt;
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body&amp;gt;
+ &amp;nbsp;&amp;lt;div id=&#34;form_help&#34;&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;p&amp;gt;Regular expression notation:&amp;lt;/p&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;ul&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;li&amp;gt;\b = Word boundary&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\B = Word nonboundary&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\d = Numeral (0-9)&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\D = Nonnumeral&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\s = Single whitespace&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\S = Single nonwhitespace&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\w = Letter, numeral, underscore&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;\W = Not \w&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;. = Any character except newline&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;[] = Any character(s) in brackets&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;[^] = Not []&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;* = Preceding zero or more times&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;? = Preceding zero or one time&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;+ = Precending one or more times&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;{&amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt;} = The preceding &amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt; times&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;{&amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt;,} = &amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt; or more times &amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;{&amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt;,&amp;lt;em&amp;gt;m&amp;lt;/em&amp;gt;}= At least &amp;lt;em&amp;gt;n&amp;lt;/em&amp;gt;, at most &amp;lt;em&amp;gt;m&amp;lt;/em&amp;gt;, times&amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;^ = Beginning of the string or line &amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;li&amp;gt;$ = End of the string or line &amp;lt;/li&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;/ul&amp;gt;
+ &amp;nbsp;&amp;lt;/div&amp;gt;
+ &amp;nbsp;&amp;lt;form onsubmit=&#34;return false;&#34;&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;label for=&#34;InputExpression&#34;&amp;gt;Regular expression:&amp;lt;/label&amp;gt;&amp;lt;input type=&#34;text&#34; id=&#34;InputExpression&#34; value=&#34;&#34; /&amp;gt;&amp;lt;br /&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;label for=&#34;CheckCase&#34;&amp;gt;Ignore case:&amp;lt;/label&amp;gt;&amp;lt;input type=&#34;checkbox&#34; id=&#34;CheckCase&#34; /&amp;gt;&amp;lt;br /&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;textarea cols=&#34;50&#34; id=&#34;InputText&#34; rows=&#34;5&#34;&amp;gt;Hello and welcome. I do hope you&#39;ll come again. Will you?&amp;lt;/textarea&amp;gt;&amp;lt;br /&amp;gt;
+ &amp;nbsp;&amp;nbsp;&amp;lt;input type=&#34;button&#34; onclick=&#34;TestExpression();&#34; value=&#34;Test expression&#34; /&amp;gt;
+ &amp;nbsp;&amp;lt;/form&amp;gt;
+ &amp;nbsp;&amp;lt;div id=&#34;form_error&#34; style=&#34;color:red;&#34;&amp;gt;&amp;lt;/div&amp;gt;
+ &amp;nbsp;&amp;lt;div id=&#34;form_results&#34;&amp;gt;&amp;lt;/div&amp;gt;
+ &amp;nbsp;&amp;lt;div id=&#34;form_highlighttext&#34;&amp;gt;&amp;lt;/div&amp;gt;
+ &amp;lt;/body&amp;gt;
+ &amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As always, comments appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gmail and Firefox 2.0.0.5 - issues with JavaScript?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</link>
+      <pubDate>Tue, 24 Jul 2007 12:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</guid>
+      <description>&lt;p&gt;
+Over the past couple of days I&amp;#39;ve noticed issues with the Inbox view of Gmail being extremely slow on Firefox (2.0.0.5, the current version).
+&lt;/p&gt;
+&lt;p&gt;
+Disabling JavaScript makes the load much faster (naturally), but even switching to Internet Explorer (7) works (with JS on).
+&lt;/p&gt;
+&lt;p&gt;
+With Firefox 2.0.0.5 already having a security issue, I wonder if updating was a good decision in this case. Perhaps 2.0.0.5 was released a bit too quickly?&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Browser support for different versions of JavaScript</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</link>
+      <pubDate>Fri, 19 Jan 2007 22:04:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
+      <description>&lt;p&gt;
+After a number of Google searches, I&amp;#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&amp;#39;ll be going over this information, and trying to dig up more.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.anybrowser.com/javascript.html&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;AnyBrowser.com&lt;/a&gt; provides information for IE 2 to IE 5, Netscape 2 to Netscape 6, and AOL 3 to 5.  This covers JavaScript 1.3 (IE 5 and AOL 5) and JavaScript 1.4 (Netscape 6).
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/Core_JavaScript_1.5_Reference:About&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;Mozilla.org&lt;/a&gt; provides information for JavaScript 1.0 to JavaScript 1.7, but only for Netscape and Mozilla/Firefox.  JavaScript 1.5 is Navigator 6 and Mozilla 0.6x-0.9x, JavaScript 1.6 is Firefox 1.5, and JavaScript 1.7 is Firefox 2.
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Interestingly, JavaScript 1.4 is listed as n/a on Mozilla, and Netscape 6 under JavaScript 1.5, but AnyBrowser has 6 under 1.4 ...
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+Using the Web as my guide, I&amp;#39;ve determined two ways that I believe will test for JavaScript 1.6 and JavaScript 1.7 support, based upon the following two pages.
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.6&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;http://developer.mozilla.org/en/docs/New_in_JavaScript_1.7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+For JavaScript 1.6, I&amp;#39;ll be using the following code snippet.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    var num = 15;&lt;br /&gt;
+    document.write(String.replace(num, /5/, &amp;#39;2&amp;#39;) + &amp;quot; (should be &amp;#39;12&amp;#39;)&amp;lt;br /&amp;gt;\n&amp;quot;);
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+For JavaScript 1.7, I&amp;#39;ll be using this code, as well as the previous code.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    var x = 5;&lt;br /&gt;
+    var y = 0;&lt;br /&gt;
+    document.write( let(x = x + 10, y = 12) x+y + &amp;quot; (should be &amp;#39;27&amp;#39;)&amp;lt;br /&amp;gt;\n&amp;quot;);&lt;br /&gt;
+    document.write(x+y + &amp;quot;&amp;lt;br /&amp;gt;\n&amp;quot;);
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+The testing page is available on my &lt;a href=&#34;http://strivinglife.cfdeveloper.co.uk/javascript_text.cfm&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;CFDeveloper site&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+First, if you know of any code that I can use to test JavaScript 1.5 and 1.4 support, please post or email to me, so I can add that to my testing page.
+&lt;/p&gt;
+&lt;p&gt;
+Second, if you can test a different browser/version, please also post your results.
+&lt;/p&gt;
+&lt;h4&gt;Testing results&lt;/h4&gt;
+&lt;p&gt;
+My testing of Firefox 2.0.0.1, Internet Explorer 7.0.5730.11, and Opera 9.10.  Since the current version of Netscape uses either IE or FF for rendering, I&amp;#39;ve skipped any testing of it.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Firefox 2.0.0.1&lt;/strong&gt; displays one line for JavaScript 1.5 and less.  These are simple document.write()s, so they should display in most browsers.  Version information is passed through language, not the type, and the type is text/javascript.  In addition, it displays the scripts for 1.6 and 1.7 whether the type is text/javascript or application/javascript, and the version is stated.  For 1.6, it doesn&amp;#39;t display the 1.7 code if the type is text/javascript, with no version.  It does for 1.6.  So, 1.6 has three groups of two lines, while 1.7 has two groups of four lines.  From what I can tell, this is expected behaviour.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Internet Explorer 7.0.5730.11&lt;/strong&gt; and &lt;strong&gt;Opera 9.10&lt;/strong&gt; have the same display for this page.  Through JavaScript 1.5, they each have one line for each - which is to be expected.  For 1.6, they have a single line, which is the first, and simple, document.write() of some text.  No version is passed, and the type is set to text/javascript.  At this point, nothing else is displayed.  For 1.7, nothing is displayed.
+&lt;/p&gt;
+&lt;p&gt;
+If, for 1.6, we change &amp;lt;script language=&amp;quot;javascript1.6&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt; to &amp;lt;script language=&amp;quot;javascript1.6&amp;quot; type=&amp;quot;application/javascript&amp;quot;&amp;gt;, only Opera keeps the initial document.write for 1.6.  Internet Explorer displays nothing under the 1.6 heading.
+&lt;/p&gt;
+&lt;h4&gt;Current conclusions&lt;/h4&gt;
+&lt;p&gt;
+Based upon this initial testing, it appears that application/javascript, and setting the version in the type, is not supported by the current version of Internet Explorer.  In addition, Firefox is the only one of the three browsers tested that supports up to JavaScript 1.7.  Based upon how IE and Opera behaved with the JavaScript 1.6 test, I&amp;#39;d say that there is no support for 1.6 features, but that doesn&amp;#39;t stop them from giving it a go.  If they run into a problem, they appear to quit looking through the script block.
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;d be very interested in documentation regarding this, so if you know more, please do post what you can share.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review of &#39;Ajax for Web Application Developers&#39; by Kris Hadlock (2006)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-of-Ajax-for-Web-Application-Developers-by-Kris-Hadlock-%282006%29/</link>
+      <pubDate>Wed, 13 Dec 2006 11:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-of-Ajax-for-Web-Application-Developers-by-Kris-Hadlock-%282006%29/</guid>
+      <description>&lt;p&gt;
+The short stick: New to Ajax? You may want to look elsewhere ... 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;ve been working on the Web for a handful+ of years, but save for a brief stunt back in the late 90s, I haven&amp;#39;t had much use for JavaScript (with the exception of a few one/two-liners). As such, I came to &lt;a href=&#34;http://www.amazon.com/gp/product/0672329123?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;this book&lt;/a&gt; as a new-comer to Ajax. 
+&lt;/p&gt;
+&lt;p&gt;
+I also like to learn by way of example, instead of explanation, so code examples are a big plus, if not a requirement. 
+&lt;/p&gt;
+&lt;p&gt;
+Unfortunately, from this background, my expectations for this book appear to have been set too high.&amp;nbsp; Granted, it may be because of the lack of full examples in the book (and that they are not available online - more on this momentarily).&amp;nbsp; In fact, that&amp;#39;s probably the only thing holding me back. 
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s minor errors in code in the book as well, but that&amp;#39;s to be expected, and a second edition/printing will fix most of these.&amp;nbsp; By itself, this shouldn&amp;#39;t hold you back. 
+&lt;/p&gt;
+&lt;p&gt;
+But as a beginner&amp;#39;s resource, I&amp;#39;m not sure that this is the book you&amp;#39;d want to pick up.&amp;nbsp; I actually recommend that you take a look elsewhere, particularly online, for how to start with Ajax. 
+&lt;/p&gt;
+&lt;p&gt;
+Once you&amp;#39;ve got the basics down, then you can take a look at this book, as it does provide from very good tips as far as keeping your code standardized. 
+&lt;/p&gt;
+&lt;p&gt;
+Had I been the first reviewer, I would have given this book four stars.&amp;nbsp; Since I was not, I have decided to give it three.&amp;nbsp; This is because I feel it&amp;#39;s a good book, but not for as large an audience as you may think, based upon reading the description.&amp;nbsp; Again, I feel that this book is more for if you&amp;#39;ve worked with Ajax, but not in a standard/formal way. 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+&lt;p&gt;
+Regarding the code I mentioned above, while it&amp;#39;s true that there is a zip file of the code files, I don&amp;#39;t feel that it truly contains all of the necessary code.&amp;nbsp; Again, keep in mind that I like to work with full code examples, especially when we&amp;#39;re talking about JavaScript (since code is sometimes required in the HEAD, and sometimes not). 
+&lt;/p&gt;
+&lt;p&gt;
+I have another Developer&amp;#39;s Library book, PHP and MySQL Web Development (the Third Edition), so that&amp;#39;s part of why my expectations may have been so high.&amp;nbsp; But, I wasn&amp;#39;t expecting the amount of full code that the ColdFusion MX 7 &amp;#39;blue books&amp;#39; provides. ;) 
+&lt;/p&gt;
+&lt;p&gt;
+Even if you don&amp;#39;t have a working application, let me see where you, the author, are at the end of a section or chapter, even if we&amp;#39;re just creating one new file and/or adding code to an existing/new file.&amp;nbsp; This goes for whether you write online or not.&amp;nbsp; If there&amp;#39;s code in a chapter, and it&amp;#39;s not a snippet, than I&amp;#39;d like to see how the full document&amp;#39;s code looks. 
+&lt;/p&gt;
+&lt;p&gt;
+I don&amp;#39;t care that it&amp;#39;s not a complete application, I just may want to have your code on screen while I read through the chapter. 
+&lt;/p&gt;
+&lt;h4&gt;Update, 08/23/2007&lt;/h4&gt;
+&lt;p&gt;
+On Amazon.com, another reviewer of this text referred to my review, particularly regarding my comments on not being for beginners. My comment on his review is below. 
+&lt;/p&gt;
+&lt;p&gt;
+Hi Rich. 
+&lt;/p&gt;
+&lt;p&gt;
+Since I think you were referring to me, I&amp;#39;ll elaborate. 
+&lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;re right that it doesn&amp;#39;t say this book is for beginners, but even having expanded my knowledge since my original review, this book still falls far short of my expectations for a readable text for what the book&amp;#39;s description offers. 
+&lt;/p&gt;
+&lt;p&gt;
+From the book description, we find the following: 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;quot;Ajax for Web Application Developers provides the in-depth working knowledge of Ajax that web developers need to take their web applications to the next level.&amp;quot; 
+&lt;/p&gt;
+&lt;p&gt;
+This suggests to me that Web developers (id est, those who have developed for the Web, whether it be static or dynamic languages) can, with this book, begin down that dark path of using Ajax for their applications. 
+&lt;/p&gt;
+&lt;p&gt;
+I think this book was marketed to beginners of Ajax (especially in some electronic newsletters around the time of its publication) when it most definitely should not have been. 
+&lt;/p&gt;
+&lt;p&gt;
+I think even your review shows some of this confusion: 
+&lt;/p&gt;
+&lt;p&gt;
+&amp;quot;It&amp;#39;s a book for web application developers seeking to incorporate AJAX technology into web applications. I wouldn&amp;#39;t expect a book with that kind of scope to be appropriate for beginners.&amp;quot; 
+&lt;/p&gt;
+&lt;p&gt;
+Perhaps our ideas of Web applications are different, but I&amp;#39;m frankly confused on why you&amp;#39;d implement Ajax on anything but a Web application (unless we were to focus on the iPhone and try to swim in those muddy, and getting muddier, waters). 
+&lt;/p&gt;
+&lt;p&gt;
+I would like to hear your thoughts on this, as I may be missing a very important point. 
+&lt;/p&gt;
+&lt;p&gt;
+BTW: I did, otherwise, find your review helpful and have marked it as such. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

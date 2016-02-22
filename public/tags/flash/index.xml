@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flash on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/flash/</link>
+    <description>Recent content in Flash on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Apr 2010 08:20:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/flash/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dynamically generating a list of videos for OSFLV Player with ASP.NET</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</link>
+      <pubDate>Tue, 13 Apr 2010 08:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/</guid>
+      <description>&lt;p&gt;I&#39;ve had this code for a while, but here&#39;s some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what&#39;s picked.&lt;/p&gt;
+&lt;p&gt;This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.&lt;/p&gt;
+&lt;h3&gt;Default.aspx&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;%@ Page Language=&#34;C#&#34; AutoEventWireup=&#34;true&#34;  CodeFile=&#34;Default.aspx.cs&#34; Inherits=&#34;_Default&#34; %&amp;gt;
+
+&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
+
+&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
+&amp;lt;head runat=&#34;server&#34;&amp;gt;
+    &amp;lt;title&amp;gt;FLV video player&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;form id=&#34;form1&#34; runat=&#34;server&#34;&amp;gt;
+    &amp;lt;div&amp;gt;
+        &amp;lt;a href=&#34;Default.aspx&#34;&amp;gt;Refresh listing&amp;lt;/a&amp;gt;&amp;lt;br/&amp;gt;
+        &amp;lt;asp:DropDownList ID=&#34;DropDownList1&#34; runat=&#34;server&#34;&amp;gt;
+        &amp;lt;/asp:DropDownList&amp;gt;
+        &amp;lt;asp:Button ID=&#34;Button1&#34; runat=&#34;server&#34; Text=&#34;View&#34; onclick=&#34;Button1_Click&#34; /&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div id=&#34;videoPlayer&#34; runat=&#34;server&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/form&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Default.aspx.cs&lt;/h3&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.IO;
+
+public partial class _Default : System.Web.UI.Page {
+
+    int videoWidth = 1000; // = 200/170 ratio
+    int videoHeight = 680; // 400x340 = default
+
+    string playerLocation = &#34;osflv_player_v3/player.swf&#34;;
+
+    protected void Page_Load(object sender, EventArgs e) {
+
+        if (!IsPostBack) {
+            DirectoryInfo directory = new DirectoryInfo(Server.MapPath(&#34;/videos&#34;));
+
+            FileInfo[] files = directory.GetFiles();
+
+            foreach (FileInfo file in files) {
+                if (file.Extension == &#34;.flv&#34;) {
+                    DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4));
+                }
+            }
+        }
+
+    }
+    protected void Button1_Click(object sender, EventArgs e) {
+        string video = &#34;/videos/&#34; + DropDownList1.SelectedItem.Text + &#34;.flv&#34;;
+
+        videoPlayer.InnerHtml = &#34;&amp;lt;object width=&#39;&#34; + videoWidth.ToString() + &#34;&#39; height=&#39;&#34; + videoHeight.ToString() + &#34;&#39; id=&#39;flvPlayer2&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;param name=&#39;allowFullScreen&#39; value=&#39;true&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;param name=&#39;movie&#39; value=&#39;&#34; + playerLocation + &#34;?movie=&#34; + video + &#34;&amp;amp;fgcolor=0x0b7ba4&amp;amp;bgcolor=0x333333&amp;amp;autoload=on&amp;amp;autorewind=on&amp;amp;autoplay=on&amp;amp;volume=5&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;embed src=&#39;&#34; + playerLocation + &#34;?movie=&#34; + video + &#34;&amp;amp;fgcolor=0x0b7ba4&amp;amp;bgcolor=0x333333&amp;amp;autoload=on&amp;amp;autorewind=on&amp;amp;autoplay=on&amp;amp;volume=5&#39; width=&#39;&#34; + videoWidth.ToString() + &#34;&#39; height=&#39;&#34; + videoHeight.ToString() + &#34;&#39; allowFullScreen=&#39;true&#39; type=&#39;application/x-shockwave-flash&#39;&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;/object&amp;gt;&#34;;
+        videoPlayer.InnerHtml += &#34;&amp;lt;br/&amp;gt;&amp;lt;span style=&#39;color:#ccc;&#39;&amp;gt;&#34; + video + &#34;&amp;lt;/span&amp;gt;&#34;;
+    }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A default Web.config file can be created and used, and a &lt;strong&gt;videos&lt;/strong&gt; directory is checked for the listing of videos.&lt;/p&gt;
+&lt;p&gt;For ease, I recommend using &lt;a href=&#34;http://strivinglife.com/words/post/Cassini-3502-built-and-ready-to-go.aspx&#34;&gt;Cassini&lt;/a&gt; to run the Web site on your own computer (creating a batch file similar to what is noted there).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick and dirty conversions to FLV (Flash Video)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</link>
+      <pubDate>Sat, 23 Feb 2008 12:45:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
+      <description>&lt;p&gt;
+I purchased a Casio EX-Z1200 a bit ago, which I&amp;#39;ve been playing around with. Overall, I&amp;#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&amp;#39;t the best for me. 
+&lt;/p&gt;
+&lt;p&gt;
+After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for. 
+&lt;/p&gt;
+&lt;p&gt;
+However, along came &lt;a href=&#34;http://ivcsoft.free.fr/&#34; target=&#34;_blank&#34;&gt;Internet Video Convertor (IVC)&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+Of all the people in the world, it is the French who are most likely to create a multi-language site/piece of software. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+I haven&amp;#39;t played with it enough to be fully satisifed, but I&amp;#39;m extremely happy with what I&amp;#39;ve got thus far. 
+&lt;/p&gt;
+&lt;p&gt;
+One of the things that IVC can do is convert to FLV format, which is similar to SWF, except it allows for streaming Flash video. Yes, streaming Flash. 
+&lt;/p&gt;
+&lt;p&gt;
+While one can host videos on a variety of sites, I&amp;#39;d really like to be able to host on my own server, when possible (and/but still post to those other sites as well). 
+&lt;/p&gt;
+&lt;p&gt;
+Per this Adobe TechNote (&lt;a rel=&#34;nofollow&#34; href=&#34;http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_19439&amp;amp;sliceId=2&#34; target=&#34;_blank&#34;&gt;Windows 2003 Server does not stream FLV videos&lt;/a&gt;) I just needed to add a simple MIME type (&lt;strong&gt;.flv&lt;/strong&gt; as &lt;strong&gt;flv-application/octet-stream&lt;/strong&gt;) and I could then use the IVC outputs (Video-to-Flash) to play any file from my server. 
+&lt;/p&gt;
+&lt;div class=&#34;tip&#34;&gt;
+&lt;p&gt;
+You can, if you so desire (I did) add this MIME type to just one site, instead of to the entire server. Adding it to the server allows any site to &amp;#39;understand&amp;#39;&amp;nbsp;FLV files, which may or may not be what you want in your particular situation(s). 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+While I could have played other formats as well, the benefit of this is that other OS users can run this as well. 
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;re interested in finding out more about FLV&amp;nbsp;and/versus SWF&amp;nbsp;files, there&amp;#39;s an interesting article from Macromedia, &lt;a href=&#34;http://www.adobe.com/devnet/flash/articles/flv_download.html&#34; target=&#34;_blank&#34;&gt;Delivering Flash Video: Understanding the Difference Between Progressive Download and Streaming Video&lt;/a&gt;&amp;nbsp;(2004). 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://media.strivinglife.com/video/20060924_DW8Snippets.html&#34; target=&#34;_blank&#34;&gt;Watch Creating snippets in Dreamweaver 8 (Windows)&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;h3&gt;File conversion details&lt;/h3&gt;
+&lt;p&gt;
+Here are some details on the conversion: 
+&lt;/p&gt;
+&lt;p&gt;
+The source file was a 108 MB AVI file, captured using&amp;nbsp;CamStudio 2.00, at 640x480. 
+&lt;/p&gt;
+&lt;p&gt;
+Converting this into a 320x240 FLV file resulted in a 4.93 MB file. However, at that size the text was difficult to read. 
+&lt;/p&gt;
+&lt;p&gt;
+Upgrading to 640x480 resulted in a 38.2 MB file. 
+&lt;/p&gt;
+&lt;p&gt;
+The SWF player necessary to actually server the FLV added another 90 KB. 
+&lt;/p&gt;
+&lt;p&gt;
+Despite all that, the file looks remarkably well, even better than the &lt;a rel=&#34;nofollow&#34; href=&#34;http://video.google.com/videoplay?docid=3586025281835355534&#34; target=&#34;_blank&#34;&gt;Google Video version&lt;/a&gt; (which was resized, obviously). 
+&lt;/p&gt;
+&lt;p&gt;
+For non-text video, however, I&amp;#39;d say 320x240 may have worked (once I have some good video from my Casio, I&amp;#39;ll be uploading that through the same process). 
+&lt;/p&gt;
+&lt;p&gt;
+The six-and-a-half minute video didn&amp;#39;t take all that long to convert to FLV, from AVI. The MOV files that I&amp;#39;ve converted seem to take longer, despite being shorter in length. 
+&lt;/p&gt;
+&lt;p&gt;
+It seems it&amp;#39;s also possible to stream FLV files using IIS and&amp;nbsp;.NET, but I haven&amp;#39;t dug into it quite yet. More on&amp;nbsp;that in&amp;nbsp;&lt;a href=&#34;http://blogs.ugidotnet.org/kfra/archive/2006/10/04/50003.aspx&#34; target=&#34;_blank&#34;&gt;FLV Flash video streaming with ASP.NET 2.0, IIS and HTTP handler&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+Further updates to follow. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Daily Show is now available online</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/The-Daily-Show-is-now-available-online/</link>
+      <pubDate>Fri, 19 Oct 2007 17:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/The-Daily-Show-is-now-available-online/</guid>
+      <description>&lt;p&gt;
+One of the view things I miss about cable is The Daily Show. Thankfully, I can now get my fix, as well as catch up on older shows, online, legally. 
+&lt;/p&gt;
+&lt;p&gt;
+The archives are available from the Show&amp;#39;s &lt;a href=&#34;http://www.thedailyshow.com/video/index.jhtml&#34;&gt;Videos&lt;/a&gt; area. 
+&lt;/p&gt;
+&lt;p&gt;
+Among the gems is this one on the recent healthcare veto: &lt;a href=&#34;http://www.thedailyshow.com/video/index.jhtml?videoId=109136&amp;amp;title=headlines-kids-healthcare-veto&#34;&gt;Headlines - Kids&amp;#39; Healthcare Veto&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;p&gt;
+The short commercial at the beginning and end are fairly non-obtrusive, save when they cut into the end abruptly. 
+&lt;/p&gt;
+&lt;p&gt;
+More shows/stations should do this, especially when they have such a popular show. After all, the more people talk about a show, the more likely the show is to gain even more popularity. And, if I can watch clips on the show or station site, they have more control over what I&amp;#39;m shown, instead of one of the many sites out there were videos can be hosted. 
+&lt;/p&gt;
+&lt;p&gt;
+I do like what Cartoon Network does with their &lt;a href=&#34;http://www.adultswim.com/video/index.html&#34;&gt;Adult Swim&lt;/a&gt; videos, however, so I definitely think they could borrow from that site as far as switching from one video to another. While The Daily Show is much more about the individual clips, you would think there would be a way to move throughout the show, or watch one segment after the other (with an ad thrown in every once in a while to make things even). 
+&lt;/p&gt;
+&lt;p&gt;
+In short, it needs some work to be as good a user-interface as elsewhere, but it&amp;#39;s an excellent start, and a very good idea. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New gallery posted</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</link>
+      <pubDate>Mon, 21 May 2007 22:14:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</guid>
+      <description>&lt;p&gt;
+After a bit of looking around, for the best gallery application, I&amp;#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&amp;#39;m requiring version 8 or higher for mine), and it did cost some money, it&amp;#39;s a great little application.
+&lt;/p&gt;
+&lt;p&gt;
+You can see what I&amp;#39;ve currently got available at &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s still a lot I&amp;#39;ve got to play with, but, it&amp;#39;s at least got a start of 12 images (at this time). The gallery requires a pretty fast connection, but it is what it is.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

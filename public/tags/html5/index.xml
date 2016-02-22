@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html5 on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/html5/</link>
+    <description>Recent content in Html5 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Feb 2011 18:24:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Supporting HTML5 manifest files on IIS 7 using Web.config</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
+      <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
+      <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
+&lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
+&lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;
+&amp;lt;configuration&amp;gt;
+    &amp;lt;system.webServer&amp;gt;
+        &amp;lt;staticContent&amp;gt;
+            &amp;lt;remove fileExtension=&#34;.manifest&#34; /&amp;gt;
+            &amp;lt;mimeMap fileExtension=&#34;.manifest&#34; mimeType=&#34;text/cache-manifest&#34; /&amp;gt;
+        &amp;lt;/staticContent&amp;gt;
+    &amp;lt;/system.webServer&amp;gt;
+&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Any number of online sites can then be used to confirm that the file is passed with the correct type.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

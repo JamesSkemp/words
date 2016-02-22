@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Installing Zend Optimizer on a local Windows-based, Apache, server - My New Hugo Site</title>
+    <meta property='og:title' content="Installing Zend Optimizer on a local Windows-based, Apache, server - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2006-02-26T18:27:00-06:00">
+        <meta itemprop="headline" content="Installing Zend Optimizer on a local Windows-based, Apache, server">
+        <meta itemprop="description" content="
+
+Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server.
+
+
+
+From Zend&#39;s FAQ,
+
+
+    
+    Why use the Zend Optimizer; isn&#39;t PHP supposed to be quite fast already?
+    
+    
+    The standard Zend run-time compiler used by PHP is indeed extremely fast, generating code that is usually 2 to 10 times faster. But an application that uses the Zend Optimizer typically executes another 40% to 100% faster.
+    
+
+
+So, Zend Optimizer will help decrease the time spent on processing code. If you run the file we created a few steps back, probably called http://localhost/phpinfo.php (which basically runs &lt;?php phpinfo(); ?&gt;), you&#39;ll notice a line that says &quot;This program makes use of the Zend Scripting Language Engine: Zend Engine v1.3.0, Copyright &copy; 1998-2004 Zend Technologies&quot;. This is the standard Zend run-time compiler that is mentioned above. Once we download and install the Zend Optimizer, we&#39;ll see some additional lines here.
+
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-02-26T18:27:00-06:00">Sun, Feb 26, 2006</time>
+          <h1 class="article-title">Installing Zend Optimizer on a local Windows-based, Apache, server</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><div class="note">
+<p>
+<em>Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see <a href="/words/post/Upgrading-to-Zend-Optimizer-301-on-a-local-Windows-based2c-Apache2c-server.aspx">Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server</a>.</em>
+</p>
+</div>
+<p>
+From Zend&#39;s FAQ,
+</p>
+<blockquote>
+    <p>
+    <strong>Why use the Zend Optimizer; isn&#39;t PHP supposed to be quite fast already?</strong>
+    </p>
+    <p>
+    The standard Zend run-time compiler used by PHP is indeed extremely fast, generating code that is usually 2 to 10 times faster. But an application that uses the Zend Optimizer typically executes another 40% to 100% faster.
+    </p>
+</blockquote>
+<p>
+So, Zend Optimizer will help decrease the time spent on processing code. If you run the file we created a few steps back, probably called <a href="http://localhost/phpinfo.php">http://localhost/phpinfo.php</a> (which basically runs &lt;?php phpinfo(); ?&gt;), you&#39;ll notice a line that says &quot;This program makes use of the Zend Scripting Language Engine: Zend Engine v1.3.0, Copyright &copy; 1998-2004 Zend Technologies&quot;. This is the standard Zend run-time compiler that is mentioned above. Once we download and install the Zend Optimizer, we&#39;ll see some additional lines here.
+</p>
+<!--adsense-->
+<p>
+<strong>Download Zend Optimizer</strong>
+</p>
+<p>
+The first thing we&#39;ll be doing is downloading Zend Optimizer. You can download a copy at <a href="http://www.zend.com/products/zend_optimizer/">http://www.zend.com/products/zend_optimizer/</a>. Based upon the system requirements, we&#39;ll be able to install the, at the time of this writing, current version, version 2.6. In order to download this, you will have to create an account.
+</p>
+<p>
+After creating an account (or logging into your existing one), you&#39;ll want to download the Windows x86 version of Zend Optimizer 2.6.2 (or the current version that works with our version of PHP, 4.4.2). It&#39;s over 4.5 MB, so you may be in for a wait. Again, I recommend you download this file into the folder you created for these guides. Once the download has finished, open the executable file.
+</p>
+<p>
+<strong>Installing Zend Optimizer</strong>
+</p>
+<p>
+You&#39;ll first have to read and agree to the license agreement. After doing so, you&#39;ll need to choose an installation directory, which we&#39;ll leave as the default (C:\Program Files\Zend\ZendOptimizer-2.6.2). On the next screen, verify that the installer successfully detects the Web server (in our case, Apache 1.3.34).
+</p>
+<p>
+Next, verify that the folder containing the php.ini file is correct. If you&#39;ve followed the guide thus far, it&#39;s probably in c:\windows\, which is what the installer will probably have. Next, you&#39;ll have to choose the &quot;root folder of your Web server&quot;, and the default will be something like C:\Program Files\Apache Group\Apache, which is correct. Next, we&#39;ll have to choose the &quot;document root folder of your Web server&quot;, which is where our Web sites are located. It will choose C:\Program Files\Apache Group\Apache\htdocs, but we&#39;ll need to change this to C:\home, since this is where our Web sites are located.
+</p>
+<p>
+Finally, you&#39;ll be asked to verify the installation, and Install. When the installation occurs, it will be making a copy of the php.ini file, and creating a new version with some modifications. In order to do this, it will have to stop and then start Apache, which is absolutely fine.
+</p>
+<p>
+Once the installation has finished, we can make a quick backup copy of the php.ini file, as well as the file it created (which it would have notified us of). In my case, the backup was called &quot;php.ini.ZendOptimizer-2.6.2_bak&quot;.
+</p>
+<p>
+If we now visit <a href="http://localhost/phpinfo.php">http://localhost/phpinfo.php</a>, we&#39;ll notice that the bit on Zend has been increased to something like &quot;This program makes use of the Zend Scripting Language Engine: Zend Engine v1.3.0, Copyright &copy; 1998-2004 Zend Technologies with Zend Extension Manager v1.0.9, Copyright &copy; 2003-2006, by Zend Technologies with Zend Optimizer v2.6.2, Copyright &copy; 1998-2006, by Zend Technologies&quot;.
+</p>
+<p>
+And, with that, you&#39;ve successfully installed Zend. While you may not notice a change, especially if you haven&#39;t created a lot of PHP files, there is one, one which you would notice once you begin developing larger PHP implementations. In the future, you may want to even uninstall Zend, to see just how pages change.
+</p>
+<p>
+This in fact brings up a very good point. Now that Zend has created a backup of the pre-Zend php.ini file, you&#39;ll want to make a note of any changes you make in the php.ini file. I recommend you keep the pre-Zend php.ini file as it is, but create a copy where you make any modifications you may make to the post-Zend php.ini file.
+</p>
+<p>
+The modification, in case you wondering, is simply the addition of the below at the very end of the php.ini file.
+</p>
+<blockquote>
+    <p>
+    [Zend]<br />
+    zend_extension_manager.optimizer_ts=&quot;C:\Program Files\Zend\ZendOptimizer-2.6.2\lib\Optimizer-2.6.2&quot;<br />
+    zend_extension_ts=&quot;C:\Program Files\Zend\ZendOptimizer-2.6.2\lib\ZendExtensionManager.dll&quot;
+    </p>
+</blockquote>
+<p>
+Since you may make additional changes to this file down the line (such as if you look at installing another database solution when I do), it&#39;s important to know.
+</p>
+<p>
+And with that, we&#39;ve completed this tutorial, as we&#39;ve successfully installed Zend Optimizer.
+</p>
+<p>
+<a href="http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/">View all of the steps to creating a local Web server, for development.</a>
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/php" class="tag">php</a> <a href="http://replace-this-with-your-hugo-site.com/tags/zend%20optimizer" class="tag">zend optimizer</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server%2f&t=Installing%20Zend%20Optimizer%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server%2f&text=Installing%20Zend%20Optimizer%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server%2f&title=Installing%20Zend%20Optimizer%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zend Optimizer on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/zend-optimizer/</link>
+    <description>Recent content in Zend Optimizer on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 26 Feb 2006 18:27:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/zend-optimizer/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing Zend Optimizer on a local Windows-based, Apache, server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</link>
+      <pubDate>Sun, 26 Feb 2006 18:27:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+&lt;em&gt;Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Upgrading-to-Zend-Optimizer-301-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+From Zend&amp;#39;s FAQ,
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Why use the Zend Optimizer; isn&amp;#39;t PHP supposed to be quite fast already?&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+    The standard Zend run-time compiler used by PHP is indeed extremely fast, generating code that is usually 2 to 10 times faster. But an application that uses the Zend Optimizer typically executes another 40% to 100% faster.
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+So, Zend Optimizer will help decrease the time spent on processing code. If you run the file we created a few steps back, probably called &lt;a href=&#34;http://localhost/phpinfo.php&#34;&gt;http://localhost/phpinfo.php&lt;/a&gt; (which basically runs &amp;lt;?php phpinfo(); ?&amp;gt;), you&amp;#39;ll notice a line that says &amp;quot;This program makes use of the Zend Scripting Language Engine: Zend Engine v1.3.0, Copyright &amp;copy; 1998-2004 Zend Technologies&amp;quot;. This is the standard Zend run-time compiler that is mentioned above. Once we download and install the Zend Optimizer, we&amp;#39;ll see some additional lines here.
+&lt;/p&gt;
+&lt;!--adsense--&gt;
+&lt;p&gt;
+&lt;strong&gt;Download Zend Optimizer&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+The first thing we&amp;#39;ll be doing is downloading Zend Optimizer. You can download a copy at &lt;a href=&#34;http://www.zend.com/products/zend_optimizer/&#34;&gt;http://www.zend.com/products/zend_optimizer/&lt;/a&gt;. Based upon the system requirements, we&amp;#39;ll be able to install the, at the time of this writing, current version, version 2.6. In order to download this, you will have to create an account.
+&lt;/p&gt;
+&lt;p&gt;
+After creating an account (or logging into your existing one), you&amp;#39;ll want to download the Windows x86 version of Zend Optimizer 2.6.2 (or the current version that works with our version of PHP, 4.4.2). It&amp;#39;s over 4.5 MB, so you may be in for a wait. Again, I recommend you download this file into the folder you created for these guides. Once the download has finished, open the executable file.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Installing Zend Optimizer&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;ll first have to read and agree to the license agreement. After doing so, you&amp;#39;ll need to choose an installation directory, which we&amp;#39;ll leave as the default (C:\Program Files\Zend\ZendOptimizer-2.6.2). On the next screen, verify that the installer successfully detects the Web server (in our case, Apache 1.3.34).
+&lt;/p&gt;
+&lt;p&gt;
+Next, verify that the folder containing the php.ini file is correct. If you&amp;#39;ve followed the guide thus far, it&amp;#39;s probably in c:\windows\, which is what the installer will probably have. Next, you&amp;#39;ll have to choose the &amp;quot;root folder of your Web server&amp;quot;, and the default will be something like C:\Program Files\Apache Group\Apache, which is correct. Next, we&amp;#39;ll have to choose the &amp;quot;document root folder of your Web server&amp;quot;, which is where our Web sites are located. It will choose C:\Program Files\Apache Group\Apache\htdocs, but we&amp;#39;ll need to change this to C:\home, since this is where our Web sites are located.
+&lt;/p&gt;
+&lt;p&gt;
+Finally, you&amp;#39;ll be asked to verify the installation, and Install. When the installation occurs, it will be making a copy of the php.ini file, and creating a new version with some modifications. In order to do this, it will have to stop and then start Apache, which is absolutely fine.
+&lt;/p&gt;
+&lt;p&gt;
+Once the installation has finished, we can make a quick backup copy of the php.ini file, as well as the file it created (which it would have notified us of). In my case, the backup was called &amp;quot;php.ini.ZendOptimizer-2.6.2_bak&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+If we now visit &lt;a href=&#34;http://localhost/phpinfo.php&#34;&gt;http://localhost/phpinfo.php&lt;/a&gt;, we&amp;#39;ll notice that the bit on Zend has been increased to something like &amp;quot;This program makes use of the Zend Scripting Language Engine: Zend Engine v1.3.0, Copyright &amp;copy; 1998-2004 Zend Technologies with Zend Extension Manager v1.0.9, Copyright &amp;copy; 2003-2006, by Zend Technologies with Zend Optimizer v2.6.2, Copyright &amp;copy; 1998-2006, by Zend Technologies&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+And, with that, you&amp;#39;ve successfully installed Zend. While you may not notice a change, especially if you haven&amp;#39;t created a lot of PHP files, there is one, one which you would notice once you begin developing larger PHP implementations. In the future, you may want to even uninstall Zend, to see just how pages change.
+&lt;/p&gt;
+&lt;p&gt;
+This in fact brings up a very good point. Now that Zend has created a backup of the pre-Zend php.ini file, you&amp;#39;ll want to make a note of any changes you make in the php.ini file. I recommend you keep the pre-Zend php.ini file as it is, but create a copy where you make any modifications you may make to the post-Zend php.ini file.
+&lt;/p&gt;
+&lt;p&gt;
+The modification, in case you wondering, is simply the addition of the below at the very end of the php.ini file.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    [Zend]&lt;br /&gt;
+    zend_extension_manager.optimizer_ts=&amp;quot;C:\Program Files\Zend\ZendOptimizer-2.6.2\lib\Optimizer-2.6.2&amp;quot;&lt;br /&gt;
+    zend_extension_ts=&amp;quot;C:\Program Files\Zend\ZendOptimizer-2.6.2\lib\ZendExtensionManager.dll&amp;quot;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Since you may make additional changes to this file down the line (such as if you look at installing another database solution when I do), it&amp;#39;s important to know.
+&lt;/p&gt;
+&lt;p&gt;
+And with that, we&amp;#39;ve completed this tutorial, as we&amp;#39;ve successfully installed Zend Optimizer.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

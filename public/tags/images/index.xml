@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Images on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/images/</link>
+    <description>Recent content in Images on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Jul 2007 10:55:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/images/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Image thumbnails - blindingly fast on Ubuntu (vs. Windows)?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</link>
+      <pubDate>Tue, 17 Jul 2007 10:55:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</guid>
+      <description>&lt;p&gt;
+I&amp;#39;m at work, just finishing up my lunch period, and I&amp;#39;m really wishing I had access to my Ubuntu machine right now.
+&lt;/p&gt;
+&lt;p&gt;
+The reason? I just put in a CD of 200 images - one of my backup CDs - and was hoping to get a quick glance at what images were contained on the CD.
+&lt;/p&gt;
+&lt;p&gt;
+However, Windows was crawling through the thumbnail generation. Adobe Bridge isn&amp;#39;t much faster (but is what I ended up going with).
+&lt;/p&gt;
+&lt;p&gt;
+Grr ... 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

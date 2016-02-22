@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql Server Express 2008 on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/sql-server-express-2008/</link>
+    <description>Recent content in Sql Server Express 2008 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2009 12:30:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/sql-server-express-2008/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
+&lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
+&lt;h3&gt;Server system&lt;/h3&gt;
+&lt;p&gt;For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM. All updates were downloaded and installed.&lt;/p&gt;
+&lt;h3&gt;Downloading the installers&lt;/h3&gt;
+&lt;p&gt;SQL Server Express 2008 can be installed using the Microsoft Web Platform Installer, or a &#39;custom&#39; install can be downloaded. For the most flexibility and experience, I&#39;ll be covering the install using the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/express/sql/download/&#34;&gt;Runtime with Management Tools&lt;/a&gt; option.&lt;/p&gt;
+&lt;p&gt;You&#39;ll also want to grab the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=10EE29AF-7C3A-4057-8367-C9C1DAB6E2BF&#34;&gt;Windows PowerShell 1.0 installer&lt;/a&gt; for Windows Server 2003, if you haven&#39;t installed it already. If you&#39;re not sure, you can hold off until later in the install.&lt;/p&gt;
+&lt;h3&gt;Installing Microsoft SQL Server Express 2008&lt;/h3&gt;
+&lt;p&gt;After starting the installer you&#39;ll eventually reach the Installation tab, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall01.jpg&#34;&gt;Figure 1&lt;/a&gt;. For our simple installation, we&#39;ll use the first option of &#34;New SQL Server stand-alone installation or add features to an existing installation.&#34;&lt;/p&gt;
+&lt;p&gt;A quick check will be run to determine if there might be any issues installing setup files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall02.jpg&#34;&gt;Figure 2&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Since we we&#39;re installing the Express edition of SQL Server 2008, we won&#39;t need to enter a product key (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall03.jpg&#34;&gt;Figure 3&lt;/a&gt;), so we can continue and install the setup support files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall04.jpg&#34;&gt;Figure 4&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Once that&#39;s complete we start the actual install. A number of checks are run, one of which is for Windows PowerShell, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Run the installer (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall06.jpg&#34;&gt;Figure 6&lt;/a&gt;) if needed and re-run the check once it&#39;s complete. If you have any other issues, you should fix those until you can continue (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall07.jpg&#34;&gt;Figure 7&lt;/a&gt;).&lt;/p&gt;
+&lt;h4&gt;Feature Selection&lt;/h4&gt;
+&lt;p&gt;Next we&#39;ll need to choose what features we want to install (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall08.jpg&#34;&gt;Figure 8&lt;/a&gt;). Since we want an instance of SQL Server, we&#39;ll choose Database Engine Services. We&#39;ll also choose Management Tools - Basic so that we can manage our instance (databases, tables, users, etcetera) via a GUI. If you want, you can install the management tools on another machine, if you&#39;d prefer not having them on the server.&lt;/p&gt;
+&lt;h4&gt;Instance Configuration&lt;/h4&gt;
+&lt;p&gt;We&#39;ll stick with the default instance name, id, and root directory, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall09.jpg&#34;&gt;Figure 9&lt;/a&gt;. The default generally works just fine.&lt;/p&gt;
+&lt;h4&gt;Disk Space Requirements&lt;/h4&gt;
+&lt;p&gt;Space requirements will be checked. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall10.jpg&#34;&gt;Figure 10&lt;/a&gt; if you need to see.&lt;/p&gt;
+&lt;h4&gt;Server Configuration&lt;/h4&gt;
+&lt;p&gt;At the next stage we&#39;ll setup the accounts that SQL Server Database Engine and SQL Server Browser run under. By default the local service account is used for the latter, and nothing by default is selected for the former. Startup types are also set here. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall11.jpg&#34;&gt;Figure 11&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default the Network Service account is typically used, for the former, so we&#39;ll use that here, with no password needed. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall12.jpg&#34;&gt;Figure 12&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Database Engine Configuration&lt;/h4&gt;
+&lt;p&gt;The next step is to setup accounts. Windows authentication mode is more secure, but if using Web applications, you&#39;ll probably need to switch to Mixed Mode. Enter a password for the built-in account (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall13.jpg&#34;&gt;Figure 13&lt;/a&gt;). To continue you&#39;ll also need to specify a SQL Server administrator. Adding the current user (which is what I did) is the easiest if using a virtual machine. This leaves us at something like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall14.jpg&#34;&gt;Figure 14&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Error and Usage Reporting&lt;/h4&gt;
+&lt;p&gt;If you want, you can sent error reports and feature usage data to Microsoft automatically. By default (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall15.jpg&#34;&gt;Figure 15&lt;/a&gt;) the items are unchecked.&lt;/p&gt;
+&lt;h4&gt;Installation Rules&lt;/h4&gt;
+&lt;p&gt;A quick check will be done to determine if the install will work or not. Fix any issues that may come up, and once everything passes or is skipped (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall16.jpg&#34;&gt;Figure 16&lt;/a&gt;), continue with the install.&lt;/p&gt;
+&lt;h4&gt;Ready to Install&lt;/h4&gt;
+&lt;p&gt;At this point you&#39;ll be given an overview of your selected options. Once you&#39;re ready, press the Install button. (See Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall17.jpg&#34;&gt;17&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall18.jpg&#34;&gt;18&lt;/a&gt;.)&lt;/p&gt;
+&lt;h4&gt;Installation Progress and Complete&lt;/h4&gt;
+&lt;p&gt;The installation will begin and should complete (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall19.jpg&#34;&gt;Figure 19&lt;/a&gt;). The final screen will display a link to the summary log, information about the setup/next steps, and any supplemental information (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall20.jpg&#34;&gt;Figure 20&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Verifying the install&lt;/h3&gt;
+&lt;p&gt;At this point you should be able to start Microsoft SQL Server Management Studio and log into the local instance, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall21.jpg&#34;&gt;Figure 21&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also check to see if the service is running by opening Windows Task Manager and looking for sqlservr.exe and sqlwriter.exe (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall22.jpg&#34;&gt;Figure 22&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;And that&#39;s all there is to it.&lt;/p&gt;
+&lt;h3&gt;Update: Installing to Windows Server 2008&lt;/h3&gt;
+&lt;p&gt;Differences for installing on Windows Server 2008 (SP2):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows PowerShell can be installed from Server Manager &amp;gt; Features &amp;gt; Windows PowerShell.&lt;/li&gt;
+&lt;li&gt;Setting up the Windows Firewall is covered by &lt;a rel=&#34;external&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=94001&#34;&gt;Configuring the Windows Firewall to Allow SQL Server Access&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No other changes need be made.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

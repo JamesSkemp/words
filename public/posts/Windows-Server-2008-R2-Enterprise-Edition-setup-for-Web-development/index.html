@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development - My New Hugo Site</title>
+    <meta property='og:title' content="Windows Server 2008 R2 Enterprise Edition - setup for Web development - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2010-06-05T20:20:00-05:00">
+        <meta itemprop="headline" content="Windows Server 2008 R2 Enterprise Edition - setup for Web development">
+        <meta itemprop="description" content="This afternoon I setup a machine for the following purposes: to serve as a test bed for Web development to serve as an always-available Subversion repository server to serve as a repository for shared downloads, across all my machines As time goes by the scope of the server may also change. But for now, this will work just fine. Choosing an edition The first step was to install Windows Server 2008 R2.">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2010-06-05T20:20:00-05:00">Sat, Jun 5, 2010</time>
+          <h1 class="article-title">Windows Server 2008 R2 Enterprise Edition - setup for Web development</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>This afternoon I setup a machine for the following purposes:</p>
+<ol>
+<li>to serve as a test bed for Web development</li>
+<li>to serve as an always-available Subversion repository server</li>
+<li>to serve as a repository for shared downloads, across all my machines</li>
+</ol>
+<p>As time goes by the scope of the server may also change. But for now, this will work just fine.</p>
+<h3>Choosing an edition</h3>
+<p>The first step was to install Windows Server 2008 R2. Being able to choose between any of the editions, it was between Enterprise, Standard, and Web. While I began to lean towards Web based upon the <a rel="external" href="http://www.microsoft.com/windowsserver2008/en/us/r2-compare-specs.aspx">edition comparison by technical specification</a>, when I looked at <a rel="external" href="http://www.microsoft.com/windowsserver2008/en/us/r2-compare-roles.aspx">edition comparison by server role</a>, Web&nbsp;dropped out of the race. Since my external host provides an Enterprise edition server, Enterprise is what I finally chose.</p>
+<h3>Initial setup before&nbsp;disconnecting the (physical) monitor</h3>
+<p>After a short time, Windows Server 2008 R2 Enterprise edition was installed and ready for configuration, after entering an Administrator password.</p>
+<p>The first thing I did was activate Windows, correct the time zone, and change the computer name to something a bit more manageable, which required a restart.</p>
+<p>The&nbsp;next step was to configure (checking for updates,&nbsp;but not installing them automatically)&nbsp;and&nbsp;install updates, of which there were 30.</p>
+<p>Since&nbsp;I want to ultimately remove the monitor from this change, I enabled remote desktop. Since I've only got the one network connection, I didn't need to tweak it any further.</p>
+<p>While I was in System Properties and switched over to the Advanced tab and hit the Settings... button under Performance. I don't care about how it looks, so I switched from "Let Windows choose what's best for my computer" to "Adjust for best performance," which just unchecked all the checkboxes. I now tested connecting in from my Windows 7 Home Premium machine, and sure enough I was able to&nbsp;bump my other machine and remote in.</p>
+<p>With that tested, it was time to shut off the machine, unplug the monitor and USB keyboard and mouse, and see if I could remote in.</p>
+<h3>Success means shutting off services</h3>
+<p>With the machine correctly booting up, even though it had no monitor, keyboard, nor mouse hooked up, it was time to start optimizing the server by shutting off services.</p>
+<p>Print Spooler was the first to be stopped and disabled. And that was about it. At only 470 MB used, that's not too shabby.</p>
+<h3>Adding server roles - Web server</h3>
+<p>With Print Spooler disabled it was time to start setting up server roles. I want to start simple, I first selected Web Server (IIS). While I've run through this before, this time I actually read the notes and saw an item about Windows System Resource Manager (WSRM) that "can help ensure equitable servicing of Web server traffice, especially when there are multiple roles on this computer." That sounds like what I'll eventually be doing, so I've made a note to look into this later.</p>
+<p>By default a number of role services are selected, and since I know I want to do ASP.NET development, I added that (and the&nbsp;items it requires)&nbsp;and HTTP Redirection, since it's come up before. I end up with the following.</p>
+<ul>
+<li><strong>Web Server (IIS)</strong> 
+<ul>
+<li><strong>Web Server</strong> 
+<ul>
+<li>Common HTTP Features 
+<ul>
+<li>Static Content</li>
+<li>Default Document</li>
+<li>Directory Browsing</li>
+<li>HTTP Errors</li>
+<li>HTTP Redirection</li>
+</ul>
+</li>
+<li>Application Development 
+<ul>
+<li>ASP.NET</li>
+<li>.NET Extensibility</li>
+<li>ISAPI Extensions</li>
+<li>ISAPI Filters</li>
+</ul>
+</li>
+<li>Health and Diagnostics 
+<ul>
+<li>HTTP Logging</li>
+<li>Request Monitor</li>
+</ul>
+</li>
+<li>Security 
+<ul>
+<li>Request Filtering</li>
+</ul>
+</li>
+<li>Performance 
+<ul>
+<li>Static Content Compression</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Management Tools</strong> 
+<ul>
+<li>IIS Management Console</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Once the installation was finished successfully (without the need of a reboot), I was successfully able to browse to the site on my Windows 7 machine.</p>
+<h3>The 'easy button'</h3>
+<p>With that done, it was time to install <a rel="external" href="http://www.microsoft.com/web/downloads/platform.aspx">Microsoft Web Platform Installer</a>&nbsp;(WPI), also know as <a href="http://strivinglife.com/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button.aspx">the easy button</a>. Since Internet Explorer runs in a high-security mode in Server 2008, I had to download a copy on my Windows 7 machine and copy and paste it over to the Server, via Remote Desktop.</p>
+<p>Since Server 2008 R2 doesn't come with .NET Frameworks&nbsp;3.5 SP 1 or 4 installed, I started with 3.5 SP1. For whatever reason Logging Tools was also selected, but seemingly no download was required.</p>
+<p>Surprisingly I didn't have to reboot after installing .NET 3.5 SP1, so I went on to version 4. For whatever reason, this install took a good deal of time (in the&nbsp;double-digits), and since I didn't keep my attention solely on it, missed the restart prompt in the bottom right corner. But, after the restart that was too was finished.</p>
+<p>URL Rewrite 2.0, ASP.NET MVC 2, and PHP 5.2.13 were all next (which ended up requiring CGI to be installed as well).</p>
+<p>While tempted to install SQL Server Express, I opted to hold off, since I can install something&nbsp;a bit higher-end, depending upon how they compare for what I need.</p>
+<h3>CollabNet Subversion Server</h3>
+<p>As I've been doing more and more, I opted to use CollabNet Subversion Server to install Apache and Subversion, which means another copy and paste through Remote Desktop.</p>
+<p>The installation steps haven't changed, so I used <a href="http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx">an older installation guide I had written</a>, turned off update notifications, and restart the server.</p>
+<p>As I've grown to expect, once the server was restarted I was able to access port 8080 locally, but not on my own machine, due to firewall settings. After allowing C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\httpd.exe (Apache HTTP Server) to communicate through Windows Firewall, that was now working.</p>
+<p>Since I install PHP in a previous step I could go ahead and allow Apache to use it, but for now I'm going to keep moving forward and setup my existing (used) repositories.</p>
+<h3>Subversion security and repositories</h3>
+<p>Since I've only got one hard drive (at the moment) on the server, in the C drive root I created a new svn_resources directory. Opening cmd and moving to C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\ we can access the htpasswd.exe executable. Using the 'official' book as the standard, I entered the following to create an account for my main development machine (an HP Pavilion a6360t).</p>
+<pre class="code"><code class="powershell">htpasswd.exe -cm c:\svn_resources\svn-auth-file james-a6360t</code></pre>
+<p>After entering my password twice, I now had an authentication file, and I can now add security to my repositories, via updating&nbsp;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\conf\httpd.conf (you may also want to start Apache Monitor and restart the instance).</p>
+<pre class="code"><code class="xml">&lt;Location /svn&gt;
+    DAV svn
+    SVNParentPath C:\svn_repository
+    AuthType Basic
+    AuthName "Subversion repository"
+    AuthUserFile C:\svn_resources\svn-auth-file
+    Require valid-user
+&lt;/Location&gt;</code></pre>
+<p>I setup my laptop with another account, and with that done it's time to start <a href="http://strivinglife.com/words/post/Subversion-and-TortoiseSVN-Moving-a-repository.aspx">moving over the repositories</a>. Since I have so many, I focused on just the handful that I'm actively working on, and holding off on the rest.</p>
+<p>Whew.</p>
+<h3>Next steps</h3>
+<p>In addition to looking into WSRM, I still need to move my downloads over to the server (which possibly means setting this up with a file server role), adding SQL Server, and possibly adding PHP functionality to Apache ... just in case.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/windows%20server%202008" class="tag">windows server 2008</a> <a href="http://replace-this-with-your-hugo-site.com/tags/windows%20server%202008%20r2" class="tag">windows server 2008 r2</a> <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="tag">iis</a> <a href="http://replace-this-with-your-hugo-site.com/tags/subversion" class="tag">subversion</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fWindows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development%2f&t=Windows%20Server%202008%20R2%20Enterprise%20Edition%20-%20setup%20for%20Web%20development" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fWindows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development%2f&text=Windows%20Server%202008%20R2%20Enterprise%20Edition%20-%20setup%20for%20Web%20development&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fWindows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fWindows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development%2f&title=Windows%20Server%202008%20R2%20Enterprise%20Edition%20-%20setup%20for%20Web%20development" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phpmyadmin on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/phpmyadmin/</link>
+    <description>Recent content in Phpmyadmin on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jun 2006 15:00:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Upgrading phpMyAdmin (2.7.0-pl2 to 2.8.1) on a local, Windows-based, Apache server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</link>
+      <pubDate>Tue, 20 Jun 2006 15:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</guid>
+      <description>&lt;p&gt;
+In a &lt;a href=&#34;http://strivinglife.net/wordpress/?p=53&#34;&gt;previous post&lt;/a&gt;, we installed phpMyAdmin 2.7.0-pl2 to our local Web server. We did this so that we would have an easy way to administer our MySQL databases, from a PHP-based interface. This time, we&amp;#39;ll be upgrading phpMyAdmin to version 2.8.1.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;h4&gt;Downloading and unzipping&lt;/h4&gt;
+&lt;p&gt;
+First, we&amp;#39;ll need to grab the download for phpMyAdmin, from &lt;a href=&#34;http://www.phpmyadmin.net/&#34;&gt;http://www.phpmyadmin.net/&lt;/a&gt;. As of this writing, the current version is 2.8.1. The zip file runs about 3.5 MB.&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Once the download has finished, we can unzip the file into our main Web directory (C:\home). Depending upon how you installed the previous version of phpMyAdmin, you can either keep this new version in a folder containing the version number, or not. For example: c:\home\phpMyAdmin-2.8.1\ or c:\home\phpMyAdmin\ If you&amp;#39;ll be doing things the latter way, make sure you make a backup of your previously installed phpMyAdmin directory - just in case. If you&amp;#39;ll be saving to a directory containing the version information, then there&amp;#39;s no real reason to remove the old directory (unless you&amp;#39;re concerned with space).
+&lt;/p&gt;
+&lt;h4&gt;Configuring phpMyAdmin&lt;/h4&gt;
+&lt;p&gt;
+At this point you can go to &lt;a href=&#34;http://localhost/phpmyadmin-2.8.1/&#34;&gt;http://localhost/phpmyadmin-2.8.1/&lt;/a&gt; However, if you do so, you&amp;#39;ll notice that you&amp;#39;re unable to view the interface due to an error. As with our initial install, we need to configure phpMyAdmin before we can start using it.
+&lt;/p&gt;
+&lt;p&gt;
+Browse to the directory containing your previous installation of phpMyAdmin (for example, C:\home\phpMyAdmin-2.7.0-pl2) and copy the file config.inc.php. Now, make a copy of this file in your upgraded phpMyAdmin&amp;#39;s directory - C:\home\phpMyAdmin-2.8.1\config.inc.php, for example.
+&lt;/p&gt;
+&lt;p&gt;
+Open this file and verify that $cfg&lt;a href=&#34;on line 31&#34;&gt;&amp;#39;PmaAbsoluteUri&amp;#39;&lt;/a&gt; is correct. If you&amp;#39;ve switched from one directory scheme to another (with version number to without, or vice versa), then this may not be correct.
+&lt;/p&gt;
+&lt;p&gt;
+You should now be able to refresh, or visit, &lt;a href=&#34;http://localhost/phpmyadmin-2.8.1/&#34;&gt;http://localhost/phpmyadmin-2.8.1/&lt;/a&gt; and log in, using one of the MySQL user names and passwords you&amp;#39;ve setup.
+&lt;/p&gt;
+&lt;p&gt;
+Finally, if you setup a subdomain in your httpd.conf file (C:\Program Files\Apache Group\Apache\conf), you can modify the subdomain so that it points to the correct path. If you make this change, make sure you restart Apache afterwards.
+&lt;/p&gt;
+&lt;p&gt;
+And with that, you&amp;#39;ve successfully updated phpMyAdmin. Really, a pretty easy upgrade.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing MySQL and phpMyAdmin on a local Windows-based, Apache, server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</link>
+      <pubDate>Fri, 24 Feb 2006 23:31:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+&lt;em&gt;Note: This guide should work equally well for phpMyAdmin 2.8.1 and above.  For a guide on upgrading this 2.7.0-pl2 install, see &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-phpMyAdmin-(270-pl2-to-281)-on-a-local%2c-Windows-based%2c-Apache-server.aspx&#34;&gt;Upgrading phpMyAdmin (2.7.0-pl2 to 2.8.1) on a local, Windows-based, Apache server&lt;/a&gt;.&lt;/em&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+MySQL will allow us to create databases on our local server. With PHP, this will allow us to install applications like the free WordPress, as well as number of open source content management systems, not to mention bulletin boards and the like. phpMyAdmin will allow us to administer MySQL quite easily.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;MySQL&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+While MySQL 5.0 is the recommend version, we&amp;#39;ll be downloading the most current 4.x release &amp;ndash; at the time of this writing &amp;ndash; 4.1.18. Head over to &lt;a href=&#34;http://dev.mysql.com/downloads/&#34;&gt;http://dev.mysql.com/downloads/&lt;/a&gt;, and under MySQL Community Edition, you&amp;#39;ll find an Older Releases heading. Download the Windows Essentials (x86), at a whopping 16.5 MB.
+&lt;/p&gt;
+&lt;p&gt;
+Once the download has completed, open the MSI file. When you&amp;#39;re prompted on what kind of setup you&amp;#39;d like to use, select Custom. Use the default options, however, and note where MySQL will be installed to. Continue along until you&amp;#39;ve installed MySQL. Once you have, you&amp;#39;ll be prompted to sign-up to MySQL.com, login, or skip sign-up. Honestly, I recommend you go ahead and sign-up for an account, since there&amp;#39;s no reason not to. However, you can simply skip this step if you&amp;#39;d like to. Finally, before you Finish, you&amp;#39;ll want to verify that the checkbox next to &amp;quot;Configure the MySQL Server now&amp;quot; is checked (it should be).
+&lt;/p&gt;
+&lt;p&gt;
+On the Configuration Wizard, select Detailed Configuration. Then Developer Machine. Then Multifunctional Database. For InnoDB Tablespace Settings, we&amp;#39;ll leave things as they are (Installation Path). We&amp;#39;ll leave the next setting as it is, since we&amp;#39;re only interested in development (Decision Support (DSS)/OLAP). We&amp;#39;ll also leave the next setting as it is &amp;ndash; Port Number 3306. We&amp;#39;ll change MySQL character set to the Best Support For Multilingualism option.
+&lt;/p&gt;
+&lt;p&gt;
+Since we want MySQL to show up in the Service control panel, leave the first option checked in the next window. We&amp;#39;ll also want to check the second box, in case we want to troubleshoot our installation using the command line.
+&lt;/p&gt;
+&lt;p&gt;
+Finally, create a password for the root account. Make sure you write this password down somewhere safe. Keep the checkbox unchecked, since we only want our machine to be able to access the root. Now, hit Execute and Finish once it&amp;#39;s started.
+&lt;/p&gt;
+&lt;p&gt;
+If we now open up the Services control panel, we&amp;#39;ll find a MySQL item, which, like Apache, can be started, restarted, and stopped. While you&amp;#39;re in the Services panel, restart Apache.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;phpMyAdmin&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+For phpMyAdmin, we&amp;#39;ll be happy with the latest stable release. As of the time of this writing, that&amp;#39;s phpMyAdmin 2.7.0-pl2. Download the zip version, which is about 3.5 MB.
+&lt;/p&gt;
+&lt;p&gt;
+Once the download has completed, unzip the contents of this file to our main server directory &amp;ndash; C:\home. Ultimately, it&amp;#39;s your call whether you keep the folder with the version information, or whether you rename the folder to just phpMyAdmin.
+&lt;/p&gt;
+&lt;p&gt;
+Once you&amp;#39;ve unzipped the contents, we&amp;#39;ll want to create an easy way to access the folder. To do this, we&amp;#39;ll setup a subdomain under localhost. While you could call the folder up using &lt;a href=&#34;http://localhost/phpMyAdmin-2.7.0-pl2/&#34;&gt;http://localhost/phpMyAdmin-2.7.0-pl2/&lt;/a&gt;, or whatever you named the folder, if we use a VirtualHost entry, we&amp;#39;ll make things easier in the future (if we want to upgrade, we can continue to have older versions available when we have newer versions). Now, setup &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt;. Once you&amp;#39;ve finished, or if you need help, come back to this guide &amp;ndash; we&amp;#39;ll walk through this in the next paragraph.
+&lt;/p&gt;
+&lt;p&gt;
+First, we&amp;#39;ll open up the httpd.conf file. Since we&amp;#39;ve already got at least two other instances of how we&amp;#39;ll need to set this up, simply copy the last one. Next, change the values accordingly. For ease, I did the below.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &amp;lt;VirtualHost 127.0.0.4&amp;gt;&lt;br /&gt;
+    ServerName phpMyAdmin.localhost&lt;br /&gt;
+    DocumentRoot C:\home\phpMyAdmin-2.7.0-pl2&lt;br /&gt;
+    ErrorLog logs/phpMyAdmin-error.log&lt;br /&gt;
+    TransferLog logs/phpMyAdmin-access.log&lt;br /&gt;
+    &amp;lt;/VirtualHost&amp;gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Save and close httpd.conf. Next, open the hosts file (in the C:\WINDOWS\system32\drivers\etc\ folder) and insert the appropriate line at the end of the file.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    127.0.0.4   phpMyAdmin.localhost
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Again, save and close this file. Finally, restart Apache, and head over to &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt;. The first thing you&amp;#39;ll notice is that you get an error message. If we look, we see this is because the password isn&amp;#39;t correct. If we go looking for the config.inc.php file, however, we won&amp;#39;t be able to find it in our phpMyAdmin directory. If we look at the documentation, we&amp;#39;ll find that we&amp;#39;ll have to create one.
+&lt;/p&gt;
+&lt;p&gt;
+So, copy the config.default.php file and open it in WordPad (as you may lose formatting in Notepad). You can open WordPad easily by pressing the Window + R key, and typing &amp;#39;write&amp;#39; (no quotes) in the prompt. Now look for a line that starts with $cfg[&amp;#39;Servers&amp;#39;][$i][&amp;#39;password&amp;#39;], and enter the root password here. Now, save this file, and close out of WordPad. Finally, rename the file (Copy of config.default.php) to config.inc.php.
+&lt;/p&gt;
+&lt;p&gt;
+If we were to try loading &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt; again, we&amp;#39;d still have connection problems. Unfortunately, this is because the password we entered in the installer isn&amp;#39;t encoded quite correctly, for whatever reason. This means we&amp;#39;ll have to do some extra work, at the command line.
+&lt;/p&gt;
+&lt;p&gt;
+Now, type Windows + R once again, and type &amp;#39;cmd&amp;#39; (no quotes) to bring up the command line interface. Now, type
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;strong&gt;mysql -u root -p&lt;/strong&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+at the command line. What we&amp;#39;ll be doing is changing the password that we just setup. We need to do this for a number of reasons, unfortunately. When it prompts you for a password, type the password you used at setup, and above, once again. Next, type the following, where your_password is your password.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;strong&gt;UPDATE mysql.user SET Password = OLD_PASSWORD(&amp;#39;your_password&amp;#39;) WHERE Host = &amp;#39;localhost&amp;#39; AND User = &amp;#39;root&amp;#39;;&lt;/strong&gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Once you run this command (by pressing enter) you&amp;#39;ll have updated your password. Type exit, press enter, and type exit and press enter once again (the first time to exit out of MySQL, the second time to exit out of the command prompt). Now, restart MySQL using the Services control panel.
+&lt;/p&gt;
+&lt;p&gt;
+If we load &lt;a href=&#34;http://phpmyadmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt; again, we&amp;#39;ll now be logged in. However, we&amp;#39;ll notice that the images are not loading correctly. So, let&amp;#39;s open up config.inc.php once again, and change some values.
+&lt;/p&gt;
+&lt;p&gt;
+First, find the line that begins with $cfg[&amp;#39;PmaAbsoluteUri&amp;#39;] and change it&amp;#39;s value to &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt; (include the trailing slash). Next, look for the line that starts with $cfg[&amp;#39;Servers&amp;#39;][$i][&amp;#39;auth_type&amp;#39;], and change config to http. Save the file and reload &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost/&lt;/a&gt;. Once we do that, we&amp;#39;ll be prompted for a username (root) and a password (whatever your password happens to be).
+&lt;/p&gt;
+&lt;p&gt;
+Finally, open Notepad and insert the following text. Make sure you change your_password accordingly.
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &amp;lt;?php&lt;br /&gt;
+    $user=&amp;quot;root&amp;quot;;&lt;br /&gt;
+    $password=&amp;quot;&lt;strong&gt;your_password&lt;/strong&gt;&amp;quot;;&lt;br /&gt;
+    mysql_connect(localhost,$user,$password) or die (&amp;quot;Can&amp;#39;t connect to MySQL.&amp;quot;);&lt;br /&gt;
+    echo &amp;quot;Connected to MySQL.&amp;quot;;&lt;br /&gt;
+    mysql_close();&lt;br /&gt;
+    ?&amp;gt;
+    &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Save the file as mysqlconnection.php, in the C:\home\ folder. Now, load &lt;a href=&#34;http://localhost/mysqlconnection.php&#34;&gt;http://localhost/mysqlconnection.php&lt;/a&gt;. If you see &amp;quot;Connected to MySQL.&amp;quot;, then PHP can now access MySQL. Otherwise, you&amp;#39;ll see &amp;quot;Can&amp;#39;t connect to MySQL.&amp;quot;, and you&amp;#39;ll need to review the above once again. If you want, you can Stop MySQL via the Services panel and load this page to see what happens.
+&lt;/p&gt;
+&lt;p&gt;
+One last thing we&amp;#39;ll need to clear up is a mbstring error in phpMyAdmin. To fix this, we&amp;#39;ll open up the php.ini file, which is at c:\windows\php.ini (or you may have a shortcut stashed away somewhere). Do a search for &amp;quot;php_mbstring.dll&amp;quot; (without the quotes) and remove the &amp;#39;;&amp;#39; on this line. Save this file and close it. Now, restart Apache. Once you do so, and reload &lt;a href=&#34;http://phpMyAdmin.localhost/&#34;&gt;http://phpMyAdmin.localhost&lt;/a&gt;, you&amp;#39;ll notice that the error is gone.
+&lt;/p&gt;
+&lt;p&gt;
+Now that you&amp;#39;ve setup MySQL and phpMyAdmin, you may want to head over to Analog and add the new log file. You&amp;#39;ll notice some new status codes in the Report.html, if you do so. However, we&amp;#39;ll be dumping Analog pretty soon, so don&amp;#39;t worry if you don&amp;#39;t.
+&lt;/p&gt;
+&lt;p&gt;
+Next time, we&amp;#39;ll be installing MySQL Administrator, so we can setup some additional users and databases easily. For now, stay clear of using the root user to do much of anything. We&amp;#39;ll create some user accounts with limited access, next time.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

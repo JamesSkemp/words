@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1 - My New Hugo Site</title>
+    <meta property='og:title' content="Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1 - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2007-03-17T10:00:00-05:00">
+        <meta itemprop="headline" content="Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1">
+        <meta itemprop="description" content="
+In February 2006, I wrote an article covering the installation of Apache 1.3.34, which can be found on my site, StrivingLife.net. In August 2006, I covered the installation of Apache 2.0.59. This time, I&#39;ll be covering the installation of the current version of Apache 2.2.x, Apache 2.2.4, to a Windows XP machine, for the purpose of local development.
+
+
+While I&#39;ll be covering an installation of Apache 2.2.4 that will work along with Apache 1.3.x and Apache 2.0.x, this guide will work equally well if you&#39;re installing Apache 2.2.x by itself.
+
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2007-03-17T10:00:00-05:00">Sat, Mar 17, 2007</time>
+          <h1 class="article-title">Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+In February 2006, I wrote an <a href="http://strivinglife.net/wordpress/2006/02/16/45/installing-apache-to-a-windows-based-computer-locally/">article covering the installation of Apache 1.3.34</a>, which can be found on my site, StrivingLife.net. In August 2006, I covered <a href="http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/">the installation of Apache 2.0.59</a>. This time, I&#39;ll be covering the installation of the current version of Apache 2.2.x, Apache 2.2.4, to a Windows XP machine, for the purpose of local development.
+</p>
+<p>
+While I&#39;ll be covering an installation of Apache 2.2.4 that will work along with Apache 1.3.x and Apache 2.0.x, this guide will work equally well if you&#39;re installing Apache 2.2.x by itself.
+</p>
+<!--adsense-->
+<p>
+If you&#39;ve been following along with my <a href="http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/">other tutorials on this local server setup</a>, you may have setup Perl, PHP, MySQL, PostgreSQL, and/or ColdFusion, among other things. Later parts will cover these setups in further detail.
+</p>
+<h4>My environment</h4>
+<p>
+The computer I&#39;ll be using for this installation is an HP Pavilion a620n, 2.20 GHz, 960 MB (1 GB) of RAM, and with Windows XP Home, SP2.
+</p>
+<h4>Downloading Apache</h4>
+<p>
+The first thing, obviously, is to download the current version of Apache 2.2.x from <a href="http://www.apache.org/" onclick="window.open(this.href);return false;">http://www.apache.org/</a>. At the time of this writing, Apache 2.2.4 is the current release, and &quot;represents the best available version of Apache HTTP Server.&quot;
+</p>
+<p>
+Since we&#39;re installing to Windows, we want to download the file apache_2.2.4-win32-x86-no_ssl.msi, which is under 4.5 MB in size. If you&#39;ve been following along with the other tutorials, then you&#39;ll want to save this file to the same location as your other download files. If you haven&#39;t been following along, save the installation file to a directory where you can save all of your installation files.
+</p>
+<p>
+While the file is downloading, if you&#39;re currently running a version of Apache on your machine, stop the server, as we don&#39;t want it running while we do the installation. If you have any other services running that may be running through port 80 (other Web servers), you&#39;ll also want to stop those services. 
+</p>
+<p>
+If you&#39;ve already installed Apache 2.2.x, you may want to backup the install directory (the default is C:\Program Files\Apache Software Foundation\Apache2.2\).
+</p>
+<h4>Installing Apache 2.2.4</h4>
+<p>
+Once the installation file has been downloaded, run the file to begin installation. Continue throught the first window, to the second, where you can read and accept the license agreement. On the next window there&#39;s a bit of additional text to read.
+</p>
+<p>
+Finally, you&#39;ll be asked for server information. Since we&#39;re installing this locally, we&#39;ll be using <strong>localhost</strong> as both the Network Domain, as well as the Server Name. In Administrator&#39;s Email Address, enter your real email address. Last, install Apache HTTP Server 2.2 programs and shortcuts for &quot;All Users, on Port 80, as a Service&quot;.
+</p>
+<p>
+You can now setup the server in a typical manner, or custom. Since we want to have control, select Custom.
+</p>
+<p>
+On the first screen, you can select which features you want to install, and where they should be installed. We&#39;ll be installing everything, and leaving the installation directory as C:\Program Files\Apache Software Foundation\Apache2.2\.
+</p>
+<p>
+And that&#39;s it. Press Install on the next screen to begin the installation.
+</p>
+<p>
+Once the service has been created, you may recieve an alert from Windows Firewall regarding the Apache HTTP Server. Choose to Unblock this program.
+</p>
+<p>
+In addition, if you&#39;ve already installed Apache, and have the Apache monitor running, you&#39;ll receive an error that the monitor is already running.
+</p>
+<p>
+Once the installation has finished, press the Finish button.
+</p>
+<p>
+Apache HTTP Server 2.2.4 will now be running, and by going to http://localhost/, you&#39;ll see the text &quot;It works!&quot; in your browser.
+</p>
+<p>
+If you do not see this, or the service does not start, you can find an error.log file in the logs directory in your Apache install directory which can help you troubleshoot your issue.
+</p>
+<h4>Apache Service Monitor, and setting startup types </h4>
+<p>
+In your taskbar, there will now be an icon from the Apache Service Monitor. Using the monitor, you can easily start and stop the Apache HTTP Server, as well as access other services.
+</p>
+<p>
+For now, hit the Services button to bring up the Services console. Next, right click on the Apache2 service, and select Properties. What we&#39;re going to do now is change the startup type from Automatic to Manual. This means that we&#39;ll need to manually start Apache whenever we restart our computer, but it also means that the service isn&#39;t unnecessarily running.
+</p>
+<p>
+However, if you&#39;ll be running Apache every time you login, you may want to let Apache startup automatically when you log in. Either way, it&#39;s nice to know where you can change this.
+</p>
+<p>
+While you&#39;re here, note that you can also see what version of Apache is running, in the Description field. 
+</p>
+<h4>Wait a second, what about the Apache 2.0.59 service?!?</h4>
+<p>
+If you&#39;ve installed Apache 2.0.59 previously, you may be wondering what happened to the Apache2 service for that version of Apache.
+</p>
+<p>
+Unfortunately, Apache 2.0.59 and Apache 2.2.4 use the same service name. This means that any previous Apache2 services will be overwritten.
+</p>
+<p>
+Luckily, with the help of Windows, Microsoft, and some advice from Mark Lennox (given in a <a href="http://strivinglife.net/wordpress/2006/09/16/228/installing-subversion-and-tortoisesvn-to-a-windows-xp-home-edition-sp2-local-machine-with-dreamweaver-8/">Subversion article</a>), we can create a service for Apache 2.0.59 a couple of ways.
+</p>
+<p>
+First, run cmd via the Run command (Window + R, or via the Start menu). At the prompt, enter the following. Please note that you&#39;ll want to confirm that the path information is correct for you.
+</p>
+<blockquote>
+    <p>
+    sc create Apache2.0 binpath= &quot;\&quot;C:\Program Files\Apache Group\Apache2\bin\Apache.exe\&quot; -k runservice&quot; displayname= &quot;Apache 2.0&quot; depend= Tcpip/Afd
+    </p>
+</blockquote>
+<p>
+You can learn more <a href="http://support.microsoft.com/kb/251192/" onclick="window.open(this.href);return false;">creating Windows services using the SC tool (Sc.exe)</a> by reading support article 251192 on Microsoft.com.
+</p>
+<div class="tip">
+<p>
+You may also want to create new services for Apache 2.2.x, and Apache 1.3.x. However, keep in mind that once you change your configuration, you may need to remove/update the services that you create. Either way, the new services should display in the Apache Services Monitor.
+</p>
+<blockquote>
+    <p>
+    sc create Apache1.3 binpath= &quot;\&quot;C:\Program Files\Apache Group\Apache\Apache.exe\&quot; --ntservice&quot; displayname= &quot;Apache 1.3&quot; depend= Tcpip/Afd
+    </p>
+</blockquote>
+<p>
+(Note that there&#39;s two dashes in front of <strong>ntservice</strong>.)
+</p>
+<blockquote>
+    <p>
+    sc create Apache2.2 binpath= &quot;\&quot;C:\Program Files\Apache Software Foundation\Apache2.2\bin\httpd.exe\&quot; -k runservice&quot; displayname= &quot;Apache 2.2&quot; depend= Tcpip/Afd
+    </p>
+</blockquote>
+<p>
+If you&#39;ve been following along with my other tutorials, you may want to update your <a href="http://strivinglife.net/wordpress/2006/08/28/207/installing-apache-2059-to-a-windows-based-computer-locally-part-4/">batch files</a> so that they stop all the Apache services (Apache, Apache2, Apache1.3, Apache2.0, Apache2.2) and start our new services, depending upon which version you want to run (currently, that would be either Apache1.3 or Apache2.0).
+</p>
+</div>
+<h4>Configuring Apache with httpd.conf</h4>
+<p>
+If we start Apache 2.2 back up, via services, and browse to http://localhost/ once again, we&#39;ll see that &quot;It works!&quot; screen. That&#39;s all well and good, but it&#39;s using C:\Program Files\Apache Software Foundation\Apache2.2\htdocs\ as the Web directory, from which is serves content, which is far too deep to dig.
+</p>
+<p>
+It&#39;s better to create another folder, with less pathing information. I&#39;ve decided to use the shorter directory of C:\home\, however, you can create whatever folder you&#39;d like. In this directory, you&#39;ll store any files that you&#39;ll want to be served by Apache. There&#39;s exceptions to this statement, but, for now, we&#39;ll let it slide.
+</p>
+<p>
+Once you&#39;ve created this directory, head over to the conf folder in the install directory of Apache 2.2.x (default of C:\Program Files\Apache Software Foundation\Apache2.2\conf\) and make a copy of the httpd.conf file. This copy will serve as the original, just in case something happens. This is a working version of the configuration file for Apache HTTP Server, so don&#39;t overwrite it (but if you do, there&#39;s a copy in the default folder). Now open the httpd.conf file.
+</p>
+<p>
+With the httpd.conf file open, do a search for <strong>DocumentRoot</strong>. The second instance will take you to a line that reads as follows.
+</p>
+<blockquote>
+    <p>
+    DocumentRoot &quot;C:/Program Files/Apache Software Foundation/Apache2.2/htdocs&quot;
+    </p>
+</blockquote>
+<p>
+Change the quoted text to your Web root folder (make note of the direction of the slashes, and absence of a slash at the end). Since I created a folder at C:\home, I&#39;ll be using the following line.
+</p>
+<blockquote>
+    <p>
+    DocumentRoot &quot;C:/home&quot;
+    </p>
+</blockquote>
+<p>
+Find the next instance of <strong>DocumentRoot</strong> and you&#39;ll see this line of text two lines down.
+</p>
+<blockquote>
+    <p>
+    &lt;Directory &quot;C:/Program Files/Apache Software Foundation/Apache2.2/htdocs&quot;&gt;
+    </p>
+</blockquote>
+<p>
+Change the directory as you did just moments ago.
+</p>
+<blockquote>
+    <p>
+    &lt;Directory &quot;C:/home&quot;&gt; 
+    </p>
+</blockquote>
+<p>
+Note that in this file you can also change what port Apache 2.2.x will listen on. There&#39;s two instances of the port number, and a search for <strong>80</strong> will turn up both, if you choose the options we did above. Otherwise, you&#39;ll turn up four instances (as Apache will be listening on Port 8080).
+</p>
+<p>
+Save the httpd.conf file and restart, or start, Apache.
+</p>
+<p>
+If you go to http://localhost/ now, you&#39;ll either see a directory listing, or a Web page, depending upon whether you have an index.html file in your Web root. If this worked, then you can make a backup copy of your newly working httpd.conf file.
+</p>
+<p>
+And with that, you&#39;ve setup Apache 2.2.4 on a local Web server.
+</p>
+<p>
+In later guides, we&#39;ll cover the setting up of a number of additional services, but for now, you can work static Web pages.
+</p>
+<p>
+If you&#39;ve followed some of <a href="http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/">my other tutorials</a>, you can easily switch between versions of Apache, but you&#39;ll need to configure any batch files you may use so that they stop the new Apache 2.2.x service.
+</p>
+<p>
+Questions or comments can be left below, or emailed to me directly (email at the bottom of the page). Thanks for reading!
+</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="tag">apache</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Apache-224-to-a-Windows-based-computer-locally-Part-1%2f&t=Installing%20Apache%202.2.4%20to%20a%20Windows-based%20computer%2c%20locally%3a%20Part%201" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Apache-224-to-a-Windows-based-computer-locally-Part-1%2f&text=Installing%20Apache%202.2.4%20to%20a%20Windows-based%20computer%2c%20locally%3a%20Part%201&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Apache-224-to-a-Windows-based-computer-locally-Part-1%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fInstalling-Apache-224-to-a-Windows-based-computer-locally-Part-1%2f&title=Installing%20Apache%202.2.4%20to%20a%20Windows-based%20computer%2c%20locally%3a%20Part%201" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

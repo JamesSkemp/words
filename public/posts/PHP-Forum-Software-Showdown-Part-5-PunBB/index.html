@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://replace-this-with-your-hugo-site.com//index.xml">
+
+    
+    <title>PHP Forum Software Showdown Part 5: PunBB - My New Hugo Site</title>
+    <meta property='og:title' content="PHP Forum Software Showdown Part 5: PunBB - My New Hugo Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://replace-this-with-your-hugo-site.com/">My New Hugo Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://replace-this-with-your-hugo-site.com/"/>
+        <meta itemprop="dateModified" content="2006-11-24T09:00:00-06:00">
+        <meta itemprop="headline" content="PHP Forum Software Showdown Part 5: PunBB">
+        <meta itemprop="description" content="
+Almost there. This time, we&#39;ll be looking at PunBB. First, I did donate to PunBB development some time ago. At the time, I liked PunBB, and received some great support. It&#39;s been sometime since that time, so I don&#39;t know how things stand.
+
+
+Anywho, &ldquo;PunBB is a fast and lightweight PHP-powered discussion board. It is released under the GNU General Public License. Its primary goals are to be faster, smaller and less graphically intensive as compared to other discussion boards. PunBB has fewer features than many other discussion boards, but is generally faster and outputs smaller, semantically correct XHTML-compliant pages.&rdquo;
+
+
+In this article, we&#39;ll be installing PunBB version 1.2.14, which is the latest version, as of October 15, 2006.
+
+">
+        <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://replace-this-with-your-hugo-site.com/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="My New Hugo Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-11-24T09:00:00-06:00">Fri, Nov 24, 2006</time>
+          <h1 class="article-title">PHP Forum Software Showdown Part 5: PunBB</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+Almost there. This time, we&#39;ll be looking at <a href="http://www.punbb.org/">PunBB</a>. First, I did donate to PunBB development some time ago. At the time, I liked PunBB, and received some great support. It&#39;s been sometime since that time, so I don&#39;t know how things stand.
+</p>
+<p>
+Anywho, &ldquo;PunBB is a fast and lightweight PHP-powered discussion board. It is released under the GNU General Public License. Its primary goals are to be faster, smaller and less graphically intensive as compared to other discussion boards. PunBB has fewer features than many other discussion boards, but is generally faster and outputs smaller, semantically correct XHTML-compliant pages.&rdquo;
+</p>
+<p>
+In this article, we&#39;ll be installing PunBB version 1.2.14, which is the latest version, as of October 15, 2006.
+</p>
+
+<p><h4>File and folder size</h4>
+<p>
+The zip file for MyBB weighs in at around 250 KB. Unzipped, we&#39;re looking at a bit over 800 KB. The zip file does not contain a single folder, but rather three, so you&#39;ll want to unzip to a single PunBB folder. PunBB is also available in gzip and bz2 formats.<!--adsense-->
+</p>
+<h4>Requirements</h4>
+<p>
+Best requirements thus far. PHP 4.1.0+ and MySQL 3.23.17+, or PHP 4.3.0+ and PostgreSQL 7.0+, or SQLite. Not to shabby, as this is the first we&#39;ve reviewed that supports something other than just MySQL for the database.
+</p>
+<h4>Installing on our local Web server</h4>
+<p>
+Unlike past articles, for these forum reviews we&#39;re going to create the necessary users and databases using the command line interface of MySQL. If you&#39;re going to be installing these forums to a remote system, just create the user(s) and database(s) as usual (and that goes for if you&#39;re installing it locally as well).
+</p>
+<h4>Creating the user and database via the command-line</h4>
+<p>
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+</p>
+<blockquote>
+    <p>
+     mysql -h localhost -u root -p
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be prompted to enter your password, which you&#39;ll have already setup. Enter your password and press Enter.
+</p>
+<p>
+At this point, you&#39;re logged into MySQL. Now, we can create our database, create our user, and grant the user privilege to modify the database we created.
+</p>
+<p>
+Since we&#39;re installing PunBB, we&#39;ll create a database called PunBB.
+</p>
+<blockquote>
+    <p>
+     create database PunBB;
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be told that &ldquo;Query OK, 1 row affected&rdquo;, followed by the execution time.
+</p>
+<p>
+Now, we&#39;ll create a user with privileges to access the database. Note that other than the bold text, this command is case-insensitive. Also, you may want to change &#39;<strong>punbb</strong>&#39; to something different (as this is the user&#39;s password).
+</p>
+<p>
+Before you enter this, look it over, and then read the paragraph following, for an explanation.
+</p>
+<blockquote>
+    <p>
+     GRANT select, insert, update, delete, index, alter, create, drop<br />
+    ON <strong>PunBB</strong>.<em><br />
+    TO <strong>PunBB</strong> IDENTIFIED BY &#39;<strong>punbb</strong>&#39;;
+    </p>
+</blockquote>
+<p>
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>PunBB</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>PunBB</strong> IDENTIFIED BY &#39;<strong>punbb</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+</p>
+<p>
+If the query is OK, enter the following command.
+</p>
+<blockquote>
+    <p>
+     UPDATE mysql.user SET Password = OLD<em>PASSWORD(&#39;punbb&#39;) WHERE User = &#39;PunBB&#39;;
+    </p>
+</blockquote>
+<p>
+If this query is OK, and it works, type <strong>exit</strong>, and press Enter. Now attempt to login to the PunBB user. Once you&#39;ve logged in, enter the following command.
+</p>
+<blockquote>
+    <p>
+     show databases;
+    </p>
+</blockquote>
+<p>
+You should be given an ASCII table that shows there&#39;s a database of punbb. Yippee.
+</p>
+<p>
+Now, let&#39;s install PunBB.
+</p>
+<!--nextpage-->
+<h4>Installing PunBB</h4>
+<p>
+First, unzip the downloaded zip file. The files are within three folders in the zip file, so make sure you create a folder to dump these into. I&#39;ll be using one called punbb.<!--adsense-->
+</p>
+<p>
+Since we&#39;re installing locally, we don&#39;t have to worry about permissions. So, once PunBB has been decompressed, navigate to the PunBB root folder in your browser. You&#39;ll be told that config.php doesn&#39;t exist, and be given a link to the install file. <a href="http://localhost/projects/punbb/install.php">http://localhost/projects/punbb/install.php</a>
+</p>
+<p>
+There&#39;s a form to fill-out, so let&#39;s get to it.
+</p>
+<p>
+You can select your database type, which we&#39;ll leave at MySQL Standard. Database server hostname can be left at localhost.
+</p>
+<p>
+Database name: PunBB<br />
+Database username: PunBB<br />
+Database password: punbb<br />
+Table prefix: punbb</em><br />
+Administrator username: admin<br />
+Password: cbe15b<br />
+Administrator&#39;s e-mail: strivinglife@gmail.com<br />
+Base URL: <a href="http://localhost/projects/punbb">http://localhost/projects/punbb</a>
+</p>
+<p>
+At this point, start the installation. Once that&#39;s done, you&#39;ll need to copy some text into a new config.php file, and then you can hit the main forum page at <a href="http://localhost/projects/punbb/">http://localhost/projects/punbb/</a> (for example).
+</p>
+<!--nextpage-->
+<h4>How&#39;s the code look?</h4>
+<p>
+Like most other forums, PunBB uses a table, and doesn&#39;t care to declare a summary. However, that looks like the only issue.<!--adsense-->
+</p>
+<p>
+Internally, code is commented pretty darn well. Not too shabby at all.
+</p>
+<h4>Default layout and administrative interface</h4>
+<p>
+Once installed, PunBB setups up one category, one forum, and one post.
+</p>
+<p>
+Unfortunately, the look is very boxy, and reminds me of the look of a number of other forums. There&#39;s really not that much, graphically, that separates it from the others. The look is very similar to MyBB, but much flatter.
+</p>
+<h4>Upgrading</h4>
+<p>
+Checking for updates, amongst other things, is quite easy from the interface. Unfortunately, when I attempted to check for updates, Apache started choking on me, specifically with problems in the php4ts.dll (as it did with MyBB).
+</p>
+<p>
+They do have archived files with the changed files only available for download, which is quite nice.
+</p>
+<h4>The temporary conclusion</h4>
+<p>
+PunBB is pretty much like the others that we&#39;ve reviewed. Until we get into the last forum, and start comparing all six, we&#39;ll leave it at that.
+</p>
+<p>
+Stay tuned for the next <a href="/words/post/PHP-Forum-Software-Showdown.aspx">PHP Forum</a> review.
+</p>
+<p>
+<a href="/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://replace-this-with-your-hugo-site.com/tags/php" class="tag">php</a> <a href="http://replace-this-with-your-hugo-site.com/tags/mysql" class="tag">mysql</a> <a href="http://replace-this-with-your-hugo-site.com/tags/postgresql" class="tag">postgresql</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-5-PunBB%2f&t=PHP%20Forum%20Software%20Showdown%20Part%205%3a%20PunBB" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-5-PunBB%2f&text=PHP%20Forum%20Software%20Showdown%20Part%205%3a%20PunBB&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-5-PunBB%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2freplace-this-with-your-hugo-site.com%2fposts%2fPHP-Forum-Software-Showdown-Part-5-PunBB%2f&title=PHP%20Forum%20Software%20Showdown%20Part%205%3a%20PunBB" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/posts/Review-Homeland-The-Game/" class="list-group-item">Review: Homeland: The Game</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://replace-this-with-your-hugo-site.com/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 My New Hugo Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

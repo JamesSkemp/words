@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eclipse on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/eclipse/</link>
+    <description>Recent content in Eclipse on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jun 2007 07:30:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Eclipse SDK 3.2.2 to Ubuntu 7.04</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Eclipse-SDK-322-to-Ubuntu-704/</link>
+      <pubDate>Tue, 12 Jun 2007 07:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Eclipse-SDK-322-to-Ubuntu-704/</guid>
+      <description>&lt;p&gt;
+Having already &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/11/366/installing-suns-java-development-kit-50-update-12-on-ubuntu-704/&#34;&gt;installed JDK 5.0 on Ubuntu&lt;/a&gt;, it&amp;#39;s time to install what I really wanted in the first place - Eclipse.
+&lt;/p&gt;
+&lt;p&gt;
+The first thing to do is download the current version from http://www.eclipse.org/downloads/. Again, this is something we could grab from a repo, but if I&amp;#39;m using Linux, I may as well have control.
+&lt;/p&gt;
+&lt;p&gt;
+Why Eclipse? No Dreamweaver for Ubuntu.
+&lt;/p&gt;
+&lt;p&gt;
+After saving it to the Desktop, and after it&amp;#39;s download, I opened up a Terminal.
+&lt;/p&gt;
+&lt;p&gt;
+cd ~/Desktop
+&lt;/p&gt;
+&lt;p&gt;
+sudo mv eclipse /usr/lib (to move the Eclipse directory).
+&lt;/p&gt;
+&lt;p&gt;
+sudo update-alternatives --install /usr/bin/eclipse /usr/lib/eclipse/eclipse 300
+&lt;/p&gt;
+&lt;p&gt;
+sudo ln -s /usr/lib/eclipse/startup.jar /usr/bin
+&lt;/p&gt;
+&lt;p&gt;
+Adding it to the menu involves right clicking on the Applications item in the menu, and selecting Edit Menus.
+&lt;/p&gt;
+&lt;p&gt;
+Add a New Item under whatever menu (for example, Programming). Browse for an icon (/usr/lib/eclipse/icon.xpm), enter &lt;strong&gt;eclipse&lt;/strong&gt; into Command, and whatever makes the most sense for Name and Comment.
+&lt;/p&gt;
+&lt;p&gt;
+We still have to install Apache, at least, and because I am who I am, ColdFusion as well.
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing Eclipse 3.2 to a Windows XP SP2 machine</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</link>
+      <pubDate>Sat, 19 Aug 2006 08:10:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine/</guid>
+      <description>&lt;p&gt;
+In this guide, we&amp;#39;ll be installing Eclipse 3.2. The environment I&amp;#39;ll be using is as follows.
+&lt;/p&gt;
+&lt;p&gt;
+HP Pavilion a620n&lt;br /&gt;
+2.20 Ghz, 960 MB (1 GB) of RAM&lt;br /&gt;
+Windows XP Home, SP2
+&lt;/p&gt;
+&lt;h4&gt;What is Eclipse?&lt;/h4&gt;
+&lt;p&gt;
+&amp;ldquo;Eclipse is an open source community whose projects are focused on providing a vendor-neutral open development platform and application frameworks for building software.&amp;rdquo; (From the Eclipse.org Web site.) In other words, Eclipse is an open source editor capable of helping you write the necessary code for a number of programming languages. Some level of support exists for Web languages like PHP and ColdFusion, but Eclipse was primarily for Java-based programming.
+&lt;/p&gt;
+&lt;h4&gt;Why use Eclipse?&lt;/h4&gt;
+&lt;p&gt;
+If you use Dreamweaver, Eclipse could be a good alternative to paying the high costs associated with DW. Being an open source program, the chance of another language, additional functionality, or bug-fixes being incorporated into code is higher than with the closed source DW.
+&lt;/p&gt;
+&lt;p&gt;
+Of course, Dreamweaver is a very fine product (the one I recommend if you can afford it, along with some of Adobe&amp;#39;s other great products), so if you&amp;#39;ve already bought Dreamweaver, don&amp;#39;t instantly be sad and/or angry.
+&lt;/p&gt;
+&lt;h4&gt;Downloading and Installing Eclipse&lt;/h4&gt;
+&lt;p&gt;
+Downloading Eclipse is pretty straight-forward. Simply head over to &lt;a href=&#34;http://www.eclipse.org/&#34;&gt;http://www.eclipse.org/&lt;/a&gt;, select Downloads, and download the Eclipse SDK (at this time, version 3.2). It&amp;#39;s a fairly large download at 120 MB, but torrents are available (P2P really can be used for legit purposes). If you just download the file, you&amp;#39;ll need to pick a mirror, so pick one close to you, if you can. Unfortunately, there&amp;#39;s no city/state information for North America, so you&amp;#39;ll have to work by name, intuition, or experience.
+&lt;/p&gt;
+&lt;p&gt;
+If you&amp;#39;ve followed any of my previous guides, you know how I&amp;#39;ve setup a directory just for my Web server downloads. I&amp;#39;d recommend throwing this file into that folder as well, perhaps as a sub-folder, if necessary.
+&lt;/p&gt;
+&lt;p&gt;
+In order to run Eclipse, you&amp;#39;ll also need a Java runtime environment (JRE). If you&amp;#39;re not sure whether you have this or not, just keep an open window pointed to the Eclipse downloads page (since there&amp;#39;s a link to download a JRE in the first paragraph) and we&amp;#39;ll just start Eclipse to see how it functions. A readme file within the zip also details some environments that Eclipse has been known to run on.
+&lt;/p&gt;
+&lt;p&gt;
+Once the download has finished, extract the eclipse directory anywhere you&amp;#39;d like, for now. When the extraction has completed, navigate to the eclipse.exe program, immediately within the eclipse folder. Run this program to start Eclipse.
+&lt;/p&gt;
+&lt;p&gt;
+You&amp;#39;ll first have to select a workspace. If you&amp;#39;ve got one area where you store your Web site folders, than point this to a subdirectory within it. For example, c:\home\ is where I store my sites, so I&amp;#39;ll change this to c:\home\eclipse\workspace For now, I&amp;#39;m not going to use this as my default.
+&lt;/p&gt;
+&lt;p&gt;
+If you have the necessary JRE, you should now be able to see a welcome screen. Otherwise, at some point you&amp;#39;ve probably gotten an error message. Go back to the Eclipse downloads page and grab a JRE for your platform. Windows only has one choice (and Sun is a good choice) so go download and install the necessary JRE.
+&lt;/p&gt;
+&lt;p&gt;
+Otherwise, you&amp;#39;re ready to start using Eclipse. Samples are available within the program, and further documentation is also available from the Eclipse.org Web site.
+&lt;/p&gt;
+&lt;h4&gt;Next steps&lt;/h4&gt;
+&lt;p&gt;
+You&amp;#39;ll first want to determine where you want to run Eclipse from. I decided to create a new folder called &amp;#39;software&amp;#39; in my home folder and store Eclipse there. However, you can choose whatever you&amp;#39;d like. Perhaps it makes more sense to you to put the eclipse directory in Program Files, and create the necessary shortcuts.
+&lt;/p&gt;
+&lt;p&gt;
+Next, you may want to take a look at the Web Tools Platform (WTP) project, at &lt;a href=&#34;http://www.eclipse.org/webtools/&#34;&gt;http://www.eclipse.org/webtools/&lt;/a&gt;. &amp;ldquo;The WTP project includes the following tools: source editors for HTML, Javascript, CSS, JSP, SQL, XML, DTD, XSD, and WSDL; graphical editors for XSD and WSDL; J2EE project natures, builders, and models and a J2EE navigator; a Web service wizard and explorer, and WS-I Test Tools; and database access and query tools and models.&amp;rdquo; Definitely one of the must-haves if you&amp;#39;ll be using Eclipse in place of, or in addition to, Dreamweaver.
+&lt;/p&gt;
+&lt;p&gt;
+To install this, you can do it straight from Eclipse using their handy Install/Update feature. Note that unlike the WTP site seems to suggest, I had to actually use the Callisto Discovery Site first, to get the files necessary to install this Platform (instead of their update site).
+&lt;/p&gt;
+&lt;p&gt;
+Select and open the Callisto Discovery Site, then open Web and J2EE Development. I only selected the Web Standard Tools (WST) Project, then hit the Select Required button (wow, why isn&amp;#39;t this feature used more often ...). Checking this should force the download of the entire Graphical Editors and Frameworks item.
+&lt;/p&gt;
+&lt;p&gt;
+If you download this, keep in mind that it may take a very long time. A very long time. Even on my relatively fast connection, it took a handful of minutes to download all the necessary files. You may want to download the GEF directory first, then download the WST later, as time permits. If you have the time, however, go ahead and download and install it all (even though they are unsigned, you&amp;#39;ll be fine).
+&lt;/p&gt;
+&lt;p&gt;
+Once the install has completed, you may as well just Restart, instead of simply Applying. (Again, another feature I&amp;#39;d like to see more often.)
+&lt;/p&gt;
+&lt;p&gt;
+Now you can open an existing HTML to see just what kind of formatting you&amp;#39;ll get. If you try dynamic languages, like ColdFusion and PHP, however, you&amp;#39;ll see that formatting is not applied, and help text is not available. However, other projects do exist to extend how Eclipse handles these files.
+&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;
+And with that, you&amp;#39;ve successfully installed Eclipse. Take a look at the numerous areas available from the welcome page, see just what Eclipse can do.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

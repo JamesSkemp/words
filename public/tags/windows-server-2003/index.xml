@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Server 2003 on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/windows-server-2003/</link>
+    <description>Recent content in Windows Server 2003 on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 12 Mar 2010 12:40:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/windows-server-2003/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
+      <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
+      <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
+&lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
+&lt;h3&gt;Web Platform Installer&lt;/h3&gt;
+&lt;p&gt;The &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/platform/default.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt; can be downloaded from Microsoft.com and acts as middle-ground between all of the various applications that it covers, which is fairly robust (a &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/gallery/&#34;&gt;full listing&lt;/a&gt; is available).&lt;/p&gt;
+&lt;p&gt;As you can see in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_01.jpg&#34;&gt;Figure 1&lt;/a&gt;, WordPress is available along with a handful of other blogging applications. Upon selecting this and pressing Install, you&#39;re presented with the listing of dependencies and other applications that may be required (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_03.jpg&#34;&gt;3&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_04.jpg&#34;&gt;4&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;While I was going to install MySQL on a dedicated virtual machine, and was able to deselect that, for ease I&#39;ve kept in selected here. At this time I&#39;m not sure (yet)&amp;nbsp;of how that would impact the installation process.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Since MySQL was being installed, I was prompted, right away before anything was downloaded, for an administrator password, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Even though I thought&amp;nbsp;I had everything installed for IIS, I was also prompted, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_06.jpg&#34;&gt;Figure 6&lt;/a&gt;, for a Windows Server 2003 disc.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_07.jpg&#34;&gt;Figure 7&lt;/a&gt; alludes to the fact that the individual requirements are downloaded and installed, moving right into the setup of any Web sites as required, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_08.jpg&#34;&gt;Figure 8&lt;/a&gt;. In this case I kept the defaults. Additional WordPress setups are shown in Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_09.jpg&#34;&gt;9&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_10.jpg&#34;&gt;10&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_11.jpg&#34;&gt;11&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_12.jpg&#34;&gt;12&lt;/a&gt;, where the database is setup. It&#39;s been a while since I&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed MySQL&lt;/a&gt;, so how this relates to that installation is unknown.&lt;/p&gt;
+&lt;p&gt;Once all components have been installed, you&#39;re presented with a nice little screen, like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_13.jpg&#34;&gt;Figure 13&lt;/a&gt;. You can then launch WordPress and go through the setups necessary (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_14.jpg&#34;&gt;14&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_15.jpg&#34;&gt;15&lt;/a&gt;), log in (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_16.jpg&#34;&gt;Figure 16&lt;/a&gt;) and view the administrative interface (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_17.jpg&#34;&gt;Figure 17&lt;/a&gt;) and home page (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_18.jpg&#34;&gt;Figure 18&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Thoughts on the Platform Installer&lt;/h3&gt;
+&lt;p&gt;While I initially didn&#39;t think much of the installer, having actually used it, I&#39;m pleasantly surprised. It&#39;s an extremely simple process, similar to how one might install applications through, say, Ubuntu.&lt;/p&gt;
+&lt;p&gt;It takes a lot of the guess-work out of the process, which is rather nice. On the other hand, while I can get going with WordPress at this point (and I was able to do my testing fairly quickly), the disadvantage of this is that I don&#39;t know any of the complexities of the setup process. I haven&#39;t installed WordPress (or PHP, or MySQL), but rather an installer has. But, I like the challenge of figuring things out on my own.&lt;/p&gt;
+&lt;p&gt;Which is why while I like the Installer, and will definitely use it when I need to quickly test something, for the most part I&#39;ll probably stick with old-fashioned methods of installation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
+&lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
+&lt;h3&gt;Server system&lt;/h3&gt;
+&lt;p&gt;For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM. All updates were downloaded and installed.&lt;/p&gt;
+&lt;h3&gt;Downloading the installers&lt;/h3&gt;
+&lt;p&gt;SQL Server Express 2008 can be installed using the Microsoft Web Platform Installer, or a &#39;custom&#39; install can be downloaded. For the most flexibility and experience, I&#39;ll be covering the install using the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/express/sql/download/&#34;&gt;Runtime with Management Tools&lt;/a&gt; option.&lt;/p&gt;
+&lt;p&gt;You&#39;ll also want to grab the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=10EE29AF-7C3A-4057-8367-C9C1DAB6E2BF&#34;&gt;Windows PowerShell 1.0 installer&lt;/a&gt; for Windows Server 2003, if you haven&#39;t installed it already. If you&#39;re not sure, you can hold off until later in the install.&lt;/p&gt;
+&lt;h3&gt;Installing Microsoft SQL Server Express 2008&lt;/h3&gt;
+&lt;p&gt;After starting the installer you&#39;ll eventually reach the Installation tab, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall01.jpg&#34;&gt;Figure 1&lt;/a&gt;. For our simple installation, we&#39;ll use the first option of &#34;New SQL Server stand-alone installation or add features to an existing installation.&#34;&lt;/p&gt;
+&lt;p&gt;A quick check will be run to determine if there might be any issues installing setup files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall02.jpg&#34;&gt;Figure 2&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Since we we&#39;re installing the Express edition of SQL Server 2008, we won&#39;t need to enter a product key (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall03.jpg&#34;&gt;Figure 3&lt;/a&gt;), so we can continue and install the setup support files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall04.jpg&#34;&gt;Figure 4&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Once that&#39;s complete we start the actual install. A number of checks are run, one of which is for Windows PowerShell, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Run the installer (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall06.jpg&#34;&gt;Figure 6&lt;/a&gt;) if needed and re-run the check once it&#39;s complete. If you have any other issues, you should fix those until you can continue (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall07.jpg&#34;&gt;Figure 7&lt;/a&gt;).&lt;/p&gt;
+&lt;h4&gt;Feature Selection&lt;/h4&gt;
+&lt;p&gt;Next we&#39;ll need to choose what features we want to install (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall08.jpg&#34;&gt;Figure 8&lt;/a&gt;). Since we want an instance of SQL Server, we&#39;ll choose Database Engine Services. We&#39;ll also choose Management Tools - Basic so that we can manage our instance (databases, tables, users, etcetera) via a GUI. If you want, you can install the management tools on another machine, if you&#39;d prefer not having them on the server.&lt;/p&gt;
+&lt;h4&gt;Instance Configuration&lt;/h4&gt;
+&lt;p&gt;We&#39;ll stick with the default instance name, id, and root directory, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall09.jpg&#34;&gt;Figure 9&lt;/a&gt;. The default generally works just fine.&lt;/p&gt;
+&lt;h4&gt;Disk Space Requirements&lt;/h4&gt;
+&lt;p&gt;Space requirements will be checked. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall10.jpg&#34;&gt;Figure 10&lt;/a&gt; if you need to see.&lt;/p&gt;
+&lt;h4&gt;Server Configuration&lt;/h4&gt;
+&lt;p&gt;At the next stage we&#39;ll setup the accounts that SQL Server Database Engine and SQL Server Browser run under. By default the local service account is used for the latter, and nothing by default is selected for the former. Startup types are also set here. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall11.jpg&#34;&gt;Figure 11&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default the Network Service account is typically used, for the former, so we&#39;ll use that here, with no password needed. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall12.jpg&#34;&gt;Figure 12&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Database Engine Configuration&lt;/h4&gt;
+&lt;p&gt;The next step is to setup accounts. Windows authentication mode is more secure, but if using Web applications, you&#39;ll probably need to switch to Mixed Mode. Enter a password for the built-in account (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall13.jpg&#34;&gt;Figure 13&lt;/a&gt;). To continue you&#39;ll also need to specify a SQL Server administrator. Adding the current user (which is what I did) is the easiest if using a virtual machine. This leaves us at something like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall14.jpg&#34;&gt;Figure 14&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;Error and Usage Reporting&lt;/h4&gt;
+&lt;p&gt;If you want, you can sent error reports and feature usage data to Microsoft automatically. By default (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall15.jpg&#34;&gt;Figure 15&lt;/a&gt;) the items are unchecked.&lt;/p&gt;
+&lt;h4&gt;Installation Rules&lt;/h4&gt;
+&lt;p&gt;A quick check will be done to determine if the install will work or not. Fix any issues that may come up, and once everything passes or is skipped (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall16.jpg&#34;&gt;Figure 16&lt;/a&gt;), continue with the install.&lt;/p&gt;
+&lt;h4&gt;Ready to Install&lt;/h4&gt;
+&lt;p&gt;At this point you&#39;ll be given an overview of your selected options. Once you&#39;re ready, press the Install button. (See Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall17.jpg&#34;&gt;17&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall18.jpg&#34;&gt;18&lt;/a&gt;.)&lt;/p&gt;
+&lt;h4&gt;Installation Progress and Complete&lt;/h4&gt;
+&lt;p&gt;The installation will begin and should complete (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall19.jpg&#34;&gt;Figure 19&lt;/a&gt;). The final screen will display a link to the summary log, information about the setup/next steps, and any supplemental information (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall20.jpg&#34;&gt;Figure 20&lt;/a&gt;).&lt;/p&gt;
+&lt;h3&gt;Verifying the install&lt;/h3&gt;
+&lt;p&gt;At this point you should be able to start Microsoft SQL Server Management Studio and log into the local instance, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall21.jpg&#34;&gt;Figure 21&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also check to see if the service is running by opening Windows Task Manager and looking for sqlservr.exe and sqlwriter.exe (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall22.jpg&#34;&gt;Figure 22&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;And that&#39;s all there is to it.&lt;/p&gt;
+&lt;h3&gt;Update: Installing to Windows Server 2008&lt;/h3&gt;
+&lt;p&gt;Differences for installing on Windows Server 2008 (SP2):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows PowerShell can be installed from Server Manager &amp;gt; Features &amp;gt; Windows PowerShell.&lt;/li&gt;
+&lt;li&gt;Setting up the Windows Firewall is covered by &lt;a rel=&#34;external&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=94001&#34;&gt;Configuring the Windows Firewall to Allow SQL Server Access&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;No other changes need be made.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
+&lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
+&lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
+&lt;p&gt;However, when attempting to add this to my MVC site I kept running into issues, the last of which was an &#34;Unable to open the database file.&#34;&lt;/p&gt;
+&lt;p&gt;The first issue was with the type declared in the examples on the page above; &lt;strong&gt;TechInfoSystems.Data.SQLiteProvider&lt;/strong&gt; should be removed completely, as he suggests just&amp;nbsp;adding the three classes to your site.&lt;/p&gt;
+&lt;p&gt;The second and last issue was that pesky database issue. At first I didn&#39;t think the app_data directory was getting pushed over, so I verified that I was pushing that as part of the Publish process (how they recommend you push a MVC site to production).&lt;/p&gt;
+&lt;p&gt;Upon further review it looks like the App_Data directory was placed inside the Bin directory. Google didn&#39;t help me much on whether that was the expected behavior, but it consistently did that. I added a ton of permissions to NETWORK SERVICE on the bin\app_data directory, but still the same pesky error.&lt;/p&gt;
+&lt;p&gt;So I commented out the membership, profile, and role items completely from web.config and added the following code to the Index view.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%= AppDomain.CurrentDomain.GetData(&#34;DataDirectory&#34;).ToString() %&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Lo and behold, it was looking for it in the root of the site, exactly where I was expecting the App_Data directory to publish to.&lt;/p&gt;
+&lt;p&gt;Move the App_Data folder and sure enough, the site works (after uncommenting the Web.config provider information, of course) and I&#39;m able to create a new user.&lt;/p&gt;
+&lt;p&gt;So, why does the publish process require me to move the App_Data directory?&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;In order to get the database pushing correctly I changed Copy to Output from Do not copy to Copy always. However, what really needed to happen was the Build Action needed to be changed to Content.&lt;/p&gt;
+&lt;p&gt;An App_Data directory is now created correctly, and the SQLite database is correctly placed in the directory.&lt;/p&gt;
+&lt;h3&gt;Another gotcha&lt;/h3&gt;
+&lt;p&gt;If you want troubles, change the applicationName in the Web.config for all three items. If you do this, you&#39;ll run into errors like &#34;Attempt to write a read-only database attempt to write a readonly database&#34; with a line reference suggesting there&#39;s an issue with roleManager. Comment that out, or that and membership and&amp;nbsp;profile, and things will seem okay.&lt;/p&gt;
+&lt;p&gt;The issue is that the applicationName (SQLite ASP.NET Provider) is baked into the sample SQLite database. Durr.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
+&lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
+&lt;h3&gt;Requirements&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.virtualbox.org/&#34;&gt;Sun VirtualBox&lt;/a&gt;. We want this in particular for the great networking functionality, but other apps, like Microsoft Virtual PC, will work fine as well. I used version 3.0.8 r53138 on Windows 7 Home Premium&amp;nbsp;64-bit for this guide.&lt;/li&gt;
+&lt;li&gt;A copy of Windows Server 2003. In my case, I picked up a copy of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000WM3L3O?tag=strivinglifen-20&#34;&gt;Visual Studio 2008 Professional with MSDN Professional&lt;/a&gt;, which gives access to a large number of Windows Operating Systems and tools. Microsoft offers a number of &lt;a rel=&#34;external&#34; href=&#34;http://msdn.microsoft.com/en-us/subscriptions/subscriptionschart.aspx&#34;&gt;subscription options&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A computer that with a good amount of RAM and processor. The machine I used for this guide has 4 GB of RAM and a 2.20 GHz processor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;VirtualBox setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Install VirtualBox, making sure that you install any network adapters VirtualBox may need.&lt;/li&gt;
+&lt;li&gt;Create a new virtual machine.&lt;ol&gt;
+&lt;li&gt;Give the virtual machine a good name, such as &lt;em&gt;Windows Server 2003 - Web Server 1&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Select Microsoft Windows - Windows 2003 as the operating system and version.&lt;/li&gt;
+&lt;li&gt;Feel free to bump up the base memory size, but if looking to mimic an external server, try to use it&#39;s specs. I typically stick to the default of 256 MB.&lt;/li&gt;
+&lt;li&gt;Create a new hard disk, of the type Dynamically expanding storage; this allows you to create a large disk, but only have it take up the space it needs.&lt;/li&gt;
+&lt;li&gt;Give the disk a good amount of space; I generally change from the default of 20 GB to 50 GB, since it&#39;s not easy to increase this later, but you&#39;ll typically never go above 10 GB anyway.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Change the Network Adapter from the default of NAT to Bridged Adapter. This will allow you to reach both the Internet and your internal network.&lt;/li&gt;
+&lt;li&gt;With the machine setup, you&#39;ll want to verify that your Windows Server 2003 installation media is available. If using MSDN, that means adding your downloaded ISO to the Virtual Media Manager (FIle &amp;gt; Virtual Media Manager)&amp;nbsp;under CD/DVD Images.&lt;/li&gt;
+&lt;li&gt;Start the machine, attaching the ISO when prompted.&lt;ol&gt;
+&lt;li&gt;Generally the defaults are acceptable.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;General Windows Server 2003 setup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Once Windows Server 2003 is installed, install the guest additions (Devices &amp;gt; Install Guest Additions); it&#39;ll save you a deal of time.&lt;/li&gt;
+&lt;li&gt;Update Windows Server 2003 as needed.&lt;ol&gt;
+&lt;li&gt;In particular, I like to download the &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;current version of ASP.NET&lt;/a&gt; and install IE 8 (although I do the latter as a separate update; I&#39;ve had issues otherwise).&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;At this point I like to exit out of the machine and clone the hard drive. I&#39;ll have activated the license and have a nice hard drive, with the current updates. If I want to create another Window Server 2003 instance, it&#39;s easier to just use a base drive and customize as needed. Your decision. (The VirtualBox (VBoxManage) command is clonehd.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Specific Windows Server 2003 setups&lt;/h3&gt;
+&lt;p&gt;With a base install ready, we can go in various ways with our installation. By default, almost no services will be up and running.&lt;/p&gt;
+&lt;p&gt;In this particular instance, we just want to run IIS 6.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make sure you&#39;re in the Manage Your Server application. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_01.jpg&#34;&gt;See this&lt;/a&gt;.&lt;ol&gt;
+&lt;li&gt;By default it will start automatically (a good thing) or you can find it at Start &amp;gt; All Programs &amp;gt; Administrative Tools &amp;gt; Manage Your Server.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;From the options, select &lt;strong&gt;Add or remove a role&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;We want a &lt;strong&gt;Custom configuration&lt;/strong&gt;, since we just want a Web server.&lt;/li&gt;
+&lt;li&gt;For our needs, we want our&amp;nbsp;server to be an&amp;nbsp;&lt;strong&gt;Application server (IIS, ASP.NET)&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;We only want to enable &lt;strong&gt;ASP.NET&lt;/strong&gt;, not FrontPage Server Extensions (unless you particularly know you want that).&lt;/li&gt;
+&lt;li&gt;Our summary reads something like the following. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_02.jpg&#34;&gt;See this&lt;/a&gt;.&lt;ol&gt;
+&lt;li&gt;Install Internet Information Services (IIS)&lt;/li&gt;
+&lt;li&gt;Enable COM+ for remote transactions&lt;/li&gt;
+&lt;li&gt;Enable Microsoft Distrubuted Transaction Coordinator (DTC) for remote access&lt;/li&gt;
+&lt;li&gt;Enable ASP.NET&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;You may be prompted to insert a CD, at which point you&#39;ll want to mount CD 1 of the R2 discs, and not CD 2. You can play around with this as needed.&lt;/li&gt;
+&lt;li&gt;Shortly, you see that &#34;This server is Now an Application server.&#34; Included on this page is a link to view additional steps to secure the server. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_03.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You should now see that the Application Server role is now available to be managed. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_04.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Opening a browser and calling &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost/&#34;&gt;http://localhost/&lt;/a&gt; should now display the standard Under Construction page.&lt;/li&gt;
+&lt;li&gt;Go to Windows Update and install any needed updates.&lt;/li&gt;
+&lt;li&gt;Assuming you&#39;ve setup a Bridged Adapter in Network for the virtual machine, you should now be able to browse to the virtual instance in your host machine. You can use both the IP as well as the server name. For example, &lt;a rel=&#34;nofollow&#34; href=&#34;http://james-wins03ws1/&#34;&gt;http://james-wins03ws1/&lt;/a&gt;&amp;nbsp;or &lt;a rel=&#34;nofollow&#34; href=&#34;http://192.168.1.106/&#34;&gt;http://192.168.1.106/&lt;/a&gt;.&lt;ol&gt;
+&lt;li&gt;This can be found by opening a command prompt (cmd) and running &lt;strong&gt;ipconfig /all&lt;/strong&gt; and finding the IP Address.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;At this point you&#39;ve successfully setup IIS running on Windows Server 2003, in a virtual machine, and are able to connect to it from your host machine.&lt;/p&gt;
+&lt;p&gt;You can now mimic a real machine as much as you&#39;d like, for example by setting up FTP (&lt;a rel=&#34;external&#34; href=&#34;http://filezilla-project.org/&#34;&gt;FileZilla Server&lt;/a&gt;)&amp;nbsp;to move files between the machines.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;I recommend just using VirtualBox to move files between the two; Devices &amp;gt; Shared Folders will let you setup temporary and permanent folders.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Questions, comments, and suggestions are appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installing CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3 on Windows Server 2003</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
+      <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
+      <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
+&lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
+&lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;
+&lt;h3&gt;Downloading installers&lt;/h3&gt;
+&lt;p&gt;The first step is to download the installers for &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/downloads/subversion/&#34;&gt;CollabNet Subversion Server&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://tortoisesvn.net/downloads&#34;&gt;TortoiseSVN&lt;/a&gt;. At this time, the current versions of each are 1.6.3.&lt;/p&gt;
+&lt;h3&gt;Installing CollabNet Subversion Server&lt;/h3&gt;
+&lt;p&gt;CollabNet Subversion Server relies upon Apache to serve repositories, due to the various benefits (security and etcetera) that it provides. However, for this installation I&#39;ll assume that you want to keep IIS running and available.&lt;/p&gt;
+&lt;p&gt;Start the installer and read and click Next on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_01.jpg&#34;&gt;first&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_02.jpg&#34;&gt;second&lt;/a&gt; screens. On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_03.jpg&#34;&gt;third&lt;/a&gt; screen you&#39;ll be able to choose whether you want svnserve to run as a Windows service, as well as Apache. For these, you want to keep the default of having both checked.&lt;/p&gt;
+&lt;p&gt;Assuming you&#39;ve done that correctly, on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_04.jpg&#34;&gt;fourth screen&lt;/a&gt;&amp;nbsp;you&#39;ll be able to choose what port Subversion should use (default is 3690) and the directory to store repositories (default is c:\svn_repository).&lt;/p&gt;
+&lt;p&gt;On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_05.jpg&#34;&gt;next screen&lt;/a&gt; you&#39;ll setup Apache. If you wish to continue running IIS on port 80, you&#39;ll need to use a different port (80 changed to 8080 in my case) and/or change the host to a name that IIS is not using. You&#39;ll also set where the repositories are being stored (from the previous screen) and what path to use when navigating via HTTP.&lt;/p&gt;
+&lt;p&gt;You can also enable viewVC, but Active Python 2.5 must be installed. By default viewVC is not enabled (and I don&#39;t go through that installation here).&lt;/p&gt;
+&lt;p&gt;Finally, you&#39;ll choose the location to install CollabNet Subversion Server on &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_06.jpg&#34;&gt;screen six&lt;/a&gt;, and be presented with the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_07.jpg&#34;&gt;Finished screen&lt;/a&gt; once the installation is complete, which includes links to CollabNet products and services.&lt;/p&gt;
+&lt;p&gt;A &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_08.jpg&#34;&gt;restart&lt;/a&gt; will be required in order to start the necessary services. Once the restart is complete you can verify that you can access Apache through the browser, as well as run the &lt;code&gt;svnadmin --version&lt;/code&gt; command to verify that Subversion is installed. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_09.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Installing TortoiseSVN&lt;/h3&gt;
+&lt;p&gt;The next step is to install TortoiseSVN. &lt;a href=&#34;http://strivinglife.com/words/?tag=/tortoisesvn&#34;&gt;I&#39;ve covered TortoiseSVN&lt;/a&gt; a number of times on this site, and installing this version isn&#39;t much different.&lt;/p&gt;
+&lt;p&gt;Accepting the defaults will get you through the install process (captures: &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_01.jpg&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_03.jpg&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_04.jpg&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_05.jpg&#34;&gt;5&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_06.jpg&#34;&gt;6&lt;/a&gt;), and you&#39;ll need to &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_07.jpg&#34;&gt;restart&lt;/a&gt; once the installation is complete.&lt;/p&gt;
+&lt;h3&gt;Testing repository creation and usage&lt;/h3&gt;
+&lt;p&gt;At this point, you should be set to begin working with Subversion.&lt;/p&gt;
+&lt;p&gt;Create &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_01.jpg&#34;&gt;a new directory&lt;/a&gt; in your repository directory (default is C:\svn_repository). Then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_02.jpg&#34;&gt;right-click on the directory&lt;/a&gt; and select TortoiseSVN &amp;gt; Create repository here.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;http://media.strivinglife.com/graphics/collabnet_subversion/repotest_03.jpg&#34;&gt;repository will be created&lt;/a&gt;, and you can &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_04.jpg&#34;&gt;verify&lt;/a&gt; by opening the directory as well as navigating to it via HTTP.&lt;/p&gt;
+&lt;p&gt;We can now checkout a copy by right-clicking anywhere and selecting &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_05.jpg&#34;&gt;SVN Checkout ...&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Enter the URL of the repository and a checkout directory to continue. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_06.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You should then be able to browse to that path and see that you have &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_07.jpg&#34;&gt;a current directory&lt;/a&gt;. You can then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_08.jpg&#34;&gt;create a test file&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_09.jpg&#34;&gt;commit&lt;/a&gt; your &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_10.jpg&#34;&gt;changes&lt;/a&gt; to verify things are &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_11.jpg&#34;&gt;working correctly&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can make &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_13.jpg&#34;&gt;another change&lt;/a&gt;, verify that things commit, and then browse, via HTTP or the repository browser, to ensure that you&#39;re at the appropriate number of commits.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;And with that, you&#39;ve successfully installed CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3. Now you just need to use Subversion during development.&lt;/p&gt;
+&lt;p&gt;CollabNet also offers free tools for Eclipse and Visual Studio, to help you integrate with your favorite IDE.&lt;/p&gt;
+&lt;p&gt;You can also play around with the security options that are available due to Apache, to make Subversion as secure as you need it.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

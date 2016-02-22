@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slideshowpro on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/slideshowpro/</link>
+    <description>Recent content in Slideshowpro on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Feb 2008 08:50:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/slideshowpro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Using Xml4Ssp 1.3 Rev 1</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Using-Xml4Ssp-13-Rev-1/</link>
+      <pubDate>Sun, 24 Feb 2008 08:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Using-Xml4Ssp-13-Rev-1/</guid>
+      <description>&lt;p&gt;
+&lt;a href=&#34;http://www.locandadelborgo.com/download/index.asp&#34; target=&#34;_blank&#34;&gt;Xml4Ssp&lt;/a&gt; is a Windows XML generator for &lt;a href=&#34;http://slideshowpro.net/&#34; target=&#34;_blank&#34;&gt;SlideShowPro&lt;/a&gt;. While the program still needs some work, it&amp;#39;s pretty usable as it is. 
+&lt;/p&gt;
+&lt;p&gt;
+Since there&amp;#39;s no real documentation, I&amp;#39;ll be covering how I ended up using it to generate my latest &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/gallery/&#34; target=&#34;_blank&#34;&gt;gallery&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;h3&gt;Starting folder structure&lt;/h3&gt;
+&lt;p&gt;
+I began with the following folder structure: 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+    &lt;div&gt;
+    casio_images 
+    &lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+        &lt;div&gt;
+        &amp;nbsp;Pearl 
+        &lt;/div&gt;
+        &lt;ul&gt;
+            &lt;li&gt;
+            &lt;div&gt;
+            FullsizeImage 
+            &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+            &lt;div&gt;
+            Images 
+            &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+            &lt;div&gt;
+            Thumb 
+            &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The only folder that contained content was the FullsizeImage directory, in which I dumped my JPG originals. 
+&lt;/p&gt;
+&lt;h3&gt;Xml4Ssp setup&lt;/h3&gt;
+&lt;p&gt;
+Assuming it&amp;#39;s already installed and started, I created a New gallery. 
+&lt;/p&gt;
+&lt;p&gt;
+Next, I browsed to the gallery folder, and began filling out the rest as follows. 
+&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;
+    &lt;strong&gt;Browse gallery folder&lt;/strong&gt;:&lt;strong&gt; &lt;/strong&gt;C:\Documents and Settings\Owner\Desktop\temp\casio_images 
+    &lt;/p&gt;
+    &lt;p&gt;
+    Album options 
+    &lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;
+        &lt;strong&gt;Images folder name:&lt;/strong&gt; FullsizeImag&lt;br /&gt;
+        &lt;strong&gt;Album Title/Description:&lt;/strong&gt; Use Foldername&lt;br /&gt;
+        &lt;strong&gt;Use Permalinks:&lt;/strong&gt; None 
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;
+    Image options 
+    &lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;
+        &lt;strong&gt;Search for:&lt;/strong&gt; JPG&lt;br /&gt;
+        &lt;strong&gt;Images caption:&lt;/strong&gt; Use Filename&lt;br /&gt;
+        &lt;strong&gt;Use Hyperlink:&lt;/strong&gt; None&lt;br /&gt;
+        &lt;strong&gt;Larger Image Folder:&lt;/strong&gt; FullsizeImage 
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;
+    Thumb Options 
+    &lt;/p&gt;
+    &lt;blockquote&gt;
+        &lt;p&gt;
+        &lt;strong&gt;Thumb folder name:&lt;/strong&gt; Thumb&lt;br /&gt;
+        &lt;strong&gt;Create Thumbnails&lt;/strong&gt; (checked)&lt;br /&gt;
+        &lt;strong&gt;Width:&lt;/strong&gt; 100&lt;br /&gt;
+        &lt;strong&gt;Height:&lt;/strong&gt; 75&lt;br /&gt;
+        Constrain proportion by Width&lt;br /&gt;
+        &lt;strong&gt;Resize method:&lt;/strong&gt; nearest neighbor (Default)&lt;br /&gt;
+        &lt;strong&gt;Quality:&lt;/strong&gt; 50 
+        &lt;/p&gt;
+    &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Cleanup&lt;/h3&gt;
+&lt;p&gt;
+Once I generated, it successfully created the thumbnails, but did not create the resized images. This leads me to believe that the FullsizeImage directory is not resized at all. 
+&lt;/p&gt;
+&lt;p&gt;
+On the one hand this is good, on the other, it would be nice if it did. You can fix this by saving the generated XML file and changing the Thumb folder name to another directory. Next, change the width/height/constrains/quality accordingly. 
+&lt;/p&gt;
+&lt;p&gt;
+And with that, you&amp;#39;ve generated a gallery, with the necessary XML file, in less than usual time! 
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New gallery posted</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</link>
+      <pubDate>Mon, 21 May 2007 22:14:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/New-gallery-posted/</guid>
+      <description>&lt;p&gt;
+After a bit of looking around, for the best gallery application, I&amp;#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&amp;#39;m requiring version 8 or higher for mine), and it did cost some money, it&amp;#39;s a great little application.
+&lt;/p&gt;
+&lt;p&gt;
+You can see what I&amp;#39;ve currently got available at &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+There&amp;#39;s still a lot I&amp;#39;ve got to play with, but, it&amp;#39;s at least got a start of 12 images (at this time). The gallery requires a pretty fast connection, but it is what it is.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

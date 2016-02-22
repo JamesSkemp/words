@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xml Schema Definition on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/xml-schema-definition/</link>
+    <description>Recent content in Xml Schema Definition on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Dec 2009 07:30:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/xml-schema-definition/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</link>
+      <pubDate>Wed, 23 Dec 2009 07:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;the first part of this series&lt;/a&gt; I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010.&lt;/p&gt;
+&lt;p&gt;This time I&#39;m going to create the actual XML Schema Definition file with &lt;a rel=&#34;external&#34; href=&#34;http://www.oxygenxml.com/&#34;&gt;&amp;lt;oXygen/&amp;gt; XML Editor&lt;/a&gt;, version 11.1.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;I&#39;ve been using &amp;lt;oXygen/&amp;gt; since January 2008, and wouldn&#39;t trade it for any other XML editor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If you don&#39;t have &amp;lt;oXygen/&amp;gt; you can still follow along. The finished product is available online&amp;nbsp;and as you follow along you&#39;ll get a sense of what the tool is doing. A trial version of the application is also available.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://media.jamesrskemp.com/xsd/JournalSimple.xsd&#34;&gt;Download/view the Journal XML Schema Definition&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Creating an empty XSD&amp;nbsp;in &amp;lt;oXygen/&amp;gt;&lt;/h3&gt;
+&lt;p&gt;After starting &amp;lt;oXygen/&amp;gt; select File &amp;gt; New... and select xsd - XML Schema (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_1.jpg&#34;&gt;Figure 1&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;At this point we won&#39;t select/enter a Target namespace, and will use the default xs prefix and appropriate namespace,&amp;nbsp;as shown in&amp;nbsp;&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_2.jpg&#34;&gt;Figure 2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Once we have a new file created, select the &#39;Text&#39; &#39;tab&#39; in the bottom left-hand corner of the application. This gives us a model view as well as the XML behind the model, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_3.jpg&#34;&gt;Figure 3&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;12/23/2009: &lt;span style=&#34;text-decoration: line-through;&#34;&gt;While working on the next part of this series I realized that I was wrong to have the elements and attributes camel case, instead of Pascal case. The XSD has been updated, but the guide has been left as it was created. Just uppercase the initial character and you&#39;ll be fine. Or leave it as is.&lt;/span&gt; Actually, I have no idea what I&#39;m talking about.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Filling out the XSD&lt;/h3&gt;
+&lt;p&gt;Now that we have a model, we can start creating our schema definition graphically. We&#39;ll start at the top, with the root element.&lt;/p&gt;
+&lt;p&gt;Right-click on the schema box and select Append child &amp;gt; xs:element. Make sure the name is set to Name and enter &#34;journal&#34; as the Value. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_4.jpg&#34;&gt;Figure&amp;nbsp;4&lt;/a&gt;.)&amp;nbsp;Press OK. Note that the text version is also updated accordingly. As you make changes, try to pay attention to what happens below. Luckily, the interface is pretty obvious, adding explanatory text to the standard items. It will also highlight where errors are, as they arise.&lt;/p&gt;
+&lt;p&gt;Since we&#39;ve got an attribute to add to the journal element, as well as an entry element, we&#39;ll next add these. Right-click on journal, select Append child &amp;gt; xs:complexType, leaving everything blank (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_5.jpg&#34;&gt;Figure 5&lt;/a&gt;). Right-click on this new item (a &#39;box&#39;) and select Append child &amp;gt; xs:sequence. Again, leave everything blank (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_6.jpg&#34;&gt;Figure 6&lt;/a&gt;).&amp;nbsp;Right-click on the &#39;box&#39; again and select Append child &amp;gt; xs:attribute. This time we&#39;ll expand the box using the arrow and change the name (to source), the type (to xs:string), and the use (to required) as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_7.jpg&#34;&gt;Figure 7&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now our journal element is finished, but we need to add the entry element and&amp;nbsp;its attribute and children elements.&lt;/p&gt;
+&lt;p&gt;Right-click on the icon of three boxes (added when we added an xs:sequence above) and select Append child &amp;gt; xs:element. Name is entry and maxOccurs is unbounded, since this element can repeat any number of times. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_8.jpg&#34;&gt;Figure 8&lt;/a&gt;.)&lt;/p&gt;
+&lt;p&gt;Repeating what we did before, we&#39;ll right-click on entry and select Append child &amp;gt; xs:complexType, leaving everything blank again. Right-click on this new item and select Append child &amp;gt; xs:sequence, again leaving everything blank. Right-click on the box again (the xs:complexType) and select Append child &amp;gt; xs:attribute. Giving this a name of id, a type of xs:string, and use of required we end up with something like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_9.jpg&#34;&gt;Figure 9&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now we&#39;re at a point where we have more than one element at the same level, but some also have children. Luckily, we already know what to do to finish this up.&lt;/p&gt;
+&lt;p&gt;Right-click on the three boxes (above the id attribute) and select Append child &amp;gt; xs:element five times. Once all five are created we can update the names accordingly, until we have &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_10.jpg&#34;&gt;Figure 10&lt;/a&gt;. A sequence states that the items must appear in a particular order, 0 or more times. So just follow the sample layout as you name, which determines how they must appear in the XML document.&lt;/p&gt;
+&lt;p&gt;The author element has an element within it, so we&#39;ll do our now standard of right-clicking on it and Append child &amp;gt; xs:complexType then Append child &amp;gt; xs:sequence on the new item. Finally Append child &amp;gt; xs:element, giving it a name of name and type of xs:string. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_11.jpg&#34;&gt;Figure 11&lt;/a&gt; for this final step.&lt;/p&gt;
+&lt;p&gt;Double click on dateCreated, then dateUpdated, changing the type of both to xs:dateTime. &lt;span style=&#34;text-decoration: line-through;&#34;&gt;Then change the nillable value of dateUpdated to true.&lt;/span&gt; See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_12.jpg&#34;&gt;Figure 12&lt;/a&gt;. Contrary to the figure, based on our initial layout we want dateCreated and dateUpdated to be the same initially, so it should actually never be null. You can remove this attribute by double clicking on the item in model view and removing it there (right-click in the appropriate Attribute cell and select Remove)&amp;nbsp;or by removing it from the XML itself.&lt;/p&gt;
+&lt;p&gt;Finally double click on text and change the type to xs:string.&lt;/p&gt;
+&lt;p&gt;Now we&#39;ll repeat the complexType/sequence additions a couple more times. Right-click on supplements and append an xs:complexType, xs:sequence and xs:element, with a name of supplement. Right-click on supplement and again append an xs:complexType, xs:sequence, two xs:element, and an xs:attribute on xs:complexType (the single box). This gives us &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_13.jpg&#34;&gt;Figure 13&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The first element name is dateAdded, type is xs:dateTime. The second element name is text, type is xs:string. Attribute name is id and type is xs:positiveInteger, with use of required.&lt;/p&gt;
+&lt;p&gt;You may have noticed another possible option. positiveInteger starts at 1 while nonNegativeInteger starts at 0. Per the rough schema we want to start at 1, and are therefore using the former.&lt;/p&gt;
+&lt;p&gt;Finally change maxOccurs on supplement to unbounded, since we want to allow multiple supplement elements. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/oXygenXmlEditor/oXygen_XmlSchemaDefinition_14.jpg&#34;&gt;Figure 14&lt;/a&gt; shows this and most of the last few changes we had made as well.&lt;/p&gt;
+&lt;p&gt;Save the file, calling it whatever you want. (I choose &lt;a href=&#34;http://media.jamesrskemp.com/xsd/JournalSimple.xsd&#34;&gt;JournalSimple.xsd&lt;/a&gt;, as I can see expanding this to allow comments, for example.)&lt;/p&gt;
+&lt;h3&gt;Validating the schema&lt;/h3&gt;
+&lt;p&gt;&amp;lt;oXygen/&amp;gt; XML Editor has a tool to generate sample XML files from an XML Schema Definition (XSD). Select Tools &amp;gt; Generate Sample XML Files..., select an XSD file (will be the current XSD if you still have it open), choose the output directory, and run. In my case, that gave me an output like the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;
+&amp;lt;journal xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34;
+ xsi:noNamespaceSchemaLocation=&#34;file:/D:/projects/media/xsd/JournalSimple.xsd&#34; source=&#34;source0&#34;&amp;gt;
+    &amp;lt;entry id=&#34;id0&#34;&amp;gt;
+        &amp;lt;author&amp;gt;
+            &amp;lt;name&amp;gt;name0&amp;lt;/name&amp;gt;
+        &amp;lt;/author&amp;gt;
+        &amp;lt;dateCreated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateCreated&amp;gt;
+        &amp;lt;dateUpdated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateUpdated&amp;gt;
+        &amp;lt;text&amp;gt;text0&amp;lt;/text&amp;gt;
+        &amp;lt;supplements&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text1&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text2&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text3&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+        &amp;lt;/supplements&amp;gt;
+    &amp;lt;/entry&amp;gt;
+    &amp;lt;entry id=&#34;id1&#34;&amp;gt;
+        &amp;lt;author&amp;gt;
+            &amp;lt;name&amp;gt;name1&amp;lt;/name&amp;gt;
+        &amp;lt;/author&amp;gt;
+        &amp;lt;dateCreated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateCreated&amp;gt;
+        &amp;lt;dateUpdated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateUpdated&amp;gt;
+        &amp;lt;text&amp;gt;text4&amp;lt;/text&amp;gt;
+        &amp;lt;supplements&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text5&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text6&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text7&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+        &amp;lt;/supplements&amp;gt;
+    &amp;lt;/entry&amp;gt;
+    &amp;lt;entry id=&#34;id2&#34;&amp;gt;
+        &amp;lt;author&amp;gt;
+            &amp;lt;name&amp;gt;name2&amp;lt;/name&amp;gt;
+        &amp;lt;/author&amp;gt;
+        &amp;lt;dateCreated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateCreated&amp;gt;
+        &amp;lt;dateUpdated&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateUpdated&amp;gt;
+        &amp;lt;text&amp;gt;text8&amp;lt;/text&amp;gt;
+        &amp;lt;supplements&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text9&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text10&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+            &amp;lt;supplement id=&#34;50&#34;&amp;gt;
+                &amp;lt;dateAdded&amp;gt;2006-05-04T18:13:51.0Z&amp;lt;/dateAdded&amp;gt;
+                &amp;lt;text&amp;gt;text11&amp;lt;/text&amp;gt;
+            &amp;lt;/supplement&amp;gt;
+        &amp;lt;/supplements&amp;gt;
+    &amp;lt;/entry&amp;gt;
+&amp;lt;/journal&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;While not perfect, based on what we want, it&#39;s not too bad. And it shows us that we&#39;re on track, since the elements and attributes we wanted on items are there.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;At this point we&#39;ve created our XSD. Is the series at an end? I suppose we&#39;ll find out if/once part 3 is released.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>XML Schema Definition creation: Journal - Part 1: Primary layout</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</link>
+      <pubDate>Mon, 21 Dec 2009 07:50:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</guid>
+      <description>&lt;p&gt;&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/XML-creation-Part-01.aspx&#34;&gt;a previous series&lt;/a&gt;, I went over the process of creating a new XML document to store &lt;a href=&#34;http://jamesrskemp.com/video_games.xml&#34;&gt;my video games&lt;/a&gt;. (Although in that case I used a DTD.)&lt;/p&gt;
+&lt;p&gt;This time I&amp;rsquo;m going to work on a schema to store quasi-journal entries, which I&amp;rsquo;m hoping will help with my goal to write every day.&lt;/p&gt;
+&lt;h3&gt;What I hope to accomplish&lt;/h3&gt;
+&lt;p&gt;Ultimately I want to store a bit of text for any particular day. The entry should have a date and time associated with it, for both when it was initially created, as well as last updated.&lt;/p&gt;
+&lt;p&gt;The format should also allow supplemental content to be added and associated with an entry. This supplemental content could be added the same day, or years later.&lt;/p&gt;
+&lt;p&gt;The content should accept HTML formatting. Comments from non-authors don&amp;rsquo;t need to be stored or tracked.&lt;/p&gt;
+&lt;h3&gt;Sample layout&lt;/h3&gt;
+&lt;p&gt;After thinking about these needs, I came up with a structure like this on the 15th. Thus far, I haven&amp;rsquo;t seen much need to expand it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;journal source
+&lt;ul&gt;
+&lt;li&gt;entry id
+&lt;ul&gt;
+&lt;li&gt;author
+&lt;ul&gt;
+&lt;li&gt;name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;dateCreated&lt;/li&gt;
+&lt;li&gt;dateUpdated&lt;/li&gt;
+&lt;li&gt;text&lt;/li&gt;
+&lt;li&gt;supplements
+&lt;ul&gt;
+&lt;li&gt;supplement id
+&lt;ul&gt;
+&lt;li&gt;dateAdded&lt;/li&gt;
+&lt;li&gt;text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Explanation of elements&lt;/h3&gt;
+&lt;p&gt;The journal element is what ties it all together. It has a source attribute, which ties all individual journals, from a particular source (hence the name),&amp;nbsp;to a single URI. The source could be a site, service, or person, although each entry could be associated with someone.&lt;/p&gt;
+&lt;p&gt;Within the journal element is one or more entry elements, which have a unique id attribute. When designing, I envisioned this as GUID (modelling after BlogEngine.NET, with GUIDs being assigned to each post). I also saw each entry being a daily addition. Either way, once a core entry is created (the text element), I didn&amp;rsquo;t see that it (the core entry text)&amp;nbsp;would be updated any further.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s an author element next, which currently stores a name, but could be extended to include an email, Web site, and etcetera.&lt;/p&gt;
+&lt;p&gt;The next two date elements are fairly obvious, with the first being permanent, and the second being set to the first when the entry is initially created, then updated as each supplement is added.&lt;/p&gt;
+&lt;p&gt;The text element -&amp;nbsp;which was&amp;nbsp;initially&amp;nbsp;called entry before adding the parent - stores the HTML content of the entry. Again, outside of minor edits, I don&amp;rsquo;t see this content as changing, much like an actual paper journal.&lt;/p&gt;
+&lt;p&gt;The supplements element contains one or more supplement elements. These have a dateAdded element, but no element to store an update date. It also has an id attribute (an addition from what I intially outlined on paper), which is just an increasing number, from 1 up, unique to the entry. Like the core entry, it has a text element that stores HTML content of the addition.&lt;/p&gt;
+&lt;p&gt;The supplements are meant to add additional notes or comments to the original entries, by the author of the original. Again, I did not envision this having any commenting, outside of that by the author.&lt;/p&gt;
+&lt;p&gt;I also initially saw each entry as being within its own file, but after further thought, believe that a single file could store a month or year&amp;rsquo;s worth of entries.&lt;/p&gt;
+&lt;h3&gt;Next steps&lt;/h3&gt;
+&lt;p&gt;Before starting on the schema itself I want to research XInclude, to determine whether this would work for pulling multiple entries into a single core XML document. Depending upon what that suggests will determine how the base layout changes, if at all.&lt;/p&gt;
+&lt;h3&gt;Update: XInclude research&lt;/h3&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Not per se an update for users, since the post is scheduled for the day after I actually wrote it, but &amp;hellip;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While my editor, &amp;lt;oXygen&amp;gt; XML Editor, supports XInclude, for the purposes of this schema I don&amp;rsquo;t believe XInclude is going to be all that helpful.&lt;/p&gt;
+&lt;p&gt;It might just be that the source referred to will have to handle the individual journal files, however it sees fit. This allows each entry to&amp;nbsp;be either a single entity or contain a number of entries, depending upon the needs and use of the individual author(s).&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested, here&amp;rsquo;s the source I used. Pulling this up in Internet Explorer 8.0, as is, doesn&amp;rsquo;t display it as&amp;nbsp;I would expect, but Author mode in &amp;lt;oXygen/&amp;gt; XML Editor displays it correctly.&lt;/p&gt;
+&lt;h4&gt;parent.xml&lt;/h4&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;UTF-8&amp;rdquo;?&amp;gt;
+&amp;lt;testParent xmlns:xi=&amp;rdquo;&lt;a href=&#34;http://www.w3.org/2001/XInclude&#34;&gt;http://www.w3.org/2001/XInclude&lt;/a&gt;&amp;ldquo;&amp;gt;
+    &amp;lt;xi:include href=&amp;ldquo;child1.xml&amp;rdquo;/&amp;gt;
+    &amp;lt;xi:include href=&amp;ldquo;child2.xml&amp;rdquo;/&amp;gt;
+    &amp;lt;xi:include href=&amp;ldquo;child3.xml&amp;rdquo;/&amp;gt;
+&amp;lt;/testParent&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h4&gt;child&lt;em&gt;x&lt;/em&gt;.xml&lt;/h4&gt;
+&lt;p&gt;The same content was used for each of the three.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&amp;ldquo;1.0&amp;rdquo; encoding=&amp;ldquo;UTF-8&amp;rdquo;?&amp;gt;
+&amp;lt;child&amp;gt;
+    &amp;lt;text&amp;gt;asdf&amp;lt;/text&amp;gt;
+&amp;lt;/child&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

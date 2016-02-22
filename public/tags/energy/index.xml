@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Energy on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/energy/</link>
+    <description>Recent content in Energy on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Mar 2007 19:54:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/energy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Solar-powered desk fans?</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Solar-powered-desk-fans/</link>
+      <pubDate>Sun, 25 Mar 2007 19:54:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Solar-powered-desk-fans/</guid>
+      <description>&lt;p&gt;With summer right around the corner, I&#39;ve been looking at solar powered fans, especially after seeing an episode of Ask This Old House where they installed an attic fan.&lt;!--adsense--&gt;&lt;/p&gt;
+&lt;p&gt;Unfortunately, it looks it&#39;s extremely hard to find non-attic fans, in particular smaller models that might fit in a window.&lt;/p&gt;
+&lt;p&gt;Since I&#39;ve had such good luck with posting other items, I&#39;m hoping that someone will come upon this and have some suggestions for where one can either purchase a pre-built, solar-powered, desk fan, or a site that walks through the creation process.&lt;/p&gt;
+&lt;p&gt;Even if there&#39;s no storage, it would still be nice on those warm days to have a fan that isn&#39;t pulling an electrical current ...&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

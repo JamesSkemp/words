@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kakuro on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/kakuro/</link>
+    <description>Recent content in Kakuro on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jun 2008 08:30:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/kakuro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cross Sums Helper 2.0 - testing needed</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Cross-Sums-Helper-20-testing-needed/</link>
+      <pubDate>Mon, 02 Jun 2008 08:30:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Cross-Sums-Helper-20-testing-needed/</guid>
+      <description>&lt;p&gt;
+After sleeping on it (albeit poorly), I&amp;#39;ve resolved the issue that was stopping production on the new version of my &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/words/post/Cross-Sums-Number-Combinations-Guide.aspx&#34;&gt;Cross Sums Helper&lt;/a&gt; application. 
+&lt;/p&gt;
+&lt;p&gt;
+However, I need some help testing. 
+&lt;/p&gt;
+&lt;p&gt;
+Download &lt;a href=&#34;http://jamesrskemp.com/applications/CrossSumsHelper_2.0.exe&#34;&gt;Cross Sums Helper 2.0&lt;/a&gt; - 67 KB (.NET Framework 2.0 or higher is required). 
+&lt;/p&gt;
+&lt;p&gt;
+UPDATE: Download &lt;a href=&#34;http://jamesrskemp.com/applications/CrossSumsHelper_2.1.exe&#34;&gt;Cross Sums Helper 2.1&lt;/a&gt; - 65 KB 
+&lt;/p&gt;
+&lt;p&gt;
+If you don&amp;#39;t have .NET Framework (and are on Windows) let me know - I had a hard time finding any real stats on these numbers, even from MS people. 
+&lt;/p&gt;
+&lt;p&gt;
+Initial testing done on: 
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Windows Vista Ultimate SP1&lt;/li&gt;
+    &lt;li&gt;Windows XP Home SP3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+This program has moved from Visual Basic (6) to Visual C#, but still needs&amp;nbsp;a couple of tweaks to be even leaner. 
+&lt;/p&gt;
+&lt;h3&gt;Updates&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Version 2.0: Initial 2.0 release,&amp;nbsp;rewritten in C#, using .NET Framework 2.0. (2008.06.02 @ 7:30)&lt;/li&gt;
+    &lt;li&gt;Version 2.1: Code should be a bit leaner and faster,&amp;nbsp;after some coding changes. (2008.06.02 @ 21:45)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&amp;nbsp;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cross Sums Number Combinations Guide</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Cross-Sums-Number-Combinations-Guide/</link>
+      <pubDate>Thu, 13 Apr 2006 20:13:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Cross-Sums-Number-Combinations-Guide/</guid>
+      <description>&lt;p&gt;
+Quite a while ago - back in May of 2003 actually - I began work on a guide that would display every possible number combination for cross sum puzzles. Since then, a number of people have corrected mistakes that crept in, resulting in a number of different versions of the guide over the last (almost) two years.&lt;!--adsense--&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+Not too surprisingly, the guide has become something of a hit. I also created a Windows program, around the same time, that would allow people to find combinations based upon the number of blanks you&amp;#39;re allowed, followed by the number you need to determine. It&amp;#39;s really quite a simple program (and one that I may look at creating for the Web, perhaps using AJAX ...). 
+&lt;/p&gt;
+&lt;p&gt;
+I&amp;#39;m offering both for download here, absolutely free. (Of course, I always like to hear from people who have found any of my resources, whether they be articles or programs. And, I do have a PayPal link below if you&amp;#39;d like to send a donation :D) 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/04/crosssumsnumbers.pdf&#34; title=&#34;Cross Sums Number Combination Guide&#34;&gt;Cross Sums Number Combination Guide&lt;/a&gt; [PDF: 283 KB] 
+&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;
+Download the most current version -&amp;nbsp;&lt;a href=&#34;http://jamesrskemp.com/applications/CrossSumsHelper_2.1.exe&#34;&gt;Cross Sums&amp;nbsp;Helper 2.1&lt;/a&gt;. This version requires .NET Framework 2.0 or higher. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/04/ProjectCrossSumsHelper.exe&#34;&gt;Cross Sums Helper v1.3.2&lt;/a&gt; [EXE: 152 KB] 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/04/ProjectCrossSumsHelperNU.exe&#34;&gt;Cross Sums Helper v1.4.0, without the update utility&lt;/a&gt; [EXE: 172 KB] &lt;strong&gt;RECOMMENDED&lt;/strong&gt; Thanks to Ordivore for his work on improving this program. 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/04/msinet.zip&#34;&gt;Microsoft Internet Transfer Control&lt;/a&gt; may be required on some computers for the version with the update utility [ZIP: 58.4 KB] 
+&lt;/p&gt;
+&lt;p&gt;
+Since I haven&amp;#39;t had too much need to update the program, I recommend you just down the version that doesn&amp;#39;t have the upgrade utility. If you need assistance with the program, I have written a guide - the &lt;a id=&#34;p116&#34; href=&#34;http://replace-this-with-your-hugo-site.com/files/2006/04/crosssumshelperguide.pdf&#34; title=&#34;Cross Sums Helper Guide&#34;&gt;Cross Sums Helper Guide&lt;/a&gt; [PDF: 136 KB] - was written during version 1.2, but is still quite applicable. 
+&lt;/p&gt;
+&lt;p&gt;
+Note that cross sums puzzles can also be called cross additions, kakuro, and kakro. Some people compare them to sudoku problems, but I don&amp;#39;t see the similarity at all. Basically, a suduko puzzle just uses the sum of 45. I&amp;#39;ve never seen an easy cross sums of &amp;#39;standard&amp;#39; size, while I&amp;#39;ve seen quite a plethora of easy &amp;#39;standard&amp;#39; size sudoku problems. In short? Your average standard cross sums is probably going to be more difficult than your average standard sudoku. 
+&lt;/p&gt;
+&lt;p&gt;
+=== 
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;A free cross sums generator is currently being created, called MojiCS. However, the creator has run into a problem. Perhaps you can help? Take a look at &lt;a href=&#34;http://geocities.com/sirmojy/MojiCS/Problem01.html&#34;&gt;http://geocities.com/sirmojy/MojiCS/Problem01.html&lt;/a&gt; for a description of the problem, and contact information.&lt;/strong&gt; 
+&lt;/p&gt;
+&lt;p&gt;
+Thanks also to Shane Brandon for reminding me of X-Sums 98, available at &lt;a href=&#34;http://twestbom.home.comcast.net/&#34;&gt;http://twestbom.home.comcast.net/&lt;/a&gt; for around $20. Shane also points out that a review of the program is available at &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.geocities.com/Heartland/Plains/4484/xsum.htm&#34;&gt;http://www.geocities.com/Heartland/Plains/4484/xsum.htm&lt;/a&gt;. 
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

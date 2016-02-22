@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/technology/</link>
+    <description>Recent content in Technology on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jan 2016 12:17:57 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
+      <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
+      <description>&lt;p&gt;The following is how I configured a Raspberry Pi 2 as a samba server, using a Seagate Backup Plus Slim, 1TB, drive.&lt;/p&gt;
+
+&lt;p&gt;For ease I purchased the &lt;a href=&#34;http://amzn.to/1MZjXM0&#34;&gt;CanaKit Raspberry Pi 2 Complete Starter Kit&lt;/a&gt;. It runs about $70 and includes enough to get up and running with the Raspberry Pi 2, with the Pi itself, a nice case, power supply, HDMI cable, WiFi adapter, and SD card with NOOBS/Raspbian installer.&lt;/p&gt;
+
+&lt;p&gt;For the hard drive I opted to purchase a &lt;a href=&#34;http://amzn.to/1MZkg9F&#34;&gt;Seagate Backup Plus Slim 1TB Portable External Hard Drive&lt;/a&gt;, since I&#39;ve had good enough luck with Seagate in the past, and reviews are generally favorable. This ran me $60. I confirmed that it worked fine on my Windows 10 machine, and was already formatted to NTFS.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, once I received the Pi and drive I found that the power supply/Pi wasn&#39;t putting off enough power to keep the drive running. After looking at the options, including tweaking the Pi to pass through more power through the USB connector, I opted to pick up a powered USB hub instead (especially since I was considering setting up a camera at some point in the future).&lt;/p&gt;
+
+&lt;p&gt;For this I went with the &lt;a href=&#34;http://amzn.to/1MZktd6&#34;&gt;AmazonBasics 4 Port USB 3.0 Hub with 5V/2.5A power adapter&lt;/a&gt; for about $17. Reviews are quite favorable, and I didn&#39;t see any indication that it wouldn&#39;t work. Once I received the included manual does note that Windows 2000 through 8 are required, or Mac OS X. However, as you&#39;ll see there were no issues.&lt;/p&gt;
+
+&lt;p&gt;Before powering my Raspberry Pi 2 up I went ahead and plugged the USB Hub into the Pi, and the Seagate Backup Plus into the HUB. I powered up the HUB first, and then powered up the Pi.&lt;/p&gt;
+
+&lt;p&gt;While it was a couple years old, &lt;a href=&#34;http://www.howtogeek.com/139433/how-to-turn-a-raspberry-pi-into-a-low-power-network-storage-device/&#34;&gt;How to Turn a Raspberry Pi into a Low-Power Network Storage Device&lt;/a&gt; worked fairly well for the setup steps.&lt;/p&gt;
+
+&lt;h2&gt;Setup commands&lt;/h2&gt;
+
+&lt;p&gt;Unless otherwise noted, all commands were run on the Raspberry Pi 2 itself, at the command line, outside of Raspbian.&lt;/p&gt;
+
+&lt;p&gt;While the guide suggests installing &lt;strong&gt;ntfs-3g&lt;/strong&gt;, this was already installed on my Pi.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install ntfs-3g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Getting a listing of the disks, &lt;code&gt;sudo fdisk -l&lt;/code&gt;, returned /dev/sda1 for the name of the Seagate drive. So, despite a moment of worry, the Amazon USB Hub worked perfectly fine.&lt;/p&gt;
+
+&lt;p&gt;The next step was to setup the drive. I opted for all lowercase when doing so.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mkdir /media/usbhdd1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next was the mounting of the drive.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mount -t auto /dev/sda1 /media/usbhdd1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Within the directory I setup a new shares directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo mkdir /media/usbhdd1/shares
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When I first tried to install Samba I received a number of errors. A quick update resolved the issues.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get update
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then I was able to install Samba.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install samba samba-common-bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Backup the Samba configuration, just in case, and then open the config in &lt;strong&gt;nano&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
+sudo nano /etc/samba/smb.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My Windows 10 machine was already on the WORKGROUP workgroup, so I didn&#39;t have to touch this, but verify &lt;em&gt;workgroup&lt;/em&gt; is set as needed.&lt;/p&gt;
+
+&lt;p&gt;Contrary to the guide I was unable to find a security line in the Authenication section, so I skipped that for now, and promised to try to get in without authenticating before I went too far.&lt;/p&gt;
+
+&lt;p&gt;At the bottom of the config I added the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Backup1]
+comment = Backup Folder
+path = /media/usbhdd1/shares
+valid users = @users
+force group = users
+create mask = 0660
+directory mask = 0771
+read only = no
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;CTRL+X&lt;/code&gt; will exit, and allow you to save. Press &lt;code&gt;Enter&lt;/code&gt; to just overwrite the existing file.&lt;/p&gt;
+
+&lt;p&gt;Restart the Samba service:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /etc/init.d/samba restart
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now setup a user account in UNIX and then for Samba. Yes, this means entering the password 4 times. Personally, I&#39;m a fan of &lt;a href=&#34;http://preshing.com/20110811/xkcd-password-generator/&#34;&gt;Preshing&#39;s xkcd Password Generator&lt;/a&gt; and storing the credentials in &lt;a href=&#34;http://keepass.info/&#34;&gt;KeePass&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo useradd backups -m -G users
+sudo passwd backups
+sudo smbpasswd -a backups
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For ease I then determined the ip of the Raspberry Pi.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ifconfig
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then I just browsed to that directly in Windows explorer (&lt;code&gt;\\192.168.x.x&lt;/code&gt;). Thankfully I was prompted for credentials when I tried to access the &lt;strong&gt;Backup1&lt;/strong&gt; directory. Entering the credentials I had created above worked great.&lt;/p&gt;
+
+&lt;p&gt;The next step was to put some data in the directory. Over my wireless network speeds weren&#39;t fantastic, but it worked fine.&lt;/p&gt;
+
+&lt;p&gt;I verified the files had been copied over:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /media/usbhdd1/shares
+ls
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next was a step I almost forgot, which was to have the Raspberry Pi automatically mount the drive after rebooting. The config first needed to be opened in nano, &lt;code&gt;sudo nano /etc/fstab&lt;/code&gt;, and then I had to add the following, which I did so at the end of the file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/dev/sda1    /media/usbhdd1     auto    noatime     0       0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Ctrl + x&lt;/code&gt; as usual to exit, save, and overwrite the existing file.&lt;/p&gt;
+
+&lt;p&gt;Finally, restart the Raspberry Pi itself to verify that I could still get to the share after it came back up.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google Services on the Amazon Fire HD 8</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
+
+&lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Make sure you&#39;re a developer and you allow apps from unknown sources.&lt;/li&gt;
+&lt;li&gt;Install ES File Explorer via the Amazon Appstore. It&#39;s something I install on all my Android devices.&lt;/li&gt;
+&lt;li&gt;Extract the contents of the zip you downloaded from Mega somewhere.&lt;/li&gt;
+&lt;li&gt;Connect your Fire tablet to your computer via a USB cable.&lt;/li&gt;
+&lt;li&gt;Copy all the files to the Download directory on your tablet.&lt;/li&gt;
+&lt;li&gt;In ES File Explorer navigate to the Download directory.&lt;/li&gt;
+&lt;li&gt;Install com.android.vending-5.9-12*.apk&lt;/li&gt;
+&lt;li&gt;Install com.google.android.gms-6.6.03*.apk&lt;/li&gt;
+&lt;li&gt;Install GoogleLoginService.apk&lt;/li&gt;
+&lt;li&gt;Install GoogleServicesFramework.apk&lt;/li&gt;
+&lt;li&gt;Turn off and then turn back on the device.&lt;/li&gt;
+&lt;li&gt;You can try opening Google Play. If it automatically closes (it did for me), install com.android.vending-5.9.12*.apk again. When I did so it asked me if I wanted to install the update, and referenced one of the other services.&lt;/li&gt;
+&lt;li&gt;You should be able to run the Google Play application now.&lt;/li&gt;
+&lt;li&gt;When prompted, you can safely update the Google services.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With Google Play installed I was able to login to Google, as well as install YouTube and Chrome to my Fire HD 8.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 touchpad fix for the ASUS X200M</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
+      <pubDate>Fri, 07 Aug 2015 22:21:19 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
+      <description>&lt;p&gt;I recently decided to upgrade my ASUS X200M, after successfully upgrading my mom&#39;s. Unfortunately, after upgrading my machine I ran into an issue where the touchpad was completely unresponsive, and I was forced to either use the touchscreen or a USB mouse.&lt;/p&gt;
+
+&lt;p&gt;After a bit of looking around I found &lt;a href=&#34;http://www.cnet.com/forums/post/48428cdd-d8a9-4ef4-8bed-c70357f55fec/&#34;&gt;a post on CNET&#39;s forums&lt;/a&gt; that detailed a way to fix unresponsive touchpads in Windows 10. While the original question was about an Asus Transformer T100, this also worked for the X200M.&lt;/p&gt;
+
+&lt;p&gt;The steps are replicated below, since I trust my site to be up longer than CNET&#39;s forums.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Go to&lt;/p&gt;
+
+  &lt;ol&gt;
+  &lt;li&gt;Start (Windows Button)&lt;/li&gt;
+  &lt;li&gt;Settings&lt;/li&gt;
+  &lt;li&gt;Devices&lt;/li&gt;
+  &lt;li&gt;Mouse &amp;amp; Touchpad&lt;/li&gt;
+  &lt;li&gt;Scroll down to Related Settings and click &#34;Additional mouse options&#34;&lt;/li&gt;
+  &lt;li&gt;When the mouse properties window pops up, click on the ELAN tab&lt;/li&gt;
+  &lt;li&gt;Click your device and click &#34;Enable&#34;.&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With these steps done my touchpad was once again responsive.&lt;/p&gt;
+
+&lt;p&gt;If you can&#39;t click, you may have to &lt;a href=&#34;http://support.asus.com/Download.aspx?SLanguage=en&amp;m=Smart+Gesture&#34;&gt;download Smart Gesture for Windows 10&lt;/a&gt; from the ASUS web site.&lt;/p&gt;
+
+&lt;p&gt;It appears that because I had an external mouse plugged into a USB port it was determining that it didn&#39;t need the touchpad to be on. While this sounds nice, I generally find myself keeping the USB receiver always plugged in, so in practice it&#39;s not ideal.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example libGDX orthographic camera controller</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Example-libGDX-orthographic-camera-controller/</link>
+      <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Example-libGDX-orthographic-camera-controller/</guid>
+      <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;OrthographicCameraController.java&lt;/h3&gt;
+
+&lt;script src=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247.js&#34;&gt;&lt;/script&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Video Game Tracker (for Windows Phone 7) on GitHub</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</link>
+      <pubDate>Tue, 15 Jan 2013 07:58:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</guid>
+      <description>&lt;p&gt;Yesterday morning I committed version 1.2 of &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt; to &lt;a rel=&#34;external&#34; href=&#34;https://github.com/JamesSkemp/MyVideoGameTrackerWP7&#34;&gt;a public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At this time I intend on letting my publishing license lapse on Windows Phone development (which is still a number of months away), and have decided that I probably won&#39;t do anything further targeting Windows Phone 7.&lt;/p&gt;
+&lt;p&gt;In the coming weeks I&#39;ll probably also post the Madison Metro application that I was working on, warts and all. I will probably clean up the class library that I was developing, however, so someone could easily take that aspect from the project.&lt;/p&gt;
+&lt;p&gt;Any comments regarding the code should be left &lt;a rel=&#34;external&#34; href=&#34;https://github.com/JamesSkemp/MyVideoGameTrackerWP7/issues&#34;&gt;on the issues page of the GitHub project page&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Windows Phone 7: Taking and restoring a SQL database</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
+      <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
+      <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h3&gt;Taking screenshots of the application&#39;s data&lt;/h3&gt;
+&lt;p&gt;When you install the Windows Phone SDK the Isolated Storage Explorer Tool is also installed. This tooll allows you to easily explore isolated storage on both emulated devices and any plugged in devices.&lt;/p&gt;
+&lt;p&gt;First you&#39;ll want to go to the directory where the tool is installed.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;cd &#34;C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Tools\IsolatedStorageExplorerTool&#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can now enumerate devices if you want, but there&#39;s two parameters that you can tend to rely upon.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe enumeratedevices&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To continue, you&#39;ll need to have the guid of the application, which can be found in the WMAppManifest.xml file, and it&#39;s the ProductID attribute in the App element.&lt;/p&gt;
+&lt;p&gt;First, make sure that the application has been started, and any necessary data items have been setup.&lt;/p&gt;
+&lt;p&gt;Next get a directory listing, so you have an idea of what it looks like.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe dir xd 00000000-0000-0000-0000-000000000000&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This would return something like the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;       131,072 AppData.sdf
+&lt;/code&gt;&lt;code class=&#34;powershell&#34;&gt;&amp;lt;DIR&amp;gt;          Shared&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you can take a screenshot to any directory you like. For example, to grab it from your phone (de = physical device):&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts de 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you run this command you&#39;ll have a directory created in the above called IsolatedStore. This will mimic what the dir command above returns.&lt;/p&gt;
+&lt;p&gt;To take a screenshot of the default emulated device (512 MB emulator), run the above except with xd instead of de.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Restoring screenshots of the application&#39;s data&lt;/h3&gt;
+&lt;p&gt;Now if you want to restore the screenshot you want to make sure you append IsolatedStorage to the end of the directory path.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe rs xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage\IsolatedStore&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending upon what you&#39;re storing, if you want to move data from one device to another, you can take a screenshot, replace the necessary file(s), and then restore the modified screenshot/directory.&lt;/p&gt;
+&lt;h3&gt;Possible errors&lt;/h3&gt;
+&lt;p&gt;As I&#39;ve been developing I&#39;ve run into two errors. The message and resolution are below.&lt;/p&gt;
+&lt;h4&gt;Error: The process cannot access the file because it is being used by another process.&lt;/h4&gt;
+&lt;p&gt;To resolve this error you need to close the application (back button from the home screen).&lt;/p&gt;
+&lt;h4&gt;Error: Failed to connect to the device. Ensure that the device is completely booted and is connected to the PC.&lt;/h4&gt;
+&lt;p&gt;To resolve this error you need to make sure Zune is running and the device is connected, and unlocked.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Migration from CollabNet Subversion to VisualSVN Server</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
+      <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
+      <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
+&lt;p&gt;
+&lt;h3&gt;VisualSVN migration&lt;/h3&gt;
+&lt;p&gt;&lt;ol&gt;
+&lt;li&gt;Installed VisualSVN. Repositories saved to C:\Repositories&lt;/li&gt;
+&lt;li&gt;Setup existing users.&lt;/li&gt;
+&lt;li&gt;Import existing repositories.&lt;/li&gt;
+&lt;li&gt;Should already be upgraded, but upgrade to 1.5, just in case.&lt;/li&gt;
+&lt;li&gt;Upgrade TortoiseSVN.&lt;/li&gt;
+&lt;li&gt;Upgrade working copies to 1.7.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On Web sites that feature Facebook Comments</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
+      <pubDate>Fri, 24 Jun 2011 16:55:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
+      <description>&lt;p&gt;Over the past few months a number of sites have switched over to Facebook-powered comments. For the most part those sites are ones that I&#39;ve never commented one, nor will comment on. However, I recently discovered that a former co-worker, Rob Lumley, switched his site over to Facebook, and recently wrote an article about it titled &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com/facebook-comments-to-wordpress/&#34;&gt;Add Facebook Comments to WordPress&lt;/a&gt;. Since I don&#39;t use Facebook comments, I figured I&#39;d post the response I had written and tried to post anonymously, here instead.&lt;/p&gt;
+&lt;h3&gt;Rob&#39;s question&lt;/h3&gt;
+&lt;p&gt;For those of you who use or read this site, what do you think about Facebook comments? Does it increase or decrease your chances of commenting? Do you like not having to log in or create another user account? Or do you wish to stay anonymous?&lt;/p&gt;
+&lt;h3&gt;My response&lt;/h3&gt;
+&lt;p&gt;Decreases.&lt;/p&gt;
+&lt;p&gt;With all the security issues I stopped staying logged into Facebook at least a year ago. I also post very specific things to Facebook, and want very tight control over what&#39;s posted. And I quite frankly don&#39;t trust Facebook as a company.&lt;/p&gt;
+&lt;p&gt;I personally haven&#39;t left an anonymous comment in the last five years, if not more (a quick search returned comments I had left as far back as 2003, and I&#39;m sure you can find more even further). However, there are some who would prefer not to be associated with an unpopular stance, and I suppose their ability to be able to leave comments that are not associated with their real name. After all, if they really want to leave it in a completely non-anonymous setting, they could always create a dummy account.&lt;/p&gt;
+&lt;p&gt;I&#39;ve personally found &lt;a rel=&#34;external&#34; href=&#34;http://disqus.com/&#34;&gt;DISQUS&lt;/a&gt; to offer a nice alternative, and plan on moving all my sites to that (when I finally get around to it - I think it&#39;s just a checkbox to enable in my platform). You can import (and export) existing comments, anonymous comments are allowed, a large variety of authentication sources are allowed, and more.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been using it for &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt;, and while I don&#39;t get comments (not too surprising based on the content), there has been some interaction.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Excellent news - the BlogML project is not dead.</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Excellent-news-the-BlogML-project-is-not-dead/</link>
+      <pubDate>Fri, 11 Feb 2011 07:18:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Excellent-news-the-BlogML-project-is-not-dead/</guid>
+      <description>&lt;p&gt;While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January.&lt;/p&gt;
+&lt;p&gt;My StackOverflow question &#34;&lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/4234852/is-the-blogml-project-dead-and-what-are-some-alternatives/&#34;&gt;Is the BlogML project dead, and what are some alternatives?&lt;/a&gt;&#34; was answered yesterday by the project originator (one of the great things about StackOverflow, and the entire network of sites).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/blogml/&#34;&gt;blogml project page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://blogml.codeplex.com/&#34;&gt;BlogML .NET project page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;https://groups.google.com/forum/#!forum/blogml-discuss&#34;&gt;BlogML discussions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Being something that I&#39;ve kept my eye on for a number of months, this is definitely something I&#39;m keeping my eyes on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Northwind Community Edition download</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Northwind-Community-Edition-download/</link>
+      <pubDate>Wed, 22 Sep 2010 08:33:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Northwind-Community-Edition-download/</guid>
+      <description>&lt;p&gt;This article is primarily for personal reference.&lt;/p&gt;
+&lt;p&gt;The Northwind sample database setup scripts can be download from the CodePlex project &lt;a rel=&#34;external nofollow&#34; href=&#34;http://northwindcommunity.codeplex.com/&#34;&gt;Northwind Community Edition&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Sadly, that project is dead, but the original script can be found by going to Source Code, browsing the code, and checking in the Original Northwind Scripts directory.&lt;/p&gt;
+&lt;p&gt;It contains both views and procedures, but there is &lt;a rel=&#34;external&#34; href=&#34;http://sqlserversamples.codeplex.com/&#34;&gt;Microsoft SQL Server Community Projects &amp;amp; Samples&lt;/a&gt; page. Sadly, the links on the official Express page no longer work for the sample databases.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RESTful WCF Web services, easily</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</link>
+      <pubDate>Tue, 15 Jun 2010 22:47:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/RESTful-WCF-Web-services-easily/</guid>
+      <description>&lt;p&gt;I know I should know them better so I&#39;ve been looking into WCF Web services, with a heavy lean towards an implementation based on REST principles.&lt;/p&gt;
+&lt;p&gt;After a good deal of research, where it was highly suggested that while ASP.NET MVC may make sense, WCF is still the way to go for Web services, I stumbled upon &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/endpoint/archive/2010/01/06/introducing-wcf-webhttp-services-in-net-4.aspx&#34;&gt;WCF WebHttp Services&lt;/a&gt;, which uses functionality released in .NET 4.&lt;/p&gt;
+&lt;p&gt;After a painless install via Visual Studio 2010&#39;s Extension Manager (&lt;a rel=&#34;external&#34; href=&#34;http://visualstudiogallery.msdn.microsoft.com/en-us/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd&#34;&gt;more information&lt;/a&gt;), and troubleshooting a stupid mistake on my end, I was able to quickly create a Web service that uses an assembly I had created to parse one of my &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; files and return a listing of tracks for a particular artist.&lt;/p&gt;
+&lt;p&gt;I am more than a little disappointed that it took months for me to find this, but the flexibility it allows, and the joy of working with it, makes up for it almost entirely.&lt;/p&gt;
+&lt;h3&gt;Updates&lt;/h3&gt;
+&lt;p&gt;10:04 P.M.: See also &lt;a rel=&#34;external&#34; href=&#34;http://msdn.microsoft.com/en-us/library/bb412169.aspx&#34;&gt;WCF Web HTTP Programming Model&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dead? The digital download is barely out of its teens</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
+      <pubDate>Sat, 22 May 2010 09:47:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
+      <description>&lt;p&gt;Yesterday Slate posted an article by Farhad Manjoo titled &lt;a rel=&#34;external&#34; href=&#34;http://www.slate.com/id/2254532/pagenum/all/&#34;&gt;The Digital Download Is Dead: How Google&#39;s music-streaming venture will change the gadget and entertainment worlds forever&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After first, rightly, attacking Apple&#39;s iTunes and iPod (and related) platforms as being slow and unwieldy, especially on the predominate operating system Windows (not even mentioning Linux), and overall behind on the times, Farhad moves us from syncing our music collections out to the cloud. Which isn&#39;t much of a surprise given that, despite some rather large issues, the cloud has been &#39;in&#39; for a couple of years now. But even more surprising Farhad argues at the end of the article that &#34;[i]n the future, not only will you not get a CD when you buy an album, you won&#39;t even get a digital file.&#34;&lt;/p&gt;
+&lt;p&gt;But there&#39;s an elephant in the room. A rather large one, taking up every available inch of space. Namely the global music industry.&lt;/p&gt;
+&lt;p&gt;At the moment I&#39;m listening to X Japan. If I do a search for this band I find the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon MP3: Two albums available - Blue Blood and Jealousy.&lt;/li&gt;
+&lt;li&gt;Amazon music: 236 results, seemingly with most of their releases covered (but I wasn&#39;t about to page through all those results). Of special note is the magical word &#39;Import&#39; next to the majority of the albums.&lt;/li&gt;
+&lt;li&gt;iTunes: Same two albums as Amazon MP3 and the I.V. Single.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There&#39;s better examples, I just happened to be listening to X Japan at the moment. Go ahead and look up some popular European bands and see if you can find their music on Amazon or iTunes, or any one of the other online sellers of music (for the United States). Chances are you&#39;ll find a good deal of music that you can&#39;t purchase, unless you&#39;re willing to pay import prices for a physical CD.&lt;/p&gt;
+&lt;p&gt;Now with this in mind, Farhad expects physical media to disappear, &lt;em&gt;in the future&lt;/em&gt;. In lieu of an extremely ambigious timeframe, let&#39;s substitute that with &#39;in the next 5 years&#39; or &#39;in the next decade.&#39; With the music industry as slow as it is, do we expect not only for the industry to move to the cloud, but to also deal with the &#39;import&#39; situtation in a respectable way?&lt;/p&gt;
+&lt;p&gt;Instead of moving away from digital downloads, which by the way work better (for me) than a cloud service - and service it will be, with the associated recurring costs - I&#39;d much rather the industry finish show that they&#39;re willing to embrace digital &lt;em&gt;media&lt;/em&gt; and its promise. As things stand now they &lt;em&gt;haven&#39;t&lt;/em&gt; embraced digital media, and won&#39;t until everything (give or take) that&#39;s available in physical form is available digitally.&lt;/p&gt;
+&lt;p&gt;Now if you want to move to the cloud at that point, or alongside the expansion of digital downloads, fine. Go right ahead. Other groups have certainly tried, but until the global market elephant is removed from the room, any new services will run into the exact same issue.&lt;/p&gt;
+&lt;p&gt;And until we see &#39;foreign&#39; music available digitally to &#39;all,&#39; please don&#39;t suggest we get rid of physical media, or the issues now will just get pushed to the cloud.&lt;/p&gt;
+&lt;h3&gt;Side note: the gaming industry&lt;/h3&gt;
+&lt;p&gt;A similar debate is going on in the gaming industry. Digital downloads of games is finally becoming more and more prevelant, not only with DLC, but the making of &#39;classic&#39; games available for purchase and download, whether that be through the Playstation Store, Xbox Live, or Good Old Games (GOG.com). They too are looking at cloud-based services, but they too have an issue with imports.&lt;/p&gt;
+&lt;p&gt;Progress is moving forward, not stepping to the side, and until the promise of digital media/downloads is embraced, anything based on it will suffer the same issues.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Review: Beginning ASP.NET 4 In C# and VB</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;While I&amp;rsquo;ve already read &lt;a href=&#34;http://www.amazon.com/dp/047018759X?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 3.5&lt;/a&gt; by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it.&lt;/p&gt;
+&lt;p&gt;Would I still feel strongly about &lt;a href=&#34;http://www.amazon.com/review/R1K5HZLKSEFQFA?tag=strivinglifen-20&#34;&gt;recommending his work&lt;/a&gt; as &lt;em&gt;the&lt;/em&gt; #1 choice for those new (or relatively new) to ASP.NET? Would it offer enough new content over the previous iteration that I&amp;rsquo;d recommend a new purchase if someone had the first?&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;First, if you&amp;rsquo;re just getting started with ASP.NET, this is once again &lt;em&gt;the&lt;/em&gt; book to start with. The way the book reads makes it extremely easy to keep up with where he&amp;rsquo;s at, and why. At the end you&amp;rsquo;ll end up with a functional site, having built it yourself, using a good deal of ASP.NET functionality.&lt;/p&gt;
+&lt;p&gt;The book also assumes little experience with HTML and CSS, which makes this book a fairly good start for anyone who wants to get started with creating Web sites (using ASP.NET), even going into the developer tool Visual Web Developer 2010.&lt;/p&gt;
+&lt;p&gt;The book itself is a &lt;em&gt;vast&lt;/em&gt; improvement over previous iterations, with a much more solid wrap and softer (but still thick) pages. (Although the pages must be somewhat thinner, since the previous iteration of this book is about the same depth as this one, even though this has ~70 more pages.)&lt;/p&gt;
+&lt;p&gt;The guitar on the cover has left me guessing a bit, all the way from &amp;lsquo;rock star&amp;rsquo; to &amp;lsquo;hero&amp;rsquo; to &amp;lsquo;he creates a music-related site&amp;rsquo; but if you don&amp;rsquo;t get stuck on such things, you&amp;rsquo;ll be fine.&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve purchased and read the previous iteration of this book, Beginning ASP.NET 3.5, you might be wondering if it makes sense to pick this up.&lt;/p&gt;
+&lt;p&gt;The only new chapter is one on jQuery (although Microsoft AJAX is still covered and used as before), and it&amp;rsquo;s primarily an introduction, which fits within the context of this book. Crawling the jQuery site for a little while will probably get you up to speed just as well. Otherwise, the rest has been updated to ASP.NET 4 and the current versions of software; little else has changed.&lt;/p&gt;
+&lt;p&gt;If you picked up the previous iteration and couldn&amp;rsquo;t get through it, then don&amp;rsquo;t bother with this, as it&amp;rsquo;s quite similar. Likewise for if you&amp;rsquo;ve moved beyond Beginning ASP.NET 3.5, and feel comfortable with the technology; ASP.NET 4 isn&amp;rsquo;t dug into so much here that you can&amp;rsquo;t get the information elsewhere with some basic searching.&lt;/p&gt;
+&lt;p&gt;===&lt;/p&gt;
+&lt;p&gt;To conclude, &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt; is &lt;em&gt;the&lt;/em&gt; book I &lt;em&gt;highly&lt;/em&gt; recommend to get started with ASP.NET (3.5 or 4). Imar knows the technology as well as how to teach it, from beginning to Web site created. 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>iPod Touch, netbooks, laptops, and desktops</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/iPod-Touch-netbooks-laptops-and-desktops/</link>
+      <pubDate>Sun, 21 Feb 2010 16:00:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/iPod-Touch-netbooks-laptops-and-desktops/</guid>
+      <description>&lt;p&gt;For the last handful of months I&#39;ve been thinking about accessing the Internet, and otherwise being productive,&amp;nbsp;while on the go.&lt;/p&gt;
+&lt;p&gt;A number of months back I picked up an HP device with Windows Mobile, unfortunately, after a few months the short battery life and inability to run the applications I wanted/needed to be truly productive forced me to sell it and start looking elsewhere ...&lt;/p&gt;
+&lt;h3&gt;iPod Touch&lt;/h3&gt;
+&lt;p&gt;The iPhone had been out for a while when I started looking at what&amp;nbsp;an iPod Touch could offer. I already own an 80GB iPod Classic, so unless it offered enough room to store my music collection (at the time under 40 GB), I wasn&#39;t going to be interested.&lt;/p&gt;
+&lt;p&gt;Of course, while I kept telling myself that, part of me knew that I didn&#39;t regularly listen to my entire collection, and I could therefore get away with a smaller size. Nonetheless, price was one of the first things I looked at.&lt;/p&gt;
+&lt;p&gt;Currently we&#39;re looking at third generation models of 8, 32, and 64 GB, at (Amazon pricing, rounded up) $190, $270, and $360. The 8GB made no sense to purchase, which leaves pricing at $3-400. A little pricing when I could just get an 160GB iPod Classic for $230.&lt;/p&gt;
+&lt;h3&gt;Netbook&lt;/h3&gt;
+&lt;p&gt;I had looked at netbooks in the past. More real-estate, and able to run a real operating system, netbooks are made for portablility and some level of productivity.&lt;/p&gt;
+&lt;p&gt;However, the screen size is pretty harsh, but comes with the above benefits. Overall, I&#39;d pretty much excluded netbooks as an option.&lt;/p&gt;
+&lt;p&gt;After Jeff Atwood wrote about netbooks (&lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2010/01/a-democracy-of-netbooks.html&#34;&gt;A Democracy of Netbooks&lt;/a&gt;) I started giving&amp;nbsp;them another look. According to him, a $400 netbook (give or take) is about equal, in certain ways, to a $5-600+ laptop.&lt;/p&gt;
+&lt;p&gt;And that&#39;s about what you&#39;re looking to pay; $3-400 for a relatively good netbook. Unfortunately, the operating system I wanted -&amp;nbsp;Windows 7 compared to Windows XP - seems to only be the Starter edition. While that&#39;s certainly not horrible, I really didn&#39;t want to be forced to a sub-par machine, performance-wise, that would limit that productivity applications I&#39;d be able to run.&lt;/p&gt;
+&lt;p&gt;And have you seen the screen size on netbooks? I&#39;m hardly that old, but my glass-covered eyes shrieked when I saw them.&lt;/p&gt;
+&lt;h3&gt;Laptop&lt;/h3&gt;
+&lt;p&gt;So it basically seems that a laptop is what I really wanted. Why didn&#39;t I just decide on a laptop in the first place? Ambitions.&lt;/p&gt;
+&lt;p&gt;I last purchased a laptop around the turn of the century. (Not often I get to use that phrase.) At that time laptops were pretty basic, but I still enjoyed mine. I&#39;d owned nothing but desktops before, and with the exception of the last one, they were all hand-me-downs. I spec&#39;d out the machine approximately to what I wanted (I would have gone higher, but cost was an issue) and ended up paying around a grand, if I remember correctly. (Might have been around $900 ... I have the receipt somewhere.)&lt;/p&gt;
+&lt;p&gt;It lasted me through the rest of college, until right around my last semester when it finally crapped out. I went out a picked up a KOGi monitor (which I still have and use today on my main machine) and hooked up an older desktop to make things work. Later I got it running again, but it crapped out yet again and I gave up.&lt;/p&gt;
+&lt;p&gt;Two or three years wasn&#39;t too bad, but in the coming years I stayed away from purchasing another laptop and stuck with desktops, getting more powerful machines for less money. And of course there&#39;s the ease of upgrading a desktop. First simply memory, then media drives, to hard drives.&lt;/p&gt;
+&lt;p&gt;Now I wasn&#39;t completely away from laptops during those years. I was involved in the purchase of two laptops, both of which have served their owners fairly well as they&#39;ve owned them (the first is nearing the end of it&#39;s life). With this last, which got upgraded to Windows 7 shortly after it came out, I was strongly tempted to give laptops another chance. After all, a lot had changed in almost a decade.&lt;/p&gt;
+&lt;p&gt;But when I started pricing out laptops, as I wanted them, I started seeing numbers on par with what my last desktop cost, &lt;em&gt;with&lt;/em&gt; two widescreen monitors. Did I really want to pay around&amp;nbsp;a grand for a laptop?&lt;/p&gt;
+&lt;h3&gt;Desktop&lt;/h3&gt;
+&lt;p&gt;Which brought me back to desktops. Why pay a grand when I could get a really nice machine for less than that? Isn&#39;t that what I really wanted, so that I could replace my 4 year old HP that runs approximately 24/7, but which was still fairly good, thanks to me buying a nice machine and maxing out the RAM over time? Heck, the only thing I don&#39;t like about it is that I can&#39;t install Windows 7 on it because of the hardware that&#39;s in it, and I don&#39;t yet feel comfortable completey replacing it.&lt;/p&gt;
+&lt;p&gt;But with a desktop I lose the portability, which got me on this entire line of research.&lt;/p&gt;
+&lt;h3&gt;iPad&lt;/h3&gt;
+&lt;p&gt;A short while ago Apple started talking about the iPad, which they place between an iPhone (iPod Touch in my mind, since I&#39;m happy with U.S. Cellular and don&#39;t feel like paying even more a month for Internet access) a laptop or desktop. Not to mention the various other tablet devices that are already out, or coming out. And of course, the iPad is &lt;em&gt;better&lt;/em&gt; than a netbook.&lt;/p&gt;
+&lt;p&gt;The problem is this generally seem single-purpose, as the netbook does. Not only that, but, like the Touch/iPhone, you&#39;re forced to go through the Apple app store. That&#39;s a heavy price to pay when I can purchase a netbook running Windows and either download (for no cost) or build an application to solve a need. With Apple now going after apps which show a little skin, or T &amp;amp; A, it&#39;s difficult to give up control on what applications (as compared to apps)&amp;nbsp;I can run on &lt;em&gt;my&lt;/em&gt; machine.&lt;/p&gt;
+&lt;h3&gt;So ...&lt;/h3&gt;
+&lt;p&gt;So what I ended up doing was just looking at low-end laptops.&amp;nbsp;I had gone full circle, so the only solution I saw was to purchase a laptop, but one with a relatively low cost. After a good deal of research, I&amp;nbsp;kept coming back to the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B0033KELCM?tag=strivinglifen-20&#34;&gt;HP Compaq Presario CQ60-615DX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At a little under $400, we have some amazing features; 250 GB hard drive, Windows 7 Home Premium 64-bit, a modest 2.2GHz with 2 GB of RAM (and only around $100 to max it out to a full 4 GB).&lt;/p&gt;
+&lt;p&gt;While I&#39;m still a little &#39;eh&#39; about the Compaq brand (another lasting opinion from the last century), every machine I&#39;ve purchased, excluding the one Dell laptop, has been an HP. I like HP machines, and I like that all that I&#39;ve purchased can still be plugged in and fired up; even the one that&#39;s got Windows Me on it.&lt;/p&gt;
+&lt;p&gt;And on BestBuy.com, I believe I&amp;nbsp;even saw a reviewer suggesting graphic card models that could be swapped in to replace the one it came with, at an extremely low cost.&lt;/p&gt;
+&lt;p&gt;A co-worker also purchased one of these, if not a similar model, and when I asked him of it, said he was still happy with it. That was the last&amp;nbsp;nudge I needed.&lt;/p&gt;
+&lt;p&gt;I&#39;ve been mostly busy with side work, which means I might not even consider this a purchase using part of my tax refund, but which also means that I haven&#39;t had much time over the last week to really use the laptop. But having finally gotten the majority of applications that I want on it, and having spent the last 50 minutes writing this article (although a few minutes of that was doing research for this article and leaning over to choose music on my iPod), I&#39;m still happy with my purchase, and am looking forward to continuing to use it. (In fact, I should be watching some Netflix streaming tonight on it.)&lt;/p&gt;
+&lt;p&gt;In fact, seeing as how my sister is in desperate need of a computer, I&#39;ve strongly recommended this machine to her, and may be lending the money so that she can purchase one.&lt;/p&gt;
+&lt;p&gt;Full review coming shortly, but hopefully the above is of some benefit to someone else, trying to make the same decision as I was.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>System.Text.StringBuilder.Remove() overhead</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/SystemTextStringBuilderRemove-overhead/</link>
+      <pubDate>Sun, 28 Jun 2009 13:19:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/SystemTextStringBuilderRemove-overhead/</guid>
+      <description>&lt;p&gt;While working on a new version of my &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml application&lt;/a&gt;, I&#39;ve been playing around with the existing code, for consolidation and speed.&lt;/p&gt;
+&lt;p&gt;While looking at memory usage, I played around with the StringBuilder I&#39;m using to create the Xml output. As part of this I tried using Remove, once I had output the Xml, but experienced a large increase in used memory, after doing this.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;StringBuilder someSB = new StringBuilder();
+someSB.Append(&#34;Some data&#34; + System.Environment.NewLine);
+someSB.Append(&#34;Some more data&#34; + System.Environment.NewLine);
+// Trimmed
+textBox.Text = someSB.ToString();
+someSB.Remove(0, someSB.Length - 1);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This jumped memory usage, on a pull using the defaults, against a 6460 item playlist, from ~17,000 to ~21,000 K, on my up-to-date Windows Vista Ultimate machine. Keeping the Remove() off, or just setting the StringBuilder to null, resulted in no jump of memory usage.&lt;/p&gt;
+&lt;p&gt;In the past I&#39;ve used System.Text.StringBuilder.Remove(), thinking it would decrease memory usage faster, but it seems that&#39;s not the case.&lt;/p&gt;
+&lt;p&gt;I don&#39;t care all that much to discover why, at the moment, but if I decide to look about, I&#39;ll update this post or add a comment.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

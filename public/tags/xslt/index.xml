@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xslt on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/xslt/</link>
+    <description>Recent content in Xslt on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Dec 2009 21:47:00 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/xslt/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>XML Schema Definition creation: Journal - Part 3: XSLT sample</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</link>
+      <pubDate>Sun, 27 Dec 2009 21:47:00 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</guid>
+      <description>&lt;p&gt;Having created an &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;overview of how I wanted to craft a simple journal in XML&lt;/a&gt;, I next created an &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor.aspx&#34;&gt;XML Schema Definition for the simple journal&lt;/a&gt; to validate against.&lt;/p&gt;
+&lt;p&gt;Having now crafted a Web&amp;nbsp;application to create the XML files I&#39;m able to move onto the prettier aspects of display for the XML files.&lt;/p&gt;
+&lt;p&gt;I&#39;ve created a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/samples/journal-200912.xml&#34;&gt;sample simple journal&lt;/a&gt; that uses an XSLT (XSL Transforms, or extensible stylesheet language transformations) to make the display a &lt;em&gt;little&lt;/em&gt; prettier.&lt;/p&gt;
+&lt;p&gt;You&#39;re more than welcome to take &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xslt/SimpleJournal.xsl&#34;&gt;the XSLT file&lt;/a&gt; and craft it to your own purposes.&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;I&#39;m sure I&#39;ll tweak the output further as time goes by; this is purely meant to be a quick working version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Suggestions or new transforms welcome and appreciated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Muenchian Method grouping in XSLT</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Muenchian-Method-grouping-in-XSLT/</link>
+      <pubDate>Wed, 01 Jul 2009 22:09:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Muenchian-Method-grouping-in-XSLT/</guid>
+      <description>&lt;p&gt;I owe a deal of thanks for figuring out the Muenchian Method of grouping in XSLT (1.0) to Jeni&#39;s article &lt;a href=&#34;http://jenitennison.com/xslt/grouping/muenchian.xml&#34;&gt;Grouping Using the Muenchian Method&lt;/a&gt;. It took, however, a while for me to get my mind around the method completely, and some experimentation, which I&#39;m sharing below.&lt;/p&gt;
+&lt;p&gt;Specifically I was looking to get a listing of tracks, from my &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; application&#39;s output, and group them by album.&lt;/p&gt;
+&lt;p&gt;For this, all I really need is the track&#39;s album and name, which gives a basic layout of the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;playlist&amp;gt;
+    &amp;lt;track&amp;gt;&amp;lt;name&amp;gt;Smile&amp;lt;/name&amp;gt;&amp;lt;album&amp;gt;Alright, Still&amp;lt;/album&amp;gt;&amp;lt;/track&amp;gt;
+    &amp;lt;track&amp;gt;&amp;lt;name&amp;gt;Knock &amp;amp;apos;Em Out&amp;lt;/name&amp;gt;&amp;lt;album&amp;gt;Alright, Still&amp;lt;/album&amp;gt;&amp;lt;/track&amp;gt;
+    &amp;lt;!-- Additional tracks removed. --&amp;gt;
+&amp;lt;/playlist&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&amp;nbsp;Now the first thing you&#39;ll need is a key, that you&#39;ll be using to group things by. In this case, since I want to group by album, that will be my key. Immediately before any &amp;lt;xsl:template/&amp;gt; elements I added the following key.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xsl:key name=&#34;tracks-by-album&#34;
+    match=&#34;track&#34;
+    use=&#34;album&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we&#39;re grouping the tracks, by the album value.&lt;/p&gt;
+&lt;p&gt;Now that we have a key, we can, for example, grab just those tracks that are from a certain album.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xsl:template match=&#34;/&#34;&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;xsl:for-each select=&#34;key(&#39;tracks-by-album&#39;, &#39;1492: Conquest of Paradise&#39;)&#34;&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;xsl:value-of select=&#34;name&#34;&amp;gt;&amp;lt;/xsl:value-of&amp;gt;&amp;lt;/li&amp;gt;
+        &amp;lt;/xsl:for-each&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/xsl:template&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will only output those tracks from the album Vangelis&#39; &lt;span style=&#34;text-decoration: underline;&#34;&gt;1492: Conquest of Paradise&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Stepping back, if I just wanted to grab the first track&#39;s album, I could do the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xsl:template match=&#34;/&#34;&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;xsl:for-each select=&#34;/playlist/track[1]&#34;&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;xsl:value-of select=&#34;album&#34;/&amp;gt;&amp;lt;/li&amp;gt;
+        &amp;lt;/xsl:for-each&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/xsl:template&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That suggests that this code is doing, which will go through every album, and display the first track.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xsl:template match=&#34;/&#34;&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;xsl:for-each select=&#34;/playlist/track[count(. | key(&#39;tracks-by-album&#39;, album)[1]) = 1]&#34;&amp;gt;
+            &amp;lt;xsl:sort select=&#34;album&#34;/&amp;gt;
+            &amp;lt;li&amp;gt;&amp;lt;xsl:value-of select=&#34;album&#34;/&amp;gt;
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;&amp;lt;xsl:value-of select=&#34;name&#34;/&amp;gt;&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/xsl:for-each&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/xsl:template&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with a slight tweak, you can loop through and display all the song names from each album.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;xsl:template match=&#34;/&#34;&amp;gt;
+    &amp;lt;ul&amp;gt;
+        &amp;lt;xsl:for-each select=&#34;/playlist/track[count(. | key(&#39;tracks-by-album&#39;, album)[1]) = 1]&#34;&amp;gt;
+            &amp;lt;xsl:sort select=&#34;album&#34;/&amp;gt;
+            &amp;lt;li&amp;gt;
+                &amp;lt;xsl:value-of select=&#34;album&#34;/&amp;gt;
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;xsl:for-each select=&#34;key(&#39;tracks-by-album&#39;, album)&#34;&amp;gt;
+                        &amp;lt;li&amp;gt;&amp;lt;xsl:value-of select=&#34;name&#34;/&amp;gt;&amp;lt;/li&amp;gt;
+                    &amp;lt;/xsl:for-each&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+        &amp;lt;/xsl:for-each&amp;gt;
+    &amp;lt;/ul&amp;gt;
+&amp;lt;/xsl:template&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And after all that discovery, I have exactly what I want; a listing of tracks, grouped by albums. With only slight modification, the grouping can be changed to artist, or any one of any other number of items.&lt;/p&gt;
+&lt;p&gt;Now if only IE 7+ supported for-each-group, available in&amp;nbsp;XSLT 2.0, this wouldn&#39;t be necessary.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

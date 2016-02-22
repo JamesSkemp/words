@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>State Of Affairs on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/state-of-affairs/</link>
+    <description>Recent content in State Of Affairs on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 14 Jul 2007 20:48:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/state-of-affairs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A spaceship explodes in space, with one of two components to blame - Part 1</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/A-spaceship-explodes-in-space-with-one-of-two-components-to-blame-Part-1/</link>
+      <pubDate>Sat, 14 Jul 2007 20:48:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/A-spaceship-explodes-in-space-with-one-of-two-components-to-blame-Part-1/</guid>
+      <description>&lt;p&gt;
+A space ship launches, and while in space, it explodes.
+&lt;/p&gt;
+&lt;p&gt;
+Let us assume we can see all possible reasons it could have exploded, and we find that there is an equal chance for one of two components to fail, which therefore would have caused the explosion.
+&lt;/p&gt;
+&lt;p&gt;
+In either case, the end result would have been the same, down to the smallest particle. In other words, not even a god could discern any difference between the conclusion of the explosion; everything is exactly in the same place in either case.
+&lt;/p&gt;
+&lt;p&gt;
+In such a case as this, it appears that we have a single point before the explosion, two points immediately before the explosion, or during the explosion, and then one point after the explosion, where a point is the state of affairs.
+&lt;/p&gt;
+&lt;p&gt;
+Namely,
+&lt;/p&gt;
+&lt;p&gt;
+1) Before the explosion.&lt;br /&gt;
+2a) Exploding because of component a failing.&lt;br /&gt;
+2b) Exploding because of component b failing.&lt;br /&gt;
+3) After the explosion.
+&lt;/p&gt;
+&lt;p&gt;
+Or, would we actually have a branching of state of affairs?
+&lt;/p&gt;
+&lt;p&gt;
+Since 3 is the same, physically, in either case, would not we be safe assuming that 3a = 3b, and therefore that 3a = 3b = 3 (as we have done above)?
+&lt;/p&gt;
+&lt;p&gt;
+Granted, in 3a component a failed and in 3b component b failed, while in 3 either component a or b failed, but, is there any reason to require that we declare which component failed, and therefore cause a spliting, if the chances of either component failing is a split 50%?
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

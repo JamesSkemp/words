@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/debian/</link>
+    <description>Recent content in Debian on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 May 2006 09:00:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>First Debian install = unsuccessful</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/First-Debian-install-3D-unsuccessful/</link>
+      <pubDate>Sat, 20 May 2006 09:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/First-Debian-install-3D-unsuccessful/</guid>
+      <description>&lt;p&gt;
+My first shot at installing Debian didn&amp;#39;t go quite so well.  I&amp;#39;m attempting to install on a HP Pavilion XE734, using pretty much the base system.  One addition appears to be a 3Com Fast Etherlink PCI card, from the late 90s ... (3C595-TX).&lt;!--adsense--&gt;
+&lt;/p&gt;
+&lt;p&gt;
+My hope is to get this installed fairly quickly, and have instructions for anyone else that may have this model, and may want to do a similar installation.  I&amp;#39;m surprised by the lack of a site that documents which base systems people were able to install various flavours of Linux on.  After all, not everyone who installs Linux does so on a custom-built machine ... right?
+&lt;/p&gt;
+&lt;p&gt;
+Guess I&amp;#39;ll spend some time Sunday night doing a new installation, after clearing my hard drive of the initial shot.  I don&amp;#39;t really want to buy a new(er) machine just to install a flavour of Linux, but I guess I may have to ...  There&amp;#39;s always a couple other flavours of non-Windows OS that I have laying about - and I have a fast enough connection and enough blank CDs to burn a number more.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

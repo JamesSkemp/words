@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jquery on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/jquery/</link>
+    <description>Recent content in Jquery on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Mar 2011 20:39:00 -0500</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interesting feature with parsing XML with jQuery on Safari</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
+&lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
+&lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;My main intention is to make this available on my iPod Touch, so I was a bit dismayed when I found that the listing didn&#39;t display the title of the game. Everything else displayed just fine, but not the titles. Naturally, after some searching about I posted my question to Stack Overflow - &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/5427259/xmldocument-via-jquery-ajax-call-stored-as-string-in-localstorage-results-in-sa&#34;&gt;XMLDocument (via jQuery ajax call) stored as string in localStorage results in Safari not finding title elements&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After further research, it looks like I was missing a parseXML call, which results in the data correctly being pulled/displayed in Safari.&lt;/p&gt;
+&lt;p&gt;I decided to do some further testing on this issue, and I believe I&#39;ve discovered why it&#39;s displaying as it is.&lt;/p&gt;
+&lt;h3&gt;The test code&lt;/h3&gt;
+&lt;p&gt;I created a bit of test code - &lt;a href=&#34;http://jamesrskemp.com/testing/jQueryXmlParsing.html&#34;&gt;jQuery XML parsing&lt;/a&gt; - and that I&#39;ve posted below.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;jQuery XML Parsing testing - JamesRSkemp.com&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;jQuery XML Parsing testing&amp;lt;/h1&amp;gt;
+    &amp;lt;p&amp;gt;The following test code was created to test Internet Explorer 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), and Safari on iOS 4.3. Read more in &amp;lt;a href=&#34;http://strivinglife.com/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34; rel=&#34;external&#34;&amp;gt;Interesting feature with parsing XML with jQuery on Safari&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+    &amp;lt;noscript&amp;gt;You must have JavaScript enabled to view this test.&amp;lt;/noscript&amp;gt;
+    &amp;lt;div id=&#34;TestOutput&#34;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        // We&#39;ll store an example of an XML file as a string of text.
+        var xmlContent = &#34;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;&amp;lt;Books&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;Book&amp;gt;&amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;&amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;&amp;lt;/Book&amp;gt;&amp;lt;/Books&amp;gt;&#34;;
+        var testOutputText = &#34;&#34;;
+
+        var simpleCall = $(xmlContent);
+        var simpleParse = $.parseXML(xmlContent);
+        var parse = $($.parseXML(xmlContent));
+
+        try {
+            testOutputText += &#34;Type of $(xmlContent): &#34; + typeof simpleCall + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleCall.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleCall.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleCall === &#39;object&#39;) {
+                for (var prop in simpleCall) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleCall[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleCall.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $.parseXML(xmlContent): &#34; + typeof simpleParse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + simpleParse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + simpleParse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof simpleParse === &#39;object&#39;) {
+                for (var prop in simpleParse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            simpleParse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        try {
+            testOutputText += &#34;Type of $($.parseXML(xmlContent)): &#34; + typeof parse + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;To string: &#34; + parse.toString() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            testOutputText += &#34;Length: &#34; + parse.length + &#34;&amp;lt;br /&amp;gt;&#34;;
+            if (typeof parse === &#39;object&#39;) {
+                for (var prop in parse) {
+                    //testOutputText += &#34;   property: &#34; + prop + &#34; value: [&#34; + simpleParse[prop] + &#34;]\n&#34;;
+                }
+            }
+            parse.find(&#34;Book&#34;).each(function () {
+                testOutputText += &#34;&amp;lt;em&amp;gt;&#34; + $(this).find(&#39;Title&#39;).text() + &#34;&amp;lt;/em&amp;gt; by &#34; + $(this).find(&#34;Author&#34;).text() + &#34;&amp;lt;br /&amp;gt;&#34;;
+            });
+        } catch (e) {
+            testOutputText += &#34;&amp;lt;span style=&#39;color:red;&#39;&amp;gt;There was an error processing at this point.&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&#34;;
+        }
+
+        $(&#39;#TestOutput&#39;).append(testOutputText);
+    &amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;What the test does&lt;/h3&gt;
+&lt;p&gt;I did a couple of things with this test.&lt;/p&gt;
+&lt;p&gt;First, I created a string with the following XML, and saved it as xmlContent.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#39;1.0&#39;?&amp;gt;
+&amp;lt;Books&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 1&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 1 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 2&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 2 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 3&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 3 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 4&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 4 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+    &amp;lt;Book&amp;gt;
+        &amp;lt;Title&amp;gt;Book 5&amp;lt;/Title&amp;gt;
+        &amp;lt;Author&amp;gt;Book 5 Author&amp;lt;/Author&amp;gt;
+    &amp;lt;/Book&amp;gt;
+&amp;lt;/Books&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next I created three variables, storing different things. First, I did $(xmlContent), then $.parseXML(xmlContent), and finally $($.parseXML(xmlContent)).&lt;/p&gt;
+&lt;h3&gt;The results&lt;/h3&gt;
+&lt;p&gt;Interestingly, on IE 9, Chrome 10, Firefox 4, Opera 11, Safari 5 (Windows), the first and third tests return the type of &lt;strong&gt;object Object&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For the second test we have &lt;strong&gt;object Document&lt;/strong&gt; on IE 9, Chrome 10, Safari 5, and Safari on iOS 4.3, and &lt;strong&gt;object XMLDocument&lt;/strong&gt; on Firefox 4 and Opera 11.&lt;/p&gt;
+&lt;p&gt;But for the first test, while we have a length of &lt;em&gt;2&lt;/em&gt; on IE 9, Chrome 10, Firefox 4, and Opera 11, we only have a length of 1 on Safari 5 and Safari on iOS 4.3.&lt;/p&gt;
+&lt;p&gt;The fix, then, is to make sure to use the last of the three, but it seems odd that this wouldn&#39;t work on only one of the tested browsers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Referring to JavaScript documentation in Visual Studio via reference</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</link>
+      <pubDate>Sat, 03 Jul 2010 13:32:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</guid>
+      <description>&lt;p&gt;While I don&#39;t use Microsoft or Google&#39;s CDNs for jQuery, I do have a separate sub-domain where I serve these files from (and will eventually use a CDN, I&#39;m sure). However, this means that in Visual Studio I miss out on the helpful documentation functionality.&lt;/p&gt;
+&lt;p&gt;Based on a comment on &lt;a rel=&#34;external&#34; href=&#34;http://encosia.com/2008/12/10/3-reasons-why-you-should-let-google-host-jquery-for-you/&#34;&gt;3 reasons why you should let Google host jQuery for you&lt;/a&gt; it turns out there&#39;s a fairly easy way to get Intellisense; simply include the following in your JavaScript file.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;/// &amp;lt;Reference Path=&#34;/Scripts/jquery-1.4.1-vsdoc.js&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&#39;ll probably want a copy stored locally so that you can use this without the extra traffic.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In this series we&amp;rsquo;ve started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.&lt;/p&gt;
+&lt;p&gt;In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.&lt;/p&gt;
+&lt;p&gt;In this final part we&amp;rsquo;ll be using jQuery to request information from the service, in JSON format, and display that information to users.&lt;/p&gt;
+&lt;h3&gt;Why JSON?&lt;/h3&gt;
+&lt;p&gt;For maximum flexibility, and because I myself will be hosting the services on their own domain/sub-domain, we&amp;rsquo;ll be taking advantage of jQuery&amp;rsquo;s ability to make JSONP - JSON with Padding - requests, allowing us to pull data, no matter what our domain.&lt;/p&gt;
+&lt;h3&gt;Getting started with jQuery&lt;/h3&gt;
+&lt;p&gt;jQuery is such an advanced library that I can&amp;rsquo;t cover much in this article. See &lt;a rel=&#34;external&#34; href=&#34;http://jquery.com/&#34;&gt;the official jQuery site&lt;/a&gt; for more information, including tutorials. For our purposes you&amp;rsquo;ll want to download a copy of&amp;nbsp;jQuery 1.4.2 (or whatever the current release is, assuming things haven&amp;rsquo;t changed too terribly since the time of this writing) for production.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll then create a very simple HTML page that we&amp;rsquo;ll modify for our tutorial.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;ldquo;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;rdquo; &amp;ldquo;&lt;a href=&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;html xmlns=&amp;ldquo;&lt;a href=&#34;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&#34;&gt;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&lt;/a&gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Test page&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&amp;ldquo;pulledData&amp;rdquo;&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo; src=&amp;ldquo;&lt;a href=&#34;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&#34;&gt;http://media.jamesrskemp.com/js/jquery-1.4.2.min.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/a&gt;
+&amp;lt;script type=&amp;ldquo;text/javascript&amp;rdquo;&amp;gt;
+    function processData(data) {
+        try {
+            // JavaScript will go either here - in the &lt;em&gt;function&lt;/em&gt;
+        } catch (ex) {
+            alert(&amp;ldquo;Error: &amp;ldquo; + ex.Message);
+        }
+    }&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;try {
+    if ($) {
+        // or JavaScript will go here - in the *request*
+    }
+} catch (ex) {
+    alert(&amp;quot;Error: &amp;quot; + ex.Message);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;lt;/script&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Verifying the service can be called with jQuery, on the same domain&lt;/h3&gt;
+&lt;p&gt;With our base jQuery file, let&amp;rsquo;s verify the Web service, by making a simple request for a loan: &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; (remember to change the port as needed). Assuming this is running fine, which it should be, we can move onto attempting to query this with jQuery.&lt;/p&gt;
+&lt;p&gt;In the same project as the above service, add our base html file, from above, and add the following to the second block, making sure that the port is correct.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;$.ajax({
+    type: &amp;ldquo;GET&amp;rdquo;,
+    url: &amp;lsquo;&lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#39;&lt;/a&gt;,
+    dataType: &amp;lsquo;xml&amp;rsquo;,
+    success: function (data) { processData(data); }
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then add the following to the function.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;hey&amp;rsquo;);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So in our first block we&amp;rsquo;re calling the service once the page is ready, and our function on success. The function then gives a very simple alert, so we easily know that the call has succeeded. If we run this on the same domain (localhost and a port), we should get the alert message. However, opening it by itself (by double-clicking on it in Windows Explorer) will result in no messages at all.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s tweak this now to use JSON instead. Tweak the second block so that the dataType line is as follows.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;json&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In our function, add, or replace the existing alert, with the following:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;alert(&amp;lsquo;Loan name: &amp;lsquo; + data.Name);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Depending upon the name you&amp;rsquo;ve given the loan, you should see an alert message in Chrome or Firefox, with that name. However, if we now try to open this from a different domain, or just via Windows Explorer, we&amp;rsquo;ll see that our loan name is undefined. If we were to look at the response returned from the service, we&amp;rsquo;d see it&amp;rsquo;s blank.&lt;/p&gt;
+&lt;h3&gt;JSONP&lt;/h3&gt;
+&lt;p&gt;Now let&amp;rsquo;s update the dataType once again.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;dataType: &amp;lsquo;jsonp&amp;rsquo;,&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Refresh now and nothing happens, on anything. However, if we were to take a look at the response we&amp;rsquo;d see that in fact something is returned, it just happens to be XML, which doesn&amp;rsquo;t help us here. And if we switch the dataType to xml, now we can&amp;rsquo;t use it cross-domain (not to mention we lose out on JSON).&lt;/p&gt;
+&lt;h3&gt;The fix&lt;/h3&gt;
+&lt;p&gt;The fix, found after hours of research and changing settings, requires modifications to our service.&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s change the dataType back to JSONP. Since our request no longer passed application/json as an accept-header, the Web service returns the default format, which happens to be XML, which in turn means nothing works. But we can switch the default format type.&lt;/p&gt;
+&lt;p&gt;Open Web.config in the service and modify the lone standardEndpoint element to the following.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The important part is the new attribute at the end. Build the service and test it again and you&amp;rsquo;ll find that the jQuery called from the same server now works, while the jQuery from a different domain does not.&lt;/p&gt;
+&lt;p&gt;So we&amp;rsquo;re close, but not quite there.&lt;/p&gt;
+&lt;h3&gt;Localhost no longer&lt;/h3&gt;
+&lt;p&gt;Unfortunately, this is where we can no longer test locally. The missing item is the crossDomainScriptAccessEnabled attribute on the standardEndpoint element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;standardEndpoint name=&amp;ldquo;&amp;rdquo; helpEnabled=&amp;ldquo;true&amp;rdquo; automaticFormatSelectionEnabled=&amp;ldquo;true&amp;rdquo; defaultOutgoingResponseFormat=&amp;ldquo;Json&amp;rdquo; crossDomainScriptAccessEnabled=&amp;ldquo;true&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since we&amp;rsquo;re authenticated, however, this will horribly fail, which can be shown by just browsing to the service via &lt;a href=&#34;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&#34;&gt;http://localhost:49821/FormulasService/Loan?name=asdf&amp;amp;total=4956.24&amp;amp;payment=97.85&amp;amp;yearlyPayments=12&amp;amp;yearlyInterest=4.25&lt;/a&gt; and getting a message&amp;nbsp;that &amp;ldquo;Cross domain javascript callback is not supported in authenticated services.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;If you have a server that supports it, go ahead and build the service and push it, with those two new attributes. If you don&amp;rsquo;t, change your jQuery url so that it points to services.jamesrskemp.com, and change the name parameter to your email. (Obviously, if you&amp;rsquo;ve pushed the service to your own server, go ahead and use your domain in place of mine.)&lt;/p&gt;
+&lt;div class=&#34;note&#34;&gt;
+&lt;p&gt;Update: Of course, we can also switch off authentication and be able to access this via localhost again. Just add the following to your Web.config within the System.Web element.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;authentication mode=&amp;ldquo;None&amp;rdquo;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;With that done you can now refresh either the copy on the same domain, or a local copy, and have the service return the loan name passed.&lt;/p&gt;
+&lt;p&gt;Now we can modify our function as follows, to get a semi-nice output:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;javascript&#34;&gt;var outputContent = &amp;ldquo;&amp;rdquo;;
+outputContent += &amp;ldquo;Loan name: &amp;ldquo; + data.Name + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+outputContent += &amp;ldquo;Starting balance: &amp;ldquo; + data.Total + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;
+$.each(data.Payments, function (i, payment) { outputContent += &amp;ldquo;After a payment of &amp;rdquo; + payment.Total + &amp;ldquo;, the remaining amount is $&amp;rdquo; + payment.LoanRemaining + &amp;ldquo;&amp;lt;br /&amp;gt;&amp;rdquo;;});
+$(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/ServiceExamples/FormulasService_Loan.htm&#34;&gt;see this in action&lt;/a&gt;&amp;nbsp;on my media sub-domain,&amp;nbsp;with possible improvements after this article is finished.&lt;/p&gt;
+&lt;p&gt;And with that, you should have more than enough information to get cracking on your own services, with your own jQuery implementations.&lt;/p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
+      <pubDate>Mon, 21 Jun 2010 08:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
+      <description>&lt;p&gt;A while ago (&lt;a href=&#34;http://strivinglife.com/words/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule.aspx&#34;&gt;a year and a quarter&lt;/a&gt;)&amp;nbsp;I created an &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt; in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.&lt;/p&gt;
+&lt;p&gt;For better or worse, some of the practices I put in place aren&#39;t the best, and either way I&#39;ve been meaning to tweak the interface so that I could do various comparisons. If I pay x dollars more a month, how much faster would I have it paid off? How much would I save in interest? How much am I paying in interest as it is? I also really wanted to work&amp;nbsp;with JSON and jQuery, for practice.&lt;/p&gt;
+&lt;p&gt;Now that I&#39;ve found &lt;a href=&#34;http://strivinglife.com/words/post/RESTful-WCF-Web-services-easily.aspx&#34;&gt;WCF WebHttp&lt;/a&gt;, I think I have everything I need to make it happen.&lt;/p&gt;
+&lt;h3&gt;Final product&lt;/h3&gt;
+&lt;p&gt;When I&#39;m done I hope to have a WCF WebHttp service that will take a loan and return the total number of payments required to pay the loan off, with interest information. Variables will include the total loan amount, the annual percent, the number of payments per year, and the amount per payment. We&#39;ll be able to make requests to the service, via jQuery, and parse out the results for display on a page.&lt;/p&gt;
+&lt;h3&gt;Tools used&lt;/h3&gt;
+&lt;p&gt;To develop this I&#39;ll be using Visual Studio 2010 Professional, .NET Framework 4, and Windows Server 2008 R2, with&amp;nbsp;jQuery&amp;nbsp;1.4.2. For browser testing&amp;nbsp;I&#39;ll be using Internet Explorer 8 and Chrome 5.0.x.&lt;/p&gt;
+&lt;h3&gt;Steps&lt;/h3&gt;
+&lt;p&gt;The steps to create this product are listed below, with links to the articles that cover them.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object.aspx&#34;&gt;Object determination and creation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service.aspx&#34;&gt;Web service determination, creation, and testing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery.aspx&#34;&gt;jQuery implementation and enabling JSON results on our WCF RESTful Web service&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(Steps subject to change/consolidation as articles are written.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jQuery: Query an Xml document and output data</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/jQuery-Query-an-Xml-document-and-output-data/</link>
+      <pubDate>Sun, 03 May 2009 21:11:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/jQuery-Query-an-Xml-document-and-output-data/</guid>
+      <description>&lt;p&gt;I back-dated my first piece of jQuery code, but have decided not to with my second.&lt;/p&gt;
+&lt;p&gt;Anyways, I had a hard time finding code, written in jQuery, to pull data from an Xml file and add it to a page. Combining a couple of tutorials online, I created the following (on April 27).&lt;/p&gt;
+&lt;p&gt;This was for a message, so I started out with the Xml file, creating something like this:&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;
+&amp;lt;messages&amp;gt;
+    &amp;lt;system&amp;gt;&amp;lt;![CDATA[Test system message.]]&amp;gt;&amp;lt;/system&amp;gt;
+&amp;lt;/messages&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I wanted multiple messages to be able to be stored, hence the format.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Next I had to create the code to pull in the message that I wanted.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
+&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=utf-8&#34; /&amp;gt;
+    &amp;lt;title&amp;gt;Untitled Document&amp;lt;/title&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34; src=&#34;jquery-1.3.2.min.js&#34;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&#34;text/javascript&#34;&amp;gt;
+        try {
+            $(document).ready(function(){
+                $.ajax({
+                    type: &#39;GET&#39;,
+                    url: &#39;message.xml&#39;,
+                    dataType: &#39;xml&#39;,
+                    processData: false,
+                    success: function(data,message) {$(&#39;#wrapper&#39;)
+                        .append(&#39;&amp;lt;div id=&#34;systemMessage&#34;&amp;gt;&#39; + $(data).find(&#39;messages system&#39;).text() + &#39;&amp;lt;/div&amp;gt;&#39;);}
+                });
+            });
+        } catch (ex) {}
+    &amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;div id=&#34;wrapper&#34;&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is where it got tricky, since I couldn&#39;t find code that did this, just a number of individual pieces of it. Putting it all together, it worked as I wanted.&lt;/p&gt;
+&lt;p&gt;We needed to refresh the content as well, and with the help of a plug-in, we were able to make this data call when we wanted (on a timer) and refresh the contents of the div as appropriate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My first, working, piece of jQuery</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/My-first-working-piece-of-jQuery/</link>
+      <pubDate>Thu, 23 Apr 2009 19:00:00 -0500</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/My-first-working-piece-of-jQuery/</guid>
+      <description>&lt;p&gt;This is the first piece of jQuery that I wrote, for production use, that works exactly as I&#39;d like it to. Some code has been changed.&lt;/p&gt;
+&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;try {
+    $(document).ready(function(){
+        $(&#39;div#headerLogin&#39;)
+            .prepend($(document.createElement(&#39;div&#39;))
+            .addClass(&#39;headerLoggedIn&#39;)
+            .append(&#39;Logged in as: &amp;lt;span&amp;gt;&amp;lt;cfoutput&amp;gt;#query.displayName#&amp;lt;/cfoutput&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;span&amp;gt;&amp;lt;a href=&#34;http://replace-this-with-your-hugo-site.com/logout/&#34;&amp;gt;logout&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&#39;)
+        );
+        $(&#39;div.headerLoggedIn&#39;)
+            .after(&#39;&amp;lt;span&amp;gt;Hello&amp;lt;cfif IsDefined(&#34;query.first_name&#34;) AND Trim(query.first_name) NEQ &#34;&#34;&amp;gt;, &amp;lt;cfoutput&amp;gt;#query.first_name#&amp;lt;/cfoutput&amp;gt;&amp;lt;/cfif&amp;gt;&amp;lt;/span&amp;gt;&#39;);
+    });
+} catch (ex) {}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It&#39;s for a site that runs ColdFusion, hence the CF tags.&lt;/p&gt;
+&lt;p&gt;Basically it finds the div with an id of headerLogin and adds to that a new div, with a class and some text. Then additional text is added to that new div.&lt;/p&gt;
+&lt;p&gt;Pretty simple, but ...&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

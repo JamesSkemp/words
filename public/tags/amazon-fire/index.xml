@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Amazon Fire on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/tags/amazon-fire/</link>
+    <description>Recent content in Amazon Fire on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Dec 2015 14:35:42 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/amazon-fire/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Google Services on the Amazon Fire HD 8</title>
+      <link>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
+
+&lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Make sure you&#39;re a developer and you allow apps from unknown sources.&lt;/li&gt;
+&lt;li&gt;Install ES File Explorer via the Amazon Appstore. It&#39;s something I install on all my Android devices.&lt;/li&gt;
+&lt;li&gt;Extract the contents of the zip you downloaded from Mega somewhere.&lt;/li&gt;
+&lt;li&gt;Connect your Fire tablet to your computer via a USB cable.&lt;/li&gt;
+&lt;li&gt;Copy all the files to the Download directory on your tablet.&lt;/li&gt;
+&lt;li&gt;In ES File Explorer navigate to the Download directory.&lt;/li&gt;
+&lt;li&gt;Install com.android.vending-5.9-12*.apk&lt;/li&gt;
+&lt;li&gt;Install com.google.android.gms-6.6.03*.apk&lt;/li&gt;
+&lt;li&gt;Install GoogleLoginService.apk&lt;/li&gt;
+&lt;li&gt;Install GoogleServicesFramework.apk&lt;/li&gt;
+&lt;li&gt;Turn off and then turn back on the device.&lt;/li&gt;
+&lt;li&gt;You can try opening Google Play. If it automatically closes (it did for me), install com.android.vending-5.9.12*.apk again. When I did so it asked me if I wanted to install the update, and referenced one of the other services.&lt;/li&gt;
+&lt;li&gt;You should be able to run the Google Play application now.&lt;/li&gt;
+&lt;li&gt;When prompted, you can safely update the Google services.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With Google Play installed I was able to login to Google, as well as install YouTube and Chrome to my Fire HD 8.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
