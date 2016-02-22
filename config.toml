@@ -1,5 +1,5 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://jamesskemp.github.io/blog/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "James Skemp's Test Hugo-Generated Site"
 theme = "beg"
 publishdir = "public"
