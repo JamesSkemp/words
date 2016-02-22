@@ -1,0 +1,31 @@
++++
+title = "Review: Professional ASP.NET MVC 3"
+summary = "Review of Professional ASP.NET MVC 3, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen."
+draft = false
+comments = true
+date = "2011-08-20T14:04:00-05:00"
+modified = "2011-08-20T14:54:09-05:00"
+slug = "Review-Professional-ASPNET-MVC-3"
+blogengine = "0781ab3f-20ae-4c24-839d-eaae3b04fa23"
+categories = ["review"]
+tags = ["book review", "asp.net mvc"]
++++
+
+<div class="note">
+<p>The following is a review of <a rel="external" href="http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20">Professional ASP.NET MVC 3</a>, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.</p>
+</div>
+<p>Having used ASP.NET MVC since around the time 1.0 was released I was a little interested in what Professional ASP.NET MVC 3 would bring to someone like myself. Would this book provide enough new content to someone like me who's tried to keep up on the framework? So when I was contacted by someone at Wiley to receive a copy for review I was of course interested.</p>
+<p>The following review will take into consideration my particular experience with the framework. For new users I highly recommend you stick with the music store tutorial available from the official ASP.NET MVC Web site. Unlike <a href="http://strivinglife.com/words/post/Review-Professional-ASPNET-MVC-10.aspx">Professional ASP.NET MVC 1.0</a> this book does not contain a full tutorial to get you started. Also, this is one of my longer reviews, so if you just want to skip ahead the last three chapters provide a summary of my thoughts.</p>
+<p>Professional ASP.NET MVC 3 consists of 14 chapters and an index, over the course of 400 pages. There are significantly fewer images than one might expect, but don't worry, that's a good thing, as there's a good deal of text and code.</p>
+<p>Speaking of code you'll find they've used NuGet to distribute some code examples, but this seems to be based on whether the author choose to use it than being something consistent throughout the book. (I think you too will know which author wrote particular chapters/sections based upon whether NuGet code is available.) Speaking of authors there are four who worked together on this book, and I was pleasantly surprised to see that each chapter's author was noted.</p>
+<p>As is the case with Wrox books, the physical book itself is top notch.</p>
+<p>Given that this version of the book isn't for beginners I was a little alarmed after reading chapters 1 and 2, as they contained a large amount of introductory content within.&nbsp;Chapter 3 finally started including some newer information within, but again there was still a lot of introductory content contained within. I've noted that chapter 4 seems to go back to the review of introductory topics, like chapter 1 and 2.</p>
+<p>In fact, I would argue that it isn't until chapter 7 that we start getting into the more 'professional' topics, with information about securing your application (including a note about vulnerabilities with MVC 2 code, which I hadn't seen mentioned previously). I also found chapter 8, regarding AJAX, to be a rather great chapter.</p>
+<p>Chapter 9 takes us back to more introductory topics when it discusses routing, but it does contain a deeper look into more advanced routing, and is written by Phil Haack, so you couldn't ask for much more.</p>
+<p>Chapter 10 covers NuGet, but outside of creating and distributing packages (which most people won't do), the information can easily be found in introductory tutorials.</p>
+<p>And now we get to the part where the more advanced topics are covered. Chapters 11 through 13 cover dependency injection, unit testing, and extending MVC. For the first two these are items which 'professional' developers should be using, according to some schools of thought. However, if you've already researched these items and made the decision not to go down this path (at this time or ever), these chapters won't sway you.</p>
+<p>Chapter 11 could really benefit with a unified example, and chapter 12's shining point are the ASP.NET MVC-specific tips and tricks. Chapter 13 covers the extendability of MVC, but it is my opinion that the majority of people won't have to go down this route very often, if it all.</p>
+<p>Finally we get to the last chapter, chapter 14. The title, "Advanced Topics," would work much better as a section. Instead we have a number of topics consolidated into one chapter instead of mini-chapters for each. What's really telling is the first chapter where we read that "[t]here are a lot of really cool advanced topics we glossed over to avoid getting lost in the weeds as we covered the fundamentals of ASP.NET MVC." Is this an ASP.NET MVC fundamentals, or professional book?</p>
+<p>Maybe I'm reading too much into it, but this really seems to suggest that this isn't so much a 'professional ASP.NET MVC' book, but rather a collection of really cool or advanced features of ASP.NET MVC. So this is not like their 'Beginning/Professional _' series of books, but rather another type altogether. So, unlike that series, just because you've read the music store tutorial does not necessarily mean that your next step is this book. Instead you're much more likely to find what you need next online, perhaps even on the blogs of the writers. Later, as you try to move closer to the metal you might find use for the techniques covered in this book, but once again you're more likely to find what you need already online (and rare is the need for more than one of the book's topics to be required at that particular moment in time).</p>
+<p>As such, as much as I'd like to give this book 4 stars I find myself needing to give it only 3. I consider this much more of a reference book when you need to start digging in closer to the metal. Perhaps if the book took the music store application (something it starts with and then seems to forget as the book progresses) and built upon it with the more advanced information contained within the book would have a wider appeal. But as it is the content of the book ranges oddly between beginner topics and much more specific information.</p>
+<p>For these reasons I give <a rel="external" href="http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20">Professional ASP.NET MVC 3</a> 3 of 5 stars.</p>
