@@ -14,13 +14,13 @@ The following is a review of the [Sennheiser HD 471G Headset with Inline Mic and
 
 ### High build quality, and terrific sound
 
-Probably a decade ago I had a cowroker who leant me a pair of her Sennheiser headphones for a couple hours one day. I was looking at picking up some nicer headphones, and she thought that listening to her's might sway me, I think. While they certainly sounded good, I'm not much of an audiophile, so for me, compared to cheap headphones the difference in quality just wasn't that different.
+Probably a decade ago I had a coworker who lent me a pair of her Sennheiser headphones for a couple hours one day. I was looking at picking up some nicer headphones, and she thought that listening to her's might sway me, I think. While they certainly sounded good, I'm not much of an audiophile, so for me, compared to cheap headphones the difference in quality just wasn't that different.
 
 Maybe it's because I'm getting older, but after trying out the Sennheiser HD 471G headphones I'm a convert. Wow.
 
 Let's first talk about what comes in the box. We have the headphones themselves with a standard plug, as well as a 6.3 mm adapter. However, it also includes a second, longer cable, with the ability to swap them out. It also includes a nice bag to put the headphones in, which I didn't end up using. It's soft, instead of a hard case, so you shouldn't expect it to keep them protected in bags.
 
-The headphones feel pretty dang good, with a nice balance between being light, but not feeling cheap. On the head they also feel quite nice. The thickness of the top portion did take me a litle while to get used to, but wasn't a big deal. Otherwise I generally didn't even notice these were on, save when the top bumped up against something when I rested my head back. Super comfortable, with no risk of slipping off.
+The headphones feel pretty dang good, with a nice balance between being light, but not feeling cheap. On the head they also feel quite nice. The thickness of the top portion did take me a little while to get used to, but wasn't a big deal. Otherwise I generally didn't even notice these were on, save when the top bumped up against something when I rested my head back. Super comfortable, with no risk of slipping off.
 
 Now we've got the sound quality. I used these with a Nexus 7, [Kindle Fire HD 8][2], an Asus Transformer Book, and a Surface Pro 4. Quality across all of them was great, with a mix of Google Play music, YouTube videos, Netflix, and hours of a series on Funimation. I tried a wide range of sound, from both quiet talking to louder shows/movies, and was quite impressed by the sound, with no distortion.
 
