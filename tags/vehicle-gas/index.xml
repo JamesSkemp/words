@@ -11,10 +11,10 @@
     
     <item>
       <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
-      <link>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <link>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
 &lt;/div&gt;

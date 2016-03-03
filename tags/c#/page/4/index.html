@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Jun 8, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-35-In-C-and-VB/">Review: Beginning ASP.NET 3.5 In C# and VB</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-35-In-C-and-VB/">Review: Beginning ASP.NET 3.5 In C# and VB</a></div>
   </header>
   <div class="body">The following book review is for Imar Spaanjaars&rsquo; Beginning ASP.NET 3.5 In C# and VB. Update&nbsp;July 11 2008:&nbsp;Review of Professional ASP.NET 3.5&nbsp;In C# and VB. Update March 28 2010: Review of Beginning ASP.NET 4 in C# and VB.&nbsp; I&rsquo;ve picked up copies of Beginning ASP.NET 2.0; Build Your Own ASP.NET 2.0 Web Site Using C# &amp; VB; Beginning ASP.NET 2.0 E-Commerce in C# 2005 From Novice to Professional; and Microsoft ASP.NET 3.5 Step by Step (the only one I can recommend).</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-35-In-C-and-VB/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-35-In-C-and-VB/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Jun 2, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/">Cross Sums Helper 2.0 - testing needed</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Cross-Sums-Helper-20-testing-needed/">Cross Sums Helper 2.0 - testing needed</a></div>
   </header>
   <div class="body">After sleeping on it (albeit poorly), I&#39;ve resolved the issue that was stopping production on the new version of my Cross Sums Helper application. However, I need some help testing. Download Cross Sums Helper 2.0 - 67 KB (.NET Framework 2.0 or higher is required). UPDATE: Download Cross Sums Helper 2.1 - 65 KB If you don&#39;t have .NET Framework (and are on Windows) let me know - I had a hard time finding any real stats on these numbers, even from MS people.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Cross-Sums-Helper-20-testing-needed/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,13 +94,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, May 4, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></div>
   </header>
   <div class="body">I&#39;ve posted code in ColdFusion and JavaScript for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. RegularExpression.aspx &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt; &nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt; &nbsp;&nbsp;form { &nbsp;&nbsp;&nbsp;margin:0; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;} &nbsp;&nbsp;form label, .label_kludge { &nbsp;&nbsp;&nbsp;display:block; &nbsp;&nbsp;&nbsp;float:left; &nbsp;&nbsp;&nbsp;width:180px; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;&nbsp;margin:5px 0 0; &nbsp;&nbsp;&nbsp;text-align:right; &nbsp;&nbsp;} &nbsp;&nbsp;form input, form textarea, form select { &nbsp;&nbsp;&nbsp;width:200px; &nbsp;&nbsp;&nbsp;margin:5px 0 0 10px; &nbsp;&nbsp;} &nbsp;&nbsp;textarea { &nbsp;&nbsp;&nbsp;overflow:auto; &nbsp;&nbsp;} &nbsp;&nbsp;form br { &nbsp;&nbsp;&nbsp;clear:left; &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &nbsp;&lt;h1&gt;ASP.NET 3.5 Regular Expression Tester&lt;/h1&gt; &nbsp;&nbsp;&nbsp; &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;div&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:Label ID=&quot;lbl_RegularExpression&quot; runat=&quot;server&quot; Text=&quot;Regular Expression:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;RegularExpression&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:TextBox ID=&quot;RegularExpression&quot; runat=&quot;server&quot; Width=&quot;350&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator1&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;RegularExpression&quot; Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a regular expression.&quot; SetFocusOnError=&quot;True&quot;&gt;You &nbsp;&nbsp;must enter a regular expression.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_TestString&quot; runat=&quot;server&quot; Text=&quot;Test String:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;TestString&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:TextBox ID=&quot;TestString&quot; runat=&quot;server&quot; Width=&quot;350px&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator2&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a string to test the regular expression against.&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;TestString&quot;&gt;You &nbsp;&nbsp;must enter a string to test the regular expression against.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_CaseSensitive&quot; runat=&quot;server&quot; Text=&quot;Case Sensitive:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;CaseSensitive&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:CheckBox ID=&quot;CaseSensitive&quot; runat=&quot;server&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;span class=&quot;label_kludge&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;asp:Button ID=&quot;btn_Test&quot; &nbsp;&nbsp;&nbsp;runat=&quot;server&quot; Text=&quot;Test&quot; onclick=&quot;btn_Test_Click&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_Results&quot; runat=&quot;server&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/div&gt; &nbsp;&nbsp;&nbsp; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; RegularExpression.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.Text.RegularExpressions; public partial class _Default : System.Web.UI.Page { &nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e) { &nbsp;&nbsp;if (this.IsPostBack) { &nbsp;&nbsp;&nbsp;Boolean MatchCheck; &nbsp;&nbsp;&nbsp;if (this.CaseSensitive.Checked) { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text); &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text, RegexOptions.IgnoreCase); &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;if (MatchCheck) { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: match found&quot;; &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: no match found&quot;; &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; } &nbsp;protected void btn_Test_Click(object sender, EventArgs e) {&nbsp; &nbsp;} } See it in action!</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ASPNET/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Regular-Expression-tester-ASPNET/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -110,13 +110,13 @@
       <article class="li">
   <header>
     <div class="date">Wed, Sep 5, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></div>
   </header>
   <div class="body">The follow covers how to compile BlogEngine.NET from the most recently available source code. This was originally posted to the Codeplex discussions for BlogEngine.NET, and will eventually get moved into the wiki. (Update Sept 8, 2007: Added to the BlogEngine.NET wiki, but not yet linked from other pages. Also made a minor change to step one.) Compiling source with Microsoft Visual C# 2005 Express Edition 1) Download the current source code from the Releases tab or the Source code tab on CodePlex.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -151,25 +151,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://jamesskemp.github.io/words/posts/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
     </div>
   </div>

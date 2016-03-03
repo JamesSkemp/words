@@ -11,10 +11,10 @@
     
     <item>
       <title>Storing watched movies and Netflix shipping/receiving in XML format</title>
-      <link>http://jamesskemp.github.io/words/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</link>
+      <link>http://jamesskemp.github.io/words/post/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</link>
       <pubDate>Sun, 06 Mar 2011 13:21:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
       <description>&lt;p&gt;Ever since I started &lt;a href=&#34;http://strivinglife.com/words/post/Netflix-shipping-for-Madison-WI.aspx&#34;&gt;my Netflix subscription in September 2006&lt;/a&gt; I&#39;ve been keeping track of what movies I receive and when.&lt;/p&gt;
 &lt;p&gt;Unfortunately, as the years have gone by I&#39;ve found it more and more difficult to easily look through the listings to see when I last watched a movie. Additionally, I&#39;ve no longer been keeping track of what ratings I give movies, and why.&lt;/p&gt;
 &lt;p&gt;The initial goal was really to track when Netflix shipped and received movies, as well as when I mailed and received. This would suggest a pretty easy XML schema, since the key parts are as follows.&lt;/p&gt;

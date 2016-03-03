@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Installing MySQL Administrator on a local Windows-based, Apache, server - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Installing MySQL Administrator on a local Windows-based, Apache, server - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Installing-MySQL-Administrator-on-a-local-Windows-based-Apache-server/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2006-02-25T23:28:00-06:00">
+        <meta itemprop="headline" content="Installing MySQL Administrator on a local Windows-based, Apache, server">
+        <meta itemprop="description" content="Last time, we successfully installed both MySQL and phpMyAdmin on our local server. However, we only had one user. This time, we&#39;ll be installing MySQL Administrator, to give us the ability to add administer MySQL in a way that we can&#39;t do with phpMyAdmin. Before we go, please note that the MySQL Administrator does not take away the value of phpMyAdmin. In fact, phpMyAdmin is usually how you&#39;ll be able to administer your MySQL databases in the real world.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Installing-MySQL-Administrator-on-a-local-Windows-based-Apache-server/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-02-25T23:28:00-06:00">Sat, Feb 25, 2006</time>
+          <h1 class="article-title">Installing MySQL Administrator on a local Windows-based, Apache, server</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Last time, we successfully <a href="http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx">installed both MySQL and phpMyAdmin</a> on our local server. However, we only had one user. This time, we'll be installing MySQL Administrator, to give us the ability to add administer MySQL in a way that we can't do with phpMyAdmin.</p>
+<p>Before we go, please note that the MySQL Administrator does not take away the value of phpMyAdmin. In fact, phpMyAdmin is usually how you'll be able to administer your MySQL databases in the real world.</p>
+<p>First, we'll download the most recent version of MySQL Administrator that will work with our version of MySQL, from <a href="http://dev.mysql.com/downloads/administrator/">http://dev.mysql.com/downloads/administrator/</a>. In this case, we'll be downloading MySQL Administrator 1.1.9. Download the Windows (x86) installer, at 5 MB. Once the MSI file has been downloaded, open it.</p>
+<p>You'll need to review and agree to the short License agreement. Installing to the default installation path, C:\Program Files\MySQL\MySQL Administrator 1.1\, will probably serve you well. Select Custom installation, but leave everything as it is. Continue through the next screen, and press Finish.</p>
+<p>Now that we've installed MySQL Administrator, you may want to create a shortcut in your C:\home\ directory (along with the other shortcuts we may have there). Once you've done this, or not, start MySQL Administrator. You can find it either in the installation directory, or in the Start menu, under MySQL. When you start Administrator up, you'll be asked to supply some information.</p>
+<p>Press the "..." button next to the Stored Connection field. In the new window, press the Add new Connection button. Give the Connection a name in the first field (something like "MySQL 4.1 root", or whatever makes sense). In the username field, type "root", without the quotes. In the Password field, type your password. In Host, type localhost, and leave the remaining fields as they are. However, if you'd like to add some Notes, please do. Hit Apply, followed by Close. Now, in our original window, type your password, and say OK.</p>
+<p>Now that we've connected, we'll first be presented with information about our machine. On the left side, you'll see a User Administration item, which is what we want. We'll setup a new user account for ourselves, with the name FirstLast (as in, first name, last name). So, being James Skemp, mine will be JamesSkemp. Hit the New User button to proceed. Fill out the MySQL User field and press Apply Changes. Next, right click on our newer user, on the left-side, and select "Add Host From Which User Can Connect". In the prompt, type "localhost" (without the quotes).</p>
+<p>The other two tabs give us some additional security options. Right now, if we login to phpMyAdmin with our new user account, we'll find that we can't do much. In fact, there are no tables we can modify. If we switch over to MySQL Administrator, we'll notice a Catalogs item on the left. Select it and we may notice two items that we may have seen before &ndash; when we logged into phpMyAdmin as root, these two items were available databases.</p>
+<p>Right-click below the listing, and select Create new schema. Call the new schema 'website'. Switch back over to User Administration, select the Schema Privileges, select the website schema, and assign all available Privileges to this user, for this schema (the &lt;&lt; button). Apply Changes.</p>
+<p>Now, type Windows + R, and type 'cmd' (no quotes) to bring up the command line interface. Now, type</p>
+<pre class="code"><code class="powershell">mysql -u root -p</code></pre>
+<p>at the command line. What we'll be doing is changing the password that we just setup for our new user. A horrible work-around, unfortunately. When it prompts you for a password, type the password you used at setup, and above, once again. Next, type the following, where your_password is the password you want to set for the new account. Note that you should hit enter after each ';'.</p>
+<pre class="code"><code class="sql">UPDATE mysql.user SET Password = OLD_PASSWORD('your_password') WHERE User = 'JamesSkemp';
+FLUSH PRIVILEGES;</code></pre>
+<p>You can also change the password by using the following, where some_user, some_host, and newpwd need to be changed. However, the above will change the password for all hosts.</p>
+<pre class="code"><code class="sql">SET PASSWORD FOR 'some_user'@'some_host' = OLD_PASSWORD('newpwd');</code></pre>
+<p>You can then type exit, press enter, type exit, and press enter. Now, you may have to restart MySQL.</p>
+<p>Note that if we were using PHP 5, or MySQL 4.0x, we wouldn't have this problem. However, in order to cradle things correctly, we have to resort to doing this. Hopefully, there won't be much need to create a number of new user accounts for your development server (it's easier in real life &ndash; really).</p>
+<p>Now that we have a user, we can try creating a table. Copy the following into Notepad, and save it as CreateTable.php, in our c:\home\ directory. Note that FirstName and your_password should be changed accordingly.</p>
+<pre class="code"><code class="php">&lt;?php
+$user="FirstName";
+$password="your_password";
+$database="website";
+$table="test_table";
+mysql_connect(localhost,$user,$password);
+@mysql_select_db($database) or die( "Unable to select database ".$database);
+/*
+PersonID (int 6) U
+PersonName (varchar 255)
+*/
+
+$query="CREATE TABLE $table (PersonID int(6) NOT NULL auto_increment,PersonName varchar(255) NOT NULL,PRIMARY KEY (PersonID),UNIQUE id (PersonID))";
+
+$results=mysql_query($query);
+if($results) {
+    echo("Successfully created ".$table." in ".$database.".");
+}
+else {
+    die("Trouble creating table ".$table." in ".$database.":&lt;br /&gt;".mysql_error());
+}
+mysql_close();
+?&gt;</code></pre>
+<p>View this page, <a rel="nofollow" href="http://localhost/CreateTable.php">http://localhost/CreateTable.php</a>, and you should see a message saying "Successfully created test_table in website." Congrats &ndash; you've successfully setup MySQL Administrator, created a new user and schema (or database, if you will), and created a table in that database for that user.</p>
+<p>If you login to phpMyAdmin now, you'll be able to see the table that you created, and do all sorts of other things. If you login to MySQL Administrator with the root account, you'll also be able to see some information on this new table. In another tutorial (based upon reader feedback), we'll use this table to create a basic listing of names.</p>
+<p>For now, take a break, and enjoy your new powers.</p>
+<p><a href="http://strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/mysql" class="tag">mysql</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fInstalling-MySQL-Administrator-on-a-local-Windows-based-Apache-server%2f&t=Installing%20MySQL%20Administrator%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fInstalling-MySQL-Administrator-on-a-local-Windows-based-Apache-server%2f&text=Installing%20MySQL%20Administrator%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fInstalling-MySQL-Administrator-on-a-local-Windows-based-Apache-server%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fInstalling-MySQL-Administrator-on-a-local-Windows-based-Apache-server%2f&title=Installing%20MySQL%20Administrator%20on%20a%20local%20Windows-based%2c%20Apache%2c%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

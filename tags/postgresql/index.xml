@@ -11,10 +11,10 @@
     
     <item>
       <title>Ubuntu Quickie: MySQL and PostgreSQL passwords</title>
-      <link>http://jamesskemp.github.io/words/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</link>
+      <link>http://jamesskemp.github.io/words/post/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</link>
       <pubDate>Sat, 23 Jun 2007 08:50:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</guid>
       <description>&lt;p&gt;&lt;p&gt;Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.&lt;/p&gt;
 &lt;h3&gt;MySQL&lt;/h3&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mysql -u root
@@ -31,10 +31,10 @@ ALTER USER postgres WITH PASSWORD &amp;lsquo;&lt;strong&gt;&lt;em&gt;password&lt
     
     <item>
       <title>Reference: PostgreSQL 8.2 commands on Ubuntu</title>
-      <link>http://jamesskemp.github.io/words/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</link>
+      <link>http://jamesskemp.github.io/words/post/Reference-PostgreSQL-82-commands-on-Ubuntu/</link>
       <pubDate>Sat, 23 Jun 2007 08:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Reference-PostgreSQL-82-commands-on-Ubuntu/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Reference-PostgreSQL-82-commands-on-Ubuntu/</guid>
       <description>&lt;p&gt;&lt;p&gt;
 Below are the PostgreSQL 8.2 commands on Ubuntu.
 &lt;/p&gt;
@@ -123,10 +123,10 @@ Copy, Large Object
     
     <item>
       <title>Ubuntu Quickie: Installing MySQL and PostgreSQL</title>
-      <link>http://jamesskemp.github.io/words/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</link>
+      <link>http://jamesskemp.github.io/words/post/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</link>
       <pubDate>Thu, 21 Jun 2007 21:05:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</guid>
       <description>&lt;p&gt;For SQL on Ubuntu Linux, I decided it was easiest to just use the repositories to just install MySQL and PostgreSQL.&lt;/p&gt;
 &lt;p&gt;There was a couple of reasons for this. First, MySQL docs recommend it.&lt;!--adsense--&gt;&lt;/p&gt;
 &lt;p&gt;Second, there&#39;s not that much that I really want to configure in SQL.&lt;/p&gt;
@@ -161,10 +161,10 @@ Copy, Large Object
     
     <item>
       <title>PHP Forum Software Showdown Part 6: phpBB</title>
-      <link>http://jamesskemp.github.io/words/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
+      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
       <pubDate>Sat, 25 Nov 2006 18:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
+      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
       <description>&lt;p&gt;It&#39;s that time again. This time, we&#39;ll be looking at &lt;a rel=&#34;external&#34; href=&#34;http://www.phpbb.com/&#34;&gt;phpBB&lt;/a&gt;. &amp;ldquo;phpBB is a high powered, fully scalable, and highly customizable Open Source bulletin board package. phpBB has a user-friendly interface, simple and straightforward administration panel, and helpful FAQ. Based on the powerful PHP server language and your choice of MySQL, MS-SQL, PostgreSQL or Access/ODBC database servers, phpBB is the ideal free community solution for all web sites.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Lot&#39;s of features, so let&#39;s get to it. In this article, we&#39;ll be installing phpBB version 2.0.21, which is the latest version, as of June 9, 2006. A beta version of 3.0 came out a very short period before this article was written, otherwise I don&#39;t know that phpBB would have made it. Anywho, on with it.&lt;/p&gt;
 &lt;h3&gt;File and folder size&lt;/h3&gt;
@@ -219,10 +219,10 @@ TO &lt;strong&gt;phpBB&lt;/strong&gt; IDENTIFIED BY &#39;&lt;strong&gt;phpbb&lt;
     
     <item>
       <title>PHP Forum Software Showdown Part 5: PunBB</title>
-      <link>http://jamesskemp.github.io/words/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
+      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
       <pubDate>Fri, 24 Nov 2006 09:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
+      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
       <description>&lt;p&gt;
 Almost there. This time, we&amp;#39;ll be looking at &lt;a href=&#34;http://www.punbb.org/&#34;&gt;PunBB&lt;/a&gt;. First, I did donate to PunBB development some time ago. At the time, I liked PunBB, and received some great support. It&amp;#39;s been sometime since that time, so I don&amp;#39;t know how things stand.
 &lt;/p&gt;
@@ -373,10 +373,10 @@ Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
 &lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
 &lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
@@ -495,10 +495,10 @@ Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/
     
     <item>
       <title>Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sun, 19 Mar 2006 06:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;Having already &lt;a href=&#34;http://strivinglife.com/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;added MySQL support for ColdFusion MX&lt;/a&gt;, it&#39;s time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we&#39;ll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we&#39;ll need to install some additional features to ColdFusion MX.&lt;/p&gt;
 &lt;p&gt;(This guide assumes you&#39;ve already &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed PostgreSQL&lt;/a&gt;.)&lt;/p&gt;
 &lt;h3&gt;Downloading and installing the JDBC Driver&lt;/h3&gt;
@@ -549,10 +549,10 @@ CREATE UNIQUE INDEX TestDatabase_TestColumn1_TestColumn2_uidx ON TestDatabase (T
     
     <item>
       <title>Installing PostgreSQL on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Wed, 15 Mar 2006 23:32:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;While we&#39;ve already &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;setup MySQL&lt;/a&gt;, another popular SQL server is PostgreSQL. Like MySQL, PostgreSQL is absolutely free, and will allow us to create databases on our local server.&lt;/p&gt;
 &lt;h3&gt;Downloading PostgreSQL&lt;/h3&gt;
 &lt;p&gt;We&#39;ll be downloading the most current version of PostgreSQL, which is 8.1.3 at the time of this writing. You can download the installation file from &lt;a rel=&#34;external&#34; href=&#34;http://www.postgresql.org/ftp/win32&#34;&gt;http://www.postgresql.org/ftp/win32&lt;/a&gt;. We&#39;ll want to download the regular zip file, called postgresql-8.1.3-1.zip, and weighing in at 21 MB. You&#39;ll want to save this to the same folder you save your other installers &amp;ndash; c:\home\downloads\ if you&#39;ve been following along.&lt;/p&gt;
@@ -611,10 +611,10 @@ pg_close($connection);
     
     <item>
       <title>A local, Apache Web server, on a Windows XP computer</title>
-      <link>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
+      <link>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
       <pubDate>Mon, 27 Feb 2006 03:23:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
+      <guid>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
       <description>&lt;p&gt;My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I&#39;ve decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I&#39;ve opted to use it as the core, instead of IIS, or the like.&lt;/p&gt;
 &lt;p&gt;I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case. I do have copies of the versions I&#39;ve installed below, and would be happy to provide those copies that no longer exist elsewhere; just ask.&lt;/p&gt;
 &lt;h3&gt;Our local Web server uses the following technology.&lt;/h3&gt;

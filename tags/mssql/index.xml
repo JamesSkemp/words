@@ -11,10 +11,10 @@
     
     <item>
       <title>The problem with installing SQL Server Express via the Microsoft Web Platform Installer</title>
-      <link>http://jamesskemp.github.io/words/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
+      <link>http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
       <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
+      <guid>http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
 &lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
 &lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
       <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
 &lt;h3&gt;Server system&lt;/h3&gt;
@@ -76,10 +76,10 @@
     
     <item>
       <title>Programmatic SQL command timeout using a SqlDataSource (C#)</title>
-      <link>http://jamesskemp.github.io/words/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/</link>
+      <link>http://jamesskemp.github.io/words/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/</link>
       <pubDate>Wed, 24 Jun 2009 08:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/</guid>
       <description>&lt;p&gt;Granted, in the case where this came up, I should have moved away from a SqlDataSource, but I wrote it using one, and a re-write isn&#39;t possible at the moment.&lt;/p&gt;
 &lt;p&gt;So, I had to find a way yesterday to programmatically set the command timeout of a select, using a SqlDataSource (that was programmatically written).&lt;/p&gt;
 &lt;p&gt;After much research, I found that you have to set the timeout on selecting. After opening a dummy document to see if I could determine how it was normally done, I came up with something like the following:&lt;/p&gt;
@@ -99,10 +99,10 @@ dataSource.Selecting += GenericSelecting;
     
     <item>
       <title>Programmatic MSSQL data source in ASP.NET (C#) without System.Web</title>
-      <link>http://jamesskemp.github.io/words/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/</link>
+      <link>http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/</link>
       <pubDate>Sat, 06 Jun 2009 14:08:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp.aspx&#34;&gt;a similar article&lt;/a&gt; I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive.&lt;/p&gt;
 &lt;p&gt;So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code.&lt;/p&gt;
 &lt;p&gt;First, the following must be included in.&lt;/p&gt;
@@ -140,10 +140,10 @@ using System.Configuration;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Programmatic MSSQL data source in ASP.NET (C#)</title>
-      <link>http://jamesskemp.github.io/words/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/</link>
+      <link>http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/</link>
       <pubDate>Mon, 01 Jun 2009 21:03:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/</guid>
       <description>&lt;p&gt;I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here&#39;s how I&#39;ve been programmatically making calls to Microsoft SQL Server.&lt;/p&gt;
 &lt;p&gt;If I&#39;m doing something wrong, please comment below or send me an email. Some times have been changed to dummy values.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;

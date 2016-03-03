@@ -11,10 +11,10 @@
     
     <item>
       <title>XML standards - personal suggestions</title>
-      <link>http://jamesskemp.github.io/words/posts/XML-standards-personal-suggestions/</link>
+      <link>http://jamesskemp.github.io/words/post/XML-standards-personal-suggestions/</link>
       <pubDate>Fri, 03 Sep 2010 16:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/XML-standards-personal-suggestions/</guid>
+      <guid>http://jamesskemp.github.io/words/post/XML-standards-personal-suggestions/</guid>
       <description>&lt;p&gt;As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.&lt;/p&gt;
 &lt;h3&gt;Elements&lt;/h3&gt;
 &lt;p&gt;In the past I&#39;ve used camel case, but on a recent file used Pascal case instead. I think this was more becauase I&#39;ve started to using Pascal case for public items (variables), and camel case for private items, as that&#39;s fairly standard in development.&lt;/p&gt;

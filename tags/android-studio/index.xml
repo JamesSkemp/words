@@ -11,10 +11,10 @@
     
     <item>
       <title>Configuring a libGDX project to run as a desktop application in Android Studio</title>
-      <link>http://jamesskemp.github.io/words/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
+      <link>http://jamesskemp.github.io/words/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
       <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
 
 &lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;

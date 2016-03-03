@@ -11,10 +11,10 @@
     
     <item>
       <title>Example batch file to dump Subversion repositories</title>
-      <link>http://jamesskemp.github.io/words/posts/Example-batch-file-to-dump-Subversion-repositories/</link>
+      <link>http://jamesskemp.github.io/words/post/Example-batch-file-to-dump-Subversion-repositories/</link>
       <pubDate>Thu, 19 Nov 2009 21:52:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Example-batch-file-to-dump-Subversion-repositories/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Example-batch-file-to-dump-Subversion-repositories/</guid>
       <description>&lt;p&gt;I have a large collection of repositories, and until now ran a single batch file that had to be updated each time I created a new repository, to add the new directory.&lt;/p&gt;
 &lt;p&gt;To combat that, I did some research and created a new batch file that does all the heavy lifting for me.&lt;/p&gt;
 &lt;p&gt;To save others time, I present it below.&lt;/p&gt;
@@ -30,10 +30,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
-      <link>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <link>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
       <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
 &lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
 &lt;h3&gt;Requirements&lt;/h3&gt;
@@ -104,10 +104,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Applications I have to install on my core development machine</title>
-      <link>http://jamesskemp.github.io/words/posts/Applications-I-have-to-install-on-my-core-development-machine/</link>
+      <link>http://jamesskemp.github.io/words/post/Applications-I-have-to-install-on-my-core-development-machine/</link>
       <pubDate>Fri, 09 Oct 2009 21:14:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Applications-I-have-to-install-on-my-core-development-machine/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Applications-I-have-to-install-on-my-core-development-machine/</guid>
       <description>&lt;p&gt;Here&#39;s a listing of applications, as I run into them, that need to be installed on my core development machine.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;TortoiseSVN&lt;/li&gt;
@@ -132,10 +132,10 @@ PAUSE&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Parsing iTunes data with C#</title>
-      <link>http://jamesskemp.github.io/words/posts/Parsing-iTunes-data-with-C/</link>
+      <link>http://jamesskemp.github.io/words/post/Parsing-iTunes-data-with-C/</link>
       <pubDate>Sun, 22 Feb 2009 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Parsing-iTunes-data-with-C/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Parsing-iTunes-data-with-C/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;
 This application has since been updated. &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;Read about the current version of iTunes Playlists to Xml.&lt;/a&gt;
@@ -193,10 +193,10 @@ What I&amp;#39;d like to do is have it allow you to pull the songs/ratings for a
     
     <item>
       <title>Formatting drives in Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/posts/Formatting-drives-in-Windows-Vista/</link>
+      <link>http://jamesskemp.github.io/words/post/Formatting-drives-in-Windows-Vista/</link>
       <pubDate>Wed, 18 Jun 2008 20:40:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Formatting-drives-in-Windows-Vista/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Formatting-drives-in-Windows-Vista/</guid>
       <description>&lt;p&gt;
 So Disk Management can&amp;#39;t be found using the Vista Start Search. 
 &lt;/p&gt;
@@ -214,10 +214,10 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
     
     <item>
       <title>Installing TortoiseSVN to Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-TortoiseSVN-to-Windows-Vista/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-TortoiseSVN-to-Windows-Vista/</link>
       <pubDate>Sun, 08 Jun 2008 09:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-TortoiseSVN-to-Windows-Vista/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-TortoiseSVN-to-Windows-Vista/</guid>
       <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Just recently I covered &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
 &lt;h3&gt;The setup&lt;/h3&gt;
@@ -239,10 +239,10 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
     
     <item>
       <title>Installing Subversion to Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Subversion-to-Windows-Vista/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Subversion-to-Windows-Vista/</link>
       <pubDate>Sat, 07 Jun 2008 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Subversion-to-Windows-Vista/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Subversion-to-Windows-Vista/</guid>
       <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;. This time I&#39;ll be installing Subversion on a Windows Vista Ultimate SP1 machine.&lt;/p&gt;
 &lt;h3&gt;The setup&lt;/h3&gt;
 &lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
@@ -267,10 +267,10 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
     
     <item>
       <title>How to quickly hide all of the Windows Vista Ultimate language packs</title>
-      <link>http://jamesskemp.github.io/words/posts/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</link>
+      <link>http://jamesskemp.github.io/words/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</link>
       <pubDate>Thu, 24 Apr 2008 22:50:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</guid>
       <description>&lt;p&gt;
 While there&amp;#39;s no way to hide them all at once,&amp;nbsp;you can make it a short chore to hide the Windows Vista Ultimate language packs that you don&amp;#39;t use. 
 &lt;/p&gt;
@@ -294,10 +294,10 @@ It takes less than a minute.
     
     <item>
       <title>Determining which IIS 6.0 Application Pool belongs to which application</title>
-      <link>http://jamesskemp.github.io/words/posts/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/</link>
+      <link>http://jamesskemp.github.io/words/post/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/</link>
       <pubDate>Sat, 06 Oct 2007 22:07:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/</guid>
       <description>&lt;p&gt;
 In IIS 6.0, you can setup Application Pools for each of your sites. My knowledge of the exact benefits of this is somewhat lacking, but what I do understand is that these help applications (Web sites) stay within their own bounds, and prevent them from having a bad effect upon each other. 
 &lt;/p&gt;
@@ -332,10 +332,10 @@ There&amp;#39;s an article on TechRepublic from Brien M. Posey (MCSE) with more 
     
     <item>
       <title>How to ensure that performance counters continue after a restart</title>
-      <link>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
+      <link>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
       <pubDate>Wed, 19 Sep 2007 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
       <description>&lt;p&gt;
 A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. 
 &lt;/p&gt;
@@ -409,10 +409,10 @@ Add/remove as necessary, for your logs.
     
     <item>
       <title>Image thumbnails - blindingly fast on Ubuntu (vs. Windows)?</title>
-      <link>http://jamesskemp.github.io/words/posts/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</link>
+      <link>http://jamesskemp.github.io/words/post/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</link>
       <pubDate>Tue, 17 Jul 2007 10:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</guid>
       <description>&lt;p&gt;
 I&amp;#39;m at work, just finishing up my lunch period, and I&amp;#39;m really wishing I had access to my Ubuntu machine right now.
 &lt;/p&gt;
@@ -430,10 +430,10 @@ Grr ...
     
     <item>
       <title>Using Disk Investigator to Regain Files</title>
-      <link>http://jamesskemp.github.io/words/posts/Using-Disk-Investigator-to-Regain-Files/</link>
+      <link>http://jamesskemp.github.io/words/post/Using-Disk-Investigator-to-Regain-Files/</link>
       <pubDate>Thu, 09 Oct 2003 01:01:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Using-Disk-Investigator-to-Regain-Files/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Using-Disk-Investigator-to-Regain-Files/</guid>
       <description>&lt;p&gt;
 I&amp;#39;ve already discussed Disk Investigator in some detail (see &lt;em&gt;Overview of Disk Investigator&lt;/em&gt;). However, what I really want to have is an example of the great use Disk Investigator is. In order to do this, I&amp;#39;m going to set up an example - an example of a situation that is not too uncommon - in order to show just how powerful it is. I urge you to follow along, with my example, on your own computer. Please note that for this article I am using Disk Investigator v1.3. I am also using Windows 98, Second Edition (but I have tested this program personally on Windows XP Home, SP1).
 &lt;/p&gt;

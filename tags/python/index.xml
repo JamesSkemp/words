@@ -11,10 +11,10 @@
     
     <item>
       <title>Installing Python on a local  Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Python-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Python-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sat, 07 Oct 2006 08:11:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Python-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Python-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;
 In this article, we&amp;#39;ll be installing Python on our local server via ActiveState&amp;#39;s ActivePython. You can download the current version of ActivePython (2.4.3.12), as well as a select number of previous versions, from &lt;a href=&#34;http://www.activestate.com/Products/ActivePython/&#34;&gt;http://www.activestate.com/Products/ActivePython/&lt;/a&gt;
 &lt;/p&gt;
@@ -55,10 +55,10 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
     
     <item>
       <title>A local, Apache Web server, on a Windows XP computer</title>
-      <link>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
+      <link>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
       <pubDate>Mon, 27 Feb 2006 03:23:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
+      <guid>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
       <description>&lt;p&gt;My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I&#39;ve decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I&#39;ve opted to use it as the core, instead of IIS, or the like.&lt;/p&gt;
 &lt;p&gt;I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case. I do have copies of the versions I&#39;ve installed below, and would be happy to provide those copies that no longer exist elsewhere; just ask.&lt;/p&gt;
 &lt;h3&gt;Our local Web server uses the following technology.&lt;/h3&gt;

@@ -11,10 +11,10 @@
     
     <item>
       <title>Google Services on the Amazon Fire HD 8</title>
-      <link>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <link>http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/</link>
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
       <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
 
 &lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;

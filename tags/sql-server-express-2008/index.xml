@@ -11,10 +11,10 @@
     
     <item>
       <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
       <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
 &lt;h3&gt;Server system&lt;/h3&gt;

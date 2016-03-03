@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Determining 3D Distances and Angles - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Determining 3D Distances and Angles - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Determining-3D-Distances-and-Angles/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2006-09-04T13:17:00-05:00">
+        <meta itemprop="headline" content="Determining 3D Distances and Angles">
+        <meta itemprop="description" content="Near the top of one of the sections in the POV-Ray&trade; 3.5 manual there is a quote about wishing that past mathematical formulas were remembered, or something to that effect. I too wish I had remembered what I had learned in some of my past math classes, but after a bit of research, I have begun to work on some of the information that I have forgotten. Here is one of those areas.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Determining-3D-Distances-and-Angles/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-09-04T13:17:00-05:00">Mon, Sep 4, 2006</time>
+          <h1 class="article-title">Determining 3D Distances and Angles</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+Near the top of one of the sections in the POV-Ray&trade; 3.5 manual there is a quote about wishing that past mathematical formulas were remembered, or something to that effect. I too wish I had remembered what I had learned in some of my past math classes, but after a bit of research, I have begun to work on some of the information that I have forgotten. Here is one of those areas.
+</p>
+<h3>Determining 3D Distances:</h3>
+<p>
+Given two points, point A (located at &lt;x<sub>A</sub>, y<sub>A</sub>, z<sub>A</sub>&gt;) and point B (located at &lt;x<sub>B</sub>, y<sub>B</sub>, z<sub>B</sub>&gt;), the distance between these two points (AB) can be determined by the formula:<!--adsense-->
+</p>
+<p align="center">
+|AB| = &radic;[(x<sub>B</sub> - x<sub>A</sub>)<sup>2</sup> + (y<sub>B</sub> - y<sub>A</sub>)<sup>2</sup> + (z<sub>B</sub> - z<sub>A</sub>)<sup>2</sup>]
+</p>
+<p>
+In other words, take each x/y/z coordinate and subtract it from the other (remembering that if you take B-A you must continue to do so in that order). Then, square the value for each coordinate and add them all together. Taking the square root of that sum will give you the distance from the second point to the first. Simply take the absolute value of the square root to get the absolute distance.
+</p>
+<p>
+For example:
+</p>
+<p>
+<strong>Example One:</strong> Given point A &lt;5, 0, 0&gt; and point B &lt;6, 7, 0&gt;, what is the distance between these two points?
+</p>
+<p>
+How to do it: First, we take 5 from 6, 0 from 7, and 0 from 0. (6-5) = 1, (7-0) = 7, (0-0) = 0
+</p>
+<p>
+Square each term and add them together: 1<sup>2</sup> + 7<sup>2</sup> + 0<sup>2</sup> = 1 + 49 + 0 = 50
+</p>
+<p>
+Take the square root of the resulting term: &radic;(50) = 7.071 or &radic;(5 * 5 * 2) = 5&radic;(2)
+</p>
+<p>
+<strong>Example Two:</strong> Given point A &lt;1, 7, -3&gt; and point B &lt;-5, 4, -2&gt;, what is the distance between these two points?
+</p>
+<p>
+How to do it: First, we take 1 from -5, 7 from 4, and -3 from -2. (-5-1) = -6, (4-7) = -3, (-2--3) = (-2 + 3) = 1
+</p>
+<p>
+Square each term and add them together: -6<sup>2</sup> + -3<sup>2</sup> + 1<sup>2</sup> = 36 + 9 + 1 = 46
+</p>
+<p>
+Take the square root of the resulting term: &radic;(46) = 6.782
+</p>
+<p>
+Knowing how to determine the distance between two three-dimensional points is 
+necessary to determine 3D angles ...
+</p>
+<h3>Determining 3D Angles:</h3>
+<p>
+Determining 3D angles can be helpful in POV-Ray<font>&trade;</font>, if, for instance, you would 
+like to view the scene from a certain angle and would also like to know the 
+respective distances. It would be a good idea to know how to determine 3D 
+distance in order to get all that you can from this...
+</p>
+<p>
+First of all, it is important that you remember, or have knowledge of 
+soh-cah-toa. Id est:
+</p>
+<p align="center">
+sin(<em>angle</em>) = [(opposite length) / (hypotenuse length)]<br />
+cos(<em>angle</em>) = [(adjacent length) / (hypotenuse length)]<br />
+tan<em>(angle</em>) = [(opposite length) / (adjacent length)]
+</p>
+<p>
+So, given two points, one could make a box from those two points (even if the box has 0 length/width/depth). Any box can be split into two triangles of the same basic shape. A triangle has three angles and three sides. Using the formulas above, if given one angle and one side, we could determine all other angles and sides. So, if we have one corner (which is the look at point for instance) and another corner (which is the camera for instance) we could easily determine the angle(s) between them. How about an example:
+</p>
+<ol>
+    <li>A camera situated at &lt;5, 5, -5&gt; is looking at the origin &lt;0, 0, 0&gt;. What is the angle that the camera is looking at the origin?
+    <ol>
+        <li>There are two ways to go about solving this problem, however, for this page I will stick with one way.</li>
+        <li>Already we have one side of the triangle. The camera is located &#39;up&#39; 5 points from the origin. Therefore, one side of the triangle has a length of 5.</li>
+        <li>By determining the distance from the camera to the origin, which is 5&radic;(3), we have yet another length. This length is the hypotenuse length, since it is the side opposite of the 90&deg; angle.</li>
+        <li>Now, it is easiest to use the angle at the origin (in this case, it is an angle that opens above the positive x-plane, negative z-plane, and into the positive y-plane. Right, up, and back...</li>
+        <li>The opposite side would be the y-coordinate that we determined in #2, which is 5. The hypotenuse length is what we determined in #3, which is 5&radic;(3). Since we have the opposite length and hypotenuse length, we would take the inverse-cos to determine the angle.</li>
+        <li>So, cos<sup>-1</sup>{(5)/[5&radic;(3)]} = cos<sup>-1</sup>{(1)/[1&radic;(3)]} = cos<sup>-1</sup>(0.5774) = 54.73561&deg;.</li>
+        <li>However, this is the angle from the origin to the camera, so if we wanted to determine it from the other way, we would simply take the angle * -1, or switch the sign in the front of the angle.</li>
+        <li>We could also determine #6 from the camera. However, the opposite length would become the adjacent length and the hypotenuse length would stay the same. We would also have to take the inverse-sin of the value.</li>
+        <li>So, sin<sup>-1</sup>{(5)/[5&radic;(3)]} = sin<sup>-1</sup>{(1)/[1&radic;(3)]} = sin<sup>-1</sup>(0.5774) = 35.26439&deg;. Taking this from 90 (as this value is the angle from the y to the xz, instead of the xz to the y, which is what we really want) we get our correct value of 54.73561&deg;.</li>
+        <li>In other words and using the image below, &quot;look at pt&quot; is the origin, &quot;look from pt&quot; is the camera, &quot;h&quot; is the distance determined in #3, &quot;o or a&quot; was not determined in this example, and &quot;a or o&quot; was the distance determined in #2. The angle determined in #6 would be the angle at &quot;look at pt&quot;, while that determined in #9 would be the angle <u>inside</u> the triangle at &quot;look from pt&quot;, followed by the angle <u>outside</u> the triangle at &quot;look from pt&quot;.</li>
+    </ol>
+    </li>
+</ol>
+<p style="text-align: center">
+<img style="width: 209px; height: 113px" src="http://jamesskemp.github.io/words/files/2006/09/triangle.jpg" alt="Triangle with appropriate adjacent, hypotenuse and opposite lengths" /><br />
+From look at pt, (a or o) would be opposite and (o or a) adjacent.<br />
+From look from pt, (a or o) would be adjacent and (o or a) would be opposite.
+</p>
+<hr />
+<p>
+<strong>Primarily Written/Added:</strong> August 14th 2002/October 17th 2002<br />
+<strong>
+Edited/Updated:</strong> November 21st 2002; March 6th 2003; November 5th 2003; September 4 2006.
+</p>
+<p>
+Thanks to Dave Cousineau for pointing out a mistake that stuck around for over 4 years :D
+</p>
+
+        </div>
+
+
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fDetermining-3D-Distances-and-Angles%2f&t=Determining%203D%20Distances%20and%20Angles" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fDetermining-3D-Distances-and-Angles%2f&text=Determining%203D%20Distances%20and%20Angles&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fDetermining-3D-Distances-and-Angles%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fDetermining-3D-Distances-and-Angles%2f&title=Determining%203D%20Distances%20and%20Angles" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -11,10 +11,10 @@
     
     <item>
       <title>Sudoku observations and programmatic considerations</title>
-      <link>http://jamesskemp.github.io/words/posts/Sudoku-observations-and-programmatic-considerations/</link>
+      <link>http://jamesskemp.github.io/words/post/Sudoku-observations-and-programmatic-considerations/</link>
       <pubDate>Sun, 28 Nov 2010 10:24:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Sudoku-observations-and-programmatic-considerations/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Sudoku-observations-and-programmatic-considerations/</guid>
       <description>&lt;p&gt;&lt;p&gt;At the lowest level, any Sudoku puzzle consists of a number of squares.&lt;/p&gt;
 &lt;p&gt;There are&amp;nbsp;&lt;em&gt;rows&lt;/em&gt; times &lt;em&gt;columns&lt;/em&gt; squares consisting of a single value.&lt;/p&gt;
 &lt;p&gt;There are &lt;em&gt;x&lt;/em&gt; number of larger squares consisting of&amp;nbsp;&lt;em&gt;y&lt;/em&gt;&amp;nbsp;values, where&amp;nbsp;&lt;em&gt;x&lt;/em&gt; is the smallest of &lt;em&gt;rows&lt;/em&gt;&amp;nbsp;and &lt;em&gt;columns&lt;/em&gt;, and &lt;em&gt;y&lt;/em&gt; is the largest of &lt;em&gt;rows&lt;/em&gt; and &lt;em&gt;columns&lt;/em&gt;.&lt;/p&gt;

@@ -11,10 +11,10 @@
     
     <item>
       <title>Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad</title>
-      <link>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
+      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
       <pubDate>Sat, 26 Jun 2010 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
       <description>&lt;p&gt;This weekend I finally installed SQL Server 2008 R2 to my Windows Server 2008 R2 machine. After a bit of back-and-forth about which version to install (since my MSDN subscription allows me to install seemingly every version), I opted to just install SQL Server Express 2008 R2. Being part of the Web Platform Installer, the entire process was extremely easy.&lt;/p&gt;
 &lt;p&gt;Step 1: Start Web Platform Installer.&lt;/p&gt;
 &lt;p&gt;Step 2: Select SQL Server Express 2008 R2 and SQL Server 2008 R2 Management Studio Express from under Database.&lt;/p&gt;

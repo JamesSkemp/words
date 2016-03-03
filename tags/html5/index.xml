@@ -11,10 +11,10 @@
     
     <item>
       <title>Supporting HTML5 manifest files on IIS 7 using Web.config</title>
-      <link>http://jamesskemp.github.io/words/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
+      <link>http://jamesskemp.github.io/words/post/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
       <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
       <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
 &lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
 &lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Browser environments for testing - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Browser environments for testing - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Browser-environments-for-testing/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2008-11-20T22:40:00-06:00">
+        <meta itemprop="headline" content="Browser environments for testing">
+        <meta itemprop="description" content="In a previous post I mentioned using virtual machines for testing. Here&#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&nbsp; Current versions Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino. Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Browser-environments-for-testing/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-11-20T22:40:00-06:00">Thu, Nov 20, 2008</time>
+          <h1 class="article-title">Browser environments for testing</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+In <a href="http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx">a previous post</a> I mentioned using virtual machines for testing.
+</p>
+<p>
+Here&#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&nbsp;
+</p>
+<h3>Current versions</h3>
+<p>
+Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
+</p>
+<p>
+Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
+</p>
+<p>
+Some&nbsp;may think&nbsp;I&#39;m a bit&nbsp;off, but I&nbsp;consider Opera a fairly good browser, while Mozilla doesn&#39;t much concern me. So, that gives us our top five browsers, all of which&nbsp;can&nbsp;be installed on Windows.&nbsp;
+</p>
+<p>
+So, any&nbsp;test&nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
+</p>
+<ol>
+    <li>
+    <div>
+    Internet Explorer 7
+    </div>
+    </li>
+    <li>
+    <div>
+    Firefox 3
+    </div>
+    </li>
+    <li>
+    <div>
+    Safari 3
+    </div>
+    </li>
+    <li>
+    <div>
+    Chrome 0
+    </div>
+    </li>
+    <li>
+    <div>
+    Opera 9
+    </div>
+    </li>
+</ol>
+<p>
+There&#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&#39;s fairly standards-compliant.
+</p>
+<p>
+This is also why I feel that not including Opera would be a very big mistake.
+</p>
+<p>
+This rounds out our first virtual machine to 5 unique browsers.
+</p>
+<h3>Previous versions&nbsp;</h3>
+<p>
+While it would be great if it wasn&#39;t the case, you&#39;ll always need to support older versions of popular browsers.
+</p>
+<p>
+Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
+</p>
+<p>
+Most other browsers don&#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
+</p>
+<ol>
+    <li>
+    <div>
+    Internet Explorer 6
+    </div>
+    </li>
+    <li>
+    <div>
+    Firefox 2
+    </div>
+    </li>
+</ol>
+<h3>Upcoming versions</h3>
+<p>
+This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
+</p>
+<p>
+Primarily, that means the following should almost certainly be included.
+</p>
+<ol>
+    <li>
+    <div>
+    Internet Explorer 8
+    </div>
+    </li>
+</ol>
+<p>
+That&#39;s right, Internet Explorer 8. That&#39;s all I&#39;d absolutely need, especially looking at stats.
+</p>
+<p>
+However, to a great extent, Chrome, like most of Google&#39;s other <strike>products</strike> applications is truly a beta browser (and one that I&#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
+</p>
+<h3>What about Linux and Mac?&nbsp;</h3>
+<p>
+The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
+</p>
+<p>
+For Mac&nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
+</p>
+<p>
+For Safari Apple was kind enough to give Windows users this browser. As to whether it&#39;s the same as the Mac version, well, it looks very similar. But, unless you&#39;re willing to pay the Apple premium, the Windows version should suffice.
+</p>
+<p>
+For these reasons, basic Web development doesn&#39;t need to dive too deep into Linux and Mac environments.<sup>1</sup>
+</p>
+<h3>Mobile browsers?</h3>
+<p>
+But what about browsers on mobile devices?
+</p>
+<p>
+Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
+</p>
+<p>
+To some extent <a href="http://jamesskemp.github.io/words/lynx/">Lynx</a> fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+</p>
+<p>
+The standard Opera browser also provides a mobile-like &#39;emulator&#39; for your site, by way of the Small View functionality.
+</p>
+<p>
+However, for the mobile version of Internet Explorer (which won&#39;t be tracked by Analytics, as it doesn&#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
+</p>
+<p>
+As to the solution, I can&#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&#39;ll be virtualization for these environments much more readily available.
+</p>
+<h3>Conclusion</h3>
+<p>
+Above I&#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
+</p>
+<p>
+What do you think? What do you develop for?
+</p>
+<h3>Notes</h3>
+<p>
+1. Of course, I realize that if you were going to create&nbsp;a Flash or Silverlight application, you&#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&#39;ll get some backlash on Slashdot). At that point what you&#39;re really testing is the environment, and not just the browser. But, for the &#39;majority&#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, <a href="http://jamesskemp.github.io/words/words/post/Four-working-browsers-(at-least).aspx">before Safari was available for Windows</a>, and you&#39;d see a different view.<sup>2</sup>
+</p>
+<p>
+2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
+</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/virtualization" class="tag">virtualization</a> <a href="http://jamesskemp.github.io/words/tags/microsoft" class="tag">microsoft</a> <a href="http://jamesskemp.github.io/words/tags/internet%20explorer" class="tag">internet explorer</a> <a href="http://jamesskemp.github.io/words/tags/firefox" class="tag">firefox</a> <a href="http://jamesskemp.github.io/words/tags/opera" class="tag">opera</a> <a href="http://jamesskemp.github.io/words/tags/safari" class="tag">safari</a> <a href="http://jamesskemp.github.io/words/tags/chrome" class="tag">chrome</a> <a href="http://jamesskemp.github.io/words/tags/analytics" class="tag">analytics</a> <a href="http://jamesskemp.github.io/words/tags/web%20development" class="tag">web development</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fBrowser-environments-for-testing%2f&t=Browser%20environments%20for%20testing" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fBrowser-environments-for-testing%2f&text=Browser%20environments%20for%20testing&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fBrowser-environments-for-testing%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fBrowser-environments-for-testing%2f&title=Browser%20environments%20for%20testing" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

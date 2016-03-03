@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Posts - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Posts - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+<div class="list">
+
+  <div class="row">
+    <div class="col-md-8">
+      <header class="page-title">Posts</header>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jul 2, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/The-new-Striving-Life-Network/">The new Striving Life Network</a></div>
+  </header>
+  <div class="body"><p>
+<a href="http://jamesskemp.github.io/words/">
+StrivingLife.com</a> is now open for business. It&#39;s very basic at the moment, but ... eh.
+</p>
+<p>
+Now I&#39;ve just got to start migrating the sites over to the new server ...
+</p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Jun 26, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Ubuntu-704-Server-Edition-installed/">Ubuntu 7.04 - Server Edition installed</a></div>
+  </header>
+  <div class="body"><p><p>
+Just about finished &hellip;  Quite the process, but things seem to be running okay - now I just have to determine whether it was worth it &hellip;</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Ubuntu-704-Server-Edition-installed/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Tue, Jun 26, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/See-ya-Ubuntu%21/">See ya, Ubuntu!</a></div>
+  </header>
+  <div class="body"><p><p>
+Ubuntu 7.04 - see ya later.</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/See-ya-Ubuntu%21/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sun, Jun 24, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/New-gallery-added-June-23-2007/">New gallery added: June 23, 2007</a></div>
+  </header>
+  <div class="body"><p><p>
+Instead of putting things into folders based upon the subject of the photo, I&#39;ve decided to switch back to dates, with an explanation of what kinds of pictures I took.</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/New-gallery-added-June-23-2007/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 23, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/">Ubuntu Quickie: MySQL and PostgreSQL passwords</a></div>
+  </header>
+  <div class="body"><p><p>Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.</p>
+<h3>MySQL</h3>
+<pre class="code"><code class="powershell">mysql -u root
+UPDATE mysql.user SET Password = OLD_PASSWORD(&rsquo;<strong><em>password</em></strong>&rsquo;) WHERE User = &lsquo;root&rsquo;;
+FLUSH PRIVILEGES;
+\q</code></pre>
+<h3>PostgreSQL</h3>
+<pre class="code"><code class="powershell">
+sudo -u postgres psql template1
+ALTER USER postgres WITH PASSWORD &lsquo;<strong><em>password</em></strong>&rsquo;;
+\q</code></pre></p>
+</div>
+
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Sat, Jun 23, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Reference-PostgreSQL-82-commands-on-Ubuntu/">Reference: PostgreSQL 8.2 commands on Ubuntu</a></div>
+  </header>
+  <div class="body"><p><p>
+Below are the PostgreSQL 8.2 commands on Ubuntu.</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Reference-PostgreSQL-82-commands-on-Ubuntu/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Thu, Jun 21, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/">Ubuntu Quickie: Installing MySQL and PostgreSQL</a></div>
+  </header>
+  <div class="body"><p><p>For SQL on Ubuntu Linux, I decided it was easiest to just use the repositories to just install MySQL and PostgreSQL.</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jun 18, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Dont-let-my-recent-posts-confuse-you/">Don&#39;t let my recent posts confuse you</a></div>
+  </header>
+  <div class="body">... I&#39;m not an Ubuntu-only user yet (unlike some people I know).&nbsp; Granted, I like using it, since I&#39;ve believed, for some time, that if you want to run Apache, you can&#39;t really run it on Windows ... (Granted, I&#39;m having a really difficult time trying to stick to my guns with Apache, versus IIS, but ... well, more on that in the future.) I will probably blow this current box away and re-install Ubuntu, without the Windows partition, and doing a lot more building from source, for example, for Firefox.</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Dont-let-my-recent-posts-confuse-you/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Mon, Jun 18, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Configuring-Apache-for-per-user-pages/">Configuring Apache for per-user pages</a></div>
+  </header>
+  <div class="body"><p><p>
+In a previous post, <a href="http://jamesskemp.github.io/words/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx">I covered installing Apache 2.2.4 on Ubuntu</a>. Unfortunately, if you want to create content for this server, you need to either use the root account, or change the permissions on the /usr/local/apache2/htdocs directory. Let&#39;s keep things that way.</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Configuring-Apache-for-per-user-pages/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      <article class="li">
+  <header>
+    <div class="date">Fri, Jun 15, 2007</div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/">Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4</a></div>
+  </header>
+  <div class="body"><p><p>Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).</p>
+</div>
+
+  
+  <footer>
+    <a href="http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/" class="btn btn-default">Read More…</a>
+  </footer>
+  
+</article>
+<hr>
+
+      
+      
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="http://jamesskemp.github.io/words/post/page/59">Previous</a></li>
+    
+
+    
+    <li><a href="http://jamesskemp.github.io/words/post/page/61">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

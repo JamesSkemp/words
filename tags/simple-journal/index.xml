@@ -11,10 +11,10 @@
     
     <item>
       <title>Simple Journal 1.0 Released</title>
-      <link>http://jamesskemp.github.io/words/posts/Simple-Journal-10/</link>
+      <link>http://jamesskemp.github.io/words/post/Simple-Journal-10/</link>
       <pubDate>Sun, 03 Jan 2010 18:53:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Simple-Journal-10/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Simple-Journal-10/</guid>
       <description>&lt;p&gt;Version 1.0 of Simple Journal is now available for download.&lt;/p&gt;
 &lt;p&gt;Simple Journal is meant to be exactly that; a &lt;em&gt;very&lt;/em&gt; simple way to keep track of a journal.&lt;/p&gt;
 &lt;p&gt;Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.&lt;/p&gt;
