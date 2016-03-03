@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dreamweaver on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/dreamweaver/</link>
+    <link>http://jamesskemp.github.io/words/tags/dreamweaver/</link>
     <description>Recent content in Dreamweaver on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Aug 2009 20:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/dreamweaver/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/dreamweaver/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Finding the list of files Dreamweaver will reopen on startup</title>
-      <link>http://jamesskemp.github.io/blog/posts/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/</link>
+      <link>http://jamesskemp.github.io/words/posts/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/</link>
       <pubDate>Wed, 19 Aug 2009 20:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/</guid>
       <description>&lt;p&gt;As sometimes happens, a network share ended up going down while I was using Dreamweaver. Unfortunately, this can cause fairly major issues with Dreamweaver, if you have files still open, or if you have Dreamweaver closed, but need to open it up.&lt;/p&gt;
 &lt;p&gt;Since I typically have more than one file open in Dreamweaver, and have set my preferences to remember what I&#39;ve got open, I wanted to know where Dreamweaver stored the files that it was going to re-open.&lt;/p&gt;
 &lt;p&gt;This setting isn&#39;t stored in the file system, but rather is stored in the registry.&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Keyboard shortcuts for Visual Studio that mimic Dreamweaver</title>
-      <link>http://jamesskemp.github.io/blog/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</link>
+      <link>http://jamesskemp.github.io/words/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</link>
       <pubDate>Wed, 14 May 2008 14:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</guid>
       <description>&lt;p&gt;
 I like Dreamweaver. After Notepad, and various other apps like it, I used FrontPage, was scarred, and was saved by Dreamweaver. 
 &lt;/p&gt;
@@ -67,10 +67,10 @@ Does anyone out there know how to map these specific functions?
     
     <item>
       <title>My Dreamweaver 8 Preferences</title>
-      <link>http://jamesskemp.github.io/blog/posts/My-Dreamweaver-8-Preferences/</link>
+      <link>http://jamesskemp.github.io/words/posts/My-Dreamweaver-8-Preferences/</link>
       <pubDate>Sat, 19 Apr 2008 10:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/My-Dreamweaver-8-Preferences/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/My-Dreamweaver-8-Preferences/</guid>
       <description>&lt;p&gt;
 This is almost purely for my own benefit ... 
 &lt;/p&gt;
@@ -142,10 +142,10 @@ All other settings are defaults.
     
     <item>
       <title>My first video to Google Video?</title>
-      <link>http://jamesskemp.github.io/blog/posts/My-first-video-to-Google-Video/</link>
+      <link>http://jamesskemp.github.io/words/posts/My-first-video-to-Google-Video/</link>
       <pubDate>Mon, 25 Sep 2006 08:01:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/My-first-video-to-Google-Video/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/My-first-video-to-Google-Video/</guid>
       <description>&lt;p&gt;
 Yesterday, I did multiple takes for a video on how to create snippets in Dreamweaver 8. The video ended up being pretty good, I think, albeit the video size was a bit large, and the resolution was a bit small (640x480 is what Google recommends).
 &lt;/p&gt;
@@ -185,13 +185,13 @@ Created: September 24, 2006.
     
     <item>
       <title>Installing Subversion and TortoiseSVN to a Windows XP, Home Edition, SP2, local machine with Dreamweaver 8</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</link>
       <pubDate>Sat, 16 Sep 2006 22:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt; aspect has been updated for Windows Vista.&amp;nbsp;So too has the &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt; installation. The&amp;nbsp;Dreamweaver&amp;nbsp;aspect has not been touched.&lt;/p&gt;
-&lt;p&gt;I also have &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;an article about &lt;em&gt;using&lt;/em&gt; Subversion&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt; aspect has been updated for Windows Vista.&amp;nbsp;So too has the &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt; installation. The&amp;nbsp;Dreamweaver&amp;nbsp;aspect has not been touched.&lt;/p&gt;
+&lt;p&gt;I also have &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;an article about &lt;em&gt;using&lt;/em&gt; Subversion&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;When projects become large, or you have the need to keep information on what files you&amp;rsquo;ve modified, for any coding project, you may look for some kind of version control system. There&amp;rsquo;s software like Microsoft&amp;rsquo;s SourceSafe, but that can be costly, and according to some, it&amp;rsquo;s a clunky solution. Open source is always a worthwhile solution, and luckily, there&amp;rsquo;s a number of these alternatives out there.&lt;/p&gt;
 &lt;p&gt;In this guide, I&amp;rsquo;ll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I&amp;rsquo;ll be hooking it up to Dreamweaver 8, thanks to Nearly Geek&amp;rsquo;s SVN4DW extension. Note that while a &amp;lsquo;1-Click Setup&amp;rsquo; exists (SVN 1-Click Setup), I&amp;rsquo;ll actually be going through the setup of the Subversion and TortoiseSVN separately. I do this primarily because the 1-click setup is a bit out-of-date at the time of this writing.&lt;/p&gt;
@@ -228,7 +228,7 @@ Created: September 24, 2006.
 &lt;/blockquote&gt;
 &lt;p&gt;SVNService will now display in your services panel, and should automatically start when you start Windows. Depending upon your needs, this may or may not be a good thing. Keep in mind that you can always change the startup to what you&amp;rsquo;d prefer. You can now exit out of the command prompt.&lt;/p&gt;
 &lt;h4&gt;Downloading Subversion for Dreamweaver (SVN4DW)&lt;/h4&gt;
-&lt;p&gt;A copy of the extension that we&amp;rsquo;ll be using to add Subversion support to Dreamweaver can be downloaded from &lt;span style=&#34;text-decoration: line-through;&#34;&gt;Nearly Geek&lt;!--http://www.nearlygeek.com/tools/subversion-for-dreamweaver/introduction/--&gt;&lt;/span&gt; &lt;a rel=&#34;nofollow&#34; href=&#34;http://jamesskemp.github.io/blog/files/2006/09/svn4dw.zip&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A copy of the extension that we&amp;rsquo;ll be using to add Subversion support to Dreamweaver can be downloaded from &lt;span style=&#34;text-decoration: line-through;&#34;&gt;Nearly Geek&lt;!--http://www.nearlygeek.com/tools/subversion-for-dreamweaver/introduction/--&gt;&lt;/span&gt; &lt;a rel=&#34;nofollow&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/09/svn4dw.zip&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Once the mxp file has downloaded (save this to your downloads directory as well), you can install the extension by running it. Once the extension has finished installing, open Dreamweaver 8. You&amp;rsquo;ll have a new menu item, SVN, where you can perform your SVN tasks.&lt;/p&gt;
 &lt;h4&gt;Conclusion&lt;/h4&gt;
 &lt;p&gt;And with that, you&amp;rsquo;ve successfully setup Subversion, TortoiseSVN, and Dreamweaver 8 to work together. You will need to setup a repository, as well as configure user access, for which you can view the documentation resources under &amp;ldquo;Resources of interest,&amp;rdquo; below.&lt;/p&gt;
@@ -241,10 +241,10 @@ Created: September 24, 2006.
     
     <item>
       <title>Dreamweaver 8 as a MXML IDE?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Dreamweaver-8-as-a-MXML-IDE/</link>
+      <link>http://jamesskemp.github.io/words/posts/Dreamweaver-8-as-a-MXML-IDE/</link>
       <pubDate>Thu, 07 Sep 2006 20:38:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Dreamweaver-8-as-a-MXML-IDE/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Dreamweaver-8-as-a-MXML-IDE/</guid>
       <description>&lt;p&gt;
 I&amp;#39;ve spent the last couple of hours trying to get Dreamweaver 8 to begin to function as a MXML IDE. Unfortunately, while I can get every &amp;lt;mx: tag added to the code hints, I&amp;#39;m having a heck of a time getting the actual code hints to function.
 &lt;/p&gt;
@@ -265,10 +265,10 @@ Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34
     
     <item>
       <title>Compiling Flex applications with Dreamweaver</title>
-      <link>http://jamesskemp.github.io/blog/posts/Compiling-Flex-applications-with-Dreamweaver/</link>
+      <link>http://jamesskemp.github.io/words/posts/Compiling-Flex-applications-with-Dreamweaver/</link>
       <pubDate>Wed, 06 Sep 2006 18:56:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Compiling-Flex-applications-with-Dreamweaver/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Compiling-Flex-applications-with-Dreamweaver/</guid>
       <description>&lt;p&gt;
 Tom Lee wrote a post in July detailing how to compile and run Flex applications using Dreamweaver.  Since Flex 2 is making me very excited, I felt it was post worthy (especially since I won&amp;#39;t have to do a Google search to get back to his post now).
 &lt;/p&gt;
@@ -286,10 +286,10 @@ As for Flex, I need to goof off with creating some of the sample apps before I d
     
     <item>
       <title>Setting up Dreamweaver and Nvu to recognize your server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</link>
       <pubDate>Sun, 19 Feb 2006 10:53:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
       <description>&lt;p&gt;Now that we&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Apache-to-a-Windows-based-computer-locally.aspx&#34;&gt;setup Apache on our local computer&lt;/a&gt;, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites. I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).&lt;/p&gt;
 &lt;h3&gt;Dreamweaver setup&lt;/h3&gt;
 &lt;p&gt;For those of you using Dreamweaver as your editor, I&#39;ll be outlining how to set it up to recognize your new sites. While I&#39;ll specifically be dealing with Dreamweaver 8, the basics should be enough for other versions, as well as for other programs.&lt;!--adsense--&gt;&lt;/p&gt;
@@ -308,10 +308,10 @@ As for Flex, I need to goof off with creating some of the sample apps before I d
     
     <item>
       <title>Free file comparision in Dreamweaver</title>
-      <link>http://jamesskemp.github.io/blog/posts/Free-file-comparision-in-Dreamweaver/</link>
+      <link>http://jamesskemp.github.io/words/posts/Free-file-comparision-in-Dreamweaver/</link>
       <pubDate>Mon, 31 Oct 2005 07:22:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Free-file-comparision-in-Dreamweaver/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Free-file-comparision-in-Dreamweaver/</guid>
       <description>&lt;p&gt;
 I found a great post at &lt;a href=&#34;http://angelo.mandato.com/blog/?p=39&#34;&gt;http://angelo.mandato.com/blog/?p=39&lt;/a&gt;, regarding a free file comparision utility for Dreamweaver / Windows, called WinMerge (winmerge.org).&lt;!--adsense--&gt;
 &lt;/p&gt;

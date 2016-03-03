@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dd Wrt on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/dd-wrt/</link>
+    <link>http://jamesskemp.github.io/words/tags/dd-wrt/</link>
     <description>Recent content in Dd Wrt on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Apr 2011 17:24:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/dd-wrt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/dd-wrt/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DD-WRT and my Linksys WRT54GL</title>
-      <link>http://jamesskemp.github.io/blog/posts/DD-WRT-and-my-Linksys-WRT54GL/</link>
+      <link>http://jamesskemp.github.io/words/posts/DD-WRT-and-my-Linksys-WRT54GL/</link>
       <pubDate>Sat, 23 Apr 2011 17:24:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/DD-WRT-and-my-Linksys-WRT54GL/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/DD-WRT-and-my-Linksys-WRT54GL/</guid>
       <description>&lt;p&gt;I&#39;ve been sitting on a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000BTL0OA?tag=strivinglifen-20&#34;&gt;Linksys (Cisco) WRT54GL&lt;/a&gt; for a long while now. A long, long, while.&lt;/p&gt;
 &lt;p&gt;Originally I was going to replace my &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B00007KDVI?tag=strivinglifen-20&#34;&gt;WRT54G&lt;/a&gt;&amp;nbsp;(don&#39;t get me wrong, it still works great) and install DD-WRT for the additional features. However, I just never got around to it.&amp;nbsp;Today I finally dusted off the box (I had opened it) and started getting it setup.&lt;/p&gt;
 &lt;p&gt;Interestingly, the deeper I dug into DD-WRT the more confused I became. The main Web site contains a database of routers, with information on which firmware to install, but if you dig into the forums you&#39;ll find that the database, and the firmware, are out-of-date and buggy.&lt;/p&gt;

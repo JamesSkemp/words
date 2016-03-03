@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Security on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/security/</link>
+    <link>http://jamesskemp.github.io/words/tags/security/</link>
     <description>Recent content in Security on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Jun 2010 11:22:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Secunia consumer products - PSI and OSI</title>
-      <link>http://jamesskemp.github.io/blog/posts/Secunia-consumer-products-PSI-and-OSI/</link>
+      <link>http://jamesskemp.github.io/words/posts/Secunia-consumer-products-PSI-and-OSI/</link>
       <pubDate>Sun, 20 Jun 2010 11:22:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Secunia-consumer-products-PSI-and-OSI/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Secunia-consumer-products-PSI-and-OSI/</guid>
       <description>&lt;p&gt;I have an old Windows XP machine that I know is out of date, in particular as regards the drivers, and potentially for some old software that I&#39;ve forgotten I&#39;ve even installed.&lt;/p&gt;
 &lt;p&gt;Years and years ago it was possible to run a scan, online, on a CNET, or the like, site, which would tell you exactly what applications you had installed that needed to get upgraded, based on DLLs.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://mrrofl.com/&#34;&gt;Dan Conderman&lt;/a&gt; recommended Driver Detective, which is a free and pay service, which looks to provide part of that.&lt;/p&gt;

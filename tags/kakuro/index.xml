@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kakuro on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/kakuro/</link>
+    <link>http://jamesskemp.github.io/words/tags/kakuro/</link>
     <description>Recent content in Kakuro on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Jun 2008 08:30:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/kakuro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/kakuro/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Cross Sums Helper 2.0 - testing needed</title>
-      <link>http://jamesskemp.github.io/blog/posts/Cross-Sums-Helper-20-testing-needed/</link>
+      <link>http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/</link>
       <pubDate>Mon, 02 Jun 2008 08:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Cross-Sums-Helper-20-testing-needed/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/</guid>
       <description>&lt;p&gt;
-After sleeping on it (albeit poorly), I&amp;#39;ve resolved the issue that was stopping production on the new version of my &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Cross-Sums-Number-Combinations-Guide.aspx&#34;&gt;Cross Sums Helper&lt;/a&gt; application. 
+After sleeping on it (albeit poorly), I&amp;#39;ve resolved the issue that was stopping production on the new version of my &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Cross-Sums-Number-Combinations-Guide.aspx&#34;&gt;Cross Sums Helper&lt;/a&gt; application. 
 &lt;/p&gt;
 &lt;p&gt;
 However, I need some help testing. 
@@ -53,10 +53,10 @@ This program has moved from Visual Basic (6) to Visual C#, but still needs&amp;n
     
     <item>
       <title>Cross Sums Number Combinations Guide</title>
-      <link>http://jamesskemp.github.io/blog/posts/Cross-Sums-Number-Combinations-Guide/</link>
+      <link>http://jamesskemp.github.io/words/posts/Cross-Sums-Number-Combinations-Guide/</link>
       <pubDate>Thu, 13 Apr 2006 20:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Cross-Sums-Number-Combinations-Guide/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Cross-Sums-Number-Combinations-Guide/</guid>
       <description>&lt;p&gt;
 Quite a while ago - back in May of 2003 actually - I began work on a guide that would display every possible number combination for cross sum puzzles. Since then, a number of people have corrected mistakes that crept in, resulting in a number of different versions of the guide over the last (almost) two years.&lt;!--adsense--&gt; 
 &lt;/p&gt;
@@ -67,7 +67,7 @@ Not too surprisingly, the guide has become something of a hit. I also created a 
 I&amp;#39;m offering both for download here, absolutely free. (Of course, I always like to hear from people who have found any of my resources, whether they be articles or programs. And, I do have a PayPal link below if you&amp;#39;d like to send a donation :D) 
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/files/2006/04/crosssumsnumbers.pdf&#34; title=&#34;Cross Sums Number Combination Guide&#34;&gt;Cross Sums Number Combination Guide&lt;/a&gt; [PDF: 283 KB] 
+&lt;a href=&#34;http://jamesskemp.github.io/words/files/2006/04/crosssumsnumbers.pdf&#34; title=&#34;Cross Sums Number Combination Guide&#34;&gt;Cross Sums Number Combination Guide&lt;/a&gt; [PDF: 283 KB] 
 &lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
@@ -75,16 +75,16 @@ Download the most current version -&amp;nbsp;&lt;a href=&#34;http://jamesrskemp.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/files/2006/04/ProjectCrossSumsHelper.exe&#34;&gt;Cross Sums Helper v1.3.2&lt;/a&gt; [EXE: 152 KB] 
+&lt;a href=&#34;http://jamesskemp.github.io/words/files/2006/04/ProjectCrossSumsHelper.exe&#34;&gt;Cross Sums Helper v1.3.2&lt;/a&gt; [EXE: 152 KB] 
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/files/2006/04/ProjectCrossSumsHelperNU.exe&#34;&gt;Cross Sums Helper v1.4.0, without the update utility&lt;/a&gt; [EXE: 172 KB] &lt;strong&gt;RECOMMENDED&lt;/strong&gt; Thanks to Ordivore for his work on improving this program. 
+&lt;a href=&#34;http://jamesskemp.github.io/words/files/2006/04/ProjectCrossSumsHelperNU.exe&#34;&gt;Cross Sums Helper v1.4.0, without the update utility&lt;/a&gt; [EXE: 172 KB] &lt;strong&gt;RECOMMENDED&lt;/strong&gt; Thanks to Ordivore for his work on improving this program. 
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/files/2006/04/msinet.zip&#34;&gt;Microsoft Internet Transfer Control&lt;/a&gt; may be required on some computers for the version with the update utility [ZIP: 58.4 KB] 
+&lt;a href=&#34;http://jamesskemp.github.io/words/files/2006/04/msinet.zip&#34;&gt;Microsoft Internet Transfer Control&lt;/a&gt; may be required on some computers for the version with the update utility [ZIP: 58.4 KB] 
 &lt;/p&gt;
 &lt;p&gt;
-Since I haven&amp;#39;t had too much need to update the program, I recommend you just down the version that doesn&amp;#39;t have the upgrade utility. If you need assistance with the program, I have written a guide - the &lt;a id=&#34;p116&#34; href=&#34;http://jamesskemp.github.io/blog/files/2006/04/crosssumshelperguide.pdf&#34; title=&#34;Cross Sums Helper Guide&#34;&gt;Cross Sums Helper Guide&lt;/a&gt; [PDF: 136 KB] - was written during version 1.2, but is still quite applicable. 
+Since I haven&amp;#39;t had too much need to update the program, I recommend you just down the version that doesn&amp;#39;t have the upgrade utility. If you need assistance with the program, I have written a guide - the &lt;a id=&#34;p116&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/04/crosssumshelperguide.pdf&#34; title=&#34;Cross Sums Helper Guide&#34;&gt;Cross Sums Helper Guide&lt;/a&gt; [PDF: 136 KB] - was written during version 1.2, but is still quite applicable. 
 &lt;/p&gt;
 &lt;p&gt;
 Note that cross sums puzzles can also be called cross additions, kakuro, and kakro. Some people compare them to sudoku problems, but I don&amp;#39;t see the similarity at all. Basically, a suduko puzzle just uses the sum of 45. I&amp;#39;ve never seen an easy cross sums of &amp;#39;standard&amp;#39; size, while I&amp;#39;ve seen quite a plethora of easy &amp;#39;standard&amp;#39; size sudoku problems. In short? Your average standard cross sums is probably going to be more difficult than your average standard sudoku. 

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Odin Sphere on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/odin-sphere/</link>
+    <link>http://jamesskemp.github.io/words/tags/odin-sphere/</link>
     <description>Recent content in Odin Sphere on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Jul 2010 08:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/odin-sphere/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/odin-sphere/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Odin Sphere: Character data file</title>
-      <link>http://jamesskemp.github.io/blog/posts/Odin-Sphere-Character-data-file/</link>
+      <link>http://jamesskemp.github.io/words/posts/Odin-Sphere-Character-data-file/</link>
       <pubDate>Fri, 30 Jul 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Odin-Sphere-Character-data-file/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Odin-Sphere-Character-data-file/</guid>
       <description>&lt;p&gt;Similar to my &lt;a href=&#34;http://strivinglife.com/words/post/Resonance-of-Fate-General-data-file.aspx&#34;&gt;Resonance of Fate data file&lt;/a&gt;&amp;nbsp;and &lt;a href=&#34;http://strivinglife.com/words/post/Muramasa-The-Demon-Blade-Complete-weapon-listing.aspx&#34;&gt;Muramasa demon blade listing&lt;/a&gt;, I&#39;ve begun work on converting a notepad file&#39;s data to XML.&lt;/p&gt;
 &lt;p&gt;The data is still raw, but ... I plan on completing it as much as I can.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;View/download the Odin Sphere data file&lt;/a&gt;.&lt;/p&gt;

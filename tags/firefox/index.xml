@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firefox on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/firefox/</link>
+    <link>http://jamesskemp.github.io/words/tags/firefox/</link>
     <description>Recent content in Firefox on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Dec 2008 14:19:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>If Firefox recommends ad blocking software ...</title>
-      <link>http://jamesskemp.github.io/blog/posts/If-Firefox-recommends-ad-blocking-software/</link>
+      <link>http://jamesskemp.github.io/words/posts/If-Firefox-recommends-ad-blocking-software/</link>
       <pubDate>Wed, 24 Dec 2008 14:19:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/If-Firefox-recommends-ad-blocking-software/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/If-Firefox-recommends-ad-blocking-software/</guid>
       <description>&lt;p&gt;
 The other day I installed YSlow on my home machine.
 &lt;/p&gt;
@@ -35,10 +35,10 @@ I checked a few moments ago and am not seeing the recommendation any longer, so 
     
     <item>
       <title>Current, major, browsers</title>
-      <link>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</link>
+      <link>http://jamesskemp.github.io/words/posts/Current-major-browsers/</link>
       <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Current-major-browsers/</guid>
       <description>&lt;p&gt;
 Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
 &lt;/p&gt;
@@ -106,12 +106,12 @@ If you continue to use Netscape most people will recommend that you upgrade to F
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
-In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
@@ -228,7 +228,7 @@ But what about browsers on mobile devices?
 Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
 &lt;/p&gt;
 &lt;p&gt;
-To some extent &lt;a href=&#34;http://jamesskemp.github.io/blog/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+To some extent &lt;a href=&#34;http://jamesskemp.github.io/words/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
 &lt;/p&gt;
 &lt;p&gt;
 The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
@@ -248,7 +248,7 @@ What do you think? What do you develop for?
 &lt;/p&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
 &lt;/p&gt;
 &lt;p&gt;
 2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
@@ -258,10 +258,10 @@ What do you think? What do you develop for?
     
     <item>
       <title>Firebug: Don&#39;t enable for every site</title>
-      <link>http://jamesskemp.github.io/blog/posts/Firebug-Dont-enable-for-every-site/</link>
+      <link>http://jamesskemp.github.io/words/posts/Firebug-Dont-enable-for-every-site/</link>
       <pubDate>Fri, 08 Feb 2008 20:51:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Firebug-Dont-enable-for-every-site/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Firebug-Dont-enable-for-every-site/</guid>
       <description>&lt;p&gt;
 After a deal of searching, I&amp;#39;ve finally discovered why my Firefox browser was crashing so often. So often, in fact, that I have Internet Explorer 7 a chance (and it showed how much of a fight it can now put up).
 &lt;/p&gt;
@@ -282,10 +282,10 @@ Now that I&amp;#39;ve been away for so long, though, I wonder if I should just u
     
     <item>
       <title>Gmail and Firefox 2.0.0.5 - issues with JavaScript?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</link>
+      <link>http://jamesskemp.github.io/words/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</link>
       <pubDate>Tue, 24 Jul 2007 12:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Gmail-and-Firefox-2005-issues-with-JavaScript/</guid>
       <description>&lt;p&gt;
 Over the past couple of days I&amp;#39;ve noticed issues with the Inbox view of Gmail being extremely slow on Firefox (2.0.0.5, the current version).
 &lt;/p&gt;
@@ -300,10 +300,10 @@ With Firefox 2.0.0.5 already having a security issue, I wonder if updating was a
     
     <item>
       <title>Installing Sun&#39;s Java Development Kit 5.0 Update 12 on Ubuntu 7.04</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</link>
       <pubDate>Mon, 11 Jun 2007 19:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</guid>
       <description>&lt;p&gt;
 I don&amp;#39;t have much desire to update from the repositories all the time, for whatever reason. Supposedly, if you run Eclipse from the download manager on Ubuntu, you can expect one slow experience.  So ... time to start by installing Sun&amp;#39;s Java.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -336,10 +336,10 @@ I also did &lt;span class=&#34;code&#34;&gt;sudo ln -s /usr/lib/Java6u1/jre/plug
     
     <item>
       <title>Initial thoughts on moving Firefox settings from Windows to Ubuntu</title>
-      <link>http://jamesskemp.github.io/blog/posts/Initial-thoughts-on-moving-Firefox-settings-from-Windows-to-Ubuntu/</link>
+      <link>http://jamesskemp.github.io/words/posts/Initial-thoughts-on-moving-Firefox-settings-from-Windows-to-Ubuntu/</link>
       <pubDate>Wed, 30 May 2007 17:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Initial-thoughts-on-moving-Firefox-settings-from-Windows-to-Ubuntu/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Initial-thoughts-on-moving-Firefox-settings-from-Windows-to-Ubuntu/</guid>
       <description>&lt;p&gt;
 This past Friday, I installed Ubuntu 6.06, upgraded it to 6.10, upgraded it to 7.04. I didn&amp;#39;t have too much time to actually use it this weekend, but I&amp;#39;m beginning to, attempting to move towards using it almost exclusively for day-to-day stuff.
 &lt;/p&gt;
@@ -372,10 +372,10 @@ Now I just need to figure out how to remove the extra kernels when I initially b
     
     <item>
       <title>Browser support for different versions of JavaScript</title>
-      <link>http://jamesskemp.github.io/blog/posts/Browser-support-for-different-versions-of-JavaScript/</link>
+      <link>http://jamesskemp.github.io/words/posts/Browser-support-for-different-versions-of-JavaScript/</link>
       <pubDate>Fri, 19 Jan 2007 22:04:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Browser-support-for-different-versions-of-JavaScript/</guid>
       <description>&lt;p&gt;
 After a number of Google searches, I&amp;#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&amp;#39;ll be going over this information, and trying to dig up more.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -451,10 +451,10 @@ I&amp;#39;d be very interested in documentation regarding this, so if you know m
     
     <item>
       <title>Three reasons Microsoft Firefox is a hoax</title>
-      <link>http://jamesskemp.github.io/blog/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</link>
+      <link>http://jamesskemp.github.io/words/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</link>
       <pubDate>Tue, 14 Nov 2006 08:32:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Three-reasons-Microsoft-Firefox-is-a-hoax/</guid>
       <description>&lt;p&gt;
 Three reasons Microsoft Firefox is a hoax, in order of when I spotted them. 
 &lt;/p&gt;
@@ -481,10 +481,10 @@ Three reasons Microsoft Firefox is a hoax, in order of when I spotted them.
     
     <item>
       <title>Firefox 1.5.0.7 released today</title>
-      <link>http://jamesskemp.github.io/blog/posts/Firefox-1507-released-today/</link>
+      <link>http://jamesskemp.github.io/words/posts/Firefox-1507-released-today/</link>
       <pubDate>Thu, 14 Sep 2006 20:47:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Firefox-1507-released-today/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Firefox-1507-released-today/</guid>
       <description>&lt;p&gt;
 Firefox 1.5.0.7 was released today.&amp;nbsp; Once again, I found out about this by seeing a site mention it, instead of my browser notifying me ...
 &lt;/p&gt;
@@ -499,10 +499,10 @@ And for those people still using Firefox 1.0.x - why?
     
     <item>
       <title>Four working browsers (at least)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</link>
+      <link>http://jamesskemp.github.io/words/posts/Four-working-browsers-%28at-least%29/</link>
       <pubDate>Thu, 10 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Four-working-browsers-%28at-least%29/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s just something about having four different browsers on your computer, to say the least.  I do believe I&amp;#39;ve Lynx installed as well, but it&amp;#39;s hardly used these days ... for better or worse.
 &lt;/p&gt;
@@ -544,10 +544,10 @@ The lessons are two-fold.
     
     <item>
       <title>Build your own Firefox extension</title>
-      <link>http://jamesskemp.github.io/blog/posts/Build-your-own-Firefox-extension/</link>
+      <link>http://jamesskemp.github.io/words/posts/Build-your-own-Firefox-extension/</link>
       <pubDate>Wed, 21 Jun 2006 18:38:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Build-your-own-Firefox-extension/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Build-your-own-Firefox-extension/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s a great little guide over at webmonkey that discusses how to build your own Firefox extension.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -562,10 +562,10 @@ There&amp;#39;s also two other guides that the above points to.  One at &lt;a re
     
     <item>
       <title>Essential Firefox extensions for the Web producer/developer</title>
-      <link>http://jamesskemp.github.io/blog/posts/Essential-Firefox-extensions-for-the-Web-producerdeveloper/</link>
+      <link>http://jamesskemp.github.io/words/posts/Essential-Firefox-extensions-for-the-Web-producerdeveloper/</link>
       <pubDate>Fri, 21 Apr 2006 20:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Essential-Firefox-extensions-for-the-Web-producerdeveloper/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Essential-Firefox-extensions-for-the-Web-producerdeveloper/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s a handful of extensions for Firefox that I found absolutely necessary in my day-to-day Web production and development. Below, I&amp;#39;ve outlined the essentials, as well as those that are near the top of the crop.
 &lt;/p&gt;
@@ -608,10 +608,10 @@ Of course, there&amp;#39;s plenty of extensions out there, that I haven&amp;#39;
     
     <item>
       <title>Attention: Where do you put it?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Attention-Where-do-you-put-it/</link>
+      <link>http://jamesskemp.github.io/words/posts/Attention-Where-do-you-put-it/</link>
       <pubDate>Tue, 18 Apr 2006 19:11:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Attention-Where-do-you-put-it/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Attention-Where-do-you-put-it/</guid>
       <description>&lt;p&gt;
 In some way, I found &lt;a href=&#34;http://www.AttentionTrust.org/&#34;&gt;AttentionTrust.org&lt;/a&gt;.  Basically, AttentionTrust operates under the principle that your attention is both yours, and of worth.
 &lt;/p&gt;

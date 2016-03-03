@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jquery Mobile on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/jquery-mobile/</link>
+    <link>http://jamesskemp.github.io/words/tags/jquery-mobile/</link>
     <description>Recent content in Jquery Mobile on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Jul 2011 11:30:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/jquery-mobile/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/jquery-mobile/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>jQuery Mobile version of my video game listing</title>
-      <link>http://jamesskemp.github.io/blog/posts/jQuery-Mobile-version-of-my-video-game-listing/</link>
+      <link>http://jamesskemp.github.io/words/posts/jQuery-Mobile-version-of-my-video-game-listing/</link>
       <pubDate>Sat, 09 Jul 2011 11:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/jQuery-Mobile-version-of-my-video-game-listing/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/jQuery-Mobile-version-of-my-video-game-listing/</guid>
       <description>&lt;p&gt;I picked up an electronic copy of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1449306683?tag=strivinglifen-20&#34;&gt;jQuery Mobile by Jon Reid&lt;/a&gt; a little while ago and have been slowly making my way through it.&lt;/p&gt;
 &lt;p&gt;I&#39;ve finally gotten to the point where I wanted to try creating a jQuery Mobile version of my video game listing.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/VideoGamesMobile.html&#34;&gt;View the jQuery Mobile version of my video games listing&lt;/a&gt;.&lt;/p&gt;

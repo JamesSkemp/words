@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows Server 2008 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/windows-server-2008/</link>
+    <link>http://jamesskemp.github.io/words/tags/windows-server-2008/</link>
     <description>Recent content in Windows Server 2008 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Jun 2010 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/windows-server-2008/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/windows-server-2008/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for sharing files</title>
-      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
+      <link>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
       <pubDate>Sun, 06 Jun 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
       <description>&lt;p&gt;When I first started downloading files, almost a decade and a half ago, I would just download everything to one directory, using whatever name the file originally had when I was downloading it.&lt;/p&gt;
 &lt;p&gt;In the last couple of years I&#39;ve been trying (despite Chrome&#39;s default method trying to push be back)&amp;nbsp;to be much better about saving files, by creating a directory with the full name of the application - &#34;Microsoft Web Platform Installer&#34; - and then saving the file(s) into that directory.&lt;/p&gt;
 &lt;p&gt;However, I do lose track of how many previous versions I have of particular applications (I try to only have the current and one version back) and how much total I&#39;m storing.&lt;/p&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
-      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <link>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
       <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
       <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
@@ -138,10 +138,10 @@
     
     <item>
       <title>Microsoft Web Platform Installer = the easy button</title>
-      <link>http://jamesskemp.github.io/blog/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</link>
+      <link>http://jamesskemp.github.io/words/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</link>
       <pubDate>Fri, 14 May 2010 16:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
       <description>&lt;p&gt;I like working close to the metal. It&#39;s enjoyable, even when it&#39;s difficult. Heck, overcoming the difficulty is sometimes the only fun thing about a project!&lt;/p&gt;
 &lt;p&gt;But Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt; makes tasks so much easier to perform. And as much as I hate to admit it, I really like it.&lt;/p&gt;
 &lt;p&gt;For the last handful of hours I&#39;ve been getting a Windows Server 2008 R2 machine where I want it. This involves installing ASP.NET 4, ASP.NET MVC 2, FileZilla Server, disabling services I won&#39;t be using, and etcetera.&lt;/p&gt;
@@ -152,10 +152,10 @@
     
     <item>
       <title>Installing SQL Server Express 2008 on Windows Server 2003</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</link>
       <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
 &lt;h3&gt;Server system&lt;/h3&gt;
@@ -203,10 +203,10 @@
     
     <item>
       <title>Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes</title>
-      <link>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
+      <link>http://jamesskemp.github.io/words/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
       <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
       <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
 &lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
 &lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;

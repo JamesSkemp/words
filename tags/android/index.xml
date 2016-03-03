@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Android on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/android/</link>
+    <link>http://jamesskemp.github.io/words/tags/android/</link>
     <description>Recent content in Android on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Dec 2015 14:35:42 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/android/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google Services on the Amazon Fire HD 8</title>
-      <link>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <link>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
       <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
 
 &lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>July 2015 tablet recommendations</title>
-      <link>http://jamesskemp.github.io/blog/posts/July-2015-tablet-recommendations/</link>
+      <link>http://jamesskemp.github.io/words/posts/July-2015-tablet-recommendations/</link>
       <pubDate>Sat, 29 Aug 2015 15:12:33 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/July-2015-tablet-recommendations/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/July-2015-tablet-recommendations/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is an email I sent on July 23, 2015, to someone who was looking to purchase her first tablet. It&#39;s now a month out of date, but I hope it helps someone, or is historically interesting.&lt;/p&gt;&lt;/div&gt;
 
 &lt;p&gt;Fair warning this is a long email, but you don&#39;t have to read it all. If you want to skip ahead I&#39;ve put bold text to help you skip around. You can either keep reading now, or skip ahead to the bold text in parens below.&lt;/p&gt;
@@ -102,10 +102,10 @@
     
     <item>
       <title>Review: BLU Studio C 5.0-Inch Android Smartphone</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-BLU-Studio-C-5-0-Inch-Android-Smartphone/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-BLU-Studio-C-5-0-Inch-Android-Smartphone/</link>
       <pubDate>Sat, 27 Jun 2015 10:15:05 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-BLU-Studio-C-5-0-Inch-Android-Smartphone/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-BLU-Studio-C-5-0-Inch-Android-Smartphone/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of the &lt;a href=&#34;http://www.amazon.com/dp/B00XHGI2FO?tag=strivinglifen-20&#34;&gt;BLU Studio C 5.0-Inch Android Smartphone&lt;/a&gt;, received as part of the Amazon Vine program.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;Very decent entry-level phone&lt;/h3&gt;
@@ -142,13 +142,13 @@
     
     <item>
       <title>Configuring a libGDX project to run as a desktop application in Android Studio</title>
-      <link>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
+      <link>http://jamesskemp.github.io/words/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
       <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
 
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
 
@@ -172,10 +172,10 @@
     
     <item>
       <title>Review: LibGDX Game Development Essentials (2014)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-LibGDX-Game-Development-Essentials-2014/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-LibGDX-Game-Development-Essentials-2014/</link>
       <pubDate>Sat, 07 Mar 2015 16:29:50 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-LibGDX-Game-Development-Essentials-2014/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-LibGDX-Game-Development-Essentials-2014/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt;, written by Juwal Bose, and released in December 2014 by Packt Publishing.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;Difficult to follow, but not a complete waste of time&lt;/h3&gt;
@@ -200,10 +200,10 @@
     
     <item>
       <title>Creating your first libGDX project with Android Studio 1.1.0</title>
-      <link>http://jamesskemp.github.io/blog/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
+      <link>http://jamesskemp.github.io/words/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
       <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
@@ -242,16 +242,16 @@
 
 &lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling ADB on a Lenovo A7600-F TAB A10</title>
-      <link>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
+      <link>http://jamesskemp.github.io/words/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
       <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
       <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
 
 &lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;

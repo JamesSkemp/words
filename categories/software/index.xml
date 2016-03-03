@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/categories/software/</link>
+    <link>http://jamesskemp.github.io/words/categories/software/</link>
     <description>Recent content in Software on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Oct 2013 08:58:25 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/categories/software/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Rough guide on manually setting up Git on Windows</title>
-      <link>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/words/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</link>
       <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
       <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
 
 &lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
@@ -58,11 +58,11 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Goodbye BlogEngine.NET</title>
-      <link>http://jamesskemp.github.io/blog/posts/Goodbye-BlogEngine-NET/</link>
+      <link>http://jamesskemp.github.io/words/posts/Goodbye-BlogEngine-NET/</link>
       <pubDate>Sun, 22 Sep 2013 14:04:41 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Goodbye-BlogEngine-NET/</guid>
-      <description>&lt;p&gt;On &lt;a href=&#34;http://jamesskemp.github.io/blog/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/words/posts/Goodbye-BlogEngine-NET/</guid>
+      <description>&lt;p&gt;On &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
 
 &lt;p&gt;It was a great switch, as I was beginning to really dig into .NET, and I&#39;ve found there&#39;s no better way to learn something than actually doing something with it.&lt;/p&gt;
 
@@ -78,10 +78,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Converting from Subversion to Git on Windows</title>
-      <link>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
+      <link>http://jamesskemp.github.io/words/posts/Converting-from-Subversion-to-Git-on-Windows/</link>
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Converting-from-Subversion-to-Git-on-Windows/</guid>
       <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
 &lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
@@ -101,10 +101,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Internet Explorer 10: Platform Preview 2 now available</title>
-      <link>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <link>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
       <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
       <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
 &lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
 &lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
@@ -114,10 +114,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>DD-WRT and my Linksys WRT54GL</title>
-      <link>http://jamesskemp.github.io/blog/posts/DD-WRT-and-my-Linksys-WRT54GL/</link>
+      <link>http://jamesskemp.github.io/words/posts/DD-WRT-and-my-Linksys-WRT54GL/</link>
       <pubDate>Sat, 23 Apr 2011 17:24:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/DD-WRT-and-my-Linksys-WRT54GL/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/DD-WRT-and-my-Linksys-WRT54GL/</guid>
       <description>&lt;p&gt;I&#39;ve been sitting on a &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000BTL0OA?tag=strivinglifen-20&#34;&gt;Linksys (Cisco) WRT54GL&lt;/a&gt; for a long while now. A long, long, while.&lt;/p&gt;
 &lt;p&gt;Originally I was going to replace my &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B00007KDVI?tag=strivinglifen-20&#34;&gt;WRT54G&lt;/a&gt;&amp;nbsp;(don&#39;t get me wrong, it still works great) and install DD-WRT for the additional features. However, I just never got around to it.&amp;nbsp;Today I finally dusted off the box (I had opened it) and started getting it setup.&lt;/p&gt;
 &lt;p&gt;Interestingly, the deeper I dug into DD-WRT the more confused I became. The main Web site contains a database of routers, with information on which firmware to install, but if you dig into the forums you&#39;ll find that the database, and the firmware, are out-of-date and buggy.&lt;/p&gt;
@@ -141,10 +141,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>How to easily clear the window.applicationCache on select browsers</title>
-      <link>http://jamesskemp.github.io/blog/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
+      <link>http://jamesskemp.github.io/words/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
       <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
       <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
 &lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
@@ -153,10 +153,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Interesting feature with parsing XML with jQuery on Safari</title>
-      <link>http://jamesskemp.github.io/blog/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <link>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
       <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
       <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
 &lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
 &lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
@@ -274,10 +274,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
@@ -304,10 +304,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>The problem with installing SQL Server Express via the Microsoft Web Platform Installer</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
       <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
 &lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
 &lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
@@ -318,10 +318,10 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
@@ -378,10 +378,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
-      <link>http://jamesskemp.github.io/blog/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <link>http://jamesskemp.github.io/words/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
       <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
       <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
 &lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
 </description>
@@ -389,10 +389,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Personal NetBeans IDE 6.9.1 setting tweaks</title>
-      <link>http://jamesskemp.github.io/blog/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
+      <link>http://jamesskemp.github.io/words/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
       <pubDate>Sun, 29 Aug 2010 10:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
       <description>&lt;p&gt;&lt;p&gt;For my own personal reference, I&amp;rsquo;ve made the following tweaks to the default install of &lt;a rel=&#34;external&#34; href=&#34;http://netbeans.org/&#34;&gt;NetBeans&lt;/a&gt; IDE 6.9.1.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Tools
@@ -424,10 +424,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Tic-Tac-Toe in Visual Basic 6</title>
-      <link>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
+      <link>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
       <pubDate>Sat, 24 Jul 2010 12:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
       <description>&lt;p&gt;Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6.&lt;/p&gt;
 &lt;p&gt;Below is the code from MainWin.frm, which should be sufficient to create the application.&lt;/p&gt;
 &lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
@@ -668,10 +668,10 @@ End Sub
     
     <item>
       <title>Tic-Tac-Toe using Pascal</title>
-      <link>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-using-Pascal/</link>
+      <link>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-using-Pascal/</link>
       <pubDate>Sat, 24 Jul 2010 11:48:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Tic-Tac-Toe-using-Pascal/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-using-Pascal/</guid>
       <description>&lt;p&gt;&lt;p&gt;The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated).&lt;/p&gt;
 &lt;p&gt;This is the code in main.pas, which it seems is the only file really necessary.&lt;/p&gt;
 &lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons&amp;nbsp;Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
@@ -963,10 +963,10 @@ begin
     
     <item>
       <title>Setting up a task with SyncToy under a different account?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</link>
+      <link>http://jamesskemp.github.io/words/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</link>
       <pubDate>Sat, 17 Jul 2010 12:19:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Setting-up-a-task-with-SyncToy-under-a-different-account/</guid>
       <description>&lt;p&gt;Every time I setup SyncToy I always, &lt;em&gt;always&lt;/em&gt;, forget to setup the folder pairs correctly.&lt;/p&gt;
 &lt;p&gt;SyncToy uses per-user folder pairs, which means that if you&#39;ll be running a scheduled task using a different user, you&#39;ll want to login as that user, setup the folder pairs in SyncToy, run the sync via SyncToy&#39;s interface, and then setup the task.&lt;/p&gt;
 &lt;p&gt;If you don&#39;t do this you&#39;ll just end up with a 0x1 return code.&lt;/p&gt;

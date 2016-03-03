@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/categories/technology/</link>
+    <link>http://jamesskemp.github.io/words/categories/technology/</link>
     <description>Recent content in Technology on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Jan 2016 12:17:57 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
+      <link>http://jamesskemp.github.io/words/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
       <description>&lt;p&gt;The following is how I configured a Raspberry Pi 2 as a samba server, using a Seagate Backup Plus Slim, 1TB, drive.&lt;/p&gt;
 
 &lt;p&gt;For ease I purchased the &lt;a href=&#34;http://amzn.to/1MZjXM0&#34;&gt;CanaKit Raspberry Pi 2 Complete Starter Kit&lt;/a&gt;. It runs about $70 and includes enough to get up and running with the Raspberry Pi 2, with the Pi itself, a nice case, power supply, HDMI cable, WiFi adapter, and SD card with NOOBS/Raspbian installer.&lt;/p&gt;
@@ -131,10 +131,10 @@ ls
     
     <item>
       <title>Google Services on the Amazon Fire HD 8</title>
-      <link>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <link>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</link>
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
       <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
 
 &lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
@@ -162,10 +162,10 @@ ls
     
     <item>
       <title>Windows 10 touchpad fix for the ASUS X200M</title>
-      <link>http://jamesskemp.github.io/blog/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
+      <link>http://jamesskemp.github.io/words/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</link>
       <pubDate>Fri, 07 Aug 2015 22:21:19 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Windows-10-touchpad-fix-for-the-Asus-X200M/</guid>
       <description>&lt;p&gt;I recently decided to upgrade my ASUS X200M, after successfully upgrading my mom&#39;s. Unfortunately, after upgrading my machine I ran into an issue where the touchpad was completely unresponsive, and I was forced to either use the touchscreen or a USB mouse.&lt;/p&gt;
 
 &lt;p&gt;After a bit of looking around I found &lt;a href=&#34;http://www.cnet.com/forums/post/48428cdd-d8a9-4ef4-8bed-c70357f55fec/&#34;&gt;a post on CNET&#39;s forums&lt;/a&gt; that detailed a way to fix unresponsive touchpads in Windows 10. While the original question was about an Asus Transformer T100, this also worked for the X200M.&lt;/p&gt;
@@ -196,10 +196,10 @@ ls
     
     <item>
       <title>Example libGDX orthographic camera controller</title>
-      <link>http://jamesskemp.github.io/blog/posts/Example-libGDX-orthographic-camera-controller/</link>
+      <link>http://jamesskemp.github.io/words/posts/Example-libGDX-orthographic-camera-controller/</link>
       <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Example-libGDX-orthographic-camera-controller/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Example-libGDX-orthographic-camera-controller/</guid>
       <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
@@ -212,10 +212,10 @@ ls
     
     <item>
       <title>My Video Game Tracker (for Windows Phone 7) on GitHub</title>
-      <link>http://jamesskemp.github.io/blog/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</link>
+      <link>http://jamesskemp.github.io/words/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</link>
       <pubDate>Tue, 15 Jan 2013 07:58:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</guid>
       <description>&lt;p&gt;Yesterday morning I committed version 1.2 of &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt; to &lt;a rel=&#34;external&#34; href=&#34;https://github.com/JamesSkemp/MyVideoGameTrackerWP7&#34;&gt;a public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;At this time I intend on letting my publishing license lapse on Windows Phone development (which is still a number of months away), and have decided that I probably won&#39;t do anything further targeting Windows Phone 7.&lt;/p&gt;
 &lt;p&gt;In the coming weeks I&#39;ll probably also post the Madison Metro application that I was working on, warts and all. I will probably clean up the class library that I was developing, however, so someone could easily take that aspect from the project.&lt;/p&gt;
@@ -225,10 +225,10 @@ ls
     
     <item>
       <title>Windows Phone 7: Taking and restoring a SQL database</title>
-      <link>http://jamesskemp.github.io/blog/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
+      <link>http://jamesskemp.github.io/words/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
       <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
       <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
@@ -266,10 +266,10 @@ ls
     
     <item>
       <title>Migration from CollabNet Subversion to VisualSVN Server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</link>
       <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
       <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
 &lt;p&gt;
 &lt;h3&gt;VisualSVN migration&lt;/h3&gt;
@@ -289,10 +289,10 @@ ls
     
     <item>
       <title>On Web sites that feature Facebook Comments</title>
-      <link>http://jamesskemp.github.io/blog/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
+      <link>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
       <pubDate>Fri, 24 Jun 2011 16:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
       <description>&lt;p&gt;Over the past few months a number of sites have switched over to Facebook-powered comments. For the most part those sites are ones that I&#39;ve never commented one, nor will comment on. However, I recently discovered that a former co-worker, Rob Lumley, switched his site over to Facebook, and recently wrote an article about it titled &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com/facebook-comments-to-wordpress/&#34;&gt;Add Facebook Comments to WordPress&lt;/a&gt;. Since I don&#39;t use Facebook comments, I figured I&#39;d post the response I had written and tried to post anonymously, here instead.&lt;/p&gt;
 &lt;h3&gt;Rob&#39;s question&lt;/h3&gt;
 &lt;p&gt;For those of you who use or read this site, what do you think about Facebook comments? Does it increase or decrease your chances of commenting? Do you like not having to log in or create another user account? Or do you wish to stay anonymous?&lt;/p&gt;
@@ -307,10 +307,10 @@ ls
     
     <item>
       <title>Excellent news - the BlogML project is not dead.</title>
-      <link>http://jamesskemp.github.io/blog/posts/Excellent-news-the-BlogML-project-is-not-dead/</link>
+      <link>http://jamesskemp.github.io/words/posts/Excellent-news-the-BlogML-project-is-not-dead/</link>
       <pubDate>Fri, 11 Feb 2011 07:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Excellent-news-the-BlogML-project-is-not-dead/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Excellent-news-the-BlogML-project-is-not-dead/</guid>
       <description>&lt;p&gt;While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January.&lt;/p&gt;
 &lt;p&gt;My StackOverflow question &#34;&lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/4234852/is-the-blogml-project-dead-and-what-are-some-alternatives/&#34;&gt;Is the BlogML project dead, and what are some alternatives?&lt;/a&gt;&#34; was answered yesterday by the project originator (one of the great things about StackOverflow, and the entire network of sites).&lt;/p&gt;
 &lt;ul&gt;
@@ -324,10 +324,10 @@ ls
     
     <item>
       <title>Northwind Community Edition download</title>
-      <link>http://jamesskemp.github.io/blog/posts/Northwind-Community-Edition-download/</link>
+      <link>http://jamesskemp.github.io/words/posts/Northwind-Community-Edition-download/</link>
       <pubDate>Wed, 22 Sep 2010 08:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Northwind-Community-Edition-download/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Northwind-Community-Edition-download/</guid>
       <description>&lt;p&gt;This article is primarily for personal reference.&lt;/p&gt;
 &lt;p&gt;The Northwind sample database setup scripts can be download from the CodePlex project &lt;a rel=&#34;external nofollow&#34; href=&#34;http://northwindcommunity.codeplex.com/&#34;&gt;Northwind Community Edition&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Sadly, that project is dead, but the original script can be found by going to Source Code, browsing the code, and checking in the Original Northwind Scripts directory.&lt;/p&gt;
@@ -337,10 +337,10 @@ ls
     
     <item>
       <title>RESTful WCF Web services, easily</title>
-      <link>http://jamesskemp.github.io/blog/posts/RESTful-WCF-Web-services-easily/</link>
+      <link>http://jamesskemp.github.io/words/posts/RESTful-WCF-Web-services-easily/</link>
       <pubDate>Tue, 15 Jun 2010 22:47:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/RESTful-WCF-Web-services-easily/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/RESTful-WCF-Web-services-easily/</guid>
       <description>&lt;p&gt;I know I should know them better so I&#39;ve been looking into WCF Web services, with a heavy lean towards an implementation based on REST principles.&lt;/p&gt;
 &lt;p&gt;After a good deal of research, where it was highly suggested that while ASP.NET MVC may make sense, WCF is still the way to go for Web services, I stumbled upon &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/endpoint/archive/2010/01/06/introducing-wcf-webhttp-services-in-net-4.aspx&#34;&gt;WCF WebHttp Services&lt;/a&gt;, which uses functionality released in .NET 4.&lt;/p&gt;
 &lt;p&gt;After a painless install via Visual Studio 2010&#39;s Extension Manager (&lt;a rel=&#34;external&#34; href=&#34;http://visualstudiogallery.msdn.microsoft.com/en-us/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd&#34;&gt;more information&lt;/a&gt;), and troubleshooting a stupid mistake on my end, I was able to quickly create a Web service that uses an assembly I had created to parse one of my &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; files and return a listing of tracks for a particular artist.&lt;/p&gt;
@@ -352,10 +352,10 @@ ls
     
     <item>
       <title>Dead? The digital download is barely out of its teens</title>
-      <link>http://jamesskemp.github.io/blog/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
+      <link>http://jamesskemp.github.io/words/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
       <pubDate>Sat, 22 May 2010 09:47:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
       <description>&lt;p&gt;Yesterday Slate posted an article by Farhad Manjoo titled &lt;a rel=&#34;external&#34; href=&#34;http://www.slate.com/id/2254532/pagenum/all/&#34;&gt;The Digital Download Is Dead: How Google&#39;s music-streaming venture will change the gadget and entertainment worlds forever&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After first, rightly, attacking Apple&#39;s iTunes and iPod (and related) platforms as being slow and unwieldy, especially on the predominate operating system Windows (not even mentioning Linux), and overall behind on the times, Farhad moves us from syncing our music collections out to the cloud. Which isn&#39;t much of a surprise given that, despite some rather large issues, the cloud has been &#39;in&#39; for a couple of years now. But even more surprising Farhad argues at the end of the article that &#34;[i]n the future, not only will you not get a CD when you buy an album, you won&#39;t even get a digital file.&#34;&lt;/p&gt;
 &lt;p&gt;But there&#39;s an elephant in the room. A rather large one, taking up every available inch of space. Namely the global music industry.&lt;/p&gt;
@@ -378,10 +378,10 @@ ls
     
     <item>
       <title>Review: Beginning ASP.NET 4 In C# and VB</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
       <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -403,10 +403,10 @@ ls
     
     <item>
       <title>iPod Touch, netbooks, laptops, and desktops</title>
-      <link>http://jamesskemp.github.io/blog/posts/iPod-Touch-netbooks-laptops-and-desktops/</link>
+      <link>http://jamesskemp.github.io/words/posts/iPod-Touch-netbooks-laptops-and-desktops/</link>
       <pubDate>Sun, 21 Feb 2010 16:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/iPod-Touch-netbooks-laptops-and-desktops/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/iPod-Touch-netbooks-laptops-and-desktops/</guid>
       <description>&lt;p&gt;For the last handful of months I&#39;ve been thinking about accessing the Internet, and otherwise being productive,&amp;nbsp;while on the go.&lt;/p&gt;
 &lt;p&gt;A number of months back I picked up an HP device with Windows Mobile, unfortunately, after a few months the short battery life and inability to run the applications I wanted/needed to be truly productive forced me to sell it and start looking elsewhere ...&lt;/p&gt;
 &lt;h3&gt;iPod Touch&lt;/h3&gt;
@@ -446,10 +446,10 @@ ls
     
     <item>
       <title>System.Text.StringBuilder.Remove() overhead</title>
-      <link>http://jamesskemp.github.io/blog/posts/SystemTextStringBuilderRemove-overhead/</link>
+      <link>http://jamesskemp.github.io/words/posts/SystemTextStringBuilderRemove-overhead/</link>
       <pubDate>Sun, 28 Jun 2009 13:19:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/SystemTextStringBuilderRemove-overhead/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/SystemTextStringBuilderRemove-overhead/</guid>
       <description>&lt;p&gt;While working on a new version of my &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml application&lt;/a&gt;, I&#39;ve been playing around with the existing code, for consolidation and speed.&lt;/p&gt;
 &lt;p&gt;While looking at memory usage, I played around with the StringBuilder I&#39;m using to create the Xml output. As part of this I tried using Remove, once I had output the Xml, but experienced a large increase in used memory, after doing this.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;StringBuilder someSB = new StringBuilder();

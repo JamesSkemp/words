@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lynx on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/lynx/</link>
+    <link>http://jamesskemp.github.io/words/tags/lynx/</link>
     <description>Recent content in Lynx on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Sep 2006 07:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/lynx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/lynx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Lynx for Win32</title>
-      <link>http://jamesskemp.github.io/blog/posts/Lynx-for-Win32/</link>
+      <link>http://jamesskemp.github.io/words/posts/Lynx-for-Win32/</link>
       <pubDate>Tue, 05 Sep 2006 07:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Lynx-for-Win32/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Lynx-for-Win32/</guid>
       <description>&lt;p&gt;
 Courtesy of &lt;a href=&#34;http://www.jim.spath.com/lynx_win32/&#34;&gt;Jim Spath&lt;/a&gt;, you can download Lynx 2.8.5rel1 for Windows here.
 &lt;/p&gt;
 
 &lt;p&gt;&lt;h4&gt;Download:&lt;/h4&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;a rel=&#34;attachment&#34; href=&#34;http://jamesskemp.github.io/blog/files/2006/09/ly285r1.zip&#34; title=&#34;Lynx 2.8.5rel1&#34;&gt;Lynx 2.8.5rel1&lt;/a&gt; 769 KB (updated October 16 2004)&lt;/li&gt;
+    &lt;li&gt;&lt;a rel=&#34;attachment&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/09/ly285r1.zip&#34; title=&#34;Lynx 2.8.5rel1&#34;&gt;Lynx 2.8.5rel1&lt;/a&gt; 769 KB (updated October 16 2004)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;How to use:&lt;/h4&gt;
 &lt;p&gt;
@@ -35,10 +35,10 @@ Please note that the short url for this page is &lt;a href=&#34;http://strivingl
     
     <item>
       <title>Four working browsers (at least)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</link>
+      <link>http://jamesskemp.github.io/words/posts/Four-working-browsers-%28at-least%29/</link>
       <pubDate>Thu, 10 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Four-working-browsers-%28at-least%29/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Four-working-browsers-%28at-least%29/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s just something about having four different browsers on your computer, to say the least.  I do believe I&amp;#39;ve Lynx installed as well, but it&amp;#39;s hardly used these days ... for better or worse.
 &lt;/p&gt;

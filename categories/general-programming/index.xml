@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>General Programming on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/categories/general-programming/</link>
+    <link>http://jamesskemp.github.io/words/categories/general-programming/</link>
     <description>Recent content in General Programming on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Sep 2013 20:58:10 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/categories/general-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/categories/general-programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git/posh-git commands</title>
-      <link>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</link>
+      <link>http://jamesskemp.github.io/words/posts/Git-posh-git-commands/</link>
       <pubDate>Wed, 25 Sep 2013 20:58:10 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Git-posh-git-commands/</guid>
       <description>&lt;p&gt;This is a rough list, in no particular order (yet), but here&#39;s the commands I&#39;ve found useful after being converted to posh-git after &lt;a href=&#34;https://plus.google.com/110143205597803895575/posts/Qk4Cfs5Yi9P&#34;&gt;my Google+ post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git add -u
@@ -53,10 +53,10 @@ git config -l
     
     <item>
       <title>Brief thoughts after 1 month of GitHub</title>
-      <link>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
+      <link>http://jamesskemp.github.io/words/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
       <pubDate>Fri, 01 Mar 2013 08:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
       <description>&lt;p&gt;I&#39;ve been using GitHub for a little more than a month now, and it&#39;s been about 2 weeks since I shut down the machine running my local Subversion instance.&lt;/p&gt;
 &lt;p&gt;GitHub for Windows needs some work, but given that Phil Haack is/was working on the Windows aspect, I feel pretty confident that it&#39;ll continue to get better.&lt;/p&gt;
 &lt;p&gt;Moving to a system that allows for public repositories also allowed me to publish some really old code, that might be of benefit to someone. However, I am now paying $7 a month something that I wasn&#39;t before. There is a free Git provider that I&#39;ve looked at (and that I might use as a backup), but there&#39;s a benefit to having everything in one place. And GitHub seems pretty solid in the Git space.&lt;/p&gt;
@@ -66,11 +66,11 @@ git config -l
     
     <item>
       <title>Importing an existing Web site into Subversion</title>
-      <link>http://jamesskemp.github.io/blog/posts/Importing-an-existing-Web-site-into-Subversion/</link>
+      <link>http://jamesskemp.github.io/words/posts/Importing-an-existing-Web-site-into-Subversion/</link>
       <pubDate>Sun, 13 Jul 2008 11:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Importing-an-existing-Web-site-into-Subversion/</guid>
-      <description>&lt;p&gt;Last time, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;I played around with Subversion&lt;/a&gt; in order to determine just how Subversion worked.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/words/posts/Importing-an-existing-Web-site-into-Subversion/</guid>
+      <description>&lt;p&gt;Last time, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;I played around with Subversion&lt;/a&gt; in order to determine just how Subversion worked.&lt;/p&gt;
 &lt;p&gt;This time I&#39;m actually going to create a repository for a site to store the current version, and work through making a couple of updates.&lt;/p&gt;
 &lt;h3&gt;Existing site structure&lt;/h3&gt;
 &lt;p&gt;The site that I&#39;ll be working with is &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt;. It&#39;s a small, stable, site, that has just a few files. It&#39;s also relatively clean, with no previous versions floating about.&lt;/p&gt;
@@ -146,17 +146,17 @@ git config -l
 &lt;p&gt;While this doesn&#39;t handle trunks, branches, tags, or any of that other fun stuff, for a simple Web site, as &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt; is, it&#39;s easy enough to move files into version control - much easier than I originally thought.&lt;/p&gt;
 &lt;p&gt;However, while we didn&#39;t talk about it, it&#39;s a very good idea to make sure that you have clean directories, without temp files, previous versions, and &#39;correct&#39; directories. You can always exclude these from versioning, but a clean directory is a developer&#39;s favorite directory.&lt;/p&gt;
 &lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;test Subversion out&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;test Subversion out&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Playing around with Subversion with a test repository</title>
-      <link>http://jamesskemp.github.io/blog/posts/Playing-around-with-Subversion-with-a-test-repository/</link>
+      <link>http://jamesskemp.github.io/words/posts/Playing-around-with-Subversion-with-a-test-repository/</link>
       <pubDate>Sat, 12 Jul 2008 18:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Playing-around-with-Subversion-with-a-test-repository/</guid>
-      <description>&lt;p&gt;I&#39;ve flirted with source/version/revision control since September 2006 (with &lt;a href=&#34;http://jamesskemp.github.io/blog/words/?tag=/subversion&#34;&gt;Subversion&lt;/a&gt;), but have never really dug in to actually do anthing with it. But now, that changes.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/words/posts/Playing-around-with-Subversion-with-a-test-repository/</guid>
+      <description>&lt;p&gt;I&#39;ve flirted with source/version/revision control since September 2006 (with &lt;a href=&#34;http://jamesskemp.github.io/words/words/?tag=/subversion&#34;&gt;Subversion&lt;/a&gt;), but have never really dug in to actually do anthing with it. But now, that changes.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following guide was created using Subversion 1.4.6 and TortoiseSVN 1.4.8. However, this should still be applicable. Also, because of the number and size of the images, I&#39;ve limited the images shown directly in the guide. All links to these images should open in a new window.&lt;/p&gt;
 &lt;/div&gt;
@@ -166,13 +166,13 @@ git config -l
 &lt;p&gt;I&#39;ve already covered this in previous posts, for Windows installations.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;These both cover Windows Vista installations, but &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;an older guide&lt;/a&gt; exists for Windows XP.&lt;/p&gt;
+&lt;p&gt;These both cover Windows Vista installations, but &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;an older guide&lt;/a&gt; exists for Windows XP.&lt;/p&gt;
 &lt;p&gt;TortoiseSVN isn&#39;t required, but I highly recommend it, and it&#39;s how I&#39;ll be working through this.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;Personally, I&#39;m a GUI&amp;nbsp;guy, for the most part. If I can have a GUI, I&#39;ll use it. Now if&amp;nbsp;I need to use the command line, or the command line will give me additional functionality, I&#39;ll use it (when I need to).&lt;/p&gt;
@@ -297,10 +297,10 @@ git config -l
     
     <item>
       <title>Review of Steve Krug&#39;s Don&#39;t Make Me Think: 2nd Edition (with notes)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-of-Steve-Krugs-Dont-Make-Me-Think-2nd-Edition-%28with-notes%29/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-of-Steve-Krugs-Dont-Make-Me-Think-2nd-Edition-%28with-notes%29/</link>
       <pubDate>Fri, 28 Sep 2007 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-of-Steve-Krugs-Dont-Make-Me-Think-2nd-Edition-%28with-notes%29/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-of-Steve-Krugs-Dont-Make-Me-Think-2nd-Edition-%28with-notes%29/</guid>
       <description>&lt;p&gt;
 As it promises, &lt;a href=&#34;http://www.amazon.com/gp/product/0321344758?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Steve Krug&amp;#39;s &lt;em&gt;Don&amp;#39;t Make Me Think: 2nd Edition&lt;/em&gt;&lt;/a&gt;, is a quick, but extremely usable, guide to Web usability and design. The book took me less than a day to read (less than 3 hours total over the days of September 26 and 27, of 2007), but has become, in my mind, a requirement for even beginners (like myself) of Web design. Since everyone who develops for the Web should have some idea of design and usability, this book should really be a mandatory requirement for said work. 
 &lt;/p&gt;
@@ -486,10 +486,10 @@ The following are notes that I took while reading the book. They are broken up b
     
     <item>
       <title>Eclipse SDK 3.2.2 to Ubuntu 7.04</title>
-      <link>http://jamesskemp.github.io/blog/posts/Eclipse-SDK-322-to-Ubuntu-704/</link>
+      <link>http://jamesskemp.github.io/words/posts/Eclipse-SDK-322-to-Ubuntu-704/</link>
       <pubDate>Tue, 12 Jun 2007 07:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Eclipse-SDK-322-to-Ubuntu-704/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Eclipse-SDK-322-to-Ubuntu-704/</guid>
       <description>&lt;p&gt;
 Having already &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/11/366/installing-suns-java-development-kit-50-update-12-on-ubuntu-704/&#34;&gt;installed JDK 5.0 on Ubuntu&lt;/a&gt;, it&amp;#39;s time to install what I really wanted in the first place - Eclipse.
 &lt;/p&gt;
@@ -528,10 +528,10 @@ We still have to install Apache, at least, and because I am who I am, ColdFusion
     
     <item>
       <title>Version control systems - any suggestions?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Version-control-systems-any-suggestions/</link>
+      <link>http://jamesskemp.github.io/words/posts/Version-control-systems-any-suggestions/</link>
       <pubDate>Thu, 14 Sep 2006 18:37:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Version-control-systems-any-suggestions/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Version-control-systems-any-suggestions/</guid>
       <description>&lt;p&gt;Version control is something that I&#39;ve been interested in for the past several months (actually, what month is it, September? I guess it&#39;s been longer than just a couple of months) but that I haven&#39;t been able to dig into as much as I&#39;d like.&lt;/p&gt;
 &lt;p&gt;Subversion keeps coming up as a good piece of software, with the addition of Trac. Since I wrote the guide to installing Apache 2.0.x a bit ago, I have no reason for not getting started with Subversion.&lt;/p&gt;
 &lt;p&gt;Today, from somewhere, I was directed to SyntEvo&#39;s product, SmartSVN. Right now I&#39;m using WinMerge (very happily) for my file compare utility at both home and during the &#39;8-5&#39;, but SyntEvo seems to have a fairly nice utility itself, albeit at a steep (at least, as a small-time developer who finds WinMerge to be exactly what I need) price.&lt;/p&gt;
@@ -543,10 +543,10 @@ We still have to install Apache, at least, and because I am who I am, ColdFusion
     
     <item>
       <title>Logical coding</title>
-      <link>http://jamesskemp.github.io/blog/posts/Logical-coding/</link>
+      <link>http://jamesskemp.github.io/words/posts/Logical-coding/</link>
       <pubDate>Sun, 28 May 2006 08:49:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Logical-coding/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Logical-coding/</guid>
       <description>&lt;p&gt;
 When it comes to proper coding, you should know the most important rule of all; LIFO. However, not even LIFO nor the W3C can really tell you which order to put certain elements. In the nature of Web 2.0, I&amp;#39;ll discuss some of the standards I&amp;#39;ve been bouncing around for HTML text markup when the same text is given multiple attributes.
 &lt;/p&gt;

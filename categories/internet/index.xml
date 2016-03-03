@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internet on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/categories/internet/</link>
+    <link>http://jamesskemp.github.io/words/categories/internet/</link>
     <description>Recent content in Internet on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jun 2011 22:09:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/categories/internet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/categories/internet/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Internet Explorer 10: Platform Preview 2 now available</title>
-      <link>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <link>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
       <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
       <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
 &lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
 &lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>On Web sites that feature Facebook Comments</title>
-      <link>http://jamesskemp.github.io/blog/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
+      <link>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
       <pubDate>Fri, 24 Jun 2011 16:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
       <description>&lt;p&gt;Over the past few months a number of sites have switched over to Facebook-powered comments. For the most part those sites are ones that I&#39;ve never commented one, nor will comment on. However, I recently discovered that a former co-worker, Rob Lumley, switched his site over to Facebook, and recently wrote an article about it titled &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com/facebook-comments-to-wordpress/&#34;&gt;Add Facebook Comments to WordPress&lt;/a&gt;. Since I don&#39;t use Facebook comments, I figured I&#39;d post the response I had written and tried to post anonymously, here instead.&lt;/p&gt;
 &lt;h3&gt;Rob&#39;s question&lt;/h3&gt;
 &lt;p&gt;For those of you who use or read this site, what do you think about Facebook comments? Does it increase or decrease your chances of commenting? Do you like not having to log in or create another user account? Or do you wish to stay anonymous?&lt;/p&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>Well done, Amazon (re: Amazon Cloud)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Well-done-Amazon-re-Amazon-Cloud/</link>
+      <link>http://jamesskemp.github.io/words/posts/Well-done-Amazon-re-Amazon-Cloud/</link>
       <pubDate>Tue, 29 Mar 2011 07:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Well-done-Amazon-re-Amazon-Cloud/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Well-done-Amazon-re-Amazon-Cloud/</guid>
       <description>&lt;p&gt;Well done, Amazon.&lt;/p&gt;
 &lt;p&gt;They&#39;ve been saying for quite a while that music was heading towards the &#39;cloud,&#39; and while it seemed for a while that everyone was betting on Apple doing it first, you&#39;ve trumped them, with what seems like a very consumer-friendly service.&lt;/p&gt;
 &lt;p&gt;5 GB for everyone? Check.&lt;/p&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>Interesting feature with parsing XML with jQuery on Safari</title>
-      <link>http://jamesskemp.github.io/blog/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <link>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
       <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
       <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
 &lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
 &lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
@@ -179,10 +179,10 @@
     
     <item>
       <title>On the case of weird image results for &#39;Dan Conderman&#39;</title>
-      <link>http://jamesskemp.github.io/blog/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</link>
+      <link>http://jamesskemp.github.io/words/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</link>
       <pubDate>Mon, 28 Feb 2011 20:27:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/On-the-case-of-weird-image-results-for-Dan-Conderman/</guid>
       <description>&lt;p&gt;If you&#39;ve done an image search for &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; lately you may have found an interesting search result for your &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; image search (on Google).&lt;/p&gt;
 &lt;p&gt;I&#39;m not exactly sure why &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; is showing this image, but since &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; likes Lady Gaga, and &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt; has been known to ski in the snow ...&lt;/p&gt;
 &lt;p&gt;Are the script kiddies playing a trick on &lt;a rel=&#34;external&#34; href=&#34;http://1.bp.blogspot.com/_l2VT7bYUEaY/THhepxwch8I/AAAAAAAACG4/fY8M-RLGyuQ/s1600/Advice-Cocaine-Gaga-lets-take-dan-conderman-and-call-him-more-talented-then-tim-and-eric.jpg&#34;&gt;Dan Conderman&lt;/a&gt;?&lt;/p&gt;
@@ -192,10 +192,10 @@
     
     <item>
       <title>Convert online image to base64 with C#</title>
-      <link>http://jamesskemp.github.io/blog/posts/Convert-online-image-to-base64-with-C-sharp/</link>
+      <link>http://jamesskemp.github.io/words/posts/Convert-online-image-to-base64-with-C-sharp/</link>
       <pubDate>Sun, 12 Dec 2010 16:51:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Convert-online-image-to-base64-with-C-sharp/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Convert-online-image-to-base64-with-C-sharp/</guid>
       <description>&lt;p&gt;The following code will convert an online image to a base64 string.&lt;/p&gt;
 &lt;p&gt;The code was specifically written for use in &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt;, hence the use of Dump().&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;String url = &#34;http://ecx.images-amazon.com/images/I/51MVXV3QQ6L._SL500_SS150_.jpg&#34;;
@@ -219,10 +219,10 @@ client.Dispose();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Review: Beginning ASP.NET 4 In C# and VB</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
       <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -244,10 +244,10 @@ client.Dispose();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>What I&#39;d like to see in 201X in regard to browsers</title>
-      <link>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
+      <link>http://jamesskemp.github.io/words/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
       <pubDate>Wed, 09 Dec 2009 10:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
       <description>&lt;p&gt;&lt;h3&gt;Situation 1: WebKit&lt;/h3&gt;
 &lt;p&gt;Microsoft drops all active development on Internet Explorer 9. Instead, they throw their full support (development team)&amp;nbsp;behind WebKit.&lt;/p&gt;
 &lt;p&gt;Apple, with Safari, and Google, with Chrome, are already behind WebKit. Apple&amp;rsquo;s implementation on Windows, via Safari for Windows, is shoddy at best, and Google&amp;rsquo;s Chrome is a completely slimmed down version. By getting Microsoft&amp;rsquo;s support behind the engine you have an experienced team that has already developed for Windows.&lt;/p&gt;
@@ -263,10 +263,10 @@ client.Dispose();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Twitter hashtag - #walkingmusic</title>
-      <link>http://jamesskemp.github.io/blog/posts/Twitter-hashtag-walkingmusic/</link>
+      <link>http://jamesskemp.github.io/words/posts/Twitter-hashtag-walkingmusic/</link>
       <pubDate>Fri, 24 Apr 2009 17:12:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Twitter-hashtag-walkingmusic/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Twitter-hashtag-walkingmusic/</guid>
       <description>&lt;p&gt;
 In the spirit of Rob Lumley (rmlumley), who created &lt;a href=&#34;http://rmlumley.com/2009/04/twitter-hash-tag/&#34;&gt;#cubemusic&lt;/a&gt;, and after a great walk today, I&amp;#39;ve created an original hashtag: &lt;a href=&#34;http://search.twitter.com/search?q=%23walkingmusic&#34;&gt;#walkingmusic&lt;/a&gt;.
 &lt;/p&gt;
@@ -281,10 +281,10 @@ I use Twitter for the most simple of posts, but if you&amp;#39;d like to &lt;a h
     
     <item>
       <title>Passing the time online, reading the news</title>
-      <link>http://jamesskemp.github.io/blog/posts/Passing-the-time-online-reading-the-news/</link>
+      <link>http://jamesskemp.github.io/words/posts/Passing-the-time-online-reading-the-news/</link>
       <pubDate>Wed, 22 Apr 2009 07:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Passing-the-time-online-reading-the-news/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Passing-the-time-online-reading-the-news/</guid>
       <description>&lt;p&gt;
 Often times, like this morning, I&amp;#39;ve got anywhere between 5 to 60 minutes of time to kill.
 &lt;/p&gt;
@@ -305,10 +305,10 @@ And yes, this is a filler post, of sorts.
     
     <item>
       <title>The Wastelands are big ...</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-Wastelands-are-big/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-Wastelands-are-big/</link>
       <pubDate>Tue, 06 Jan 2009 21:56:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-Wastelands-are-big/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-Wastelands-are-big/</guid>
       <description>&lt;p&gt;
 ... so save yourself some time and checkout this &lt;a href=&#34;http://fallout.wikia.com/wiki/Fallout_3_map&#34; target=&#34;_blank&#34;&gt;very handy map of the Fallout 3 world&lt;/a&gt;.
 &lt;/p&gt;
@@ -326,10 +326,10 @@ Tagged Xbox 360 since I don&amp;#39;t really care about Playstation&amp;#39;s tr
     
     <item>
       <title>If Firefox recommends ad blocking software ...</title>
-      <link>http://jamesskemp.github.io/blog/posts/If-Firefox-recommends-ad-blocking-software/</link>
+      <link>http://jamesskemp.github.io/words/posts/If-Firefox-recommends-ad-blocking-software/</link>
       <pubDate>Wed, 24 Dec 2008 14:19:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/If-Firefox-recommends-ad-blocking-software/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/If-Firefox-recommends-ad-blocking-software/</guid>
       <description>&lt;p&gt;
 The other day I installed YSlow on my home machine.
 &lt;/p&gt;
@@ -350,10 +350,10 @@ I checked a few moments ago and am not seeing the recommendation any longer, so 
     
     <item>
       <title>Current, major, browsers</title>
-      <link>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</link>
+      <link>http://jamesskemp.github.io/words/posts/Current-major-browsers/</link>
       <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Current-major-browsers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Current-major-browsers/</guid>
       <description>&lt;p&gt;
 Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
 &lt;/p&gt;
@@ -421,12 +421,12 @@ If you continue to use Netscape most people will recommend that you upgrade to F
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
-In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
+In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
 &lt;p&gt;
 Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
@@ -543,7 +543,7 @@ But what about browsers on mobile devices?
 Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
 &lt;/p&gt;
 &lt;p&gt;
-To some extent &lt;a href=&#34;http://jamesskemp.github.io/blog/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+To some extent &lt;a href=&#34;http://jamesskemp.github.io/words/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
 &lt;/p&gt;
 &lt;p&gt;
 The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
@@ -563,7 +563,7 @@ What do you think? What do you develop for?
 &lt;/p&gt;
 &lt;h3&gt;Notes&lt;/h3&gt;
 &lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
+1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
 &lt;/p&gt;
 &lt;p&gt;
 2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
@@ -573,10 +573,10 @@ What do you think? What do you develop for?
     
     <item>
       <title>Wowsa - what happened to Google Analytics? (November 2008 edition)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
+      <link>http://jamesskemp.github.io/words/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
       <pubDate>Tue, 11 Nov 2008 21:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
       <description>&lt;p&gt;
 Google has done it again.
 &lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elmah on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/elmah/</link>
+    <link>http://jamesskemp.github.io/words/tags/elmah/</link>
     <description>Recent content in Elmah on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Aug 2010 13:44:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/elmah/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/elmah/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</title>
-      <link>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
+      <link>http://jamesskemp.github.io/words/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
       <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
       <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
 &lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
 &lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;

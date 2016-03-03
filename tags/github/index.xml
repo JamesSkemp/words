@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/github/</link>
+    <link>http://jamesskemp.github.io/words/tags/github/</link>
     <description>Recent content in Github on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Sep 2013 20:58:10 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Git/posh-git commands</title>
-      <link>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</link>
+      <link>http://jamesskemp.github.io/words/posts/Git-posh-git-commands/</link>
       <pubDate>Wed, 25 Sep 2013 20:58:10 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Git-posh-git-commands/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Git-posh-git-commands/</guid>
       <description>&lt;p&gt;This is a rough list, in no particular order (yet), but here&#39;s the commands I&#39;ve found useful after being converted to posh-git after &lt;a href=&#34;https://plus.google.com/110143205597803895575/posts/Qk4Cfs5Yi9P&#34;&gt;my Google+ post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git add -u
@@ -53,10 +53,10 @@ git config -l
     
     <item>
       <title>Unofficial Xbox Live API wrappers</title>
-      <link>http://jamesskemp.github.io/blog/posts/Unofficial-Xbox-Live-API-wrappers/</link>
+      <link>http://jamesskemp.github.io/words/posts/Unofficial-Xbox-Live-API-wrappers/</link>
       <pubDate>Sun, 09 Jun 2013 10:05:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Unofficial-Xbox-Live-API-wrappers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Unofficial-Xbox-Live-API-wrappers/</guid>
       <description>&lt;p&gt;This morning I created two API wrappers for the Mashape implementations of XboxApi.com and XboxLeaders.com. These unofficial APIs allow you to pull information from Xbox Live for particular users.&lt;/p&gt;
 &lt;p&gt;I&#39;ve used a simiilar structure for both (based upon XboxLeaders.com&#39;s PHP wrapper, since I thought I was working against there API when I was in fact working against XboxApi.com&#39;s ...), and both are available on Github.&lt;/p&gt;
 &lt;p&gt;
@@ -73,10 +73,10 @@ git config -l
     
     <item>
       <title>Brief thoughts after 1 month of GitHub</title>
-      <link>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
+      <link>http://jamesskemp.github.io/words/posts/Brief-thoughts-after-1-month-of-GitHub/</link>
       <pubDate>Fri, 01 Mar 2013 08:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Brief-thoughts-after-1-month-of-GitHub/</guid>
       <description>&lt;p&gt;I&#39;ve been using GitHub for a little more than a month now, and it&#39;s been about 2 weeks since I shut down the machine running my local Subversion instance.&lt;/p&gt;
 &lt;p&gt;GitHub for Windows needs some work, but given that Phil Haack is/was working on the Windows aspect, I feel pretty confident that it&#39;ll continue to get better.&lt;/p&gt;
 &lt;p&gt;Moving to a system that allows for public repositories also allowed me to publish some really old code, that might be of benefit to someone. However, I am now paying $7 a month something that I wasn&#39;t before. There is a free Git provider that I&#39;ve looked at (and that I might use as a backup), but there&#39;s a benefit to having everything in one place. And GitHub seems pretty solid in the Git space.&lt;/p&gt;
@@ -86,10 +86,10 @@ git config -l
     
     <item>
       <title>My Video Game Tracker (for Windows Phone 7) on GitHub</title>
-      <link>http://jamesskemp.github.io/blog/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</link>
+      <link>http://jamesskemp.github.io/words/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</link>
       <pubDate>Tue, 15 Jan 2013 07:58:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/My-Video-Game-Tracker-for-Windows-Phone-7-on-GitHub/</guid>
       <description>&lt;p&gt;Yesterday morning I committed version 1.2 of &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt; to &lt;a rel=&#34;external&#34; href=&#34;https://github.com/JamesSkemp/MyVideoGameTrackerWP7&#34;&gt;a public repository on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;At this time I intend on letting my publishing license lapse on Windows Phone development (which is still a number of months away), and have decided that I probably won&#39;t do anything further targeting Windows Phone 7.&lt;/p&gt;
 &lt;p&gt;In the coming weeks I&#39;ll probably also post the Madison Metro application that I was working on, warts and all. I will probably clean up the class library that I was developing, however, so someone could easily take that aspect from the project.&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html5 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/html5/</link>
+    <link>http://jamesskemp.github.io/words/tags/html5/</link>
     <description>Recent content in Html5 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Feb 2011 18:24:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/html5/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Supporting HTML5 manifest files on IIS 7 using Web.config</title>
-      <link>http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
+      <link>http://jamesskemp.github.io/words/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</link>
       <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
       <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
 &lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
 &lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lenovo A7600 F Tab A10 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/lenovo-a7600-f-tab-a10/</link>
+    <link>http://jamesskemp.github.io/words/tags/lenovo-a7600-f-tab-a10/</link>
     <description>Recent content in Lenovo A7600 F Tab A10 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 06 Nov 2014 12:59:46 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/lenovo-a7600-f-tab-a10/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/lenovo-a7600-f-tab-a10/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Enabling ADB on a Lenovo A7600-F TAB A10</title>
-      <link>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
+      <link>http://jamesskemp.github.io/words/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</link>
       <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
       <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
 
 &lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;

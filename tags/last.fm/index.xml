@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Last.Fm on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/last/index.fm/</link>
+    <link>http://jamesskemp.github.io/words/tags/last/index.fm/</link>
     <description>Recent content in Last.Fm on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 12 Sep 2009 16:33:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/last.fm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/last.fm/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</title>
-      <link>http://jamesskemp.github.io/blog/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
+      <link>http://jamesskemp.github.io/words/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
       <pubDate>Sat, 12 Sep 2009 16:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
       <description>&lt;p&gt;The following covers how to parse the XML response of artist.getSimilar, from Last.fm&#39;s Web Services.&lt;/p&gt;
 &lt;h3&gt;Setup and assumptions&lt;/h3&gt;
 &lt;p&gt;The first step is sign up for a free &lt;a rel=&#34;external&#34; href=&#34;http://www.last.fm/api&#34;&gt;API account at Last.fm&lt;/a&gt;.&lt;/p&gt;
