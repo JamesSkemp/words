@@ -11,10 +11,10 @@
     
     <item>
       <title>Installing Zend Optimizer on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</link>
       <pubDate>Sun, 26 Feb 2006 18:27:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 &lt;em&gt;Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-to-Zend-Optimizer-301-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;

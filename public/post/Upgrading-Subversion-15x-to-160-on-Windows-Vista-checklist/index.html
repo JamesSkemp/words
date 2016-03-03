@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2009-03-23T20:40:00-05:00">
+        <meta itemprop="headline" content="Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist">
+        <meta itemprop="description" content="The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0. For this I&#39;ll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that&#39;s Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11. Determine current setup. Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that&#39;s 2.2.10 and 1.5.4, respectively. Opening TortoiseSVN&#39;s menu and selecting About will display the current version.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2009-03-23T20:40:00-05:00">Mon, Mar 23, 2009</time>
+          <h1 class="article-title">Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.</p>
+<p>For this I'll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that's Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.</p>
+<ol>
+<li>
+<div>Determine current setup.</div>
+<ol>
+<li>
+<div>Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that's 2.2.10 and 1.5.4, respectively.</div>
+</li>
+<li>
+<div>Opening TortoiseSVN's menu and selecting About will display the current version. In my case that's 1.5.8.</div>
+</li>
+</ol></li>
+<li>
+<div>Confirm that all applications will work with the new versions of the other applications.</div>
+<ol>
+<li>
+<div>Simply check each application's site. In this case, they all appear to work fine with each other.</div>
+</li>
+</ol></li>
+<li>
+<div>Download all installers.</div>
+<ol>
+<li>
+<div>Apache: <a href="http://httpd.apache.org/">http://httpd.apache.org/</a></div>
+<ol>
+<li>
+<div>Win32 Binary including OpenSSL 0.9.8i (MSI Installer)</div>
+</li>
+</ol></li>
+<li>
+<div>Subversion: <a href="http://subversion.tigris.org/">http://subversion.tigris.org/</a></div>
+<ol>
+<li>
+<div>Win32 binaries for Apache 2.2.x</div>
+</li>
+</ol></li>
+<li>
+<div>TortoiseSVN: <a href="http://tortoisesvn.tigris.org/">http://tortoisesvn.tigris.org/</a> or <a href="http://tortoisesvn.net/">http://tortoisesvn.net/</a>&nbsp;(you'll end up at the latter anyways)</div>
+<ol>
+<li>
+<div>32 Bit</div>
+</li>
+</ol></li>
+</ol></li>
+<li>
+<div>Backup Apache configuration.</div>
+<ol>
+<li>
+<div>You can find the httpd.conf file in the conf directory, in the install directory.</div>
+<ol>
+<li>
+<div>Example: c:\Program Files\Apache Software Foundation\Apache2.2\conf\httpd.conf</div>
+</li>
+</ol></li>
+</ol></li>
+<li>
+<div>Stop Apache.</div>
+<ol>
+<li>
+<div>Open the Apache Service Monitor, select the Apache2.2 service, and press the Stop button.</div>
+</li>
+</ol></li>
+<li>
+<div>Uninstall Apache.</div>
+<ol>
+<li>
+<div>Unfortunately, the installer for a higher version can't seem to run with Apache already installed. So, we have to uninstall it first.</div>
+</li>
+</ol></li>
+<li>
+<div>Install Apache.</div>
+<ol>
+<li>
+<div>localhost is your friend. If you're installing along-side IIS, keep it at the 'All Users, on Port 80, as a Service' as we'll change this later.</div>
+</li>
+<li>
+<div>Typical install is fine, at the default location, but feel free to change as needed.</div>
+</li>
+<li>
+<div>See my <a href="http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx">Install Apache 2.2.9 to Windows Vista (Ultimate)</a> for a full guide.</div>
+</li>
+</ol></li>
+<li>
+<div>Verify Apache settings.</div>
+<ol>
+<li>
+<div>My install ran fine, with no configuration settings lost. However, if your httpd.conf is changed, you'll want to do a compare of your backup copy, with the new version.</div>
+<ol>
+<li>
+<div>TortoiseMerge or WinMerge are two excellent applications that will help with this.</div>
+</li>
+</ol></li>
+<li>
+<div>Remember to stop the Apache service if you need to make changes.</div>
+</li>
+<li>
+<div>For this guide, I assume you're running at localhost on port 8080.</div>
+</li>
+<li>
+<div>The Apache Service Monitor should also display the current version, when the service is selected.</div>
+</li>
+</ol></li>
+<li>
+<div>Backup Subversion repositories.</div>
+<ol>
+<li>
+<div>I do this in two ways.</div>
+<ol>
+<li>
+<div>First, I backup all repository directories. In my case, I have all my repos in b:\repos\. I simply make a copy of this directory.</div>
+</li>
+<li>
+<div>Next, I do a dump of all repositories. This basically means I run the following command: <strong>svnadmin dump StrivingLife &gt; ..\repos_dump\StrivingLife.dump</strong></div>
+<ol>
+<li>
+<div><strong>dir &gt; list.txt</strong> will give me a listing of all repos, which, after a bit of deleting and pasting, ends up with a usable batch file. Add <strong>PAUSE</strong> to allow yourself some time to read over the results.</div>
+</li>
+</ol></li>
+</ol></li>
+</ol></li>
+<li>
+<div>Stop Apache (if it's running).</div>
+</li>
+<li>
+<div>Extract the zip contents to your Subversion application directory.</div>
+<ol>
+<li>
+<div>Backup the old version of those files, if you so choose.</div>
+</li>
+<li>
+<div>I installed to C:\Program Files\Subversion\</div>
+</li>
+</ol></li>
+<li>
+<div>Copy necessary files from Subversion directory to Apache.</div>
+<ol>
+<li>
+<div>In the Subversion bin directory, copy <strong>mod_authz_svn.so</strong> and <strong>mod_dav_svn.so</strong> to the Apache modules directory.</div>
+</li>
+<li>
+<div>In the Subversion bin directory, copy <strong>intl3_svn.dll</strong> and <strong>libsvn_fs-1.dll</strong> (or <em>libdb44.dll</em> for Berkeley DB support) to the Apache bin directory.</div>
+</li>
+<li>
+<div>If you need to make Apache changes (you haven't installed Subversion before), see my <a href="http://jamesskemp.github.io/words/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx">Installing Subversion binaries for Apache 2.2.x</a>, otherwise you should be set.</div>
+</li>
+</ol></li>
+<li>
+<div>Start Apache.</div>
+</li>
+<li>
+<div>Confirm SVN version in Apache Services Monitor.</div>
+<ol>
+<li>
+<div>You may need to Exit and restart the monitor application to see the change.</div>
+</li>
+</ol></li>
+<li>
+<div>Uninstall TortoiseSVN and restart your computer.</div>
+</li>
+<li>
+<div>Install TortoiseSVN and restart your computer.</div>
+<ol>
+<li>
+<div>Sigh.</div>
+</li>
+<li>
+<div>The third window has changed, but otherwise see <a href="http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx">Installing TortoiseSVN to Windows Vista</a> for specifics.</div>
+</li>
+</ol></li>
+<li>
+<div>Do a test checkout, or browse some repositories.</div>
+</li>
+<li>
+<div>Checkout a working copy of a repository. We've got TortoiseSVN, so let's use it.</div>
+</li>
+<li>
+<div>You can also use the Repository Browser to take a look at some repos.</div>
+</li>
+<li>
+<div>You can also use your browser to browse the repos via the Apache component. Lots of options.</div>
+</li>
+<li>
+<div>Use <strong>svnadmin verify <em>repoName</em></strong> to use Subversion to verify revisions.</div>
+</li>
+<li>
+<div>Consider upgrading your repositories.</div>
+<ol>
+<li>
+<div>svnadmin upgrade repoName is the shortcut to upgrade your repository, to get access to any new features.</div>
+<ol>
+<li>You'll want to be careful your tools can interact with the new repository version. In our case, we're fine doing so.</li>
+<li>Taking the batch file we created to dump all our repositories, and tweaking it slightly, will enable us to upgrade all our repos as well.</li>
+</ol></li>
+<li>
+<div>Dumping and loading is another way, which keeps things a little cleaner.</div>
+</li>
+</ol></li>
+<li>
+<div>Celebrate, because you've successfully upgraded.</div>
+</li>
+</ol>
+<p>Questions/comments/concerns are always appreciated.&nbsp;</p>
+<p>This <em>original</em> piece of content was written from 7:40 PM (CT) to&nbsp;9:45 PM (CT), on March 23 2009.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/apache" class="tag">apache</a> <a href="http://jamesskemp.github.io/words/tags/tortoisesvn" class="tag">tortoisesvn</a> <a href="http://jamesskemp.github.io/words/tags/subversion" class="tag">subversion</a> <a href="http://jamesskemp.github.io/words/tags/svn" class="tag">svn</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fUpgrading-Subversion-15x-to-160-on-Windows-Vista-checklist%2f&t=Upgrading%20Subversion%201.5.x%20to%201.6.0%20on%20Windows%20Vista%20-%20checklist" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fUpgrading-Subversion-15x-to-160-on-Windows-Vista-checklist%2f&text=Upgrading%20Subversion%201.5.x%20to%201.6.0%20on%20Windows%20Vista%20-%20checklist&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fUpgrading-Subversion-15x-to-160-on-Windows-Vista-checklist%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fUpgrading-Subversion-15x-to-160-on-Windows-Vista-checklist%2f&title=Upgrading%20Subversion%201.5.x%20to%201.6.0%20on%20Windows%20Vista%20-%20checklist" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

@@ -11,10 +11,10 @@
     
     <item>
       <title>Interesting feature with parsing XML with jQuery on Safari</title>
-      <link>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <link>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
       <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
       <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
 &lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
 &lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
@@ -132,10 +132,10 @@
     
     <item>
       <title>Referring to JavaScript documentation in Visual Studio via reference</title>
-      <link>http://jamesskemp.github.io/words/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</link>
+      <link>http://jamesskemp.github.io/words/post/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</link>
       <pubDate>Sat, 03 Jul 2010 13:32:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Referring-to-JavaScript-documentation-in-Visual-Studio-via-reference/</guid>
       <description>&lt;p&gt;While I don&#39;t use Microsoft or Google&#39;s CDNs for jQuery, I do have a separate sub-domain where I serve these files from (and will eventually use a CDN, I&#39;m sure). However, this means that in Visual Studio I miss out on the helpful documentation functionality.&lt;/p&gt;
 &lt;p&gt;Based on a comment on &lt;a rel=&#34;external&#34; href=&#34;http://encosia.com/2008/12/10/3-reasons-why-you-should-let-google-host-jquery-for-you/&#34;&gt;3 reasons why you should let Google host jQuery for you&lt;/a&gt; it turns out there&#39;s a fairly easy way to get Intellisense; simply include the following in your JavaScript file.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;/// &amp;lt;Reference Path=&#34;/Scripts/jquery-1.4.1-vsdoc.js&#34;/&amp;gt;&lt;/code&gt;&lt;/pre&gt;
@@ -145,10 +145,10 @@
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
-      <link>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
       <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -241,10 +241,10 @@ $(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</title>
-      <link>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
+      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
       <pubDate>Mon, 21 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
       <description>&lt;p&gt;A while ago (&lt;a href=&#34;http://strivinglife.com/words/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule.aspx&#34;&gt;a year and a quarter&lt;/a&gt;)&amp;nbsp;I created an &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt; in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.&lt;/p&gt;
 &lt;p&gt;For better or worse, some of the practices I put in place aren&#39;t the best, and either way I&#39;ve been meaning to tweak the interface so that I could do various comparisons. If I pay x dollars more a month, how much faster would I have it paid off? How much would I save in interest? How much am I paying in interest as it is? I also really wanted to work&amp;nbsp;with JSON and jQuery, for practice.&lt;/p&gt;
 &lt;p&gt;Now that I&#39;ve found &lt;a href=&#34;http://strivinglife.com/words/post/RESTful-WCF-Web-services-easily.aspx&#34;&gt;WCF WebHttp&lt;/a&gt;, I think I have everything I need to make it happen.&lt;/p&gt;
@@ -265,10 +265,10 @@ $(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>jQuery: Query an Xml document and output data</title>
-      <link>http://jamesskemp.github.io/words/posts/jQuery-Query-an-Xml-document-and-output-data/</link>
+      <link>http://jamesskemp.github.io/words/post/jQuery-Query-an-Xml-document-and-output-data/</link>
       <pubDate>Sun, 03 May 2009 21:11:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/jQuery-Query-an-Xml-document-and-output-data/</guid>
+      <guid>http://jamesskemp.github.io/words/post/jQuery-Query-an-Xml-document-and-output-data/</guid>
       <description>&lt;p&gt;I back-dated my first piece of jQuery code, but have decided not to with my second.&lt;/p&gt;
 &lt;p&gt;Anyways, I had a hard time finding code, written in jQuery, to pull data from an Xml file and add it to a page. Combining a couple of tutorials online, I created the following (on April 27).&lt;/p&gt;
 &lt;p&gt;This was for a message, so I started out with the Xml file, creating something like this:&lt;/p&gt;
@@ -311,10 +311,10 @@ $(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>My first, working, piece of jQuery</title>
-      <link>http://jamesskemp.github.io/words/posts/My-first-working-piece-of-jQuery/</link>
+      <link>http://jamesskemp.github.io/words/post/My-first-working-piece-of-jQuery/</link>
       <pubDate>Thu, 23 Apr 2009 19:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/My-first-working-piece-of-jQuery/</guid>
+      <guid>http://jamesskemp.github.io/words/post/My-first-working-piece-of-jQuery/</guid>
       <description>&lt;p&gt;This is the first piece of jQuery that I wrote, for production use, that works exactly as I&#39;d like it to. Some code has been changed.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;try {
     $(document).ready(function(){

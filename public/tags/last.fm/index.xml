@@ -11,10 +11,10 @@
     
     <item>
       <title>Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</title>
-      <link>http://jamesskemp.github.io/words/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
+      <link>http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
       <pubDate>Sat, 12 Sep 2009 16:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
       <description>&lt;p&gt;The following covers how to parse the XML response of artist.getSimilar, from Last.fm&#39;s Web Services.&lt;/p&gt;
 &lt;h3&gt;Setup and assumptions&lt;/h3&gt;
 &lt;p&gt;The first step is sign up for a free &lt;a rel=&#34;external&#34; href=&#34;http://www.last.fm/api&#34;&gt;API account at Last.fm&lt;/a&gt;.&lt;/p&gt;

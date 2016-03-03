@@ -11,10 +11,10 @@
     
     <item>
       <title>Nier weapon data in XML (and LINQ sample query)</title>
-      <link>http://jamesskemp.github.io/words/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
+      <link>http://jamesskemp.github.io/words/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
       <pubDate>Sun, 16 Oct 2011 21:59:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
       <description>&lt;p&gt;&lt;p&gt;Going through the game &lt;a href=&#34;http://strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt; yet again, I wanted an easier way to track what weapon levels I had already upgraded to, and what items I still needed to unlock weapon items.&lt;/p&gt;
 &lt;p&gt;Phase one towards that goal is creating an XML file with weapon upgrade information which is available online: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&#34;&gt;Nier weapon data&lt;/a&gt;. An XML schema document for this information is also available: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2011/10/NierWeapons.xsd&#34;&gt;Nier weapon XSD&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Sample LINQ query&lt;/h3&gt;
@@ -42,10 +42,10 @@ public class WeaponItem {
     
     <item>
       <title>Interesting feature with parsing XML with jQuery on Safari</title>
-      <link>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <link>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
       <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
       <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
 &lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
 &lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
@@ -163,10 +163,10 @@ public class WeaponItem {
     
     <item>
       <title>Storing watched movies and Netflix shipping/receiving in XML format</title>
-      <link>http://jamesskemp.github.io/words/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</link>
+      <link>http://jamesskemp.github.io/words/post/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</link>
       <pubDate>Sun, 06 Mar 2011 13:21:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
       <description>&lt;p&gt;Ever since I started &lt;a href=&#34;http://strivinglife.com/words/post/Netflix-shipping-for-Madison-WI.aspx&#34;&gt;my Netflix subscription in September 2006&lt;/a&gt; I&#39;ve been keeping track of what movies I receive and when.&lt;/p&gt;
 &lt;p&gt;Unfortunately, as the years have gone by I&#39;ve found it more and more difficult to easily look through the listings to see when I last watched a movie. Additionally, I&#39;ve no longer been keeping track of what ratings I give movies, and why.&lt;/p&gt;
 &lt;p&gt;The initial goal was really to track when Netflix shipped and received movies, as well as when I mailed and received. This would suggest a pretty easy XML schema, since the key parts are as follows.&lt;/p&gt;
@@ -192,10 +192,10 @@ public class WeaponItem {
     
     <item>
       <title>Extended iTunes Track class for PHP</title>
-      <link>http://jamesskemp.github.io/words/posts/Extended-iTunes-Track-class-for-PHP/</link>
+      <link>http://jamesskemp.github.io/words/post/Extended-iTunes-Track-class-for-PHP/</link>
       <pubDate>Sun, 26 Sep 2010 20:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Extended-iTunes-Track-class-for-PHP/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Extended-iTunes-Track-class-for-PHP/</guid>
       <description>&lt;p&gt;In a previous article, I had outlined&amp;nbsp;&lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Track-class-in-C-sharp-and-PHP.aspx&#34;&gt;classes in C# and PHP to handle&amp;nbsp;iTunes Playlists to Xml outputs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having let it sit on the back burner for long enough, I finally went back to the PHP class and finalized the constructor. I also added two functions for sorting.&lt;/p&gt;
 &lt;p&gt;Below I have the current code for the class (a &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/Track.php.txt&#34;&gt;current version of the Track class for PHP&lt;/a&gt; will always be available elsewhere) and then an example implementation.&lt;/p&gt;
@@ -429,10 +429,10 @@ class Track {
     
     <item>
       <title>The benefits of using a file for Log Parser SQL queries</title>
-      <link>http://jamesskemp.github.io/words/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
+      <link>http://jamesskemp.github.io/words/post/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
       <pubDate>Sun, 26 Sep 2010 09:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
+      <guid>http://jamesskemp.github.io/words/post/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
       <description>&lt;p&gt;One of the things I always forget about when I&#39;m using Microsoft Log Parser is that you can define your SQL query in a file and run it, instead of putting it in the command line.&lt;/p&gt;
 &lt;p&gt;For example, the following will run whatever SQL is defined in strivinglife.robots.sql.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;logparser&#34;&gt;logparser -i:w3c -o:xml file:strivinglife.robots.sql&lt;/code&gt;&lt;/pre&gt;
@@ -452,10 +452,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Shadow Hearts: Covenant leveling information</title>
-      <link>http://jamesskemp.github.io/words/posts/Shadow-Hearts-Covenant-leveling-information/</link>
+      <link>http://jamesskemp.github.io/words/post/Shadow-Hearts-Covenant-leveling-information/</link>
       <pubDate>Mon, 06 Sep 2010 10:03:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Shadow-Hearts-Covenant-leveling-information/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Shadow-Hearts-Covenant-leveling-information/</guid>
       <description>&lt;p&gt;As I continue to look through my old files I found leveling information for Shadow Hearts: Covenant, from December 2005 to January (1st)&amp;nbsp;2006.&lt;/p&gt;
 &lt;p&gt;I&#39;ve converted it from an ODS file to XML, and am making it available. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsCovenant.xml&#34;&gt;Shadow Hearts: Covenant leveling guide&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Since I have a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/ShadowHeartsFromTheNewWorld.xml&#34;&gt;leveling guide for Shadow Hearts: From the New World&lt;/a&gt;&amp;nbsp;(&lt;a href=&#34;http://strivinglife.com/words/post/Shadow-Hearts-From-the-New-World-leveling-information.aspx&#34;&gt;previously written about&lt;/a&gt;), it almost makes sense to go back and play the original Shadow Hearts to get information for that game as well. I&#39;ve been meaning to replay it, so ...&lt;/p&gt;
@@ -464,10 +464,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Importing a custom namespace / custom type into an XSD</title>
-      <link>http://jamesskemp.github.io/words/posts/Importing-a-custom-namespace-custom-type-into-an-XSD/</link>
+      <link>http://jamesskemp.github.io/words/post/Importing-a-custom-namespace-custom-type-into-an-XSD/</link>
       <pubDate>Sun, 05 Sep 2010 09:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Importing-a-custom-namespace-custom-type-into-an-XSD/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Importing-a-custom-namespace-custom-type-into-an-XSD/</guid>
       <description>&lt;p&gt;I have a custom type that I use in a couple of my documents.&lt;/p&gt;
 &lt;p&gt;Unfortunately, in the past I was adding this to each xsd, as I needed it. However, I&#39;ve now figured out how to import it into xsd files as needed.&lt;/p&gt;
 &lt;h3&gt;Original schema&lt;/h3&gt;
@@ -506,10 +506,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Onimusha: Dawn of Dreams data</title>
-      <link>http://jamesskemp.github.io/words/posts/Onimusha-Dawn-of-Dreams-data/</link>
+      <link>http://jamesskemp.github.io/words/post/Onimusha-Dawn-of-Dreams-data/</link>
       <pubDate>Fri, 03 Sep 2010 20:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Onimusha-Dawn-of-Dreams-data/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Onimusha-Dawn-of-Dreams-data/</guid>
       <description>&lt;p&gt;From the archives, I&#39;ve created an &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2010/09/03/OnimushaDawnOfDreams.xsd&#34;&gt;XML Schema&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/OnimushaDawnOfDreams.xml&#34;&gt;XML data file for Onimusha: Dawn of Dreams&lt;/a&gt;, for the Playstation 2. Currently the data only includes armor leveling information, from level 1 to 100.&lt;/p&gt;
 &lt;p&gt;The data comes from an OpenDocument Spreadsheet (OnimushaDawnofDreams.ods) from way back in May of 2006.&lt;/p&gt;
 &lt;p&gt;My characters and core weapons being completely maxed (not to mention souls), I may decide to replay the game to track this information as well, or just upgrade weapons.&lt;/p&gt;
@@ -518,10 +518,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>XML standards - personal suggestions</title>
-      <link>http://jamesskemp.github.io/words/posts/XML-standards-personal-suggestions/</link>
+      <link>http://jamesskemp.github.io/words/post/XML-standards-personal-suggestions/</link>
       <pubDate>Fri, 03 Sep 2010 16:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/XML-standards-personal-suggestions/</guid>
+      <guid>http://jamesskemp.github.io/words/post/XML-standards-personal-suggestions/</guid>
       <description>&lt;p&gt;As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.&lt;/p&gt;
 &lt;h3&gt;Elements&lt;/h3&gt;
 &lt;p&gt;In the past I&#39;ve used camel case, but on a recent file used Pascal case instead. I think this was more becauase I&#39;ve started to using Pascal case for public items (variables), and camel case for private items, as that&#39;s fairly standard in development.&lt;/p&gt;
@@ -538,10 +538,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</title>
-      <link>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
+      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
       <pubDate>Sun, 15 Aug 2010 13:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
+      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
       <description>&lt;p&gt;In part one of this series we covered what we&#39;d be doing, and what data model we&#39;d be using.&lt;/p&gt;
 &lt;p&gt;In part two of this series we used LINQ to XML to query the XML file with the data we want to display.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I&#39;ll be implementing very basic caching.&lt;/p&gt;
@@ -733,10 +733,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</title>
-      <link>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
+      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
       <pubDate>Sat, 14 Aug 2010 14:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
+      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model.aspx&#34;&gt;part one of this series&lt;/a&gt; we covered what we&#39;d be doing, and what model we&#39;d be using for the data.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll parse the XML file that contains the data we need, and populate the objects.&lt;/p&gt;
 &lt;h3&gt;Loading the XML file&lt;/h3&gt;
@@ -769,10 +769,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</title>
-      <link>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
+      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
       <pubDate>Fri, 13 Aug 2010 22:50:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
+      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
       <description>&lt;p&gt;For a while now I&#39;ve been meaning to work with &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2010/02/07/built-in-charting-controls-vs-2010-and-net-4-series.aspx&#34;&gt;ASP.NET 4&#39;s built-in charting functionality&lt;/a&gt;. While I was going to use it alongside my gas tracking, I think I&#39;m instead going to use my &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;Odin Sphere leveling guide&lt;/a&gt;, so I don&#39;t have to create an XSLT for the output.&lt;/p&gt;
 &lt;p&gt;In this part of the series I&#39;ll outline the data model I&#39;ll be using, and preliminary setups.&lt;/p&gt;
 &lt;h3&gt;Method&lt;/h3&gt;
@@ -819,10 +819,10 @@ using System.Linq;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
-      <link>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <link>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
 &lt;/div&gt;
@@ -876,10 +876,10 @@ using System.Linq;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>iTunes Playlists to Xml - version 1.6 released</title>
-      <link>http://jamesskemp.github.io/words/posts/iTunes-Playlists-to-Xml-version-16-released/</link>
+      <link>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-16-released/</link>
       <pubDate>Sat, 08 May 2010 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/iTunes-Playlists-to-Xml-version-16-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-16-released/</guid>
       <description>&lt;p&gt;Version 1.6 of iTunes Playlists to Xml is now available for download.&lt;/p&gt;
 &lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml_1.6.zip&#34;&gt;iTunes Playlists to Xml 1.6&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Installing and more information&lt;/h3&gt;
@@ -906,10 +906,10 @@ using System.Linq;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>iTunes Playlists to Xml - version 1.5.3 released</title>
-      <link>http://jamesskemp.github.io/words/posts/iTunes-Playlists-to-Xml-version-153-released/</link>
+      <link>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-153-released/</link>
       <pubDate>Sun, 10 Jan 2010 16:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/iTunes-Playlists-to-Xml-version-153-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-153-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This application has since been updated. &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;Read about the current version of iTunes Playlists to Xml.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;

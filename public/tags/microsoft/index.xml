@@ -11,10 +11,10 @@
     
     <item>
       <title>Internet Explorer 10: Platform Preview 2 now available</title>
-      <link>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
+      <link>http://jamesskemp.github.io/words/post/Internet-Explorer-10-Platform-Preview-2-now-available/</link>
       <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
       <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
 &lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
 &lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>The Kinect is selling really well; but is that good for gamers?</title>
-      <link>http://jamesskemp.github.io/words/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
+      <link>http://jamesskemp.github.io/words/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
       <pubDate>Mon, 29 Nov 2010 21:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
+      <guid>http://jamesskemp.github.io/words/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
       <description>&lt;p&gt;Techmeme had a couple of interesting titles this evening. &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://www.readwriteweb.com/archives/kinect_is_selling_2x_as_fast_as_the_ipad.php&#34;&gt;Kinect is Selling 2X as Fast as the iPad&lt;/a&gt;&#34; and &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://blogs.barrons.com/techtraderdaily/2010/11/29/microsoft-over-25m-kinect-sold/&#34;&gt;Microsoft: Over 2.5M Kinect Sold&lt;/a&gt;.&#34;&lt;/p&gt;
 &lt;p&gt;Even if I thought I had the space for it (I&#39;d have to move furniture every time I wanted to play it in my current apartment) I still wouldn&#39;t pick up the Kinect.&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Review: Beginning ASP.NET 4 In C# and VB</title>
-      <link>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <link>http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
       <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -69,10 +69,10 @@
     
     <item>
       <title>Using F8 on Sun VirtualBox 3.1.2 when installing Windows XP</title>
-      <link>http://jamesskemp.github.io/words/posts/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</link>
+      <link>http://jamesskemp.github.io/words/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</link>
       <pubDate>Sun, 07 Feb 2010 10:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
       <description>&lt;p&gt;For various reasons, I had need to install Windows XP on a new virtual machine earlier today (with Windows 7&amp;nbsp;64-bit&amp;nbsp;as the host).&lt;/p&gt;
 &lt;p&gt;For whatever reason, when getting to the point of accepting the licensing terms, before installation, I was unable to&amp;nbsp;use the F8 key. After searching about,&amp;nbsp;I found&amp;nbsp;a number of Mac and Ubuntu users with the same issue, but no Windows users. The left control, shift, alt, and even right control (which I knew wasn&#39;t going to work, but an Ubuntu user swore by it and I was out of options) buttons did nothing to help.&lt;/p&gt;
 &lt;p&gt;However, the often-used (ah, sarcasm) &#34;F Lock&#34; key was what finally did it.&lt;/p&gt;
@@ -83,10 +83,10 @@
     
     <item>
       <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
-      <link>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <link>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
       <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
 &lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
 &lt;h3&gt;Requirements&lt;/h3&gt;
@@ -157,10 +157,10 @@
     
     <item>
       <title>Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes</title>
-      <link>http://jamesskemp.github.io/words/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
+      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
       <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
       <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
 &lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
 &lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;
@@ -177,10 +177,10 @@
     
     <item>
       <title>Disabling Messenger auto sign-in on the Xbox 360</title>
-      <link>http://jamesskemp.github.io/words/posts/Disabling-Messenger-auto-sign-in-on-the-Xbox-360/</link>
+      <link>http://jamesskemp.github.io/words/post/Disabling-Messenger-auto-sign-in-on-the-Xbox-360/</link>
       <pubDate>Mon, 19 Jan 2009 12:01:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Disabling-Messenger-auto-sign-in-on-the-Xbox-360/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Disabling-Messenger-auto-sign-in-on-the-Xbox-360/</guid>
       <description>&lt;p&gt;
 Shortly after logging into Xbox Live the Xbox 360 will attempt to log into Windows Messenger, by default.
 &lt;/p&gt;
@@ -225,10 +225,10 @@ For some reason I had to do this a couple of times for it to stick.
     
     <item>
       <title>Installing Windows 7 beta on Virtual PC 2007</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Windows-7-beta-on-Virtual-PC-2007/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Windows-7-beta-on-Virtual-PC-2007/</link>
       <pubDate>Fri, 16 Jan 2009 17:03:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Windows-7-beta-on-Virtual-PC-2007/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Windows-7-beta-on-Virtual-PC-2007/</guid>
       <description>&lt;p&gt;&lt;p&gt;
 I couldn&amp;#39;t find the other articles, so just in case I lose another one, here&amp;#39;s an overview of installing Windows 7 beta on a virtual machine.
 &lt;/p&gt;
@@ -247,10 +247,10 @@ Oddly, I didn&amp;#39;t have Virtual PC 2007 SP1, which seems to be a common iss
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
 In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
@@ -399,10 +399,10 @@ What do you think? What do you develop for?
     
     <item>
       <title>How to really compact Virtual PC hard drives</title>
-      <link>http://jamesskemp.github.io/words/posts/How-to-really-compact-Virtual-PC-hard-drives/</link>
+      <link>http://jamesskemp.github.io/words/post/How-to-really-compact-Virtual-PC-hard-drives/</link>
       <pubDate>Tue, 18 Nov 2008 20:16:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How-to-really-compact-Virtual-PC-hard-drives/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How-to-really-compact-Virtual-PC-hard-drives/</guid>
       <description>&lt;p&gt;
 No names mentioned, but I&amp;#39;ve recently been using a number of virtual machines for testing purposes.
 &lt;/p&gt;
@@ -443,10 +443,10 @@ How&amp;#39;s your work/home machine looking?
     
     <item>
       <title>LogParserPlus.com launched</title>
-      <link>http://jamesskemp.github.io/words/posts/LogParserPluscom-launched/</link>
+      <link>http://jamesskemp.github.io/words/post/LogParserPluscom-launched/</link>
       <pubDate>Fri, 26 Sep 2008 18:01:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/LogParserPluscom-launched/</guid>
+      <guid>http://jamesskemp.github.io/words/post/LogParserPluscom-launched/</guid>
       <description>&lt;p&gt;
 Since I now have actual content, there can be more visitors to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt;, outside of the government.
 &lt;/p&gt;
@@ -461,10 +461,10 @@ The initial focus will be on IIS-related queries, but who knows where it&amp;#39
     
     <item>
       <title>I like the Gates/Seinfeld ads</title>
-      <link>http://jamesskemp.github.io/words/posts/I-like-the-GatesSeinfeld-ads/</link>
+      <link>http://jamesskemp.github.io/words/post/I-like-the-GatesSeinfeld-ads/</link>
       <pubDate>Fri, 12 Sep 2008 07:54:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/I-like-the-GatesSeinfeld-ads/</guid>
+      <guid>http://jamesskemp.github.io/words/post/I-like-the-GatesSeinfeld-ads/</guid>
       <description>&lt;p&gt;
 Maybe that makes me out of it, but I like the Microsoft commercials.
 &lt;/p&gt;
@@ -482,10 +482,10 @@ Keep doing them, and I&amp;#39;ll keep watching &amp;#39;em.
     
     <item>
       <title>Internet Explorer Virtual PC images - hidden, but back</title>
-      <link>http://jamesskemp.github.io/words/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</link>
+      <link>http://jamesskemp.github.io/words/post/Internet-Explorer-Virtual-PC-images-hidden-but-back/</link>
       <pubDate>Thu, 04 Sep 2008 21:38:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
       <description>&lt;p&gt;
 When Microsoft released IE 7 they also offered an image / virtual hard drive that could be used to test Internet Explorer 7, without installing it on your machine.
 &lt;/p&gt;
@@ -524,10 +524,10 @@ A win for everyone involved, I&amp;#39;d say.
     
     <item>
       <title>Brief Notes on Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)</title>
-      <link>http://jamesskemp.github.io/words/posts/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/</link>
+      <link>http://jamesskemp.github.io/words/post/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/</link>
       <pubDate>Sat, 16 Aug 2008 08:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/</guid>
       <description>&lt;p&gt;&lt;p&gt;
 I&amp;#39;ll be updating this as I read, but the date/time of the post will remain the same. This will by no means make up for a reading of the book&amp;nbsp;- &lt;a href=&#34;http://www.amazon.com/gp/product/0321533925?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)&lt;/a&gt;. (Link to my review will be posted once I finish the book.)
 &lt;/p&gt;
@@ -973,10 +973,10 @@ To combine enums, use&amp;nbsp;a plural name. See 340-4 for additional details o
     
     <item>
       <title>Review: Professional ASP.NET 3.5 In C# and VB</title>
-      <link>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-35-In-C-and-VB/</link>
+      <link>http://jamesskemp.github.io/words/post/Review-Professional-ASPNET-35-In-C-and-VB/</link>
       <pubDate>Fri, 11 Jul 2008 22:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-35-In-C-and-VB/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Review-Professional-ASPNET-35-In-C-and-VB/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 The following is a book review of &lt;a href=&#34;http://www.amazon.com/gp/product/0470187573?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Professional ASP.NET 3.5 In C# and VB&lt;/a&gt;, written by Bill Evjen, Scott Hanselman, and Devin Rader.

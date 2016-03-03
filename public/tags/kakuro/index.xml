@@ -11,10 +11,10 @@
     
     <item>
       <title>Cross Sums Helper 2.0 - testing needed</title>
-      <link>http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/</link>
+      <link>http://jamesskemp.github.io/words/post/Cross-Sums-Helper-20-testing-needed/</link>
       <pubDate>Mon, 02 Jun 2008 08:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Cross-Sums-Helper-20-testing-needed/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Cross-Sums-Helper-20-testing-needed/</guid>
       <description>&lt;p&gt;
 After sleeping on it (albeit poorly), I&amp;#39;ve resolved the issue that was stopping production on the new version of my &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Cross-Sums-Number-Combinations-Guide.aspx&#34;&gt;Cross Sums Helper&lt;/a&gt; application. 
 &lt;/p&gt;
@@ -53,10 +53,10 @@ This program has moved from Visual Basic (6) to Visual C#, but still needs&amp;n
     
     <item>
       <title>Cross Sums Number Combinations Guide</title>
-      <link>http://jamesskemp.github.io/words/posts/Cross-Sums-Number-Combinations-Guide/</link>
+      <link>http://jamesskemp.github.io/words/post/Cross-Sums-Number-Combinations-Guide/</link>
       <pubDate>Thu, 13 Apr 2006 20:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Cross-Sums-Number-Combinations-Guide/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Cross-Sums-Number-Combinations-Guide/</guid>
       <description>&lt;p&gt;
 Quite a while ago - back in May of 2003 actually - I began work on a guide that would display every possible number combination for cross sum puzzles. Since then, a number of people have corrected mistakes that crept in, resulting in a number of different versions of the guide over the last (almost) two years.&lt;!--adsense--&gt; 
 &lt;/p&gt;

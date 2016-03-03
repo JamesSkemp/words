@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Regular Expression tester - JavaScript - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Regular Expression tester - JavaScript - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Regular-Expression-tester-JavaScript/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2008-01-21T18:15:00-06:00">
+        <meta itemprop="headline" content="Regular Expression tester - JavaScript">
+        <meta itemprop="description" content="In a previous post, I posted the code I used for a ColdFusion regular expression tester. This time I&#39;ve got an attempt at a JavaScript version. There&#39;s a number of TODOs, but ... &lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Strict//EN&#34; &nbsp;&#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&#34;&gt; &lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt; &lt;head&gt; &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=iso-8859-1&#34; /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type=&#34;text/css&#34;&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type=&#34;text/javascript&#34;&gt; &nbsp;function RemoveHTML(TextContent) { &nbsp;&nbsp;var str = &#39;&#39;; &nbsp;&nbsp;str = TextContent; &nbsp;&nbsp;str = str.replace(/&lt;/g, &#34;&amp;lt;&#34;); &nbsp;&nbsp; &nbsp;&nbsp;return str; &nbsp;} &nbsp;function TestExpression() { &nbsp;&nbsp;var Expression = &#39;&#39;; &nbsp;&nbsp;var ExpressionParameters = &#39;gm&#39;; &nbsp;&nbsp;var ExpressionText = &#39;&#39;; &nbsp;&nbsp;try { &nbsp;&nbsp;&nbsp;document.getElementById(&#39;form_error&#39;).innerHTML = &#39;&#39;; &nbsp;&nbsp;&nbsp;document.getElementById(&#39;form_results&#39;).innerHTML = &#39;&#39;; &nbsp;&nbsp;&nbsp;document.getElementById(&#39;form_highlighttext&#39;).innerHTML = &#39;&#39;; &nbsp;&nbsp;&nbsp;if (document.getElementById(&#39;InputExpression&#39;).value != &#39;&#39; &amp;&amp; document.getElementById(&#39;InputText&#39;).value != &#39;&#39;) { &nbsp;&nbsp;&nbsp;&nbsp;// TODO better check and error writing - use span with _s &nbsp;&nbsp;&nbsp;&nbsp;if (document.getElementById(&#39;CheckCase&#39;).checked) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionParameters &#43;= &#39;i&#39;; &nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;&nbsp;Expression = document.getElementById(&#39;InputExpression&#39;).value; &nbsp;&nbsp;&nbsp;&nbsp;ExpressionText = document.getElementById(&#39;InputText&#39;).value; &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters); &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText); &nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionTest == true) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&#39;form_results&#39;).innerHTML = &#39;&lt;p&gt;The following results were found for your search:&lt;/p&gt;&#39;; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Testing it appears to run it, so ...">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Regular-Expression-tester-JavaScript/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2008-01-21T18:15:00-06:00">Mon, Jan 21, 2008</time>
+          <h1 class="article-title">Regular Expression tester - JavaScript</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>In a previous post, I posted the code I used for <a href="http://jamesskemp.github.io/words/words/post/Regular-Expression-tester-ColdFusion.aspx">a ColdFusion regular expression tester</a>.</p>
+<p>This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ...</p>
+<pre class="code"><code class="html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+ &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+ &lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt;
+ &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt;
+ &lt;style type="text/css"&gt;
+ &nbsp;#form_help {
+ &nbsp;&nbsp;float:right;
+ &nbsp;&nbsp;font-size:.8em;
+ &nbsp;&nbsp;width:50%;
+ &nbsp;}
+ &nbsp;#form_results {
+ &nbsp;&nbsp;margin:1em;
+ &nbsp;&nbsp;width:45%;
+ &nbsp;}
+ &nbsp;.highlight {
+ &nbsp;&nbsp;background-color:#ff9;
+ &nbsp;}
+ &nbsp;#form_highlighttext {
+ &nbsp;&nbsp;border:1px dashed #ccc;
+ &nbsp;&nbsp;margin-left:1em;
+ &nbsp;&nbsp;width:45%;
+ &nbsp;}
+ &lt;/style&gt;
+ &lt;script type="text/javascript"&gt;
+ &nbsp;function RemoveHTML(TextContent) {
+ &nbsp;&nbsp;var str = '';
+ &nbsp;&nbsp;str = TextContent;
+ &nbsp;&nbsp;str = str.replace(/&lt;/g, "&amp;lt;");
+ &nbsp;&nbsp;
+ &nbsp;&nbsp;return str;
+ &nbsp;}
+ &nbsp;function TestExpression() {
+ &nbsp;&nbsp;var Expression = '';
+ &nbsp;&nbsp;var ExpressionParameters = 'gm';
+ &nbsp;&nbsp;var ExpressionText = '';
+ &nbsp;&nbsp;try {
+ &nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = '';
+ &nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = '';
+ &nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML = '';
+ &nbsp;&nbsp;&nbsp;if (document.getElementById('InputExpression').value != '' &amp;&amp; document.getElementById('InputText').value != '') {
+ &nbsp;&nbsp;&nbsp;&nbsp;// TODO better check and error writing - use span with _s
+ &nbsp;&nbsp;&nbsp;&nbsp;if (document.getElementById('CheckCase').checked) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionParameters += 'i';
+ &nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;&nbsp;Expression = document.getElementById('InputExpression').value;
+ &nbsp;&nbsp;&nbsp;&nbsp;ExpressionText = document.getElementById('InputText').value;
+ &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters);
+ &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText);
+ &nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionTest == true) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = '&lt;p&gt;The following results were found for your search:&lt;/p&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Testing it appears to run it, so ...
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionObject = new RegExp(Expression, ExpressionParameters);
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var StringPosition = 0;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var LastPosition = 0;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var CountResults = 0;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var ExpressionResults = ExpressionObject.exec(ExpressionText);
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionObject.global) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (ExpressionResults != null) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML += '' + RemoveHTML(ExpressionResults[0]) + ' (' + ExpressionResults.index + ' - ' + ExpressionObject.lastIndex + ')' + '&lt;br /&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (CountResults == 0) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringPosition = 0;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StringPosition = LastPosition;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML += RemoveHTML(ExpressionText.substring(StringPosition, ExpressionResults.index)) + '&lt;span class="highlight"&gt;' + RemoveHTML(ExpressionText.substring(ExpressionResults.index, ExpressionObject.lastIndex)) + '&lt;/span&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LastPosition = ExpressionObject.lastIndex;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionResults = ExpressionObject.exec(ExpressionText);
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CountResults++;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (LastPosition &amp;&amp; LastPosition &lt; ExpressionText.length) {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML += RemoveHTML(ExpressionText.substring(LastPosition, ExpressionText.length));
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} else {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// TODO
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML += '' + ExpressionResults[0] + ' (' + ExpressionResults.index + ')' + '&lt;br /&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML += '&lt;br /&gt;&lt;br /&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//document.getElementById('form_highlighttext').innerHTML += ExpressionText.substring(StringPosition, ExpressionResults.index) + '&lt;span class="highlight"&gt;' + ExpressionResults + '&lt;/span&gt;';
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;&nbsp;} else {
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = 'No match found.';
+ &nbsp;&nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;} else {
+ &nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = 'You must enter both an expression and text to check that expression against.';
+ &nbsp;&nbsp;&nbsp;}
+ &nbsp;&nbsp;&nbsp;return false;
+ &nbsp;&nbsp;} catch(e) {
+ &nbsp;&nbsp;&nbsp;alert(e.message);
+ &nbsp;&nbsp;}
+ &nbsp;}
+ &lt;/script&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &nbsp;&lt;div id="form_help"&gt;
+ &nbsp;&nbsp;&lt;p&gt;Regular expression notation:&lt;/p&gt;
+ &nbsp;&nbsp;&lt;ul&gt;
+ &nbsp;&nbsp;&nbsp;&lt;li&gt;\b = Word boundary&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\B = Word nonboundary&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\d = Numeral (0-9)&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\D = Nonnumeral&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\s = Single whitespace&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\S = Single nonwhitespace&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\w = Letter, numeral, underscore&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;\W = Not \w&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;. = Any character except newline&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;[] = Any character(s) in brackets&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;[^] = Not []&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;* = Preceding zero or more times&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;? = Preceding zero or one time&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;+ = Precending one or more times&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;{&lt;em&gt;n&lt;/em&gt;} = The preceding &lt;em&gt;n&lt;/em&gt; times&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;{&lt;em&gt;n&lt;/em&gt;,} = &lt;em&gt;n&lt;/em&gt; or more times &lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;{&lt;em&gt;n&lt;/em&gt;,&lt;em&gt;m&lt;/em&gt;}= At least &lt;em&gt;n&lt;/em&gt;, at most &lt;em&gt;m&lt;/em&gt;, times&lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;^ = Beginning of the string or line &lt;/li&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;$ = End of the string or line &lt;/li&gt;
+ &nbsp;&nbsp;&lt;/ul&gt;
+ &nbsp;&lt;/div&gt;
+ &nbsp;&lt;form onsubmit="return false;"&gt;
+ &nbsp;&nbsp;&lt;label for="InputExpression"&gt;Regular expression:&lt;/label&gt;&lt;input type="text" id="InputExpression" value="" /&gt;&lt;br /&gt;
+ &nbsp;&nbsp;&lt;label for="CheckCase"&gt;Ignore case:&lt;/label&gt;&lt;input type="checkbox" id="CheckCase" /&gt;&lt;br /&gt;
+ &nbsp;&nbsp;&lt;textarea cols="50" id="InputText" rows="5"&gt;Hello and welcome. I do hope you'll come again. Will you?&lt;/textarea&gt;&lt;br /&gt;
+ &nbsp;&nbsp;&lt;input type="button" onclick="TestExpression();" value="Test expression" /&gt;
+ &nbsp;&lt;/form&gt;
+ &nbsp;&lt;div id="form_error" style="color:red;"&gt;&lt;/div&gt;
+ &nbsp;&lt;div id="form_results"&gt;&lt;/div&gt;
+ &nbsp;&lt;div id="form_highlighttext"&gt;&lt;/div&gt;
+ &lt;/body&gt;
+ &lt;/html&gt;</code></pre>
+<p>As always, comments appreciated.</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/javascript" class="tag">javascript</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fRegular-Expression-tester-JavaScript%2f&t=Regular%20Expression%20tester%20-%20JavaScript" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fRegular-Expression-tester-JavaScript%2f&text=Regular%20Expression%20tester%20-%20JavaScript&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fRegular-Expression-tester-JavaScript%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fRegular-Expression-tester-JavaScript%2f&title=Regular%20Expression%20tester%20-%20JavaScript" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/iis" class="list-group-item">iis</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

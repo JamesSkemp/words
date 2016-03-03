@@ -11,10 +11,10 @@
     
     <item>
       <title>12 years of posts = a lot of comments</title>
-      <link>http://jamesskemp.github.io/words/posts/12-years-of-posts-equals-a-lot-of-comments/</link>
+      <link>http://jamesskemp.github.io/words/post/12-years-of-posts-equals-a-lot-of-comments/</link>
       <pubDate>Sun, 31 Jul 2011 17:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/12-years-of-posts-equals-a-lot-of-comments/</guid>
+      <guid>http://jamesskemp.github.io/words/post/12-years-of-posts-equals-a-lot-of-comments/</guid>
       <description>&lt;p&gt;When I moved from my custom system to WordPress to BlogEngine.NET I never did end up copying over all the old comments on my posts. Heck, I don&#39;t even think I moved over all my posts.&lt;/p&gt;
 &lt;p&gt;But since I&#39;m sticking with DISQUS I decided to move all my BE.NET comments over to DISQUS, and over the last few hours have been making the necessary changes and performing the necessary cleanup.&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;I found a great extension that generated the XML for me (thankfully), but since I&#39;m me I&#39;m actually going through and removing the extra comments, so my data source is clean. And that may not have been the best idea ...&lt;/p&gt;
@@ -24,10 +24,10 @@
     
     <item>
       <title>On Web sites that feature Facebook Comments</title>
-      <link>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</link>
+      <link>http://jamesskemp.github.io/words/post/On-Web-sites-that-feature-Facebook-Comments/</link>
       <pubDate>Fri, 24 Jun 2011 16:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/On-Web-sites-that-feature-Facebook-Comments/</guid>
+      <guid>http://jamesskemp.github.io/words/post/On-Web-sites-that-feature-Facebook-Comments/</guid>
       <description>&lt;p&gt;Over the past few months a number of sites have switched over to Facebook-powered comments. For the most part those sites are ones that I&#39;ve never commented one, nor will comment on. However, I recently discovered that a former co-worker, Rob Lumley, switched his site over to Facebook, and recently wrote an article about it titled &lt;a rel=&#34;external&#34; href=&#34;http://rmlumley.com/facebook-comments-to-wordpress/&#34;&gt;Add Facebook Comments to WordPress&lt;/a&gt;. Since I don&#39;t use Facebook comments, I figured I&#39;d post the response I had written and tried to post anonymously, here instead.&lt;/p&gt;
 &lt;h3&gt;Rob&#39;s question&lt;/h3&gt;
 &lt;p&gt;For those of you who use or read this site, what do you think about Facebook comments? Does it increase or decrease your chances of commenting? Do you like not having to log in or create another user account? Or do you wish to stay anonymous?&lt;/p&gt;

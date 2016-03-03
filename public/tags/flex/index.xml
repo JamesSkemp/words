@@ -11,10 +11,10 @@
     
     <item>
       <title>Dreamweaver 8 as a MXML IDE?</title>
-      <link>http://jamesskemp.github.io/words/posts/Dreamweaver-8-as-a-MXML-IDE/</link>
+      <link>http://jamesskemp.github.io/words/post/Dreamweaver-8-as-a-MXML-IDE/</link>
       <pubDate>Thu, 07 Sep 2006 20:38:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Dreamweaver-8-as-a-MXML-IDE/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Dreamweaver-8-as-a-MXML-IDE/</guid>
       <description>&lt;p&gt;
 I&amp;#39;ve spent the last couple of hours trying to get Dreamweaver 8 to begin to function as a MXML IDE. Unfortunately, while I can get every &amp;lt;mx: tag added to the code hints, I&amp;#39;m having a heck of a time getting the actual code hints to function.
 &lt;/p&gt;
@@ -35,10 +35,10 @@ Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34
     
     <item>
       <title>Compiling Flex applications with Dreamweaver</title>
-      <link>http://jamesskemp.github.io/words/posts/Compiling-Flex-applications-with-Dreamweaver/</link>
+      <link>http://jamesskemp.github.io/words/post/Compiling-Flex-applications-with-Dreamweaver/</link>
       <pubDate>Wed, 06 Sep 2006 18:56:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Compiling-Flex-applications-with-Dreamweaver/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Compiling-Flex-applications-with-Dreamweaver/</guid>
       <description>&lt;p&gt;
 Tom Lee wrote a post in July detailing how to compile and run Flex applications using Dreamweaver.  Since Flex 2 is making me very excited, I felt it was post worthy (especially since I won&amp;#39;t have to do a Google search to get back to his post now).
 &lt;/p&gt;

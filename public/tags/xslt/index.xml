@@ -11,10 +11,10 @@
     
     <item>
       <title>XML Schema Definition creation: Journal - Part 3: XSLT sample</title>
-      <link>http://jamesskemp.github.io/words/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</link>
+      <link>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</link>
       <pubDate>Sun, 27 Dec 2009 21:47:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</guid>
+      <guid>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-3-XSLT-sample/</guid>
       <description>&lt;p&gt;Having created an &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;overview of how I wanted to craft a simple journal in XML&lt;/a&gt;, I next created an &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor.aspx&#34;&gt;XML Schema Definition for the simple journal&lt;/a&gt; to validate against.&lt;/p&gt;
 &lt;p&gt;Having now crafted a Web&amp;nbsp;application to create the XML files I&#39;m able to move onto the prettier aspects of display for the XML files.&lt;/p&gt;
 &lt;p&gt;I&#39;ve created a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/samples/journal-200912.xml&#34;&gt;sample simple journal&lt;/a&gt; that uses an XSLT (XSL Transforms, or extensible stylesheet language transformations) to make the display a &lt;em&gt;little&lt;/em&gt; prettier.&lt;/p&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Muenchian Method grouping in XSLT</title>
-      <link>http://jamesskemp.github.io/words/posts/Muenchian-Method-grouping-in-XSLT/</link>
+      <link>http://jamesskemp.github.io/words/post/Muenchian-Method-grouping-in-XSLT/</link>
       <pubDate>Wed, 01 Jul 2009 22:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Muenchian-Method-grouping-in-XSLT/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Muenchian-Method-grouping-in-XSLT/</guid>
       <description>&lt;p&gt;I owe a deal of thanks for figuring out the Muenchian Method of grouping in XSLT (1.0) to Jeni&#39;s article &lt;a href=&#34;http://jenitennison.com/xslt/grouping/muenchian.xml&#34;&gt;Grouping Using the Muenchian Method&lt;/a&gt;. It took, however, a while for me to get my mind around the method completely, and some experimentation, which I&#39;m sharing below.&lt;/p&gt;
 &lt;p&gt;Specifically I was looking to get a listing of tracks, from my &lt;a href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; application&#39;s output, and group them by album.&lt;/p&gt;
 &lt;p&gt;For this, all I really need is the track&#39;s album and name, which gives a basic layout of the following.&lt;/p&gt;

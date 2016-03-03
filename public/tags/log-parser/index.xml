@@ -11,10 +11,10 @@
     
     <item>
       <title>The benefits of using a file for Log Parser SQL queries</title>
-      <link>http://jamesskemp.github.io/words/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
+      <link>http://jamesskemp.github.io/words/post/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</link>
       <pubDate>Sun, 26 Sep 2010 09:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
+      <guid>http://jamesskemp.github.io/words/post/The-benefits-of-using-a-file-for-Log-Parser-SQL-queries/</guid>
       <description>&lt;p&gt;One of the things I always forget about when I&#39;m using Microsoft Log Parser is that you can define your SQL query in a file and run it, instead of putting it in the command line.&lt;/p&gt;
 &lt;p&gt;For example, the following will run whatever SQL is defined in strivinglife.robots.sql.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;logparser&#34;&gt;logparser -i:w3c -o:xml file:strivinglife.robots.sql&lt;/code&gt;&lt;/pre&gt;
@@ -34,10 +34,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Log Parser Plus - version 0.3 released</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-Plus-version-03-released/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-Plus-version-03-released/</link>
       <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-Plus-version-03-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-Plus-version-03-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
 &lt;/div&gt;
@@ -51,10 +51,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Log Parser Plus - version 0.2.1 released</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-Plus-version-021-released/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-Plus-version-021-released/</link>
       <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-Plus-version-021-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-Plus-version-021-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
 &lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -70,10 +70,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Microsoft Log Parser custom brush for Syntax Highlighter</title>
-      <link>http://jamesskemp.github.io/words/posts/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</link>
+      <link>http://jamesskemp.github.io/words/post/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</link>
       <pubDate>Sun, 18 Oct 2009 13:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Microsoft-Log-Parser-custom-brush-for-Syntax-Highlighter/</guid>
       <description>&lt;p&gt;It still needs a touch of work, but a basic custom brush for &lt;a rel=&#34;external&#34; href=&#34;http://alexgorbatchev.com/wiki/SyntaxHighlighter&#34;&gt;Syntax Highlighter&lt;/a&gt; is available for download.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/js/shBrushLogParser.js&#34;&gt;Download the Microsoft Log Parser custom brush for Syntax Highlighter 2.0.320&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Example included below and at &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Examples/Queries.aspx&#34;&gt;LogParserPlus.com&lt;/a&gt;:&lt;/p&gt;
@@ -84,10 +84,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>IIS Logs to SQLite - version 0.1 beta released</title>
-      <link>http://jamesskemp.github.io/words/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
+      <link>http://jamesskemp.github.io/words/post/IIS-Logs-to-SQLite-version-01-beta-released/</link>
       <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
       <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
 &lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;
@@ -102,10 +102,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Microsoft Log Parser timestamp formats</title>
-      <link>http://jamesskemp.github.io/words/posts/Microsoft-Log-Parser-timestamp-formats/</link>
+      <link>http://jamesskemp.github.io/words/post/Microsoft-Log-Parser-timestamp-formats/</link>
       <pubDate>Fri, 06 Feb 2009 20:32:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Microsoft-Log-Parser-timestamp-formats/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Microsoft-Log-Parser-timestamp-formats/</guid>
       <description>&lt;p&gt;The following article covers the &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/Functions#function_TO_TIMESTAMP&#34;&gt;timestamp&lt;/a&gt; format specifiers accepted by Microsoft Log Parser.&lt;/p&gt;
 &lt;h3&gt;Date&lt;/h3&gt;
 &lt;ul&gt;
@@ -272,10 +272,10 @@ ORDER BY Requests DESC&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Parse FileZilla Server logs with Log Parser</title>
-      <link>http://jamesskemp.github.io/words/posts/Parse-FileZilla-Server-logs-with-Log-Parser/</link>
+      <link>http://jamesskemp.github.io/words/post/Parse-FileZilla-Server-logs-with-Log-Parser/</link>
       <pubDate>Sun, 23 Nov 2008 22:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Parse-FileZilla-Server-logs-with-Log-Parser/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Parse-FileZilla-Server-logs-with-Log-Parser/</guid>
       <description>&lt;p&gt;
 While FileZilla Server is one of the best FTP servers available, it&amp;#39;s logging leaves much to be desired.
 &lt;/p&gt;
@@ -388,10 +388,10 @@ Changing the code to pull AM/PM resolved the issue with NULLs (-) being returned
     
     <item>
       <title>How to get started with Microsoft Log Parser</title>
-      <link>http://jamesskemp.github.io/words/posts/How-to-get-started-with-Microsoft-Log-Parser/</link>
+      <link>http://jamesskemp.github.io/words/post/How-to-get-started-with-Microsoft-Log-Parser/</link>
       <pubDate>Fri, 07 Nov 2008 14:50:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How-to-get-started-with-Microsoft-Log-Parser/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How-to-get-started-with-Microsoft-Log-Parser/</guid>
       <description>&lt;p&gt;
 I&amp;#39;ve &lt;a href=&#34;http://jamesskemp.github.io/words/words/?tag=/log+parser&#34;&gt;written about Microsoft Log Parser&lt;/a&gt; before, and even started &lt;a href=&#34;http://logparserplus.com/&#34;&gt;a site around it&lt;/a&gt;. But, I noticed the other day that I hadn&amp;#39;t written on how to get started with this powerful tool. 
 &lt;/p&gt;
@@ -445,10 +445,10 @@ Visit &lt;a href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt
     
     <item>
       <title>LogParserPlus.com - Updates for 2008.11.04</title>
-      <link>http://jamesskemp.github.io/words/posts/LogParserPluscom-Updates-for-20081104/</link>
+      <link>http://jamesskemp.github.io/words/post/LogParserPluscom-Updates-for-20081104/</link>
       <pubDate>Wed, 05 Nov 2008 08:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/LogParserPluscom-Updates-for-20081104/</guid>
+      <guid>http://jamesskemp.github.io/words/post/LogParserPluscom-Updates-for-20081104/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt; was updated last night, during the election coverage, with the following changes:
 &lt;/p&gt;
@@ -475,10 +475,10 @@ Visit &lt;a href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&
     
     <item>
       <title>LogParserPlus.com launched</title>
-      <link>http://jamesskemp.github.io/words/posts/LogParserPluscom-launched/</link>
+      <link>http://jamesskemp.github.io/words/post/LogParserPluscom-launched/</link>
       <pubDate>Fri, 26 Sep 2008 18:01:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/LogParserPluscom-launched/</guid>
+      <guid>http://jamesskemp.github.io/words/post/LogParserPluscom-launched/</guid>
       <description>&lt;p&gt;
 Since I now have actual content, there can be more visitors to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt;, outside of the government.
 &lt;/p&gt;
@@ -493,10 +493,10 @@ The initial focus will be on IIS-related queries, but who knows where it&amp;#39
     
     <item>
       <title>A brief overview of IIS 6.0 and the W3C extended log format</title>
-      <link>http://jamesskemp.github.io/words/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</link>
+      <link>http://jamesskemp.github.io/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</link>
       <pubDate>Sat, 03 Nov 2007 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</guid>
+      <guid>http://jamesskemp.github.io/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/</guid>
       <description>&lt;p&gt;
 In Microsoft Internet Information Services (IIS) 6.0, you can choose to use a number of different formats for your access logs. 
 &lt;/p&gt;
@@ -753,10 +753,10 @@ Next time, we&amp;#39;ll cover which of these fields you may want to log, for wh
     
     <item>
       <title>Log Parser SQL query syntax (high-level)</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-SQL-query-syntax-high-level/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-SQL-query-syntax-high-level/</link>
       <pubDate>Thu, 25 Oct 2007 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-SQL-query-syntax-high-level/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-SQL-query-syntax-high-level/</guid>
       <description>&lt;p&gt;
 The following is a high-level look at Log Parser&amp;#39;s (version 2.2) SQL syntax. This does assume that you understand the specifics of each part, but for those that do not, this will be covered in a future tutorial. (This is more for my use.)&amp;nbsp; &lt;strong&gt;Bolded&lt;/strong&gt; elements are required for any valid query, whereas the other elements are optional. 
 &lt;/p&gt;
@@ -780,10 +780,10 @@ Again, details about the specific parts, with&amp;nbsp;real-world examples,&amp;
     
     <item>
       <title>Log Parser script: Percent of status codes across all hits/requests</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
       <pubDate>Mon, 01 Oct 2007 23:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
@@ -845,10 +845,10 @@ Example of the status code chart
     
     <item>
       <title>How to ensure that performance counters continue after a restart</title>
-      <link>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
+      <link>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
       <pubDate>Wed, 19 Sep 2007 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
       <description>&lt;p&gt;
 A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. 
 &lt;/p&gt;
@@ -922,10 +922,10 @@ Add/remove as necessary, for your logs.
     
     <item>
       <title>Using Log Parser to find users accounts used to log into an FTP site</title>
-      <link>http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
+      <link>http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
       <pubDate>Thu, 13 Sep 2007 20:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
       <description>&lt;p&gt;
 The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site.
 &lt;/p&gt;

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Vehicle gas DTD .NET objects and XML parsing with LINQ - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Vehicle gas DTD .NET objects and XML parsing with LINQ - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2010-06-10T22:20:00-05:00">
+        <meta itemprop="headline" content="Vehicle gas DTD .NET objects and XML parsing with LINQ">
+        <meta itemprop="description" content="The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted. At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen). I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out. C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } } public class Fillup { public int Id { get; set; } public DateTime Date { get; set; } public int MilesTotal { get; set; } public Decimal MilesDriven { get; set; } public Decimal Gallons { get; set; } public Decimal CostPerGallon { get; set; } public Decimal CostTotal { get; set; } public String Notes { get; set; } }&lt;/code&gt;&lt;/pre&gt; LINQ to XML XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;); IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;) select new Vehicle { Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value), Make = vehicle.Element(&ldquo;make&rdquo;).Value, Model = vehicle.Element(&ldquo;model&rdquo;).Value, Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value), Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;) select new Fillup { Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value), Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture), MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value), MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value), Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value), CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value), CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value), Notes = fillup.Element(&ldquo;notes&rdquo;).Value } }; As always, suggestions appreciated.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2010-06-10T22:20:00-05:00">Thu, Jun 10, 2010</time>
+          <h1 class="article-title">Vehicle gas DTD .NET objects and XML parsing with LINQ</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><div class="note">
+<p>The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.</p>
+</div>
+<p>At <a href="http://strivinglife.com/words/post/2007-VW-Rabbit-10000-miles.aspx">some point in 2007</a> I started <a href="http://jamesrskemp.net/vehicle_gas.xml">keeping track of my gas mileage</a> in an XML file, with a custom DTD for validation (and intellisense in oXygen).</p>
+<p>I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.</p>
+<h3>C# objects</h3>
+<pre class="code"><code class="csharp"> public class Vehicle {
+        public int Id { get; set; }
+        public String Make { get; set; }
+        public String Model { get; set; }
+        public int Year { get; set; }
+        public IEnumerable Fillups { get; set; }
+    }</p>
+
+<pre><code>public class Fillup {
+    public int Id { get; set; }
+    public DateTime Date { get; set; }
+    public int MilesTotal { get; set; }
+    public Decimal MilesDriven { get; set; }
+    public Decimal Gallons { get; set; }
+    public Decimal CostPerGallon { get; set; }
+    public Decimal CostTotal { get; set; }
+    public String Notes { get; set; }
+}&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+<p><h3>LINQ to XML</h3>
+<pre class="code"><code class="csharp">XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;);</p>
+
+<p>IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;)
+    select new Vehicle {
+        Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value),
+        Make = vehicle.Element(&ldquo;make&rdquo;).Value,
+        Model = vehicle.Element(&ldquo;model&rdquo;).Value,
+        Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value),
+        Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;)
+            select new Fillup {
+              Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value),
+              Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture),
+              MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value),
+              MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value),
+              Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value),
+              CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value),
+              CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value),
+              Notes = fillup.Element(&ldquo;notes&rdquo;).Value
+            }
+    };</code></pre>
+<p>As always, suggestions appreciated. (Although I&rsquo;ve already got code that, using .NET 4, creates some rather nice charts with the information contained within a document such as this, and consider this close to complete; name information isn&rsquo;t grabbed, but I&rsquo;m not sure that&rsquo;s altogether necessary &hellip;)</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/.net" class="tag">.net</a> <a href="http://jamesskemp.github.io/words/tags/c#" class="tag">c#</a> <a href="http://jamesskemp.github.io/words/tags/linq%20to%20xml" class="tag">linq to xml</a> <a href="http://jamesskemp.github.io/words/tags/xml" class="tag">xml</a> <a href="http://jamesskemp.github.io/words/tags/vehicle%20gas" class="tag">vehicle gas</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fVehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ%2f&t=Vehicle%20gas%20DTD%20.NET%20objects%20and%20XML%20parsing%20with%20LINQ" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fVehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ%2f&text=Vehicle%20gas%20DTD%20.NET%20objects%20and%20XML%20parsing%20with%20LINQ&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fVehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fVehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ%2f&title=Vehicle%20gas%20DTD%20.NET%20objects%20and%20XML%20parsing%20with%20LINQ" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

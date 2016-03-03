@@ -11,10 +11,10 @@
     
     <item>
       <title>Web Application Development Guidelines</title>
-      <link>http://jamesskemp.github.io/words/posts/Web-Application-Development-Guidelines/</link>
+      <link>http://jamesskemp.github.io/words/post/Web-Application-Development-Guidelines/</link>
       <pubDate>Sat, 27 Feb 2010 13:25:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Web-Application-Development-Guidelines/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Web-Application-Development-Guidelines/</guid>
       <description>&lt;p&gt;&lt;p&gt;While Web application development is just as complex as other application development, if not more so, it&amp;rsquo;s fairly difficult to find information on best practices while doing Web development.&lt;/p&gt;
 &lt;p&gt;In order to move towards implementation of Subversion, I needed to write up documentation on how we&amp;rsquo;d use it. After a couple drafts, which I ended up scrapping almost completely, I came up with the below.&lt;/p&gt;
 &lt;p&gt;In the interest of sharing, I&amp;rsquo;ve included the full document below, after removing the few instances where I had to specify a non-Subversion application (our help desk application). Comments and suggestions are appreciated.&lt;/p&gt;
@@ -257,10 +257,10 @@
     
     <item>
       <title>What I&#39;d like to see in 201X in regard to browsers</title>
-      <link>http://jamesskemp.github.io/words/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
+      <link>http://jamesskemp.github.io/words/post/What-Id-like-to-see-in-201X-in-regard-to-browsers/</link>
       <pubDate>Wed, 09 Dec 2009 10:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
+      <guid>http://jamesskemp.github.io/words/post/What-Id-like-to-see-in-201X-in-regard-to-browsers/</guid>
       <description>&lt;p&gt;&lt;h3&gt;Situation 1: WebKit&lt;/h3&gt;
 &lt;p&gt;Microsoft drops all active development on Internet Explorer 9. Instead, they throw their full support (development team)&amp;nbsp;behind WebKit.&lt;/p&gt;
 &lt;p&gt;Apple, with Safari, and Google, with Chrome, are already behind WebKit. Apple&amp;rsquo;s implementation on Windows, via Safari for Windows, is shoddy at best, and Google&amp;rsquo;s Chrome is a completely slimmed down version. By getting Microsoft&amp;rsquo;s support behind the engine you have an experienced team that has already developed for Windows.&lt;/p&gt;
@@ -276,10 +276,10 @@
     
     <item>
       <title>Steps to setting up a Windows Server 2003 Web Server on VirtualBox</title>
-      <link>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
+      <link>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</link>
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
       <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
 &lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
 &lt;h3&gt;Requirements&lt;/h3&gt;
@@ -350,10 +350,10 @@
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
 In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;

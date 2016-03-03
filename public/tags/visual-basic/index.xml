@@ -11,10 +11,10 @@
     
     <item>
       <title>Tic-Tac-Toe in Visual Basic 6</title>
-      <link>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-in-Visual-Basic-6/</link>
+      <link>http://jamesskemp.github.io/words/post/Tic-Tac-Toe-in-Visual-Basic-6/</link>
       <pubDate>Sat, 24 Jul 2010 12:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Tic-Tac-Toe-in-Visual-Basic-6/</guid>
       <description>&lt;p&gt;Back in December of 2003 I created a Tic-Tac-Toe application in Visual Basic 6.&lt;/p&gt;
 &lt;p&gt;Below is the code from MainWin.frm, which should be sufficient to create the application.&lt;/p&gt;
 &lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;

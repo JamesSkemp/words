@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>XML creation: Part 6 - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="XML creation: Part 6 - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/XML-creation-Part-06/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2007-12-30T13:00:00-06:00">
+        <meta itemprop="headline" content="XML creation: Part 6">
+        <meta itemprop="description" content="In this guide, I&#39;ll be creating an XML file to store the Playstation games I own, and ultimately make the XML file &#39;pretty&#39; for Web browsers. I&#39;ve done this in the past, with my vehicle gas XML document. In part six I&#39;ll be using XSLT to modify the display of the XML document&#39;s contents so that it looks like the CSS-based output. Last time ... Up until now we&#39;ve decided what we want to store, and how we want to store it, in an XML file.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/XML-creation-Part-06/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2007-12-30T13:00:00-06:00">Sun, Dec 30, 2007</time>
+          <h1 class="article-title">XML creation: Part 6</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+In this guide, I&#39;ll be creating an XML file to store the Playstation games I own, and ultimately make the XML file &#39;pretty&#39; for Web browsers. I&#39;ve done this in the past, with my <a href="http://jamesrskemp.net/vehicle_gas.xml" target="_blank">vehicle gas XML document</a>. 
+</p>
+<div class="note">
+<p>
+In part six I&#39;ll be using XSLT to modify the display of the XML document&#39;s contents so that it looks like the CSS-based output. 
+</p>
+</div>
+<h3>Last time ...</h3>
+<p>
+Up until now we&#39;ve decided what we want to store, and how we want to store it, in an XML file. 
+</p>
+<p>
+Then, in <a href="http://jamesskemp.github.io/words/words/post/XML-creation-Part-03.aspx">part three</a>, we actually added some of the data we want to store. 
+</p>
+<p>
+In <a href="http://jamesskemp.github.io/words/words/post/XML-creation-Part-04.aspx">part four</a>,&nbsp;we made the XML file valid by associating a DTD. 
+</p>
+<p>
+Finally, in <a href="http://jamesskemp.github.io/words/words/post/XML-creation-Part-05.aspx">part five</a> we started making the XML document pretty, in modern browsers, by using CSS. 
+</p>
+<h3>Overview</h3>
+<p>
+Now that we&#39;ve used CSS to stylize our XML document, and discovered some of the limitations of doing so, we&#39;ll use XSLT (Extensible Stylesheet Language Transformation)&nbsp;to modify the display. 
+</p>
+<p>
+As with the DTD and CSS creations, we&#39;ll need to make&nbsp;a modification to the XML document, as well as create the XSLT itself.&nbsp; 
+</p>
+<h3>The XML change</h3>
+<p>
+To begin, we&#39;ll need to remove the line we added last time, that points to the CSS file, and replace it with one that points to the XSLT file. 
+</p>
+<blockquote>
+    <p>
+    &lt;?xml-stylesheet type=&quot;text/xsl&quot; href=&quot;http://strivinglife.com/files/xml_creation/part6.xslt&quot;?&gt; 
+    </p>
+</blockquote>
+<p>
+Obviously, update the location accordingly. 
+</p>
+<h3>The XSLT</h3>
+<p>
+Let&#39;s begin by creating an empty file at the above location. 
+</p>
+<p>
+If we do so and load up our XML file, we&#39;ll see that this time there is an error when we try to display the file. This is because the XSLT must contain at minimum three lines. 
+</p>
+<blockquote>
+    <p>
+    &lt;?xml version=&quot;1.0&quot;?&gt;<br />
+    &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;&gt;<br />
+    &lt;/xsl:stylesheet&gt; 
+    </p>
+</blockquote>
+<p>
+If you try&nbsp;viewing the XML file now you&#39;ll be presented with the XML contents, one piece of text immediately after another. This is similar to what we saw before, when we used an empty CSS file. 
+</p>
+<p>
+This doesn&#39;t help us too much, so we&#39;ll try to tweak this a bit. 
+</p>
+<p>
+In order to do so, we&#39;ll add the following between the second and third lines of the above. 
+</p>
+<blockquote>
+    <p>
+    &lt;xsl:template match=&quot;/&quot;&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/title&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/system/console&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/system/version&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/own&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;/games/game/notes&quot; /&gt;<br />
+    &lt;/xsl:template&gt; 
+    </p>
+</blockquote>
+<p>
+If you view the XML file now, you&#39;ll see the information for the first game, MotorStorm. This somewhat helps, but not completely. 
+</p>
+<div class="note">
+<p>
+Note that this is the same as doing the following instead. 
+</p>
+<blockquote>
+    <p>
+    &lt;xsl:template match=&quot;games&quot;&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/title&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/system/console&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/system/version&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/own&quot; /&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:value-of select=&quot;game/notes&quot; /&gt;<br />
+    &lt;/xsl:template&gt; 
+    </p>
+</blockquote>
+</div>
+<p>
+What we really need to do is loop through each game. Of course, there is a way to do this. 
+</p>
+<blockquote>
+    <p>
+    &lt;xsl:template match=&quot;games&quot;&gt;<br />
+    &nbsp;&nbsp; &lt;xsl:for-each select=&quot;game&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&lt;xsl:value-of select=&quot;title&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;system/console&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;system/version&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;xsl:value-of select=&quot;sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;xsl:value-of select=&quot;own&quot; /&gt;<br />
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;notes&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;/xsl:for-each&gt;<br />
+    &lt;/xsl:template&gt; 
+    </p>
+</blockquote>
+<p>
+Updating and running with this, we see that we&#39;re now seeing what we got when we ran it with just the first two, and the last, lines. 
+</p>
+<p>
+Using the previous examples as a guide, we can get an idea of what we&#39;re doing. 
+</p>
+<p>
+First, we&#39;re using <strong>xsl:template match=&quot;games&quot;</strong> to jump to the &#39;games&#39; element. Next, <strong>for-each</strong> &#39;game&#39; element, we&#39;re displaying the value of the elements listed. 
+</p>
+<div class="tip">
+<p>
+Using /games/game/title, for instance, here, instead of title, would still give the value for the first instance of that element. 
+</p>
+</div>
+<p>
+However, once again we&#39;re without proper spacing. 
+</p>
+<p>
+First, we&#39;ll use divs and spans around the elements that we&#39;ll want to style. 
+</p>
+<blockquote>
+    <p>
+    &lt;?xml version=&quot;1.0&quot;?&gt;<br />
+    &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;&gt;<br />
+    &nbsp;&lt;xsl:template match=&quot;games&quot;&gt;<br />
+    &nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&lt;xsl:for-each select=&quot;game&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;&lt;xsl:value-of select=&quot;title&quot; /&gt;&lt;/span&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;system/console&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;system/version&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;own&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;notes&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&lt;/xsl:for-each&gt;<br />
+    &nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&lt;/xsl:template&gt;<br />
+    &lt;/xsl:stylesheet&gt;&nbsp; 
+    </p>
+</blockquote>
+<p>
+Refreshing our XML file, we see that some elements are beginning to become styled. We can complete the look by adding in the actual style information. 
+</p>
+<div class="tip">
+<p>
+You may need to use &amp;#160; for spacing. Try removing some from the below to see what happens with the display. 
+</p>
+</div>
+<blockquote>
+    <p>
+    &lt;?xml version=&quot;1.0&quot;?&gt;<br />
+    &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;&gt;<br />
+    &nbsp;&lt;xsl:template match=&quot;games&quot;&gt;<br />
+    &nbsp;&nbsp;&lt;div style=&quot;border:1px dashed #999;margin:.25em;padding:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&lt;xsl:for-each select=&quot;game&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin:1em 0;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span style=&quot;font-size:120%;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;title&quot; /&gt;&lt;/span&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;system/console&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;system/version&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;own&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;font-style:italic;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xsl:value-of select=&quot;notes&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&lt;/xsl:for-each&gt;<br />
+    &nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&lt;/xsl:template&gt;<br />
+    &lt;/xsl:stylesheet&gt;&nbsp; 
+    </p>
+</blockquote>
+<p>
+Finally, we&#39;ll add in the text that we were&nbsp;adding in with&nbsp;before/after in the CSS file. 
+</p>
+<blockquote>
+    <p>
+    &lt;?xml version=&quot;1.0&quot;?&gt;<br />
+    &lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; version=&quot;2.0&quot;&gt;<br />
+    &nbsp;&lt;xsl:template match=&quot;games&quot;&gt;<br />
+    &nbsp;&nbsp;&lt;html&gt;<br />
+    &nbsp;&nbsp;&lt;head&gt;<br />
+    &nbsp;&nbsp;&lt;/head&gt;<br />
+    &nbsp;&nbsp;&lt;body&gt;<br />
+    &nbsp;&nbsp;&lt;div style=&quot;border:1px dashed #999;margin:.25em;padding:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&lt;xsl:for-each select=&quot;game&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin:1em 0;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span style=&quot;font-size:120%;font-weight:bold;&quot;&gt;&lt;xsl:value-of select=&quot;title&quot; /&gt;&lt;/span&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;- &lt;xsl:value-of select=&quot;system/console&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&amp;#160;&lt;xsl:value-of select=&quot;system/version&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bought &lt;xsl:value-of select=&quot;purchase/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for $&lt;xsl:value-of select=&quot;purchase/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;at &lt;xsl:value-of select=&quot;purchase/place&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sold &lt;xsl:value-of select=&quot;sell/date&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for $&lt;xsl:value-of select=&quot;sell/price&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Still own? &lt;xsl:value-of select=&quot;own&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div style=&quot;font-style:italic;margin-left:1em;&quot;&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notes: &lt;xsl:value-of select=&quot;notes&quot; /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&lt;/xsl:for-each&gt;<br />
+    &nbsp;&nbsp;&lt;/div&gt;<br />
+    &nbsp;&nbsp;&lt;/body&gt;<br />
+    &nbsp;&nbsp;&lt;/html&gt;<br />
+    &nbsp;&lt;/xsl:template&gt;<br />
+    &lt;/xsl:stylesheet&gt; 
+    </p>
+</blockquote>
+<div class="note">
+<p>
+While IE 7 will display the elements&nbsp;as we&#39;d expect, without the html and body elements, Firefox 2 will not. 
+</p>
+</div>
+<p>
+At this point <a href="http://jamesskemp.github.io/words/files/xml_creation/part6.xml" target="_blank">the XML file</a> displays very similar in IE 7 as it does in Firefox, as well as how it displays in Firefox <a href="http://jamesskemp.github.io/words/files/xml_creation/part5.xml" target="_blank">with CSS</a> (with the exception of some slight padding, which we could nonetheless remove if needed).
+</p>
+<p>
+If you&#39;d like, you can <a href="http://jamesskemp.github.io/words/files/xml_creation/part6.xslt" target="_blank">view the XSLT document</a> using your browser, since it is also an XML file.
+</p>
+<h3>Where we&#39;re at</h3>
+<p>
+At this point we&#39;re at a very good place. We&#39;ve used XSLT to transform&nbsp;the display of our XML document&nbsp;so&nbsp;that it appears pleasing to the eye, in your standard,&nbsp;modern, browser. While a little more bulky than&nbsp;just using&nbsp;CSS alone, we can add important textual elements to the display, that would be difficult to do&nbsp;using simply CSS.&nbsp;&nbsp; 
+</p>
+<h3>What we&#39;re still missing</h3>
+<p>
+However, we&#39;re still missing some very important things; we need to be able to hide elements, like the sell information if the&nbsp;game hasn&#39;t been sold, as well as&nbsp;a proper sorting order. 
+</p>
+<p>
+In part 7 we&#39;ll go ahead and look at a new XSLT function that will allow us to sort the order of the displayed elements. I&#39;ll also add in some Playstation 2 games, so we can look at a more advanced display.
+</p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/xml" class="tag">xml</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fXML-creation-Part-06%2f&t=XML%20creation%3a%20Part%206" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fXML-creation-Part-06%2f&text=XML%20creation%3a%20Part%206&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fXML-creation-Part-06%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fXML-creation-Part-06%2f&title=XML%20creation%3a%20Part%206" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

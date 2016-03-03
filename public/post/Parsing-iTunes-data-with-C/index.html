@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>Parsing iTunes data with C# - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="Parsing iTunes data with C# - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/Parsing-iTunes-data-with-C/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2009-02-22T22:40:00-06:00">
+        <meta itemprop="headline" content="Parsing iTunes data with C#">
+        <meta itemprop="description" content="This application has since been updated. Read about the current version of iTunes Playlists to Xml. For better or worse, when I began setting up my iPod I opted to manually organize my iPod. In large part, this was because at the time I had a machine with a pretty small hard drive, and couldn&#39;t keep all of my music on it. However, with a new HP, I was able to store all my music on that computer, as well as back it up to a USB drive.">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/Parsing-iTunes-data-with-C/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2009-02-22T22:40:00-06:00">Sun, Feb 22, 2009</time>
+          <h1 class="article-title">Parsing iTunes data with C#</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><div class="warning">
+<p>
+This application has since been updated. <a href="http://jamesrskemp.com/apps/iTunesPlaylists2Xml/">Read about the current version of iTunes Playlists to Xml.</a>
+</p>
+</div>
+<p>
+For better or worse, when I began setting up my iPod I opted to manually organize my iPod. In large part, this was because at the time I had a machine with a pretty small hard drive, and couldn&#39;t keep all of my music on it.
+</p>
+<p>
+However, with a new HP, I was able to store all my music on that computer, as well as back it up to a USB drive.
+</p>
+<p>
+Unfortunately, that means that my playlists, ratings, play counts, etcetera, are stored solely on my iPod. Not a good situation to be in. If we could export our iPod library using iTunes, like we can for the library on our computer, it might not be so bad. However, that&#39;s not the case.
+</p>
+<p>
+I&#39;ve tried manually rating my music on my computer, every once in a while, but it&#39;s ended up a disaster.
+</p>
+<p>
+While I was digging into the iTunesDB, I found a post on how to use a custom library to query this file using C#. Further digging revealed that once you install iTunes you can use C# (etcetera) to access a COM, thereby getting results directly out of iTunes.
+</p>
+<p>
+But, it seems to be very resource intensive to query iTunes and pull information.
+</p>
+<p>
+I&#39;ve created a test application (called <strong>iTunes Application</strong>) that queries iTunes and outputs the following information;
+</p>
+<ul>
+    <li>
+    <div>
+    sources of the kind library or iPod
+    </div>
+    </li>
+    <li>
+    <div>
+    playlist names and kinds&nbsp;on those sources
+    </div>
+    </li>
+    <li>
+    <div>
+    the first 10 songs, with the number of stars, on any &quot;Music&quot; playlists
+    </div>
+    </li>
+</ul>
+<p>
+Because of the way it operates, if iTunes isn&#39;t started, it will be when the application begins. Outside of writing to a text box and label, no writing occurs, so the application should be pretty safe. Tested on Windows Vista Ultimate and Windows XP Home, with iTunes 8.0.2.20. .NET is required (probably 3.5).
+</p>
+<p>
+What I&#39;d like to do is have it allow you to pull the songs/ratings for any playlist, on any device. Then I can do a compare to determine what songs are different.
+</p>
+<p>
+<a href="http://jamesrskemp.com/applications/iTunesApplication.zip" title="iTunes Application pre-alpha">Download iTunes Application pre-alpha</a>.
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/ipod" class="tag">ipod</a> <a href="http://jamesskemp.github.io/words/tags/c#" class="tag">c#</a> <a href="http://jamesskemp.github.io/words/tags/windows" class="tag">windows</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fParsing-iTunes-data-with-C%2f&t=Parsing%20iTunes%20data%20with%20C%23" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fParsing-iTunes-data-with-C%2f&text=Parsing%20iTunes%20data%20with%20C%23&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fParsing-iTunes-data-with-C%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fParsing-iTunes-data-with-C%2f&title=Parsing%20iTunes%20data%20with%20C%23" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

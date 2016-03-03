@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Tue, Nov 6, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/W3C-extended-log-format-fields-and-IIS-60/">W3C extended log format fields and IIS 6.0</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/W3C-extended-log-format-fields-and-IIS-60/">W3C extended log format fields and IIS 6.0</a></div>
   </header>
   <div class="body">In a previous article, I gave an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0. This time, I&#39;d like to cover what each field provides, again in relation to IIS and a Web site, for statistical and debugging purposes. What fields are available Again, we&#39;ve covered what fields are available in the W3C extended log format in a previous article.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/W3C-extended-log-format-fields-and-IIS-60/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/W3C-extended-log-format-fields-and-IIS-60/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Nov 3, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/">A brief overview of IIS 6.0 and the W3C extended log format</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/">A brief overview of IIS 6.0 and the W3C extended log format</a></div>
   </header>
   <div class="body">In Microsoft Internet Information Services (IIS) 6.0, you can choose to use a number of different formats for your access logs. Access logs contain information about what files are requested, whether the request was successful or not. Of all the available formats, the World Wide Web Consortium (W3C) extended log file format is by far the most flexible format available, as you can select the information that you would like to log.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,7 +94,7 @@
       <article class="li">
   <header>
     <div class="date">Thu, Oct 25, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Log-Parser-SQL-query-syntax-high-level/">Log Parser SQL query syntax (high-level)</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Log-Parser-SQL-query-syntax-high-level/">Log Parser SQL query syntax (high-level)</a></div>
   </header>
   <div class="body"><p>
 The following is a high-level look at Log Parser&#39;s (version 2.2) SQL syntax. This does assume that you understand the specifics of each part, but for those that do not, this will be covered in a future tutorial. (This is more for my use.)&nbsp; <strong>Bolded</strong> elements are required for any valid query, whereas the other elements are optional. 
@@ -124,13 +124,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Sat, Oct 6, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/">Determining which IIS 6.0 Application Pool belongs to which application</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/">Determining which IIS 6.0 Application Pool belongs to which application</a></div>
   </header>
   <div class="body">In IIS 6.0, you can setup Application Pools for each of your sites. My knowledge of the exact benefits of this is somewhat lacking, but what I do understand is that these help applications (Web sites) stay within their own bounds, and prevent them from having a bad effect upon each other. For example, if one application is preforming poorly, as long as it&#39;s not a server-wide issue, the other sites on the server will be impacted minimally.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -140,13 +140,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Mon, Oct 1, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/">Log Parser script: Percent of status codes across all hits/requests</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/">Log Parser script: Percent of status codes across all hits/requests</a></div>
   </header>
   <div class="body">Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article. First, I assume that the below is put in the same directory as the logs you would like to parse.&nbsp; SELECT sc-status AS [HTTP Status Code], count() AS Requests INTO http_status_percent_graph-%date%.png FROM ex%date%.log GROUP BY [HTTP Status Code] ORDER BY Requests DESC Once you&#39;ve saved this, you can call the script like such, so long as you&#39;re already in the directory you saved the SQL file.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -156,13 +156,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Wed, Sep 19, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/">How to ensure that performance counters continue after a restart</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/">How to ensure that performance counters continue after a restart</a></div>
   </header>
   <div class="body">A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. A bit of research later, it appears that there is a way to have Windows restart the logging after a system restart. To enable this, it seems you just need to have the log stop after a certain amount of time (for example, after x hours, or x days).</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -172,13 +172,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Thu, Sep 13, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/">Using Log Parser to find users accounts used to log into an FTP site</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/">Using Log Parser to find users accounts used to log into an FTP site</a></div>
   </header>
   <div class="body">The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site. logparser &quot;select cs-uri-stem, count(cs-method) from ex*.log where cs-method like &#39;%USER&#39; group by cs-uri-stem order by count(cs-method),cs-uri-stem&quot;&nbsp; This assumes that you&#39;ve added Log Parser to your path, and that you&#39;re running this from your log file directory. This query will tell you what ip addresses successfully logged into your FTP site.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -188,13 +188,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Sun, Sep 9, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/">Log Parser queries to find 400 and 500 http status codes</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Log-Parser-queries-to-find-400-and-500-http-status-codes/">Log Parser queries to find 400 and 500 http status codes</a></div>
   </header>
   <div class="body">Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. In a previous article, I discussed how to use Log Parser to find 404 errors in IIS log files. This time, I&#39;ve made it a little broader, by giving some queries to find all 400 codes, and all 500 codes, through log files. There may be a better way to find these codes (instead of my IN statement), but a standard LIKE doesn&#39;t seem to work.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Log-Parser-queries-to-find-400-and-500-http-status-codes/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -204,13 +204,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Wed, Sep 5, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></div>
   </header>
   <div class="body">The follow covers how to compile BlogEngine.NET from the most recently available source code. This was originally posted to the Codeplex discussions for BlogEngine.NET, and will eventually get moved into the wiki. (Update Sept 8, 2007: Added to the BlogEngine.NET wiki, but not yet linked from other pages. Also made a minor change to step one.) Compiling source with Microsoft Visual C# 2005 Express Edition 1) Download the current source code from the Releases tab or the Source code tab on CodePlex.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -220,13 +220,13 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
       <article class="li">
   <header>
     <div class="date">Sun, Sep 2, 2007</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/">Is it really that simple - redirecting a single file on IIS</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/post/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/">Is it really that simple - redirecting a single file on IIS</a></div>
   </header>
   <div class="body">For various reasons, I've been working towards migrating from an Apache server to an IIS one for my sites. For Gavin's site, I couldn't get away with it, but I don't have any problem making things more difficult for myself :D However, this means that old URLs may not be working as they should. My experience with IIS is a working knowledge of it, and therefore I know what I need to know, picking up what I can.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/words/posts/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/post/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -261,25 +261,25 @@ Again, details about the specific parts, with&nbsp;real-world examples,&nbsp;wil
     </div>
     <div class="list-group">
       
-      <a href="http://jamesskemp.github.io/words/posts/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://jamesskemp.github.io/words/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
     </div>
   </div>

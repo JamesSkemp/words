@@ -11,10 +11,10 @@
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
@@ -41,10 +41,10 @@
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
@@ -101,10 +101,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist</title>
-      <link>http://jamesskemp.github.io/words/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</link>
+      <link>http://jamesskemp.github.io/words/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</link>
       <pubDate>Mon, 23 Mar 2009 20:40:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
       <description>&lt;p&gt;The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.&lt;/p&gt;
 &lt;p&gt;For this I&#39;ll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that&#39;s Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.&lt;/p&gt;
 &lt;ol&gt;
@@ -314,10 +314,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Subversion 1.5.3 and TortoiseSVN 1.5.4 released</title>
-      <link>http://jamesskemp.github.io/words/posts/Subversion-153-and-TortoiseSVN-154-released/</link>
+      <link>http://jamesskemp.github.io/words/post/Subversion-153-and-TortoiseSVN-154-released/</link>
       <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Subversion-153-and-TortoiseSVN-154-released/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Subversion-153-and-TortoiseSVN-154-released/</guid>
       <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
 &lt;p&gt;My install guides for &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
 &lt;div class=&#34;tip&#34;&gt;
@@ -328,10 +328,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Installing Subversion binaries for Apache 2.2.x</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Subversion-binaries-for-Apache-22x/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Subversion-binaries-for-Apache-22x/</link>
       <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Subversion-binaries-for-Apache-22x/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Subversion-binaries-for-Apache-22x/</guid>
       <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
 &lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
 &lt;h3&gt;Getting Subversion&lt;/h3&gt;
@@ -385,10 +385,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Install Apache 2.2.9 to Windows Vista (Ultimate)</title>
-      <link>http://jamesskemp.github.io/words/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
+      <link>http://jamesskemp.github.io/words/post/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
       <pubDate>Fri, 15 Aug 2008 16:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
       <description>&lt;p&gt;In this article I&#39;ll be covering an installation of Apache 2.2.9 to Windows Vista Ultimate. I&#39;ll be installing Apache so that you can run IIS as well (hence, Apache will be on a different port). You may want to do this if you want to run Subversion on Apache (as I do).&lt;/p&gt;
 &lt;h3&gt;Installing Apache 2.2&lt;/h3&gt;
 &lt;p&gt;Currently the &lt;a rel=&#34;external&#34; href=&#34;http://httpd.apache.org/&#34;&gt;Apache HTTP Server&lt;/a&gt; has both a 2.0 and 2.2 version. For new development, the 2.2 version is the recommended verison, as it contains many new features. If you currently have Apache 2.0 or 1.3, you may want to determine whether you still require those older versions (such as for module support).&lt;/p&gt;
@@ -421,10 +421,10 @@ pause&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Errata: Apache JMeter</title>
-      <link>http://jamesskemp.github.io/words/posts/Errata-Apache-JMeter/</link>
+      <link>http://jamesskemp.github.io/words/post/Errata-Apache-JMeter/</link>
       <pubDate>Thu, 24 Jul 2008 20:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Errata-Apache-JMeter/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Errata-Apache-JMeter/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 The following is errata for &lt;a href=&#34;http://www.amazon.com/gp/product/1847192955?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Apache JMeter&lt;/a&gt;, by Emily H. Halili, and has been submitted to Packt Publishing.
@@ -468,10 +468,10 @@ Page 116: The third and fourth links are the same.
     
     <item>
       <title>Configuring Apache for per-user pages</title>
-      <link>http://jamesskemp.github.io/words/posts/Configuring-Apache-for-per-user-pages/</link>
+      <link>http://jamesskemp.github.io/words/post/Configuring-Apache-for-per-user-pages/</link>
       <pubDate>Mon, 18 Jun 2007 20:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Configuring-Apache-for-per-user-pages/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Configuring-Apache-for-per-user-pages/</guid>
       <description>&lt;p&gt;
 In a previous post, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;I covered installing Apache 2.2.4 on Ubuntu&lt;/a&gt;. Unfortunately, if you want to create content for this server, you need to either use the root account, or change the permissions on the /usr/local/apache2/htdocs directory. Let&amp;#39;s keep things that way.
 &lt;/p&gt;
@@ -533,10 +533,10 @@ By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/
     
     <item>
       <title>Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4</title>
-      <link>http://jamesskemp.github.io/words/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</link>
+      <link>http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</link>
       <pubDate>Fri, 15 Jun 2007 20:51:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
       <description>&lt;p&gt;Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Downloaded 7.02 Developer Edition from Adobe (coldfusion-702-lin.bin) to src directory.&lt;!--adsense--&gt;&lt;/p&gt;
@@ -584,10 +584,10 @@ By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/
     
     <item>
       <title>Quickie: Install Apache 2.2.4 on Ubuntu</title>
-      <link>http://jamesskemp.github.io/words/posts/Quickie-Install-Apache-224-on-Ubuntu/</link>
+      <link>http://jamesskemp.github.io/words/post/Quickie-Install-Apache-224-on-Ubuntu/</link>
       <pubDate>Fri, 15 Jun 2007 19:04:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Quickie-Install-Apache-224-on-Ubuntu/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Quickie-Install-Apache-224-on-Ubuntu/</guid>
       <description>&lt;p&gt;
 May not be the best, but ... here&amp;#39;s how I installed Apache 2.2.4 on Ubuntu (7.04), based on David Winter&amp;#39;s guide &lt;a rel=&#34;nofollow&#34; href=&#34;http://davidwinter.me.uk/articles/2006/10/17/building-apache-22-from-source-for-ubuntu-dapper/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Building Apache 2.2 from source for Ubuntu Dapper&lt;/em&gt;&lt;/a&gt;.
 &lt;/p&gt;
@@ -694,10 +694,10 @@ Now the question I have is, how would I go about removing Apache 2.2.4?  Researc
     
     <item>
       <title>Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</link>
       <pubDate>Sat, 17 Mar 2007 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-224-to-a-Windows-based-computer-locally-Part-1/</guid>
       <description>&lt;p&gt;
 In February 2006, I wrote an &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/16/45/installing-apache-to-a-windows-based-computer-locally/&#34;&gt;article covering the installation of Apache 1.3.34&lt;/a&gt;, which can be found on my site, StrivingLife.net. In August 2006, I covered &lt;a href=&#34;http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/&#34;&gt;the installation of Apache 2.0.59&lt;/a&gt;. This time, I&amp;#39;ll be covering the installation of the current version of Apache 2.2.x, Apache 2.2.4, to a Windows XP machine, for the purpose of local development.
 &lt;/p&gt;
@@ -879,10 +879,10 @@ Questions or comments can be left below, or emailed to me directly (email at the
     
     <item>
       <title>Upgrading PHP (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)</title>
-      <link>http://jamesskemp.github.io/words/posts/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</link>
+      <link>http://jamesskemp.github.io/words/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</link>
       <pubDate>Sun, 26 Nov 2006 17:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</guid>
       <description>&lt;p&gt;In this article, we&#39;ll be upgrading PHP on our local, Windows, Web server. In previous guides we installed PHP 4.4.2 as well as PHP 5.1.4, both on the same machine, with the ability to switch as we like. However, we&#39;ve yet to cover how to upgrade either installation (and upgrading is definitely a need).&lt;/p&gt;
 &lt;p&gt;At the time of this writing, the current versions of PHP are 4.4.4 and 5.2.0, for the 4.x and 5.x versions, respectively.&lt;/p&gt;
 &lt;p&gt;We&#39;ll be going over the upgrade for each version separately, so you can simply skip to which version you&#39;re currently using.&lt;/p&gt;
@@ -922,10 +922,10 @@ session.save_path
     
     <item>
       <title>Is it past time for Microsoft to open IIS?</title>
-      <link>http://jamesskemp.github.io/words/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</link>
+      <link>http://jamesskemp.github.io/words/post/Is-it-past-time-for-Microsoft-to-open-IIS/</link>
       <pubDate>Sat, 23 Sep 2006 18:42:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
       <description>&lt;p&gt;There&#39;s a reason PHP and Apache are so popular on the Web. It&#39;s the same reason that most beginner&#39;s, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With &lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;the right guide&lt;/a&gt;, a user can be up and running with Apache and PHP in a couple of hours.&lt;/p&gt;
 &lt;p&gt;Unfortunately, Microsoft&#39;s IIS (Internet Information Services) is something that few home-grown Web users have the honour of using. Instead, they have to wait until they take a formal class, or enter into a profession that allows them access to this technology. For a long time, the same could be said about MySQL/PostgreSQL and Microsoft SQL Server (respectively). But, no longer is that true.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -945,10 +945,10 @@ session.save_path
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
       <pubDate>Mon, 28 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
       <description>&lt;p&gt;In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we&#39;re going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.&lt;/p&gt;
 &lt;h3&gt;What is a batch file?&lt;/h3&gt;
 &lt;p&gt;A batch file is basically a way to run a number of Windows prompts at once. In this particular case, we&#39;ll be using it to stop the Web server, copy, rename, and delete, files, and then start the necessary services up once again.&lt;!--adsense--&gt;&lt;/p&gt;
@@ -1031,10 +1031,10 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
-      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <link>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
 &lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
 &lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;

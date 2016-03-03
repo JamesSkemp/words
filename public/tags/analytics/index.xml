@@ -11,10 +11,10 @@
     
     <item>
       <title>Browser environments for testing</title>
-      <link>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</link>
+      <link>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</link>
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Browser-environments-for-testing/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Browser-environments-for-testing/</guid>
       <description>&lt;p&gt;
 In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
 &lt;/p&gt;
@@ -163,10 +163,10 @@ What do you think? What do you develop for?
     
     <item>
       <title>Wowsa - what happened to Google Analytics? (November 2008 edition)</title>
-      <link>http://jamesskemp.github.io/words/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
+      <link>http://jamesskemp.github.io/words/post/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</link>
       <pubDate>Tue, 11 Nov 2008 21:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Wowsa-what-happened-to-Google-Analytics-%28November-2008-edition%29/</guid>
       <description>&lt;p&gt;
 Google has done it again.
 &lt;/p&gt;
@@ -190,10 +190,10 @@ Very nice Google. Now if I can just get the invite to type Adsense with Analytic
     
     <item>
       <title>Log Parser script: Percent of status codes across all hits/requests</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</link>
       <pubDate>Mon, 01 Oct 2007 23:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
@@ -255,10 +255,10 @@ Example of the status code chart
     
     <item>
       <title>How to ensure that performance counters continue after a restart</title>
-      <link>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
+      <link>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</link>
       <pubDate>Wed, 19 Sep 2007 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
+      <guid>http://jamesskemp.github.io/words/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/</guid>
       <description>&lt;p&gt;
 A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. 
 &lt;/p&gt;
@@ -332,10 +332,10 @@ Add/remove as necessary, for your logs.
     
     <item>
       <title>Using Log Parser to find users accounts used to log into an FTP site</title>
-      <link>http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
+      <link>http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</link>
       <pubDate>Thu, 13 Sep 2007 20:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/</guid>
       <description>&lt;p&gt;
 The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site.
 &lt;/p&gt;
@@ -371,10 +371,10 @@ You can find other Log Parser articles on my site by viewing other items tagged 
     
     <item>
       <title>Log Parser queries to find 400 and 500 http status codes</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-Parser-queries-to-find-400-and-500-http-status-codes/</link>
       <pubDate>Sun, 09 Sep 2007 18:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-Parser-queries-to-find-400-and-500-http-status-codes/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-Parser-queries-to-find-400-and-500-http-status-codes/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
@@ -413,10 +413,10 @@ Added the correct parameter to display all date in one big &amp;#39;table&amp;#3
     
     <item>
       <title>Find 404 errors using Log Parser</title>
-      <link>http://jamesskemp.github.io/words/posts/Find-404-errors-using-Log-Parser/</link>
+      <link>http://jamesskemp.github.io/words/post/Find-404-errors-using-Log-Parser/</link>
       <pubDate>Sat, 04 Aug 2007 13:54:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Find-404-errors-using-Log-Parser/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Find-404-errors-using-Log-Parser/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.
@@ -456,10 +456,10 @@ Updated both codes to export to &lt;strong&gt;404report.txt&lt;/strong&gt;, inst
     
     <item>
       <title>Log file analysis of our Windows-based, Apache, Web sites</title>
-      <link>http://jamesskemp.github.io/words/posts/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</link>
+      <link>http://jamesskemp.github.io/words/post/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</link>
       <pubDate>Mon, 20 Feb 2006 20:58:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Log-file-analysis-of-our-Windows-based-Apache-Web-sites/</guid>
       <description>&lt;p&gt;
 In our previous articles, we walked through installing Apache to a Windows XP home computer.&amp;nbsp; This time, we&amp;#39;ll be setting up our log files for analysis, and installing a way to view the log file information.
 &lt;/p&gt;
@@ -623,10 +623,10 @@ June 4, 2006: You may also find WebLog Expert Lite (currently 3.6) to also be of
     
     <item>
       <title>StrivingLife.net network popularity</title>
-      <link>http://jamesskemp.github.io/words/posts/StrivingLifenet-network-popularity/</link>
+      <link>http://jamesskemp.github.io/words/post/StrivingLifenet-network-popularity/</link>
       <pubDate>Fri, 07 Oct 2005 20:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/StrivingLifenet-network-popularity/</guid>
+      <guid>http://jamesskemp.github.io/words/post/StrivingLifenet-network-popularity/</guid>
       <description>&lt;p&gt;
 As I said this morning, site popularity can be determined by how many people are viewing the content, and how many people are using the content.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -849,10 +849,10 @@ And therein lies the message: make a site for you, and strive for what you deem 
     
     <item>
       <title>Network popularity</title>
-      <link>http://jamesskemp.github.io/words/posts/Network-popularity/</link>
+      <link>http://jamesskemp.github.io/words/post/Network-popularity/</link>
       <pubDate>Fri, 07 Oct 2005 07:34:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Network-popularity/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Network-popularity/</guid>
       <description>&lt;p&gt;
 On Wednesday I said I was going to talk about how popular the various sites are.  I didn&amp;#39;t get to that on Thursday, so I&amp;#39;ll be discussing that today.&lt;!--adsense--&gt;
 &lt;/p&gt;

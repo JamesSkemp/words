@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.15" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
+
+    
+    <title>PHP Forum Software Showdown Part 3: Simple Machines - James Skemp&#39;s Test Hugo-Generated Site</title>
+    <meta property='og:title' content="PHP Forum Software Showdown Part 3: Simple Machines - James Skemp&#39;s Test Hugo-Generated Site">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/">
+    
+    
+
+  </head>
+
+  <body>
+
+    <header class="site">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+          </div>
+
+          <div id="navbar" class="collapse navbar-collapse">
+            
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <div class="site">
+      <div class="container">
+
+
+
+<div class="single">
+
+  <div class="row">
+    <div class="col-md-8">
+
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="http://jamesskemp.github.io/words/"/>
+        <meta itemprop="dateModified" content="2006-11-21T18:00:00-06:00">
+        <meta itemprop="headline" content="PHP Forum Software Showdown Part 3: Simple Machines">
+        <meta itemprop="description" content="
+Curiously, in late-September 2006, Simple Machines Forum turned three (it had been three years since 1.0 beta 1). That&#39;s curious because the current stable version of Simple Machines is 1.0.9, and there&#39;s a 1.1 RC3 out as well (as of late-October 2006).
+
+
+In this article, we&#39;ll be installing Simple Machines version 1.0.9, so we can compare it to the other PHP forums that we&#39;ve installed, or will be installing.
+
+">
+        <meta itemprop="url" content="http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="http://jamesskemp.github.io/words/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="http://jamesskemp.github.io/words/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="James Skemp&#39;s Test Hugo-Generated Site">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="">
+        </div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2006-11-21T18:00:00-06:00">Tue, Nov 21, 2006</time>
+          <h1 class="article-title">PHP Forum Software Showdown Part 3: Simple Machines</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>
+Curiously, in late-September 2006, <a href="http://simplemachines.org/">Simple Machines Forum</a> turned three (it had been three years since 1.0 beta 1). That&#39;s curious because the current stable version of Simple Machines is 1.0.9, and there&#39;s a 1.1 RC3 out as well (as of late-October 2006).
+</p>
+<p>
+In this article, we&#39;ll be installing Simple Machines version 1.0.9, so we can compare it to the other PHP forums that we&#39;ve installed, or will be installing.
+</p>
+
+<p><h4>File and folder size</h4>
+<p>
+The zip file for Vanilla 1.0.1 weighs in at just over 1.1 MB. Wow. Of the six forums we review, this is the largest. However, this is for the full install. There&#39;s also update and upgrade versions, as well as two other compressed formats (tar.gz and tar.bz2). Unzipped, we&#39;re looking at just over 3 MB of file.<!--adsense-->
+</p>
+<h4>Requirements</h4>
+<p>
+Simple Machines requires PHP 4.1.0+ and MySQL 3.23.28+. Compared to the other forums we&#39;ll be going over, these requirements are pretty low (especially the MySQL requirement). There are a number of PHP settings that must be turned on or off, for Simple Machines to function. Bossy, aren&#39;t they? If you&#39;ve followed along, our server will have all of these options set as they require.
+</p>
+<h4>Installing on our local Web server</h4>
+<p>
+Unlike past articles, for these forum reviews we&#39;re going to create the necessary users and databases using the command line interface of MySQL. If you&#39;re going to be installing these forums to a remote system, just create the user(s) and database(s) as usual (and that goes for if you&#39;re installing it locally as well).
+</p>
+<h4>Creating the user and database via the command-line</h4>
+<p>
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+</p>
+<blockquote>
+    <p>
+     mysql -h localhost -u root -p
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be prompted to enter your password, which you&#39;ll have already setup. Enter your password and press Enter.
+</p>
+<p>
+At this point, you&#39;re logged into MySQL. Now, we can create our database, create our user, and grant the user privilege to modify the database we created.
+</p>
+<p>
+Since we&#39;re installing Simple Machines, we&#39;ll create a database called SimpleMachines.
+</p>
+<blockquote>
+    <p>
+     create database SimpleMachines;
+    </p>
+</blockquote>
+<p>
+At this point, you&#39;ll be told that &ldquo;Query OK, 1 row affected&rdquo;, followed by the execution time.
+</p>
+<p>
+Now, we&#39;ll create a user with privileges to access the database. Note that other than the bold text, this command is case-insensitive. Also, you may want to change &#39;<strong>simplemachines</strong>&#39; to something different (as this is the user&#39;s password).
+</p>
+<p>
+Before you enter this, look it over, and then read the paragraph following, for an explanation.
+</p>
+<blockquote>
+    <p>
+     GRANT select, insert, update, delete, index, alter, create, drop<br />
+    ON <strong>SimpleMachines</strong>.<em><br />
+    TO <strong>SimpleMachines</strong> IDENTIFIED BY &#39;<strong>simplemachines</strong>&#39;;
+    </p>
+</blockquote>
+<p>
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>SimpleMachines</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>SimpleMachines</strong> IDENTIFIED BY &#39;<strong>simplemachines</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+</p>
+<p>
+If the query is OK, enter the following command.
+</p>
+<blockquote>
+    <p>
+     UPDATE mysql.user SET Password = OLD<em>PASSWORD(&#39;simplemachines&#39;) WHERE User = &#39;SimpleMachines&#39;;
+    </p>
+</blockquote>
+<p>
+If this query is OK, and it works, type <strong>exit</strong>, and press Enter. Now attempt to login to the SimpleMachines user. Once you&#39;ve logged in, enter the following command.
+</p>
+<blockquote>
+    <p>
+     show databases;
+    </p>
+</blockquote>
+<p>
+You should be given an ASCII table that shows there&#39;s a database of simplemachines. Yippee.
+</p>
+<p>
+Now, let&#39;s install Simple Machines.
+</p>
+<!--nextpage-->
+<h4>Installing Simple Machines</h4>
+<p>
+First, unzip the downloaded zip file. The files are not within a directory in the zip file, so make sure you create a folder to dump these into. I&#39;ll be using one called SimpleMachines.<!--adsense-->
+</p>
+<p>
+Since we&#39;re installing locally, we don&#39;t have to worry about permissions. So, once Simple Machines has been decompressed, navigate to the Simple Machines root folder in your browser. Since you haven&#39;t setup Simple Machines yet, it will redirect you to the installer, which is located at, in my install, <a href="http://localhost/projects/simplemachines/install.php">http://localhost/projects/simplemachines/install.php</a>.
+</p>
+<p>
+You&#39;ll be prompted for Basic and MySQL Server settings. I left the Basic Settings as they were. MySQL Server Settings have been started, we just need to confirm and finish them.
+</p>
+<blockquote>
+    <p>
+    MySQL server name: localhost<br />
+    MySQL username: SimpleMachines<br />
+    MySQL password: simplemachines<br />
+    MySQL database name: SimpleMachines<br />
+    MySQL table prefix: smf</em>
+    </p>
+</blockquote>
+<p>
+Once you proceed, you should now be able to create your account. As before, I used the same username and password as I used in the previous forum installs.
+</p>
+<blockquote>
+    <p>
+    Your username: admin<br />
+    Password: cbe15b<br />
+    Password: cbe15b<br />
+    Email Address: strivinglife@gmail.com
+    </p>
+</blockquote>
+<p>
+You&#39;ll also need to enter in the MySQL database password, which is the same as you used before (simplemachines in my case). With that, finish up. You should be told that the installation process is complete, and you can now delete the install file (possibly using the installer). You&#39;ll be automatically logged in. If install.php still exists, you&#39;ll be told so.
+</p>
+<!--nextpage-->
+<h4>How&#39;s the code look?</h4>
+<p>
+Unfortunately, Simple Machines is very table heavy. Combined with the fact that they don&#39;t have summaries, the code isn&#39;t the cleanest. In addition, links use ids that start with numbers, which is not that good of a thing.<!--adsense-->
+</p>
+<p>
+Inside, the code looks pretty darn good.
+</p>
+<h4>Default layout and administrative interface</h4>
+<p>
+Once installed, Simple Machines setups up one category and one topic (with one post). That&#39;s nice.
+</p>
+<p>
+Unfortunately, the look is very, very, boxy. Some people like this, but I like things that flow a little more. There is another theme installed by default, which looks much better.
+</p>
+<h4>Upgrading</h4>
+<p>
+Checking for updates is quite easy from the interface. From the looks of it, upgrading is just as easy, since there&#39;s a separate file. Wow.
+</p>
+<h4>The temporary conclusion</h4>
+<p>
+I&#39;ve used Simple Machines before on Fractovia. I don&#39;t really care for it, since it feels and looks clunky. On the bright side, no configuration files to manually update. Thus far, three reviews down, I&#39;m siding heavily with Vanilla.
+</p>
+<p>
+But, before we dig any further, we&#39;ll need to install some more forums.
+</p>
+<p>
+Stay tuned for the next <a href="http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx">PHP Forum</a> review.
+</p>
+<p>
+<a href="http://jamesskemp.github.io/words/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
+</p></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="http://jamesskemp.github.io/words/tags/php" class="tag">php</a> <a href="http://jamesskemp.github.io/words/tags/mysql" class="tag">mysql</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fPHP-Forum-Software-Showdown-Part-3-Simple-Machines%2f&t=PHP%20Forum%20Software%20Showdown%20Part%203%3a%20Simple%20Machines" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fPHP-Forum-Software-Showdown-Part-3-Simple-Machines%2f&text=PHP%20Forum%20Software%20Showdown%20Part%203%3a%20Simple%20Machines&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fPHP-Forum-Software-Showdown-Part-3-Simple-Machines%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=http%3a%2f%2fjamesskemp.github.io%2fwords%2fpost%2fPHP-Forum-Software-Showdown-Part-3-Simple-Machines%2f&title=PHP%20Forum%20Software%20Showdown%20Part%203%3a%20Simple%20Machines" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-4">
+      
+<aside class="site">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">LatestPosts</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      
+      <a href="http://jamesskemp.github.io/words/post/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      
+    </div>
+  </div>
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">category</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
+      
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
+      
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">tag</h2>
+    </div>
+    <div class="list-group">
+      
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
+      
+      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
+      
+    </div>
+  </div>
+  
+
+</aside>
+
+
+    </div>
+  </div>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site">
+      <div class="container">
+        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
+        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
+        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+
+  </body>
+</html>
+

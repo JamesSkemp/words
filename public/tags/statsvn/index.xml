@@ -11,10 +11,10 @@
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/posts/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
