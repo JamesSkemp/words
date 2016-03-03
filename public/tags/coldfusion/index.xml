@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coldfusion on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/coldfusion/</link>
+    <link>http://jamesskemp.github.io/words/tags/coldfusion/</link>
     <description>Recent content in Coldfusion on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Oct 2009 21:28:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/coldfusion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/coldfusion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Two simple ColdFusion calendar outputs</title>
-      <link>http://jamesskemp.github.io/blog/posts/Two-simple-ColdFusion-calendar-outputs/</link>
+      <link>http://jamesskemp.github.io/words/posts/Two-simple-ColdFusion-calendar-outputs/</link>
       <pubDate>Mon, 26 Oct 2009 21:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Two-simple-ColdFusion-calendar-outputs/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Two-simple-ColdFusion-calendar-outputs/</guid>
       <description>&lt;p&gt;Here&#39;s&amp;nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality).&lt;/p&gt;
 &lt;h3&gt;Tables-based&lt;/h3&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
@@ -116,10 +116,10 @@
     
     <item>
       <title>ColdFusion: cfscript to determine if variable exists and output html-escaped</title>
-      <link>http://jamesskemp.github.io/blog/posts/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/</link>
+      <link>http://jamesskemp.github.io/words/posts/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/</link>
       <pubDate>Thu, 08 Oct 2009 20:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/</guid>
       <description>&lt;p&gt;There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfscript&amp;gt;
     // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value.
@@ -142,10 +142,10 @@
     
     <item>
       <title>Collection down after opening - resolution</title>
-      <link>http://jamesskemp.github.io/blog/posts/Verity-Collection-down-after-opening-resolution/</link>
+      <link>http://jamesskemp.github.io/words/posts/Verity-Collection-down-after-opening-resolution/</link>
       <pubDate>Mon, 16 Jun 2008 13:55:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Verity-Collection-down-after-opening-resolution/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Verity-Collection-down-after-opening-resolution/</guid>
       <description>&lt;p&gt;We&#39;ve been running into an issue, off and on, with ColdFusion MX 7.0.2 having issues with Verity collections.&lt;/p&gt;
 &lt;p&gt;During one of our nightly jobs, two Verity collections are purged, through ColdFusion, and then re-built.&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;Sometimes this will bring the collection down, resulting in a message like the following.&lt;/p&gt;
@@ -168,10 +168,10 @@
     
     <item>
       <title>Regular Expression tester - ColdFusion</title>
-      <link>http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ColdFusion/</link>
+      <link>http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ColdFusion/</link>
       <pubDate>Thu, 10 Jan 2008 22:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ColdFusion/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ColdFusion/</guid>
       <description>&lt;p&gt;I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently &#39;running&#39; on ColdFusion MX 6.1 and ColdFusion 7.0.&lt;/p&gt;
 &lt;p&gt;It&#39;s a pity to not make it available, since it&#39;s such an easy template ...&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;!--- --- ---
@@ -245,12 +245,12 @@ MODIFICATION HISTORY:
     
     <item>
       <title>Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4</title>
-      <link>http://jamesskemp.github.io/blog/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</link>
+      <link>http://jamesskemp.github.io/words/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</link>
       <pubDate>Fri, 15 Jun 2007 20:51:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
       <description>&lt;p&gt;Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Downloaded 7.02 Developer Edition from Adobe (coldfusion-702-lin.bin) to src directory.&lt;!--adsense--&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cp coldfusion-702-lin.bin coldfusion.bak&lt;br /&gt;cat coldfusion.bak | sed &#34;s/export LD_ASSUME_KERNEL/#xport LD_ASSUME_KERNEL/&#34; &amp;gt; coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo sh coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
@@ -296,10 +296,10 @@ MODIFICATION HISTORY:
     
     <item>
       <title>ColdFusion MX 7 hosting, for free?</title>
-      <link>http://jamesskemp.github.io/blog/posts/ColdFusion-MX-7-hosting-for-free/</link>
+      <link>http://jamesskemp.github.io/words/posts/ColdFusion-MX-7-hosting-for-free/</link>
       <pubDate>Sun, 12 Nov 2006 12:21:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/ColdFusion-MX-7-hosting-for-free/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/ColdFusion-MX-7-hosting-for-free/</guid>
       <description>&lt;p&gt;
 On this site, I have a number of articles discussing how to setup ColdFusion MX, both &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/&#34;&gt;version 6.1&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;version 7.0&lt;/a&gt;. These tutorials will get you up and running on your own computer, but there&amp;#39;s no information on how to continue on to a real, live, host.
 &lt;/p&gt;
@@ -329,10 +329,10 @@ Know of another host that charges a small fee for setting up a development serve
     
     <item>
       <title>Is it past time for Microsoft to open IIS?</title>
-      <link>http://jamesskemp.github.io/blog/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</link>
+      <link>http://jamesskemp.github.io/words/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</link>
       <pubDate>Sat, 23 Sep 2006 18:42:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
       <description>&lt;p&gt;There&#39;s a reason PHP and Apache are so popular on the Web. It&#39;s the same reason that most beginner&#39;s, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With &lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;the right guide&lt;/a&gt;, a user can be up and running with Apache and PHP in a couple of hours.&lt;/p&gt;
 &lt;p&gt;Unfortunately, Microsoft&#39;s IIS (Internet Information Services) is something that few home-grown Web users have the honour of using. Instead, they have to wait until they take a formal class, or enter into a profession that allows them access to this technology. For a long time, the same could be said about MySQL/PostgreSQL and Microsoft SQL Server (respectively). But, no longer is that true.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -352,10 +352,10 @@ Know of another host that charges a small fee for setting up a development serve
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
       <pubDate>Mon, 28 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
       <description>&lt;p&gt;In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we&#39;re going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.&lt;/p&gt;
 &lt;h3&gt;What is a batch file?&lt;/h3&gt;
 &lt;p&gt;A batch file is basically a way to run a number of Windows prompts at once. In this particular case, we&#39;ll be using it to stop the Web server, copy, rename, and delete, files, and then start the necessary services up once again.&lt;!--adsense--&gt;&lt;/p&gt;
@@ -431,19 +431,19 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;h3&gt;Moving forward&lt;/h3&gt;
 &lt;p&gt;I&#39;ve created twelve (12) batch files in a matter similar to the above, and zipped them up for download. Feel free to modify them as necessary, for your own use.&lt;/p&gt;
 &lt;p&gt;Keep in mind that these are very basic batch files. It&#39;s possible to clean these up significantly, with the full range of commands at your disposal. For now, however, this will get you going.&lt;/p&gt;
-&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://jamesskemp.github.io/blog/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
+&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
-&lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
+&lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
 &lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
 &lt;p&gt;Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)&lt;/p&gt;
 &lt;ul&gt;
@@ -483,7 +483,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;p&gt;Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it&#39;s not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.&lt;/p&gt;
 &lt;p&gt;This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.&lt;/p&gt;
 &lt;h3&gt;Hooking up PHP 4.4.2&lt;/h3&gt;
-&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
+&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
 &lt;p&gt;Since we&#39;ve already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it&#39;s just a matter of hooking up Apache 2.0.x to recognize it.&lt;/p&gt;
 &lt;p&gt;First, we&#39;ll need to make sure we&#39;ve got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.&lt;/p&gt;
 &lt;p&gt;Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.&lt;/p&gt;
@@ -551,19 +551,19 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;p&gt;So, let the hardest part begin.&lt;/p&gt;
 &lt;h3&gt;Connecting to MySQL and PostgreSQL&lt;/h3&gt;
 &lt;p&gt;Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you&#39;re all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it&#39;s own requests (via the php.ini file).&lt;/p&gt;
-&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
+&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
 &lt;h3&gt;Coming in Part 4 ...&lt;/h3&gt;
 &lt;p&gt;In Part 4, I&#39;ll be going over how to create the batch files that we&#39;ll need to work with the httpd.conf and php.ini files that we&#39;ve created. While I could detail it here, better to just put it in it&#39;s own article/post, as that makes things much easier (if not for you, then at least for me ;)).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 2</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/</link>
       <pubDate>Fri, 25 Aug 2006 18:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we&#39;ll be continuing in our quest by installing ColdFusion MX 6.1 and 7.&lt;/p&gt;
 
 &lt;p&gt;&lt;h3&gt;Assumptions&lt;/h3&gt;
@@ -596,7 +596,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;blockquote&gt;
 &lt;p&gt;#JRun/ColdFusion MX Web Server Configuration File&lt;br /&gt;#Thu Feb 23 19:08:04 GMT-06:00 2006&lt;br /&gt;1=Apache,C:/Program Files/Apache Group/Apache/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;1.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;1.cfmx=true,&amp;lt;null&amp;gt;&lt;br /&gt;2=Apache,C:/Program Files/Apache Group/Apache2/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;2.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;2.cfmx=true,&amp;lt;null&amp;gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Save and close wsconfig.properties. Now open the &amp;lsquo;2&amp;rsquo; folder. There&amp;rsquo;s a mod_jrun.so file here, but as I said earlier, this won&amp;rsquo;t work with Apache 2.0.x. So, we&amp;rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&amp;rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (&lt;a title=&#34;mod_jrun20.so&#34; rel=&#34;attachment&#34; href=&#34;http://jamesskemp.github.io/blog/files/2006/08/mod_jrun20.zip&#34;&gt;mod_jrun20.zip&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Save and close wsconfig.properties. Now open the &amp;lsquo;2&amp;rsquo; folder. There&amp;rsquo;s a mod_jrun.so file here, but as I said earlier, this won&amp;rsquo;t work with Apache 2.0.x. So, we&amp;rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&amp;rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (&lt;a title=&#34;mod_jrun20.so&#34; rel=&#34;attachment&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/08/mod_jrun20.zip&#34;&gt;mod_jrun20.zip&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Save all necessary files and start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 6.1 Administrator Login.&lt;/p&gt;
 &lt;p&gt;Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you&amp;rsquo;re ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.&lt;/p&gt;
 &lt;!--nextpage--&gt;
@@ -627,17 +627,17 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;p&gt;Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you&amp;rsquo;ll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.&lt;/p&gt;
 &lt;p&gt;Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you&amp;rsquo;re ready to begin working on ColdFusion on Apache 2.0.x.&lt;/p&gt;
 &lt;h3&gt;In the next part &amp;hellip;&lt;/h3&gt;
-&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx&#34;&gt;Part 3&lt;/a&gt;, we&amp;rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx&#34;&gt;Part 3&lt;/a&gt;, we&amp;rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Wed, 12 Jul 2006 20:16:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;
 In a previous guide, we installed &lt;a href=&#34;http://strivinglife.com/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1&lt;/a&gt;. In this guide, we&amp;#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2.
 &lt;/p&gt;
@@ -695,10 +695,10 @@ Assuming everything checks out, you&amp;#39;ve safely upgraded ColdFusion MX 7.0
     
     <item>
       <title>XML parsing with PHP (and ColdFusion) and /ROOT</title>
-      <link>http://jamesskemp.github.io/blog/posts/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/</link>
+      <link>http://jamesskemp.github.io/words/posts/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/</link>
       <pubDate>Thu, 20 Apr 2006 20:19:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/</guid>
       <description>&lt;p&gt;Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn&#39;t going to be possible, since the extension&#39;s XML isn&#39;t quite valid.&lt;/p&gt;
 &lt;p&gt;I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&amp;nbsp; So, I&#39;ll be attempting to reset my password once again, in the hope that it was just a two day problem ...&lt;/p&gt;
 &lt;p&gt;I don&#39;t have much confidence in that, however, so I&#39;ll be working on the XML parser (for PHP, and then sharing how I went about creating it), and looking at doing something in ColdFusion as well.&amp;nbsp; CF has native support, for 6.1 and 7, so it should just be a matter of writing the code.&lt;/p&gt;
@@ -707,10 +707,10 @@ Assuming everything checks out, you&amp;#39;ve safely upgraded ColdFusion MX 7.0
     
     <item>
       <title>Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Fri, 31 Mar 2006 00:21:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 &lt;em&gt;Note: For information on updating to ColdFusion MX 7.0.2, see &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;
@@ -864,10 +864,10 @@ Have fun, and stay safe.
     
     <item>
       <title>Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sun, 19 Mar 2006 06:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;Having already &lt;a href=&#34;http://strivinglife.com/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;added MySQL support for ColdFusion MX&lt;/a&gt;, it&#39;s time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we&#39;ll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we&#39;ll need to install some additional features to ColdFusion MX.&lt;/p&gt;
 &lt;p&gt;(This guide assumes you&#39;ve already &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed PostgreSQL&lt;/a&gt;.)&lt;/p&gt;
 &lt;h3&gt;Downloading and installing the JDBC Driver&lt;/h3&gt;
@@ -918,10 +918,10 @@ CREATE UNIQUE INDEX TestDatabase_TestColumn1_TestColumn2_uidx ON TestDatabase (T
     
     <item>
       <title>Adding MySQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sat, 18 Mar 2006 08:55:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;Until now, we&#39;ve yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can&#39;t in ColdFusion. Until now.&lt;/p&gt;
 &lt;p&gt;This time, we&#39;ll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we&#39;ve made before, this installation is going to be fairly quick.&lt;/p&gt;
 &lt;h3&gt;Setting up MySQL database and user&lt;/h3&gt;

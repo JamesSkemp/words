@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Openssl on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/openssl/</link>
+    <link>http://jamesskemp.github.io/words/tags/openssl/</link>
     <description>Recent content in Openssl on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Dec 2010 20:42:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/openssl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/openssl/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;

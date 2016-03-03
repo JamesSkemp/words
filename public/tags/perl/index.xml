@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Perl on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/perl/</link>
+    <link>http://jamesskemp.github.io/words/tags/perl/</link>
     <description>Recent content in Perl on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Aug 2006 20:13:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/perl/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/perl/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 1</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1/</link>
       <pubDate>Tue, 22 Aug 2006 20:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1/</guid>
       <description>&lt;p&gt;
-In a previous article, I described &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;how to install Apache 1.3.34&lt;/a&gt; to an average home computer, running Windows XP. Since then, only Apache 1.3.35 has been released that would allow me to update my guide, even though the current 1.3.x version is 1.3.37. There&amp;#39;s also a desire on my part to use Apache 2.0, even though my host has not yet begun using them.
+In a previous article, I described &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;how to install Apache 1.3.34&lt;/a&gt; to an average home computer, running Windows XP. Since then, only Apache 1.3.35 has been released that would allow me to update my guide, even though the current 1.3.x version is 1.3.37. There&amp;#39;s also a desire on my part to use Apache 2.0, even though my host has not yet begun using them.
 &lt;/p&gt;
 &lt;p&gt;
-For that reason, I&amp;#39;ll be walking through a second installation of Apache on a home computer, so that both Apache 1.3.x and Apache 2.0.x can run together (if not at the same time, then at least switchable, as I detailed how to do &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;with PHP&lt;/a&gt;).
+For that reason, I&amp;#39;ll be walking through a second installation of Apache on a home computer, so that both Apache 1.3.x and Apache 2.0.x can run together (if not at the same time, then at least switchable, as I detailed how to do &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;with PHP&lt;/a&gt;).
 &lt;/p&gt;
 &lt;p&gt;
 The environment I&amp;rsquo;ll be using is as follows.
@@ -41,7 +41,7 @@ The first thing to do is to download Apache 2.0 from &lt;a href=&#34;http://www.
 Since we&amp;#39;re installing to Windows, we want to download the file apache_2.0.59-win32-x86-no_ssl.msi. This file is under 4.5 MB in size. If you&amp;#39;ve been installing other software with me, then you&amp;#39;ll want to download this to the same location as your other server-related downloads.
 &lt;/p&gt;
 &lt;p&gt;
-By the way, if you haven&amp;#39;t been following along, or it&amp;#39;s been a while since you have, you may want to review the &amp;#39;Initial steps before installation area in my &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-to-a-Windows-based-computer%2c-locally.aspx&#34;&gt;Apache 1.3.34 install guide&lt;/a&gt;, as there&amp;#39;s a number of steps you should do while you&amp;#39;re waiting for the download to complete (update your anti-virus software, defragment your hard drive, and determine where you want your site to reside).
+By the way, if you haven&amp;#39;t been following along, or it&amp;#39;s been a while since you have, you may want to review the &amp;#39;Initial steps before installation area in my &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-to-a-Windows-based-computer%2c-locally.aspx&#34;&gt;Apache 1.3.34 install guide&lt;/a&gt;, as there&amp;#39;s a number of steps you should do while you&amp;#39;re waiting for the download to complete (update your anti-virus software, defragment your hard drive, and determine where you want your site to reside).
 &lt;/p&gt;
 &lt;p&gt;
 Once the download has finished, and you&amp;#39;ve reviewed these steps, as necessary, it&amp;#39;s time to start the installation.
@@ -218,7 +218,7 @@ You&amp;#39;ve now got two files that you can easily run to switch between Apach
 &lt;/p&gt;
 &lt;h4&gt;The Perl installation&lt;/h4&gt;
 &lt;p&gt;
-At this point, you&amp;#39;ve probably already got ActivePerl installed (but if you don&amp;#39;t, time to check out the first four paragraphs in the &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Perl-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;previous guide covering the ActivePerl installation&lt;/a&gt;).
+At this point, you&amp;#39;ve probably already got ActivePerl installed (but if you don&amp;#39;t, time to check out the first four paragraphs in the &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Perl-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;previous guide covering the ActivePerl installation&lt;/a&gt;).
 &lt;/p&gt;
 &lt;p&gt;
 Now that you&amp;#39;ve got ActivePerl installed, we&amp;#39;re going to hook it up with Apache 2.
@@ -340,20 +340,20 @@ If you&amp;#39;ve successfully installed mod_perl, then backup your httpd.conf f
 &lt;/p&gt;
 &lt;h4&gt;In the next part ...&lt;/h4&gt;
 &lt;p&gt;
-In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;part two&lt;/a&gt;, we&amp;#39;ll be covering PHP 4 and 5, as well as ColdFusion MX 6.1 and 7. We&amp;#39;ll also be going over MySQL and PostgreSQL.
+In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;part two&lt;/a&gt;, we&amp;#39;ll be covering PHP 4 and 5, as well as ColdFusion MX 6.1 and 7. We&amp;#39;ll also be going over MySQL and PostgreSQL.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Upgrading (our local install of) ActivePerl</title>
-      <link>http://jamesskemp.github.io/blog/posts/Upgrading-%28our-local-install-of%29-ActivePerl/</link>
+      <link>http://jamesskemp.github.io/words/posts/Upgrading-%28our-local-install-of%29-ActivePerl/</link>
       <pubDate>Fri, 26 May 2006 18:36:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Upgrading-%28our-local-install-of%29-ActivePerl/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Upgrading-%28our-local-install-of%29-ActivePerl/</guid>
       <description>&lt;p&gt;In a &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Perl-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;previous guide&lt;/a&gt;, we walked through installing ActivePerl on a local machine. This time, we&#39;ll be upgrading ActivePerl. For this guide, we&#39;ll be upgrading from ActivePerl 5.8.7.815 to 5.8.8.817. However, since the installation requires the uninstallation of previous versions of ActivePerl, we&#39;ll simply be installing a new version of ActivePerl. If you have not installed Perl before, you can skip ahead to &#34;Installing Perl&#34; below. Please note that this guide will work equally well for the installation of, or upgrade to, ActivePerl 5.8.8.819.&lt;/p&gt;
 &lt;h3&gt;Uninstalling Perl&lt;/h3&gt;
 &lt;p&gt;To upgrade Perl, we&#39;ll first need to uninstall Perl. Head over to the Windows Control Panel and Add or Remove Programs. Select ActivePerl 5.8.7 Build 815 and Remove the program.&lt;/p&gt;
@@ -392,10 +392,10 @@ In &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache
     
     <item>
       <title>Installing mod_perl on a local Windows-based, Apache server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-mod_perl-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-mod_perl-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sat, 08 Apr 2006 08:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-mod_perl-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-mod_perl-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;
 The home page of mod_perl gives a great explanation of what mod_perl is, and what it provides. We&amp;#39;ll be installing mod_perl simply because it will help us install other functionality as time goes by.
 &lt;/p&gt;
@@ -463,17 +463,17 @@ Additionally, load up &lt;a href=&#34;http://localhost/phpinfo.php&#34;&gt;http:
 You&amp;#39;ve now successfully installed mod_perl.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/blog/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A local, Apache Web server, on a Windows XP computer</title>
-      <link>http://jamesskemp.github.io/blog/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
+      <link>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
       <pubDate>Mon, 27 Feb 2006 03:23:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
       <description>&lt;p&gt;My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I&#39;ve decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I&#39;ve opted to use it as the core, instead of IIS, or the like.&lt;/p&gt;
 &lt;p&gt;I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case. I do have copies of the versions I&#39;ve installed below, and would be happy to provide those copies that no longer exist elsewhere; just ask.&lt;/p&gt;
 &lt;h3&gt;Our local Web server uses the following technology.&lt;/h3&gt;
@@ -487,23 +487,23 @@ You&amp;#39;ve now successfully installed mod_perl.
 &lt;/li&gt;
 &lt;li&gt;Apache 2.0.59 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;.htaccess file 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Perl&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Perl-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;ActivePerl 5.8.7.815&lt;/a&gt;, ActivePerl 5.8.8.817&lt;/li&gt;
 &lt;/ul&gt;
@@ -520,7 +520,7 @@ You&amp;#39;ve now successfully installed mod_perl.
 &lt;li&gt;&lt;strong&gt;PHP&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-PHP-(442-to-444-and-514-to-520).aspx&#34;&gt;Upgrading PHP 4.x and/or PHP 5.x&lt;/a&gt; (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Python-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;Changing our PHP directory name/location&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -537,7 +537,7 @@ You&amp;#39;ve now successfully installed mod_perl.
 &lt;li&gt;MySQL 4.1.18: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.net/wordpress/?p=69&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/2006/06/20/154/upgrading-phpmyadmin-270-pl2-to-281-on-a-local-windows-based-apache-server/&#34;&gt;phpMyAdmin 2.8.1&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-Administrator-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;MySQL Administrator 1.1.9&lt;/a&gt;&lt;/li&gt;
@@ -546,44 +546,44 @@ You&amp;#39;ve now successfully installed mod_perl.
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ColdFusion&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Versioning control&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Subversion, TortoiseSVN and Dreamweaver 8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -614,10 +614,10 @@ You&amp;#39;ve now successfully installed mod_perl.
     
     <item>
       <title>Installing Perl on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Perl-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Perl-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Tue, 21 Feb 2006 19:12:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Perl-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Perl-on-a-local-Windows-based-Apache-server/</guid>
       <description>
 
 &lt;p&gt;&lt;div class=&#34;note&#34;&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asp.Net Mvc on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/asp/index.net-mvc/</link>
+    <link>http://jamesskemp.github.io/words/tags/asp/index.net-mvc/</link>
     <description>Recent content in Asp.Net Mvc on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Aug 2011 14:04:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Professional ASP.NET MVC 3</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-MVC-3/</link>
       <pubDate>Sat, 20 Aug 2011 14:04:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-3/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-MVC-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt;, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.&lt;/p&gt;
 &lt;/div&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>mvc-mini-profiler for users in a particular role</title>
-      <link>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
+      <link>http://jamesskemp.github.io/words/posts/mvc-mini-profiler-for-users-in-a-particular-role/</link>
       <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
       <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
 &lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
 &lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
@@ -71,10 +71,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Second Web site ported over to ASP.NET MVC 2</title>
-      <link>http://jamesskemp.github.io/blog/posts/Second-Web-site-ported-over-to-ASPNET-MVC-2/</link>
+      <link>http://jamesskemp.github.io/words/posts/Second-Web-site-ported-over-to-ASPNET-MVC-2/</link>
       <pubDate>Sun, 23 May 2010 17:27:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Second-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Second-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
       <description>&lt;p&gt;After &lt;a href=&#34;http://strivinglife.com/words/post/First-Web-site-ported-over-to-ASPNET-MVC-2.aspx&#34;&gt;converting one Web site over to ASP.NET MVC 2 yesterday&lt;/a&gt;, I ported my second one today.&lt;/p&gt;
 &lt;p&gt;The first Web site was originally just a bunch of static HTML pages, so it was fairly easy to move over. This one, &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;, gets all of its data from a collection of XML files. Using LINQ to XML the files are read and parsed out to the page, using a Repeater control.&lt;/p&gt;
 &lt;p&gt;Unfortunately, when I was creating the site I had run into issues with that Repeater control not acting as I would have liked. Luckily, now that I&#39;ve moved to ASP.NET MVC those issues have been eliminated.&lt;/p&gt;
@@ -94,10 +94,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>First Web site ported over to ASP.NET MVC 2</title>
-      <link>http://jamesskemp.github.io/blog/posts/First-Web-site-ported-over-to-ASPNET-MVC-2/</link>
+      <link>http://jamesskemp.github.io/words/posts/First-Web-site-ported-over-to-ASPNET-MVC-2/</link>
       <pubDate>Sun, 23 May 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/First-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/First-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
       <description>&lt;p&gt;On Saturday (when I&#39;m actually writing this, but I can&#39;t have 3 posts on one day, after my posting history the last handful of months) I finally ported a Web site over to ASP.NET MVC.&lt;/p&gt;
 &lt;p&gt;The existing Web site was for a client who just needs a simple, static, Web site, with a half dozen areas for content. However, if they were given the ability to directly post content to the site - news, specials, etcetera - I believe they might. There&#39;s also a weekly update that I perform that I wanted to simplify&amp;nbsp;- not that it takes much time now - but that I didn&#39;t really do in this port, but now at least can.&lt;/p&gt;
 &lt;p&gt;There were perhaps 6 or 7 static HTML files, each&amp;nbsp;of which, save one, was in its own sub-directory. On IIS 7.5, the application pool serving the site used approximately 6188 K of memory. Approximately. I used a mix of Visual Studio 2008 and Notepad to update the site, with Visual Studio 2010 being swapped in for the former the day after the final release. FTP was used to move the changed files to the production server.&lt;/p&gt;
@@ -111,10 +111,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
-      <link>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <link>http://jamesskemp.github.io/words/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
       <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
       <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
 &lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
 &lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
@@ -138,10 +138,10 @@ protected void Application_EndRequest()
     
     <item>
       <title>Review: Professional ASP.NET MVC 1.0</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-10/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-MVC-10/</link>
       <pubDate>Sun, 18 Oct 2009 09:26:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Professional-ASPNET-MVC-10/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Professional-ASPNET-MVC-10/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/0470384611?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 1.0&lt;/a&gt;, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie.&lt;/p&gt;
 &lt;p&gt;I received a free copy of this book for review purposes from Amazon Vine, but was planning on purchasing the book nonetheless (I just had the good fortune to get a copy before they were all taken).&lt;/p&gt;

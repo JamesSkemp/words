@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Json on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/json/</link>
+    <link>http://jamesskemp.github.io/words/tags/json/</link>
     <description>Recent content in Json on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Jul 2010 14:57:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/json/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Function to Parse a Microsoft JSON DateTime returned from a WCF service in JavaScript</title>
-      <link>http://jamesskemp.github.io/blog/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</link>
+      <link>http://jamesskemp.github.io/words/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</link>
       <pubDate>Sun, 04 Jul 2010 14:57:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Parsing-Microsoft-JSON-DateTime-from-WCF-service/</guid>
       <description>&lt;p&gt;When a DateTime is converted to JSON in a WCF Web service (WebHttp in this particular case) it&#39;s semi-difficult to convert that to something we can use when we return the date to a client via JavaScript. For example:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;&#34;LastPlayed&#34;:&#34;\/Date(1278187099000-0400)\/&#34;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;After almost an hour of research and goofing around with this, I&#39;ve come up with the following, which seems to work just fine on Internet Explorer 8, Firefox 3.6, and Chrome 5.0.&lt;/p&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
-      <link>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <link>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
       <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;

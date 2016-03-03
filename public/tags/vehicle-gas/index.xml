@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vehicle Gas on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/vehicle-gas/</link>
+    <link>http://jamesskemp.github.io/words/tags/vehicle-gas/</link>
     <description>Recent content in Vehicle Gas on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Jun 2010 22:20:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/vehicle-gas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/vehicle-gas/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
-      <link>http://jamesskemp.github.io/blog/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <link>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
 &lt;/div&gt;

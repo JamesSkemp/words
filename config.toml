@@ -1,4 +1,4 @@
-baseurl = "http://jamesskemp.github.io/blog/"
+baseurl = "http://jamesskemp.github.io/words/"
 languageCode = "en-us"
 title = "James Skemp's Test Hugo-Generated Site"
 theme = "beg"

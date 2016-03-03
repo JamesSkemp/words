@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/blog/css/styles.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/blog/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/blog//index.xml">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
 
     
     <title>Tutorials / Guides - James Skemp&#39;s Test Hugo-Generated Site</title>
@@ -19,7 +19,7 @@
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="http://jamesskemp.github.io/blog/categories/tutorials-/-guides/">
+    <meta property="og:url" content="http://jamesskemp.github.io/words/categories/tutorials-/-guides/">
     
     
 
@@ -37,7 +37,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/blog/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
           </div>
 
           <div id="navbar" class="collapse navbar-collapse">
@@ -62,13 +62,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, May 4, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></div>
   </header>
   <div class="body">I&#39;ve posted code in ColdFusion and JavaScript for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. RegularExpression.aspx &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt; &nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt; &nbsp;&nbsp;form { &nbsp;&nbsp;&nbsp;margin:0; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;} &nbsp;&nbsp;form label, .label_kludge { &nbsp;&nbsp;&nbsp;display:block; &nbsp;&nbsp;&nbsp;float:left; &nbsp;&nbsp;&nbsp;width:180px; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;&nbsp;margin:5px 0 0; &nbsp;&nbsp;&nbsp;text-align:right; &nbsp;&nbsp;} &nbsp;&nbsp;form input, form textarea, form select { &nbsp;&nbsp;&nbsp;width:200px; &nbsp;&nbsp;&nbsp;margin:5px 0 0 10px; &nbsp;&nbsp;} &nbsp;&nbsp;textarea { &nbsp;&nbsp;&nbsp;overflow:auto; &nbsp;&nbsp;} &nbsp;&nbsp;form br { &nbsp;&nbsp;&nbsp;clear:left; &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &nbsp;&lt;h1&gt;ASP.NET 3.5 Regular Expression Tester&lt;/h1&gt; &nbsp;&nbsp;&nbsp; &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;div&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:Label ID=&quot;lbl_RegularExpression&quot; runat=&quot;server&quot; Text=&quot;Regular Expression:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;RegularExpression&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:TextBox ID=&quot;RegularExpression&quot; runat=&quot;server&quot; Width=&quot;350&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator1&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;RegularExpression&quot; Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a regular expression.&quot; SetFocusOnError=&quot;True&quot;&gt;You &nbsp;&nbsp;must enter a regular expression.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_TestString&quot; runat=&quot;server&quot; Text=&quot;Test String:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;TestString&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:TextBox ID=&quot;TestString&quot; runat=&quot;server&quot; Width=&quot;350px&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator2&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a string to test the regular expression against.&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;TestString&quot;&gt;You &nbsp;&nbsp;must enter a string to test the regular expression against.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_CaseSensitive&quot; runat=&quot;server&quot; Text=&quot;Case Sensitive:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;CaseSensitive&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:CheckBox ID=&quot;CaseSensitive&quot; runat=&quot;server&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;span class=&quot;label_kludge&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;asp:Button ID=&quot;btn_Test&quot; &nbsp;&nbsp;&nbsp;runat=&quot;server&quot; Text=&quot;Test&quot; onclick=&quot;btn_Test_Click&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_Results&quot; runat=&quot;server&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/div&gt; &nbsp;&nbsp;&nbsp; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; RegularExpression.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.Text.RegularExpressions; public partial class _Default : System.Web.UI.Page { &nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e) { &nbsp;&nbsp;if (this.IsPostBack) { &nbsp;&nbsp;&nbsp;Boolean MatchCheck; &nbsp;&nbsp;&nbsp;if (this.CaseSensitive.Checked) { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text); &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text, RegexOptions.IgnoreCase); &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;if (MatchCheck) { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: match found&quot;; &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: no match found&quot;; &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; } &nbsp;protected void btn_Test_Click(object sender, EventArgs e) {&nbsp; &nbsp;} } See it in action!</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ASPNET/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ASPNET/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -78,13 +78,13 @@
       <article class="li">
   <header>
     <div class="date">Sat, Mar 22, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/">Adding .NET functionality to Windows Vista Home Premium Internet Information Services</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/">Adding .NET functionality to Windows Vista Home Premium Internet Information Services</a></div>
   </header>
   <div class="body">I had previously covered how to install IIS 7 on Windows Vista Home Premium. This time I&#39;ll be briefly covering what you need to enable ASP.NET as well. As before, you&#39;ll want to select Control Panel from the Start menu, then click on the Programs link. Next, click on Turn Windows features on or off. Expand Internet Information Services, followed by the World Wide Web Services and Application Development Features. Since we want to be able to run ASP.NET applications, we&#39;ll need to check the ASP.NET checkbox.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -94,13 +94,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, Mar 21, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/">How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/">How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium</a></div>
   </header>
   <div class="body">This guide covers Windows Vista Home Premium SP1, and may differ for other versions. I&#39;ll also only be covering the basic, default, installation. A guide covering the addition of additional features, like .NET capabilities, may be released as well. While limited, Windows Vista Home Premium allows Internet Information Services (IIS) 7 to be installed with little fuss, using the Control Panel interface. First, select Start &gt; Control Panel. Next click on the Programs item, followed by Turn Windows features on or off.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -110,13 +110,13 @@
       <article class="li">
   <header>
     <div class="date">Tue, Mar 4, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/HP-Pavilion-a6360t-clean-up/">HP Pavilion a6360t clean-up</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/HP-Pavilion-a6360t-clean-up/">HP Pavilion a6360t clean-up</a></div>
   </header>
   <div class="body">With a new HP Pavilion a6360t, a number of things needed to be done to clean the machine up, from it&#39;s default factory setup. Uninstall Norton Internet Security (there&#39;s an uninstall option through the program&#39;s Start menu). After a restart, I still needed to go back and delete the empty directory from the Start menu. Uninstall My HP Games through the Control Panel. Each one needed to be selected individually. Uninstalled Yahoo!</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/HP-Pavilion-a6360t-clean-up/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/HP-Pavilion-a6360t-clean-up/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -126,13 +126,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Feb 24, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Tips-on-using-the-Microsoft-Access-Upsizing-Wizard/">Tips on using the Microsoft Access Upsizing Wizard</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Tips-on-using-the-Microsoft-Access-Upsizing-Wizard/">Tips on using the Microsoft Access Upsizing Wizard</a></div>
   </header>
   <div class="body">In no particular order, here are some tips if you&#39;re using the Microsoft Access Upsizing Wizard to convert your Access database to SQL (SQL Express 2005, in my case). The tips Make sure you&#39;ve downloaded the Microsoft SQL Server Management Studio Express tools as well. When connecting with the above, make note of the server you&#39;re connecting to; you&#39;ll need this for later. For example, PAVA620N\SQLEXPRESS (that&#39;s computer name \ instance name of SQL Server).</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Tips-on-using-the-Microsoft-Access-Upsizing-Wizard/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Tips-on-using-the-Microsoft-Access-Upsizing-Wizard/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -142,13 +142,13 @@
       <article class="li">
   <header>
     <div class="date">Sun, Feb 24, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Using-Xml4Ssp-13-Rev-1/">Using Xml4Ssp 1.3 Rev 1</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Using-Xml4Ssp-13-Rev-1/">Using Xml4Ssp 1.3 Rev 1</a></div>
   </header>
   <div class="body">Xml4Ssp is a Windows XML generator for SlideShowPro. While the program still needs some work, it&#39;s pretty usable as it is. Since there&#39;s no real documentation, I&#39;ll be covering how I ended up using it to generate my latest gallery. Starting folder structure I began with the following folder structure: casio_images &nbsp;Pearl FullsizeImage Images Thumb The only folder that contained content was the FullsizeImage directory, in which I dumped my JPG originals.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Using-Xml4Ssp-13-Rev-1/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Using-Xml4Ssp-13-Rev-1/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -158,13 +158,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Jan 21, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-JavaScript/">Regular Expression tester - JavaScript</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-JavaScript/">Regular Expression tester - JavaScript</a></div>
   </header>
   <div class="body">In a previous post, I posted the code I used for a ColdFusion regular expression tester. This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ... &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type="text/css"&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type="text/javascript"&gt; &nbsp;function RemoveHTML(TextContent) { &nbsp;&nbsp;var str = ''; &nbsp;&nbsp;str = TextContent; &nbsp;&nbsp;str = str.replace(/&lt;/g, "&amp;lt;"); &nbsp;&nbsp; &nbsp;&nbsp;return str; &nbsp;} &nbsp;function TestExpression() { &nbsp;&nbsp;var Expression = ''; &nbsp;&nbsp;var ExpressionParameters = 'gm'; &nbsp;&nbsp;var ExpressionText = ''; &nbsp;&nbsp;try { &nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML = ''; &nbsp;&nbsp;&nbsp;if (document.getElementById('InputExpression').value != '' &amp;&amp; document.getElementById('InputText').value != '') { &nbsp;&nbsp;&nbsp;&nbsp;// TODO better check and error writing - use span with _s &nbsp;&nbsp;&nbsp;&nbsp;if (document.getElementById('CheckCase').checked) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionParameters += 'i'; &nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;&nbsp;Expression = document.getElementById('InputExpression').value; &nbsp;&nbsp;&nbsp;&nbsp;ExpressionText = document.getElementById('InputText').value; &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters); &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText); &nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionTest == true) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = '&lt;p&gt;The following results were found for your search:&lt;/p&gt;'; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Testing it appears to run it, so ...</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-JavaScript/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-JavaScript/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -174,13 +174,13 @@
       <article class="li">
   <header>
     <div class="date">Mon, Jan 21, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Making-oXygen-XML-Editor-91-portable/">Making oXygen XML Editor (9.1) portable</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Making-oXygen-XML-Editor-91-portable/">Making oXygen XML Editor (9.1) portable</a></div>
   </header>
   <div class="body">The below information is correct for version 9.1. Comments on other versions&nbsp;are appreciated. With flash drives becoming more and relevant, it&#39;s always good to find programs that can be run on these powerful drives. &lt;oXygen/&gt; XML Editor is one such program. Making &lt;oXygen/&gt; portable On the official site, there&#39;s a post regarding making &lt;oXygen/&gt; portable. However, what does it really involve? Easily enough, it doesn&#39;t involve much more than is stated in the post.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Making-oXygen-XML-Editor-91-portable/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Making-oXygen-XML-Editor-91-portable/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -190,13 +190,13 @@
       <article class="li">
   <header>
     <div class="date">Fri, Jan 18, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Warhawk-Game-Mode-Top-25000s-Analysis-20080118/">Warhawk: Game Mode: Top 25,000(s) Analysis - 1/18/2008</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Warhawk-Game-Mode-Top-25000s-Analysis-20080118/">Warhawk: Game Mode: Top 25,000(s) Analysis - 1/18/2008</a></div>
   </header>
   <div class="body">I&#39;m a statistics kind of guy. I like numbers, since they&#39;re logical. I also like trends, and all that. So, here&#39;s a look at the current trends for what it takes to get into the top 25k, 50k, 75k, 100k, 150k, 200k, and 300k in the various game modes in Warhawk. Undoubtedly I&#39;ll have another post like this next month, around the same time. With over 417,000 players, total, these equate to around the top 6%, 12.5%, 18.75%, 25%, 37.5%, 50%, and 75%.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Warhawk-Game-Mode-Top-25000s-Analysis-20080118/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Warhawk-Game-Mode-Top-25000s-Analysis-20080118/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -206,13 +206,13 @@
       <article class="li">
   <header>
     <div class="date">Thu, Jan 10, 2008</div>
-    <div class="title"><a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ColdFusion/">Regular Expression tester - ColdFusion</a></div>
+    <div class="title"><a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ColdFusion/">Regular Expression tester - ColdFusion</a></div>
   </header>
   <div class="body">I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0. It's a pity to not make it available, since it's such an easy template ... &lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.</div>
 
   
   <footer>
-    <a href="http://jamesskemp.github.io/blog/posts/Regular-Expression-tester-ColdFusion/" class="btn btn-default">Read More…</a>
+    <a href="http://jamesskemp.github.io/words/posts/Regular-Expression-tester-ColdFusion/" class="btn btn-default">Read More…</a>
   </footer>
   
 </article>
@@ -224,11 +224,11 @@
   <ul class="pager">
 
     
-    <li><a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides/page/8">Previous</a></li>
+    <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides/page/8">Previous</a></li>
     
 
     
-    <li><a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides/page/10">Next</a></li>
+    <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides/page/10">Next</a></li>
     
 
   </ul>
@@ -247,25 +247,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://jamesskemp.github.io/blog/posts/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
+      <a href="http://jamesskemp.github.io/words/posts/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
+      <a href="http://jamesskemp.github.io/words/posts/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
+      <a href="http://jamesskemp.github.io/words/posts/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
+      <a href="http://jamesskemp.github.io/words/posts/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
+      <a href="http://jamesskemp.github.io/words/posts/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
+      <a href="http://jamesskemp.github.io/words/posts/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
+      <a href="http://jamesskemp.github.io/words/posts/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
+      <a href="http://jamesskemp.github.io/words/posts/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
+      <a href="http://jamesskemp.github.io/words/posts/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
       
-      <a href="http://jamesskemp.github.io/blog/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
+      <a href="http://jamesskemp.github.io/words/posts/Review-Panasonic-ER-GB60-K-Precision-Beard-and-Hair-Trimmer-for-FaceHair/" class="list-group-item">Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair</a>
       
     </div>
   </div>
@@ -277,25 +277,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://jamesskemp.github.io/blog/categories/software" class="list-group-item">software</a>
+      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/article" class="list-group-item">article</a>
+      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/strivinglife" class="list-group-item">strivinglife</a>
+      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/philosophy" class="list-group-item">philosophy</a>
+      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
+      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
+      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/internet" class="list-group-item">internet</a>
+      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/gaming" class="list-group-item">gaming</a>
+      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
       
-      <a href="http://jamesskemp.github.io/blog/categories/technology" class="list-group-item">technology</a>
+      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
       
     </div>
   </div>
@@ -306,25 +306,25 @@
     </div>
     <div class="list-group">
       
-      <a href="http://jamesskemp.github.io/blog/tags/review" class="list-group-item">review</a>
+      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/.net" class="list-group-item">.net</a>
+      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/xml" class="list-group-item">xml</a>
+      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
+      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/c" class="list-group-item">c#</a>
+      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/apache" class="list-group-item">apache</a>
+      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/playstation" class="list-group-item">playstation</a>
+      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/microsoft" class="list-group-item">microsoft</a>
+      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/waking-life" class="list-group-item">waking-life</a>
+      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
       
-      <a href="http://jamesskemp.github.io/blog/tags/ipod" class="list-group-item">ipod</a>
+      <a href="http://jamesskemp.github.io/words/tags/iis" class="list-group-item">iis</a>
       
     </div>
   </div>

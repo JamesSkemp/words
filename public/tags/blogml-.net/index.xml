@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogml .Net on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/blogml-/index.net/</link>
+    <link>http://jamesskemp.github.io/words/tags/blogml-/index.net/</link>
     <description>Recent content in Blogml .Net on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Feb 2011 07:18:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/blogml-.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/blogml-.net/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Excellent news - the BlogML project is not dead.</title>
-      <link>http://jamesskemp.github.io/blog/posts/Excellent-news-the-BlogML-project-is-not-dead/</link>
+      <link>http://jamesskemp.github.io/words/posts/Excellent-news-the-BlogML-project-is-not-dead/</link>
       <pubDate>Fri, 11 Feb 2011 07:18:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Excellent-news-the-BlogML-project-is-not-dead/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Excellent-news-the-BlogML-project-is-not-dead/</guid>
       <description>&lt;p&gt;While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January.&lt;/p&gt;
 &lt;p&gt;My StackOverflow question &#34;&lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/4234852/is-the-blogml-project-dead-and-what-are-some-alternatives/&#34;&gt;Is the BlogML project dead, and what are some alternatives?&lt;/a&gt;&#34; was answered yesterday by the project originator (one of the great things about StackOverflow, and the entire network of sites).&lt;/p&gt;
 &lt;ul&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Netbeans Ide on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/netbeans-ide/</link>
+    <link>http://jamesskemp.github.io/words/tags/netbeans-ide/</link>
     <description>Recent content in Netbeans Ide on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Aug 2010 10:28:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/netbeans-ide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/netbeans-ide/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Personal NetBeans IDE 6.9.1 setting tweaks</title>
-      <link>http://jamesskemp.github.io/blog/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
+      <link>http://jamesskemp.github.io/words/posts/Personal-NetBeans-IDE-691-setting-tweaks/</link>
       <pubDate>Sun, 29 Aug 2010 10:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
       <description>&lt;p&gt;&lt;p&gt;For my own personal reference, I&amp;rsquo;ve made the following tweaks to the default install of &lt;a rel=&#34;external&#34; href=&#34;http://netbeans.org/&#34;&gt;NetBeans&lt;/a&gt; IDE 6.9.1.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Tools

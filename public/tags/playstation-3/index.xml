@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Playstation 3 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/playstation-3/</link>
+    <link>http://jamesskemp.github.io/words/tags/playstation-3/</link>
     <description>Recent content in Playstation 3 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Feb 2014 19:43:31 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/playstation-3/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/playstation-3/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: PlayStation 3 EX-02 Next Gen Bluetooth Headset with Faceplates</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-PlayStation-3-EX-02-Next-Gen-Bluetooth-Headset-with-Faceplates/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-PlayStation-3-EX-02-Next-Gen-Bluetooth-Headset-with-Faceplates/</link>
       <pubDate>Sun, 02 Feb 2014 19:43:31 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-PlayStation-3-EX-02-Next-Gen-Bluetooth-Headset-with-Faceplates/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-PlayStation-3-EX-02-Next-Gen-Bluetooth-Headset-with-Faceplates/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of the &lt;a href=&#34;http://www.amazon.com/dp/B004ASOLLM?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;PlayStation 3 EX-02 Next Gen Bluetooth Headset with Faceplates&lt;/a&gt;, which I received as part of the Amazon Vine program.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;External speaker is key&lt;/h3&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>Review: Mafia II (2010)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Mafia-II-2010/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Mafia-II-2010/</link>
       <pubDate>Tue, 08 May 2012 20:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Mafia-II-2010/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Mafia-II-2010/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/Mafia-II-Playstation-3/dp/B00198PO5I?tag=strivinglifen-20&#34;&gt;Mafia II&lt;/a&gt; (2010), for the PlayStation 3 and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/Mafia-II-Xbox-360/dp/B000ZK698C?tag=strivinglifen-20&#34;&gt;Xbox 360&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -55,10 +55,10 @@
     
     <item>
       <title>Nier weapon data in XML (and LINQ sample query)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
+      <link>http://jamesskemp.github.io/words/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
       <pubDate>Sun, 16 Oct 2011 21:59:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
       <description>&lt;p&gt;&lt;p&gt;Going through the game &lt;a href=&#34;http://strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt; yet again, I wanted an easier way to track what weapon levels I had already upgraded to, and what items I still needed to unlock weapon items.&lt;/p&gt;
 &lt;p&gt;Phase one towards that goal is creating an XML file with weapon upgrade information which is available online: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&#34;&gt;Nier weapon data&lt;/a&gt;. An XML schema document for this information is also available: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2011/10/NierWeapons.xsd&#34;&gt;Nier weapon XSD&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Sample LINQ query&lt;/h3&gt;
@@ -86,10 +86,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Yakuza 4 (2011) (PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Yakuza-4-2011-PlayStation-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Yakuza-4-2011-PlayStation-3/</link>
       <pubDate>Sat, 01 Oct 2011 11:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Yakuza-4-2011-PlayStation-3/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Yakuza-4-2011-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B003QX4F7C?tag=strivinglifen-20&#34;&gt;Yakuza 4&lt;/a&gt; for the PlayStation 3.&lt;/p&gt;
 &lt;/div&gt;
@@ -110,10 +110,10 @@ public class WeaponItem {
     
     <item>
       <title>Yakuza 4: Tanimura Hostess Guide</title>
-      <link>http://jamesskemp.github.io/blog/posts/Yakuza-4-Tanimura-Hostess-Guide/</link>
+      <link>http://jamesskemp.github.io/words/posts/Yakuza-4-Tanimura-Hostess-Guide/</link>
       <pubDate>Sun, 18 Sep 2011 21:18:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Yakuza-4-Tanimura-Hostess-Guide/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Yakuza-4-Tanimura-Hostess-Guide/</guid>
       <description>&lt;p&gt;This is a very rough guide for the hostesses for Tanimura for &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B003QX4F7C?tag=strivinglifen-20&#34;&gt;Yakuza 4&lt;/a&gt;. This only includes the questions/answers I needed to complete his hostesses.&lt;/p&gt;
 &lt;h3&gt;Chihiro (Jewel)&lt;/h3&gt;
 &lt;p&gt;&lt;span style=&#34;white-space: pre;&#34;&gt; &lt;/span&gt;Italian Scarf +.25 - never wore&lt;/p&gt;
@@ -290,10 +290,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Last Rebellion (2010) (PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Last-Rebellion-2010-PlayStation-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Last-Rebellion-2010-PlayStation-3/</link>
       <pubDate>Sun, 28 Aug 2011 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Last-Rebellion-2010-PlayStation-3/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Last-Rebellion-2010-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002DC8GRC?tag=strivinglifen-20&#34;&gt;Last Rebellion&lt;/a&gt; for the PlayStation 3.&lt;/p&gt;
 &lt;/div&gt;
@@ -308,10 +308,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Yakuza 3 (2010) (PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Yakuza-3-2010-PlayStation-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Yakuza-3-2010-PlayStation-3/</link>
       <pubDate>Sun, 21 Aug 2011 14:23:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Yakuza-3-2010-PlayStation-3/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Yakuza-3-2010-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B0030GBSUC?tag=strivinglifen-20&#34;&gt;Yakuza 3&lt;/a&gt;, for the PlayStation 3.&lt;/p&gt;
 &lt;/div&gt;
@@ -331,10 +331,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Eat Them! (2010) (PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Eat-Them%21-2010-PlayStation-3/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Eat-Them%21-2010-PlayStation-3/</link>
       <pubDate>Sat, 06 Aug 2011 09:24:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Eat-Them%21-2010-PlayStation-3/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Eat-Them%21-2010-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of Eat Them!, for the PlayStation 3, and released on the PlayStation Network.&lt;/p&gt;
 &lt;/div&gt;
@@ -351,10 +351,10 @@ public class WeaponItem {
     
     <item>
       <title>The Kinect is selling really well; but is that good for gamers?</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
       <pubDate>Mon, 29 Nov 2010 21:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
       <description>&lt;p&gt;Techmeme had a couple of interesting titles this evening. &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://www.readwriteweb.com/archives/kinect_is_selling_2x_as_fast_as_the_ipad.php&#34;&gt;Kinect is Selling 2X as Fast as the iPad&lt;/a&gt;&#34; and &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://blogs.barrons.com/techtraderdaily/2010/11/29/microsoft-over-25m-kinect-sold/&#34;&gt;Microsoft: Over 2.5M Kinect Sold&lt;/a&gt;.&#34;&lt;/p&gt;
 &lt;p&gt;Even if I thought I had the space for it (I&#39;d have to move furniture every time I wanted to play it in my current apartment) I still wouldn&#39;t pick up the Kinect.&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
@@ -371,10 +371,10 @@ public class WeaponItem {
     
     <item>
       <title>Thoughts on the Kinect and Playstation Move</title>
-      <link>http://jamesskemp.github.io/blog/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</link>
+      <link>http://jamesskemp.github.io/words/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</link>
       <pubDate>Sun, 05 Sep 2010 14:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Thoughts-on-the-Kinect-and-Playstation-Move/</guid>
       <description>&lt;p&gt;Laying aside the question of whether these are merely in response to the amount of money being made by the Wii, and whether the technology will be as lasting as history suggests 3D televisions will be, I&#39;ve been thinking about the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BSA298?tag=strivinglifen-20&#34;&gt;Kinect&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002I0J4NE?tag=strivinglifen-20&#34;&gt;Move&lt;/a&gt; recently. Here are my thoughts.&lt;/p&gt;
 &lt;h3&gt;How well will they work?&lt;/h3&gt;
 &lt;p&gt;This is the biggest question. Ever since they were first shown on television there&#39;s been the question of what environments will support the Kinect. For the Move, with it&#39;s big glowing ball, there hasn&#39;t been much of a question, since everything suggests that it&#39;ll be easier to track (especially after learning that the ball consists of LEDs which can change based on the environment).&lt;/p&gt;
@@ -407,10 +407,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: AmazonBasics USB 2.0 A-Male to Mini-B Cable (6 Feet / 1.8 Meters)</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-AmazonBasics-USB-20-A-Male-to-Mini-B-Cable-6-Feet-18-Meters/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-AmazonBasics-USB-20-A-Male-to-Mini-B-Cable-6-Feet-18-Meters/</link>
       <pubDate>Mon, 23 Aug 2010 16:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-AmazonBasics-USB-20-A-Male-to-Mini-B-Cable-6-Feet-18-Meters/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-AmazonBasics-USB-20-A-Male-to-Mini-B-Cable-6-Feet-18-Meters/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;This is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001TH7GUK?tag=strivinglifen-20&#34;&gt;AmazonBasics USB 2.0 A-Male to Mini-B Cable (6 Feet / 1.8 Meters)&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -422,10 +422,10 @@ public class WeaponItem {
     
     <item>
       <title>Resonance of Fate: General data file</title>
-      <link>http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/</link>
+      <link>http://jamesskemp.github.io/words/posts/Resonance-of-Fate-General-data-file/</link>
       <pubDate>Sun, 11 Apr 2010 12:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Resonance-of-Fate-General-data-file/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Resonance-of-Fate-General-data-file/</guid>
       <description>&lt;p&gt;Resonance of Fate, available for the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BRYHY0?tag=strivinglifen-20&#34;&gt;Playstation 3&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BRWUA8?tag=strivinglifen-20&#34;&gt;Xbox 360&lt;/a&gt; (I purchased for the former), has a vast amount of data associated with it, as RPGs usually do.&lt;/p&gt;
 &lt;p&gt;Because I usually do, I started keeping track of levels and etcetera for the game, which is available as an XML data file.&lt;/p&gt;
 &lt;p&gt;The data is currently raw (and as of this post need to finish adding data that I&#39;ve got on paper and on another computer), without styling, but I&#39;ve been sitting on the information for far too long.&lt;/p&gt;
@@ -437,10 +437,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Borderlands</title>
-      <link>http://jamesskemp.github.io/blog/posts/Review-Borderlands/</link>
+      <link>http://jamesskemp.github.io/words/posts/Review-Borderlands/</link>
       <pubDate>Sun, 24 Jan 2010 20:19:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Review-Borderlands/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Review-Borderlands/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review for &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000WMEEBM?tag=strivinglifen-20&#34;&gt;Borderlands&lt;/a&gt;, available for the Playstation 3 and Xbox 360. I specifically played the Playstation 3 version, but my review should be applicable to the Xbox 360 version as well.&lt;/p&gt;
 &lt;/div&gt;
@@ -473,10 +473,10 @@ public class WeaponItem {
     
     <item>
       <title>Video games I&#39;m looking forward to in 2010</title>
-      <link>http://jamesskemp.github.io/blog/posts/Video-games-Im-looking-forward-to-in-2010/</link>
+      <link>http://jamesskemp.github.io/words/posts/Video-games-Im-looking-forward-to-in-2010/</link>
       <pubDate>Wed, 09 Dec 2009 11:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Video-games-Im-looking-forward-to-in-2010/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Video-games-Im-looking-forward-to-in-2010/</guid>
       <description>&lt;p&gt;In no particular order, here are the video games I&#39;m currently looking forward to playing in 2010.&lt;/p&gt;
 &lt;p&gt;Note that some games may have been released earlier. Consoles that games can be released for are the PS2/PS3, Xbox 360, or Wii (which therefore includes GameCube games). Since I will probably not be getting an Xbox Live Gold subscription this coming January, and am going to go back to playing RPGs on PS systems only, when possible, PS3&amp;nbsp;versions of multi-console releases&amp;nbsp;will be higher on my list. Of course, FFXIII on PS3 is a no-brainer, even if I was hard-core Xbox 360.&lt;/p&gt;
 &lt;ul&gt;
@@ -501,10 +501,10 @@ public class WeaponItem {
     
     <item>
       <title>Initial thoughts on Playstation 3 instant streaming</title>
-      <link>http://jamesskemp.github.io/blog/posts/Initial-thoughts-on-Playstation-3-instant-streaming/</link>
+      <link>http://jamesskemp.github.io/words/posts/Initial-thoughts-on-Playstation-3-instant-streaming/</link>
       <pubDate>Fri, 06 Nov 2009 16:35:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Initial-thoughts-on-Playstation-3-instant-streaming/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Initial-thoughts-on-Playstation-3-instant-streaming/</guid>
       <description>&lt;p&gt;Today I received my instant streaming disc for the Playstation 3 from Netflix.&lt;/p&gt;
 &lt;p&gt;Having now moved around and watched a video, here are my thoughts.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;

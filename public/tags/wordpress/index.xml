@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wordpress on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/wordpress/</link>
+    <link>http://jamesskemp.github.io/words/tags/wordpress/</link>
     <description>Recent content in Wordpress on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Mar 2010 12:40:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
       <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
 &lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
 &lt;h3&gt;Web Platform Installer&lt;/h3&gt;
@@ -35,10 +35,10 @@
     
     <item>
       <title>WordPress 2.2.1 Import/Export function problems</title>
-      <link>http://jamesskemp.github.io/blog/posts/WordPress-221-ImportExport-function-problems/</link>
+      <link>http://jamesskemp.github.io/words/posts/WordPress-221-ImportExport-function-problems/</link>
       <pubDate>Wed, 18 Jul 2007 19:18:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/WordPress-221-ImportExport-function-problems/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/WordPress-221-ImportExport-function-problems/</guid>
       <description>&lt;p&gt;
 I had the &amp;#39;opportunity&amp;#39; today to import a WordPress blog from one server to another. While WordPress 2.2.x no comes with built-in functionality to export, and then import, an XML file, I&amp;#39;ve found that it&amp;#39;s anything but simple and trustworthy.
 &lt;/p&gt;
@@ -59,10 +59,10 @@ However, don&amp;#39;t expect your category numbers to necessarily match up, nor
     
     <item>
       <title>BlogEngine.NET - now used by StrivingLife</title>
-      <link>http://jamesskemp.github.io/blog/posts/BlogEngineNET-now-used-by-StrivingLife/</link>
+      <link>http://jamesskemp.github.io/words/posts/BlogEngineNET-now-used-by-StrivingLife/</link>
       <pubDate>Fri, 13 Jul 2007 18:38:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/BlogEngineNET-now-used-by-StrivingLife/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/BlogEngineNET-now-used-by-StrivingLife/</guid>
       <description>&lt;p&gt;
 With a new host, comes a unique move.
 &lt;/p&gt;
@@ -95,10 +95,10 @@ I&amp;#39;ve got until September until my old host comes up for renewal, so I do
     
     <item>
       <title>More comments in WordPress 2.1.2</title>
-      <link>http://jamesskemp.github.io/blog/posts/More-comments-in-WordPress-212/</link>
+      <link>http://jamesskemp.github.io/words/posts/More-comments-in-WordPress-212/</link>
       <pubDate>Sun, 25 Mar 2007 20:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/More-comments-in-WordPress-212/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/More-comments-in-WordPress-212/</guid>
       <description>&lt;p&gt;
 I noticed the other day that after upgrading to WordPress 2.1.2, many of the ads that the AdSense-Deluxe plugin was adding were not getting really getting added.
 &lt;/p&gt;
@@ -128,10 +128,10 @@ For whatever reason, it replaces any one comment immediately after the more comm
     
     <item>
       <title>The major failing of Akismet ...</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-major-failing-of-Akismet/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-major-failing-of-Akismet/</link>
       <pubDate>Sun, 25 Feb 2007 08:57:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-major-failing-of-Akismet/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-major-failing-of-Akismet/</guid>
       <description>&lt;p&gt;The major failing of the Akismet plug-in is that you can&#39;t determine which IPs, if any, are spamming your site the most.&lt;/p&gt;
 &lt;p&gt;Akismet needs to have the ability to group by IP, as well as show counts for each IP.&lt;/p&gt;
 &lt;p&gt;In place of that, you can run the following query to get this information.&lt;/p&gt;
@@ -144,10 +144,10 @@ For whatever reason, it replaces any one comment immediately after the more comm
     
     <item>
       <title>Not impressed by the WordPress 2.1 feature list</title>
-      <link>http://jamesskemp.github.io/blog/posts/Not-impressed-by-the-WordPress-21-feature-list/</link>
+      <link>http://jamesskemp.github.io/words/posts/Not-impressed-by-the-WordPress-21-feature-list/</link>
       <pubDate>Mon, 22 Jan 2007 20:03:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Not-impressed-by-the-WordPress-21-feature-list/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Not-impressed-by-the-WordPress-21-feature-list/</guid>
       <description>&lt;p&gt;
 WordPress 2.1 was released today and, unfortunately, I&amp;#39;m just not horribly impressed by the new feature list.&amp;nbsp; Granted, it&amp;#39;s a short feature list, but I see few reasons to upgrade.&amp;nbsp; The main reason?&amp;nbsp; Most of these features look like they&amp;#39;re geared towards non-technical/shared-hosting users.
 &lt;/p&gt;
@@ -168,10 +168,10 @@ The ability to denote more user categories - specifically to remove all rights f
     
     <item>
       <title>The WordPress calendar is a table</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-WordPress-calendar-is-a-table/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-WordPress-calendar-is-a-table/</link>
       <pubDate>Mon, 15 Jan 2007 11:19:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-WordPress-calendar-is-a-table/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-WordPress-calendar-is-a-table/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s a number of problems with WordPress, as far as accessibility goes.  However, the easiest one to fix is the problem with the calendar, which displays in the default theme, as well as many custom ones (I&amp;#39;m sure).  It lacks a summary tag.
 &lt;/p&gt;
@@ -204,10 +204,10 @@ Now then, who can either point me in the right direction to suggest this change,
     
     <item>
       <title>WordPress: Fake user registrations</title>
-      <link>http://jamesskemp.github.io/blog/posts/WordPress-Fake-user-registrations/</link>
+      <link>http://jamesskemp.github.io/words/posts/WordPress-Fake-user-registrations/</link>
       <pubDate>Mon, 11 Dec 2006 19:35:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/WordPress-Fake-user-registrations/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/WordPress-Fake-user-registrations/</guid>
       <description>&lt;p&gt;
 For the past couple days I&amp;#39;ve noticed a rash of fake user account&amp;#39;s being created.&amp;nbsp; I wonder if this isn&amp;#39;t meant to be some new way to possibly exploit WordPress.
 &lt;/p&gt;
@@ -234,10 +234,10 @@ The solution was to ultimately stop registrations.&amp;nbsp;
     
     <item>
       <title>If there&#39;s one thing that I don&#39;t like about WordPress ..</title>
-      <link>http://jamesskemp.github.io/blog/posts/If-theres-one-thing-that-I-dont-like-about-WordPress-/</link>
+      <link>http://jamesskemp.github.io/words/posts/If-theres-one-thing-that-I-dont-like-about-WordPress-/</link>
       <pubDate>Fri, 11 Aug 2006 16:53:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/If-theres-one-thing-that-I-dont-like-about-WordPress-/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/If-theres-one-thing-that-I-dont-like-about-WordPress-/</guid>
       <description>&lt;p&gt;
 ... it&amp;#39;s that updating is such a pain in the behind if you have to work remotely via FTP.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -252,10 +252,10 @@ I just updated to WordPress 2.0.4, so if you happen to notice anything off ... l
     
     <item>
       <title>1,000 spam caught by Akismet!</title>
-      <link>http://jamesskemp.github.io/blog/posts/1000-spam-caught-by-Akismet/</link>
+      <link>http://jamesskemp.github.io/words/posts/1000-spam-caught-by-Akismet/</link>
       <pubDate>Fri, 26 May 2006 07:26:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/1000-spam-caught-by-Akismet/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/1000-spam-caught-by-Akismet/</guid>
       <description>&lt;p&gt;
 As of this morning, exactly 1,000 spam have been caught by Akismet for this site.  Not too shabby.  Unfortunately, I don&amp;#39;t know when this started, but it was before I got really hit.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -275,10 +275,10 @@ On that note, Akismet 1.15 has also been released.  Included in this is the big 
     
     <item>
       <title>Akismet stats now available online</title>
-      <link>http://jamesskemp.github.io/blog/posts/Akismet-stats-now-available-online/</link>
+      <link>http://jamesskemp.github.io/words/posts/Akismet-stats-now-available-online/</link>
       <pubDate>Tue, 23 May 2006 06:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Akismet-stats-now-available-online/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Akismet-stats-now-available-online/</guid>
       <description>&lt;p&gt;
 Akismet, one great WordPress plugin if you&amp;#39;ll be accepting public comments, now has made available global stats on &lt;a rel=&#34;nofollow&#34; href=&#34;http://akismet.com/stats/&#34;&gt;http://akismet.com/stats/&lt;/a&gt;.  What&amp;#39;s scary is the amount of spam per &amp;#39;ham&amp;#39; (non-spam).&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -296,10 +296,10 @@ The question is, if Akismet cost $1 a month, how many people would still use it?
     
     <item>
       <title>The &#39;easy&#39; way to add the description meta tag to WordPress posts</title>
-      <link>http://jamesskemp.github.io/blog/posts/The-easy-way-to-add-the-description-meta-tag-to-WordPress-posts/</link>
+      <link>http://jamesskemp.github.io/words/posts/The-easy-way-to-add-the-description-meta-tag-to-WordPress-posts/</link>
       <pubDate>Sat, 29 Apr 2006 11:37:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/The-easy-way-to-add-the-description-meta-tag-to-WordPress-posts/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/The-easy-way-to-add-the-description-meta-tag-to-WordPress-posts/</guid>
       <description>&lt;p&gt;
 According to some people, the keywords meta tag has more relevancy/use than the description meta tag. Unfortunately, this is dead wrong. As I&amp;#39;ve been able to prove (for myself, at least) this last month, the meta description is quite alive and well. Why people think it&amp;#39;s not only dead, but surpassed by the meta keywords (!!!), I&amp;#39;ll never understand.
 &lt;/p&gt;
@@ -348,10 +348,10 @@ Comments welcome and appreciated.
     
     <item>
       <title>WP-ShortStat SQL queries</title>
-      <link>http://jamesskemp.github.io/blog/posts/WP-ShortStat-SQL-queries/</link>
+      <link>http://jamesskemp.github.io/words/posts/WP-ShortStat-SQL-queries/</link>
       <pubDate>Tue, 04 Apr 2006 20:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/WP-ShortStat-SQL-queries/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/WP-ShortStat-SQL-queries/</guid>
       <description>&lt;p&gt;&lt;p&gt;
 The &lt;a href=&#34;http://blog.happyarts.de/wp-shortstat/&#34;&gt;wp-shortstat plugin&lt;/a&gt;, modified for WordPress 2.x use by Markus Kaemmerer, is a great little plugin.  I&amp;#39;ve been using it since March 17, and since Markus has been doing a deal of updating (additional functionality, as well as bug fixes), I&amp;#39;ve been checking it on a regular basis (and have looked through the code more than once).
 &lt;/p&gt;
@@ -401,7 +401,7 @@ If you run these queries, please backup your database, or this table, before you
 &lt;/blockquote&gt;
 &lt;div class=&#34;downloads&#34;&gt;
 &lt;p&gt;
-Download these queries in txt format: &lt;a href=&#34;http://jamesskemp.github.io/blog/files/2006/04/mysql%20sql%20queries%20for%20wp_ss_stats.txt&#34;&gt;WP-ShortStat SQL queries&lt;/a&gt;
+Download these queries in txt format: &lt;a href=&#34;http://jamesskemp.github.io/words/files/2006/04/mysql%20sql%20queries%20for%20wp_ss_stats.txt&#34;&gt;WP-ShortStat SQL queries&lt;/a&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
@@ -418,10 +418,10 @@ Remember, running a SELECT query first is your best bet if you&amp;#39;re unsure
     
     <item>
       <title>Upgrading (our local install of) WordPress</title>
-      <link>http://jamesskemp.github.io/blog/posts/Upgrading-%28our-local-install-of%29-WordPress/</link>
+      <link>http://jamesskemp.github.io/words/posts/Upgrading-%28our-local-install-of%29-WordPress/</link>
       <pubDate>Sat, 11 Mar 2006 16:31:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Upgrading-%28our-local-install-of%29-WordPress/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Upgrading-%28our-local-install-of%29-WordPress/</guid>
       <description>&lt;p&gt;
 In &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/28/59/setting-up-wordpress-on-a-local-web-server/&#34;&gt;a previous guide&lt;/a&gt;, we walked through installing WordPress on a local machine. This time, we&amp;#39;ll be upgrading WordPress. For this guide, we&amp;#39;ll be upgrading from WordPress 2.0.1 to 2.0.2.  Note that this guide will work equally well for upgrading to 2.0.3, 2.0.4 or 2.0.5.
 &lt;/p&gt;
@@ -523,10 +523,10 @@ You can also use a program like WinMerge, &lt;a href=&#34;http://winmerge.source
     
     <item>
       <title>Setting up WordPress on a local Web server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Setting-up-WordPress-on-a-local-Web-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Setting-up-WordPress-on-a-local-Web-server/</link>
       <pubDate>Tue, 28 Feb 2006 08:13:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Setting-up-WordPress-on-a-local-Web-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Setting-up-WordPress-on-a-local-Web-server/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 &lt;em&gt;Note: This guide should work equally well for WordPress 2.0.2 and above.  For a guide on upgrading this 2.0.1 install, see &lt;a href=&#34;http://strivinglife.net/wordpress/2006/03/11/63/upgrading-our-local-install-of-wordpress/&#34;&gt;Upgrading (our local install of) WordPress&lt;/a&gt;.&lt;/em&gt;

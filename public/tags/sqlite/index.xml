@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sqlite on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/sqlite/</link>
+    <link>http://jamesskemp.github.io/words/tags/sqlite/</link>
     <description>Recent content in Sqlite on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 23 Aug 2010 13:44:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</title>
-      <link>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
+      <link>http://jamesskemp.github.io/words/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</link>
       <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
       <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
 &lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
 &lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;
@@ -26,10 +26,10 @@
     
     <item>
       <title>Using SQLite as a membership, profile, and role provider in ASP.NET MVC</title>
-      <link>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
+      <link>http://jamesskemp.github.io/words/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</link>
       <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
       <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
 &lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
 &lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>iTunes Music to SQLite - version 0.1 beta released</title>
-      <link>http://jamesskemp.github.io/blog/posts/iTunes-Music-to-SQLite-version-01-beta-released/</link>
+      <link>http://jamesskemp.github.io/words/posts/iTunes-Music-to-SQLite-version-01-beta-released/</link>
       <pubDate>Thu, 24 Sep 2009 12:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/iTunes-Music-to-SQLite-version-01-beta-released/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/iTunes-Music-to-SQLite-version-01-beta-released/</guid>
       <description>&lt;p&gt;While it was at the same stage as it is now back on the 19th, I&#39;m finally releasing the beta version of iTunes Music to SQLite.&lt;/p&gt;
 &lt;p&gt;This console application finds all Music playlists in iTunes and imports them into a SQLite database (called iTunesMusic.s3db).&lt;/p&gt;
 &lt;p&gt;You can change this by passing the database and source names as parameters.&lt;/p&gt;
@@ -71,10 +71,10 @@
     
     <item>
       <title>IIS Logs to SQLite - version 0.1 beta released</title>
-      <link>http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
+      <link>http://jamesskemp.github.io/words/posts/IIS-Logs-to-SQLite-version-01-beta-released/</link>
       <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
       <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
 &lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;

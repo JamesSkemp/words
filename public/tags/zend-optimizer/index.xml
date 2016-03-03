@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zend Optimizer on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/blog/tags/zend-optimizer/</link>
+    <link>http://jamesskemp.github.io/words/tags/zend-optimizer/</link>
     <description>Recent content in Zend Optimizer on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Feb 2006 18:27:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/blog/tags/zend-optimizer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jamesskemp.github.io/words/tags/zend-optimizer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing Zend Optimizer on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/blog/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</link>
+      <link>http://jamesskemp.github.io/words/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</link>
       <pubDate>Sun, 26 Feb 2006 18:27:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/blog/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</guid>
+      <guid>http://jamesskemp.github.io/words/posts/Installing-Zend-Optimizer-on-a-local-Windows-based2c-Apache2c-server/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
-&lt;em&gt;Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see &lt;a href=&#34;http://jamesskemp.github.io/blog/words/post/Upgrading-to-Zend-Optimizer-301-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;
+&lt;em&gt;Note: This guide should work equally well for Zend Optimizer 3.0.1 and above.  For a guide on upgrading this 2.6.2 install, see &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-to-Zend-Optimizer-301-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;
