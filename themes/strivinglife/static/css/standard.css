@@ -1,0 +1,51 @@
+/* Standard styles used on any page that has the standard header and JS check. */
+body #template_presents {
+	background-color:#ccc;
+	margin:0;
+	padding:.5em;
+	text-align:left;
+	width:100%;
+}
+#template_presents h1 {
+	font-style:italic;
+	margin-left:27px;
+}
+#template_presents a {
+	color:#048;
+	text-decoration:none;
+}
+#site_js_rec {
+	background-color:#fcf;
+	border:1px solid #c9c;
+	margin:0 auto;
+	padding:.25em;
+	text-align:center;
+	width:99%;
+}
+.error {
+	color:red;
+	font-weight:bold;
+}
+
+/* This icon designates a note relating to the surrounding text. */
+div.note {
+	border:1px solid #cc9;
+	background-color:#ffc;
+}
+/* This icon designates a helpful tip relating to the surrounding text. */
+div.tip {
+	border:1px solid #99c;
+	background-color:#ccf;
+}
+/* This icon designates a warning relating to the surrounding text. */
+div.warning {
+	border:1px solid #c9c;
+	background-color:#fcf;
+}
+div.note, div.tip, div.warning {
+	margin:.25em auto;
+	padding:.25em;
+}
+div.note p, div.tip p, div.warning p {
+	margin:.25em auto;
+}
