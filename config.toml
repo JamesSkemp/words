@@ -5,5 +5,4 @@ theme = "beg"
 publishdir = "public"
 canonifyurls = true
 
-[params]
-  googleAnalyticsUserID = "UA-541034-4"
+googleAnalytics = "UA-541034-4"
