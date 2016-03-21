@@ -6,6 +6,7 @@ publishdir = "public"
 canonifyurls = true
 
 [params]
+default_author = "James Skemp"
 bing_webmaster = ""
 google_webmaster = ""
 googleAnalytics = "UA-541034-4"
