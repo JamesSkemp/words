@@ -5,4 +5,14 @@ theme = "beg"
 publishdir = "public"
 canonifyurls = true
 
+[params]
 googleAnalytics = "UA-541034-4"
+googleadsense = "ca-pub-3526066001929698"
+googleadsenseslot = "3689523691"
+disqus = "strivinglife"
+twitter = ""
+googleplus = ""
+linkedin = ""
+youtube = ""
+paypal = ""
+amazonwishlist = "http://amzn.to/22xk0cK"
