@@ -1,150 +1,303 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.15" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
-
-    
-    <title>Coldfusion - James Skemp&#39;s Test Hugo-Generated Site</title>
-    <meta property='og:title' content="Coldfusion - James Skemp&#39;s Test Hugo-Generated Site">
-    <meta property="og:type" content="article">
-    
-
-    <meta property="og:url" content="http://jamesskemp.github.io/words/tags/coldfusion/">
+    <title>Coldfusion &middot; James Skemp&#39;s Test Hugo-Generated Site</title>
     
     
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content='' />
+    <meta name="author" content="" />
+    <link href="http://jamesskemp.github.io/words/tags/coldfusion/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+</head>
 
-  </head>
-
-  <body>
-
-    <header class="site">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
-          </div>
-
-          <div id="navbar" class="collapse navbar-collapse">
-            
-          </div>
-
         </div>
-      </nav>
-    </header>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <div class="site">
-      <div class="container">
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Two-simple-ColdFusion-calendar-outputs/">Two simple ColdFusion calendar outputs</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 26, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Here's&nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality). Tables-based &lt;cfparam name="URL.CalendarMonth" default="#Month(now())#" type="integer" /&gt; &lt;cfparam name="URL.CalendarYear" default="#Year(now())#" type="integer" /&gt; &lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&gt; &lt;cfset URL.CalendarMonth = Month(now()) /&gt; &lt;/cfif&gt; &lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&gt; &lt;table style="width:375px;" summary="Calendar of events for &lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, 'mmmm yyyy')#&lt;/cfoutput&gt;."&gt; &lt;thead&gt; &lt;tr&gt; &lt;th colspan="7"&gt;&lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, "mmmm yyyy")#&lt;/cfoutput&gt;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;S&lt;/th&gt; &lt;th&gt;M&lt;/th&gt; &lt;th&gt;T&lt;/th&gt; &lt;th&gt;W&lt;/th&gt; &lt;th&gt;Th&lt;/th&gt; &lt;th&gt;F&lt;/th&gt; &lt;th&gt;S&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;cfloop from="1" to="#DaysInMonth(VARIABLES.Calendar.StartDate)#" index="iDay"&gt; &lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&gt; &lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 1 OR iDay EQ 1&gt;&lt;!--- This is Sunday, or the first day.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Two-simple-ColdFusion-calendar-outputs/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/">ColdFusion: cfscript to determine if variable exists and output html-escaped</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 8, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped. &lt;cfscript&gt; // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value. function checkForValueOutput(data) { if (IsDefined(data)) { return HtmlEditFormat(Trim(Evaluate(data))); } else { return ""; } } &lt;/cfscript&gt; (Obviously, this can rather easily be converted to a function.) This results in a change from: &lt;input type="text" id="someField" name="someField"&nbsp;value="&lt;cfif IsDefined("FORM.someField") AND Trim(FORM.someField) NEQ ""&gt;&lt;cfoutput&gt;#HtmlEncodedFormat(Trim(FORM.someField))#&lt;/cfoutput&gt;&lt;/cfif&gt;" /&gt; To: &lt;input type="text" id="someField" name="someField"&nbsp;value="&lt;cfoutput&gt;#checkForValueOutput("FORM.someField")#&lt;/cfoutput&gt;" /&gt; Much easier to read, and much shorter.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Verity-Collection-down-after-opening-resolution/">Collection down after opening - resolution</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 16, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                We've been running into an issue, off and on, with ColdFusion MX 7.0.2 having issues with Verity collections. During one of our nightly jobs, two Verity collections are purged, through ColdFusion, and then re-built.&nbsp; Sometimes this will bring the collection down, resulting in a message like the following. Collection down after opening (10) Using the mdvdk executable, you can get some information about the collection, and even bring it back up.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Verity-Collection-down-after-opening-resolution/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Regular-Expression-tester-ColdFusion/">Regular Expression tester - ColdFusion</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>January 10, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0. It's a pity to not make it available, since it's such an easy template ... &lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Regular-Expression-tester-ColdFusion/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/">Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 15, 2007</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                <p><p>Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).</p>
 
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/ColdFusion-MX-7-hosting-for-free/">ColdFusion MX 7 hosting, for free?</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 12, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                <p><p>
+On this site, I have a number of articles discussing how to setup ColdFusion MX, both <a href="http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/">version 6.1</a> and <a href="http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx">version 7.0</a>. These tutorials will get you up and running on your own computer, but there&#39;s no information on how to continue on to a real, live, host.</p>
 
-<div class="list">
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/ColdFusion-MX-7-hosting-for-free/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Is-it-past-time-for-Microsoft-to-open-IIS/">Is it past time for Microsoft to open IIS?</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 23, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                There's a reason PHP and Apache are so popular on the Web. It's the same reason that most beginner's, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With the right guide, a user can be up and running with Apache and PHP in a couple of hours. Unfortunately, Microsoft's IIS (Internet Information Services) is something that few home-grown Web users have the honour of using.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Is-it-past-time-for-Microsoft-to-open-IIS/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/">Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 28, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we're going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups. What is a batch file? A batch file is basically a way to run a number of Windows prompts at once.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/">Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 26, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In Part 1 of this Apache 2.0.59 guide, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In Part 2 of this Apache 2.0.59 guide, we setup ColdFusion MX 6.1 and 7.0. This time, we'll be continuing in our quest by adding support for both PHP 4 and PHP 5. In previous guides, we installed PHP 4 and PHP 5, so if you need to install either one, do so with the above directions.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/">Installing Apache 2.0.59 to a Windows-based computer, locally: Part 2</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 25, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                <p>In <a href="http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we'll be continuing in our quest by installing ColdFusion MX 6.1 and 7.</p>
 
-  <div class="row">
-    <div class="col-md-8">
-      <header class="page-title">Coldfusion</header>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Wed, Jul 12, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/">Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a></div>
-  </header>
-  <div class="body">In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we&#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2. Downloading the updater ColdFusion MX 7.0.2 can either be downloaded as a full installer, or as a simple updater. Since we&#39;ve already installed 7.0.1, we can just use the updater. Go to http://www.adobe.com/support/coldfusion/downloads_updates.html and download the current updater, ColdFusion MX 7 Updater 2 (7.0.2) for Windows.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Thu, Apr 20, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/">XML parsing with PHP (and ColdFusion) and /ROOT</a></div>
-  </header>
-  <div class="body">Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid. I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&nbsp; So, I'll be attempting to reset my password once again, in the hope that it was just a two day problem ...</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Fri, Mar 31, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/">Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a></div>
-  </header>
-  <div class="body">Note: For information on updating to ColdFusion MX 7.0.2, see Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server. Update: October 10, 2006 @ 7:11 pm - Thanks to Michael Bryce for his helpful comments regarding this documentation. In this article, we&#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&#39;s Edition. Since we&#39;ve already covered the installation of ColdFusion MX 6.1, Developer&#39;s Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sun, Mar 19, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/">Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</a></div>
-  </header>
-  <div class="body">Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX. (This guide assumes you've already installed PostgreSQL.) Downloading and installing the JDBC Driver The first thing we'll need to do is install a special driver for ColdFusion.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sat, Mar 18, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/">Adding MySQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</a></div>
-  </header>
-  <div class="body">Until now, we've yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can't in ColdFusion. Until now. This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick. Setting up MySQL database and user First, we'll need to setup a MySQL database and user for ColdFusion.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Mon, Feb 27, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/">Installing ColdFusion on a local Windows-based, Apache, server</a></div>
-  </header>
-  <div class="body"><p><div class="note">
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/">Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 12, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we&#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2. Downloading the updater ColdFusion MX 7.0.2 can either be downloaded as a full installer, or as a simple updater. Since we&#39;ve already installed 7.0.1, we can just use the updater. Go to http://www.adobe.com/support/coldfusion/downloads_updates.html and download the current updater, ColdFusion MX 7 Updater 2 (7.0.2) for Windows.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/">XML parsing with PHP (and ColdFusion) and /ROOT</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>April 20, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid. I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&nbsp; So, I'll be attempting to reset my password once again, in the hope that it was just a two day problem ...
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/">Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 31, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Note: For information on updating to ColdFusion MX 7.0.2, see Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server. Update: October 10, 2006 @ 7:11 pm - Thanks to Michael Bryce for his helpful comments regarding this documentation. In this article, we&#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&#39;s Edition. Since we&#39;ve already covered the installation of ColdFusion MX 6.1, Developer&#39;s Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/">Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 19, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX. (This guide assumes you've already installed PostgreSQL.) Downloading and installing the JDBC Driver The first thing we'll need to do is install a special driver for ColdFusion.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/">Adding MySQL connectivity to ColdFusion MX on a local Windows-based, Apache, server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 18, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Until now, we've yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can't in ColdFusion. Until now. This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick. Setting up MySQL database and user First, we'll need to setup a MySQL database and user for ColdFusion.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/">Installing ColdFusion on a local Windows-based, Apache, server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 27, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                <p><div class="note">
 <p>
 <em>Note: For information on installing, or upgrading to ColdFusion MX 7.0.1, see <a href="http://jamesskemp.github.io/words/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx">Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server</a>.</em>
 </p>
@@ -152,169 +305,204 @@
 <p>
 In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 6.1, Developer&#39;s Edition, on a local, Windows-based, Apache server. On this server, we&#39;ve setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code (however, not necessarily on the same sites that we&#39;ll be using PHP). We&#39;ll be doing this to experience a more corporate Web-programming language &ndash; corporate primarily because of the costs associated with ColdFusion.
 </p></p>
+
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/">A local, Apache Web server, on a Windows XP computer</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 27, 2006</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I've decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I've opted to use it as the core, instead of IIS, or the like. I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4" style="text-align: left; padding-left: 0px">
+                    
+                        <a class="btn btn-default" href="http://jamesskemp.github.io/words/tags/coldfusion/" role="button" style="border-radius: 0px; display: block">Newer</a>
+                    
+                </div>
+                <div class="col-md-4 col-md-offset-4" style="text-align: right; padding-right: 0px">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Search</h5>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+            <div class="input-group">
+                <input class="form-control" type="search" name="q" />
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+        </form>
+    </div>
 </div>
 
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Mon, Feb 27, 2006</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/">A local, Apache Web server, on a Windows XP computer</a></div>
-  </header>
-  <div class="body">My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I've decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I've opted to use it as the core, instead of IIS, or the like. I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      
-<nav>
-  <ul class="pager">
-
-    
-    <li><a href="http://jamesskemp.github.io/words/tags/coldfusion/page/1">Previous</a></li>
-    
-
-    
-    <li class="disabled"><a href="#">Next</a></li>
-    
-
-  </ul>
-</nav>
-
-
-
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Recent Posts</h5>
+        <ul class="list-unstyled posts-recent">
+            <ul class="list-unstyled posts-recent">
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                
+            </ul>
+        </ul>
     </div>
-    <div class="col-md-4">
-      
-<aside class="site">
-
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
-    </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/" class="list-group-item">Review: Amazon Fire 7 (2015 release) Case</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
-      
-    </div>
-  </div>
-
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">category</h2>
-    </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
-      
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">tag</h2>
-    </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
-      
-    </div>
-  </div>
-  
-
-</aside>
-
-
-    </div>
-  </div>
-
 </div>
-      </div>
-    </div>
 
-    <footer class="site">
-      <div class="container">
-        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
-        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
-        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
-      </div>
-    </footer>
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-3526066001929698"
+			data-ad-slot="3689523691"
+			data-ad-format="auto">
+		</ins>
+	</div>
+</div>
 
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+                    
+    
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 card">
+                <h5>categories</h5>
+                <ul class="list-unstyled posts-recent">
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
 
     
 
-  </body>
+
+                    
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1 card">
+			<h5>Support This Site</h5>
+			<p>
+				If my blog was helpful to you, then please consider visiting my
+				<a href="http://amzn.to/22xk0cK" rel="external">Amazon Wishlist</a>.
+			</p>
+		</div>
+	</div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-6">
+    <ul class="list-inline links">
+        
+    </ul>
+</div>
+
+            <div class="col-md-4 col-xs-6">
+    <ul class="list-inline social-media">
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Generated using <a href="https://gohugo.io/" rel="external">Hugo</a> and the <a href="https://github.com/nraboy/hugo-phlat-theme" rel="external">Phlat Theme</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div id="back-to-top" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</div>
+<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
+<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
+<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    if(($(window).height() + 100) < $(document).height()) {
+        $('#back-to-top').removeClass('hidden').affix({
+            offset: {
+                top: 100
+            }
+        });
+    }
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    
+    if (window.location.hostname == "localhost") {
+        $(".adsbygoogle").css("text-decoration", "none");
+        $(".adsbygoogle").text("Adsense is unavailable while serving on localhost or 127.0.0.1");
+    } else {
+        [].forEach.call(document.querySelectorAll('.adsbygoogle'), function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+    }
+</script>
+
+
+
+    </body>
 </html>
-

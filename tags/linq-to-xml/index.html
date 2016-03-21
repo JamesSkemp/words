@@ -1,282 +1,305 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.15" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/styles.css">
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/custom.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://jamesskemp.github.io/words//index.xml">
-
-    
-    <title>Linq To Xml - James Skemp&#39;s Test Hugo-Generated Site</title>
-    <meta property='og:title' content="Linq To Xml - James Skemp&#39;s Test Hugo-Generated Site">
-    <meta property="og:type" content="article">
-    
-
-    <meta property="og:url" content="http://jamesskemp.github.io/words/tags/linq-to-xml/">
+    <title>Linq To Xml &middot; James Skemp&#39;s Test Hugo-Generated Site</title>
     
     
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content='' />
+    <meta name="author" content="" />
+    <link href="http://jamesskemp.github.io/words/tags/linq-to-xml/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+</head>
 
-  </head>
-
-  <body>
-
-    <header class="site">
-      <nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
-          </div>
-
-          <div id="navbar" class="collapse navbar-collapse">
-            
-          </div>
-
         </div>
-      </nav>
-    </header>
-
-    <div class="site">
-      <div class="container">
-
-
-<div class="list">
-
-  <div class="row">
-    <div class="col-md-8">
-      <header class="page-title">Linq To Xml</header>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Wed, Oct 20, 2010</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/">iTunes Playlists to Xml: Parsing categories with LINQ</a></div>
-  </header>
-  <div class="body">I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query. Obviously, you must export the Genre field in order for the following query to work. // Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.xml&rdquo;; XDocument xml = XDocument.Load(playlistXml); var categories = from track in xml.Descendants(&ldquo;track&rdquo;) group track by track.Element(&ldquo;genre&rdquo;).Value into t orderby t.Key //orderby t.Count() descending select new { Category = t.Key, Count = t.Count() }; categories.Dump(); Note that you can switch the orderby lines depending upon how you want to sort the returned data.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Thu, Jun 10, 2010</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">Vehicle gas DTD .NET objects and XML parsing with LINQ</a></div>
-  </header>
-  <div class="body">The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted. At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen). I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out. C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } } public class Fillup { public int Id { get; set; } public DateTime Date { get; set; } public int MilesTotal { get; set; } public Decimal MilesDriven { get; set; } public Decimal Gallons { get; set; } public Decimal CostPerGallon { get; set; } public Decimal CostTotal { get; set; } public String Notes { get; set; } }&lt;/code&gt;&lt;/pre&gt; LINQ to XML XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;); IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;) select new Vehicle { Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value), Make = vehicle.Element(&ldquo;make&rdquo;).Value, Model = vehicle.Element(&ldquo;model&rdquo;).Value, Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value), Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;) select new Fillup { Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value), Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture), MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value), MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value), Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value), CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value), CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value), Notes = fillup.Element(&ldquo;notes&rdquo;).Value } }; As always, suggestions appreciated.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Thu, Dec 31, 2009</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></div>
-  </header>
-  <div class="body">At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved. Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sun, Dec 6, 2009</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/">Determine BlogEngine.NET comments that haven&#39;t been published</a></div>
-  </header>
-  <div class="body">Unfortunately, BlogEngine.NET doesn't currently have a very good way to determine, at a glance, all of the comments that haven't been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me. You can download the built executable, or play with the code, which is included below. Download the executable&nbsp;(7-Zip format).</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sat, Sep 12, 2009</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/">Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</a></div>
-  </header>
-  <div class="body">Similar to my post on parsing Last.fm's artist.getSimilar, I've been working with Yahoo! Music's Web services today. Unfortunately, Yahoo!'s services aren't quite as friendly as those made available by Last.fm. So that I remember, and others don't have to tackle this as well, here's the class I've created. (Download JamesRSkemp.WebServices.YahooMusic.cs.) /* Created by James Skemp - http://jamesrskemp.com/ Version 1.0 More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/ */ using System; using System.Collections.Generic; using System.Linq; using System.Text; using System.Net; using System.IO; using System.Xml.Linq; using System.Data; namespace JamesRSkemp.WebServices { class YahooMusic { /// &lt;summary&gt; /// Key used to access Yahoo!</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      <article class="li">
-  <header>
-    <div class="date">Sat, Sep 12, 2009</div>
-    <div class="title"><a href="http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/">Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</a></div>
-  </header>
-  <div class="body">The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services. Setup and assumptions The first step is sign up for a free API account at Last.fm. You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality. When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.</div>
-
-  
-  <footer>
-    <a href="http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/" class="btn btn-default">Read More…</a>
-  </footer>
-  
-</article>
-<hr>
-
-      
-      
-
-
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </div>
     </div>
-    <div class="col-md-4">
-      
-<aside class="site">
+</nav>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">LatestPosts</h2>
-    </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/" class="list-group-item">Review: Amazon Fire 7 (2015 release) Case</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/" class="list-group-item">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/" class="list-group-item">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/" class="list-group-item">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/" class="list-group-item">Review: Amazon Fire HD 8 (2015 release) Case</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Verso-Fire-7-2015-Case-Sea-Blue-Classic-Slim-Fit-Premium-PU-Leather-Book-Folio-Style-Protective-Case-7-inch-Display-5th-Generation-2015-Release-Only/" class="list-group-item">Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Fury-of-Dracula-Third-Edition-Board-Game/" class="list-group-item">Review: Fury of Dracula Third Edition Board Game</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/" class="list-group-item">Setting up a Raspberry Pi 2 Samba server (in early January 2016)</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/" class="list-group-item">Google Services on the Amazon Fire HD 8</a>
-      
-      <a href="http://jamesskemp.github.io/words/post/Review-Adonit-Jot-Dash-Fine-Point-Precision-Stylus/" class="list-group-item">Review: Adonit Jot Dash - Fine Point Precision Stylus</a>
-      
-    </div>
-  </div>
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/">iTunes Playlists to Xml: Parsing categories with LINQ</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 20, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query. Obviously, you must export the Genre field in order for the following query to work. // Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.xml&rdquo;; XDocument xml = XDocument.Load(playlistXml); var categories = from track in xml.Descendants(&ldquo;track&rdquo;) group track by track.Element(&ldquo;genre&rdquo;).Value into t orderby t.Key //orderby t.Count() descending select new { Category = t.Key, Count = t.Count() }; categories.Dump(); Note that you can switch the orderby lines depending upon how you want to sort the returned data.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">Vehicle gas DTD .NET objects and XML parsing with LINQ</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 10, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted. At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen). I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out. C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } } public class Fillup { public int Id { get; set; } public DateTime Date { get; set; } public int MilesTotal { get; set; } public Decimal MilesDriven { get; set; } public Decimal Gallons { get; set; } public Decimal CostPerGallon { get; set; } public Decimal CostTotal { get; set; } public String Notes { get; set; } }&lt;/code&gt;&lt;/pre&gt; LINQ to XML XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;); IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;) select new Vehicle { Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value), Make = vehicle.Element(&ldquo;make&rdquo;).Value, Model = vehicle.Element(&ldquo;model&rdquo;).Value, Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value), Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;) select new Fillup { Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value), Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture), MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value), MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value), Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value), CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value), CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value), Notes = fillup.Element(&ldquo;notes&rdquo;).Value } }; As always, suggestions appreciated.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/">Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>December 31, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved. Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/">Determine BlogEngine.NET comments that haven&#39;t been published</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>December 6, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Unfortunately, BlogEngine.NET doesn't currently have a very good way to determine, at a glance, all of the comments that haven't been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me. You can download the built executable, or play with the code, which is included below. Download the executable&nbsp;(7-Zip format).
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/">Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 12, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Similar to my post on parsing Last.fm's artist.getSimilar, I've been working with Yahoo! Music's Web services today. Unfortunately, Yahoo!'s services aren't quite as friendly as those made available by Last.fm. So that I remember, and others don't have to tackle this as well, here's the class I've created. (Download JamesRSkemp.WebServices.YahooMusic.cs.) /* Created by James Skemp - http://jamesrskemp.com/ Version 1.0 More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/ */ using System; using System.Collections.Generic; using System.Linq; using System.Text; using System.Net; using System.IO; using System.Xml.Linq; using System.Data; namespace JamesRSkemp.WebServices { class YahooMusic { /// &lt;summary&gt; /// Key used to access Yahoo!
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/">Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 12, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services. Setup and assumptions The first step is sign up for a free API account at Last.fm. You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality. When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.
+                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                    
 
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">category</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Search</h5>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+            <div class="input-group">
+                <input class="form-control" type="search" name="q" />
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+        </form>
     </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/categories/software" class="list-group-item">software</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/article" class="list-group-item">article</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/review" class="list-group-item">review</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/strivinglife" class="list-group-item">strivinglife</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/philosophy" class="list-group-item">philosophy</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides" class="list-group-item">tutorials-/-guides</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/dvd-/-movie" class="list-group-item">dvd-/-movie</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/internet" class="list-group-item">internet</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/gaming" class="list-group-item">gaming</a>
-      
-      <a href="http://jamesskemp.github.io/words/categories/technology" class="list-group-item">technology</a>
-      
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2 class="panel-title">tag</h2>
-    </div>
-    <div class="list-group">
-      
-      <a href="http://jamesskemp.github.io/words/tags/review" class="list-group-item">review</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/.net" class="list-group-item">.net</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/xml" class="list-group-item">xml</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/ghost-in-the-shell" class="list-group-item">ghost-in-the-shell</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/c" class="list-group-item">c#</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/apache" class="list-group-item">apache</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/playstation" class="list-group-item">playstation</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/microsoft" class="list-group-item">microsoft</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/waking-life" class="list-group-item">waking-life</a>
-      
-      <a href="http://jamesskemp.github.io/words/tags/ipod" class="list-group-item">ipod</a>
-      
-    </div>
-  </div>
-  
-
-</aside>
-
-
-    </div>
-  </div>
-
 </div>
-      </div>
+
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Recent Posts</h5>
+        <ul class="list-unstyled posts-recent">
+            <ul class="list-unstyled posts-recent">
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                
+                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                
+            </ul>
+        </ul>
     </div>
+</div>
 
-    <footer class="site">
-      <div class="container">
-        <p>&copy; 2016 James Skemp&#39;s Test Hugo-Generated Site</p>
-        <p>Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>,</p>
-        <p>Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank">Robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank">Daisuke Tsuji</a></p>
-      </div>
-    </footer>
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-3526066001929698"
+			data-ad-slot="3689523691"
+			data-ad-format="auto">
+		</ins>
+	</div>
+</div>
 
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+                    
+    
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 card">
+                <h5>categories</h5>
+                <ul class="list-unstyled posts-recent">
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                    
+                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
 
     
 
-  </body>
-</html>
 
+                    
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1 card">
+			<h5>Support This Site</h5>
+			<p>
+				If my blog was helpful to you, then please consider visiting my
+				<a href="http://amzn.to/22xk0cK" rel="external">Amazon Wishlist</a>.
+			</p>
+		</div>
+	</div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-6">
+    <ul class="list-inline links">
+        
+    </ul>
+</div>
+
+            <div class="col-md-4 col-xs-6">
+    <ul class="list-inline social-media">
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Generated using <a href="https://gohugo.io/" rel="external">Hugo</a> and the <a href="https://github.com/nraboy/hugo-phlat-theme" rel="external">Phlat Theme</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div id="back-to-top" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</div>
+<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
+<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
+<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    if(($(window).height() + 100) < $(document).height()) {
+        $('#back-to-top').removeClass('hidden').affix({
+            offset: {
+                top: 100
+            }
+        });
+    }
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    
+    if (window.location.hostname == "localhost") {
+        $(".adsbygoogle").css("text-decoration", "none");
+        $(".adsbygoogle").text("Adsense is unavailable while serving on localhost or 127.0.0.1");
+    } else {
+        [].forEach.call(document.querySelectorAll('.adsbygoogle'), function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+    }
+</script>
+
+
+
+    </body>
+</html>
