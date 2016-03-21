@@ -1,0 +1,19 @@
+<div class="col-md-4 col-xs-6">
+    <ul class="list-inline social-media">
+        {{ with .Site.Params.twitter }}
+            <li><a href="{{ . }}"><i class="fa fa-twitter fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Params.googleplus }}
+            <li><a href="{{ . }}"><i class="fa fa-google-plus-square fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Params.linkedin }}
+            <li><a href="{{ . }}"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Params.youtube }}
+            <li><a href="{{ . }}"><i class="fa fa-youtube fa-lg"></i></a></li>
+        {{ end }}
+        {{ with .Site.Params.paypal }}
+            <li><a href="{{ . }}"><i class="fa fa-paypal fa-lg"></i></a></li>
+        {{ end }}
+    </ul>
+</div>
