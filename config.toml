@@ -1,6 +1,6 @@
 baseurl = "http://words.strivinglife.com/"
 languageCode = "en-us"
-title = "James Skemp's Test Hugo-Generated Site"
+title = "James Skemp's StrivingLife"
 theme = "phlat"
 publishdir = "public"
 canonifyurls = true

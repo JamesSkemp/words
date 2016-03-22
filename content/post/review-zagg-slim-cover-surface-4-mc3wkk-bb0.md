@@ -12,7 +12,7 @@ tags = ["review"]
 
 The following is a review of the [ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)][1], received as part of the Amazon Vine program.
 
-### Actually on par with the official type cover
+## Actually on par with the official type cover
 
 When I purchased my [Surface Pro 4][2] a number of months ago I opted to spend the extra money to get the official type cover with it. Having used a couple other two-in-one machines, getting used to the keys wasn't too hard.
 
@@ -41,6 +41,8 @@ I mentioned above that I had a loose key, and used a replacement keyboard. I end
 I did have to contact them because I didn't receive information on shipping the old product back, but (again on a Saturday) I received a response that I'd be getting an email with the necessary UPS shipping label. I still have to go through the rest of that process, and will update this review once the warranty is taken care of completely.
 
 Honestly, I didn't think the ZAGG keyboard was going to be able to match what Microsoft did in the type cover. But while the type cover has some advantages (backlit key variability, size, power via the Surface), the ZAGG keyboard wins out in other cases (portability, keys, ability to use with other devices). Knowing what I know now, I think I might actually recommend that people take a look at the [ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)][1] when picking up a Surface Pro 4 (or 3), instead of just going with the Microsoft type cover. For effectively matching the type cover, I give the ZAGG Slim Cover a full five of five stars.
+
+UPDATE: Belatedly, I received the UPS mailing label and was able to get the keyboard with the faulty left arrow shipped off without issue. I had no issue with them receiving it, and have had no issues with my replacement keyboard.
 
 [1]: http://amzn.to/1TxgNYG
 [2]: http://amzn.to/1WzBRfc

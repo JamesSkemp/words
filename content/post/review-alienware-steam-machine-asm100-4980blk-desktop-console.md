@@ -12,7 +12,7 @@ tags = ["review", "steamos"]
 
 The following is a review of the [Alienware Steam Machine ASM100-4980BLK Desktop Console, featuring an Intel Core i5, 8 GB RAM, 1 TB HDD, and NVIDIA GeForce GTX GPU][1], received as part of the Amazon Vine program.
 
-### A weird hybrid
+## A weird hybrid
 
 First I've got to say I'm not sure how to review the Alienware Steam Machine ASM100-4980BLK. Do I compare it to the consoles, as that's what they're trying to make (especially with SteamOS being the OS on this machine)? Or do I compare it to a Desktop computer, since the games you play are those you'd typically play on a PC? Or is it something new, like tablets were many years ago?
 
