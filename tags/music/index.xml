@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/music/</link>
+    <link>http://words.strivinglife.com/tags/music/</link>
     <description>Recent content in Music on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jun 2015 20:21:21 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Bang Gang&#39;s The Wolves Are Whispering (2015)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Bang-Gangs-The-Wolves-Are-Whispering-2015/</link>
+      <link>http://words.strivinglife.com/post/Review-Bang-Gangs-The-Wolves-Are-Whispering-2015/</link>
       <pubDate>Fri, 26 Jun 2015 20:21:21 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Bang-Gangs-The-Wolves-Are-Whispering-2015/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Bang-Gangs-The-Wolves-Are-Whispering-2015/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of Bang Gang&#39;s 2015 album &lt;a href=&#34;http://www.amazon.com/dp/B00X8IZFEW?tag=strivinglifen-20&#34;&gt;The Wolves Are Whispering&lt;/a&gt;.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;Another beautiful album&lt;/h3&gt;
@@ -37,10 +37,10 @@
     
     <item>
       <title>Well done, Amazon (re: Amazon Cloud)</title>
-      <link>http://jamesskemp.github.io/words/post/Well-done-Amazon-re-Amazon-Cloud/</link>
+      <link>http://words.strivinglife.com/post/Well-done-Amazon-re-Amazon-Cloud/</link>
       <pubDate>Tue, 29 Mar 2011 07:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Well-done-Amazon-re-Amazon-Cloud/</guid>
+      <guid>http://words.strivinglife.com/post/Well-done-Amazon-re-Amazon-Cloud/</guid>
       <description>&lt;p&gt;Well done, Amazon.&lt;/p&gt;
 &lt;p&gt;They&#39;ve been saying for quite a while that music was heading towards the &#39;cloud,&#39; and while it seemed for a while that everyone was betting on Apple doing it first, you&#39;ve trumped them, with what seems like a very consumer-friendly service.&lt;/p&gt;
 &lt;p&gt;5 GB for everyone? Check.&lt;/p&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>Favorite new (to me) music of 2010</title>
-      <link>http://jamesskemp.github.io/words/post/Favorite-new-to-me-music-of-2010/</link>
+      <link>http://words.strivinglife.com/post/Favorite-new-to-me-music-of-2010/</link>
       <pubDate>Sat, 01 Jan 2011 10:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Favorite-new-to-me-music-of-2010/</guid>
+      <guid>http://words.strivinglife.com/post/Favorite-new-to-me-music-of-2010/</guid>
       <description>&lt;p&gt;Continuing with &lt;a href=&#34;http://strivinglife.com/words/post/Favorite-new-to-me-music-of-2009.aspx&#34;&gt;the tradition started last year&lt;/a&gt;, I present my favorite albums purchased in 2010.&lt;/p&gt;
 &lt;p&gt;To be on this list I must have purchased the album in 2010. This also doesn&#39;t include all albums I purchased.&lt;/p&gt;
 &lt;h3&gt;Easy winners&lt;/h3&gt;
@@ -108,10 +108,10 @@
     
     <item>
       <title>iTunes Playlists to Xml: Parsing categories with LINQ</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
       <pubDate>Wed, 20 Oct 2010 08:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;p&gt;I recently had the need to determine what types of music I had within my collection of music. Since I&amp;nbsp;created &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; so that I could export out my library on my iPod, it was easy enough to run that and then open &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; to run the following query.&lt;/p&gt;
 &lt;p&gt;Obviously, you must export the Genre field in order for the following query to work.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Location to the XML from iTunes Playlists to XML
@@ -176,10 +176,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Review: Nady Audio Stereo Headphones (HP-03)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Nady-Audio-Stereo-Headphones-HP-03/</link>
+      <link>http://words.strivinglife.com/post/Review-Nady-Audio-Stereo-Headphones-HP-03/</link>
       <pubDate>Sun, 12 Sep 2010 11:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Nady-Audio-Stereo-Headphones-HP-03/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Nady-Audio-Stereo-Headphones-HP-03/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001VO4TX8?tag=strivinglifen-20&#34;&gt;Nady Audio Stereo Headphones, model HP-03&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -193,10 +193,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Review: La Ballade Of Lady &amp; Bird : A Project By Keren Ann Zeidel &amp; Bardi Johannsson</title>
-      <link>http://jamesskemp.github.io/words/post/Review-La-Ballade-Of-Lady-Bird/</link>
+      <link>http://words.strivinglife.com/post/Review-La-Ballade-Of-Lady-Bird/</link>
       <pubDate>Tue, 17 Aug 2010 08:34:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-La-Ballade-Of-Lady-Bird/</guid>
+      <guid>http://words.strivinglife.com/post/Review-La-Ballade-Of-Lady-Bird/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/Ballade-Lady-Bird-Project-Johannsson/dp/B003BB4VDW/ref=cm_cr_pr_product_top?tag=strivinglifen-20&#34;&gt;La Ballade Of Lady &amp;amp; Bird : A Project By Keren Ann Zeidel &amp;amp; Bardi Johannsson&lt;/a&gt;. I believe this is my first review of an album &amp;hellip;&lt;/div&gt;
 &lt;p&gt;I have a difficult time seeing how one can review the actual music on an album, since tastes are so personal, so I&amp;rsquo;ll focus on myself.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m a pretty huge fan of Keren Ann&amp;rsquo;s work. I started with the absolutely beautiful Nolita, then the okay La Biographie De Luka Philipse, La Disparition, and then a big shopping spree of Not Going Anywhere, Keren Ann, and Lady &amp;amp; Bird.&lt;/p&gt;
@@ -212,10 +212,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Music Recommendations Please! version 0.5 beta</title>
-      <link>http://jamesskemp.github.io/words/post/Music-Recommendations-Please%21-version-05-beta/</link>
+      <link>http://words.strivinglife.com/post/Music-Recommendations-Please%21-version-05-beta/</link>
       <pubDate>Fri, 28 May 2010 07:58:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Music-Recommendations-Please%21-version-05-beta/</guid>
+      <guid>http://words.strivinglife.com/post/Music-Recommendations-Please%21-version-05-beta/</guid>
       <description>&lt;p&gt;While not necessarily a step forward from &lt;a href=&#34;http://strivinglife.com/words/post/Music-Recommendations-Please!-045-beta-released.aspx&#34;&gt;version 0.4.5 of Music Recommendations Please!&lt;/a&gt;, version 0.5 is nonetheless a positive step. Consider this an idea-based release. As such, this application is in no way final (but might be more complete after this long weekend).&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/MusicRecommendationsPlease_0.5.zip&#34;&gt;Download Music Recommendations Please! version 0.5, beta&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;You can see a general idea of where I&#39;d like to end up by reading my &lt;a href=&#34;http://strivinglife.com/words/post/Music-application-idea.aspx&#34;&gt;music application idea&lt;/a&gt;.&lt;/p&gt;
@@ -226,10 +226,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Music application idea</title>
-      <link>http://jamesskemp.github.io/words/post/Music-application-idea/</link>
+      <link>http://words.strivinglife.com/post/Music-application-idea/</link>
       <pubDate>Tue, 25 May 2010 22:23:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Music-application-idea/</guid>
+      <guid>http://words.strivinglife.com/post/Music-application-idea/</guid>
       <description>&lt;p&gt;Surprisingly, it was way back in September of last year that I realized &lt;a href=&#34;http://strivinglife.com/words/post/Music-Recommendations-Please!-045-beta-released.aspx&#34;&gt;Music Recommendations Please!&lt;/a&gt;, which I hoped would help me discover new music (and perhaps help others as well).&lt;/p&gt;
 &lt;p&gt;Since then&amp;nbsp;I haven&#39;t used it as much as I would have hoped, but that&#39;s mostly because I&#39;m not happy with how easy it is to get more than one artist in at a time, and generate helpful &#39;reports&#39; from data returned for multiple artists.&lt;/p&gt;
 &lt;p&gt;Thanks to &lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Playlists-to-Xml-version-16-released.aspx&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; I&#39;m able to generate very nice XML files which I can then parse with LINQPad, but again, outside of the couple statements I save (and which I seemingly haven&#39;t been sharing), there&#39;s no real reporting functionality.&lt;/p&gt;
@@ -243,10 +243,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Dead? The digital download is barely out of its teens</title>
-      <link>http://jamesskemp.github.io/words/post/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
+      <link>http://words.strivinglife.com/post/Dead-The-digital-download-is-barely-out-of-its-teens/</link>
       <pubDate>Sat, 22 May 2010 09:47:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
+      <guid>http://words.strivinglife.com/post/Dead-The-digital-download-is-barely-out-of-its-teens/</guid>
       <description>&lt;p&gt;Yesterday Slate posted an article by Farhad Manjoo titled &lt;a rel=&#34;external&#34; href=&#34;http://www.slate.com/id/2254532/pagenum/all/&#34;&gt;The Digital Download Is Dead: How Google&#39;s music-streaming venture will change the gadget and entertainment worlds forever&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After first, rightly, attacking Apple&#39;s iTunes and iPod (and related) platforms as being slow and unwieldy, especially on the predominate operating system Windows (not even mentioning Linux), and overall behind on the times, Farhad moves us from syncing our music collections out to the cloud. Which isn&#39;t much of a surprise given that, despite some rather large issues, the cloud has been &#39;in&#39; for a couple of years now. But even more surprising Farhad argues at the end of the article that &#34;[i]n the future, not only will you not get a CD when you buy an album, you won&#39;t even get a digital file.&#34;&lt;/p&gt;
 &lt;p&gt;But there&#39;s an elephant in the room. A rather large one, taking up every available inch of space. Namely the global music industry.&lt;/p&gt;
@@ -269,10 +269,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>iTunes Playlists to Xml - version 1.6 released</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-16-released/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-16-released/</link>
       <pubDate>Sat, 08 May 2010 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-version-16-released/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-16-released/</guid>
       <description>&lt;p&gt;Version 1.6 of iTunes Playlists to Xml is now available for download.&lt;/p&gt;
 &lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/iTunesPlaylistsToXml_1.6.zip&#34;&gt;iTunes Playlists to Xml 1.6&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Installing and more information&lt;/h3&gt;
@@ -299,12 +299,12 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Favorite new (to me) music of 2009</title>
-      <link>http://jamesskemp.github.io/words/post/Favorite-new-to-me-music-of-2009/</link>
+      <link>http://words.strivinglife.com/post/Favorite-new-to-me-music-of-2009/</link>
       <pubDate>Fri, 01 Jan 2010 11:05:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Favorite-new-to-me-music-of-2009/</guid>
+      <guid>http://words.strivinglife.com/post/Favorite-new-to-me-music-of-2009/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;Keeping with the tradition started here, a &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Favorite-new-to-me-music-of-2010.aspx&#34;&gt;list for 2010&lt;/a&gt; is also available.&lt;/p&gt;
+&lt;p&gt;Keeping with the tradition started here, a &lt;a href=&#34;http://words.strivinglife.com/words/post/Favorite-new-to-me-music-of-2010.aspx&#34;&gt;list for 2010&lt;/a&gt; is also available.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Having only listened to the radio a few times over the last year, I have a good idea of just what music I&amp;rsquo;ve listened to, since my iPod keeps track of everything.&lt;/p&gt;
 &lt;p&gt;With the help of &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml/&#34;&gt;iTunes Playlists to Xml&lt;/a&gt;&amp;nbsp;and &lt;a href=&#34;http://strivinglife.com/words/?tag=/linqpad&#34;&gt;LINQPad&lt;/a&gt;, here&amp;rsquo;s my favorite new (to me) album purchases of 2009.&lt;/p&gt;
@@ -360,10 +360,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>iTunes Music to SQLite - version 0.1 beta released</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Music-to-SQLite-version-01-beta-released/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Music-to-SQLite-version-01-beta-released/</link>
       <pubDate>Thu, 24 Sep 2009 12:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Music-to-SQLite-version-01-beta-released/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Music-to-SQLite-version-01-beta-released/</guid>
       <description>&lt;p&gt;While it was at the same stage as it is now back on the 19th, I&#39;m finally releasing the beta version of iTunes Music to SQLite.&lt;/p&gt;
 &lt;p&gt;This console application finds all Music playlists in iTunes and imports them into a SQLite database (called iTunesMusic.s3db).&lt;/p&gt;
 &lt;p&gt;You can change this by passing the database and source names as parameters.&lt;/p&gt;
@@ -378,10 +378,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Music Recommendations Please! - version 0.4.5 beta released</title>
-      <link>http://jamesskemp.github.io/words/post/Music-Recommendations-Please%21-045-beta-released/</link>
+      <link>http://words.strivinglife.com/post/Music-Recommendations-Please%21-045-beta-released/</link>
       <pubDate>Sun, 13 Sep 2009 20:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Music-Recommendations-Please%21-045-beta-released/</guid>
+      <guid>http://words.strivinglife.com/post/Music-Recommendations-Please%21-045-beta-released/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;An updated version of this application was released. &lt;a href=&#34;http://strivinglife.com/words/post/Music-Recommendations-Please!-version-05-beta.aspx&#34;&gt;Download and find out more about version 0.5&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>C# on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/c/</link>
+    <link>http://words.strivinglife.com/tags/c/</link>
     <description>Recent content in C# on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Dec 2010 16:51:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/c" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/c" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Convert online image to base64 with C#</title>
-      <link>http://jamesskemp.github.io/words/post/Convert-online-image-to-base64-with-C-sharp/</link>
+      <link>http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/</link>
       <pubDate>Sun, 12 Dec 2010 16:51:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Convert-online-image-to-base64-with-C-sharp/</guid>
+      <guid>http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/</guid>
       <description>&lt;p&gt;The following code will convert an online image to a base64 string.&lt;/p&gt;
 &lt;p&gt;The code was specifically written for use in &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt;, hence the use of Dump().&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;String url = &#34;http://ecx.images-amazon.com/images/I/51MVXV3QQ6L._SL500_SS150_.jpg&#34;;
@@ -38,10 +38,10 @@ client.Dispose();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>iTunes Track class in C# and PHP</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Track-class-in-C-sharp-and-PHP/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Track-class-in-C-sharp-and-PHP/</link>
       <pubDate>Wed, 08 Sep 2010 22:25:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
       <description>&lt;p&gt;I&#39;ve recently begun reading up on PHP again. As I&#39;m most fond of my iTunes Playlists to Xml application, I thought I&#39;d work with that application&#39;s output - XML files with playlist data - as I continued to dig into PHP (instead of stopping now that I know enough to tweak existing code and create new functionality).&lt;/p&gt;
 &lt;p&gt;Here&#39;s a basic Track object in C# and PHP. I&#39;ll of course be elaborating on these as time goes by (and already have code for the C# implementation).&lt;/p&gt;
 &lt;h3&gt;Track class in C#&lt;/h3&gt;
@@ -203,10 +203,10 @@ class Track {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</title>
-      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
+      <link>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</link>
       <pubDate>Sun, 15 Aug 2010 13:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
+      <guid>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/</guid>
       <description>&lt;p&gt;In part one of this series we covered what we&#39;d be doing, and what data model we&#39;d be using.&lt;/p&gt;
 &lt;p&gt;In part two of this series we used LINQ to XML to query the XML file with the data we want to display.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I&#39;ll be implementing very basic caching.&lt;/p&gt;
@@ -398,10 +398,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</title>
-      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
+      <link>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</link>
       <pubDate>Sat, 14 Aug 2010 14:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
+      <guid>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model.aspx&#34;&gt;part one of this series&lt;/a&gt; we covered what we&#39;d be doing, and what model we&#39;d be using for the data.&lt;/p&gt;
 &lt;p&gt;This time we&#39;ll parse the XML file that contains the data we need, and populate the objects.&lt;/p&gt;
 &lt;h3&gt;Loading the XML file&lt;/h3&gt;
@@ -434,10 +434,10 @@ public class OdinSphere : IHttpHandler {
     
     <item>
       <title>ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</title>
-      <link>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
+      <link>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</link>
       <pubDate>Fri, 13 Aug 2010 22:50:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
+      <guid>http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/</guid>
       <description>&lt;p&gt;For a while now I&#39;ve been meaning to work with &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2010/02/07/built-in-charting-controls-vs-2010-and-net-4-series.aspx&#34;&gt;ASP.NET 4&#39;s built-in charting functionality&lt;/a&gt;. While I was going to use it alongside my gas tracking, I think I&#39;m instead going to use my &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/files/OdinSphere.xml&#34;&gt;Odin Sphere leveling guide&lt;/a&gt;, so I don&#39;t have to create an XSLT for the output.&lt;/p&gt;
 &lt;p&gt;In this part of the series I&#39;ll outline the data model I&#39;ll be using, and preliminary setups.&lt;/p&gt;
 &lt;h3&gt;Method&lt;/h3&gt;
@@ -484,10 +484,10 @@ using System.Linq;&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</title>
-      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
+      <link>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</link>
       <pubDate>Fri, 25 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
+      <guid>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -580,10 +580,10 @@ $(&amp;lsquo;#pulledData&amp;rsquo;).html(outputContent);&lt;/code&gt;&lt;/pre&g
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service</title>
-      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</link>
+      <link>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</link>
       <pubDate>Thu, 24 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</guid>
+      <guid>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -664,10 +664,10 @@ return newLoan;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object</title>
-      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</link>
+      <link>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</link>
       <pubDate>Tue, 22 Jun 2010 21:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</guid>
+      <guid>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;See the &lt;a href=&#34;http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx&#34;&gt;table of contents&lt;/a&gt; for more information.&lt;/p&gt;
 &lt;/div&gt;
@@ -815,10 +815,10 @@ return paymentsUpdated;
     
     <item>
       <title>Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</title>
-      <link>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
+      <link>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</link>
       <pubDate>Mon, 21 Jun 2010 08:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
+      <guid>http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/</guid>
       <description>&lt;p&gt;A while ago (&lt;a href=&#34;http://strivinglife.com/words/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule.aspx&#34;&gt;a year and a quarter&lt;/a&gt;)&amp;nbsp;I created an &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/testing/asp.net/Amortization.aspx&#34;&gt;amortization schedule generator&lt;/a&gt; in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.&lt;/p&gt;
 &lt;p&gt;For better or worse, some of the practices I put in place aren&#39;t the best, and either way I&#39;ve been meaning to tweak the interface so that I could do various comparisons. If I pay x dollars more a month, how much faster would I have it paid off? How much would I save in interest? How much am I paying in interest as it is? I also really wanted to work&amp;nbsp;with JSON and jQuery, for practice.&lt;/p&gt;
 &lt;p&gt;Now that I&#39;ve found &lt;a href=&#34;http://strivinglife.com/words/post/RESTful-WCF-Web-services-easily.aspx&#34;&gt;WCF WebHttp&lt;/a&gt;, I think I have everything I need to make it happen.&lt;/p&gt;
@@ -839,10 +839,10 @@ return paymentsUpdated;
     
     <item>
       <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
-      <link>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <link>http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <guid>http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
 &lt;/div&gt;
@@ -896,10 +896,10 @@ return paymentsUpdated;
     
     <item>
       <title>Basic .NET (C#) Traceroute library</title>
-      <link>http://jamesskemp.github.io/words/post/Basic-NET-C-Sharp-Traceroute-library/</link>
+      <link>http://words.strivinglife.com/post/Basic-NET-C-Sharp-Traceroute-library/</link>
       <pubDate>Sun, 09 May 2010 16:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Basic-NET-C-Sharp-Traceroute-library/</guid>
+      <guid>http://words.strivinglife.com/post/Basic-NET-C-Sharp-Traceroute-library/</guid>
       <description>&lt;p&gt;Spending the day researching all things DNS, I eventually came upon Jim Scott&#39;s post on &lt;a rel=&#34;external&#34; href=&#34;http://coding.infoconex.com/post/C-Traceroute-using-net-framework.aspx&#34;&gt;C# Traceroute using .net framework&lt;/a&gt;. After a bit of tweaking, I&#39;ve got something that I like a bit more, because I really want to know what the IP address means.&lt;/p&gt;
 &lt;p&gt;The code for the assembly and console application are included below. Written against &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework&lt;/a&gt; 4 (in Visual Studio 2010), but if you change the String.IsNullOrWhiteSpace() reference, you should be able to compile this in 3.5.&lt;/p&gt;
 &lt;h3&gt;Trace.cs&lt;/h3&gt;
@@ -1027,10 +1027,10 @@ namespace DnsConsoleApp {
     
     <item>
       <title>Review: Beginning ASP.NET 4 In C# and VB</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
+      <link>http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/</link>
       <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -1052,10 +1052,10 @@ namespace DnsConsoleApp {
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
       <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
@@ -1109,10 +1109,10 @@ comments.Dump();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
       <pubDate>Sun, 06 Dec 2009 15:55:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
       <description>&lt;p&gt;Unfortunately, BlogEngine.NET doesn&#39;t currently have a very good way to determine, at a glance, all of the comments that haven&#39;t been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.&lt;/p&gt;
 &lt;p&gt;You can download the built executable, or play with the code, which is included below.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/TestBlogEngine.7z&#34;&gt;Download the executable&lt;/a&gt;&amp;nbsp;(7-Zip format). Requires &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework 3.5&lt;/a&gt;.&lt;/p&gt;
@@ -1194,10 +1194,10 @@ namespace TestBlogEngine {
     
     <item>
       <title>Review: Professional ASP.NET MVC 1.0</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Professional-ASPNET-MVC-10/</link>
+      <link>http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-10/</link>
       <pubDate>Sun, 18 Oct 2009 09:26:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Professional-ASPNET-MVC-10/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-10/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/0470384611?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 1.0&lt;/a&gt;, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie.&lt;/p&gt;
 &lt;p&gt;I received a free copy of this book for review purposes from Amazon Vine, but was planning on purchasing the book nonetheless (I just had the good fortune to get a copy before they were all taken).&lt;/p&gt;

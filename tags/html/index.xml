@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/html/</link>
+    <link>http://words.strivinglife.com/tags/html/</link>
     <description>Recent content in Html on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Apr 2011 19:45:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/html/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to easily clear the window.applicationCache on select browsers</title>
-      <link>http://jamesskemp.github.io/words/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
+      <link>http://words.strivinglife.com/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</link>
       <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
+      <guid>http://words.strivinglife.com/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
       <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
 &lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
@@ -23,11 +23,11 @@
     
     <item>
       <title>HTML5 / LocalStorage Web application manager tool</title>
-      <link>http://jamesskemp.github.io/words/post/HTML5-LocalStorage-Web-application-manager-tool/</link>
+      <link>http://words.strivinglife.com/post/HTML5-LocalStorage-Web-application-manager-tool/</link>
       <pubDate>Sat, 02 Apr 2011 19:43:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/HTML5-LocalStorage-Web-application-manager-tool/</guid>
-      <description>&lt;p&gt;As &lt;a href=&#34;http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34;&gt;previously mentioned&lt;/a&gt; I&#39;ve been spending a good amount of time looking at HTML5/local storage in my free time.&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/HTML5-LocalStorage-Web-application-manager-tool/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;http://words.strivinglife.com/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari.aspx&#34;&gt;previously mentioned&lt;/a&gt; I&#39;ve been spending a good amount of time looking at HTML5/local storage in my free time.&lt;/p&gt;
 &lt;p&gt;For testing purposes, I ended up putting a number of items within &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;my video games offline application&lt;/a&gt;, which is fine, but results in some extraneous information on the page.&lt;/p&gt;
 &lt;p&gt;To clean this up, as well as to allow for additional functionality, I&#39;ve gone ahead and created a &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/AppManager.html&#34;&gt;Web application manager&lt;/a&gt; for my media.jamesrskemp.com Web site.&lt;/p&gt;
 &lt;p&gt;It has a pretty simple interface, and still requires some work, but I&#39;m ultimately pretty happy with it.&lt;/p&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Interesting feature with parsing XML with jQuery on Safari</title>
-      <link>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
+      <link>http://words.strivinglife.com/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</link>
       <pubDate>Sun, 27 Mar 2011 20:39:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
+      <guid>http://words.strivinglife.com/post/Interesting-feature-with-parsing-XML-with-jQuery-on-Safari/</guid>
       <description>&lt;p&gt;I&#39;ve been playing around with HTML5 quite a bit recently, in particular with offline Web applications.&lt;/p&gt;
 &lt;p&gt;My second experiment (my first is on pause) was with making &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;my video games&lt;/a&gt; available, so that I can access the listing when I&#39;m out shopping at used game stores.&lt;/p&gt;
 &lt;p&gt;It&#39;s still in progress, but you can see my &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/video_games.html&#34;&gt;offline listing of video games&lt;/a&gt; now.&lt;/p&gt;
@@ -157,10 +157,10 @@
     
     <item>
       <title>Code cleanup and commenting - done right</title>
-      <link>http://jamesskemp.github.io/words/post/Code-cleanup-and-commenting-done-right/</link>
+      <link>http://words.strivinglife.com/post/Code-cleanup-and-commenting-done-right/</link>
       <pubDate>Sun, 18 Jun 2006 14:13:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Code-cleanup-and-commenting-done-right/</guid>
+      <guid>http://words.strivinglife.com/post/Code-cleanup-and-commenting-done-right/</guid>
       <description>&lt;p&gt;
 For the past hour, I&amp;#39;ve been looking at current ways to get my name out there for Web page cleanup and commenting.  In other words, I&amp;#39;d like to work with existing code to bring it closer to the standards, and comment it, if necessary.  I would think it would be of great benefit to those individuals who bought a solution from a vendor, and are looking at changes to that code, or cleanup so that there pages act alike in most browsers.  Unfortunately, I haven&amp;#39;t found a site to offer my wares.  I&amp;#39;ve also looked at open source projects that may need some free help, but, alas, nothing there either.
 &lt;/p&gt;
@@ -172,10 +172,10 @@ If someone happens upon this by way of a Google search (or any other search - Go
     
     <item>
       <title>Using a standard template to create a simple Web site</title>
-      <link>http://jamesskemp.github.io/words/post/Using-a-standard-template-to-create-a-simple-Web-site/</link>
+      <link>http://words.strivinglife.com/post/Using-a-standard-template-to-create-a-simple-Web-site/</link>
       <pubDate>Sun, 02 Apr 2006 19:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Using-a-standard-template-to-create-a-simple-Web-site/</guid>
+      <guid>http://words.strivinglife.com/post/Using-a-standard-template-to-create-a-simple-Web-site/</guid>
       <description>&lt;p&gt;
 As stated in a previous article, there&amp;#39;s a site, &lt;a href=&#34;http://blog.html.it/layoutgala/&#34;&gt;http://blog.html.it/layoutgala/&lt;/a&gt;, that offers free templates.  Using these templates, you can easily create a site, so long as you have the content you need to fill the pages.
 &lt;/p&gt;
@@ -276,10 +276,10 @@ With that, you&amp;#39;ve successfully created your first page. All you need to 
     
     <item>
       <title>Google Code: Web Authoring Statistics</title>
-      <link>http://jamesskemp.github.io/words/post/Google-Code-Web-Authoring-Statistics/</link>
+      <link>http://words.strivinglife.com/post/Google-Code-Web-Authoring-Statistics/</link>
       <pubDate>Wed, 29 Mar 2006 07:51:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Google-Code-Web-Authoring-Statistics/</guid>
+      <guid>http://words.strivinglife.com/post/Google-Code-Web-Authoring-Statistics/</guid>
       <description>&lt;p&gt;
 Here&amp;#39;s an interesting article out of the Googleplex: &lt;a href=&#34;http://code.google.com/webstats/index.html&#34;&gt;Google Code: Web Authoring Statistics&lt;/a&gt;.&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -297,10 +297,10 @@ And, the old guides out there that are written in the times of pre-CSS need to g
     
     <item>
       <title>&#39;Just enough HTML to be dangerous&#39;</title>
-      <link>http://jamesskemp.github.io/words/post/Just-enough-HTML-to-be-dangerous/</link>
+      <link>http://words.strivinglife.com/post/Just-enough-HTML-to-be-dangerous/</link>
       <pubDate>Mon, 27 Mar 2006 20:26:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Just-enough-HTML-to-be-dangerous/</guid>
+      <guid>http://words.strivinglife.com/post/Just-enough-HTML-to-be-dangerous/</guid>
       <description>&lt;p&gt;
 This time, we&amp;#39;ll be covering the minimum HTML knowledge required to be truly dangerous. While an expanded understanding of HTML is not, per se, required, having at least some understanding will help in a number of ways. Of course, the more HTML you know, the less you rely on tools to do the work (which is a good thing, since we&amp;#39;re not always able to use the tools that we&amp;#39;re familar with).&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -348,10 +348,10 @@ With that, you&amp;#39;ve got just enough HTML knowledge to be dangerous.
     
     <item>
       <title>Found: 40 free HTML/CSS templates</title>
-      <link>http://jamesskemp.github.io/words/post/Found-40-free-HTMLCSS-templates/</link>
+      <link>http://words.strivinglife.com/post/Found-40-free-HTMLCSS-templates/</link>
       <pubDate>Fri, 24 Mar 2006 20:01:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Found-40-free-HTMLCSS-templates/</guid>
+      <guid>http://words.strivinglife.com/post/Found-40-free-HTMLCSS-templates/</guid>
       <description>&lt;p&gt;Alessandro Fulciniti, along with an unnamed number of people, have create 40 CSS-based templates, free for download, available at &lt;a rel=&#34;nofollow&#34; href=&#34;http://blog.html.it/layoutgala/&#34; target=&#34;_blank&#34;&gt;http://blog.html.it/layoutgala/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;They&#39;ve got near every possible layout that I can think of, along with a number more. Stick on a stylesheet, and you&#39;re golden.&lt;/p&gt;
 &lt;p&gt;The only real problem I see is that navigation items should, according to some sources, come before the main content area. After all if the CSS disappears, then you&#39;ll still want navigation to come first.&lt;/p&gt;
@@ -361,10 +361,10 @@ With that, you&amp;#39;ve got just enough HTML knowledge to be dangerous.
     
     <item>
       <title>Don&#39;t use ul when you should use blockquote</title>
-      <link>http://jamesskemp.github.io/words/post/Dont-use-ul-when-you-should-use-blockquote/</link>
+      <link>http://words.strivinglife.com/post/Dont-use-ul-when-you-should-use-blockquote/</link>
       <pubDate>Mon, 02 Jan 2006 09:45:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Dont-use-ul-when-you-should-use-blockquote/</guid>
+      <guid>http://words.strivinglife.com/post/Dont-use-ul-when-you-should-use-blockquote/</guid>
       <description>&lt;p&gt;
 I&amp;#39;m sorry, but I hate it when people use &amp;lt;ul&amp;gt; instead of &amp;lt;blockquote&amp;gt;.  &amp;lt;ul&amp;gt; is for list items, and should therefore be composed of list items (&amp;lt;li&amp;gt;s). If you&amp;#39;re not going to put &amp;lt;li&amp;gt;s for each item within a &amp;lt;ul&amp;gt; block, &lt;strong&gt;don&amp;#39;t use &amp;lt;ul&amp;gt;&lt;/strong&gt;&lt;!--adsense--&gt;
 &lt;/p&gt;
@@ -373,10 +373,10 @@ I&amp;#39;m sorry, but I hate it when people use &amp;lt;ul&amp;gt; instead of &
     
     <item>
       <title>Can we blame hosts for their poor HTML editors?</title>
-      <link>http://jamesskemp.github.io/words/post/Can-we-blame-hosts-for-their-poor-HTML-editors/</link>
+      <link>http://words.strivinglife.com/post/Can-we-blame-hosts-for-their-poor-HTML-editors/</link>
       <pubDate>Sat, 30 Apr 2005 00:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Can-we-blame-hosts-for-their-poor-HTML-editors/</guid>
+      <guid>http://words.strivinglife.com/post/Can-we-blame-hosts-for-their-poor-HTML-editors/</guid>
       <description>&lt;div class=&#34;WPArticleInfo&#34;&gt;
 &lt;p&gt;
 Description: A short article on HTML editors provided by Web site hosts.

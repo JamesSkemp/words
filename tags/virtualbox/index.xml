@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualbox on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/virtualbox/</link>
+    <link>http://words.strivinglife.com/tags/virtualbox/</link>
     <description>Recent content in Virtualbox on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Feb 2010 10:00:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/virtualbox/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Using F8 on Sun VirtualBox 3.1.2 when installing Windows XP</title>
-      <link>http://jamesskemp.github.io/words/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</link>
+      <link>http://words.strivinglife.com/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</link>
       <pubDate>Sun, 07 Feb 2010 10:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
+      <guid>http://words.strivinglife.com/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
       <description>&lt;p&gt;For various reasons, I had need to install Windows XP on a new virtual machine earlier today (with Windows 7&amp;nbsp;64-bit&amp;nbsp;as the host).&lt;/p&gt;
 &lt;p&gt;For whatever reason, when getting to the point of accepting the licensing terms, before installation, I was unable to&amp;nbsp;use the F8 key. After searching about,&amp;nbsp;I found&amp;nbsp;a number of Mac and Ubuntu users with the same issue, but no Windows users. The left control, shift, alt, and even right control (which I knew wasn&#39;t going to work, but an Ubuntu user swore by it and I was out of options) buttons did nothing to help.&lt;/p&gt;
 &lt;p&gt;However, the often-used (ah, sarcasm) &#34;F Lock&#34; key was what finally did it.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Installing CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3 on Windows Server 2003</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
+      <link>http://words.strivinglife.com/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</link>
       <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
+      <guid>http://words.strivinglife.com/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
       <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
 &lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
 &lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;
@@ -62,10 +62,10 @@
     
     <item>
       <title>Multiple network adapters in VirtualBox, for Windows guests</title>
-      <link>http://jamesskemp.github.io/words/post/Multiple-network-adapters-in-VirtualBox-for-Windows-guests/</link>
+      <link>http://words.strivinglife.com/post/Multiple-network-adapters-in-VirtualBox-for-Windows-guests/</link>
       <pubDate>Thu, 02 Jul 2009 14:59:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Multiple-network-adapters-in-VirtualBox-for-Windows-guests/</guid>
+      <guid>http://words.strivinglife.com/post/Multiple-network-adapters-in-VirtualBox-for-Windows-guests/</guid>
       <description>&lt;p&gt;Having just upgraded to VirtualBox 3.0.0, I was running into an issue with being able to access a Windows Server 2003 guest from my Windows Vista host machine.&lt;/p&gt;
 &lt;p&gt;By default, when creating a Windows Server 2003 guest machine the Network settings are set such that Adapter 1 is PCnet-FAST III, attached to NAT. This allows the virtual machine to get outside, but not in.&lt;/p&gt;
 &lt;p&gt;However, it&#39;s possible to add a second adapter, attached to the host-only adapter. In this way you can access the outside world, as well as allow your host machine to access the guest via it&#39;s host-only ip (192.168.56.x, for example).&lt;/p&gt;
@@ -83,10 +83,10 @@
     
     <item>
       <title>Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
+      <link>http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</link>
       <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
       <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
 &lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
 &lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;

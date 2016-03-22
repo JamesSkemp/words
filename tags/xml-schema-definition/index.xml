@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xml Schema Definition on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/xml-schema-definition/</link>
+    <link>http://words.strivinglife.com/tags/xml-schema-definition/</link>
     <description>Recent content in Xml Schema Definition on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Dec 2009 07:30:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/xml-schema-definition/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/xml-schema-definition/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>XML Schema Definition creation: Journal - Part 2: XSD file with &lt;oXygen/&gt; XML Editor</title>
-      <link>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</link>
+      <link>http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</link>
       <pubDate>Wed, 23 Dec 2009 07:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</guid>
+      <guid>http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout.aspx&#34;&gt;the first part of this series&lt;/a&gt; I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010.&lt;/p&gt;
 &lt;p&gt;This time I&#39;m going to create the actual XML Schema Definition file with &lt;a rel=&#34;external&#34; href=&#34;http://www.oxygenxml.com/&#34;&gt;&amp;lt;oXygen/&amp;gt; XML Editor&lt;/a&gt;, version 11.1.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
@@ -126,10 +126,10 @@
     
     <item>
       <title>XML Schema Definition creation: Journal - Part 1: Primary layout</title>
-      <link>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</link>
+      <link>http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</link>
       <pubDate>Mon, 21 Dec 2009 07:50:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</guid>
+      <guid>http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/</guid>
       <description>&lt;p&gt;&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/XML-creation-Part-01.aspx&#34;&gt;a previous series&lt;/a&gt;, I went over the process of creating a new XML document to store &lt;a href=&#34;http://jamesrskemp.com/video_games.xml&#34;&gt;my video games&lt;/a&gt;. (Although in that case I used a DTD.)&lt;/p&gt;
 &lt;p&gt;This time I&amp;rsquo;m going to work on a schema to store quasi-journal entries, which I&amp;rsquo;m hoping will help with my goal to write every day.&lt;/p&gt;
 &lt;h3&gt;What I hope to accomplish&lt;/h3&gt;

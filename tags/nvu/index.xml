@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nvu on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/nvu/</link>
+    <link>http://words.strivinglife.com/tags/nvu/</link>
     <description>Recent content in Nvu on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 Feb 2006 10:53:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/nvu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/nvu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up Dreamweaver and Nvu to recognize your server</title>
-      <link>http://jamesskemp.github.io/words/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</link>
+      <link>http://words.strivinglife.com/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</link>
       <pubDate>Sun, 19 Feb 2006 10:53:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
+      <guid>http://words.strivinglife.com/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
       <description>&lt;p&gt;Now that we&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Apache-to-a-Windows-based-computer-locally.aspx&#34;&gt;setup Apache on our local computer&lt;/a&gt;, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites. I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).&lt;/p&gt;
 &lt;h3&gt;Dreamweaver setup&lt;/h3&gt;
 &lt;p&gt;For those of you using Dreamweaver as your editor, I&#39;ll be outlining how to set it up to recognize your new sites. While I&#39;ll specifically be dealing with Dreamweaver 8, the basics should be enough for other versions, as well as for other programs.&lt;!--adsense--&gt;&lt;/p&gt;

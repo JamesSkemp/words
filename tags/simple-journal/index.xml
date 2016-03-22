@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Simple Journal on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/simple-journal/</link>
+    <link>http://words.strivinglife.com/tags/simple-journal/</link>
     <description>Recent content in Simple Journal on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Jan 2010 18:53:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/simple-journal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/simple-journal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Simple Journal 1.0 Released</title>
-      <link>http://jamesskemp.github.io/words/post/Simple-Journal-10/</link>
+      <link>http://words.strivinglife.com/post/Simple-Journal-10/</link>
       <pubDate>Sun, 03 Jan 2010 18:53:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Simple-Journal-10/</guid>
+      <guid>http://words.strivinglife.com/post/Simple-Journal-10/</guid>
       <description>&lt;p&gt;Version 1.0 of Simple Journal is now available for download.&lt;/p&gt;
 &lt;p&gt;Simple Journal is meant to be exactly that; a &lt;em&gt;very&lt;/em&gt; simple way to keep track of a journal.&lt;/p&gt;
 &lt;p&gt;Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.&lt;/p&gt;

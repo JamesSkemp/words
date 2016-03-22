@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/python/</link>
+    <link>http://words.strivinglife.com/tags/python/</link>
     <description>Recent content in Python on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Oct 2006 08:11:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing Python on a local  Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-Python-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://words.strivinglife.com/post/Installing-Python-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Sat, 07 Oct 2006 08:11:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-Python-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://words.strivinglife.com/post/Installing-Python-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;
 In this article, we&amp;#39;ll be installing Python on our local server via ActiveState&amp;#39;s ActivePython. You can download the current version of ActivePython (2.4.3.12), as well as a select number of previous versions, from &lt;a href=&#34;http://www.activestate.com/Products/ActivePython/&#34;&gt;http://www.activestate.com/Products/ActivePython/&lt;/a&gt;
 &lt;/p&gt;
@@ -55,10 +55,10 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
     
     <item>
       <title>A local, Apache Web server, on a Windows XP computer</title>
-      <link>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
+      <link>http://words.strivinglife.com/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</link>
       <pubDate>Mon, 27 Feb 2006 03:23:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
+      <guid>http://words.strivinglife.com/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/</guid>
       <description>&lt;p&gt;My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I&#39;ve decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I&#39;ve opted to use it as the core, instead of IIS, or the like.&lt;/p&gt;
 &lt;p&gt;I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case. I do have copies of the versions I&#39;ve installed below, and would be happy to provide those copies that no longer exist elsewhere; just ask.&lt;/p&gt;
 &lt;h3&gt;Our local Web server uses the following technology.&lt;/h3&gt;
@@ -72,23 +72,23 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
 &lt;/li&gt;
 &lt;li&gt;Apache 2.0.59 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1: Apache 2.0.59, Perl, mod_perl&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2: ColdFusion MX 6.1 and ColdFusion MX 7.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3.aspx&#34;&gt;Part 3: PHP 4.4.2 and PHP 5.1.4, with MySQL and PostgreSQL support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-4.aspx&#34;&gt;Part 4: Using batch files to switch between versions of our local server&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-to-a-Windows-based-computer2c-locally.aspx&#34;&gt;Apache 1.3.34&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;.htaccess file 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Error-handling-on-a-local-Windows-based%2c-Apache2c-server.aspx&#34;&gt;Error Handling&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Perl&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-(our-local-install-of)-ActivePerl.aspx&#34;&gt;ActivePerl 5.8.8.819&lt;/a&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Perl-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;ActivePerl 5.8.7.815&lt;/a&gt;, ActivePerl 5.8.8.817&lt;/li&gt;
 &lt;/ul&gt;
@@ -105,7 +105,7 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
 &lt;li&gt;&lt;strong&gt;PHP&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-PHP-(442-to-444-and-514-to-520).aspx&#34;&gt;Upgrading PHP 4.x and/or PHP 5.x&lt;/a&gt; (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;PHP 4.4.2&lt;/a&gt; and &lt;a href=&#34;http://words.strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;PHP 5.1.4&lt;/a&gt; (with the ability to run one or the other) 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Python-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;Changing our PHP directory name/location&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -122,7 +122,7 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
 &lt;li&gt;MySQL 4.1.18: &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.net/wordpress/?p=69&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/2006/06/20/154/upgrading-phpmyadmin-270-pl2-to-281-on-a-local-windows-based-apache-server/&#34;&gt;phpMyAdmin 2.8.1&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;phpMyAdmin 2.7.0-pl2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-Administrator-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;MySQL Administrator 1.1.9&lt;/a&gt;&lt;/li&gt;
@@ -131,44 +131,44 @@ Congrats. With that, you&amp;#39;ve successfully installed ActivePython to your 
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;PostgreSQL&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;PostgreSQL 8.1.3 or PostgreSQL 8.2.3 and pgAdmin 1.4.1 or pgAdmin 1.6.2: &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with PHP 4.4.2&lt;/a&gt;, &lt;a href=&#34;http://strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server.aspx&#34;&gt;with PHP 5.1.4&lt;/a&gt;, &lt;a href=&#34;http://words.strivinglife.com/words/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;with ColdFusion MX 6.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ColdFusion&lt;/strong&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1 Developer Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.2 Developer Edition&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1 Developer Edition&lt;/a&gt; (upgrade, but with the ability to swap to 6.1)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-(our-local-install-of)-WordPress.aspx&#34;&gt;WordPress 2.0.5&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;was&lt;/em&gt;: &lt;a href=&#34;http://words.strivinglife.com/words/post/Setting-up-WordPress-on-a-local-Web-server.aspx&#34;&gt;WordPress 2.0.1&lt;/a&gt;, 2.0.2, 2.0.4&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;Analog 6.0&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Other software to try: &lt;a href=&#34;http://words.strivinglife.com/words/post/Log-file-analysis-of-our-Windows-based%2c-Apache%2c-Web-sites.aspx&#34;&gt;WebLog Expert Lite 3.6&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based%2c-Apache-server.aspx&#34;&gt;Microsoft Management Console setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Eclipse-32-to-a-Windows-XP-SP2-machine.aspx&#34;&gt;Eclipse 3.2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Versioning control&lt;/strong&gt; 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Subversion, TortoiseSVN and Dreamweaver 8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;Forums&lt;/a&gt; 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

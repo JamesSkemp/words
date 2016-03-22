@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microsoft Web Platform Installer on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/microsoft-web-platform-installer/</link>
+    <link>http://words.strivinglife.com/tags/microsoft-web-platform-installer/</link>
     <description>Recent content in Microsoft Web Platform Installer on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Dec 2010 20:15:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/microsoft-web-platform-installer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/microsoft-web-platform-installer/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The problem with installing SQL Server Express via the Microsoft Web Platform Installer</title>
-      <link>http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
+      <link>http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</link>
       <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
+      <guid>http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
 &lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
 &lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>Microsoft Web Platform Installer = the easy button</title>
-      <link>http://jamesskemp.github.io/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button/</link>
+      <link>http://words.strivinglife.com/post/Microsoft-Web-Platform-Installer-is-the-easy-button/</link>
       <pubDate>Fri, 14 May 2010 16:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
+      <guid>http://words.strivinglife.com/post/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
       <description>&lt;p&gt;I like working close to the metal. It&#39;s enjoyable, even when it&#39;s difficult. Heck, overcoming the difficulty is sometimes the only fun thing about a project!&lt;/p&gt;
 &lt;p&gt;But Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt; makes tasks so much easier to perform. And as much as I hate to admit it, I really like it.&lt;/p&gt;
 &lt;p&gt;For the last handful of hours I&#39;ve been getting a Windows Server 2008 R2 machine where I want it. This involves installing ASP.NET 4, ASP.NET MVC 2, FileZilla Server, disabling services I won&#39;t be using, and etcetera.&lt;/p&gt;
@@ -39,10 +39,10 @@
     
     <item>
       <title>Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
+      <link>http://words.strivinglife.com/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</link>
       <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
+      <guid>http://words.strivinglife.com/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
       <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
 &lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
 &lt;h3&gt;Web Platform Installer&lt;/h3&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vista on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/vista/</link>
+    <link>http://words.strivinglife.com/tags/vista/</link>
     <description>Recent content in Vista on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Oct 2008 18:05:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/vista/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/vista/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Subversion 1.5.3 and TortoiseSVN 1.5.4 released</title>
-      <link>http://jamesskemp.github.io/words/post/Subversion-153-and-TortoiseSVN-154-released/</link>
+      <link>http://words.strivinglife.com/post/Subversion-153-and-TortoiseSVN-154-released/</link>
       <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Subversion-153-and-TortoiseSVN-154-released/</guid>
+      <guid>http://words.strivinglife.com/post/Subversion-153-and-TortoiseSVN-154-released/</guid>
       <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
-&lt;p&gt;My install guides for &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
+&lt;p&gt;My install guides for &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
 &lt;div class=&#34;tip&#34;&gt;
 &lt;p&gt;If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.&lt;/p&gt;
 &lt;/div&gt;&lt;/p&gt;
@@ -25,17 +25,17 @@
     
     <item>
       <title>Installing Subversion binaries for Apache 2.2.x</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-Subversion-binaries-for-Apache-22x/</link>
+      <link>http://words.strivinglife.com/post/Installing-Subversion-binaries-for-Apache-22x/</link>
       <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-Subversion-binaries-for-Apache-22x/</guid>
-      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/Installing-Subversion-binaries-for-Apache-22x/</guid>
+      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
 &lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
 &lt;h3&gt;Getting Subversion&lt;/h3&gt;
 &lt;p&gt;Obviously, the first thing to do is to &lt;a href=&#34;http://subversion.tigris.org/&#34; target=&#34;_blank&#34;&gt;get Subversion&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;We&#39;re looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that&#39;s svn-win32-1.5.1.zip.&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
+&lt;p&gt;In &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Once you&#39;ve downloaded the zip, extract the contents.&lt;/p&gt;
 &lt;h3&gt;Installing the binaries&lt;/h3&gt;
@@ -52,7 +52,7 @@
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;If you want to use Berkeley DB, grab the libdb44.dll (or &lt;strong&gt;libdb*.dll&lt;/strong&gt;)&amp;nbsp;instead of the latter.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
+&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;br /&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -73,7 +73,7 @@
 &lt;p&gt;You can now browse the current versions of the files under Subversion.&lt;/p&gt;
 &lt;h3&gt;TortoiseSVN&lt;/h3&gt;
 &lt;p&gt;While you&#39;re at it, you may want to install or update &lt;a href=&#34;http://tortoisesvn.net&#34; target=&#34;_blank&#34;&gt;TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I already covered &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
+&lt;p&gt;I already covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
 &lt;h3&gt;Upgrading existing repositories&lt;/h3&gt;
 &lt;p&gt;If you&#39;ve already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.&lt;/p&gt;
 &lt;p&gt;You can do this via the command line by running &lt;strong&gt;svnadmin upgrade \path\to\repository&lt;/strong&gt; , however, you should ensure that you have a backup before you do this. Also, you&#39;ll be unable to use tools that cannot access the 1.5 repos.&lt;/p&gt;
@@ -82,10 +82,10 @@
     
     <item>
       <title>Install Apache 2.2.9 to Windows Vista (Ultimate)</title>
-      <link>http://jamesskemp.github.io/words/post/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
+      <link>http://words.strivinglife.com/post/Install-Apache-229-to-Windows-Vista-Ultimate/</link>
       <pubDate>Fri, 15 Aug 2008 16:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
+      <guid>http://words.strivinglife.com/post/Install-Apache-229-to-Windows-Vista-Ultimate/</guid>
       <description>&lt;p&gt;In this article I&#39;ll be covering an installation of Apache 2.2.9 to Windows Vista Ultimate. I&#39;ll be installing Apache so that you can run IIS as well (hence, Apache will be on a different port). You may want to do this if you want to run Subversion on Apache (as I do).&lt;/p&gt;
 &lt;h3&gt;Installing Apache 2.2&lt;/h3&gt;
 &lt;p&gt;Currently the &lt;a rel=&#34;external&#34; href=&#34;http://httpd.apache.org/&#34;&gt;Apache HTTP Server&lt;/a&gt; has both a 2.0 and 2.2 version. For new development, the 2.2 version is the recommended verison, as it contains many new features. If you currently have Apache 2.0 or 1.3, you may want to determine whether you still require those older versions (such as for module support).&lt;/p&gt;
@@ -118,10 +118,10 @@
     
     <item>
       <title>Formatting drives in Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/post/Formatting-drives-in-Windows-Vista/</link>
+      <link>http://words.strivinglife.com/post/Formatting-drives-in-Windows-Vista/</link>
       <pubDate>Wed, 18 Jun 2008 20:40:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Formatting-drives-in-Windows-Vista/</guid>
+      <guid>http://words.strivinglife.com/post/Formatting-drives-in-Windows-Vista/</guid>
       <description>&lt;p&gt;
 So Disk Management can&amp;#39;t be found using the Vista Start Search. 
 &lt;/p&gt;
@@ -139,12 +139,12 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
     
     <item>
       <title>Installing TortoiseSVN to Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-TortoiseSVN-to-Windows-Vista/</link>
+      <link>http://words.strivinglife.com/post/Installing-TortoiseSVN-to-Windows-Vista/</link>
       <pubDate>Sun, 08 Jun 2008 09:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-TortoiseSVN-to-Windows-Vista/</guid>
-      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Just recently I covered &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/Installing-TortoiseSVN-to-Windows-Vista/</guid>
+      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Just recently I covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
 &lt;h3&gt;The setup&lt;/h3&gt;
 &lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
 &lt;h3&gt;Downloading TortoiseSVN&lt;/h3&gt;
@@ -158,17 +158,17 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
 &lt;h3&gt;Post-Installation&lt;/h3&gt;
 &lt;p&gt;With TortoiseSVN installed, we can now interact with Subversion in a Windows-friendly way, instead of relying upon the command line.&lt;/p&gt;
 &lt;p&gt;In a later article, we&#39;ll actually use Subversion and TortoiseSVN to put a Web site under source control, as well as a Windows application (based upon the .NET Framework).&lt;/p&gt;
-&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
+&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Subversion to Windows Vista</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-Subversion-to-Windows-Vista/</link>
+      <link>http://words.strivinglife.com/post/Installing-Subversion-to-Windows-Vista/</link>
       <pubDate>Sat, 07 Jun 2008 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-Subversion-to-Windows-Vista/</guid>
-      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;. This time I&#39;ll be installing Subversion on a Windows Vista Ultimate SP1 machine.&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/Installing-Subversion-to-Windows-Vista/</guid>
+      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;. This time I&#39;ll be installing Subversion on a Windows Vista Ultimate SP1 machine.&lt;/p&gt;
 &lt;h3&gt;The setup&lt;/h3&gt;
 &lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
 &lt;p&gt;I&#39;m already running IIS 7, so I won&#39;t be installing Apache to run Subversion.&lt;/p&gt;
@@ -192,10 +192,10 @@ Now I&amp;#39;ve just got to let the 750 GB hard drive format ...
     
     <item>
       <title>How to quickly hide all of the Windows Vista Ultimate language packs</title>
-      <link>http://jamesskemp.github.io/words/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</link>
+      <link>http://words.strivinglife.com/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</link>
       <pubDate>Thu, 24 Apr 2008 22:50:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</guid>
+      <guid>http://words.strivinglife.com/post/How-to-quickly-hide-all-of-the-Windows-Vista-Ultimate-language-packs/</guid>
       <description>&lt;p&gt;
 While there&amp;#39;s no way to hide them all at once,&amp;nbsp;you can make it a short chore to hide the Windows Vista Ultimate language packs that you don&amp;#39;t use. 
 &lt;/p&gt;
@@ -219,10 +219,10 @@ It takes less than a minute.
     
     <item>
       <title>Upgrading Vista Home Premium to Vista Ultimate (right now)</title>
-      <link>http://jamesskemp.github.io/words/post/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</link>
+      <link>http://words.strivinglife.com/post/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</link>
       <pubDate>Thu, 17 Apr 2008 21:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</guid>
+      <guid>http://words.strivinglife.com/post/Upgrading-Vista-Home-Premium-to-Vista-Ultimate-right-now/</guid>
       <description>&lt;p&gt;
 About&amp;nbsp;30 minutes ago I started upgrading from Vista Home Premium to Vista Ultimate, using a NFS copy of Ultimate I received at the Heroes Happen {Here} event in &amp;#39;Madison&amp;#39; (today). 
 &lt;/p&gt;
@@ -273,12 +273,12 @@ But, I&amp;#39;ve got Zatoichi 9 that I&amp;#39;m watching, so ... it shouldn&am
     
     <item>
       <title>Adding .NET functionality to Windows Vista Home Premium Internet Information Services</title>
-      <link>http://jamesskemp.github.io/words/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</link>
+      <link>http://words.strivinglife.com/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</link>
       <pubDate>Sat, 22 Mar 2008 09:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
+      <guid>http://words.strivinglife.com/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
       <description>&lt;p&gt;
-I had previously covered &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
+I had previously covered &lt;a href=&#34;http://words.strivinglife.com/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
 &lt;/p&gt;
 &lt;p&gt;
 As before, you&amp;#39;ll want to select &lt;strong&gt;Control Panel&lt;/strong&gt; from the Start menu, then click on the &lt;strong&gt;Programs&lt;/strong&gt; link. Next, click on &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;. 
@@ -314,10 +314,10 @@ If you also want to&amp;nbsp;run classic ASP pages, you&amp;#39;ll need to check
     
     <item>
       <title>How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium</title>
-      <link>http://jamesskemp.github.io/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</link>
+      <link>http://words.strivinglife.com/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</link>
       <pubDate>Fri, 21 Mar 2008 15:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
+      <guid>http://words.strivinglife.com/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 This guide covers Windows Vista Home Premium SP1, and may differ for other versions.

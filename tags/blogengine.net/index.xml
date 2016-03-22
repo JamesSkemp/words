@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogengine.Net on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/blogengine/index.net/</link>
+    <link>http://words.strivinglife.com/tags/blogengine/index.net/</link>
     <description>Recent content in Blogengine.Net on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Sep 2013 14:04:41 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/blogengine.net/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/blogengine.net/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Goodbye BlogEngine.NET</title>
-      <link>http://jamesskemp.github.io/words/post/Goodbye-BlogEngine-NET/</link>
+      <link>http://words.strivinglife.com/post/Goodbye-BlogEngine-NET/</link>
       <pubDate>Sun, 22 Sep 2013 14:04:41 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Goodbye-BlogEngine-NET/</guid>
-      <description>&lt;p&gt;On &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/Goodbye-BlogEngine-NET/</guid>
+      <description>&lt;p&gt;On &lt;a href=&#34;http://words.strivinglife.com/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
 
 &lt;p&gt;It was a great switch, as I was beginning to really dig into .NET, and I&#39;ve found there&#39;s no better way to learn something than actually doing something with it.&lt;/p&gt;
 
@@ -31,10 +31,10 @@
     
     <item>
       <title>12 years of posts = a lot of comments</title>
-      <link>http://jamesskemp.github.io/words/post/12-years-of-posts-equals-a-lot-of-comments/</link>
+      <link>http://words.strivinglife.com/post/12-years-of-posts-equals-a-lot-of-comments/</link>
       <pubDate>Sun, 31 Jul 2011 17:21:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/12-years-of-posts-equals-a-lot-of-comments/</guid>
+      <guid>http://words.strivinglife.com/post/12-years-of-posts-equals-a-lot-of-comments/</guid>
       <description>&lt;p&gt;When I moved from my custom system to WordPress to BlogEngine.NET I never did end up copying over all the old comments on my posts. Heck, I don&#39;t even think I moved over all my posts.&lt;/p&gt;
 &lt;p&gt;But since I&#39;m sticking with DISQUS I decided to move all my BE.NET comments over to DISQUS, and over the last few hours have been making the necessary changes and performing the necessary cleanup.&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;I found a great extension that generated the XML for me (thankfully), but since I&#39;m me I&#39;m actually going through and removing the extra comments, so my data source is clean. And that may not have been the best idea ...&lt;/p&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>BlogEngine.NET 1.6 released</title>
-      <link>http://jamesskemp.github.io/words/post/BlogEngineNET-16-released/</link>
+      <link>http://words.strivinglife.com/post/BlogEngineNET-16-released/</link>
       <pubDate>Wed, 10 Feb 2010 08:32:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/BlogEngineNET-16-released/</guid>
+      <guid>http://words.strivinglife.com/post/BlogEngineNET-16-released/</guid>
       <description>&lt;p&gt;Promising a real comment moderation system, BE.NET 1.6 was released a few days ago.&lt;/p&gt;
 &lt;p&gt;Having just upgraded from 1.5.0.7, I wasn&#39;t without my issues, but overall the memory footprint doesn&#39;t seem too horrible (it&#39;s increased a bit again, but ...)&lt;/p&gt;
 &lt;p&gt;Actually, the memory footprint isn&#39;t a minor issue. I have 805 posts with 688 comments, and get between 9 to 10 thousand visits a month. BlogEngine.NET starts at around 150 MB of RAM and jumps up to 210 MB. It&#39;s not horrid, but I remember the days when it was nice and lean.&lt;/p&gt;
@@ -57,10 +57,10 @@
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
       <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
@@ -114,10 +114,10 @@ comments.Dump();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
       <pubDate>Sun, 06 Dec 2009 15:55:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
       <description>&lt;p&gt;Unfortunately, BlogEngine.NET doesn&#39;t currently have a very good way to determine, at a glance, all of the comments that haven&#39;t been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.&lt;/p&gt;
 &lt;p&gt;You can download the built executable, or play with the code, which is included below.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/TestBlogEngine.7z&#34;&gt;Download the executable&lt;/a&gt;&amp;nbsp;(7-Zip format). Requires &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework 3.5&lt;/a&gt;.&lt;/p&gt;
@@ -199,10 +199,10 @@ namespace TestBlogEngine {
     
     <item>
       <title>BlogEngine.NET running on Cassini Personal Web Server</title>
-      <link>http://jamesskemp.github.io/words/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
+      <link>http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</link>
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
+      <guid>http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
       <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
 &lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
@@ -216,10 +216,10 @@ namespace TestBlogEngine {
     
     <item>
       <title>New site theme - watercircles</title>
-      <link>http://jamesskemp.github.io/words/post/New-site-theme-watercircles/</link>
+      <link>http://words.strivinglife.com/post/New-site-theme-watercircles/</link>
       <pubDate>Tue, 21 Jul 2009 15:58:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/New-site-theme-watercircles/</guid>
+      <guid>http://words.strivinglife.com/post/New-site-theme-watercircles/</guid>
       <description>&lt;p&gt;Based on &lt;a href=&#34;http://www.opendesigns.org/design/?template=2382&#34;&gt;metamorph_watercircles&lt;/a&gt;, and converted for use with BlogEngine.NET, watercircles is now in use on my site.&lt;/p&gt;
 &lt;p&gt;The theme has a deal of special inline modifications for my own particular purposes, so it&#39;s not generally available for BlogEngine.NET users, but if you&#39;re interested ...&lt;/p&gt;
 &lt;p&gt;Comments welcome. (I&#39;m sure I&#39;ll find things I missed as the weeks go by, but any findings are appreciated.)&lt;/p&gt;
@@ -228,10 +228,10 @@ namespace TestBlogEngine {
     
     <item>
       <title>New BlogEngine.NET Theme: 20081126</title>
-      <link>http://jamesskemp.github.io/words/post/New-BlogEngineNET-Theme-20081126/</link>
+      <link>http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/</link>
       <pubDate>Thu, 27 Nov 2008 00:15:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/New-BlogEngineNET-Theme-20081126/</guid>
+      <guid>http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/</guid>
       <description>&lt;p&gt;I&#39;ve been working on a new theme for the site, since around 7 this evening ... and it&#39;s&amp;nbsp;finally rolled out.&lt;/p&gt;
 &lt;p&gt;This is along the lines of what I was thinking a couple weeks ago, but I actually grabbed some ideas from Microsoft&#39;s recent KB changes.&lt;/p&gt;
 &lt;p&gt;This is the first theme I&#39;ve created that used the widget functionality, and I can honestly say I&#39;m still &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.codeplex.com/blogengine/Thread/View.aspx?ThreadId=33113&#34; target=&#34;_blank&#34;&gt;not that impressed&lt;/a&gt; with it.&lt;/p&gt;
@@ -242,14 +242,14 @@ namespace TestBlogEngine {
     
     <item>
       <title>James Skemp&#39;s BlogEngine.NET themes</title>
-      <link>http://jamesskemp.github.io/words/post/James-Skemps-BlogEngineNET-themes/</link>
+      <link>http://words.strivinglife.com/post/James-Skemps-BlogEngineNET-themes/</link>
       <pubDate>Sun, 31 Aug 2008 20:49:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/James-Skemps-BlogEngineNET-themes/</guid>
+      <guid>http://words.strivinglife.com/post/James-Skemps-BlogEngineNET-themes/</guid>
       <description>&lt;p&gt;The following is a list of links to posts regarding themes I have worked on for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34; target=&#34;_blank&#34;&gt;BlogEngine.NET&lt;/a&gt;, and that are&amp;nbsp;available for use. (Themes I&#39;ve worked on for others are not included here.) Listed alphabetically.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/BlogEngineNET-Theme-MWRT-002.aspx&#34;&gt;MWRT-002&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-Theme-MWRT-002.aspx&#34;&gt;MWRT-002&lt;/a&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;div&gt;&lt;a href=&#34;http://jamesrskemp.com/be_themes/MWRT-002_1.4.5.0.zip&#34;&gt;Download for BE.NET 1.4.5.0&lt;/a&gt;.&lt;/div&gt;
@@ -257,7 +257,7 @@ namespace TestBlogEngine {
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;div&gt;&lt;a href=&#34;http://jamesrskemp.com/be_themes/swandive_1.4.5.0.zip&#34;&gt;Download for BE.NET 1.4.5.0&lt;/a&gt;.&lt;/div&gt;
@@ -275,12 +275,12 @@ namespace TestBlogEngine {
     
     <item>
       <title>Upgrading to BlogEngine.NET 1.4.5</title>
-      <link>http://jamesskemp.github.io/words/post/Upgrading-to-BlogEngineNET-145/</link>
+      <link>http://words.strivinglife.com/post/Upgrading-to-BlogEngineNET-145/</link>
       <pubDate>Sat, 16 Aug 2008 12:41:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Upgrading-to-BlogEngineNET-145/</guid>
+      <guid>http://words.strivinglife.com/post/Upgrading-to-BlogEngineNET-145/</guid>
       <description>&lt;p&gt;
-With the release of &lt;a href=&#34;http://www.dotnetblogengine.net/&#34; target=&#34;_blank&#34;&gt;BlogEngine.NET 1.4.5&lt;/a&gt; a bit ago ... it was time to give it &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/BlogEngineNET-14-Memory-usage-spike.aspx&#34;&gt;another go upgrading&lt;/a&gt;. 
+With the release of &lt;a href=&#34;http://www.dotnetblogengine.net/&#34; target=&#34;_blank&#34;&gt;BlogEngine.NET 1.4.5&lt;/a&gt; a bit ago ... it was time to give it &lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-14-Memory-usage-spike.aspx&#34;&gt;another go upgrading&lt;/a&gt;. 
 &lt;/p&gt;
 &lt;p&gt;
 Quick notes on my experience: 
@@ -365,10 +365,10 @@ Now I get to start checking my various themes to see how they work.
     
     <item>
       <title>BlogEngine.NET 1.4 - Memory usage spike?</title>
-      <link>http://jamesskemp.github.io/words/post/BlogEngineNET-14-Memory-usage-spike/</link>
+      <link>http://words.strivinglife.com/post/BlogEngineNET-14-Memory-usage-spike/</link>
       <pubDate>Sun, 06 Jul 2008 15:25:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/BlogEngineNET-14-Memory-usage-spike/</guid>
+      <guid>http://words.strivinglife.com/post/BlogEngineNET-14-Memory-usage-spike/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 Update,&amp;nbsp;July 9, 2008:&amp;nbsp;This update is a little late, but &amp;hellip; Mads was able to determine what the issue was and has provided a fix. I&amp;#39;ll be trying&amp;nbsp;another update this week.
@@ -381,7 +381,7 @@ I recently upgraded to BlogEngine.NET 1.4, from 1.3.
 While it was, overall, a smooth enough process, while trying to dig into the large memory usage spike, I ran into a number of issues.
 &lt;/p&gt;
 &lt;p&gt;
-I&amp;#39;ve written about &lt;a href=&#34;http://jamesskemp.github.io/words/words/?tag=/blogengine.net&#34;&gt;BlogEngine.NET&lt;/a&gt; in the past, and overall I&amp;#39;ve been very happy with it.
+I&amp;#39;ve written about &lt;a href=&#34;http://words.strivinglife.com/words/?tag=/blogengine.net&#34;&gt;BlogEngine.NET&lt;/a&gt; in the past, and overall I&amp;#39;ve been very happy with it.
 &lt;/p&gt;
 &lt;p&gt;
 However, upon startup, it seems 1.4 uses&amp;nbsp;4 times the memory 1.3 did (that&amp;#39;s around 130 MB total - with only one visitor).
@@ -403,10 +403,10 @@ And that&amp;#39;s a really scary idea, because of incoming links &amp;hellip;
     
     <item>
       <title>BlogEngine 1.3 upgrade issues</title>
-      <link>http://jamesskemp.github.io/words/post/BlogEngine-13-upgrade-issues/</link>
+      <link>http://words.strivinglife.com/post/BlogEngine-13-upgrade-issues/</link>
       <pubDate>Mon, 24 Dec 2007 13:10:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/BlogEngine-13-upgrade-issues/</guid>
+      <guid>http://words.strivinglife.com/post/BlogEngine-13-upgrade-issues/</guid>
       <description>&lt;p&gt;
 There&amp;#39;s been quite the party for the last 30 minutes or so. 
 &lt;/p&gt;
@@ -430,10 +430,10 @@ Whew.
     
     <item>
       <title>BlogEngine.NET Theme - MWRT-002</title>
-      <link>http://jamesskemp.github.io/words/post/BlogEngineNET-Theme-MWRT-002/</link>
+      <link>http://words.strivinglife.com/post/BlogEngineNET-Theme-MWRT-002/</link>
       <pubDate>Sat, 13 Oct 2007 17:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/BlogEngineNET-Theme-MWRT-002/</guid>
+      <guid>http://words.strivinglife.com/post/BlogEngineNET-Theme-MWRT-002/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;Updated for BlogEngine.NET 1.3!&lt;/p&gt;
 &lt;/div&gt;
@@ -444,22 +444,22 @@ Whew.
 &lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.2.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.2&lt;/a&gt; (tested with 1.2.0.0).&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.3.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.3&lt;/a&gt; (tested with 1.3.0.0).&lt;/p&gt;
 &lt;p&gt;Comments appreciated.&lt;/p&gt;
-&lt;p&gt;Other themes include &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Other themes include &lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;9/16/2009&lt;/strong&gt;: Comments are now closed. Please leave comments on &lt;a href=&#34;http://strivinglife.com/words/post/James-Skemps-BlogEngineNET-themes.aspx&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Template changed again (October 2007)</title>
-      <link>http://jamesskemp.github.io/words/post/Template-changed-again-October-2007/</link>
+      <link>http://words.strivinglife.com/post/Template-changed-again-October-2007/</link>
       <pubDate>Sat, 06 Oct 2007 14:25:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Template-changed-again-October-2007/</guid>
+      <guid>http://words.strivinglife.com/post/Template-changed-again-October-2007/</guid>
       <description>&lt;p&gt;
 Once again, I&amp;#39;ve changed the template for the site. This time I&amp;#39;m using &lt;strong&gt;Royal Flowers&lt;/strong&gt;.
 &lt;/p&gt;
 &lt;p&gt;
-The name comes from the purple flowers (taken outside of Madison Wisconsin&amp;#39;s capitol building (see the &lt;a href=&#34;http://jamesskemp.github.io/words/gallery/&#34;&gt;Galleries&lt;/a&gt; for more shots) and that purple usually signifies royalty, or richness.
+The name comes from the purple flowers (taken outside of Madison Wisconsin&amp;#39;s capitol building (see the &lt;a href=&#34;http://words.strivinglife.com/gallery/&#34;&gt;Galleries&lt;/a&gt; for more shots) and that purple usually signifies royalty, or richness.
 &lt;/p&gt;
 &lt;p&gt;
 I&amp;#39;m not sure that the left-side navigation has been done the best it could be, but ... overall I&amp;#39;m pretty happy with it.
@@ -469,10 +469,10 @@ I&amp;#39;m not sure that the left-side navigation has been done the best it cou
     
     <item>
       <title>Swan Dive updated for BlogEngine.NET 1.2 release</title>
-      <link>http://jamesskemp.github.io/words/post/Swan-Dive-updated-for-BlogEngineNET-12-release/</link>
+      <link>http://words.strivinglife.com/post/Swan-Dive-updated-for-BlogEngineNET-12-release/</link>
       <pubDate>Sun, 30 Sep 2007 20:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Swan-Dive-updated-for-BlogEngineNET-12-release/</guid>
+      <guid>http://words.strivinglife.com/post/Swan-Dive-updated-for-BlogEngineNET-12-release/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;http://www.dotnetblogengine.net/post/Release-of-BlogEngineNET-12.aspx&#34;&gt;BlogEngine.NET 1.2.0.0 has been released&lt;/a&gt;.
 &lt;/p&gt;
@@ -483,7 +483,7 @@ In &amp;#39;honor&amp;#39; of this release, I&amp;#39;ve updated Swan Dive, usin
 Any questions or concerns can be directed to me via the comments on the original post.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;View the original post, and download Swan Dive&lt;/a&gt;.
+&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;View the original post, and download Swan Dive&lt;/a&gt;.
 &lt;/p&gt;
 </description>
     </item>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linq To Xml on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/linq-to-xml/</link>
+    <link>http://words.strivinglife.com/tags/linq-to-xml/</link>
     <description>Recent content in Linq To Xml on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Oct 2010 08:35:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/linq-to-xml/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/linq-to-xml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>iTunes Playlists to Xml: Parsing categories with LINQ</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</link>
       <pubDate>Wed, 20 Oct 2010 08:35:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;p&gt;I recently had the need to determine what types of music I had within my collection of music. Since I&amp;nbsp;created &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/iTunesPlaylists2Xml&#34;&gt;iTunes Playlists to Xml&lt;/a&gt; so that I could export out my library on my iPod, it was easy enough to run that and then open &lt;a rel=&#34;external&#34; href=&#34;http://www.linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; to run the following query.&lt;/p&gt;
 &lt;p&gt;Obviously, you must export the Genre field in order for the following query to work.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Location to the XML from iTunes Playlists to XML
@@ -79,10 +79,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Vehicle gas DTD .NET objects and XML parsing with LINQ</title>
-      <link>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
+      <link>http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</link>
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
+      <guid>http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
 &lt;/div&gt;
@@ -136,10 +136,10 @@ String playlistXml = @&amp;ldquo;C:\Users\James\Projects\services\WcfRestService
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published - with LINQPad</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</link>
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
       <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
@@ -193,10 +193,10 @@ comments.Dump();&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Determine BlogEngine.NET comments that haven&#39;t been published</title>
-      <link>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
+      <link>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</link>
       <pubDate>Sun, 06 Dec 2009 15:55:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
+      <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
       <description>&lt;p&gt;Unfortunately, BlogEngine.NET doesn&#39;t currently have a very good way to determine, at a glance, all of the comments that haven&#39;t been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.&lt;/p&gt;
 &lt;p&gt;You can download the built executable, or play with the code, which is included below.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/TestBlogEngine.7z&#34;&gt;Download the executable&lt;/a&gt;&amp;nbsp;(7-Zip format). Requires &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework 3.5&lt;/a&gt;.&lt;/p&gt;
@@ -278,10 +278,10 @@ namespace TestBlogEngine {
     
     <item>
       <title>Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</title>
-      <link>http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</link>
+      <link>http://words.strivinglife.com/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</link>
       <pubDate>Sat, 12 Sep 2009 21:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</guid>
+      <guid>http://words.strivinglife.com/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/</guid>
       <description>&lt;p&gt;Similar to my post on &lt;a href=&#34;http://strivinglife.com/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML.aspx&#34;&gt;parsing Last.fm&#39;s artist.getSimilar&lt;/a&gt;, I&#39;ve been working with Yahoo! Music&#39;s Web services today.&lt;/p&gt;
 &lt;p&gt;Unfortunately, Yahoo!&#39;s services aren&#39;t quite as friendly as those made available by Last.fm.&lt;/p&gt;
 &lt;p&gt;So that I remember, and others don&#39;t have to tackle this as well, here&#39;s the class I&#39;ve created. (&lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/articles/JamesRSkemp.WebServices.YahooMusic.cs.txt&#34;&gt;Download JamesRSkemp.WebServices.YahooMusic.cs&lt;/a&gt;.)&lt;/p&gt;
@@ -392,10 +392,10 @@ namespace JamesRSkemp.WebServices {
     
     <item>
       <title>Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</title>
-      <link>http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
+      <link>http://words.strivinglife.com/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</link>
       <pubDate>Sat, 12 Sep 2009 16:33:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
+      <guid>http://words.strivinglife.com/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/</guid>
       <description>&lt;p&gt;The following covers how to parse the XML response of artist.getSimilar, from Last.fm&#39;s Web Services.&lt;/p&gt;
 &lt;h3&gt;Setup and assumptions&lt;/h3&gt;
 &lt;p&gt;The first step is sign up for a free &lt;a rel=&#34;external&#34; href=&#34;http://www.last.fm/api&#34;&gt;API account at Last.fm&lt;/a&gt;.&lt;/p&gt;

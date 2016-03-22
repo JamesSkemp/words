@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amazon Fire on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/amazon-fire/</link>
+    <link>http://words.strivinglife.com/tags/amazon-fire/</link>
     <description>Recent content in Amazon Fire on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 13 Dec 2015 14:35:42 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/amazon-fire/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/amazon-fire/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google Services on the Amazon Fire HD 8</title>
-      <link>http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/</link>
+      <link>http://words.strivinglife.com/post/Google-Services-on-the-Amazon-Fire-HD-8/</link>
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
+      <guid>http://words.strivinglife.com/post/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
       <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
 
 &lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;

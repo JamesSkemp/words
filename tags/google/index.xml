@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/google/</link>
+    <link>http://words.strivinglife.com/tags/google/</link>
     <description>Recent content in Google on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Apr 2006 20:48:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Google Calendar access?</title>
-      <link>http://jamesskemp.github.io/words/post/Google-Calendar-access/</link>
+      <link>http://words.strivinglife.com/post/Google-Calendar-access/</link>
       <pubDate>Fri, 14 Apr 2006 20:48:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Google-Calendar-access/</guid>
+      <guid>http://words.strivinglife.com/post/Google-Calendar-access/</guid>
       <description>&lt;p&gt;For the last 10 minutes, while downloading the latest Microsoft patches from Tuesday, I&#39;ve been trying to access Google Calendar. I&#39;m prompted to login, after a long wait, and then I wait some more, only to be sent to my Google Account page.&lt;/p&gt;
 &lt;p&gt;So, are they limiting access to the Calendar now as well?&lt;/p&gt;
 &lt;p&gt;I like Google - it&#39;s the only search engine I use (and it&#39;s the engine most people use - for better or worse) - but they need to make sure they can handle the heavy demand&#39;s that their launches bring. I&#39;m still waiting for my Google Analytics account, so I can try that out ...&lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Libgdx on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/libgdx/</link>
+    <link>http://words.strivinglife.com/tags/libgdx/</link>
     <description>Recent content in Libgdx on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2015 12:48:29 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/libgdx/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/libgdx/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Example libGDX orthographic camera controller</title>
-      <link>http://jamesskemp.github.io/words/post/Example-libGDX-orthographic-camera-controller/</link>
+      <link>http://words.strivinglife.com/post/Example-libGDX-orthographic-camera-controller/</link>
       <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Example-libGDX-orthographic-camera-controller/</guid>
+      <guid>http://words.strivinglife.com/post/Example-libGDX-orthographic-camera-controller/</guid>
       <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
@@ -27,13 +27,13 @@
     
     <item>
       <title>Configuring a libGDX project to run as a desktop application in Android Studio</title>
-      <link>http://jamesskemp.github.io/words/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
+      <link>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</link>
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
+      <guid>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
       <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
 
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://words.strivinglife.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
 
@@ -57,10 +57,10 @@
     
     <item>
       <title>Review: LibGDX Game Development Essentials (2014)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-LibGDX-Game-Development-Essentials-2014/</link>
+      <link>http://words.strivinglife.com/post/Review-LibGDX-Game-Development-Essentials-2014/</link>
       <pubDate>Sat, 07 Mar 2015 16:29:50 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-LibGDX-Game-Development-Essentials-2014/</guid>
+      <guid>http://words.strivinglife.com/post/Review-LibGDX-Game-Development-Essentials-2014/</guid>
       <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt;, written by Juwal Bose, and released in December 2014 by Packt Publishing.&lt;/p&gt;&lt;/div&gt;
 
 &lt;h3&gt;Difficult to follow, but not a complete waste of time&lt;/h3&gt;
@@ -85,10 +85,10 @@
     
     <item>
       <title>Creating your first libGDX project with Android Studio 1.1.0</title>
-      <link>http://jamesskemp.github.io/words/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
+      <link>http://words.strivinglife.com/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</link>
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
+      <guid>http://words.strivinglife.com/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
       <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
@@ -127,7 +127,7 @@
 
 &lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://jamesskemp.github.io/words/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://words.strivinglife.com/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

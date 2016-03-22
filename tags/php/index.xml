@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/php/</link>
+    <link>http://words.strivinglife.com/tags/php/</link>
     <description>Recent content in Php on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Sep 2010 20:15:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Extended iTunes Track class for PHP</title>
-      <link>http://jamesskemp.github.io/words/post/Extended-iTunes-Track-class-for-PHP/</link>
+      <link>http://words.strivinglife.com/post/Extended-iTunes-Track-class-for-PHP/</link>
       <pubDate>Sun, 26 Sep 2010 20:15:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Extended-iTunes-Track-class-for-PHP/</guid>
+      <guid>http://words.strivinglife.com/post/Extended-iTunes-Track-class-for-PHP/</guid>
       <description>&lt;p&gt;In a previous article, I had outlined&amp;nbsp;&lt;a href=&#34;http://strivinglife.com/words/post/iTunes-Track-class-in-C-sharp-and-PHP.aspx&#34;&gt;classes in C# and PHP to handle&amp;nbsp;iTunes Playlists to Xml outputs&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Having let it sit on the back burner for long enough, I finally went back to the PHP class and finalized the constructor. I also added two functions for sorting.&lt;/p&gt;
 &lt;p&gt;Below I have the current code for the class (a &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/articles/Track.php.txt&#34;&gt;current version of the Track class for PHP&lt;/a&gt; will always be available elsewhere) and then an example implementation.&lt;/p&gt;
@@ -248,10 +248,10 @@ class Track {
     
     <item>
       <title>iTunes Track class in C# and PHP</title>
-      <link>http://jamesskemp.github.io/words/post/iTunes-Track-class-in-C-sharp-and-PHP/</link>
+      <link>http://words.strivinglife.com/post/iTunes-Track-class-in-C-sharp-and-PHP/</link>
       <pubDate>Wed, 08 Sep 2010 22:25:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
+      <guid>http://words.strivinglife.com/post/iTunes-Track-class-in-C-sharp-and-PHP/</guid>
       <description>&lt;p&gt;I&#39;ve recently begun reading up on PHP again. As I&#39;m most fond of my iTunes Playlists to Xml application, I thought I&#39;d work with that application&#39;s output - XML files with playlist data - as I continued to dig into PHP (instead of stopping now that I know enough to tweak existing code and create new functionality).&lt;/p&gt;
 &lt;p&gt;Here&#39;s a basic Track object in C# and PHP. I&#39;ll of course be elaborating on these as time goes by (and already have code for the C# implementation).&lt;/p&gt;
 &lt;h3&gt;Track class in C#&lt;/h3&gt;
@@ -413,10 +413,10 @@ class Track {
     
     <item>
       <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
-      <link>http://jamesskemp.github.io/words/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <link>http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
       <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <guid>http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
       <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
 &lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
 </description>
@@ -424,10 +424,10 @@ class Track {
     
     <item>
       <title>Upgrading PHP (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)</title>
-      <link>http://jamesskemp.github.io/words/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</link>
+      <link>http://words.strivinglife.com/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</link>
       <pubDate>Sun, 26 Nov 2006 17:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</guid>
+      <guid>http://words.strivinglife.com/post/Upgrading-PHP-%28442-to-444-and-514-to-520%29/</guid>
       <description>&lt;p&gt;In this article, we&#39;ll be upgrading PHP on our local, Windows, Web server. In previous guides we installed PHP 4.4.2 as well as PHP 5.1.4, both on the same machine, with the ability to switch as we like. However, we&#39;ve yet to cover how to upgrade either installation (and upgrading is definitely a need).&lt;/p&gt;
 &lt;p&gt;At the time of this writing, the current versions of PHP are 4.4.4 and 5.2.0, for the 4.x and 5.x versions, respectively.&lt;/p&gt;
 &lt;p&gt;We&#39;ll be going over the upgrade for each version separately, so you can simply skip to which version you&#39;re currently using.&lt;/p&gt;
@@ -467,10 +467,10 @@ session.save_path
     
     <item>
       <title>PHP Forum Software Showdown Part 6: phpBB</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</link>
       <pubDate>Sat, 25 Nov 2006 18:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-6-phpBB/</guid>
       <description>&lt;p&gt;It&#39;s that time again. This time, we&#39;ll be looking at &lt;a rel=&#34;external&#34; href=&#34;http://www.phpbb.com/&#34;&gt;phpBB&lt;/a&gt;. &amp;ldquo;phpBB is a high powered, fully scalable, and highly customizable Open Source bulletin board package. phpBB has a user-friendly interface, simple and straightforward administration panel, and helpful FAQ. Based on the powerful PHP server language and your choice of MySQL, MS-SQL, PostgreSQL or Access/ODBC database servers, phpBB is the ideal free community solution for all web sites.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;Lot&#39;s of features, so let&#39;s get to it. In this article, we&#39;ll be installing phpBB version 2.0.21, which is the latest version, as of June 9, 2006. A beta version of 3.0 came out a very short period before this article was written, otherwise I don&#39;t know that phpBB would have made it. Anywho, on with it.&lt;/p&gt;
 &lt;h3&gt;File and folder size&lt;/h3&gt;
@@ -518,17 +518,17 @@ TO &lt;strong&gt;phpBB&lt;/strong&gt; IDENTIFIED BY &#39;&lt;strong&gt;phpbb&lt;
 &lt;p&gt;They do have archived files with the changed and patched files only available for download, which is quite nice.&lt;/p&gt;
 &lt;h3&gt;The temporary conclusion&lt;/h3&gt;
 &lt;p&gt;phpBB is pretty much like the others that we&#39;ve reviewed. But, now that we&#39;ve gone over all of them, as far as installation and first impressions, it&#39;s time to dig into them deeper.&lt;/p&gt;
-&lt;p&gt;Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review article, where we start busting heads.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review article, where we start busting heads.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 5: PunBB</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</link>
       <pubDate>Fri, 24 Nov 2006 09:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-5-PunBB/</guid>
       <description>&lt;p&gt;
 Almost there. This time, we&amp;#39;ll be looking at &lt;a href=&#34;http://www.punbb.org/&#34;&gt;PunBB&lt;/a&gt;. First, I did donate to PunBB development some time ago. At the time, I liked PunBB, and received some great support. It&amp;#39;s been sometime since that time, so I don&amp;#39;t know how things stand.
 &lt;/p&gt;
@@ -669,20 +669,20 @@ They do have archived files with the changed files only available for download, 
 PunBB is pretty much like the others that we&amp;#39;ve reviewed. Until we get into the last forum, and start comparing all six, we&amp;#39;ll leave it at that.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 4: MyBB</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-4-MyBB/</link>
       <pubDate>Wed, 22 Nov 2006 21:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-4-MyBB/</guid>
       <description>&lt;p&gt;
 This time, we&amp;#39;ll be looking at &lt;a href=&#34;http://www.mybboard.com/&#34;&gt;MyBB&lt;/a&gt;. &amp;ldquo;MyBB is a powerful, efficient and free forum package developed in PHP and MySQL. MyBB has been designed with the end users in mind, you and your subscribers. Full control over your discussion system is presented right at the tip of your fingers, from multiple styles and themes to the ultimate customisation of your forums using the template system.&amp;rdquo;
 &lt;/p&gt;
@@ -843,20 +843,20 @@ There&amp;#39;s one download file, but it looks like they do state what files ha
 MyBB has a nice administrative interface, but the default layout doesn&amp;#39;t really get me excited. That&amp;#39;s all I&amp;#39;ll say, until we&amp;#39;ve got the last two forums installed.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 3: Simple Machines</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/</link>
       <pubDate>Tue, 21 Nov 2006 18:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines/</guid>
       <description>&lt;p&gt;
 Curiously, in late-September 2006, &lt;a href=&#34;http://simplemachines.org/&#34;&gt;Simple Machines Forum&lt;/a&gt; turned three (it had been three years since 1.0 beta 1). That&amp;#39;s curious because the current stable version of Simple Machines is 1.0.9, and there&amp;#39;s a 1.1 RC3 out as well (as of late-October 2006).
 &lt;/p&gt;
@@ -1001,20 +1001,20 @@ I&amp;#39;ve used Simple Machines before on Fractovia. I don&amp;#39;t really ca
 But, before we dig any further, we&amp;#39;ll need to install some more forums.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 2: Vanilla</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-2-Vanilla/</link>
       <pubDate>Mon, 20 Nov 2006 09:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-2-Vanilla/</guid>
       <description>&lt;p&gt;
 While the &lt;a href=&#34;http://getvanilla.com/&#34;&gt;Vanilla&lt;/a&gt; forum&amp;#39;s are fairly unknown, it&amp;#39;s been around for a little over a year. &amp;ldquo;Vanilla is an open-source, standards-compliant, multi-lingual, fully extensible discussion forum for the web.&amp;rdquo; The version we&amp;#39;ll be installing, 1.0.1, was released in late-August 2006.
 &lt;/p&gt;
@@ -1166,20 +1166,20 @@ Yet, on the other hand, it&amp;#39;s MySQL connection step doesn&amp;#39;t provi
 Before we dig any further, we&amp;#39;ll need to install some more forums.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown Part 1: bbPress</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-1-bbPress/</link>
       <pubDate>Sun, 19 Nov 2006 09:00:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown-Part-1-bbPress/</guid>
       <description>&lt;p&gt;
 A relative new-comer, &lt;a href=&#34;http://bbpress.org/&#34;&gt;bbPress&lt;/a&gt; &amp;ldquo;is forum software with a twist from the creators of WordPress&amp;rdquo;. The first public version, 0.72, was released in mid-October 2006, and the version we&amp;#39;ll be installing, 0.73, was released a couple of weeks later. Downloading bbPress is fairly easy, since there&amp;#39;s only two options &amp;ndash; one for the installer in .zip, and one in .tar.gz.
 &lt;/p&gt;
@@ -1356,20 +1356,20 @@ The administrative interface, other than being rather ugly, is pretty simple. Un
 At this point, I&amp;#39;m going to stop, since we&amp;#39;ll want other forums to compare before we go any further. However, you should have a bbPress, version 0.73, forum setup.
 &lt;/p&gt;
 &lt;p&gt;
-Stay tuned for the next &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
+Stay tuned for the next &lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown.aspx&#34;&gt;PHP Forum&lt;/a&gt; review.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>PHP Forum Software Showdown</title>
-      <link>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown/</link>
+      <link>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown/</link>
       <pubDate>Sat, 18 Nov 2006 19:22:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/PHP-Forum-Software-Showdown/</guid>
+      <guid>http://words.strivinglife.com/post/PHP-Forum-Software-Showdown/</guid>
       <description>&lt;p&gt;
 Hopefully by the end of the month, I&amp;#39;ll have posted six reviews for six different pieces of forum software, that run on PHP (and MySQL).
 &lt;/p&gt;
@@ -1377,12 +1377,12 @@ Hopefully by the end of the month, I&amp;#39;ll have posted six reviews for six 
 The six software programs are as follows.&lt;!--adsense--&gt;
 &lt;/p&gt;
 &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt; (released October 27, 2006) - http://bbpress.org/&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt; (released September 27, 2006) - http://www.mybboard.com/&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt; (released June 9, 2006) - http://www.phpbb.com/&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt; (released October 15, 2006) - http://www.punbb.org/&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt; (released October 29, 2006) - http://www.simplemachines.org/&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt; (released August 21, 2006) - http://getvanilla.com/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-1-bbPress.aspx&#34;&gt;bbPress 0.73&lt;/a&gt; (released October 27, 2006) - http://bbpress.org/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-4-MyBB.aspx&#34;&gt;MyBB 1.2.1&lt;/a&gt; (released September 27, 2006) - http://www.mybboard.com/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-6-phpBB.aspx&#34;&gt;phpBB 2.0.21&lt;/a&gt; (released June 9, 2006) - http://www.phpbb.com/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-5-PunBB.aspx&#34;&gt;PunBB 1.2.14&lt;/a&gt; (released October 15, 2006) - http://www.punbb.org/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-3-Simple-Machines.aspx&#34;&gt;Simple Machines 1.0.9&lt;/a&gt; (released October 29, 2006) - http://www.simplemachines.org/&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/PHP-Forum-Software-Showdown-Part-2-Vanilla.aspx&#34;&gt;Vanilla 1.0.1&lt;/a&gt; (released August 21, 2006) - http://getvanilla.com/&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 Some of the things that I&amp;#39;ll be covering include:
@@ -1412,17 +1412,17 @@ Some of the things that I&amp;#39;ll be covering include:
 Any other recommendations would be greatly appreciated - either of things to cover, or of other forums to review.  Please note that forums must be free/open source, and run on PHP and MySQL, minimum.
 &lt;/p&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
+&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
 &lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
+      <link>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</link>
       <pubDate>Mon, 28 Aug 2006 21:45:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
+      <guid>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
       <description>&lt;p&gt;In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we&#39;re going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.&lt;/p&gt;
 &lt;h3&gt;What is a batch file?&lt;/h3&gt;
 &lt;p&gt;A batch file is basically a way to run a number of Windows prompts at once. In this particular case, we&#39;ll be using it to stop the Web server, copy, rename, and delete, files, and then start the necessary services up once again.&lt;!--adsense--&gt;&lt;/p&gt;
@@ -1498,19 +1498,19 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;h3&gt;Moving forward&lt;/h3&gt;
 &lt;p&gt;I&#39;ve created twelve (12) batch files in a matter similar to the above, and zipped them up for download. Feel free to modify them as necessary, for your own use.&lt;/p&gt;
 &lt;p&gt;Keep in mind that these are very basic batch files. It&#39;s possible to clean these up significantly, with the full range of commands at your disposal. For now, however, this will get you going.&lt;/p&gt;
-&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://jamesskemp.github.io/words/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
+&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://words.strivinglife.com/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
+      <link>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</link>
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
-&lt;p&gt;In previous guides, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
+      <guid>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
+      <description>&lt;p&gt;In &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
+&lt;p&gt;In previous guides, we &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://words.strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
 &lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
 &lt;p&gt;Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)&lt;/p&gt;
 &lt;ul&gt;
@@ -1550,7 +1550,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;p&gt;Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it&#39;s not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.&lt;/p&gt;
 &lt;p&gt;This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.&lt;/p&gt;
 &lt;h3&gt;Hooking up PHP 4.4.2&lt;/h3&gt;
-&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
+&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://words.strivinglife.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
 &lt;p&gt;Since we&#39;ve already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it&#39;s just a matter of hooking up Apache 2.0.x to recognize it.&lt;/p&gt;
 &lt;p&gt;First, we&#39;ll need to make sure we&#39;ve got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.&lt;/p&gt;
 &lt;p&gt;Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.&lt;/p&gt;
@@ -1618,19 +1618,19 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
 &lt;p&gt;So, let the hardest part begin.&lt;/p&gt;
 &lt;h3&gt;Connecting to MySQL and PostgreSQL&lt;/h3&gt;
 &lt;p&gt;Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you&#39;re all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it&#39;s own requests (via the php.ini file).&lt;/p&gt;
-&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
+&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
 &lt;h3&gt;Coming in Part 4 ...&lt;/h3&gt;
 &lt;p&gt;In Part 4, I&#39;ll be going over how to create the batch files that we&#39;ll need to work with the httpd.conf and php.ini files that we&#39;ve created. While I could detail it here, better to just put it in it&#39;s own article/post, as that makes things much easier (if not for you, then at least for me ;)).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Dual-installing PHP: Running PHP 5 and 4 on the same local, Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server/</link>
+      <link>http://words.strivinglife.com/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server/</link>
       <pubDate>Tue, 18 Jul 2006 20:34:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server/</guid>
+      <guid>http://words.strivinglife.com/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;In previous guides, we &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and later &lt;a href=&#34;http://strivinglife.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;moved our installation to a different folder&lt;/a&gt;. This time, we&#39;ll be installing the current release of PHP 5 (5.1.4) so that we can still switch back to PHP 4.4.2 if we&#39;d like.&lt;/p&gt;
 &lt;h3&gt;Downloading PHP 5.x&lt;/h3&gt;
 &lt;p&gt;The current version of PHP 5.x is 5.1.4, so we&#39;ll begin by downloading that from PHP.net. We&amp;rsquo;ll want to download the (Windows Binaries) zip file, even though it is significantly larger in size than the installer (the zip file is almost 9 MB, compared to less than 3 MB for the executable), but allows us a deal more flexibility.&lt;/p&gt;
@@ -1741,10 +1741,10 @@ COPY &#34;C:\home\zblank.txt&#34; &#34;C:\home\php5 is ready.txt&#34;&lt;/code&g
     
     <item>
       <title>Moving the location of PHP on your hard drive</title>
-      <link>http://jamesskemp.github.io/words/post/moving-the-location-of-PHP-on-your-hard-drive/</link>
+      <link>http://words.strivinglife.com/post/moving-the-location-of-PHP-on-your-hard-drive/</link>
       <pubDate>Sat, 01 Jul 2006 07:26:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/moving-the-location-of-PHP-on-your-hard-drive/</guid>
+      <guid>http://words.strivinglife.com/post/moving-the-location-of-PHP-on-your-hard-drive/</guid>
       <description>&lt;p&gt;
 In this article, we&amp;#39;ll be moving our &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;installation of PHP 4.4.2&lt;/a&gt; from c:\php\ to c:\php4\. We&amp;#39;ll be doing this primarily because we may like the ability to run multiple versions of PHP at one time, on our development server.
 &lt;/p&gt;
