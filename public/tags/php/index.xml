@@ -1741,10 +1741,10 @@ COPY &#34;C:\home\zblank.txt&#34; &#34;C:\home\php5 is ready.txt&#34;&lt;/code&g
     
     <item>
       <title>Moving the location of PHP on your hard drive</title>
-      <link>http://words.strivinglife.com/post/moving-the-location-of-PHP-on-your-hard-drive/</link>
+      <link>http://words.strivinglife.com/post/Moving-the-location-of-PHP-on-your-hard-drive/</link>
       <pubDate>Sat, 01 Jul 2006 07:26:00 -0500</pubDate>
       
-      <guid>http://words.strivinglife.com/post/moving-the-location-of-PHP-on-your-hard-drive/</guid>
+      <guid>http://words.strivinglife.com/post/Moving-the-location-of-PHP-on-your-hard-drive/</guid>
       <description>&lt;p&gt;
 In this article, we&amp;#39;ll be moving our &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;installation of PHP 4.4.2&lt;/a&gt; from c:\php\ to c:\php4\. We&amp;#39;ll be doing this primarily because we may like the ability to run multiple versions of PHP at one time, on our development server.
 &lt;/p&gt;
