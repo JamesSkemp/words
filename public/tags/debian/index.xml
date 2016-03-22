@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Debian on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/debian/</link>
+    <link>http://words.strivinglife.com/tags/debian/</link>
     <description>Recent content in Debian on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 May 2006 09:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/debian/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>First Debian install = unsuccessful</title>
-      <link>http://jamesskemp.github.io/words/post/First-Debian-install-3D-unsuccessful/</link>
+      <link>http://words.strivinglife.com/post/First-Debian-install-3D-unsuccessful/</link>
       <pubDate>Sat, 20 May 2006 09:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/First-Debian-install-3D-unsuccessful/</guid>
+      <guid>http://words.strivinglife.com/post/First-Debian-install-3D-unsuccessful/</guid>
       <description>&lt;p&gt;
 My first shot at installing Debian didn&amp;#39;t go quite so well.  I&amp;#39;m attempting to install on a HP Pavilion XE734, using pretty much the base system.  One addition appears to be a 3Com Fast Etherlink PCI card, from the late 90s ... (3C595-TX).&lt;!--adsense--&gt;
 &lt;/p&gt;

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi 2 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/raspberry-pi-2/</link>
+    <link>http://words.strivinglife.com/tags/raspberry-pi-2/</link>
     <description>Recent content in Raspberry Pi 2 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 Jan 2016 12:17:57 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/raspberry-pi-2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/raspberry-pi-2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
-      <link>http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
+      <link>http://words.strivinglife.com/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
+      <guid>http://words.strivinglife.com/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
       <description>&lt;p&gt;The following is how I configured a Raspberry Pi 2 as a samba server, using a Seagate Backup Plus Slim, 1TB, drive.&lt;/p&gt;
 
 &lt;p&gt;For ease I purchased the &lt;a href=&#34;http://amzn.to/1MZjXM0&#34;&gt;CanaKit Raspberry Pi 2 Complete Starter Kit&lt;/a&gt;. It runs about $70 and includes enough to get up and running with the Raspberry Pi 2, with the Pi itself, a nice case, power supply, HDMI cable, WiFi adapter, and SD card with NOOBS/Raspbian installer.&lt;/p&gt;

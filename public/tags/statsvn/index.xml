@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statsvn on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/statsvn/</link>
+    <link>http://words.strivinglife.com/tags/statsvn/</link>
     <description>Recent content in Statsvn on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Oct 2010 10:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/statsvn/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/statsvn/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
+      <link>http://words.strivinglife.com/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
+      <guid>http://words.strivinglife.com/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
       <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
 &lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
 &lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;

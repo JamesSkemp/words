@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sudoku on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/sudoku/</link>
+    <link>http://words.strivinglife.com/tags/sudoku/</link>
     <description>Recent content in Sudoku on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Nov 2010 10:24:00 -0600</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/sudoku/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/sudoku/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sudoku observations and programmatic considerations</title>
-      <link>http://jamesskemp.github.io/words/post/Sudoku-observations-and-programmatic-considerations/</link>
+      <link>http://words.strivinglife.com/post/Sudoku-observations-and-programmatic-considerations/</link>
       <pubDate>Sun, 28 Nov 2010 10:24:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Sudoku-observations-and-programmatic-considerations/</guid>
+      <guid>http://words.strivinglife.com/post/Sudoku-observations-and-programmatic-considerations/</guid>
       <description>&lt;p&gt;&lt;p&gt;At the lowest level, any Sudoku puzzle consists of a number of squares.&lt;/p&gt;
 &lt;p&gt;There are&amp;nbsp;&lt;em&gt;rows&lt;/em&gt; times &lt;em&gt;columns&lt;/em&gt; squares consisting of a single value.&lt;/p&gt;
 &lt;p&gt;There are &lt;em&gt;x&lt;/em&gt; number of larger squares consisting of&amp;nbsp;&lt;em&gt;y&lt;/em&gt;&amp;nbsp;values, where&amp;nbsp;&lt;em&gt;x&lt;/em&gt; is the smallest of &lt;em&gt;rows&lt;/em&gt;&amp;nbsp;and &lt;em&gt;columns&lt;/em&gt;, and &lt;em&gt;y&lt;/em&gt; is the largest of &lt;em&gt;rows&lt;/em&gt; and &lt;em&gt;columns&lt;/em&gt;.&lt;/p&gt;

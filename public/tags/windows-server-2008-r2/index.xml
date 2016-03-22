@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows Server 2008 R2 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/windows-server-2008-r2/</link>
+    <link>http://words.strivinglife.com/tags/windows-server-2008-r2/</link>
     <description>Recent content in Windows Server 2008 R2 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Aug 2012 14:51:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/windows-server-2008-r2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/windows-server-2008-r2/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Upgrading to .NET 4 on an IIS site supporting a .NET 2.0 child application</title>
-      <link>http://jamesskemp.github.io/words/post/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</link>
+      <link>http://words.strivinglife.com/post/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</link>
       <pubDate>Sun, 05 Aug 2012 14:51:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</guid>
+      <guid>http://words.strivinglife.com/post/Upgrading-to-NET-4-on-an-IIS-site-supporting-a-NET-20-child-application/</guid>
       <description>&lt;p&gt;Today I decided to finally make progress on a couple pending applications. As part of that process I needed to upgrade one of my sites to .NET 4. Unfortunately it has a child application that needs to say as .NET 2.0/3.5. After approximately 30 minutes of downtime, I finally got things configured correctly (seemingly). Here&#39;s what I ended up having to do.&lt;/p&gt;
 &lt;p&gt;This assumes IIS 7.5.&lt;/p&gt;
 &lt;ol&gt;
@@ -36,10 +36,10 @@
     
     <item>
       <title>Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</title>
-      <link>http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
+      <link>http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</link>
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
+      <guid>http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
 &lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
 &lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
@@ -66,10 +66,10 @@
     
     <item>
       <title>Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2</title>
-      <link>http://jamesskemp.github.io/words/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
+      <link>http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</link>
       <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
+      <guid>http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
       <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
 &lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
 </description>
@@ -77,10 +77,10 @@
     
     <item>
       <title>Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
+      <link>http://words.strivinglife.com/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</link>
       <pubDate>Sat, 26 Jun 2010 21:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
       <description>&lt;p&gt;This weekend I finally installed SQL Server 2008 R2 to my Windows Server 2008 R2 machine. After a bit of back-and-forth about which version to install (since my MSDN subscription allows me to install seemingly every version), I opted to just install SQL Server Express 2008 R2. Being part of the Web Platform Installer, the entire process was extremely easy.&lt;/p&gt;
 &lt;p&gt;Step 1: Start Web Platform Installer.&lt;/p&gt;
 &lt;p&gt;Step 2: Select SQL Server Express 2008 R2 and SQL Server 2008 R2 Management Studio Express from under Database.&lt;/p&gt;
@@ -102,10 +102,10 @@
     
     <item>
       <title>Working with Virtual Hard Disks in Windows 7 and Server 2008 R2</title>
-      <link>http://jamesskemp.github.io/words/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</link>
+      <link>http://words.strivinglife.com/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</link>
       <pubDate>Sun, 20 Jun 2010 19:02:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
+      <guid>http://words.strivinglife.com/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
       <description>&lt;p&gt;A new feature in Windows 7 and Windows Server 2008 R2 is the ability to work with Virtual Hard Disks (VHDs) directly within the OS, by booting from them or mounting them as additional drives.&lt;/p&gt;
 &lt;p&gt;While I&#39;ve had a good deal of experience with using VHDs in virtual environments, being able to work with VHDs directly is fairly new, and leaves some question as to how useful it could potentially be, since I&#39;m happy using VirtualBox to work with virtual machines when I need to do any testing.&lt;/p&gt;
 &lt;h3&gt;Creating a VHD&lt;/h3&gt;
@@ -132,10 +132,10 @@
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for sharing files</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
+      <link>http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</link>
       <pubDate>Sun, 06 Jun 2010 10:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-sharing-files/</guid>
       <description>&lt;p&gt;When I first started downloading files, almost a decade and a half ago, I would just download everything to one directory, using whatever name the file originally had when I was downloading it.&lt;/p&gt;
 &lt;p&gt;In the last couple of years I&#39;ve been trying (despite Chrome&#39;s default method trying to push be back)&amp;nbsp;to be much better about saving files, by creating a directory with the full name of the application - &#34;Microsoft Web Platform Installer&#34; - and then saving the file(s) into that directory.&lt;/p&gt;
 &lt;p&gt;However, I do lose track of how many previous versions I have of particular applications (I try to only have the current and one version back) and how much total I&#39;m storing.&lt;/p&gt;
@@ -152,10 +152,10 @@
     
     <item>
       <title>Windows Server 2008 R2 Enterprise Edition - setup for Web development</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
+      <link>http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</link>
       <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
       <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;

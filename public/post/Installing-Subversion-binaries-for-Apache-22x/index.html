@@ -12,10 +12,10 @@
     <meta name="keywords" content='subversion,apache,vista,tortoisesvn,svn' />
     <meta name="author" content="" />
     <link href="" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -53,16 +53,16 @@
 					James Skemp
 					
 				</li>
-                <li><i class="fa fa-folder"></i><a href="http://jamesskemp.github.io/words/categories/software">software</a>, <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials / guides</a></li>
+                <li><i class="fa fa-folder"></i><a href="http://words.strivinglife.com/categories/software">software</a>, <a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials / guides</a></li>
             </ul>
         
-        <p>Recently I went ahead and <a href="http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx">installed Apache 2.2.9 to my Windows Vista Ultimate</a> machine. The purpose of doing that was to move towards <a href="http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">a Subversion install</a> running on Apache.</p>
+        <p>Recently I went ahead and <a href="http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx">installed Apache 2.2.9 to my Windows Vista Ultimate</a> machine. The purpose of doing that was to move towards <a href="http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">a Subversion install</a> running on Apache.</p>
 <p>In this article, I'll be covering that installation.</p>
 <h3>Getting Subversion</h3>
 <p>Obviously, the first thing to do is to <a href="http://subversion.tigris.org/" target="_blank">get Subversion</a>.</p>
 <p>We're looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that's svn-win32-1.5.1.zip.</p>
 <div class="note">
-<p>In <a href="http://jamesskemp.github.io/words/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">a previous guide</a>, which you may have followed,&nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you'll want to uninstall Subversion first.</p>
+<p>In <a href="http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx">a previous guide</a>, which you may have followed,&nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you'll want to uninstall Subversion first.</p>
 </div>
 <p>Once you've downloaded the zip, extract the contents.</p>
 <h3>Installing the binaries</h3>
@@ -79,7 +79,7 @@
 <div class="note">
 <p>If you want to use Berkeley DB, grab the libdb44.dll (or <strong>libdb*.dll</strong>)&nbsp;instead of the latter.</p>
 </div>
-<p>Next open the httpd.conf file (we <a href="http://jamesskemp.github.io/words/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx">covered how to do this</a> before) and uncomment the following two lines (remove the #):</p>
+<p>Next open the httpd.conf file (we <a href="http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx">covered how to do this</a> before) and uncomment the following two lines (remove the #):</p>
 <blockquote>
 <p>#LoadModule dav_module modules/mod_dav.so<br />#LoadModule dav_fs_module modules/mod_dav_fs.so</p>
 </blockquote>
@@ -100,7 +100,7 @@
 <p>You can now browse the current versions of the files under Subversion.</p>
 <h3>TortoiseSVN</h3>
 <p>While you're at it, you may want to install or update <a href="http://tortoisesvn.net" target="_blank">TortoiseSVN</a>.</p>
-<p>I already covered <a href="http://jamesskemp.github.io/words/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx">how to install Subversion on Vista</a>, and the steps still apply.</p>
+<p>I already covered <a href="http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx">how to install Subversion on Vista</a>, and the steps still apply.</p>
 <h3>Upgrading existing repositories</h3>
 <p>If you've already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.</p>
 <p>You can do this via the command line by running <strong>svnadmin upgrade \path\to\repository</strong> , however, you should ensure that you have a backup before you do this. Also, you'll be unable to use tools that cannot access the 1.5 repos.</p>
@@ -108,15 +108,15 @@
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/subversion">subversion</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/subversion">subversion</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/apache">apache</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/apache">apache</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/vista">vista</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/vista">vista</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/tortoisesvn">tortoisesvn</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/tortoisesvn">tortoisesvn</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/svn">svn</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/svn">svn</a></li>
         
     </ul>
 
@@ -159,7 +159,7 @@
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -170,15 +170,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -203,25 +203,25 @@
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -280,9 +280,9 @@
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

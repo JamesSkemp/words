@@ -12,10 +12,10 @@
     <meta name="keywords" content='apache,coldfusion' />
     <meta name="author" content="" />
     <link href="" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -53,7 +53,7 @@
 					James Skemp
 					
 				</li>
-                <li><i class="fa fa-folder"></i><a href="http://jamesskemp.github.io/words/categories/software">software</a>, <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials / guides</a></li>
+                <li><i class="fa fa-folder"></i><a href="http://words.strivinglife.com/categories/software">software</a>, <a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials / guides</a></li>
             </ul>
         
         <p>In <a href="http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we'll be continuing in our quest by installing ColdFusion MX 6.1 and 7.</p>
@@ -88,7 +88,7 @@
 <blockquote>
 <p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;<br />1.srv=localhost,&ldquo;default&rdquo;<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&ldquo;&rdquo;<br />2.srv=localhost,&ldquo;default&rdquo;<br />2.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://jamesskemp.github.io/words/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
+<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://words.strivinglife.com/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
 <p>Save all necessary files and start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 6.1 Administrator Login.</p>
 <p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you&rsquo;re ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.</p>
 <!--nextpage-->
@@ -119,15 +119,15 @@
 <p>Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you&rsquo;ll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.</p>
 <p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you&rsquo;re ready to begin working on ColdFusion on Apache 2.0.x.</p>
 <h3>In the next part &hellip;</h3>
-<p>In <a href="http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we&rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
-<p><a href="http://jamesskemp.github.io/words/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p></p>
+<p>In <a href="http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we&rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
+<p><a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p></p>
 
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/apache">apache</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/apache">apache</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/coldfusion">coldfusion</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/coldfusion">coldfusion</a></li>
         
     </ul>
 
@@ -170,7 +170,7 @@
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -181,15 +181,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -214,25 +214,25 @@
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -291,9 +291,9 @@
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

@@ -12,10 +12,10 @@
     <meta name="keywords" content='coldfusion,postgresql,php,mysql,apache' />
     <meta name="author" content="" />
     <link href="" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -53,11 +53,11 @@
 					James Skemp
 					
 				</li>
-                <li><i class="fa fa-folder"></i><a href="http://jamesskemp.github.io/words/categories/software">software</a>, <a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials / guides</a></li>
+                <li><i class="fa fa-folder"></i><a href="http://words.strivinglife.com/categories/software">software</a>, <a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials / guides</a></li>
             </ul>
         
-        <p>In <a href="http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In <a href="http://jamesskemp.github.io/words/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx">Part 2 of this Apache 2.0.59 guide</a>, we setup ColdFusion MX 6.1 and 7.0. This time, we'll be continuing in our quest by adding support for both PHP 4 and PHP 5.</p>
-<p>In previous guides, we <a href="http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx">installed PHP 4</a> and <a href="http://jamesskemp.github.io/words/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx">PHP 5</a>, so if you need to install either one, do so with the above directions. If you'll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.</p>
+        <p>In <a href="http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In <a href="http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx">Part 2 of this Apache 2.0.59 guide</a>, we setup ColdFusion MX 6.1 and 7.0. This time, we'll be continuing in our quest by adding support for both PHP 4 and PHP 5.</p>
+<p>In previous guides, we <a href="http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx">installed PHP 4</a> and <a href="http://words.strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx">PHP 5</a>, so if you need to install either one, do so with the above directions. If you'll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.</p>
 <p>Before we do this, however, we need to think about just what we're doing.</p>
 <p>Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)</p>
 <ul>
@@ -97,7 +97,7 @@
 <p>Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it's not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.</p>
 <p>This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.</p>
 <h3>Hooking up PHP 4.4.2</h3>
-<p>In a previous guide, we <a href="http://jamesskemp.github.io/words/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx">installed PHP 4.4.2</a> and in yet <a href="http://jamesskemp.github.io/words/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx">a later guide moved our installation</a> to the c:\php4\ folder.</p>
+<p>In a previous guide, we <a href="http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx">installed PHP 4.4.2</a> and in yet <a href="http://words.strivinglife.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx">a later guide moved our installation</a> to the c:\php4\ folder.</p>
 <p>Since we've already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it's just a matter of hooking up Apache 2.0.x to recognize it.</p>
 <p>First, we'll need to make sure we've got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.</p>
 <p>Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.</p>
@@ -165,23 +165,23 @@
 <p>So, let the hardest part begin.</p>
 <h3>Connecting to MySQL and PostgreSQL</h3>
 <p>Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you're all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it's own requests (via the php.ini file).</p>
-<p>Feel free to test this using the PHP files I detailed before (<a href="http://jamesskemp.github.io/words/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx">check MySQL connection in PHP</a> | <a href="http://jamesskemp.github.io/words/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx">check PostgreSQL connection in PHP</a>) or just using the ColdFusion MX Administrator to check all datasources.</p>
+<p>Feel free to test this using the PHP files I detailed before (<a href="http://words.strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx">check MySQL connection in PHP</a> | <a href="http://words.strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx">check PostgreSQL connection in PHP</a>) or just using the ColdFusion MX Administrator to check all datasources.</p>
 <h3>Coming in Part 4 ...</h3>
 <p>In Part 4, I'll be going over how to create the batch files that we'll need to work with the httpd.conf and php.ini files that we've created. While I could detail it here, better to just put it in it's own article/post, as that makes things much easier (if not for you, then at least for me ;)).</p>
-<p><a href="http://jamesskemp.github.io/words/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p>
+<p><a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p>
 
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/coldfusion">coldfusion</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/coldfusion">coldfusion</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/postgresql">postgresql</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/postgresql">postgresql</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/php">php</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/php">php</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/mysql">mysql</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/mysql">mysql</a></li>
         
-            <li style=""><a href="http://jamesskemp.github.io/words/tags/apache">apache</a></li>
+            <li style=""><a href="http://words.strivinglife.com/tags/apache">apache</a></li>
         
     </ul>
 
@@ -224,7 +224,7 @@
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -235,15 +235,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -268,25 +268,25 @@
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -345,9 +345,9 @@
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

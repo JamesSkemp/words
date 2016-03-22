@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phpmyadmin on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/phpmyadmin/</link>
+    <link>http://words.strivinglife.com/tags/phpmyadmin/</link>
     <description>Recent content in Phpmyadmin on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Jun 2006 15:00:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/phpmyadmin/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Upgrading phpMyAdmin (2.7.0-pl2 to 2.8.1) on a local, Windows-based, Apache server</title>
-      <link>http://jamesskemp.github.io/words/post/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://words.strivinglife.com/post/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Tue, 20 Jun 2006 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://words.strivinglife.com/post/Upgrading-phpMyAdmin-%28270-pl2-to-281%29-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;
 In a &lt;a href=&#34;http://strivinglife.net/wordpress/?p=53&#34;&gt;previous post&lt;/a&gt;, we installed phpMyAdmin 2.7.0-pl2 to our local Web server. We did this so that we would have an easy way to administer our MySQL databases, from a PHP-based interface. This time, we&amp;#39;ll be upgrading phpMyAdmin to version 2.8.1.
 &lt;/p&gt;
@@ -53,10 +53,10 @@ And with that, you&amp;#39;ve successfully updated phpMyAdmin. Really, a pretty 
     
     <item>
       <title>Installing MySQL and phpMyAdmin on a local Windows-based, Apache, server</title>
-      <link>http://jamesskemp.github.io/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</link>
+      <link>http://words.strivinglife.com/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</link>
       <pubDate>Fri, 24 Feb 2006 23:31:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</guid>
+      <guid>http://words.strivinglife.com/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;
 &lt;em&gt;Note: This guide should work equally well for phpMyAdmin 2.8.1 and above.  For a guide on upgrading this 2.7.0-pl2 install, see &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-phpMyAdmin-(270-pl2-to-281)-on-a-local%2c-Windows-based%2c-Apache-server.aspx&#34;&gt;Upgrading phpMyAdmin (2.7.0-pl2 to 2.8.1) on a local, Windows-based, Apache server&lt;/a&gt;.&lt;/em&gt;

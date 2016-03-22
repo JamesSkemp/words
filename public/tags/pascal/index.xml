@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pascal on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/pascal/</link>
+    <link>http://words.strivinglife.com/tags/pascal/</link>
     <description>Recent content in Pascal on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 24 Jul 2010 11:48:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/pascal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/pascal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tic-Tac-Toe using Pascal</title>
-      <link>http://jamesskemp.github.io/words/post/Tic-Tac-Toe-using-Pascal/</link>
+      <link>http://words.strivinglife.com/post/Tic-Tac-Toe-using-Pascal/</link>
       <pubDate>Sat, 24 Jul 2010 11:48:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Tic-Tac-Toe-using-Pascal/</guid>
+      <guid>http://words.strivinglife.com/post/Tic-Tac-Toe-using-Pascal/</guid>
       <description>&lt;p&gt;&lt;p&gt;The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated).&lt;/p&gt;
 &lt;p&gt;This is the code in main.pas, which it seems is the only file really necessary.&lt;/p&gt;
 &lt;p&gt;This code is covered by a &lt;a rel=&#34;external&#34; href=&#34;http://creativecommons.org/licenses/by-nc/3.0/&#34;&gt;Creative Commons&amp;nbsp;Attribution-NonCommercial 3.0 license&lt;/a&gt;.&lt;/p&gt;
@@ -306,10 +306,10 @@ begin
     
     <item>
       <title>Pascal Programming: JRSs Tic-Tac-Toe</title>
-      <link>http://jamesskemp.github.io/words/post/Pascal-Programming-JRSs-Tic-Tac-Toe/</link>
+      <link>http://words.strivinglife.com/post/Pascal-Programming-JRSs-Tic-Tac-Toe/</link>
       <pubDate>Sun, 09 Nov 2003 00:01:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Pascal-Programming-JRSs-Tic-Tac-Toe/</guid>
+      <guid>http://words.strivinglife.com/post/Pascal-Programming-JRSs-Tic-Tac-Toe/</guid>
       <description>&lt;p&gt;JRSs Tic-Tac-Toe is a simple game of Tic-Tac-Toe programmed with Dev-Pascal. It even keeps a tally of your points (win = +1, loss = -1).&lt;/p&gt;
 
 &lt;p&gt;&lt;h3&gt;Current limitations:&lt;/h3&gt;
@@ -317,7 +317,7 @@ begin
 &lt;p&gt;Again, lacks a pretty interface ;)&lt;br /&gt;You can only play versus the computer.&amp;nbsp; I would like to create a two player option at some point in the future.&lt;/p&gt;
 &lt;p&gt;Comments regarding this program are greatly appreciated. Thank you for using and testing my program.&lt;/p&gt;
 &lt;h3&gt;Download:&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesskemp.github.io/words/files/2003/JRSTicTacToe1_0.exe&#34;&gt;JRSs Tic-Tac-Toe v1.0&lt;/a&gt; (25&amp;nbsp;KB)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://words.strivinglife.com/files/2003/JRSTicTacToe1_0.exe&#34;&gt;JRSs Tic-Tac-Toe v1.0&lt;/a&gt; (25&amp;nbsp;KB)&lt;/p&gt;
 &lt;p&gt;JRSs Tic-Tac-Toe v1.0&lt;br /&gt;Created by James Skemp - &lt;a href=&#34;http://jamesrskemp.net/&#34;&gt;http://jamesrskemp.net/&lt;/a&gt;&lt;br /&gt;Created using Dev-Pascal 1.9.2 with Free Pascal v1.06&lt;br /&gt;Tested in Windows 98 SE, Windows XP Home SP2&lt;br /&gt;Primarily Written/Added: November 9th 2003&lt;br /&gt;Edited/Updated: December 31st 2003&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Update 7/24/2010:&lt;/strong&gt; The main code for this application can be viewed in my article &lt;a href=&#34;http://strivinglife.com/words/post/Tic-Tac-Toe-using-Pascal.aspx&#34;&gt;Tic-Tac-Toe using Pascal&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
 </description>

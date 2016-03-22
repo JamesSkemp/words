@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows 7 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/windows-7/</link>
+    <link>http://words.strivinglife.com/tags/windows-7/</link>
     <description>Recent content in Windows 7 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Aug 2010 23:07:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/windows-7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/windows-7/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows 7 Home Premium changes for IIS 7.5 access of Users directories</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</link>
+      <link>http://words.strivinglife.com/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</link>
       <pubDate>Sat, 28 Aug 2010 23:07:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
       <description>&lt;p&gt;Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory.&lt;/p&gt;
 &lt;h3&gt;Background&lt;/h3&gt;
 &lt;p&gt;I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).&lt;/p&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>Working with Virtual Hard Disks in Windows 7 and Server 2008 R2</title>
-      <link>http://jamesskemp.github.io/words/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</link>
+      <link>http://words.strivinglife.com/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</link>
       <pubDate>Sun, 20 Jun 2010 19:02:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
+      <guid>http://words.strivinglife.com/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
       <description>&lt;p&gt;A new feature in Windows 7 and Windows Server 2008 R2 is the ability to work with Virtual Hard Disks (VHDs) directly within the OS, by booting from them or mounting them as additional drives.&lt;/p&gt;
 &lt;p&gt;While I&#39;ve had a good deal of experience with using VHDs in virtual environments, being able to work with VHDs directly is fairly new, and leaves some question as to how useful it could potentially be, since I&#39;m happy using VirtualBox to work with virtual machines when I need to do any testing.&lt;/p&gt;
 &lt;h3&gt;Creating a VHD&lt;/h3&gt;
@@ -60,10 +60,10 @@
     
     <item>
       <title>Solved: Upgrading to Windows 7 on an HP a6360t with a second hard drive</title>
-      <link>http://jamesskemp.github.io/words/post/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</link>
+      <link>http://words.strivinglife.com/post/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</link>
       <pubDate>Fri, 09 Oct 2009 20:43:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
+      <guid>http://words.strivinglife.com/post/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
       <description>&lt;p&gt;I purchased an HP Pavilion a6360t with Windows Vista Home&amp;nbsp;Premium&amp;nbsp;and later upgraded it (due to a conference) for free to Windows Vista Ultimate, and then added a second hard drive.&lt;/p&gt;
 &lt;p&gt;What would happen when I upgraded to Windows 7 Home Premium? Could I use the 64-bit version?&lt;/p&gt;
 &lt;p&gt;The answer to these questions is, due to testing, below:&lt;/p&gt;

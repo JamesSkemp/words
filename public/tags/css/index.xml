@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Css on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/css/</link>
+    <link>http://words.strivinglife.com/tags/css/</link>
     <description>Recent content in Css on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Mar 2011 19:20:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Smashing CSS</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Smashing-CSS/</link>
+      <link>http://words.strivinglife.com/post/Review-Smashing-CSS/</link>
       <pubDate>Fri, 25 Mar 2011 19:20:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Smashing-CSS/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Smashing-CSS/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/047068416X?tag=strivinglifen-20&#34;&gt;Smashing CSS&lt;/a&gt;, written by Eric A. Meyer.&lt;/p&gt;
 &lt;/div&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Two simple ColdFusion calendar outputs</title>
-      <link>http://jamesskemp.github.io/words/post/Two-simple-ColdFusion-calendar-outputs/</link>
+      <link>http://words.strivinglife.com/post/Two-simple-ColdFusion-calendar-outputs/</link>
       <pubDate>Mon, 26 Oct 2009 21:28:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Two-simple-ColdFusion-calendar-outputs/</guid>
+      <guid>http://words.strivinglife.com/post/Two-simple-ColdFusion-calendar-outputs/</guid>
       <description>&lt;p&gt;Here&#39;s&amp;nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality).&lt;/p&gt;
 &lt;h3&gt;Tables-based&lt;/h3&gt;
 &lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
@@ -149,10 +149,10 @@
     
     <item>
       <title>Dynamic user-controlled layout in a CMS</title>
-      <link>http://jamesskemp.github.io/words/post/Dynamic-user-controlled-layout-in-a-CMS/</link>
+      <link>http://words.strivinglife.com/post/Dynamic-user-controlled-layout-in-a-CMS/</link>
       <pubDate>Sun, 25 May 2008 15:00:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Dynamic-user-controlled-layout-in-a-CMS/</guid>
+      <guid>http://words.strivinglife.com/post/Dynamic-user-controlled-layout-in-a-CMS/</guid>
       <description>&lt;p&gt;This article is meant to hold some of the thoughts that I&#39;ve been having about allowing a user to control the layout of a page, in particular for use within a content management system (CMS). The system would need to be able to support a user creating templates easily, but hopefully without the use of tables.&lt;/p&gt;
 &lt;p&gt;In the &lt;a rel=&#34;external&#34; href=&#34;http://www.w3.org/TR/css3-layout/&#34;&gt;CSS Advanced Layout Module&lt;/a&gt;, there is a draft specification for Template-based positioning.&lt;/p&gt;
 &lt;p&gt;This uses @, . and letters to specify not only how the content is to appear, but also where the content appears. That is,&amp;nbsp;.&amp;nbsp;are used for whitespace and letters and @ are used for content placeholders.&lt;/p&gt;
@@ -263,10 +263,10 @@
     
     <item>
       <title>Found: 40 free HTML/CSS templates</title>
-      <link>http://jamesskemp.github.io/words/post/Found-40-free-HTMLCSS-templates/</link>
+      <link>http://words.strivinglife.com/post/Found-40-free-HTMLCSS-templates/</link>
       <pubDate>Fri, 24 Mar 2006 20:01:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Found-40-free-HTMLCSS-templates/</guid>
+      <guid>http://words.strivinglife.com/post/Found-40-free-HTMLCSS-templates/</guid>
       <description>&lt;p&gt;Alessandro Fulciniti, along with an unnamed number of people, have create 40 CSS-based templates, free for download, available at &lt;a rel=&#34;nofollow&#34; href=&#34;http://blog.html.it/layoutgala/&#34; target=&#34;_blank&#34;&gt;http://blog.html.it/layoutgala/&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;They&#39;ve got near every possible layout that I can think of, along with a number more. Stick on a stylesheet, and you&#39;re golden.&lt;/p&gt;
 &lt;p&gt;The only real problem I see is that navigation items should, according to some sources, come before the main content area. After all if the CSS disappears, then you&#39;ll still want navigation to come first.&lt;/p&gt;

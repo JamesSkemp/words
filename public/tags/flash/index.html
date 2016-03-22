@@ -11,11 +11,11 @@
     <meta name="description" content="" />
     <meta name="keywords" content='' />
     <meta name="author" content="" />
-    <link href="http://jamesskemp.github.io/words/tags/flash/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link href="http://words.strivinglife.com/tags/flash/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -44,7 +44,7 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/">Dynamically generating a list of videos for OSFLV Player with ASP.NET</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/">Dynamically generating a list of videos for OSFLV Player with ASP.NET</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>April 13, 2010</li>
                                     <li><i class="fa fa-user"></i>
@@ -54,13 +54,13 @@
 									</li>
                                 </ul>
                                 I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked. This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0. Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head runat="server"&gt; &lt;title&gt;FLV video player&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;form id="form1" runat="server"&gt; &lt;div&gt; &lt;a href="Default.aspx"&gt;Refresh listing&lt;/a&gt;&lt;br/&gt; &lt;asp:DropDownList ID="DropDownList1" runat="server"&gt; &lt;/asp:DropDownList&gt; &lt;asp:Button ID="Button1" runat="server" Text="View" onclick="Button1_Click" /&gt; &lt;/div&gt; &lt;div id="videoPlayer" runat="server"&gt;&lt;/div&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; Default.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.IO; public partial class _Default : System.Web.UI.Page { int videoWidth = 1000; // = 200/170 ratio int videoHeight = 680; // 400x340 = default string playerLocation = "osflv_player_v3/player.swf"; protected void Page_Load(object sender, EventArgs e) { if (!IsPostBack) { DirectoryInfo directory = new DirectoryInfo(Server.MapPath("/videos")); FileInfo[] files = directory.GetFiles(); foreach (FileInfo file in files) { if (file.Extension == ".flv") { DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4)); } } } } protected void Button1_Click(object sender, EventArgs e) { string video = "/videos/" + DropDownList1.SelectedItem.Text + ".flv"; videoPlayer.InnerHtml = "&lt;object width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' id='flvPlayer2'&gt;"; videoPlayer.InnerHtml += "&lt;param name='allowFullScreen' value='true'&gt;"; videoPlayer.InnerHtml += "&lt;param name='movie' value='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5'&gt;"; videoPlayer.InnerHtml += ""; videoPlayer.InnerHtml += "&lt;embed src='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5' width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' allowFullScreen='true' type='application/x-shockwave-flash'&gt;"; videoPlayer.InnerHtml += "&lt;/object&gt;"; videoPlayer.InnerHtml += "&lt;br/&gt;&lt;span style='color:#ccc;'&gt;" + video + "&lt;/span&gt;"; } } A default Web.config file can be created and used, and a videos directory is checked for the listing of videos.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/">Quick and dirty conversions to FLV (Flash Video)</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/">Quick and dirty conversions to FLV (Flash Video)</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>February 23, 2008</li>
                                     <li><i class="fa fa-user"></i>
@@ -70,13 +70,13 @@
 									</li>
                                 </ul>
                                 I purchased a Casio EX-Z1200 a bit ago, which I&#39;ve been playing around with. Overall, I&#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&#39;t the best for me. After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/The-Daily-Show-is-now-available-online/">The Daily Show is now available online</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/The-Daily-Show-is-now-available-online/">The Daily Show is now available online</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>October 19, 2007</li>
                                     <li><i class="fa fa-user"></i>
@@ -86,13 +86,13 @@
 									</li>
                                 </ul>
                                 One of the view things I miss about cable is The Daily Show. Thankfully, I can now get my fix, as well as catch up on older shows, online, legally. The archives are available from the Show&#39;s Videos area. Among the gems is this one on the recent healthcare veto: Headlines - Kids&#39; Healthcare Veto. The short commercial at the beginning and end are fairly non-obtrusive, save when they cut into the end abruptly.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/The-Daily-Show-is-now-available-online/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/The-Daily-Show-is-now-available-online/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/New-gallery-posted/">New gallery posted</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/New-gallery-posted/">New gallery posted</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>May 21, 2007</li>
                                     <li><i class="fa fa-user"></i>
@@ -104,7 +104,7 @@
                                 <p><p>
 After a bit of looking around, for the best gallery application, I&#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&#39;m requiring version 8 or higher for mine), and it did cost some money, it&#39;s a great little application.</p>
 
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/New-gallery-posted/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/New-gallery-posted/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
@@ -122,7 +122,7 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -133,15 +133,15 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -166,25 +166,25 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -243,9 +243,9 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

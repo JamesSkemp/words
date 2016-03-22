@@ -11,11 +11,11 @@
     <meta name="description" content="" />
     <meta name="keywords" content='' />
     <meta name="author" content="" />
-    <link href="http://jamesskemp.github.io/words/tags/openssl/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link href="http://words.strivinglife.com/tags/openssl/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -44,7 +44,7 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/">Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/">Raw: Using OpenSSL to create a certificate authority and update IIS 7.5</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>December 29, 2010</li>
                                     <li><i class="fa fa-user"></i>
@@ -54,7 +54,7 @@
 									</li>
                                 </ul>
                                 A raw dump of information on how to create a certificate authority and etcetera. Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file) Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048 Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer Step 4: Create DER for public consumption "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\_ca.cer -outform DER -out certs\_ca.der Step 5: Create request from IIS IIS &gt; click on main server, Server Certificates &gt; populate all for request save to requests directory locally Step 6: Handle request "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs Step 7: Convert for IIS "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer Step 8: Add to IIS back in iis, complete request.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
@@ -72,7 +72,7 @@
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -83,15 +83,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -116,25 +116,25 @@
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -193,9 +193,9 @@
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

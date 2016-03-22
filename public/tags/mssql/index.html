@@ -11,11 +11,11 @@
     <meta name="description" content="" />
     <meta name="keywords" content='' />
     <meta name="author" content="" />
-    <link href="http://jamesskemp.github.io/words/tags/mssql/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/highlightjs-themes/androidstudio.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="http://jamesskemp.github.io/words/css/phlat.css" />
+    <link href="http://words.strivinglife.com/tags/mssql/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s Test Hugo-Generated Site" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
 </head>
 
     <body>
@@ -28,7 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://jamesskemp.github.io/words/">James Skemp&#39;s Test Hugo-Generated Site</a>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s Test Hugo-Generated Site</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -44,7 +44,7 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/">The problem with installing SQL Server Express via the Microsoft Web Platform Installer</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/">The problem with installing SQL Server Express via the Microsoft Web Platform Installer</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>December 26, 2010</li>
                                     <li><i class="fa fa-user"></i>
@@ -54,13 +54,13 @@
 									</li>
                                 </ul>
                                 In the past I've talked up Microsoft's Web Platform Installer. With this tool installed you can easily get an IIS server correctly setup. However, as I work my way through Pete Brown's Silverlight 4 in Action I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the 'lower' versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/">Installing SQL Server Express 2008 on Windows Server 2003</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/">Installing SQL Server Express 2008 on Windows Server 2003</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>December 20, 2009</li>
                                     <li><i class="fa fa-user"></i>
@@ -70,13 +70,13 @@
 									</li>
                                 </ul>
                                 SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution. In this article I'll be covering a custom install of SQL Server Express 2008 on Windows Server 2003. Server system For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>June 24, 2009</li>
                                     <li><i class="fa fa-user"></i>
@@ -86,13 +86,13 @@
 									</li>
                                 </ul>
                                 Granted, in the case where this came up, I should have moved away from a SqlDataSource, but I wrote it using one, and a re-write isn't possible at the moment. So, I had to find a way yesterday to programmatically set the command timeout of a select, using a SqlDataSource (that was programmatically written). After much research, I found that you have to set the timeout on selecting. After opening a dummy document to see if I could determine how it was normally done, I came up with something like the following: SqlDataSource dataSource = new SqlDataSource(); // code removed dataSource.Selecting += GenericSelecting; // code removed The GenericSelecting is as follows: protected void GenericSelecting(object sender, SqlDataSourceSelectingEventArgs e) { e.Command.CommandTimeout = 6000; } Excessive timeout, yes, but it works.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/">Programmatic MSSQL data source in ASP.NET (C#) without System.Web</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/">Programmatic MSSQL data source in ASP.NET (C#) without System.Web</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>June 6, 2009</li>
                                     <li><i class="fa fa-user"></i>
@@ -102,13 +102,13 @@
 									</li>
                                 </ul>
                                 In a similar article I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive. So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code. First, the following must be included in.
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
-                                <h1><a href="http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></h1>
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>June 1, 2009</li>
                                     <li><i class="fa fa-user"></i>
@@ -118,7 +118,7 @@
 									</li>
                                 </ul>
                                 I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server. If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values. SqlDataSource dataSource = new SqlDataSource(); dataSource.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString; dataSource.SelectCommand = "stored_proc"; dataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure; dataSource.SelectParameters.Add("id", value); dataSource.CacheDuration = 3600; DataView viewData = (DataView)dataSource.Select(DataSourceSelectArguments.Empty); DataTable tableData = viewData.ToTable(); //Stuff tableData = null; viewData = null; dataSource = null; From what I can tell, there's no close by doing a select this way; the connection must close after it's performed?
-                                <p><a class="btn btn-custom" href="http://jamesskemp.github.io/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" role="button">Read More</a></p>
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
@@ -136,7 +136,7 @@
                     <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </span>
             </div>
-            <input type="hidden" name="q" value="site:http://jamesskemp.github.io/words/">
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
         </form>
     </div>
 </div>
@@ -147,15 +147,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-7-2015-release-Case/">Review: Amazon Fire 7 (2015 release) Case</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-alienware-steam-machine-asm100-4980blk-desktop-console/">Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-zagg-slim-cover-surface-4-mc3wkk-bb0/">Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
+                    <li><a href="http://words.strivinglife.com/post/review-sennheiser-hd-471g-headset/">Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control</a></li>
                 
-                    <li><a href="http://jamesskemp.github.io/words/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
+                    <li><a href="http://words.strivinglife.com/post/Review-Amazon-Fire-HD-8-2015-release-Case/">Review: Amazon Fire HD 8 (2015 release) Case</a></li>
                 
             </ul>
         </ul>
@@ -180,25 +180,25 @@
                 <h5>categories</h5>
                 <ul class="list-unstyled posts-recent">
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/software">software</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/article">article</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/review">review</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/strivinglife">strivinglife</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/philosophy">philosophy</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/dvd-/-movie">dvd-/-movie</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/internet">internet</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/gaming">gaming</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
                     
-                        <li><a href="http://jamesskemp.github.io/words/categories/technology">technology</a></li>
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
                     
                 </ul>
             </div>
@@ -257,9 +257,9 @@
         <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
     </a>
 </div>
-<script src="http://jamesskemp.github.io/words/js/jquery-2.2.1.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/bootstrap.min.js"></script>
-<script src="http://jamesskemp.github.io/words/js/highlight.min.js"></script>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script>
     if(($(window).height() + 100) < $(document).height()) {

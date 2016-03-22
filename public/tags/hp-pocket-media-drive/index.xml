@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hp Pocket Media Drive on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/hp-pocket-media-drive/</link>
+    <link>http://words.strivinglife.com/tags/hp-pocket-media-drive/</link>
     <description>Recent content in Hp Pocket Media Drive on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Oct 2009 19:11:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/hp-pocket-media-drive/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/hp-pocket-media-drive/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Backing up a computer to an HP Pocket Media Drive</title>
-      <link>http://jamesskemp.github.io/words/post/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</link>
+      <link>http://words.strivinglife.com/post/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</link>
       <pubDate>Sun, 04 Oct 2009 19:11:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</guid>
+      <guid>http://words.strivinglife.com/post/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/</guid>
       <description>&lt;p&gt;Recently I purchased another &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002C220YI?tag=strivinglifen-20&#34;&gt;HP Pocket Media Drive&lt;/a&gt;, with 500 GB of space (instead of the 160 GB drives I had purchased before).&lt;/p&gt;
 &lt;p&gt;Since I&#39;d like to plan out my backup strategy, and need to backup for my upcoming Windows 7 install (which since I have Vista Ultimate, will require a deal of work), I decided to write this post.&lt;/p&gt;
 &lt;h3&gt;My computer&#39;s setup&lt;/h3&gt;

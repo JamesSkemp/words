@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xbox 360 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/xbox-360/</link>
+    <link>http://words.strivinglife.com/tags/xbox-360/</link>
     <description>Recent content in Xbox 360 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Sep 2012 21:12:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/xbox-360/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/xbox-360/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: Onechanbara: Bikini Samurai Squad (2009)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Onechanbara-Bikini-Samurai-Squad-2009/</link>
+      <link>http://words.strivinglife.com/post/Review-Onechanbara-Bikini-Samurai-Squad-2009/</link>
       <pubDate>Sun, 16 Sep 2012 21:12:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Onechanbara-Bikini-Samurai-Squad-2009/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Onechanbara-Bikini-Samurai-Squad-2009/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/Onechanbara-Bikini-Samurai-Squad-Xbox-360/dp/B001EOQV9U?tag=strivinglifen-20&#34;&gt;Onechanbara: Bikini Samurai Squad&lt;/a&gt; (2009), for the Xbox 360.&lt;/p&gt;
 &lt;/div&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Review: Ninja Blade (2009)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Ninja-Blade-2009/</link>
+      <link>http://words.strivinglife.com/post/Review-Ninja-Blade-2009/</link>
       <pubDate>Tue, 24 Apr 2012 19:46:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Ninja-Blade-2009/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Ninja-Blade-2009/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001KWFBG0?tag=strivinglifen-20&#34;&gt;Ninja Blade (2009)&lt;/a&gt;, for the Xbox 360.&lt;/p&gt;
 &lt;/div&gt;
@@ -52,10 +52,10 @@
     
     <item>
       <title>Nier weapon data in XML (and LINQ sample query)</title>
-      <link>http://jamesskemp.github.io/words/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
+      <link>http://words.strivinglife.com/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</link>
       <pubDate>Sun, 16 Oct 2011 21:59:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
+      <guid>http://words.strivinglife.com/post/Nier-weapon-data-in-XML-and-LINQ-sample-query/</guid>
       <description>&lt;p&gt;&lt;p&gt;Going through the game &lt;a href=&#34;http://strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt; yet again, I wanted an easier way to track what weapon levels I had already upgraded to, and what items I still needed to unlock weapon items.&lt;/p&gt;
 &lt;p&gt;Phase one towards that goal is creating an XML file with weapon upgrade information which is available online: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/NierWeapons.xml&#34;&gt;Nier weapon data&lt;/a&gt;. An XML schema document for this information is also available: &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xsd/2011/10/NierWeapons.xsd&#34;&gt;Nier weapon XSD&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Sample LINQ query&lt;/h3&gt;
@@ -83,10 +83,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Bullet Witch (2006) (Xbox 360)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Bullet-Witch-2006-Xbox-360/</link>
+      <link>http://words.strivinglife.com/post/Review-Bullet-Witch-2006-Xbox-360/</link>
       <pubDate>Wed, 20 Jul 2011 20:40:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Bullet-Witch-2006-Xbox-360/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Bullet-Witch-2006-Xbox-360/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000ICV996?tag=strivinglifen-20&#34;&gt;Bullet Witch&lt;/a&gt;, released in 2006 for the Xbox 360.&lt;/p&gt;
 &lt;/div&gt;
@@ -108,14 +108,14 @@ public class WeaponItem {
     
     <item>
       <title>Review: Darksiders (2009) (Xbox 360/PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Darksiders-2009-Xbox-360-PlayStation-3/</link>
+      <link>http://words.strivinglife.com/post/Review-Darksiders-2009-Xbox-360-PlayStation-3/</link>
       <pubDate>Mon, 30 May 2011 19:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Darksiders-2009-Xbox-360-PlayStation-3/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Darksiders-2009-Xbox-360-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001D7T2VM?tag=strivinglifen-20&#34;&gt;Darksiders (2009)&lt;/a&gt;, available for the Xbox 360 and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001D7T2VC?tag=strivinglifen-20&#34;&gt;PlayStation 3&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;Darksiders, like &lt;a href=&#34;http://jamesskemp.github.io/words/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt;, the last game I played through and beat, didn&amp;rsquo;t get all that much respect when it first came out. But Darksiders features more than just God of War meets Zelda gameplay, it tells a story worth seeing through until the end.&lt;/p&gt;
+&lt;p&gt;Darksiders, like &lt;a href=&#34;http://words.strivinglife.com/words/post/Review-Nier-2010-Xbox-360-PlayStation-3.aspx&#34;&gt;Nier&lt;/a&gt;, the last game I played through and beat, didn&amp;rsquo;t get all that much respect when it first came out. But Darksiders features more than just God of War meets Zelda gameplay, it tells a story worth seeing through until the end.&lt;/p&gt;
 &lt;p&gt;The following review is based upon a playthrough on the Xbox 360, on the hardest -&amp;nbsp;Apocalyptic - difficulty.&lt;/p&gt;
 &lt;p&gt;Darksiders is similar to God of War in that you play in a third person view, slashing up enemies and powering up your weapons and variety of moves. Unlike &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B001YI0Z2U?tag=strivinglifen-20&#34;&gt;Bayonetta&lt;/a&gt;, for example, for the most part you can get away with mostly just slashing away, so long as you dash and jump to avoid attacks, even on the most difficult setting. Blocking is also an option, but whether because of the button combination to do it, or more likely because of my recent playthrough of Bayonetta, I didn&amp;rsquo;t find much use for it.&lt;/p&gt;
 &lt;p&gt;One grace that Darksiders provides is that the button smashing cutscenes in Darksiders are limited to only a couple. As someone who dislikes God of War because of the large number of these types of scenes, and had a heck of a time in Wolverine during the one scene that used them, this is absolutely wonderful.&lt;/p&gt;
@@ -132,10 +132,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Nier (2010) (Xbox 360 / PlayStation 3)</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Nier-2010-Xbox-360-PlayStation-3/</link>
+      <link>http://words.strivinglife.com/post/Review-Nier-2010-Xbox-360-PlayStation-3/</link>
       <pubDate>Sat, 21 May 2011 21:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Nier-2010-Xbox-360-PlayStation-3/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Nier-2010-Xbox-360-PlayStation-3/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002BRUTT2?tag=strivinglifen-20&#34;&gt;Nier (2010)&lt;/a&gt;, available on the Xbox 360 and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B002BRYIJY?tag=strivinglifen-20&#34;&gt;PlayStation 3&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
@@ -156,10 +156,10 @@ public class WeaponItem {
     
     <item>
       <title>The Kinect is selling really well; but is that good for gamers?</title>
-      <link>http://jamesskemp.github.io/words/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
+      <link>http://words.strivinglife.com/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</link>
       <pubDate>Mon, 29 Nov 2010 21:20:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
+      <guid>http://words.strivinglife.com/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
       <description>&lt;p&gt;Techmeme had a couple of interesting titles this evening. &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://www.readwriteweb.com/archives/kinect_is_selling_2x_as_fast_as_the_ipad.php&#34;&gt;Kinect is Selling 2X as Fast as the iPad&lt;/a&gt;&#34; and &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://blogs.barrons.com/techtraderdaily/2010/11/29/microsoft-over-25m-kinect-sold/&#34;&gt;Microsoft: Over 2.5M Kinect Sold&lt;/a&gt;.&#34;&lt;/p&gt;
 &lt;p&gt;Even if I thought I had the space for it (I&#39;d have to move furniture every time I wanted to play it in my current apartment) I still wouldn&#39;t pick up the Kinect.&lt;/p&gt;
 &lt;p&gt;Why?&lt;/p&gt;
@@ -176,10 +176,10 @@ public class WeaponItem {
     
     <item>
       <title>Thoughts on the Kinect and Playstation Move</title>
-      <link>http://jamesskemp.github.io/words/post/Thoughts-on-the-Kinect-and-Playstation-Move/</link>
+      <link>http://words.strivinglife.com/post/Thoughts-on-the-Kinect-and-Playstation-Move/</link>
       <pubDate>Sun, 05 Sep 2010 14:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Thoughts-on-the-Kinect-and-Playstation-Move/</guid>
+      <guid>http://words.strivinglife.com/post/Thoughts-on-the-Kinect-and-Playstation-Move/</guid>
       <description>&lt;p&gt;Laying aside the question of whether these are merely in response to the amount of money being made by the Wii, and whether the technology will be as lasting as history suggests 3D televisions will be, I&#39;ve been thinking about the &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002BSA298?tag=strivinglifen-20&#34;&gt;Kinect&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/B002I0J4NE?tag=strivinglifen-20&#34;&gt;Move&lt;/a&gt; recently. Here are my thoughts.&lt;/p&gt;
 &lt;h3&gt;How well will they work?&lt;/h3&gt;
 &lt;p&gt;This is the biggest question. Ever since they were first shown on television there&#39;s been the question of what environments will support the Kinect. For the Move, with it&#39;s big glowing ball, there hasn&#39;t been much of a question, since everything suggests that it&#39;ll be easier to track (especially after learning that the ball consists of LEDs which can change based on the environment).&lt;/p&gt;
@@ -212,10 +212,10 @@ public class WeaponItem {
     
     <item>
       <title>Review: Borderlands</title>
-      <link>http://jamesskemp.github.io/words/post/Review-Borderlands/</link>
+      <link>http://words.strivinglife.com/post/Review-Borderlands/</link>
       <pubDate>Sun, 24 Jan 2010 20:19:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Review-Borderlands/</guid>
+      <guid>http://words.strivinglife.com/post/Review-Borderlands/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The following is a review for &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000WMEEBM?tag=strivinglifen-20&#34;&gt;Borderlands&lt;/a&gt;, available for the Playstation 3 and Xbox 360. I specifically played the Playstation 3 version, but my review should be applicable to the Xbox 360 version as well.&lt;/p&gt;
 &lt;/div&gt;
@@ -248,10 +248,10 @@ public class WeaponItem {
     
     <item>
       <title>Video games I&#39;m looking forward to in 2010</title>
-      <link>http://jamesskemp.github.io/words/post/Video-games-Im-looking-forward-to-in-2010/</link>
+      <link>http://words.strivinglife.com/post/Video-games-Im-looking-forward-to-in-2010/</link>
       <pubDate>Wed, 09 Dec 2009 11:30:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Video-games-Im-looking-forward-to-in-2010/</guid>
+      <guid>http://words.strivinglife.com/post/Video-games-Im-looking-forward-to-in-2010/</guid>
       <description>&lt;p&gt;In no particular order, here are the video games I&#39;m currently looking forward to playing in 2010.&lt;/p&gt;
 &lt;p&gt;Note that some games may have been released earlier. Consoles that games can be released for are the PS2/PS3, Xbox 360, or Wii (which therefore includes GameCube games). Since I will probably not be getting an Xbox Live Gold subscription this coming January, and am going to go back to playing RPGs on PS systems only, when possible, PS3&amp;nbsp;versions of multi-console releases&amp;nbsp;will be higher on my list. Of course, FFXIII on PS3 is a no-brainer, even if I was hard-core Xbox 360.&lt;/p&gt;
 &lt;ul&gt;
@@ -276,10 +276,10 @@ public class WeaponItem {
     
     <item>
       <title>Did you know? Xbox Live auto-renewals</title>
-      <link>http://jamesskemp.github.io/words/post/Did-you-know-Xbox-Live-auto-renewals/</link>
+      <link>http://words.strivinglife.com/post/Did-you-know-Xbox-Live-auto-renewals/</link>
       <pubDate>Fri, 04 Dec 2009 16:35:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Did-you-know-Xbox-Live-auto-renewals/</guid>
+      <guid>http://words.strivinglife.com/post/Did-you-know-Xbox-Live-auto-renewals/</guid>
       <description>&lt;p&gt;Did you know you have to go through 4 screens - 3 of which are adverts - to turn off &lt;a rel=&#34;external&#34; href=&#34;http://live.xbox.com/member/strivinglife&#34;&gt;Xbox Live&lt;/a&gt; auto-renewals?&lt;/p&gt;
 &lt;p&gt;And it seems like there&#39;s only one click (or one purchase) to turn them back on.&lt;/p&gt;
 </description>
@@ -287,10 +287,10 @@ public class WeaponItem {
     
     <item>
       <title>On Achievements and Trophies</title>
-      <link>http://jamesskemp.github.io/words/post/On-Achievements-and-Trophies/</link>
+      <link>http://words.strivinglife.com/post/On-Achievements-and-Trophies/</link>
       <pubDate>Sat, 16 May 2009 08:30:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/On-Achievements-and-Trophies/</guid>
+      <guid>http://words.strivinglife.com/post/On-Achievements-and-Trophies/</guid>
       <description>&lt;p&gt;To a very large extent, I consider myself to be a gamer.&lt;/p&gt;
 &lt;p&gt;Around the time the NES came out, my family picked up an Atari 2600, used. I don&#39;t know who sold it to us, but I can remember going with my dad to pick it up at my school&#39;s playground (that was the meeting place).&lt;/p&gt;
 &lt;p&gt;At a later point we picked up an NES, via my dad, and then my mom bought us a SNES. Nintendo 64 came after that, followed by the Playstation, Playstation 2, and Playstation 3, all of which I purchased. (I can&#39;t recall the N64 purchase, but I think that was a family purchase.) Finally the Xbox 360 and Wii. At some point there was a Game Gear as well, which our dad picked up for us at a Circuit City, if I remember correctly.&lt;/p&gt;
@@ -314,10 +314,10 @@ public class WeaponItem {
     
     <item>
       <title>What I&#39;ve been up to (Feb &#39;09 edition)</title>
-      <link>http://jamesskemp.github.io/words/post/What-Ive-been-up-to-Feb-09-edition/</link>
+      <link>http://words.strivinglife.com/post/What-Ive-been-up-to-Feb-09-edition/</link>
       <pubDate>Sat, 14 Feb 2009 20:34:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/What-Ive-been-up-to-Feb-09-edition/</guid>
+      <guid>http://words.strivinglife.com/post/What-Ive-been-up-to-Feb-09-edition/</guid>
       <description>&lt;p&gt;
 As my last post may have suggested ... I&amp;#39;ve been playing games. 
 &lt;/p&gt;
@@ -390,10 +390,10 @@ Even though life is merely striving, it&amp;#39;s good to know that I won&amp;#3
     
     <item>
       <title>Dear ... whomever (Halo 3)</title>
-      <link>http://jamesskemp.github.io/words/post/Dear-whomever-Halo-3/</link>
+      <link>http://words.strivinglife.com/post/Dear-whomever-Halo-3/</link>
       <pubDate>Mon, 09 Feb 2009 21:23:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Dear-whomever-Halo-3/</guid>
+      <guid>http://words.strivinglife.com/post/Dear-whomever-Halo-3/</guid>
       <description>&lt;p&gt;
 Dear whomever,
 &lt;/p&gt;
@@ -417,10 +417,10 @@ Fourth, no intelligence required. Run and shoot. Go back to restore shields. Run
     
     <item>
       <title>You either did or didn&#39;t waste your time playing the video game</title>
-      <link>http://jamesskemp.github.io/words/post/You-either-did-or-didnt-waste-your-time-playing-the-video-game/</link>
+      <link>http://words.strivinglife.com/post/You-either-did-or-didnt-waste-your-time-playing-the-video-game/</link>
       <pubDate>Mon, 26 Jan 2009 21:05:00 -0600</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/You-either-did-or-didnt-waste-your-time-playing-the-video-game/</guid>
+      <guid>http://words.strivinglife.com/post/You-either-did-or-didnt-waste-your-time-playing-the-video-game/</guid>
       <description>&lt;p&gt;
 You know what grinds my gears?
 &lt;/p&gt;

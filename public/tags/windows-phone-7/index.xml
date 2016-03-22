@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows Phone 7 on James Skemp&#39;s Test Hugo-Generated Site</title>
-    <link>http://jamesskemp.github.io/words/tags/windows-phone-7/</link>
+    <link>http://words.strivinglife.com/tags/windows-phone-7/</link>
     <description>Recent content in Windows Phone 7 on James Skemp&#39;s Test Hugo-Generated Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 22 Apr 2012 16:08:00 -0500</lastBuildDate>
-    <atom:link href="http://jamesskemp.github.io/words/tags/windows-phone-7/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://words.strivinglife.com/tags/windows-phone-7/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows Phone 7: Taking and restoring a SQL database</title>
-      <link>http://jamesskemp.github.io/words/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
+      <link>http://words.strivinglife.com/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</link>
       <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
       
-      <guid>http://jamesskemp.github.io/words/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
+      <guid>http://words.strivinglife.com/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
       <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
 &lt;div class=&#34;note&#34;&gt;
 &lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
