@@ -4,8 +4,13 @@ title = "James Skemp's StrivingLife"
 theme = "phlat"
 publishdir = "public"
 canonifyurls = true
+copyright = "All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0."
+
+[author]
+name = "James Skemp"
 
 [params]
+author = "James Skemp"
 default_author = "James Skemp"
 bing_webmaster = ""
 google_webmaster = ""
@@ -19,3 +24,9 @@ linkedin = ""
 youtube = ""
 paypal = ""
 amazonwishlist = "http://amzn.to/22xk0cK"
+
+# The header menu will appear as an inline-list at the top right of the page
+[[menu.header]]
+    name = "Home"
+    weight = 1
+    url = "/"
