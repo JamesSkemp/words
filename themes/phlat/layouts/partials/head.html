@@ -15,7 +15,7 @@
     <meta name="description" content="{{ .Description }}" />
     <meta name="keywords" content='{{ with .Params.tags }}{{ delimit . "," }}{{ end }}' />
     <meta name="author" content="{{ .Params.author }}" />
-    <link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/highlightjs-themes/androidstudio.css" />
     <link rel="stylesheet" href="/css/font-awesome.min.css" />
