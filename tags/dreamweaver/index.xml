@@ -16,15 +16,7 @@
       <pubDate>Wed, 19 Aug 2009 20:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/</guid>
-      <description>&lt;p&gt;As sometimes happens, a network share ended up going down while I was using Dreamweaver. Unfortunately, this can cause fairly major issues with Dreamweaver, if you have files still open, or if you have Dreamweaver closed, but need to open it up.&lt;/p&gt;
-&lt;p&gt;Since I typically have more than one file open in Dreamweaver, and have set my preferences to remember what I&#39;ve got open, I wanted to know where Dreamweaver stored the files that it was going to re-open.&lt;/p&gt;
-&lt;p&gt;This setting isn&#39;t stored in the file system, but rather is stored in the registry.&lt;/p&gt;
-&lt;p&gt;In Dreamweaver 8 the setting is under Edit &amp;gt; Preferences &amp;gt; General &amp;gt; Reopen documents on startup.&lt;/p&gt;
-&lt;p&gt;The files that were open are stored in HKEY_CURRENT_USER\Software\Macromedia\Dreamweaver 8\Open Files&lt;/p&gt;
-&lt;p&gt;In Dreamweaver CS4 the registry setting is HKEY_CURRENT_USER\Software\Adobe\Dreamweaver CS4\Open Files&lt;/p&gt;
-&lt;p&gt;Note that if Dreamweaver crashes, Open Files may not be set. This is also updated when the program closes, not while it&#39;s running.&lt;/p&gt;
-&lt;p&gt;On Dreamweaver 8 Open Files is deleted, until the program closes, while CS4 seems to keep it available for longer.&lt;/p&gt;
-</description>
+      <description>Want to make note of the files you had open in Dreamweaver? The listing of files is stored in the registry, depending upon your version.</description>
     </item>
     
     <item>
@@ -33,37 +25,7 @@
       <pubDate>Wed, 14 May 2008 14:15:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Keyboard-shortcuts-for-Visual-Studio-that-mimic-Dreamweaver/</guid>
-      <description>&lt;p&gt;
-I like Dreamweaver. After Notepad, and various other apps like it, I used FrontPage, was scarred, and was saved by Dreamweaver. 
-&lt;/p&gt;
-&lt;p&gt;
-However, Dreamweaver can&amp;#39;t handle .NET files very well. So when I moved to Windows and started using BlogEngine.NET I naturally started looking at how I could edit the source files. 
-&lt;/p&gt;
-&lt;p&gt;
-Visual Web Developer 2005 had been released, so ... 
-&lt;/p&gt;
-&lt;p&gt;
-Skipping forward, I&amp;#39;m starting to work with Visual Studio more and more. 
-&lt;/p&gt;
-&lt;p&gt;
-However, I&amp;#39;ve been using Dreamweaver so long that I&amp;#39;ve gotten used to the shortcuts that I use on a regular basis. 
-&lt;/p&gt;
-&lt;p&gt;
-Ctrl + Shift + P = new paragraph 
-&lt;/p&gt;
-&lt;p&gt;
-Ctrl + 1 (through 6) = new h1 (through h6)
-&lt;/p&gt;
-&lt;p&gt;
-Unfortunately, it doesn&amp;#39;t seem that you can map these to keyboard shortcuts in Visual Studio. 
-&lt;/p&gt;
-&lt;p&gt;
-Grr ...
-&lt;/p&gt;
-&lt;p&gt;
-Does anyone out there know how to map these specific functions?
-&lt;/p&gt;
-</description>
+      <description>I&#39;ve been using Dreamweaver so long that I really miss some keyboard shortcuts while using Visual Studio. [slnet0514:15f0c1c8-b0da-4398-8435-7fbd5f5b089b]</description>
     </item>
     
     <item>
@@ -72,73 +34,7 @@ Does anyone out there know how to map these specific functions?
       <pubDate>Sat, 19 Apr 2008 10:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/My-Dreamweaver-8-Preferences/</guid>
-      <description>&lt;p&gt;
-This is almost purely for my own benefit ... 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Edit &amp;gt; Preferences 
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Code Format 
-        &lt;/div&gt;
-        &lt;ul&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Indent with 1 Tab 
-            &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Code Hints
-        &lt;/div&gt;
-        &lt;ul&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Close tags: Never
-            &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Invisible Elements
-        &lt;/div&gt;
-        &lt;ul&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Scripts
-            &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Comments&amp;nbsp;
-            &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Line breaks
-            &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            CSS dipslay: none
-            &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-All other settings are defaults.
-&lt;/p&gt;
-</description>
+      <description>My preferences for Dreamweaver 8. [slnet0514:1af178c7-74ce-4693-b9dc-178aaf6e3fd4]</description>
     </item>
     
     <item>
@@ -147,41 +43,7 @@ All other settings are defaults.
       <pubDate>Mon, 25 Sep 2006 08:01:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/My-first-video-to-Google-Video/</guid>
-      <description>&lt;p&gt;
-Yesterday, I did multiple takes for a video on how to create snippets in Dreamweaver 8. The video ended up being pretty good, I think, albeit the video size was a bit large, and the resolution was a bit small (640x480 is what Google recommends).
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s not yet available via Google Video, but once I found out how it is available, I&amp;#39;ll post the link/video here.
-&lt;/p&gt;
-&lt;p&gt;
-If you have any comments or recommendations about what video tutorials I should create, let me know.
-&lt;/p&gt;
-&lt;p&gt;
-EDIT: Wow. That was quick. After supplying title information, it&amp;#39;s already Live. Note that the title and date will update at some point, since I just supplied the necessary information. Because the file was over 100 MB, I needed to use the Google Video Uploader to send my video. It looks like they&amp;#39;ve decreased the resolution, but it doesn&amp;#39;t look too bad at all at double size.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the link: &lt;a href=&#34;http://video.google.com/videoplay?docid=3586025281835355534&#34;&gt;Creating snippets in Dreamweaver 8 (Windows)&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Last edit: the &amp;#39;necessary&amp;#39; comments ... Grr.
-&lt;/p&gt;
-&lt;p&gt;
-Video created with the help of the free CamStudio 2.0. You can download a copy at http://www.camstudio.org/.
-&lt;/p&gt;
-&lt;p&gt;
-Again, this is Dreamweaver 8, running on Windows XP SP2.
-&lt;/p&gt;
-&lt;p&gt;
-The skin on my windows is 5imple Alpha, by danilloOc (via WindowBlinds 5). The nice blue matches my site&amp;#39;s scheme :D ;)
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m using some nice Labtec headphones for the audio portions, but it&amp;#39;s being recorded via CamStudio.
-&lt;/p&gt;
-&lt;p&gt;
-Original size: 640x480.&lt;br /&gt;
-Created: September 24, 2006.
-&lt;/p&gt;
-</description>
+      <description>Place for comments regarding my first Google Video.</description>
     </item>
     
     <item>
@@ -190,54 +52,7 @@ Created: September 24, 2006.
       <pubDate>Sat, 16 Sep 2006 22:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt; aspect has been updated for Windows Vista.&amp;nbsp;So too has the &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt; installation. The&amp;nbsp;Dreamweaver&amp;nbsp;aspect has not been touched.&lt;/p&gt;
-&lt;p&gt;I also have &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;an article about &lt;em&gt;using&lt;/em&gt; Subversion&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;When projects become large, or you have the need to keep information on what files you&amp;rsquo;ve modified, for any coding project, you may look for some kind of version control system. There&amp;rsquo;s software like Microsoft&amp;rsquo;s SourceSafe, but that can be costly, and according to some, it&amp;rsquo;s a clunky solution. Open source is always a worthwhile solution, and luckily, there&amp;rsquo;s a number of these alternatives out there.&lt;/p&gt;
-&lt;p&gt;In this guide, I&amp;rsquo;ll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I&amp;rsquo;ll be hooking it up to Dreamweaver 8, thanks to Nearly Geek&amp;rsquo;s SVN4DW extension. Note that while a &amp;lsquo;1-Click Setup&amp;rsquo; exists (SVN 1-Click Setup), I&amp;rsquo;ll actually be going through the setup of the Subversion and TortoiseSVN separately. I do this primarily because the 1-click setup is a bit out-of-date at the time of this writing.&lt;/p&gt;
-&lt;h4&gt;Downloading Subversion and TortoiseSVN&lt;/h4&gt;
-&lt;p&gt;The first thing we&amp;rsquo;ll need to do is download a copy of Subversion and TortoiseSVN. Both are available for free at Tigris.org, Subversion at &lt;a href=&#34;http://subversion.tigris.org/&#34;&gt;http://subversion.tigris.org/&lt;/a&gt; and TortoiseSVN at &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34;&gt;http://tortoisesvn.tigris.org/&lt;/a&gt;. At the time of this writing, Subversion is version 1.4.0 and TortoiseSVN is also at version 1.4.0. Download both to your standard downloads folder (if you&amp;rsquo;ve followed any of my other guides, this would be c:\home\downloads).&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;For Subversion, we&amp;rsquo;ll download the file svn-1.4.0-setup.exe, which contains the installer.&lt;/p&gt;
-&lt;h4&gt;Installing Subversion 1.4.0&lt;/h4&gt;
-&lt;p&gt;Once we&amp;rsquo;ve downloaded svn-1.4.0-setup.exe, we can begin the setup. Before we do this, make sure that if you&amp;rsquo;re running Apache, it&amp;rsquo;s stopped. We&amp;rsquo;re stopping Apache since we don&amp;rsquo;t want Subversion to use Apache as it&amp;rsquo;s server. Instead, we want to use the server that comes with it, svnserve. If we wanted to use Apache, we could use Apache 2.0.x, but not 1.3 or 2.2.&lt;/p&gt;
-&lt;p&gt;Setup is pretty easy. You&amp;rsquo;ll be asked if you want to setup Subversion. Continue through with the steps, reading and selecting next as you go, until you get to &amp;ldquo;Select Additional Tasks&amp;rdquo;. Here, you&amp;rsquo;ll want to uncheck the Apache modules option, since we won&amp;rsquo;t be using Apache for subversion.&lt;/p&gt;
-&lt;p&gt;Continue through to the rest of the installation using the defaults. Once Subversion has been installed, open the command prompt by selecting Run from the Windows Start menu. Now type &amp;ldquo;svnserve.exe -d&amp;rdquo;, without the quotes. This will start the server, which will listen on port 3690. You should be able to go to &lt;a href=&#34;http://localhost:3690/&#34;&gt;http://localhost:3690/&lt;/a&gt; now and see something similar to the following. (Note that if you are using SP2 of Windows XP, you&amp;rsquo;ll be prompted on whether you want to Unblock Subversion or not. If you don&amp;rsquo;t, you won&amp;rsquo;t be able to access Subversion, obviously.)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;( success ( 1 2 ( ANONYMOUS ) ( edit-pipeline svndiff1 absent-entries ) )&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Unfortunately, the command prompt window stays open, but we can look into fixing that shortly. First, we&amp;rsquo;ve got to install TortoiseSVN.&lt;/p&gt;
-&lt;h4&gt;Installing TortoiseSVN 1.4.0&lt;/h4&gt;
-&lt;p&gt;Start by running the install file, TortoiseSVN-1.4.0.7501-win32-svn-1.4.0.msi for example. You should be able to just read the various windows and accept all the default options. Once the installation has finished, however, you will need to restart your computer. Save whatever you&amp;rsquo;re doing, and restart.&lt;/p&gt;
-&lt;h4&gt;Installing SvnService&lt;/h4&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;Note that this next step is not necessary. &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.webpusher.ie/&#34;&gt;Mark Lennox&lt;/a&gt; pointed out on 10/23/2006 that there&amp;rsquo;s a way to do this via Windows. Very cool.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;As we noticed previously, in order to run svnserve, we need to have a window open while it&amp;rsquo;s running. Instead of using that method, we can use a &amp;lsquo;wrapper&amp;rsquo; to make svnserve into a Windows service, just like our other services like Apache.&lt;/p&gt;
-&lt;p&gt;In order to do that, we&amp;rsquo;ll need to download a file from &lt;a href=&#34;http://tortoisesvn.tigris.org/files/documents/406/29202/SVNServiceDT.zip&#34;&gt;http://tortoisesvn.tigris.org/files/documents/406/29202/SVNServiceDT.zip&lt;/a&gt;. Extract the file SVNService.exe, in the Release folder, to the same folder as Subversion &amp;ndash; so C:\Program Files\Subversion\bin\ if you&amp;rsquo;ve been following along.&lt;/p&gt;
-&lt;p&gt;Now go to Start &amp;gt; Run, and type &amp;lsquo;cmd&amp;rsquo;, no quotes. At the prompt, type the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;cd c:\program files\subversion\bin&amp;lt;/p&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now switch over to Windows Explorer and create a new directory in the c drive, called svnrepo. So, c:\svnrepo. This will contain our Subversion repositories. Back to the command prompt, where we type the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;svnservice -install &amp;ldquo;c:\program files\subversion\bin\svnserve.exe&amp;rdquo; &amp;ldquo;-d -r c:\svnrepo&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Note that if you ever want to remove svnserve as a service, simply use the following command.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;svnservice -remove&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;SVNService will now display in your services panel, and should automatically start when you start Windows. Depending upon your needs, this may or may not be a good thing. Keep in mind that you can always change the startup to what you&amp;rsquo;d prefer. You can now exit out of the command prompt.&lt;/p&gt;
-&lt;h4&gt;Downloading Subversion for Dreamweaver (SVN4DW)&lt;/h4&gt;
-&lt;p&gt;A copy of the extension that we&amp;rsquo;ll be using to add Subversion support to Dreamweaver can be downloaded from &lt;span style=&#34;text-decoration: line-through;&#34;&gt;Nearly Geek&lt;!--http://www.nearlygeek.com/tools/subversion-for-dreamweaver/introduction/--&gt;&lt;/span&gt; &lt;a rel=&#34;nofollow&#34; href=&#34;http://words.strivinglife.com/files/2006/09/svn4dw.zip&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once the mxp file has downloaded (save this to your downloads directory as well), you can install the extension by running it. Once the extension has finished installing, open Dreamweaver 8. You&amp;rsquo;ll have a new menu item, SVN, where you can perform your SVN tasks.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-&lt;p&gt;And with that, you&amp;rsquo;ve successfully setup Subversion, TortoiseSVN, and Dreamweaver 8 to work together. You will need to setup a repository, as well as configure user access, for which you can view the documentation resources under &amp;ldquo;Resources of interest,&amp;rdquo; below.&lt;/p&gt;
-&lt;h4&gt;Resources of interest&lt;/h4&gt;
-&lt;p&gt;Some resources you may be interested in, for additional information, include the following.&lt;/p&gt;
-&lt;p&gt;The O&amp;rsquo;Reilly book &lt;cite&gt;Version Control with Subversion&lt;/cite&gt; can be found at &lt;a href=&#34;http://svnbook.red-bean.com/&#34;&gt;http://svnbook.red-bean.com/&lt;/a&gt;. While it&amp;rsquo;s slightly out-of-date, it&amp;rsquo;s still quite applicable, especially for some of the general information that it provides.&lt;/p&gt;
-&lt;p&gt;TortoiseSVN and TortoiseMerge documentation can be found at &lt;a href=&#34;http://tortoisesvn.net/doc_release&#34;&gt;http://tortoisesvn.net/doc_release&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In this guide, I&#39;ll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I&#39;ll be hooking it up to Dreamweaver 8, thanks to Nearly Geek&#39;s SVN4DW extension.</description>
     </item>
     
     <item>
@@ -246,22 +61,7 @@ Created: September 24, 2006.
       <pubDate>Thu, 07 Sep 2006 20:38:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Dreamweaver-8-as-a-MXML-IDE/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve spent the last couple of hours trying to get Dreamweaver 8 to begin to function as a MXML IDE. Unfortunately, while I can get every &amp;lt;mx: tag added to the code hints, I&amp;#39;m having a heck of a time getting the actual code hints to function.
-&lt;/p&gt;
-&lt;p&gt;
-The small tutorial that Macromedia (and truly it was Macromedia at the time) provided isn&amp;#39;t very helpful at all. CodeSnipers.com (link below) has some information on using Dreamweaver 8 a Ruby IDE, but since Ruby appears to be so function based ...
-&lt;/p&gt;
-&lt;p&gt;
-My open call is this; can anyone point me to a good tutorial that focuses on setting up CodeHints.xml, TagChooser.xml, and TagLibraries.vtm? Or, just CodeHints.xml?
-&lt;/p&gt;
-&lt;p&gt;
-===
-&lt;/p&gt;
-&lt;p&gt;
-Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34;&gt;Dreamweaver 8 as a Ruby IDE&lt;/a&gt;.
-&lt;/p&gt;
-</description>
+      <description>If only setting up code hints in Dreamweaver 8 were as easy as it looks ...</description>
     </item>
     
     <item>
@@ -270,19 +70,7 @@ Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34
       <pubDate>Wed, 06 Sep 2006 18:56:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Compiling-Flex-applications-with-Dreamweaver/</guid>
-      <description>&lt;p&gt;
-Tom Lee wrote a post in July detailing how to compile and run Flex applications using Dreamweaver.  Since Flex 2 is making me very excited, I felt it was post worthy (especially since I won&amp;#39;t have to do a Google search to get back to his post now).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://tom-lee.blogspot.com/2006/07/edit-and-compile-flex-apps-in.html&#34;&gt;Edit and Compile Flex Apps in Dreamweaver&lt;/a&gt; details how to not only install Flex, but also how to easily, with the press of a button, compile Flex files using Dreamweaver and a couple of files.  Very cool stuff.
-&lt;/p&gt;
-&lt;p&gt;
-Since I&amp;#39;m having a heck of a time getting Flex 1.5 so I can setup Eclipse to create/edit Flex, I&amp;#39;m glad I found this post.  If only Adobe would link to this post as well.  I can see why they want to push Flex Builder to developers, since they&amp;#39;re providing the Flex SDK free of charge, but still, the nice thing to do would point out that you can still get limited functionality with Dreamweaver ...
-&lt;/p&gt;
-&lt;p&gt;
-As for Flex, I need to goof off with creating some of the sample apps before I do what I want to do - namely switch some of my downloadable programs into Flex apps :D
-&lt;/p&gt;
-</description>
+      <description>External link time: Tom Lee&#39;s post on easily compiling and running Flex applications using Dreamweaver.</description>
     </item>
     
     <item>
@@ -291,20 +79,7 @@ As for Flex, I need to goof off with creating some of the sample apps before I d
       <pubDate>Sun, 19 Feb 2006 10:53:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
-      <description>&lt;p&gt;Now that we&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Apache-to-a-Windows-based-computer-locally.aspx&#34;&gt;setup Apache on our local computer&lt;/a&gt;, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites. I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).&lt;/p&gt;
-&lt;h3&gt;Dreamweaver setup&lt;/h3&gt;
-&lt;p&gt;For those of you using Dreamweaver as your editor, I&#39;ll be outlining how to set it up to recognize your new sites. While I&#39;ll specifically be dealing with Dreamweaver 8, the basics should be enough for other versions, as well as for other programs.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;Open Dreamweaver and go to Site &amp;gt; New Site... First, we&#39;ll setup our site at C:\home\website\public_html\. Give the site a name in the Site name field &amp;ndash; in this case, let&#39;s use &amp;ldquo;website&amp;rdquo;. In Local root folder, we&#39;ll use C:\home\website\public_html. We&#39;ll leave the other options alone, but check &amp;ldquo;Use case-sensitive link checking&amp;rdquo;. While Windows accepts case-insensitive links, we&#39;ll do ourselves a favor by forcing ourselves to keep case in mind.&lt;/p&gt;
-&lt;p&gt;Finally, under Testing Server, we&#39;ll leave Server model alone, since we don&#39;t yet have a server matching either of these. Change Access to Local/Network, and when the window refreshes, change URL prefix to &lt;a href=&#34;http://website.localhost/&#34;&gt;http://website.localhost/&lt;/a&gt;. Testing server folder should be correct, and we don&#39;t need to check the box.&lt;/p&gt;
-&lt;p&gt;Once we&#39;ve made these changes, we&#39;ll go ahead and complete the creation process by saying OK. We can now go ahead and create a new site for each of the other sites &amp;ndash; C:\home\website2\public_html\ and any other sites we may have setup - with the appropriate changes.&lt;/p&gt;
-&lt;p&gt;As we progress in our setup of our server, we can change our Server model accordingly. For now, however, we&#39;re set leaving things as they are. Whenever we create any additional sites, we can go ahead and add them the same way as we&#39;ve done above.&lt;/p&gt;
-&lt;h3&gt;Nvu setup&lt;/h3&gt;
-&lt;p&gt;The freely available Nvu (as of this writing, version 1.0 is available at &lt;a rel=&#34;nofollow external&#34; href=&#34;http://nvu.com/&#34;&gt;http://nvu.com/&lt;/a&gt;) is also a snap to setup to work with our new server. Open Nvu and go to Edit &amp;gt; Publishing Site Settings... Click New Site.&lt;/p&gt;
-&lt;p&gt;In the Site Name field, type in a site name, such as website. In HTTP address of your homepage, enter &lt;a rel=&#34;nofollow&#34; href=&#34;http://website.localhost/&#34;&gt;http://website.localhost/&lt;/a&gt;. In Publishing address, enter file:///C:/home/website/public_html/ or browse to C:\home\website\public_html\. Add any additional sites, and you&#39;re done.&lt;/p&gt;
-&lt;p&gt;You should see a listing of the two sites on the left-side of the main Nvu window (although you may have to close and reopen Nvu first, or press the Edit sites button under the Nvu Site Manager area).&lt;/p&gt;
-&lt;h3&gt;Call for comments and additional programs&lt;/h3&gt;
-&lt;p&gt;If you&#39;d like me to include other programs (such as freely available programs), please post in the comments.&lt;/p&gt;
-</description>
+      <description>Now that we&#39;ve setup Apache on our local computer, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites.  I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).</description>
     </item>
     
     <item>
@@ -313,19 +88,7 @@ As for Flex, I need to goof off with creating some of the sample apps before I d
       <pubDate>Mon, 31 Oct 2005 07:22:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Free-file-comparision-in-Dreamweaver/</guid>
-      <description>&lt;p&gt;
-I found a great post at &lt;a href=&#34;http://angelo.mandato.com/blog/?p=39&#34;&gt;http://angelo.mandato.com/blog/?p=39&lt;/a&gt;, regarding a free file comparision utility for Dreamweaver / Windows, called WinMerge (winmerge.org).&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Update, April 21, 2006:&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-A number of versions later, and I&amp;#39;m still using this great little program.  Not only does it rock with Dreamweaver, it&amp;#39;s a great stand-alone program.
-&lt;/p&gt;
-&lt;p&gt;
-However, comparing local versus remote files is still what makes this program king.
-&lt;/p&gt;
-</description>
+      <description>WinMerge: for comparing local and remote files.</description>
     </item>
     
   </channel>

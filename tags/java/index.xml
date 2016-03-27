@@ -16,34 +16,7 @@
       <pubDate>Mon, 11 Jun 2007 19:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</guid>
-      <description>&lt;p&gt;
-I don&amp;#39;t have much desire to update from the repositories all the time, for whatever reason. Supposedly, if you run Eclipse from the download manager on Ubuntu, you can expect one slow experience.  So ... time to start by installing Sun&amp;#39;s Java.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I read varying ways on how to do this, but this is what worked for me, using Ubuntu 7.04, fully up-to-date, as of June 11, 2007, 7:00 PM, CST.
-&lt;/p&gt;
-&lt;p&gt;
-First, I downloaded the current version of JDK 5.0 from http://java.sun.com/javase/downloads/index_jdk5.jsp, for Linux (jdk-1_5_0_12-linux-i586.bin), saving it to the desktop.
-&lt;/p&gt;
-&lt;p&gt;
-I then right clicked on the bin file, and under Permissions allowed execute rights.  Elsewhere I saw that this should be made into a deb file, but another said bin was fine, so ...
-&lt;/p&gt;
-&lt;p&gt;
-Once spacebar, spacebar, spacebar-ing through the agreement, I agreed and it extracted to /home/strivinglife/
-&lt;/p&gt;
-&lt;p&gt;
-In Terminal, I cd /home/strivinglife, followed by sudo mv jdk1.5.0_12 /usr/lib (which moved the entire directory).
-&lt;/p&gt;
-&lt;p&gt;
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jdk1.5.0_12/bin/java 300
-&lt;/p&gt;
-&lt;p&gt;
-sudo update-alternatives --config java, and then selected the jdk I just installed.
-&lt;/p&gt;
-&lt;p&gt;
-I also did &lt;span class=&#34;code&#34;&gt;sudo ln -s /usr/lib/Java6u1/jre/plugin/i386/ns7/libjavaplugin_oji.so /usr/lib/firefox/plugins&lt;/span&gt; since http://www.java.com/en/download/help/testvm.xml was bombing.
-&lt;/p&gt;
-</description>
+      <description>My experience in installing Sun&#39;s JDK 5.0 (Update 12) to Ubuntu 7.04.</description>
     </item>
     
   </channel>

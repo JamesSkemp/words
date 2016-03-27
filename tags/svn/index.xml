@@ -16,25 +16,7 @@
       <pubDate>Tue, 27 Apr 2010 21:23:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/</guid>
-      <description>&lt;p&gt;With CollabNet releasing a new version of Subversion Server (1.6.11), and TortoiseSVN having a release a few days earlier, it&#39;s time to do an actual update, instead of a comment like I did &lt;a href=&#34;http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx&#34;&gt;last time&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Environment&lt;/h3&gt;
-&lt;p&gt;I&#39;m currently running CollabNet Subversion Server version 1.6.9.1 on Windows 7 Home Premium, 64-bit.&lt;/p&gt;
-&lt;p&gt;The install directory is C:\Program Filies (x86)\CollabNet\Subversion Server\, and I&#39;m installing version 1.6.9.11. These instructions should work, with minor changes, for other versions of CollabNet Subversion and Windows.&lt;/p&gt;
-&lt;h3&gt;Backups and downloads&lt;/h3&gt;
-&lt;p&gt;First make sure &lt;a href=&#34;http://strivinglife.com/words/post/Example-batch-file-to-dump-Subversion-repositories.aspx&#34;&gt;you&#39;ve backed up your repositories&lt;/a&gt;, just in case you need to roll back.&lt;/p&gt;
-&lt;p&gt;Next &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/getit.html&#34;&gt;download CollabNet Subversion Server&lt;/a&gt; for your environment. You can also go ahead and and start &lt;a rel=&#34;external&#34; href=&#34;http://tortoisesvn.net/downloads/&#34;&gt;downloading TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Browse to the CollabNet Subversion Server install directory (C:\Program Filies (x86)\CollabNet\Subversion Server\ on my system) and make sure you make a backup of the Apache configuration file, httpd\conf\httpd.conf.&lt;/p&gt;
-&lt;h3&gt;Upgrading CollabNet Subversion Server&lt;/h3&gt;
-&lt;p&gt;In the CollabNet Subversion Server install directory open httpd\bin\ApacheMonitor.exe and stop the currently running instance of Apache, then exit out of Apache Monitor.&lt;/p&gt;
-&lt;p&gt;Open the Services listing (Administrative Tools &amp;gt; Services) and stop CollabNet Subversion svnserve (or you won&#39;t be able to update any DLLs, without uninstalling first).&lt;/p&gt;
-&lt;p&gt;Start the CollabNet Subversion Server installer and when prompt, click Yes to upgrade.&lt;/p&gt;
-&lt;p&gt;Go ahead and click through the installer. Since we&#39;re upgrading, the settings should be just fine as they are.&lt;/p&gt;
-&lt;p&gt;Start Apache Monitor back up, and start the instance, or just start the CollabNet Subversion Apache service (you can stop it via this as well).&lt;/p&gt;
-&lt;p&gt;Test you can access the repository by browsing to it, if enabled, or going into a checked out repository and looking at the log.&lt;/p&gt;
-&lt;h3&gt;Upgrading TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;Start the TortoiseSVN installer, clicking through &lt;a href=&#34;http://strivinglife.com/words/?tag=/tortoisesvn&#34;&gt;as usual&lt;/a&gt;. To finish, TortoiseSVN will require a restart.&lt;/p&gt;
-&lt;p&gt;Once your system is back up, browse to a checked out directory and verify that you&#39;re able to use base functionality, even going so far as to commit changes to a test repository, as needed.&lt;/p&gt;
-</description>
+      <description>Manually upgrading CollabNet Subversion Server and TortoiseSVN.</description>
     </item>
     
     <item>
@@ -43,35 +25,7 @@
       <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
-      <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
-&lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
-&lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;
-&lt;h3&gt;Downloading installers&lt;/h3&gt;
-&lt;p&gt;The first step is to download the installers for &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/downloads/subversion/&#34;&gt;CollabNet Subversion Server&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://tortoisesvn.net/downloads&#34;&gt;TortoiseSVN&lt;/a&gt;. At this time, the current versions of each are 1.6.3.&lt;/p&gt;
-&lt;h3&gt;Installing CollabNet Subversion Server&lt;/h3&gt;
-&lt;p&gt;CollabNet Subversion Server relies upon Apache to serve repositories, due to the various benefits (security and etcetera) that it provides. However, for this installation I&#39;ll assume that you want to keep IIS running and available.&lt;/p&gt;
-&lt;p&gt;Start the installer and read and click Next on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_01.jpg&#34;&gt;first&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_02.jpg&#34;&gt;second&lt;/a&gt; screens. On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_03.jpg&#34;&gt;third&lt;/a&gt; screen you&#39;ll be able to choose whether you want svnserve to run as a Windows service, as well as Apache. For these, you want to keep the default of having both checked.&lt;/p&gt;
-&lt;p&gt;Assuming you&#39;ve done that correctly, on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_04.jpg&#34;&gt;fourth screen&lt;/a&gt;&amp;nbsp;you&#39;ll be able to choose what port Subversion should use (default is 3690) and the directory to store repositories (default is c:\svn_repository).&lt;/p&gt;
-&lt;p&gt;On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_05.jpg&#34;&gt;next screen&lt;/a&gt; you&#39;ll setup Apache. If you wish to continue running IIS on port 80, you&#39;ll need to use a different port (80 changed to 8080 in my case) and/or change the host to a name that IIS is not using. You&#39;ll also set where the repositories are being stored (from the previous screen) and what path to use when navigating via HTTP.&lt;/p&gt;
-&lt;p&gt;You can also enable viewVC, but Active Python 2.5 must be installed. By default viewVC is not enabled (and I don&#39;t go through that installation here).&lt;/p&gt;
-&lt;p&gt;Finally, you&#39;ll choose the location to install CollabNet Subversion Server on &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_06.jpg&#34;&gt;screen six&lt;/a&gt;, and be presented with the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_07.jpg&#34;&gt;Finished screen&lt;/a&gt; once the installation is complete, which includes links to CollabNet products and services.&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_08.jpg&#34;&gt;restart&lt;/a&gt; will be required in order to start the necessary services. Once the restart is complete you can verify that you can access Apache through the browser, as well as run the &lt;code&gt;svnadmin --version&lt;/code&gt; command to verify that Subversion is installed. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_09.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Installing TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;The next step is to install TortoiseSVN. &lt;a href=&#34;http://strivinglife.com/words/?tag=/tortoisesvn&#34;&gt;I&#39;ve covered TortoiseSVN&lt;/a&gt; a number of times on this site, and installing this version isn&#39;t much different.&lt;/p&gt;
-&lt;p&gt;Accepting the defaults will get you through the install process (captures: &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_01.jpg&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_03.jpg&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_04.jpg&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_05.jpg&#34;&gt;5&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_06.jpg&#34;&gt;6&lt;/a&gt;), and you&#39;ll need to &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_07.jpg&#34;&gt;restart&lt;/a&gt; once the installation is complete.&lt;/p&gt;
-&lt;h3&gt;Testing repository creation and usage&lt;/h3&gt;
-&lt;p&gt;At this point, you should be set to begin working with Subversion.&lt;/p&gt;
-&lt;p&gt;Create &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_01.jpg&#34;&gt;a new directory&lt;/a&gt; in your repository directory (default is C:\svn_repository). Then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_02.jpg&#34;&gt;right-click on the directory&lt;/a&gt; and select TortoiseSVN &amp;gt; Create repository here.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;http://media.strivinglife.com/graphics/collabnet_subversion/repotest_03.jpg&#34;&gt;repository will be created&lt;/a&gt;, and you can &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_04.jpg&#34;&gt;verify&lt;/a&gt; by opening the directory as well as navigating to it via HTTP.&lt;/p&gt;
-&lt;p&gt;We can now checkout a copy by right-clicking anywhere and selecting &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_05.jpg&#34;&gt;SVN Checkout ...&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Enter the URL of the repository and a checkout directory to continue. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_06.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You should then be able to browse to that path and see that you have &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_07.jpg&#34;&gt;a current directory&lt;/a&gt;. You can then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_08.jpg&#34;&gt;create a test file&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_09.jpg&#34;&gt;commit&lt;/a&gt; your &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_10.jpg&#34;&gt;changes&lt;/a&gt; to verify things are &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_11.jpg&#34;&gt;working correctly&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can make &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_13.jpg&#34;&gt;another change&lt;/a&gt;, verify that things commit, and then browse, via HTTP or the repository browser, to ensure that you&#39;re at the appropriate number of commits.&lt;/p&gt;
-&lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;And with that, you&#39;ve successfully installed CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3. Now you just need to use Subversion during development.&lt;/p&gt;
-&lt;p&gt;CollabNet also offers free tools for Eclipse and Visual Studio, to help you integrate with your favorite IDE.&lt;/p&gt;
-&lt;p&gt;You can also play around with the security options that are available due to Apache, to make Subversion as secure as you need it.&lt;/p&gt;
-</description>
+      <description>In this article I install CollabNet Subversion Server 1.6.3, with TortoiseSVN 1.6.3, on Windows Server 2003 R2, Enterprise Edition, Service Pack 2.</description>
     </item>
     
     <item>
@@ -80,211 +34,7 @@
       <pubDate>Mon, 23 Mar 2009 20:40:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/</guid>
-      <description>&lt;p&gt;The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.&lt;/p&gt;
-&lt;p&gt;For this I&#39;ll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that&#39;s Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Determine current setup.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that&#39;s 2.2.10 and 1.5.4, respectively.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Opening TortoiseSVN&#39;s menu and selecting About will display the current version. In my case that&#39;s 1.5.8.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Confirm that all applications will work with the new versions of the other applications.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Simply check each application&#39;s site. In this case, they all appear to work fine with each other.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Download all installers.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Apache: &lt;a href=&#34;http://httpd.apache.org/&#34;&gt;http://httpd.apache.org/&lt;/a&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Win32 Binary including OpenSSL 0.9.8i (MSI Installer)&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Subversion: &lt;a href=&#34;http://subversion.tigris.org/&#34;&gt;http://subversion.tigris.org/&lt;/a&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Win32 binaries for Apache 2.2.x&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;TortoiseSVN: &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34;&gt;http://tortoisesvn.tigris.org/&lt;/a&gt; or &lt;a href=&#34;http://tortoisesvn.net/&#34;&gt;http://tortoisesvn.net/&lt;/a&gt;&amp;nbsp;(you&#39;ll end up at the latter anyways)&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;32 Bit&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Backup Apache configuration.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;You can find the httpd.conf file in the conf directory, in the install directory.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Example: c:\Program Files\Apache Software Foundation\Apache2.2\conf\httpd.conf&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Stop Apache.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Open the Apache Service Monitor, select the Apache2.2 service, and press the Stop button.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Uninstall Apache.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Unfortunately, the installer for a higher version can&#39;t seem to run with Apache already installed. So, we have to uninstall it first.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Install Apache.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;localhost is your friend. If you&#39;re installing along-side IIS, keep it at the &#39;All Users, on Port 80, as a Service&#39; as we&#39;ll change this later.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Typical install is fine, at the default location, but feel free to change as needed.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;See my &lt;a href=&#34;http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;Install Apache 2.2.9 to Windows Vista (Ultimate)&lt;/a&gt; for a full guide.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Verify Apache settings.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;My install ran fine, with no configuration settings lost. However, if your httpd.conf is changed, you&#39;ll want to do a compare of your backup copy, with the new version.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;TortoiseMerge or WinMerge are two excellent applications that will help with this.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Remember to stop the Apache service if you need to make changes.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;For this guide, I assume you&#39;re running at localhost on port 8080.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;The Apache Service Monitor should also display the current version, when the service is selected.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Backup Subversion repositories.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;I do this in two ways.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;First, I backup all repository directories. In my case, I have all my repos in b:\repos\. I simply make a copy of this directory.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Next, I do a dump of all repositories. This basically means I run the following command: &lt;strong&gt;svnadmin dump StrivingLife &amp;gt; ..\repos_dump\StrivingLife.dump&lt;/strong&gt;&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;strong&gt;dir &amp;gt; list.txt&lt;/strong&gt; will give me a listing of all repos, which, after a bit of deleting and pasting, ends up with a usable batch file. Add &lt;strong&gt;PAUSE&lt;/strong&gt; to allow yourself some time to read over the results.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Stop Apache (if it&#39;s running).&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Extract the zip contents to your Subversion application directory.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Backup the old version of those files, if you so choose.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;I installed to C:\Program Files\Subversion\&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Copy necessary files from Subversion directory to Apache.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;In the Subversion bin directory, copy &lt;strong&gt;mod_authz_svn.so&lt;/strong&gt; and &lt;strong&gt;mod_dav_svn.so&lt;/strong&gt; to the Apache modules directory.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;In the Subversion bin directory, copy &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; (or &lt;em&gt;libdb44.dll&lt;/em&gt; for Berkeley DB support) to the Apache bin directory.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;If you need to make Apache changes (you haven&#39;t installed Subversion before), see my &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Installing Subversion binaries for Apache 2.2.x&lt;/a&gt;, otherwise you should be set.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Start Apache.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Confirm SVN version in Apache Services Monitor.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;You may need to Exit and restart the monitor application to see the change.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Uninstall TortoiseSVN and restart your computer.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Install TortoiseSVN and restart your computer.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Sigh.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;The third window has changed, but otherwise see &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;Installing TortoiseSVN to Windows Vista&lt;/a&gt; for specifics.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Do a test checkout, or browse some repositories.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Checkout a working copy of a repository. We&#39;ve got TortoiseSVN, so let&#39;s use it.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;You can also use the Repository Browser to take a look at some repos.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;You can also use your browser to browse the repos via the Apache component. Lots of options.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Use &lt;strong&gt;svnadmin verify &lt;em&gt;repoName&lt;/em&gt;&lt;/strong&gt; to use Subversion to verify revisions.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Consider upgrading your repositories.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;svnadmin upgrade repoName is the shortcut to upgrade your repository, to get access to any new features.&lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;You&#39;ll want to be careful your tools can interact with the new repository version. In our case, we&#39;re fine doing so.&lt;/li&gt;
-&lt;li&gt;Taking the batch file we created to dump all our repositories, and tweaking it slightly, will enable us to upgrade all our repos as well.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Dumping and loading is another way, which keeps things a little cleaner.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Celebrate, because you&#39;ve successfully upgraded.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Questions/comments/concerns are always appreciated.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;This &lt;em&gt;original&lt;/em&gt; piece of content was written from 7:40 PM (CT) to&amp;nbsp;9:45 PM (CT), on March 23 2009.&lt;/p&gt;
-</description>
+      <description>Subversion 1.6.0 released a short time ago, and all the Windows binaries are ready to go. Here&#39;s a checklist (which should be applicable for future use) on Subversion, Apache, and TortoiseSVN upgrading.</description>
     </item>
     
     <item>
@@ -293,12 +43,7 @@
       <pubDate>Sun, 12 Oct 2008 18:05:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Subversion-153-and-TortoiseSVN-154-released/</guid>
-      <description>&lt;p&gt;&lt;p&gt;The newest versions of Subversion and TortoiseSVN were released just last week.&lt;/p&gt;
-&lt;p&gt;My install guides for &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion on Vista&lt;/a&gt; (and another with &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-binaries-for-Apache-22x.aspx&#34;&gt;Subversion on Vista with Apache 2.2.x&lt;/a&gt;) and &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN on Vista&lt;/a&gt;&amp;nbsp;are still applicable.&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.&lt;/p&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description>The newest versions of Subversion and TortoiseSVN were released just last week.</description>
     </item>
     
     <item>
@@ -307,17 +52,7 @@
       <pubDate>Fri, 12 Sep 2008 20:18:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Subversion-and-TortoiseSVN-Moving-a-repository/</guid>
-      <description>&lt;p&gt;This evening I had to rename a project folder, since I was creating a site with the same name.&lt;/p&gt;
-&lt;p&gt;Since I had the project (application) under Subversion, I also needed to move the repository.&lt;/p&gt;
-&lt;p&gt;Here&#39;s what I did:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;svnadmin create b:\repos\_newName_&lt;/p&gt;
-&lt;p&gt;svnadmin dump b:\repos\_oldName_ &amp;gt; b:\repos_dump\_oldName_.dump&lt;/p&gt;
-&lt;p&gt;svnadmin load b:\repos\_newName_ &amp;lt; b:\repos_dump\_oldName_.dump&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;At this point I could either checkout the repository, or change where the checked out directory points to.&lt;/p&gt;
-&lt;p&gt;I choose to relocate my working copy by right-clicking on my working directory and selecting Relocate from the TortoiseSVN menu. Point it to the new directory, and rename your working directories name, and you&#39;re set.&lt;/p&gt;
-</description>
+      <description>How to rename an existing Subversion repository.</description>
     </item>
     
     <item>
@@ -326,55 +61,7 @@
       <pubDate>Tue, 19 Aug 2008 21:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Subversion-binaries-for-Apache-22x/</guid>
-      <description>&lt;p&gt;Recently I went ahead and &lt;a href=&#34;http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;installed Apache 2.2.9 to my Windows Vista Ultimate&lt;/a&gt; machine. The purpose of doing that was to move towards &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a Subversion install&lt;/a&gt; running on Apache.&lt;/p&gt;
-&lt;p&gt;In this article, I&#39;ll be covering that installation.&lt;/p&gt;
-&lt;h3&gt;Getting Subversion&lt;/h3&gt;
-&lt;p&gt;Obviously, the first thing to do is to &lt;a href=&#34;http://subversion.tigris.org/&#34; target=&#34;_blank&#34;&gt;get Subversion&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;We&#39;re looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that&#39;s svn-win32-1.5.1.zip.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;In &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;a previous guide&lt;/a&gt;, which you may have followed,&amp;nbsp;I installed the Windows installer with the basic win32 binaries. If you did this, you&#39;ll want to uninstall Subversion first.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Once you&#39;ve downloaded the zip, extract the contents.&lt;/p&gt;
-&lt;h3&gt;Installing the binaries&lt;/h3&gt;
-&lt;p&gt;The&amp;nbsp;README included in the zip&amp;nbsp;basically covers what you need to do.&lt;/p&gt;
-&lt;p&gt;Determine where you want&amp;nbsp;to install Subversion. I decided to keep it in the Program Files directory, so I created a new Subversion folder&amp;nbsp;at C:\Program Files\Subversion.&lt;/p&gt;
-&lt;p&gt;Next, move the four directories and file, from the zip,&amp;nbsp;to this directory.&lt;/p&gt;
-&lt;p&gt;Now go to Start and right click on Computer, selecting Properties. Go to the Advanced tab and press the Environment Variables... button. At the end of the Path system variable, add the location of the Subversion bin directory. For example, C:\Program Files\Subversion\bin . Press OK all the way out.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;You should be able to open a command line and type &lt;strong&gt;svnadmin -?&lt;/strong&gt; and get a meaningful bunch of commands.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;In a new instance of Windows Explorer, navigate to the &lt;strong&gt;modules&lt;/strong&gt; directory in the Apache install directory. For example, c:\Program Files\Apache Software Foundation\Apache2.2\modules.&lt;/p&gt;
-&lt;p&gt;Copy &lt;strong&gt;mod_authz_svn.so&lt;/strong&gt; and &lt;strong&gt;mod_dav_svn.so&lt;/strong&gt; from your Subversion install&#39;s &lt;strong&gt;bin&lt;/strong&gt; directory into the Apache &lt;strong&gt;modules&lt;/strong&gt; directory.&lt;/p&gt;
-&lt;p&gt;Still in the Subversion&amp;nbsp;&lt;strong&gt;bin&lt;/strong&gt; directory, copy the &lt;strong&gt;intl3_svn.dll&lt;/strong&gt; and &lt;strong&gt;libsvn_fs-1.dll&lt;/strong&gt; files into the Apache &lt;strong&gt;bin&lt;/strong&gt; directory.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;If you want to use Berkeley DB, grab the libdb44.dll (or &lt;strong&gt;libdb*.dll&lt;/strong&gt;)&amp;nbsp;instead of the latter.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Next open the httpd.conf file (we &lt;a href=&#34;http://words.strivinglife.com/words/post/Install-Apache-229-to-Windows-Vista-Ultimate.aspx&#34;&gt;covered how to do this&lt;/a&gt; before) and uncomment the following two lines (remove the #):&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#LoadModule dav_module modules/mod_dav.so&lt;br /&gt;#LoadModule dav_fs_module modules/mod_dav_fs.so&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now add these two after the existing LoadModule lines (you may want to add a comment noting why&amp;nbsp;you&#39;ve added these):&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LoadModule authz_svn_module modules/mod_authz_svn.so&lt;br /&gt;LoadModule dav_svn_module modules/mod_dav_svn.so&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now go to the bottom of the httpd.conf file and add the following information:&lt;/p&gt;
-&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath Drive:\path\to\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;p&gt;&amp;lt;Location /svn/repos&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DAV svn&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNListParentPath on&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; SVNParentPath B:\repos&lt;br /&gt;&amp;lt;/Location&amp;gt;&lt;/p&gt;
-&lt;p&gt;Restart Apache via the Apache Service Monitor.&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;If you get any errors, check your error logs (&lt;strong&gt;logs&lt;/strong&gt; directory in the Apache install directory).&lt;/p&gt;
-&lt;p&gt;Windows event logs (Administrative Tools &amp;gt; Event Viewer or &lt;strong&gt;eventvwr&lt;/strong&gt; from the command line) may also have relevant error information.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Once Apache starts, browse to &lt;a href=&#34;http://localhost:8080/svn/repos/&#34;&gt;http://localhost:8080/svn/repos/&lt;/a&gt; (assuming you used that port and directory), and you should see a listing of your repositories.&lt;/p&gt;
-&lt;p&gt;You can now browse the current versions of the files under Subversion.&lt;/p&gt;
-&lt;h3&gt;TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;While you&#39;re at it, you may want to install or update &lt;a href=&#34;http://tortoisesvn.net&#34; target=&#34;_blank&#34;&gt;TortoiseSVN&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I already covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;how to install Subversion on Vista&lt;/a&gt;, and the steps still apply.&lt;/p&gt;
-&lt;h3&gt;Upgrading existing repositories&lt;/h3&gt;
-&lt;p&gt;If you&#39;ve already installed Subversion, and have been working with it, you may need to upgrade your existing repositories.&lt;/p&gt;
-&lt;p&gt;You can do this via the command line by running &lt;strong&gt;svnadmin upgrade \path\to\repository&lt;/strong&gt; , however, you should ensure that you have a backup before you do this. Also, you&#39;ll be unable to use tools that cannot access the 1.5 repos.&lt;/p&gt;
-</description>
+      <description>In this article we&#39;ll be covering the installation of Subversion to work with Apache 2.2.x.</description>
     </item>
     
     <item>
@@ -383,84 +70,7 @@
       <pubDate>Sun, 13 Jul 2008 11:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Importing-an-existing-Web-site-into-Subversion/</guid>
-      <description>&lt;p&gt;Last time, &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;I played around with Subversion&lt;/a&gt; in order to determine just how Subversion worked.&lt;/p&gt;
-&lt;p&gt;This time I&#39;m actually going to create a repository for a site to store the current version, and work through making a couple of updates.&lt;/p&gt;
-&lt;h3&gt;Existing site structure&lt;/h3&gt;
-&lt;p&gt;The site that I&#39;ll be working with is &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt;. It&#39;s a small, stable, site, that has just a few files. It&#39;s also relatively clean, with no previous versions floating about.&lt;/p&gt;
-&lt;p&gt;The directory for the site currently exists on another box, at C:\inetpub\wwwroot\donotdenymyunicorn\ and consists of 8 files in that directory.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;index.html&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;main234x60.gif&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;print.css&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;robots.txt&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;screen.css&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;sitemap.xml&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;StrivingLifeGmail.png&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;(a Google-related file)&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;The new development structure&lt;/h3&gt;
-&lt;p&gt;I won&#39;t be changing the structure of the site, but since I&#39;ll be moving the files to my Vista box, I&#39;ll have a slightly different structure.&lt;/p&gt;
-&lt;p&gt;First, I&#39;ll be storing the repository at B:\repos\DoNotDenyMyUnicorn\&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;You&#39;ll note that I&#39;m using seperate repositories for each of my sites. However, I could create one repository for all my sites if I wanted to.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;The development files will be stored at B:\projects\DoNotDenyMyUnicorn\&lt;/p&gt;
-&lt;h3&gt;My workflow&lt;/h3&gt;
-&lt;p&gt;Since I&#39;m the only one working on my sites, I&#39;ll be keeping things simple. I&#39;ll do all my development work in B:\projects\ and push files once they&#39;ve been tested and commited to the repository.&lt;/p&gt;
-&lt;p&gt;Depending upon what issues I run into, this may change, but this is what I&#39;m planning for now.&lt;/p&gt;
-&lt;h3&gt;Creating the repository&lt;/h3&gt;
-&lt;p&gt;The first thing to do is create the repository we&#39;ll be using. The location of the repository will be B:\repos\DoNotDenyMyUnicorn\ , so the first thing to do is make sure that the directory exists. In my case, I need to create the DoNotDenyMyUnicorn folder.&lt;/p&gt;
-&lt;p&gt;With that done, I can right-click on the DoNotDenyMyUnicorn folder and select TortoiseSVN &amp;gt; Create repository here... (type of Native filesystem, of course).&lt;/p&gt;
-&lt;h3&gt;Creating the working/development directory&lt;/h3&gt;
-&lt;p&gt;Now that I&#39;ve got the repository created, it&#39;s time to put data into it.&lt;/p&gt;
-&lt;p&gt;As I said before, the development directory will be at B:\projects\DoNotDenyMyUnicorn\ .&lt;/p&gt;
-&lt;p&gt;Now I have a couple of options. I can either import my existing content into Subversion, or I can create a working copy, add my data, and commit it.&lt;/p&gt;
-&lt;p&gt;In this case I&#39;m going to create a working copy, since that makes more sense to me.&lt;/p&gt;
-&lt;p&gt;So, I right-click on the DoNotDenyMyUnicorn directory in B:\repos\ and select SVN Checkout...&lt;/p&gt;
-&lt;p&gt;I&#39;ll confirm that the URL is correct (file:///B:/repos/DoNotDenyMyUnicorn) and browse to the Checkout directory of B:\projects\DoNotDenyMyUnicorn .&lt;/p&gt;
-&lt;p&gt;&lt;img title=&#34;Checking out a working copy&#34; src=&#34;http://media.strivinglife.com/graphics/svn_web/RepoCheckout_DNDMU.jpg&#34; alt=&#34;Checking out a working copy&#34; width=&#34;400&#34; height=&#34;278&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Pressing OK, I&#39;ve now got revision 0 in my projects directory.&lt;/p&gt;
-&lt;p&gt;Next I&#39;ll grab the eight files from my XP machine, and copy them into B:\projects\DoNotDenyMyUnicorn\ .&lt;/p&gt;
-&lt;p&gt;I can now either &#39;Add...&#39; each of the files I want under version control, or just right-click in/on the DoNotDenyMyUnicorn directory to select SVN Commit...&lt;/p&gt;
-&lt;p&gt;Depending upon whether I already added the files, I may need to select the files I want added, but since I want them all, a simple check of &#34;Select / deselect all&#34; selects the eight files.&lt;/p&gt;
-&lt;p&gt;I&#39;ll type a meaningful message (&#34;Initial check-in.&#34;) and press OK.&lt;/p&gt;
-&lt;p&gt;This should add the 8 files, and create revision 1.&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;If&amp;nbsp;you don&#39;t see any TortoiseSVN status icons on the file icons, you may try refreshing Explorer with F5.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Making changes&lt;/h3&gt;
-&lt;p&gt;Now there&#39;s just a few minor things that I want to change about the existing DoNotDenyMyUnicorn. I used Visual Studio 2008, but the editor doesn&#39;t really matter.&lt;/p&gt;
-&lt;p&gt;Once I&#39;ve made my changes, I&#39;ll need to commit them to the repository.&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;Remember that if you have multiple developers, it&#39;s a good&amp;nbsp;idea&amp;nbsp;to see if any other updates have taken place since your last update.&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;This is as simple as either committing the changes by selecting, or by committing the entire project directory (DoNotDenyMyUnicorn, in B:\projects\) and letting SVN take care of the rest.&lt;/p&gt;
-&lt;p&gt;In my case I just had the one change.&lt;/p&gt;
-&lt;p&gt;Once I committed, I pushed the changed files up to my remote Windows server.&lt;/p&gt;
-&lt;p&gt;While doing so, I noticed that I had a favicon, that I didn&#39;t have on my devel site. Whoops.&lt;/p&gt;
-&lt;p&gt;It was easy enough to download that into my project directory, and add/commit that to the repository.&lt;/p&gt;
-&lt;h3&gt;Conclusions&lt;/h3&gt;
-&lt;p&gt;While this doesn&#39;t handle trunks, branches, tags, or any of that other fun stuff, for a simple Web site, as &lt;a href=&#34;http://donotdenymyunicorn.com/&#34; target=&#34;_blank&#34;&gt;DoNotDenyMyUnicorn.com&lt;/a&gt; is, it&#39;s easy enough to move files into version control - much easier than I originally thought.&lt;/p&gt;
-&lt;p&gt;However, while we didn&#39;t talk about it, it&#39;s a very good idea to make sure that you have clean directories, without temp files, previous versions, and &#39;correct&#39; directories. You can always exclude these from versioning, but a clean directory is a developer&#39;s favorite directory.&lt;/p&gt;
-&lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;My next steps are to move more of my sites into version control. Your next step should be to move one of your smaller sites, or &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;test Subversion out&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>In this article I move one of my smaller sites into Subversion, and work through making a change.</description>
     </item>
     
     <item>
@@ -469,143 +79,7 @@
       <pubDate>Sat, 12 Jul 2008 18:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Playing-around-with-Subversion-with-a-test-repository/</guid>
-      <description>&lt;p&gt;I&#39;ve flirted with source/version/revision control since September 2006 (with &lt;a href=&#34;http://words.strivinglife.com/words/?tag=/subversion&#34;&gt;Subversion&lt;/a&gt;), but have never really dug in to actually do anthing with it. But now, that changes.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following guide was created using Subversion 1.4.6 and TortoiseSVN 1.4.8. However, this should still be applicable. Also, because of the number and size of the images, I&#39;ve limited the images shown directly in the guide. All links to these images should open in a new window.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;The basics of Subversion&lt;/h3&gt;
-&lt;p&gt;The basics are that you have a &lt;strong&gt;repository&lt;/strong&gt; to store files within. Files in the repository are not directly modified. Instead, you can &lt;strong&gt;check out&lt;/strong&gt; a working copy of the files to work on. You can then &lt;strong&gt;check in&lt;/strong&gt; (aka &lt;strong&gt;commit&lt;/strong&gt;) your working files, at any time, so that they become a part of the repository. When you do this, a new &lt;strong&gt;revision&lt;/strong&gt; is created. If multiple people are working on the same repository, you&#39;ll also need to &lt;strong&gt;update&lt;/strong&gt; your working files and handle any &lt;strong&gt;conflicts&lt;/strong&gt;.&lt;/p&gt;
-&lt;h3&gt;Getting started with Subversion&lt;/h3&gt;
-&lt;p&gt;I&#39;ve already covered this in previous posts, for Windows installations.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;These both cover Windows Vista installations, but &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;an older guide&lt;/a&gt; exists for Windows XP.&lt;/p&gt;
-&lt;p&gt;TortoiseSVN isn&#39;t required, but I highly recommend it, and it&#39;s how I&#39;ll be working through this.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;Personally, I&#39;m a GUI&amp;nbsp;guy, for the most part. If I can have a GUI, I&#39;ll use it. Now if&amp;nbsp;I need to use the command line, or the command line will give me additional functionality, I&#39;ll use it (when I need to).&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Creating a test repository&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;The first thing to try is a 100% test repository. Again, this will be what keeps track of file versions.&lt;/p&gt;
-&lt;p&gt;Determine where you&#39;ll store your repositories. I have a second hard drive that I&#39;ll be using, so my repositories will be stored in B:\repos\ . Substitute your directory structure whenever you see this.&lt;/p&gt;
-&lt;p&gt;Next, create a new directory under B:\repos\, called repoTest.&lt;/p&gt;
-&lt;p&gt;Right click on the directory and select TortoiseSVN &amp;gt; Create repository here... (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_01.jpg&#34; target=&#34;_blank&#34;&gt;See this&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;When prompted, select Native filesystem (FSFS) for the repository type. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_02.jpg&#34; target=&#34;_blank&#34;&gt;See this&lt;/a&gt;.)&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;From what I&#39;ve read, there doesn&#39;t seem to be any reason to choose Berkeley database (BDB) as the type, as it&#39;s perk is that it&#39;s been around for a while, and is therefore more stable, but it will definitely corrupt if you use it for a network share.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;With that, the repository is created.&lt;/p&gt;
-&lt;div class=&#34;warning&#34;&gt;
-&lt;p&gt;Again, the repository is not updated directly. You can browse the repoTest directory to see what Subversion (SVN) has created, but don&#39;t mess with any of the files.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Now that you&#39;ve got a repository, it&#39;s time to check out a version you can work with.&lt;/p&gt;
-&lt;h3&gt;Creating a working directory&lt;/h3&gt;
-&lt;p&gt;Right-click on the repoTest directory and select SVN Checkout... (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_04.jpg&#34; target=&#34;_blank&#34;&gt;See this&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;You&#39;ll be prompted for the URL of the repository (which should be correct - in this case, &lt;strong&gt;file:///B:/repos/repotest&lt;/strong&gt;) and a Checkout directory. This directory is where you&#39;ll store your working copy. I created a new directory B:\projects\repoTest\.&lt;/p&gt;
-&lt;p&gt;&lt;img title=&#34;Checking out from a repository&#34; src=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_05.jpg&#34; alt=&#34;Checking out from a repository&#34; width=&#34;466&#34; height=&#34;324&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Leave all other options as they are and press OK to continue.&lt;/p&gt;
-&lt;p&gt;With that done, you should be shown a window stating that the checkout has finished.&lt;/p&gt;
-&lt;p&gt;If you now browse to your checkout directory (in my case, B:\projects\) you&#39;ll notice that the repoTest directory has a new icon - a green circle with a check.&lt;/p&gt;
-&lt;h3&gt;Adding files to the working directory&lt;/h3&gt;
-&lt;p&gt;Let&#39;s now create a text file called &#39;file number 1.txt&#39; in the working directory. For now, leave the file blank.&lt;/p&gt;
-&lt;p&gt;Now go back up to the B:\projects\ directory and right-click on the repoTest folder. Select SVN Commit... (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_07.jpg&#34; target=&#34;_blank&#34;&gt;See this&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;Our new file is displayed in the lower half of the window that appears. Check the box next to the file name. Next, enter a meaningful message in the first text box. For example, &#34;First check-in.&#34;&amp;nbsp; (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_08.jpg&#34; target=&#34;_blank&#34;&gt;See this&lt;/a&gt;.)&lt;/p&gt;
-&lt;p&gt;Press OK to continue.&lt;/p&gt;
-&lt;p&gt;A new window will appear showing that our file has been added and sent. We&#39;re also given a revision number, in this case, 1. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_09.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&lt;/p&gt;
-&lt;h3&gt;Checking out another copy&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;Now let&#39;s go back to our repository and checkout another copy.&lt;/p&gt;
-&lt;p&gt;This simulates another user working on our repository.&lt;/p&gt;
-&lt;p&gt;Once again, we can browse to B:\repos\ ,&amp;nbsp;right-click on our repoTest directory, and select SVN Checkout... Or, we can also select TortoiseSVN &amp;gt; Repo-browser . This browser enables you to see all the files in the repository, as well as additional details, like revision. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_11.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;If you right-click on the repository, you can select Checkout...&lt;/p&gt;
-&lt;p&gt;Either way you checkout the repository, do so to a new folder, such as B:\projects\repoTest2\ . (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_12.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&amp;nbsp;Press OK.&lt;/p&gt;
-&lt;p&gt;This checks out all files currently committed to the repository. So, when we browse to our new working directory, we&#39;ll see&amp;nbsp;&#39;file number 1.txt&#39; .&lt;/p&gt;
-&lt;h3&gt;Where we&#39;re at&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;Right now we&#39;ve&amp;nbsp;got&amp;nbsp;a single repository and two working directories. This is similar to what one might see if two individuals are working on a project.&lt;/p&gt;
-&lt;p&gt;So,&amp;nbsp;Lisa is B:\projects\repoTest\ and Trish is B:\projects\repoTest2\&lt;/p&gt;
-&lt;p&gt;Let&#39;s treat these imaginary users as human beings, and call them by there names from here on out.&lt;/p&gt;
-&lt;h3&gt;Lisa&amp;nbsp;adds new files&lt;/h3&gt;
-&lt;p&gt;Switch to Lisa&#39;s repository at B:\projects\repoTest\ . Let&#39;s&amp;nbsp;say she creates two new files, called &#34;file number 2.txt&#34; and &#34;file number 3.txt&#34;&amp;nbsp;in this directory.&lt;/p&gt;
-&lt;p&gt;She also adds some text to file number 1, such as &#34;Lisa has made a modification to this file.&#34;&lt;/p&gt;
-&lt;p&gt;When&amp;nbsp;she modifies file number 1, note that it now has a different icon, as the file has changed.&lt;/p&gt;
-&lt;p&gt;Now we assume that she wants these to be a part of the repository, so in order to get them in there, she&#39;d have to commit these changes.&lt;/p&gt;
-&lt;p&gt;Select&amp;nbsp;both of the new files&amp;nbsp;and select TortoiseSVN &amp;gt; Add...&lt;/p&gt;
-&lt;p&gt;In the prompt that appears, verify both checkboxes next to the file names are selected, and press OK. You&#39;ll then be told that both files are added.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;If you still have the repository browser open, if you refresh the repository you&#39;ll note that the files haven&#39;t been added to the repository. Remember, additions still need to be committed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;You may have to refresh Explorer, but when you do so, you&#39;ll notice that the two new files have new icons - little blue plus signs.&lt;/p&gt;
-&lt;p&gt;Right-click in the repoTest directory, or on the repoTest folder, and select SVN Commit...&lt;/p&gt;
-&lt;p&gt;This time you&#39;ll see that you&#39;ve modified one file and added two others. Make sure you put in a message, such as &#34;Lisa updated file 1 and created files 2 and 3.&#34; You may note that when you type file, you&#39;ve got the option to auto-complete with the file names. Pretty nice, eh? (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_19.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Go ahead and press OK, verify it completes, and press OK again. (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_20.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&lt;/p&gt;
-&lt;h3&gt;What about Trish?&lt;/h3&gt;
-&lt;p&gt;Now Lisa is up to date with the repository, since she&#39;s the only one making changes. But what about Trish?&lt;/p&gt;
-&lt;p&gt;Let&#39;s switch to Trish&#39;s directory, B:\projects\repoTest2\ . She still just has file number 1.txt and it&#39;s still empty.&lt;/p&gt;
-&lt;p&gt;Let&#39;s go ahead and open her version of file number 1.txt and make a change. For example, add &#34;Trish modified this file.&#34;&lt;/p&gt;
-&lt;p&gt;Right-click on the repoTest2 directory, or within it, and select SVN Commit... Make sure you enter a message!&lt;/p&gt;
-&lt;p&gt;If you try to commit, the commit will fail. Unfortunately, Trish&#39;s version is out of date (it says so). (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_22.jpg&#34; target=&#34;_blank&#34;&gt;See this.&lt;/a&gt;)&lt;/p&gt;
-&lt;h3&gt;Getting Trish up-to-date&lt;/h3&gt;
-&lt;p&gt;We have a couple of options for getting&amp;nbsp;Trish up-to-date. The first is to right-click on&amp;nbsp;&#39;file number 1.txt&#39; and select TortoiseSVN &amp;gt; Check for modifications. We&#39;ll see that&amp;nbsp;Trish&#39;s version has been modified, and by&amp;nbsp;double-clicking,&amp;nbsp;can see what&amp;nbsp;modifications took place.&lt;/p&gt;
-&lt;p&gt;However, that&#39;s what was modified from the version she checked out.&lt;/p&gt;
-&lt;p&gt;Press the Check repository button and you&#39;ll see an even newer version, the version Lisa checked out.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;In&amp;nbsp;this case, since I&#39;m/we&#39;re using the same machine, the User will be the same. However, if we were on different machines, or using different user accounts, the name would be different, and it would be easier to see who made the changes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;If we now double-click on the file we&#39;ll see Lisa&#39;s changes compared with our changes.&lt;/p&gt;
-&lt;p&gt;So now that we&#39;ve got a conflict, what do we do?&lt;/p&gt;
-&lt;p&gt;Let&#39;s&amp;nbsp;get an updated version of this file by right-clicking on the file and selecting&amp;nbsp;SVN Update.&lt;/p&gt;
-&lt;p&gt;When we do so, we&#39;ll be told that a conflict exists, and will have a couple of&amp;nbsp;files created in our working directory - &#39;file number 1.txt.mine,&#39; &#39;file number 1.txt.r1,&#39; and &#39;file number 1.txt.r2.&#39;&amp;nbsp;In addition, &#39;file number 1.txt&#39; wll have a small warning icon.&lt;/p&gt;
-&lt;p&gt;Right-click on this file and select TortoiseSVN &amp;gt; Edit conflicts.&lt;/p&gt;
-&lt;p&gt;From within TortoiseMerge, we can right click on either of the differences and select a couple of options.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;div&gt;Use a specific text block from one file or another.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Use the whole file from one or another.&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;Put our text before/after their text.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;The merged/final version will display in the bottom half of the window.&lt;/p&gt;
-&lt;p&gt;For now, let&#39;s go ahead and put Lisa&#39;s text before Trish&#39;s text.&lt;/p&gt;
-&lt;p&gt;Right click on the changed block from &#39;mine&#39;&amp;nbsp;and select &#39;Use text block from &#34;theirs&#34; before &#34;mine.&#34;&lt;/p&gt;
-&lt;p&gt;&lt;img title=&#34;Merging changes&#34; src=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_25.jpg&#34; alt=&#34;Merging changes&#34; width=&#34;446&#34; height=&#34;153&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;In the merged version, you&#39;ll see Lisa&#39;s text before Trish&#39;s. Close out of TortoiseMerge and save your changes when prompted, or press the save icon, or select File &amp;gt; Save.&lt;/p&gt;
-&lt;p&gt;Trish&#39;s working copy has now been modified with the updated text, however the file still is in conflict.&lt;/p&gt;
-&lt;p&gt;Right-click on the file again and select TortoiseSVN &amp;gt; Resolved... Verify that &#39;file number 1.txt&#39; is checked, and press OK.&lt;/p&gt;
-&lt;div class=&#34;warning&#34;&gt;
-&lt;p&gt;Make sure the file really has been resolved. If you haven&#39;t created a merged version, the code SVN adds to the file will still remain. Because of this, it may be better to press the appropriate button in TortoiseMerge, after saving the document.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Once you&#39;ve done so, the extra files are removed from the directory. You&#39;ll now need to commit the file back into the repository. Now that the base copy is the same revision, the commit will complete.&lt;/p&gt;
-&lt;h3&gt;What Trish should have done&lt;/h3&gt;
-&lt;p&gt;However, there&#39;s still an issue with Trish&#39;s copy of the repository. She has no file 2 or 3.&lt;/p&gt;
-&lt;p&gt;What Trish really needs to do is update her copy. She can do so by selecting SVN Update, after right-clicking on/in the repoTest2 folder.&lt;/p&gt;
-&lt;p&gt;This will allow her to get all the updates that have happened since she first grabbed a copy.&lt;/p&gt;
-&lt;p&gt;She can also, from this window, see a log (by pressing &#34;Show log...&#34;) of revisions, with messages.&lt;/p&gt;
-&lt;h3&gt;Workflow with&amp;nbsp;more than one&amp;nbsp;developer&lt;/h3&gt;
-&lt;p&gt;Therefore, based upon this, it&#39;s a very good idea to make sure you&#39;re pulling updates from the repository on a regular basis.&lt;/p&gt;
-&lt;p&gt;While there may indeed be times when you don&#39;t want to do this, this will allow you to see what other developers have been working on.&lt;/p&gt;
-&lt;p&gt;She can also use a number of menu items to check on the repository without making commits. The log (Show log), repository browser (Repo-browser), and&amp;nbsp;modifications (Check for modifications) can all be accessed at the directory or file level.&lt;/p&gt;
-&lt;p&gt;In the case shown below, Lisa has made two additional revisions since Trish last checked files out, including adding two new files and modifying two that Trish already has.&lt;/p&gt;
-&lt;p&gt;&lt;img title=&#34;Checking for changes&#34; src=&#34;http://media.jamesrskemp.com/graphics/repotest/repotest_38.jpg&#34; alt=&#34;Checking for changes&#34; width=&#34;685&#34; height=&#34;411&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;If Trish hasn&#39;t made any changes, it&#39;s easy enough to SVN Update and get everything she needs. If she didn&#39;t modify any files that have changed, then she won&#39;t have to handle any merging of changes. If she has, then she&#39;ll just have to handle the conflict, which can involve just ignoring it by using her version (Mine), if she&#39;s actually got the version that should be used.&lt;/p&gt;
-&lt;h3&gt;Deleting our working directories&lt;/h3&gt;
-&lt;p&gt;At this point we&#39;ve covered what we need to cover for working with Subversion, using a test repository, and two working directories.&lt;/p&gt;
-&lt;p&gt;We can clean-up by deleting the B:\projects\repoTest\ and B:\projects\repoTest2\ directories.&lt;/p&gt;
-&lt;p&gt;Since our repository still exists, we can still get a working copy of the repository. However, if we delete the repository directory, B:\repos\repoTest\, our repository is gone.&lt;/p&gt;
-&lt;p&gt;Since we don&#39;t need it anymore, go ahead and delete this directory.&lt;/p&gt;
-&lt;h3&gt;To conclude ...&lt;/h3&gt;
-&lt;p&gt;Probably the best way to start with Subversion is to actually work on a dummy repository, as I&#39;ve done above.&lt;/p&gt;
-&lt;h3&gt;Next time&lt;/h3&gt;
-&lt;p&gt;Next time I&#39;ll move an existing Web project into Subversion, since it&#39;s definitely time.&lt;/p&gt;
-&lt;p&gt;Questions, comments, concerns, definitely appreciated.&lt;/p&gt;
-</description>
+      <description>In this article I&#39;ll be working through creating a test repository in Subversion, and creating two working directories, to see how multiple developers works.</description>
     </item>
     
     <item>
@@ -614,23 +88,7 @@
       <pubDate>Sun, 08 Jun 2008 09:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-TortoiseSVN-to-Windows-Vista/</guid>
-      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Just recently I covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;installing Subversion 1.4.6 to Windows Vista&lt;/a&gt;. This time I&#39;ll be installing TortoiseSVN on that same machine.&lt;/p&gt;
-&lt;h3&gt;The setup&lt;/h3&gt;
-&lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
-&lt;h3&gt;Downloading TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;Since TortoiseSVN is for Windows, it makes it even easier to&amp;nbsp;find the version to download. Right on the &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34; target=&#34;_blank&#34;&gt;home page&lt;/a&gt; we&amp;nbsp;see a link for the download page, where we can get a copy of the most current version.&lt;/p&gt;
-&lt;p&gt;At the time of this writing that&#39;s version 1.4.8, built against version 1.4.6 of Subversion.&lt;/p&gt;
-&lt;p&gt;I&#39;ll be downloading the file TortoiseSVN-1.4.8.12137-win32-svn-1.4.6.msi.&lt;/p&gt;
-&lt;h3&gt;Installing TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;Running the program, you&#39;ll work your way through a number of installation screens.&lt;/p&gt;
-&lt;h4&gt;Install screens&lt;/h4&gt;
-&lt;p&gt;&lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 1&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_01.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 1&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 2&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_02.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 2&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 3&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_03.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 3&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 4&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_04.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 4&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 509px; height: 396px;&#34; title=&#34;TortoiseSVN Setup Screen 5&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_05.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 5&#34; width=&#34;509&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 376px; height: 176px;&#34; title=&#34;TortoiseSVN Setup Screen 6&#34; src=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.4.8_install_06.jpg&#34; alt=&#34;TortoiseSVN Setup Screen 6&#34; width=&#34;376&#34; height=&#34;176&#34; /&gt;&lt;/p&gt;
-&lt;h3&gt;Post-Installation&lt;/h3&gt;
-&lt;p&gt;With TortoiseSVN installed, we can now interact with Subversion in a Windows-friendly way, instead of relying upon the command line.&lt;/p&gt;
-&lt;p&gt;In a later article, we&#39;ll actually use Subversion and TortoiseSVN to put a Web site under source control, as well as a Windows application (based upon the .NET Framework).&lt;/p&gt;
-&lt;p&gt;While I&#39;ve covered &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Dreamweaver&lt;/a&gt; in the past, I&#39;ll be looking at using Subversion with Visual Studio, to see if it&#39;s indeed possible.&lt;/p&gt;
-</description>
+      <description>In this article I&#39;ll be installing TortoiseSVN 1.4.8 to a Windows machine, running Vista Ultimate. [slnet0514:ed428114-f660-445d-a5ae-5ef4756fd2b3]</description>
     </item>
     
     <item>
@@ -639,26 +97,7 @@
       <pubDate>Sat, 07 Jun 2008 15:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Subversion-to-Windows-Vista/</guid>
-      <description>&lt;p&gt;In a previous article, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;installed Subversion and TortoiseSVN to a Windows XP Home Edition machine&lt;/a&gt;. Later, I &lt;a href=&#34;http://words.strivinglife.com/words/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-(140-to-142).aspx&#34;&gt;upgraded the installation&lt;/a&gt;. This time I&#39;ll be installing Subversion on a Windows Vista Ultimate SP1 machine.&lt;/p&gt;
-&lt;h3&gt;The setup&lt;/h3&gt;
-&lt;p&gt;The system I&#39;m using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.&lt;/p&gt;
-&lt;p&gt;I&#39;m already running IIS 7, so I won&#39;t be installing Apache to run Subversion.&lt;/p&gt;
-&lt;h3&gt;Downloading Subversion&lt;/h3&gt;
-&lt;p&gt;On the &lt;a rel=&#34;external&#34; href=&#34;http://subversion.tigris.org/&#34;&gt;official Subversion site&lt;/a&gt;, downloads can be found under Getting&amp;nbsp;Subversion &amp;gt; Downloads. I went for the &#34;friendly Installer program&#34; link, and downloaded the file svn-1.4.6-setup.exe.&lt;/p&gt;
-&lt;h3&gt;Installing Subversion&lt;/h3&gt;
-&lt;p&gt;Unless you&#39;ve turned it off, trying to run the installer will prompt you if you want to allow access to your computer. You do.&lt;/p&gt;
-&lt;p&gt;Continue through the installer screens, setting up Subversion as you&#39;d like.&lt;/p&gt;
-&lt;p&gt;I opted to install in the default directory of C:\Program Files\Subversion\ but without the desktop or quick launch icons.&lt;/p&gt;
-&lt;h4&gt;Install screens&lt;/h4&gt;
-&lt;p&gt;Below are the screens from the installer for Subversion 1.4.6.&lt;/p&gt;
-&lt;p&gt;&lt;img style=&#34;width: 398px; height: 169px;&#34; title=&#34;Subversion Setup Screen 1&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_01.jpg&#34; alt=&#34;Subversion Setup Screen 1&#34; width=&#34;398&#34; height=&#34;169&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 2&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_02.jpg&#34; alt=&#34;Subversion Setup Screen 2&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 3&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_03.jpg&#34; alt=&#34;Subversion Setup Screen 3&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 4&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_04.jpg&#34; alt=&#34;Subversion Setup Screen 4&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img style=&#34;width: 513px; height: 396px;&#34; title=&#34;Subversion Setup Screen 5&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_05.jpg&#34; alt=&#34;Subversion Setup Screen 5&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 6&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_06.jpg&#34; alt=&#34;Subversion Setup Screen 6&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_07.jpg&#34; alt=&#34;&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 8&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_08.jpg&#34; alt=&#34;Subversion Setup Screen 8&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt; &lt;img title=&#34;Subversion Setup Screen 9&#34; src=&#34;http://media.jamesrskemp.com/graphics/subversion/subversion_1.4.6_install_09.jpg&#34; alt=&#34;Subversion Setup Screen 9&#34; width=&#34;513&#34; height=&#34;396&#34; /&gt;&lt;/p&gt;
-&lt;h3&gt;Post-Installation&lt;/h3&gt;
-&lt;p&gt;If you run the following command at a prompt, you can&amp;nbsp;verify that your installation is complete. To run a command, select the Run command from the Start menu, or use the Start Search&amp;nbsp;and type &lt;strong&gt;cmd&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;svnadmin ?&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Assuming you see a listing of available subcommands, you should be set.&lt;/p&gt;
-&lt;p&gt;At this point, I&#39;ve covered what I need to for installing Subversion to Windows Vista.&lt;/p&gt;
-&lt;p&gt;Next time I&#39;ll be covering TortoiseSVN, which will allow direct integration with Windows Explorer.&lt;/p&gt;
-</description>
+      <description>In this article I&#39;ll be installing Subversion 1.4.6 to a Windows machine, running Vista Ultimate. [slnet0514:e9b1aa65-ad7c-4484-a26d-6e5696aec003]</description>
     </item>
     
     <item>
@@ -667,20 +106,7 @@
       <pubDate>Sun, 26 Nov 2006 12:00:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-%28140-to-142%29/</guid>
-      <description>&lt;p&gt;In a previous article, &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx&#34;&gt;Installing Subversion and TortoiseSVN to a Windows XP, Home Edition, SP2, local machine with Dreamweaver 8&lt;/a&gt;, we installed Subversion 1.4.0 and TortoiseSVN 1.4.0 to our Windows machine. This time, we&#39;ll be quickly going over how to upgrade our installation.&lt;/p&gt;
-&lt;h3&gt;Upgrading Subversion&lt;/h3&gt;
-&lt;p&gt;The Subversion upgrade is a quick installation because all you really need to do is install the new setup file. You can get the file from &lt;a href=&#34;http://subversion.tigris.org/&#34;&gt;Tigris&lt;/a&gt;, which is called svn-1.4.2-setup.exe. Once the 3.5 MB file has been downloaded, run it.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;You can also uninstall Subversion and then run the new installer, if you so desire.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;!--adsense--&gt;You can continue through the installation, reading as you do. When you get to a Select Additional Tasks window, make sure that the checkbox next to the lone Apache module option is unchecked. Of course, if you&#39;re using Apache, check it (but in my previous article, we/I decided not to use this module).&lt;/p&gt;
-&lt;p&gt;Once the installation begins, files will be replaced. If you setup Subversion as a service, you may run into an error message when svnserve can&#39;t be replaced. Make sure that you stop the service and then retry. Once the installation has finished, you can restart the service.&lt;/p&gt;
-&lt;p&gt;Note that you shouldn&#39;t need to upgrade any previous repositories.&lt;/p&gt;
-&lt;h3&gt;Upgrading TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;First, of course, download the most recent version of TortoiseSVN, 1.4.1 for Subversion 1.4.2, from &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34;&gt;Tigris&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To upgrade TortoiseSVN, you do not have to uninstall previous versions (per the documentation). So, start up the 8 MB installer and work through the steps. Nothing surprising here.&lt;/p&gt;
-&lt;p&gt;Once the installer is finished, you&#39;ll need to restart your computer (but the documentation suggests you can just log off and then log back on). Restart, and you should be set.&lt;/p&gt;
-</description>
+      <description>In this article, we&#39;ll be upgrading our Subversion installation from 1.4.0 to 1.4.2.</description>
     </item>
     
     <item>
@@ -689,54 +115,7 @@
       <pubDate>Sat, 16 Sep 2006 22:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Subversion-to-Windows-Vista.aspx&#34;&gt;Subversion&lt;/a&gt; aspect has been updated for Windows Vista.&amp;nbsp;So too has the &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-TortoiseSVN-to-Windows-Vista.aspx&#34;&gt;TortoiseSVN&lt;/a&gt; installation. The&amp;nbsp;Dreamweaver&amp;nbsp;aspect has not been touched.&lt;/p&gt;
-&lt;p&gt;I also have &lt;a href=&#34;http://words.strivinglife.com/words/post/Playing-around-with-Subversion-with-a-test-repository.aspx&#34;&gt;an article about &lt;em&gt;using&lt;/em&gt; Subversion&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;When projects become large, or you have the need to keep information on what files you&amp;rsquo;ve modified, for any coding project, you may look for some kind of version control system. There&amp;rsquo;s software like Microsoft&amp;rsquo;s SourceSafe, but that can be costly, and according to some, it&amp;rsquo;s a clunky solution. Open source is always a worthwhile solution, and luckily, there&amp;rsquo;s a number of these alternatives out there.&lt;/p&gt;
-&lt;p&gt;In this guide, I&amp;rsquo;ll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I&amp;rsquo;ll be hooking it up to Dreamweaver 8, thanks to Nearly Geek&amp;rsquo;s SVN4DW extension. Note that while a &amp;lsquo;1-Click Setup&amp;rsquo; exists (SVN 1-Click Setup), I&amp;rsquo;ll actually be going through the setup of the Subversion and TortoiseSVN separately. I do this primarily because the 1-click setup is a bit out-of-date at the time of this writing.&lt;/p&gt;
-&lt;h4&gt;Downloading Subversion and TortoiseSVN&lt;/h4&gt;
-&lt;p&gt;The first thing we&amp;rsquo;ll need to do is download a copy of Subversion and TortoiseSVN. Both are available for free at Tigris.org, Subversion at &lt;a href=&#34;http://subversion.tigris.org/&#34;&gt;http://subversion.tigris.org/&lt;/a&gt; and TortoiseSVN at &lt;a href=&#34;http://tortoisesvn.tigris.org/&#34;&gt;http://tortoisesvn.tigris.org/&lt;/a&gt;. At the time of this writing, Subversion is version 1.4.0 and TortoiseSVN is also at version 1.4.0. Download both to your standard downloads folder (if you&amp;rsquo;ve followed any of my other guides, this would be c:\home\downloads).&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;For Subversion, we&amp;rsquo;ll download the file svn-1.4.0-setup.exe, which contains the installer.&lt;/p&gt;
-&lt;h4&gt;Installing Subversion 1.4.0&lt;/h4&gt;
-&lt;p&gt;Once we&amp;rsquo;ve downloaded svn-1.4.0-setup.exe, we can begin the setup. Before we do this, make sure that if you&amp;rsquo;re running Apache, it&amp;rsquo;s stopped. We&amp;rsquo;re stopping Apache since we don&amp;rsquo;t want Subversion to use Apache as it&amp;rsquo;s server. Instead, we want to use the server that comes with it, svnserve. If we wanted to use Apache, we could use Apache 2.0.x, but not 1.3 or 2.2.&lt;/p&gt;
-&lt;p&gt;Setup is pretty easy. You&amp;rsquo;ll be asked if you want to setup Subversion. Continue through with the steps, reading and selecting next as you go, until you get to &amp;ldquo;Select Additional Tasks&amp;rdquo;. Here, you&amp;rsquo;ll want to uncheck the Apache modules option, since we won&amp;rsquo;t be using Apache for subversion.&lt;/p&gt;
-&lt;p&gt;Continue through to the rest of the installation using the defaults. Once Subversion has been installed, open the command prompt by selecting Run from the Windows Start menu. Now type &amp;ldquo;svnserve.exe -d&amp;rdquo;, without the quotes. This will start the server, which will listen on port 3690. You should be able to go to &lt;a href=&#34;http://localhost:3690/&#34;&gt;http://localhost:3690/&lt;/a&gt; now and see something similar to the following. (Note that if you are using SP2 of Windows XP, you&amp;rsquo;ll be prompted on whether you want to Unblock Subversion or not. If you don&amp;rsquo;t, you won&amp;rsquo;t be able to access Subversion, obviously.)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;( success ( 1 2 ( ANONYMOUS ) ( edit-pipeline svndiff1 absent-entries ) )&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Unfortunately, the command prompt window stays open, but we can look into fixing that shortly. First, we&amp;rsquo;ve got to install TortoiseSVN.&lt;/p&gt;
-&lt;h4&gt;Installing TortoiseSVN 1.4.0&lt;/h4&gt;
-&lt;p&gt;Start by running the install file, TortoiseSVN-1.4.0.7501-win32-svn-1.4.0.msi for example. You should be able to just read the various windows and accept all the default options. Once the installation has finished, however, you will need to restart your computer. Save whatever you&amp;rsquo;re doing, and restart.&lt;/p&gt;
-&lt;h4&gt;Installing SvnService&lt;/h4&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;Note that this next step is not necessary. &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.webpusher.ie/&#34;&gt;Mark Lennox&lt;/a&gt; pointed out on 10/23/2006 that there&amp;rsquo;s a way to do this via Windows. Very cool.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;As we noticed previously, in order to run svnserve, we need to have a window open while it&amp;rsquo;s running. Instead of using that method, we can use a &amp;lsquo;wrapper&amp;rsquo; to make svnserve into a Windows service, just like our other services like Apache.&lt;/p&gt;
-&lt;p&gt;In order to do that, we&amp;rsquo;ll need to download a file from &lt;a href=&#34;http://tortoisesvn.tigris.org/files/documents/406/29202/SVNServiceDT.zip&#34;&gt;http://tortoisesvn.tigris.org/files/documents/406/29202/SVNServiceDT.zip&lt;/a&gt;. Extract the file SVNService.exe, in the Release folder, to the same folder as Subversion &amp;ndash; so C:\Program Files\Subversion\bin\ if you&amp;rsquo;ve been following along.&lt;/p&gt;
-&lt;p&gt;Now go to Start &amp;gt; Run, and type &amp;lsquo;cmd&amp;rsquo;, no quotes. At the prompt, type the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;cd c:\program files\subversion\bin&amp;lt;/p&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now switch over to Windows Explorer and create a new directory in the c drive, called svnrepo. So, c:\svnrepo. This will contain our Subversion repositories. Back to the command prompt, where we type the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;svnservice -install &amp;ldquo;c:\program files\subversion\bin\svnserve.exe&amp;rdquo; &amp;ldquo;-d -r c:\svnrepo&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Note that if you ever want to remove svnserve as a service, simply use the following command.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;svnservice -remove&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;SVNService will now display in your services panel, and should automatically start when you start Windows. Depending upon your needs, this may or may not be a good thing. Keep in mind that you can always change the startup to what you&amp;rsquo;d prefer. You can now exit out of the command prompt.&lt;/p&gt;
-&lt;h4&gt;Downloading Subversion for Dreamweaver (SVN4DW)&lt;/h4&gt;
-&lt;p&gt;A copy of the extension that we&amp;rsquo;ll be using to add Subversion support to Dreamweaver can be downloaded from &lt;span style=&#34;text-decoration: line-through;&#34;&gt;Nearly Geek&lt;!--http://www.nearlygeek.com/tools/subversion-for-dreamweaver/introduction/--&gt;&lt;/span&gt; &lt;a rel=&#34;nofollow&#34; href=&#34;http://words.strivinglife.com/files/2006/09/svn4dw.zip&#34;&gt;this site&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Once the mxp file has downloaded (save this to your downloads directory as well), you can install the extension by running it. Once the extension has finished installing, open Dreamweaver 8. You&amp;rsquo;ll have a new menu item, SVN, where you can perform your SVN tasks.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-&lt;p&gt;And with that, you&amp;rsquo;ve successfully setup Subversion, TortoiseSVN, and Dreamweaver 8 to work together. You will need to setup a repository, as well as configure user access, for which you can view the documentation resources under &amp;ldquo;Resources of interest,&amp;rdquo; below.&lt;/p&gt;
-&lt;h4&gt;Resources of interest&lt;/h4&gt;
-&lt;p&gt;Some resources you may be interested in, for additional information, include the following.&lt;/p&gt;
-&lt;p&gt;The O&amp;rsquo;Reilly book &lt;cite&gt;Version Control with Subversion&lt;/cite&gt; can be found at &lt;a href=&#34;http://svnbook.red-bean.com/&#34;&gt;http://svnbook.red-bean.com/&lt;/a&gt;. While it&amp;rsquo;s slightly out-of-date, it&amp;rsquo;s still quite applicable, especially for some of the general information that it provides.&lt;/p&gt;
-&lt;p&gt;TortoiseSVN and TortoiseMerge documentation can be found at &lt;a href=&#34;http://tortoisesvn.net/doc_release&#34;&gt;http://tortoisesvn.net/doc_release&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In this guide, I&#39;ll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I&#39;ll be hooking it up to Dreamweaver 8, thanks to Nearly Geek&#39;s SVN4DW extension.</description>
     </item>
     
     <item>
@@ -745,13 +124,7 @@
       <pubDate>Thu, 14 Sep 2006 18:37:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Version-control-systems-any-suggestions/</guid>
-      <description>&lt;p&gt;Version control is something that I&#39;ve been interested in for the past several months (actually, what month is it, September? I guess it&#39;s been longer than just a couple of months) but that I haven&#39;t been able to dig into as much as I&#39;d like.&lt;/p&gt;
-&lt;p&gt;Subversion keeps coming up as a good piece of software, with the addition of Trac. Since I wrote the guide to installing Apache 2.0.x a bit ago, I have no reason for not getting started with Subversion.&lt;/p&gt;
-&lt;p&gt;Today, from somewhere, I was directed to SyntEvo&#39;s product, SmartSVN. Right now I&#39;m using WinMerge (very happily) for my file compare utility at both home and during the &#39;8-5&#39;, but SyntEvo seems to have a fairly nice utility itself, albeit at a steep (at least, as a small-time developer who finds WinMerge to be exactly what I need) price.&lt;/p&gt;
-&lt;p&gt;Since I&#39;ve had good luck with asking questions and getting answers before, I&#39;m going to throw some product names around, and see if I can get some recommendations. I&#39;ve dug around Google enough that I know there&#39;s a lot to choose from, but sometimes digging through a lot of content makes it hard to pick a direction.&lt;/p&gt;
-&lt;p&gt;That said, any thoughts/recommendations/reviews/rants/raves on the following products?&lt;/p&gt;
-&lt;p&gt;Subversion, Trac, SmartSVN, SmartCVS, SyntEvo (company name, but it still gets thrown in), version control systems.&lt;/p&gt;
-</description>
+      <description>Version control is something that I&#39;ve been interested in for the past several months but that I haven&#39;t been able to dig into as much as I&#39;d like. I&#39;m looking for recommendations on software that will help me get a system setup for some testing. Recommendations? Thoughts? Rants? Raves?</description>
     </item>
     
   </channel>

@@ -16,14 +16,7 @@
       <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Example-libGDX-orthographic-camera-controller/</guid>
-      <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;OrthographicCameraController.java&lt;/h3&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247.js&#34;&gt;&lt;/script&gt;
-</description>
+      <description>The following class can be used in a libGDX project as a framework for your own orthographic camera controller.</description>
     </item>
     
     <item>
@@ -32,28 +25,7 @@
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
-      <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://words.strivinglife.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
-
-&lt;p&gt;Next click the green plus sign in the top left corner and select &#39;Application.&#39;&lt;/p&gt;
-
-&lt;p&gt;There are now four fields you need to populate to complete this step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: Enter whatever you&#39;d like. I like using &#39;Desktop&#39; to be obvious.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Main class&lt;/strong&gt;: com.&lt;em&gt;xxx&lt;/em&gt;.desktop.DesktopLauncher&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Working directory&lt;/strong&gt;: C:\Path\to\project\android\assets&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Use classpath of mod&lt;/strong&gt;: select the &lt;em&gt;desktop&lt;/em&gt; module&lt;/p&gt;
-
-&lt;p&gt;And that&#39;s it. You should be able to select and run the configuration.&lt;/p&gt;
-
-&lt;p&gt;If you work on multiple machines, note that by default this configuration change will mostly likely &lt;em&gt;not&lt;/em&gt; be checked into source control. The file that contains this configuration is located in your project directory under &lt;code&gt;\.idea\workspace.xml&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.</description>
     </item>
     
     <item>
@@ -62,26 +34,7 @@
       <pubDate>Sat, 07 Mar 2015 16:29:50 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-LibGDX-Game-Development-Essentials-2014/</guid>
-      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt;, written by Juwal Bose, and released in December 2014 by Packt Publishing.&lt;/p&gt;&lt;/div&gt;
-
-&lt;h3&gt;Difficult to follow, but not a complete waste of time&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt; is hard to follow along with, and since I&#39;m one of those learners who likes to follow along when I&#39;m learning a technology, that made this book troublesome.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, I certainly got something out of the book, and successfully got a glimpse of just how powerful LibGDX is.&lt;/p&gt;
-
-&lt;p&gt;But on the other hand, glossing over pieces of code, combined with incomplete (or usually just vastly different) code (and assets) in the downloadable zip files, made for a read that was just plain difficult to follow. These aren&#39;t merely typos, but rather like either the code or book was revised independently of each other.&lt;/p&gt;
-
-&lt;p&gt;The book focuses on a single project over its course, which is something I generally like, as it means the project is built upon and expanded. In this case it&#39;s a Flappy Bird clone, although it seems to be more of a tweaking of the LibGDX demo &#34;&lt;a href=&#34;https://github.com/badlogic/theplanethatcouldntflygood&#34; rel=&#34;external&#34;&gt;The plane that couldn&#39;t fly good&lt;/a&gt;.&#34; Over the course of the book you learn the ins-and-outs of LibGDX as you create this, primarily from scratch (minus easy to obtain graphics).&lt;/p&gt;
-
-&lt;p&gt;Going merely with the flow of the book, it certainly does a good job of walking you through the process from initial creation to launch on the Google Play store (as well as a look at Apple&#39;s App store - that&#39;s all I can say as I  skimmed over that particular section). I feel confident enough after reading this book that I could successfully go through that entire process (start to finish). And I have a firm grasp of what LibGDX can do.&lt;/p&gt;
-
-&lt;p&gt;But I am glad that I picked up two other LibGDX books, as this one just wasn&#39;t ideal enough.&lt;/p&gt;
-
-&lt;p&gt;While Juwal Bose certainly seems to know LibGDX, code confusion ultimately renders &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt; a solid 3 of 5 stars.&lt;/p&gt;
-
-&lt;p&gt;Depending upon how the other books I purchased are, this review may be appended to in the future. I&#39;ll also note that previous to this I read most of Kevin Brothaler&#39;s &lt;a href=&#34;http://www.amazon.com/gp/product/1937785343?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;OpenGL ES 2 for Android&lt;/a&gt;, which is an awesome book. However, given the power of the LibGDX tool, I don&#39;t see myself continuing down that path much further.&lt;/p&gt;
-</description>
+      <description>The following is a review of LibGDX Game Development Essentials, written by Juwal Bose, and released in December 2014 by Packt Publishing.</description>
     </item>
     
     <item>
@@ -90,46 +43,7 @@
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
-      <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
-
-&lt;p&gt;I&#39;ll assume that you have Android Studio 1.1.0 (1.x generally) installed and properly running.&lt;/p&gt;
-
-&lt;p&gt;If you haven&#39;t already, &lt;a href=&#34;http://libgdx.badlogicgames.com/download.html&#34;&gt;download libgdx&lt;/a&gt; from the official site. The file name should be &lt;em&gt;gdx-setup.jar&lt;/em&gt;, and will be run whenever you need to create a new project.&lt;/p&gt;
-
-&lt;p&gt;Start &lt;em&gt;gdx-setup.jar&lt;/em&gt; and complete the Name, Package, Game class, and Destination as you wish.&lt;/p&gt;
-
-&lt;p&gt;For Android Studio 1.x the SDK is located in &lt;code&gt;%localappdata%\Android\sdk&lt;/code&gt; and for beta versions was located in the Android Studio program files directory.&lt;/p&gt;
-
-&lt;p&gt;Sadly these values aren&#39;t tracked across runs of the jar, and will therefore need to be entered every time you run the tool.&lt;/p&gt;
-
-&lt;p&gt;Go ahead and Generate the project and after a short time you&#39;ll have a project created.&lt;/p&gt;
-
-&lt;p&gt;At the time of this writing you&#39;ll be prompted twice regarding different versions.&lt;/p&gt;
-
-&lt;p&gt;The first time will be the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent version of android build tools than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The second time is the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent Android API than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Select Yes for both options.&lt;/p&gt;
-
-&lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://words.strivinglife.com/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>How to start using libGDX with Android Studio 1.1.0.</description>
     </item>
     
   </channel>

@@ -16,12 +16,7 @@
       <pubDate>Sun, 17 Oct 2010 19:16:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Excellent-Silverlight-WPF-MVVM-video-series/</guid>
-      <description>&lt;p&gt;&lt;p&gt;Here&amp;rsquo;s an excellent video series on Silverlight/WPF (XAML basically) and the MVVM pattern.&lt;/p&gt;
-&lt;p&gt;He does, what I believe to be, an excellent job of covering XAML and MVVM during this series, and includes a bit of unit testing as well.&lt;/p&gt;
-&lt;p&gt;Part one is included below, but another user on YouTube created a &lt;a rel=&#34;external&#34; href=&#34;http://www.youtube.com/view_play_list?p=A7B55DEDF2293DEC&amp;amp;playnext=1&amp;amp;v=g53__vPihFY&#34;&gt;Playlist&lt;/a&gt; with the eight videos released.&lt;/p&gt;
-&lt;p&gt;Update: Or you can view his blog post, &lt;a href=&#34;http://www.timecockpit.com/en/blogs/10-09-10/time_cockpit_at_NRWConf.aspx&#34; rel=&#34;external&#34;&gt;time cockpit at NRWConf&lt;/a&gt;.&lt;/p&gt;
-&lt;object width=&#34;480&#34; height=&#34;385&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.youtube.com/v/g53__vPihFY?fs=1&amp;amp;hl=en_US&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowscriptaccess&#34; value=&#34;always&#34;&gt;&lt;/param&gt;&lt;embed src=&#34;http://www.youtube.com/v/g53__vPihFY?fs=1&amp;amp;hl=en_US&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34; width=&#34;480&#34; height=&#34;385&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
-</description>
+      <description>What I believe to be an excellent video series on Silverlight/WPF/XAML and the MVVM pattern.</description>
     </item>
     
   </channel>

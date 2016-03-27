@@ -16,37 +16,7 @@
       <pubDate>Sun, 10 Jun 2007 11:03:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/On-the-Dangers-of-Is-and-Is-Not-Not/</guid>
-      <description>&lt;p&gt;
-Logically speaking, the rule of Double Negation tells us that p :: ~~p. In order words, if something is blue, it is not not blue. Unfortunately, this is one of the &lt;a href=&#34;http://words.strivinglife.com/words/post/Rules-for-Sentential-Logic.aspx&#34;&gt;rules for sentential logic&lt;/a&gt; that is philosophically troubling.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s a simple example to show this; happy. We then have the following:
-&lt;/p&gt;
-&lt;p&gt;
-happy :: not not happy
-&lt;/p&gt;
-&lt;p&gt;
-or
-&lt;/p&gt;
-&lt;p&gt;
-I am happy :: I am not not happy
-&lt;/p&gt;
-&lt;p&gt;
-or
-&lt;/p&gt;
-&lt;p&gt;
-I am happy :: I am not unhappy
-&lt;/p&gt;
-&lt;p&gt;
-Now, if we are in fact declaring that we are happy, there is no problem with double negation in this case. Yet, if the declaration is the other way, it&amp;#39;s not so easy to double negate.
-&lt;/p&gt;
-&lt;p&gt;
-In this case, it may be more because there is a third option; I am neither happy nor unhappy. In states of affairs in which there are only two options, double negation will serve us well. If something is blue, then it&amp;#39;s not not blue. If I&amp;#39;m unhappy, then I&amp;#39;m not happy.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s therefore important to realize cases in which there are not merely two options, but potentially three or more. In such cases, double negation will do us little good.
-&lt;/p&gt;
-</description>
+      <description>On the limitations of the rule of double negation in sentential logic.</description>
     </item>
     
   </channel>

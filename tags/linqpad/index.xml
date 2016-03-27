@@ -16,23 +16,7 @@
       <pubDate>Sat, 26 Jun 2010 21:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Server-2008-R2-SQL-Server-Express-2008-R2-and-LINQPad/</guid>
-      <description>&lt;p&gt;This weekend I finally installed SQL Server 2008 R2 to my Windows Server 2008 R2 machine. After a bit of back-and-forth about which version to install (since my MSDN subscription allows me to install seemingly every version), I opted to just install SQL Server Express 2008 R2. Being part of the Web Platform Installer, the entire process was extremely easy.&lt;/p&gt;
-&lt;p&gt;Step 1: Start Web Platform Installer.&lt;/p&gt;
-&lt;p&gt;Step 2: Select SQL Server Express 2008 R2 and SQL Server 2008 R2 Management Studio Express from under Database.&lt;/p&gt;
-&lt;p&gt;Step 3: Press Install.&lt;/p&gt;
-&lt;p&gt;Step 4: Enter a password for the sa account (since Mixed Mode is what we want for development purposes).&lt;/p&gt;
-&lt;p&gt;Step 5: Open Windows Firewall and allow C:\Program Files\Microsoft SQL Server\MSSQL10_50.SQLEXPRESS\MSSQL\Binn\sqlservr.exe .&lt;/p&gt;
-&lt;p&gt;Step 6: Open SQL Server Configuration Manager and turn on the TCP/IP protocol, under Protocols from SQLEXPRESS.&lt;/p&gt;
-&lt;p&gt;Step 7: Open the TCP/IP protocol and verify that under IPAll TCP Dynamic Ports is set to something over 0. Make note of the port (in my case it was 49306).&lt;/p&gt;
-&lt;p&gt;Step 8: Still in Configuration Manager, click on SQL Server Services and restart the SQL Server process (the only one that&#39;s running).&lt;/p&gt;
-&lt;p&gt;Step 9: Connect to the instance via Microsoft SQL Server Management Studio, from the server (server name is &lt;strong&gt;.\sqlexpress&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Step 10: Open LINQPad (4.0 in my case).&lt;/p&gt;
-&lt;p&gt;Step 11: On the left-hand side select &#39;Add connection.&#39;&lt;/p&gt;
-&lt;p&gt;Step 12: LINQ to SQL should already be selected, so press Next.&lt;/p&gt;
-&lt;p&gt;Step 13: Set the server to the IP of your server \SQLEXPRESS,port. For example: 192.168.1.104\SQLEXPRESS,49306&lt;/p&gt;
-&lt;p&gt;Step 14: Select SQL Authentication from Log on details, and enter your credentials. Press OK when finished.&lt;/p&gt;
-&lt;p&gt;And with that, you&#39;re set.&lt;/p&gt;
-</description>
+      <description>Quick steps on getting SQL Server Express 2008 R2 configured on Windows Server 2008 R2 (using Web Platform Installer for installation) so that we can use LINQPad to query it on another server.</description>
     </item>
     
     <item>
@@ -41,55 +25,7 @@
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
-      <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
-
-string[] postFiles = System.IO.Directory.GetFiles(postsDirectory);
-
-DataTable comments = new DataTable();
-    comments.Columns.Add(&#34;Post&#34;);
-    comments.Columns.Add(&#34;CommentApproved&#34;);
-    comments.Columns.Add(&#34;FileId&#34;);
-    comments.Columns.Add(&#34;IpAddress&#34;);
-
-XDocument postXml;
-
-foreach (string postFile in postFiles) {
-    postXml = XDocument.Load(postFile);
-
-    var posts = from postData in postXml.Descendants(&#34;post&#34;)
-        select new {
-            Title = postData.Element(&#34;title&#34;).Value,
-            CommentItems = (from commentItems in postData.Element(&#34;comments&#34;).Elements(&#34;comment&#34;)
-                select commentItems).ToList()
-        };
-
-    foreach (var post in posts) {
-        if (post.CommentItems.Count &amp;gt; 0) {
-            foreach (var commentItem in post.CommentItems) {
-                if (commentItem.Attribute(&#34;approved&#34;) != null &amp;amp;&amp;amp; commentItem.Attribute(&#34;approved&#34;).Value == &#34;False&#34;) {
-                    DataRow comment = comments.NewRow();
-                    comment[&#34;Post&#34;] = post.Title;
-                    comment[&#34;CommentApproved&#34;] = commentItem.Attribute(&#34;approved&#34;).Value;
-                    comment[&#34;IpAddress&#34;] = commentItem.Element(&#34;ip&#34;).Value;
-                    comment[&#34;FileId&#34;] = &#34;/post.aspx?id=&#34; + System.IO.Path.GetFileNameWithoutExtension(postFile);
-                    comments.Rows.Add(comment);
-                }
-            }
-
-        }
-    }
-}
-
-postXml = null;
-
-comments.Dump();&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You&#39;ll want to change postsDirectory accordingly.&lt;/p&gt;
-&lt;p&gt;This will output all unapproved comments, the post they are associated with, the post GUID, and the commentor&#39;s IP address.&lt;/p&gt;
-&lt;p&gt;It&#39;s relatively easy to expand this to display more or less information, as desired. For example, &lt;strong&gt;website&lt;/strong&gt; and &lt;strong&gt;author&lt;/strong&gt; can be swapped in in place of &lt;strong&gt;ip&lt;/strong&gt; in the last foreach.&lt;/p&gt;
-&lt;p&gt;Comments/questions/etcetera welcome and appreciated.&lt;/p&gt;
-</description>
+      <description>Find all BlogEngine.NET posts with unapproved comments using this code and LINQPad.</description>
     </item>
     
   </channel>

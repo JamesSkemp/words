@@ -16,39 +16,7 @@
       <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
-      <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Taking screenshots of the application&#39;s data&lt;/h3&gt;
-&lt;p&gt;When you install the Windows Phone SDK the Isolated Storage Explorer Tool is also installed. This tooll allows you to easily explore isolated storage on both emulated devices and any plugged in devices.&lt;/p&gt;
-&lt;p&gt;First you&#39;ll want to go to the directory where the tool is installed.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;cd &#34;C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Tools\IsolatedStorageExplorerTool&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can now enumerate devices if you want, but there&#39;s two parameters that you can tend to rely upon.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe enumeratedevices&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To continue, you&#39;ll need to have the guid of the application, which can be found in the WMAppManifest.xml file, and it&#39;s the ProductID attribute in the App element.&lt;/p&gt;
-&lt;p&gt;First, make sure that the application has been started, and any necessary data items have been setup.&lt;/p&gt;
-&lt;p&gt;Next get a directory listing, so you have an idea of what it looks like.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe dir xd 00000000-0000-0000-0000-000000000000&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This would return something like the following.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;       131,072 AppData.sdf
-&lt;/code&gt;&lt;code class=&#34;powershell&#34;&gt;&amp;lt;DIR&amp;gt;          Shared&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can take a screenshot to any directory you like. For example, to grab it from your phone (de = physical device):&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts de 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When you run this command you&#39;ll have a directory created in the above called IsolatedStore. This will mimic what the dir command above returns.&lt;/p&gt;
-&lt;p&gt;To take a screenshot of the default emulated device (512 MB emulator), run the above except with xd instead of de.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Restoring screenshots of the application&#39;s data&lt;/h3&gt;
-&lt;p&gt;Now if you want to restore the screenshot you want to make sure you append IsolatedStorage to the end of the directory path.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe rs xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage\IsolatedStore&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Depending upon what you&#39;re storing, if you want to move data from one device to another, you can take a screenshot, replace the necessary file(s), and then restore the modified screenshot/directory.&lt;/p&gt;
-&lt;h3&gt;Possible errors&lt;/h3&gt;
-&lt;p&gt;As I&#39;ve been developing I&#39;ve run into two errors. The message and resolution are below.&lt;/p&gt;
-&lt;h4&gt;Error: The process cannot access the file because it is being used by another process.&lt;/h4&gt;
-&lt;p&gt;To resolve this error you need to close the application (back button from the home screen).&lt;/p&gt;
-&lt;h4&gt;Error: Failed to connect to the device. Ensure that the device is completely booted and is connected to the PC.&lt;/h4&gt;
-&lt;p&gt;To resolve this error you need to make sure Zune is running and the device is connected, and unlocked.&lt;/p&gt;
-</description>
+      <description>As I develop my first Windows Phone 7 application, My Video Game Tracker, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).</description>
     </item>
     
   </channel>

@@ -16,78 +16,7 @@
       <pubDate>Sat, 23 Feb 2008 12:45:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
-      <description>&lt;p&gt;
-I purchased a Casio EX-Z1200 a bit ago, which I&amp;#39;ve been playing around with. Overall, I&amp;#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&amp;#39;t the best for me. 
-&lt;/p&gt;
-&lt;p&gt;
-After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for. 
-&lt;/p&gt;
-&lt;p&gt;
-However, along came &lt;a href=&#34;http://ivcsoft.free.fr/&#34; target=&#34;_blank&#34;&gt;Internet Video Convertor (IVC)&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;
-Of all the people in the world, it is the French who are most likely to create a multi-language site/piece of software. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-I haven&amp;#39;t played with it enough to be fully satisifed, but I&amp;#39;m extremely happy with what I&amp;#39;ve got thus far. 
-&lt;/p&gt;
-&lt;p&gt;
-One of the things that IVC can do is convert to FLV format, which is similar to SWF, except it allows for streaming Flash video. Yes, streaming Flash. 
-&lt;/p&gt;
-&lt;p&gt;
-While one can host videos on a variety of sites, I&amp;#39;d really like to be able to host on my own server, when possible (and/but still post to those other sites as well). 
-&lt;/p&gt;
-&lt;p&gt;
-Per this Adobe TechNote (&lt;a rel=&#34;nofollow&#34; href=&#34;http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_19439&amp;amp;sliceId=2&#34; target=&#34;_blank&#34;&gt;Windows 2003 Server does not stream FLV videos&lt;/a&gt;) I just needed to add a simple MIME type (&lt;strong&gt;.flv&lt;/strong&gt; as &lt;strong&gt;flv-application/octet-stream&lt;/strong&gt;) and I could then use the IVC outputs (Video-to-Flash) to play any file from my server. 
-&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;
-You can, if you so desire (I did) add this MIME type to just one site, instead of to the entire server. Adding it to the server allows any site to &amp;#39;understand&amp;#39;&amp;nbsp;FLV files, which may or may not be what you want in your particular situation(s). 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-While I could have played other formats as well, the benefit of this is that other OS users can run this as well. 
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re interested in finding out more about FLV&amp;nbsp;and/versus SWF&amp;nbsp;files, there&amp;#39;s an interesting article from Macromedia, &lt;a href=&#34;http://www.adobe.com/devnet/flash/articles/flv_download.html&#34; target=&#34;_blank&#34;&gt;Delivering Flash Video: Understanding the Difference Between Progressive Download and Streaming Video&lt;/a&gt;&amp;nbsp;(2004). 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://media.strivinglife.com/video/20060924_DW8Snippets.html&#34; target=&#34;_blank&#34;&gt;Watch Creating snippets in Dreamweaver 8 (Windows)&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;h3&gt;File conversion details&lt;/h3&gt;
-&lt;p&gt;
-Here are some details on the conversion: 
-&lt;/p&gt;
-&lt;p&gt;
-The source file was a 108 MB AVI file, captured using&amp;nbsp;CamStudio 2.00, at 640x480. 
-&lt;/p&gt;
-&lt;p&gt;
-Converting this into a 320x240 FLV file resulted in a 4.93 MB file. However, at that size the text was difficult to read. 
-&lt;/p&gt;
-&lt;p&gt;
-Upgrading to 640x480 resulted in a 38.2 MB file. 
-&lt;/p&gt;
-&lt;p&gt;
-The SWF player necessary to actually server the FLV added another 90 KB. 
-&lt;/p&gt;
-&lt;p&gt;
-Despite all that, the file looks remarkably well, even better than the &lt;a rel=&#34;nofollow&#34; href=&#34;http://video.google.com/videoplay?docid=3586025281835355534&#34; target=&#34;_blank&#34;&gt;Google Video version&lt;/a&gt; (which was resized, obviously). 
-&lt;/p&gt;
-&lt;p&gt;
-For non-text video, however, I&amp;#39;d say 320x240 may have worked (once I have some good video from my Casio, I&amp;#39;ll be uploading that through the same process). 
-&lt;/p&gt;
-&lt;p&gt;
-The six-and-a-half minute video didn&amp;#39;t take all that long to convert to FLV, from AVI. The MOV files that I&amp;#39;ve converted seem to take longer, despite being shorter in length. 
-&lt;/p&gt;
-&lt;p&gt;
-It seems it&amp;#39;s also possible to stream FLV files using IIS and&amp;nbsp;.NET, but I haven&amp;#39;t dug into it quite yet. More on&amp;nbsp;that in&amp;nbsp;&lt;a href=&#34;http://blogs.ugidotnet.org/kfra/archive/2006/10/04/50003.aspx&#34; target=&#34;_blank&#34;&gt;FLV Flash video streaming with ASP.NET 2.0, IIS and HTTP handler&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Further updates to follow. 
-&lt;/p&gt;
-</description>
+      <description>Using one tool, it&#39;s easy to convert a wide variety of video formats to FLV, for posting on your site. [slnet0514:0619b657-9369-4afb-af08-1de033f0e7b8]</description>
     </item>
     
   </channel>

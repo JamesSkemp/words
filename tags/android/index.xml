@@ -16,29 +16,7 @@
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
-      <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
-
-&lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Make sure you&#39;re a developer and you allow apps from unknown sources.&lt;/li&gt;
-&lt;li&gt;Install ES File Explorer via the Amazon Appstore. It&#39;s something I install on all my Android devices.&lt;/li&gt;
-&lt;li&gt;Extract the contents of the zip you downloaded from Mega somewhere.&lt;/li&gt;
-&lt;li&gt;Connect your Fire tablet to your computer via a USB cable.&lt;/li&gt;
-&lt;li&gt;Copy all the files to the Download directory on your tablet.&lt;/li&gt;
-&lt;li&gt;In ES File Explorer navigate to the Download directory.&lt;/li&gt;
-&lt;li&gt;Install com.android.vending-5.9-12*.apk&lt;/li&gt;
-&lt;li&gt;Install com.google.android.gms-6.6.03*.apk&lt;/li&gt;
-&lt;li&gt;Install GoogleLoginService.apk&lt;/li&gt;
-&lt;li&gt;Install GoogleServicesFramework.apk&lt;/li&gt;
-&lt;li&gt;Turn off and then turn back on the device.&lt;/li&gt;
-&lt;li&gt;You can try opening Google Play. If it automatically closes (it did for me), install com.android.vending-5.9.12*.apk again. When I did so it asked me if I wanted to install the update, and referenced one of the other services.&lt;/li&gt;
-&lt;li&gt;You should be able to run the Google Play application now.&lt;/li&gt;
-&lt;li&gt;When prompted, you can safely update the Google services.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;With Google Play installed I was able to login to Google, as well as install YouTube and Chrome to my Fire HD 8.&lt;/p&gt;
-</description>
+      <description>For my future reference, information on how to install Google services (Google Play and associated services) on an Amazon Fire HD 8.</description>
     </item>
     
     <item>
@@ -47,58 +25,7 @@
       <pubDate>Sat, 29 Aug 2015 15:12:33 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/July-2015-tablet-recommendations/</guid>
-      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is an email I sent on July 23, 2015, to someone who was looking to purchase her first tablet. It&#39;s now a month out of date, but I hope it helps someone, or is historically interesting.&lt;/p&gt;&lt;/div&gt;
-
-&lt;p&gt;Fair warning this is a long email, but you don&#39;t have to read it all. If you want to skip ahead I&#39;ve put bold text to help you skip around. You can either keep reading now, or skip ahead to the bold text in parens below.&lt;/p&gt;
-
-&lt;p&gt;My first question was going to be whether you have a smartphone, but when I was talking to Jenn this morning she told me that you have a Samsung smartphone, which I&#39;m guessing means you have an Android-based phone. If that&#39;s not the case, let me know, as that opens options a bit more.&lt;/p&gt;
-
-&lt;p&gt;I&#39;d say if you&#39;re comfortable with your phone, that&#39;s good, as you have tons of Android-based tablets to select from (and they&#39;re cheaper than the iPad variants :)). There are some nice 2-in-1 tablets, but based upon what you&#39;ve said I don&#39;t think you need one. And if you stick with Android any games or apps you purchase should be able to be installed on either your phone or tablet.&lt;/p&gt;
-
-&lt;p&gt;The next question is price range. I&#39;m going to keep it near the low end, but not cheap range. Ignoring the iPad I bought years ago, I don&#39;t think I&#39;ve spent more than $300 on any of the three tablets I&#39;ve purchased.&lt;/p&gt;
-
-&lt;p&gt;Since my standard recommendation appears to be harder to find (Nexus 7), I&#39;m going to pretend that I&#39;m going to purchase one. I did talk to my mom, who got my old Nexus 7 tablet, and who appears to have usage similar to what you&#39;re looking for. She noted she would like one that has a larger screen, so I&#39;ll keep that in mind. I&#39;m also going to try to recommend stuff that is local, so you can hopefully go to a store and actually try them out (and take a look at how nice it looks, speaker sound, and weight).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;(Here&#39;s the first area you can skip to.)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Something you might want to keep in mind is the &lt;a href=&#34;http://amzn.to/1CT70Wo&#34;&gt;Amazon Fire TV Stick&lt;/a&gt;. They&#39;re about $40 from Amazon and use an HDMI connection on your TV. It uses your home&#39;s wireless to connect into a number of streaming services like Netflix, Hulu, Amazon Video, and YouTube. I&#39;ve been happy with mine and my mom has had no issues with the one I got for her. You can use an Android phone or tablet as a remote, and at least for the YouTube part you can search for a video and then have your TV actually play it.&lt;/p&gt;
-
-&lt;p&gt;Another alternative is the &lt;a href=&#34;http://amzn.to/1JhZzc6&#34;&gt;Chromecast&lt;/a&gt; which offers similar functionality. I haven&#39;t personally used one, but I have some friends who purchased them and were happy with them. They&#39;re a little older now, but $10 cheaper. I think this might also require either a laptop, phone, or tablet, while the Amazon stick can be standalone.&lt;/p&gt;
-
-&lt;p&gt;The reason I mention these is because casting from a tablet to your TV is either going to require that your tablet have an AV connection out (rare, and then you&#39;ve got a cord) or some sort of dongle for your TV. So, it&#39;s another piece of hardware, but it might be cheaper and easier than buying a tablet that supports the connection out.&lt;/p&gt;
-
-&lt;p&gt;Okay, tablet time. &lt;strong&gt;If you don&#39;t want to read through all that I wrote (I don&#39;t blame you, I wrote way more than I thought I would :) ), if you scroll to the end of this message I list my three recommendations.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The first thing I&#39;m going to do is head over to bestbuy.com so we can actually physically see the tablet. They&#39;ve got decent prices, but they do tend to cycle through items fast. I&#39;m going to limit my search to tablets in the $100-$500 range (but realistically $100-$300), Android, 4 or 5 star, and available through Best Buy, and not their marketplace.&lt;/p&gt;
-
-&lt;p&gt;Given how many good results this gives us, I&#39;m going to change my limit to the $100 to $249 range.&lt;/p&gt;
-
-&lt;p&gt;I&#39;ve used Samsung, Asus, and Lenovo hardware and have been pretty happy with all three, except the Lenovo had mediocre screen resolution.&lt;/p&gt;
-
-&lt;p&gt;There&#39;s not many Lenovo models, so I&#39;m going to strike those.&lt;/p&gt;
-
-&lt;p&gt;Asus has a &lt;a href=&#34;http://www.bestbuy.com/site/asus-zenpad-7-85-intel-atom-32gb-black/7650139.p?id=1219681450081&amp;amp;skuId=7650139&#34;&gt;ZenPad&lt;/a&gt;, but it just came out last month. Despite positive reviews so far, I wouldn&#39;t want to recommend that to you at this point. It also has no reviews on Amazon, and I always like to look at Amazon reviews. But, it does have a nice amount of space, Android 5.x (current), and a very nice screen. Seeing speakers on the front also suggests it might have nice sound.&lt;/p&gt;
-
-&lt;p&gt;That brings us down basically to the Samsung Galaxy Tab A and Tab 4. I&#39;m striking the Tab 3 because they&#39;re putting them on clearance to get them out the door, and they&#39;re an older version of Android, which means they might not get new updates. I&#39;m also not a fan of the border size on them, and the screen resolution isn&#39;t that hot.&lt;/p&gt;
-
-&lt;p&gt;The Tab 4 has Android 4.x, while the Tab A has 5.x. Honestly, version 4 of Android is pretty stable, so I wouldn&#39;t instantly jump to the Tab A. You&#39;ll also notice that the Tab A has a lower resolution, despite being an inch larger. Amazon reviews seem to consistently bring up the poor resolution. Given your requirements, and my personal experience with a tablet with a poor resolution (but great sound), I&#39;d take the Tab A out of the running.&lt;/p&gt;
-
-&lt;p&gt;Which leaves us with the &lt;a href=&#34;http://www.bestbuy.com/site/samsung-galaxy-tab-4-7-8gb-black/5420045.p?id=1219127073673&amp;amp;skuId=5420045&#34;&gt;Tab 4&lt;/a&gt;. Reviews are quite good about this, and while the 8 GB of space is pretty low, it does support a microSD card up to 32 GB. But it&#39;s also a 7 inch tablet, which might be a little small.&lt;/p&gt;
-
-&lt;p&gt;Sadly, while Best Buy lists an 8.4 inch Tab Pro, it&#39;s on clearance and there doesn&#39;t appear to be any in stock locally. But &lt;a href=&#34;http://amzn.to/1MqO2cq&#34;&gt;Amazon has one listed&lt;/a&gt; for ~$240. Reviews are positive, and the screen resolution appears to be (from reviews and specs) pretty dang good. It&#39;s also got double the space and supports an SD card too.&lt;/p&gt;
-
-&lt;p&gt;Switching over to Amazon and starting fresh, with similar filtering, the Samsung Tab 4 tops &lt;a href=&#34;http://amzn.to/1ekH4qy&#34;&gt;that list&lt;/a&gt; as well.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;All that said ... if it were me, I would:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Take a look at the &lt;a href=&#34;http://www.bestbuy.com/site/samsung-galaxy-tab-4-7-8gb-black/5420045.p?id=1219127073673&amp;amp;skuId=5420045&#34;&gt;Samsung Galaxy Tab 4&lt;/a&gt; at a local Best Buy. $150&lt;/li&gt;
-&lt;li&gt;If you think you might like the extra 1.4 inches, you could see if you could find a &lt;a href=&#34;http://amzn.to/1MLnb88&#34;&gt;Samsung Galaxy Tab Pro 8.4&lt;/a&gt; locally, or take a chance and buy one online. $240&lt;/li&gt;
-&lt;li&gt;If you want to live on the edge, maybe take a look at the &lt;a href=&#34;http://www.bestbuy.com/site/asus-zenpad-7-85-intel-atom-32gb-black/7650139.p?id=1219681450081&amp;amp;skuId=7650139&#34;&gt;Asus ZenPad 7.85&#34;&lt;/a&gt; at a local Best Buy. It&#39;s early in the product&#39;s lifecycle, so if you&#39;re not in a hurry you should be able to wait and see how it reviews over the next couple months. $200&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Sorry about the length of the email, but hopefully that helps. I&#39;d be curious what you end up doing, and if you decide to wait a bit can certainly take another look at things for you.&lt;/p&gt;
-</description>
+      <description>The following is an email I sent on July 23, 2015, to someone who was looking to purchase her first tablet. It&#39;s now a month out of date, but I hope it helps someone, or is historically interesting.</description>
     </item>
     
     <item>
@@ -107,38 +34,7 @@
       <pubDate>Sat, 27 Jun 2015 10:15:05 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-BLU-Studio-C-5-0-Inch-Android-Smartphone/</guid>
-      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of the &lt;a href=&#34;http://www.amazon.com/dp/B00XHGI2FO?tag=strivinglifen-20&#34;&gt;BLU Studio C 5.0-Inch Android Smartphone&lt;/a&gt;, received as part of the Amazon Vine program.&lt;/p&gt;&lt;/div&gt;
-
-&lt;h3&gt;Very decent entry-level phone&lt;/h3&gt;
-
-&lt;p&gt;First off, as I appear to be unable to use my existing SIM card from my provider with this phone I was unable to use it to make standard calls. However, I did use it for playing music, browsing the web, and Google Hangouts.&lt;/p&gt;
-
-&lt;p&gt;That said, I was pretty impressed with the BLU Studio C immediately after opening the package as it included both a screen protector as well as clear back case cover. Normally these two items would set you back $20 to $30, so it was completely unexpected and welcome.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately I did run into issues getting the screen protector on the phone itself (crooked the first time and then specs had gotten onto the sticky side when trying to put it on straight. It also feels very slippery compared to what I&#39;ve used in the past (Tech Armor on my Galaxy S4, and I forget what on my tablets). Honestly, with the specs under the protector and the smoothness, if I had the option to remove the protector I think I would. But your mileage my vary.&lt;/p&gt;
-
-&lt;p&gt;The back case is pretty nice. It snapped on easily, but is such that it won&#39;t accidentally slip off. It has a little bit of a texture to it, so it&#39;s not too slippery. It&#39;s clearly built for the phone as the case has all the right holes in all the right places.&lt;/p&gt;
-
-&lt;p&gt;Next we have the hardware itself, which is actually on the heavier side. This might be due to the battery, or the materials it&#39;s made of. It&#39;s also slightly larger than a Galaxy S4, although the actual screen size is the same. The buttons for the Android OS are software buttons, so the extra size is not to account for that. But the heft isn&#39;t bad. But combined, as a guy that puts his phone in his pocket, I certainly know when I have it on me.&lt;/p&gt;
-
-&lt;p&gt;Speaker quality sounds fine to me, although I wouldn&#39;t consider myself an audiophile, and I kept it at a reasonable volume. Streaming music to a Bluetooth device was just fine.&lt;/p&gt;
-
-&lt;p&gt;In regards to the battery, again, since I wasn&#39;t able to use this as a phone your mileage my vary, but I had excellent time per charge with this. With it checking for email and playing music and some videos I was able to get far per charge. But even with my standard phone I&#39;m able to get pretty far with my devices, so ...&lt;/p&gt;
-
-&lt;p&gt;One quasi-major knock is that this can&#39;t connect to 5GHz wifi channels. It&#39;s odd for something like this to not have that capability at this point in time. But I suppose you get what you pay for.&lt;/p&gt;
-
-&lt;p&gt;On the plus side, it does support up to 64 GB of expandable storage, making it easy to throw audio and video files onto a MicroSD card, or take photos and video with the nice camera.&lt;/p&gt;
-
-&lt;p&gt;Now comes the tricky bit, which is Android. This ships with Android 5.x, which is the current version of the Android software. Androids runs extremely well on the device, with no real hiccups. Well, outside of some odd issues with responsiveness. Initially this was focused on the back button, which I&#39;d have to press a number of times for it to respond. This wasn&#39;t an issue with the other software buttons like home or &#39;apps&#39;/windows (third button). There is a tiny bit of something in the far upper right of the button which might be causing issues with this. I&#39;ll probably have to pull the protector off to verify, but pressing to the far left of the button doesn&#39;t work so I don&#39;t think that&#39;s completely it.&lt;/p&gt;
-
-&lt;p&gt;Otherwise it definitely has Android, and is an extremely clean install. Opera is the only application that was installed that I didn&#39;t expect to see, but that&#39;s definitely not a big deal.&lt;/p&gt;
-
-&lt;p&gt;It&#39;s also Windows and developer friendly. I was able to connect the phone via a USB cable to my computer and connect almost immediately, as well as enable developer mode and push Android apps to it without issue.&lt;/p&gt;
-
-&lt;p&gt;Thus far I haven&#39;t received any update notifications for Android, so I can&#39;t say how upgrade friendly this is, but being unlocked is a positive.&lt;/p&gt;
-
-&lt;p&gt;So overall this is a decent device. Since I can&#39;t talk to the phone&#39;s capabilities on wireless phone networks I can&#39;t give it the full five stars, but I can give the &lt;a href=&#34;http://www.amazon.com/dp/B00XHGI2FO?tag=strivinglifen-20&#34;&gt;BLU Studio C 5.0-Inch Android Smartphone&lt;/a&gt; a very full four of five stars. Even if you were to use it as a cheap Android device / potential backup phone you&#39;d get a good deal with this. The heft might turn away some people, but it feels like it&#39;s a quality product.&lt;/p&gt;
-</description>
+      <description>The following is a review of the BLU Studio C 5.0-Inch Android Smartphone, received as part of the Amazon Vine program.</description>
     </item>
     
     <item>
@@ -147,28 +43,7 @@
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
-      <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://words.strivinglife.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
-
-&lt;p&gt;Next click the green plus sign in the top left corner and select &#39;Application.&#39;&lt;/p&gt;
-
-&lt;p&gt;There are now four fields you need to populate to complete this step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: Enter whatever you&#39;d like. I like using &#39;Desktop&#39; to be obvious.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Main class&lt;/strong&gt;: com.&lt;em&gt;xxx&lt;/em&gt;.desktop.DesktopLauncher&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Working directory&lt;/strong&gt;: C:\Path\to\project\android\assets&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Use classpath of mod&lt;/strong&gt;: select the &lt;em&gt;desktop&lt;/em&gt; module&lt;/p&gt;
-
-&lt;p&gt;And that&#39;s it. You should be able to select and run the configuration.&lt;/p&gt;
-
-&lt;p&gt;If you work on multiple machines, note that by default this configuration change will mostly likely &lt;em&gt;not&lt;/em&gt; be checked into source control. The file that contains this configuration is located in your project directory under &lt;code&gt;\.idea\workspace.xml&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.</description>
     </item>
     
     <item>
@@ -177,26 +52,7 @@
       <pubDate>Sat, 07 Mar 2015 16:29:50 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-LibGDX-Game-Development-Essentials-2014/</guid>
-      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt;, written by Juwal Bose, and released in December 2014 by Packt Publishing.&lt;/p&gt;&lt;/div&gt;
-
-&lt;h3&gt;Difficult to follow, but not a complete waste of time&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt; is hard to follow along with, and since I&#39;m one of those learners who likes to follow along when I&#39;m learning a technology, that made this book troublesome.&lt;/p&gt;
-
-&lt;p&gt;On the one hand, I certainly got something out of the book, and successfully got a glimpse of just how powerful LibGDX is.&lt;/p&gt;
-
-&lt;p&gt;But on the other hand, glossing over pieces of code, combined with incomplete (or usually just vastly different) code (and assets) in the downloadable zip files, made for a read that was just plain difficult to follow. These aren&#39;t merely typos, but rather like either the code or book was revised independently of each other.&lt;/p&gt;
-
-&lt;p&gt;The book focuses on a single project over its course, which is something I generally like, as it means the project is built upon and expanded. In this case it&#39;s a Flappy Bird clone, although it seems to be more of a tweaking of the LibGDX demo &#34;&lt;a href=&#34;https://github.com/badlogic/theplanethatcouldntflygood&#34; rel=&#34;external&#34;&gt;The plane that couldn&#39;t fly good&lt;/a&gt;.&#34; Over the course of the book you learn the ins-and-outs of LibGDX as you create this, primarily from scratch (minus easy to obtain graphics).&lt;/p&gt;
-
-&lt;p&gt;Going merely with the flow of the book, it certainly does a good job of walking you through the process from initial creation to launch on the Google Play store (as well as a look at Apple&#39;s App store - that&#39;s all I can say as I  skimmed over that particular section). I feel confident enough after reading this book that I could successfully go through that entire process (start to finish). And I have a firm grasp of what LibGDX can do.&lt;/p&gt;
-
-&lt;p&gt;But I am glad that I picked up two other LibGDX books, as this one just wasn&#39;t ideal enough.&lt;/p&gt;
-
-&lt;p&gt;While Juwal Bose certainly seems to know LibGDX, code confusion ultimately renders &lt;a href=&#34;http://www.amazon.com/gp/product/1784399299?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;LibGDX Game Development Essentials&lt;/a&gt; a solid 3 of 5 stars.&lt;/p&gt;
-
-&lt;p&gt;Depending upon how the other books I purchased are, this review may be appended to in the future. I&#39;ll also note that previous to this I read most of Kevin Brothaler&#39;s &lt;a href=&#34;http://www.amazon.com/gp/product/1937785343?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;OpenGL ES 2 for Android&lt;/a&gt;, which is an awesome book. However, given the power of the LibGDX tool, I don&#39;t see myself continuing down that path much further.&lt;/p&gt;
-</description>
+      <description>The following is a review of LibGDX Game Development Essentials, written by Juwal Bose, and released in December 2014 by Packt Publishing.</description>
     </item>
     
     <item>
@@ -205,46 +61,7 @@
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
-      <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
-
-&lt;p&gt;I&#39;ll assume that you have Android Studio 1.1.0 (1.x generally) installed and properly running.&lt;/p&gt;
-
-&lt;p&gt;If you haven&#39;t already, &lt;a href=&#34;http://libgdx.badlogicgames.com/download.html&#34;&gt;download libgdx&lt;/a&gt; from the official site. The file name should be &lt;em&gt;gdx-setup.jar&lt;/em&gt;, and will be run whenever you need to create a new project.&lt;/p&gt;
-
-&lt;p&gt;Start &lt;em&gt;gdx-setup.jar&lt;/em&gt; and complete the Name, Package, Game class, and Destination as you wish.&lt;/p&gt;
-
-&lt;p&gt;For Android Studio 1.x the SDK is located in &lt;code&gt;%localappdata%\Android\sdk&lt;/code&gt; and for beta versions was located in the Android Studio program files directory.&lt;/p&gt;
-
-&lt;p&gt;Sadly these values aren&#39;t tracked across runs of the jar, and will therefore need to be entered every time you run the tool.&lt;/p&gt;
-
-&lt;p&gt;Go ahead and Generate the project and after a short time you&#39;ll have a project created.&lt;/p&gt;
-
-&lt;p&gt;At the time of this writing you&#39;ll be prompted twice regarding different versions.&lt;/p&gt;
-
-&lt;p&gt;The first time will be the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent version of android build tools than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The second time is the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent Android API than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Select Yes for both options.&lt;/p&gt;
-
-&lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://words.strivinglife.com/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>How to start using libGDX with Android Studio 1.1.0.</description>
     </item>
     
     <item>
@@ -253,32 +70,7 @@
       <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
-      <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
-
-&lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;
-
-&lt;p&gt;Luckily StackOverflow had &lt;a href=&#34;http://stackoverflow.com/a/15609366/11912&#34; rel=&#34;external&#34;&gt;an answer to the question &#34;Google Android USB Driver and ADB&#34;&lt;/a&gt; that stepped through how to make this work.&lt;/p&gt;
-
-&lt;p&gt;The specific steps I followed for the Lenovo A7600-F TAB A10 were:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Downloaded the &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ThinkPad Tablet ADB Interface Driver&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Extract the contents of the zip to a new directory.&lt;/li&gt;
-&lt;li&gt;Update the &lt;code&gt;android_winusb.inf&lt;/code&gt; file with the code below, which is also available as a &lt;a href=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91&#34; rel=&#34;external&#34;&gt;Gist&lt;/a&gt;. This was added above the &lt;code&gt;;NVIDIA Tegra&lt;/code&gt; line.&lt;/li&gt;
-&lt;li&gt;This may not be necessary, but I also updated the file at &lt;code&gt;C:\Program Files (x86)\Android\sdk\extras\google\usb_driver\android_winusb.inf&lt;/code&gt; with the same code. I added it above the &lt;code&gt;;Project Tango (generic)&lt;/code&gt; line.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and then use &lt;code&gt;shutdown -o -r -t 0&lt;/code&gt; to reboot. I unfortunately didn&#39;t keep track of the exact steps, but it&#39;s close to what the SO answer had, so something like &#34;Click ‘Troubleshoot’. Click ‘Advanced Options’ Click ‘Windows Startup Settings’ Click Restart.&#34;&lt;/li&gt;
-&lt;li&gt;When you have the option, &#34;Disable driver signature enforcement,&#34; which I believe was option 7 in the menu.&lt;/li&gt;
-&lt;li&gt;Once you&#39;ve logged back into your machine you should be able to go into Device Manager, find the Lenovo tablet, and choose to update the device drivers. Point to the extracted zip directory. You might get a security warning, but you&#39;ll be able to install it.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and navigate over to where adb is installed. In my particular case I&#39;m using Android Studio, and upgraded to 0.8.14, so mine is in &lt;code&gt;C:\Program Files (x86)\Android\sdk\platform-tools&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d&#34; rel=&#34;external&#34;&gt;Restart ADB&lt;/a&gt; and then check the devices. This is done by running &lt;code&gt;adb kill-server&lt;/code&gt; and &lt;code&gt;adb start-server&lt;/code&gt; to restart ADB, and then &lt;code&gt;adb devices&lt;/code&gt; to get a device listing.&lt;/li&gt;
-&lt;li&gt;I found that I had to unplug the USB cable from my computer first. You&#39;ll also have to accept the connection from the tablet.&lt;/li&gt;
-&lt;li&gt;Checking Device Manager should display &#34;Lenovo ThinkPad Tablet ADB Interface&#34; under Android Phone, and &#34;A7600-F&#34; under Portable Devices. You should also be able to run Android applications on the Lenovo A7600-F.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91.js&#34;&gt;&lt;/script&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d.js&#34;&gt;&lt;/script&gt;
-</description>
+      <description>How to enable ADB on a Lenovo A7600-F TAB A10, even though they haven&#39;t released official drivers yet.</description>
     </item>
     
   </channel>

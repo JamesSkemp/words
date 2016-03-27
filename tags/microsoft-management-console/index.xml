@@ -16,57 +16,7 @@
       <pubDate>Sat, 03 Jun 2006 07:23:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Creating-a-Microsoft-Management-Console-for-our-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;
-In a previous tutorials, we discussed how to access the Services control panel from Windows. In this tutorial, we&amp;#39;ll be setting up a custom console that will provide us an easy way to access both our Services control panel, an Event Viewer, as well as other management tools.
-&lt;/p&gt;
-
-&lt;p&gt;&lt;p&gt;
-First, we&amp;#39;ll need to go to &amp;quot;Start&amp;quot; &amp;gt; &amp;quot;Run&amp;hellip;&amp;quot;, or press Windows + R on our keyboards. This will bring up a Run window. Type &amp;#39;mmc&amp;#39;, without the quotes, and press enter or OK.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;h4&gt;Adding the Services control panel&lt;/h4&gt;
-&lt;p&gt;
-You&amp;#39;ll now be presented with an empty console. We&amp;#39;ll now be adding a quick way to access the Services menu. Under File, select &amp;quot;Add/Remove Snap-in&amp;quot;, or press Ctrl + M.
-&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;ll now be presented with a window where we can choose either the Standalone or Extensions tab; stay on the Standalone tab and select &amp;quot;Add&amp;hellip;&amp;quot;.
-&lt;/p&gt;
-&lt;p&gt;
-You&amp;#39;ll see a number of snap-ins that can be added. For now, scroll down and select &amp;quot;Services&amp;quot;. Double-click on it or press Add. Once you do so, you can choose a couple of options, but at the moment we&amp;#39;ll leave the default of managing the local computer. Once you Finish, you&amp;#39;ll be able to add additional items. For now, press Close, then OK on the remaining pop-up window.
-&lt;/p&gt;
-&lt;p&gt;
-You can now access the Services of your local computer. However, other than the left-side column, this is no different that using a/our Services shortcut. However, once we add another snap-in, we&amp;#39;ve got a real benefit.
-&lt;/p&gt;
-&lt;h4&gt;Adding the Event Viewer&lt;/h4&gt;
-&lt;p&gt;
-Sometimes Apache may not start when we Start or Restart it. For that, we need to take a look at the Event Viewer. But, instead of having to open yet another window, we can simply add this to our new console.
-&lt;/p&gt;
-&lt;p&gt;
-As we did for the Services control panel, under File, select &amp;quot;Add/Remove Snap-in&amp;quot;, or press Ctrl + M. Again, &amp;quot;Add&amp;hellip;&amp;quot; a new standalone snap-in. Select Event Viewer this time, but you&amp;#39;ll still want to just manage the local computer.
-&lt;/p&gt;
-&lt;p&gt;
-Finish and Close, and then press OK. You&amp;#39;ll now notice that you&amp;#39;ve got both the Services and Event Viewer added under the Console Root folder. At this point, we&amp;#39;ve setup a console with the two items that we may need to regularly check. So, let&amp;#39;s save our console.
-&lt;/p&gt;
-&lt;p&gt;
-To do so, first go to File &amp;gt; Options&amp;hellip; We&amp;#39;ll want to give our console a good name, like &amp;quot;Web services&amp;quot;. Next, select File &amp;gt; Save As. Either save this file to your Desktop, or to your default Web folder (like c:\home) where you store your other shortcuts and files.
-&lt;/p&gt;
-&lt;p&gt;
-If you now close out completely, you can open this file to see the console that you&amp;#39;ve created.
-&lt;/p&gt;
-&lt;p&gt;
-Now that you&amp;#39;ve setup your own console, you can add additional items to it as the need arises. You can also remove the shortcuts you may have created to the various controls now at your reach within one shortcut.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-Update 08/31/2006: Note that by changing to User mode will mean that you can no longer make changes to the console.
-&lt;/p&gt;
-&lt;p&gt;
-However, there is still a way to switch out of this limited mode. If you open the msc file in Notepad, you can make a change to the ProgramMode value. If this is equal to &amp;ldquo;Author&amp;rdquo;, you can again make changes.
-&lt;/p&gt;
-&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description>In a previous tutorials, we discussed how to access the Services control panel from Windows. In this tutorial, we&#39;ll be setting up a custom console that will provide us an easy way to access both our Services control panel, an Event Viewer, as well as other management tools.</description>
     </item>
     
   </channel>

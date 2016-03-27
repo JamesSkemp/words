@@ -16,17 +16,7 @@
       <pubDate>Sat, 28 Aug 2010 23:07:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
-      <description>&lt;p&gt;Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory.&lt;/p&gt;
-&lt;h3&gt;Background&lt;/h3&gt;
-&lt;p&gt;I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).&lt;/p&gt;
-&lt;h3&gt;Possible options&lt;/h3&gt;
-&lt;p&gt;A couple of possible options exist, including giving the user that the application pool runs as full access to the appropriate directory. However, to some extent this circumvents security on my laptop.&lt;/p&gt;
-&lt;p&gt;Another option is to use Windows authentication. To this end it needs to be enabled by checking the feature of Internet Information Services &amp;gt; World Wide Web Services &amp;gt; Security &amp;gt; Basic Authentication.&lt;/p&gt;
-&lt;h3&gt;Additional setup and result&lt;/h3&gt;
-&lt;p&gt;Additionally default rights must be given to the local IIS_IUSRS group, so that it can access the Web.config file.&lt;/p&gt;
-&lt;p&gt;Now when I browse to the site I&#39;m prompted for credentials, which is the same information I use to login to my machine.&lt;/p&gt;
-&lt;p&gt;Putting the content into a directory with the appropriate permissions (%SystemDrive%\inetpub\wwwroot)&amp;nbsp;may be better, but this works just fine for the limited testing I need to perform.&lt;/p&gt;
-</description>
+      <description>Tweaks to allow IIS on Windows 7 Home Premium access to content within the Users directories.</description>
     </item>
     
     <item>
@@ -35,28 +25,7 @@
       <pubDate>Sun, 20 Jun 2010 19:02:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Working-with-Virtual-Hard-Disks-in-Windows-7-and-Server-2008-R2/</guid>
-      <description>&lt;p&gt;A new feature in Windows 7 and Windows Server 2008 R2 is the ability to work with Virtual Hard Disks (VHDs) directly within the OS, by booting from them or mounting them as additional drives.&lt;/p&gt;
-&lt;p&gt;While I&#39;ve had a good deal of experience with using VHDs in virtual environments, being able to work with VHDs directly is fairly new, and leaves some question as to how useful it could potentially be, since I&#39;m happy using VirtualBox to work with virtual machines when I need to do any testing.&lt;/p&gt;
-&lt;h3&gt;Creating a VHD&lt;/h3&gt;
-&lt;p&gt;It&#39;s extremely easy to create a new virtual hard disk.&lt;/p&gt;
-&lt;p&gt;Open the start menu and type &#34;disk,&#34; then find &#34;Create and format hard disk partitions&#34; to open Disk Management. Under Action select Create VHD. Browse to or enter a location where to store the disk, what size to create,&amp;nbsp;and select the format of disk to use (fixed size being universally recommended, from what I can).&lt;/p&gt;
-&lt;p&gt;An unallocated disk will be added to the bottom half of the Disk Management window, and will be noted as &#39;not initialized.&#39; Right click on the left-side - not on the display of the disk - and select &#34;Initialize Disk&#34; from the menu.&lt;/p&gt;
-&lt;p&gt;Take note of the note, and either change the partitation style (seemingly more applicable for larger disks) and press OK.&lt;/p&gt;
-&lt;p&gt;Next right-click on the display of the disk and select &#34;New Simple Volume...&#34; from the menu. A wizard will start which will walk you through the process of specifying a volume size, assigning a drive letter, and formatting the volume.&lt;/p&gt;
-&lt;p&gt;After a format the disk will be attached and AutoPlay should trigger.&lt;/p&gt;
-&lt;h3&gt;Working with the VHD&lt;/h3&gt;
-&lt;p&gt;Now that you have a VHD created and attached you can add new files to the drive, as you would with any other. Once you&#39;re finished with the disk you can detach the VHD back in Disk Management. (You also have the ability to delete it after removing it, if you so desire.)&lt;/p&gt;
-&lt;p&gt;If you need to add it back on later you can select Action &amp;gt; Attach VHD to browse to the location of the virtual hard disk, and can even make it read only if needed.&lt;/p&gt;
-&lt;h3&gt;Working with VHDs in VirtualBox&lt;/h3&gt;
-&lt;p&gt;Unfortunately it doesn&#39;t appear that detached VHDs can be used in Sun&#39;s VirtualBox as additional drives.&lt;/p&gt;
-&lt;h3&gt;Encryption and security considerations&lt;/h3&gt;
-&lt;p&gt;Short of a higher-end version of Windows 7, or a third-party application, it doesn&#39;t appear that any level of encryption is available on created VHDs, which limits their use as storing secured documents. However, excluding times when the VHD is attached, Windows (7) doesn&#39;t appear to search within them, which means they may still serve against non-technical users.&lt;/p&gt;
-&lt;h3&gt;Portability&lt;/h3&gt;
-&lt;p&gt;The fact that they can&#39;t be attached directly via VirtualBox is unfortunate, but doesn&#39;t mean that the VHDs couldn&#39;t serve to consolidate information into a single file, which could then be copied from computer to computer, as needed. While we lose out on compression, in the case of using some sort of compressed file format, we seemingly get faster access to the content.&lt;/p&gt;
-&lt;p&gt;Definitely further testing is required.&lt;/p&gt;
-&lt;h3&gt;Additional information&lt;/h3&gt;
-&lt;p&gt;Microsoft has a &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?familyid=D2AFACBB-5AF6-45C2-B275-932116E27B0B&amp;amp;displaylang=en&#34;&gt;Virtual Hard Disk Getting Started Guide&lt;/a&gt;, but it focuses more on the administrative benefits of using VHDs for building new PCs, or testing, as opposed to using them as virtual drives.&lt;/p&gt;
-</description>
+      <description>With the new versions of Windows, Virtual Hard Disks (VHDs) are no longer just for virtualized environments.</description>
     </item>
     
     <item>
@@ -65,17 +34,7 @@
       <pubDate>Fri, 09 Oct 2009 20:43:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Solved-Upgrading-to-Windows-7-on-an-HP-a6360t-with-a-second-hard-drive/</guid>
-      <description>&lt;p&gt;I purchased an HP Pavilion a6360t with Windows Vista Home&amp;nbsp;Premium&amp;nbsp;and later upgraded it (due to a conference) for free to Windows Vista Ultimate, and then added a second hard drive.&lt;/p&gt;
-&lt;p&gt;What would happen when I upgraded to Windows 7 Home Premium? Could I use the 64-bit version?&lt;/p&gt;
-&lt;p&gt;The answer to these questions is, due to testing, below:&lt;/p&gt;
-&lt;h3&gt;Windows 7&lt;/h3&gt;
-&lt;p&gt;Upgrading, doing a custom/clean install on my primary drive required approximately 38 minutes. That&#39;s it. That&#39;s for about 170 GB of data on a 455 GB drive/partition.&lt;/p&gt;
-&lt;p&gt;A Windows.old directory &lt;em&gt;was&lt;/em&gt; created and contains PerfLogs, Program Files, Users, and Windows directories, however since I backed everything up, I believe these can be safely removed.&lt;/p&gt;
-&lt;h3&gt;64-bit&lt;/h3&gt;
-&lt;p&gt;Running an Intel tool to verify, I was rather certain that I would be able to run a 64-bit operating system. And I can.&lt;/p&gt;
-&lt;h3&gt;Second hard drive&lt;/h3&gt;
-&lt;p&gt;The second hard drive was untouched. I did notice some weirdness when I was downloading Microsoft&#39;s AV solution, where a temporary directory was created on my secondary drive, but everything on the drive is still there, as I wanted.&lt;/p&gt;
-</description>
+      <description>My experience performing the initial upgrade of my HP Pavilion a6360t to Windows 7 Home Premium, 64-bit.</description>
     </item>
     
   </channel>

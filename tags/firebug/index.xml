@@ -16,13 +16,7 @@
       <pubDate>Sat, 14 Jul 2007 09:33:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-Theme-StrivingLife-%28almost-done%29/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve almost completed converting the WordPress theme to a BlogEngine.NET theme.
-&lt;/p&gt;
-&lt;p&gt;
-The only hard part is when BlogEngine.NET (or ASP.NET) restricts write access to the CSS file. In these cases I have to tweak the CSS file using Firebug. It&amp;#39;s a bit of a chore, since BlogEngine.NET compresses the CSS file so much (which is a good thing, in the long term), but since I&amp;#39;m also changing the file locally in Dreamweaver, it&amp;#39;s just a matter of copying and pasting (over the Firebug CSS content).  
-&lt;/p&gt;
-</description>
+      <description>Since BlogEngine.NET CSS files can get locked, it&#39;s sometimes necessary to pull out Firebug.</description>
     </item>
     
   </channel>

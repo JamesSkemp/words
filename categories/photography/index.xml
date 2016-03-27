@@ -16,16 +16,7 @@
       <pubDate>Sat, 26 Jul 2008 22:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/James-Skemp-Photography/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;m sure I&amp;#39;ll need to tweak it, but I&amp;#39;ve technically launched my galleries for my photography &amp;#39;business&amp;#39; (I use the word lightly at this point).
-&lt;/p&gt;
-&lt;p&gt;
-View the galleries online at &lt;a href=&#34;http://jamesrskemp.com/gallery/&#34;&gt;http://jamesrskemp.com/gallery/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-It only took three days, but I&amp;#39;m pretty happy with how things turned out. I&amp;#39;d really like to have the individual photos display a bit better, but ...
-&lt;/p&gt;
-</description>
+      <description>Galleries are now up, and photos can now be purchased.</description>
     </item>
     
     <item>
@@ -34,13 +25,7 @@ It only took three days, but I&amp;#39;m pretty happy with how things turned out
       <pubDate>Sun, 30 Mar 2008 15:15:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Over-10000-digital-photos-taken/</guid>
-      <description>&lt;p&gt;Yesterday afternoon I took digital photo number 10,000.&lt;/p&gt;
-&lt;p&gt;Between the three digital cameras that I&#39;ve owned (and excluding the one that I borrowed from my sister, which was&amp;nbsp;a gift from her friend Char), I&#39;ve taken the following.&lt;/p&gt;
-&lt;p&gt;From April 6 2005 to May 9 2007, I took 2924 photos with a Canon 300D (Digital Rebel).&lt;/p&gt;
-&lt;p&gt;From May 18 2007 to March 29 2008, I took 6447 photos with a Canon Digital Rebel XT (350D).&lt;/p&gt;
-&lt;p&gt;From February 2 2008 to March 29 2008, I took 776 photos with a Casio EX-Z1200.&lt;/p&gt;
-&lt;p&gt;They say that your first 10,000 photos are your worst, and since I was only able to pick out a little more than 600 that I thought would be good enough to &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/&#34;&gt;sell&lt;/a&gt;, I do hope that that&#39;s true.&lt;/p&gt;
-</description>
+      <description>I recently hit the 10,000 mark for digital photo taken. [slnet0514:c5c7a7b1-71ba-4621-83bc-82e988847d30]</description>
     </item>
     
     <item>
@@ -49,30 +34,7 @@ It only took three days, but I&amp;#39;m pretty happy with how things turned out
       <pubDate>Thu, 27 Mar 2008 20:50:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Are-the-Adobe-Photoshop-Express-terms-too-tough-to-work-with/</guid>
-      <description>&lt;p&gt;
-Recently the much anticipated &lt;a href=&#34;http://www.photoshop.com/express/&#34; target=&#34;_blank&#34;&gt;Photoshop Express&lt;/a&gt; was released. However, crawling through the general terms of use there&amp;#39;s a rather troublesome paragraph. 
-&lt;/p&gt;
-&lt;p&gt;
-Using the terms that are effective 3/1/2008, at &lt;a href=&#34;http://www.photoshop.com/express/terms.html&#34; target=&#34;_blank&#34;&gt;http://www.photoshop.com/express/terms.html&lt;/a&gt;, we have the following at 8.a.: 
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    Adobe does not claim ownership of Your Content. However, with respect to Your Content that you submit or make available for inclusion on publicly accessible areas of the Services, &lt;strong&gt;you grant Adobe a worldwide, royalty-free, nonexclusive, perpetual, irrevocable, and fully sublicensable license to use, distribute, derive revenue or other remuneration from, reproduce, modify, adapt, publish, translate, publicly perform and publicly display such Content (in whole or in part) and to incorporate such Content into other Materials or works in any format or medium now known or later developed.&lt;/strong&gt; 
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-(Emphasis is my own.) 
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m lucky enough to have a copy of Photoshop CS2, but this paragraph has effectively removed it as an alternative while on someone else&amp;#39;s machine, or as something I can recommend to others, professionally. 
-&lt;/p&gt;
-&lt;p&gt;
-Now if the individual has their photo&amp;nbsp;on some of the various 2.0 photo social networks, then I can recommend this, since their photos are effectively for anyone to do with as they will (&amp;#39;dump your friends&amp;#39;). 
-&lt;/p&gt;
-&lt;p&gt;
-But, as someone who wants to protect his work product ... 
-&lt;/p&gt;
-</description>
+      <description>Photoshop Express Beta was released, but can we really use it? [slnet0514:952f50c1-42dd-4875-bb34-319e36f367d2]</description>
     </item>
     
     <item>
@@ -81,108 +43,7 @@ But, as someone who wants to protect his work product ...
       <pubDate>Sun, 24 Feb 2008 08:50:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Using-Xml4Ssp-13-Rev-1/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;http://www.locandadelborgo.com/download/index.asp&#34; target=&#34;_blank&#34;&gt;Xml4Ssp&lt;/a&gt; is a Windows XML generator for &lt;a href=&#34;http://slideshowpro.net/&#34; target=&#34;_blank&#34;&gt;SlideShowPro&lt;/a&gt;. While the program still needs some work, it&amp;#39;s pretty usable as it is. 
-&lt;/p&gt;
-&lt;p&gt;
-Since there&amp;#39;s no real documentation, I&amp;#39;ll be covering how I ended up using it to generate my latest &lt;a href=&#34;http://words.strivinglife.com/gallery/&#34; target=&#34;_blank&#34;&gt;gallery&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;h3&gt;Starting folder structure&lt;/h3&gt;
-&lt;p&gt;
-I began with the following folder structure: 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    casio_images 
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        &amp;nbsp;Pearl 
-        &lt;/div&gt;
-        &lt;ul&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            FullsizeImage 
-            &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Images 
-            &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            &lt;div&gt;
-            Thumb 
-            &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-The only folder that contained content was the FullsizeImage directory, in which I dumped my JPG originals. 
-&lt;/p&gt;
-&lt;h3&gt;Xml4Ssp setup&lt;/h3&gt;
-&lt;p&gt;
-Assuming it&amp;#39;s already installed and started, I created a New gallery. 
-&lt;/p&gt;
-&lt;p&gt;
-Next, I browsed to the gallery folder, and began filling out the rest as follows. 
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    &lt;strong&gt;Browse gallery folder&lt;/strong&gt;:&lt;strong&gt; &lt;/strong&gt;C:\Documents and Settings\Owner\Desktop\temp\casio_images 
-    &lt;/p&gt;
-    &lt;p&gt;
-    Album options 
-    &lt;/p&gt;
-    &lt;blockquote&gt;
-        &lt;p&gt;
-        &lt;strong&gt;Images folder name:&lt;/strong&gt; FullsizeImag&lt;br /&gt;
-        &lt;strong&gt;Album Title/Description:&lt;/strong&gt; Use Foldername&lt;br /&gt;
-        &lt;strong&gt;Use Permalinks:&lt;/strong&gt; None 
-        &lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;p&gt;
-    Image options 
-    &lt;/p&gt;
-    &lt;blockquote&gt;
-        &lt;p&gt;
-        &lt;strong&gt;Search for:&lt;/strong&gt; JPG&lt;br /&gt;
-        &lt;strong&gt;Images caption:&lt;/strong&gt; Use Filename&lt;br /&gt;
-        &lt;strong&gt;Use Hyperlink:&lt;/strong&gt; None&lt;br /&gt;
-        &lt;strong&gt;Larger Image Folder:&lt;/strong&gt; FullsizeImage 
-        &lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;p&gt;
-    Thumb Options 
-    &lt;/p&gt;
-    &lt;blockquote&gt;
-        &lt;p&gt;
-        &lt;strong&gt;Thumb folder name:&lt;/strong&gt; Thumb&lt;br /&gt;
-        &lt;strong&gt;Create Thumbnails&lt;/strong&gt; (checked)&lt;br /&gt;
-        &lt;strong&gt;Width:&lt;/strong&gt; 100&lt;br /&gt;
-        &lt;strong&gt;Height:&lt;/strong&gt; 75&lt;br /&gt;
-        Constrain proportion by Width&lt;br /&gt;
-        &lt;strong&gt;Resize method:&lt;/strong&gt; nearest neighbor (Default)&lt;br /&gt;
-        &lt;strong&gt;Quality:&lt;/strong&gt; 50 
-        &lt;/p&gt;
-    &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;Cleanup&lt;/h3&gt;
-&lt;p&gt;
-Once I generated, it successfully created the thumbnails, but did not create the resized images. This leads me to believe that the FullsizeImage directory is not resized at all. 
-&lt;/p&gt;
-&lt;p&gt;
-On the one hand this is good, on the other, it would be nice if it did. You can fix this by saving the generated XML file and changing the Thumb folder name to another directory. Next, change the width/height/constrains/quality accordingly. 
-&lt;/p&gt;
-&lt;p&gt;
-And with that, you&amp;#39;ve generated a gallery, with the necessary XML file, in less than usual time! 
-&lt;/p&gt;
-</description>
+      <description>Quick guide on how to use Xml4Ssp to generate a gallery for SlideShowPro. [slnet0514:e9cc4dbe-87a8-492d-9806-00dedba6f961]</description>
     </item>
     
     <item>
@@ -191,16 +52,7 @@ And with that, you&amp;#39;ve generated a gallery, with the necessary XML file, 
       <pubDate>Wed, 23 May 2007 07:31:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Gallery-updates-Capitol-Madison-WI/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve added four new photos to the Capitol - Madison WI gallery at &lt;a href=&#34;http://strivinglife.com/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-These four pictures were taken last night off of John Nolen Drive. They still need some cleanup before I even think about printing them off, but, it&amp;#39;s a start.
-&lt;/p&gt;
-&lt;p&gt;
-Best of all, the perspective includes the &amp;#39;magic spot&amp;#39;, where I&amp;#39;ve been wanting to take a picture from for a very long time ...
-&lt;/p&gt;
-</description>
+      <description>I&#39;ve added four new photos to the Capitol - Madison WI gallery at http://strivinglife.net/gallery/.</description>
     </item>
     
     <item>
@@ -209,16 +61,7 @@ Best of all, the perspective includes the &amp;#39;magic spot&amp;#39;, where I&
       <pubDate>Mon, 21 May 2007 22:14:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/New-gallery-posted/</guid>
-      <description>&lt;p&gt;
-After a bit of looking around, for the best gallery application, I&amp;#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&amp;#39;m requiring version 8 or higher for mine), and it did cost some money, it&amp;#39;s a great little application.
-&lt;/p&gt;
-&lt;p&gt;
-You can see what I&amp;#39;ve currently got available at &lt;a href=&#34;http://words.strivinglife.com/gallery/&#34;&gt;http://strivinglife.net/gallery/&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s still a lot I&amp;#39;ve got to play with, but, it&amp;#39;s at least got a start of 12 images (at this time). The gallery requires a pretty fast connection, but it is what it is.
-&lt;/p&gt;
-</description>
+      <description>Galleries of pictures/images are once again available on StrivingLife.net.</description>
     </item>
     
     <item>
@@ -227,86 +70,7 @@ There&amp;#39;s still a lot I&amp;#39;ve got to play with, but, it&amp;#39;s at 
       <pubDate>Fri, 18 May 2007 18:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-my-digital-camera/</guid>
-      <description>&lt;p&gt;
-On April 6, 2005, I bought my very first digital camera. On May 18, 2007, I bought my very second digital camera.
-&lt;/p&gt;
-&lt;p&gt;
-Due, in no small part, to my sister Tiffany Skemp&amp;#39;s help, and the great salesperson at Madison&amp;#39;s very own The Camera Company (East location), I bought a Canon EOS Digital Rebel (300D) kit, with the EF-S 18-55mm lens. He threw in a UV Filter (58mm), and I purchased a Promaster CompactFlash Memory Card (256MB).&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-799.99 + 35.99 = a lot of money. Add to that Wisconsin&amp;#39;s sales tax of $45.98 ...  But, it was basically an early birthday present for myself.
-&lt;/p&gt;
-&lt;p&gt;
-A little older and wiser, I was planning on purchasing a new lens; in particular, I was looking at the Canon EF 75-300mm lens, with f4-5.6 and USM.  $240.  Of course, it was my birthday (once again, yes, it has happened before).  But, I was really tempted to upgrade. I&amp;#39;d recently done my first real batch of printed photos, and had printed out some fairly large ones at that. I was impressed overall, but figured I could do better.
-&lt;/p&gt;
-&lt;p&gt;
-Therefore, I was looking at upgrading. But, I didn&amp;#39;t need two cameras.  My mom said that she&amp;#39;d actually purchase my current camera, and I was off.
-&lt;/p&gt;
-&lt;p&gt;
-Both the Canon 350D and 400D (both Digital Rebel, both for my level of photography skills - amateur, but who knew that he&amp;#39;d have to buy a camera that could swap lens) jumped out at me. I had one problem with my camera; namely that it had made one memory card go bad (probably my original memory card), but I had bought a second, and Promaster replaced the bad one free of charge (with a higher speed one at that), and I had had no other trouble.
-&lt;/p&gt;
-&lt;p&gt;
-So, Canon had me hooked. I didn&amp;#39;t care for the silver body of my camera, but that wasn&amp;#39;t such a big deal (and both the 350D and 400D had black bodies available).
-&lt;/p&gt;
-&lt;p&gt;
-Nikon has been doing a lot of commercials recently, and so I was tempted to see what they offered, but I figured that since Canon hadn&amp;#39;t let me down yet ...
-&lt;/p&gt;
-&lt;p&gt;
-A bit of online research (dpreview.com primarily) and speaking with Scott at The Camera Companies east location brought me to my next camera, the Canon EOS Digital Rebel XT (350D). I was happy with the kit lens last time, so kit lens this time it was.
-&lt;/p&gt;
-&lt;p&gt;
-It was a jump from my simple lens purchase, which I&amp;#39;d been putting off for two Christmas Days and one birthday, but ...
-&lt;/p&gt;
-&lt;p&gt;
-Of course, you need a bag, when you&amp;#39;re going to throw that in with your old camera, so I needed a new bag. I might as well also have another 2GB memory card, and give the two 256MB cards away, so that was expected.
-&lt;/p&gt;
-&lt;p&gt;
-And finally, a UV Filter. I had purchased an extra 58mm a short time ago, so I didn&amp;#39;t need one for the kit lens, but would need one for the zoom.
-&lt;/p&gt;
-&lt;p&gt;
-All in all, that&amp;#39;s 699.99 for the camera, 239.99 for the lens, 69.99 for another 2GB card, and an unknown amount for the bag and filter (I figured $40 and $15 respectively, based upon The Camera Company&amp;#39;s site).
-&lt;/p&gt;
-&lt;p&gt;
-I &lt;em&gt;knew&lt;/em&gt; that I had to buy my camera from The Camera Company, so once I knew what I wanted, inside I went ...
-&lt;/p&gt;
-&lt;br /&gt;
-&lt;p&gt;
-Now the thing about The Camera Company is that they&amp;#39;re going to talk to you if you want to talk to them. If you just want to get your thing and get out, they&amp;#39;ll do that, but they&amp;#39;ll also work with you.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve been to both their east and downtown locations a little over a half a dozen times total. The downtown location is usually run by one guy, who&amp;#39;s really nice, and the east location has two or three usually. I&amp;#39;ve been to the west location once, to exchange filters, and it&amp;#39;s a deal bigger, and therefore had more people around. But, I didn&amp;#39;t really look around, so that&amp;#39;s all I can say about that. You can take classes at the west location, and I guess most of the instructors work there, so that&amp;#39;s probably the best place to start out. But, the east location is close to work, and I like the place.
-&lt;/p&gt;
-&lt;p&gt;
-Anyways, I asked the questions and because of that, I saved $40 by purchasing a Promaster lens. While I was a bit hesitant at first, I knew the Promaster brand. I also asked the salesperson how the lens was, and she told me it was comparable to Canon&amp;#39;s. It also had some macro functionality.
-&lt;/p&gt;
-&lt;p&gt;
-If I still believed in God, this would have been like a thunderbolt from God. But, I don&amp;#39;t, so it wasn&amp;#39;t. It was more like, perhaps, things coming together perfectly. Either way it&amp;#39;s an illusion, but, it doesn&amp;#39;t much matter, since it worked.
-&lt;/p&gt;
-&lt;p&gt;
-It just happens that part of the reason it took me so long to get a lens was because I didn&amp;#39;t know if I liked macro or landscape photography more.
-&lt;/p&gt;
-&lt;p&gt;
-While I was living downtown, I got the best of both worlds (and I&amp;#39;m throwing architectural photography in here as well). Downtown Madison Wisconsin is a great place to get photos; it&amp;#39;s so very diverse. Part of this is because of one of it&amp;#39;s biggest problems; the UW Campus is just miles away, if that, from the Capitol.
-&lt;/p&gt;
-&lt;p&gt;
-So, you can walk from the Monona Terrace off Lake Monona, to the Capitol, to State St, to the UW Campus.  Not all of it, granted, but nature to blend to city to blend to nature.
-&lt;/p&gt;
-&lt;p&gt;
-Anyways, I was living downtown when I purchased my camera, and was therefore able to get a wide variety of pictures. Not being able to choose what kind of pictures I liked the most, I choose neither (or, what is the same in these types of decisions, I choose them all).
-&lt;/p&gt;
-&lt;p&gt;
-The other weekend (quite a few ago, actually) I headed over to the Henry Vilas Zoo with my mom (instead of my sister, who was originally going to go). After viewing my pictures from there, I knew that I would need to purchase a zoom lens; I just couldn&amp;#39;t get the pictures I really wanted from there. Needing to make a decision, zoom lens it was.
-&lt;/p&gt;
-&lt;p&gt;
-Which brings us back to many many paragraphs ago.  The great salesperson told me about the Promaster Spectrum7 AF70-300 EDO, some pictures were taken, and I was sold. Best of all?  Only $199.99.
-&lt;/p&gt;
-&lt;p&gt;
-All said, a little over $1050 dollars. Of course, I already have a 2GB memory card, so I could have done without. But, it&amp;#39;s a good thing I bought it since it was only $59.99 (id est, $10 cheaper than normal). Factor in a $25 dollar gift ...  Factor in $350+ in freelance work ... Factor in $100 for my birthday ...
-&lt;/p&gt;
-&lt;p&gt;
-I love photography (below Philosophy and Web work, in that order), so it was a no-brainer.
-&lt;/p&gt;
-</description>
+      <description>About my experience upgrading from a Canon EOS Digital Rebel (300D) to a Canon EOS Digital Rebel XT (350D).</description>
     </item>
     
     <item>
@@ -315,21 +79,7 @@ I love photography (below Philosophy and Web work, in that order), so it was a n
       <pubDate>Sat, 28 Apr 2007 07:03:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Picture-resolution-requirements-for-prints/</guid>
-      <description>&lt;p&gt;
-What follows is, for more my own information than for anyone else, is a listing of common print sizes, and the approximate resolution a photo must be in order to print well and acceptably. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The math involved is to take the size of the print and multiply each side by either 300 or 200. 300 (dpi) is the best quality, while 200 (dpi) is acceptable. Armed with these two answers, you can then have a nice range of which you should shoot for. Below are the numbers found from a handful of sites. 
-&lt;/p&gt;
-&lt;dl&gt;&lt;dt&gt;4x6&lt;/dt&gt;&lt;dd&gt;Best: 1600x1200&lt;sup&gt;1, 3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Lower: 1280x960&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Minimum: 540x360&lt;sup&gt;2&lt;/sup&gt;; 1024 x 768&lt;sup&gt;4, 5&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Absolute minimum: 640x480&lt;sup&gt;4&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;5x7&lt;/dt&gt;&lt;dd&gt;Best: 2048x1536&lt;sup&gt;1, 3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Medium: 1600x1200&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Minimum: 1152 x 864&lt;sup&gt;4, 5&lt;/sup&gt;; 630x450&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;8x10&lt;/dt&gt;&lt;dd&gt;Best: 2560x1920&lt;sup&gt;1, 3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Medium: 2048x1536&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Lower: 1600x1200&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Minimum: 1600x1200&lt;sup&gt;4&lt;/sup&gt;; 1536x1024&lt;sup&gt;5&lt;/sup&gt;; 900x720&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;8x12&lt;/dt&gt;&lt;dd&gt;Best: 2560x1920&lt;sup&gt;1&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;11x14&lt;/dt&gt;&lt;dd&gt;Best: 3072x2048&lt;sup&gt;1, 3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Medium: 2560x1920&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Lower: 2048x1536&lt;sup&gt;3, 5&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Minimum: 1260x990&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;12x18&lt;/dt&gt;&lt;dd&gt;Best: 3072x2048&lt;sup&gt;1&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Medium: 3072x2048&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Lower: 2560x1920&lt;sup&gt;3&lt;/sup&gt;&lt;/dd&gt;&lt;dd&gt;Minimum: 2048x1536&lt;sup&gt;5&lt;/sup&gt;; 1620x1080&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;16x20&lt;/dt&gt;&lt;dd&gt;Minimum: 1800x1440&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;dt&gt;20x30&lt;/dt&gt;&lt;dd&gt;Minimum: 2700x1800&lt;sup&gt;2&lt;/sup&gt;&lt;/dd&gt;&lt;/dl&gt;
-&lt;p&gt;
-Information has been culled from Dummies (listed as 1), Walgreens (2), Samy&amp;#39;s Camera (3), and Shutterfly (4). The Photo Company used to have information online, but I&amp;#39;m not finding it any more ... (hence my decision to write on this). 
-&lt;/p&gt;
-&lt;p&gt;
-Edit: Found The Camera Company information (listed as 5). 
-&lt;/p&gt;
-</description>
+      <description>Since I keep having to do a Google search, I&#39;ve decided to write on what resolutions are necessary for what size prints. [slnet0514:1c811b57-f616-4c0c-b88f-f6ed52c006aa]</description>
     </item>
     
     <item>
@@ -338,28 +88,7 @@ Edit: Found The Camera Company information (listed as 5).
       <pubDate>Thu, 05 Oct 2006 22:12:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Photoshop-is-fun%21/</guid>
-      <description>&lt;p&gt;
-Duh.
-&lt;/p&gt;
-&lt;p&gt;
-Unfortunately, much like Google Video, you can get sucked into the program and end up spending hours (2 and a half in my case) goofing around, getting nothing of real value done.  Of course, that begs the question of whether experience, as experience, is of any value.  Do we, simply by experiencing, benefit?  I suppose when it comes to use a technology, like Photoshop, any experience is a good experience.  (But what if you&amp;#39;re using the tools incorrectly?)
-&lt;/p&gt;
-&lt;p&gt;
-I had my photo taken back in June 2006.  I finally downloaded them to my home computer and started goofing off.  Here&amp;#39;s a before and after image.
-&lt;/p&gt;
-&lt;p style=&#34;text-align: center&#34;&gt;
-&lt;img style=&#34;width: 400px; height: 279px&#34; src=&#34;http://words.strivinglife.com/files/images/20061005_400_1.jpg&#34; alt=&#34;James Skemp, circa June 2006&#34; title=&#34;James Skemp, circa June 2006&#34; width=&#34;400&#34; height=&#34;279&#34; /&gt;&lt;img style=&#34;width: 400px; height: 279px&#34; src=&#34;http://words.strivinglife.com/files/images/20061005_400_2.jpg&#34; alt=&#34;James Skemp, circa June 2006&#34; title=&#34;James Skemp, circa June 2006&#34; width=&#34;400&#34; height=&#34;279&#34; /&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I don&amp;#39;t know, I don&amp;#39;t think it&amp;#39;s too bad at all.  Photoshop CS2, with special thanks to my Wacom Graphire4.  I shudder to think how difficult this would have been with a simple mouse.  Now if only I could afford a &lt;a href=&#34;http://www.wacom.com/lcdtablets/&#34;&gt;Cintiq&lt;/a&gt; ...
-&lt;/p&gt;
-&lt;p&gt;
-Closing note: thanks to Google for paying for a year&amp;#39;s worth of hosting.  Thanks to AdSense, I received my first $100+ check a couple of days ago (which covered through August 31).  Normally, that would be almost $100 out of my own pocket, which I&amp;#39;d just have to put up (since I&amp;#39;m not leaving the Web for a long while), but G has successfully enabled me to keep writing, with only a cost of time.
-&lt;/p&gt;
-&lt;p&gt;
-Anywho, I&amp;#39;ll have to take some of my own photos and see if I can play around with Photoshop a bit more ...
-&lt;/p&gt;
-</description>
+      <description>Is Photoshop fun?  Duh.  Instead of using a filter, which is what I wanted to do in the first place, I did my own &#39;filter&#39;. Not too shabby, but that&#39;s me.</description>
     </item>
     
     <item>
@@ -368,13 +97,7 @@ Anywho, I&amp;#39;ll have to take some of my own photos and see if I can play ar
       <pubDate>Mon, 15 May 2006 21:13:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-Earth-Blue-Marble/</guid>
-      <description>&lt;p&gt;
-A couple of weeks ago I was alerted to NASA&amp;#39;s Earth photography. Really, it&amp;#39;s amazing work. &lt;a href=&#34;http://visibleearth.nasa.gov/view_set.php?categoryID=2363&#34;&gt;visibleearth.nasa.gov/view_set.php?categoryID=2363&lt;/a&gt;&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got a great image of North America on my desktop at work - full sized image. Beautiful.
-&lt;/p&gt;
-</description>
+      <description>Link to NASA&#39;s Visible Earth site.</description>
     </item>
     
   </channel>

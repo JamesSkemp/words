@@ -16,33 +16,7 @@
       <pubDate>Sun, 29 Aug 2010 10:28:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Personal-NetBeans-IDE-691-setting-tweaks/</guid>
-      <description>&lt;p&gt;&lt;p&gt;For my own personal reference, I&amp;rsquo;ve made the following tweaks to the default install of &lt;a rel=&#34;external&#34; href=&#34;http://netbeans.org/&#34;&gt;NetBeans&lt;/a&gt; IDE 6.9.1.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tools
-&lt;ul&gt;
-&lt;li&gt;Options
-&lt;ul&gt;
-&lt;li&gt;Editor
-&lt;ul&gt;
-&lt;li&gt;Formatting
-&lt;ul&gt;
-&lt;li&gt;Language: All Languages / Category: Tabs and Indents
-&lt;ul&gt;
-&lt;li&gt;Expand Tabs to Spaces: unchecked (from checked)&lt;/li&gt;
-&lt;li&gt;Number of Spaces per Indent: 4 (default)&lt;/li&gt;
-&lt;li&gt;Tab Size: 4 (from 8)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>Tweaks I&#39;ve made to my installation of NetBeans IDE, version 6.9.1.</description>
     </item>
     
   </channel>

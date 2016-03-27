@@ -16,14 +16,7 @@
       <pubDate>Sat, 22 May 2010 18:35:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Flying-under-the-radar-Cassini-40-released/</guid>
-      <description>&lt;p&gt;Under seemingly new ownership, &lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/cassini/&#34;&gt;Cassini 4.0&lt;/a&gt; has been released, via Google Code.&lt;/p&gt;
-&lt;p&gt;Since a download isn&#39;t available, a link to a built version is included below.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/Cassini-v4r4.zip&#34;&gt;Download Cassini 4.0, based on revision 4&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Visit &lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/cassini/&#34;&gt;Cassini on Google Code&lt;/a&gt; to see the nice new interface and functionality. Of major importance is that it supports .NET Framework 4.&lt;/p&gt;
-&lt;p&gt;Tested on a Windows 7 Home Premium, 64-bit, machine.&lt;/p&gt;
-&lt;h3&gt;Note on building it yourself&lt;/h3&gt;
-&lt;p&gt;To save you some time, if you want to build a copy yourself open the project properties and on the Build tab check &#34;Allow unsafe code.&#34; You should otherwise have no issues.&lt;/p&gt;
-</description>
+      <description>Cassini 4.0, featuring a number of improvements, has been released as open source. Pre-built version available here.</description>
     </item>
     
     <item>
@@ -32,16 +25,7 @@
       <pubDate>Sun, 03 Jan 2010 18:10:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Cassini-3502-built-and-ready-to-go/</guid>
-      <description>&lt;p&gt;Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&amp;nbsp;a full-fledged instance of IIS.&lt;/p&gt;
-&lt;p&gt;While Cassini should not be used in production environments, it&#39;s more than enough to run for minor development, or even minor projects.&lt;/p&gt;
-&lt;p&gt;The last official version of Cassini at the time of this writing&amp;nbsp;is &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;3.5.0.2&lt;/a&gt;. Since he&#39;s released the source, you can build your own, but what if you just want to download a pre-built version? Well now you can.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/Cassini_3.5.0.2.zip&#34;&gt;Download Cassini 3.5.0.2&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;While tempted, I&#39;ve made no modifications. I have included a simple batch file (_startCassini.bat) however that allows you to copy this and the Cassini executable to a directory, and start Cassini from that directory. This also allows you to distribute your projects to others to run in a test environment. (I believe ELMAH uses something like this, but I kept, and keep,&amp;nbsp;neglecting to look at how he implemented it.)&lt;/p&gt;
-&lt;p&gt;The batch file is simply the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;Cassini-v35.exe &#34;%cd%&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Cassini does support additional arguments, which is documented in the ReadMe.txt. The MS-PL license is also included in the zip.&lt;/p&gt;
-&lt;p&gt;You may also be interested in &lt;a rel=&#34;external&#34; href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; (I haven&#39;t looked into this project) and you&#39;ll want to have the current version of the &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework&lt;/a&gt; installed.&lt;/p&gt;
-</description>
+      <description>Want to run ASP.NET Web applications on your computer, without IIS? Here&#39;s a compiled version of Cassini to get you on your way.</description>
     </item>
     
     <item>
@@ -50,15 +34,7 @@
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
-      <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
-&lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
-&lt;p&gt;I decided to start with Dmitry&#39;s release and downloaded and built the application. Since I&#39;m looking into building extensions for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34;&gt;BlogEngine.NET&lt;/a&gt; (to work against some spam issues and for general knowledge), as well as wanting to work on themes, I decided to see if I could get BE working on Cassini.&lt;/p&gt;
-&lt;p&gt;And it does, right out of the box (version 1.5.0.7).&lt;/p&gt;
-&lt;p&gt;On a Windows XP Professional box memory usage jumped to approximately 100 MB (which is about what I see on my own blog, with a little over 780 posts). On my Windows 7 Home Premium (64-bit) machine, however, memory usage sat under 40 MB.&lt;/p&gt;
-&lt;p&gt;Either way, I was able to login just fine.&lt;/p&gt;
-&lt;p&gt;Next I&#39;ll probably see if I can get an MVC Web site up and running on Cassini as well.&lt;/p&gt;
-</description>
+      <description>Cassini Personal Web Server may just be what you need to quickly work with BlogEngine.NET for extension and theme creation.</description>
     </item>
     
   </channel>
