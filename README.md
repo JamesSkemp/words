@@ -13,6 +13,10 @@ First, start Hugo, if you want to preview the content as you write it.
 
 Next create a new file in the **content\post** directory. Use the awesome [Dillinger](http://dillinger.io/) as needed.
 
+```
+..\hugo.exe new post/post-name.md
+```
+
 Once you're okay with the content, stop Hugo by pressing **Ctrl + C**.
 
 Generate the site by running `..\hugo.exe`.
