@@ -16,45 +16,7 @@
       <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
-      <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
-
-&lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install the latest version of &lt;a href=&#34;http://msysgit.github.io/&#34; rel=&#34;external&#34;&gt;msysgit&lt;/a&gt; (currently 1.8.4).&lt;/li&gt;
-&lt;li&gt;Set execution policy (run as administrator).&lt;ul&gt;&lt;li&gt;&lt;code&gt;Set-ExecutionPolicy RemoteSigned&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Install posh-git&lt;ul&gt;&lt;li&gt;&lt;code&gt;(new-object Net.WebClient).DownloadString(&#34;http://psget.net/GetPsGet.ps1&#34;) | iex&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Possibly open the Powershell profile and add the Git path when Powershell runs.&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add to the top of the file:&lt;br /&gt;&lt;code&gt;$env:path += &#34;;&#34; + (Get-Item &#34;Env:ProgramFiles(x86)&#34;).Value + &#34;\Git\bin&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a href=&#34;http://stackoverflow.com/a/17625052/11912&#34; rel=&#34;external&#34;&gt;G. Lombard&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Actually install posh-git.
-&lt;ul&gt;&lt;li&gt;&lt;code&gt;install-module posh-git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Verify/set global config options (user name and email).&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git config --global -l&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.name &#34;Your Name Here&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.email &#34;your_email@example.com&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;li&gt;Update push behavior:&lt;ul&gt;&lt;li&gt;&lt;code&gt;git config --global push.default simple&lt;/code&gt;&lt;/li&gt;&lt;li&gt;See &lt;a href=&#34;http://stackoverflow.com/a/13148313/11912&#34;&gt;Warning: push.default is unset; its implicit value is changing in Git 2.0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Since I&#39;m using Powershell 3.0 (ISE), I decided to remove the &#39;Dark&#39; color versions of the displayed information:&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following at the end of the file:&lt;ul&gt;
-&lt;li&gt;&lt;code class=&#34;powershell&#34;&gt;$global:GitPromptSettings.BeforeIndexForegroundColor = [ConsoleColor]::Green&lt;br /&gt;
-$global:GitPromptSettings.IndexForegroundColor       = [ConsoleColor]::Green&lt;br /&gt;
-$global:GitPromptSettings.WorkingForegroundColor    = [ConsoleColor]::Red&lt;br /&gt;
-$global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;See also &lt;a href=&#34;http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx&#34; rel=&#34;external&#34;&gt;Git customizing colors for Windows including posh-git&lt;/a&gt;&lt;ul&gt;&lt;li&gt;This involved running these two commands:&lt;br /&gt;&lt;code&gt;git config --global color.status.changed &#34;magenta normal bold&#34;&lt;/code&gt;&lt;br /&gt;&lt;code&gt;git config --global color.status.untracked &#34;magenta normal bold&#34;&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Todo&lt;/h3&gt;
-
-&lt;p&gt;http://deanclatworthy.com/2013/01/how-to-avoid-relying-on-github-mirror-your-repository/&lt;/p&gt;
-
-&lt;p&gt;http://www.harecoded.com/migrating-github-repo-to-bitbucket-or-similar-services-2275467&lt;/p&gt;
-</description>
+      <description>Rough guide on how to manually install Git on Windows.</description>
     </item>
     
     <item>
@@ -63,40 +25,7 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
       <pubDate>Wed, 25 Sep 2013 20:58:10 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Git-posh-git-commands/</guid>
-      <description>&lt;p&gt;This is a rough list, in no particular order (yet), but here&#39;s the commands I&#39;ve found useful after being converted to posh-git after &lt;a href=&#34;https://plus.google.com/110143205597803895575/posts/Qk4Cfs5Yi9P&#34;&gt;my Google+ post&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git add -u
-    Add all changes (including deletions)
-
-git rm &amp;lt;file&amp;gt;
-    Stage file deletion.
-
-git commit -m &#34;Message&#34;
-    Commit with Message.
-
-git push
-    Push to GitHub
-
-git status
-    See what has changed/etcetera
-
-git pull
-    Pull from GitHub
-
-git add &amp;lt;tab&amp;gt; &amp;lt;tab&amp;gt;
-    Add multiple files, space delimited
-
-git diff &amp;lt;file&amp;gt;
-    Difference. Use Shift + Q to quit.
-
-git reset HEAD &amp;lt;file&amp;gt;
-    Unstage change.
-
-git config -l
-    List all configuration settings for the current repository.
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>After frustration with GitHub for Windows, thanks to Google+ I&#39;ve completely switched to posh-git. Here are the commands I end up using.</description>
     </item>
     
     <item>
@@ -105,11 +34,7 @@ git config -l
       <pubDate>Fri, 01 Mar 2013 08:18:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Brief-thoughts-after-1-month-of-GitHub/</guid>
-      <description>&lt;p&gt;I&#39;ve been using GitHub for a little more than a month now, and it&#39;s been about 2 weeks since I shut down the machine running my local Subversion instance.&lt;/p&gt;
-&lt;p&gt;GitHub for Windows needs some work, but given that Phil Haack is/was working on the Windows aspect, I feel pretty confident that it&#39;ll continue to get better.&lt;/p&gt;
-&lt;p&gt;Moving to a system that allows for public repositories also allowed me to publish some really old code, that might be of benefit to someone. However, I am now paying $7 a month something that I wasn&#39;t before. There is a free Git provider that I&#39;ve looked at (and that I might use as a backup), but there&#39;s a benefit to having everything in one place. And GitHub seems pretty solid in the Git space.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;https://github.com/JamesSkemp&#34;&gt;View all my public repositories&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Very brief thoughts after about a month of GitHub.</description>
     </item>
     
     <item>
@@ -118,21 +43,7 @@ git config -l
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Converting-from-Subversion-to-Git-on-Windows/</guid>
-      <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
-&lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Unfortunately I had issues installing RubyGems. When I first installed Ruby I decided not to put it in my PATH. However, I couldn&#39;t install RubyGems.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\bin&amp;gt;ruby.exe ..\rubygems-1.8.25\setup.rb&lt;/pre&gt;
-&lt;p&gt;What I ended up having to do was call Ruby slightly differently.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\rubygems-1.8.25&amp;gt;..\bin\ruby.exe setup.rb&lt;/pre&gt;
-&lt;p&gt;However, it seems as though this step may not have even been necessary, since supposedly 1.9+ includes Gem support by default?&lt;/p&gt;
-&lt;p&gt;Then I got stuck (user credentials/user migration) and decided to search around, which caused me to find that TortoiseGit supported grabbing from SVN, but that requires msysgit. So I &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/msysgit/downloads/list?can=2&amp;amp;q=%22Full+installer+for+official+Git+for+Windows%22&#34;&gt;download msysgit&lt;/a&gt; and install it, unchecking a bunch of options since I don&#39;t intend on using TortoiseGit/msysgit after I get everything ported over.&lt;/p&gt;
-&lt;p&gt;Now I can download and install &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/tortoisegit/wiki/Download?tm=2&#34;&gt;TortoiseGit&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;At this point I&#39;m wondering if I screw having old commit logs. I&#39;ve already been thinking for a while how poor Windows support with Git is.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;And I ended up just deciding to start fresh.&lt;/p&gt;
-</description>
+      <description>Windows Git support sucks. Here&#39;s what I ended up doing over the course of a couple hours.</description>
     </item>
     
   </channel>

@@ -30,3 +30,8 @@ amazonwishlist = "http://amzn.to/22xk0cK"
     name = "Home"
     weight = 1
     url = "/"
+
+[[menu.header]]
+	name = "Subscribe"
+	weight = 3
+	url = "http://strivinglife.com/Words/Feed"

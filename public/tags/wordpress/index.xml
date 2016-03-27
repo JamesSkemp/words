@@ -16,22 +16,7 @@
       <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
-      <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
-&lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
-&lt;h3&gt;Web Platform Installer&lt;/h3&gt;
-&lt;p&gt;The &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/platform/default.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt; can be downloaded from Microsoft.com and acts as middle-ground between all of the various applications that it covers, which is fairly robust (a &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/gallery/&#34;&gt;full listing&lt;/a&gt; is available).&lt;/p&gt;
-&lt;p&gt;As you can see in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_01.jpg&#34;&gt;Figure 1&lt;/a&gt;, WordPress is available along with a handful of other blogging applications. Upon selecting this and pressing Install, you&#39;re presented with the listing of dependencies and other applications that may be required (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_03.jpg&#34;&gt;3&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_04.jpg&#34;&gt;4&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;While I was going to install MySQL on a dedicated virtual machine, and was able to deselect that, for ease I&#39;ve kept in selected here. At this time I&#39;m not sure (yet)&amp;nbsp;of how that would impact the installation process.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Since MySQL was being installed, I was prompted, right away before anything was downloaded, for an administrator password, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Even though I thought&amp;nbsp;I had everything installed for IIS, I was also prompted, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_06.jpg&#34;&gt;Figure 6&lt;/a&gt;, for a Windows Server 2003 disc.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_07.jpg&#34;&gt;Figure 7&lt;/a&gt; alludes to the fact that the individual requirements are downloaded and installed, moving right into the setup of any Web sites as required, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_08.jpg&#34;&gt;Figure 8&lt;/a&gt;. In this case I kept the defaults. Additional WordPress setups are shown in Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_09.jpg&#34;&gt;9&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_10.jpg&#34;&gt;10&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_11.jpg&#34;&gt;11&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_12.jpg&#34;&gt;12&lt;/a&gt;, where the database is setup. It&#39;s been a while since I&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed MySQL&lt;/a&gt;, so how this relates to that installation is unknown.&lt;/p&gt;
-&lt;p&gt;Once all components have been installed, you&#39;re presented with a nice little screen, like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_13.jpg&#34;&gt;Figure 13&lt;/a&gt;. You can then launch WordPress and go through the setups necessary (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_14.jpg&#34;&gt;14&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_15.jpg&#34;&gt;15&lt;/a&gt;), log in (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_16.jpg&#34;&gt;Figure 16&lt;/a&gt;) and view the administrative interface (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_17.jpg&#34;&gt;Figure 17&lt;/a&gt;) and home page (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_18.jpg&#34;&gt;Figure 18&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;Thoughts on the Platform Installer&lt;/h3&gt;
-&lt;p&gt;While I initially didn&#39;t think much of the installer, having actually used it, I&#39;m pleasantly surprised. It&#39;s an extremely simple process, similar to how one might install applications through, say, Ubuntu.&lt;/p&gt;
-&lt;p&gt;It takes a lot of the guess-work out of the process, which is rather nice. On the other hand, while I can get going with WordPress at this point (and I was able to do my testing fairly quickly), the disadvantage of this is that I don&#39;t know any of the complexities of the setup process. I haven&#39;t installed WordPress (or PHP, or MySQL), but rather an installer has. But, I like the challenge of figuring things out on my own.&lt;/p&gt;
-&lt;p&gt;Which is why while I like the Installer, and will definitely use it when I need to quickly test something, for the most part I&#39;ll probably stick with old-fashioned methods of installation.&lt;/p&gt;
-</description>
+      <description>Microsoft&#39;s Web Platform Installer has become a little better known, but how easy does it really make installations? In this article I use the Web Platform Installer to install WordPress (with MySQL, PHP, and etcetera) on Windows Server 2003.</description>
     </item>
     
     <item>
@@ -40,22 +25,7 @@
       <pubDate>Wed, 18 Jul 2007 19:18:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/WordPress-221-ImportExport-function-problems/</guid>
-      <description>&lt;p&gt;
-I had the &amp;#39;opportunity&amp;#39; today to import a WordPress blog from one server to another. While WordPress 2.2.x no comes with built-in functionality to export, and then import, an XML file, I&amp;#39;ve found that it&amp;#39;s anything but simple and trustworthy.
-&lt;/p&gt;
-&lt;p&gt;
-It seems that there may be a built-in limit to the amount of posts that can be imported. For me, I had to do an initial import (the XML file was approximately 2.3 MB), then determine which posts did come through. It turned out that it was the latter ones. After moving the relevant items into another XML file, and importing those separately, I was able to move all of the posts over.
-&lt;/p&gt;
-&lt;p&gt;
-Whew.
-&lt;/p&gt;
-&lt;p&gt;
-What you want to do is move the items into these extra XML files - just run the category once and you&amp;#39;re all set.
-&lt;/p&gt;
-&lt;p&gt;
-However, don&amp;#39;t expect your category numbers to necessarily match up, nor your posts. However, using category view may give you a good indication of where you&amp;#39;re missing posts. 
-&lt;/p&gt;
-</description>
+      <description>Having problems with WordPress importing? Try chunking the data.</description>
     </item>
     
     <item>
@@ -64,34 +34,7 @@ However, don&amp;#39;t expect your category numbers to necessarily match up, nor
       <pubDate>Fri, 13 Jul 2007 18:38:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-now-used-by-StrivingLife/</guid>
-      <description>&lt;p&gt;
-With a new host, comes a unique move.
-&lt;/p&gt;
-&lt;p&gt;
-Previously I was using WordPress, since I was hosted on a Linux (shared) server. Fortunately, I&amp;#39;ve decided to move to a Windows VPS, since the month of June was full of either slow down, or completely down, times. Since I don&amp;#39;t want to install PHP and MySQL (which I would want to pay for the external dbs anyway), I&amp;#39;ve decided to switch my content out of WordPress.
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s unfortunate, since I&amp;#39;ve spent so much time with it, but I think, in the long run, it&amp;#39;s going to be for the best.
-&lt;/p&gt;
-&lt;p&gt;
-Five years from now, I&amp;#39;m not sure where I&amp;#39;ll be. However, I would like to still be doing development work, particularly with ColdFusion. However, if I can find the time to actually play around with .NET, that&amp;#39;s another skill I&amp;#39;d like to pick up.
-&lt;/p&gt;
-&lt;p&gt;
-Of course, I&amp;#39;ve spent a lot of time getting a development environment on my home computers, and since I won&amp;#39;t be picking up a copy of Windows XP Pro any time soon (however, if you use the donate link at the bottom of the page, you can make it that much sooner :D ), that will continue to be based upon Apache.
-&lt;/p&gt;
-&lt;p&gt;
-Anyways, I think the move to BlogEngine.NET is going to be the best, in the long run. WordPress is getting so commercial now, and there&amp;#39;s still so many problems with it. With BlogEngine.NET, however, there&amp;#39;s definitely more of a home-brew attitude, and at least at this point in the game, the commercial aspect isn&amp;#39;t apparent (however, that&amp;#39;s not to say that they won&amp;#39;t be competiting with WordPress soon, in some sense - seeing as how they are different languages).
-&lt;/p&gt;
-&lt;p&gt;
-Another benefit is that BlogEngine.NET can be run without a database. I could get MSSQL running on my box, but ... why bother when I don&amp;#39;t have to at this point? Of course, that&amp;#39;s not to say that SQL is bad (quite the contrary), but it can be a bit of a resource hog ...
-&lt;/p&gt;
-&lt;p&gt;
-The Framing Business, which I was also hosting, will be moved to it&amp;#39;s own, WordPress-specific, service. I&amp;#39;ll still be responsible for administering it, but that&amp;#39;s easy enough to do, and if it keeps Gavin posting, that&amp;#39;s all the better.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got until September until my old host comes up for renewal, so I do believe I&amp;#39;ll have plenty of time to move everything over to their respective servers, and enough redirection time. I&amp;#39;ll also need to determine what I&amp;#39;m going to do as far as redirects ... but that shouldn&amp;#39;t be too big of an issue. 
-&lt;/p&gt;
-</description>
+      <description>StrivingLife moves from WordPress to BlogEngine.NET.</description>
     </item>
     
     <item>
@@ -100,31 +43,7 @@ I&amp;#39;ve got until September until my old host comes up for renewal, so I do
       <pubDate>Sun, 25 Mar 2007 20:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/More-comments-in-WordPress-212/</guid>
-      <description>&lt;p&gt;
-I noticed the other day that after upgrading to WordPress 2.1.2, many of the ads that the AdSense-Deluxe plugin was adding were not getting really getting added.
-&lt;/p&gt;
-&lt;p&gt;
-Normally I add the necessary AdSense-Deluxe (ASD) code immediately after the &amp;#39;more&amp;#39; comment. However, if I changed the location of the ASD code, the ads displayed correctly. Eh?&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s what I did:
-&lt;/p&gt;
-&lt;p&gt;
-Open /wp-includes/post-template.php and change line 83 from:
-&lt;/p&gt;
-&lt;p&gt;
-if ( preg_match(&amp;#39;/&amp;lt;!--more(.+?)?--&amp;gt;/&amp;#39;, $content, $matches) ) {
-&lt;/p&gt;
-&lt;p&gt;
-to:
-&lt;/p&gt;
-&lt;p&gt;
-if ( preg_match(&amp;#39;/&amp;lt;!--more--&amp;gt;/&amp;#39;, $content, $matches) ) {
-&lt;/p&gt;
-&lt;p&gt;
-For whatever reason, it replaces any one comment immediately after the more comment. Since the more comment should be entered in that format ...
-&lt;/p&gt;
-</description>
+      <description>AdSense-Deluxe ads not displaying in WordPress 2.1.2? Here&#39;s something to try.</description>
     </item>
     
     <item>
@@ -133,14 +52,7 @@ For whatever reason, it replaces any one comment immediately after the more comm
       <pubDate>Sun, 25 Feb 2007 08:57:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-major-failing-of-Akismet/</guid>
-      <description>&lt;p&gt;The major failing of the Akismet plug-in is that you can&#39;t determine which IPs, if any, are spamming your site the most.&lt;/p&gt;
-&lt;p&gt;Akismet needs to have the ability to group by IP, as well as show counts for each IP.&lt;/p&gt;
-&lt;p&gt;In place of that, you can run the following query to get this information.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;sql&#34;&gt;select comment_author_ip, count(comment_author_ip) count from wp_comments where comment_approved = &#39;spam&#39; group by comment_author_ip order by count desc&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This query will display the IP of the user who posted a message flagged as spam, and will also display the number of times a user with that IP posted a spam message. Of course, since Akismet deletes comments marked as spam after a certain amount of time, you&#39;ll need to run this on a semi-regular basis.&lt;/p&gt;
-&lt;p&gt;After you have this list, check out where the IP address points to, and if you don&#39;t see your users coming from that IP, block it through htaccess. I recommend you also add the date you did this in the comments, so you&#39;re aware of why you added the IP. In three months, you may also want to unblock the IP and see what happens.&lt;/p&gt;
-&lt;p&gt;Of course, you can also use another plug-in to automate this, but after hearing bad stories about the plug-in - Bad Behaviour - I&#39;m not quite willing to go that route yet. Maybe in a couple of months I&#39;ll give it a shot.&lt;/p&gt;
-</description>
+      <description>What&#39;s the one major failing of Akismet?  No information about what IPs were used to deliver that spam.</description>
     </item>
     
     <item>
@@ -149,22 +61,7 @@ For whatever reason, it replaces any one comment immediately after the more comm
       <pubDate>Mon, 22 Jan 2007 20:03:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Not-impressed-by-the-WordPress-21-feature-list/</guid>
-      <description>&lt;p&gt;
-WordPress 2.1 was released today and, unfortunately, I&amp;#39;m just not horribly impressed by the new feature list.&amp;nbsp; Granted, it&amp;#39;s a short feature list, but I see few reasons to upgrade.&amp;nbsp; The main reason?&amp;nbsp; Most of these features look like they&amp;#39;re geared towards non-technical/shared-hosting users.
-&lt;/p&gt;
-&lt;p&gt;
-What is interesting?&amp;nbsp; Akismet update - but I&amp;#39;m sure we can grab that without 2.1.
-&lt;/p&gt;
-&lt;p&gt;
-More efficient and faster database code?&amp;nbsp; That&amp;#39;s one.
-&lt;/p&gt;
-&lt;p&gt;
-Faster admin pages?&amp;nbsp; Two.
-&lt;/p&gt;
-&lt;p&gt;
-The ability to denote more user categories - specifically to remove all rights from a user?&amp;nbsp; Thr ...&amp;nbsp; Nope, I don&amp;#39;t see that.
-&lt;/p&gt;
-</description>
+      <description>WordPress 2.1 is out!  Eh.</description>
     </item>
     
     <item>
@@ -173,34 +70,7 @@ The ability to denote more user categories - specifically to remove all rights f
       <pubDate>Mon, 15 Jan 2007 11:19:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-WordPress-calendar-is-a-table/</guid>
-      <description>&lt;p&gt;
-There&amp;#39;s a number of problems with WordPress, as far as accessibility goes.  However, the easiest one to fix is the problem with the calendar, which displays in the default theme, as well as many custom ones (I&amp;#39;m sure).  It lacks a summary tag.
-&lt;/p&gt;
-&lt;p&gt;
-Basically, by defining a summary for a table, you provide a way for text-to-speech browsers to explain what a table consists of.  After all, if you&amp;#39;re using a table in your markup, you&amp;#39;re doing so not for layout purposes, but rather for informational purposes.  &lt;span&gt;Id est&lt;/span&gt;, a tabulated listing of data.
-&lt;/p&gt;
-&lt;p&gt;
-Since WordPress lacks a basic summary for the calendar&amp;#39;s table, this is something of a problem.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://diveintoaccessibility.org/day_20_providing_a_summary_for_tables.html&#34;&gt;Dive Into Accessibility&lt;/a&gt; offers a suggestion for a summary of a table, and I recommend WordPress also incorporate this same language.
-&lt;/p&gt;
-&lt;p&gt;
-On line 460 of /wp-includes/template-functions-general.php, the following line.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    echo &amp;#39;&amp;lt;table id=&amp;quot;wp-calendar&amp;quot;&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Should be changed to the following.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    echo &amp;#39;&amp;lt;table id=&amp;quot;wp-calendar&amp;quot; summary=&amp;quot;Monthly calendar with links to each day\&amp;#39;s posts&amp;quot;&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Now then, who can either point me in the right direction to suggest this change, or who wants to make the change for me?
-&lt;/p&gt;
-</description>
+      <description>The default calendar in WordPress is missing a valuable summary attribute - and it needs one soon!</description>
     </item>
     
     <item>
@@ -209,28 +79,7 @@ Now then, who can either point me in the right direction to suggest this change,
       <pubDate>Mon, 11 Dec 2006 19:35:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/WordPress-Fake-user-registrations/</guid>
-      <description>&lt;p&gt;
-For the past couple days I&amp;#39;ve noticed a rash of fake user account&amp;#39;s being created.&amp;nbsp; I wonder if this isn&amp;#39;t meant to be some new way to possibly exploit WordPress.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve kept the original emails I received from WordPress, and am very tempted to delete the accounts.&amp;nbsp; However, WordPress only seems to allow the deletion of accounts.&amp;nbsp; What if I want to &amp;#39;ban&amp;#39; an account/username/email?
-&lt;/p&gt;
-&lt;p&gt;
-I suppose I&amp;#39;ll have to go find a plugin, or build one myself.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve Akismet installed, so there&amp;#39;s been no spam yet (other than the usual questionable ones that get reported), but ...
-&lt;/p&gt;
-&lt;h4&gt;Update: December 16, 2006&lt;br /&gt;
-&lt;/h4&gt;
-&lt;p&gt;
-The common thread was all emails contained the web.de domain.
-&lt;/p&gt;
-&lt;h4&gt;Update: July 4, 2007&lt;/h4&gt;
-&lt;p&gt;
-The solution was to ultimately stop registrations.&amp;nbsp;
-&lt;/p&gt;
-</description>
+      <description>New user accounts being setup, possibly for spam purposes?</description>
     </item>
     
     <item>
@@ -239,16 +88,7 @@ The solution was to ultimately stop registrations.&amp;nbsp;
       <pubDate>Fri, 11 Aug 2006 16:53:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/If-theres-one-thing-that-I-dont-like-about-WordPress-/</guid>
-      <description>&lt;p&gt;
-... it&amp;#39;s that updating is such a pain in the behind if you have to work remotely via FTP.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Also, it would be really nice if you could disable all plugins with a click, as well as enable them all (or enable all but a couple ...)
-&lt;/p&gt;
-&lt;p&gt;
-I just updated to WordPress 2.0.4, so if you happen to notice anything off ... let me know.
-&lt;/p&gt;
-</description>
+      <description>WordPress definitely needs to work on their updating procedures, as well as how you enable/disable plugins.</description>
     </item>
     
     <item>
@@ -257,21 +97,7 @@ I just updated to WordPress 2.0.4, so if you happen to notice anything off ... l
       <pubDate>Fri, 26 May 2006 07:26:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/1000-spam-caught-by-Akismet/</guid>
-      <description>&lt;p&gt;
-As of this morning, exactly 1,000 spam have been caught by Akismet for this site.  Not too shabby.  Unfortunately, I don&amp;#39;t know when this started, but it was before I got really hit.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-On that note, Akismet 1.15 has also been released.  Included in this is the big addition of a delete button at the bottom of the page (for those of us that look over comments).
-&lt;/p&gt;
-&lt;h4&gt;Update: June 10, 2006 @ 6:39 pm&lt;/h4&gt;
-&lt;p&gt;
-1400 as of a couple minutes ago. Yikes.
-&lt;/p&gt;
-&lt;h4&gt;November 24, 2006 @ 11:26 am&lt;/h4&gt;
-&lt;p&gt;
-10,000+ as of a few moments ago.
-&lt;/p&gt;
-</description>
+      <description>As of this morning, exactly 1,000 spam have been caught by Akismet for this site.</description>
     </item>
     
     <item>
@@ -280,19 +106,7 @@ On that note, Akismet 1.15 has also been released.  Included in this is the big 
       <pubDate>Tue, 23 May 2006 06:28:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Akismet-stats-now-available-online/</guid>
-      <description>&lt;p&gt;
-Akismet, one great WordPress plugin if you&amp;#39;ll be accepting public comments, now has made available global stats on &lt;a rel=&#34;nofollow&#34; href=&#34;http://akismet.com/stats/&#34;&gt;http://akismet.com/stats/&lt;/a&gt;.  What&amp;#39;s scary is the amount of spam per &amp;#39;ham&amp;#39; (non-spam).&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve also noticed a large increase in spam, which I attributed to leaving comments on some fairly popular blogs - with my main domain as a URL. However, since it&amp;#39;s across the board, I guess I can&amp;#39;t easily attribute it to that, yet.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got 891 of those spam comments - just short of a round 900 ...
-&lt;/p&gt;
-&lt;p&gt;
-The question is, if Akismet cost $1 a month, how many people would still use it?  My guess?  Quite a lot.  There&amp;#39;s other plugins out there, but Akismet (other than the fact that there isn&amp;#39;t a a delete all button at the bottom of the page) is king in what it does.
-&lt;/p&gt;
-</description>
+      <description>Akismet, one great WordPress plugin if you&#39;ll be accepting public comments, now has made available global stats online.</description>
     </item>
     
     <item>
@@ -301,50 +115,7 @@ The question is, if Akismet cost $1 a month, how many people would still use it?
       <pubDate>Sat, 29 Apr 2006 11:37:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-easy-way-to-add-the-description-meta-tag-to-WordPress-posts/</guid>
-      <description>&lt;p&gt;
-According to some people, the keywords meta tag has more relevancy/use than the description meta tag. Unfortunately, this is dead wrong. As I&amp;#39;ve been able to prove (for myself, at least) this last month, the meta description is quite alive and well. Why people think it&amp;#39;s not only dead, but surpassed by the meta keywords (!!!), I&amp;#39;ll never understand.
-&lt;/p&gt;
-&lt;p&gt;
- (And, by the way, these were August &amp;#39;05, January &amp;#39;06 articles/posts.)
-&lt;/p&gt;
-&lt;p&gt;
- After looking for a good plug-in, I decided to work on something that was a) easier and b) easier. To that end, I present the following code. This code uses some hard-coded descriptions for the home page, archive/category pages, and the 404 page. For individual posts, it uses the post&amp;#39;s &amp;quot;Optional Excerpt&amp;quot;.
-&lt;/p&gt;
-&lt;p&gt;
- Note that the WordPress plugin Tags in the Head came the closest to what I was looking for, but was undesireable since it a) required installation of just one more plugin, and b) required another plugin to function. Also, it&amp;#39;s focus is on keywords, which, again, I find to be near useless; they are merely more characters that must be read by bots, but which present no real gain.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &amp;lt;?php&lt;br /&gt;
-    if (is_single()){&lt;br /&gt;
-    &amp;nbsp;if (have_posts()) {&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;&amp;lt;meta name=\&amp;quot;description\&amp;quot; content=\&amp;quot;&amp;quot;.htmlentities(get_the_excerpt()).&amp;quot;\&amp;quot; /&amp;gt;&amp;quot;;&lt;br /&gt;
-    &amp;nbsp;}&lt;br /&gt;
-    } else if (is_home()) {&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;&amp;lt;meta name=\&amp;quot;description\&amp;quot; content=\&amp;quot;&amp;quot;;&lt;br /&gt;
-    &amp;nbsp;bloginfo(&amp;#39;description&amp;#39;);&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;\&amp;quot; /&amp;gt;&amp;quot;;&lt;br /&gt;
-    } else if (is_archive()) {&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;&amp;lt;meta name=\&amp;quot;description\&amp;quot; content=\&amp;quot;Posts on StrivingLife.net for a specific category or time frame.\&amp;quot; /&amp;gt;&amp;quot;;&lt;br /&gt;
-    } else if (is_404()) {&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;&amp;lt;meta name=\&amp;quot;description\&amp;quot; content=\&amp;quot;The content you have requested is not available at this address.\&amp;quot; /&amp;gt;&amp;quot;;&lt;br /&gt;
-    } else {&lt;br /&gt;
-    &amp;nbsp;echo &amp;quot;&amp;lt;meta name=\&amp;quot;description\&amp;quot; content=\&amp;quot;&amp;quot;.htmlentities(get_the_excerpt()).&amp;quot;\&amp;quot; /&amp;gt;&amp;quot;;&lt;br /&gt;
-    }&lt;br /&gt;
-    ?&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-This should be put into the header.php file for your current theme(s), after the line:
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &amp;lt;meta name=&amp;quot;generator&amp;quot; content=&amp;quot;WordPress &amp;lt;?php bloginfo(&amp;#39;version&amp;#39;); ?&amp;gt;&amp;quot; /&amp;gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Note that the home page description comes from the blog&amp;#39;s description. Also note that an echo call does &lt;em&gt;not&lt;/em&gt; proceed that line. Unfortunately, the bloginfo() function contains an echo statement. Durr. This description, as well as individual post descriptions, should be around 150 characters. 
-&lt;/p&gt;
-&lt;p&gt;
-Comments welcome and appreciated.
-&lt;/p&gt;
-</description>
+      <description>An easy way to add descriptions to WordPress posts without the use of excessive plugins.</description>
     </item>
     
     <item>
@@ -353,68 +124,7 @@ Comments welcome and appreciated.
       <pubDate>Tue, 04 Apr 2006 20:13:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/WP-ShortStat-SQL-queries/</guid>
-      <description>&lt;p&gt;&lt;p&gt;
-The &lt;a href=&#34;http://blog.happyarts.de/wp-shortstat/&#34;&gt;wp-shortstat plugin&lt;/a&gt;, modified for WordPress 2.x use by Markus Kaemmerer, is a great little plugin.  I&amp;#39;ve been using it since March 17, and since Markus has been doing a deal of updating (additional functionality, as well as bug fixes), I&amp;#39;ve been checking it on a regular basis (and have looked through the code more than once).
-&lt;/p&gt;
-&lt;p&gt;
-However, since I started out by using 1.3, I&amp;#39;ve got a problem with old records skewing my stats.  To remedy that, I&amp;#39;ve written a couple of SQL queries, for use in phpMyAdmin, for example.  Before I release them to the wild, I wanted to see if I can get a smaller audience to try them out.  I&amp;#39;ve tried them out on my own stats, but &amp;hellip;
-&lt;/p&gt;
-&lt;p&gt;
-If someone wants to create a PHP page that does these, certainly go for it - just share the souce code.  There&amp;#39;s also a way to update more than one row at a time, but, I&amp;#39;d much rather do things one row at a time, just in case.
-&lt;/p&gt;
-&lt;p&gt;
-If you run these queries, please backup your database, or this table, before you run these queries.  Note that the &amp;#39;standard&amp;#39; table name is wp_ss_stats.  If your&amp;#39;s is named differently, you may have to change these queries accordingly.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET version = &amp;#39;2.1&amp;#39; WHERE user_agent = &amp;#39;Googlebot/2.1 (+&lt;a href=&#34;http://www.google.com/bot.html)&amp;amp;#39&#34;&gt;http://www.google.com/bot.html)&amp;amp;#39&lt;/a&gt;; AND version = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET version = &amp;#39;2.1&amp;#39; WHERE user_agent = &amp;#39;Mozilla/5.0 (compatible; Googlebot/2.1; +&lt;a href=&#34;http://www.google.com/bot.html)&amp;amp;#39&#34;&gt;http://www.google.com/bot.html)&amp;amp;#39&lt;/a&gt;; AND version = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET version = &amp;#39;0.9&amp;#39; WHERE user_agent = &amp;#39;msnbot/0.9 (+&lt;a href=&#34;http://search.msn.com/msnbot.htm)&amp;amp;#39&#34;&gt;http://search.msn.com/msnbot.htm)&amp;amp;#39&lt;/a&gt;; AND version = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET browser = &amp;#39;msnbot&amp;#39; WHERE user_agent = &amp;#39;msnbot/0.9 (+&lt;a href=&#34;http://search.msn.com/msnbot.htm)&amp;amp;#39&#34;&gt;http://search.msn.com/msnbot.htm)&amp;amp;#39&lt;/a&gt;; AND browser = &amp;#39;Crawler/Search Engine&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET version = &amp;#39;1.0&amp;#39; WHERE user_agent = &amp;#39;msnbot/1.0 (+&lt;a href=&#34;http://search.msn.com/msnbot.htm)&amp;amp;#39&#34;&gt;http://search.msn.com/msnbot.htm)&amp;amp;#39&lt;/a&gt;; AND version = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET browser = &amp;#39;msnbot&amp;#39; WHERE user_agent = &amp;#39;msnbot/1.0 (+&lt;a href=&#34;http://search.msn.com/msnbot.htm)&amp;amp;#39&#34;&gt;http://search.msn.com/msnbot.htm)&amp;amp;#39&lt;/a&gt;; AND browser = &amp;#39;Crawler/Search Engine&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET version = &amp;#39;2.1&amp;#39; WHERE user_agent = &amp;#39;Mediapartners-Google/2.1&amp;#39; AND version = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET browser = &amp;#39;Feedfetcher-Google&amp;#39; WHERE user_agent = &amp;#39;Feedfetcher-Google; (+&lt;a href=&#34;http://www.google.com/feedfetcher.html)&amp;amp;#39&#34;&gt;http://www.google.com/feedfetcher.html)&amp;amp;#39&lt;/a&gt;; AND browser = &amp;#39;Indeterminable&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE &amp;#39;wp_ss_stats&amp;#39; SET browser = &amp;#39;Feedfetcher-Google&amp;#39; WHERE user_agent = &amp;#39;Feedfetcher-Google; (+&lt;a href=&#34;http://www.google.com/feedfetcher.html)&amp;amp;#39&#34;&gt;http://www.google.com/feedfetcher.html)&amp;amp;#39&lt;/a&gt;; AND browser = &amp;#39;Crawler/Search Engine&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE wp_ss_stats SET browser = &amp;#39;Yahoo-Blogs&amp;#39; WHERE version = &amp;#39;5.5&amp;#39; AND user_agent = &amp;#39;Yahoo-Blogs/v3.9 (compatible; Mozilla 4.0; MSIE 5.5; &lt;a href=&#34;http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html&#34;&gt;http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html&lt;/a&gt; )&amp;#39;
-    &lt;/p&gt;
-    &lt;p&gt;
-    UPDATE wp_ss_stats SET version = &amp;#39;3.9&amp;#39; WHERE version = &amp;#39;5.5&amp;#39; AND user_agent = &amp;#39;Yahoo-Blogs/v3.9 (compatible; Mozilla 4.0; MSIE 5.5; &lt;a href=&#34;http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html&#34;&gt;http://help.yahoo.com/help/us/ysearch/crawling/crawling-02.html&lt;/a&gt; )&amp;#39;
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;div class=&#34;downloads&#34;&gt;
-&lt;p&gt;
-Download these queries in txt format: &lt;a href=&#34;http://words.strivinglife.com/files/2006/04/mysql%20sql%20queries%20for%20wp_ss_stats.txt&#34;&gt;WP-ShortStat SQL queries&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Want more added?  Let me know.  I&amp;#39;d like to do Googlebot and Yahoo! Slurp, among others, but I&amp;#39;m waiting for Markus to support them in his plugin.  I figure once he thinks I&amp;#39;m done pestering him, I&amp;#39;ll send him the code and a request ;)
-&lt;/p&gt;
-&lt;p&gt;
-Remember, running a SELECT query first is your best bet if you&amp;#39;re unsure of what you may be updating.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    SELECT * FROM wp_ss_stats WHERE version = &amp;#39;2.1&amp;#39; AND browser = &amp;#39;Crawler/Search Engine&amp;#39;
-&lt;/blockquote&gt;&lt;/p&gt;
-</description>
+      <description>SQL queries to update records from older versions of wp-shortstats.</description>
     </item>
     
     <item>
@@ -423,103 +133,7 @@ Remember, running a SELECT query first is your best bet if you&amp;#39;re unsure
       <pubDate>Sat, 11 Mar 2006 16:31:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-%28our-local-install-of%29-WordPress/</guid>
-      <description>&lt;p&gt;
-In &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/28/59/setting-up-wordpress-on-a-local-web-server/&#34;&gt;a previous guide&lt;/a&gt;, we walked through installing WordPress on a local machine. This time, we&amp;#39;ll be upgrading WordPress. For this guide, we&amp;#39;ll be upgrading from WordPress 2.0.1 to 2.0.2.  Note that this guide will work equally well for upgrading to 2.0.3, 2.0.4 or 2.0.5.
-&lt;/p&gt;
-&lt;!--adsense--&gt;
-&lt;p&gt;
-&lt;strong&gt;Downloading WordPress&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-First, we&amp;#39;ll have to download a copy of WordPress. Currently, the same download can be used to upgrade WordPress as to install WordPress, which makes things rather simple, in one sense. &lt;a href=&#34;http://wordpress.org/download/&#34;&gt;http://wordpress.org/download/&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;ll download the zip file into our downloads directory (in my case, at c:\home\downloads\), making sure that we keep the 2.0.1 install file, at least until we can verify that this new version doesn&amp;#39;t cause compatibility issues.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Backup our current installation&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve downloaded the new version, we&amp;#39;ll want to prepare our current version for the upgrade. When we do this, we&amp;#39;ll be making backups of everything, so that we can roll-back to our working version, if necessary.
-&lt;/p&gt;
-&lt;p&gt;
-We&amp;#39;ll first want to backup our current installation. This involves making a copy of the entire WordPress directory. In my case, c:\home\wordpress\. 
-&lt;/p&gt;
-&lt;p&gt;
-Now, we&amp;#39;ll login to phpMyAdmin to backup the WordPress database. Visit &lt;a href=&#34;http://phpmyadmin.localhost/&#34;&gt;http://phpmyadmin.localhost/&lt;/a&gt;, and login using your wordpress user. If you&amp;#39;ve forgotten the password, you can find it by opening the wp-config.php file, in the main wordpress folder. Once you&amp;#39;ve logged in, click on the Databases link, in the main content area, under the MySQL column, and then on the wordpress database, on the following screen.
-&lt;/p&gt;
-&lt;p&gt;
-Once you do this, you&amp;#39;ll see a listing of all of the tables in the wordpress database, along with size and the like. Click on the Export tab, to continue.
-&lt;/p&gt;
-&lt;p&gt;
-Here, you&amp;#39;ll be able to export the tables that are a part of the wordpress database. First, use the Select All link under the Export column to select all of the database tables. In the Structure area of the SQL options column, check Add DROP TABLE. Scroll down, and check the Save as file item. Finally, hit the Go button.
-&lt;/p&gt;
-&lt;p&gt;
-Once you do this, you&amp;#39;ll be prompted to do something with a file called wordpress.sql. We&amp;#39;ll create a new folder in our c:\home\ folder called backups, and save this file to that folder. When you save the folder, add the current date before the extension. For example, wordpress_20060311.sql. This will ensure that you&amp;#39;re able to keep multiple backups, and will be able to sort the files easily.
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve made our backups, we&amp;#39;ll need to disable any plugins that we may have running on our WordPress. Login to the wordpress, &lt;a href=&#34;http://wordpress.localhost/wp-admin/&#34;&gt;http://wordpress.localhost/wp-admin/&lt;/a&gt;, and hit the Plugins tab. If any plugins are activated, deactivate them.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Performing the upgrade&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve made our backups, and disabled any plugins, we can proceed to upgrade the necessary files.
-&lt;/p&gt;
-&lt;p&gt;
-First, extract the downloaded zip file to it&amp;#39;s own folder. Next, we&amp;#39;ll be moving files from the new folder to our current install&amp;#39;s folder. Because of this, it&amp;#39;s a good idea to have two windows open while we&amp;#39;re doing this. Depending upon the amount of customization you&amp;#39;ve done, you can either copy files over and overwrite them all (save a few mentioned below), or you can check the dates of each file, only moving over those files that have dates that do not match (between the new and old installs). Since you have backups, you can always get the older copy if necessary.
-&lt;/p&gt;
-&lt;p&gt;
-The files that you will not want to overwrite are;
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;wp-config.php file
-    &lt;/li&gt;
-    &lt;li&gt;wp-content folder
-    &lt;/li&gt;
-    &lt;li&gt;wp-images folder
-    &lt;/li&gt;
-    &lt;li&gt;wp-includes/languages/ folder
-    &lt;/li&gt;
-    &lt;li&gt;.htaccess files (which we haven&amp;#39;t talked about before)
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-Working directory through directory ...
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;In the root folder, c:\home\wordpress\, the only file changed should be the wp-config.php file, and there won&amp;#39;t be a matching one in the downloaded zip. So, move all &lt;em&gt;files&lt;/em&gt; from the new zip into the old zip, overwriting all files.
-    &lt;/li&gt;
-    &lt;li&gt;In the entire wp-includes directory (including sub-folders), there&amp;#39;s probably no reason to have modified any of these files. Move the entire wp-includes folder over, overwriting as necessary.
-    &lt;/li&gt;
-    &lt;li&gt;In the wp-content folder, delete the cache folder on our current install.
-    &lt;ul&gt;
-        &lt;li&gt;Next, move the index.php file over.&lt;/li&gt;
-        &lt;li&gt;Now, move the plugins folder over. Since it&amp;#39;s possible you installed plugins, we&amp;#39;ll just want to overwrite the existing documents. If you have upgraded one of the standard plugins, however, you may want to verify after we have performed the WordPress upgrade that you did not lose this update.&lt;/li&gt;
-        &lt;li&gt;The themes folder should contain the standard themes, which you can simply move over, as any modifications to the themes should have been done in a new theme, instead of in these.&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;Finally, move the wp-admin folder. Again, modifications probably weren&amp;#39;t made to these files (by you), so you shouldn&amp;#39;t lose any changes. &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve upgraded the files, we&amp;#39;ll just need to upgrade the database. Visit &lt;a href=&#34;http://wordpress.localhost/wp-admin/upgrade.php&#34;&gt;http://wordpress.localhost/wp-admin/upgrade.php&lt;/a&gt;, and hit the link that you&amp;#39;re bound not to miss. You should see Step 1, which will tell you that you&amp;#39;re done.
-&lt;/p&gt;
-&lt;p&gt;
-Now, visit &lt;a href=&#34;http://wordpress.localhost/&#34;&gt;http://wordpress.localhost/&lt;/a&gt;, login to the admin interface, and turn any plugins on, that you may have deactivated. All other options should be preserved.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Planning ahead for future upgrades&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-To make future installations easier, you can note which files you&amp;#39;ve made modifications to, when you make them, and keep a backup of both the original, and the modification. This allows you to easily determine which files you&amp;#39;ve changed.
-&lt;/p&gt;
-&lt;p&gt;
-You can also use a program like WinMerge, &lt;a href=&#34;http://winmerge.sourceforge.net/&#34;&gt;http://winmerge.sourceforge.net/&lt;/a&gt;, to then determine what changes were made between the versions.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
-&lt;/p&gt;
-</description>
+      <description>In a previous guide, we walked through installing WordPress on a local machine. This time, we&#39;ll be upgrading WordPress. For this guide, we&#39;ll be upgrading from WordPress 2.0.1 to 2.0.2.  Note this guide will work equally well for 2.0.3 or 2.0.4 as well.</description>
     </item>
     
     <item>
@@ -528,138 +142,7 @@ You can also use a program like WinMerge, &lt;a href=&#34;http://winmerge.source
       <pubDate>Tue, 28 Feb 2006 08:13:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Setting-up-WordPress-on-a-local-Web-server/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-&lt;em&gt;Note: This guide should work equally well for WordPress 2.0.2 and above.  For a guide on upgrading this 2.0.1 install, see &lt;a href=&#34;http://strivinglife.net/wordpress/2006/03/11/63/upgrading-our-local-install-of-wordpress/&#34;&gt;Upgrading (our local install of) WordPress&lt;/a&gt;.&lt;/em&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-In our previous tutorials, we setup an Apache-based Web server, on a Windows XP home computer. The Web server is also running PHP and MySQL, as well as ColdFusion MX. This time, we&amp;#39;ll be installing WordPress onto our local Web server. This installation will require us to work with both PHP and MySQL, and we&amp;#39;ll be able to setup any number of WordPresses after we have completed this one.
-&lt;/p&gt;
-&lt;!--adsense--&gt;
-&lt;p&gt;
-&lt;strong&gt;Downloading WordPress&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-First, we&amp;#39;ll need to download the latest version of WordPress, from &lt;a href=&#34;http://wordpress.org/download/&#34;&gt;http://wordpress.org/download/&lt;/a&gt;. As of this writing, that version is 2.0.1.
-&lt;/p&gt;
-&lt;p&gt;
-Once we&amp;#39;ve downloaded WordPress, we can extract the zip file into the same folder that we downloaded the zip to (in my case, c:\home\downloads). Now move the wordpress folder from within this folder, to c:\home. Once you&amp;#39;ve done this, the path to the license.txt should be something like c:\home\wordpress.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Configuring localhost&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve extracted the WordPress installation, we&amp;#39;ll want to point a quick URL to this folder. We&amp;#39;ll use &lt;a href=&#34;http://wordpress.localhost/&#34;&gt;http://wordpress.localhost/&lt;/a&gt; to do this.
-&lt;/p&gt;
-&lt;p&gt;
-First, open the httpd.conf file using your shortcut, or the Start menu. At the bottom of this file, we&amp;#39;ll need to add a new VirtualDirectory for wordpress.localhost. My addition looked like the below.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    &amp;lt;VirtualHost 127.0.0.5&amp;gt;&lt;br /&gt;
-    ServerName wordpress.localhost&lt;br /&gt;
-    DocumentRoot c:\home\wordpress&lt;br /&gt;
-    ErrorLog logs/wordpress-error.log&lt;br /&gt;
-    TransferLog logs/wordpress-access.log&lt;br /&gt;
-    &amp;lt;/VirtualHost&amp;gt;
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Now, save this file and close it.
-&lt;/p&gt;
-&lt;p&gt;
-Next, open the hosts file, using a shortcut, or by scrolling to it. At the end of this file, add a new entry for the VirtualDirectory we just created.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    127.0.0.5   wordpress.localhost
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Again, save this file and close it.
-&lt;/p&gt;
-&lt;p&gt;
-Finally, we&amp;#39;ll need to restart Apache in order for our change to take effect, using the Services control panel.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Configuring MySQL: Creating the WordPress user and database&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that WordPress is extracted, and we&amp;#39;ve setup &lt;a href=&#34;http://wordpress.localhost/&#34;&gt;http://wordpress.localhost/&lt;/a&gt;, we&amp;#39;ll need to create a MySQL user account and database for WordPress to use. First, start up MySQL Administrator. Type in the root password, and click on User Administration. Press the New User button. Fill in the MySQL User and Password fields, and Apply changes. The user name I used was simply wordpress. Right click on this new user name, select Add Host From Which This User Can Connect, and type localhost in the window. Press OK.
-&lt;/p&gt;
-&lt;p&gt;
-Next, click on the Catalogs item, right click on an empty area in the Schemata area, and select Create New Schema. For the Schema name, I once again simply used wordpress.
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve setup a database, we&amp;#39;ll need to associate the wordpress item with it. Click on User Administration, then on wordpress, then on localhost beneath it. Next, click on the wordpress Schemata, and move all available privileges to assigned privileges. Select Apply Changes.
-&lt;/p&gt;
-&lt;p&gt;
-Note that we could have done this in a different order if we would have liked. Namely, we could have first setup our database/catalog, and then created our user.
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve created our user, we&amp;#39;ll have to do the work-around to get the password correct. Open the Command Prompt and type the following.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    mysql -u root -p
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Press enter, and type in the root password. Finally, we&amp;#39;ll change the password for wordpress for all hosts.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    UPDATE mysql.user SET Password = OLD_PASSWORD(&amp;#39;your_password&amp;#39;) WHERE User = &amp;#39;wordpress&amp;#39;;&lt;br /&gt;
-    FLUSH PRIVILEGES;
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Remember to substitute your_password with the password you would like to use. Once you&amp;#39;ve done this, log on to phpMyAdmin to verify that the password works as expected, and you can view the wordpress database. &lt;a href=&#34;http://phpmyadmin.localhost/&#34;&gt;http://phpmyadmin.localhost/&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Setting up the WordPress configuration file&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve created our MySQL user and database, we&amp;#39;ll need to setup a configuration file for WordPress. Navigate to c:\home\wordpress\, and copy the wp-config-sample.php file. Now, rename our copy to wp-config.php. Finally, open this file in Notepad.
-&lt;/p&gt;
-&lt;p&gt;
-If you look at the top of this file, you&amp;#39;ll notice four fields that start with &amp;quot;define&amp;quot;. We&amp;#39;ll need to add the relevant information into the first three fields. First, verify that the DB_NAME is what you just setup in MySQL Administrator. The default is wordpress, which is what I setup above. Change DB_USER appropriately &amp;ndash; in my case, wordpress is again used. Finally, change DB_PASSWORD to your password. Yes, we are entering this information into a text file. However, visitors won&amp;#39;t be able to see this information, so long as you keep this file a PHP file.
-&lt;/p&gt;
-&lt;p&gt;
-Save the wp-config.php file, and close it, once you have made these changes.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Installing WordPress&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-That we&amp;#39;ve created the wp-config.php file, we can visit &lt;a href=&#34;http://wordpress.localhost/&#34;&gt;http://wordpress.localhost/&lt;/a&gt; to get a link to actually install WordPress. Otherwise, you can visit the installation file directly, at &lt;a href=&#34;http://wordpress.localhost/wp-admin/install.php&#34;&gt;http://wordpress.localhost/wp-admin/install.php&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-On the installation page, click the First Step link. Now, enter a Weblog title, and your email address. I used wordpress and my email, accordingly. Click to the next step.
-&lt;/p&gt;
-&lt;p&gt;
-Now, it will give you a username, admin, and a password, which should be random. Make a note of both of these, and do what it suggests &amp;ndash; log in. &lt;a href=&#34;http://wordpress.localhost/wp-login.php&#34;&gt;http://wordpress.localhost/wp-login.php&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now that you&amp;#39;ve logged in, there&amp;#39;s two things to do. The first is to setup your profile and change you password (the second bullet), and the second thing is to write a test post.
-&lt;/p&gt;
-&lt;p&gt;
-Once you do so, you&amp;#39;ll have two posts on your site, one from the installation, and one from the user you just setup. To view you post, visit &lt;a href=&#34;http://wordpress.localhost/&#34;&gt;http://wordpress.localhost/&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-Congratulations &amp;ndash; you&amp;#39;ve successfully setup WordPress. Now, you can remove the installation&amp;#39;s post and comment, and begin working on creating a unique style.
-&lt;/p&gt;
-&lt;p&gt;
-At this point, I should also point out the boon of creating a local WordPress. Backing up your WordPress is one of the best things that you can do. If you setup a WordPress, using the same username/password as the one you actually use on the Web, with the same database information (if you know that), you can backup your WordPress, and be able to work with your actual content when you work on style revisions. Killing two birds with one stone is always enjoyable.
-&lt;/p&gt;
-&lt;p&gt;
-In a later guide, we&amp;#39;ll walk through backing up your WordPress installation, and when a new version of Wordpress is released, we&amp;#39;ll walk through upgrading our installation. Until then, have fun playing around with WordPress.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In our previous tutorials, we setup an Apache-based Web server, on a Windows XP home computer. The Web server is also running PHP and MySQL, as well as ColdFusion MX. This time, we&#39;ll be installing WordPress onto our local Web server. This installation will require us to work with both PHP and MySQL, and we&#39;ll be able to setup any number of WordPresses after we have completed this one.</description>
     </item>
     
   </channel>

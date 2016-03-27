@@ -16,12 +16,7 @@
       <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
-&lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
-&lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
-&lt;p&gt;Very disappointing, to say the least.&lt;/p&gt;
-&lt;p&gt;For development purposes I probably won&#39;t use the Web Platform Installer to install SQL Server locally again, but will definitely use it for remote servers, assuming that I don&#39;t require the functionality built into the Advanced Services installer (which I undoubtedly will not). Of course, since I have an MSDN subscription, I believe I can install a more robust version of SQL Server for development purposes anyways, so perhaps this will push me over the edge.&lt;/p&gt;
-</description>
+      <description>If you use Web Platform Installer to install SQL Server Express, you might be in for a surprise if you try to install AdventureWorks.</description>
     </item>
     
     <item>
@@ -30,49 +25,7 @@
       <pubDate>Sun, 20 Dec 2009 12:30:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/</guid>
-      <description>&lt;p&gt;SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.&lt;/p&gt;
-&lt;p&gt;In this article I&#39;ll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.&lt;/p&gt;
-&lt;h3&gt;Server system&lt;/h3&gt;
-&lt;p&gt;For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM. All updates were downloaded and installed.&lt;/p&gt;
-&lt;h3&gt;Downloading the installers&lt;/h3&gt;
-&lt;p&gt;SQL Server Express 2008 can be installed using the Microsoft Web Platform Installer, or a &#39;custom&#39; install can be downloaded. For the most flexibility and experience, I&#39;ll be covering the install using the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/express/sql/download/&#34;&gt;Runtime with Management Tools&lt;/a&gt; option.&lt;/p&gt;
-&lt;p&gt;You&#39;ll also want to grab the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyId=10EE29AF-7C3A-4057-8367-C9C1DAB6E2BF&#34;&gt;Windows PowerShell 1.0 installer&lt;/a&gt; for Windows Server 2003, if you haven&#39;t installed it already. If you&#39;re not sure, you can hold off until later in the install.&lt;/p&gt;
-&lt;h3&gt;Installing Microsoft SQL Server Express 2008&lt;/h3&gt;
-&lt;p&gt;After starting the installer you&#39;ll eventually reach the Installation tab, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall01.jpg&#34;&gt;Figure 1&lt;/a&gt;. For our simple installation, we&#39;ll use the first option of &#34;New SQL Server stand-alone installation or add features to an existing installation.&#34;&lt;/p&gt;
-&lt;p&gt;A quick check will be run to determine if there might be any issues installing setup files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall02.jpg&#34;&gt;Figure 2&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Since we we&#39;re installing the Express edition of SQL Server 2008, we won&#39;t need to enter a product key (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall03.jpg&#34;&gt;Figure 3&lt;/a&gt;), so we can continue and install the setup support files (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall04.jpg&#34;&gt;Figure 4&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Once that&#39;s complete we start the actual install. A number of checks are run, one of which is for Windows PowerShell, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Run the installer (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall06.jpg&#34;&gt;Figure 6&lt;/a&gt;) if needed and re-run the check once it&#39;s complete. If you have any other issues, you should fix those until you can continue (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall07.jpg&#34;&gt;Figure 7&lt;/a&gt;).&lt;/p&gt;
-&lt;h4&gt;Feature Selection&lt;/h4&gt;
-&lt;p&gt;Next we&#39;ll need to choose what features we want to install (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall08.jpg&#34;&gt;Figure 8&lt;/a&gt;). Since we want an instance of SQL Server, we&#39;ll choose Database Engine Services. We&#39;ll also choose Management Tools - Basic so that we can manage our instance (databases, tables, users, etcetera) via a GUI. If you want, you can install the management tools on another machine, if you&#39;d prefer not having them on the server.&lt;/p&gt;
-&lt;h4&gt;Instance Configuration&lt;/h4&gt;
-&lt;p&gt;We&#39;ll stick with the default instance name, id, and root directory, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall09.jpg&#34;&gt;Figure 9&lt;/a&gt;. The default generally works just fine.&lt;/p&gt;
-&lt;h4&gt;Disk Space Requirements&lt;/h4&gt;
-&lt;p&gt;Space requirements will be checked. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall10.jpg&#34;&gt;Figure 10&lt;/a&gt; if you need to see.&lt;/p&gt;
-&lt;h4&gt;Server Configuration&lt;/h4&gt;
-&lt;p&gt;At the next stage we&#39;ll setup the accounts that SQL Server Database Engine and SQL Server Browser run under. By default the local service account is used for the latter, and nothing by default is selected for the former. Startup types are also set here. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall11.jpg&#34;&gt;Figure 11&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;By default the Network Service account is typically used, for the former, so we&#39;ll use that here, with no password needed. See &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall12.jpg&#34;&gt;Figure 12&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Database Engine Configuration&lt;/h4&gt;
-&lt;p&gt;The next step is to setup accounts. Windows authentication mode is more secure, but if using Web applications, you&#39;ll probably need to switch to Mixed Mode. Enter a password for the built-in account (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall13.jpg&#34;&gt;Figure 13&lt;/a&gt;). To continue you&#39;ll also need to specify a SQL Server administrator. Adding the current user (which is what I did) is the easiest if using a virtual machine. This leaves us at something like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall14.jpg&#34;&gt;Figure 14&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Error and Usage Reporting&lt;/h4&gt;
-&lt;p&gt;If you want, you can sent error reports and feature usage data to Microsoft automatically. By default (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall15.jpg&#34;&gt;Figure 15&lt;/a&gt;) the items are unchecked.&lt;/p&gt;
-&lt;h4&gt;Installation Rules&lt;/h4&gt;
-&lt;p&gt;A quick check will be done to determine if the install will work or not. Fix any issues that may come up, and once everything passes or is skipped (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall16.jpg&#34;&gt;Figure 16&lt;/a&gt;), continue with the install.&lt;/p&gt;
-&lt;h4&gt;Ready to Install&lt;/h4&gt;
-&lt;p&gt;At this point you&#39;ll be given an overview of your selected options. Once you&#39;re ready, press the Install button. (See Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall17.jpg&#34;&gt;17&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall18.jpg&#34;&gt;18&lt;/a&gt;.)&lt;/p&gt;
-&lt;h4&gt;Installation Progress and Complete&lt;/h4&gt;
-&lt;p&gt;The installation will begin and should complete (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall19.jpg&#34;&gt;Figure 19&lt;/a&gt;). The final screen will display a link to the summary log, information about the setup/next steps, and any supplemental information (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall20.jpg&#34;&gt;Figure 20&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;Verifying the install&lt;/h3&gt;
-&lt;p&gt;At this point you should be able to start Microsoft SQL Server Management Studio and log into the local instance, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall21.jpg&#34;&gt;Figure 21&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can also check to see if the service is running by opening Windows Task Manager and looking for sqlservr.exe and sqlwriter.exe (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/sqlServerExpress/SQLServer2008ExpressInstall22.jpg&#34;&gt;Figure 22&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;And that&#39;s all there is to it.&lt;/p&gt;
-&lt;h3&gt;Update: Installing to Windows Server 2008&lt;/h3&gt;
-&lt;p&gt;Differences for installing on Windows Server 2008 (SP2):&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows PowerShell can be installed from Server Manager &amp;gt; Features &amp;gt; Windows PowerShell.&lt;/li&gt;
-&lt;li&gt;Setting up the Windows Firewall is covered by &lt;a rel=&#34;external&#34; href=&#34;http://go.microsoft.com/fwlink/?LinkId=94001&#34;&gt;Configuring the Windows Firewall to Allow SQL Server Access&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;No other changes need be made.&lt;/p&gt;
-</description>
+      <description>In this article we install Microsoft SQL Server Express 2008 on a virtual machine running Windows Server 2003.</description>
     </item>
     
     <item>
@@ -81,21 +34,7 @@
       <pubDate>Wed, 24 Jun 2009 08:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/</guid>
-      <description>&lt;p&gt;Granted, in the case where this came up, I should have moved away from a SqlDataSource, but I wrote it using one, and a re-write isn&#39;t possible at the moment.&lt;/p&gt;
-&lt;p&gt;So, I had to find a way yesterday to programmatically set the command timeout of a select, using a SqlDataSource (that was programmatically written).&lt;/p&gt;
-&lt;p&gt;After much research, I found that you have to set the timeout on selecting. After opening a dummy document to see if I could determine how it was normally done, I came up with something like the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;SqlDataSource dataSource = new SqlDataSource();
-// code removed
-dataSource.Selecting += GenericSelecting;
-// code removed&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The GenericSelecting is as follows:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;protected void GenericSelecting(object sender, SqlDataSourceSelectingEventArgs e) {
-    e.Command.CommandTimeout = 6000;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Excessive timeout, yes, but it works.&lt;/p&gt;
-&lt;p&gt;Why does this need to be done? Well, even if you set a timeout on the connection string that only determines how long the initial connection to Sql will go before it times out. The commands against that data source, however, are outside of that timeout. Which means that if your Sql takes more than 30 seconds (IIRC), you get a nice timeout error.&lt;/p&gt;
-&lt;p&gt;In this case the stored procedure was pretty massive (granted, it wasn&#39;t taking 6000 seconds), so a timeout had to be used.&lt;/p&gt;
-</description>
+      <description>How to programmatically set a timeout on a Sql command, using a SqlDataSource, in C#.</description>
     </item>
     
     <item>
@@ -104,39 +43,7 @@ dataSource.Selecting += GenericSelecting;
       <pubDate>Sat, 06 Jun 2009 14:08:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp.aspx&#34;&gt;a similar article&lt;/a&gt; I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive.&lt;/p&gt;
-&lt;p&gt;So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code.&lt;/p&gt;
-&lt;p&gt;First, the following must be included in.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// For DataTable
-using System.Data;
-// For SqlConnection, SqlCommand, SqlParameter, SqlDataAdapter
-using System.Data.SqlClient;
-// For ConfigurationManager
-using System.Configuration;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next we have the code, with some dummy data.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;public DataTable returnDataTable(int Id) {
-    DataTable returnValue = new DataTable();
-
-    SqlConnection connection = new SqlConnection();
-    connection.ConnectionString = ConfigurationManager.ConnectionStrings[&#34;connectionString&#34;].ConnectionString;
-    SqlCommand command = new SqlCommand();
-    command.Connection = connection;
-    command.CommandType = CommandType.StoredProcedure;
-    command.CommandText = &#34;stored_proc&#34;;
-    command.Parameters.Add(new SqlParameter(&#34;@id&#34;, Id));
-    SqlDataAdapter adapter = new SqlDataAdapter(command);
-    adapter.Fill(returnValue);
-
-    adapter = null;
-    command = null;
-    connection.Close();
-    connection = null;
-
-    return returnValue;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This seems to&amp;nbsp;be a bit better than what I had.&lt;/p&gt;
-&lt;p&gt;Or not? Let me know.&lt;/p&gt;
-</description>
+      <description>Another way to programmatically make a database call, but this time without extra System.Web includes.</description>
     </item>
     
     <item>
@@ -145,38 +52,7 @@ using System.Configuration;&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Mon, 01 Jun 2009 21:03:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/</guid>
-      <description>&lt;p&gt;I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here&#39;s how I&#39;ve been programmatically making calls to Microsoft SQL Server.&lt;/p&gt;
-&lt;p&gt;If I&#39;m doing something wrong, please comment below or send me an email. Some times have been changed to dummy values.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;
-SqlDataSource dataSource = new SqlDataSource();
-dataSource.ConnectionString = ConfigurationManager.ConnectionStrings[&#34;ConnectionString&#34;].ConnectionString;
-dataSource.SelectCommand = &#34;stored_proc&#34;;
-dataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure;
-dataSource.SelectParameters.Add(&#34;id&#34;, value);
-dataSource.CacheDuration = 3600;
-
-DataView viewData = (DataView)dataSource.Select(DataSourceSelectArguments.Empty);
-DataTable tableData = viewData.ToTable();
-
-//Stuff
-
-tableData = null;
-viewData = null;
-dataSource = null;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;From what I can tell, there&#39;s no close by doing a select this way; the connection must close after it&#39;s performed?&lt;/p&gt;
-&lt;h3&gt;Update June 6 2009:&lt;/h3&gt;
-&lt;p&gt;To use this code you would also need to include the following, if they were not already included.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;// Need to add for SqlDataSource
-using System.Web.UI.WebControls;
-// Need for ConfigurationManager
-using System.Configuration;
-// Need for DataView
-using System.Data;
-// For DataSourceSelectArguments
-using System.Web.UI;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Because of this, there may be another way to do this, that doesn&#39;t require these additions.&lt;/p&gt;
-</description>
+      <description>The code I&#39;ve been using to open a connection, programmatically, to Microsoft SQL Server.</description>
     </item>
     
   </channel>

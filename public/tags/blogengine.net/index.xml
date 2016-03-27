@@ -16,18 +16,7 @@
       <pubDate>Sun, 22 Sep 2013 14:04:41 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Goodbye-BlogEngine-NET/</guid>
-      <description>&lt;p&gt;On &lt;a href=&#34;http://words.strivinglife.com/words/Post/BlogEngineNET-now-used-by-StrivingLife&#34;&gt;July 13, 2007&lt;/a&gt; I converted my blog over from WordPress to BlogEngine.NET (having previously used custom code written in PHP).&lt;/p&gt;
-
-&lt;p&gt;It was a great switch, as I was beginning to really dig into .NET, and I&#39;ve found there&#39;s no better way to learn something than actually doing something with it.&lt;/p&gt;
-
-&lt;p&gt;While I don&#39;t think I did much with the beta, I was in on 1.0 and was fairly active at first. Mads eventually switched focus, and there were much more vocal users, so I slowed down, and eventually stopped visiting the community.&lt;/p&gt;
-
-&lt;p&gt;This switch is long overdue, but a short while ago I started on the process of moving away from BlogEngine.NET, and late last night (or very early this morning) I pulled the switch.&lt;/p&gt;
-
-&lt;p&gt;I still have some work to do on the functionality to actually create/edit data, but at this point it&#39;s been running pretty solid, with considerably less of a memory footprint.&lt;/p&gt;
-
-&lt;p&gt;I&#39;m hoping for a nicer design at some point, as well as additional tweaks to the functionality, but moving away from BlogEngine.NET is the first step towards those goals.&lt;/p&gt;
-</description>
+      <description>It&#39;s been a good 6 years of using BlogEngine.NET, but it was time to move on.</description>
     </item>
     
     <item>
@@ -36,11 +25,7 @@
       <pubDate>Sun, 31 Jul 2011 17:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/12-years-of-posts-equals-a-lot-of-comments/</guid>
-      <description>&lt;p&gt;When I moved from my custom system to WordPress to BlogEngine.NET I never did end up copying over all the old comments on my posts. Heck, I don&#39;t even think I moved over all my posts.&lt;/p&gt;
-&lt;p&gt;But since I&#39;m sticking with DISQUS I decided to move all my BE.NET comments over to DISQUS, and over the last few hours have been making the necessary changes and performing the necessary cleanup.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;I found a great extension that generated the XML for me (thankfully), but since I&#39;m me I&#39;m actually going through and removing the extra comments, so my data source is clean. And that may not have been the best idea ...&lt;/p&gt;
-&lt;p&gt;But, I have to believe it is for the best.&lt;/p&gt;
-</description>
+      <description>12 years of posts/articles means I&#39;ve got a slew of comments, and I&#39;ll be touching almost every single one as I migrate completely to DISQUS.</description>
     </item>
     
     <item>
@@ -49,11 +34,7 @@
       <pubDate>Wed, 10 Feb 2010 08:32:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-16-released/</guid>
-      <description>&lt;p&gt;Promising a real comment moderation system, BE.NET 1.6 was released a few days ago.&lt;/p&gt;
-&lt;p&gt;Having just upgraded from 1.5.0.7, I wasn&#39;t without my issues, but overall the memory footprint doesn&#39;t seem too horrible (it&#39;s increased a bit again, but ...)&lt;/p&gt;
-&lt;p&gt;Actually, the memory footprint isn&#39;t a minor issue. I have 805 posts with 688 comments, and get between 9 to 10 thousand visits a month. BlogEngine.NET starts at around 150 MB of RAM and jumps up to 210 MB. It&#39;s not horrid, but I remember the days when it was nice and lean.&lt;/p&gt;
-&lt;p&gt;At one point Mads suggested he was going to switch over to IIS 7; maybe we&#39;ll see .NET 3.5 functionality first, which might tighten things up. Otherwise it may just mean I need to do a custom build ... or scrap it altogether for a lean system. I don&#39;t want to, but ...&lt;/p&gt;
-</description>
+      <description>BlogEngine.NET 1.6 is available for download. Too bad the memory footprint increased again.</description>
     </item>
     
     <item>
@@ -62,55 +43,7 @@
       <pubDate>Thu, 31 Dec 2009 14:20:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/</guid>
-      <description>&lt;p&gt;At the beginning of the month I wrote a post on &lt;a href=&#34;http://strivinglife.com/words/post/Determine-BlogEngineNET-comments-that-havent-been-published.aspx&#34;&gt;how to find BlogEngine.NET comments that had not yet been published/approved&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Having purchased a copy of &lt;a rel=&#34;external&#34; href=&#34;http://linqpad.net/&#34;&gt;LINQPad&lt;/a&gt; a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it&#39;s &lt;em&gt;very&lt;/em&gt; cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;string postsDirectory = @&#34;C:\posts&#34;;
-
-string[] postFiles = System.IO.Directory.GetFiles(postsDirectory);
-
-DataTable comments = new DataTable();
-    comments.Columns.Add(&#34;Post&#34;);
-    comments.Columns.Add(&#34;CommentApproved&#34;);
-    comments.Columns.Add(&#34;FileId&#34;);
-    comments.Columns.Add(&#34;IpAddress&#34;);
-
-XDocument postXml;
-
-foreach (string postFile in postFiles) {
-    postXml = XDocument.Load(postFile);
-
-    var posts = from postData in postXml.Descendants(&#34;post&#34;)
-        select new {
-            Title = postData.Element(&#34;title&#34;).Value,
-            CommentItems = (from commentItems in postData.Element(&#34;comments&#34;).Elements(&#34;comment&#34;)
-                select commentItems).ToList()
-        };
-
-    foreach (var post in posts) {
-        if (post.CommentItems.Count &amp;gt; 0) {
-            foreach (var commentItem in post.CommentItems) {
-                if (commentItem.Attribute(&#34;approved&#34;) != null &amp;amp;&amp;amp; commentItem.Attribute(&#34;approved&#34;).Value == &#34;False&#34;) {
-                    DataRow comment = comments.NewRow();
-                    comment[&#34;Post&#34;] = post.Title;
-                    comment[&#34;CommentApproved&#34;] = commentItem.Attribute(&#34;approved&#34;).Value;
-                    comment[&#34;IpAddress&#34;] = commentItem.Element(&#34;ip&#34;).Value;
-                    comment[&#34;FileId&#34;] = &#34;/post.aspx?id=&#34; + System.IO.Path.GetFileNameWithoutExtension(postFile);
-                    comments.Rows.Add(comment);
-                }
-            }
-
-        }
-    }
-}
-
-postXml = null;
-
-comments.Dump();&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You&#39;ll want to change postsDirectory accordingly.&lt;/p&gt;
-&lt;p&gt;This will output all unapproved comments, the post they are associated with, the post GUID, and the commentor&#39;s IP address.&lt;/p&gt;
-&lt;p&gt;It&#39;s relatively easy to expand this to display more or less information, as desired. For example, &lt;strong&gt;website&lt;/strong&gt; and &lt;strong&gt;author&lt;/strong&gt; can be swapped in in place of &lt;strong&gt;ip&lt;/strong&gt; in the last foreach.&lt;/p&gt;
-&lt;p&gt;Comments/questions/etcetera welcome and appreciated.&lt;/p&gt;
-</description>
+      <description>Find all BlogEngine.NET posts with unapproved comments using this code and LINQPad.</description>
     </item>
     
     <item>
@@ -119,83 +52,7 @@ comments.Dump();&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Sun, 06 Dec 2009 15:55:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/</guid>
-      <description>&lt;p&gt;Unfortunately, BlogEngine.NET doesn&#39;t currently have a very good way to determine, at a glance, all of the comments that haven&#39;t been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.&lt;/p&gt;
-&lt;p&gt;You can download the built executable, or play with the code, which is included below.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/TestBlogEngine.7z&#34;&gt;Download the executable&lt;/a&gt;&amp;nbsp;(7-Zip format). Requires &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework 3.5&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The form I created consisted of a TextBox, Button, and a DataGridView, with the default names.&lt;/p&gt;
-&lt;/div&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using System.Xml.Linq;
-
-namespace TestBlogEngine {
-    public partial class Form1 : Form {
-        public Form1() {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e) {
-            OpenFileDialog sampleFile = new OpenFileDialog();
-            sampleFile.Filter = &#34;xml files (*.xml)|*.xml|All files (*.*)|*.*&#34;;
-
-            if (sampleFile.ShowDialog() == DialogResult.OK) {
-                textBox1.Text = sampleFile.FileName;
-
-                string postsDirectory = System.IO.Path.GetDirectoryName(sampleFile.FileName);
-                sampleFile.Dispose();
-
-                string[] postFiles = System.IO.Directory.GetFiles(postsDirectory);
-
-                DataTable comments = new DataTable();
-                comments.Columns.Add(&#34;Post&#34;);
-                comments.Columns.Add(&#34;CommentApproved&#34;);
-                comments.Columns.Add(&#34;FileId&#34;);
-
-                XDocument postXml;
-
-                foreach (string postFile in postFiles) {
-                    postXml = XDocument.Load(postFile);
-
-                    var posts = from postData in postXml.Descendants(&#34;post&#34;)
-                        select new {
-                            Title = postData.Element(&#34;title&#34;).Value,
-                            CommentItems = (from commentItems in postData.Element(&#34;comments&#34;).Elements(&#34;comment&#34;)
-                                select commentItems).ToList()
-                        };
-
-                    foreach (var post in posts) {
-                        if (post.CommentItems.Count &amp;gt; 0) {
-                            foreach (var commentItem in post.CommentItems) {
-                                if (commentItem.Attribute(&#34;approved&#34;) != null &amp;amp;&amp;amp; commentItem.Attribute(&#34;approved&#34;).Value == &#34;False&#34;) {
-                                    DataRow comment = comments.NewRow();
-                                    comment[&#34;Post&#34;] = post.Title;
-                                    comment[&#34;CommentApproved&#34;] = commentItem.Attribute(&#34;approved&#34;).Value;
-                                    comment[&#34;FileId&#34;] = &#34;/post.aspx?id=&#34; + System.IO.Path.GetFileNameWithoutExtension(postFile);
-                                    comments.Rows.Add(comment);
-                                }
-                            }
-
-                        }
-                    }
-                }
-
-                postXml = null;
-
-                dataGridView1.DataSource = comments;
-
-            }
-        }
-    }
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;EDIT: Scott Guthrie&#39;s excellent &lt;a rel=&#34;external&#34; href=&#34;http://weblogs.asp.net/scottgu/archive/2007/08/07/using-linq-to-xml-and-how-to-build-a-custom-rss-feed-reader-with-it.aspx&#34;&gt;Using LINQ to XML (and how to build a custom RSS Feed Reader with it)&lt;/a&gt; is &lt;em&gt;the&lt;/em&gt; article that I keep going back to when I forget LINQ to XML basics.&lt;/p&gt;
-</description>
+      <description>C# code to parse a directory of BlogEngine.NET posts (determined by the user selecting one) for unapproved comments.</description>
     </item>
     
     <item>
@@ -204,15 +61,7 @@ namespace TestBlogEngine {
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
-      <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
-&lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
-&lt;p&gt;I decided to start with Dmitry&#39;s release and downloaded and built the application. Since I&#39;m looking into building extensions for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34;&gt;BlogEngine.NET&lt;/a&gt; (to work against some spam issues and for general knowledge), as well as wanting to work on themes, I decided to see if I could get BE working on Cassini.&lt;/p&gt;
-&lt;p&gt;And it does, right out of the box (version 1.5.0.7).&lt;/p&gt;
-&lt;p&gt;On a Windows XP Professional box memory usage jumped to approximately 100 MB (which is about what I see on my own blog, with a little over 780 posts). On my Windows 7 Home Premium (64-bit) machine, however, memory usage sat under 40 MB.&lt;/p&gt;
-&lt;p&gt;Either way, I was able to login just fine.&lt;/p&gt;
-&lt;p&gt;Next I&#39;ll probably see if I can get an MVC Web site up and running on Cassini as well.&lt;/p&gt;
-</description>
+      <description>Cassini Personal Web Server may just be what you need to quickly work with BlogEngine.NET for extension and theme creation.</description>
     </item>
     
     <item>
@@ -221,10 +70,7 @@ namespace TestBlogEngine {
       <pubDate>Tue, 21 Jul 2009 15:58:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/New-site-theme-watercircles/</guid>
-      <description>&lt;p&gt;Based on &lt;a href=&#34;http://www.opendesigns.org/design/?template=2382&#34;&gt;metamorph_watercircles&lt;/a&gt;, and converted for use with BlogEngine.NET, watercircles is now in use on my site.&lt;/p&gt;
-&lt;p&gt;The theme has a deal of special inline modifications for my own particular purposes, so it&#39;s not generally available for BlogEngine.NET users, but if you&#39;re interested ...&lt;/p&gt;
-&lt;p&gt;Comments welcome. (I&#39;m sure I&#39;ll find things I missed as the weeks go by, but any findings are appreciated.)&lt;/p&gt;
-</description>
+      <description>Watercircles, a new theme for BlogEngine.NET, is now in use on my site.</description>
     </item>
     
     <item>
@@ -233,12 +79,7 @@ namespace TestBlogEngine {
       <pubDate>Thu, 27 Nov 2008 00:15:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/</guid>
-      <description>&lt;p&gt;I&#39;ve been working on a new theme for the site, since around 7 this evening ... and it&#39;s&amp;nbsp;finally rolled out.&lt;/p&gt;
-&lt;p&gt;This is along the lines of what I was thinking a couple weeks ago, but I actually grabbed some ideas from Microsoft&#39;s recent KB changes.&lt;/p&gt;
-&lt;p&gt;This is the first theme I&#39;ve created that used the widget functionality, and I can honestly say I&#39;m still &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.codeplex.com/blogengine/Thread/View.aspx?ThreadId=33113&#34; target=&#34;_blank&#34;&gt;not that impressed&lt;/a&gt; with it.&lt;/p&gt;
-&lt;p&gt;I still have to add some styles for coding that I add in, once I find a good sample (did I really just use blockquote?), and I&#39;m sure I&#39;ll find something else that I missed, but ... it&#39;s pretty close.&lt;/p&gt;
-&lt;p&gt;This has also definitely made me realize how much I need to start posting issues to the BE.NET tracker again.&lt;/p&gt;
-</description>
+      <description>I created a new theme for BlogEngine.NET, my first with the new widgets functionality.</description>
     </item>
     
     <item>
@@ -247,31 +88,7 @@ namespace TestBlogEngine {
       <pubDate>Sun, 31 Aug 2008 20:49:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/James-Skemps-BlogEngineNET-themes/</guid>
-      <description>&lt;p&gt;The following is a list of links to posts regarding themes I have worked on for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34; target=&#34;_blank&#34;&gt;BlogEngine.NET&lt;/a&gt;, and that are&amp;nbsp;available for use. (Themes I&#39;ve worked on for others are not included here.) Listed alphabetically.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-Theme-MWRT-002.aspx&#34;&gt;MWRT-002&lt;/a&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesrskemp.com/be_themes/MWRT-002_1.4.5.0.zip&#34;&gt;Download for BE.NET 1.4.5.0&lt;/a&gt;.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;div&gt;&lt;a href=&#34;http://jamesrskemp.com/be_themes/swandive_1.4.5.0.zip&#34;&gt;Download for BE.NET 1.4.5.0&lt;/a&gt;.&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;As I&#39;m not a designer, I&amp;nbsp;typically use open source designs, such as those from &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.oswd.org/&#34; target=&#34;_blank&#34;&gt;Open Source Web Design&lt;/a&gt;, &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.opendesigns.org/&#34; target=&#34;_blank&#34;&gt;Open Design Community&lt;/a&gt;,&amp;nbsp;&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.openwebdesign.org/&#34; target=&#34;_blank&#34;&gt;Open Web Design&lt;/a&gt;&amp;nbsp;(please post a link if you know of more).&lt;/p&gt;
-&lt;p&gt;If you have a design that you would like me to convert to BlogEngine.NET, whether it be your own or another&#39;s (if you have permission), please just let me know!&lt;/p&gt;
-&lt;p&gt;Likewise, if you need help working on your own theme, let me know!&lt;/p&gt;
-&lt;p&gt;Comments/etcetera appreciated.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Update 2/20/2010&lt;/strong&gt;: Comments are now disabled for this post, due to spam, but feel free to contact me personally via email in regards to any of the above.&lt;/p&gt;
-</description>
+      <description>A listing of themes I&#39;ve adapted for use with BlogEngine.NET.</description>
     </item>
     
     <item>
@@ -280,88 +97,7 @@ namespace TestBlogEngine {
       <pubDate>Sat, 16 Aug 2008 12:41:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-to-BlogEngineNET-145/</guid>
-      <description>&lt;p&gt;
-With the release of &lt;a href=&#34;http://www.dotnetblogengine.net/&#34; target=&#34;_blank&#34;&gt;BlogEngine.NET 1.4.5&lt;/a&gt; a bit ago ... it was time to give it &lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-14-Memory-usage-spike.aspx&#34;&gt;another go upgrading&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Quick notes on my experience: 
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Downloaded and FTP&amp;#39;d the zip. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Remoted into my VPS.&amp;nbsp; 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Extracted the contents of the zip to another folder. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Unchecked read-only on the extracted contents. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Backed up my complete BlogEngine directory. 
-    &lt;/div&gt;
-    &lt;ol&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        I had issues with roles.xml not being accessible. For some reason I had to set the owner again ... 
-        &lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Created app_offline.htm file in BlogEngine directory, and tested this displayed.&amp;nbsp; 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Begin moving all files/directories over, excluding app_data. I use the rewrite method so I don&amp;#39;t have to go around setting up permissions again. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Made necessary change to robots.txt. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Recycle app pool. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Rename&amp;nbsp;app_offline.htm 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Recycle app pool again. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Reset main account&amp;#39;s password. 
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-I was getting a 404 for Default.aspx when I was remoted in, so I had to pull the app_offline file and hope for the best. It took a while to start back up, but ... it&amp;#39;s up and my core posts are working. 
-&lt;/p&gt;
-&lt;p&gt;
-Now I get to start checking my various themes to see how they work. 
-&lt;/p&gt;
-</description>
+      <description>My experience upgrading to BlogEngine.NET 1.4.5.</description>
     </item>
     
     <item>
@@ -370,36 +106,7 @@ Now I get to start checking my various themes to see how they work.
       <pubDate>Sun, 06 Jul 2008 15:25:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-14-Memory-usage-spike/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-Update,&amp;nbsp;July 9, 2008:&amp;nbsp;This update is a little late, but &amp;hellip; Mads was able to determine what the issue was and has provided a fix. I&amp;#39;ll be trying&amp;nbsp;another update this week.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-I recently upgraded to BlogEngine.NET 1.4, from 1.3.
-&lt;/p&gt;
-&lt;p&gt;
-While it was, overall, a smooth enough process, while trying to dig into the large memory usage spike, I ran into a number of issues.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve written about &lt;a href=&#34;http://words.strivinglife.com/words/?tag=/blogengine.net&#34;&gt;BlogEngine.NET&lt;/a&gt; in the past, and overall I&amp;#39;ve been very happy with it.
-&lt;/p&gt;
-&lt;p&gt;
-However, upon startup, it seems 1.4 uses&amp;nbsp;4 times the memory 1.3 did (that&amp;#39;s around 130 MB total - with only one visitor).
-&lt;/p&gt;
-&lt;p&gt;
-Huh? That&amp;#39;s pretty scary.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m afraid that BlogEngine.NET has started to suffer from feature creep. I&amp;#39;ve got my backup of 1.3.x, so if nothing else I can switch back to that if my application pool keeps restarting (which I&amp;#39;m afraid I&amp;#39;ll have to do).
-&lt;/p&gt;
-&lt;p&gt;
-Granted, there&amp;#39;s some really nice enhancements, but if I can expect such a large memory commitment, I&amp;#39;ll have to downgrade, which means I&amp;#39;ll have to think about switching &amp;hellip;
-&lt;/p&gt;
-&lt;p&gt;
-And that&amp;#39;s a really scary idea, because of incoming links &amp;hellip;
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Is BlogEngine.NET starting to suffer from feature creep?</description>
     </item>
     
     <item>
@@ -408,25 +115,7 @@ And that&amp;#39;s a really scary idea, because of incoming links &amp;hellip;
       <pubDate>Mon, 24 Dec 2007 13:10:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngine-13-upgrade-issues/</guid>
-      <description>&lt;p&gt;
-There&amp;#39;s been quite the party for the last 30 minutes or so. 
-&lt;/p&gt;
-&lt;p&gt;
-BlogEngine 1.3 was released a couple of days ago, and I finally upgraded. Unlike what I should have done, I upgraded my live installation first. Yikes. 
-&lt;/p&gt;
-&lt;p&gt;
-For some reason, all of the permissions on the sub-folders and files was lost. Since web.config couldn&amp;#39;t be accessed, the site went down - hard. 
-&lt;/p&gt;
-&lt;p&gt;
-After a bunch of Google searches, and no solutions, I started pressing buttons. 
-&lt;/p&gt;
-&lt;p&gt;
-If&amp;nbsp;you go into the properties for a folder, go into the Permissions, and check the box &amp;#39;Replace permission entries on all child objects with entries shown here that apply to child objects,&amp;#39; it seems to add the relevant permissons back onto the files/folders. 
-&lt;/p&gt;
-&lt;p&gt;
-Whew.
-&lt;/p&gt;
-</description>
+      <description>For whatever reason, when I upgraded to BlogEngine 1.3, all of the permissions on my site vanished. [slnet0514:e8115c76-8306-4aaa-9bbe-66b3f72cec25]</description>
     </item>
     
     <item>
@@ -435,19 +124,7 @@ Whew.
       <pubDate>Sat, 13 Oct 2007 17:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-Theme-MWRT-002/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;Updated for BlogEngine.NET 1.3!&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Not a very original name, but I can see how it was created &amp;hellip;&lt;/p&gt;
-&lt;p&gt;Anyways, I&amp;rsquo;m proud to present another theme for BlogEngine.NET, called MWRT-002.&lt;/p&gt;
-&lt;p&gt;This theme is based upon the template of the same name by &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.oswd.org/design/preview/id/2731/&#34; target=&#34;_blank&#34;&gt;MyWebResource&lt;/a&gt;, and made available on Open Source Web Design.&lt;/p&gt;
-&lt;p&gt;A zip of the theme can be downloaded from my testing site at JamesRSkemp.net.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.2.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.2&lt;/a&gt; (tested with 1.2.0.0).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://jamesrskemp.net/be_themes/MWRT-002_1.3.zip&#34;&gt;Download the zip file - for BlogEngine.NET 1.3&lt;/a&gt; (tested with 1.3.0.0).&lt;/p&gt;
-&lt;p&gt;Comments appreciated.&lt;/p&gt;
-&lt;p&gt;Other themes include &lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;Swan Dive&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;9/16/2009&lt;/strong&gt;: Comments are now closed. Please leave comments on &lt;a href=&#34;http://strivinglife.com/words/post/James-Skemps-BlogEngineNET-themes.aspx&#34;&gt;this post&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>James Skemp is proud to present MWRT-002, a theme for BlogEngine.NET.</description>
     </item>
     
     <item>
@@ -456,16 +133,7 @@ Whew.
       <pubDate>Sat, 06 Oct 2007 14:25:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Template-changed-again-October-2007/</guid>
-      <description>&lt;p&gt;
-Once again, I&amp;#39;ve changed the template for the site. This time I&amp;#39;m using &lt;strong&gt;Royal Flowers&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-The name comes from the purple flowers (taken outside of Madison Wisconsin&amp;#39;s capitol building (see the &lt;a href=&#34;http://words.strivinglife.com/gallery/&#34;&gt;Galleries&lt;/a&gt; for more shots) and that purple usually signifies royalty, or richness.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m not sure that the left-side navigation has been done the best it could be, but ... overall I&amp;#39;m pretty happy with it.
-&lt;/p&gt;
-</description>
+      <description>Royal Flowers is now the template for StrivingLife.</description>
     </item>
     
     <item>
@@ -474,19 +142,7 @@ I&amp;#39;m not sure that the left-side navigation has been done the best it cou
       <pubDate>Sun, 30 Sep 2007 20:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Swan-Dive-updated-for-BlogEngineNET-12-release/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;http://www.dotnetblogengine.net/post/Release-of-BlogEngineNET-12.aspx&#34;&gt;BlogEngine.NET 1.2.0.0 has been released&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-In &amp;#39;honor&amp;#39; of this release, I&amp;#39;ve updated Swan Dive, using the Standard theme as a guide.
-&lt;/p&gt;
-&lt;p&gt;
-Any questions or concerns can be directed to me via the comments on the original post.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://words.strivinglife.com/words/post/BlogEngineNET-11-Theme---Swan-Dive.aspx&#34;&gt;View the original post, and download Swan Dive&lt;/a&gt;.
-&lt;/p&gt;
-</description>
+      <description>With the release of BlogEngine.NET 1.2, I&#39;ve updated Swan Dive.</description>
     </item>
     
   </channel>

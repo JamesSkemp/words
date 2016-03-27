@@ -16,22 +16,7 @@
       <pubDate>Thu, 07 Sep 2006 20:38:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Dreamweaver-8-as-a-MXML-IDE/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;ve spent the last couple of hours trying to get Dreamweaver 8 to begin to function as a MXML IDE. Unfortunately, while I can get every &amp;lt;mx: tag added to the code hints, I&amp;#39;m having a heck of a time getting the actual code hints to function.
-&lt;/p&gt;
-&lt;p&gt;
-The small tutorial that Macromedia (and truly it was Macromedia at the time) provided isn&amp;#39;t very helpful at all. CodeSnipers.com (link below) has some information on using Dreamweaver 8 a Ruby IDE, but since Ruby appears to be so function based ...
-&lt;/p&gt;
-&lt;p&gt;
-My open call is this; can anyone point me to a good tutorial that focuses on setting up CodeHints.xml, TagChooser.xml, and TagLibraries.vtm? Or, just CodeHints.xml?
-&lt;/p&gt;
-&lt;p&gt;
-===
-&lt;/p&gt;
-&lt;p&gt;
-Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34;&gt;Dreamweaver 8 as a Ruby IDE&lt;/a&gt;.
-&lt;/p&gt;
-</description>
+      <description>If only setting up code hints in Dreamweaver 8 were as easy as it looks ...</description>
     </item>
     
     <item>
@@ -40,19 +25,7 @@ Note: Title borrowed from &lt;a href=&#34;http://codesnipers.com/?q=node/175&#34
       <pubDate>Wed, 06 Sep 2006 18:56:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Compiling-Flex-applications-with-Dreamweaver/</guid>
-      <description>&lt;p&gt;
-Tom Lee wrote a post in July detailing how to compile and run Flex applications using Dreamweaver.  Since Flex 2 is making me very excited, I felt it was post worthy (especially since I won&amp;#39;t have to do a Google search to get back to his post now).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://tom-lee.blogspot.com/2006/07/edit-and-compile-flex-apps-in.html&#34;&gt;Edit and Compile Flex Apps in Dreamweaver&lt;/a&gt; details how to not only install Flex, but also how to easily, with the press of a button, compile Flex files using Dreamweaver and a couple of files.  Very cool stuff.
-&lt;/p&gt;
-&lt;p&gt;
-Since I&amp;#39;m having a heck of a time getting Flex 1.5 so I can setup Eclipse to create/edit Flex, I&amp;#39;m glad I found this post.  If only Adobe would link to this post as well.  I can see why they want to push Flex Builder to developers, since they&amp;#39;re providing the Flex SDK free of charge, but still, the nice thing to do would point out that you can still get limited functionality with Dreamweaver ...
-&lt;/p&gt;
-&lt;p&gt;
-As for Flex, I need to goof off with creating some of the sample apps before I do what I want to do - namely switch some of my downloadable programs into Flex apps :D
-&lt;/p&gt;
-</description>
+      <description>External link time: Tom Lee&#39;s post on easily compiling and running Flex applications using Dreamweaver.</description>
     </item>
     
   </channel>

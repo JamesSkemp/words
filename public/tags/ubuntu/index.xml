@@ -16,31 +16,7 @@
       <pubDate>Sun, 17 Feb 2008 13:45:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Determining-memory-and-more-with-Ubuntu/</guid>
-      <description>&lt;p&gt;
-Unfortunately, &lt;a href=&#34;http://www.crucial.com/&#34; target=&#34;_blank&#34;&gt;Crucial&lt;/a&gt;&amp;#39;s system scanner tool doesn&amp;#39;t work on Linux. 
-&lt;/p&gt;
-&lt;p&gt;
-While unfortunate, it turns out that there&amp;#39;s an easy way to determine how much memory you&amp;#39;ve currently got, and how much you can increase that to, using a simple comand. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;sudo lshw&lt;/strong&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s all there is to it. 
-&lt;/p&gt;
-&lt;p&gt;
-This gives not only an overview of how much you&amp;#39;ve got, and how much you can have, but also what banks are in use with what, and other system-related &amp;#39;stuff.&amp;#39; 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://www.kryogenix.org/days/2006/10/26/memory-scanner-for-linux&#34; target=&#34;_blank&#34;&gt;Pretty nifty.&lt;/a&gt; 
-&lt;/p&gt;
-&lt;p&gt;
-For better or worse, it looks like the Dell I got from work is maxed out. But, considering that it&amp;#39;s running Ubuntu (which I haven&amp;#39;t been on since September or October of last year) and it&amp;#39;s running fine anyways ... 
-&lt;/p&gt;
-&lt;p&gt;
-(Of course, Crucial is pretty cool, in that you can find most standard computers on their site.) 
-&lt;/p&gt;
-</description>
+      <description>While Crucial&#39;s system scanner tool doesn&#39;t work, there is another way to easily determine how much memory you have and can have. [slnet0514:68eae384-856a-4c34-82d2-12c883612ccc]</description>
     </item>
     
     <item>
@@ -49,19 +25,7 @@ For better or worse, it looks like the Dell I got from work is maxed out. But, c
       <pubDate>Tue, 17 Jul 2007 10:55:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Image-thumbnails-blindingly-fast-on-Ubuntu-%28vs-Windows%29/</guid>
-      <description>&lt;p&gt;
-I&amp;#39;m at work, just finishing up my lunch period, and I&amp;#39;m really wishing I had access to my Ubuntu machine right now.
-&lt;/p&gt;
-&lt;p&gt;
-The reason? I just put in a CD of 200 images - one of my backup CDs - and was hoping to get a quick glance at what images were contained on the CD.
-&lt;/p&gt;
-&lt;p&gt;
-However, Windows was crawling through the thumbnail generation. Adobe Bridge isn&amp;#39;t much faster (but is what I ended up going with).
-&lt;/p&gt;
-&lt;p&gt;
-Grr ... 
-&lt;/p&gt;
-</description>
+      <description>Thumbnail images on Windows (from CD) = way too slow.</description>
     </item>
     
     <item>
@@ -70,98 +34,7 @@ Grr ...
       <pubDate>Tue, 26 Jun 2007 19:13:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Ubuntu-704-Server-Edition-installed/</guid>
-      <description>&lt;p&gt;
-Just about finished ...  Quite the process, but things seem to be running okay - now I just have to determine whether it was worth it ...
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m using a computer with a 40 GB hard drive and 512 MB of RAM.  So ...
-&lt;/p&gt;
-&lt;p&gt;
-#1 - primary - 1.2 GB - swap - swap&lt;br /&gt;
-#3 - primary - 22.3 GB - ext3 - /home&lt;br /&gt;
-#5 - logical - 15.0 GB - ext3 - /&lt;br /&gt;
-#6 - logical - 1.5 GB - fat32 - /mnt/shared
-&lt;/p&gt;
-&lt;p&gt;
-This was based upon my previous install, where I had the following:
-&lt;/p&gt;
-&lt;p&gt;
-/ = 6.7 GB, 59% was used&lt;br /&gt;
-/home = 9.3 GB, 5% used&lt;br /&gt;
-(swap was 1.2 GB?)
-&lt;/p&gt;
-&lt;p&gt;
-The other 20 GB was the Windows XP installation.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Getting it partitioned just right took a bit of time ...
-&lt;/p&gt;
-&lt;p&gt;
-Once the server installation was done, I decided to install ubuntu-desktop (yikes, that was almost an hour). What I should have done was install Lynx (see a little further below) so I could have at least browsed a bit while I was waiting ... but I had my Windows machine up, so I was able to get some work done while I was waiting.
-&lt;/p&gt;
-&lt;p&gt;
-sudo apt-get install ubuntu-desktop
-&lt;/p&gt;
-&lt;p&gt;
-Once that finally stopped, a reboot.
-&lt;/p&gt;
-&lt;p&gt;
-sudo reboot
-&lt;/p&gt;
-&lt;p&gt;
-Unfortunately, now the GUI is starting automatically.  After some research online ...
-&lt;/p&gt;
-&lt;p&gt;
-sudo apt-get sysv-rc-conf
-&lt;/p&gt;
-&lt;p&gt;
-sudo sysv-rc-conf
-&lt;/p&gt;
-&lt;p&gt;
-I unchecked the level 2 boxes for bluetooth and gdm.
-&lt;/p&gt;
-&lt;p&gt;
-Restart.
-&lt;/p&gt;
-&lt;p&gt;
-Now you&amp;#39;ll have to login, but AMP will automatically be started (tested by checking another machine on my network).
-&lt;/p&gt;
-&lt;p&gt;
-sudo apt-get install lynx
-&lt;/p&gt;
-&lt;p&gt;
-sudo gdm start
-&lt;/p&gt;
-&lt;p&gt;
-... or ...
-&lt;/p&gt;
-&lt;p&gt;
-sudo /etc/init.d/gdm start
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-And if you want to stop gdm (Ubuntu&amp;#39;s default GUI) use this at a terminal:
-&lt;/p&gt;
-&lt;p class=&#34;code&#34;&gt;
-sudo /etc/init.d/gdm stop
-&lt;/p&gt;
-&lt;p&gt;
-If you do sudo gdm stop, then it keeps trying to restart, and it&amp;#39;s dang annoying &amp;hellip; (because it never stops in the first place)
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Another login required ...
-&lt;/p&gt;
-&lt;p&gt;
-Then it&amp;#39;s uninstalling the Games and installing &lt;strong&gt;gkrellm&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-If I do this again, I&amp;#39;ll definitely need to take a look at the minimal version of ubuntu-desktop ...
-&lt;/p&gt;
-&lt;p&gt;
-Now I&amp;#39;ve got to reconfigure Firefox, &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/18/374/configuring-apache-for-per-user-pages/&#34;&gt;reconfigure Apache&lt;/a&gt;, and &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/15/373/quickie-install-coldfusion-702-on-ubuntu-704-with-apache-224/&#34;&gt;reinstall ColdFusion&lt;/a&gt;. I&amp;#39;m debating PostgreSQL ...
-&lt;/p&gt;
-</description>
+      <description>Notes, mostly to myself, on installing Ubuntu 7.04 Server Edition.</description>
     </item>
     
     <item>
@@ -170,19 +43,7 @@ Now I&amp;#39;ve got to reconfigure Firefox, &lt;a href=&#34;http://strivinglife
       <pubDate>Tue, 26 Jun 2007 17:56:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/See-ya-Ubuntu%21/</guid>
-      <description>&lt;p&gt;
-Ubuntu 7.04 - see ya later.
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s right, I&amp;#39;m going to blow my Dell machine away (old work computer - I don&amp;#39;t buy Dell machines any more).
-&lt;/p&gt;
-&lt;p&gt;
-Fear not, I&amp;#39;ll be installing 7.04 Server Edition ...
-&lt;/p&gt;
-&lt;p&gt;
-I just hope I backed up everything ... it&amp;#39;s good I documented (on this very site) what I did ... :D
-&lt;/p&gt;
-</description>
+      <description>Good-bye Ubuntu, see ya later!</description>
     </item>
     
     <item>
@@ -191,18 +52,7 @@ I just hope I backed up everything ... it&amp;#39;s good I documented (on this v
       <pubDate>Sat, 23 Jun 2007 08:50:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords/</guid>
-      <description>&lt;p&gt;&lt;p&gt;Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.&lt;/p&gt;
-&lt;h3&gt;MySQL&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mysql -u root
-UPDATE mysql.user SET Password = OLD_PASSWORD(&amp;rsquo;&lt;strong&gt;&lt;em&gt;password&lt;/em&gt;&lt;/strong&gt;&amp;rsquo;) WHERE User = &amp;lsquo;root&amp;rsquo;;
-FLUSH PRIVILEGES;
-\q&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;PostgreSQL&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;
-sudo -u postgres psql template1
-ALTER USER postgres WITH PASSWORD &amp;lsquo;&lt;strong&gt;&lt;em&gt;password&lt;/em&gt;&lt;/strong&gt;&amp;rsquo;;
-\q&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
-</description>
+      <description>Quickie on changing the passwords for MySQL and PostgreSQL, after installing from the repos.</description>
     </item>
     
     <item>
@@ -211,90 +61,7 @@ ALTER USER postgres WITH PASSWORD &amp;lsquo;&lt;strong&gt;&lt;em&gt;password&lt
       <pubDate>Sat, 23 Jun 2007 08:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Reference-PostgreSQL-82-commands-on-Ubuntu/</guid>
-      <description>&lt;p&gt;&lt;p&gt;
-Below are the PostgreSQL 8.2 commands on Ubuntu.
-&lt;/p&gt;
-&lt;p&gt;
-These are listed here primarily for my own benefit.
-&lt;/p&gt;
-&lt;pre&gt;
-General
-\c[onnect] [DBNAME|- USER|- HOST|- PORT|-]
-connect to new database (currently &amp;quot;template1&amp;quot;)
-\cd [DIR]      change the current working directory
-\copyright     show PostgreSQL usage and distribution terms
-\encoding [ENCODING]
-show or set client encoding
-\h [NAME]      help on syntax of SQL commands, * for all commands
-\q             quit psql
-\set [NAME [VALUE]]
-set internal variable, or list all if no parameters
-\timing        toggle timing of commands (currently off)
-\unset NAME    unset (delete) internal variable
-! [COMMAND]   execute command in shell or start interactive shell
-&lt;/pre&gt;
-&lt;pre&gt;
-Query Buffer
-\e [FILE]      edit the query buffer (or file) with external editor
-\g [FILE]      send query buffer to server (and results to file or |pipe)
-\p             show the contents of the query buffer
-\r             reset (clear) the query buffer
-\s [FILE]      display history or save it to file
-\w FILE        write query buffer to file
-&lt;/pre&gt;
-&lt;pre&gt;
-Input/Output
-\echo [STRING] write string to standard output
-\i FILE        execute commands from file
-\o [FILE]      send all query results to file or |pipe
-\qecho [STRING]
-write string to query output stream (see \o)
-&lt;/pre&gt;
-&lt;pre&gt;
-Informational
-\d [NAME]      describe table, index, sequence, or view
-\d{t|i|s|v|S} &lt;a href=&#34;add &amp;amp;quot;+&amp;amp;quot; for more detail&#34;&gt;PATTERN&lt;/a&gt;
-list tables/indexes/sequences/views/system tables
-\da [PATTERN]  list aggregate functions
-\db [PATTERN]  list tablespaces (add &amp;quot;+&amp;quot; for more detail)
-\dc [PATTERN]  list conversions
-\dC            list casts
-\dd [PATTERN]  show comment for object
-\dD [PATTERN]  list domains
-\df [PATTERN]  list functions (add &amp;quot;+&amp;quot; for more detail)
-\dg [PATTERN]  list groups
-\dn [PATTERN]  list schemas (add &amp;quot;+&amp;quot; for more detail)
-\do [NAME]     list operators
-\dl            list large objects, same as \lo_list
-\dp [PATTERN]  list table, view, and sequence access privileges
-\dT [PATTERN]  list data types (add &amp;quot;+&amp;quot; for more detail)
-\du [PATTERN]  list users
-\l             list all databases (add &amp;quot;+&amp;quot; for more detail)
-\z [PATTERN]   list table, view, and sequence access privileges (same as \dp)
-&lt;/pre&gt;
-&lt;pre&gt;
-Formatting
-\a             toggle between unaligned and aligned output mode
-\C [STRING]    set table title, or unset if none
-\f [STRING]    show or set field separator for unaligned query output
-\H             toggle HTML output mode (currently off)
-\pset NAME [VALUE]
-set table output option
-(NAME := {format|border|expanded|fieldsep|footer|null|
-numericlocale|recordsep|tuples_only|title|tableattr|pager})
-\t             show only rows (currently off)
-\T [STRING]    set HTML &amp;lt;table&amp;gt; tag attributes, or unset if none
-\x             toggle expanded output (currently off)
-&lt;/pre&gt;
-&lt;pre&gt;
-Copy, Large Object
-\copy &amp;hellip;      perform SQL COPY with data stream to the client host
-\lo_export LOBOID FILE
-\lo_import FILE [COMMENT]
-\lo_list
-\lo_unlink LOBOID    large object operations
-&lt;/pre&gt;&lt;/p&gt;
-</description>
+      <description>Reference of PostgreSQL 8.2 commands, via the command line.</description>
     </item>
     
     <item>
@@ -303,36 +70,7 @@ Copy, Large Object
       <pubDate>Thu, 21 Jun 2007 21:05:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Ubuntu-Quickie-Installing-MySQL-and-PostgreSQL/</guid>
-      <description>&lt;p&gt;For SQL on Ubuntu Linux, I decided it was easiest to just use the repositories to just install MySQL and PostgreSQL.&lt;/p&gt;
-&lt;p&gt;There was a couple of reasons for this. First, MySQL docs recommend it.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;Second, there&#39;s not that much that I really want to configure in SQL.&lt;/p&gt;
-&lt;p&gt;So ...&lt;/p&gt;
-&lt;h3&gt;MySQL&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;sudo apt-get install mysql-server&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;At the time of this writing, this will install;&lt;/p&gt;
-&lt;p&gt;libdbd-mysql-perl&lt;br /&gt;libdbi-perl&lt;br /&gt;libnet-daemon-perl&lt;br /&gt;libplrpc-perl&lt;br /&gt;mysql-client-5.0&lt;br /&gt;mysql-server&lt;br /&gt;mysql-server-5.0&lt;/p&gt;
-&lt;p&gt;Suggested packages:&lt;/p&gt;
-&lt;p&gt;dbishell&lt;br /&gt;libcompress-zlib-perl&lt;br /&gt;tinyca&lt;/p&gt;
-&lt;p&gt;Recommended packages:&lt;/p&gt;
-&lt;p&gt;mailx&lt;/p&gt;
-&lt;p&gt;There&#39;s some official GUIs that you can also install:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;sudo apt-get install mysql-admin mysql-query-browser&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;At the time of this writing, this will install;&lt;/p&gt;
-&lt;p&gt;libcairomm-1.0-1&lt;br /&gt;libglibmm-2.4-1c2a&lt;br /&gt;libgtkhtml3.8-15&lt;br /&gt;libgtkmm-2.4-1c2a&lt;br /&gt;mysql-admin&lt;br /&gt;mysql-admin-common&lt;br /&gt;mysql-query-browser&lt;br /&gt;mysql-query-browser-common&lt;/p&gt;
-&lt;p&gt;Suggested packages:&lt;/p&gt;
-&lt;p&gt;libgtkhtml3.8-dbg&lt;/p&gt;
-&lt;h3&gt;PostgreSQL&lt;/h3&gt;
-&lt;p&gt;For PostgreSQL, it&#39;s a bit longer of a string, since there&#39;s four packages, but it&#39;s still easy enough.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;sudo apt-get install postgresql-8.2 postgresql-client-8.2 postgresql-client-common postgresql-common&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You may as well also go from pgAdmin III, which &#34;is the most popular and feature rich Open Source administration and development platform for PostgreSQL.&#34;&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;sudo apt-get install pgadmin3&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;At the time of this writing, this will install:&lt;/p&gt;
-&lt;p&gt;libpq4&lt;br /&gt;libwxbase2.6-0&lt;br /&gt;libwxgtk2.6-0&lt;br /&gt;pgadmin3&lt;br /&gt;pgadmin3-data&lt;/p&gt;
-&lt;p&gt;Recommended packages:&lt;/p&gt;
-&lt;p&gt;pgagent (adds functionality to schedule PostgreSQL jobs)&lt;/p&gt;
-&lt;h3&gt;Next time ...&lt;/h3&gt;
-&lt;p&gt;Next time we&#39;ll &lt;a href=&#34;http://strivinglife.com/words/post/Ubuntu-Quickie-MySQL-and-PostgreSQL-passwords.aspx&#34;&gt;configure databases&lt;/a&gt; for both MySQL and PostgreSQL on Ubuntu.&lt;/p&gt;
-</description>
+      <description>Quickie on installing MySQL and PostgreSQL to Ubuntu 7.04.</description>
     </item>
     
     <item>
@@ -341,28 +79,7 @@ Copy, Large Object
       <pubDate>Mon, 18 Jun 2007 21:24:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Dont-let-my-recent-posts-confuse-you/</guid>
-      <description>&lt;p&gt;
-... I&amp;#39;m not an Ubuntu-only user yet (unlike some people I know).&amp;nbsp; Granted, I like using it, since I&amp;#39;ve believed, for some time, that if you want to run Apache, you can&amp;#39;t really run it on Windows ...
-&lt;/p&gt;
-&lt;p&gt;
-(Granted, I&amp;#39;m having a really difficult time trying to stick to my guns with Apache, versus IIS, but ... well, more on that in the future.)
-&lt;/p&gt;
-&lt;p&gt;
-I will probably blow this current box away and re-install Ubuntu, without the Windows partition, and doing a lot more building from source, for example, for Firefox. However, I&amp;#39;m not ready to blow away my main box, and there&amp;#39;s a big reason for that; Adobe.
-&lt;/p&gt;
-&lt;p&gt;
-Photoshop, Dreamweaver, Canon utilities for my Digital Rebel XT ... all reasons I need to keep my Windows box. Throw Internet Explorer 7.0 and Safari for Windows ... it&amp;#39;s hard to justify really getting rid of my Windows system.
-&lt;/p&gt;
-&lt;p&gt;
-Upgrade the equipment on the machine I&amp;#39;m using for Linux?&amp;nbsp; Probably not. In fact, the next time I upgrade, it&amp;#39;ll probably be to a Mac. Not that I&amp;#39;m a die-hard Mac user, but Mac&amp;#39;s just look cool, and I&amp;#39;d really like to install Apache on a Mac ...
-&lt;/p&gt;
-&lt;p&gt;
-There&amp;#39;s information on my PayPal account below and at the beginning of this article.
-&lt;/p&gt;
-&lt;p&gt;
-:D
-&lt;/p&gt;
-</description>
+      <description>Brief comments on why I&#39;m not yet ready for Linux-only ...</description>
     </item>
     
     <item>
@@ -371,63 +88,7 @@ There&amp;#39;s information on my PayPal account below and at the beginning of t
       <pubDate>Mon, 18 Jun 2007 20:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Configuring-Apache-for-per-user-pages/</guid>
-      <description>&lt;p&gt;
-In a previous post, &lt;a href=&#34;http://words.strivinglife.com/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;I covered installing Apache 2.2.4 on Ubuntu&lt;/a&gt;. Unfortunately, if you want to create content for this server, you need to either use the root account, or change the permissions on the /usr/local/apache2/htdocs directory. Let&amp;#39;s keep things that way.
-&lt;/p&gt;
-&lt;p&gt;
-First, open the Apache configuration file.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Now find the following line, and remove the pound sign from the beginning of the line.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code&#34;&gt;#Include conf/extra/httpd-userdir.conf&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Ctrl + X to save and exit.
-&lt;/p&gt;
-&lt;p&gt;
-If you want, you can open this file by running the following.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code&#34;&gt;sudo nano /usr/local/apache2/conf/extra/httpd-userdir.conf&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-But, there&amp;#39;s no real reason to do this.
-&lt;/p&gt;
-&lt;p&gt;
-So, changes made, restart Apache.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code&#34;&gt;sudo /usr/local/apache2/bin/apachectl restart&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-If you head over to http://localhost/, it&amp;#39;ll still display the files in your htdocs folder (including the ColdFusion file, if you&amp;#39;ve got that created, and &lt;a href=&#34;http://words.strivinglife.com/words/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224.aspx&#34;&gt;ColdFusion up and running&lt;/a&gt;).
-&lt;/p&gt;
-&lt;p&gt;
-However, you can now create a folder in your user directory and have direct access to your own content.
-&lt;/p&gt;
-&lt;p&gt;
-For example, if you have a &lt;strong&gt;bob&lt;/strong&gt; user, you have a home directory at /home/bob/.
-&lt;/p&gt;
-&lt;p&gt;
-Create a public_html (the default setting, which can be changed in the above mentioned httpd-userdir.conf file). Now if you create files, you can access them by going to http://localhost/~bob/filename.ext
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s it, you&amp;#39;re set. And yes, ColdFusion files will run (although it seems they run a tad bit slow ...).
-&lt;/p&gt;
-&lt;h4&gt;Update, June 18, 2007 @ 21:11&lt;/h4&gt;
-&lt;p&gt;
-Dan reminded me of no-ip, an account of which I had sitting around doing nothing. After messing around with it a bit, I&amp;#39;ve configured the &amp;quot;Dynamic Update Client.&amp;quot; &lt;span class=&#34;code_terminal&#34;&gt;sudo make install&lt;/span&gt; (after extracting) &lt;span class=&#34;code_terminal&#34;&gt;sudo noip2 -C&lt;/span&gt; (all covered in the readme) Defaults all around. I haven&amp;#39;t got this configured yet to start on startup. Dan, any good resources on this? Another good command, for a future reminder: &lt;span class=&#34;code&#34;&gt;sudo nmap -sV -O localhost&lt;/span&gt; to check which ports are open (80 and 631 on my machine); can&amp;#39;t figure out how to close port 631 yet, or why I really need CUPS 1.2 (printing related, but I don&amp;#39;t use a printer - I print to PDF if anything ...)
-&lt;/p&gt;
-&lt;h4&gt;Update, June 18, 2007 @ 21:55&lt;/h4&gt;
-&lt;p&gt;
-By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/product/0672328364/strivinglifen-20/&#34; target=&#34;_blank&#34;&gt;Apache Phrasebook&lt;/a&gt; was helpful for easily setting these up (and is an overall great resource, if you&amp;#39;re setting up / using Apache on Linux; the Windows information is there, but not as good as the Linux information).
-&lt;/p&gt;
-</description>
+      <description>How to configure Apache 2.2.4 on Ubuntu 7.04 for per-user pages.</description>
     </item>
     
     <item>
@@ -436,49 +97,7 @@ By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/
       <pubDate>Fri, 15 Jun 2007 20:51:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
-      <description>&lt;p&gt;Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://words.strivinglife.com/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Downloaded 7.02 Developer Edition from Adobe (coldfusion-702-lin.bin) to src directory.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cp coldfusion-702-lin.bin coldfusion.bak&lt;br /&gt;cat coldfusion.bak | sed &#34;s/export LD_ASSUME_KERNEL/#xport LD_ASSUME_KERNEL/&#34; &amp;gt; coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo sh coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Server Configuration. Choose a server configuration. Choose Apache.&lt;/p&gt;
-&lt;p&gt;httpd.conf directory = /usr/local/apache2/conf&lt;/p&gt;
-&lt;p&gt;Program binary = /usr/local/apache2/bin/httpd (default)&lt;/p&gt;
-&lt;p&gt;Control file = /usr/local/apache2/bin/apachectl (default)&lt;/p&gt;
-&lt;p&gt;Continue with installation.&lt;/p&gt;
-&lt;p&gt;Administrator = /usr/local/apache2/htdocs (default)&lt;/p&gt;
-&lt;p&gt;User = apache&lt;/p&gt;
-&lt;p&gt;Password = *****&lt;/p&gt;
-&lt;p&gt;Don&#39;t enable RDS.&lt;/p&gt;
-&lt;p&gt;Installation finished.&lt;/p&gt;
-&lt;p&gt;Downloaded 6/16/06 zip file from http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_17883&amp;amp;sliceId=2, with wsconfig (wsconfig.zip) and saved to src directory. Extracted to the same.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv /opt/coldfusionmx7/runtime/lib/wsconfig.jar /opt/coldfusionmx7/runtime/lib/wsconfig.bak&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;cd src&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv wsconfig.jar /opt/coldfusionmx7/runtime/lib&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/bin/coldfusion start&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/runtime/bin/wsconfig&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;In the window that pops up, choose &#39;Add...&#39;&lt;/p&gt;
-&lt;p&gt;Configuration Directory: /usr/local/apache2/conf&lt;/p&gt;
-&lt;p&gt;Check &#39;Configure&#39; box.&lt;/p&gt;
-&lt;p&gt;Advanced.&lt;/p&gt;
-&lt;p&gt;Binary: /usr/local/apache2/bin/httpd&lt;/p&gt;
-&lt;p&gt;Control script: /usr/local/apache2/bin/apachectl&lt;/p&gt;
-&lt;p&gt;OK.&lt;/p&gt;
-&lt;p&gt;OK.&lt;/p&gt;
-&lt;p&gt;Restart.&lt;/p&gt;
-&lt;p&gt;Exit window.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Ctrl + W for directoryindex, which should have index.cfm already added (your call if you want to add anything else at this point).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl restart&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;http://localhost/ should still work, and http://localhost/CFIDE/administrator/ will put you at the Administrator login to finish up there (the server should configure itself, and you should be able to click on a link to continue to the administrator).&lt;/p&gt;
-&lt;p&gt;Creating a quick file ...&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cd /usr/local/apache2/htdocs&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano test.cfm&lt;/span&gt;&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfset testvariable = &#34;Testing.&#34; /&amp;gt;
-&amp;lt;cfoutput&amp;gt;#testvariable#&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Save.&lt;/p&gt;
-&lt;p&gt;http://localhost/test.cfm&lt;/p&gt;
-</description>
+      <description>Quick notes on installing ColdFusion MX 7 (Developer Edition) to Ubuntu 7.04.</description>
     </item>
     
     <item>
@@ -487,108 +106,7 @@ By the way, the &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/
       <pubDate>Fri, 15 Jun 2007 19:04:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Quickie-Install-Apache-224-on-Ubuntu/</guid>
-      <description>&lt;p&gt;
-May not be the best, but ... here&amp;#39;s how I installed Apache 2.2.4 on Ubuntu (7.04), based on David Winter&amp;#39;s guide &lt;a rel=&#34;nofollow&#34; href=&#34;http://davidwinter.me.uk/articles/2006/10/17/building-apache-22-from-source-for-ubuntu-dapper/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Building Apache 2.2 from source for Ubuntu Dapper&lt;/em&gt;&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-All &lt;span class=&#34;code_terminal&#34;&gt;code&lt;/span&gt; from a terminal, unless otherwise noted.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo apt-get install build-essential&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;cd&lt;br /&gt;
-mkdir src&lt;br /&gt;
-cd src&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I downloaded zlib from http://www.zlib.net/ (zlib source code, version 1.2.3, tar.gz format) into the src folder, and extracted it to the same.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;cd zlib-1.2.3/&lt;br /&gt;
-./configure --prefix=/usr/local&lt;br /&gt;
-make&lt;br /&gt;
-sudo make install&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-At http://httpd.apache.org/download.cgi, I downloaded Unix Source: httpd-2.2.4.tar.gz, saved it to the src directory, and extracted it to the same.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;cd httpd-2.2.3/&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;make&lt;/span&gt; (which took a long time)
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo make install&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl start&lt;/span&gt;, followed by heading over to http://localhost/, which worked.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl stop&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apachectl&lt;br /&gt;
-sudo chmod +x /etc/init.d/apachectl&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /etc/init.d/apachectl&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-The top of the page should look like this, after the bold text is added.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;#!/bin/sh&lt;br /&gt;
-#&lt;br /&gt;
-&lt;strong&gt;# chkconfig: - 85 15&lt;br /&gt;
-# description: Apache is a web server.&lt;/strong&gt;&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Ctrl + X will exit, during which you&amp;#39;ll be prompted to save (do so).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/sbin/update-rc.d apachectl defaults&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo adduser --system apache&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Find the following:
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;User daemon&lt;br /&gt;
-Group daemon&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Change it to the following:
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;User apache&lt;br /&gt;
-Group nogroup&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Save, as above.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl start&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;span class=&#34;code_terminal&#34;&gt;ps -aux | grep httpd&lt;/span&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve yet to reboot the machine and verify that apache is running on this boxes&amp;#39; IP - I&amp;#39;ll do so later.
-&lt;/p&gt;
-&lt;p&gt;
-Now the question I have is, how would I go about removing Apache 2.2.4?  Research time ...
-&lt;/p&gt;
-</description>
+      <description>Quickie of how I installed Apache 2.2.4 to Ubuntu.</description>
     </item>
     
     <item>
@@ -597,40 +115,7 @@ Now the question I have is, how would I go about removing Apache 2.2.4?  Researc
       <pubDate>Tue, 12 Jun 2007 07:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Eclipse-SDK-322-to-Ubuntu-704/</guid>
-      <description>&lt;p&gt;
-Having already &lt;a href=&#34;http://strivinglife.net/wordpress/2007/06/11/366/installing-suns-java-development-kit-50-update-12-on-ubuntu-704/&#34;&gt;installed JDK 5.0 on Ubuntu&lt;/a&gt;, it&amp;#39;s time to install what I really wanted in the first place - Eclipse.
-&lt;/p&gt;
-&lt;p&gt;
-The first thing to do is download the current version from http://www.eclipse.org/downloads/. Again, this is something we could grab from a repo, but if I&amp;#39;m using Linux, I may as well have control.
-&lt;/p&gt;
-&lt;p&gt;
-Why Eclipse? No Dreamweaver for Ubuntu.
-&lt;/p&gt;
-&lt;p&gt;
-After saving it to the Desktop, and after it&amp;#39;s download, I opened up a Terminal.
-&lt;/p&gt;
-&lt;p&gt;
-cd ~/Desktop
-&lt;/p&gt;
-&lt;p&gt;
-sudo mv eclipse /usr/lib (to move the Eclipse directory).
-&lt;/p&gt;
-&lt;p&gt;
-sudo update-alternatives --install /usr/bin/eclipse /usr/lib/eclipse/eclipse 300
-&lt;/p&gt;
-&lt;p&gt;
-sudo ln -s /usr/lib/eclipse/startup.jar /usr/bin
-&lt;/p&gt;
-&lt;p&gt;
-Adding it to the menu involves right clicking on the Applications item in the menu, and selecting Edit Menus.
-&lt;/p&gt;
-&lt;p&gt;
-Add a New Item under whatever menu (for example, Programming). Browse for an icon (/usr/lib/eclipse/icon.xpm), enter &lt;strong&gt;eclipse&lt;/strong&gt; into Command, and whatever makes the most sense for Name and Comment.
-&lt;/p&gt;
-&lt;p&gt;
-We still have to install Apache, at least, and because I am who I am, ColdFusion as well.
-&lt;/p&gt;
-</description>
+      <description>Installing Eclipse 3.2.2 to Ubuntu 7.04.</description>
     </item>
     
     <item>
@@ -639,34 +124,7 @@ We still have to install Apache, at least, and because I am who I am, ColdFusion
       <pubDate>Mon, 11 Jun 2007 19:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Suns-Java-Development-Kit-50-Update-12-on-Ubuntu-704/</guid>
-      <description>&lt;p&gt;
-I don&amp;#39;t have much desire to update from the repositories all the time, for whatever reason. Supposedly, if you run Eclipse from the download manager on Ubuntu, you can expect one slow experience.  So ... time to start by installing Sun&amp;#39;s Java.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-I read varying ways on how to do this, but this is what worked for me, using Ubuntu 7.04, fully up-to-date, as of June 11, 2007, 7:00 PM, CST.
-&lt;/p&gt;
-&lt;p&gt;
-First, I downloaded the current version of JDK 5.0 from http://java.sun.com/javase/downloads/index_jdk5.jsp, for Linux (jdk-1_5_0_12-linux-i586.bin), saving it to the desktop.
-&lt;/p&gt;
-&lt;p&gt;
-I then right clicked on the bin file, and under Permissions allowed execute rights.  Elsewhere I saw that this should be made into a deb file, but another said bin was fine, so ...
-&lt;/p&gt;
-&lt;p&gt;
-Once spacebar, spacebar, spacebar-ing through the agreement, I agreed and it extracted to /home/strivinglife/
-&lt;/p&gt;
-&lt;p&gt;
-In Terminal, I cd /home/strivinglife, followed by sudo mv jdk1.5.0_12 /usr/lib (which moved the entire directory).
-&lt;/p&gt;
-&lt;p&gt;
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jdk1.5.0_12/bin/java 300
-&lt;/p&gt;
-&lt;p&gt;
-sudo update-alternatives --config java, and then selected the jdk I just installed.
-&lt;/p&gt;
-&lt;p&gt;
-I also did &lt;span class=&#34;code&#34;&gt;sudo ln -s /usr/lib/Java6u1/jre/plugin/i386/ns7/libjavaplugin_oji.so /usr/lib/firefox/plugins&lt;/span&gt; since http://www.java.com/en/download/help/testvm.xml was bombing.
-&lt;/p&gt;
-</description>
+      <description>My experience in installing Sun&#39;s JDK 5.0 (Update 12) to Ubuntu 7.04.</description>
     </item>
     
     <item>
@@ -675,34 +133,7 @@ I also did &lt;span class=&#34;code&#34;&gt;sudo ln -s /usr/lib/Java6u1/jre/plug
       <pubDate>Wed, 30 May 2007 17:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Initial-thoughts-on-moving-Firefox-settings-from-Windows-to-Ubuntu/</guid>
-      <description>&lt;p&gt;
-This past Friday, I installed Ubuntu 6.06, upgraded it to 6.10, upgraded it to 7.04. I didn&amp;#39;t have too much time to actually use it this weekend, but I&amp;#39;m beginning to, attempting to move towards using it almost exclusively for day-to-day stuff.
-&lt;/p&gt;
-&lt;p&gt;
-The most used software? Firefox, of course.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve been using FEBE for a while to backup my profile, so it was time to give it a try actually doing a restore.
-&lt;/p&gt;
-&lt;p&gt;
-While I followed the necessary instructions to create a new profile, namely starting the profile manager (cd ~/.mozilla/firefox followed by firefox -ProfileManager) and creating a new profile, the actual restore didn&amp;#39;t work too well.
-&lt;/p&gt;
-&lt;p&gt;
-So, I switched back to Windows, backed up everything individually (not the entire profile, as I was doing) and then began restoring my usernames and passwords.
-&lt;/p&gt;
-&lt;p&gt;
-Which didn&amp;#39;t work.
-&lt;/p&gt;
-&lt;p&gt;
-So, I manually replaced the necessary files. Not wanting to try it again, I did the same for the cookies file.
-&lt;/p&gt;
-&lt;p&gt;
-The problem seems to stem from the fact that the directory structure has changed, and a number of my extensions appear to use the directory structure to function.
-&lt;/p&gt;
-&lt;p&gt;
-Now I just need to figure out how to remove the extra kernels when I initially boot up (I&amp;#39;ve still got Windows XP Pro installed on a partition).
-&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -711,31 +142,7 @@ Now I just need to figure out how to remove the extra kernels when I initially b
       <pubDate>Fri, 18 Aug 2006 19:19:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</guid>
-      <description>&lt;p&gt;
-After attempting at least twice before to install Ubuntu onto a computer, I&amp;#39;ve finally done so this evening.  As Gavin would say, &amp;quot;Woot!&amp;quot;
-&lt;/p&gt;
-&lt;p&gt;
-The first time I attempted an install, it turns out the hard drive is probably toast (not because of Ubuntu).
-&lt;/p&gt;
-&lt;p&gt;
-The second time, I tried on a computer that already had a partial (?) Debian install - Ubuntu couldn&amp;#39;t access the file system, for whatever reason.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-The third time I just installed the server version.  It worked, but no GUI meant no easy network setup.  I&amp;#39;m a techie, but it takes a whole other kind of person to get Linux that hard-core.
-&lt;/p&gt;
-&lt;p&gt;
-The fourth, and final time, I setup Ubuntu 6.06.1, with no problems (although install was very slow).  The one thing I regret is not having a faster computer to do the install on.  The machine I&amp;#39;m using is an old HP Pavilion XE734 with perhaps a slight RAM upgrade.  It&amp;#39;s not that bad, it&amp;#39;s just not as fast as I&amp;#39;d like.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got a faster computer with more RAM sitting around, but I really don&amp;#39;t want to use it, since it does have XP SP2 ...  If push comes to shove, however, that&amp;#39;s probably what I&amp;#39;ll end up using.
-&lt;/p&gt;
-&lt;p&gt;
-I was hoping to use my sister&amp;#39;s machine, which appeared to have Windows-related issues, but unfortunately it looks like it was really the hard drive.  Transplanting it into another system resulted in the same problem - the inability to boot.  I&amp;#39;ll have to try yet a different hard drive in her box to verify that it&amp;#39;s not the graphics card (as I originally thought), and then we can go in the direction of picking up a hard drive for her, or giving her one of my own.
-&lt;/p&gt;
-&lt;p&gt;
-Either way, I think Ubuntu will be a good choice for her.  It may not give her all that she&amp;#39;d like, as far as programs, but it&amp;#39;ll be secure and allow her to email and etcetera.
-&lt;/p&gt;
-</description>
+      <description>After a bit of trouble, I&#39;ve got a box with Ubuntu installed on it. Woot!</description>
     </item>
     
   </channel>

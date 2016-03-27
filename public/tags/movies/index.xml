@@ -16,27 +16,7 @@
       <pubDate>Sun, 06 Mar 2011 13:21:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Storing-watched-movies-and-Netflix-shipping-receiving-in-XML-format/</guid>
-      <description>&lt;p&gt;Ever since I started &lt;a href=&#34;http://strivinglife.com/words/post/Netflix-shipping-for-Madison-WI.aspx&#34;&gt;my Netflix subscription in September 2006&lt;/a&gt; I&#39;ve been keeping track of what movies I receive and when.&lt;/p&gt;
-&lt;p&gt;Unfortunately, as the years have gone by I&#39;ve found it more and more difficult to easily look through the listings to see when I last watched a movie. Additionally, I&#39;ve no longer been keeping track of what ratings I give movies, and why.&lt;/p&gt;
-&lt;p&gt;The initial goal was really to track when Netflix shipped and received movies, as well as when I mailed and received. This would suggest a pretty easy XML schema, since the key parts are as follows.&lt;/p&gt;
-&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Date&lt;/li&gt;
-&lt;li&gt;Type of update (Netflix shipped/received, I mailed/received, I streamed)&lt;/li&gt;
-&lt;li&gt;Name of movie/disc&lt;/li&gt;
-&lt;li&gt;Year of movie/series&lt;/li&gt;
-&lt;li&gt;Location mailed to (if I&#39;m mailing)&lt;/li&gt;
-&lt;li&gt;Notes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
-&lt;p&gt;However, if I wish also to be able to store ratings, this format doesn&#39;t necessarily work, as multi-disc episodes, or re-watching a movie/show, would require the rating be placed multiple times.&lt;/p&gt;
-&lt;p&gt;Yet one might wonder if that&#39;s really that big of a deal, since we could always just pull the last rating, or rating could be optional to use whatever rating was given before.&lt;/p&gt;
-&lt;p&gt;Of course, if I make the listing Netflix centric then I always tie it to that service. While I have no plans on dropping my subscription (completely - I&#39;ve been tempted to go streaming only for a couple of months), it also means I can&#39;t track movies that I own.&lt;/p&gt;
-&lt;p&gt;Which then suggests we make the XML schema movie-focused.&lt;/p&gt;
-&lt;p&gt;Our list of Movies would consist of Movie objects, which have a Title, Year, and Rating. Then within that would be a list of times I&#39;ve watched the movie. Which might then really mean we do have two different XML files, since it doesn&#39;t necessarily make sense to keep track of that as part of the Movies XML.&lt;/p&gt;
-&lt;p&gt;For Netflix we could focus on Dates. We&#39;d also want to keep track of the type of media (physical or streaming), and if physical, whether it was coming or going.&lt;/p&gt;
-&lt;p&gt;What mailers they send out is also important, so we can determine whether there&#39;s a method to what mailers are shipped. For example, is it always the location you receive a disc from, or are different mailing locations used?&lt;/p&gt;
-</description>
+      <description>Thoughts on tracking movies and Netflix shipping/receiving information.</description>
     </item>
     
   </channel>

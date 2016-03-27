@@ -16,103 +16,7 @@
       <pubDate>Mon, 26 Oct 2009 21:28:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Two-simple-ColdFusion-calendar-outputs/</guid>
-      <description>&lt;p&gt;Here&#39;s&amp;nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality).&lt;/p&gt;
-&lt;h3&gt;Tables-based&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
-&amp;lt;cfparam name=&#34;URL.CalendarYear&#34; default=&#34;#Year(now())#&#34; type=&#34;integer&#34; /&amp;gt;
-
-&amp;lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&amp;gt;
-    &amp;lt;cfset URL.CalendarMonth = Month(now()) /&amp;gt;
-&amp;lt;/cfif&amp;gt;
-
-&amp;lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&amp;gt;
-
-&amp;lt;table style=&#34;width:375px;&#34; summary=&#34;Calendar of events for &amp;lt;cfoutput&amp;gt;#DateFormat(VARIABLES.Calendar.StartDate, &#39;mmmm yyyy&#39;)#&amp;lt;/cfoutput&amp;gt;.&#34;&amp;gt;
-    &amp;lt;thead&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;th colspan=&#34;7&#34;&amp;gt;&amp;lt;cfoutput&amp;gt;#DateFormat(VARIABLES.Calendar.StartDate, &#34;mmmm yyyy&#34;)#&amp;lt;/cfoutput&amp;gt;&amp;lt;/th&amp;gt;
-        &amp;lt;/tr&amp;gt;
-        &amp;lt;tr&amp;gt;
-            &amp;lt;th&amp;gt;S&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;M&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;T&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;W&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;Th&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;F&amp;lt;/th&amp;gt;
-            &amp;lt;th&amp;gt;S&amp;lt;/th&amp;gt;
-        &amp;lt;/tr&amp;gt;
-    &amp;lt;/thead&amp;gt;
-    &amp;lt;tbody&amp;gt;
-        &amp;lt;cfloop from=&#34;1&#34; to=&#34;#DaysInMonth(VARIABLES.Calendar.StartDate)#&#34; index=&#34;iDay&#34;&amp;gt;
-            &amp;lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&amp;gt;
-            &amp;lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 1 OR iDay EQ 1&amp;gt;&amp;lt;!--- This is Sunday, or the first day. ---&amp;gt;
-                &amp;lt;tr&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-            &amp;lt;cfif iDay EQ 1&amp;gt;&amp;lt;!--- If it&#39;s the first day, determine how many empty cells we need. ---&amp;gt;
-                &amp;lt;cfoutput&amp;gt;#RepeatString(&#34;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&#34;, DayOfWeek(VARIABLES.Calendar.StartDate) - 1)#&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-                &amp;lt;cfoutput&amp;gt;&amp;lt;td&amp;gt;&amp;lt;span title=&#34;#DateFormat(VARIABLES.Calendar.CurrentDate, &#39;mmmm d, yyyy&#39;)#&#34;&amp;gt;#iDay#&amp;lt;/span&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;cfif iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;
-                &amp;lt;cfoutput&amp;gt;#RepeatString(&#34;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&#34;, 7 - DayOfWeek(VARIABLES.Calendar.CurrentDate))#&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-            &amp;lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 7 OR iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;&amp;lt;!--- This is Saturday, or the last day. ---&amp;gt;
-                &amp;lt;/tr&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-        &amp;lt;/cfloop&amp;gt;
-    &amp;lt;/tbody&amp;gt;
-&amp;lt;/table&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Ordered list and CSS&lt;/h3&gt;
-&lt;p&gt;The following is a rough version of an ordered list and CSS-based calendar.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;html&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&amp;gt;
-&amp;lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&amp;gt;
-&amp;lt;head&amp;gt;
-&amp;lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=iso-8859-1&#34; /&amp;gt;
-&amp;lt;title&amp;gt;&amp;lt;/title&amp;gt;
-    &amp;lt;style type=&#34;text/css&#34;&amp;gt;
-    .olCalendar {
-        width:375px;
-    }
-    .olCalendar ol li {
-        display:block;
-        float:left;
-        list-style-position:inside;
-        margin:0;
-        width:45px;
-    }
-    .olCalendar li.noDate {
-        list-style-image:none;
-    }
-    &amp;lt;/style&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;cfparam name=&#34;URL.CalendarMonth&#34; default=&#34;#Month(now())#&#34; type=&#34;integer&#34; /&amp;gt;
-&amp;lt;cfparam name=&#34;URL.CalendarYear&#34; default=&#34;#Year(now())#&#34; type=&#34;integer&#34; /&amp;gt;
-
-&amp;lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&amp;gt;
-    &amp;lt;cfset URL.CalendarMonth = Month(now()) /&amp;gt;
-&amp;lt;/cfif&amp;gt;
-
-&amp;lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&amp;gt;
-&amp;lt;div class=&#34;olCalendar&#34;&amp;gt;
-    &amp;lt;ol start=&#34;&amp;lt;cfoutput&amp;gt;#2 - DayOfWeek(VARIABLES.Calendar.StartDate)#&amp;lt;/cfoutput&amp;gt;&#34;&amp;gt;
-        &amp;lt;cfloop from=&#34;1&#34; to=&#34;#DaysInMonth(VARIABLES.Calendar.StartDate)#&#34; index=&#34;iDay&#34;&amp;gt;
-            &amp;lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&amp;gt;
-            &amp;lt;cfif iDay EQ 1&amp;gt;&amp;lt;!--- If it&#39;s the first day, determine how many empty cells we need. ---&amp;gt;
-                &amp;lt;cfoutput&amp;gt;#RepeatString(&#39;&amp;lt;li class=&#34;noDate&#34;&amp;gt;&amp;nbsp;&amp;lt;/li&amp;gt;&#39;, DayOfWeek(VARIABLES.Calendar.StartDate) - 1)#&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-                &amp;lt;cfoutput&amp;gt;&amp;lt;li class=&#34;#LCase(DayOfWeekAsString(DayOfWeek(VARIABLES.Calendar.CurrentDate)))#&#34;&amp;gt;&amp;lt;span title=&#34;#DateFormat(VARIABLES.Calendar.CurrentDate, &#39;mmmm d, yyyy&#39;)#&#34;&amp;gt;#iDay#&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;cfif iDay EQ DaysInMonth(VARIABLES.Calendar.StartDate)&amp;gt;
-                &amp;lt;cfoutput&amp;gt;#RepeatString(&#39;&amp;lt;li class=&#34;noDate&#34;&amp;gt;&amp;nbsp;&amp;lt;/li&amp;gt;&#39;, 7 - DayOfWeek(VARIABLES.Calendar.CurrentDate))#&amp;lt;/cfoutput&amp;gt;
-            &amp;lt;/cfif&amp;gt;
-        &amp;lt;/cfloop&amp;gt;
-    &amp;lt;/ol&amp;gt;
-&amp;lt;/div&amp;gt;
-
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But, let&#39;s be honest, this version sucks. I think tables are a necessary evil in this regard.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;EDIT 12/21/2009&lt;/strong&gt;: Corrected StartDate/CurrentDate mistake with repeating td elements.&lt;/p&gt;
-</description>
+      <description>Two simple ways in ColdFusion to output calendars.</description>
     </item>
     
     <item>
@@ -121,24 +25,7 @@
       <pubDate>Thu, 08 Oct 2009 20:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/</guid>
-      <description>&lt;p&gt;There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfscript&amp;gt;
-    // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value.
-    function checkForValueOutput(data) {
-        if (IsDefined(data)) {
-            return HtmlEditFormat(Trim(Evaluate(data)));
-        } else {
-            return &#34;&#34;;
-        }
-    }
-&amp;lt;/cfscript&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;(Obviously, this can rather easily be converted to a function.)&lt;/p&gt;
-&lt;p&gt;This results in a change from:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;input type=&#34;text&#34; id=&#34;someField&#34; name=&#34;someField&#34;&amp;nbsp;value=&#34;&amp;lt;cfif IsDefined(&#34;FORM.someField&#34;) AND Trim(FORM.someField) NEQ &#34;&#34;&amp;gt;&amp;lt;cfoutput&amp;gt;#HtmlEncodedFormat(Trim(FORM.someField))#&amp;lt;/cfoutput&amp;gt;&amp;lt;/cfif&amp;gt;&#34; /&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;input type=&#34;text&#34; id=&#34;someField&#34; name=&#34;someField&#34;&amp;nbsp;value=&#34;&amp;lt;cfoutput&amp;gt;#checkForValueOutput(&#34;FORM.someField&#34;)#&amp;lt;/cfoutput&amp;gt;&#34; /&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Much easier to read, and much shorter.&lt;/p&gt;
-</description>
+      <description>Snippet of ColdFusion to determine if a particular variable exists and if it does, return a trimmed, HTML-escaped, version.</description>
     </item>
     
     <item>
@@ -147,24 +34,7 @@
       <pubDate>Mon, 16 Jun 2008 13:55:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Verity-Collection-down-after-opening-resolution/</guid>
-      <description>&lt;p&gt;We&#39;ve been running into an issue, off and on, with ColdFusion MX 7.0.2 having issues with Verity collections.&lt;/p&gt;
-&lt;p&gt;During one of our nightly jobs, two Verity collections are purged, through ColdFusion, and then re-built.&amp;nbsp;&lt;/p&gt;
-&lt;p&gt;Sometimes this will bring the collection down, resulting in a message like the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Collection down after opening (10)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Using the mdvdk executable, you can get some information about the collection, and even bring it back up.&lt;/p&gt;
-&lt;p&gt;mdvdk can be found in the \verity\k2\_nti40\bin\ directory, within the ColdFusion root directory.&lt;/p&gt;
-&lt;p&gt;You can get information about the status of the collection through this:&amp;nbsp;&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mkvdk -collection &amp;lt;path to collection&amp;gt; -about&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You don&#39;t use the online option/switch, but rather the repair one to bring the collection back online.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mkvdk -collection &amp;lt;path to collection&amp;gt; -repair&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You should be able to reindex successfully.&lt;/p&gt;
-&lt;p&gt;I also changed the code to do a refresh, instead of a purge, since the former doesn&#39;t take the collection offline.&lt;/p&gt;
-&lt;p&gt;You can find additional options by using the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mkvdk -help&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&amp;nbsp;&lt;/p&gt;
-</description>
+      <description>Sometimes Verity collections will show a Collection down after opening (10) error, when attempting to index. Here&#39;s a resolution. [slnet0514:e2cfa167-e350-498b-9dea-3927bfe6ec1e]</description>
     </item>
     
     <item>
@@ -173,75 +43,7 @@
       <pubDate>Thu, 10 Jan 2008 22:15:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Regular-Expression-tester-ColdFusion/</guid>
-      <description>&lt;p&gt;I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently &#39;running&#39; on ColdFusion MX 6.1 and ColdFusion 7.0.&lt;/p&gt;
-&lt;p&gt;It&#39;s a pity to not make it available, since it&#39;s such an easy template ...&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;!--- --- ---
-DESCRIPTION:
-    &amp;nbsp;Basic way to test a regular expression.
-
-CALLED BY:
-    ???
-
-CALLS:
-    ???
-
-ASSUMPTIONS:
-    ???
-
-MODIFICATION HISTORY:
-  DATE      USER    ACTION
-  09/24/2007    J.Skemp Created template.
-
---- --- ---&amp;gt;
-
-&amp;lt;style type=&#34;text/css&#34;&amp;gt;
-    form {
-        margin:0;
-        padding:0;
-    }
-    form label, .label_kludge {
-        display:block;
-        float:left;
-        width:180px;
-        padding:0;
-        margin:5px 0 0;
-        text-align:right;
-    }
-    form input, form textarea, form select {
-        width:200px;
-        margin:5px 0 0 10px;
-    }
-    textarea {
-        overflow:auto;
-    }
-    form br {
-        clear:left;
-    }
-&amp;lt;/style&amp;gt;
-
-&amp;lt;cfparam name=&#34;RegularExpression&#34; default=&#34;&#34; /&amp;gt;
-&amp;lt;cfparam name=&#34;TestString&#34; default=&#34;&#34; /&amp;gt;
-&amp;lt;cfparam name=&#34;CaseSensitive&#34; default=&#34;off&#34; /&amp;gt;
-
-&amp;lt;h1&amp;gt;The great regular expression testing solution&amp;lt;/h1&amp;gt;
-&amp;lt;cfform&amp;gt;
-    &amp;lt;label for=&#34;RegularExpression&#34;&amp;gt;Regular Expression:&amp;lt;/label&amp;gt;&amp;lt;cfinput type=&#34;text&#34; name=&#34;RegularExpression&#34; style=&#34;width:350px;&#34; value=&#34;#RegularExpression#&#34; /&amp;gt;&amp;lt;br /&amp;gt;
-    &amp;lt;label for=&#34;TestString&#34;&amp;gt;Test String:&amp;lt;/label&amp;gt;&amp;lt;cfinput type=&#34;text&#34; name=&#34;TestString&#34; style=&#34;width:350px;&#34; value=&#34;#TestString#&#34; /&amp;gt;&amp;lt;br /&amp;gt;
-    &amp;lt;label for=&#34;CaseSensitive&#34;&amp;gt;Case Sensitive:&amp;lt;/label&amp;gt;&amp;lt;input type=&#34;checkbox&#34; name=&#34;CaseSensitive&#34; &amp;lt;cfif CaseSensitive EQ &#34;on&#34;&amp;gt;checked=&#34;checked&#34;&amp;lt;/cfif&amp;gt; /&amp;gt;&amp;lt;br /&amp;gt;
-    &amp;lt;span class=&#34;label_kludge&#34;&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;input type=&#34;submit&#34; value=&#34;Test&#34; /&amp;gt;
-&amp;lt;/cfform&amp;gt;
-
-&amp;lt;cfif RegularExpression NEQ &#34;&#34; AND TestString NEQ &#34;&#34;&amp;gt;
-    &amp;lt;cfif CaseSensitive EQ &#34;on&#34;&amp;gt;
-        &amp;lt;cfset FindText = REFind(RegularExpression, TestString) /&amp;gt;
-    &amp;lt;cfelse&amp;gt;
-        &amp;lt;cfset FindText = REFindNoCase(RegularExpression, TestString) /&amp;gt;
-    &amp;lt;/cfif&amp;gt;
-    &amp;lt;p&amp;gt;Result: &amp;lt;cfif FindText EQ 0&amp;gt;&amp;lt;strong&amp;gt;no&amp;lt;/strong&amp;gt; &amp;lt;/cfif&amp;gt;match found&amp;lt;/p&amp;gt;
-&amp;lt;/cfif&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Updates&lt;/h3&gt;
-&lt;p&gt;May 4, 2008: Corrected a simple label error.&lt;/p&gt;
-</description>
+      <description>A regular expression tester, built on ColdFusion. [slnet0514:31402614-3e73-435d-b58f-bb146f10b1b2]</description>
     </item>
     
     <item>
@@ -250,49 +52,7 @@ MODIFICATION HISTORY:
       <pubDate>Fri, 15 Jun 2007 20:51:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/</guid>
-      <description>&lt;p&gt;Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://wulfshayde.blogspot.com/2006/11/ubuntu-610edgy-eft-apache2-php5-mysql.html&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Ubuntu 6.10(Edgy Eft) Apache2, PHP5, MySQL &amp;amp; Coldfusion Install Howto&lt;/em&gt;&lt;/a&gt; provided some inspiration, with changes made as necessary (per my &lt;a href=&#34;http://words.strivinglife.com/words/post/Quickie-Install-Apache-224-on-Ubuntu.aspx&#34;&gt;Apache 2.2.4 installation&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Downloaded 7.02 Developer Edition from Adobe (coldfusion-702-lin.bin) to src directory.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cp coldfusion-702-lin.bin coldfusion.bak&lt;br /&gt;cat coldfusion.bak | sed &#34;s/export LD_ASSUME_KERNEL/#xport LD_ASSUME_KERNEL/&#34; &amp;gt; coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo sh coldfusion-702-lin.bin&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Server Configuration. Choose a server configuration. Choose Apache.&lt;/p&gt;
-&lt;p&gt;httpd.conf directory = /usr/local/apache2/conf&lt;/p&gt;
-&lt;p&gt;Program binary = /usr/local/apache2/bin/httpd (default)&lt;/p&gt;
-&lt;p&gt;Control file = /usr/local/apache2/bin/apachectl (default)&lt;/p&gt;
-&lt;p&gt;Continue with installation.&lt;/p&gt;
-&lt;p&gt;Administrator = /usr/local/apache2/htdocs (default)&lt;/p&gt;
-&lt;p&gt;User = apache&lt;/p&gt;
-&lt;p&gt;Password = *****&lt;/p&gt;
-&lt;p&gt;Don&#39;t enable RDS.&lt;/p&gt;
-&lt;p&gt;Installation finished.&lt;/p&gt;
-&lt;p&gt;Downloaded 6/16/06 zip file from http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_17883&amp;amp;sliceId=2, with wsconfig (wsconfig.zip) and saved to src directory. Extracted to the same.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv /opt/coldfusionmx7/runtime/lib/wsconfig.jar /opt/coldfusionmx7/runtime/lib/wsconfig.bak&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;cd src&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo mv wsconfig.jar /opt/coldfusionmx7/runtime/lib&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/bin/coldfusion start&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /opt/coldfusionmx7/runtime/bin/wsconfig&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;In the window that pops up, choose &#39;Add...&#39;&lt;/p&gt;
-&lt;p&gt;Configuration Directory: /usr/local/apache2/conf&lt;/p&gt;
-&lt;p&gt;Check &#39;Configure&#39; box.&lt;/p&gt;
-&lt;p&gt;Advanced.&lt;/p&gt;
-&lt;p&gt;Binary: /usr/local/apache2/bin/httpd&lt;/p&gt;
-&lt;p&gt;Control script: /usr/local/apache2/bin/apachectl&lt;/p&gt;
-&lt;p&gt;OK.&lt;/p&gt;
-&lt;p&gt;OK.&lt;/p&gt;
-&lt;p&gt;Restart.&lt;/p&gt;
-&lt;p&gt;Exit window.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano /usr/local/apache2/conf/httpd.conf&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Ctrl + W for directoryindex, which should have index.cfm already added (your call if you want to add anything else at this point).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo /usr/local/apache2/bin/apachectl restart&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;http://localhost/ should still work, and http://localhost/CFIDE/administrator/ will put you at the Administrator login to finish up there (the server should configure itself, and you should be able to click on a link to continue to the administrator).&lt;/p&gt;
-&lt;p&gt;Creating a quick file ...&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;cd /usr/local/apache2/htdocs&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;code_terminal&#34;&gt;sudo nano test.cfm&lt;/span&gt;&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfset testvariable = &#34;Testing.&#34; /&amp;gt;
-&amp;lt;cfoutput&amp;gt;#testvariable#&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Save.&lt;/p&gt;
-&lt;p&gt;http://localhost/test.cfm&lt;/p&gt;
-</description>
+      <description>Quick notes on installing ColdFusion MX 7 (Developer Edition) to Ubuntu 7.04.</description>
     </item>
     
     <item>
@@ -301,31 +61,7 @@ MODIFICATION HISTORY:
       <pubDate>Sun, 12 Nov 2006 12:21:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/ColdFusion-MX-7-hosting-for-free/</guid>
-      <description>&lt;p&gt;
-On this site, I have a number of articles discussing how to setup ColdFusion MX, both &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/&#34;&gt;version 6.1&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;version 7.0&lt;/a&gt;. These tutorials will get you up and running on your own computer, but there&amp;#39;s no information on how to continue on to a real, live, host.
-&lt;/p&gt;
-&lt;p&gt;
-A couple of years ago, it was possible, it seems, to get free ColdFusion hosting. Of course, you had to show some advertising, I&amp;#39;m sure, but nonetheless ...
-&lt;/p&gt;
-&lt;p&gt;
-A short while ago, say a year, I found out about &lt;a rel=&#34;nofollow&#34; href=&#34;http://www.cfdeveloper.co.uk&#34;&gt;CFDeveloper&lt;/a&gt; which offers ColdFusion hosting for both a recurring charge, as well as one flat, and low, fee.
-&lt;/p&gt;
-&lt;p&gt;
-The one-time charge will give you 10 MB of disk space, and 500 MB of bandwidth, with one Access database available.
-&lt;/p&gt;
-&lt;p&gt;
-(Sorry, no MySQL databases with this account, as silly as that may seem. I suppose having an Access database means less upkeep, since MySQL is updated on a much more regular basis.)
-&lt;/p&gt;
-&lt;p&gt;
-I setup an account and you can see my site (currently without projects) at &lt;a href=&#34;http://www.strivinglife.cfdeveloper.co.uk/&#34;&gt;http://www.strivinglife.cfdeveloper.co.uk/&lt;/a&gt;. Less than $5, for ever (so long as I keep active every 30 days), and I have a free account, that only requires the one advertisement (which I can place where I want, so it seems).
-&lt;/p&gt;
-&lt;p&gt;
-While this will not take the place of a real host, it&amp;#39;s a great way to get a free, live, development server, so you can test your own code on another box, or share code with others.
-&lt;/p&gt;
-&lt;p&gt;
-Know of another host that charges a small fee for setting up a development server? Let me know by posting a comment below.
-&lt;/p&gt;
-</description>
+      <description>That&#39;s right, you can get a small amount of free disk space on a ColdFusion MX box, for almost nothing.</description>
     </item>
     
     <item>
@@ -334,21 +70,7 @@ Know of another host that charges a small fee for setting up a development serve
       <pubDate>Sat, 23 Sep 2006 18:42:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Is-it-past-time-for-Microsoft-to-open-IIS/</guid>
-      <description>&lt;p&gt;There&#39;s a reason PHP and Apache are so popular on the Web. It&#39;s the same reason that most beginner&#39;s, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With &lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;the right guide&lt;/a&gt;, a user can be up and running with Apache and PHP in a couple of hours.&lt;/p&gt;
-&lt;p&gt;Unfortunately, Microsoft&#39;s IIS (Internet Information Services) is something that few home-grown Web users have the honour of using. Instead, they have to wait until they take a formal class, or enter into a profession that allows them access to this technology. For a long time, the same could be said about MySQL/PostgreSQL and Microsoft SQL Server (respectively). But, no longer is that true.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;SQL Server 2005 Express Edition is the next version of MSDE and is a free, easy-to-use, lightweight, and embeddable version of SQL Server 2005. Free to download, free to redistribute, free to embed, and easy for new developers to use immediately, SQL Server Express includes powerful features such as SQL Server 2005 Reporting Services, a server-based platform for creating and delivering traditional and interactive reports, and a graphical management tool, SQL Server 2005 Management Studio Express, for easily managing your database. Best of all, as your needs grow, your applications will seamlessly work with the rest of the SQL Server product family. (http://www.microsoft.com/sql/editions/express/, 09/23/2006)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Along with Microsoft&#39;s recent work on Internet Explorer 7, we can easily see the pressure that various open source initiatives are applying to Microsoft. Long the controlling force in a number of areas, Microsoft has found itself far behind the competition in a number of important areas.&lt;/p&gt;
-&lt;p&gt;Quite honestly, Internet Explorer 7 (currently a RC) is a vast improvement from Internet Explorer 6 and earlier. In fact, it&#39;s close relationship to the Windows operating system, and the ability to be rolled out as a Windows/Microsoft Update, gives IE 7 a number of benefits over the competition (which I consider to be Firefox and Opera, even if Opera has an extremely low market share). Yet, the only reason Microsoft took the initiative to improve IE was because of pressure from Firefox.&lt;/p&gt;
-&lt;p&gt;A truly interesting talking point is Internet Explorer for Mac. The last version of Internet Explorer for the Mac was 5.5, released way back in 2000. At the end of 2005, support was officially over, and development had stopped way back in June of 2003. Now, Microsoft recommend&#39;s Apple&#39;s Safari&#39;s to Mac users looking for IE for the Mac. (http://www.microsoft.com/Mac/ie/, 09/23/2006)&lt;/p&gt;
-&lt;p&gt;But, I didn&#39;t want to talk about Internet Explorer, I wanted to talk about IIS. As I said before, a home-grown developer doesn&#39;t have ready access to IIS or, until recently, SQL Server. Yet, with SQL Server released as an Express Edition, is it only a matter of time until we see an Express Edition of IIS? With .NET becoming the force that it is, as a developer, I hope so.&lt;/p&gt;
-&lt;p&gt;Looking for the pricing of IIS, we find that we have to purchase Windows Server 2003. Windows Server 2003 R2 Standard Edition is a mere $999, while the Windows Server 2003 Web Edition, 32-bit version is $399. (http://www.microsoft.com/windowsserver2003/howtobuy/licensing/pricing.mspx, 09/23/2006) Unfortunately, those are the lowest prices available.&lt;/p&gt;
-&lt;p&gt;Looking at another package, we have Adobe&#39;s (formally Macromedia&#39;s) ColdFusion MX 7 Developer Edition. &#34;ColdFusion MX 7 Developer is a free, fully functional version of ColdFusion for local development of applications that will be deployed on either Standard or Enterprise servers. In addition to localhost, access to applications running on a Developer Edition server is now possible from two client machines, making team development even easier.&#34; (http://www.adobe.com/products/coldfusion/productinfo/product_editions/, 09/23/2006) As a developer, do I really need more than this?&lt;/p&gt;
-&lt;p&gt;In addition, ColdFusion MX 6.1 is also available in a Developer&#39;s Edition. &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;Want to learn ColdFusion?&lt;/a&gt; With a Developer&#39;s Edition, you can, for the same cost as learning PHP with Apache and MySQL/PostgreSQL.&lt;/p&gt;
-&lt;p&gt;Microsoft appears to be on the right track, with SQL Server Express and the development of a better Internet Explorer, but I hope that they continue in the same spirit with IIS. After all, open the door&#39;s for developers and they&#39;ll grow into more and more of your products ...&lt;/p&gt;
-&lt;p&gt;Kind reader, what do you think?&lt;/p&gt;
-</description>
+      <description>Is it time for Microsoft to release a developer edition of IIS?  This writer thinks so.</description>
     </item>
     
     <item>
@@ -357,84 +79,7 @@ Know of another host that charges a small fee for setting up a development serve
       <pubDate>Mon, 28 Aug 2006 21:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/</guid>
-      <description>&lt;p&gt;In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we&#39;re going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.&lt;/p&gt;
-&lt;h3&gt;What is a batch file?&lt;/h3&gt;
-&lt;p&gt;A batch file is basically a way to run a number of Windows prompts at once. In this particular case, we&#39;ll be using it to stop the Web server, copy, rename, and delete, files, and then start the necessary services up once again.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;While we could do this manually, having just one, correctly setup, file to run is much easier, and much more logical.&lt;/p&gt;
-&lt;h3&gt;Assumptions&lt;/h3&gt;
-&lt;p&gt;I&#39;m going to assume that;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Your Web root folder is c:\home\.&lt;/li&gt;
-&lt;li&gt;If you installed PHP, you placed the php.ini file in the c:\windows\ folder. &lt;/li&gt;
-&lt;li&gt;If you installed Apache 1.3.x, you installed it to C:\Program Files\Apache Group\Apache\ &lt;/li&gt;
-&lt;li&gt;If you installed Apache 2.0.x, you installed it to C:\Program Files\Apache Group\Apache2\ &lt;/li&gt;
-&lt;li&gt;If you installed PHP, you have one working httpd.conf file for each version of PHP you installed, times each version of Apache you have installed. So, if you have two versions of PHP and one version of Apache, you should have two httpd.conf files. One for Apache with PHP 4, one for Apache with PHP 5. &lt;/li&gt;
-&lt;li&gt;If you installed PHP, you have one working php.ini file for each version of PHP you installed. &lt;/li&gt;
-&lt;li&gt;If you installed ColdFusion MX, you have one working httpd.conf file for each version of ColdFusion MX you installed, times each version of PHP you installed, times each version of Apache you installed, plus the number of ColdFusion MX versions you installed. So, if you installed two version of ColdFusion MX, one version of PHP, and one version of PHP, that&#39;s [(2 * 1 * 1) + 2] &lt;/li&gt;
-&lt;li&gt;Each of these httpd.conf files is in c:\home\configuration\. Likewise, each php.ini file necessary is in this same folder. There is also a blank text file called zblank.txt in this folder. &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Creating the necessary batch files&lt;/h3&gt;
-&lt;p&gt;I&#39;m going to go through a batch file nice and slow, working through each line. This batch file will stop Apache 1.3.x. It will then prepare Apache 1.3.x to run PHP 4. We&#39;ll then create a text file that tells us that Apache 1.3.x, running PHP 4, is started.&lt;/p&gt;
-&lt;p&gt;First, the batch file.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net stop &#34;ColdFusion MX Application Server&#34;
-net stop &#34;ColdFusion MX 7 Application Server&#34;
-net stop &#34;Apache&#34;
-net stop &#34;Apache2&#34;
-DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_PHP5 is ready.txt&#34;
-COPY &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd_backup.conf&#34;
-COPY &#34;c:\home\configuration\httpd_Apache1.3_PHP4.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34;
-COPY &#34;C:\windows\php.ini&#34; &#34;c:\windows\php_backup.ini&#34;
-COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini&#34;
-net start &#34;Apache&#34;
-COPY &#34;C:\home\configuration\zblank.txt&#34; &#34;C:\home\zApache1.3_PHP4 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Start Notepad, and we&#39;ll walk through this beast of a batch file.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net stop &#34;ColdFusion MX Application Server&#34;
-net stop &#34;ColdFusion MX 7 Application Server&#34;
-net stop &#34;Apache&#34;
-net stop &#34;Apache2&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These four lines stop ColdFusion MX 6.1, ColdFusion MX 7, Apache 1.3.x, and Apache 2.0.x (in order). Of course, if you have not installed one of these, you can simply remove those lines. However, if you have installed any of these, you should keep these lines in place. After all, you never know what services may be running.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX6.1_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_CFMX7.0_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX6.1_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_CFMX7.0_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache1.3_PHP5 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_PHP4 is ready.txt&#34;
-DEL &#34;c:\home\zApache2.0_PHP5 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;These lines delete the file referenced. In this case, we&#39;re deleting every possible text file that could exist. As before, if you have not installed one of the versions of Apache, or one of the versions of PHP, or one of the versions of ColdFusion MX, you can remove those lines.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd_backup.conf&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;First, we create a backup of the httpd.conf file for Apache 1.3.x.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;c:\home\configuration\httpd_Apache1.3_PHP4.conf&#34; &#34;C:\Program Files\Apache Group\Apache\conf\httpd.conf&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Second, we make a copy of the working httpd.conf file that runs Apache 1.3.x with PHP 4.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\windows\php.ini&#34; &#34;c:\windows\php_backup.ini&#34;
-COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As with the httpd.conf file, we create a backup of the php.ini file, and then copy a working PHP 4 file into the correct directory.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;net start &#34;Apache&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Next, we start the Apache 1.3.x service.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;COPY &#34;C:\home\configuration\zblank.txt&#34; &#34;C:\home\zApache1.3_PHP4 is ready.txt&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Finally, we copy the blank text file and rename the copy so that we know which configuration is running.&lt;/p&gt;
-&lt;p&gt;Save the Notepad file as Apache1.3_PHP4.bat where ever makes the most sense to you. I put it in the configuration folder, but you could also put it in the c:\home\ folder, or another folder entirely (or on your Desktop).&lt;/p&gt;
-&lt;h3&gt;Moving forward&lt;/h3&gt;
-&lt;p&gt;I&#39;ve created twelve (12) batch files in a matter similar to the above, and zipped them up for download. Feel free to modify them as necessary, for your own use.&lt;/p&gt;
-&lt;p&gt;Keep in mind that these are very basic batch files. It&#39;s possible to clean these up significantly, with the full range of commands at your disposal. For now, however, this will get you going.&lt;/p&gt;
-&lt;p&gt;Download &lt;a title=&#34;Batch files for switching between our servers&#34; rel=&#34;download&#34; href=&#34;http://words.strivinglife.com/files/2006/08/bat_20060826.zip&#34;&gt;bat_20060826.zip&lt;/a&gt; for the twelve batch files. Feel free to modify as necessary to get them to work on your own system.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>In the last part of the Apache 2.0.59 installation guide, we cover creating batch files to switch between various instances of Apache, PHP, and ColdFusion. In a later guide we&#39;ll clean this process up considerably, but until then ...</description>
     </item>
     
     <item>
@@ -443,120 +88,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
       <pubDate>Sat, 26 Aug 2006 16:09:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-1.aspx&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2.aspx&#34;&gt;Part 2 of this Apache 2.0.59 guide&lt;/a&gt;, we setup ColdFusion MX 6.1 and 7.0. This time, we&#39;ll be continuing in our quest by adding support for both PHP 4 and PHP 5.&lt;/p&gt;
-&lt;p&gt;In previous guides, we &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4&lt;/a&gt; and &lt;a href=&#34;http://words.strivinglife.com/words/post/Dual-installing-PHP-Running-PHP-5-and-4-on-the-same-local2c-Windows-based2c-Apache2c-server.aspx&#34;&gt;PHP 5&lt;/a&gt;, so if you need to install either one, do so with the above directions. If you&#39;ll be installing PHP 4 and PHP 5 for the first time, and have not installed on Apache 1.3.x already, then you may be able to pick and choose from these guides to get the information you need.&lt;/p&gt;
-&lt;p&gt;Before we do this, however, we need to think about just what we&#39;re doing.&lt;/p&gt;
-&lt;p&gt;Up until this point, you may have installed any (or none) of the below. (Keep in mind that you can generalize these if you have slightly newer versions. So, PHP 5.1.4 = PHP 5.x.)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Apache 1.3.34&lt;/li&gt;
-&lt;li&gt;Apache 2.0.59&lt;/li&gt;
-&lt;li&gt;PHP 4.4.2&lt;/li&gt;
-&lt;li&gt;PHP 5.1.4&lt;/li&gt;
-&lt;li&gt;ColdFusion MX 6.1&lt;/li&gt;
-&lt;li&gt;ColdFusion MX 7.0.2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This gives us a number of options on what our local Web server could be running at one time. For example, we could be running PHP 4, ColdFusion MX 6.1, and Apache 1.3.x or Apache 2.0.x. Likewise, we could use PHP 4 or PHP 5, or ColdFusion MX 6.1 or ColdFusion MX 7.0. Writing out a list of all of our possible combinations, we&#39;ve got something like the following.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Apache1.3_CF6.1_PHP4&lt;/li&gt;
-&lt;li&gt;Apache1.3_CF7.0_PHP4&lt;/li&gt;
-&lt;li&gt;Apache1.3_CF6.1_PHP5&lt;/li&gt;
-&lt;li&gt;Apache1.3_CF7.0_PHP5&lt;/li&gt;
-&lt;li&gt;Apache2.0_CF6.1_PHP4&lt;/li&gt;
-&lt;li&gt;Apache2.0_CF7.0_PHP4&lt;/li&gt;
-&lt;li&gt;Apache2.0_CF6.1_PHP5&lt;/li&gt;
-&lt;li&gt;Apache2.0_CF7.0_PHP5&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Of course, we could also run our local server without the ColdFusion MX component, or PHP component at all. For ease, however, we&#39;ll just stick with one of the above possibilities. What this means is that for each of the above that you want to run, you&#39;ll need to have an httpd.conf file.&lt;/p&gt;
-&lt;p&gt;If you followed my above guides, than you should already have the Apache 1.3.x configuration files (although with slightly different names). Once we have all eight configurations, we can write batch files to automate most of the process. For getting these up and running. With one click (and maybe just a little renaming), we can have the Web server that we want up and running.&lt;/p&gt;
-&lt;p&gt;Whatever you may have for Apache 1.3.x, I recommend you create a &#39;configuration&#39; folder in your DocumentRoot directory (so, c:\home\configuration\ if you&#39;ve been following along) where you can begin compiling httpd.conf files.&lt;/p&gt;
-&lt;p&gt;For example, I&#39;ve obviously followed by own guides, so I have four files thus far.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP5.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP5.conf &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We should also have either one or two php.ini files &amp;ndash; one for PHP 4 and one for PHP 5 &amp;ndash; that we&#39;ll also want to put copies of in this folder.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;php_Apache_PHP4.ini &lt;/li&gt;
-&lt;li&gt;php_Apache_PHP5.ini &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Apache 1.3.x and Apache 2.0.x use the same php.ini files. So, it&#39;s not necessary to make one copy each for Apache 1.3.x and one each for 2.0.x.&lt;/p&gt;
-&lt;p&gt;This done, we can begin connecting to PHP 4 and PHP 5 on Apache 2.0.x.&lt;/p&gt;
-&lt;h3&gt;Hooking up PHP 4.4.2&lt;/h3&gt;
-&lt;p&gt;In a previous guide, we &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PHP-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;installed PHP 4.4.2&lt;/a&gt; and in yet &lt;a href=&#34;http://words.strivinglife.com/words/post/Moving-the-location-of-PHP-on-your-hard-drive.aspx&#34;&gt;a later guide moved our installation&lt;/a&gt; to the c:\php4\ folder.&lt;/p&gt;
-&lt;p&gt;Since we&#39;ve already got PHP 4 working on Apache 1.3.x, most of our setup is already complete. Now it&#39;s just a matter of hooking up Apache 2.0.x to recognize it.&lt;/p&gt;
-&lt;p&gt;First, we&#39;ll need to make sure we&#39;ve got a backup of the httpd.conf file in the C:\Program Files\Apache Group\Apache2\conf folder.&lt;/p&gt;
-&lt;p&gt;Now open the Apache 2 httpd.conf file. Do a search for LoadModule, and at the end of this section, add the following line. Keep in mind that if you installed PHP 4 to a different folder, you should make that change here as well.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LoadModule php4_module &#34;c:/php4/php4apache2.dll&#34;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now, do a search for AddType. After the first uncommented line (AddType application/x-gzip .gz .tgz), place the following.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;AddType application/x-httpd-php .php&lt;br /&gt;AddType application/x-httpd-php-source .phps&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Finally, add &#39;index.php&#39; to the DirectoryIndex line, where ever you&#39;d like it be called in the order of things. Depending upon preference, you may also want to add index.htm, since Apache 2.0.x doesn&#39;t seem to want to include these.&lt;/p&gt;
-&lt;p&gt;Save httpd.conf. Now go to the c:\php4\ directory (or where you installed PHP 4) and copy the php4apache2.dll from the sapi folder into the root PHP folder. So, from c:\php4\sapi\ to c:\php4\.&lt;/p&gt;
-&lt;p&gt;For php.ini, everything should be setup correctly. However, you&#39;ll want to verify that the right php.ini file is in place.&lt;/p&gt;
-&lt;p&gt;Now start Apache2 from the Services panel (or the Apache Services Monitor) and you should find that the description lists PHP 4. If you go to &lt;a href=&#34;http://localhost/phpinfo.php&#34;&gt;http://localhost/phpinfo.php&lt;/a&gt; (if you created this file), you should also find that PHP is up and running.&lt;/p&gt;
-&lt;p&gt;Make sure both your ColdFusion MX 6.1 and ColdFusion MX 7.0 httpd.conf files have the httpd.conf changes made, and you can switch between either version.&lt;/p&gt;
-&lt;h3&gt;Connecting to PHP 5&lt;/h3&gt;
-&lt;p&gt;Assuming you&#39;ve already setup PHP 4 for Apache 2.0.x, using the instructions above, moving to PHP 5 is extremely easy. So easy, in fact, that it&#39;s scary. Make a copy of any httpd.conf files you may have for PHP 4. For example, the two I have in C:\Program Files\Apache Group\Apache2\conf\ are called httpd_CFMX6.1_PHP4.conf and httpd_CFMX7.0_PHP4.conf.&lt;/p&gt;
-&lt;p&gt;I&#39;ll copy both of these and rename them to httpd_CFMX6.1_PHP5.conf and httpd_CFMX7.0_PHP5.conf. That done open both up and do a search for php4, one file at a time. You&#39;ll find php4 three times, in the following line.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LoadModule php4_module &#34;c:/php4/php4apache2.dll&#34;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Which you&#39;ll simply change to three &#39;5&#39;s.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;LoadModule php5_module &#34;c:/php5/php5apache2.dll&#34;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now save the httpd.conf files. The php5apache2.dll file will already be in this location, so you should be set to go. Make a copy of either one of these, make sure that you&#39;re using the right php.ini file, restart Apache2, and verify that phpinfo() gives the correct information.&lt;/p&gt;
-&lt;p&gt;Wasn&#39;t that easy?&lt;/p&gt;
-&lt;h3&gt;Now that PHP 4 and/or PHP 5 are installed ...&lt;/h3&gt;
-&lt;p&gt;Now that we&#39;ve setup PHP 4 and/or PHP 5 with Apache 2.0.x, it&#39;s time to backup the necessary .conf files into our &#39;configuration&#39; folder.&lt;/p&gt;
-&lt;p&gt;At this point, you&#39;ll have up to ten files in this folder (c:\home\configuration\). Up to eight .conf files and up to two .ini files. I&#39;ve listed all ten possibilities below.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX6.1_PHP5.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_CFMX7.0_PHP5.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_CFMX6.1_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_CFMX6.1_PHP5.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_CFMX7.0_PHP4.conf &lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_CFMX7.0_PHP5.conf &lt;/li&gt;
-&lt;li&gt;php_Apache_PHP4.ini &lt;/li&gt;
-&lt;li&gt;php_Apache_PHP5.ini &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now, let&#39;s create a blank text file called zblank.txt. Next, we should determine whether we want to have a version that does not run ColdFusion MX. If you want to, read the next section. Otherwise, skip the next section and read the following one.&lt;/p&gt;
-&lt;!--nextpage--&gt;
-&lt;h3&gt;Removing ColdFusion MX from our configurations&lt;/h3&gt;
-&lt;p&gt;To remove ColdFusion MX, you&#39;ll need four more httpd.conf files. Two for Apache 1.3.x and two for Apache 2.0.x, as each has two versions of PHP. Since it doesn&#39;t matter which one we take from, just copy the four httpd.conf files that reference CFMX6.1 in their file names.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;Now, simply remove the &#39;Copy of &#39; and &#39;CFMX&lt;em&gt;x&lt;/em&gt;.&lt;em&gt;y&lt;/em&gt;&#39; from the four file names. You&#39;ll end up with the following.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;httpd_Apache1.3_PHP4.conf&lt;/li&gt;
-&lt;li&gt;httpd_Apache1.3_PHP5.conf&lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_PHP4.conf&lt;/li&gt;
-&lt;li&gt;httpd_Apache2.0_PHP5.conf &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There&#39;s just a couple of things to remove from each of these conf files. The following block will need to be removed from the Apache 1.3.x files.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &#34;C:/CFusionMX/runtime/lib/wsconfig/1/mod_jrun.so&#34;&lt;br /&gt;&amp;lt;IfModule mod_jrun.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &#34;C:/CFusionMX/runtime/lib/wsconfig/1/jrunserver.store&#34;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;And this block will need to be removed from the Apache 2.0.x files.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &#34;C:/CFusionMX/runtime/lib/wsconfig/2/mod_jrun20.so&#34;&lt;br /&gt;&amp;lt;IfModule mod_jrun20.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &#34;C:/CFusionMX/runtime/lib/wsconfig/2/jrunserver.store&#34;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Finally, make sure &#39;index.cfm index.cfml&#39; is removed from the DirectoryIndex lines in each file.&lt;/p&gt;
-&lt;p&gt;By allowing our Apache 2.0.x server, and Apache 1.3.x server, to run without checking for ColdFusion MX, we can keep it running quick, even if we decide not to start any versions of ColdFusion MX.&lt;/p&gt;
-&lt;p&gt;The only thing we have left is hooking up MySQL and PostgreSQL and creating batch files to use these httpd.conf and php.ini files to get the server we want up and running.&lt;/p&gt;
-&lt;p&gt;So, let the hardest part begin.&lt;/p&gt;
-&lt;h3&gt;Connecting to MySQL and PostgreSQL&lt;/h3&gt;
-&lt;p&gt;Amazingly enough, as long as you already setup MySQL and PostgreSQL for Apache 1.3.x, you&#39;re all set to begin using MySQL and PostgreSQL for both ColdFusion MX 6.1, ColdFusion MX 7.0, PHP 4, and PHP 5. This is because ColdFusion MX is handling the SQL requests via the datasources, and PHP is likewise handling it&#39;s own requests (via the php.ini file).&lt;/p&gt;
-&lt;p&gt;Feel free to test this using the PHP files I detailed before (&lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check MySQL connection in PHP&lt;/a&gt; | &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based2c-Apache2c-server.aspx&#34;&gt;check PostgreSQL connection in PHP&lt;/a&gt;) or just using the ColdFusion MX Administrator to check all datasources.&lt;/p&gt;
-&lt;h3&gt;Coming in Part 4 ...&lt;/h3&gt;
-&lt;p&gt;In Part 4, I&#39;ll be going over how to create the batch files that we&#39;ll need to work with the httpd.conf and php.ini files that we&#39;ve created. While I could detail it here, better to just put it in it&#39;s own article/post, as that makes things much easier (if not for you, then at least for me ;)).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>In part three of this multi-part guide, we&#39;ll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for PHP 4.4.2 and PHP 5.1.4.  We also go over how to setup MySQL and PostgreSQL for our new version of Apache. In the last guide of this series, we&#39;ll be going over how to create batch files to switch between all of the different possible servers we can now run.</description>
     </item>
     
     <item>
@@ -565,72 +97,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
       <pubDate>Fri, 25 Aug 2006 18:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/&#34;&gt;Part 1 of this Apache 2.0.59 guide&lt;/a&gt;, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we&#39;ll be continuing in our quest by installing ColdFusion MX 6.1 and 7.&lt;/p&gt;
-
-&lt;p&gt;&lt;h3&gt;Assumptions&lt;/h3&gt;
-&lt;p&gt;First, I assume that you&amp;rsquo;ve already installed ColdFusion MX. Of course, you may not have installed 6.1 and 7, but I&amp;rsquo;m going to assume you&amp;rsquo;ve installed at least one. If you&amp;rsquo;ve installed neither, then you may want to check out my &lt;a href=&#34;http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/&#34;&gt;guides on ColdFusion MX 6.1&lt;/a&gt; and/or &lt;a href=&#34;http://strivinglife.net/wordpress/2006/07/12/159/upgrading-our-installation-of-coldfusion-mx-701-on-a-local-windows-based-apache-server/&#34;&gt;ColdFusion MX 7&lt;/a&gt;.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;Since you&amp;rsquo;ll be making modifications to the httpd.conf file for Apache 2.0.x, you&amp;rsquo;ll also want to back this file up.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s also important to determine how many installations of ColdFusion MX you&amp;rsquo;ll be doing. You&amp;rsquo;ll need to know this to determine whether or not you&amp;rsquo;ll need to switch between one version of ColdFusion and another. I&amp;rsquo;m going to assume that you&amp;rsquo;ll be enabling both, so feel free to skip whatever steps as necessary below.&lt;/p&gt;
-&lt;p&gt;Keep in mind that if you&amp;rsquo;re just going to install ColdFusion MX, then the steps below will not be necessary. This is only if you&amp;rsquo;ve already installed ColdFusion MX for Apache 1.3.x.&lt;/p&gt;
-&lt;h3&gt;Hooking up ColdFusion MX 6.1&lt;/h3&gt;
-&lt;p&gt;Start by creating a backup copy of the httpd.conf.&lt;/p&gt;
-&lt;p&gt;When ColdFusion MX 6.1 is installed, it inserts the following lines into the httpd.conf file.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &amp;ldquo;C:/CFusionMX/runtime/lib/wsconfig/1/mod_jrun.so&amp;rdquo;&lt;br /&gt;&amp;lt;IfModule mod_jrun.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &amp;ldquo;C:/CFusionMX/runtime/lib/wsconfig/1/jrunserver.store&amp;rdquo;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we&amp;rsquo;ll need to get a copy of this file, and point our httpd.conf file to it.&lt;/p&gt;
-&lt;p&gt;What we&amp;rsquo;re first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we&amp;rsquo;ll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;BrowserMatch &amp;ldquo;^Dreamweaver-WebDAV-SCM1&amp;rdquo; redirect-carefully&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;There&amp;rsquo;s some modifications that we&amp;rsquo;ll need to make. As you can see below, I&amp;rsquo;ve pointed to the /2/ folder, and mod_jrun20.so file (which doesn&amp;rsquo;t yet exist).&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &amp;ldquo;C:/CFusionMX/runtime/lib/wsconfig/2/mod_jrun20.so&amp;rdquo;&lt;br /&gt;&amp;lt;IfModule mod_jrun20.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &amp;ldquo;C:/CFusionMX/runtime/lib/wsconfig/2/jrunserver.store&amp;rdquo;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51010&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now save httpd.conf. Next, head over to the C:\CFusionMX\runtime\lib\wsconfig\ folder. Within this folder there will be a &amp;lsquo;1&amp;rsquo; folder, and three files (jrunwin32.dll, wsconfig.log, and wsconfig.properties).&lt;/p&gt;
-&lt;p&gt;First, create a copy of the &amp;lsquo;1&amp;rsquo; folder and call the copy &amp;lsquo;2&amp;rsquo;. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.&lt;/p&gt;
-&lt;p&gt;This file currently contains the following information.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#JRun/ColdFusion MX Web Server Configuration File&lt;br /&gt;#Thu Feb 23 19:08:04 GMT-06:00 2006&lt;br /&gt;1=Apache,C:/Program Files/Apache Group/Apache/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;1.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;1.cfmx=true,&amp;lt;null&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;What we&amp;rsquo;re going to do is copy the last three lines (they all start with &amp;lsquo;1&amp;rsquo;) to the end of the this file. We&amp;rsquo;re then going to enter a bunch of &amp;lsquo;2&amp;rsquo;s so that we have the following in this file.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#JRun/ColdFusion MX Web Server Configuration File&lt;br /&gt;#Thu Feb 23 19:08:04 GMT-06:00 2006&lt;br /&gt;1=Apache,C:/Program Files/Apache Group/Apache/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;1.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;1.cfmx=true,&amp;lt;null&amp;gt;&lt;br /&gt;2=Apache,C:/Program Files/Apache Group/Apache2/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;2.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;2.cfmx=true,&amp;lt;null&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Save and close wsconfig.properties. Now open the &amp;lsquo;2&amp;rsquo; folder. There&amp;rsquo;s a mod_jrun.so file here, but as I said earlier, this won&amp;rsquo;t work with Apache 2.0.x. So, we&amp;rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&amp;rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (&lt;a title=&#34;mod_jrun20.so&#34; rel=&#34;attachment&#34; href=&#34;http://words.strivinglife.com/files/2006/08/mod_jrun20.zip&#34;&gt;mod_jrun20.zip&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Save all necessary files and start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 6.1 Administrator Login.&lt;/p&gt;
-&lt;p&gt;Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you&amp;rsquo;re ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.&lt;/p&gt;
-&lt;!--nextpage--&gt;
-&lt;h3&gt;Hooking up ColdFusion MX 7.0.2&lt;/h3&gt;
-&lt;p&gt;Start by creating a backup copy of the httpd.conf. If you went through the above steps, then you&amp;rsquo;ll want to grab the pre-ColdFusion MX 6.1 httpd.conf backup file. Otherwise, you can just change the lines that we added above.&lt;/p&gt;
-&lt;p&gt;When ColdFusion MX 7 is installed, it inserts the following lines into the httpd.conf file.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &amp;ldquo;C:/CFusionMX7/runtime/lib/wsconfig/1/mod_jrun.so&amp;rdquo;&lt;br /&gt;&amp;lt;IfModule mod_jrun.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &amp;ldquo;C:/CFusionMX7/runtime/lib/wsconfig/1/jrunserver.store&amp;rdquo;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51011&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;#JRunConfig ProxyRetryInterval 600&lt;br /&gt;#JRunConfig ConnectTimeout 15&lt;br /&gt;#JRunConfig RecvTimeout 300&lt;br /&gt;#JRunConfig SendTimeout 15&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we&amp;rsquo;ll need to get a copy of this file, and point our httpd.conf file to it.&lt;/p&gt;
-&lt;p&gt;What we&amp;rsquo;re first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we&amp;rsquo;ll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.&lt;/p&gt;
-&lt;p&gt;BrowserMatch &amp;ldquo;^Dreamweaver-WebDAV-SCM1&amp;rdquo; redirect-carefully&lt;/p&gt;
-&lt;p&gt;There&amp;rsquo;s some modifications that we&amp;rsquo;ll need to make. As you can see below, I&amp;rsquo;ve pointed to the /2/ folder, the mod_jrun20.so file (which doesn&amp;rsquo;t yet exist), and the mod_jrun20.c module.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;# JRun Settings&lt;br /&gt;LoadModule jrun_module &amp;ldquo;C:/CFusionMX7/runtime/lib/wsconfig/2/mod_jrun20.so&amp;rdquo;&lt;br /&gt;&amp;lt;IfModule mod_jrun20.c&amp;gt;&lt;br /&gt;JRunConfig Verbose false&lt;br /&gt;JRunConfig Apialloc false&lt;br /&gt;JRunConfig Ssl false&lt;br /&gt;JRunConfig Ignoresuffixmap false&lt;br /&gt;JRunConfig Serverstore &amp;ldquo;C:/CFusionMX7/runtime/lib/wsconfig/2/jrunserver.store&amp;rdquo;&lt;br /&gt;JRunConfig Bootstrap 127.0.0.1:51011&lt;br /&gt;#JRunConfig Errorurl &amp;lt;optionally redirect to this URL on errors&amp;gt;&lt;br /&gt;#JRunConfig ProxyRetryInterval 600&lt;br /&gt;#JRunConfig ConnectTimeout 15&lt;br /&gt;#JRunConfig RecvTimeout 300&lt;br /&gt;#JRunConfig SendTimeout 15&lt;br /&gt;AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf&lt;br /&gt;&amp;lt;/IfModule&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Now save httpd.conf. Next, head over to the C:\CFusionMX7\runtime\lib\wsconfig\ folder. Within this folder there will be a &amp;lsquo;1&amp;rsquo; folder, and three files (wsconfig.log, and wsconfig.properties).&lt;/p&gt;
-&lt;p&gt;First, create a copy of the &amp;lsquo;1&amp;rsquo; folder and call the copy &amp;lsquo;2&amp;rsquo;. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.&lt;/p&gt;
-&lt;p&gt;This file currently contains the following information.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#JRun/ColdFusion MX Web Server Configuration File&lt;br /&gt;#Thu Mar 30 17:54:42 GMT-06:00 2006&lt;br /&gt;1=Apache,C:/Program Files/Apache Group/Apache/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&amp;ldquo;&amp;rdquo;,false&lt;br /&gt;1.srv=localhost,&amp;ldquo;coldfusion&amp;rdquo;&lt;br /&gt;1.cfmx=true,&amp;lt;null&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;What we&amp;rsquo;re going to do is copy the last three lines (they all start with &amp;lsquo;1&amp;rsquo;) to the end of the this file. We&amp;rsquo;re then going to enter a bunch of &amp;lsquo;2&amp;rsquo;s so that we have the following in this file.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#JRun/ColdFusion MX Web Server Configuration File&lt;br /&gt;#Thu Feb 23 19:08:04 GMT-06:00 2006&lt;br /&gt;1=Apache,C:/Program Files/Apache Group/Apache/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&amp;ldquo;&amp;rdquo;&lt;br /&gt;1.srv=localhost,&amp;ldquo;default&amp;rdquo;&lt;br /&gt;1.cfmx=true,&amp;lt;null&amp;gt;&lt;br /&gt;2=Apache,C:/Program Files/Apache Group/Apache2/conf,&amp;ldquo;&amp;rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&amp;ldquo;&amp;rdquo;,false&lt;br /&gt;2.srv=localhost,&amp;ldquo;coldfusion&amp;rdquo;&lt;br /&gt;2.cfmx=true,&amp;lt;null&amp;gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Save and close wsconfig.properties. Now open the &amp;lsquo;2&amp;rsquo; folder. There&amp;rsquo;s a mod_jrun.so file here, but as I said earlier, this won&amp;rsquo;t work with Apache 2.0.x. So, we&amp;rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&amp;rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (&lt;a title=&#34;mod_jrun20.so&#34; rel=&#34;attachment&#34; href=&#34;http://strivinglife.net/wordpress/?attachment_id=200&#34;&gt;mod_jrun20.zip&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you&amp;rsquo;ll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.&lt;/p&gt;
-&lt;p&gt;Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you&amp;rsquo;re ready to begin working on ColdFusion on Apache 2.0.x.&lt;/p&gt;
-&lt;h3&gt;In the next part &amp;hellip;&lt;/h3&gt;
-&lt;p&gt;In &lt;a href=&#34;http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx&#34;&gt;Part 3&lt;/a&gt;, we&amp;rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://words.strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In part two of this multi-part guide, we&#39;ll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for ColdFusion MX 6.1 and 7.0, without having to reinstall either application.  In later guides, we&#39;ll be going over how to set back up both PHP 4 and 5, as well as MySQL and PostgreSQL.</description>
     </item>
     
     <item>
@@ -639,59 +106,7 @@ COPY &#34;C:\home\configuration\php_Apache_PHP4.ini&#34; &#34;c:\windows\php.ini
       <pubDate>Wed, 12 Jul 2006 20:16:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;
-In a previous guide, we installed &lt;a href=&#34;http://strivinglife.com/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1&lt;/a&gt; and &lt;a href=&#34;http://strivinglife.com/words/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 7.0.1&lt;/a&gt;. In this guide, we&amp;#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2.
-&lt;/p&gt;
-&lt;h4&gt;Downloading the updater&lt;/h4&gt;
-&lt;p&gt;
-ColdFusion MX 7.0.2 can either be downloaded as a full installer, or as a simple updater. Since we&amp;#39;ve already installed 7.0.1, we can just use the updater. Go to &lt;a href=&#34;http://www.adobe.com/support/coldfusion/downloads_updates.html&#34;&gt;http://www.adobe.com/support/coldfusion/downloads_updates.html&lt;/a&gt; and download the current updater, ColdFusion MX 7 Updater 2 (7.0.2) for Windows. The size of this file is almost 50 MB, so you may have a bit of wait.
-&lt;/p&gt;
-&lt;h4&gt;Preparation&lt;/h4&gt;
-&lt;p&gt;
-If you&amp;#39;re running both ColdFusion MX 6.1 and 7, you&amp;#39;ll want to make sure that you&amp;#39;ve stopped 6.1, and the correct 7 folders in their right place. The best way to test this is to start ColdFusion MX 7.0.1 and visit the ColdFusion Administrator.
-&lt;/p&gt;
-&lt;p&gt;
-You may also want to make a backup of your httpd.conf files for Apache (at C:\Program Files\Apache Group\Apache\conf).
-&lt;/p&gt;
-&lt;h4&gt;Updating&lt;/h4&gt;
-&lt;p&gt;
-Once you&amp;#39;ve verified that your folders are in the correct places, you can start the updater.
-&lt;/p&gt;
-&lt;p&gt;
-Read the Introduction, and the license agreement, and either agree or not with the latter, clicking Next as you go.
-&lt;/p&gt;
-&lt;p&gt;
-When you&amp;#39;re asked to &amp;ldquo;select the ColdFusion MX 7 installation configuration that you want to update&amp;rdquo;, select &amp;ldquo;Server configuration&amp;rdquo;. Click Next.
-&lt;/p&gt;
-&lt;p&gt;
-On the next screen, you&amp;#39;ll be told to &amp;ldquo;shut down all ColdFusion MX 7 services and web server services&amp;rdquo;. So, head over to Services, and stop &amp;ldquo;ColdFusino MX 7 Application Server&amp;rdquo;, &amp;ldquo;ColdFusion MX 7 ODBC Agent&amp;rdquo;, &amp;ldquo;ColdFusion MX 7 ODBC Server&amp;rdquo;, and &amp;ldquo;ColdFusion MX 7 Search Server&amp;rdquo;. You&amp;#39;ll also want to stop Apache. Continue.
-&lt;/p&gt;
-&lt;p&gt;
-If you changed the install folder for ColdFusion MX 7, then you&amp;#39;ll need to enter that on the next screen. Otherwise, accept the default of &amp;#39;C:\CFusionMX7&amp;#39;. You&amp;#39;ll also need to select the CFIDE directory.
-&lt;/p&gt;
-&lt;p&gt;
-The Updater will then report the required and available disk space on your computer. If you&amp;#39;ve enough space, &amp;#39;Install&amp;#39;. Once the install has finished, you can press Done to finish the installation.
-&lt;/p&gt;
-&lt;p&gt;
-The Application Server should automatically start, but you&amp;#39;ll have to start the remaining ColdFusion services, and Apache.
-&lt;/p&gt;
-&lt;h4&gt;Verifying the update&lt;/h4&gt;
-&lt;p&gt;
-Once you&amp;#39;ve started the necessary services, log into the ColdFusion Administrator. You should notice that ColdFusion has been updated to 7.0.2 (via System Information). You can also verify your Data Sources to verify that you&amp;#39;re still able to connect.
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;ve installed ColdFusion MX 6.1, and still have it installed, you may want to also verify that you&amp;#39;re still able to switch correctly.
-&lt;/p&gt;
-&lt;p&gt;
-The update should not have had any effect upon your httpd.conf file, but you&amp;#39;ll want to verify this for yourself, and make any necessary backups.
-&lt;/p&gt;
-&lt;p&gt;
-Assuming everything checks out, you&amp;#39;ve safely upgraded ColdFusion MX 7.0.1 to ColdFusion MX 7.0.2!
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
-&lt;/p&gt;
-</description>
+      <description>In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we&#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2.</description>
     </item>
     
     <item>
@@ -700,10 +115,7 @@ Assuming everything checks out, you&amp;#39;ve safely upgraded ColdFusion MX 7.0
       <pubDate>Thu, 20 Apr 2006 20:19:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/</guid>
-      <description>&lt;p&gt;Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn&#39;t going to be possible, since the extension&#39;s XML isn&#39;t quite valid.&lt;/p&gt;
-&lt;p&gt;I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&amp;nbsp; So, I&#39;ll be attempting to reset my password once again, in the hope that it was just a two day problem ...&lt;/p&gt;
-&lt;p&gt;I don&#39;t have much confidence in that, however, so I&#39;ll be working on the XML parser (for PHP, and then sharing how I went about creating it), and looking at doing something in ColdFusion as well.&amp;nbsp; CF has native support, for 6.1 and 7, so it should just be a matter of writing the code.&lt;/p&gt;
-</description>
+      <description>Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn&#39;t going to be possible, since the extension&#39;s XML isn&#39;t quite valid.</description>
     </item>
     
     <item>
@@ -712,155 +124,7 @@ Assuming everything checks out, you&amp;#39;ve safely upgraded ColdFusion MX 7.0
       <pubDate>Fri, 31 Mar 2006 00:21:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-&lt;em&gt;Note: For information on updating to ColdFusion MX 7.0.2, see &lt;a href=&#34;http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server&lt;/a&gt;.&lt;/em&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Update: October 10, 2006 @ 7:11 pm - Thanks to Michael Bryce for his helpful comments regarding this documentation.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-In this article, we&amp;#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&amp;#39;s Edition. Since we&amp;#39;ve already covered the installation of &lt;a href=&#34;http://strivinglife.com/words/post/Installing-ColdFusion-on-a-local-Windows-based%2c-Apache%2c-server.aspx&#34;&gt;ColdFusion MX 6.1, Developer&amp;#39;s Edition&lt;/a&gt;, you may already have CFMX 6.1 on your computer, like I did while writing this guide. If you do, that&amp;#39;s okay (since I do). Otherwise, your installation will vary slightly.
-&lt;/p&gt;
-&lt;p&gt;
-First, we&amp;#39;ll need to download the installer for the Developer&amp;#39;s Edition. This can be downloaded from &lt;a href=&#34;http://www.macromedia.com/software/coldfusion/trial/&#34;&gt;http://www.macromedia.com/software/coldfusion/trial/&lt;/a&gt;. The download size is almost 300 MB, so you may have a wait on your hands.
-&lt;/p&gt;
-&lt;p&gt;
-While you&amp;#39;re waiting, if you&amp;#39;ve already installed ColdFusion MX 6.1, you can backup the CFIDE and cfdocs folders in your Web directory. If you&amp;#39;ve been following along, this would be c:\home\ (or whatever your &lt;strong&gt;DocumentRoot&lt;/strong&gt; has been set to in your Apache httpd.conf file). Put a copy in a new folder called CFMX6.1_docs.
-&lt;/p&gt;
-&lt;p&gt;
-Now, even if you haven&amp;#39;t installed CFMX 6.1, make a copy of your httpd.conf file, found in C:\Program Files\Apache Group\Apache\conf, and place it along with your other httpd.conf backups, or in your downloads folder (c:\home\downloads\ if you&amp;#39;ve been following along). Make a note that this is before the installation of CFMX 7.0.1. For example, httpd_20060319_PreCFMX7.01.conf (where 20060319 is the last date this file was changed).
-&lt;/p&gt;
-&lt;p&gt;
-Also, make sure ColdFusion MX 6.1 is stopped (and that it won&amp;#39;t start up when you start your computer). Remember, this is in the Services control panel, and the item you want is the ColdFusion MX Application Server. Change this to Manual, and make sure it&amp;#39;s stopped. If you haven&amp;#39;t installed ColdFusion MX 6.1 before, then skip this step.
-&lt;/p&gt;
-&lt;p&gt;
-Note, you could just uninstall ColdFusion MX 6.1 as well. Your call, depending upon how much hard drive space you have.
-&lt;/p&gt;
-&lt;p&gt;
-Once your download has completed, start the installer.
-&lt;/p&gt;
-&lt;p&gt;
-Click next, reading as you go, until you&amp;#39;re asked where to install ColdFusion MX 7. Keep the default of C:\CFusionMX7.
-&lt;/p&gt;
-&lt;p&gt;
-Next, if 6.1 is installed, you&amp;#39;ll have the ability to either configure Apache to use 7.0.1, or use ColdFusion MX 7.0.1&amp;#39;s built-in server to run both 6.1 and 7.0.1. We don&amp;#39;t really need both, so let&amp;#39;s just &amp;ldquo;Configure my web server for ColdFusion MX (recommended)&amp;rdquo;.
-&lt;/p&gt;
-&lt;p&gt;
-Next, you&amp;#39;ll need to &amp;ldquo;Add Web Servers/Sites&amp;rdquo;. Enter the following information.
-&lt;/p&gt;
-&lt;p&gt;
-Web Server: Apache&lt;br /&gt;
-Configuration Directory: C:\Program Files\Apache Group\Apache\conf&lt;br /&gt;
-Directory and file name of server binary: C:\Program Files\Apache Group\Apache\Apache.exe
-&lt;/p&gt;
-&lt;p&gt;
-Select OK, followed by Next.
-&lt;/p&gt;
-&lt;p&gt;
-On the next screen, change the web root to c:\home (or whatever your &lt;strong&gt;DocumentRoot&lt;/strong&gt; has been set to in your Apache httpd.conf file), and select Next. Here, enter an Administrator password twice. On the next, keep RDS enabled, and just use the same password you entered for the Administrator.
-&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;
-Thanks to Mike Bryce for pointing out that there are actually two places you need to enter your Web root directory. The first is for the DocumentRoot, and the next is a dozen lines down in a Directory tag. The following is a snippet from the Apache 1.3.x httpd.conf file, which is very similar to the Apache 2.0.x httpd.conf file (for this particular section). The two important lines are &lt;strong&gt;bold&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    #&lt;br /&gt;
-    # DocumentRoot: The directory out of which you will serve your&lt;br /&gt;
-    # documents. By default, all requests are taken from this directory, but&lt;br /&gt;
-    # symbolic links and aliases may be used to point to other locations.&lt;br /&gt;
-    #&lt;br /&gt;
-    &lt;strong&gt;DocumentRoot &amp;quot;c:/home&amp;quot;&lt;/strong&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-    #&lt;br /&gt;
-    # Each directory to which Apache has access, can be configured with respect&lt;br /&gt;
-    # to which services and features are allowed and/or disabled in that&lt;br /&gt;
-    # directory (and its subdirectories). &lt;br /&gt;
-    #&lt;br /&gt;
-    # First, we configure the &amp;quot;default&amp;quot; to be a very restrictive set of &lt;br /&gt;
-    # permissions. &lt;br /&gt;
-    #&lt;br /&gt;
-    &amp;lt;Directory /&amp;gt;&lt;br /&gt;
-    Options FollowSymLinks&lt;br /&gt;
-    AllowOverride None&lt;br /&gt;
-    &amp;lt;/Directory&amp;gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-    #&lt;br /&gt;
-    # Note that from this point forward you must specifically allow&lt;br /&gt;
-    # particular features to be enabled - so if something&amp;#39;s not working as&lt;br /&gt;
-    # you might expect, make sure that you have specifically enabled it&lt;br /&gt;
-    # below.&lt;br /&gt;
-    #
-    &lt;/p&gt;
-    &lt;p&gt;
-    #&lt;br /&gt;
-    # This should be changed to whatever you set DocumentRoot to.&lt;br /&gt;
-    #&lt;br /&gt;
-    &lt;strong&gt;&amp;lt;Directory &amp;quot;c:/home&amp;quot;&amp;gt;&lt;/strong&gt;&lt;br /&gt;
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Finally, you&amp;#39;ll see that ColdFusion MX 7.0.1 requires 426 MB of space, so go ahead and Install.
-&lt;/p&gt;
-&lt;p&gt;
-Once the installation has completed, go backup the httpd.conf file again (httpd_20060330_PostCFMX7.01.conf was mine). Next, restart Apache, and head over to the ColdFusion Administrator, at &lt;a href=&#34;http://localhost/CFIDE/administrator/index.cfm&#34;&gt;http://localhost/CFIDE/administrator/index.cfm&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-Type the password that you just created, which will begin the server configuration, which may take a short while.
-&lt;/p&gt;
-&lt;p&gt;
-Since we&amp;#39;ve already setup some data sources (if you&amp;#39;ve been following along), we&amp;#39;ll need to do some migration. It&amp;#39;ll first export your settings, and then import them. Finally, click OK to start the ColdFusion Getting Started Experience.
-&lt;/p&gt;
-&lt;p&gt;
-Note that index.cfm may need to be setup as a directory index. Open the httpd.conf file, search for DirectoryIndex, and add index.cfm and index.cfml to the second instances&amp;#39; line. For example:
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    DirectoryIndex index.php index.cfm index.cfml index.html index.htm
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Restart Apache if you need to add these.
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;ve already setup MySQL or PostgreSQL, or both, then you can now run the CFM files that we created early to verify our connections, as well as use the Data Sources area (under Data &amp;amp; Services). If you&amp;#39;re testing PostgreSQL, make sure you copy the jar file to the C:\CFusionMX7\lib folder (if you&amp;#39;ve been following along, something along the lines of postgresql-8.1-405.jdbc3.jar).
-&lt;/p&gt;
-&lt;p&gt;
-And with that, you&amp;#39;ve successfully setup ColdFusion MX 7.0.1 on an Apache server.
-&lt;/p&gt;
-&lt;p&gt;
-You may want to setup ColdFusion MX 7 Application Server (in Services) to startup manually, instead of automatically.
-&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;
-Note that it&amp;#39;s completely possible to now run both ColdFusion MX 6.1 and 7.0.1 on the same instance of Apache, albeit not at the same time. The following is only for advanced users.
-&lt;/p&gt;
-&lt;p&gt;
-You&amp;#39;ll remember that we created a copy of the CFIDE and cfdocs folders from ColdFusion MX 6.1. If you now create a copy of these folders for ColdFusion MX 7.0.1, you&amp;#39;ll have a copy of each folder for each installation. I also suggested you create a backup of your httpd.conf file both before and after our upgrade. If you do a comparison on the httpd.conf file, using a program like WinMerge, you&amp;#39;ll see the exact lines that got changed.
-&lt;/p&gt;
-&lt;p&gt;
-Stop ColdFusion MX 7 Application Server, and Apache. Now, swap (making sure you don&amp;#39;t overwrite your copy of the MX 7 files) the httpd.conf file and CFIDE and cfdocs folders from the 7.0.1 installation, to the 6.1 installation. Start Apache, and once it&amp;#39;s started, start the ColdFusion Application Server (for 6.1). Hit the Administrator page and you&amp;#39;re now running 6.1.
-&lt;/p&gt;
-&lt;p&gt;
-You can switch back to 7.0.1 at any time by stopping the Application Server, Apache, and swapping the two folders and one file.
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-Keep in mind that if you try to log in to ColdFusion Administrator, but see &amp;#39;gobbledygook&amp;#39;, that probably means that you&amp;#39;ve got the wrong CFIDE and cfdocs folders for the version you&amp;#39;re running. Swap in the correct folders, or change to the other version.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Have fun, and stay safe.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://strivinglife.com/local-apache-server/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In this article, we&#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&#39;s Edition. Since we&#39;ve already covered the installation of ColdFusion MX 6.1, Developer&#39;s Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide. If you do, that&#39;s okay (since I do). Otherwise, your installation will vary slightly.</description>
     </item>
     
     <item>
@@ -869,52 +133,7 @@ Have fun, and stay safe.
       <pubDate>Sun, 19 Mar 2006 06:18:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;Having already &lt;a href=&#34;http://strivinglife.com/words/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;added MySQL support for ColdFusion MX&lt;/a&gt;, it&#39;s time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we&#39;ll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we&#39;ll need to install some additional features to ColdFusion MX.&lt;/p&gt;
-&lt;p&gt;(This guide assumes you&#39;ve already &lt;a href=&#34;http://strivinglife.com/words/post/Installing-PostgreSQL-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed PostgreSQL&lt;/a&gt;.)&lt;/p&gt;
-&lt;h3&gt;Downloading and installing the JDBC Driver&lt;/h3&gt;
-&lt;p&gt;The first thing we&#39;ll need to do is install a special driver for ColdFusion. This driver can be found at &lt;a href=&#34;http://jdbc.postgresql.org/&#34;&gt;http://jdbc.postgresql.org/&lt;/a&gt;. Select Download from the left-side navigation, and you&#39;ll be presented with a lot of options. Before we go any further, we&#39;ll need to determine what version we&#39;ll need to download, which will involve determining our version of JDK.&lt;/p&gt;
-&lt;p&gt;To determine this, find where you installed ColdFusion MX, and look in the runtime\jre\ folder. If you&#39;re not sure of where this is, make sure ColdFusion is started and open the ColdFusion Administrator (&lt;a href=&#34;http://localhost/CFIDE/administrator/index.cfm&#34;&gt;http://localhost/CFIDE/administrator/index.cfm&lt;/a&gt; if you&#39;ve been following along).&lt;/p&gt;
-&lt;p&gt;Now, select Java and JVM under SERVER SETTINGS, on the left side. You&#39;ll now see a box detailing the Java Virtual Machine Path. Go to this location and open the README.txt file. Here, you&#39;ll be able to determine the version. You can also determine your version by checking the Server Information under ColdFusion Administrator. If you&#39;ve been following along, you&#39;re probably using version 1.4.2. Because of this, and because we&#39;re using PostgreSQL 8.1, we&#39;ll download the JDBC 3, 8.1 Build 405 version (8.1-405 JDBC 3), which is about 400 KB. Save this to your downloads directory.&lt;/p&gt;
-&lt;p&gt;Now copy this file and move it to C:\CFusionMX\wwwroot\WEB-INF\classes, if you&#39;ve installed ColdFusion to c:\CFusionMX\. Otherwise, substitute as necessary.&lt;/p&gt;
-&lt;p&gt;Now, enter the path and name of this file into the Class Path field in ColdFusion Administrator, with a comma at the end. For example, &#34;C:/CFusionMX/wwwroot/WEB-INF/classes/postgresql-8.1-405.jdbc3.jar,&#34; (no quotes). Note that we&#39;ve replaced the &#39;\&#39; with &#39;/&#39; in the path. Now Submit Changes.&lt;/p&gt;
-&lt;p&gt;Next, open the file at C:\CFusionMX\lib\neo-query.xml in Notepad. Do a search for postgresql, and scroll through until you find the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;var name=&#39;handler&#39;&amp;gt;&amp;lt;string&amp;gt;postgresql.cfm&amp;lt;/string&amp;gt;&amp;lt;/var&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Change this to:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;var name=&#39;handler&#39;&amp;gt;&amp;lt;string&amp;gt;default.cfm&amp;lt;/string&amp;gt;&amp;lt;/var&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Finally, restart ColdFusion via the Services panel. Note that it may take a little longer for ColdFusion to start, since we&#39;ve added a new class for ColdFusion to load.&lt;/p&gt;
-&lt;p&gt;Finally, log back into ColdFusion Administrator and select Data Sources under DATA &amp;amp; SERVICES.&lt;/p&gt;
-&lt;h3&gt;Creating a new database in PostgreSQL&lt;/h3&gt;
-&lt;p&gt;The first thing we&#39;ll need to do is create a new database in PostgreSQL. Start pgAdmin and connect to the PostgreSQL Database Server 8.1.&lt;/p&gt;
-&lt;p&gt;Once you&#39;ve connected, right click on Databases (1), and select New Database. Type in a Name (I used ColdFusion), select an Owner (we&#39;ll just use postgres for now), and select a Tablespace (pg_default). Now hit OK.&lt;/p&gt;
-&lt;h3&gt;Adding PostgreSQL as a data source&lt;/h3&gt;
-&lt;p&gt;We&#39;ll now add PostgreSQL as a data source in ColdFusion Administrator. In the Data Source Name, type in PostgreSQL, and select other for Driver. Now hit Add.&lt;/p&gt;
-&lt;p&gt;JDBC URL: jdbc:postgresql://localhost:5432/ColdFusion&lt;br /&gt;Driver Class: org.postgresql.Driver&lt;br /&gt;Driver Name: PostgreSQL&lt;br /&gt;Username: postgres&lt;br /&gt;Password: your_password (note, this will have been the second password you used, not the first)&lt;br /&gt;Description: PostgreSQL database for ColdFusion MX 6.1. (or whatever you want to type)&lt;/p&gt;
-&lt;p&gt;Note that for JDBC URL, &#39;ColdFusion&#39; should match the name of the database you created in PostreSQL above. Other than that and Username, your settings should match mine above. Once you do this, it should verify as OK. You can optionally Verify All Connections to verify them all.&lt;/p&gt;
-&lt;p&gt;Creating a PostgreSQL table in ColdFusion&lt;/p&gt;
-&lt;p&gt;We&#39;ll now create a new file in Notepad and paste the following text within it, to test our ColdFusion to PostgreSQL connection.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfquery name=&#34;CreateNewDatabase&#34; datasource=&#34;PostgreSQL&#34;&amp;gt;
-CREATE TABLE TestDatabase (
-    TestColumn1 text,
-    TestColumn2 text
-);
-CREATE UNIQUE INDEX TestDatabase_TestColumn1_TestColumn2_uidx ON TestDatabase (TestColumn1,TestColumn2);
-&amp;lt;/cfquery&amp;gt;
-&amp;lt;cfoutput&amp;gt;If you see this, the table has been created&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Save and run this file (&lt;a href=&#34;http://localhost/coldfusionmx6_1/CreatePostgreSQLTable.cfm&#34;&gt;http://localhost/coldfusionmx6_1/CreatePostgreSQLTable.cfm&lt;/a&gt;), and you should see a notification that the table has been created.&lt;/p&gt;
-&lt;p&gt;If pgAdmin isn&#39;t still running, start it up and dig way down to find this table: PostgreSQL Database Server 8.1 &amp;gt; Databases &amp;gt; ColdFusion &amp;gt; Schemas &amp;gt; public &amp;gt; Tables &amp;gt; testdatabase. Whew.&lt;/p&gt;
-&lt;p&gt;Note that if you run this file again, you&#39;ll receive an error message, saying that the table already exists. Because we haven&#39;t added a check into this code to verify whether the table already exists, we&#39;ll hit a wall. Obviously, we&#39;d have to add this code in in the real world.&lt;/p&gt;
-&lt;h3&gt;Dropping/deleting our test table&lt;/h3&gt;
-&lt;p&gt;Once you&#39;ve verified that you can create a table, it&#39;s time to delete it. Add the following code to the end of the existing code, or create a new document with this code:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfquery name=&#34;DropNewDatabase&#34; datasource=&#34;PostgreSQL&#34;&amp;gt;
-    DROP TABLE TestDatabase
-&amp;lt;/cfquery&amp;gt;
-&amp;lt;cfoutput&amp;gt;If you see this, the table has been dropped&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Run this code, and check pgAdmin to verify that the table no longer exists.&lt;/p&gt;
-&lt;p&gt;Again, note that if you run this code (just this last part), and the table already has been dropped, you&#39;ll get an error. Again, something that would have to be fixed in the real world.&lt;/p&gt;
-&lt;p&gt;Congratulations once again, as you&#39;ve successfully setup ColdFusion and PostgreSQL.&lt;/p&gt;
-&lt;p&gt;As with MySQL, you can access any tables you setup in ColdFusion with PHP, and vice versa, so long as ColdFusion has the data source entered into ColdFusion Administrator.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Having already added MySQL support for ColdFusion MX, it&#39;s time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we&#39;ll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we&#39;ll need to install some additional features to ColdFusion MX.</description>
     </item>
     
     <item>
@@ -923,53 +142,7 @@ CREATE UNIQUE INDEX TestDatabase_TestColumn1_TestColumn2_uidx ON TestDatabase (T
       <pubDate>Sat, 18 Mar 2006 08:55:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/</guid>
-      <description>&lt;p&gt;Until now, we&#39;ve yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can&#39;t in ColdFusion. Until now.&lt;/p&gt;
-&lt;p&gt;This time, we&#39;ll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we&#39;ve made before, this installation is going to be fairly quick.&lt;/p&gt;
-&lt;h3&gt;Setting up MySQL database and user&lt;/h3&gt;
-&lt;p&gt;First, we&#39;ll need to setup a MySQL database and user for ColdFusion. So, start MySQL Administrator and create a new catalog called COLDFUSIONMX. While MySQL Administrator will down-cap the name, we&#39;ll enter it in all-caps, just because.&lt;/p&gt;
-&lt;p&gt;Setup a new MySQL User ColdFusionMX, and add the localhost domain, and assign all privileges to the COLDFUSIONMX schema.&lt;/p&gt;
-&lt;p&gt;Now, close out of MySQL Administrator, and go to the command line (Window + R, and cmd) and type the following, as we&#39;ve done before.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;mysql -u root -p&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Press enter, and type in the root password. Finally, we&#39;ll change the password for ColdFusionMX for all hosts. Password should be 16 characters or less.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;UPDATE mysql.user SET Password = OLD_PASSWORD(&#39;your_password&#39;) WHERE User = &#39;ColdFusionMX&#39;;&lt;br /&gt;FLUSH PRIVILEGES;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Exit out of this and the command line (&#34;exit&#34;, enter, &#34;exit&#34;, enter).&lt;/p&gt;
-&lt;h3&gt;Setting up in ColdFusion MX Administrator&lt;/h3&gt;
-&lt;p&gt;Now that we&#39;ve setup our database and user in MySQL, we&#39;ll need to setup the datasource in ColdFusion MX. If ColdFusion isn&#39;t already started, start ColdFusion via Services.&lt;/p&gt;
-&lt;p&gt;Log in to ColdFusion MX Administrator (&lt;a href=&#34;http://localhost/CFIDE/administrator/index.cfm&#34;&gt;http://localhost/CFIDE/administrator/index.cfm&lt;/a&gt; if you&#39;ve been following along), and select Data Sources under DATA &amp;amp; SERVICES on the left side navigation.&lt;/p&gt;
-&lt;p&gt;Enter the Data Source name of MySQLDatabase, and select MySQL under Driver. Hit Add.&lt;/p&gt;
-&lt;p&gt;On the resulting screen, enter the following information. Make sure you enter in your_password the password you used above.&lt;/p&gt;
-&lt;p&gt;Database: COLDFUSIONMX&lt;br /&gt;Server: localhost, leave Port to 3306&lt;br /&gt;Username: ColdFusionMX&lt;br /&gt;Password: your_password&lt;br /&gt;Description: MySQL database for ColdFusion MX 6.1. (or whatever you want to type)&lt;/p&gt;
-&lt;p&gt;Hit Submit.&lt;/p&gt;
-&lt;p&gt;Now, Verify All Connections. This will test the three Access databases (if you set up the samples for ColdFusionMX) as well as your new MySQL database. You should get a Status of OK after doing this (and you may get an OK after initially setting up the database).&lt;/p&gt;
-&lt;p&gt;Before we continue, note that we can only connect to MySQL this easily because of the OLD_PASSWORD function we do on our password. Since we&#39;ve been doing this all along, it&#39;s the easiest solution. The other solution is to update some files, which we won&#39;t go into since we don&#39;t have to.&lt;/p&gt;
-&lt;h3&gt;Create a test table in MySQL with ColdFusion&lt;/h3&gt;
-&lt;p&gt;Now, we&#39;ll be creating a ColdFusion file to test our connection to MySQL via ColdFusion. Copy and paste the following text into a new file in Notepad.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfquery name=&#34;CreateNewDatabase&#34; datasource=&#34;MySQLDatabase&#34;&amp;gt;
-    CREATE TABLE IF NOT EXISTS TestDatabase (
-        TestColumn1 varchar(100) default &#39;&#39;,
-        TestColumn2 int(10) NOT NULL auto_increment,
-        PRIMARY KEY (TestColumn2)
-    )
-&amp;lt;/cfquery&amp;gt;
-&amp;lt;cfoutput&amp;gt;If you see this, the table has been created&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Save this to c:\home\coldfusionmx6_1\CreateMySQLTable.cfm. Hit this page (&lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost/coldfusionmx6_1/CreateMySQLTable.cfm&#34;&gt;http://localhost/coldfusionmx6_1/CreateMySQLTable.cfm&lt;/a&gt;), and you should see a message saying &#34;If you see this, the table has been created&#34;.&lt;/p&gt;
-&lt;p&gt;Now log in to MySQL Adminstrator, click on Catalogs, and then on coldfusionmx schemata and you should see your table, with 0 rows and about 16 kB of data length.&lt;/p&gt;
-&lt;p&gt;If you hit this page again (refresh), you&#39;ll notice that you still get the same message, and the table doesn&#39;t increase in size, and you don&#39;t get another table called TestDatabase.&lt;/p&gt;
-&lt;h3&gt;Dropping (removing) our test table in MySQL with ColdFusion&lt;/h3&gt;
-&lt;p&gt;Now, we&#39;ll quickly go over deleting, or dropping, TestDatabase.&lt;/p&gt;
-&lt;p&gt;Create a new CFM file, or add the following to the bottom of the existing CFM file, and save the file.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;coldfusion&#34;&gt;&amp;lt;cfquery name=&#34;DropNewDatabase&#34; datasource=&#34;MySQLDatabase&#34;&amp;gt;
-    DROP TABLE IF EXISTS TestDatabase
-&amp;lt;/cfquery&amp;gt;
-&amp;lt;cfoutput&amp;gt;If you see this, the table has been dropped&amp;lt;/cfoutput&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;If you now run the new file, or the old file with this addition, you&#39;ll see a run-on sentence saying that the table has been created, and has been dropped.&lt;/p&gt;
-&lt;p&gt;If you move into MySQL Administrator, you&#39;ll notice that the table has now disappeared.&lt;/p&gt;
-&lt;p&gt;Congratulations &amp;ndash; you&#39;ve now setup ColdFusion MX 6.1 to work with MySQL. In a future tutorial, we&#39;ll go over setting up PostgreSQL to connect with ColdFusion MX 6.1, and in another tutorial, how to create a form in ColdFusion that will use MySQL data.&lt;/p&gt;
-&lt;p&gt;Before we leave, note that the table we&#39;ve setup could also be used by PHP, if we wanted. Additionally, any of the previous tables we&#39;ve setup in PHP could be accessed by ColdFusion, if we enter them as a data source in ColdFusion Administrator.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://strivinglife.net/wordpress/a-local-apache-web-server-on-a-windows-xp-computer/&#34;&gt;View all of the steps to creating a local Web server, for development.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>This time, we&#39;ll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we&#39;ve made before, this installation is going to be fairly quick.</description>
     </item>
     
   </channel>

@@ -16,13 +16,7 @@
       <pubDate>Sun, 20 Jun 2010 11:22:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Secunia-consumer-products-PSI-and-OSI/</guid>
-      <description>&lt;p&gt;I have an old Windows XP machine that I know is out of date, in particular as regards the drivers, and potentially for some old software that I&#39;ve forgotten I&#39;ve even installed.&lt;/p&gt;
-&lt;p&gt;Years and years ago it was possible to run a scan, online, on a CNET, or the like, site, which would tell you exactly what applications you had installed that needed to get upgraded, based on DLLs.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://mrrofl.com/&#34;&gt;Dan Conderman&lt;/a&gt; recommended Driver Detective, which is a free and pay service, which looks to provide part of that.&lt;/p&gt;
-&lt;p&gt;Secunia, well known for their alerts to businesses, also provides both an online security scan - Online Software Inspector (OSI) - and a desktop application - &lt;a rel=&#34;external&#34; href=&#34;http://secunia.com/vulnerability_scanning/personal/&#34;&gt;Personal Software Inspector (PSI)&lt;/a&gt;. I haven&#39;t tried the former, since I downloaded and installed the latter on two of my machines, but the latter found a number of vulnerabilities on my machine, and it was mostly one-click to resolve each.&lt;/p&gt;
-&lt;p&gt;The initial scan is amazingly slow, with the percentage moving maybe three times during the scan, and the &#39;forum&#39; links next to each vulnerability don&#39;t seem to work (the other two work fine), but it was well worth it to get some older versions of software uninstalled and newer versions patched (like Adobe Reader which required two separate updates, which wasn&#39;t clear after I upgraded it the first time).&lt;/p&gt;
-&lt;p&gt;Highly recommended.&lt;/p&gt;
-</description>
+      <description>Secunia, known for vulnerability alerts, offers two free products for consumers, to keep software up-to-date.</description>
     </item>
     
   </channel>

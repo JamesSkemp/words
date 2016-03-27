@@ -16,55 +16,7 @@
       <pubDate>Thu, 10 Jun 2010 22:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;At &lt;a href=&#34;http://strivinglife.com/words/post/2007-VW-Rabbit-10000-miles.aspx&#34;&gt;some point in 2007&lt;/a&gt; I started &lt;a href=&#34;http://jamesrskemp.net/vehicle_gas.xml&#34;&gt;keeping track of my gas mileage&lt;/a&gt; in an XML file, with a custom DTD for validation (and intellisense in oXygen).&lt;/p&gt;
-&lt;p&gt;I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.&lt;/p&gt;
-&lt;h3&gt;C# objects&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt; public class Vehicle {
-        public int Id { get; set; }
-        public String Make { get; set; }
-        public String Model { get; set; }
-        public int Year { get; set; }
-        public IEnumerable Fillups { get; set; }
-    }&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public class Fillup {
-    public int Id { get; set; }
-    public DateTime Date { get; set; }
-    public int MilesTotal { get; set; }
-    public Decimal MilesDriven { get; set; }
-    public Decimal Gallons { get; set; }
-    public Decimal CostPerGallon { get; set; }
-    public Decimal CostTotal { get; set; }
-    public String Notes { get; set; }
-}&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;h3&gt;LINQ to XML&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;XDocument vehicleGasXml = XDocument.Load(@&amp;ldquo;C:\path\to\vehicle_gas.xml&amp;rdquo;);&lt;/p&gt;
-
-&lt;p&gt;IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&amp;ldquo;vehicle&amp;rdquo;)
-    select new Vehicle {
-        Id = int.Parse(vehicle.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
-        Make = vehicle.Element(&amp;ldquo;make&amp;rdquo;).Value,
-        Model = vehicle.Element(&amp;ldquo;model&amp;rdquo;).Value,
-        Year = int.Parse(vehicle.Element(&amp;ldquo;year&amp;rdquo;).Value),
-        Fillups = from fillup in vehicle.Descendants(&amp;ldquo;fillup&amp;rdquo;)
-            select new Fillup {
-              Id = int.Parse(fillup.Attribute(&amp;ldquo;id&amp;rdquo;).Value),
-              Date = DateTime.ParseExact(fillup.Element(&amp;ldquo;date&amp;rdquo;).Value, &amp;ldquo;yyyy-MM-dd&amp;rdquo;, System.Globalization.CultureInfo.InvariantCulture),
-              MilesTotal = int.Parse(fillup.Element(&amp;ldquo;milesCar&amp;rdquo;).Value),
-              MilesDriven = decimal.Parse(fillup.Element(&amp;ldquo;milesDriven&amp;rdquo;).Value),
-              Gallons = decimal.Parse(fillup.Element(&amp;ldquo;gallons&amp;rdquo;).Value),
-              CostPerGallon = decimal.Parse(fillup.Element(&amp;ldquo;costGallon&amp;rdquo;).Value),
-              CostTotal = decimal.Parse(fillup.Element(&amp;ldquo;costTotal&amp;rdquo;).Value),
-              Notes = fillup.Element(&amp;ldquo;notes&amp;rdquo;).Value
-            }
-    };&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As always, suggestions appreciated. (Although I&amp;rsquo;ve already got code that, using .NET 4, creates some rather nice charts with the information contained within a document such as this, and consider this close to complete; name information isn&amp;rsquo;t grabbed, but I&amp;rsquo;m not sure that&amp;rsquo;s altogether necessary &amp;hellip;)&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Having created an XML document, with DTD, to store vehicle fillups, here&#39;s a look at a rough object and how to parse them out of XML via LINQ.</description>
     </item>
     
   </channel>

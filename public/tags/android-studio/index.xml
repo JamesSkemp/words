@@ -16,28 +16,7 @@
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
-      <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://words.strivinglife.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
-
-&lt;p&gt;Next click the green plus sign in the top left corner and select &#39;Application.&#39;&lt;/p&gt;
-
-&lt;p&gt;There are now four fields you need to populate to complete this step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: Enter whatever you&#39;d like. I like using &#39;Desktop&#39; to be obvious.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Main class&lt;/strong&gt;: com.&lt;em&gt;xxx&lt;/em&gt;.desktop.DesktopLauncher&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Working directory&lt;/strong&gt;: C:\Path\to\project\android\assets&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Use classpath of mod&lt;/strong&gt;: select the &lt;em&gt;desktop&lt;/em&gt; module&lt;/p&gt;
-
-&lt;p&gt;And that&#39;s it. You should be able to select and run the configuration.&lt;/p&gt;
-
-&lt;p&gt;If you work on multiple machines, note that by default this configuration change will mostly likely &lt;em&gt;not&lt;/em&gt; be checked into source control. The file that contains this configuration is located in your project directory under &lt;code&gt;\.idea\workspace.xml&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.</description>
     </item>
     
   </channel>

@@ -16,11 +16,7 @@
       <pubDate>Sat, 09 Jul 2011 11:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/jQuery-Mobile-version-of-my-video-game-listing/</guid>
-      <description>&lt;p&gt;I picked up an electronic copy of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1449306683?tag=strivinglifen-20&#34;&gt;jQuery Mobile by Jon Reid&lt;/a&gt; a little while ago and have been slowly making my way through it.&lt;/p&gt;
-&lt;p&gt;I&#39;ve finally gotten to the point where I wanted to try creating a jQuery Mobile version of my video game listing.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xmlHtml/VideoGamesMobile.html&#34;&gt;View the jQuery Mobile version of my video games listing&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In addition to &lt;a rel=&#34;external&#34; href=&#34;http://jquerymobile.com/&#34;&gt;jQuery Mobile&lt;/a&gt;, this also uses &lt;a rel=&#34;external&#34; href=&#34;http://www.oxygenxml.com/&#34;&gt;oXygen XML Editor&lt;/a&gt;, for taking the &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/xml/video_games.xml&#34;&gt;original XML source&lt;/a&gt; and transforming it via &lt;a rel=&#34;external download&#34; href=&#34;http://media.jamesrskemp.com/xslt/VideoGamesMobile.xsl&#34;&gt;an XSLT 2.0 solution&lt;/a&gt; to generate the HTML.&lt;/p&gt;
-</description>
+      <description>A jQuery Mobile version of my listing of video games is now available.</description>
     </item>
     
   </channel>

@@ -16,12 +16,7 @@
       <pubDate>Sun, 26 Dec 2010 20:15:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-problem-with-installing-SQL-Server-Express-via-the-Microsoft-Web-Platform-Installer/</guid>
-      <description>&lt;p&gt;In &lt;a href=&#34;http://strivinglife.com/words/?tag=/microsoft-web-platform-installer&#34;&gt;the past&lt;/a&gt; I&#39;ve talked up Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt;. With this tool installed you can easily get an IIS server correctly setup.&lt;/p&gt;
-&lt;p&gt;However, as I work my way through Pete Brown&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20&#34;&gt;Silverlight 4 in Action&lt;/a&gt; I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the &#39;lower&#39; versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.&lt;/p&gt;
-&lt;p&gt;You might expect that you&#39;d be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn&#39;t seem to be the case. It doesn&#39;t appear that you can install over it, nor select the new installer in add/remove programs, which means that I&#39;ve had to uninstall SQL Server Express, then completely re-install it with the missing features.&lt;/p&gt;
-&lt;p&gt;Very disappointing, to say the least.&lt;/p&gt;
-&lt;p&gt;For development purposes I probably won&#39;t use the Web Platform Installer to install SQL Server locally again, but will definitely use it for remote servers, assuming that I don&#39;t require the functionality built into the Advanced Services installer (which I undoubtedly will not). Of course, since I have an MSDN subscription, I believe I can install a more robust version of SQL Server for development purposes anyways, so perhaps this will push me over the edge.&lt;/p&gt;
-</description>
+      <description>If you use Web Platform Installer to install SQL Server Express, you might be in for a surprise if you try to install AdventureWorks.</description>
     </item>
     
     <item>
@@ -30,12 +25,7 @@
       <pubDate>Fri, 14 May 2010 16:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Microsoft-Web-Platform-Installer-is-the-easy-button/</guid>
-      <description>&lt;p&gt;I like working close to the metal. It&#39;s enjoyable, even when it&#39;s difficult. Heck, overcoming the difficulty is sometimes the only fun thing about a project!&lt;/p&gt;
-&lt;p&gt;But Microsoft&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/&#34;&gt;Web Platform Installer&lt;/a&gt; makes tasks so much easier to perform. And as much as I hate to admit it, I really like it.&lt;/p&gt;
-&lt;p&gt;For the last handful of hours I&#39;ve been getting a Windows Server 2008 R2 machine where I want it. This involves installing ASP.NET 4, ASP.NET MVC 2, FileZilla Server, disabling services I won&#39;t be using, and etcetera.&lt;/p&gt;
-&lt;p&gt;Thanks to Web Platform Installer the first two were easy to install (not that they&#39;re particularly difficult) in just a couple of clicks, and PHP (a slightly older version of which was already installed when they handed it off) was upgraded with just a few additional minutes required.&lt;/p&gt;
-&lt;p&gt;Very nice Microsoft. Very nice.&lt;/p&gt;
-</description>
+      <description>Need an easy button? Microsoft&#39;s Web Platform Installer is exactly that for Windows-based machines.</description>
     </item>
     
     <item>
@@ -44,22 +34,7 @@
       <pubDate>Fri, 12 Mar 2010 12:40:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/</guid>
-      <description>&lt;p&gt;I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.&lt;/p&gt;
-&lt;p&gt;What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft&#39;s Web Platform Installer.&lt;/p&gt;
-&lt;h3&gt;Web Platform Installer&lt;/h3&gt;
-&lt;p&gt;The &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/platform/default.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt; can be downloaded from Microsoft.com and acts as middle-ground between all of the various applications that it covers, which is fairly robust (a &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/gallery/&#34;&gt;full listing&lt;/a&gt; is available).&lt;/p&gt;
-&lt;p&gt;As you can see in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_01.jpg&#34;&gt;Figure 1&lt;/a&gt;, WordPress is available along with a handful of other blogging applications. Upon selecting this and pressing Install, you&#39;re presented with the listing of dependencies and other applications that may be required (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_03.jpg&#34;&gt;3&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_04.jpg&#34;&gt;4&lt;/a&gt;).&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;While I was going to install MySQL on a dedicated virtual machine, and was able to deselect that, for ease I&#39;ve kept in selected here. At this time I&#39;m not sure (yet)&amp;nbsp;of how that would impact the installation process.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Since MySQL was being installed, I was prompted, right away before anything was downloaded, for an administrator password, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_05.jpg&#34;&gt;Figure 5&lt;/a&gt;. Even though I thought&amp;nbsp;I had everything installed for IIS, I was also prompted, as shown in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_06.jpg&#34;&gt;Figure 6&lt;/a&gt;, for a Windows Server 2003 disc.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_07.jpg&#34;&gt;Figure 7&lt;/a&gt; alludes to the fact that the individual requirements are downloaded and installed, moving right into the setup of any Web sites as required, as seen in &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_08.jpg&#34;&gt;Figure 8&lt;/a&gt;. In this case I kept the defaults. Additional WordPress setups are shown in Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_09.jpg&#34;&gt;9&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_10.jpg&#34;&gt;10&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_11.jpg&#34;&gt;11&lt;/a&gt;, and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_12.jpg&#34;&gt;12&lt;/a&gt;, where the database is setup. It&#39;s been a while since I&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-MySQL-and-phpMyAdmin-on-a-local-Windows-based-Apache-server.aspx&#34;&gt;installed MySQL&lt;/a&gt;, so how this relates to that installation is unknown.&lt;/p&gt;
-&lt;p&gt;Once all components have been installed, you&#39;re presented with a nice little screen, like &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_13.jpg&#34;&gt;Figure 13&lt;/a&gt;. You can then launch WordPress and go through the setups necessary (Figures &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_14.jpg&#34;&gt;14&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_15.jpg&#34;&gt;15&lt;/a&gt;), log in (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_16.jpg&#34;&gt;Figure 16&lt;/a&gt;) and view the administrative interface (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_17.jpg&#34;&gt;Figure 17&lt;/a&gt;) and home page (&lt;a href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/webPlatformInstaller_WordPress_18.jpg&#34;&gt;Figure 18&lt;/a&gt;).&lt;/p&gt;
-&lt;h3&gt;Thoughts on the Platform Installer&lt;/h3&gt;
-&lt;p&gt;While I initially didn&#39;t think much of the installer, having actually used it, I&#39;m pleasantly surprised. It&#39;s an extremely simple process, similar to how one might install applications through, say, Ubuntu.&lt;/p&gt;
-&lt;p&gt;It takes a lot of the guess-work out of the process, which is rather nice. On the other hand, while I can get going with WordPress at this point (and I was able to do my testing fairly quickly), the disadvantage of this is that I don&#39;t know any of the complexities of the setup process. I haven&#39;t installed WordPress (or PHP, or MySQL), but rather an installer has. But, I like the challenge of figuring things out on my own.&lt;/p&gt;
-&lt;p&gt;Which is why while I like the Installer, and will definitely use it when I need to quickly test something, for the most part I&#39;ll probably stick with old-fashioned methods of installation.&lt;/p&gt;
-</description>
+      <description>Microsoft&#39;s Web Platform Installer has become a little better known, but how easy does it really make installations? In this article I use the Web Platform Installer to install WordPress (with MySQL, PHP, and etcetera) on Windows Server 2003.</description>
     </item>
     
   </channel>

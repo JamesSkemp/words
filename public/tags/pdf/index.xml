@@ -16,58 +16,7 @@
       <pubDate>Sat, 15 Oct 2005 16:06:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Experiments-with-PDFs/</guid>
-      <description>&lt;p&gt;
-I like PDFs.
-&lt;/p&gt;
-&lt;p&gt;
-While a number of individuals will attack PDFs with blanket statements, PDFs are a great way to allow users to print documents from the Internet as intended.&amp;nbsp; So, instead of printing off a Web page and losing 10 to 20 characters from the right-side, you can print off a document formatted specifically for printers.
-&lt;/p&gt;
-&lt;p&gt;
-Of course, if you use them as the sole content delivery method, you may run into issues.
-&lt;/p&gt;
-&lt;p&gt;
-For StrivingLife.net, PDFs make sense, since I assume people will be printing these documents off for future reference.&amp;nbsp; Why?&amp;nbsp; Because I have scholarly and technical information, for the most part.
-&lt;/p&gt;
-&lt;p&gt;
-Additionally, in today&amp;#39;s world, problems with PDFs are fairly uncommon, as long the PDF is created correctly.
-&lt;/p&gt;
-&lt;p&gt;
-To create the PDFs on my site, I first created the article in Microsoft Word.&amp;nbsp; Next, I converted the file to PDF using Adobe Acrobat Professional&amp;#39;s PDF conversion plug-in.&amp;nbsp; From there, a quick &amp;#39;Save as&amp;#39;, to verify that the file size is as small as possible, and it&amp;#39;s ready for publication.&amp;nbsp; I haven&amp;#39;t placed security on my files before, and don&amp;#39;t really feel that there&amp;#39;s much need to for my public files.
-&lt;/p&gt;
-&lt;p&gt;
-Today I tried a couple of new methods to create PDFs.
-&lt;/p&gt;
-&lt;p&gt;
-First, OpenOffice - OpenOffice.org - allows you to create PDFs with their office suite, without the purchase or use of a third-party utility.
-&lt;/p&gt;
-&lt;p&gt;
-Second, Macromedia&amp;#39;s FlashPaper 2 allows you to create PDFs from Microsoft Office programs.
-&lt;/p&gt;
-&lt;p&gt;
-Testing these two alternatives, I found that the PDFs they create are far too bulky for my purposes.
-&lt;/p&gt;
-&lt;p&gt;
-First, I created a PDF from Microsoft Word, using the Adobe Acrobat 6.0 PDFMaker.&amp;nbsp; This resulted in a 27 KB PDF.
-&lt;/p&gt;
-&lt;p&gt;
-Next, I created a PDF from OpenOffice Writer, using PDF conversion.&amp;nbsp; This resulted in a 82 KB PDF.&amp;nbsp; Printing to Distiller resulted in a 20 KB file.
-&lt;/p&gt;
-&lt;p&gt;
-Finally, I created a PDF using Microsoft Word and Macromedia FlashPaper 2, which resulted in a 88 KB file.
-&lt;/p&gt;
-&lt;p&gt;
-Needless to say, I&amp;#39;ll be sticking with Microsoft Word and Adobe Acrobat.
-&lt;/p&gt;
-&lt;p&gt;
-I will be experimenting with Macromedia FlashPaper&amp;#39;s ability to create Flash conversions of documents.&amp;nbsp; This allows the viewing and printing of a document via the Flash plug-in.
-&lt;/p&gt;
-&lt;p&gt;
-File sizes for both conversion from Microsoft Word, as well as from the PDF, are about 70 KB (converting from PDF is slightly larger).
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ll be doing my testing on &lt;a href=&#34;http://DoNotDenyMyUnicorn.com/&#34;&gt;http://DoNotDenyMyUnicorn.com/&lt;/a&gt;, so head over there if you&amp;#39;d like to test these methods out.
-&lt;/p&gt;
-</description>
+      <description>How I use and create PDFs.</description>
     </item>
     
   </channel>

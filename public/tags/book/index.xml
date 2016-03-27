@@ -16,24 +16,7 @@
       <pubDate>Sat, 27 Sep 2014 14:29:51 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-The-Complete-Guide-to-Blender-Graphics-Second-Edition-Computer-Modeling-and-Animation-2014/</guid>
-      <description>&lt;div class=&#34;note&#34;&gt;&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/1482216639?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;The Complete Guide to Blender Graphics, Second Edition: Computer Modeling and Animation&lt;/a&gt;, published in 2014, and written by John M. Blain.&lt;/p&gt;&lt;/div&gt;
-
-&lt;h3&gt;So much information&lt;/h3&gt;
-
-&lt;p&gt;Many many years ago I did quite a bit with POV-Ray and Rhino3D, but as I got older focused more and more on the web.&lt;/p&gt;
-
-&lt;p&gt;While I&#39;d heard of Blender many times in the past, I had also heard that the GUI wasn&#39;t exactly friendly for new users. But now, thanks to this book, I&#39;ve been able to successfully start digging into Blender, and may be on the path to being more than just a beginner in 3D modeling.&lt;/p&gt;
-
-&lt;p&gt;This book focuses on a fairly current version of Blender (only 1 release back at the time of writing this), which resulted in absolutely no issues translating what the book tells you to do with what the application actually presents for options.&lt;/p&gt;
-
-&lt;p&gt;Starting at the beginning, the book starts slowly building up your knowledge of the software, starting with how to select and add objects, as well as work with the basic tools, before adding on top of that more advanced topics.&lt;/p&gt;
-
-&lt;p&gt;The tutorials during this are fairly simple, and generally have you create a new &#39;empty&#39; file, instead of building upon a single file (although this does change slightly as the book progresses).&lt;/p&gt;
-
-&lt;p&gt;While I wasn&#39;t able to finish all 500+ pages during my initial review period, this is definitely a book that I&#39;ll be continuing through, and will undoubtedly revisited chapters as I continue to work within Blender.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1482216639?tag=strivinglifen-20&#34; rel=&#34;external&#34;&gt;The Complete Guide to Blender Graphics, Second Edition&lt;/a&gt;, is highly recommend for beginners to Blender, and seems like it would be useful for more advanced users as well. For this reason I give the book a full five of five stars.&lt;/p&gt;
-</description>
+      <description>The following is a review of The Complete Guide to Blender Graphics, Second Edition: Computer Modeling and Animation, published in 2014, and written by John M. Blain.</description>
     </item>
     
     <item>
@@ -42,20 +25,7 @@
       <pubDate>Fri, 03 May 2013 07:58:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Instant-NET-45-Extension-Methods-How-to-2013/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1849688567?tag=strivinglifen-20&#34;&gt;Instant .NET 4.5 Extension Methods How-to&lt;/a&gt; (2013), written by Shawn R. McLean, and published by &lt;a rel=&#34;external&#34; href=&#34;http://www.packtpub.com/dotnet-4-5-extension-methods/book&#34;&gt;Packt Publishing&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;A quick introduction to .NET extension methods&lt;/h3&gt;
-&lt;p&gt;In the 5+ years that I&amp;rsquo;ve been doing .NET I&amp;rsquo;ve been created my own extension methods twice. I was already aware that LINQ was built on extension methods, but I very rarely found myself needing to extend something that I didn&amp;rsquo;t already have the code for.&lt;/p&gt;
-&lt;p&gt;So, when I was asked if I wanted to review &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1849688567?tag=strivinglifen-20&#34;&gt;Instant .NET 4.5 Extension Methods How-to&lt;/a&gt;, I thought this would be a good way to make sure I didn&amp;rsquo;t have any incorrect assumptions, and see if there was anything I was missing.&lt;/p&gt;
-&lt;p&gt;This is my first &amp;lsquo;Instant&amp;rsquo; book from Packt. From what I can tell the purpose is to get you quickly started with whatever the book is on. Since it&amp;rsquo;s my first, I&amp;rsquo;m not sure if this is unique to the book or not, but each of the sections has a title and then a classification of either &amp;lsquo;Must know,&amp;rsquo; &amp;lsquo;Should know,&amp;rsquo; or &amp;lsquo;Become an expert.&amp;rsquo; Honestly, while the length of this book didn&amp;rsquo;t require it, I like this idea, since it allows you to easily dig into the required sections first, and then come back in your own time to read the others.&lt;/p&gt;
-&lt;p&gt;Unfortunately, in this particular case there was one &amp;lsquo;Should know&amp;rsquo; that was after the &amp;lsquo;Become an expert&amp;rsquo; section. Otherwise, the sections were grouped. It&amp;rsquo;s unfortunate not only because it breaks the flow (minor), but because it gives a suggestion on how to group your extensions. I would have much rather seen this as the very first in the &amp;lsquo;Should know&amp;rsquo; section, but I may be bias since I like having commonly held conventions.&lt;/p&gt;
-&lt;p&gt;In regards to the actual content, it&amp;rsquo;s about what I expected. Each section has a short introduction about what will be shown, then sections to get ready, how to do it (code), how it works, and then occasionally additional information. The examples are straightforward, and consist of relatively few lines of code&amp;nbsp;(which makes sense for what&amp;rsquo;s being covered).&lt;/p&gt;
-&lt;p&gt;After reading through the book I found that my knowledge of extension methods wasn&amp;rsquo;t lacking. I did like the technical explanation of how the compiler picks up on these, which also made the section I noted above about placement of extensions the most beneficial to me.&lt;/p&gt;
-&lt;p&gt;I can recommend this book to someone who wants to quickly learn about extension methods. Someone who&amp;rsquo;s made their own will probably find nothing new here, with the exception of the section on best practices. An intermediate user (has created one or two), is probably in the same boat as the advanced user.&lt;/p&gt;
-&lt;p&gt;In my particular case I received an electronic copy of the book for review. I&amp;rsquo;ve personally moved to electronic versions of my books as much as possible, in particular PDFs over any other electronic format. While I read a PDF version of the book (available for purchase on &lt;a rel=&#34;external&#34; href=&#34;http://www.packtpub.com/dotnet-4-5-extension-methods/book&#34;&gt;the Packt Publishing site&lt;/a&gt;), I don&amp;rsquo;t see any crazy formatting or graphics that would keep me away from the Kindle version. Either way, I&amp;rsquo;d steer more towards the electronic versions of the book as the print edition price suggests that they may have had a limited run, with even the publishers site pushing the electronic version.&lt;/p&gt;
-&lt;p&gt;Overall, I rate &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/dp/1849688567?tag=strivinglifen-20&#34;&gt;Instant .NET 4.5 Extension Methods How-to&lt;/a&gt; 4 of 5 stars, for a beginner. Extension methods aren&amp;rsquo;t too difficult, so a beginner could easily know what they need to after reading this book, and the best practices could even get them ahead.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Instant .NET 4.5 Extension Methods How-to (2013), written by Shawn R. McLean.</description>
     </item>
     
     <item>
@@ -64,17 +34,7 @@
       <pubDate>Thu, 05 Jan 2012 07:40:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Programming-Entity-Framework-Code-First-2011/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;, written by Julia Lerman and Rowan Miller.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;While I had heard of Julie Lerman and her book &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, after the release of code first I was on the fence on just how much I would get out of the existing book. With the release of&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I knew I&amp;rsquo;d learn something, so I picked up an electronic copy (PDF) and started digging in.&lt;/p&gt;
-&lt;p&gt;First, I should mention that I initially started working with Entity Framework via existing databases. I tried the pre-4 version, but ultimately tried to stay away until EF4 was released. I liked the Visual Studio interface to work with a database via EF, and created one site, still in production, that uses it, but I like being closer to the metal.&lt;/p&gt;
-&lt;p&gt;With the release of EF Code First I started digging in immediately, using it to create functionality on one site already in production, and most recently started working on another site, for eventual release into production. However, on this latter site I was working with more advanced models and kept running into weird EF issues.&lt;/p&gt;
-&lt;p&gt;After a few chapters in&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312942?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: Code First&lt;/a&gt;&amp;nbsp;I had determined what my issue was, and how to fix it, which alone is worth the price. In addition, while I understood data annotations, I know have a pretty firm grasp on what I can do via the Fluent API, and how I can better control what EF does when it creates the data tables to store my model.&lt;/p&gt;
-&lt;p&gt;The size of the book may initially throw you off, but I honestly believe that this book contains as much material as a book almost twice the size. In addition, while I came into the book having already worked with Entity Framework, and code first, I believe this book can easily be picked up by someone new to both technologies.&lt;/p&gt;
-&lt;p&gt;Julia Lerman will be releasing another book, &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1449312969?tag=strivinglifen-20&#34;&gt;Programming Entity Framework: DbContext&lt;/a&gt;, and I will honestly be picking that book up as well. At this point, however, I&amp;rsquo;m still on the fence on whether I&amp;rsquo;ll be picking up the &amp;lsquo;primary&amp;rsquo; book,&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/0596807260?tag=strivinglifen-20&#34;&gt;Programming Entity Framework&lt;/a&gt;, but I&amp;rsquo;m sure at some point I will.&lt;/p&gt;
-&lt;p&gt;This book will definitely have select chapters read again, and will server as a good reference, so I give this book 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Programming Entity Framework: Code First (2011), written by Julia Lerman and Rowan Miller.</description>
     </item>
     
   </channel>

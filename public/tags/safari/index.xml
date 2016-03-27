@@ -16,10 +16,7 @@
       <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
-      <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
-&lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
-</description>
+      <description>How to &#39;easily&#39; clear application cache (cache manifest) data for Chrome, and Safari on i-devices.</description>
     </item>
     
     <item>
@@ -28,19 +25,7 @@
       <pubDate>Sun, 19 Jul 2009 21:16:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Know-every-version-of-iTunes-installed-on-your-machine-I-do/</guid>
-      <description>&lt;p&gt;I&#39;ve installed the following versions of iTunes on my machine:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;7.0.2.16&lt;/li&gt;
-&lt;li&gt;7.1.1.5&lt;/li&gt;
-&lt;li&gt;7.2.0.35&lt;/li&gt;
-&lt;li&gt;7.3.1.3&lt;/li&gt;
-&lt;li&gt;7.5.0.20&lt;/li&gt;
-&lt;li&gt;7.6.2.9&lt;/li&gt;
-&lt;li&gt;8.0.2.20&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Know how I know that? It seems that all Apple software on Windows (iTunes, QuickTime, and Safari, at least) leaves their traces in the following directory: C:\Documents and Settings\All Users\Application Data\Apple Computer\Installer Cache\&lt;/p&gt;
-&lt;p&gt;313 MB of space is what I would recover if I deleted all the folders they created. Yikes.&lt;/p&gt;
-</description>
+      <description>Installers for Windows versions of Apple software is stored in a particular directory. Clean it out, and recover space.</description>
     </item>
     
     <item>
@@ -49,69 +34,7 @@
       <pubDate>Sun, 23 Nov 2008 14:30:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Current-major-browsers/</guid>
-      <description>&lt;p&gt;
-Do users know that they&amp;#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. 
-&lt;/p&gt;
-&lt;p&gt;
-Anywho, I&amp;#39;ve decided, looking at the numbers, that I would start adding a check on my sites to alert users if there browser is out of date, and tell them where they can get an updated version. 
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-Note that I refer to the desktop version of these browsers, and mention only the major browsers. From personal experience, I highly recommend Opera&amp;#39;s mobile browser(s). 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;recBrowserIE&#34;&gt;Internet Explorer&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 7.0&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 6.0&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 8.0&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.microsoft.com/windows/internet-explorer/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-&lt;strong&gt;Update 12/21/2008:&lt;/strong&gt; After looking through my logs, I found a couple of instances where the MSIE 6 and MSIE 7 instances show up in the user-agent, as well as MSIE&amp;nbsp;6 and 8. This seems to be with users who have installed standalone versions of Internet Explorer. If you&amp;#39;re using a newer version of IE, but are seeing a message about using an older version, that may be the issue. See &lt;a rel=&#34;nofollow&#34; href=&#34;http://techpatterns.com/forums/about1028.html&#34; target=&#34;_blank&#34;&gt;this site&lt;/a&gt; for more information. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;recBrowserFF&#34;&gt;Firefox&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.0&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 2.0 (supported through mid-December 2008)&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; 3.1&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://getfirefox.com/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Safari&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 3.2&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 3.1&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.apple.com/safari/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;recBrowserC&#34;&gt;Chrome&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 1.0&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 0.4&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt; unknown&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.google.com/chrome&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;recBrowserO&#34;&gt;Opera&lt;/h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;strong&gt;Current version:&lt;/strong&gt; 9.6&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Previous version:&lt;/strong&gt; 9.5&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;Upcoming version:&lt;/strong&gt;&amp;nbsp;unknown &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;http://www.opera.com/browser/&#34; target=&#34;_blank&#34;&gt;Find out more and download&lt;/a&gt; &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Other browsers&amp;nbsp;&lt;/h3&gt;
-&lt;h4&gt;Netscape&lt;/h4&gt;
-&lt;p&gt;
-For quite a while Netscape (Navigator)&amp;nbsp;was an extremely popular browser. However, it is no longer actively supported. 
-&lt;/p&gt;
-&lt;p&gt;
-If you continue to use Netscape most people will recommend that you upgrade to Firefox. 
-&lt;/p&gt;
-&lt;p&gt;
-&amp;nbsp;
-&lt;/p&gt;
-</description>
+      <description>Listing of the current (major) browsers, with basic versioning information.</description>
     </item>
     
     <item>
@@ -120,150 +43,7 @@ If you continue to use Netscape most people will recommend that you upgrade to F
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Browser-environments-for-testing/</guid>
-      <description>&lt;p&gt;
-In &lt;a href=&#34;http://words.strivinglife.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
-&lt;/p&gt;
-&lt;h3&gt;Current versions&lt;/h3&gt;
-&lt;p&gt;
-Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
-&lt;/p&gt;
-&lt;p&gt;
-Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
-&lt;/p&gt;
-&lt;p&gt;
-Some&amp;nbsp;may think&amp;nbsp;I&amp;#39;m a bit&amp;nbsp;off, but I&amp;nbsp;consider Opera a fairly good browser, while Mozilla doesn&amp;#39;t much concern me. So, that gives us our top five browsers, all of which&amp;nbsp;can&amp;nbsp;be installed on Windows.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-So, any&amp;nbsp;test&amp;nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 7
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Firefox 3
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Safari 3
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Chrome 0
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Opera 9
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-There&amp;#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&amp;#39;s fairly standards-compliant.
-&lt;/p&gt;
-&lt;p&gt;
-This is also why I feel that not including Opera would be a very big mistake.
-&lt;/p&gt;
-&lt;p&gt;
-This rounds out our first virtual machine to 5 unique browsers.
-&lt;/p&gt;
-&lt;h3&gt;Previous versions&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-While it would be great if it wasn&amp;#39;t the case, you&amp;#39;ll always need to support older versions of popular browsers.
-&lt;/p&gt;
-&lt;p&gt;
-Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
-&lt;/p&gt;
-&lt;p&gt;
-Most other browsers don&amp;#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 6
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Firefox 2
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Upcoming versions&lt;/h3&gt;
-&lt;p&gt;
-This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
-&lt;/p&gt;
-&lt;p&gt;
-Primarily, that means the following should almost certainly be included.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 8
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-That&amp;#39;s right, Internet Explorer 8. That&amp;#39;s all I&amp;#39;d absolutely need, especially looking at stats.
-&lt;/p&gt;
-&lt;p&gt;
-However, to a great extent, Chrome, like most of Google&amp;#39;s other &lt;strike&gt;products&lt;/strike&gt; applications is truly a beta browser (and one that I&amp;#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
-&lt;/p&gt;
-&lt;h3&gt;What about Linux and Mac?&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&amp;nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&amp;#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&amp;#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
-&lt;/p&gt;
-&lt;p&gt;
-For Mac&amp;nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
-&lt;/p&gt;
-&lt;p&gt;
-For Safari Apple was kind enough to give Windows users this browser. As to whether it&amp;#39;s the same as the Mac version, well, it looks very similar. But, unless you&amp;#39;re willing to pay the Apple premium, the Windows version should suffice.
-&lt;/p&gt;
-&lt;p&gt;
-For these reasons, basic Web development doesn&amp;#39;t need to dive too deep into Linux and Mac environments.&lt;sup&gt;1&lt;/sup&gt;
-&lt;/p&gt;
-&lt;h3&gt;Mobile browsers?&lt;/h3&gt;
-&lt;p&gt;
-But what about browsers on mobile devices?
-&lt;/p&gt;
-&lt;p&gt;
-Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
-&lt;/p&gt;
-&lt;p&gt;
-To some extent &lt;a href=&#34;http://words.strivinglife.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
-&lt;/p&gt;
-&lt;p&gt;
-The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
-&lt;/p&gt;
-&lt;p&gt;
-However, for the mobile version of Internet Explorer (which won&amp;#39;t be tracked by Analytics, as it doesn&amp;#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
-&lt;/p&gt;
-&lt;p&gt;
-As to the solution, I can&amp;#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&amp;#39;ll be virtualization for these environments much more readily available.
-&lt;/p&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;
-Above I&amp;#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
-&lt;/p&gt;
-&lt;p&gt;
-What do you think? What do you develop for?
-&lt;/p&gt;
-&lt;h3&gt;Notes&lt;/h3&gt;
-&lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://words.strivinglife.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
-&lt;/p&gt;
-&lt;p&gt;
-2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
-&lt;/p&gt;
-</description>
+      <description>The three virtual environments I&#39;d recommend for in-depth browser testing, for Web applications.</description>
     </item>
     
     <item>
@@ -272,31 +52,7 @@ What do you think? What do you develop for?
       <pubDate>Sat, 22 Mar 2008 10:07:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Congrats-Apple---youve-gotten-away-with-it/</guid>
-      <description>&lt;p&gt;
-Congrats Apple - you&amp;#39;ve gotten away with it. 
-&lt;/p&gt;
-&lt;p&gt;
-Media 2.0 has pulled out their banners, and is waving them proudly, all the while talking talking about how Safari 3.1 is now a part of Apple Update on Windows. 
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;m sure what you&amp;#39;re more excited about is that nobody is talking about ... the fact that the size of your updates is as large as the initial installer. 
-&lt;/p&gt;
-&lt;p&gt;
-That&amp;#39;s right, you&amp;#39;ve gotten away with it. There are few companies out there that can say that they&amp;#39;ve got an update, have it be the same as the installer, and actually have that fact ignored by the masses. 
-&lt;/p&gt;
-&lt;p&gt;
-Woohoo! 
-&lt;/p&gt;
-&lt;p&gt;
-As for the minor issue of Safari 3.1 getting pushed out? Tom Krazit has a good post over at CNET - &lt;a href=&#34;http://www.news.com/8301-13579_3-9900727-37.html&#34; target=&#34;_blank&#34;&gt;Think before you install&lt;/a&gt; - but sadly the people that need it the most won&amp;#39;t read it. 
-&lt;/p&gt;
-&lt;p&gt;
-Mozilla is just sore that they didn&amp;#39;t have a product that they could piggy-back their browser onto, like Apple has Safari. 
-&lt;/p&gt;
-&lt;p&gt;
-Granted, the update to Safari should have been optional, unless you&amp;#39;ve already got another version installed. But, &lt;strong&gt;how many times have you had to uncheck the Google Toolbar add-on&lt;/strong&gt; when installing a piece of software? 
-&lt;/p&gt;
-</description>
+      <description>Congrats Apple, the recent buzz about Safari 3.1 being a part of your update software has proved that you&#39;ve gotten away it. [slnet0514:8bf660c2-5a45-4fde-ad22-f36b91d1919c]</description>
     </item>
     
     <item>
@@ -305,16 +61,7 @@ Granted, the update to Safari should have been optional, unless you&amp;#39;ve a
       <pubDate>Tue, 12 Jun 2007 21:05:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Safari-now-available-for-Windows/</guid>
-      <description>&lt;p&gt;
-Thanks to Dan Conderman (of &lt;a href=&#34;http://madisonhotspots.com/&#34; onclick=&#34;window.open(this.href);return false;&#34;&gt;MadisonHotSpots&lt;/a&gt;) I found out this morning that Safari is now available for Windows users, as part of the Safari 3 Public Beta.
-&lt;/p&gt;
-&lt;p&gt;
-Head over to http://www.apple.com/safari/ and download a copy; Dan ran into a number of crashes, but when I wasn&amp;#39;t browsing much of anything, the browser was working fine for me ...
-&lt;/p&gt;
-&lt;p&gt;
-Seriously, at work it looks like we&amp;#39;ll have to clean up some potential issues, but StrivingLife.net looks great.
-&lt;/p&gt;
-</description>
+      <description>Safari for Windows users?  Yup.</description>
     </item>
     
     <item>
@@ -323,43 +70,7 @@ Seriously, at work it looks like we&amp;#39;ll have to clean up some potential i
       <pubDate>Thu, 10 Aug 2006 21:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Four-working-browsers-%28at-least%29/</guid>
-      <description>&lt;p&gt;
-There&amp;#39;s just something about having four different browsers on your computer, to say the least.  I do believe I&amp;#39;ve Lynx installed as well, but it&amp;#39;s hardly used these days ... for better or worse.
-&lt;/p&gt;
-&lt;p&gt;
-Firefox 1.5.0.6&lt;br /&gt;
-Internet Explorer 7.0.5450.4 (i.e., 7.0 Beta 3)&lt;br /&gt;
-Opera 9.01-8552&lt;br /&gt;
-Netscape 8.1
-&lt;/p&gt;
-&lt;p&gt;
-Best of all?  My site displays great in all four.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-There are other browsers to test, of course, but the question is whether it&amp;#39;s really necessary to do so.  Both Flock and Mozilla seem like a waste to install, since they (like Netscape) are so much fluff.
-&lt;/p&gt;
-&lt;p&gt;
-Lynx is actually a pretty good browser for a developer, and what do you know, I do have a version from 10/2005 on my computer (2.8.5rel1).
-&lt;/p&gt;
-&lt;p&gt;
-Want a copy?  Download it from &lt;a href=&#34;http://strivinglife.net/lynx/&#34;&gt;http://strivinglife.net/lynx/&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-If I had a Mac, I&amp;#39;d test my site with Safari, but alas I do not.
-&lt;/p&gt;
-&lt;p&gt;
-If I had a Linux machine that connected to the Internet (perhaps fairly soon ...) then I would test Konqueror and the like.
-&lt;/p&gt;
-&lt;p&gt;
-The lessons are two-fold.
-&lt;/p&gt;
-&lt;p&gt;
-1) If you&amp;#39;re working on a site, test it in multiple browsers.  Honestly, with today&amp;#39;s world, there&amp;#39;s no reason people shouldn&amp;#39;t upgrade to the newest version of their preferred browser.  Not only do you get better security, but you also get a better browsing experience.  I recommend Firefox, but no matter which browser you choose, if it&amp;#39;s up-to-date, and still being supported (i.e., it&amp;#39;s not a dead browser, but patched to the latest version), it&amp;#39;s okay in my book (some are just better than others).
-&lt;/p&gt;
-&lt;p&gt;
-2) Keep your browser up-to-date.  You don&amp;#39;t need to have the bleeding edge beta releases (in fact, you probably don&amp;#39;t want to either), but at least keep your browser fully patched.  Don&amp;#39;t like how they upgraded the browser in a future release?  It&amp;#39;s not only selfish to keep using that old version, but also dangerous.  And you can always switch to a browser that allows more customization (like Firefox).
-&lt;/p&gt;
-</description>
+      <description>Four browsers on a computer may be a bit much, but not if you&#39;re a Web developer.  Of course, if you only have one browser, and it&#39;s not up-to-date, aren&#39;t you being a little lazy?</description>
     </item>
     
   </channel>

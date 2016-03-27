@@ -16,11 +16,7 @@
       <pubDate>Wed, 22 Sep 2010 08:33:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Northwind-Community-Edition-download/</guid>
-      <description>&lt;p&gt;This article is primarily for personal reference.&lt;/p&gt;
-&lt;p&gt;The Northwind sample database setup scripts can be download from the CodePlex project &lt;a rel=&#34;external nofollow&#34; href=&#34;http://northwindcommunity.codeplex.com/&#34;&gt;Northwind Community Edition&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Sadly, that project is dead, but the original script can be found by going to Source Code, browsing the code, and checking in the Original Northwind Scripts directory.&lt;/p&gt;
-&lt;p&gt;It contains both views and procedures, but there is &lt;a rel=&#34;external&#34; href=&#34;http://sqlserversamples.codeplex.com/&#34;&gt;Microsoft SQL Server Community Projects &amp;amp; Samples&lt;/a&gt; page. Sadly, the links on the official Express page no longer work for the sample databases.&lt;/p&gt;
-</description>
+      <description>Where to download the scripts to setup Northwind manually.</description>
     </item>
     
   </channel>

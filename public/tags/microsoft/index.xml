@@ -16,11 +16,7 @@
       <pubDate>Wed, 29 Jun 2011 22:09:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Internet-Explorer-10-Platform-Preview-2-now-available/</guid>
-      <description>&lt;p&gt;Released earlier today, &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/b/ie/archive/2011/06/29/site-ready-html5-second-ie10-platform-preview-available-for-developers.aspx&#34;&gt;Internet Explorer 10: Platform Preview 2&lt;/a&gt; is now available for download.&lt;/p&gt;
-&lt;p&gt;Just the other day at work I had fired up IE10PP1 to see if a new version was available, so I&#39;ll just go ahead and assume Microsoft was zeroing in on my brainwaves with this.&lt;/p&gt;
-&lt;p&gt;I definitely like the direction they&#39;ve gone with these platform previews, so I hope to see that continue.&lt;/p&gt;
-&lt;p&gt;And that&#39;s about all I have to say about that.&lt;/p&gt;
-</description>
+      <description>Internet Explorer 10: Platform Preview 2 is now available for download.</description>
     </item>
     
     <item>
@@ -29,18 +25,7 @@
       <pubDate>Mon, 29 Nov 2010 21:20:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/</guid>
-      <description>&lt;p&gt;Techmeme had a couple of interesting titles this evening. &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://www.readwriteweb.com/archives/kinect_is_selling_2x_as_fast_as_the_ipad.php&#34;&gt;Kinect is Selling 2X as Fast as the iPad&lt;/a&gt;&#34; and &#34;&lt;a rel=&#34;external nofollow&#34; href=&#34;http://blogs.barrons.com/techtraderdaily/2010/11/29/microsoft-over-25m-kinect-sold/&#34;&gt;Microsoft: Over 2.5M Kinect Sold&lt;/a&gt;.&#34;&lt;/p&gt;
-&lt;p&gt;Even if I thought I had the space for it (I&#39;d have to move furniture every time I wanted to play it in my current apartment) I still wouldn&#39;t pick up the Kinect.&lt;/p&gt;
-&lt;p&gt;Why?&lt;/p&gt;
-&lt;p&gt;First there&#39;s the price. At $150 you might as well buy a PSP (which I did) or a Nintendo DSi. Either of which would solve the second issue, which is a lack of good games for that $150 you threw down.&lt;/p&gt;
-&lt;p&gt;Now there&#39;s a couple of reasons it&#39;s done so well. First, it&#39;s fairly unique as a gaming device. Second, they&#39;ve marketed it to almost no end (I wonder how many devices they just gave away during their blitz?). Third, it&#39;s fast approaching the holiday season, which means parents buying gifts for kids.&lt;/p&gt;
-&lt;p&gt;You also have those who are using the device for purposes other than those intended, but that&#39;s admitedly a very small chunk of that number.&lt;/p&gt;
-&lt;p&gt;But what&#39;s unfortunate is that it&#39;s doing so well, when there&#39;s so few games, which makes me afraid that the price on the device will drop rapidly, simply because it&#39;s become a niche device with no games developed for it, and those that are in line with what you can get on the Wii.&lt;/p&gt;
-&lt;p&gt;In short, games that the older &#39;style&#39; of gamer won&#39;t want to play.&lt;/p&gt;
-&lt;p&gt;Sony&#39;s Move seems like a better technology, as it builds upon the success (and science, if you will) of the Wii&#39;s controller, but moves it to a platform that can deliver much better graphically. Unfortunately, it too suffers from too few launch titles, although seemingly offers more in the next year. And of course a number of existing games have already been updated to now offer Move support (such as Heavy Rain). But, it hasn&#39;t been marketed anywhere near as much as the Kinect has, and it doesn&#39;t draw a big audience because it&#39;s too similar to the Wii.&lt;/p&gt;
-&lt;p&gt;The Wii, which suffers from a large number of shovelware titles, made only to take advantage of the uniqueness of the console&#39;s controller.&lt;/p&gt;
-&lt;p&gt;But perhaps history won&#39;t repeat itself ...&lt;/p&gt;
-</description>
+      <description>With the Kinect seemingly moving 2.5 million units so soon after release, does this bode well for what we can expect in the future?</description>
     </item>
     
     <item>
@@ -49,23 +34,7 @@
       <pubDate>Sun, 28 Mar 2010 09:35:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following book review is for Imar Spaanjaars&amp;rsquo; &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;While I&amp;rsquo;ve already read &lt;a href=&#34;http://www.amazon.com/dp/047018759X?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 3.5&lt;/a&gt; by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it.&lt;/p&gt;
-&lt;p&gt;Would I still feel strongly about &lt;a href=&#34;http://www.amazon.com/review/R1K5HZLKSEFQFA?tag=strivinglifen-20&#34;&gt;recommending his work&lt;/a&gt; as &lt;em&gt;the&lt;/em&gt; #1 choice for those new (or relatively new) to ASP.NET? Would it offer enough new content over the previous iteration that I&amp;rsquo;d recommend a new purchase if someone had the first?&lt;/p&gt;
-&lt;p&gt;===&lt;/p&gt;
-&lt;p&gt;First, if you&amp;rsquo;re just getting started with ASP.NET, this is once again &lt;em&gt;the&lt;/em&gt; book to start with. The way the book reads makes it extremely easy to keep up with where he&amp;rsquo;s at, and why. At the end you&amp;rsquo;ll end up with a functional site, having built it yourself, using a good deal of ASP.NET functionality.&lt;/p&gt;
-&lt;p&gt;The book also assumes little experience with HTML and CSS, which makes this book a fairly good start for anyone who wants to get started with creating Web sites (using ASP.NET), even going into the developer tool Visual Web Developer 2010.&lt;/p&gt;
-&lt;p&gt;The book itself is a &lt;em&gt;vast&lt;/em&gt; improvement over previous iterations, with a much more solid wrap and softer (but still thick) pages. (Although the pages must be somewhat thinner, since the previous iteration of this book is about the same depth as this one, even though this has ~70 more pages.)&lt;/p&gt;
-&lt;p&gt;The guitar on the cover has left me guessing a bit, all the way from &amp;lsquo;rock star&amp;rsquo; to &amp;lsquo;hero&amp;rsquo; to &amp;lsquo;he creates a music-related site&amp;rsquo; but if you don&amp;rsquo;t get stuck on such things, you&amp;rsquo;ll be fine.&lt;/p&gt;
-&lt;p&gt;===&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;ve purchased and read the previous iteration of this book, Beginning ASP.NET 3.5, you might be wondering if it makes sense to pick this up.&lt;/p&gt;
-&lt;p&gt;The only new chapter is one on jQuery (although Microsoft AJAX is still covered and used as before), and it&amp;rsquo;s primarily an introduction, which fits within the context of this book. Crawling the jQuery site for a little while will probably get you up to speed just as well. Otherwise, the rest has been updated to ASP.NET 4 and the current versions of software; little else has changed.&lt;/p&gt;
-&lt;p&gt;If you picked up the previous iteration and couldn&amp;rsquo;t get through it, then don&amp;rsquo;t bother with this, as it&amp;rsquo;s quite similar. Likewise for if you&amp;rsquo;ve moved beyond Beginning ASP.NET 3.5, and feel comfortable with the technology; ASP.NET 4 isn&amp;rsquo;t dug into so much here that you can&amp;rsquo;t get the information elsewhere with some basic searching.&lt;/p&gt;
-&lt;p&gt;===&lt;/p&gt;
-&lt;p&gt;To conclude, &lt;a href=&#34;http://www.amazon.com/dp/0470502215?tag=strivinglifen-20&#34;&gt;Beginning ASP.NET 4 in C# and VB&lt;/a&gt; is &lt;em&gt;the&lt;/em&gt; book I &lt;em&gt;highly&lt;/em&gt; recommend to get started with ASP.NET (3.5 or 4). Imar knows the technology as well as how to teach it, from beginning to Web site created. 5 of 5 stars.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Imar Spaanjaars&#39; Beginning ASP.NET 4 in C# and VB.</description>
     </item>
     
     <item>
@@ -74,12 +43,7 @@
       <pubDate>Sun, 07 Feb 2010 10:00:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
-      <description>&lt;p&gt;For various reasons, I had need to install Windows XP on a new virtual machine earlier today (with Windows 7&amp;nbsp;64-bit&amp;nbsp;as the host).&lt;/p&gt;
-&lt;p&gt;For whatever reason, when getting to the point of accepting the licensing terms, before installation, I was unable to&amp;nbsp;use the F8 key. After searching about,&amp;nbsp;I found&amp;nbsp;a number of Mac and Ubuntu users with the same issue, but no Windows users. The left control, shift, alt, and even right control (which I knew wasn&#39;t going to work, but an Ubuntu user swore by it and I was out of options) buttons did nothing to help.&lt;/p&gt;
-&lt;p&gt;However, the often-used (ah, sarcasm) &#34;F Lock&#34; key was what finally did it.&lt;/p&gt;
-&lt;p&gt;But what the heck if the F Lock key in the first place? &lt;a rel=&#34;external&#34; href=&#34;http://jtsang.mvps.org/flock.html&#34;&gt;Turns out&lt;/a&gt; it&#39;s a Microsoft keyboard key, and which seems utterly useless.&lt;/p&gt;
-&lt;p&gt;Did the presence of this key cause the issue? Or is this a common issue that Windows users don&#39;t report? Or were the Mac/Linux questions so plentiful that they bumped the Windows users?&lt;/p&gt;
-</description>
+      <description>How I ended up getting VirtualBox 3.1.2 to understand the F8 key when installing Windows XP.</description>
     </item>
     
     <item>
@@ -88,72 +52,7 @@
       <pubDate>Sat, 24 Oct 2009 15:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Steps-to-setting-up-a-Windows-Server-2003-Web-Server-on-VirtualBox/</guid>
-      <description>&lt;p&gt;The following goes through the steps needed to setup&amp;nbsp;Windows Server 2003, with Web server capabilities (IIS 6 in this instance), on a Sun VirtualBox virtual machine.&lt;/p&gt;
-&lt;p&gt;Why Windows Server 2003 when Server 2008 is out and available? Because a large number of hosts (mine included) haven&#39;t made the switch yet.&lt;/p&gt;
-&lt;h3&gt;Requirements&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.virtualbox.org/&#34;&gt;Sun VirtualBox&lt;/a&gt;. We want this in particular for the great networking functionality, but other apps, like Microsoft Virtual PC, will work fine as well. I used version 3.0.8 r53138 on Windows 7 Home Premium&amp;nbsp;64-bit for this guide.&lt;/li&gt;
-&lt;li&gt;A copy of Windows Server 2003. In my case, I picked up a copy of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/B000WM3L3O?tag=strivinglifen-20&#34;&gt;Visual Studio 2008 Professional with MSDN Professional&lt;/a&gt;, which gives access to a large number of Windows Operating Systems and tools. Microsoft offers a number of &lt;a rel=&#34;external&#34; href=&#34;http://msdn.microsoft.com/en-us/subscriptions/subscriptionschart.aspx&#34;&gt;subscription options&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;A computer that with a good amount of RAM and processor. The machine I used for this guide has 4 GB of RAM and a 2.20 GHz processor.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;VirtualBox setup&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Install VirtualBox, making sure that you install any network adapters VirtualBox may need.&lt;/li&gt;
-&lt;li&gt;Create a new virtual machine.&lt;ol&gt;
-&lt;li&gt;Give the virtual machine a good name, such as &lt;em&gt;Windows Server 2003 - Web Server 1&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Select Microsoft Windows - Windows 2003 as the operating system and version.&lt;/li&gt;
-&lt;li&gt;Feel free to bump up the base memory size, but if looking to mimic an external server, try to use it&#39;s specs. I typically stick to the default of 256 MB.&lt;/li&gt;
-&lt;li&gt;Create a new hard disk, of the type Dynamically expanding storage; this allows you to create a large disk, but only have it take up the space it needs.&lt;/li&gt;
-&lt;li&gt;Give the disk a good amount of space; I generally change from the default of 20 GB to 50 GB, since it&#39;s not easy to increase this later, but you&#39;ll typically never go above 10 GB anyway.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;Change the Network Adapter from the default of NAT to Bridged Adapter. This will allow you to reach both the Internet and your internal network.&lt;/li&gt;
-&lt;li&gt;With the machine setup, you&#39;ll want to verify that your Windows Server 2003 installation media is available. If using MSDN, that means adding your downloaded ISO to the Virtual Media Manager (FIle &amp;gt; Virtual Media Manager)&amp;nbsp;under CD/DVD Images.&lt;/li&gt;
-&lt;li&gt;Start the machine, attaching the ISO when prompted.&lt;ol&gt;
-&lt;li&gt;Generally the defaults are acceptable.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;General Windows Server 2003 setup&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Once Windows Server 2003 is installed, install the guest additions (Devices &amp;gt; Install Guest Additions); it&#39;ll save you a deal of time.&lt;/li&gt;
-&lt;li&gt;Update Windows Server 2003 as needed.&lt;ol&gt;
-&lt;li&gt;In particular, I like to download the &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;current version of ASP.NET&lt;/a&gt; and install IE 8 (although I do the latter as a separate update; I&#39;ve had issues otherwise).&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;At this point I like to exit out of the machine and clone the hard drive. I&#39;ll have activated the license and have a nice hard drive, with the current updates. If I want to create another Window Server 2003 instance, it&#39;s easier to just use a base drive and customize as needed. Your decision. (The VirtualBox (VBoxManage) command is clonehd.)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Specific Windows Server 2003 setups&lt;/h3&gt;
-&lt;p&gt;With a base install ready, we can go in various ways with our installation. By default, almost no services will be up and running.&lt;/p&gt;
-&lt;p&gt;In this particular instance, we just want to run IIS 6.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Make sure you&#39;re in the Manage Your Server application. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_01.jpg&#34;&gt;See this&lt;/a&gt;.&lt;ol&gt;
-&lt;li&gt;By default it will start automatically (a good thing) or you can find it at Start &amp;gt; All Programs &amp;gt; Administrative Tools &amp;gt; Manage Your Server.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;From the options, select &lt;strong&gt;Add or remove a role&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;We want a &lt;strong&gt;Custom configuration&lt;/strong&gt;, since we just want a Web server.&lt;/li&gt;
-&lt;li&gt;For our needs, we want our&amp;nbsp;server to be an&amp;nbsp;&lt;strong&gt;Application server (IIS, ASP.NET)&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;We only want to enable &lt;strong&gt;ASP.NET&lt;/strong&gt;, not FrontPage Server Extensions (unless you particularly know you want that).&lt;/li&gt;
-&lt;li&gt;Our summary reads something like the following. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_02.jpg&#34;&gt;See this&lt;/a&gt;.&lt;ol&gt;
-&lt;li&gt;Install Internet Information Services (IIS)&lt;/li&gt;
-&lt;li&gt;Enable COM+ for remote transactions&lt;/li&gt;
-&lt;li&gt;Enable Microsoft Distrubuted Transaction Coordinator (DTC) for remote access&lt;/li&gt;
-&lt;li&gt;Enable ASP.NET&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;You may be prompted to insert a CD, at which point you&#39;ll want to mount CD 1 of the R2 discs, and not CD 2. You can play around with this as needed.&lt;/li&gt;
-&lt;li&gt;Shortly, you see that &#34;This server is Now an Application server.&#34; Included on this page is a link to view additional steps to secure the server. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_03.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;You should now see that the Application Server role is now available to be managed. &lt;a rel=&#34;external&#34; href=&#34;http://media.jamesrskemp.com/graphics/windowsServer2003/server2003Roles_04.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Opening a browser and calling &lt;a rel=&#34;nofollow&#34; href=&#34;http://localhost/&#34;&gt;http://localhost/&lt;/a&gt; should now display the standard Under Construction page.&lt;/li&gt;
-&lt;li&gt;Go to Windows Update and install any needed updates.&lt;/li&gt;
-&lt;li&gt;Assuming you&#39;ve setup a Bridged Adapter in Network for the virtual machine, you should now be able to browse to the virtual instance in your host machine. You can use both the IP as well as the server name. For example, &lt;a rel=&#34;nofollow&#34; href=&#34;http://james-wins03ws1/&#34;&gt;http://james-wins03ws1/&lt;/a&gt;&amp;nbsp;or &lt;a rel=&#34;nofollow&#34; href=&#34;http://192.168.1.106/&#34;&gt;http://192.168.1.106/&lt;/a&gt;.&lt;ol&gt;
-&lt;li&gt;This can be found by opening a command prompt (cmd) and running &lt;strong&gt;ipconfig /all&lt;/strong&gt; and finding the IP Address.&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;At this point you&#39;ve successfully setup IIS running on Windows Server 2003, in a virtual machine, and are able to connect to it from your host machine.&lt;/p&gt;
-&lt;p&gt;You can now mimic a real machine as much as you&#39;d like, for example by setting up FTP (&lt;a rel=&#34;external&#34; href=&#34;http://filezilla-project.org/&#34;&gt;FileZilla Server&lt;/a&gt;)&amp;nbsp;to move files between the machines.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;I recommend just using VirtualBox to move files between the two; Devices &amp;gt; Shared Folders will let you setup temporary and permanent folders.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Questions, comments, and suggestions are appreciated.&lt;/p&gt;
-</description>
+      <description>Steps to setup a Windows Server 2003 instance running IIS, on VirtualBox.</description>
     </item>
     
     <item>
@@ -162,18 +61,7 @@
       <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
-      <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
-&lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
-&lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;
-&lt;p&gt;To shutdown the machine at the prompt, enter the following at the command line:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code&gt;Shutdown -s -t 0&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This shuts the machine down after 0 seconds. Enter -r instead of -s to do a reboot.&lt;/p&gt;
-&lt;p&gt;I haven&#39;t played with the core install beyond this.&lt;/p&gt;
-&lt;p&gt;The full install will immediately tell you, much like Server 2003, what you should do after installing. Run updates, select your timezone, etcetera.&lt;/p&gt;
-&lt;p&gt;No features or roles will be enabled, unless you update the .NET Framework (which will be recommended) and then you&#39;ll have .NET enabled afterwards.&lt;/p&gt;
-&lt;p&gt;Since I wanted to setup base installs, I decided to have Windows &#34;Check for updates but let me choose whether to download and install them.&#34;&lt;/p&gt;
-&lt;p&gt;Additions installed fine on full install, but I didn&#39;t try on the core installation.&lt;/p&gt;
-</description>
+      <description>Notes on getting base installs ready of Windows Server 2008 Standard Edition, on VirtualBox 2.2.4.</description>
     </item>
     
     <item>
@@ -182,46 +70,7 @@
       <pubDate>Mon, 19 Jan 2009 12:01:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Disabling-Messenger-auto-sign-in-on-the-Xbox-360/</guid>
-      <description>&lt;p&gt;
-Shortly after logging into Xbox Live the Xbox 360 will attempt to log into Windows Messenger, by default.
-&lt;/p&gt;
-&lt;p&gt;
-While I tried to find how to disable this,&amp;nbsp;all&amp;nbsp;of the articles I found were irrelevant, since they were written during the &amp;#39;blades&amp;#39; interface.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s how I stumbled on it.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Press the Xbox button on your controller.
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Go to the Settings tab.
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Select Profile.
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Select Auto Sign-In.
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Select Disabled under Windows Messenger.
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-For some reason I had to do this a couple of times for it to stick.
-&lt;/p&gt;
-</description>
+      <description>How to disable Windows Messenger on the Xbox 360, post-blades interface.</description>
     </item>
     
     <item>
@@ -230,20 +79,7 @@ For some reason I had to do this a couple of times for it to stick.
       <pubDate>Fri, 16 Jan 2009 17:03:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Windows-7-beta-on-Virtual-PC-2007/</guid>
-      <description>&lt;p&gt;&lt;p&gt;
-I couldn&amp;#39;t find the other articles, so just in case I lose another one, here&amp;#39;s an overview of installing Windows 7 beta on a virtual machine.
-&lt;/p&gt;
-&lt;p&gt;
-Oddly, I didn&amp;#39;t have Virtual PC 2007 SP1, which seems to be a common issue.
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    &lt;a href=&#34;http://blogs.msdn.com/briankel/archive/2009/01/10/installing-the-windows-7-beta-with-virtual-pc-2007-sp1.aspx&#34;&gt;Installing the Windows 7 Beta with Virtual PC 2007 SP1&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>Try out Windows 7 beta, in the safety of a virtual machine.</description>
     </item>
     
     <item>
@@ -252,150 +88,7 @@ Oddly, I didn&amp;#39;t have Virtual PC 2007 SP1, which seems to be a common iss
       <pubDate>Thu, 20 Nov 2008 22:40:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Browser-environments-for-testing/</guid>
-      <description>&lt;p&gt;
-In &lt;a href=&#34;http://words.strivinglife.com/words/post/How-to-really-compact-Virtual-PC-hard-drives.aspx&#34;&gt;a previous post&lt;/a&gt; I mentioned using virtual machines for testing.
-&lt;/p&gt;
-&lt;p&gt;
-Here&amp;#39;s the three virtual machines that I feel cover the most options for browser testing (on Windows):&amp;nbsp;
-&lt;/p&gt;
-&lt;h3&gt;Current versions&lt;/h3&gt;
-&lt;p&gt;
-Looking at the top 10 browsers for this site, using data from Google Analytics, we have; Internet Explorer, Firefox, Safari, Chrome, Mozilla, Opera, Playstation 3, Konqueror, SeaMonkey, and Camino.
-&lt;/p&gt;
-&lt;p&gt;
-Of those, Internet Explorer and Firefox, obviously, account for the largest amount of traffic, at about 86% of all visits. Safari is a respectable 6.6%, Chrome at about 2.7%, Mozilla at 2.1%, and Opera at 1.8%.
-&lt;/p&gt;
-&lt;p&gt;
-Some&amp;nbsp;may think&amp;nbsp;I&amp;#39;m a bit&amp;nbsp;off, but I&amp;nbsp;consider Opera a fairly good browser, while Mozilla doesn&amp;#39;t much concern me. So, that gives us our top five browsers, all of which&amp;nbsp;can&amp;nbsp;be installed on Windows.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-So, any&amp;nbsp;test&amp;nbsp;environment for current versions of browsers (on Windows), should include the following (in order of importance).
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 7
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Firefox 3
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Safari 3
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Chrome 0
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Opera 9
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-There&amp;#39;s talk that Chrome may replace Firefox, if Google stops supporting Mozilla, so while Chrome may have low usage numbers, it&amp;#39;s fairly standards-compliant.
-&lt;/p&gt;
-&lt;p&gt;
-This is also why I feel that not including Opera would be a very big mistake.
-&lt;/p&gt;
-&lt;p&gt;
-This rounds out our first virtual machine to 5 unique browsers.
-&lt;/p&gt;
-&lt;h3&gt;Previous versions&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-While it would be great if it wasn&amp;#39;t the case, you&amp;#39;ll always need to support older versions of popular browsers.
-&lt;/p&gt;
-&lt;p&gt;
-Again, looking at Google Analytics for this site, almost 25% of Internet Explorer users are using version 6. Firefox, which supposedly has some issues in version 3, that are keeping users back in version 2, is about the same, with 75% of users on version 3.0.3 or 3.0.4 (I suppose there may be some overlap there).
-&lt;/p&gt;
-&lt;p&gt;
-Most other browsers don&amp;#39;t actively support so many previous versions, which means that a virtual environment for past versions of browsers can stick with the following.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 6
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Firefox 2
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Upcoming versions&lt;/h3&gt;
-&lt;p&gt;
-This virtual machine is really focused on browsers currently in beta, or that may otherwise not be in the top listing.
-&lt;/p&gt;
-&lt;p&gt;
-Primarily, that means the following should almost certainly be included.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Internet Explorer 8
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;
-That&amp;#39;s right, Internet Explorer 8. That&amp;#39;s all I&amp;#39;d absolutely need, especially looking at stats.
-&lt;/p&gt;
-&lt;p&gt;
-However, to a great extent, Chrome, like most of Google&amp;#39;s other &lt;strike&gt;products&lt;/strike&gt; applications is truly a beta browser (and one that I&amp;#39;ve had numerous issues with, probably due to that fact) and that might suggest that it should truly be installed in this environment.
-&lt;/p&gt;
-&lt;h3&gt;What about Linux and Mac?&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-The top browsers for Linux, again according to this site, are Firefox and Mozilla, which should&amp;nbsp;function the same as they are on Windows (and, again, I consider Firefox and Mozilla to be basically the same). It&amp;#39;s extremely easy, and free, to get started with any number of Linux environments, but I just don&amp;#39;t know that it makes all that much sense. (Keep reading for the clarification of this statement.)
-&lt;/p&gt;
-&lt;p&gt;
-For Mac&amp;nbsp;we have Safari and Firefox. The latter should be very similar to the Windows version.
-&lt;/p&gt;
-&lt;p&gt;
-For Safari Apple was kind enough to give Windows users this browser. As to whether it&amp;#39;s the same as the Mac version, well, it looks very similar. But, unless you&amp;#39;re willing to pay the Apple premium, the Windows version should suffice.
-&lt;/p&gt;
-&lt;p&gt;
-For these reasons, basic Web development doesn&amp;#39;t need to dive too deep into Linux and Mac environments.&lt;sup&gt;1&lt;/sup&gt;
-&lt;/p&gt;
-&lt;h3&gt;Mobile browsers?&lt;/h3&gt;
-&lt;p&gt;
-But what about browsers on mobile devices?
-&lt;/p&gt;
-&lt;p&gt;
-Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
-&lt;/p&gt;
-&lt;p&gt;
-To some extent &lt;a href=&#34;http://words.strivinglife.com/lynx/&#34;&gt;Lynx&lt;/a&gt; fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
-&lt;/p&gt;
-&lt;p&gt;
-The standard Opera browser also provides a mobile-like &amp;#39;emulator&amp;#39; for your site, by way of the Small View functionality.
-&lt;/p&gt;
-&lt;p&gt;
-However, for the mobile version of Internet Explorer (which won&amp;#39;t be tracked by Analytics, as it doesn&amp;#39;t support JavaScript (speaking of Windows Mobile 6)) accessing an emulator is not quite as easy.
-&lt;/p&gt;
-&lt;p&gt;
-As to the solution, I can&amp;#39;t say I can provide one, but as we move more and more towards mobile devices, perhaps we&amp;#39;ll be virtualization for these environments much more readily available.
-&lt;/p&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;
-Above I&amp;#39;ve suggested three virtual environments, for Web site development. For the majority of projects, I think having current versions of the top three browsers - Internet Explorer, Firefox, and Safari - would be quite enough.
-&lt;/p&gt;
-&lt;p&gt;
-What do you think? What do you develop for?
-&lt;/p&gt;
-&lt;h3&gt;Notes&lt;/h3&gt;
-&lt;p&gt;
-1. Of course, I realize that if you were going to create&amp;nbsp;a Flash or Silverlight application, you&amp;#39;d naturally want to test on both Mac and Linux (or if your app becomes popular, you&amp;#39;ll get some backlash on Slashdot). At that point what you&amp;#39;re really testing is the environment, and not just the browser. But, for the &amp;#39;majority&amp;#39; of Web sites, I personally feel that virtual Mac and Linux environments are unnecessary. Compare this to my feelings a number of years ago, &lt;a href=&#34;http://words.strivinglife.com/words/post/Four-working-browsers-(at-least).aspx&#34;&gt;before Safari was available for Windows&lt;/a&gt;, and you&amp;#39;d see a different view.&lt;sup&gt;2&lt;/sup&gt;
-&lt;/p&gt;
-&lt;p&gt;
-2. I also recommended Lynx and Netscape in that post, but no longer see that as necessary, entirely.
-&lt;/p&gt;
-</description>
+      <description>The three virtual environments I&#39;d recommend for in-depth browser testing, for Web applications.</description>
     </item>
     
     <item>
@@ -404,42 +97,7 @@ What do you think? What do you develop for?
       <pubDate>Tue, 18 Nov 2008 20:16:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/How-to-really-compact-Virtual-PC-hard-drives/</guid>
-      <description>&lt;p&gt;
-No names mentioned, but I&amp;#39;ve recently been using a number of virtual machines for testing purposes.
-&lt;/p&gt;
-&lt;p&gt;
-One machine has Internet Explorer 6 and Firefox 2 installed, while a second has Internet Explorer 7, Firefox 3, and the most recent versions of Opera, Safari (for Windows) and Chrome.
-&lt;/p&gt;
-&lt;p&gt;
-However, the virtual hard drives were 10 GB each, due to a large number of apps being installed that didn&amp;#39;t need to be, for our browser-based testing.
-&lt;/p&gt;
-&lt;p&gt;
-Yikes?
-&lt;/p&gt;
-&lt;p&gt;
-Even after uninstalling all of the unnecssary applications, and no matter how much compacting I did, they just didn&amp;#39;t seem to want to shrink.
-&lt;/p&gt;
-&lt;p&gt;
-And then I started looking at using difference disks and found this great post by Andrew Connell, titled &lt;a href=&#34;http://www.andrewconnell.com/blog/articles/UseVirtualPCsDifferencingDisksToYourAdvantage.aspx&#34; target=&#34;_blank&#34;&gt;HOWTO: Use Virtual PC&amp;#39;s Differencing Disks to your Advantage&lt;/a&gt;.
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    Before I start creating differencing disks, I want to optimize these two images.&amp;nbsp;
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Score.
-&lt;/p&gt;
-&lt;p&gt;
-After performing the steps Andrew lays out I&amp;#39;m down to under 5 gig each. Now that&amp;#39;s some savings.
-&lt;/p&gt;
-&lt;p&gt;
-As an aside, I ran a defrag on my work computer as well, since I&amp;#39;m positive one hasn&amp;#39;t been run in well over a year (I don&amp;#39;t recall when I got it, which also is when it was bought, but it&amp;#39;s been that long). If I thought the amount of space I saved after the compacting worked I was very wrong. Unfortunately, even after running &lt;a href=&#34;http://technet.microsoft.com/en-us/sysinternals/&#34; target=&#34;_blank&#34;&gt;Contig&lt;/a&gt; I&amp;#39;m still extremely fragmented, but even with 20+ gigs free it just can&amp;#39;t defrag any further ...
-&lt;/p&gt;
-&lt;p&gt;
-How&amp;#39;s your work/home machine looking?
-&lt;/p&gt;
-</description>
+      <description>Experience with Virtual PC hard drives that just didn&#39;t want to compact (and what I was doing wrong).</description>
     </item>
     
     <item>
@@ -448,16 +106,7 @@ How&amp;#39;s your work/home machine looking?
       <pubDate>Fri, 26 Sep 2008 18:01:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/LogParserPluscom-launched/</guid>
-      <description>&lt;p&gt;
-Since I now have actual content, there can be more visitors to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt;, outside of the government.
-&lt;/p&gt;
-&lt;p&gt;
-In additon to posting the articles here, I&amp;#39;ll be posting a number of articles to &lt;a href=&#34;http://logparserplus.com/&#34; target=&#34;_blank&#34;&gt;Log Parser Plus&lt;/a&gt; in an attempt to make Microsoft&amp;#39;s Log Parser utility that much easier.
-&lt;/p&gt;
-&lt;p&gt;
-The initial focus will be on IIS-related queries, but who knows where it&amp;#39;ll end up.
-&lt;/p&gt;
-</description>
+      <description>Log Parser Plus now has content. Yay.</description>
     </item>
     
     <item>
@@ -466,19 +115,7 @@ The initial focus will be on IIS-related queries, but who knows where it&amp;#39
       <pubDate>Fri, 12 Sep 2008 07:54:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/I-like-the-GatesSeinfeld-ads/</guid>
-      <description>&lt;p&gt;
-Maybe that makes me out of it, but I like the Microsoft commercials.
-&lt;/p&gt;
-&lt;p&gt;
-No, they don&amp;#39;t really tell me anything without digging, but they&amp;#39;re just fun, and sometimes even funny.
-&lt;/p&gt;
-&lt;p&gt;
-Granted, they don&amp;#39;t bash anyone like the &amp;quot;I&amp;#39;m a Mac&amp;quot; commercials, but ...
-&lt;/p&gt;
-&lt;p&gt;
-Keep doing them, and I&amp;#39;ll keep watching &amp;#39;em.
-&lt;/p&gt;
-</description>
+      <description>Sorry, but I actually like the Microsoft ads.</description>
     </item>
     
     <item>
@@ -487,40 +124,7 @@ Keep doing them, and I&amp;#39;ll keep watching &amp;#39;em.
       <pubDate>Thu, 04 Sep 2008 21:38:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Internet-Explorer-Virtual-PC-images-hidden-but-back/</guid>
-      <description>&lt;p&gt;
-When Microsoft released IE 7 they also offered an image / virtual hard drive that could be used to test Internet Explorer 7, without installing it on your machine.
-&lt;/p&gt;
-&lt;p&gt;
-Good idea.
-&lt;/p&gt;
-&lt;p&gt;
-While they&amp;#39;re buried, Microsoft has released a number of&amp;nbsp;other images, which expire in January &amp;#39;09.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=21eabb90-958f-4b64-b5f1-73d0a413c8ef&amp;amp;DisplayLang=en&#34; target=&#34;_blank&#34;&gt;Internet Explorer Application Compatibility VPC Image&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-Come on Microsoft, release some that don&amp;#39;t expire, but that have some other limited functionality. For example, they can only be used for x hours before the machine must be rebooted.
-&lt;/p&gt;
-&lt;p&gt;
-Perhaps the hard drive could be restricted to some amount, so that only x MB/GB could be used.
-&lt;/p&gt;
-&lt;p&gt;
-Why not also allow this for other OS, including Server 2008/2003, Windows XP/Vista (multiple versions).
-&lt;/p&gt;
-&lt;p&gt;
-Allow developers more options for testing, and using, your technology, and it&amp;#39;s more likely that we&amp;#39;ll want to continue using the skills that we learn.
-&lt;/p&gt;
-&lt;p&gt;
-And, if we can test on more environments, then our products, whether they be Web-based or not, can be better tested and supported.
-&lt;/p&gt;
-&lt;p&gt;
-A win for everyone involved, I&amp;#39;d say.
-&lt;/p&gt;
-&lt;p&gt;
-(Besides, if people are going to pirate your apps, they&amp;#39;re going to do it. Why not make an easy and legit way for your future customers to get started and stay involved?)
-&lt;/p&gt;
-</description>
+      <description>With Microsoft releasing Virtual PC images for testing on multiple versions of Internet Explorer, will we one day see similar options for testing on multiple operating systems?</description>
     </item>
     
     <item>
@@ -529,447 +133,7 @@ A win for everyone involved, I&amp;#39;d say.
       <pubDate>Sat, 16 Aug 2008 08:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/</guid>
-      <description>&lt;p&gt;&lt;p&gt;
-I&amp;#39;ll be updating this as I read, but the date/time of the post will remain the same. This will by no means make up for a reading of the book&amp;nbsp;- &lt;a href=&#34;http://www.amazon.com/gp/product/0321533925?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)&lt;/a&gt;. (Link to my review will be posted once I finish the book.)
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-I work primarily on the Web, so that will be my main focus from reading this book. Some chapters may not be present here, depending upon what I think is note-worthy at the time.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Chapter 1&lt;/h3&gt;
-&lt;p&gt;
-&lt;strong&gt;Immutable&lt;/strong&gt; - strings are immutable in that when you reassign the variable, it points to a new location in memory.
-&lt;/p&gt;
-&lt;p&gt;
-XML delimited comments are /** comment **/ and /// comment (wasn&amp;#39;t aware of the first one).
-&lt;/p&gt;
-&lt;h3&gt;Chapter 21&lt;/h3&gt;
-&lt;p&gt;
-&lt;strong&gt;Common Language Infrastructure (CLI)&lt;/strong&gt; is an &lt;em&gt;international standard&lt;/em&gt; containing the specifications for the &lt;strong&gt;Common Intermediate Language (CIL)&lt;/strong&gt; and the runtime.
-&lt;/p&gt;
-&lt;ol&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    C# compiler generates to Common Intermediate Language (CIL). (This is what other supported languages, like VB, J#, etcetera, are converted to as well.)
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Generally at execution time (although you can do this earlier, on the machine that will actually run the code - NGEN) code is compiled from CIL to machine code. This is done by the just-in-time (JIT)&amp;nbsp;compiler.
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Now the C# code execution is managed by the Virtual Execution System (VES) / runtime. &amp;quot;The runtime is responsible for loading and running programs and providing additional services (security, garbage collection, and so on) to the program as it executes.&amp;quot;
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Managed code: &amp;quot;the code that executes under the context of an agent such as the runtime&amp;quot; Allows for additional services to be injected into a program
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Managed execution: &amp;quot;the process of executing under control of the runtime&amp;quot;
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        Managed data: control over the allocation and deallocation of memory for the data
-        &lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Common Language Runtime (CLR) is &amp;quot;the Microsoft-specific implementation of the runtime for the .NET platform.&amp;quot;
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4&gt;Garbage collection&lt;/h4&gt;
-&lt;p&gt;
-Built-in to the runtime. Does not happen at pre-determined or set times. Less likely to run &amp;quot;if memory on the computer is still largely untapped.&amp;quot;
-&lt;/p&gt;
-&lt;p&gt;
-In .NET, &amp;quot;objects that have lived for only a short period will be cleaned up sooner than objects that have already survived garbage collection sweeps.&amp;quot;
-&lt;/p&gt;
-&lt;p&gt;
-Objects that remain are compacted together, which &amp;quot;often results in faster instantiation of new objects.&amp;quot;
-&lt;/p&gt;
-&lt;h3&gt;Chapter 2&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-&lt;strong&gt;static&lt;/strong&gt; methods must have a prefix of the type. text = string.Format();
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;instance&lt;/strong&gt; methods instead prefix with the variable or instance name. firstName.ToUpper();
-&lt;/p&gt;
-&lt;p&gt;
-String immutability: text.ToUpper(); creates a new string that would need to be saved or used directly.
-&lt;/p&gt;
-&lt;p&gt;
-System.Text.StringBuilder, however, modifies the data in the variable, and does not return a new string.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Reference types&lt;/strong&gt;: &amp;quot;contains a pointer, an address, or a reference to a location in memory that is different from where the actual data resides.&amp;quot; (For example, strings. Covered in&amp;nbsp;Chapter 5.) &lt;strong&gt;Null&lt;/strong&gt; can only be assigned to a reference type, unless you use the nullable modifier. For example, int? count = null;.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-string faxNumber; != string faxNumber = null; - in the latter case, the variable has been set.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;void&lt;/strong&gt;: Don&amp;#39;t expect any data. There is no data type.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;var&lt;/strong&gt; was added in C# 3.0 to support anonymous types - types declared dynamically. Implicitly defined by what the compiler determines. Allows for &amp;quot;joining (associating) data types or reducing the size of a particular type down to fewer data elements.&amp;quot; (See pg 54-5 for example.)
-&lt;/p&gt;
-&lt;h4&gt;Categories of types&lt;/h4&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Value types:
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        memory: data is stored on the stack
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        store the data
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        each variable gets its own place in memory
-        &lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    Reference types:
-    &lt;/div&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        memory: data is stored on the heap
-        &lt;/div&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-        &lt;div&gt;
-        store the reference to where the data is stored, not the actual value
-        &lt;/div&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;strong&gt;Stack and heap&lt;/strong&gt;: See Figure 2.2 on page 57.&amp;nbsp;
-&lt;/p&gt;
-&lt;h4&gt;Casting&lt;/h4&gt;
-&lt;p&gt;
-(type) for explicit casting. Parse() for string to numeric. System.Convert for number types to other base types. TryParse() as of C# 2.0 (returns false instead of throwing an exception).
-&lt;/p&gt;
-&lt;p&gt;
-All types support ToString(): if the type has an explicit implementation the string representation of the data is returned, otherwise the name of the data type is.
-&lt;/p&gt;
-&lt;h4&gt;Arrays&lt;/h4&gt;
-&lt;p&gt;
-Page 65-80.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-&amp;quot;&lt;strong&gt;Arrays&lt;/strong&gt; provide a means of declaring a collection of data items that are of the same type using a single variable.&amp;quot;
-&lt;/p&gt;
-&lt;p&gt;
-string[] languages;
-&lt;/p&gt;
-&lt;p&gt;
-Use commas for additional dimensions: string[,] cells;
-&lt;/p&gt;
-&lt;p&gt;
-Assigning after declaring requires &lt;strong&gt;new&lt;/strong&gt;. (new: &amp;quot;tells the runtime to allocate memory for the data type&amp;quot;)
-&lt;/p&gt;
-&lt;p&gt;
-Jagged array: array of arrays. Page 70. Length returns number of elements in the outside/first array.
-&lt;/p&gt;
-&lt;p&gt;
-Arrays have a fixed length, so can&amp;#39;t be changed without re-creating the array. For multi-dimensional, it&amp;#39;s the number of elements total.
-&lt;/p&gt;
-&lt;p&gt;
-Array is reference type - use Clone() method for a new copy.
-&lt;/p&gt;
-&lt;p&gt;
-Common errors 79-80.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 3&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-Constants (const)&amp;nbsp;are&amp;nbsp;evaluated and determined at compile time.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-for loops can consist of multiple subexpressions (see page 124), although generally you shouldn&amp;#39;t.
-&lt;/p&gt;
-&lt;p&gt;
-In a foreach loop, the identifier (foreach(type identifier in collection)) is read-only.
-&lt;/p&gt;
-&lt;p&gt;
-C# preprocessor directives listed on page 136.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 4&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-To the compiler, the namespaces System.Collections and System.Collections.Generics are at the same level. Hierarchy implications are for human-readability only. In fact, namespaces are nested, which basically means that in using statements, you still have to&amp;nbsp;use System.Text, even if you&amp;#39;re using System.
-&lt;/p&gt;
-&lt;p&gt;
-&amp;#39;All types are compatible with the data type object.&amp;#39;
-&lt;/p&gt;
-&lt;p&gt;
-Over time, look for ways to simplify your code by refactoring - moving blocks of code into methods.
-&lt;/p&gt;
-&lt;p&gt;
-Alias using by way of using namespaceAlias = namespace. For example, using CountDownTimer = System.Timers.Timer;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Command-line arguments&lt;/strong&gt; covered on 165-6.
-&lt;/p&gt;
-&lt;p&gt;
-When passing parameters, whether they be reference or value types, the original variables are not changed (value is passed, not the reference). However, if you add &lt;strong&gt;ref&lt;/strong&gt; before the parameters (for both method and call), they can be. See 169.
-&lt;/p&gt;
-&lt;p&gt;
-See 170-1 for output parameters (&lt;strong&gt;out&lt;/strong&gt;).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Parameter arrays&lt;/strong&gt; covered on 172-4.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Common exception types&lt;/strong&gt; listed on 187-8.
-&lt;/p&gt;
-&lt;p&gt;
-Avoid throwing exceptions for known errors or conditions.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 5&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-OOP on 196-9, 202, 214.
-&lt;/p&gt;
-&lt;p&gt;
-An &lt;strong&gt;object&lt;/strong&gt; is an instance of a &lt;strong&gt;class&lt;/strong&gt;, which is a template for&amp;nbsp;an object.&amp;nbsp;
-&lt;/p&gt;
-&lt;p&gt;
-Instance fields (no static modifier) can only be accessed from an instance of the class (an object).
-&lt;/p&gt;
-&lt;p&gt;
-this is an implicit field within every class that returns an instance of the object itself. See 206-7.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;public&lt;/strong&gt; access modifier means&amp;nbsp;field is available outside of class, while &lt;strong&gt;private&lt;/strong&gt; is the opposite (and the default).
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;properties&lt;/strong&gt; to modify private fields.
-&lt;/p&gt;
-&lt;p&gt;
-public &lt;em&gt;type&lt;/em&gt; &lt;em&gt;Property&lt;/em&gt; {&lt;br /&gt;
-&amp;nbsp;&amp;nbsp; get { return&amp;nbsp;_;}&lt;br /&gt;
-&amp;nbsp;&amp;nbsp; set { _ = value;}&lt;br /&gt;
-}
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s a good idea to use properties within the class as well, since validation can take place in one area only.
-&lt;/p&gt;
-&lt;p&gt;
-Remove get and/or set for write- and/or read-only.
-&lt;/p&gt;
-&lt;p&gt;
-Access modifier (public, private, &amp;hellip;)&amp;nbsp;can be applied to get or set, but &lt;em&gt;only&lt;/em&gt; on one.
-&lt;/p&gt;
-&lt;p&gt;
-Properties can be virtual fields - for example, Employee.Name could be FirstName + &amp;quot; &amp;quot; + LastName.
-&lt;/p&gt;
-&lt;p&gt;
-Properties and methods cannot be ref or out parameter values. Copy to a variable first, pass that, and pass variable back to property.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Constructors&lt;/strong&gt; are methods with no return types, with a name identical to class name, that allow fields to be initialized.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Default constructor&lt;/strong&gt;, taking no parameters, is created by the C# compiler at compilation, unless a costructor is declared. If you want a default one&amp;nbsp;- Employee() for example, after you&amp;#39;ve added Employee(FirstName, LastName) - you&amp;#39;ll have to add it yourself.
-&lt;/p&gt;
-&lt;p&gt;
-Object initializers on 232.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Overloading constructors&lt;/strong&gt; involves different number or types of parameters. Use constructor initializers to eliminate code duplication by calling other constructors, using this. See 235.
-&lt;/p&gt;
-&lt;p&gt;
-Even better, possibly use a private method to &lt;strong&gt;Initialize()&lt;/strong&gt; properties/object? See 236-7.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Anonymous types&lt;/strong&gt; covered on 237-9.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;static&lt;/strong&gt; fields are shared across multiple instances of an object, and belong to the class (not the instance). See 240-241 for examples.
-&lt;/p&gt;
-&lt;p&gt;
-&amp;quot;In designing objects, programmers should take care to declare both fields and methods appropriately as static or instance-based.&amp;nbsp;In general, you should declare [&amp;hellip;]&amp;nbsp;methods that access instance data (where the instance is not passed in as a parameter) as instance methods. Static fields store data corresponding to the class [&amp;hellip;] Instance fields store data associated with the object.&amp;quot; (243)
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;static constructors&lt;/strong&gt; are called by the runtime upon first access to the class. See 245.
-&lt;/p&gt;
-&lt;p&gt;
-Better to have&amp;nbsp;a static property than a public static field (246).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;static classes&lt;/strong&gt; can&amp;#39;t be instantiated, but usually don&amp;#39;t need to be (objects would be pointless). See 247-8, which involves math. These classes also can&amp;#39;t be extended (they&amp;#39;re marked as sealed).
-&lt;/p&gt;
-&lt;p&gt;
-It&amp;#39;s possible to add instance methods to any class using &lt;strong&gt;extension methods&lt;/strong&gt;. However, use these sparingly, since there&amp;#39;s typically a better way. See 249-50.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;const fields&lt;/strong&gt; are automatically static.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;readonly fields&lt;/strong&gt; declare &amp;quot;that the field value is modifiable only from inside the constructor or directly during declaration,&amp;quot; so they can vary and change instance to instance.&amp;nbsp;See 251-2.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Nested classes&lt;/strong&gt; are classes defined within another class. Allow for the private modifier, and are rare. See 253-4.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Partial classes&lt;/strong&gt; allow one class to be defined in multiple files (such as a nested class in another file).
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Partial methods&lt;/strong&gt; are also allowed, as long as they return void (partial void Class). See 256-9.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 6&amp;nbsp;&lt;/h3&gt;
-&lt;p&gt;
-When defining a &lt;strong&gt;derived class&lt;/strong&gt; - methods defined on the base class are avilable to all subclasses - use a colon followed by the base class. This inheritence follows all the way down, to an unlimited numder of subclasses from subclasses from base classes.
-&lt;/p&gt;
-&lt;p&gt;
-Derived&amp;nbsp;classes can be&amp;nbsp;cast to the base class, implicitly.&amp;nbsp;However, the reverse is not true.
-&lt;/p&gt;
-&lt;p&gt;
-Private members are not available to derived classes, while &lt;strong&gt;protected&lt;/strong&gt; members are only available to derived classes.
-&lt;/p&gt;
-&lt;p&gt;
-While you can only derive from one base class in C#, you can work around this, if necessary, by using &lt;strong&gt;aggregation&lt;/strong&gt;, by calling an instance of the second class you wish to derive from.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;sealed&lt;/strong&gt; classes cannot be derived from. You can assign these on base as well as derived classes (so that no further derivations are possible).
-&lt;/p&gt;
-&lt;p&gt;
-By using the &lt;strong&gt;virtual&lt;/strong&gt; modifier in&amp;nbsp;the base class&amp;nbsp;and &lt;strong&gt;override&lt;/strong&gt; in the&amp;nbsp;derived classes, instance methods and properties can be overriden. Fields and static members cannot be overriden. Override implies virtual (unless you&amp;#39;ve used &lt;strong&gt;override sealed&lt;/strong&gt;).
-&lt;/p&gt;
-&lt;p&gt;
-Be careful when allowing methods to be overriden, as the most derived implementation will be used, so keep core functionality non-virtual. See 276-7 for one such way.
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;new&lt;/strong&gt; to break out of the above. See 280-1 for something of an example.
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;base&lt;/strong&gt;.Method() to use the base classes&amp;#39; method. Useful for when derived class &amp;#39;extends&amp;#39; the method in some way. See 282-3 for a good example (ToString()).
-&lt;/p&gt;
-&lt;p&gt;
-If the base class has no default constructor (ClassName()), this must be defined in the derived class constructor. See 284.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;abstract&lt;/strong&gt; classes are available for derivation only. They typically define what derived classes should contain, methods or properties, but not how to implement them. Abstract implies virtual.
-&lt;/p&gt;
-&lt;p&gt;
-See 286-7, 289-90 for an example.
-&lt;/p&gt;
-&lt;p&gt;
-Since everything derives from System.Object, there are methods that are available on everything. See 290-1 for these (ToString() is one, which allows for 33.ToString()).
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;is&lt;/strong&gt; to check what the underlying type is. See 292. Use &lt;strong&gt;as&lt;/strong&gt; to attempt to convert to a type, and assign null if the conversion fails.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 7&lt;/h3&gt;
-&lt;p&gt;
-Interfaces allow common method signatures across classes, with different functionality, and&amp;nbsp;without inheritence. You can therefore switch implementations without changing the calling code. See 297.
-&lt;/p&gt;
-&lt;p&gt;
-Method declarations are followed by a semi-colon, not curly braces, and properties must be used instead of fields. The interface has no implementation, no actual code nor fields. All members are public, and cannot&amp;nbsp;be declared as such or otherwise (no access modifiers).
-&lt;/p&gt;
-&lt;p&gt;
-Classes can implement multiple interfaces, and are listed after the class name, along with the base class (if any).
-&lt;/p&gt;
-&lt;p&gt;
-If a class&amp;nbsp;uses an interface, all members of the interface must be implemented. Throw NotImplementedException as needed.
-&lt;/p&gt;
-&lt;p&gt;
-Choosing between an explicit and implicit interface implementation covered on 306-7. If in doubt, use explicit.
-&lt;/p&gt;
-&lt;p&gt;
-Multiple interface inheritance example on page 310.
-&lt;/p&gt;
-&lt;p&gt;
-Changing an interface can be intensive, as all classes that implement the interface must also change. See 316-7 for an example of a version-safe way.
-&lt;/p&gt;
-&lt;p&gt;
-See 318 for a comparison of abstract classes with interfaces.
-&lt;/p&gt;
-&lt;h3&gt;Chapter 8&lt;/h3&gt;
-&lt;p&gt;
-Reminder: types are either reference types or value types.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Value types&lt;/strong&gt; directly contain their value, and point to a location in memory, so each new value type, or using a value type within a method,&amp;nbsp;means more memory usage. These derive from System.ValueType.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Reference types&lt;/strong&gt; store the reference / memory address of the value, not the value itself. This means that two variables can point to the same reference, and therefore changing one would change the other.
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;string&lt;/strong&gt; and &lt;strong&gt;object&lt;/strong&gt; are reference types, the rest of the primitive types are value types.
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;struct&lt;/strong&gt; to create a custom value type. Example on 324-5. See initialization rules on 326.
-&lt;/p&gt;
-&lt;p&gt;
-Boxing/unboxing content on 329-35, which seems to be out of place here (went over the head).
-&lt;/p&gt;
-&lt;p&gt;
-Use &lt;strong&gt;enum&lt;/strong&gt; to create a set of values, with each value having a name. See 335-40. Use singular when declaring.
-&lt;/p&gt;
-&lt;p&gt;
-To combine enums, use&amp;nbsp;a plural name. See 340-4 for additional details on doing this.
-&lt;/p&gt;
-&lt;p&gt;
-&amp;nbsp;
-&lt;/p&gt;
-&lt;h3&gt;Reading log&lt;/h3&gt;
-&lt;p&gt;
-(If you&amp;#39;re interested, otherwise, since I&amp;#39;m reading the electronic version of the book, I need someplace to keep track of this.)
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/15/2008: &amp;gt; xlvi
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/16/2008: 1 &amp;gt; 30, 749 &amp;gt; 770, 31 &amp;gt; 82, 83 &amp;gt; 146
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/21/2008: 147 &amp;gt; 194
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/23/2008: 195 &amp;gt; 260
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/24/2008: 261 &amp;gt; 294 (re-read at some point)
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    08/29/2008: 295 &amp;gt; 320 (need to re-read), 320 &amp;gt; 346 (also need to re-read)
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>Notes on Mark Michaelis&#39; Essential C# 3.0: For .NET Framework 3.5 (2nd Edition).</description>
     </item>
     
     <item>
@@ -978,33 +142,7 @@ To combine enums, use&amp;nbsp;a plural name. See 340-4 for additional details o
       <pubDate>Fri, 11 Jul 2008 22:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Professional-ASPNET-35-In-C-and-VB/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-The following is a book review of &lt;a href=&#34;http://www.amazon.com/gp/product/0470187573?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Professional ASP.NET 3.5 In C# and VB&lt;/a&gt;, written by Bill Evjen, Scott Hanselman, and Devin Rader.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Having read Imar Spaanjaar&amp;#39;s &lt;a href=&#34;http://www.amazon.com/dp/047018759X?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Beginning ASP.NET 3.5 In C# and VB&lt;/a&gt; (&lt;a href=&#34;http://words.strivinglife.com/words/post/Review-Beginning-ASPNET-35-In-C-and-VB.aspx&#34;&gt;review&lt;/a&gt;), I was expecting a number of good things from this book.
-&lt;/p&gt;
-&lt;p&gt;
-Imar&amp;#39;s book is really great in that he shows you how to build a Web application with ASP.NET 3.5. However, with &lt;a href=&#34;http://www.amazon.com/gp/product/0470187573?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Professional&amp;nbsp;ASP.NET 3.5 In C# and VB&lt;/a&gt;,&amp;nbsp;you instead get 1500+ page reference book.
-&lt;/p&gt;
-&lt;p&gt;
-Now that&amp;#39;s not necessarily a bad thing, but that does mean that if you want to get started with ASP.NET, pick up Imar&amp;#39;s book first, or better still, too.
-&lt;/p&gt;
-&lt;p&gt;
-That said, this also means that if you&amp;#39;re the type to read a book from beginning to end, you&amp;#39;ll have a real &amp;#39;joy&amp;#39; reading this book. That&amp;#39;s because after a few chapters you&amp;#39;ll notice that the author&amp;#39;s clearly intended for people to skip around the book. This is evident because they&amp;#39;ll discuss something in one chapter, and then reiterate it at the beginning of the next in such a way that suggests they assume you didn&amp;#39;t just read this in the last chapter. But, that is good if you consider this as a reference book.
-&lt;/p&gt;
-&lt;p&gt;
-The other thing that will strike you is the number of typos in this book. I wasn&amp;#39;t keeping track of all of them, such as words melding together, hard returns where there didn&amp;#39;t need to be, incorrect figures,&amp;nbsp;etcetera, but I did make note of, and submit, 29 errors in this book (25 of those from page 579 on - I wasn&amp;#39;t keeping serious track before then). If you hear that they&amp;#39;ve done a special edition of this book, or a second edition, just spend the (extra) money and pick it up. Luckily, the code seems pretty clean.
-&lt;/p&gt;
-&lt;p&gt;
-Having said all that, I still think Professional ASP.NET 3.5&amp;nbsp;is an excellent reference book, and one that I&amp;#39;ll be keeping on my shelf. Almost every one of the 34 chapters had at least one valuable thing in them, and in most cases, they had many. While some topics are skimmed over, they give a very indepth look to existing and new features, providing&amp;nbsp;sources to further reference as needed (most of which are free Microsoft references online).
-&lt;/p&gt;
-&lt;p&gt;
-Together with Imar&amp;#39;s &lt;a href=&#34;http://www.amazon.com/dp/047018759X?tag=strivinglifen-20&#34; target=&#34;_blank&#34;&gt;Beginning ASP.NET 3.5 In C# and VB&lt;/a&gt;, I would definitely recommend this&amp;nbsp;to anyone interested in ASP.NET 3.5. I would also recommend this reference book (last time, I promise :) ) to anyone who&amp;#39;s worked with previous versions of .NET, and just needs to know how to advance their skills.
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Professional ASP.NET 3.5 In C# and VB, by Bill Evjen, Scott Hanselman and Devin Rader.</description>
     </item>
     
   </channel>

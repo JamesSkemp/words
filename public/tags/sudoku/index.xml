@@ -16,30 +16,7 @@
       <pubDate>Sun, 28 Nov 2010 10:24:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Sudoku-observations-and-programmatic-considerations/</guid>
-      <description>&lt;p&gt;&lt;p&gt;At the lowest level, any Sudoku puzzle consists of a number of squares.&lt;/p&gt;
-&lt;p&gt;There are&amp;nbsp;&lt;em&gt;rows&lt;/em&gt; times &lt;em&gt;columns&lt;/em&gt; squares consisting of a single value.&lt;/p&gt;
-&lt;p&gt;There are &lt;em&gt;x&lt;/em&gt; number of larger squares consisting of&amp;nbsp;&lt;em&gt;y&lt;/em&gt;&amp;nbsp;values, where&amp;nbsp;&lt;em&gt;x&lt;/em&gt; is the smallest of &lt;em&gt;rows&lt;/em&gt;&amp;nbsp;and &lt;em&gt;columns&lt;/em&gt;, and &lt;em&gt;y&lt;/em&gt; is the largest of &lt;em&gt;rows&lt;/em&gt; and &lt;em&gt;columns&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;As already mentioned, there are a &lt;em&gt;x&lt;/em&gt; number of rows, as well as a &lt;em&gt;y&lt;/em&gt; number of columns.&lt;/p&gt;
-&lt;p&gt;Overlap is possible, but the puzzle still consists of these basic parts.&lt;/p&gt;
-&lt;p&gt;Given the above:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Puzzle
-&lt;ul&gt;
-&lt;li&gt;Rows (int)&lt;/li&gt;
-&lt;li&gt;Columns (int)&lt;/li&gt;
-&lt;li&gt;Squares (collection of Square)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Square
-&lt;ul&gt;
-&lt;li&gt;Value (string)&lt;/li&gt;
-&lt;li&gt;Row (int)&lt;/li&gt;
-&lt;li&gt;Column (int)&lt;/li&gt;
-&lt;li&gt;Block (int)&amp;nbsp;may not be required&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>Programmatic considerations pertaining to Sudoku puzzles.</description>
     </item>
     
   </channel>

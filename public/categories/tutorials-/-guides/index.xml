@@ -16,118 +16,7 @@
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</guid>
-      <description>&lt;p&gt;The following is how I configured a Raspberry Pi 2 as a samba server, using a Seagate Backup Plus Slim, 1TB, drive.&lt;/p&gt;
-
-&lt;p&gt;For ease I purchased the &lt;a href=&#34;http://amzn.to/1MZjXM0&#34;&gt;CanaKit Raspberry Pi 2 Complete Starter Kit&lt;/a&gt;. It runs about $70 and includes enough to get up and running with the Raspberry Pi 2, with the Pi itself, a nice case, power supply, HDMI cable, WiFi adapter, and SD card with NOOBS/Raspbian installer.&lt;/p&gt;
-
-&lt;p&gt;For the hard drive I opted to purchase a &lt;a href=&#34;http://amzn.to/1MZkg9F&#34;&gt;Seagate Backup Plus Slim 1TB Portable External Hard Drive&lt;/a&gt;, since I&#39;ve had good enough luck with Seagate in the past, and reviews are generally favorable. This ran me $60. I confirmed that it worked fine on my Windows 10 machine, and was already formatted to NTFS.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, once I received the Pi and drive I found that the power supply/Pi wasn&#39;t putting off enough power to keep the drive running. After looking at the options, including tweaking the Pi to pass through more power through the USB connector, I opted to pick up a powered USB hub instead (especially since I was considering setting up a camera at some point in the future).&lt;/p&gt;
-
-&lt;p&gt;For this I went with the &lt;a href=&#34;http://amzn.to/1MZktd6&#34;&gt;AmazonBasics 4 Port USB 3.0 Hub with 5V/2.5A power adapter&lt;/a&gt; for about $17. Reviews are quite favorable, and I didn&#39;t see any indication that it wouldn&#39;t work. Once I received the included manual does note that Windows 2000 through 8 are required, or Mac OS X. However, as you&#39;ll see there were no issues.&lt;/p&gt;
-
-&lt;p&gt;Before powering my Raspberry Pi 2 up I went ahead and plugged the USB Hub into the Pi, and the Seagate Backup Plus into the HUB. I powered up the HUB first, and then powered up the Pi.&lt;/p&gt;
-
-&lt;p&gt;While it was a couple years old, &lt;a href=&#34;http://www.howtogeek.com/139433/how-to-turn-a-raspberry-pi-into-a-low-power-network-storage-device/&#34;&gt;How to Turn a Raspberry Pi into a Low-Power Network Storage Device&lt;/a&gt; worked fairly well for the setup steps.&lt;/p&gt;
-
-&lt;h2&gt;Setup commands&lt;/h2&gt;
-
-&lt;p&gt;Unless otherwise noted, all commands were run on the Raspberry Pi 2 itself, at the command line, outside of Raspbian.&lt;/p&gt;
-
-&lt;p&gt;While the guide suggests installing &lt;strong&gt;ntfs-3g&lt;/strong&gt;, this was already installed on my Pi.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install ntfs-3g
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Getting a listing of the disks, &lt;code&gt;sudo fdisk -l&lt;/code&gt;, returned /dev/sda1 for the name of the Seagate drive. So, despite a moment of worry, the Amazon USB Hub worked perfectly fine.&lt;/p&gt;
-
-&lt;p&gt;The next step was to setup the drive. I opted for all lowercase when doing so.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo mkdir /media/usbhdd1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next was the mounting of the drive.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo mount -t auto /dev/sda1 /media/usbhdd1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Within the directory I setup a new shares directory.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo mkdir /media/usbhdd1/shares
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When I first tried to install Samba I received a number of errors. A quick update resolved the issues.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get update
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then I was able to install Samba.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo apt-get install samba samba-common-bin
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Backup the Samba configuration, just in case, and then open the config in &lt;strong&gt;nano&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.old
-sudo nano /etc/samba/smb.conf
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;My Windows 10 machine was already on the WORKGROUP workgroup, so I didn&#39;t have to touch this, but verify &lt;em&gt;workgroup&lt;/em&gt; is set as needed.&lt;/p&gt;
-
-&lt;p&gt;Contrary to the guide I was unable to find a security line in the Authenication section, so I skipped that for now, and promised to try to get in without authenticating before I went too far.&lt;/p&gt;
-
-&lt;p&gt;At the bottom of the config I added the following:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[Backup1]
-comment = Backup Folder
-path = /media/usbhdd1/shares
-valid users = @users
-force group = users
-create mask = 0660
-directory mask = 0771
-read only = no
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;CTRL+X&lt;/code&gt; will exit, and allow you to save. Press &lt;code&gt;Enter&lt;/code&gt; to just overwrite the existing file.&lt;/p&gt;
-
-&lt;p&gt;Restart the Samba service:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo /etc/init.d/samba restart
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now setup a user account in UNIX and then for Samba. Yes, this means entering the password 4 times. Personally, I&#39;m a fan of &lt;a href=&#34;http://preshing.com/20110811/xkcd-password-generator/&#34;&gt;Preshing&#39;s xkcd Password Generator&lt;/a&gt; and storing the credentials in &lt;a href=&#34;http://keepass.info/&#34;&gt;KeePass&lt;/a&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo useradd backups -m -G users
-sudo passwd backups
-sudo smbpasswd -a backups
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For ease I then determined the ip of the Raspberry Pi.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ifconfig
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then I just browsed to that directly in Windows explorer (&lt;code&gt;\\192.168.x.x&lt;/code&gt;). Thankfully I was prompted for credentials when I tried to access the &lt;strong&gt;Backup1&lt;/strong&gt; directory. Entering the credentials I had created above worked great.&lt;/p&gt;
-
-&lt;p&gt;The next step was to put some data in the directory. Over my wireless network speeds weren&#39;t fantastic, but it worked fine.&lt;/p&gt;
-
-&lt;p&gt;I verified the files had been copied over:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd /media/usbhdd1/shares
-ls
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next was a step I almost forgot, which was to have the Raspberry Pi automatically mount the drive after rebooting. The config first needed to be opened in nano, &lt;code&gt;sudo nano /etc/fstab&lt;/code&gt;, and then I had to add the following, which I did so at the end of the file.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;/dev/sda1    /media/usbhdd1     auto    noatime     0       0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Ctrl + x&lt;/code&gt; as usual to exit, save, and overwrite the existing file.&lt;/p&gt;
-
-&lt;p&gt;Finally, restart the Raspberry Pi itself to verify that I could still get to the share after it came back up.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;sudo reboot&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>Instructions on how to setup a Raspberry Pi 2 Samba server with a Seagate Backup Plus Slim 1TB.</description>
     </item>
     
     <item>
@@ -136,29 +25,7 @@ ls
       <pubDate>Sun, 13 Dec 2015 14:35:42 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Google-Services-on-the-Amazon-Fire-HD-8/</guid>
-      <description>&lt;p&gt;xda-developers has a post, &lt;a href=&#34;http://forum.xda-developers.com/amazon-fire/general/installing-google-framework-playstore-t3216122&#34; rel=&#34;external&#34;&gt;Installing Google Framework/Playstore without Root (5th Gen Amazon Fire 2015)&lt;/a&gt;, that includes a couple different sets of instructions.&lt;/p&gt;
-
-&lt;p&gt;What worked for me was grabbing the mega.nz zip download and then:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Make sure you&#39;re a developer and you allow apps from unknown sources.&lt;/li&gt;
-&lt;li&gt;Install ES File Explorer via the Amazon Appstore. It&#39;s something I install on all my Android devices.&lt;/li&gt;
-&lt;li&gt;Extract the contents of the zip you downloaded from Mega somewhere.&lt;/li&gt;
-&lt;li&gt;Connect your Fire tablet to your computer via a USB cable.&lt;/li&gt;
-&lt;li&gt;Copy all the files to the Download directory on your tablet.&lt;/li&gt;
-&lt;li&gt;In ES File Explorer navigate to the Download directory.&lt;/li&gt;
-&lt;li&gt;Install com.android.vending-5.9-12*.apk&lt;/li&gt;
-&lt;li&gt;Install com.google.android.gms-6.6.03*.apk&lt;/li&gt;
-&lt;li&gt;Install GoogleLoginService.apk&lt;/li&gt;
-&lt;li&gt;Install GoogleServicesFramework.apk&lt;/li&gt;
-&lt;li&gt;Turn off and then turn back on the device.&lt;/li&gt;
-&lt;li&gt;You can try opening Google Play. If it automatically closes (it did for me), install com.android.vending-5.9.12*.apk again. When I did so it asked me if I wanted to install the update, and referenced one of the other services.&lt;/li&gt;
-&lt;li&gt;You should be able to run the Google Play application now.&lt;/li&gt;
-&lt;li&gt;When prompted, you can safely update the Google services.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;With Google Play installed I was able to login to Google, as well as install YouTube and Chrome to my Fire HD 8.&lt;/p&gt;
-</description>
+      <description>For my future reference, information on how to install Google services (Google Play and associated services) on an Amazon Fire HD 8.</description>
     </item>
     
     <item>
@@ -167,14 +34,7 @@ ls
       <pubDate>Sat, 20 Jun 2015 12:48:29 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Example-libGDX-orthographic-camera-controller/</guid>
-      <description>&lt;p&gt;The following class can be used in a libGDX project as a framework for your own orthographic camera controller. This has been tested with libGDX 1.6.2, but should work in versions back to at least 1.4.x.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247&#34;&gt;View the code snippet on GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;OrthographicCameraController.java&lt;/h3&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/fa2a9bd79a1d6336b247.js&#34;&gt;&lt;/script&gt;
-</description>
+      <description>The following class can be used in a libGDX project as a framework for your own orthographic camera controller.</description>
     </item>
     
     <item>
@@ -183,28 +43,7 @@ ls
       <pubDate>Fri, 13 Mar 2015 19:02:56 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio/</guid>
-      <description>&lt;p&gt;The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;This assumes that you have already created a new libGDX project and have already imported it into Android Studio. If you have not, please review &lt;a href=&#34;http://words.strivinglife.com/words/Post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0&#34;&gt;Creating your first libgdx project with Android Studio 1.1.0&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the project imported, select the configurations drop-down, or navigate to Run &gt; Edit Configurations...` in the menu.&lt;/p&gt;
-
-&lt;p&gt;Next click the green plus sign in the top left corner and select &#39;Application.&#39;&lt;/p&gt;
-
-&lt;p&gt;There are now four fields you need to populate to complete this step.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;: Enter whatever you&#39;d like. I like using &#39;Desktop&#39; to be obvious.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Main class&lt;/strong&gt;: com.&lt;em&gt;xxx&lt;/em&gt;.desktop.DesktopLauncher&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Working directory&lt;/strong&gt;: C:\Path\to\project\android\assets&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Use classpath of mod&lt;/strong&gt;: select the &lt;em&gt;desktop&lt;/em&gt; module&lt;/p&gt;
-
-&lt;p&gt;And that&#39;s it. You should be able to select and run the configuration.&lt;/p&gt;
-
-&lt;p&gt;If you work on multiple machines, note that by default this configuration change will mostly likely &lt;em&gt;not&lt;/em&gt; be checked into source control. The file that contains this configuration is located in your project directory under &lt;code&gt;\.idea\workspace.xml&lt;/code&gt;.&lt;/p&gt;
-</description>
+      <description>The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0.</description>
     </item>
     
     <item>
@@ -213,46 +52,7 @@ ls
       <pubDate>Sat, 28 Feb 2015 21:22:16 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Creating-your-first-libgdx-project-with-Android-Studio-1-1-0/</guid>
-      <description>&lt;p&gt;This is a quick &#39;tutorial&#39; on how to get started with libGDX with Android Studio 1.1.0.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately while libGDX can be used with Android Studio 1.x, documentation regarding it is sparse.&lt;/p&gt;
-
-&lt;p&gt;I&#39;ll assume that you have Android Studio 1.1.0 (1.x generally) installed and properly running.&lt;/p&gt;
-
-&lt;p&gt;If you haven&#39;t already, &lt;a href=&#34;http://libgdx.badlogicgames.com/download.html&#34;&gt;download libgdx&lt;/a&gt; from the official site. The file name should be &lt;em&gt;gdx-setup.jar&lt;/em&gt;, and will be run whenever you need to create a new project.&lt;/p&gt;
-
-&lt;p&gt;Start &lt;em&gt;gdx-setup.jar&lt;/em&gt; and complete the Name, Package, Game class, and Destination as you wish.&lt;/p&gt;
-
-&lt;p&gt;For Android Studio 1.x the SDK is located in &lt;code&gt;%localappdata%\Android\sdk&lt;/code&gt; and for beta versions was located in the Android Studio program files directory.&lt;/p&gt;
-
-&lt;p&gt;Sadly these values aren&#39;t tracked across runs of the jar, and will therefore need to be entered every time you run the tool.&lt;/p&gt;
-
-&lt;p&gt;Go ahead and Generate the project and after a short time you&#39;ll have a project created.&lt;/p&gt;
-
-&lt;p&gt;At the time of this writing you&#39;ll be prompted twice regarding different versions.&lt;/p&gt;
-
-&lt;p&gt;The first time will be the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent version of android build tools than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The second time is the following:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You have a more recent Android API than the recommended.&lt;/p&gt;
-
-  &lt;p&gt;Do you want to use this version?&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Select Yes for both options.&lt;/p&gt;
-
-&lt;p&gt;Once the tool has finished switch over to Android Studio and select &lt;em&gt;Import Project (Eclipse ADT, Gradle, etc.)&lt;/em&gt; from the menu. Then browse to the directory created by the jar (Destination) and open the &lt;code&gt;build.gradle&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;p&gt;After some time you should be able to test a deployment of the Android version as you normally would. You may also be interested in &lt;a href=&#34;http://words.strivinglife.com/words/Post/Configuring-a-libGDX-project-to-run-as-a-desktop-application-in-Android-Studio&#34;&gt;running your project as a Desktop application&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>How to start using libGDX with Android Studio 1.1.0.</description>
     </item>
     
     <item>
@@ -261,32 +61,7 @@ ls
       <pubDate>Thu, 06 Nov 2014 12:59:46 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Enabling-ADB-on-a-Lenovo-A7600-F-TAB-A10/</guid>
-      <description>&lt;p&gt;As of this post, Lenovo does not have an ADB Interface Driver for their Lenovo A7600-F TAB A10. However, since I&#39;d like to develop on it, I had to find a solution.&lt;/p&gt;
-
-&lt;p&gt;An initial forum post pointed me to the older &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ADB Interface Driver for their ThinkPad Tablet&lt;/a&gt;. However, trying to update the android_winusb.inf with the necessary information was throwing a signature error when I tried to install it on Windows 8.1.&lt;/p&gt;
-
-&lt;p&gt;Luckily StackOverflow had &lt;a href=&#34;http://stackoverflow.com/a/15609366/11912&#34; rel=&#34;external&#34;&gt;an answer to the question &#34;Google Android USB Driver and ADB&#34;&lt;/a&gt; that stepped through how to make this work.&lt;/p&gt;
-
-&lt;p&gt;The specific steps I followed for the Lenovo A7600-F TAB A10 were:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Downloaded the &lt;a href=&#34;http://support.lenovo.com/us/en/downloads/ds022366&#34; rel=&#34;external&#34;&gt;ThinkPad Tablet ADB Interface Driver&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Extract the contents of the zip to a new directory.&lt;/li&gt;
-&lt;li&gt;Update the &lt;code&gt;android_winusb.inf&lt;/code&gt; file with the code below, which is also available as a &lt;a href=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91&#34; rel=&#34;external&#34;&gt;Gist&lt;/a&gt;. This was added above the &lt;code&gt;;NVIDIA Tegra&lt;/code&gt; line.&lt;/li&gt;
-&lt;li&gt;This may not be necessary, but I also updated the file at &lt;code&gt;C:\Program Files (x86)\Android\sdk\extras\google\usb_driver\android_winusb.inf&lt;/code&gt; with the same code. I added it above the &lt;code&gt;;Project Tango (generic)&lt;/code&gt; line.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and then use &lt;code&gt;shutdown -o -r -t 0&lt;/code&gt; to reboot. I unfortunately didn&#39;t keep track of the exact steps, but it&#39;s close to what the SO answer had, so something like &#34;Click ‘Troubleshoot’. Click ‘Advanced Options’ Click ‘Windows Startup Settings’ Click Restart.&#34;&lt;/li&gt;
-&lt;li&gt;When you have the option, &#34;Disable driver signature enforcement,&#34; which I believe was option 7 in the menu.&lt;/li&gt;
-&lt;li&gt;Once you&#39;ve logged back into your machine you should be able to go into Device Manager, find the Lenovo tablet, and choose to update the device drivers. Point to the extracted zip directory. You might get a security warning, but you&#39;ll be able to install it.&lt;/li&gt;
-&lt;li&gt;Run &lt;code&gt;cmd&lt;/code&gt; and navigate over to where adb is installed. In my particular case I&#39;m using Android Studio, and upgraded to 0.8.14, so mine is in &lt;code&gt;C:\Program Files (x86)\Android\sdk\platform-tools&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d&#34; rel=&#34;external&#34;&gt;Restart ADB&lt;/a&gt; and then check the devices. This is done by running &lt;code&gt;adb kill-server&lt;/code&gt; and &lt;code&gt;adb start-server&lt;/code&gt; to restart ADB, and then &lt;code&gt;adb devices&lt;/code&gt; to get a device listing.&lt;/li&gt;
-&lt;li&gt;I found that I had to unplug the USB cable from my computer first. You&#39;ll also have to accept the connection from the tablet.&lt;/li&gt;
-&lt;li&gt;Checking Device Manager should display &#34;Lenovo ThinkPad Tablet ADB Interface&#34; under Android Phone, and &#34;A7600-F&#34; under Portable Devices. You should also be able to run Android applications on the Lenovo A7600-F.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/a1da366d597664ea3c91.js&#34;&gt;&lt;/script&gt;
-
-&lt;script src=&#34;https://gist.github.com/JamesSkemp/a56534e22e4c25a3ef0d.js&#34;&gt;&lt;/script&gt;
-</description>
+      <description>How to enable ADB on a Lenovo A7600-F TAB A10, even though they haven&#39;t released official drivers yet.</description>
     </item>
     
     <item>
@@ -295,45 +70,7 @@ ls
       <pubDate>Sun, 06 Oct 2013 08:58:25 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Rough-guide-on-manually-setting-up-Git-on-Windows/</guid>
-      <description>&lt;p&gt;For both machines I&#39;m doing this on (running Windows 7 and Windows 8) I had already installed Github for Windows. However, since I&#39;ve been converted to posh-git, I wanted to do an install that would get me away from continuing to use it.&lt;/p&gt;
-
-&lt;p&gt;The below is roughly what I did, and may not be completely correct.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Install the latest version of &lt;a href=&#34;http://msysgit.github.io/&#34; rel=&#34;external&#34;&gt;msysgit&lt;/a&gt; (currently 1.8.4).&lt;/li&gt;
-&lt;li&gt;Set execution policy (run as administrator).&lt;ul&gt;&lt;li&gt;&lt;code&gt;Set-ExecutionPolicy RemoteSigned&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Install posh-git&lt;ul&gt;&lt;li&gt;&lt;code&gt;(new-object Net.WebClient).DownloadString(&#34;http://psget.net/GetPsGet.ps1&#34;) | iex&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Possibly open the Powershell profile and add the Git path when Powershell runs.&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add to the top of the file:&lt;br /&gt;&lt;code&gt;$env:path += &#34;;&#34; + (Get-Item &#34;Env:ProgramFiles(x86)&#34;).Value + &#34;\Git\bin&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Thanks to &lt;a href=&#34;http://stackoverflow.com/a/17625052/11912&#34; rel=&#34;external&#34;&gt;G. Lombard&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Actually install posh-git.
-&lt;ul&gt;&lt;li&gt;&lt;code&gt;install-module posh-git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Reload profile:&lt;br /&gt;&lt;code&gt;. $profile&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Verify/set global config options (user name and email).&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;git config --global -l&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.name &#34;Your Name Here&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;git config --global user.email &#34;your_email@example.com&#34;&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;li&gt;Update push behavior:&lt;ul&gt;&lt;li&gt;&lt;code&gt;git config --global push.default simple&lt;/code&gt;&lt;/li&gt;&lt;li&gt;See &lt;a href=&#34;http://stackoverflow.com/a/13148313/11912&#34;&gt;Warning: push.default is unset; its implicit value is changing in Git 2.0&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Since I&#39;m using Powershell 3.0 (ISE), I decided to remove the &#39;Dark&#39; color versions of the displayed information:&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;notepad $profile&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add the following at the end of the file:&lt;ul&gt;
-&lt;li&gt;&lt;code class=&#34;powershell&#34;&gt;$global:GitPromptSettings.BeforeIndexForegroundColor = [ConsoleColor]::Green&lt;br /&gt;
-$global:GitPromptSettings.IndexForegroundColor       = [ConsoleColor]::Green&lt;br /&gt;
-$global:GitPromptSettings.WorkingForegroundColor    = [ConsoleColor]::Red&lt;br /&gt;
-$global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;See also &lt;a href=&#34;http://sedodream.com/2012/05/05/GitCustomizingColorsForWindowsIncludingPoshgit.aspx&#34; rel=&#34;external&#34;&gt;Git customizing colors for Windows including posh-git&lt;/a&gt;&lt;ul&gt;&lt;li&gt;This involved running these two commands:&lt;br /&gt;&lt;code&gt;git config --global color.status.changed &#34;magenta normal bold&#34;&lt;/code&gt;&lt;br /&gt;&lt;code&gt;git config --global color.status.untracked &#34;magenta normal bold&#34;&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;Todo&lt;/h3&gt;
-
-&lt;p&gt;http://deanclatworthy.com/2013/01/how-to-avoid-relying-on-github-mirror-your-repository/&lt;/p&gt;
-
-&lt;p&gt;http://www.harecoded.com/migrating-github-repo-to-bitbucket-or-similar-services-2275467&lt;/p&gt;
-</description>
+      <description>Rough guide on how to manually install Git on Windows.</description>
     </item>
     
     <item>
@@ -342,21 +79,7 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
       <pubDate>Sat, 09 Feb 2013 10:21:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Converting-from-Subversion-to-Git-on-Windows/</guid>
-      <description>&lt;p&gt;With the news that Visual Studio 2012 will support Git out-of-the-box, and me deciding to stop storing my repositories locally, I decided to switch to Git this weekend.&lt;/p&gt;
-&lt;p&gt;They say the best way to do this is via &lt;a rel=&#34;external&#34; href=&#34;https://github.com/nirvdrum/svn2git&#34;&gt;svn2git&lt;/a&gt;, which unfortunately uses Ruby. Since I&#39;m on Windows, and haven&#39;t done Ruby development, I needed to download Ruby using &lt;a rel=&#34;external&#34; href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller for Windows&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Next I needed to have RubyGems support, which meant &lt;a rel=&#34;external&#34; href=&#34;http://rubyforge.org/projects/rubygems/&#34;&gt;downloading from RubyForge&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Unfortunately I had issues installing RubyGems. When I first installed Ruby I decided not to put it in my PATH. However, I couldn&#39;t install RubyGems.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\bin&amp;gt;ruby.exe ..\rubygems-1.8.25\setup.rb&lt;/pre&gt;
-&lt;p&gt;What I ended up having to do was call Ruby slightly differently.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;c:\Ruby193\rubygems-1.8.25&amp;gt;..\bin\ruby.exe setup.rb&lt;/pre&gt;
-&lt;p&gt;However, it seems as though this step may not have even been necessary, since supposedly 1.9+ includes Gem support by default?&lt;/p&gt;
-&lt;p&gt;Then I got stuck (user credentials/user migration) and decided to search around, which caused me to find that TortoiseGit supported grabbing from SVN, but that requires msysgit. So I &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/msysgit/downloads/list?can=2&amp;amp;q=%22Full+installer+for+official+Git+for+Windows%22&#34;&gt;download msysgit&lt;/a&gt; and install it, unchecking a bunch of options since I don&#39;t intend on using TortoiseGit/msysgit after I get everything ported over.&lt;/p&gt;
-&lt;p&gt;Now I can download and install &lt;a rel=&#34;external nofollow&#34; href=&#34;http://code.google.com/p/tortoisegit/wiki/Download?tm=2&#34;&gt;TortoiseGit&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;At this point I&#39;m wondering if I screw having old commit logs. I&#39;ve already been thinking for a while how poor Windows support with Git is.&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p&gt;And I ended up just deciding to start fresh.&lt;/p&gt;
-</description>
+      <description>Windows Git support sucks. Here&#39;s what I ended up doing over the course of a couple hours.</description>
     </item>
     
     <item>
@@ -365,39 +88,7 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
       <pubDate>Sun, 22 Apr 2012 16:08:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Phone-7-Taking-and-restoring-a-SQL-database/</guid>
-      <description>&lt;p&gt;As I develop my first Windows Phone 7 application, &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/Projects/MyVideoGameTracker&#34;&gt;My Video Game Tracker&lt;/a&gt;, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The below assumes you&#39;re using Windows PowerShell, but they should run on the standard command line.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Taking screenshots of the application&#39;s data&lt;/h3&gt;
-&lt;p&gt;When you install the Windows Phone SDK the Isolated Storage Explorer Tool is also installed. This tooll allows you to easily explore isolated storage on both emulated devices and any plugged in devices.&lt;/p&gt;
-&lt;p&gt;First you&#39;ll want to go to the directory where the tool is installed.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;cd &#34;C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Tools\IsolatedStorageExplorerTool&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can now enumerate devices if you want, but there&#39;s two parameters that you can tend to rely upon.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe enumeratedevices&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To continue, you&#39;ll need to have the guid of the application, which can be found in the WMAppManifest.xml file, and it&#39;s the ProductID attribute in the App element.&lt;/p&gt;
-&lt;p&gt;First, make sure that the application has been started, and any necessary data items have been setup.&lt;/p&gt;
-&lt;p&gt;Next get a directory listing, so you have an idea of what it looks like.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe dir xd 00000000-0000-0000-0000-000000000000&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This would return something like the following.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;       131,072 AppData.sdf
-&lt;/code&gt;&lt;code class=&#34;powershell&#34;&gt;&amp;lt;DIR&amp;gt;          Shared&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now you can take a screenshot to any directory you like. For example, to grab it from your phone (de = physical device):&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts de 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;When you run this command you&#39;ll have a directory created in the above called IsolatedStore. This will mimic what the dir command above returns.&lt;/p&gt;
-&lt;p&gt;To take a screenshot of the default emulated device (512 MB emulator), run the above except with xd instead of de.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe ts xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Restoring screenshots of the application&#39;s data&lt;/h3&gt;
-&lt;p&gt;Now if you want to restore the screenshot you want to make sure you append IsolatedStorage to the end of the directory path.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;.\isetool.exe rs xd 00000000-0000-0000-0000-000000000000 D:\projects\JamesRSkemp\WindowsPhone\isolatedstorage\IsolatedStore&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Depending upon what you&#39;re storing, if you want to move data from one device to another, you can take a screenshot, replace the necessary file(s), and then restore the modified screenshot/directory.&lt;/p&gt;
-&lt;h3&gt;Possible errors&lt;/h3&gt;
-&lt;p&gt;As I&#39;ve been developing I&#39;ve run into two errors. The message and resolution are below.&lt;/p&gt;
-&lt;h4&gt;Error: The process cannot access the file because it is being used by another process.&lt;/h4&gt;
-&lt;p&gt;To resolve this error you need to close the application (back button from the home screen).&lt;/p&gt;
-&lt;h4&gt;Error: Failed to connect to the device. Ensure that the device is completely booted and is connected to the PC.&lt;/h4&gt;
-&lt;p&gt;To resolve this error you need to make sure Zune is running and the device is connected, and unlocked.&lt;/p&gt;
-</description>
+      <description>As I develop my first Windows Phone 7 application, My Video Game Tracker, I want to make sure that the many games I&#39;ve added won&#39;t accidentally be lost (as I&#39;m deploying test versions to my physical phone).</description>
     </item>
     
     <item>
@@ -406,20 +97,7 @@ $global:GitPromptSettings.UntrackedForegroundColor  = [ConsoleColor]::Red&lt;/co
       <pubDate>Sun, 18 Mar 2012 16:11:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Script-to-simplify-Netflix-activity-pages/</guid>
-      <description>&lt;p&gt;I love Netflix, but there&#39;s no easy way to get a listing of the movies I&#39;ve rated through the service.&lt;/p&gt;
-&lt;p&gt;To ease with that, I&#39;ve finally started on a script that will clean the Netflix output, so it&#39;s a bit easier to parse.&lt;/p&gt;
-&lt;p&gt;Fire up Chrome, visit either&amp;nbsp;https://www2.netflix.com/RentalActivity?all=true or&amp;nbsp;https://account.netflix.com/WiViewingActivity?all=true, open a console, and use the following two scripts:&lt;/p&gt;
-&lt;h3&gt;Script 1: Load jQuery&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;var GM_JQ = document.createElement(&#39;script&#39;); 
-GM_JQ.src = &#39;https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&#39;;
-GM_JQ.type = &#39;text/javascript&#39;; 
-document.getElementsByTagName(&#39;head&#39;)[0].appendChild(GM_JQ);&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Script 2: Remove rating graphics&lt;/h3&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;js&#34;&gt;$(&#39;.stbrIl&#39;).hide();
-$(&#39;.stbrMaskFg&#39;).css(&#39;background-image&#39;, &#39;none&#39;).css(&#39;text-indent&#39;, &#39;0&#39;).css(&#39;width&#39;, &#39;200px&#39;).css(&#39;vertical-aign&#39;, &#39;middle&#39;);
-$(&#39;.stbrMaskBg&#39;).css(&#39;background-image&#39;, &#39;none&#39;);&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;There&#39;s still work to be done, but it&#39;s a sufficient start. I&#39;ve thought about a user script, and might implement that once this is done.&lt;/p&gt;
-</description>
+      <description>I love Netflix, but there&#39;s no easy way to get a listing of the movies I&#39;ve rated through the service. To ease with that, I&#39;ve finally started on a script that will clean the Netflix output, so it&#39;s a bit easier to parse.</description>
     </item>
     
     <item>
@@ -428,21 +106,7 @@ $(&#39;.stbrMaskBg&#39;).css(&#39;background-image&#39;, &#39;none&#39;);&lt;/co
       <pubDate>Fri, 18 Nov 2011 19:30:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Migration-from-CollabNet-Subversion-to-VisualSVN-Server/</guid>
-      <description>&lt;p&gt;Since it doesn&#39;t seem CollabNet is really going to keep their non-Edge Subversion application, I&#39;ve decided to migrate to &lt;a rel=&#34;external&#34; href=&#34;http://www.visualsvn.com/server/download/&#34;&gt;VisualSVN Server&lt;/a&gt;. Roughly, here are the steps I went through to migrate, which also includes a 1.6.x upgrade.&lt;/p&gt;
-&lt;p&gt;
-&lt;h3&gt;VisualSVN migration&lt;/h3&gt;
-&lt;p&gt;&lt;ol&gt;
-&lt;li&gt;Installed VisualSVN. Repositories saved to C:\Repositories&lt;/li&gt;
-&lt;li&gt;Setup existing users.&lt;/li&gt;
-&lt;li&gt;Import existing repositories.&lt;/li&gt;
-&lt;li&gt;Should already be upgraded, but upgrade to 1.5, just in case.&lt;/li&gt;
-&lt;li&gt;Upgrade TortoiseSVN.&lt;/li&gt;
-&lt;li&gt;Upgrade working copies to 1.7.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
-&lt;/p&gt;
-&lt;/p&gt;
-</description>
+      <description>Basic steps to migrate from CollabNet Subversion to VisualSVN Server.</description>
     </item>
     
     <item>
@@ -451,31 +115,7 @@ $(&#39;.stbrMaskBg&#39;).css(&#39;background-image&#39;, &#39;none&#39;);&lt;/co
       <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
-      <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
-&lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
-&lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
-&lt;p&gt;Next, I had to add the necessary code to my _layout.cshtml, which also required that I move my jQuery include to the head element. Unfortunate, but ... that&#39;s how it is.&lt;/p&gt;
-&lt;p&gt;Finally, since I only wanted this to show for users in a particular role I added the below to the global.asax.cs:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;protected void Application_BeginRequest()
-{
-    MiniProfiler.Start();
-}
-
-protected void Application_AuthorizeRequest(Object sender, EventArgs e)
-{
-    if (!User.IsInRole(&#34;Administrator&#34;))
-    {
-        MvcMiniProfiler.MiniProfiler.Stop(discardResults: true);
-    }
-}
-
-protected void Application_EndRequest()
-{
-    MiniProfiler.Stop();
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And with that done, I can see that my pages load extremely quick (after the first time of course).&lt;/p&gt;
-&lt;p&gt;I definitely need to do some research to see if I can display the total time for all users, albeit in a slightly different position (footer of the page), as that&#39;s something I wouldn&#39;t mind showing to users.&lt;/p&gt;
-</description>
+      <description>mvc-mini-profiler is pretty slick, and extremely easy to add.</description>
     </item>
     
     <item>
@@ -484,10 +124,7 @@ protected void Application_EndRequest()
       <pubDate>Sat, 02 Apr 2011 19:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/How-to-easily-clear-the-windowapplicationCache-on-select-browsers/</guid>
-      <description>&lt;p&gt;While I was working on tweaking my video game listing, and creating my offline Web application manager, I kept running into issues with the cache manifest holding onto data much longer than I would have liked.&lt;/p&gt;
-&lt;p&gt;After some research I found that Chrome&#39;s interface can easily be found by going to&amp;nbsp;&lt;a rel=&#34;external nofollow&#34; href=&#34;chrome://appcache-internals/&#34;&gt;chrome://appcache-internals/&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;On Safari, on the iPod Touch and iPad, you can stop/close Safari (hold down the home button on the home screen, and close the application) and then start it back up to clear the data. This is slightly unfortunate, since it would be nice if this would stick around after the application is closed, but is sufficient. It also isn&#39;t very obvious, as I spent a good deal of time trying to figure this out before I tried this as a last-ditch effort.&lt;/p&gt;
-</description>
+      <description>How to &#39;easily&#39; clear application cache (cache manifest) data for Chrome, and Safari on i-devices.</description>
     </item>
     
     <item>
@@ -496,28 +133,7 @@ protected void Application_EndRequest()
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
-      <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
-&lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
-&lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
-&lt;p&gt;Files: database.txt (empty), serial.txt (01, then&amp;nbsp;new line), openssl.cnf (based on OpenSSL file)&lt;/p&gt;
-&lt;h3&gt;Step 2: Create key&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; genrsa -des3 -out keys/_ca.key 2048&lt;/p&gt;
-&lt;h3&gt;Step 3: Create certificate authority certificate&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer&lt;/p&gt;
-&lt;h3&gt;Step 4: Create DER for public consumption&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\_ca.cer -outform DER -out certs\_ca.der&lt;/p&gt;
-&lt;h3&gt;Step 5: Create request from IIS&lt;/h3&gt;
-&lt;p&gt;IIS &amp;gt; click on main server, Server Certificates &amp;gt; populate all for request&lt;/p&gt;
-&lt;p&gt;save to requests directory locally&lt;/p&gt;
-&lt;h3&gt;Step 6: Handle request&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs&lt;/p&gt;
-&lt;h3&gt;Step 7: Convert for IIS&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer&lt;/p&gt;
-&lt;h3&gt;Step 8: Add to IIS&lt;/h3&gt;
-&lt;p&gt;back in iis, complete request. use *.x.com if a wildcard for friendly name&lt;/p&gt;
-&lt;p&gt;install _ca.der certificate to Trusted Root Certification Authorities (do on clients as well - see this &lt;a rel=&#34;external&#34; href=&#34;http://www.openssl.org/support/faq.html#USER12&#34;&gt;official FAQ&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;associate actual site with certificate&lt;/p&gt;
-</description>
+      <description>A raw dump of information on how to create a certificate authority and etcetera.</description>
     </item>
     
     <item>
@@ -526,58 +142,7 @@ protected void Application_EndRequest()
       <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
-      <description>&lt;p&gt;This past week I was looking at advanced statistical information about a couple Subversion repositories we use at work.&lt;/p&gt;
-&lt;p&gt;While TortoiseSVN has some basic reporting, the downside is that, out of the box, users must have access to the repository to access this information.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt;, seemingly the most popular solution, works rather well as an alternative to granting this access. The downside (or upside, depending upon your perspective) is that viewers of the report can see what files changed, and how many lines, but not what the actual changes were (outside of the logged message).&lt;/p&gt;
-&lt;p&gt;At least for our implementation, the lines of code statistic, which seems to be stressed in StatSVN, is also fairly useless for specific commits, which in turn throws off the statistics for the entire repository. (We use third-party code, so being the user that committed that code at a couple of different points, that inflated my numbers.)&lt;/p&gt;
-&lt;p&gt;Having worked through part of the process at work, refined it at home, and performed a second implementation at work, I present the following steps to implement StatSVN with a CollabNet Subversion Server installation.&lt;/p&gt;
-&lt;p&gt;Note that these steps, with minor modifications, willl work fine with any Windows and Apache-based installation of Subversion.&lt;/p&gt;
-&lt;h3&gt;The basic steps&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;If using authentication, create a user, if one isn&#39;t already created, that has access to the repositories and that can be used to checkout the repositories to report on.&lt;/li&gt;
-&lt;li&gt;If necessary, download and install the Java 4+ requirement for StatSVN.&lt;/li&gt;
-&lt;li&gt;Download and extract &lt;a rel=&#34;external&#34; href=&#34;http://www.statsvn.org/&#34;&gt;StatSVN&lt;/a&gt; to a directory of your choosing. For example, C:\statsvn&lt;/li&gt;
-&lt;li&gt;Create a directory to store the generated content from StatSVN.&lt;/li&gt;
-&lt;li&gt;Update Apache to allow access to the reports directory (from step 4).&lt;/li&gt;
-&lt;li&gt;Checkout or update a working copy of the repository to report on.&lt;/li&gt;
-&lt;li&gt;Generate the StatSVN reports for the working copy of the repository (from step 6).&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;To make this even easier, I&#39;m including the implementation I&#39;ve setup at home.&lt;/p&gt;
-&lt;h3&gt;Example implementation&lt;/h3&gt;
-&lt;p&gt;StatSVN directory: C:\statsvn&lt;/p&gt;
-&lt;p&gt;StatSVN outputs directory: C:\statsvn\output&lt;/p&gt;
-&lt;p&gt;Working copies of repositories are saved to the C:\statsvn directory (C:\statsvn\&lt;em&gt;repositoryName&lt;/em&gt;).&lt;/p&gt;
-&lt;p&gt;From the command line at &lt;strong&gt;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin&lt;/strong&gt;&amp;nbsp;I ran the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd -m c:\svn_resources\svn-auth-file james-cq5320y&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I was then prompted for a password, which I entered twice. This now gives me an account I can use within a batch file to checkout/update repositories, that is specific to the server.&lt;/p&gt;
-&lt;p&gt;Next the Apache httpd.conf file needed to have the two following additions (where applicable):&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;Alias /stats C:\statsvn\output&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That allows http://server1:8080/stats to point to the appropriate directory.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Directory C:/statsvn/output&amp;gt;
-    Options Indexes
-    allow from all
-&amp;lt;/Directory&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And the above allows the directory structure to be returned (the alternative is to manually create an index page, either static or dynamic), that anyone can access. (Since access to this server is only available on my network, this works fine for my situtation.)&lt;/p&gt;
-&lt;p&gt;Since we&#39;ve modified the Apache configuration we need to restart the service.&lt;/p&gt;
-&lt;p&gt;Next we create the batch file that will generate the StatSVN outputs.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
-svn checkout http://localhost:8080/svn/%repositoryName% --username james-cq5320y --password PASSWORD
-cd %repositoryName%
-svn log -v --xml &amp;gt; ..\%repositoryName%.log
-cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
-REM pause&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After running this a couple of times I felt satisified that it was working correctly, so you&#39;ll see that I commented out the pause.&lt;/p&gt;
-&lt;p&gt;Of course, that works fine for the initial checkout. Once you have a working copy you can simply update, such as shown in the below batch file contents.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;set repositoryName=NorthwindExamples
-cd %repositoryName%
-svn update
-svn log -v --xml &amp;gt; ..\%repositoryName%.log
-cd ..java -jar statsvn.jar -output-dir output\%repositoryName%.Stats %repositoryName%.log %repositoryName%
-pause&lt;/code&gt;&lt;/pre&gt;
-&lt;h3&gt;Optimizations&lt;/h3&gt;
-&lt;p&gt;Of course, some optimizations could be made, as currently this makes a bit of a mess of the StatSVN directory.&lt;/p&gt;
-&lt;p&gt;Because of this I&#39;d recommend creating a directory for the working copy and/or logs generated.&lt;/p&gt;
-</description>
+      <description>While a tool like TortoiseSVN allows limited reporting on Subversion repositories, using a tool like StatSVN generates much more useful reports.</description>
     </item>
     
   </channel>

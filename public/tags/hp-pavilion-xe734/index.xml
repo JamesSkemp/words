@@ -16,31 +16,7 @@
       <pubDate>Fri, 18 Aug 2006 19:19:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-Ubuntu-really-isnt-that-bad-%28assuming-it-can-access-the-file-system-and-your-hard-drive-isnt-toast%29/</guid>
-      <description>&lt;p&gt;
-After attempting at least twice before to install Ubuntu onto a computer, I&amp;#39;ve finally done so this evening.  As Gavin would say, &amp;quot;Woot!&amp;quot;
-&lt;/p&gt;
-&lt;p&gt;
-The first time I attempted an install, it turns out the hard drive is probably toast (not because of Ubuntu).
-&lt;/p&gt;
-&lt;p&gt;
-The second time, I tried on a computer that already had a partial (?) Debian install - Ubuntu couldn&amp;#39;t access the file system, for whatever reason.&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-The third time I just installed the server version.  It worked, but no GUI meant no easy network setup.  I&amp;#39;m a techie, but it takes a whole other kind of person to get Linux that hard-core.
-&lt;/p&gt;
-&lt;p&gt;
-The fourth, and final time, I setup Ubuntu 6.06.1, with no problems (although install was very slow).  The one thing I regret is not having a faster computer to do the install on.  The machine I&amp;#39;m using is an old HP Pavilion XE734 with perhaps a slight RAM upgrade.  It&amp;#39;s not that bad, it&amp;#39;s just not as fast as I&amp;#39;d like.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ve got a faster computer with more RAM sitting around, but I really don&amp;#39;t want to use it, since it does have XP SP2 ...  If push comes to shove, however, that&amp;#39;s probably what I&amp;#39;ll end up using.
-&lt;/p&gt;
-&lt;p&gt;
-I was hoping to use my sister&amp;#39;s machine, which appeared to have Windows-related issues, but unfortunately it looks like it was really the hard drive.  Transplanting it into another system resulted in the same problem - the inability to boot.  I&amp;#39;ll have to try yet a different hard drive in her box to verify that it&amp;#39;s not the graphics card (as I originally thought), and then we can go in the direction of picking up a hard drive for her, or giving her one of my own.
-&lt;/p&gt;
-&lt;p&gt;
-Either way, I think Ubuntu will be a good choice for her.  It may not give her all that she&amp;#39;d like, as far as programs, but it&amp;#39;ll be secure and allow her to email and etcetera.
-&lt;/p&gt;
-</description>
+      <description>After a bit of trouble, I&#39;ve got a box with Ubuntu installed on it. Woot!</description>
     </item>
     
     <item>
@@ -49,16 +25,7 @@ Either way, I think Ubuntu will be a good choice for her.  It may not give her a
       <pubDate>Sat, 20 May 2006 09:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/First-Debian-install-3D-unsuccessful/</guid>
-      <description>&lt;p&gt;
-My first shot at installing Debian didn&amp;#39;t go quite so well.  I&amp;#39;m attempting to install on a HP Pavilion XE734, using pretty much the base system.  One addition appears to be a 3Com Fast Etherlink PCI card, from the late 90s ... (3C595-TX).&lt;!--adsense--&gt;
-&lt;/p&gt;
-&lt;p&gt;
-My hope is to get this installed fairly quickly, and have instructions for anyone else that may have this model, and may want to do a similar installation.  I&amp;#39;m surprised by the lack of a site that documents which base systems people were able to install various flavours of Linux on.  After all, not everyone who installs Linux does so on a custom-built machine ... right?
-&lt;/p&gt;
-&lt;p&gt;
-Guess I&amp;#39;ll spend some time Sunday night doing a new installation, after clearing my hard drive of the initial shot.  I don&amp;#39;t really want to buy a new(er) machine just to install a flavour of Linux, but I guess I may have to ...  There&amp;#39;s always a couple other flavours of non-Windows OS that I have laying about - and I have a fast enough connection and enough blank CDs to burn a number more.
-&lt;/p&gt;
-</description>
+      <description>My first shot at installing Debian didn&#39;t go quite so well. I&#39;m attempting to install on a HP Pavilion XE734, using pretty much the base system.</description>
     </item>
     
   </channel>

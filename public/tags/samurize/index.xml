@@ -16,33 +16,7 @@
       <pubDate>Sun, 21 Mar 2010 13:01:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Samurize-configurations-across-my-systems/</guid>
-      <description>&lt;p&gt;One of the applications that I consistently run across all my machines is Serious Samurize. After first finding it, years and years ago, it&#39;s quickly become a requirement&amp;nbsp;for getting work done.&lt;/p&gt;
-&lt;p&gt;While some people may have much &lt;a rel=&#34;external&#34; href=&#34;http://forums.samurize.us/index.php?app=gallery&#34;&gt;prettier, and extensive, configurations&lt;/a&gt;, I prefer something that I can let sit on my screen on top of everything&amp;nbsp;(assuming Windows doesn&#39;t let other applications bump on top of it every once in a while), giving me only the information I need. However, each still ends up being slightly different.&lt;/p&gt;
-&lt;p&gt;What follows is a listing of my machines, a preview of what the config looks like, with details about placement and what&#39;s where.&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The captures below are from the Samurize config editor. Black or grey is used as the background for semi-consistency.&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;Home configuration - Windows XP Home - PC&lt;/h3&gt;
-&lt;p&gt;&lt;img title=&#34;Samurize configuration on Windows XP Home (home PC)&#34; src=&#34;http://media.jamesrskemp.com/graphics/samurize/Config-WindowsXpPc.png&#34; alt=&#34;Samurize configuration on Windows XP Home (home PC)&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;ve had this configuration the longest and I&#39;m pretty happy with it. It sits on the bottom center of my screen (the only non-widescreen monitor I use). The blue in the far left graph is the same blue on my background (solid color).&lt;/p&gt;
-&lt;p&gt;From left to right we have; CPU usage over time, current memory used (there&#39;s 2 GB on that machine, so the fill is off), network traffic currently followed by total network traffic since the last reboot, hard drive usage (only one drive on this machine), uptime since the last reboot, date and time (which sometimes gets stuck on this machine, probably because I reboot/shut down&amp;nbsp;only when I have to for updates). Had to add the background so that I could see this, this being the only one that sits on the bottom of the screen.&lt;/p&gt;
-&lt;p&gt;(Before Windows Vista and Windows 7 I put all my start bars on the top of the screen. I could get away with keeping Samurize on the top at work because I put it on my second screen, but wasn&#39;t so lucky with my home machine.)&lt;/p&gt;
-&lt;h3&gt;Home configuration - Windows 7 Home Premium - PC&lt;/h3&gt;
-&lt;p&gt;&lt;img title=&#34;Samurize configuration on Windows 7 Home Premium (home PC)&#34; src=&#34;http://media.jamesrskemp.com/graphics/samurize/Config-Windows7Pc.png&#34; alt=&#34;Samurize configuration on Windows 7 Home Premium (home PC)&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;I haven&#39;t had this configuration very long. It sits in the top center of my main, left, monitor.&lt;/p&gt;
-&lt;p&gt;From left to right we have; memory usage (it was nicer when I only had 4 GB - having recently upgraded to 6 GB I need to go back in and split that into 6 sections), processor 1 and 2 usage (like the next one, I like how the two meet in the middle and work their way out), current upload (top) and download graphically, textually, and since last reboot.&lt;/p&gt;
-&lt;p&gt;With two fairly large hard drives, I don&#39;t care too much about space on this box, and I&#39;ve yet to keep this machine on for more than 12 hours, if that, so uptime doesn&#39;t matter either. I&#39;m tempted to grab a plugin that displays what iTunes is playing, but I haven&#39;t been pushed over the edge yet.&lt;/p&gt;
-&lt;h3&gt;Home configuration - Windows 7 Home Premium - Laptop&lt;/h3&gt;
-&lt;p&gt;&lt;img title=&#34;Samurize configuration on Windows 7 Home Premium (home laptop)&#34; src=&#34;http://media.jamesrskemp.com/graphics/samurize/Config-Windows7Laptop.png&#34; alt=&#34;Samurize configuration on Windows 7 Home Premium (home laptop)&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This is a configuration I&#39;ve had&amp;nbsp;a very short time, and one that I&#39;m not quite happy with. This sits in the top center of the screen.&lt;/p&gt;
-&lt;p&gt;I made this very barebones, so it&#39;s obvious, but to be consistent, from left to right we have; hard drive usage (I believe that&#39;s free as opposed to full though), total CPU usage,&amp;nbsp;memory usage, download and upload graphically, and textually.&lt;/p&gt;
-&lt;p&gt;I mostly use this for browsing, so having network activity much more visible, as well as showing total down/up, would make this much nicer.&lt;/p&gt;
-&lt;h3&gt;Work configuration - Windows XP Professional - PC&lt;/h3&gt;
-&lt;p&gt;&lt;img title=&#34;Samurize configuration on Windows XP Professional (work PC)&#34; src=&#34;http://media.jamesrskemp.com/graphics/samurize/Config-WindowsXpPc_Work.png&#34; alt=&#34;Samurize configuration on Windows XP Professional (work PC)&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;I&#39;ve had this for a little while, and the only thing I wish is that I could see a larger network graph, since I regularly get a horizontal line when moving files over the network. This sits in the top center of my right, secondary, monitor, which is also where I commonly do development in Dreamweaver and Visual Studio (except during my recent days of converting ColdFusion pages to ASP.NET, where VS stays in the right monitor).&lt;/p&gt;
-&lt;p&gt;Again, pretty obvious, but from left to right we have; hard drive free (it&#39;s a tiny drive, and for a while I kept running out of space), CPU usage, memory usage, network activity down and up graphically, textually, and since the last reboot. This sits on top of other applications that I regularly use, so I dropped in a slight background so that I could see it and drag it about, if needed.&lt;/p&gt;
-&lt;p&gt;I have to restart this machine each night when I go home or it gets bogged down, and once again, there&#39;s 3 GB of memory in this machine, so the graphic is incorrect.&lt;/p&gt;
-</description>
+      <description>The Serious Samurize configurations I have setup on the various machines I use.</description>
     </item>
     
   </channel>

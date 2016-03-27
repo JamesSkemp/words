@@ -16,12 +16,7 @@
       <pubDate>Sun, 07 Feb 2010 10:00:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Using-F8-on-Sun-VirtualBox-312-when-installing-Windows-XP/</guid>
-      <description>&lt;p&gt;For various reasons, I had need to install Windows XP on a new virtual machine earlier today (with Windows 7&amp;nbsp;64-bit&amp;nbsp;as the host).&lt;/p&gt;
-&lt;p&gt;For whatever reason, when getting to the point of accepting the licensing terms, before installation, I was unable to&amp;nbsp;use the F8 key. After searching about,&amp;nbsp;I found&amp;nbsp;a number of Mac and Ubuntu users with the same issue, but no Windows users. The left control, shift, alt, and even right control (which I knew wasn&#39;t going to work, but an Ubuntu user swore by it and I was out of options) buttons did nothing to help.&lt;/p&gt;
-&lt;p&gt;However, the often-used (ah, sarcasm) &#34;F Lock&#34; key was what finally did it.&lt;/p&gt;
-&lt;p&gt;But what the heck if the F Lock key in the first place? &lt;a rel=&#34;external&#34; href=&#34;http://jtsang.mvps.org/flock.html&#34;&gt;Turns out&lt;/a&gt; it&#39;s a Microsoft keyboard key, and which seems utterly useless.&lt;/p&gt;
-&lt;p&gt;Did the presence of this key cause the issue? Or is this a common issue that Windows users don&#39;t report? Or were the Mac/Linux questions so plentiful that they bumped the Windows users?&lt;/p&gt;
-</description>
+      <description>How I ended up getting VirtualBox 3.1.2 to understand the F8 key when installing Windows XP.</description>
     </item>
     
     <item>
@@ -30,35 +25,7 @@
       <pubDate>Fri, 03 Jul 2009 10:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/</guid>
-      <description>&lt;p&gt;For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&amp;nbsp;and that&amp;nbsp;may or may not be helpful.&lt;/p&gt;
-&lt;p&gt;Luckily, CollabNet offers certified binaries of &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/products/subversion/&#34;&gt;Subversion&lt;/a&gt;, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft&#39;s, there&#39;s really no question on what your first choice should be.&lt;/p&gt;
-&lt;p&gt;In this article I&#39;ll be going over the base installation of CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3.16613, on Windows Server 2003 R2 Enterprise Edition, Service Pack 2, running on Sun VirtualBox. Screenshots are available by clicking on the appropriate links. (Due to the size, they are not included here, but I might do some jQuery to have them display nicely, at some point.)&lt;/p&gt;
-&lt;h3&gt;Downloading installers&lt;/h3&gt;
-&lt;p&gt;The first step is to download the installers for &lt;a rel=&#34;external&#34; href=&#34;http://www.open.collab.net/downloads/subversion/&#34;&gt;CollabNet Subversion Server&lt;/a&gt; and &lt;a rel=&#34;external&#34; href=&#34;http://tortoisesvn.net/downloads&#34;&gt;TortoiseSVN&lt;/a&gt;. At this time, the current versions of each are 1.6.3.&lt;/p&gt;
-&lt;h3&gt;Installing CollabNet Subversion Server&lt;/h3&gt;
-&lt;p&gt;CollabNet Subversion Server relies upon Apache to serve repositories, due to the various benefits (security and etcetera) that it provides. However, for this installation I&#39;ll assume that you want to keep IIS running and available.&lt;/p&gt;
-&lt;p&gt;Start the installer and read and click Next on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_01.jpg&#34;&gt;first&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_02.jpg&#34;&gt;second&lt;/a&gt; screens. On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_03.jpg&#34;&gt;third&lt;/a&gt; screen you&#39;ll be able to choose whether you want svnserve to run as a Windows service, as well as Apache. For these, you want to keep the default of having both checked.&lt;/p&gt;
-&lt;p&gt;Assuming you&#39;ve done that correctly, on the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_04.jpg&#34;&gt;fourth screen&lt;/a&gt;&amp;nbsp;you&#39;ll be able to choose what port Subversion should use (default is 3690) and the directory to store repositories (default is c:\svn_repository).&lt;/p&gt;
-&lt;p&gt;On the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_05.jpg&#34;&gt;next screen&lt;/a&gt; you&#39;ll setup Apache. If you wish to continue running IIS on port 80, you&#39;ll need to use a different port (80 changed to 8080 in my case) and/or change the host to a name that IIS is not using. You&#39;ll also set where the repositories are being stored (from the previous screen) and what path to use when navigating via HTTP.&lt;/p&gt;
-&lt;p&gt;You can also enable viewVC, but Active Python 2.5 must be installed. By default viewVC is not enabled (and I don&#39;t go through that installation here).&lt;/p&gt;
-&lt;p&gt;Finally, you&#39;ll choose the location to install CollabNet Subversion Server on &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_06.jpg&#34;&gt;screen six&lt;/a&gt;, and be presented with the &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_07.jpg&#34;&gt;Finished screen&lt;/a&gt; once the installation is complete, which includes links to CollabNet products and services.&lt;/p&gt;
-&lt;p&gt;A &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_08.jpg&#34;&gt;restart&lt;/a&gt; will be required in order to start the necessary services. Once the restart is complete you can verify that you can access Apache through the browser, as well as run the &lt;code&gt;svnadmin --version&lt;/code&gt; command to verify that Subversion is installed. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/collabnetsubversion_1.6.3_install_09.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
-&lt;h3&gt;Installing TortoiseSVN&lt;/h3&gt;
-&lt;p&gt;The next step is to install TortoiseSVN. &lt;a href=&#34;http://strivinglife.com/words/?tag=/tortoisesvn&#34;&gt;I&#39;ve covered TortoiseSVN&lt;/a&gt; a number of times on this site, and installing this version isn&#39;t much different.&lt;/p&gt;
-&lt;p&gt;Accepting the defaults will get you through the install process (captures: &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_01.jpg&#34;&gt;1&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_02.jpg&#34;&gt;2&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_03.jpg&#34;&gt;3&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_04.jpg&#34;&gt;4&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_05.jpg&#34;&gt;5&lt;/a&gt;, &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_06.jpg&#34;&gt;6&lt;/a&gt;), and you&#39;ll need to &lt;a href=&#34;http://media.jamesrskemp.com/graphics/tortoisesvn/tortoisesvn_1.6.3_install_07.jpg&#34;&gt;restart&lt;/a&gt; once the installation is complete.&lt;/p&gt;
-&lt;h3&gt;Testing repository creation and usage&lt;/h3&gt;
-&lt;p&gt;At this point, you should be set to begin working with Subversion.&lt;/p&gt;
-&lt;p&gt;Create &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_01.jpg&#34;&gt;a new directory&lt;/a&gt; in your repository directory (default is C:\svn_repository). Then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_02.jpg&#34;&gt;right-click on the directory&lt;/a&gt; and select TortoiseSVN &amp;gt; Create repository here.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;http://media.strivinglife.com/graphics/collabnet_subversion/repotest_03.jpg&#34;&gt;repository will be created&lt;/a&gt;, and you can &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_04.jpg&#34;&gt;verify&lt;/a&gt; by opening the directory as well as navigating to it via HTTP.&lt;/p&gt;
-&lt;p&gt;We can now checkout a copy by right-clicking anywhere and selecting &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_05.jpg&#34;&gt;SVN Checkout ...&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Enter the URL of the repository and a checkout directory to continue. &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_06.jpg&#34;&gt;See this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You should then be able to browse to that path and see that you have &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_07.jpg&#34;&gt;a current directory&lt;/a&gt;. You can then &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_08.jpg&#34;&gt;create a test file&lt;/a&gt; and &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_09.jpg&#34;&gt;commit&lt;/a&gt; your &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_10.jpg&#34;&gt;changes&lt;/a&gt; to verify things are &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_11.jpg&#34;&gt;working correctly&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can make &lt;a href=&#34;http://media.jamesrskemp.com/graphics/collabnet_subversion/repotest_13.jpg&#34;&gt;another change&lt;/a&gt;, verify that things commit, and then browse, via HTTP or the repository browser, to ensure that you&#39;re at the appropriate number of commits.&lt;/p&gt;
-&lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;And with that, you&#39;ve successfully installed CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3. Now you just need to use Subversion during development.&lt;/p&gt;
-&lt;p&gt;CollabNet also offers free tools for Eclipse and Visual Studio, to help you integrate with your favorite IDE.&lt;/p&gt;
-&lt;p&gt;You can also play around with the security options that are available due to Apache, to make Subversion as secure as you need it.&lt;/p&gt;
-</description>
+      <description>In this article I install CollabNet Subversion Server 1.6.3, with TortoiseSVN 1.6.3, on Windows Server 2003 R2, Enterprise Edition, Service Pack 2.</description>
     </item>
     
     <item>
@@ -67,19 +34,7 @@
       <pubDate>Thu, 02 Jul 2009 14:59:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Multiple-network-adapters-in-VirtualBox-for-Windows-guests/</guid>
-      <description>&lt;p&gt;Having just upgraded to VirtualBox 3.0.0, I was running into an issue with being able to access a Windows Server 2003 guest from my Windows Vista host machine.&lt;/p&gt;
-&lt;p&gt;By default, when creating a Windows Server 2003 guest machine the Network settings are set such that Adapter 1 is PCnet-FAST III, attached to NAT. This allows the virtual machine to get outside, but not in.&lt;/p&gt;
-&lt;p&gt;However, it&#39;s possible to add a second adapter, attached to the host-only adapter. In this way you can access the outside world, as well as allow your host machine to access the guest via it&#39;s host-only ip (192.168.56.x, for example).&lt;/p&gt;
-&lt;p&gt;Unfortunately, there seems to be no way to set this on all future machines you create.&lt;/p&gt;
-&lt;h3&gt;Windows Server 2008&lt;/h3&gt;
-&lt;p&gt;The same, with a different adapter (use the default), is possible on Windows Server 2008, as well. If you&#39;re testing via ping-only (you&#39;ve just set it up, for example) then you can temporarily disable the firewall for the specific adapter you setup&amp;nbsp;as&amp;nbsp;using the&amp;nbsp;host-only adapter. Pinging the ip (from ipconfig) should then work, and provide the correct ip.&lt;/p&gt;
-&lt;h3&gt;Windows 7 RC&lt;/h3&gt;
-&lt;p&gt;As with Windows Server 2008, you&#39;ll need to turn off the firewall to allow pings by ip or computer name. Unfortunately, unlike Windows Server 2008, individual adapters do not seem to be listed in 7, so you&#39;ll either need to play with it, or just turn off the firewall for each network listed.&lt;/p&gt;
-&lt;h3&gt;For future use ...&lt;/h3&gt;
-&lt;p&gt;In the VirtualBox documentation, they have a pretty nice example of a network setup.&lt;/p&gt;
-&lt;p&gt;In this example there is a Web server and a database server. Both are setup as a host-only network. The Web server has an additional, bridged, network. This nicely cuts off the database server from the outside world.&lt;/p&gt;
-&lt;p&gt;Along these same lines, instead of using NAT for the first adapter, and having to create a second adapter, we could always just change to a bridged network. However, for my development needs, I don&#39;t see a reason to do so.&lt;/p&gt;
-</description>
+      <description>Setting up a second adapter for Windows guests in VirtualBox is easy, and seemingly safe.</description>
     </item>
     
     <item>
@@ -88,18 +43,7 @@
       <pubDate>Sat, 27 Jun 2009 16:21:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/</guid>
-      <description>&lt;p&gt;As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&amp;nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs.&lt;/p&gt;
-&lt;p&gt;With the core install, it&#39;s not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you&#39;ll be prompted to add&amp;nbsp;a password.&lt;/p&gt;
-&lt;p&gt;This is different than the full install, which will immediately bring you to the password change screen, with Administrator already selected.&lt;/p&gt;
-&lt;p&gt;To shutdown the machine at the prompt, enter the following at the command line:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code&gt;Shutdown -s -t 0&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This shuts the machine down after 0 seconds. Enter -r instead of -s to do a reboot.&lt;/p&gt;
-&lt;p&gt;I haven&#39;t played with the core install beyond this.&lt;/p&gt;
-&lt;p&gt;The full install will immediately tell you, much like Server 2003, what you should do after installing. Run updates, select your timezone, etcetera.&lt;/p&gt;
-&lt;p&gt;No features or roles will be enabled, unless you update the .NET Framework (which will be recommended) and then you&#39;ll have .NET enabled afterwards.&lt;/p&gt;
-&lt;p&gt;Since I wanted to setup base installs, I decided to have Windows &#34;Check for updates but let me choose whether to download and install them.&#34;&lt;/p&gt;
-&lt;p&gt;Additions installed fine on full install, but I didn&#39;t try on the core installation.&lt;/p&gt;
-</description>
+      <description>Notes on getting base installs ready of Windows Server 2008 Standard Edition, on VirtualBox 2.2.4.</description>
     </item>
     
   </channel>

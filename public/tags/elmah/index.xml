@@ -16,13 +16,7 @@
       <pubDate>Mon, 23 Aug 2010 13:44:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/</guid>
-      <description>&lt;p&gt;My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.&lt;/p&gt;
-&lt;p&gt;I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&amp;nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying &#34;ASP.NET runtime error: Could not load file or assembly &#39;System.Data.SQLite&#39; or one of its dependencies. An attempt was made to load a program with an incorrect format.&#34;&lt;/p&gt;
-&lt;p&gt;While my low-end desktop has Server 2008 R2 installed on it for research and development purposes (thank you MSDN subscription), having a laptop means I won&#39;t always have this resource available. So, since &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/1278929/could-not-load-file-or-assembly-system-data-sqlite&#34;&gt;Stack Overflow&lt;/a&gt; states that this is an issue with Cassini, and I&#39;m running Windows 7 Home Premium, it was time to install IIS 7 on the machine. After a minimal click in the Control Panel and with the hep of Microsoft Web Platform Installer, my IIS instance was setup correctly.&lt;/p&gt;
-&lt;p&gt;Unfortunately, that requires that Visual Studio 2010 run as administrator (I was afraid I was going to have to update each of my pinned solutions; thankfully you need to (and can only) update this on the main application shortcut), and my MVC 2 project was failing horribly.&lt;/p&gt;
-&lt;p&gt;Instead of trying to debug this further I kept searching and found another post on &lt;a rel=&#34;external&#34; href=&#34;http://stackoverflow.com/questions/2814101/unwanted-sqlite-inserted-in-bin&#34;&gt;Stack Overflow&lt;/a&gt;. After updating my&amp;nbsp;&#39;shared&#39; directory to contain a folder with all of the&amp;nbsp;ELMAH files and&amp;nbsp;another with just the necessary ones, I&#39;m happy to report the errors (warnings)&amp;nbsp;are gone.&lt;/p&gt;
-&lt;p&gt;My one site is still a mash of the old and new, so I had to manually remove the items from the Bin directory to verify, but things seem just fine.&lt;/p&gt;
-</description>
+      <description>I recently added ELMAH to an ASP.NET MVC 2 site, but started getting Visual Studio 2010 warnings after. Here&#39;s how I resolved the issue.</description>
     </item>
     
   </channel>

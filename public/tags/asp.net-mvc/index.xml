@@ -16,25 +16,7 @@
       <pubDate>Sat, 20 Aug 2011 14:04:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-3/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following is a review of &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt;, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Having used ASP.NET MVC since around the time 1.0 was released I was a little interested in what Professional ASP.NET MVC 3 would bring to someone like myself. Would this book provide enough new content to someone like me who&amp;rsquo;s tried to keep up on the framework? So when I was contacted by someone at Wiley to receive a copy for review I was of course interested.&lt;/p&gt;
-&lt;p&gt;The following review will take into consideration my particular experience with the framework. For new users I highly recommend you stick with the music store tutorial available from the official ASP.NET MVC Web site. Unlike &lt;a href=&#34;http://strivinglife.com/words/post/Review-Professional-ASPNET-MVC-10.aspx&#34;&gt;Professional ASP.NET MVC 1.0&lt;/a&gt; this book does not contain a full tutorial to get you started. Also, this is one of my longer reviews, so if you just want to skip ahead the last three chapters provide a summary of my thoughts.&lt;/p&gt;
-&lt;p&gt;Professional ASP.NET MVC 3 consists of 14 chapters and an index, over the course of 400 pages. There are significantly fewer images than one might expect, but don&amp;rsquo;t worry, that&amp;rsquo;s a good thing, as there&amp;rsquo;s a good deal of text and code.&lt;/p&gt;
-&lt;p&gt;Speaking of code you&amp;rsquo;ll find they&amp;rsquo;ve used NuGet to distribute some code examples, but this seems to be based on whether the author choose to use it than being something consistent throughout the book. (I think you too will know which author wrote particular chapters/sections based upon whether NuGet code is available.) Speaking of authors there are four who worked together on this book, and I was pleasantly surprised to see that each chapter&amp;rsquo;s author was noted.&lt;/p&gt;
-&lt;p&gt;As is the case with Wrox books, the physical book itself is top notch.&lt;/p&gt;
-&lt;p&gt;Given that this version of the book isn&amp;rsquo;t for beginners I was a little alarmed after reading chapters 1 and 2, as they contained a large amount of introductory content within.&amp;nbsp;Chapter 3 finally started including some newer information within, but again there was still a lot of introductory content contained within. I&amp;rsquo;ve noted that chapter 4 seems to go back to the review of introductory topics, like chapter 1 and 2.&lt;/p&gt;
-&lt;p&gt;In fact, I would argue that it isn&amp;rsquo;t until chapter 7 that we start getting into the more &amp;lsquo;professional&amp;rsquo; topics, with information about securing your application (including a note about vulnerabilities with MVC 2 code, which I hadn&amp;rsquo;t seen mentioned previously). I also found chapter 8, regarding AJAX, to be a rather great chapter.&lt;/p&gt;
-&lt;p&gt;Chapter 9 takes us back to more introductory topics when it discusses routing, but it does contain a deeper look into more advanced routing, and is written by Phil Haack, so you couldn&amp;rsquo;t ask for much more.&lt;/p&gt;
-&lt;p&gt;Chapter 10 covers NuGet, but outside of creating and distributing packages (which most people won&amp;rsquo;t do), the information can easily be found in introductory tutorials.&lt;/p&gt;
-&lt;p&gt;And now we get to the part where the more advanced topics are covered. Chapters 11 through 13 cover dependency injection, unit testing, and extending MVC. For the first two these are items which &amp;lsquo;professional&amp;rsquo; developers should be using, according to some schools of thought. However, if you&amp;rsquo;ve already researched these items and made the decision not to go down this path (at this time or ever), these chapters won&amp;rsquo;t sway you.&lt;/p&gt;
-&lt;p&gt;Chapter 11 could really benefit with a unified example, and chapter 12&amp;rsquo;s shining point are the ASP.NET MVC-specific tips and tricks. Chapter 13 covers the extendability of MVC, but it is my opinion that the majority of people won&amp;rsquo;t have to go down this route very often, if it all.&lt;/p&gt;
-&lt;p&gt;Finally we get to the last chapter, chapter 14. The title, &amp;ldquo;Advanced Topics,&amp;rdquo; would work much better as a section. Instead we have a number of topics consolidated into one chapter instead of mini-chapters for each. What&amp;rsquo;s really telling is the first chapter where we read that &amp;ldquo;[t]here are a lot of really cool advanced topics we glossed over to avoid getting lost in the weeds as we covered the fundamentals of ASP.NET MVC.&amp;rdquo; Is this an ASP.NET MVC fundamentals, or professional book?&lt;/p&gt;
-&lt;p&gt;Maybe I&amp;rsquo;m reading too much into it, but this really seems to suggest that this isn&amp;rsquo;t so much a &amp;lsquo;professional ASP.NET MVC&amp;rsquo; book, but rather a collection of really cool or advanced features of ASP.NET MVC. So this is not like their &amp;lsquo;Beginning/Professional _&amp;rsquo; series of books, but rather another type altogether. So, unlike that series, just because you&amp;rsquo;ve read the music store tutorial does not necessarily mean that your next step is this book. Instead you&amp;rsquo;re much more likely to find what you need next online, perhaps even on the blogs of the writers. Later, as you try to move closer to the metal you might find use for the techniques covered in this book, but once again you&amp;rsquo;re more likely to find what you need already online (and rare is the need for more than one of the book&amp;rsquo;s topics to be required at that particular moment in time).&lt;/p&gt;
-&lt;p&gt;As such, as much as I&amp;rsquo;d like to give this book 4 stars I find myself needing to give it only 3. I consider this much more of a reference book when you need to start digging in closer to the metal. Perhaps if the book took the music store application (something it starts with and then seems to forget as the book progresses) and built upon it with the more advanced information contained within the book would have a wider appeal. But as it is the content of the book ranges oddly between beginner topics and much more specific information.&lt;/p&gt;
-&lt;p&gt;For these reasons I give &lt;a rel=&#34;external&#34; href=&#34;http://www.amazon.com/gp/product/1118076583?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 3&lt;/a&gt; 3 of 5 stars.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Professional ASP.NET MVC 3, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen.</description>
     </item>
     
     <item>
@@ -43,31 +25,7 @@
       <pubDate>Fri, 24 Jun 2011 23:30:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/mvc-mini-profiler-for-users-in-a-particular-role/</guid>
-      <description>&lt;p&gt;When Jeff Atwood announced the release of the&amp;nbsp;&lt;a rel=&#34;external&#34; href=&#34;http://code.google.com/p/mvc-mini-profiler/&#34;&gt;mvc-mini-profiler&lt;/a&gt; for ASP.NET MVC Web sites I was intrigued. Just the other day he wrote an article &lt;a rel=&#34;external&#34; href=&#34;http://www.codinghorror.com/blog/2011/06/performance-is-a-feature.html&#34;&gt;Performance is a Feature&lt;/a&gt; and I decided I could hold off no longer.&lt;/p&gt;
-&lt;p&gt;Tonight (for better or worse) I finally got this up and running on &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;one of my sites&lt;/a&gt;, and fully intend on adding it to at least one more.&lt;/p&gt;
-&lt;p&gt;To install it I naturally used NuGet, but note that it&#39;s called MiniProfiler there.&lt;/p&gt;
-&lt;p&gt;Next, I had to add the necessary code to my _layout.cshtml, which also required that I move my jQuery include to the head element. Unfortunate, but ... that&#39;s how it is.&lt;/p&gt;
-&lt;p&gt;Finally, since I only wanted this to show for users in a particular role I added the below to the global.asax.cs:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;protected void Application_BeginRequest()
-{
-    MiniProfiler.Start();
-}
-
-protected void Application_AuthorizeRequest(Object sender, EventArgs e)
-{
-    if (!User.IsInRole(&#34;Administrator&#34;))
-    {
-        MvcMiniProfiler.MiniProfiler.Stop(discardResults: true);
-    }
-}
-
-protected void Application_EndRequest()
-{
-    MiniProfiler.Stop();
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And with that done, I can see that my pages load extremely quick (after the first time of course).&lt;/p&gt;
-&lt;p&gt;I definitely need to do some research to see if I can display the total time for all users, albeit in a slightly different position (footer of the page), as that&#39;s something I wouldn&#39;t mind showing to users.&lt;/p&gt;
-</description>
+      <description>mvc-mini-profiler is pretty slick, and extremely easy to add.</description>
     </item>
     
     <item>
@@ -76,21 +34,7 @@ protected void Application_EndRequest()
       <pubDate>Sun, 23 May 2010 17:27:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Second-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
-      <description>&lt;p&gt;After &lt;a href=&#34;http://strivinglife.com/words/post/First-Web-site-ported-over-to-ASPNET-MVC-2.aspx&#34;&gt;converting one Web site over to ASP.NET MVC 2 yesterday&lt;/a&gt;, I ported my second one today.&lt;/p&gt;
-&lt;p&gt;The first Web site was originally just a bunch of static HTML pages, so it was fairly easy to move over. This one, &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;, gets all of its data from a collection of XML files. Using LINQ to XML the files are read and parsed out to the page, using a Repeater control.&lt;/p&gt;
-&lt;p&gt;Unfortunately, when I was creating the site I had run into issues with that Repeater control not acting as I would have liked. Luckily, now that I&#39;ve moved to ASP.NET MVC those issues have been eliminated.&lt;/p&gt;
-&lt;p&gt;While the addresses changed for every page save the home page (and the static content), the Web.config was more than able to handle these via some httpRedirect elements.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;configuration&amp;gt;
-    &amp;lt;location path=&#34;LogParserExpressions.aspx&#34;&amp;gt;
-        &amp;lt;system.webServer&amp;gt;
-            &amp;lt;httpRedirect enabled=&#34;true&#34; destination=&#34;/Expressions&#34; exactDestination=&#34;true&#34; childOnly=&#34;true&#34; httpResponseStatus=&#34;Permanent&#34;/&amp;gt;
-        &amp;lt;/system.webServer&amp;gt;
-    &amp;lt;/location&amp;gt;
-&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Memory usage didn&#39;t jump as much as for the static site, but there was still an increase from approximately 14 K (with all pages visited) to a little under 29 K (again with all pages visited).&lt;/p&gt;
-&lt;p&gt;On the bright side, it&#39;s highly likely that I&#39;ll now add additional functionality to the site. However, I believe I&#39;ll need to tweak the data access classes a bit before I go too far down that path.&lt;/p&gt;
-&lt;p&gt;Overall, I&#39;m happy to be able to move away from Web Forms for this site.&lt;/p&gt;
-</description>
+      <description>Thoughts on porting a second Web site over to ASP.NET MVC 2.</description>
     </item>
     
     <item>
@@ -99,15 +43,7 @@ protected void Application_EndRequest()
       <pubDate>Sun, 23 May 2010 08:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/First-Web-site-ported-over-to-ASPNET-MVC-2/</guid>
-      <description>&lt;p&gt;On Saturday (when I&#39;m actually writing this, but I can&#39;t have 3 posts on one day, after my posting history the last handful of months) I finally ported a Web site over to ASP.NET MVC.&lt;/p&gt;
-&lt;p&gt;The existing Web site was for a client who just needs a simple, static, Web site, with a half dozen areas for content. However, if they were given the ability to directly post content to the site - news, specials, etcetera - I believe they might. There&#39;s also a weekly update that I perform that I wanted to simplify&amp;nbsp;- not that it takes much time now - but that I didn&#39;t really do in this port, but now at least can.&lt;/p&gt;
-&lt;p&gt;There were perhaps 6 or 7 static HTML files, each&amp;nbsp;of which, save one, was in its own sub-directory. On IIS 7.5, the application pool serving the site used approximately 6188 K of memory. Approximately. I used a mix of Visual Studio 2008 and Notepad to update the site, with Visual Studio 2010 being swapped in for the former the day after the final release. FTP was used to move the changed files to the production server.&lt;/p&gt;
-&lt;p&gt;I used Visual Studio 2010 to create the new site, and the Web publish functionality to, at the moment, publish it locally for FTPing it to the server. This might change, or I might just push the one View and two or four files that I need to push. I&#39;ll probably see what happens when I make that update.&lt;/p&gt;
-&lt;p&gt;Memory usage on the server for the application pool is now approximately 22348 K, with it jumping below that every so often.&lt;/p&gt;
-&lt;p&gt;For converting the static site over, it wasn&#39;t all that bad. I did have some repository cleanup to do as well, so I believe it took me just short of 2 hours, including some time researching on whether I could redirect a request to another Web site entirely using routing. I seem to recall Scott Hanselman had mentioned this in one of his videos, but it may have just been on redirecting to a Web forms page instead.&lt;/p&gt;
-&lt;p&gt;Overall, I&#39;m pretty happy with the move, although now that I know memory usage jumped 16 M with ASP.NET MVC 2 being used (&lt;em&gt;without&lt;/em&gt; any login functionality, by the way), I&#39;m not sure I would have switched this particular site over so quickly. But there&#39;s only two others that I could have moved over, and one is going to be a pain, and the other is going to involve a level of complexity that this one did not.&lt;/p&gt;
-&lt;p&gt;I&#39;ve known since &lt;a href=&#34;http://strivinglife.com/words/post/Review-Professional-ASPNET-MVC-10.aspx&#34;&gt;October&lt;/a&gt; that I really wanted to work almost exclusively in ASP.NET MVC for the Web; I&#39;m glad I&#39;m finally able to start moving in that direction.&lt;/p&gt;
-</description>
+      <description>Thoughts on porting my first Web site over to ASP.NET MVC.</description>
     </item>
     
     <item>
@@ -116,25 +52,7 @@ protected void Application_EndRequest()
       <pubDate>Sun, 25 Oct 2009 08:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/</guid>
-      <description>&lt;p&gt;I&#39;d really like to implement membership providers in my Web applications, but just don&#39;t have the user-base that requires SQL Server (Express), nor the memory on my production server.&lt;/p&gt;
-&lt;p&gt;Having looked at SQLite before, I figured it would be exactly what I&#39;d need, without going to the alternative of XML.&lt;/p&gt;
-&lt;p&gt;After some research I found Roger Martin&#39;s &lt;a rel=&#34;external&#34; href=&#34;http://www.codeproject.com/KB/aspnet/SQLite-Providers.aspx&#34;&gt;SQLite Membership, Role, and Profile Providers&lt;/a&gt;, and finally decided yesterday to implement these on a dummy MVC site.&lt;/p&gt;
-&lt;p&gt;However, when attempting to add this to my MVC site I kept running into issues, the last of which was an &#34;Unable to open the database file.&#34;&lt;/p&gt;
-&lt;p&gt;The first issue was with the type declared in the examples on the page above; &lt;strong&gt;TechInfoSystems.Data.SQLiteProvider&lt;/strong&gt; should be removed completely, as he suggests just&amp;nbsp;adding the three classes to your site.&lt;/p&gt;
-&lt;p&gt;The second and last issue was that pesky database issue. At first I didn&#39;t think the app_data directory was getting pushed over, so I verified that I was pushing that as part of the Publish process (how they recommend you push a MVC site to production).&lt;/p&gt;
-&lt;p&gt;Upon further review it looks like the App_Data directory was placed inside the Bin directory. Google didn&#39;t help me much on whether that was the expected behavior, but it consistently did that. I added a ton of permissions to NETWORK SERVICE on the bin\app_data directory, but still the same pesky error.&lt;/p&gt;
-&lt;p&gt;So I commented out the membership, profile, and role items completely from web.config and added the following code to the Index view.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;csharp&#34;&gt;&amp;lt;%= AppDomain.CurrentDomain.GetData(&#34;DataDirectory&#34;).ToString() %&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Lo and behold, it was looking for it in the root of the site, exactly where I was expecting the App_Data directory to publish to.&lt;/p&gt;
-&lt;p&gt;Move the App_Data folder and sure enough, the site works (after uncommenting the Web.config provider information, of course) and I&#39;m able to create a new user.&lt;/p&gt;
-&lt;p&gt;So, why does the publish process require me to move the App_Data directory?&lt;/p&gt;
-&lt;h3&gt;The fix&lt;/h3&gt;
-&lt;p&gt;In order to get the database pushing correctly I changed Copy to Output from Do not copy to Copy always. However, what really needed to happen was the Build Action needed to be changed to Content.&lt;/p&gt;
-&lt;p&gt;An App_Data directory is now created correctly, and the SQLite database is correctly placed in the directory.&lt;/p&gt;
-&lt;h3&gt;Another gotcha&lt;/h3&gt;
-&lt;p&gt;If you want troubles, change the applicationName in the Web.config for all three items. If you do this, you&#39;ll run into errors like &#34;Attempt to write a read-only database attempt to write a readonly database&#34; with a line reference suggesting there&#39;s an issue with roleManager. Comment that out, or that and membership and&amp;nbsp;profile, and things will seem okay.&lt;/p&gt;
-&lt;p&gt;The issue is that the applicationName (SQLite ASP.NET Provider) is baked into the sample SQLite database. Durr.&lt;/p&gt;
-</description>
+      <description>How I was able to get SQLite working as a membership/profile/role provider in ASP.NET MVC.</description>
     </item>
     
     <item>
@@ -143,26 +61,7 @@ protected void Application_EndRequest()
       <pubDate>Sun, 18 Oct 2009 09:26:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-10/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;The following is a review of &lt;a href=&#34;http://www.amazon.com/gp/product/0470384611?tag=strivinglifen-20&#34;&gt;Professional ASP.NET MVC 1.0&lt;/a&gt;, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie.&lt;/p&gt;
-&lt;p&gt;I received a free copy of this book for review purposes from Amazon Vine, but was planning on purchasing the book nonetheless (I just had the good fortune to get a copy before they were all taken).&lt;/p&gt;
-&lt;/div&gt;
-&lt;h3&gt;A great introduction to ASP.NET MVC&lt;/h3&gt;
-&lt;p&gt;Professional ASP.NET MVC 1.0 was my first real look at ASP.NET MVC. I had heard a great deal about the NerdDinner tutorial, which was released on the Internet for free, and which composes the first (164 page) chapter of the book, but never sat down and read it. Part of that is because I like to read physical copies of books, and part of that was because I was just so busy.&lt;/p&gt;
-&lt;p&gt;Nonetheless, this book remained on my list of &amp;lsquo;must read&amp;rsquo; if I want to learn ASP.NET MVC.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s unfortunate that it&amp;rsquo;s taken me this long to get a copy and read it.&lt;/p&gt;
-&lt;p&gt;I started on the Web using HTML, graduating to CSS, and eventually picked up PHP 3.x as my first real dynamic language. ColdFusion followed, with a bit of Classic ASP, and only recently (the last couple of years) did I start looking at ASP.NET as a language.&lt;/p&gt;
-&lt;p&gt;Having dabbled in Visual Basic 6 many years ago, .NET attracted me far more than ASP.NET did; because of my background, I&amp;rsquo;m not afraid to dig into HTML and CSS and JavaScript - I like the ability to control my output. Because ASP.NET was so component based, and ViewState was a clever hack (in my opinion), and MasterPages screwed with my ids, I was rather turned away from having to use ASP.NET to create a fully functional Web site (despite all it&amp;rsquo;s other great advances, and that it was built on .NET).&lt;/p&gt;
-&lt;p&gt;Thankfully, ASP.NET MVC is the best of both ASP.NET and classic Web design. Not only does this book make this clear, it helps you understand just how to go about it.&lt;/p&gt;
-&lt;p&gt;As already stated, a full Web site is created in the first 164 page chapter, with a large number of images within. The source code (the book uses C# throughout)&amp;nbsp;and the complete text of the chapter are available for free online. By all means, go out and download the chapter, and read through it. In my opinion, this serves rather well as the &amp;lsquo;beginning&amp;rsquo; aspect of ASP.NET.&lt;/p&gt;
-&lt;p&gt;The &amp;lsquo;professional&amp;rsquo; aspect comes from the remaining chapters, which go deep into ASP.NET MVC, using what was taught in the first chapter. With information about why things were done the way they were done, coming straight from the people who worked on the technology, I felt I had a very firm grasp of ASP.NET MVC; knowing how and why is better than just knowing the former.&lt;/p&gt;
-&lt;p&gt;The only downside is that because they wanted to make the NerdDinner tutorial the first chapter, I believe the chapter ordering suffered slightly. I personally read chapter 2, which covers the MVC pattern, before I tackled chapter 1.&lt;/p&gt;
-&lt;p&gt;While some people have stated that they believe the book needs more editorial review, to clean up the voice of the book, I rather enjoyed it, and would really like to read more books by this group of individuals; you can tell, I think, that there&amp;rsquo;s a real relationship among the writers.&lt;/p&gt;
-&lt;p&gt;Unfortunately, a few minor errors did sneak their way into the book, the only major one being that they mention crafting code differently later, but never go about doing it. Otherwise, no swapped images in this Wrox book (which I think almost every other Wrox book I own suffers from). The headings could also use slightly different sizing to make it a little more obvious what level we&amp;rsquo;re at. But, these are minor concerns, and concern the layout, and not the content.&lt;/p&gt;
-&lt;p&gt;In fact the only real content concern I can think of is that the ending seemed abrupt, as if they had either removed a chapter from the end, or reordered the chapters.&lt;/p&gt;
-&lt;p&gt;Overall, I enjoyed the book immensely, and give it a full 5 stars. I will most definitely consult this book in the future for the advanced topics covered in those chapters after the first, especially for those topics that seemed to be more advanced (testing for example, as that&amp;rsquo;s not something I&amp;rsquo;ve worked with in the past).&lt;/p&gt;
-&lt;p&gt;Go read the NerdDinner tutorial for an introduction to ASP.NET MVC, then purchase this book and get the rest of the story.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Review of Professional ASP.NET MVC 1.0, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie.</description>
     </item>
     
   </channel>

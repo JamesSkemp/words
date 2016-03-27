@@ -16,20 +16,7 @@
       <pubDate>Sun, 19 Feb 2006 10:53:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Setting-up-Dreamweaver-and-Nvu-to-recognize-your-server/</guid>
-      <description>&lt;p&gt;Now that we&#39;ve &lt;a href=&#34;http://strivinglife.com/words/post/Installing-Apache-to-a-Windows-based-computer-locally.aspx&#34;&gt;setup Apache on our local computer&lt;/a&gt;, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites. I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).&lt;/p&gt;
-&lt;h3&gt;Dreamweaver setup&lt;/h3&gt;
-&lt;p&gt;For those of you using Dreamweaver as your editor, I&#39;ll be outlining how to set it up to recognize your new sites. While I&#39;ll specifically be dealing with Dreamweaver 8, the basics should be enough for other versions, as well as for other programs.&lt;!--adsense--&gt;&lt;/p&gt;
-&lt;p&gt;Open Dreamweaver and go to Site &amp;gt; New Site... First, we&#39;ll setup our site at C:\home\website\public_html\. Give the site a name in the Site name field &amp;ndash; in this case, let&#39;s use &amp;ldquo;website&amp;rdquo;. In Local root folder, we&#39;ll use C:\home\website\public_html. We&#39;ll leave the other options alone, but check &amp;ldquo;Use case-sensitive link checking&amp;rdquo;. While Windows accepts case-insensitive links, we&#39;ll do ourselves a favor by forcing ourselves to keep case in mind.&lt;/p&gt;
-&lt;p&gt;Finally, under Testing Server, we&#39;ll leave Server model alone, since we don&#39;t yet have a server matching either of these. Change Access to Local/Network, and when the window refreshes, change URL prefix to &lt;a href=&#34;http://website.localhost/&#34;&gt;http://website.localhost/&lt;/a&gt;. Testing server folder should be correct, and we don&#39;t need to check the box.&lt;/p&gt;
-&lt;p&gt;Once we&#39;ve made these changes, we&#39;ll go ahead and complete the creation process by saying OK. We can now go ahead and create a new site for each of the other sites &amp;ndash; C:\home\website2\public_html\ and any other sites we may have setup - with the appropriate changes.&lt;/p&gt;
-&lt;p&gt;As we progress in our setup of our server, we can change our Server model accordingly. For now, however, we&#39;re set leaving things as they are. Whenever we create any additional sites, we can go ahead and add them the same way as we&#39;ve done above.&lt;/p&gt;
-&lt;h3&gt;Nvu setup&lt;/h3&gt;
-&lt;p&gt;The freely available Nvu (as of this writing, version 1.0 is available at &lt;a rel=&#34;nofollow external&#34; href=&#34;http://nvu.com/&#34;&gt;http://nvu.com/&lt;/a&gt;) is also a snap to setup to work with our new server. Open Nvu and go to Edit &amp;gt; Publishing Site Settings... Click New Site.&lt;/p&gt;
-&lt;p&gt;In the Site Name field, type in a site name, such as website. In HTTP address of your homepage, enter &lt;a rel=&#34;nofollow&#34; href=&#34;http://website.localhost/&#34;&gt;http://website.localhost/&lt;/a&gt;. In Publishing address, enter file:///C:/home/website/public_html/ or browse to C:\home\website\public_html\. Add any additional sites, and you&#39;re done.&lt;/p&gt;
-&lt;p&gt;You should see a listing of the two sites on the left-side of the main Nvu window (although you may have to close and reopen Nvu first, or press the Edit sites button under the Nvu Site Manager area).&lt;/p&gt;
-&lt;h3&gt;Call for comments and additional programs&lt;/h3&gt;
-&lt;p&gt;If you&#39;d like me to include other programs (such as freely available programs), please post in the comments.&lt;/p&gt;
-</description>
+      <description>Now that we&#39;ve setup Apache on our local computer, and effectively created a basic Web server, it&#39;s time to look at setting up some popular programs to work with these sites.  I&#39;ll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0).</description>
     </item>
     
   </channel>

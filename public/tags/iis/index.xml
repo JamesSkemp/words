@@ -16,20 +16,7 @@
       <pubDate>Fri, 18 Feb 2011 18:24:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/</guid>
-      <description>&lt;p&gt;Having recently picked up an iPod Touch, to replace my Classic, I&#39;ve become very interested in HTML5&#39;s ability to navigate content offline.&lt;/p&gt;
-&lt;p&gt;In my environment I decided to create a separate directory for my manifest files. I&#39;m also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.&lt;/p&gt;
-&lt;p&gt;So that that isn&#39;t an issue, I created a Web.config file in the manifest directory with the below contents. This effectively removes the already-defined MIME type, and replaces it with the one needed for the HTML5 functionality.&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;
-&amp;lt;configuration&amp;gt;
-    &amp;lt;system.webServer&amp;gt;
-        &amp;lt;staticContent&amp;gt;
-            &amp;lt;remove fileExtension=&#34;.manifest&#34; /&amp;gt;
-            &amp;lt;mimeMap fileExtension=&#34;.manifest&#34; mimeType=&#34;text/cache-manifest&#34; /&amp;gt;
-        &amp;lt;/staticContent&amp;gt;
-    &amp;lt;/system.webServer&amp;gt;
-&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Any number of online sites can then be used to confirm that the file is passed with the correct type.&lt;/p&gt;
-</description>
+      <description>While particular to HTML5 .manifest files, this can done for any particular MIME type that needs to be changed.</description>
     </item>
     
     <item>
@@ -38,28 +25,7 @@
       <pubDate>Wed, 29 Dec 2010 20:42:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
-      <description>&lt;p&gt;A raw dump of information on how to create a certificate authority and etcetera.&lt;/p&gt;
-&lt;h3&gt;Step 1: Basic folder and file&amp;nbsp;structure creation&lt;/h3&gt;
-&lt;p&gt;Directories: certs, keys, requests&lt;/p&gt;
-&lt;p&gt;Files: database.txt (empty), serial.txt (01, then&amp;nbsp;new line), openssl.cnf (based on OpenSSL file)&lt;/p&gt;
-&lt;h3&gt;Step 2: Create key&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; genrsa -des3 -out keys/_ca.key 2048&lt;/p&gt;
-&lt;h3&gt;Step 3: Create certificate authority certificate&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer&lt;/p&gt;
-&lt;h3&gt;Step 4: Create DER for public consumption&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\_ca.cer -outform DER -out certs\_ca.der&lt;/p&gt;
-&lt;h3&gt;Step 5: Create request from IIS&lt;/h3&gt;
-&lt;p&gt;IIS &amp;gt; click on main server, Server Certificates &amp;gt; populate all for request&lt;/p&gt;
-&lt;p&gt;save to requests directory locally&lt;/p&gt;
-&lt;h3&gt;Step 6: Handle request&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs&lt;/p&gt;
-&lt;h3&gt;Step 7: Convert for IIS&lt;/h3&gt;
-&lt;p&gt;&#34;c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe&#34; x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer&lt;/p&gt;
-&lt;h3&gt;Step 8: Add to IIS&lt;/h3&gt;
-&lt;p&gt;back in iis, complete request. use *.x.com if a wildcard for friendly name&lt;/p&gt;
-&lt;p&gt;install _ca.der certificate to Trusted Root Certification Authorities (do on clients as well - see this &lt;a rel=&#34;external&#34; href=&#34;http://www.openssl.org/support/faq.html#USER12&#34;&gt;official FAQ&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;associate actual site with certificate&lt;/p&gt;
-</description>
+      <description>A raw dump of information on how to create a certificate authority and etcetera.</description>
     </item>
     
     <item>
@@ -68,9 +34,7 @@
       <pubDate>Wed, 01 Sep 2010 21:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/</guid>
-      <description>&lt;p&gt;I&#39;ve already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn&#39;t able to get content saved via the file_put_contents function.&lt;/p&gt;
-&lt;p&gt;It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.&lt;/p&gt;
-</description>
+      <description>To save content on Windows Server 2008 R2 using PHP on IIS 7.5, make sure the necessary user has permission.</description>
     </item>
     
     <item>
@@ -79,17 +43,7 @@
       <pubDate>Sat, 28 Aug 2010 23:07:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/</guid>
-      <description>&lt;p&gt;Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory.&lt;/p&gt;
-&lt;h3&gt;Background&lt;/h3&gt;
-&lt;p&gt;I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).&lt;/p&gt;
-&lt;h3&gt;Possible options&lt;/h3&gt;
-&lt;p&gt;A couple of possible options exist, including giving the user that the application pool runs as full access to the appropriate directory. However, to some extent this circumvents security on my laptop.&lt;/p&gt;
-&lt;p&gt;Another option is to use Windows authentication. To this end it needs to be enabled by checking the feature of Internet Information Services &amp;gt; World Wide Web Services &amp;gt; Security &amp;gt; Basic Authentication.&lt;/p&gt;
-&lt;h3&gt;Additional setup and result&lt;/h3&gt;
-&lt;p&gt;Additionally default rights must be given to the local IIS_IUSRS group, so that it can access the Web.config file.&lt;/p&gt;
-&lt;p&gt;Now when I browse to the site I&#39;m prompted for credentials, which is the same information I use to login to my machine.&lt;/p&gt;
-&lt;p&gt;Putting the content into a directory with the appropriate permissions (%SystemDrive%\inetpub\wwwroot)&amp;nbsp;may be better, but this works just fine for the limited testing I need to perform.&lt;/p&gt;
-</description>
+      <description>Tweaks to allow IIS on Windows 7 Home Premium access to content within the Users directories.</description>
     </item>
     
     <item>
@@ -98,105 +52,7 @@
       <pubDate>Sat, 05 Jun 2010 20:20:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/</guid>
-      <description>&lt;p&gt;This afternoon I setup a machine for the following purposes:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;to serve as a test bed for Web development&lt;/li&gt;
-&lt;li&gt;to serve as an always-available Subversion repository server&lt;/li&gt;
-&lt;li&gt;to serve as a repository for shared downloads, across all my machines&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;As time goes by the scope of the server may also change. But for now, this will work just fine.&lt;/p&gt;
-&lt;h3&gt;Choosing an edition&lt;/h3&gt;
-&lt;p&gt;The first step was to install Windows Server 2008 R2. Being able to choose between any of the editions, it was between Enterprise, Standard, and Web. While I began to lean towards Web based upon the &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-specs.aspx&#34;&gt;edition comparison by technical specification&lt;/a&gt;, when I looked at &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/windowsserver2008/en/us/r2-compare-roles.aspx&#34;&gt;edition comparison by server role&lt;/a&gt;, Web&amp;nbsp;dropped out of the race. Since my external host provides an Enterprise edition server, Enterprise is what I finally chose.&lt;/p&gt;
-&lt;h3&gt;Initial setup before&amp;nbsp;disconnecting the (physical) monitor&lt;/h3&gt;
-&lt;p&gt;After a short time, Windows Server 2008 R2 Enterprise edition was installed and ready for configuration, after entering an Administrator password.&lt;/p&gt;
-&lt;p&gt;The first thing I did was activate Windows, correct the time zone, and change the computer name to something a bit more manageable, which required a restart.&lt;/p&gt;
-&lt;p&gt;The&amp;nbsp;next step was to configure (checking for updates,&amp;nbsp;but not installing them automatically)&amp;nbsp;and&amp;nbsp;install updates, of which there were 30.&lt;/p&gt;
-&lt;p&gt;Since&amp;nbsp;I want to ultimately remove the monitor from this change, I enabled remote desktop. Since I&#39;ve only got the one network connection, I didn&#39;t need to tweak it any further.&lt;/p&gt;
-&lt;p&gt;While I was in System Properties and switched over to the Advanced tab and hit the Settings... button under Performance. I don&#39;t care about how it looks, so I switched from &#34;Let Windows choose what&#39;s best for my computer&#34; to &#34;Adjust for best performance,&#34; which just unchecked all the checkboxes. I now tested connecting in from my Windows 7 Home Premium machine, and sure enough I was able to&amp;nbsp;bump my other machine and remote in.&lt;/p&gt;
-&lt;p&gt;With that tested, it was time to shut off the machine, unplug the monitor and USB keyboard and mouse, and see if I could remote in.&lt;/p&gt;
-&lt;h3&gt;Success means shutting off services&lt;/h3&gt;
-&lt;p&gt;With the machine correctly booting up, even though it had no monitor, keyboard, nor mouse hooked up, it was time to start optimizing the server by shutting off services.&lt;/p&gt;
-&lt;p&gt;Print Spooler was the first to be stopped and disabled. And that was about it. At only 470 MB used, that&#39;s not too shabby.&lt;/p&gt;
-&lt;h3&gt;Adding server roles - Web server&lt;/h3&gt;
-&lt;p&gt;With Print Spooler disabled it was time to start setting up server roles. I want to start simple, I first selected Web Server (IIS). While I&#39;ve run through this before, this time I actually read the notes and saw an item about Windows System Resource Manager (WSRM) that &#34;can help ensure equitable servicing of Web server traffice, especially when there are multiple roles on this computer.&#34; That sounds like what I&#39;ll eventually be doing, so I&#39;ve made a note to look into this later.&lt;/p&gt;
-&lt;p&gt;By default a number of role services are selected, and since I know I want to do ASP.NET development, I added that (and the&amp;nbsp;items it requires)&amp;nbsp;and HTTP Redirection, since it&#39;s come up before. I end up with the following.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Web Server (IIS)&lt;/strong&gt; 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Web Server&lt;/strong&gt; 
-&lt;ul&gt;
-&lt;li&gt;Common HTTP Features 
-&lt;ul&gt;
-&lt;li&gt;Static Content&lt;/li&gt;
-&lt;li&gt;Default Document&lt;/li&gt;
-&lt;li&gt;Directory Browsing&lt;/li&gt;
-&lt;li&gt;HTTP Errors&lt;/li&gt;
-&lt;li&gt;HTTP Redirection&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Application Development 
-&lt;ul&gt;
-&lt;li&gt;ASP.NET&lt;/li&gt;
-&lt;li&gt;.NET Extensibility&lt;/li&gt;
-&lt;li&gt;ISAPI Extensions&lt;/li&gt;
-&lt;li&gt;ISAPI Filters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Health and Diagnostics 
-&lt;ul&gt;
-&lt;li&gt;HTTP Logging&lt;/li&gt;
-&lt;li&gt;Request Monitor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Security 
-&lt;ul&gt;
-&lt;li&gt;Request Filtering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Performance 
-&lt;ul&gt;
-&lt;li&gt;Static Content Compression&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Management Tools&lt;/strong&gt; 
-&lt;ul&gt;
-&lt;li&gt;IIS Management Console&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Once the installation was finished successfully (without the need of a reboot), I was successfully able to browse to the site on my Windows 7 machine.&lt;/p&gt;
-&lt;h3&gt;The &#39;easy button&#39;&lt;/h3&gt;
-&lt;p&gt;With that done, it was time to install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/web/downloads/platform.aspx&#34;&gt;Microsoft Web Platform Installer&lt;/a&gt;&amp;nbsp;(WPI), also know as &lt;a href=&#34;http://strivinglife.com/words/post/Microsoft-Web-Platform-Installer-is-the-easy-button.aspx&#34;&gt;the easy button&lt;/a&gt;. Since Internet Explorer runs in a high-security mode in Server 2008, I had to download a copy on my Windows 7 machine and copy and paste it over to the Server, via Remote Desktop.&lt;/p&gt;
-&lt;p&gt;Since Server 2008 R2 doesn&#39;t come with .NET Frameworks&amp;nbsp;3.5 SP 1 or 4 installed, I started with 3.5 SP1. For whatever reason Logging Tools was also selected, but seemingly no download was required.&lt;/p&gt;
-&lt;p&gt;Surprisingly I didn&#39;t have to reboot after installing .NET 3.5 SP1, so I went on to version 4. For whatever reason, this install took a good deal of time (in the&amp;nbsp;double-digits), and since I didn&#39;t keep my attention solely on it, missed the restart prompt in the bottom right corner. But, after the restart that was too was finished.&lt;/p&gt;
-&lt;p&gt;URL Rewrite 2.0, ASP.NET MVC 2, and PHP 5.2.13 were all next (which ended up requiring CGI to be installed as well).&lt;/p&gt;
-&lt;p&gt;While tempted to install SQL Server Express, I opted to hold off, since I can install something&amp;nbsp;a bit higher-end, depending upon how they compare for what I need.&lt;/p&gt;
-&lt;h3&gt;CollabNet Subversion Server&lt;/h3&gt;
-&lt;p&gt;As I&#39;ve been doing more and more, I opted to use CollabNet Subversion Server to install Apache and Subversion, which means another copy and paste through Remote Desktop.&lt;/p&gt;
-&lt;p&gt;The installation steps haven&#39;t changed, so I used &lt;a href=&#34;http://strivinglife.com/words/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003.aspx&#34;&gt;an older installation guide I had written&lt;/a&gt;, turned off update notifications, and restart the server.&lt;/p&gt;
-&lt;p&gt;As I&#39;ve grown to expect, once the server was restarted I was able to access port 8080 locally, but not on my own machine, due to firewall settings. After allowing C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\httpd.exe (Apache HTTP Server) to communicate through Windows Firewall, that was now working.&lt;/p&gt;
-&lt;p&gt;Since I install PHP in a previous step I could go ahead and allow Apache to use it, but for now I&#39;m going to keep moving forward and setup my existing (used) repositories.&lt;/p&gt;
-&lt;h3&gt;Subversion security and repositories&lt;/h3&gt;
-&lt;p&gt;Since I&#39;ve only got one hard drive (at the moment) on the server, in the C drive root I created a new svn_resources directory. Opening cmd and moving to C:\Program Files (x86)\CollabNet\Subversion Server\httpd\bin\ we can access the htpasswd.exe executable. Using the &#39;official&#39; book as the standard, I entered the following to create an account for my main development machine (an HP Pavilion a6360t).&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;htpasswd.exe -cm c:\svn_resources\svn-auth-file james-a6360t&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After entering my password twice, I now had an authentication file, and I can now add security to my repositories, via updating&amp;nbsp;C:\Program Files (x86)\CollabNet\Subversion Server\httpd\conf\httpd.conf (you may also want to start Apache Monitor and restart the instance).&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;xml&#34;&gt;&amp;lt;Location /svn&amp;gt;
-    DAV svn
-    SVNParentPath C:\svn_repository
-    AuthType Basic
-    AuthName &#34;Subversion repository&#34;
-    AuthUserFile C:\svn_resources\svn-auth-file
-    Require valid-user
-&amp;lt;/Location&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I setup my laptop with another account, and with that done it&#39;s time to start &lt;a href=&#34;http://strivinglife.com/words/post/Subversion-and-TortoiseSVN-Moving-a-repository.aspx&#34;&gt;moving over the repositories&lt;/a&gt;. Since I have so many, I focused on just the handful that I&#39;m actively working on, and holding off on the rest.&lt;/p&gt;
-&lt;p&gt;Whew.&lt;/p&gt;
-&lt;h3&gt;Next steps&lt;/h3&gt;
-&lt;p&gt;In addition to looking into WSRM, I still need to move my downloads over to the server (which possibly means setting this up with a file server role), adding SQL Server, and possibly adding PHP functionality to Apache ... just in case.&lt;/p&gt;
-</description>
+      <description>Steps taken to setup a fresh copy of Windows Server 2008 R2 Enterprise Edition to serve Web content via IIS.</description>
     </item>
     
     <item>
@@ -205,16 +61,7 @@
       <pubDate>Sun, 03 Jan 2010 18:10:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Cassini-3502-built-and-ready-to-go/</guid>
-      <description>&lt;p&gt;Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&amp;nbsp;a full-fledged instance of IIS.&lt;/p&gt;
-&lt;p&gt;While Cassini should not be used in production environments, it&#39;s more than enough to run for minor development, or even minor projects.&lt;/p&gt;
-&lt;p&gt;The last official version of Cassini at the time of this writing&amp;nbsp;is &lt;a rel=&#34;external&#34; href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;3.5.0.2&lt;/a&gt;. Since he&#39;s released the source, you can build your own, but what if you just want to download a pre-built version? Well now you can.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/Cassini_3.5.0.2.zip&#34;&gt;Download Cassini 3.5.0.2&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;While tempted, I&#39;ve made no modifications. I have included a simple batch file (_startCassini.bat) however that allows you to copy this and the Cassini executable to a directory, and start Cassini from that directory. This also allows you to distribute your projects to others to run in a test environment. (I believe ELMAH uses something like this, but I kept, and keep,&amp;nbsp;neglecting to look at how he implemented it.)&lt;/p&gt;
-&lt;p&gt;The batch file is simply the following:&lt;/p&gt;
-&lt;pre class=&#34;code&#34;&gt;&lt;code class=&#34;powershell&#34;&gt;Cassini-v35.exe &#34;%cd%&#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Cassini does support additional arguments, which is documented in the ReadMe.txt. The MS-PL license is also included in the zip.&lt;/p&gt;
-&lt;p&gt;You may also be interested in &lt;a rel=&#34;external&#34; href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; (I haven&#39;t looked into this project) and you&#39;ll want to have the current version of the &lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;.NET Framework&lt;/a&gt; installed.&lt;/p&gt;
-</description>
+      <description>Want to run ASP.NET Web applications on your computer, without IIS? Here&#39;s a compiled version of Cassini to get you on your way.</description>
     </item>
     
     <item>
@@ -223,15 +70,7 @@
       <pubDate>Thu, 12 Nov 2009 07:06:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/</guid>
-      <description>&lt;p&gt;While Cassini is a built-in Web server part of Microsoft Visual Studio, it&#39;s also available as a stand-alone application, thanks to the work of Dmitry Robsman.&lt;/p&gt;
-&lt;p&gt;The current version can be downloaded from this post regarding &lt;a href=&#34;http://blogs.msdn.com/dmitryr/archive/2009/04/23/cassini-support-for-friendly-urls-routing.aspx&#34;&gt;version 3.5.0.2&lt;/a&gt; but requires that you first build the solution (the code is available under a MS-PL license).&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://cassinipp.codeplex.com/&#34;&gt;Cassini++&lt;/a&gt; is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry&#39;s release).&lt;/p&gt;
-&lt;p&gt;I decided to start with Dmitry&#39;s release and downloaded and built the application. Since I&#39;m looking into building extensions for &lt;a href=&#34;http://www.dotnetblogengine.net/&#34;&gt;BlogEngine.NET&lt;/a&gt; (to work against some spam issues and for general knowledge), as well as wanting to work on themes, I decided to see if I could get BE working on Cassini.&lt;/p&gt;
-&lt;p&gt;And it does, right out of the box (version 1.5.0.7).&lt;/p&gt;
-&lt;p&gt;On a Windows XP Professional box memory usage jumped to approximately 100 MB (which is about what I see on my own blog, with a little over 780 posts). On my Windows 7 Home Premium (64-bit) machine, however, memory usage sat under 40 MB.&lt;/p&gt;
-&lt;p&gt;Either way, I was able to login just fine.&lt;/p&gt;
-&lt;p&gt;Next I&#39;ll probably see if I can get an MVC Web site up and running on Cassini as well.&lt;/p&gt;
-</description>
+      <description>Cassini Personal Web Server may just be what you need to quickly work with BlogEngine.NET for extension and theme creation.</description>
     </item>
     
     <item>
@@ -240,15 +79,7 @@
       <pubDate>Sat, 07 Nov 2009 21:25:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Log-Parser-Plus-version-03-released/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;&lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.1.zip&#34;&gt;Version 0.3.1 of Log Parser Plus&lt;/a&gt; now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Currently under development, Log Parser Plus (not be confused with the Web site &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;) is a tool to (hopefully) help work with Microsoft Log Parser.&lt;/p&gt;
-&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.3.zip&#34;&gt;Log Parser Plus 0.3 BETA&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You will need to download and install &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;Microsoft Log Parser&lt;/a&gt; for this application to run, as well as .NET Framework 2.0.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://strivinglife.com/words/post/Log-Parser-Plus-version-021-released.aspx&#34;&gt;More information&lt;/a&gt; can be found in the post regarding the initial, 0.2.1, release.&lt;/p&gt;
-&lt;p&gt;Comments and concerns are welcomed.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Version 0.3 BETA of Log Parser Plus (the application) is now available for download.</description>
     </item>
     
     <item>
@@ -257,17 +88,7 @@
       <pubDate>Mon, 02 Nov 2009 21:27:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Log-Parser-Plus-version-021-released/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;warning&#34;&gt;
-&lt;p&gt;This is no longer the current version. &lt;a rel=&#34;external&#34; href=&#34;http://jamesrskemp.com/apps/LogParserPlus/&#34;&gt;View information about the current version of Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more.&lt;/p&gt;
-&lt;p&gt;While a number of applications exist to help use Log Parser, as well as a number of sites containing &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser queries&lt;/a&gt;, I haven&amp;rsquo;t been very happy with them.&lt;/p&gt;
-&lt;p&gt;In an attempt to make it even easier to work with Log Parser, I present version 0.2.1 BETA of Log Parser Plus (not to be confused with the Web site, &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;LogParserPlus.com&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Download &lt;a rel=&#34;external download&#34; href=&#34;http://jamesrskemp.com/applications/LogParserPlus_0.2.1.zip&#34;&gt;Log Parser Plus 0.2.1 BETA&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Log Parser Plus 0.2.1 BETA is, as noted, currently under development. It lacks proper threading, and could use a number of user interface tweaks. Since I use IIS for personal and business purposes, I will be working towards version 1.0 and beyond.&lt;/p&gt;
-&lt;p&gt;Microsoft Log Parser is required, and can be &lt;a rel=&#34;external&#34; href=&#34;http://www.microsoft.com/downloads/details.aspx?FamilyID=890cd06b-abf8-4c25-91b2-f8d975cf8c07&#34;&gt;downloaded from Microsoft&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Questions, comments, and concerns are appreciated.&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>Version 0.2.1 BETA of Log Parser Plus (the application) is now available for download.</description>
     </item>
     
     <item>
@@ -276,16 +97,7 @@
       <pubDate>Thu, 24 Sep 2009 11:46:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/IIS-Logs-to-SQLite-version-01-beta-released/</guid>
-      <description>&lt;p&gt;Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I&#39;ve created &lt;strong&gt;IIS Logs to SQLite&lt;/strong&gt;, which will parse IIS logs and import them into the SQLite database and table of your choice.&lt;/p&gt;
-&lt;p&gt;The first beta version of this application is now available.&lt;/p&gt;
-&lt;p&gt;&lt;a rel=&#34;download&#34; href=&#34;http://jamesrskemp.com/applications/IISLogsToSQLite_0.1.zip&#34;&gt;Download IIS Logs to SQLite version 0.1&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This application requires the .NET Framework version 3.5 (&lt;a rel=&#34;external&#34; href=&#34;http://smallestdotnet.com/&#34;&gt;check your version of .NET Framework&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Note that for a larger amount of logs, memory usage can spike.&lt;/p&gt;
-&lt;p&gt;In a future version I may (read: will) allow the columns to be exported to be selected by the user, instead of the &#39;all&#39; dump that I currently do.&lt;/p&gt;
-&lt;p&gt;There&#39;s some other interface cleanup items as well, and there&#39;s at least one known bug (using a custom log file or path that returns no matches).&lt;/p&gt;
-&lt;p&gt;This might be the direction I end up taking my Log Parser Plus application.&lt;/p&gt;
-&lt;p&gt;Plug: Read more about Microsoft Log Parser and find example queries at &lt;a rel=&#34;external&#34; href=&#34;http://logparserplus.com/&#34;&gt;Log Parser Plus&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Built on Microsoft Log Parser, IIS Logs to SQLite aims to import IIS logs into SQLite databases.</description>
     </item>
     
     <item>
@@ -294,59 +106,7 @@
       <pubDate>Thu, 29 May 2008 22:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-Some parameters have been changed to protect the innocent.&amp;nbsp;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-This could be old news, and since I&amp;#39;m talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory,&amp;nbsp;and a URL that contains directories below the virtual directory.
-&lt;/p&gt;
-&lt;p&gt;
-So, at work I had a horrible URL like the following (ignore the invalid space):
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    /filename.cfm?parameterA=valueA&amp;amp;parameterB=valueB &amp;amp;issuemonth=4&amp;amp;issueyear=2008&amp;amp;groupname=publ
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-What I wanted to do was allow someone to use a URL like this to get to that page:
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    /enews/publ/2008/4/&lt;br /&gt;
-    &amp;nbsp;- or -&lt;br /&gt;
-    /enews/publ/2008/4
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Luckily, after a lucky Google search, I found a Microsoft TechNet on this very issue, in the Server 2003 &lt;a href=&#34;http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/41c238b2-1188-488f-bf2d-464383b1bb08.mspx?mfr=true&#34; target=&#34;_blank&#34;&gt;Redirect Reference (IIS 6.0)&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-The solution was to create a virtual directory called enews, and configure it to redirect to the&amp;nbsp;&lt;em&gt;exact&lt;/em&gt; URL entered:
-&lt;/p&gt;
-&lt;blockquote&gt;
-    &lt;p&gt;
-    &lt;em&gt;;/&lt;/em&gt;/&lt;em&gt;/&lt;/em&gt;/; /filename.cfm?parameterA=valueA&amp;amp;parameterB=valueB&amp;amp;issuemonth=$2&amp;amp;issueyear=$1&amp;amp;groupname=$0;/&lt;em&gt;/&lt;/em&gt;/*; /filename.cfm?parameterA=valueA&amp;amp;parameterB=valueB&amp;amp;issuemonth=$2&amp;amp;issueyear=$1&amp;amp;groupname=$0
-    &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-Basically the second and third, semi-colon-delimited, strings handle the first URL (trailing slash) while the fourth and fifth handle the second.
-&lt;/p&gt;
-&lt;p&gt;
-One thing that isn&amp;#39;t covered is if they don&amp;#39;t pass a &amp;#39;month&amp;#39;. However, I&amp;#39;d assume that an additional &amp;#39;block&amp;#39; could be setup to handle this, as well as the case where there&amp;#39;s only a group name.
-&lt;/p&gt;
-&lt;p&gt;
-The disappointing thing is that this doesn&amp;#39;t allow for too much in the way of wildcards - you can manually add text, or use a * for a wildcard - nothing fancy with switches or anything. But &amp;hellip; that&amp;#39;s okay.
-&lt;/p&gt;
-&lt;p&gt;
-The TechNet article covers a number of other things, so &amp;hellip; definitely give it a look.
-&lt;/p&gt;
-&lt;p&gt;
-The more I use&amp;nbsp;Microsoft products, the more impressed I am with the resources they make available online.
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>This could be old news, and since I&#39;m talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory, and a URL that contains directories below the virtual directory. [slnet0514:3219a695-d0e2-4fcb-9f78-9cea8220350a]</description>
     </item>
     
     <item>
@@ -355,39 +115,7 @@ The more I use&amp;nbsp;Microsoft products, the more impressed I am with the res
       <pubDate>Sat, 22 Mar 2008 09:00:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/</guid>
-      <description>&lt;p&gt;
-I had previously covered &lt;a href=&#34;http://words.strivinglife.com/words/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium.aspx&#34;&gt;how to install IIS 7 on Windows Vista Home Premium&lt;/a&gt;. This time I&amp;#39;ll be briefly covering what you need to enable ASP.NET as well. 
-&lt;/p&gt;
-&lt;p&gt;
-As before, you&amp;#39;ll want to select &lt;strong&gt;Control Panel&lt;/strong&gt; from the Start menu, then click on the &lt;strong&gt;Programs&lt;/strong&gt; link. Next, click on &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Expand &lt;strong&gt;Internet Information Services&lt;/strong&gt;, followed by the &lt;strong&gt;World Wide Web Services&lt;/strong&gt; and &lt;strong&gt;Application Development Features&lt;/strong&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Since we want to be able to run ASP.NET applications, we&amp;#39;ll need to check the ASP.NET checkbox. This will also enable the following three features. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    .NET Extensibility 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    ISAPI Extensions 
-    &lt;/div&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-    &lt;div&gt;
-    ISAPI Filters&amp;nbsp; 
-    &lt;/div&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-If you also want to&amp;nbsp;run classic ASP pages, you&amp;#39;ll need to check the ASP checkbox as well. 
-&lt;/p&gt;
-</description>
+      <description>How to enable ASP.NET applications in IIS 7, on Windows Vista Home Premium. [slnet0514:87c5d691-ac12-4762-b35a-9a4ba13f15e3]</description>
     </item>
     
     <item>
@@ -396,166 +124,7 @@ If you also want to&amp;nbsp;run classic ASP pages, you&amp;#39;ll need to check
       <pubDate>Fri, 21 Mar 2008 15:45:00 -0500</pubDate>
       
       <guid>http://words.strivinglife.com/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/</guid>
-      <description>&lt;p&gt;&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-This guide covers Windows Vista Home Premium SP1, and may differ for other versions.
-&lt;/p&gt;
-&lt;p&gt;
-I&amp;#39;ll also only be covering the basic, default, installation. A guide covering the addition of additional features, like .NET capabilities, may be released as well.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-While limited, Windows Vista Home Premium allows Internet Information Services (IIS) 7 to be installed with little fuss, using the Control Panel interface.
-&lt;/p&gt;
-&lt;p&gt;
-First, select &lt;strong&gt;Start&lt;/strong&gt; &amp;gt; &lt;strong&gt;Control Panel&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-Next click on the &lt;strong&gt;Programs&lt;/strong&gt; item, followed by &lt;strong&gt;Turn Windows features on or off&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-A Windows Features window will come up, which will allow you to change the status of certain applications. Included amongst these is an &lt;strong&gt;Internet Information Services&lt;/strong&gt; item, which contains a number of sub-items.
-&lt;/p&gt;
-&lt;p&gt;
-Microsoft recommends you select this item, Internet Information Services, to install IIS. This is the default installation, and contains a minimum set of features. A full listing of items is below.
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;&amp;hellip;&lt;/li&gt;
-    &lt;li&gt;Internet Information Services
-    &lt;ul&gt;
-        &lt;li&gt;Web Management Tools
-        &lt;ul&gt;
-            &lt;li&gt;IIS 6 Management Compatibility
-            &lt;ul&gt;
-                &lt;li&gt;IIS 6 Management Console&lt;/li&gt;
-                &lt;li&gt;IIS 6 Scripting Tools&lt;/li&gt;
-                &lt;li&gt;IIS 6 WMI Compatibility&lt;/li&gt;
-                &lt;li&gt;IIS Metabase and IIS 6 configuration compatiblity &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;IIS Management Console&lt;/li&gt;
-            &lt;li&gt;IIS Management Scripts and Tools&lt;/li&gt;
-            &lt;li&gt;IIS Management Service &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;World Wide Web Services
-        &lt;ul&gt;
-            &lt;li&gt;Application Development Features
-            &lt;ul&gt;
-                &lt;li&gt;.NET Extensibility&lt;/li&gt;
-                &lt;li&gt;ASP&lt;/li&gt;
-                &lt;li&gt;ASP.NET&lt;/li&gt;
-                &lt;li&gt;CGI&lt;/li&gt;
-                &lt;li&gt;ISAPI Extensions&lt;/li&gt;
-                &lt;li&gt;ISAPI Filters&lt;/li&gt;
-                &lt;li&gt;Server-Side Includes &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Common Http Features
-            &lt;ul&gt;
-                &lt;li&gt;Default Document&lt;/li&gt;
-                &lt;li&gt;Directory Browsing&lt;/li&gt;
-                &lt;li&gt;HTTP Errors&lt;/li&gt;
-                &lt;li&gt;HTTP Redirection&lt;/li&gt;
-                &lt;li&gt;Static Content &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Health and Diagnostics
-            &lt;ul&gt;
-                &lt;li&gt;Custom Logging&lt;/li&gt;
-                &lt;li&gt;HTTP Logging&lt;/li&gt;
-                &lt;li&gt;Logging Tools&lt;/li&gt;
-                &lt;li&gt;Request Monitor&lt;/li&gt;
-                &lt;li&gt;Tracing &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Performance Features
-            &lt;ul&gt;
-                &lt;li&gt;Http Compression Dynamic&lt;/li&gt;
-                &lt;li&gt;Static Content Compression &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Security
-            &lt;ul&gt;
-                &lt;li&gt;Basic Authentication&lt;/li&gt;
-                &lt;li&gt;IP Security&lt;/li&gt;
-                &lt;li&gt;Request Filtering&lt;/li&gt;
-                &lt;li&gt;URL Authorization &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-When you select the &lt;strong&gt;Internet Information Services&lt;/strong&gt; item, the following items are automatically selected.
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Internet Information Services
-    &lt;ul&gt;
-        &lt;li&gt;Web Management Tools
-        &lt;ul&gt;
-            &lt;li&gt;IIS Management Console&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;World Wide Web Services
-        &lt;ul&gt;
-            &lt;li&gt;Application Development Features&lt;/li&gt;
-            &lt;li&gt;Common Http Features
-            &lt;ul&gt;
-                &lt;li&gt;Default Document&lt;/li&gt;
-                &lt;li&gt;Directory Browsing&lt;/li&gt;
-                &lt;li&gt;HTTP Errors&lt;/li&gt;
-                &lt;li&gt;Static Content&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Health and Diagnostics
-            &lt;ul&gt;
-                &lt;li&gt;HTTP Logging&lt;/li&gt;
-                &lt;li&gt;Request Monitor&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Performance Features
-            &lt;ul&gt;
-                &lt;li&gt;Static Content Compression &lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Security
-            &lt;ul&gt;
-                &lt;li&gt;Request Filtering&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-By default, then, you&amp;#39;ve got the ability to manage the server through the IIS Management Console. You can also serve, and compress, static content.
-&lt;/p&gt;
-&lt;p&gt;
-If you apply these additions, you&amp;#39;ll be able to browse to &lt;a href=&#34;http://localhost/&#34;&gt;http://localhost/&lt;/a&gt; &lt;em&gt;immediately&lt;/em&gt; after installation. A w3wp.exe process should also display in Windows Task Manager, running under the NETWORK SERVICE user name, and with the description of IIS Worker Process.
-&lt;/p&gt;
-&lt;p&gt;
-If you don&amp;#39;t already have it, you&amp;#39;ll probably want to add the System administrative tools item to your All Programs/Start menu(s). You can do this by right-clicking on an empty spot in the Start menu, selecting Properties, then Start Menu &amp;gt; Customize&amp;hellip; Near the bottom of the list you&amp;#39;ll have an option for System administrative tools, which you can display in a number of places.
-&lt;/p&gt;
-&lt;div class=&#34;note&#34;&gt;
-&lt;p&gt;
-I&amp;#39;ll be assuming you installed it on both the Start menu and All Programs menu.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Once this has been added you&amp;#39;ll find an IIS Manager option under Administrative Tools.
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re used to older versions of IIS, like IIS 6, it may take a bit to get used to the new interface. But, it&amp;#39;s sure to be a rewarding experience.
-&lt;/p&gt;
-&lt;p&gt;
-Comments/corrections/etcetera greatly appreciated.
-&lt;/p&gt;&lt;/p&gt;
-</description>
+      <description>In this guide I&#39;ll be covering just how easy it is to setup the default installation of IIS 7 in Windows Vista Home Premium. [slnet0514:2040411a-63de-4dd6-a7f6-31af01e13a31]</description>
     </item>
     
     <item>
@@ -564,78 +133,7 @@ Comments/corrections/etcetera greatly appreciated.
       <pubDate>Sat, 23 Feb 2008 12:45:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/</guid>
-      <description>&lt;p&gt;
-I purchased a Casio EX-Z1200 a bit ago, which I&amp;#39;ve been playing around with. Overall, I&amp;#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&amp;#39;t the best for me. 
-&lt;/p&gt;
-&lt;p&gt;
-After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for. 
-&lt;/p&gt;
-&lt;p&gt;
-However, along came &lt;a href=&#34;http://ivcsoft.free.fr/&#34; target=&#34;_blank&#34;&gt;Internet Video Convertor (IVC)&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;
-Of all the people in the world, it is the French who are most likely to create a multi-language site/piece of software. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-I haven&amp;#39;t played with it enough to be fully satisifed, but I&amp;#39;m extremely happy with what I&amp;#39;ve got thus far. 
-&lt;/p&gt;
-&lt;p&gt;
-One of the things that IVC can do is convert to FLV format, which is similar to SWF, except it allows for streaming Flash video. Yes, streaming Flash. 
-&lt;/p&gt;
-&lt;p&gt;
-While one can host videos on a variety of sites, I&amp;#39;d really like to be able to host on my own server, when possible (and/but still post to those other sites as well). 
-&lt;/p&gt;
-&lt;p&gt;
-Per this Adobe TechNote (&lt;a rel=&#34;nofollow&#34; href=&#34;http://kb.adobe.com/selfservice/viewContent.do?externalId=tn_19439&amp;amp;sliceId=2&#34; target=&#34;_blank&#34;&gt;Windows 2003 Server does not stream FLV videos&lt;/a&gt;) I just needed to add a simple MIME type (&lt;strong&gt;.flv&lt;/strong&gt; as &lt;strong&gt;flv-application/octet-stream&lt;/strong&gt;) and I could then use the IVC outputs (Video-to-Flash) to play any file from my server. 
-&lt;/p&gt;
-&lt;div class=&#34;tip&#34;&gt;
-&lt;p&gt;
-You can, if you so desire (I did) add this MIME type to just one site, instead of to the entire server. Adding it to the server allows any site to &amp;#39;understand&amp;#39;&amp;nbsp;FLV files, which may or may not be what you want in your particular situation(s). 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;
-While I could have played other formats as well, the benefit of this is that other OS users can run this as well. 
-&lt;/p&gt;
-&lt;p&gt;
-If you&amp;#39;re interested in finding out more about FLV&amp;nbsp;and/versus SWF&amp;nbsp;files, there&amp;#39;s an interesting article from Macromedia, &lt;a href=&#34;http://www.adobe.com/devnet/flash/articles/flv_download.html&#34; target=&#34;_blank&#34;&gt;Delivering Flash Video: Understanding the Difference Between Progressive Download and Streaming Video&lt;/a&gt;&amp;nbsp;(2004). 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;http://media.strivinglife.com/video/20060924_DW8Snippets.html&#34; target=&#34;_blank&#34;&gt;Watch Creating snippets in Dreamweaver 8 (Windows)&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;h3&gt;File conversion details&lt;/h3&gt;
-&lt;p&gt;
-Here are some details on the conversion: 
-&lt;/p&gt;
-&lt;p&gt;
-The source file was a 108 MB AVI file, captured using&amp;nbsp;CamStudio 2.00, at 640x480. 
-&lt;/p&gt;
-&lt;p&gt;
-Converting this into a 320x240 FLV file resulted in a 4.93 MB file. However, at that size the text was difficult to read. 
-&lt;/p&gt;
-&lt;p&gt;
-Upgrading to 640x480 resulted in a 38.2 MB file. 
-&lt;/p&gt;
-&lt;p&gt;
-The SWF player necessary to actually server the FLV added another 90 KB. 
-&lt;/p&gt;
-&lt;p&gt;
-Despite all that, the file looks remarkably well, even better than the &lt;a rel=&#34;nofollow&#34; href=&#34;http://video.google.com/videoplay?docid=3586025281835355534&#34; target=&#34;_blank&#34;&gt;Google Video version&lt;/a&gt; (which was resized, obviously). 
-&lt;/p&gt;
-&lt;p&gt;
-For non-text video, however, I&amp;#39;d say 320x240 may have worked (once I have some good video from my Casio, I&amp;#39;ll be uploading that through the same process). 
-&lt;/p&gt;
-&lt;p&gt;
-The six-and-a-half minute video didn&amp;#39;t take all that long to convert to FLV, from AVI. The MOV files that I&amp;#39;ve converted seem to take longer, despite being shorter in length. 
-&lt;/p&gt;
-&lt;p&gt;
-It seems it&amp;#39;s also possible to stream FLV files using IIS and&amp;nbsp;.NET, but I haven&amp;#39;t dug into it quite yet. More on&amp;nbsp;that in&amp;nbsp;&lt;a href=&#34;http://blogs.ugidotnet.org/kfra/archive/2006/10/04/50003.aspx&#34; target=&#34;_blank&#34;&gt;FLV Flash video streaming with ASP.NET 2.0, IIS and HTTP handler&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-Further updates to follow. 
-&lt;/p&gt;
-</description>
+      <description>Using one tool, it&#39;s easy to convert a wide variety of video formats to FLV, for posting on your site. [slnet0514:0619b657-9369-4afb-af08-1de033f0e7b8]</description>
     </item>
     
     <item>
@@ -644,148 +142,7 @@ Further updates to follow.
       <pubDate>Tue, 06 Nov 2007 21:30:00 -0600</pubDate>
       
       <guid>http://words.strivinglife.com/post/W3C-extended-log-format-fields-and-IIS-60/</guid>
-      <description>&lt;p&gt;
-In a previous article, I gave &lt;a href=&#34;http://words.strivinglife.com/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0&lt;/a&gt;. 
-&lt;/p&gt;
-&lt;p&gt;
-This time, I&amp;#39;d like to cover what each field provides, again in relation to IIS and a Web site, for statistical and debugging purposes. 
-&lt;/p&gt;
-&lt;h3&gt;What fields are available&lt;/h3&gt;
-&lt;p&gt;
-Again, we&amp;#39;ve covered what fields are available in the W3C extended log format in a previous article. 
-&lt;/p&gt;
-&lt;p&gt;
-Read&amp;nbsp;&lt;em&gt;&lt;a href=&#34;http://words.strivinglife.com/words/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format.aspx&#34;&gt;A brief overview of IIS 6.0 and the W3C extended log format&lt;/a&gt;&lt;/em&gt; for more information about these fields. 
-&lt;/p&gt;
-&lt;h3&gt;Essential fields&lt;/h3&gt;
-&lt;p&gt;
-In the W3C extended log format, there are a number of essential fields, which are listed below. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Date ( date ) &lt;/li&gt;
-    &lt;li&gt;Time ( time ) &lt;/li&gt;
-    &lt;li&gt;URI Stem ( cs-uri-stem ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-At the very least, there are these&amp;nbsp;three fields which&amp;nbsp;should be tracked. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Date&lt;/strong&gt; and &lt;strong&gt;Time&lt;/strong&gt; should be tracked in order to determine the time at which a request took place. Even though you may be using daily logs, keeping Date in means you can do daily analysis over multiple logs. 
-&lt;/p&gt;
-&lt;p&gt;
-At the very least, &lt;strong&gt;URI Stem&lt;/strong&gt; is also essential, in order to determine which files are being called, and how often. 
-&lt;/p&gt;
-&lt;h3&gt;Essential fields 2&lt;/h3&gt;
-&lt;p&gt;
-Of course, the first list isn&amp;#39;t quite enough, which is why most of the time you&amp;#39;ll want to have the following as well. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;URI Query ( cs-uri-query ) &lt;/li&gt;
-    &lt;li&gt;Protocol Status ( sc-status ) &lt;/li&gt;
-    &lt;li&gt;Referer ( cs(Referer) ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-While &lt;strong&gt;URI Stem&lt;/strong&gt; works for older, static sites, &lt;strong&gt;URI Query&lt;/strong&gt; is equally essential for today&amp;#39;s dynamic sites, which rely on parameters being passed and accepted. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Protocol Status&lt;/strong&gt; gives us an idea of whether the request was successful or not, which enables us to determine which requests were invalid, or may be causing other errors. 
-&lt;/p&gt;
-&lt;p&gt;
-Depending upon your views on things&lt;strong&gt;, Referer&lt;/strong&gt; is essential, or not. I&amp;#39;ve decided to include it, since it helps determine where invalid requests are coming from, as well as where valid requests are coming from. This can also help determine the path individuals are taking through your own site. 
-&lt;/p&gt;
-&lt;h3&gt;Slightly less essential fields&lt;/h3&gt;
-&lt;p&gt;
-Now that we&amp;#39;ve gone through the essential fields, in two parts, we can take a look at what fields are &lt;em&gt;slightly&lt;/em&gt; less essential. Not everyone may find a need for these fields, but most of the time I think you&amp;#39;ll want to include them. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Client IP Address ( c-ip ) &lt;/li&gt;
-    &lt;li&gt;User Agent ( cs(User-Agent) ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-One could argue that &lt;strong&gt;Client IP Address&lt;/strong&gt; and &lt;strong&gt;User Agent&lt;/strong&gt; are very essential indeed. However, depending upon the purpose of the site, they may not be. 
-&lt;/p&gt;
-&lt;p&gt;
-For example, for an Intranet, or personal site, there may be no reason to track either of these fields, since the client used to view the site, as well as the IP addresses, could be a controlled listing. 
-&lt;/p&gt;
-&lt;p&gt;
-However, for sites that are available for a larger, external, audience, these two fields are indeed quite essential. For the first reason, however, I include these both here. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Client IP Address&lt;/strong&gt; can be used to determine which IPs, if any, are resulting in traffic, either good or bad. &lt;strong&gt;User Agent&lt;/strong&gt; can be used to determine what software is being used to view the site, and thereby allow for proper testing. 
-&lt;/p&gt;
-&lt;h3&gt;Semi-essential fields&lt;/h3&gt;
-&lt;p&gt;
-Semi-essential fields are fields that I believe are essential, for more in-depth analysis of traffic and server status. These fields are listed below. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Bytes Sent ( sc-bytes ) &lt;/li&gt;
-    &lt;li&gt;Bytes Received ( cs-bytes ) &lt;/li&gt;
-    &lt;li&gt;Time Taken ( time-taken ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-As we discussed in the previous article, sc is server to client, and cs is client to server. While &lt;strong&gt;Bytes Received&lt;/strong&gt; isn&amp;#39;t as essential as &lt;strong&gt;Bytes Sent&lt;/strong&gt;, since the majority of traffic will be the latter, I&amp;#39;ve grouped them here. Both are semi-essential, since they both help determine not only how much is being transmitted, but also who is pulling down a lot of traffic (combined with &lt;strong&gt;Client IP Address&lt;/strong&gt;). 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Time Taken&lt;/strong&gt; ties in directly with these, as well, since typically the more Bytes going around, the longer it&amp;#39;s going to take. So, most of the time, files with a larger &lt;strong&gt;Bytes Sent&lt;/strong&gt; value will also have a large &lt;strong&gt;Time Taken&lt;/strong&gt; value. However, &lt;strong&gt;Time Taken&lt;/strong&gt; may also mean that a file is performing poorly, for more dynamic files. 
-&lt;/p&gt;
-&lt;h3&gt;Even more semi-essential&lt;/h3&gt;
-&lt;p&gt;
-We&amp;#39;ve got a few more fields to cover that are semi-essential, before we list &amp;#39;the rest.&amp;#39; 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;Server Port ( s-port ) &lt;/li&gt;
-    &lt;li&gt;Method ( cs-method ) &lt;/li&gt;
-    &lt;li&gt;Protocol Substatus ( sc-substatus ) &lt;/li&gt;
-    &lt;li&gt;Protocol Version ( cs-version ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;strong&gt;Method&lt;/strong&gt; is a nice enough field, since it helps determine how the content is being requested. Is someone GETting the file? Is information being POSTed back? Is something just requesting the HEAD? 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Server Port&lt;/strong&gt; is semi-essential, or not, depending what ports are being used. For most sites, it&amp;#39;ll just be port 80, but you may have other posts used as well. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Protocol Version&lt;/strong&gt; can be used to give some insight into what software is being used to view files, which may help with determing what technologies, such as compression, can be used. 
-&lt;/p&gt;
-&lt;p&gt;
-Finally, &lt;strong&gt;Protocol Substatus&lt;/strong&gt; may provide additional information, depending upon the &lt;strong&gt;Protocol Status&lt;/strong&gt; that was returned. &lt;strong&gt;Win32 Status&lt;/strong&gt;, which we haven&amp;#39;t mentioned yet, is similar, but I wouldn&amp;#39;t consider it as essential, which is why I&amp;#39;m not including it here. 
-&lt;/p&gt;
-&lt;h3&gt;The rest&lt;/h3&gt;
-&lt;p&gt;
-Finally, we&amp;#39;ve got the rest. Of course, these are how I&amp;#39;m rating these, so if someone can convince me otherwise, please do. Otherwise, these are the fields, in order solely of how they are listed in IIS, that are less essential than all the rest. 
-&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;User Name ( cs-username ) &lt;/li&gt;
-    &lt;li&gt;Service Name ( s-sitename ) &lt;/li&gt;
-    &lt;li&gt;Server Name ( s-computername ) &lt;/li&gt;
-    &lt;li&gt;Server IP Address ( s-ip ) &lt;/li&gt;
-    &lt;li&gt;Win32 Status ( sc-win32-status ) &lt;/li&gt;
-    &lt;li&gt;Host ( cs-host ) &lt;/li&gt;
-    &lt;li&gt;Cookie ( cs(Cookie) ) &lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-&lt;strong&gt;User Name&lt;/strong&gt; is a good field, if you&amp;#39;re using technology that stores this. For example, many Intranet sites, or the like. In these cases, this can help you determine who&amp;#39;s doing what. However, for the average external site, this field won&amp;#39;t provide any helpful information. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Service Name&lt;/strong&gt; is the site name used in IIS, which is typically something in the format of W3SVC#. This can be helpful when going over multiple log files, but otherwise may not provide helpful information. Likewise, &lt;strong&gt;Server Name&lt;/strong&gt; provides the name of the computer. This may be helpful after moving from one computer to another, if you&amp;#39;ve changed the name, in order to determine performance changes, but&amp;nbsp;otherwise ... most sites won&amp;#39;t have a need for this. 
-&lt;/p&gt;
-&lt;p&gt;
-Ditto for &lt;strong&gt;Server IP Address&lt;/strong&gt;, which, for most sites, will be pretty consistent. Again, this may provide some help in determining performance, or otherwise comparing one server to another (such as over multiple logs, from the same day). 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Win32 Status&lt;/strong&gt; may provide additional information about a status code, but &lt;strong&gt;Protocol Status&lt;/strong&gt; may be enough. 
-&lt;/p&gt;
-&lt;p&gt;
-&lt;strong&gt;Host&lt;/strong&gt; can help rebuild a URI, if you have multiple domains pointing to a single site, or otherwise see which is performing better. 
-&lt;/p&gt;
-&lt;p&gt;
-Finally, you&amp;#39;ve got &lt;strong&gt;Cookie&lt;/strong&gt;. Depending upon your site, this may be very essential indeed, but I&amp;#39;m not that big of a fan. However, if you&amp;#39;re site is relying upon cookies, this will obviously be worth that much more. 
-&lt;/p&gt;
-&lt;h3&gt;Final thoughts&lt;/h3&gt;
-&lt;p&gt;
-Hopefully, this gives an idea of the benefit of various W3C extended log format fields. Of course, this doesn&amp;#39;t cover actual analysis of these fields, which we&amp;#39;ll cover in another article. 
-&lt;/p&gt;
-</description>
+      <description>In this article, I&#39;ll be covering IIS 6.0 and what benefit you gain from tracking various W3C extended log format fields, for statistical and debugging purposes. [slnet0514:5263c19c-37d9-4f5e-adb8-29c85e3aee36]</description>
     </item>
     
   </channel>
