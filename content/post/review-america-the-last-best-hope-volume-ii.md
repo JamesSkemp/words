@@ -1,6 +1,6 @@
 +++
 title = "Review: America: The Last Best Hope: Volume II"
-summary = "Book review of William J. Bennett's second volume of America: The Last Best Hope."
+description = "Book review of William J. Bennett's second volume of America: The Last Best Hope."
 draft = false
 comments = true
 date = "2009-04-02T22:35:00-05:00"

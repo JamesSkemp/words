@@ -1,6 +1,6 @@
 +++
 title = "Philosophy, Politics, and Law Final Prospectus"
-summary = "Prospectus paper for my Philosophy, Politics, and Law final paper."
+description = "Prospectus paper for my Philosophy, Politics, and Law final paper."
 draft = false
 comments = true
 date = "2002-11-27T01:01:00-06:00"

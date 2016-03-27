@@ -1,6 +1,6 @@
 +++
 title = "Finally, an article has been moved to the new format"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2005-10-20T19:35:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Perceptions of Immanuel Kant Before a Reading of the Critique of Pure Reason"
-summary = "Thoughts on Immanuel Kant, before I've ever really read one of his major works."
+description = "Thoughts on Immanuel Kant, before I've ever really read one of his major works."
 draft = false
 comments = true
 date = "2007-10-30T22:45:00-05:00"

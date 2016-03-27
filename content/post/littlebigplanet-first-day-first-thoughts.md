@@ -1,6 +1,6 @@
 +++
 title = "LittleBigPlanet - First day, first thoughts"
-summary = "First impressions of LittleBigPlanet"
+description = "First impressions of LittleBigPlanet"
 draft = false
 comments = true
 date = "2008-10-25T20:01:00-05:00"

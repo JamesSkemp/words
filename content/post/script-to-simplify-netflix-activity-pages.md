@@ -1,6 +1,6 @@
 +++
 title = "Script to simplify Netflix activity pages (in progress)"
-summary = "I love Netflix, but there's no easy way to get a listing of the movies I've rated through the service. To ease with that, I've finally started on a script that will clean the Netflix output, so it's a bit easier to parse."
+description = "I love Netflix, but there's no easy way to get a listing of the movies I've rated through the service. To ease with that, I've finally started on a script that will clean the Netflix output, so it's a bit easier to parse."
 draft = false
 comments = true
 date = "2012-03-18T16:11:00-05:00"

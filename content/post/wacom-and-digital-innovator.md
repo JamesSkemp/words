@@ -1,6 +1,6 @@
 +++
 title = "Wacom and Digital Innovator"
-summary = "Some time ago, I purchased a Wacom Graphire direct from Wacom.  Since then, I've completed two surveys and received two DVDs from the Digital Innovator series."
+description = "Some time ago, I purchased a Wacom Graphire direct from Wacom.  Since then, I've completed two surveys and received two DVDs from the Digital Innovator series."
 draft = false
 comments = true
 date = "2006-06-02T20:07:00-05:00"

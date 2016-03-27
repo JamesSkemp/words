@@ -1,6 +1,6 @@
 +++
 title = "Review: PlayStation 3 EX-02 Next Gen Bluetooth Headset with Faceplates"
-summary = "The following is a review of the PlayStation 3 EX-02 Next Gen Bluetooth Headset with Faceplates, which I received as part of the Amazon Vine program."
+description = "The following is a review of the PlayStation 3 EX-02 Next Gen Bluetooth Headset with Faceplates, which I received as part of the Amazon Vine program."
 draft = false
 comments = true
 date = "2014-02-02T19:43:31-06:00"

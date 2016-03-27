@@ -1,6 +1,6 @@
 +++
 title = "Quick review: Parasite Dolls (2004)"
-summary = "Quick review of the movie Parasite Dolls (2004)."
+description = "Quick review of the movie Parasite Dolls (2004)."
 draft = false
 comments = true
 date = "2007-07-06T22:03:00-05:00"

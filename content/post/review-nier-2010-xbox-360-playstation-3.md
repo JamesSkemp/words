@@ -1,6 +1,6 @@
 +++
 title = "Review: Nier (2010) (Xbox 360 / PlayStation 3)"
-summary = "Review of Nier, released in 2010 for the Xbox 360 and PlayStation 3."
+description = "Review of Nier, released in 2010 for the Xbox 360 and PlayStation 3."
 draft = false
 comments = true
 date = "2011-05-21T21:30:00-05:00"

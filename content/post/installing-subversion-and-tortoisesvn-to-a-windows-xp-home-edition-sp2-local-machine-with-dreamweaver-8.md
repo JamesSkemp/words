@@ -1,6 +1,6 @@
 +++
 title = "Installing Subversion and TortoiseSVN to a Windows XP, Home Edition, SP2, local machine with Dreamweaver 8"
-summary = "In this guide, I'll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I'll be hooking it up to Dreamweaver 8, thanks to Nearly Geek's SVN4DW extension."
+description = "In this guide, I'll be installing Subversion and TortoiseSVN to a Windows XP machine, running SP2 and the Home Edition of XP. I'll be hooking it up to Dreamweaver 8, thanks to Nearly Geek's SVN4DW extension."
 draft = false
 comments = true
 date = "2006-09-16T22:45:00-05:00"

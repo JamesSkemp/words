@@ -1,6 +1,6 @@
 +++
 title = "Enabling PHP file_put_contents() support on IIS 7.5 on Windows Server 2008 R2"
-summary = "To save content on Windows Server 2008 R2 using PHP on IIS 7.5, make sure the necessary user has permission."
+description = "To save content on Windows Server 2008 R2 using PHP on IIS 7.5, make sure the necessary user has permission."
 draft = false
 comments = true
 date = "2010-09-01T21:20:00-05:00"

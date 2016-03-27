@@ -1,6 +1,6 @@
 +++
 title = "Review: Nightmares from the Deep: The Cursed Heart (2012)"
-summary = "The following is a review of Nightmares from the Deep: The Cursed Heart (2012), available on Steam and for physical purchase."
+description = "The following is a review of Nightmares from the Deep: The Cursed Heart (2012), available on Steam and for physical purchase."
 draft = false
 comments = false
 date = "2015-09-20T12:14:55-05:00"

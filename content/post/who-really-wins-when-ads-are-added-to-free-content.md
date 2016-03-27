@@ -1,6 +1,6 @@
 +++
 title = "Who really wins when ads are added to free content?"
-summary = "Ramblings regarding advertising online. [slnet0514:d9e1746b-562f-4aba-b668-c2a0a2673f29]"
+description = "Ramblings regarding advertising online. [slnet0514:d9e1746b-562f-4aba-b668-c2a0a2673f29]"
 draft = false
 comments = true
 date = "2007-12-22T12:00:00-06:00"

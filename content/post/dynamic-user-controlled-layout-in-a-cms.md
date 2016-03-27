@@ -1,6 +1,6 @@
 +++
 title = "Dynamic user-controlled layout in a CMS"
-summary = "Thoughts on a way to create a layout, in a vein similar to the W3C's template-based positioning draft specification, but easier, in my opinion. [slnet0514:bb48c7ca-03dc-4d43-b35f-abcfa32b40be]"
+description = "Thoughts on a way to create a layout, in a vein similar to the W3C's template-based positioning draft specification, but easier, in my opinion. [slnet0514:bb48c7ca-03dc-4d43-b35f-abcfa32b40be]"
 draft = false
 comments = true
 date = "2008-05-25T15:00:00-05:00"

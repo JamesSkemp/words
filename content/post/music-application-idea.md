@@ -1,6 +1,6 @@
 +++
 title = "Music application idea"
-summary = "A music application idea, that I'll be working on implementing."
+description = "A music application idea, that I'll be working on implementing."
 draft = false
 comments = true
 date = "2010-05-25T22:23:00-05:00"

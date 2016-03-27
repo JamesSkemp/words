@@ -1,6 +1,6 @@
 +++
 title = "Tic-Tac-Toe in Visual Basic 6"
-summary = "Visual Basic 6 code for a multi-player Tic-Tac-Toe application."
+description = "Visual Basic 6 code for a multi-player Tic-Tac-Toe application."
 draft = false
 comments = true
 date = "2010-07-24T12:00:00-05:00"

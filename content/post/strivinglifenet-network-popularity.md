@@ -1,6 +1,6 @@
 +++
 title = "StrivingLife.net network popularity"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2005-10-07T20:41:00-05:00"

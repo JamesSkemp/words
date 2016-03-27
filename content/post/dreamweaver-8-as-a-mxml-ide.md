@@ -1,6 +1,6 @@
 +++
 title = "Dreamweaver 8 as a MXML IDE?"
-summary = "If only setting up code hints in Dreamweaver 8 were as easy as it looks ..."
+description = "If only setting up code hints in Dreamweaver 8 were as easy as it looks ..."
 draft = false
 comments = true
 date = "2006-09-07T20:38:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Creating additional testing sites in Apache, on a local Windows computer"
-summary = "It may happen that you'd like to test multiple sites on one machine.  There's a number of ways to do this.  Following our previous tutorial, Installing Apache to a Windows-based computer, locally, we can either dump additional folders in our Apache root, or we can create additional subdomains under localhost."
+description = "It may happen that you'd like to test multiple sites on one machine.  There's a number of ways to do this.  Following our previous tutorial, Installing Apache to a Windows-based computer, locally, we can either dump additional folders in our Apache root, or we can create additional subdomains under localhost."
 draft = false
 comments = true
 date = "2006-02-18T09:44:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "I would like to tell you that I love you..."
-summary = "Written March 30 and 31, 2003."
+description = "Written March 30 and 31, 2003."
 draft = false
 comments = false
 date = "2003-03-31T00:01:00-06:00"

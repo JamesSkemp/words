@@ -1,6 +1,6 @@
 +++
 title = "Confucian View on Conflict and the Ruler"
-summary = "Paper on the Confucian view of conflict and the ruler."
+description = "Paper on the Confucian view of conflict and the ruler."
 draft = false
 comments = true
 date = "2002-04-22T01:01:00-05:00"

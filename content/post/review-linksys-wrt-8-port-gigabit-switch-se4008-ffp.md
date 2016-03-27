@@ -1,6 +1,6 @@
 +++
 title = "Review: Linksys WRT 8-Port Gigabit Switch (SE4008-FFP)"
-summary = "The following is a review of the Linksys WRT 8-Port Gigabit Switch (SE4008-FFP), received as part of the Amazon Vine program."
+description = "The following is a review of the Linksys WRT 8-Port Gigabit Switch (SE4008-FFP), received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-05-28T16:42:01-05:00"

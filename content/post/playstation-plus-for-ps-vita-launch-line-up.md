@@ -1,6 +1,6 @@
 +++
 title = "PlayStation Plus for PS Vita launch line-up"
-summary = "Amazon's current pricing for the PlayStation Vita games launching as part of PlayStation Plus."
+description = "Amazon's current pricing for the PlayStation Vita games launching as part of PlayStation Plus."
 draft = false
 comments = true
 date = "2012-11-16T08:15:00-06:00"

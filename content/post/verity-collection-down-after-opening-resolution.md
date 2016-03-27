@@ -1,6 +1,6 @@
 +++
 title = "Collection down after opening - resolution"
-summary = "Sometimes Verity collections will show a Collection down after opening (10) error, when attempting to index. Here's a resolution. [slnet0514:e2cfa167-e350-498b-9dea-3927bfe6ec1e]"
+description = "Sometimes Verity collections will show a Collection down after opening (10) error, when attempting to index. Here's a resolution. [slnet0514:e2cfa167-e350-498b-9dea-3927bfe6ec1e]"
 draft = false
 comments = true
 date = "2008-06-16T13:55:00-05:00"

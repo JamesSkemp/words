@@ -1,6 +1,6 @@
 +++
 title = "jQuery: Query an Xml document and output data"
-summary = "jQuery to pull data from an Xml file, and add it to the page."
+description = "jQuery to pull data from an Xml file, and add it to the page."
 draft = false
 comments = true
 date = "2009-05-03T21:11:00-05:00"

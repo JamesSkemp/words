@@ -1,6 +1,6 @@
 +++
 title = "What if gas cost $10 a gallon?"
-summary = "What if gas was over $10 a gallon? Would we finally see improvements in the U.S.? [slnet0514:0c1ad4ec-dcaf-4007-bfd4-a39c316ac894]"
+description = "What if gas was over $10 a gallon? Would we finally see improvements in the U.S.? [slnet0514:0c1ad4ec-dcaf-4007-bfd4-a39c316ac894]"
 draft = false
 comments = true
 date = "2008-05-18T19:31:00-05:00"

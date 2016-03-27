@@ -1,6 +1,6 @@
 +++
 title = "Religion and Medieval Philosophy: Text Analysis 2"
-summary = "The material of this text analysis will be Peter Abailard and his work The Glosses of Peter Abailard on Porphyry. [slnet0514:]"
+description = "The material of this text analysis will be Peter Abailard and his work The Glosses of Peter Abailard on Porphyry. [slnet0514:]"
 draft = false
 comments = true
 date = "2003-02-23T22:27:00-06:00"

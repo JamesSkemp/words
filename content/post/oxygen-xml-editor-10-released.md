@@ -1,6 +1,6 @@
 +++
 title = "oXygen XML Editor 10 released"
-summary = "oXygen XML Editor has been upgraded to version 10."
+description = "oXygen XML Editor has been upgraded to version 10."
 draft = false
 comments = true
 date = "2008-10-23T11:58:00-05:00"

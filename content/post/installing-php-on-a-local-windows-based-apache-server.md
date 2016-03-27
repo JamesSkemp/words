@@ -1,6 +1,6 @@
 +++
 title = "Installing PHP on a local Windows-based, Apache, server"
-summary = "While our previous article walked through adding Perl to our local server, Perl just isn't going to cut it for creating dynamic content. For that, we're going to have to install a more powerful language. As I said quite a few articles ago, if we would have gone the IIS route, we could have the use of ASP. However, since we're going the Apache route, that means PHP is our best choice. The fact that the cheapest servers out there use Apache with PHP is another reason to go this route."
+description = "While our previous article walked through adding Perl to our local server, Perl just isn't going to cut it for creating dynamic content. For that, we're going to have to install a more powerful language. As I said quite a few articles ago, if we would have gone the IIS route, we could have the use of ASP. However, since we're going the Apache route, that means PHP is our best choice. The fact that the cheapest servers out there use Apache with PHP is another reason to go this route."
 draft = false
 comments = true
 date = "2006-02-22T23:45:00-06:00"

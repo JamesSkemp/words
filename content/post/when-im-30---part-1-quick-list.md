@@ -1,6 +1,6 @@
 +++
 title = "When I'm 30 - Part 1: Quick list"
-summary = "Recently, I've been thinking a lot about where I'd like to be when I get older. [slnet0514:cce9ad76-b71f-4777-b8d2-39d4170cdaef]"
+description = "Recently, I've been thinking a lot about where I'd like to be when I get older. [slnet0514:cce9ad76-b71f-4777-b8d2-39d4170cdaef]"
 draft = false
 comments = true
 date = "2008-02-09T14:00:00-06:00"

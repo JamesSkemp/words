@@ -1,6 +1,6 @@
 +++
 title = "Test application in ASP.NET (C#): Amortization schedule"
-summary = "Instead of playing video games tonight, I used 2 hours of time productively, to create an amortization schedule generator in ASP.NET C#."
+description = "Instead of playing video games tonight, I used 2 hours of time productively, to create an amortization schedule generator in ASP.NET C#."
 draft = false
 comments = true
 date = "2009-03-16T23:13:00-05:00"

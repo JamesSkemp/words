@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 12: Kusanagi Battles Tank"
-summary = "Transcript of scene 12 of the movie Ghost in the Shell. [slnet0514:8c4e9348-0433-4bd7-83b2-f0be4bd2f23c]"
+description = "Transcript of scene 12 of the movie Ghost in the Shell. [slnet0514:8c4e9348-0433-4bd7-83b2-f0be4bd2f23c]"
 draft = false
 comments = true
 date = "2008-06-01T16:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On the purpose of life (with a bonus on the meaning of life)"
-summary = "Paper on the purpose of life. Includes the bonus of a brief discussion on the meaning of life."
+description = "Paper on the purpose of life. Includes the bonus of a brief discussion on the meaning of life."
 draft = false
 comments = true
 date = "2008-07-10T07:50:00-05:00"

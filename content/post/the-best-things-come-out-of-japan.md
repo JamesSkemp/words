@@ -1,6 +1,6 @@
 +++
 title = "The best things come out of Japan"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-01-03T21:56:00-06:00"

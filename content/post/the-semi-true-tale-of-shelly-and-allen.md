@@ -1,6 +1,6 @@
 +++
 title = "The Semi-True Tale of Shelly and Allen"
-summary = "A semi-true tale about Shelly and Allen."
+description = "A semi-true tale about Shelly and Allen."
 draft = false
 comments = true
 date = "2005-03-25T02:01:00-06:00"

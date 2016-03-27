@@ -1,6 +1,6 @@
 +++
 title = "Muramasa: The Demon Blade - Complete weapon listing"
-summary = "In the interest of helping make it a bit easier, I've created a guide listing all 108 weapons in Muramasa: The Demon Blade."
+description = "In the interest of helping make it a bit easier, I've created a guide listing all 108 weapons in Muramasa: The Demon Blade."
 draft = false
 comments = true
 date = "2009-10-12T22:09:00-05:00"

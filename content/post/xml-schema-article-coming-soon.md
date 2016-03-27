@@ -1,6 +1,6 @@
 +++
 title = "XML Schema article coming soon"
-summary = "Thanks to <oXygen/>, I think I've figured out XML Schemas ... [slnet0514:02ba583a-6b16-453c-9704-bd360ed5aa9e]"
+description = "Thanks to <oXygen/>, I think I've figured out XML Schemas ... [slnet0514:02ba583a-6b16-453c-9704-bd360ed5aa9e]"
 draft = false
 comments = true
 date = "2008-01-09T22:30:00-06:00"

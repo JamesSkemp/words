@@ -1,6 +1,6 @@
 +++
 title = "Rank and File Cheat Sheets"
-summary = "Since I'm a fan of rank and file puzzles, I've created a couple of sheets that can be helpful in solving these puzzles."
+description = "Since I'm a fan of rank and file puzzles, I've created a couple of sheets that can be helpful in solving these puzzles."
 draft = false
 comments = true
 date = "2004-11-18T01:01:00-06:00"

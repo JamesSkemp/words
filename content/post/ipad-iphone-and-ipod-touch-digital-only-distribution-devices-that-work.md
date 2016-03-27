@@ -1,6 +1,6 @@
 +++
 title = "iPad, iPhone, and iPod Touch - digital-only distribution devices that work"
-summary = "While the PSPgo hasn't done all that well, Apple's products have shown that digital-only distribution of games can work. But is it the audience that makes it possible?"
+description = "While the PSPgo hasn't done all that well, Apple's products have shown that digital-only distribution of games can work. But is it the audience that makes it possible?"
 draft = false
 comments = true
 date = "2010-12-13T19:07:00-06:00"

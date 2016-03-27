@@ -1,6 +1,6 @@
 +++
 title = "Review: Linksys AC1200 Wi-Fi Wireless Dual-Band+ Router with Gigabit & USB Ports (EA6350)"
-summary = "The following is a review of a Linksys AC1200 Wi-Fi Wireless Dual-Band+ Router with Gigabit & USB Ports (EA6350), which I received as part of the Amazone Vine program."
+description = "The following is a review of a Linksys AC1200 Wi-Fi Wireless Dual-Band+ Router with Gigabit & USB Ports (EA6350), which I received as part of the Amazone Vine program."
 draft = false
 comments = false
 date = "2014-09-01T19:49:10-05:00"

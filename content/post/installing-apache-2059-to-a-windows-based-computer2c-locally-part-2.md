@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache 2.0.59 to a Windows-based computer, locally: Part 2"
-summary = "In part two of this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for ColdFusion MX 6.1 and 7.0, without having to reinstall either application.  In later guides, we'll be going over how to set back up both PHP 4 and 5, as well as MySQL and PostgreSQL."
+description = "In part two of this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for ColdFusion MX 6.1 and 7.0, without having to reinstall either application.  In later guides, we'll be going over how to set back up both PHP 4 and 5, as well as MySQL and PostgreSQL."
 draft = false
 comments = true
 date = "2006-08-25T18:30:00-05:00"

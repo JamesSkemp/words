@@ -1,6 +1,6 @@
 +++
 title = "July '06: Month end stat thoughts"
-summary = "Thoughts on the trends I'm seeing from my browser reporting stats."
+description = "Thoughts on the trends I'm seeing from my browser reporting stats."
 draft = false
 comments = true
 date = "2006-08-06T12:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Munchkin Panic"
-summary = "The following is a review of Munchkin Panic, provided for free as part of Amazon Vine."
+description = "The following is a review of Munchkin Panic, provided for free as part of Amazon Vine."
 draft = false
 comments = false
 date = "2015-01-28T21:20:29-06:00"

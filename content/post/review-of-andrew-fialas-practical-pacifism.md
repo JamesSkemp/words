@@ -1,6 +1,6 @@
 +++
 title = "Review of Andrew Fiala's Practical Pacifism"
-summary = "A review of Andrew Fiala's Practical Pacifism."
+description = "A review of Andrew Fiala's Practical Pacifism."
 draft = false
 comments = true
 date = "2007-05-26T21:02:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Network popularity"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2005-10-07T07:34:00-05:00"

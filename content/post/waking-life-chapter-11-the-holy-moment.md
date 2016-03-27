@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 11 - The Holy Moment"
-summary = "Transcript of the movie Waking Life; DVD Chapter 11 - The Holy Moment."
+description = "Transcript of the movie Waking Life; DVD Chapter 11 - The Holy Moment."
 draft = false
 comments = true
 date = "2006-05-25T19:56:00-05:00"

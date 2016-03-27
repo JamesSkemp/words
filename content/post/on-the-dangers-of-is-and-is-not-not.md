@@ -1,6 +1,6 @@
 +++
 title = "On the Dangers of \"Is and Is Not Not\""
-summary = "On the limitations of the rule of double negation in sentential logic."
+description = "On the limitations of the rule of double negation in sentential logic."
 draft = false
 comments = true
 date = "2007-06-10T11:03:00-05:00"

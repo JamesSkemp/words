@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET Theme - StrivingLife (almost done)"
-summary = "Since BlogEngine.NET CSS files can get locked, it's sometimes necessary to pull out Firebug."
+description = "Since BlogEngine.NET CSS files can get locked, it's sometimes necessary to pull out Firebug."
 draft = false
 comments = true
 date = "2007-07-14T09:33:00-05:00"

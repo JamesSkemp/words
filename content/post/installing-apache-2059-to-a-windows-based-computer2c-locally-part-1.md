@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache 2.0.59 to a Windows-based computer, locally: Part 1"
-summary = "In this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server.  We'll also be going over how to add Perl support, and in later guides, how to setup both PHP 4 and 5, ColdFusion MX 6.1 and 7, as well as MySQL and PostgreSQL."
+description = "In this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server.  We'll also be going over how to add Perl support, and in later guides, how to setup both PHP 4 and 5, ColdFusion MX 6.1 and 7, as well as MySQL and PostgreSQL."
 draft = false
 comments = true
 date = "2006-08-22T20:13:00-05:00"

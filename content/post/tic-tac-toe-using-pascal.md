@@ -1,6 +1,6 @@
 +++
 title = "Tic-Tac-Toe using Pascal"
-summary = "The main code for a Tic Tac Toe application written in Pascal."
+description = "The main code for a Tic Tac Toe application written in Pascal."
 draft = false
 comments = true
 date = "2010-07-24T11:48:00-05:00"

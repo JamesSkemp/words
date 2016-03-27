@@ -1,6 +1,6 @@
 +++
 title = "On one fine day"
-summary = "Short prose."
+description = "Short prose."
 draft = false
 comments = true
 date = "2005-04-14T07:10:00-05:00"

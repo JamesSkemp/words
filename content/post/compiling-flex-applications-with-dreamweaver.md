@@ -1,6 +1,6 @@
 +++
 title = "Compiling Flex applications with Dreamweaver"
-summary = "External link time: Tom Lee's post on easily compiling and running Flex applications using Dreamweaver."
+description = "External link time: Tom Lee's post on easily compiling and running Flex applications using Dreamweaver."
 draft = false
 comments = true
 date = "2006-09-06T18:56:00-05:00"

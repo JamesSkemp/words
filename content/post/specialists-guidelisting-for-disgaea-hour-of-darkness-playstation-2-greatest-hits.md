@@ -1,6 +1,6 @@
 +++
 title = "Specialists guide/listing for Disgaea: Hour of Darkness (Playstation 2 Greatest Hits)"
-summary = "A listing of specialists for Disgaea: Hour of Darkness (Playstation 2 Greatest Hits) is now available."
+description = "A listing of specialists for Disgaea: Hour of Darkness (Playstation 2 Greatest Hits) is now available."
 draft = false
 comments = true
 date = "2008-10-12T17:50:00-05:00"

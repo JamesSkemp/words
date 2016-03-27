@@ -1,6 +1,6 @@
 +++
 title = "Log Parser queries to find 400 and 500 http status codes"
-summary = "Queries that can be used in Log Parser to find 400 and 500 status codes in IIS log files."
+description = "Queries that can be used in Log Parser to find 400 and 500 status codes in IIS log files."
 draft = false
 comments = true
 date = "2007-09-09T18:30:00-05:00"

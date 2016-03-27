@@ -1,6 +1,6 @@
 +++
 title = "On the Saying 'Change is Good'"
-summary = "Brief discourse on the saying \"Change is good.\""
+description = "Brief discourse on the saying \"Change is good.\""
 draft = false
 comments = true
 date = "2003-11-24T02:01:00-06:00"

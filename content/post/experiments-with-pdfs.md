@@ -1,6 +1,6 @@
 +++
 title = "Experiments with PDFs"
-summary = "How I use and create PDFs."
+description = "How I use and create PDFs."
 draft = false
 comments = true
 date = "2005-10-15T16:06:00-05:00"

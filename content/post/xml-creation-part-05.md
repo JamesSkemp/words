@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 5"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part five, I'll be using CSS to modify the display of the XML document's contents. [slnet0514:ff7ebd10-c6ee-491a-8f7f-08c925d84ce4]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part five, I'll be using CSS to modify the display of the XML document's contents. [slnet0514:ff7ebd10-c6ee-491a-8f7f-08c925d84ce4]"
 draft = false
 comments = true
 date = "2007-12-29T13:00:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Ever had a reason to compare two files?"
-summary = "A short blurb on WinDiff."
+description = "A short blurb on WinDiff."
 draft = false
 comments = false
 date = "2005-11-21T20:11:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Flying under the radar, Cassini 4.0 released"
-summary = "Cassini 4.0, featuring a number of improvements, has been released as open source. Pre-built version available here."
+description = "Cassini 4.0, featuring a number of improvements, has been released as open source. Pre-built version available here."
 draft = false
 comments = true
 date = "2010-05-22T18:35:00-05:00"

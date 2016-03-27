@@ -1,6 +1,6 @@
 +++
 title = "Overview of B.F. Skinner's Beyond Freedom & Dignity: Chapter 6"
-summary = "An overview of chapter six of B.F. Skinner's Beyond Freedom & Dignity."
+description = "An overview of chapter six of B.F. Skinner's Beyond Freedom & Dignity."
 draft = false
 comments = true
 date = "2003-12-09T00:00:00-06:00"

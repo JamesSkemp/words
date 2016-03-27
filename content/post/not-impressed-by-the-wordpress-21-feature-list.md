@@ -1,6 +1,6 @@
 +++
 title = "Not impressed by the WordPress 2.1 feature list"
-summary = "WordPress 2.1 is out!  Eh."
+description = "WordPress 2.1 is out!  Eh."
 draft = false
 comments = true
 date = "2007-01-22T20:03:00-06:00"

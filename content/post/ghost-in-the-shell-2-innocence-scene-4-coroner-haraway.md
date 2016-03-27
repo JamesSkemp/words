@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 4: Coroner Haraway"
-summary = "Transcript of scene 4, from Ghost in the Shell 2: Innocence.  This scene takes place in the Forensics lab."
+description = "Transcript of scene 4, from Ghost in the Shell 2: Innocence.  This scene takes place in the Forensics lab."
 draft = false
 comments = true
 date = "2006-08-08T20:05:00-05:00"

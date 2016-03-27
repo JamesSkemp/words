@@ -1,6 +1,6 @@
 +++
 title = "Yes, this style is messed up"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-01-02T01:06:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Quick and dirty conversions to FLV (Flash Video)"
-summary = "Using one tool, it's easy to convert a wide variety of video formats to FLV, for posting on your site. [slnet0514:0619b657-9369-4afb-af08-1de033f0e7b8]"
+description = "Using one tool, it's easy to convert a wide variety of video formats to FLV, for posting on your site. [slnet0514:0619b657-9369-4afb-af08-1de033f0e7b8]"
 draft = false
 comments = true
 date = "2008-02-23T12:45:00-06:00"

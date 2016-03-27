@@ -1,6 +1,6 @@
 +++
 title = "Review: Rant: An Oral Biography of Buster Casey"
-summary = "Book review of Rant: An Oral Biography of Buster Casey, written by Chuck Palahniuk."
+description = "Book review of Rant: An Oral Biography of Buster Casey, written by Chuck Palahniuk."
 draft = false
 comments = true
 date = "2010-04-25T18:37:00-05:00"

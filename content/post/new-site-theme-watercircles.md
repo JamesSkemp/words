@@ -1,6 +1,6 @@
 +++
 title = "New site theme - watercircles"
-summary = "Watercircles, a new theme for BlogEngine.NET, is now in use on my site."
+description = "Watercircles, a new theme for BlogEngine.NET, is now in use on my site."
 draft = false
 comments = true
 date = "2009-07-21T15:58:00-05:00"

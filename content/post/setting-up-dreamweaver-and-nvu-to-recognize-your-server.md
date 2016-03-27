@@ -1,6 +1,6 @@
 +++
 title = "Setting up Dreamweaver and Nvu to recognize your server"
-summary = "Now that we've setup Apache on our local computer, and effectively created a basic Web server, it's time to look at setting up some popular programs to work with these sites.  I'll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0)."
+description = "Now that we've setup Apache on our local computer, and effectively created a basic Web server, it's time to look at setting up some popular programs to work with these sites.  I'll be looking at two programs, the costly Dreamweaver (8) and the free Nvu (1.0)."
 draft = false
 comments = true
 date = "2006-02-19T10:53:00-06:00"

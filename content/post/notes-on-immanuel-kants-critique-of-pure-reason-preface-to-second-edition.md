@@ -1,6 +1,6 @@
 +++
 title = "Notes on Immanuel Kant's Critique of Pure Reason: Preface to Second Edition"
-summary = "During the month of December 2007, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the second edition's Preface. [slnet0514:26de9a81-2e72-4559-a7a8-8a89a1b2965c]"
+description = "During the month of December 2007, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the second edition's Preface. [slnet0514:26de9a81-2e72-4559-a7a8-8a89a1b2965c]"
 draft = false
 comments = true
 date = "2007-12-02T18:45:00-06:00"

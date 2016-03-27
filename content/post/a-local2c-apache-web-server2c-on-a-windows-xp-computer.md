@@ -1,6 +1,6 @@
 +++
 title = "A local, Apache Web server, on a Windows XP computer"
-summary = "A listing of tutorials on how to add various functionality to a local, Apache, server."
+description = "A listing of tutorials on how to add various functionality to a local, Apache, server."
 draft = false
 comments = true
 date = "2006-02-27T03:23:00-06:00"

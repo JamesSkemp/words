@@ -1,6 +1,6 @@
 +++
 title = "Working with Virtual Hard Disks in Windows 7 and Server 2008 R2"
-summary = "With the new versions of Windows, Virtual Hard Disks (VHDs) are no longer just for virtualized environments."
+description = "With the new versions of Windows, Virtual Hard Disks (VHDs) are no longer just for virtualized environments."
 draft = false
 comments = true
 date = "2010-06-20T19:02:00-05:00"

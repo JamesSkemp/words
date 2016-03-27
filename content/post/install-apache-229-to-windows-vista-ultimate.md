@@ -1,6 +1,6 @@
 +++
 title = "Install Apache 2.2.9 to Windows Vista (Ultimate)"
-summary = "Overview of installing Apache 2.2.9 to Windows Vista Ultimate, along-side IIS."
+description = "Overview of installing Apache 2.2.9 to Windows Vista Ultimate, along-side IIS."
 draft = false
 comments = true
 date = "2008-08-15T16:15:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Microsoft's Log Parser 2.2"
-summary = "A short blurb on Microsoft's Log Parser."
+description = "A short blurb on Microsoft's Log Parser."
 draft = false
 comments = true
 date = "2007-07-29T18:16:00-05:00"

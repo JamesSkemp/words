@@ -1,6 +1,6 @@
 +++
 title = "Review: Eat Them! (2010) (PlayStation 3)"
-summary = "Review of Eat Them!, for the PlayStation 3, and released on the PlayStation Network."
+description = "Review of Eat Them!, for the PlayStation 3, and released on the PlayStation Network."
 draft = false
 comments = true
 date = "2011-08-06T09:24:00-05:00"

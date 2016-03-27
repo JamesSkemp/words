@@ -1,6 +1,6 @@
 +++
 title = "Review: TP-LINK Archer T4U AC1200 Wireless Dual Band USB Adapter"
-summary = "The following is a review of the TP-LINK Archer T4U AC1200 Wireless Dual Band USB Adapter, which I received as part of the Amazon Vine program."
+description = "The following is a review of the TP-LINK Archer T4U AC1200 Wireless Dual Band USB Adapter, which I received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-12-31T12:40:44-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "System.Text.StringBuilder.Remove() overhead"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2009-06-28T13:19:00-05:00"

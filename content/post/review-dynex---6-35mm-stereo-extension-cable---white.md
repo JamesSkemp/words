@@ -1,6 +1,6 @@
 +++
 title = "Review: Dynex - 6' 3.5mm Stereo Extension Cable - White"
-summary = "Review of Dynex 3.5mm cable. [slnet0514:bdae9bdf-8f99-4f0e-a16f-4561a8a481f5]"
+description = "Review of Dynex 3.5mm cable. [slnet0514:bdae9bdf-8f99-4f0e-a16f-4561a8a481f5]"
 draft = false
 comments = true
 date = "2008-02-10T11:23:00-06:00"

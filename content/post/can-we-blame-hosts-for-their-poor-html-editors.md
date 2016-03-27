@@ -1,6 +1,6 @@
 +++
 title = "Can we blame hosts for their poor HTML editors?"
-summary = "A short article on HTML editors provided by Web site hosts."
+description = "A short article on HTML editors provided by Web site hosts."
 draft = false
 comments = true
 date = "2005-04-30T00:00:00-05:00"

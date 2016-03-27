@@ -1,6 +1,6 @@
 +++
 title = "The Earth: Blue Marble"
-summary = "Link to NASA's Visible Earth site."
+description = "Link to NASA's Visible Earth site."
 draft = false
 comments = true
 date = "2006-05-15T21:13:00-05:00"

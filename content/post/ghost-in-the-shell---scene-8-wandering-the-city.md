@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 8: Wandering the City"
-summary = "Transcript of scene 8 of the movie Ghost in the Shell. More of a showcase of animation, than anything. [slnet0514:e16ee81d-7e59-4ed4-80f9-cb751c85e1bb]"
+description = "Transcript of scene 8 of the movie Ghost in the Shell. More of a showcase of animation, than anything. [slnet0514:e16ee81d-7e59-4ed4-80f9-cb751c85e1bb]"
 draft = false
 comments = true
 date = "2008-06-01T14:30:00-05:00"

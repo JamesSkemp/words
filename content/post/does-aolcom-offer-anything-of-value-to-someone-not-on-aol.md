@@ -1,6 +1,6 @@
 +++
 title = "Does AOL.com offer anything of value to someone not on AOL?"
-summary = "Some screen captures from AOL.com"
+description = "Some screen captures from AOL.com"
 draft = false
 comments = true
 date = "2003-01-19T02:01:00-06:00"

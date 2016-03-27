@@ -1,6 +1,6 @@
 +++
 title = "Review: Professional ASP.NET 3.5 In C# and VB"
-summary = "Review of Professional ASP.NET 3.5 In C# and VB, by Bill Evjen, Scott Hanselman and Devin Rader."
+description = "Review of Professional ASP.NET 3.5 In C# and VB, by Bill Evjen, Scott Hanselman and Devin Rader."
 draft = false
 comments = true
 date = "2008-07-11T22:30:00-05:00"

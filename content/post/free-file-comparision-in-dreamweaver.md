@@ -1,6 +1,6 @@
 +++
 title = "Free file comparision in Dreamweaver"
-summary = "WinMerge: for comparing local and remote files."
+description = "WinMerge: for comparing local and remote files."
 draft = false
 comments = true
 date = "2005-10-31T07:22:00-06:00"

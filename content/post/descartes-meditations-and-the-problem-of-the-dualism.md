@@ -1,6 +1,6 @@
 +++
 title = "Descartes, Meditations and the Problem of the Dualism"
-summary = "Paper regarding Descartes' Meditations, and it's impact on the writings of Spinoza, Locke, and Berkeley."
+description = "Paper regarding Descartes' Meditations, and it's impact on the writings of Spinoza, Locke, and Berkeley."
 draft = false
 comments = true
 date = "2002-05-06T01:01:00-05:00"

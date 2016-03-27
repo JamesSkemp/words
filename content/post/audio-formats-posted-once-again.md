@@ -1,6 +1,6 @@
 +++
 title = "Audio formats posted, once again"
-summary = "Listen to your favorite articles on StrivingLife."
+description = "Listen to your favorite articles on StrivingLife."
 draft = false
 comments = true
 date = "2007-10-15T22:25:00-05:00"

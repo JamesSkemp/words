@@ -1,6 +1,6 @@
 +++
 title = "Review: Panavise PortaGrip Phone Holder with Windshield Mount"
-summary = "The following is a review of the Panavise PortaGrip Phone Holder with Windshield Mount, which I received as part of the Amazon Vine program."
+description = "The following is a review of the Panavise PortaGrip Phone Holder with Windshield Mount, which I received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-02-18T19:11:32-06:00"

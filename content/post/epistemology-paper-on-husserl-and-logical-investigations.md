@@ -1,6 +1,6 @@
 +++
 title = "Epistemology: Paper on Husserl and Logical Investigations"
-summary = "Paper regarding Edmund Husserl's Logical Investigations and the theory of impossible objects."
+description = "Paper regarding Edmund Husserl's Logical Investigations and the theory of impossible objects."
 draft = false
 comments = true
 date = "2003-04-27T01:01:00-05:00"

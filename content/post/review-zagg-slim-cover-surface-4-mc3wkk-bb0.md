@@ -1,6 +1,6 @@
 +++
 title = "Review: ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0)"
-summary = "The following is a review of the ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0), received as part of the Amazon Vine program."
+description = "The following is a review of the ZAGG Slim Cover, Ultra-Slim Bluetooth Tablet Keyboard for Microsoft Surface Pro 3 and 4 (MC3WKK-BB0), received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2016-02-20T20:17:34-06:00"

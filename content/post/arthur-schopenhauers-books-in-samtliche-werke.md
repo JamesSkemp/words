@@ -1,6 +1,6 @@
 +++
 title = "Arthur Schopenhauer's books in Samtliche Werke"
-summary = "A bit of information about the Suhrkamp published works of Arthur Schopenhauer in the five book S&auml;mtliche Werke."
+description = "A bit of information about the Suhrkamp published works of Arthur Schopenhauer in the five book S&auml;mtliche Werke."
 draft = false
 comments = true
 date = "2007-01-28T18:49:00-06:00"

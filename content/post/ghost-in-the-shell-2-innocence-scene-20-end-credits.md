@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 20 : End Credits"
-summary = "Transcript of Scene 20 of the movie Ghost in the Shell 2: Innocence.  This scene is simply the closing credits of the movie."
+description = "Transcript of Scene 20 of the movie Ghost in the Shell 2: Innocence.  This scene is simply the closing credits of the movie."
 draft = false
 comments = true
 date = "2006-08-07T22:01:00-05:00"

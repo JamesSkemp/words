@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 5: PunBB"
-summary = "In this article, we'll be going over how to install PunBB 1.2.14.  We'll also be looking at how PunBB stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install PunBB 1.2.14.  We'll also be looking at how PunBB stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-24T09:00:00-06:00"

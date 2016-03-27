@@ -1,6 +1,6 @@
 +++
 title = "What I can say about New York (City)"
-summary = "While I've never been to New York, that I can recall, I have decided upon one thing that I can say about it, from what I know about it."
+description = "While I've never been to New York, that I can recall, I have decided upon one thing that I can say about it, from what I know about it."
 draft = false
 comments = true
 date = "2007-08-19T15:44:00-05:00"

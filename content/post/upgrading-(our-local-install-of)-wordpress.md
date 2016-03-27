@@ -1,6 +1,6 @@
 +++
 title = "Upgrading (our local install of) WordPress"
-summary = "In a previous guide, we walked through installing WordPress on a local machine. This time, we'll be upgrading WordPress. For this guide, we'll be upgrading from WordPress 2.0.1 to 2.0.2.  Note this guide will work equally well for 2.0.3 or 2.0.4 as well."
+description = "In a previous guide, we walked through installing WordPress on a local machine. This time, we'll be upgrading WordPress. For this guide, we'll be upgrading from WordPress 2.0.1 to 2.0.2.  Note this guide will work equally well for 2.0.3 or 2.0.4 as well."
 draft = false
 comments = true
 date = "2006-03-11T16:31:00-06:00"

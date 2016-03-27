@@ -1,6 +1,6 @@
 +++
 title = "James Skemp's BlogEngine.NET themes"
-summary = "A listing of themes I've adapted for use with BlogEngine.NET."
+description = "A listing of themes I've adapted for use with BlogEngine.NET."
 draft = false
 comments = false
 date = "2008-08-31T20:49:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Supporting HTML5 manifest files on IIS 7 using Web.config"
-summary = "While particular to HTML5 .manifest files, this can done for any particular MIME type that needs to be changed."
+description = "While particular to HTML5 .manifest files, this can done for any particular MIME type that needs to be changed."
 draft = false
 comments = true
 date = "2011-02-18T18:24:00-06:00"

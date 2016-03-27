@@ -1,6 +1,6 @@
 +++
 title = "Error handling on a local Windows-based, Apache, server"
-summary = "This time, we'll be setting up very basic error handling, and setup our first .htaccess file."
+description = "This time, we'll be setting up very basic error handling, and setup our first .htaccess file."
 draft = false
 comments = true
 date = "2006-03-16T19:57:00-06:00"

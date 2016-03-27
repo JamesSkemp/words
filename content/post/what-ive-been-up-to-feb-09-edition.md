@@ -1,6 +1,6 @@
 +++
 title = "What I've been up to (Feb '09 edition)"
-summary = "What I've been busy with."
+description = "What I've been busy with."
 draft = false
 comments = true
 date = "2009-02-14T20:34:00-06:00"

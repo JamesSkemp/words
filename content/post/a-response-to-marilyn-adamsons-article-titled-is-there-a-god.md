@@ -1,6 +1,6 @@
 +++
 title = "A Response to Marilyn Adamson's Article Titled 'Is There A God?'"
-summary = "A brief response to an article written by Marilyn Adamson, called 'Is There a God?'."
+description = "A brief response to an article written by Marilyn Adamson, called 'Is There a God?'."
 draft = false
 comments = true
 date = "2003-08-27T01:01:00-05:00"

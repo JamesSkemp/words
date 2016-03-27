@@ -1,6 +1,6 @@
 +++
 title = "New gallery added: June 23, 2007"
-summary = "New gallery posted; June 23, 2007."
+description = "New gallery posted; June 23, 2007."
 draft = false
 comments = true
 date = "2007-06-24T22:17:00-05:00"

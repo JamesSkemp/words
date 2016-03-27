@@ -1,6 +1,6 @@
 +++
 title = "Overview of Leibniz's The Principles of Philosophy, or, the Monadology"
-summary = "An overview of Gottfried Wilhelm Leibniz's <cite>The Principles of Philosophy</cite>, or, the <cite>Monadology</cite>."
+description = "An overview of Gottfried Wilhelm Leibniz's <cite>The Principles of Philosophy</cite>, or, the <cite>Monadology</cite>."
 draft = false
 comments = true
 date = "2004-06-12T00:01:00-05:00"

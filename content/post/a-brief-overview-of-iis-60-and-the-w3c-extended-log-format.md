@@ -1,6 +1,6 @@
 +++
 title = "A brief overview of IIS 6.0 and the W3C extended log format"
-summary = "An overview of Microsoft Internet Information Services (IIS) 6.0 and the World Wide Web Consortium (W3C) extended log file format, in relation to Log Parser. [slnet0514:92218721-d037-4d0e-854e-fad30f247873]"
+description = "An overview of Microsoft Internet Information Services (IIS) 6.0 and the World Wide Web Consortium (W3C) extended log file format, in relation to Log Parser. [slnet0514:92218721-d037-4d0e-854e-fad30f247873]"
 draft = false
 comments = true
 date = "2007-11-03T21:00:00-05:00"

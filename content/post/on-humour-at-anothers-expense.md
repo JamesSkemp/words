@@ -1,6 +1,6 @@
 +++
 title = "On Humour at Another's Expense"
-summary = "Thoughts on humour at another’s expense, especially when it comes to mocking an individual."
+description = "Thoughts on humour at another’s expense, especially when it comes to mocking an individual."
 draft = false
 comments = true
 date = "2004-10-25T01:01:00-05:00"

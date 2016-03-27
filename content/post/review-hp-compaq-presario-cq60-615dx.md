@@ -1,6 +1,6 @@
 +++
 title = "Review: HP Compaq Presario CQ60-615DX"
-summary = "Review of the HP Compaq Presario CQ60-615DX laptop computer."
+description = "Review of the HP Compaq Presario CQ60-615DX laptop computer."
 draft = false
 comments = true
 date = "2010-06-29T13:11:00-05:00"

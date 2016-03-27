@@ -1,6 +1,6 @@
 +++
 title = "Determine BlogEngine.NET comments that haven't been published"
-summary = "C# code to parse a directory of BlogEngine.NET posts (determined by the user selecting one) for unapproved comments."
+description = "C# code to parse a directory of BlogEngine.NET posts (determined by the user selecting one) for unapproved comments."
 draft = false
 comments = true
 date = "2009-12-06T15:55:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Playstation 3 and the Linksys WRT54G Wireless-G Boardband Router"
-summary = "Information about the Playstation 3 and the Linksys WRT54G router, as far as how easy they are to setup. [slnet0514:fd9fef78-47a2-4add-8476-5544f70abeae]"
+description = "Information about the Playstation 3 and the Linksys WRT54G router, as far as how easy they are to setup. [slnet0514:fd9fef78-47a2-4add-8476-5544f70abeae]"
 draft = false
 comments = true
 date = "2007-11-24T09:30:00-06:00"

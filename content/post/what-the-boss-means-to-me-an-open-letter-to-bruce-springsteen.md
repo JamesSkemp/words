@@ -1,6 +1,6 @@
 +++
 title = "What The Boss means to me; an open letter to Bruce Springsteen"
-summary = "An open letter to Bruce Springsteen, The Boss."
+description = "An open letter to Bruce Springsteen, The Boss."
 draft = false
 comments = true
 date = "2009-02-18T08:07:00-06:00"

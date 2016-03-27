@@ -1,6 +1,6 @@
 +++
 title = "Multiple network adapters in VirtualBox, for Windows guests"
-summary = "Setting up a second adapter for Windows guests in VirtualBox is easy, and seemingly safe."
+description = "Setting up a second adapter for Windows guests in VirtualBox is easy, and seemingly safe."
 draft = false
 comments = true
 date = "2009-07-02T14:59:00-05:00"

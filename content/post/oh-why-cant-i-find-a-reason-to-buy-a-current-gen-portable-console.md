@@ -1,6 +1,6 @@
 +++
 title = "Oh why can't I find a reason to buy a current gen portable console?"
-summary = "I want to spend the money, but can't find a good reason to ..."
+description = "I want to spend the money, but can't find a good reason to ..."
 draft = false
 comments = true
 date = "2010-10-30T17:23:00-05:00"

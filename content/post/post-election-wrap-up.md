@@ -1,6 +1,6 @@
 +++
 title = "Post election wrap-up"
-summary = "Three quick points on the election."
+description = "Three quick points on the election."
 draft = false
 comments = true
 date = "2006-11-08T08:21:00-06:00"

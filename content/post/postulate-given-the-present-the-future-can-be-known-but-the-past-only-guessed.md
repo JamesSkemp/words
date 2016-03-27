@@ -1,6 +1,6 @@
 +++
 title = "Postulate: Given the present, the future can be known, but the past only guessed"
-summary = "Given the present state of affairs, the future can be known, but the past can only be guessed."
+description = "Given the present state of affairs, the future can be known, but the past can only be guessed."
 draft = false
 comments = true
 date = "2010-06-17T08:10:00-05:00"

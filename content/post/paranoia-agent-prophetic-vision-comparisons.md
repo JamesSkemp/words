@@ -1,6 +1,6 @@
 +++
 title = "Paranoia Agent Prophetic Vision Comparisons"
-summary = "Comparisons of Paranoia Agent's Prophetic Vision segments, for both the English and English-subtitles."
+description = "Comparisons of Paranoia Agent's Prophetic Vision segments, for both the English and English-subtitles."
 draft = false
 comments = true
 date = "2007-09-23T17:45:00-05:00"

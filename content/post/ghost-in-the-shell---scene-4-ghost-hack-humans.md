@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 4: Ghost Hack Humans"
-summary = "Transcript of scene 4 of the movie Ghost in the Shell. [slnet0514:e623e3be-928f-4765-94ed-567c3f7e0e9c]"
+description = "Transcript of scene 4 of the movie Ghost in the Shell. [slnet0514:e623e3be-928f-4765-94ed-567c3f7e0e9c]"
 draft = false
 comments = true
 date = "2008-06-01T12:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "List of TODOs for July 2009"
-summary = "My list of TODOs for July 2009. I won't get to most of these, but at least some would be nice."
+description = "My list of TODOs for July 2009. I won't get to most of these, but at least some would be nice."
 draft = false
 comments = true
 date = "2009-06-29T08:00:00-05:00"

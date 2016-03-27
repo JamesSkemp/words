@@ -1,6 +1,6 @@
 +++
 title = "Buying Perfume"
-summary = "A story about buying perfume one day."
+description = "A story about buying perfume one day."
 draft = false
 comments = true
 date = "2005-01-21T02:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "mvc-mini-profiler for users in a particular role"
-summary = "mvc-mini-profiler is pretty slick, and extremely easy to add."
+description = "mvc-mini-profiler is pretty slick, and extremely easy to add."
 draft = false
 comments = true
 date = "2011-06-24T23:30:00-05:00"

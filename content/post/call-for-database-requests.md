@@ -1,6 +1,6 @@
 +++
 title = "Call for database requests"
-summary = "In a future tutorial I'll be walking through the setup of a database using PHP and MySQL (and possibly in the future, PHP and PostgreSQL).  To that end, I'm looking for database setup requests."
+description = "In a future tutorial I'll be walking through the setup of a database using PHP and MySQL (and possibly in the future, PHP and PostgreSQL).  To that end, I'm looking for database setup requests."
 draft = false
 comments = false
 date = "2006-03-17T19:00:00-06:00"

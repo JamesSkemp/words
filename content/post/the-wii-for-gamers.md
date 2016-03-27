@@ -1,6 +1,6 @@
 +++
 title = "The Wii for gamers"
-summary = "Finding games for average gamers is almost as difficult as finding them for hardcore gamers, it seems."
+description = "Finding games for average gamers is almost as difficult as finding them for hardcore gamers, it seems."
 draft = false
 comments = true
 date = "2009-02-05T08:14:00-06:00"

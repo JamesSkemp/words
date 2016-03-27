@@ -1,6 +1,6 @@
 +++
 title = "Review: Lumo Lift - Posture Coach and Activity Tracker"
-summary = "The following is a review of the Lumo Lift - Posture Coach and Activity Tracker, provided as part of the Amazon Vine program."
+description = "The following is a review of the Lumo Lift - Posture Coach and Activity Tracker, provided as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-08-25T19:15:56-05:00"

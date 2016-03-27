@@ -1,6 +1,6 @@
 +++
 title = "Raymond Smullyan's Knight and Knave Word Problem"
-summary = "A look at Raymond Smullyan's knight and knave word problem, as introduced to me by David Gries."
+description = "A look at Raymond Smullyan's knight and knave word problem, as introduced to me by David Gries."
 draft = false
 comments = true
 date = "2005-04-24T00:01:00-05:00"

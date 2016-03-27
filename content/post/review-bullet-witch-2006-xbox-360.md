@@ -1,6 +1,6 @@
 +++
 title = "Review: Bullet Witch (2006) (Xbox 360)"
-summary = "Review of Bullet Witch, released in 2006 for the Xbox 360."
+description = "Review of Bullet Witch, released in 2006 for the Xbox 360."
 draft = false
 comments = true
 date = "2011-07-20T20:40:00-05:00"

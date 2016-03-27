@@ -1,6 +1,6 @@
 +++
 title = "On the Saying 'Shitcakes'"
-summary = "On the somewhat rare saying 'Shitcakes'."
+description = "On the somewhat rare saying 'Shitcakes'."
 draft = false
 comments = true
 date = "2004-12-06T02:01:00-06:00"

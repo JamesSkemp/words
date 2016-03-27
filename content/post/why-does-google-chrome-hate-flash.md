@@ -1,6 +1,6 @@
 +++
 title = "Why does Google Chrome hate Flash?"
-summary = "Why does Google Chrome hate Flash? Every time I use it within Chrome it kills the browser."
+description = "Why does Google Chrome hate Flash? Every time I use it within Chrome it kills the browser."
 draft = false
 comments = true
 date = "2008-09-21T16:06:00-05:00"

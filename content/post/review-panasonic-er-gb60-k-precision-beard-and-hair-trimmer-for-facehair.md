@@ -1,6 +1,6 @@
 +++
 title = "Review: Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair"
-summary = "The following is a review of the Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair, received as part of the Amazon Vine program. Spoiler: I really like them."
+description = "The following is a review of the Panasonic ER-GB60-K Precision Beard and Hair Trimmer for Face/Hair, received as part of the Amazon Vine program. Spoiler: I really like them."
 draft = false
 comments = false
 date = "2015-11-09T17:20:10-06:00"

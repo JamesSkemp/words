@@ -1,6 +1,6 @@
 +++
 title = "Applied Theoretical Ethics Term Paper"
-summary = "Term paper for Applied Theoretical Ethics on John Harris' The Survival Lottery."
+description = "Term paper for Applied Theoretical Ethics on John Harris' The Survival Lottery."
 draft = false
 comments = true
 date = "2002-04-21T01:01:00-05:00"

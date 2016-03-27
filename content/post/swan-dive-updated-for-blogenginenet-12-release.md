@@ -1,6 +1,6 @@
 +++
 title = "Swan Dive updated for BlogEngine.NET 1.2 release"
-summary = "With the release of BlogEngine.NET 1.2, I've updated Swan Dive."
+description = "With the release of BlogEngine.NET 1.2, I've updated Swan Dive."
 draft = false
 comments = false
 date = "2007-09-30T20:30:00-05:00"

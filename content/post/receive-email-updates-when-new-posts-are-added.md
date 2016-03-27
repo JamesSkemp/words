@@ -1,6 +1,6 @@
 +++
 title = "Receive email updates when new posts are added"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-10-25T20:20:00-05:00"

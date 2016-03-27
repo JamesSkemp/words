@@ -1,6 +1,6 @@
 +++
 title = "Charter's 'no domain' hijacking"
-summary = "Here's my latest communication with Charter about trying to get completely removed from their domain hijacking functionality. [slnet0514:28cbfa56-5938-428d-8952-1b92029529fe]"
+description = "Here's my latest communication with Charter about trying to get completely removed from their domain hijacking functionality. [slnet0514:28cbfa56-5938-428d-8952-1b92029529fe]"
 draft = false
 comments = true
 date = "2008-05-18T22:00:00-05:00"

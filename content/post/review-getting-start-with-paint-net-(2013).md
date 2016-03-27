@@ -1,6 +1,6 @@
 +++
 title = "Review: Getting Start with Paint.NET (2013)"
-summary = "The following is a review of Getting Start with Paint.NET (2013), written by Andros T. Sturgeon and Shoban Kumar, and published by Packt Publishing."
+description = "The following is a review of Getting Start with Paint.NET (2013), written by Andros T. Sturgeon and Shoban Kumar, and published by Packt Publishing."
 draft = false
 comments = false
 date = "2014-04-13T09:36:53-05:00"

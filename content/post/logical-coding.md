@@ -1,6 +1,6 @@
 +++
 title = "Logical coding"
-summary = "When it comes to proper coding, you should know the most important rule of all; LIFO. However, not even LIFO nor the W3C can really tell you which order to put certain elements. In the nature of Web 2.0, I'll discuss some of the standards I've been bouncing around for HTML text markup when the same text is given multiple attributes."
+description = "When it comes to proper coding, you should know the most important rule of all; LIFO. However, not even LIFO nor the W3C can really tell you which order to put certain elements. In the nature of Web 2.0, I'll discuss some of the standards I've been bouncing around for HTML text markup when the same text is given multiple attributes."
 draft = false
 comments = true
 date = "2006-05-28T08:49:00-05:00"

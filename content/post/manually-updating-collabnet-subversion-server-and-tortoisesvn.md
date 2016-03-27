@@ -1,6 +1,6 @@
 +++
 title = "Manually updating CollabNet Subversion Server and TortoiseSVN"
-summary = "Manually upgrading CollabNet Subversion Server and TortoiseSVN."
+description = "Manually upgrading CollabNet Subversion Server and TortoiseSVN."
 draft = false
 comments = true
 date = "2010-04-27T21:23:00-05:00"

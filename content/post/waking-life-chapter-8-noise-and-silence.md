@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 8 - Noise and Silence"
-summary = "Transcript of the movie Waking Life; DVD Chapter 8 - Noise and Silence."
+description = "Transcript of the movie Waking Life; DVD Chapter 8 - Noise and Silence."
 draft = false
 comments = true
 date = "2006-05-25T20:21:00-05:00"

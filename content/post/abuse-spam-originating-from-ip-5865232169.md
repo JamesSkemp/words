@@ -1,6 +1,6 @@
 +++
 title = "Abuse: Spam originating from IP 58.65.232.169"
-summary = "This email was sent to abuse at hostfresh.com, approximately at the same time as this post. For informational purposes, as well as my own tracking, I'm including it here. For IP address 58.65.232.169."
+description = "This email was sent to abuse at hostfresh.com, approximately at the same time as this post. For informational purposes, as well as my own tracking, I'm including it here. For IP address 58.65.232.169."
 draft = false
 comments = true
 date = "2007-02-25T07:44:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Hexcells Plus (2014)"
-summary = "The following is a review of Hexcells Plus (2014), played on the PC."
+description = "The following is a review of Hexcells Plus (2014), played on the PC."
 draft = false
 comments = false
 date = "2014-06-20T17:15:21-05:00"

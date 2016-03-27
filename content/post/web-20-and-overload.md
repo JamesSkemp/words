@@ -1,6 +1,6 @@
 +++
 title = "Web 2.0 and overload"
-summary = "The major problem of 'Web 2.0.'"
+description = "The major problem of 'Web 2.0.'"
 draft = false
 comments = true
 date = "2005-10-22T13:06:00-05:00"

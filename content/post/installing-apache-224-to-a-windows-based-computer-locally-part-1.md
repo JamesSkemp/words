@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache 2.2.4 to a Windows-based computer, locally: Part 1"
-summary = "In this article, we'll be covering how to install Apache 2.2.4 to a local, Windows XP Home Edition, computer."
+description = "In this article, we'll be covering how to install Apache 2.2.4 to a local, Windows XP Home Edition, computer."
 draft = false
 comments = true
 date = "2007-03-17T10:00:00-05:00"

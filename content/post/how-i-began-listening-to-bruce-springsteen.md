@@ -1,6 +1,6 @@
 +++
 title = "How I began listening to Bruce Springsteen"
-summary = "How I began listening to Bruce Springsteen, the Boss."
+description = "How I began listening to Bruce Springsteen, the Boss."
 draft = false
 comments = true
 date = "2007-10-28T00:30:00-05:00"

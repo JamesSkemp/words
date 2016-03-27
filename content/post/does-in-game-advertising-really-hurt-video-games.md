@@ -1,6 +1,6 @@
 +++
 title = "Does in-game advertising really hurt video games?"
-summary = "In this post, I'll be looking at a pro and a con response to the question of whether in-game advertising hurts video games, and giving my own response to the issue."
+description = "In this post, I'll be looking at a pro and a con response to the question of whether in-game advertising hurts video games, and giving my own response to the issue."
 draft = false
 comments = true
 date = "2006-04-23T08:04:00-05:00"

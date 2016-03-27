@@ -1,6 +1,6 @@
 +++
 title = "The Foundations of Western Culture and Nationalism"
-summary = "On the nationalism as a foundation of western culture."
+description = "On the nationalism as a foundation of western culture."
 draft = false
 comments = true
 date = "2001-05-13T17:05:00-05:00"

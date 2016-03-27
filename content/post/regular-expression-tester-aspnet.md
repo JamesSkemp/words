@@ -1,6 +1,6 @@
 +++
 title = "Regular Expression tester - ASP.NET"
-summary = "A regular expression tester, built on ASP.NET 3.5. [slnet0514:c1bcb6bf-9cce-48f2-ba11-ae9afde4a4d3]"
+description = "A regular expression tester, built on ASP.NET 3.5. [slnet0514:c1bcb6bf-9cce-48f2-ba11-ae9afde4a4d3]"
 draft = false
 comments = true
 date = "2008-05-04T21:50:00-05:00"

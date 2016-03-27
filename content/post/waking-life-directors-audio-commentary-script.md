@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Director's Audio Commentary - Script"
-summary = "Transcript of the Director's Audio Commentary, of Waking Life, based upon the subtitles from the DVD release."
+description = "Transcript of the Director's Audio Commentary, of Waking Life, based upon the subtitles from the DVD release."
 draft = false
 comments = true
 date = "2008-06-01T09:00:00-05:00"

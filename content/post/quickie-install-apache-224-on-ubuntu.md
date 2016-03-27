@@ -1,6 +1,6 @@
 +++
 title = "Quickie: Install Apache 2.2.4 on Ubuntu"
-summary = "Quickie of how I installed Apache 2.2.4 to Ubuntu."
+description = "Quickie of how I installed Apache 2.2.4 to Ubuntu."
 draft = false
 comments = true
 date = "2007-06-15T19:04:00-05:00"

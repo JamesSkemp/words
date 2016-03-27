@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Script"
-summary = "Transcript of the movie Ghost in the Shell (1995) based upon a viewing of the English DVD release, using the English subtitles."
+description = "Transcript of the movie Ghost in the Shell (1995) based upon a viewing of the English DVD release, using the English subtitles."
 draft = false
 comments = true
 date = "2008-06-01T08:00:00-05:00"

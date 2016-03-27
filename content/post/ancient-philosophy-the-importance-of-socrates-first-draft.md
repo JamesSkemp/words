@@ -1,6 +1,6 @@
 +++
 title = "Ancient Philosophy: The Importance of Socrates (First draft)"
-summary = "First draft for The Importance of Socrates."
+description = "First draft for The Importance of Socrates."
 draft = false
 comments = true
 date = "2001-10-25T03:33:00-05:00"

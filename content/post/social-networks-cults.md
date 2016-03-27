@@ -1,6 +1,6 @@
 +++
 title = "Social networks = cults?"
-summary = "Social networks = cults? [slnet0514:6a73c5b3-5d43-46c5-9d91-997bafbebd94]"
+description = "Social networks = cults? [slnet0514:6a73c5b3-5d43-46c5-9d91-997bafbebd94]"
 draft = false
 comments = true
 date = "2008-03-10T08:30:00-05:00"

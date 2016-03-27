@@ -1,6 +1,6 @@
 +++
 title = "Review: Saints Row: The Third (2011)"
-summary = "Review of Saints Row: The Third (2011), released for the PlayStation 3 and Xbox 360."
+description = "Review of Saints Row: The Third (2011), released for the PlayStation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2011-12-17T12:48:00-06:00"

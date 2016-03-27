@@ -1,6 +1,6 @@
 +++
 title = "The Importance of One"
-summary = "A brief look at the real importance of one person when compared with the masses."
+description = "A brief look at the real importance of one person when compared with the masses."
 draft = false
 comments = true
 date = "2003-04-21T01:01:00-05:00"

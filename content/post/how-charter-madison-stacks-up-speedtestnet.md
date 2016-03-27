@@ -1,6 +1,6 @@
 +++
 title = "How Charter Madison stacks up - Speedtest.net"
-summary = "Speedtest.net results for a connection through Charter, in Madison, Wisconsin."
+description = "Speedtest.net results for a connection through Charter, in Madison, Wisconsin."
 draft = false
 comments = true
 date = "2006-08-15T17:44:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Code cleanup and commenting - done right"
-summary = "Looking for freelance work in Web code cleanup and commenting - where does one start?"
+description = "Looking for freelance work in Web code cleanup and commenting - where does one start?"
 draft = false
 comments = true
 date = "2006-06-18T14:13:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Schopenhauer's Prefaces to The World as Will and Representation"
-summary = "An analysis of the prefaces of the three editions of Arthur Schopenhauer's The World as Will and Representation."
+description = "An analysis of the prefaces of the three editions of Arthur Schopenhauer's The World as Will and Representation."
 draft = false
 comments = true
 date = "2007-02-11T15:09:00-06:00"

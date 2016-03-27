@@ -1,6 +1,6 @@
 +++
 title = "Internet Explorer 10: Platform Preview 2 now available"
-summary = "Internet Explorer 10: Platform Preview 2 is now available for download."
+description = "Internet Explorer 10: Platform Preview 2 is now available for download."
 draft = false
 comments = true
 date = "2011-06-29T22:09:00-05:00"

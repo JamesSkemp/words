@@ -1,6 +1,6 @@
 +++
 title = "Why not start out 2006 right?"
-summary = "Start every new year out right by doing a simple check-up on your computer."
+description = "Start every new year out right by doing a simple check-up on your computer."
 draft = false
 comments = true
 date = "2006-01-01T09:33:00-06:00"

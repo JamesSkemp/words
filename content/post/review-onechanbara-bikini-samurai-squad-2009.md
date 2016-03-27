@@ -1,6 +1,6 @@
 +++
 title = "Review: Onechanbara: Bikini Samurai Squad (2009)"
-summary = "The following is a review of Onechanbara: Bikini Samurai Squad (2009), for the Xbox 360."
+description = "The following is a review of Onechanbara: Bikini Samurai Squad (2009), for the Xbox 360."
 draft = false
 comments = true
 date = "2012-09-16T21:12:00-05:00"

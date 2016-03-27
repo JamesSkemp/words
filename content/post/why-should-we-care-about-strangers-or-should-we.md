@@ -1,6 +1,6 @@
 +++
 title = "Why Should We Care About Strangers? Or Should We?"
-summary = "An open call for help on determining whether one should care about strangers."
+description = "An open call for help on determining whether one should care about strangers."
 draft = false
 comments = true
 date = "2005-07-06T00:00:00-05:00"

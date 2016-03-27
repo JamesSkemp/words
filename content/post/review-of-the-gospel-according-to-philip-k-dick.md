@@ -1,6 +1,6 @@
 +++
 title = "Review of The Gospel According to Philip K. Dick"
-summary = "Review of the documentary The Gospel According to Philip K. Dick."
+description = "Review of the documentary The Gospel According to Philip K. Dick."
 draft = false
 comments = true
 date = "2007-10-28T20:40:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: NETGEAR Trek N300 Range Extender and Travel Router (PR2000)"
-summary = "The following is a review of the NETGEAR Trek N300 Range Extender and Travel Router (PR2000), which I received as part of the Amazone Vine program."
+description = "The following is a review of the NETGEAR Trek N300 Range Extender and Travel Router (PR2000), which I received as part of the Amazone Vine program."
 draft = false
 comments = false
 date = "2014-06-17T19:22:13-05:00"

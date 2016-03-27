@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 2 - Anchors Aweigh"
-summary = "Transcript of the movie Waking Life; DVD Chapter 2 - Anchors Aweigh."
+description = "Transcript of the movie Waking Life; DVD Chapter 2 - Anchors Aweigh."
 draft = false
 comments = true
 date = "2005-10-21T00:02:00-05:00"

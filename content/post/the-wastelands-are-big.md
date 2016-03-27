@@ -1,6 +1,6 @@
 +++
 title = "The Wastelands are big ..."
-summary = "The world of Fallout 3 is a mighty big place."
+description = "The world of Fallout 3 is a mighty big place."
 draft = false
 comments = true
 date = "2009-01-06T21:56:00-06:00"

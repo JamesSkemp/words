@@ -1,6 +1,6 @@
 +++
 title = "Jen"
-summary = "Jen, as in Jennifer."
+description = "Jen, as in Jennifer."
 draft = false
 comments = true
 date = "2004-10-21T00:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "New gallery posted"
-summary = "Galleries of pictures/images are once again available on StrivingLife.net."
+description = "Galleries of pictures/images are once again available on StrivingLife.net."
 draft = false
 comments = true
 date = "2007-05-21T22:14:00-05:00"

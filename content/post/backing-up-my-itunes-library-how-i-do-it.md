@@ -1,6 +1,6 @@
 +++
 title = "Backing up my iTunes library - how I do it"
-summary = "Information on how I back up my iTunes library, in case of future computer failure."
+description = "Information on how I back up my iTunes library, in case of future computer failure."
 draft = false
 comments = true
 date = "2008-10-14T20:50:00-05:00"

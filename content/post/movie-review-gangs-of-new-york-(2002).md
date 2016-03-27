@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Gangs of New York (2002)"
-summary = "Movie review of the Scorsese film, Gangs of New York."
+description = "Movie review of the Scorsese film, Gangs of New York."
 draft = false
 comments = true
 date = "2006-11-01T22:37:00-06:00"

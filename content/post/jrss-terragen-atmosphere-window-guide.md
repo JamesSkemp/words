@@ -1,6 +1,6 @@
 +++
 title = "JRSs Terragen Atmosphere Window Guide"
-summary = "Information regarding the Atmosphere window in Terragen. Written during the release of 0.9.08, but, information should apply to various versions."
+description = "Information regarding the Atmosphere window in Terragen. Written during the release of 0.9.08, but, information should apply to various versions."
 draft = false
 comments = true
 date = "2003-08-09T01:02:00-05:00"

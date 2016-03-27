@@ -1,6 +1,6 @@
 +++
 title = "Where have all the XML validators gone?"
-summary = "It's not easy to find an XML validator online, unless you keep digging, and digging, and ..."
+description = "It's not easy to find an XML validator online, unless you keep digging, and digging, and ..."
 draft = false
 comments = true
 date = "2007-08-07T21:28:00-05:00"

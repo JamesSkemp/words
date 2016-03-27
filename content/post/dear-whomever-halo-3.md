@@ -1,6 +1,6 @@
 +++
 title = "Dear ... whomever (Halo 3)"
-summary = "Please note: Halo 3 sucks."
+description = "Please note: Halo 3 sucks."
 draft = false
 comments = true
 date = "2009-02-09T21:23:00-06:00"

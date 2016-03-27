@@ -1,6 +1,6 @@
 +++
 title = "On Karate"
-summary = "Some information about Karate."
+description = "Some information about Karate."
 draft = false
 comments = true
 date = "2004-05-06T01:01:00-05:00"

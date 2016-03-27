@@ -1,6 +1,6 @@
 +++
 title = "Don't use ul when you should use blockquote"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-01-02T09:45:00-06:00"

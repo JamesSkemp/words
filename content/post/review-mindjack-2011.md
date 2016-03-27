@@ -1,6 +1,6 @@
 +++
 title = "Review: MindJack (2011)"
-summary = "Review of MindJack (2011), released for the PlayStation 3 and Xbox 360."
+description = "Review of MindJack (2011), released for the PlayStation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2012-02-29T20:18:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "James Skemp Photography"
-summary = "Galleries are now up, and photos can now be purchased."
+description = "Galleries are now up, and photos can now be purchased."
 draft = false
 comments = true
 date = "2008-07-26T22:45:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Schopenhauer's Relationship with Aesthetic Contemplation and Asceticism"
-summary = "Paper on Schopenhauer's discussion of Aesthetic contemplation and asceticism, as seen in <cite>The World as Will and Representation</cite>."
+description = "Paper on Schopenhauer's discussion of Aesthetic contemplation and asceticism, as seen in <cite>The World as Will and Representation</cite>."
 draft = false
 comments = true
 date = "2003-10-22T22:01:00-05:00"

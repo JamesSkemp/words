@@ -1,6 +1,6 @@
 +++
 title = "Persona 3 Shuffle trick"
-summary = "In Persona 3, there seems to be a trick to two card shuffles."
+description = "In Persona 3, there seems to be a trick to two card shuffles."
 draft = false
 comments = true
 date = "2007-08-18T15:44:00-05:00"

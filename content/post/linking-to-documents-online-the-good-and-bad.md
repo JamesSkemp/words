@@ -1,6 +1,6 @@
 +++
 title = "Linking to documents online: the good and bad"
-summary = "This article will discuss the fluidness of documents online, as well as whether it's beneficial to link to documents online, and if it is, how to best do it."
+description = "This article will discuss the fluidness of documents online, as well as whether it's beneficial to link to documents online, and if it is, how to best do it."
 draft = false
 comments = true
 date = "2005-02-01T23:34:00-06:00"

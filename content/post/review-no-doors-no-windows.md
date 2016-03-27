@@ -1,6 +1,6 @@
 +++
 title = "Review: No Doors, No Windows"
-summary = "Review of No Doors, No Windows, written by Harlan Ellison."
+description = "Review of No Doors, No Windows, written by Harlan Ellison."
 draft = false
 comments = true
 date = "2009-11-15T15:40:00-06:00"

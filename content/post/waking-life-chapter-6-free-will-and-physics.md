@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 6 - Free Will and Physics"
-summary = "Transcript of the movie Waking Life; DVD Chapter 6 - Free Will and Physics."
+description = "Transcript of the movie Waking Life; DVD Chapter 6 - Free Will and Physics."
 draft = false
 comments = true
 date = "2006-05-25T19:34:00-05:00"

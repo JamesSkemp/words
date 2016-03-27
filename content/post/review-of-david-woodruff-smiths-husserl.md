@@ -1,6 +1,6 @@
 +++
 title = "Review of David Woodruff Smith's Husserl"
-summary = "A review of David Woodruff Smith's Husserl."
+description = "A review of David Woodruff Smith's Husserl."
 draft = false
 comments = true
 date = "2007-08-23T20:45:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Google SketchUp 6 released (?)"
-summary = "Google SketchUp is getting some more attention, so what do you think about the software?"
+description = "Google SketchUp is getting some more attention, so what do you think about the software?"
 draft = false
 comments = true
 date = "2007-01-09T20:57:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Secunia consumer products - PSI and OSI"
-summary = "Secunia, known for vulnerability alerts, offers two free products for consumers, to keep software up-to-date."
+description = "Secunia, known for vulnerability alerts, offers two free products for consumers, to keep software up-to-date."
 draft = false
 comments = true
 date = "2010-06-20T11:22:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Fractal Explorer: Creating Your Own Fractals"
-summary = "Guide for using the freeware Fractal Explorer to create your own images. I was sick of the guides out there that had multiple pages, and relied heavily on images - guides should be able to be printed, not just viewed online."
+description = "Guide for using the freeware Fractal Explorer to create your own images. I was sick of the guides out there that had multiple pages, and relied heavily on images - guides should be able to be printed, not just viewed online."
 draft = false
 comments = true
 date = "2005-03-06T00:01:00-06:00"

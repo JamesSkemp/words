@@ -1,6 +1,6 @@
 +++
 title = "An interesting monologue overheard - July 8, 2007"
-summary = "Is there some amount of bias in the way blacks and illegal immigrants are being treated?"
+description = "Is there some amount of bias in the way blacks and illegal immigrants are being treated?"
 draft = false
 comments = true
 date = "2007-07-10T07:59:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Do you assume I'm a liberal because I wear Grateful Dead shirts?"
-summary = "You'd be right, but do the band shirts, or technology that I use, suggest my political views?"
+description = "You'd be right, but do the band shirts, or technology that I use, suggest my political views?"
 draft = false
 comments = true
 date = "2008-11-19T08:17:00-06:00"

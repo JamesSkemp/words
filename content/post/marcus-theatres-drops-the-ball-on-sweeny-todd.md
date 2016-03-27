@@ -1,6 +1,6 @@
 +++
 title = "Marcus Theatres drops the ball on Sweeny Todd"
-summary = "Did you catch this? Seems Marcus Theatres doesn't want to pay the asking price to show Sweeny Todd. Do they think they won't make the cost up in sales? [slnet0514:20b03279-17ff-4ff0-ade2-e052d2770c33]"
+description = "Did you catch this? Seems Marcus Theatres doesn't want to pay the asking price to show Sweeny Todd. Do they think they won't make the cost up in sales? [slnet0514:20b03279-17ff-4ff0-ade2-e052d2770c33]"
 draft = false
 comments = false
 date = "2007-12-21T14:10:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Smashing CSS"
-summary = "Reviewing of Smashing CSS, written by Eric A. Meyer."
+description = "Reviewing of Smashing CSS, written by Eric A. Meyer."
 draft = false
 comments = true
 date = "2011-03-25T19:20:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Video review: Philips DLP2277 Attachable Battery Pack and Charging Base for iPhone and iPod (White)"
-summary = "Review of the Philips DLP2277 Attachable Battery Pack and Charging Base for iPhone and iPod."
+description = "Review of the Philips DLP2277 Attachable Battery Pack and Charging Base for iPhone and iPod."
 draft = false
 comments = true
 date = "2011-02-26T17:07:00-06:00"

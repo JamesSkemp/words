@@ -1,6 +1,6 @@
 +++
 title = "Review: Kong Cat ZoomGroom"
-summary = "What an amazing brush. [slnet0514:81a61fc3-aa5c-4ecf-a575-bb4dedd8b392]"
+description = "What an amazing brush. [slnet0514:81a61fc3-aa5c-4ecf-a575-bb4dedd8b392]"
 draft = false
 comments = true
 date = "2008-04-20T13:00:00-05:00"

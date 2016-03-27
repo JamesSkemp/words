@@ -1,6 +1,6 @@
 +++
 title = "Taking a break from the tutorial"
-summary = "Tomorrow, I'll be posting the tutorial on setting up MySQL.  However, for today, I won't be posting a new tutorial, as I've already spent the last hour writing one on setting up ColdFusion."
+description = "Tomorrow, I'll be posting the tutorial on setting up MySQL.  However, for today, I won't be posting a new tutorial, as I've already spent the last hour writing one on setting up ColdFusion."
 draft = false
 comments = true
 date = "2006-02-23T20:51:00-06:00"

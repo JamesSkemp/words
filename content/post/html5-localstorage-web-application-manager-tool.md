@@ -1,6 +1,6 @@
 +++
 title = "HTML5 / LocalStorage Web application manager tool"
-summary = "I've created a Web application manager tool, which can be used to display information about a domain's local storage usage, amongst other things."
+description = "I've created a Web application manager tool, which can be used to display information about a domain's local storage usage, amongst other things."
 draft = false
 comments = true
 date = "2011-04-02T19:43:00-05:00"

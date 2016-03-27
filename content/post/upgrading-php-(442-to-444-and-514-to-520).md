@@ -1,6 +1,6 @@
 +++
 title = "Upgrading PHP (4.4.2 to 4.4.4 and 5.1.4 to 5.2.0)"
-summary = "In this article, we'll be upgrading PHP, both 4.4.2 to 4.4.4 and 5.1.4 to 5.2.0."
+description = "In this article, we'll be upgrading PHP, both 4.4.2 to 4.4.4 and 5.1.4 to 5.2.0."
 draft = false
 comments = true
 date = "2006-11-26T17:00:00-06:00"

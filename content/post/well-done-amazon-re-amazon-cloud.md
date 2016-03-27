@@ -1,6 +1,6 @@
 +++
 title = "Well done, Amazon (re: Amazon Cloud)"
-summary = "They've been saying for quite a while that music was heading towards the 'cloud,' and while it seemed for a while that everyone was betting on Apple doing it first, you've trumped them, with what seems like a very consumer-friendly service."
+description = "They've been saying for quite a while that music was heading towards the 'cloud,' and while it seemed for a while that everyone was betting on Apple doing it first, you've trumped them, with what seems like a very consumer-friendly service."
 draft = false
 comments = true
 date = "2011-03-29T07:41:00-05:00"

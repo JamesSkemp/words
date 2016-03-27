@@ -1,6 +1,6 @@
 +++
 title = "Philosophical thoughts - 7/10/2007"
-summary = "Do you believe science has the possibility of becoming more than it is?"
+description = "Do you believe science has the possibility of becoming more than it is?"
 draft = false
 comments = true
 date = "2007-07-11T06:45:00-05:00"

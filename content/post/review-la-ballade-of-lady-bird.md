@@ -1,6 +1,6 @@
 +++
 title = "Review: La Ballade Of Lady & Bird : A Project By Keren Ann Zeidel & Bardi Johannsson"
-summary = "Review of La Ballade Of Lady & Bird : A Project By Keren Ann Zeidel & Bardi Johannsson, by Lady & Bird."
+description = "Review of La Ballade Of Lady & Bird : A Project By Keren Ann Zeidel & Bardi Johannsson, by Lady & Bird."
 draft = false
 comments = true
 date = "2010-08-17T08:34:00-05:00"

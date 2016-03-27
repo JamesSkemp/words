@@ -1,6 +1,6 @@
 +++
 title = "Review: The Master Switch"
-summary = "Review of The Master Switch, by Tim Wu."
+description = "Review of The Master Switch, by Tim Wu."
 draft = false
 comments = true
 date = "2011-04-04T22:07:00-05:00"

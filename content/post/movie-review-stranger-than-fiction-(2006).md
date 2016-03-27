@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Stranger than Fiction (2006)"
-summary = "A short movie review of Stranger than Fiction (2006). [slnet0514:3a3e3602-f210-4e65-8064-5f588b68c7a6]"
+description = "A short movie review of Stranger than Fiction (2006). [slnet0514:3a3e3602-f210-4e65-8064-5f588b68c7a6]"
 draft = false
 comments = true
 date = "2007-12-18T21:17:00-06:00"

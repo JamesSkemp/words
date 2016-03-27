@@ -1,6 +1,6 @@
 +++
 title = "Northwind Community Edition download"
-summary = "Where to download the scripts to setup Northwind manually."
+description = "Where to download the scripts to setup Northwind manually."
 draft = false
 comments = true
 date = "2010-09-22T08:33:00-05:00"

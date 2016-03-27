@@ -1,6 +1,6 @@
 +++
 title = "Determining 3D Distances and Angles"
-summary = "Mathematical formulas for determining three dimensional distances as well as angles. Helpful for 'camera to object' and 'light to object' distances (for POV-Ray&trade;)."
+description = "Mathematical formulas for determining three dimensional distances as well as angles. Helpful for 'camera to object' and 'light to object' distances (for POV-Ray&trade;)."
 draft = false
 comments = true
 date = "2006-09-04T13:17:00-05:00"

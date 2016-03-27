@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 6: Simultaneous Reality & Fantasy"
-summary = "Transcript of scene 6 of the movie Ghost in the Shell. [slnet0514:5eb3f7c0-f7ed-4e6d-a1db-a6ba7f28301e]"
+description = "Transcript of scene 6 of the movie Ghost in the Shell. [slnet0514:5eb3f7c0-f7ed-4e6d-a1db-a6ba7f28301e]"
 draft = false
 comments = true
 date = "2008-06-01T13:00:00-05:00"

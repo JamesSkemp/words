@@ -1,6 +1,6 @@
 +++
 title = "JavaScript object dump"
-summary = "What I've used to dump a JavaScript object to the screen, when I haven't had access to Firebug."
+description = "What I've used to dump a JavaScript object to the screen, when I haven't had access to Firebug."
 draft = false
 comments = true
 date = "2010-03-27T06:43:00-05:00"

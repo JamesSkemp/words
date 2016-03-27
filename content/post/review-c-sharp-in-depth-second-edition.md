@@ -1,6 +1,6 @@
 +++
 title = "Review: C# in Depth, Second Edition"
-summary = "Review of C# in Depth, Second Edition, written by Jon Skeet."
+description = "Review of C# in Depth, Second Edition, written by Jon Skeet."
 draft = false
 comments = true
 date = "2011-04-18T18:30:00-05:00"

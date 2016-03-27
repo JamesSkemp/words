@@ -1,6 +1,6 @@
 +++
 title = "Testing out the Microsoft Natural Ergonomic Keyboard 4000"
-summary = "Dummy content, while testing out a Microsoft Natural Ergonomic Keyboard 4000. [slnet0514:27f21a12-bf3e-47e6-9e21-d8f1b8757890]"
+description = "Dummy content, while testing out a Microsoft Natural Ergonomic Keyboard 4000. [slnet0514:27f21a12-bf3e-47e6-9e21-d8f1b8757890]"
 draft = false
 comments = true
 date = "2008-06-04T22:15:00-05:00"

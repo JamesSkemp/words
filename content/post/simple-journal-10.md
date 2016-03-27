@@ -1,6 +1,6 @@
 +++
 title = "Simple Journal 1.0 Released"
-summary = "Simple Journal 1.0 is now available for download. Simple Journal is a very simple way to keep an electronic journal."
+description = "Simple Journal 1.0 is now available for download. Simple Journal is a very simple way to keep an electronic journal."
 draft = false
 comments = true
 date = "2010-01-03T18:53:00-06:00"

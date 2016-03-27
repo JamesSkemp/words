@@ -1,6 +1,6 @@
 +++
 title = "Comments on the first 2006 Gubernatorial Debate in Wisconsin (9/15/2006)"
-summary = "Comments on the first Wisconsin Gubernatorial Debate for 2006, between Mark Green and Jim Doyle."
+description = "Comments on the first Wisconsin Gubernatorial Debate for 2006, between Mark Green and Jim Doyle."
 draft = false
 comments = true
 date = "2006-10-08T13:17:00-05:00"

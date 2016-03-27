@@ -1,6 +1,6 @@
 +++
 title = "Slight disturbance in StrivingLife.net and FramingBusiness.net"
-summary = "Slight disturbance on the site for the last two days. Yikes."
+description = "Slight disturbance on the site for the last two days. Yikes."
 draft = false
 comments = true
 date = "2006-11-11T20:30:00-06:00"

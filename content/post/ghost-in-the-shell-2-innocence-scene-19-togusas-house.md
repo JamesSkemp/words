@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 19: Togusa's House"
-summary = "Transcript of the last, short, scene, Chapter 19, of Ghost in the Shell 2: Innocence.  Most the meaning of this scene is not in the words, but rather in the imagery."
+description = "Transcript of the last, short, scene, Chapter 19, of Ghost in the Shell 2: Innocence.  Most the meaning of this scene is not in the words, but rather in the imagery."
 draft = false
 comments = true
 date = "2006-08-19T15:35:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Ys Seven (PSP)"
-summary = "Review of Ys Seven, for the Sony PlayStation Portable."
+description = "Review of Ys Seven, for the Sony PlayStation Portable."
 draft = false
 comments = true
 date = "2011-04-22T19:50:00-05:00"

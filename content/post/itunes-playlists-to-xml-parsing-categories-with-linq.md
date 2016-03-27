@@ -1,6 +1,6 @@
 +++
 title = "iTunes Playlists to Xml: Parsing categories with LINQ"
-summary = "LINQ to parse the XML export from iTunes Playlists to Xml for musical genres/categories."
+description = "LINQ to parse the XML export from iTunes Playlists to Xml for musical genres/categories."
 draft = false
 comments = true
 date = "2010-10-20T08:35:00-05:00"

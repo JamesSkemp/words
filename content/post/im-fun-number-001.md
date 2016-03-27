@@ -1,6 +1,6 @@
 +++
 title = "IM Fun Number 001"
-summary = "A piece of prose. Written as a number of IMs to my sister Tiffany."
+description = "A piece of prose. Written as a number of IMs to my sister Tiffany."
 draft = false
 comments = false
 date = "2002-11-03T00:02:00-06:00"

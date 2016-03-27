@@ -1,6 +1,6 @@
 +++
 title = "An answer to a question about Jing Project"
-summary = "My brief thoughts on Jing Project. [slnet0514:f9093d35-2fdf-4d79-9457-3f58cab404e7]"
+description = "My brief thoughts on Jing Project. [slnet0514:f9093d35-2fdf-4d79-9457-3f58cab404e7]"
 draft = false
 comments = true
 date = "2008-04-13T07:40:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "The Impact of Civilization and Its Laws on the Individual"
-summary = "Paper regarding Dostoevsky's Crime and Punishment and Freud's Civilization and Its Discontents in relation to each other."
+description = "Paper regarding Dostoevsky's Crime and Punishment and Freud's Civilization and Its Discontents in relation to each other."
 draft = false
 comments = true
 date = "2002-05-03T01:01:00-05:00"

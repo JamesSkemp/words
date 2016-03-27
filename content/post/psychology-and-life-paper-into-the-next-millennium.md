@@ -1,6 +1,6 @@
 +++
 title = "Psychology and Life Paper - Into the Next Millennium"
-summary = "Paper regarding violence in today's (read: in 1999's) world."
+description = "Paper regarding violence in today's (read: in 1999's) world."
 draft = false
 comments = true
 date = "1999-12-20T02:01:00-06:00"

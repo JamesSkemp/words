@@ -1,6 +1,6 @@
 +++
 title = "On Self Control"
-summary = "On self control."
+description = "On self control."
 draft = false
 comments = true
 date = "2009-06-29T20:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "XML-based book library: Draft layout"
-summary = "Draft design of an xml for keeping track of a collection of books."
+description = "Draft design of an xml for keeping track of a collection of books."
 draft = false
 comments = true
 date = "2009-01-03T08:28:00-06:00"

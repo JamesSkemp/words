@@ -1,6 +1,6 @@
 +++
 title = "Apache, PHP, MySQL, ColdFusion, and all the like"
-summary = "To come: setting up a Web testing on a home computer."
+description = "To come: setting up a Web testing on a home computer."
 draft = false
 comments = true
 date = "2006-02-14T09:30:00-06:00"

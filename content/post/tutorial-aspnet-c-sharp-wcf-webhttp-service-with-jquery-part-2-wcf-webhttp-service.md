@@ -1,6 +1,6 @@
 +++
 title = "Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service"
-summary = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we use a WCF WebHttp template to quickly create a RESTful Web service, with a method to return loans for set data."
+description = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we use a WCF WebHttp template to quickly create a RESTful Web service, with a method to return loans for set data."
 draft = false
 comments = true
 date = "2010-06-24T08:00:00-05:00"

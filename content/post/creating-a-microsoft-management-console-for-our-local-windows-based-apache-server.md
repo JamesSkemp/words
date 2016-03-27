@@ -1,6 +1,6 @@
 +++
 title = "Creating a Microsoft Management Console for our local Windows-based, Apache server"
-summary = "In a previous tutorials, we discussed how to access the Services control panel from Windows. In this tutorial, we'll be setting up a custom console that will provide us an easy way to access both our Services control panel, an Event Viewer, as well as other management tools."
+description = "In a previous tutorials, we discussed how to access the Services control panel from Windows. In this tutorial, we'll be setting up a custom console that will provide us an easy way to access both our Services control panel, an Event Viewer, as well as other management tools."
 draft = false
 comments = true
 date = "2006-06-03T07:23:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On the Saying 'God is Odd'"
-summary = "A brief discourse on the saying \"God is odd\"."
+description = "A brief discourse on the saying \"God is odd\"."
 draft = false
 comments = true
 date = "2004-09-17T01:01:00-05:00"

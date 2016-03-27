@@ -1,6 +1,6 @@
 +++
 title = "Terragen&trade; 2 Technology Preview to be released December 15"
-summary = "Terragen 2 Technology Preview may be released on December 15 (depending upon where you live)."
+description = "Terragen 2 Technology Preview may be released on December 15 (depending upon where you live)."
 draft = false
 comments = true
 date = "2006-12-15T07:25:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Ancient Philosophy: Aristotle and Nichomachean Ethics"
-summary = "Ancient Philosophy - Term Paper: Aristotle and Nichomachean Ethics."
+description = "Ancient Philosophy - Term Paper: Aristotle and Nichomachean Ethics."
 draft = false
 comments = true
 date = "2001-12-20T02:25:00-06:00"

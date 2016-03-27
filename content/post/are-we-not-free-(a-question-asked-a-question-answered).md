@@ -1,6 +1,6 @@
 +++
 title = "Are we not free? (A question asked, a question answered)"
-summary = "A question asked, a question answered."
+description = "A question asked, a question answered."
 draft = false
 comments = false
 date = "2004-02-11T00:01:00-06:00"

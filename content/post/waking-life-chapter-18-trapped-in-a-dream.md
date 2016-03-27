@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 18 - Trapped in a Dream"
-summary = "Transcript of the movie Waking Life; DVD Chapter 18 - Trapped in a Dream. Also known as, Linklater Speaks."
+description = "Transcript of the movie Waking Life; DVD Chapter 18 - Trapped in a Dream. Also known as, Linklater Speaks."
 draft = false
 comments = true
 date = "2005-10-21T00:18:00-05:00"

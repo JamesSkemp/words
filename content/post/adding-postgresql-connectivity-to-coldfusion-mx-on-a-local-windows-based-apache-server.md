@@ -1,6 +1,6 @@
 +++
 title = "Adding PostgreSQL connectivity to ColdFusion MX on a local Windows-based, Apache, server"
-summary = "Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX."
+description = "Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX."
 draft = false
 comments = true
 date = "2006-03-19T06:18:00-06:00"

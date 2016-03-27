@@ -1,6 +1,6 @@
 +++
 title = "Acronyms"
-summary = "Acronyms I appear to have created."
+description = "Acronyms I appear to have created."
 draft = false
 comments = false
 date = "2004-02-03T00:01:00-06:00"

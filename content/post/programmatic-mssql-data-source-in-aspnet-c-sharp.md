@@ -1,6 +1,6 @@
 +++
 title = "Programmatic MSSQL data source in ASP.NET (C#)"
-summary = "The code I've been using to open a connection, programmatically, to Microsoft SQL Server."
+description = "The code I've been using to open a connection, programmatically, to Microsoft SQL Server."
 draft = false
 comments = true
 date = "2009-06-01T21:03:00-05:00"

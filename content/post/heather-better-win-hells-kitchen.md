@@ -1,6 +1,6 @@
 +++
 title = "Heather better win Hell's Kitchen"
-summary = "Heather better win Hell's Kitchen, based upon her previous shows of force."
+description = "Heather better win Hell's Kitchen, based upon her previous shows of force."
 draft = false
 comments = false
 date = "2006-08-07T20:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On Yahoo! Slurp, Googlebot, and msnbot"
-summary = "A look at three major bots, and just how they compare in crawling versus referrals."
+description = "A look at three major bots, and just how they compare in crawling versus referrals."
 draft = false
 comments = true
 date = "2006-04-16T21:52:00-05:00"

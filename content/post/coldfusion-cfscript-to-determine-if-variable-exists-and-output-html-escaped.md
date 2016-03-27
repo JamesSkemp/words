@@ -1,6 +1,6 @@
 +++
 title = "ColdFusion: cfscript to determine if variable exists and output html-escaped"
-summary = "Snippet of ColdFusion to determine if a particular variable exists and if it does, return a trimmed, HTML-escaped, version."
+description = "Snippet of ColdFusion to determine if a particular variable exists and if it does, return a trimmed, HTML-escaped, version."
 draft = false
 comments = true
 date = "2009-10-08T20:45:00-05:00"

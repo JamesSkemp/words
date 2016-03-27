@@ -1,6 +1,6 @@
 +++
 title = "Upgrading Vista Home Premium to Vista Ultimate (right now)"
-summary = "I'm upgrading Vista. Right now. [slnet0514:4d4f9157-f3bd-4ac6-9257-50ef6d0e29b2]"
+description = "I'm upgrading Vista. Right now. [slnet0514:4d4f9157-f3bd-4ac6-9257-50ef6d0e29b2]"
 draft = false
 comments = true
 date = "2008-04-17T21:15:00-05:00"

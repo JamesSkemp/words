@@ -1,6 +1,6 @@
 +++
 title = "Review: Programming Entity Framework: Code First (2011)"
-summary = "Review of Programming Entity Framework: Code First (2011), written by Julia Lerman and Rowan Miller."
+description = "Review of Programming Entity Framework: Code First (2011), written by Julia Lerman and Rowan Miller."
 draft = false
 comments = true
 date = "2012-01-05T07:40:00-06:00"

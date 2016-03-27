@@ -1,6 +1,6 @@
 +++
 title = "Review: Cyberlink PowerDVD 15 Ultra"
-summary = "The following is a review of Cyberlink PowerDVD 15 Ultra, provided to me for free as part of the Amazon Vine program."
+description = "The following is a review of Cyberlink PowerDVD 15 Ultra, provided to me for free as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-06-09T18:53:03-05:00"

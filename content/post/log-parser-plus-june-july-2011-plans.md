@@ -1,6 +1,6 @@
 +++
 title = "Log Parser Plus June/July 2011 plans"
-summary = "As the Log Parser Plus Web site moves towards 2000 visits a month I'll be making a number of changes in an attempt to make it even more useful. Here's what I've done so far, and what I'm planning on doing."
+description = "As the Log Parser Plus Web site moves towards 2000 visits a month I'll be making a number of changes in an attempt to make it even more useful. Here's what I've done so far, and what I'm planning on doing."
 draft = false
 comments = true
 date = "2011-06-02T21:07:00-05:00"

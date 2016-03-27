@@ -1,6 +1,6 @@
 +++
 title = "23+ hours with the PlayStation Portable: Initial thoughts"
-summary = "Having invested over 23 hours with my Sony PlayStation Portable, here are my initial thoughts on the device/console."
+description = "Having invested over 23 hours with my Sony PlayStation Portable, here are my initial thoughts on the device/console."
 draft = false
 comments = true
 date = "2010-11-15T22:33:00-06:00"

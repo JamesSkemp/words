@@ -1,6 +1,6 @@
 +++
 title = "Programmatic MSSQL data source in ASP.NET (C#) without System.Web"
-summary = "Another way to programmatically make a database call, but this time without extra System.Web includes."
+description = "Another way to programmatically make a database call, but this time without extra System.Web includes."
 draft = false
 comments = true
 date = "2009-06-06T14:08:00-05:00"

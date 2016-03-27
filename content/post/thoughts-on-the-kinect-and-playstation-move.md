@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on the Kinect and Playstation Move"
-summary = "Thoughts on the Kinect and Playstation Move."
+description = "Thoughts on the Kinect and Playstation Move."
 draft = false
 comments = true
 date = "2010-09-05T14:30:00-05:00"

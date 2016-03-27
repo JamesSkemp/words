@@ -1,6 +1,6 @@
 +++
 title = "Can Wisconsin Pick a Presidential Candidate, or What?"
-summary = "A look at the Presidential picks of Wisconsin, from 1900 to 2004, specifically those from the Democratic and Republican parties."
+description = "A look at the Presidential picks of Wisconsin, from 1900 to 2004, specifically those from the Democratic and Republican parties."
 draft = false
 comments = true
 date = "2005-01-08T00:01:00-06:00"

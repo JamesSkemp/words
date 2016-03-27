@@ -1,6 +1,6 @@
 +++
 title = "HP media drives - pocket versus personal"
-summary = "Is there a difference between the HP Personal Media Drives and the HP Pocket Media Drives? There's no easy way to find out currently, so an investigation is in order. [slnet0514:ef50ad8b-f02f-4625-8ff3-df6e4d68f9e2]"
+description = "Is there a difference between the HP Personal Media Drives and the HP Pocket Media Drives? There's no easy way to find out currently, so an investigation is in order. [slnet0514:ef50ad8b-f02f-4625-8ff3-df6e4d68f9e2]"
 draft = false
 comments = true
 date = "2008-02-19T22:30:00-06:00"

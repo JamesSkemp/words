@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu Quickie: Installing MySQL and PostgreSQL"
-summary = "Quickie on installing MySQL and PostgreSQL to Ubuntu 7.04."
+description = "Quickie on installing MySQL and PostgreSQL to Ubuntu 7.04."
 draft = false
 comments = true
 date = "2007-06-21T21:05:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Movie review: The Departed (2006)"
-summary = "Movie review of The Departed (2006)."
+description = "Movie review of The Departed (2006)."
 draft = false
 comments = true
 date = "2006-10-22T17:43:00-05:00"

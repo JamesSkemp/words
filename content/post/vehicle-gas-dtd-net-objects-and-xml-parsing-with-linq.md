@@ -1,6 +1,6 @@
 +++
 title = "Vehicle gas DTD .NET objects and XML parsing with LINQ"
-summary = "Having created an XML document, with DTD, to store vehicle fillups, here's a look at a rough object and how to parse them out of XML via LINQ."
+description = "Having created an XML document, with DTD, to store vehicle fillups, here's a look at a rough object and how to parse them out of XML via LINQ."
 draft = false
 comments = true
 date = "2010-06-10T22:20:00-05:00"

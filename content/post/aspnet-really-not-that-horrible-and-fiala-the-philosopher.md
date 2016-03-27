@@ -1,6 +1,6 @@
 +++
 title = "ASP.NET - really not that horrible and Fiala the philosopher"
-summary = "ASP.NET, Andrew Fiala ... once again showing that technology and philosophy is what I really care about."
+description = "ASP.NET, Andrew Fiala ... once again showing that technology and philosophy is what I really care about."
 draft = false
 comments = true
 date = "2007-05-13T08:52:00-05:00"

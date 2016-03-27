@@ -1,6 +1,6 @@
 +++
 title = "Review of 'Ajax for Web Application Developers' by Kris Hadlock (2006)"
-summary = "Review of 'Ajax for Web Application Developers' by Kris Hadlock (published 2006)."
+description = "Review of 'Ajax for Web Application Developers' by Kris Hadlock (published 2006)."
 draft = false
 comments = true
 date = "2006-12-13T11:50:00-06:00"

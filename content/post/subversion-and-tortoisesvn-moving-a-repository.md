@@ -1,6 +1,6 @@
 +++
 title = "Subversion and TortoiseSVN: Moving a repository"
-summary = "How to rename an existing Subversion repository."
+description = "How to rename an existing Subversion repository."
 draft = false
 comments = true
 date = "2008-09-12T20:18:00-05:00"

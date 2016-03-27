@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 14: Reincarnation"
-summary = "Transcript of scene 14 of the movie Ghost in the Shell. [slnet0514:eb78ded2-9fba-4d06-944d-8826965cec36]"
+description = "Transcript of scene 14 of the movie Ghost in the Shell. [slnet0514:eb78ded2-9fba-4d06-944d-8826965cec36]"
 draft = false
 comments = true
 date = "2008-06-01T17:30:00-05:00"

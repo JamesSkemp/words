@@ -1,6 +1,6 @@
 +++
 title = "The Four Dimensions: A Brief Introduction"
-summary = "A brief discourse upon the four dimensions; length, height, width, time."
+description = "A brief discourse upon the four dimensions; length, height, width, time."
 draft = false
 comments = true
 date = "2002-10-23T01:01:00-05:00"

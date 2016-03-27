@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache to a Windows-based computer, locally"
-summary = "In this tutorial, we'll be walking through the installation of Apache 1.3 to an average home computer running Windows XP, Home Edition (SP1).  Anyone running an average home computer, with a newer version of Windows, like XP, should be able to follow these steps and have an installation of their own.  Older versions of Windows, like 98 and Me, should also be able to handle an installation, although some steps may differ slightly."
+description = "In this tutorial, we'll be walking through the installation of Apache 1.3 to an average home computer running Windows XP, Home Edition (SP1).  Anyone running an average home computer, with a newer version of Windows, like XP, should be able to follow these steps and have an installation of their own.  Older versions of Windows, like 98 and Me, should also be able to handle an installation, although some steps may differ slightly."
 draft = false
 comments = true
 date = "2006-02-16T17:24:00-06:00"

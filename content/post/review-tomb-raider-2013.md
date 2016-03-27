@@ -1,6 +1,6 @@
 +++
 title = "Review: Tomb Raider (2013)"
-summary = "Review of Tomb Raider (2013)."
+description = "Review of Tomb Raider (2013)."
 draft = false
 comments = true
 date = "2013-04-12T18:54:00-05:00"

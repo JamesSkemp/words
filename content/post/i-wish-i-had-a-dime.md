@@ -1,6 +1,6 @@
 +++
 title = "I wish I had a dime..."
-summary = "A rich man I'd be ..."
+description = "A rich man I'd be ..."
 draft = false
 comments = false
 date = "2003-03-10T00:01:00-06:00"

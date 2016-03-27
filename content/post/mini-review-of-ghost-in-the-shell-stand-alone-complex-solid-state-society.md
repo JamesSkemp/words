@@ -1,6 +1,6 @@
 +++
 title = "Mini-review of Ghost in the Shell: Stand Alone Complex: Solid State Society"
-summary = "Quick review of Ghost in the Shell: Stand Alone Complex: Solid State Society."
+description = "Quick review of Ghost in the Shell: Stand Alone Complex: Solid State Society."
 draft = false
 comments = true
 date = "2007-07-21T21:01:00-05:00"

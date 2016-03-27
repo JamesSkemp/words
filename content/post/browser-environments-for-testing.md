@@ -1,6 +1,6 @@
 +++
 title = "Browser environments for testing"
-summary = "The three virtual environments I'd recommend for in-depth browser testing, for Web applications."
+description = "The three virtual environments I'd recommend for in-depth browser testing, for Web applications."
 draft = false
 comments = true
 date = "2008-11-20T22:40:00-06:00"

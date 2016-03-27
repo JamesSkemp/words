@@ -1,6 +1,6 @@
 +++
 title = "Feedback to Apple regarding an Apple Store visit (my first)"
-summary = "Feedback submitted to Apple, online, regarding my first Apple Store visit. [slnet0514:ef4e02fa-6857-487b-9312-3ac74f5fcc73]"
+description = "Feedback submitted to Apple, online, regarding my first Apple Store visit. [slnet0514:ef4e02fa-6857-487b-9312-3ac74f5fcc73]"
 draft = false
 comments = true
 date = "2008-06-26T22:08:00-05:00"

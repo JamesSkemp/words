@@ -1,6 +1,6 @@
 +++
 title = "Warhawk: Game Mode: Top 25,000(s) Analysis - 1/18/2008"
-summary = "At my heart, I'm a statistics guy. Here's an analysis of what it takes to get to various 25k ranks. [slnet0514:d2f2b8d4-1084-47bc-b349-324f14dda117]"
+description = "At my heart, I'm a statistics guy. Here's an analysis of what it takes to get to various 25k ranks. [slnet0514:d2f2b8d4-1084-47bc-b349-324f14dda117]"
 draft = false
 comments = true
 date = "2008-01-18T23:00:00-06:00"

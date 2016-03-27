@@ -1,6 +1,6 @@
 +++
 title = "ColdFusion MX 7 hosting, for free?"
-summary = "That's right, you can get a small amount of free disk space on a ColdFusion MX box, for almost nothing."
+description = "That's right, you can get a small amount of free disk space on a ColdFusion MX box, for almost nothing."
 draft = false
 comments = true
 date = "2006-11-12T12:21:00-06:00"

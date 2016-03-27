@@ -1,6 +1,6 @@
 +++
 title = "Brief thoughts on detached hands"
-summary = "Is my detached hand me?"
+description = "Is my detached hand me?"
 draft = false
 comments = true
 date = "2007-08-24T15:40:00-05:00"

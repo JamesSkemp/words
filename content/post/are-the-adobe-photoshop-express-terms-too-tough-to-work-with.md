@@ -1,6 +1,6 @@
 +++
 title = "Are the Adobe Photoshop Express terms too tough to work with?"
-summary = "Photoshop Express Beta was released, but can we really use it? [slnet0514:952f50c1-42dd-4875-bb34-319e36f367d2]"
+description = "Photoshop Express Beta was released, but can we really use it? [slnet0514:952f50c1-42dd-4875-bb34-319e36f367d2]"
 draft = false
 comments = true
 date = "2008-03-27T20:50:00-05:00"

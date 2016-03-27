@@ -1,6 +1,6 @@
 +++
 title = "Romney: A vote for a democrat president aids a surrender to terror"
-summary = "Mitt Romney, withdrawing from the presidential race, uses the terrorism card. [slnet0514:bbb4c3ed-d576-4909-8314-8e2c8fcc5e0b]"
+description = "Mitt Romney, withdrawing from the presidential race, uses the terrorism card. [slnet0514:bbb4c3ed-d576-4909-8314-8e2c8fcc5e0b]"
 draft = false
 comments = true
 date = "2008-02-07T13:51:00-06:00"

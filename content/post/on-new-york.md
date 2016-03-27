@@ -1,6 +1,6 @@
 +++
 title = "On New York"
-summary = "Is New York really a sad state of affairs? [slnet0514:35955db2-9ae2-4d0b-a706-b291690d9ecd]"
+description = "Is New York really a sad state of affairs? [slnet0514:35955db2-9ae2-4d0b-a706-b291690d9ecd]"
 draft = false
 comments = true
 date = "2008-05-24T20:05:00-05:00"

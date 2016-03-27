@@ -1,6 +1,6 @@
 +++
 title = "Web site development: Content and Audience"
-summary = "There's two major topics that come up when you're talking with someone who wants to create a Web site, and they have a number of questions revolving around them. This article will be discussing these two major topics - content and audience - and raise the major questions that must be answered."
+description = "There's two major topics that come up when you're talking with someone who wants to create a Web site, and they have a number of questions revolving around them. This article will be discussing these two major topics - content and audience - and raise the major questions that must be answered."
 draft = false
 comments = true
 date = "2006-03-25T09:42:00-06:00"

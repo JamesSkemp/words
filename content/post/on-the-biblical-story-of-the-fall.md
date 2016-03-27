@@ -1,6 +1,6 @@
 +++
 title = "On the Biblical Story of the Fall"
-summary = "On the biblical story of the fall of Adam and Eve - what the story is really about."
+description = "On the biblical story of the fall of Adam and Eve - what the story is really about."
 draft = false
 comments = true
 date = "2004-11-17T02:01:00-06:00"

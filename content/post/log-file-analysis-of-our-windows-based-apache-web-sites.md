@@ -1,6 +1,6 @@
 +++
 title = "Log file analysis of our Windows-based, Apache, Web sites"
-summary = "In our previous articles, we walked through installing Apache to a Windows XP home computer.  This time, we'll be setting up our log files for analysis, and installing a way to view the log file information."
+description = "In our previous articles, we walked through installing Apache to a Windows XP home computer.  This time, we'll be setting up our log files for analysis, and installing a way to view the log file information."
 draft = false
 comments = true
 date = "2006-02-20T20:58:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "'All Marketers are Liars' - Seth Godin speaks at Google"
-summary = "If you have the bandwidth, there's a great little video available from Google - Seth Godin's speech at Google."
+description = "If you have the bandwidth, there's a great little video available from Google - Seth Godin's speech at Google."
 draft = false
 comments = true
 date = "2006-03-06T22:18:00-06:00"

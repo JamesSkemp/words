@@ -1,6 +1,6 @@
 +++
 title = "What I've never understood about Conservatives"
-summary = "Pick: you're either anti- or pro-government."
+description = "Pick: you're either anti- or pro-government."
 draft = false
 comments = true
 date = "2011-04-16T21:08:00-05:00"

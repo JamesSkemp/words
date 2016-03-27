@@ -1,6 +1,6 @@
 +++
 title = "Find 404 errors using Log Parser"
-summary = "Two quick SQL commands to run in Log Parser to get 404 errors from logs."
+description = "Two quick SQL commands to run in Log Parser to get 404 errors from logs."
 draft = false
 comments = true
 date = "2007-08-04T13:54:00-05:00"

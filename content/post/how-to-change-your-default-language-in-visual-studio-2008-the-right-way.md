@@ -1,6 +1,6 @@
 +++
 title = "How to change your default language in Visual Studio 2008 (the right way)"
-summary = "There's an easy way to change your default language in Visual Studio - just update the settings file. [slnet0514:7a51d2f8-db57-4755-95f5-5042232ec3c3]"
+description = "There's an easy way to change your default language in Visual Studio - just update the settings file. [slnet0514:7a51d2f8-db57-4755-95f5-5042232ec3c3]"
 draft = false
 comments = true
 date = "2008-07-02T19:40:00-05:00"

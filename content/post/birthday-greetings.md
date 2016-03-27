@@ -1,6 +1,6 @@
 +++
 title = "Birthday greetings"
-summary = "Rambling on the anniversary of my birth."
+description = "Rambling on the anniversary of my birth."
 draft = false
 comments = true
 date = "2007-05-14T20:00:00-05:00"

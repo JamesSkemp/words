@@ -1,6 +1,6 @@
 +++
 title = "One Page Response Paper - Erasmus, \"On the Freedom of The Will\""
-summary = "Erasmus, \"On the Freedom of The Will\" one-page response paper. [slnet0514:a4ceee90-f791-4dcb-ae38-4b59892d5db5]"
+description = "Erasmus, \"On the Freedom of The Will\" one-page response paper. [slnet0514:a4ceee90-f791-4dcb-ae38-4b59892d5db5]"
 draft = false
 comments = true
 date = "2001-09-19T19:46:00-05:00"

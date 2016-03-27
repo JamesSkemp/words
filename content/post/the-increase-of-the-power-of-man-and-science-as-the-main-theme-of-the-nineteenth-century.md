@@ -1,6 +1,6 @@
 +++
 title = "The Increase of the Power of Man and Science as the Main Theme of the Nineteenth Century"
-summary = "Short essay regarding the major theme of the nineteenth century, as I see it, namely the increase of the power of man and science. [slnet0514:]"
+description = "Short essay regarding the major theme of the nineteenth century, as I see it, namely the increase of the power of man and science. [slnet0514:]"
 draft = false
 comments = true
 date = "2002-12-15T01:01:00-06:00"

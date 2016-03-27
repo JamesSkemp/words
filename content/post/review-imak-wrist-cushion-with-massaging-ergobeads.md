@@ -1,6 +1,6 @@
 +++
 title = "Review: IMAK Wrist Cushion with massaging ergoBeads"
-summary = "Review of IMAK's Wrist Cushion with massaging ergoBeads."
+description = "Review of IMAK's Wrist Cushion with massaging ergoBeads."
 draft = false
 comments = true
 date = "2010-05-02T21:33:00-05:00"

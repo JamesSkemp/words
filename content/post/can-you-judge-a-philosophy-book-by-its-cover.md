@@ -1,6 +1,6 @@
 +++
 title = "Can you judge a philosophy book by it's cover?"
-summary = "My hypothesis is that you can judge a philosophy book by it's cover."
+description = "My hypothesis is that you can judge a philosophy book by it's cover."
 draft = false
 comments = true
 date = "2006-05-03T07:18:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On the Saying \"I can't wait\""
-summary = "On the general saying \"I can't wait.\""
+description = "On the general saying \"I can't wait.\""
 draft = false
 comments = true
 date = "2009-09-12T19:00:00-05:00"

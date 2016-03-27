@@ -1,6 +1,6 @@
 +++
 title = "jQuery Mobile version of my video game listing"
-summary = "A jQuery Mobile version of my listing of video games is now available."
+description = "A jQuery Mobile version of my listing of video games is now available."
 draft = false
 comments = true
 date = "2011-07-09T11:30:00-05:00"

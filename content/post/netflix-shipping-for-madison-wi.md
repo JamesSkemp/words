@@ -1,6 +1,6 @@
 +++
 title = "Netflix shipping, for Madison WI"
-summary = "Over the next couple of weeks, at least, or over the next couple of months, if I'm happy with Netflix, I'll be posting here information about where I received my Netflix movies from, what kind of turn-around I've received, and etcetera.  My hope is that this information will be beneficial to other Madison folks who may be interested in Netflix. [slnet0514:975866f0-b821-4755-ade2-11ea56a96e80]"
+description = "Over the next couple of weeks, at least, or over the next couple of months, if I'm happy with Netflix, I'll be posting here information about where I received my Netflix movies from, what kind of turn-around I've received, and etcetera.  My hope is that this information will be beneficial to other Madison folks who may be interested in Netflix. [slnet0514:975866f0-b821-4755-ade2-11ea56a96e80]"
 draft = false
 comments = false
 date = "2006-09-26T20:41:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Nier weapon data in XML (and LINQ sample query)"
-summary = "Information about a new XML data file with Nier weapon upgrade information."
+description = "Information about a new XML data file with Nier weapon upgrade information."
 draft = false
 comments = true
 date = "2011-10-16T21:59:00-05:00"

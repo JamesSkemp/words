@@ -1,6 +1,6 @@
 +++
 title = "A Brief Discussion Amongst 19th Century Thinkers"
-summary = "Paper regarding a possible discussion four 19th century thinkers may have had."
+description = "Paper regarding a possible discussion four 19th century thinkers may have had."
 draft = false
 comments = true
 date = "2003-12-14T01:01:00-06:00"

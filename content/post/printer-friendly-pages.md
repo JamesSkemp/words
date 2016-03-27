@@ -1,6 +1,6 @@
 +++
 title = "Printer friendly pages"
-summary = "Print friendly styles added to the site."
+description = "Print friendly styles added to the site."
 draft = false
 comments = false
 date = "2006-03-01T20:57:00-06:00"

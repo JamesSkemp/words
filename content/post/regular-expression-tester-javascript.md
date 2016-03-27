@@ -1,6 +1,6 @@
 +++
 title = "Regular Expression tester - JavaScript"
-summary = "A JavaScript-based regular expression tester? Yup. [slnet0514:0208a137-2b45-4ef2-85f9-4d8b8bb722d2]"
+description = "A JavaScript-based regular expression tester? Yup. [slnet0514:0208a137-2b45-4ef2-85f9-4d8b8bb722d2]"
 draft = false
 comments = true
 date = "2008-01-21T18:15:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Michael Dawson's Tri-Level Hypothesis and Cognitive Science"
-summary = "Paper on Michael Dawson's Tri-Level Hypothesis, and it's place in Cognitive Science."
+description = "Paper on Michael Dawson's Tri-Level Hypothesis, and it's place in Cognitive Science."
 draft = false
 comments = true
 date = "2003-11-30T02:01:00-06:00"

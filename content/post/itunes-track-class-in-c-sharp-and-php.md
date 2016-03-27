@@ -1,6 +1,6 @@
 +++
 title = "iTunes Track class in C# and PHP"
-summary = "An iTunes music track class written in C# and PHP."
+description = "An iTunes music track class written in C# and PHP."
 draft = false
 comments = true
 date = "2010-09-08T22:25:00-05:00"

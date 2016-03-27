@@ -1,6 +1,6 @@
 +++
 title = "Waking Life script - still the most popular content"
-summary = "Did you know that the most popular content on this site is the revised Waking Life movie transcript that I host on this very site?  It's true, it's the most visited content on this site."
+description = "Did you know that the most popular content on this site is the revised Waking Life movie transcript that I host on this very site?  It's true, it's the most visited content on this site."
 draft = false
 comments = true
 date = "2006-06-12T19:58:00-05:00"

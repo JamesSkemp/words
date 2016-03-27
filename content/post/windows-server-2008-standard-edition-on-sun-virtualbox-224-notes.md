@@ -1,6 +1,6 @@
 +++
 title = "Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes"
-summary = "Notes on getting base installs ready of Windows Server 2008 Standard Edition, on VirtualBox 2.2.4."
+description = "Notes on getting base installs ready of Windows Server 2008 Standard Edition, on VirtualBox 2.2.4."
 draft = false
 comments = true
 date = "2009-06-27T16:21:00-05:00"

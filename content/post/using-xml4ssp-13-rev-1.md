@@ -1,6 +1,6 @@
 +++
 title = "Using Xml4Ssp 1.3 Rev 1"
-summary = "Quick guide on how to use Xml4Ssp to generate a gallery for SlideShowPro. [slnet0514:e9cc4dbe-87a8-492d-9806-00dedba6f961]"
+description = "Quick guide on how to use Xml4Ssp to generate a gallery for SlideShowPro. [slnet0514:e9cc4dbe-87a8-492d-9806-00dedba6f961]"
 draft = false
 comments = true
 date = "2008-02-24T08:50:00-06:00"

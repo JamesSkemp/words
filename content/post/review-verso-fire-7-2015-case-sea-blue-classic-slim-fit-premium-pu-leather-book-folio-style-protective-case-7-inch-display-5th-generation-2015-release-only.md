@@ -1,6 +1,6 @@
 +++
 title = "Review: Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only)"
-summary = "The following is a review of the Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only), received as part of the Amazon Vine Program."
+description = "The following is a review of the Verso Fire 7 2015 Case - Sea Blue Classic Slim Fit Premium PU Leather Book Folio Style Protective Case (7 inch Display - 5th Generation, 2015 Release Only), received as part of the Amazon Vine Program."
 draft = false
 comments = false
 date = "2016-01-25T19:50:42-06:00"

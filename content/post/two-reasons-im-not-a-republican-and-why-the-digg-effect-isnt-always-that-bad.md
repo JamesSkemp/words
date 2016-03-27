@@ -1,6 +1,6 @@
 +++
 title = "Two reasons I'm not a Republican, and why the Digg effect isn't always that bad"
-summary = "Reasons I'm not a Republican, and on Digg and Stumbled Upon."
+description = "Reasons I'm not a Republican, and on Digg and Stumbled Upon."
 draft = false
 comments = true
 date = "2007-01-27T17:45:00-06:00"

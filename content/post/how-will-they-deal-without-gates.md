@@ -1,6 +1,6 @@
 +++
 title = "How will they deal without Gates?"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-06-15T18:57:00-05:00"

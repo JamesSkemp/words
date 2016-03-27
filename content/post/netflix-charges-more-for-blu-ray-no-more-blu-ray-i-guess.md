@@ -1,6 +1,6 @@
 +++
 title = "Netflix charges more for Blu-ray? No more Blu-ray I guess"
-summary = "Netflix starts charging $1 for the ability to rent Blu-ray? In this economy?"
+description = "Netflix starts charging $1 for the ability to rent Blu-ray? In this economy?"
 draft = false
 comments = true
 date = "2008-10-08T15:17:00-05:00"

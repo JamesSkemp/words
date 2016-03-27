@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 15: Closing Credits"
-summary = "Transcript of scene 15 of the movie Ghost in the Shell. Just the closing credits, with some great ending music. [slnet0514:bba3920f-ac30-4952-b2d2-8f11e2456541]"
+description = "Transcript of scene 15 of the movie Ghost in the Shell. Just the closing credits, with some great ending music. [slnet0514:bba3920f-ac30-4952-b2d2-8f11e2456541]"
 draft = false
 comments = true
 date = "2008-06-01T17:45:00-05:00"

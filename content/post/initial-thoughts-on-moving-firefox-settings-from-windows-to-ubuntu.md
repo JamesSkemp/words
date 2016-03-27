@@ -1,6 +1,6 @@
 +++
 title = "Initial thoughts on moving Firefox settings from Windows to Ubuntu"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2007-05-30T17:30:00-05:00"

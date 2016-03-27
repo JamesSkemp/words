@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET running on Cassini Personal Web Server"
-summary = "Cassini Personal Web Server may just be what you need to quickly work with BlogEngine.NET for extension and theme creation."
+description = "Cassini Personal Web Server may just be what you need to quickly work with BlogEngine.NET for extension and theme creation."
 draft = false
 comments = true
 date = "2009-11-12T07:06:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "'If you surf around, you're bound to run into nothing but junk ...'"
-summary = "It's hard to find a city that doesn't have radio stations that suck, but Madison WI's pleasant mix keeps us happy."
+description = "It's hard to find a city that doesn't have radio stations that suck, but Madison WI's pleasant mix keeps us happy."
 draft = false
 comments = true
 date = "2006-09-27T19:46:00-05:00"

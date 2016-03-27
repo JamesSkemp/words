@@ -1,6 +1,6 @@
 +++
 title = "Know every version of iTunes installed on your machine? I do."
-summary = "Installers for Windows versions of Apple software is stored in a particular directory. Clean it out, and recover space."
+description = "Installers for Windows versions of Apple software is stored in a particular directory. Clean it out, and recover space."
 draft = false
 comments = true
 date = "2009-07-19T21:16:00-05:00"

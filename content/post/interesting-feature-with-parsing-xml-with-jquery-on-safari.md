@@ -1,6 +1,6 @@
 +++
 title = "Interesting feature with parsing XML with jQuery on Safari"
-summary = "Interesting results on parsing XML with jQuery on current versions of various browsers."
+description = "Interesting results on parsing XML with jQuery on current versions of various browsers."
 draft = false
 comments = true
 date = "2011-03-27T20:39:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Log Parser Plus - version 0.3 released"
-summary = "Version 0.3 BETA of Log Parser Plus (the application) is now available for download."
+description = "Version 0.3 BETA of Log Parser Plus (the application) is now available for download."
 draft = false
 comments = true
 date = "2009-11-07T21:25:00-06:00"

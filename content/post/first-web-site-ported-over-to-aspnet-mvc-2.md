@@ -1,6 +1,6 @@
 +++
 title = "First Web site ported over to ASP.NET MVC 2"
-summary = "Thoughts on porting my first Web site over to ASP.NET MVC."
+description = "Thoughts on porting my first Web site over to ASP.NET MVC."
 draft = false
 comments = true
 date = "2010-05-23T08:00:00-05:00"

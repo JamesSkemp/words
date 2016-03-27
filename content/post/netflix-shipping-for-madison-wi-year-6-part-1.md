@@ -1,6 +1,6 @@
 +++
 title = "Netflix shipping, for Madison WI - Year 6 (Part 1)"
-summary = "Covering Netflix shipping and receiving for a Madison WI subscriber's first part of his sixth year."
+description = "Covering Netflix shipping and receiving for a Madison WI subscriber's first part of his sixth year."
 draft = false
 comments = true
 date = "2011-09-30T09:47:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Example batch file to dump Subversion repositories"
-summary = "Sample batch file to easily dump all Subversion repositories in a single directory."
+description = "Sample batch file to easily dump all Subversion repositories in a single directory."
 draft = false
 comments = true
 date = "2009-11-19T21:52:00-06:00"

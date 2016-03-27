@@ -1,6 +1,6 @@
 +++
 title = "Review: Homeland: The Game"
-summary = "The following is a review of Homeland: The Game, provided to me as part of the Amazon Vine program."
+description = "The following is a review of Homeland: The Game, provided to me as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-10-20T18:51:19-05:00"

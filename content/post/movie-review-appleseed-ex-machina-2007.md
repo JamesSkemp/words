@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Appleseed: Ex Machina (2007)"
-summary = "Review of Appleseed: Ex Machina (2007), watched on Netflix online. [slnet0514:60369d24-2fd0-4808-8e0f-eddc2ffe5362]"
+description = "Review of Appleseed: Ex Machina (2007), watched on Netflix online. [slnet0514:60369d24-2fd0-4808-8e0f-eddc2ffe5362]"
 draft = false
 comments = true
 date = "2008-05-25T13:00:00-05:00"

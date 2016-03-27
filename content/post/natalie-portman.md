@@ -1,6 +1,6 @@
 +++
 title = "Natalie Portman"
-summary = "Reflections on a picture of Natalie Portman."
+description = "Reflections on a picture of Natalie Portman."
 draft = false
 comments = false
 date = "2005-04-05T00:01:00-05:00"

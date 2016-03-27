@@ -1,6 +1,6 @@
 +++
 title = "An Inconvenient Truth"
-summary = "I just saw An Inconvenient Truth this afternoon. If you've any desire to see it, see it. If you're concerned about the environment, see it. If you care about (extended) family members younger than yourself, see it."
+description = "I just saw An Inconvenient Truth this afternoon. If you've any desire to see it, see it. If you're concerned about the environment, see it. If you care about (extended) family members younger than yourself, see it."
 draft = false
 comments = true
 date = "2006-06-24T19:56:00-05:00"

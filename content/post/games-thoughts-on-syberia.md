@@ -1,6 +1,6 @@
 +++
 title = "Games: Thoughts on Syberia™"
-summary = "Thoughts on the PC game Syberia&trade;, based on a handful of hours of play, and approximately half the game complete."
+description = "Thoughts on the PC game Syberia&trade;, based on a handful of hours of play, and approximately half the game complete."
 draft = false
 comments = true
 date = "2004-10-31T01:01:00-06:00"

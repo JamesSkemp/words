@@ -1,6 +1,6 @@
 +++
 title = "Sony Bravia KDL-32M3000 comments: 2 weeks later"
-summary = "Two weeks after purchasing a Sony Bravia KDL-32M3000, I've got a couple of things that I wish this model had. [slnet0514:e90698e4-ca6e-4362-9b21-5284d5257fdd]"
+description = "Two weeks after purchasing a Sony Bravia KDL-32M3000, I've got a couple of things that I wish this model had. [slnet0514:e90698e4-ca6e-4362-9b21-5284d5257fdd]"
 draft = false
 comments = false
 date = "2007-11-17T22:15:00-06:00"

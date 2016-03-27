@@ -1,6 +1,6 @@
 +++
 title = "Review: 72 Pin Connector for NES 8 BIT Nintendo System"
-summary = "The following is a review of a 72 Pin Connector for NES 8 BIT Nintendo System (Bulk Packaging), by Classic Game Source."
+description = "The following is a review of a 72 Pin Connector for NES 8 BIT Nintendo System (Bulk Packaging), by Classic Game Source."
 draft = false
 comments = true
 date = "2012-12-30T14:50:00-06:00"

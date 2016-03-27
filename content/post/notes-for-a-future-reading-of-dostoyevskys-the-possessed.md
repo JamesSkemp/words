@@ -1,6 +1,6 @@
 +++
 title = "Notes for a future reading of Dostoyevsky's The Possessed."
-summary = "Notes for a future reading of Fyodor Dostoyevsky's The Possessed."
+description = "Notes for a future reading of Fyodor Dostoyevsky's The Possessed."
 draft = false
 comments = true
 date = "2008-08-14T20:58:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Perfect Blue; 4 of 5 stars ... unfortunately"
-summary = "Quick review of the movie Perfect Blue."
+description = "Quick review of the movie Perfect Blue."
 draft = false
 comments = true
 date = "2007-06-02T22:04:00-05:00"

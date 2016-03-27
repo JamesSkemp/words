@@ -1,6 +1,6 @@
 +++
 title = "Good-bye, farewell, my darling, sweet"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2004-03-09T00:02:00-06:00"

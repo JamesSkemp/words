@@ -1,6 +1,6 @@
 +++
 title = "On \"Shafty\""
-summary = "On the Phish song \"Shafty.\""
+description = "On the Phish song \"Shafty.\""
 draft = false
 comments = true
 date = "2009-02-17T20:12:00-06:00"

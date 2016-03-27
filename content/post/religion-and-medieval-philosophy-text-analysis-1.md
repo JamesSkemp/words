@@ -1,6 +1,6 @@
 +++
 title = "Religion and Medieval Philosophy: Text Analysis 1"
-summary = "Paper written regarding Augustine's The City of God. [slnet0514:376cb3a6-e2af-43da-8923-d880dbb079f6]"
+description = "Paper written regarding Augustine's The City of God. [slnet0514:376cb3a6-e2af-43da-8923-d880dbb079f6]"
 draft = false
 comments = true
 date = "2003-02-10T01:21:00-06:00"

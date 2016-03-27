@@ -1,6 +1,6 @@
 +++
 title = "Random - \"some walking stuff\""
-summary = "A couple of lines, from July 2003. Not sure if this is original or not, but a search turns up nothing."
+description = "A couple of lines, from July 2003. Not sure if this is original or not, but a search turns up nothing."
 draft = false
 comments = true
 date = "2009-03-19T22:21:00-05:00"

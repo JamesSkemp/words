@@ -1,6 +1,6 @@
 +++
 title = "XML Schema Definition creation: Journal - Part 2: XSD file with <oXygen/> XML Editor"
-summary = "In part 2 of a new series, I cover how I created a new XML Schema Definition for journal-like XML files. This time we work with oXygen XML Editor to graphically create the XSD."
+description = "In part 2 of a new series, I cover how I created a new XML Schema Definition for journal-like XML files. This time we work with oXygen XML Editor to graphically create the XSD."
 draft = false
 comments = true
 date = "2009-12-23T07:30:00-06:00"

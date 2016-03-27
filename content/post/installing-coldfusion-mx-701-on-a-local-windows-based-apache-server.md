@@ -1,6 +1,6 @@
 +++
 title = "Installing ColdFusion MX 7.0.1 on a local Windows-based, Apache, server"
-summary = "In this article, we'll be walking through an installation of ColdFusion MX 7.0.1, Developer's Edition. Since we've already covered the installation of ColdFusion MX 6.1, Developer's Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide. If you do, that's okay (since I do). Otherwise, your installation will vary slightly."
+description = "In this article, we'll be walking through an installation of ColdFusion MX 7.0.1, Developer's Edition. Since we've already covered the installation of ColdFusion MX 6.1, Developer's Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide. If you do, that's okay (since I do). Otherwise, your installation will vary slightly."
 draft = false
 comments = true
 date = "2006-03-31T00:21:00-06:00"

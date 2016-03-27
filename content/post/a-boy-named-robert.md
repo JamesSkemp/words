@@ -1,6 +1,6 @@
 +++
 title = "A Boy Named Robert"
-summary = "The true story about Robert, as written by Robert Edwin (notes at the end are my own)."
+description = "The true story about Robert, as written by Robert Edwin (notes at the end are my own)."
 draft = false
 comments = false
 date = "2002-11-04T00:01:00-06:00"

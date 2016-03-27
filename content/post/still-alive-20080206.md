@@ -1,6 +1,6 @@
 +++
 title = "Still alive ..."
-summary = "I was told I haven't posted in a while, and there's probably a good reason for it. [slnet0514:9a544b64-bfdb-41b5-92dc-056ac8c001b8]"
+description = "I was told I haven't posted in a while, and there's probably a good reason for it. [slnet0514:9a544b64-bfdb-41b5-92dc-056ac8c001b8]"
 draft = false
 comments = true
 date = "2008-02-06T13:59:00-06:00"

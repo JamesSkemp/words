@@ -1,6 +1,6 @@
 +++
 title = "Horrific Hair"
-summary = "So, you're chewing on something, who knows exactly what (well, you know what - use your imagination) when you come to the realization that there is a hair in your mouth."
+description = "So, you're chewing on something, who knows exactly what (well, you know what - use your imagination) when you come to the realization that there is a hair in your mouth."
 draft = false
 comments = false
 date = "2003-05-20T00:01:00-05:00"

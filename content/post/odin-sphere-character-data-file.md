@@ -1,6 +1,6 @@
 +++
 title = "Odin Sphere: Character data file"
-summary = "Similar to what I've been trying to do, I've begun work on a base data file for Odin Sphere."
+description = "Similar to what I've been trying to do, I've begun work on a base data file for Odin Sphere."
 draft = false
 comments = true
 date = "2010-07-30T08:00:00-05:00"

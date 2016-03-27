@@ -1,6 +1,6 @@
 +++
 title = "Pulp Fiction: A Timeline of the Events of the Movie"
-summary = "A look at the timeline of the events of the movie 'Pulp Fiction'. Tarantino plays with time again ... [slnet0514:eeb9e12b-de2f-452b-9491-d9dffdc0d594]"
+description = "A look at the timeline of the events of the movie 'Pulp Fiction'. Tarantino plays with time again ... [slnet0514:eeb9e12b-de2f-452b-9491-d9dffdc0d594]"
 draft = false
 comments = true
 date = "2005-02-18T00:00:00-06:00"

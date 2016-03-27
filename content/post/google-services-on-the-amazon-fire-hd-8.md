@@ -1,6 +1,6 @@
 +++
 title = "Google Services on the Amazon Fire HD 8"
-summary = "For my future reference, information on how to install Google services (Google Play and associated services) on an Amazon Fire HD 8."
+description = "For my future reference, information on how to install Google services (Google Play and associated services) on an Amazon Fire HD 8."
 draft = false
 comments = true
 date = "2015-12-13T14:35:42-06:00"

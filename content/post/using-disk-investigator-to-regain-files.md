@@ -1,6 +1,6 @@
 +++
 title = "Using Disk Investigator to Regain Files"
-summary = "An exercise showing how to regain lost/deleted files using Disk Investigator."
+description = "An exercise showing how to regain lost/deleted files using Disk Investigator."
 draft = false
 comments = true
 date = "2003-10-09T01:01:00-05:00"

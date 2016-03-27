@@ -1,6 +1,6 @@
 +++
 title = "A Brief Thought on Time Travel"
-summary = "A brief thought on time travel."
+description = "A brief thought on time travel."
 draft = false
 comments = true
 date = "2009-10-17T21:43:00-05:00"

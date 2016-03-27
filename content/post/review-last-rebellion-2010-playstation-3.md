@@ -1,6 +1,6 @@
 +++
 title = "Review: Last Rebellion (2010) (PlayStation 3)"
-summary = "Review of Last Rebellion for the PlayStation 3."
+description = "Review of Last Rebellion for the PlayStation 3."
 draft = false
 comments = true
 date = "2011-08-28T10:00:00-05:00"

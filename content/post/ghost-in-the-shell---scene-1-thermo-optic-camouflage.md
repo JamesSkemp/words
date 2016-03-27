@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 1: Thermo Optic Camouflage"
-summary = "Transcript of scene 1 of the movie Ghost in the Shell. [slnet0514:160bb610-f457-4e6d-8834-bbdc0e544b44]"
+description = "Transcript of scene 1 of the movie Ghost in the Shell. [slnet0514:160bb610-f457-4e6d-8834-bbdc0e544b44]"
 draft = false
 comments = true
 date = "2008-06-01T10:30:00-05:00"

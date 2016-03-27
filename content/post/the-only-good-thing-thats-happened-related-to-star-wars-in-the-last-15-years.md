@@ -1,6 +1,6 @@
 +++
 title = "The only good thing that's happened related to Star Wars in the last 15 years ..."
-summary = "George Lucas is a fool. But at least we had Natalie Portman ..."
+description = "George Lucas is a fool. But at least we had Natalie Portman ..."
 draft = false
 comments = true
 date = "2008-08-15T22:55:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Getting the Most of Your InboxDollar$.com Account"
-summary = "Information regarding InboxDollars.com, supplemental to my article titled 'On InboxDollar$.com, and similar programs.'"
+description = "Information regarding InboxDollars.com, supplemental to my article titled 'On InboxDollar$.com, and similar programs.'"
 draft = false
 comments = true
 date = "2005-02-09T02:01:00-06:00"

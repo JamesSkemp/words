@@ -1,6 +1,6 @@
 +++
 title = "Review: Professional ASP.NET MVC 3"
-summary = "Review of Professional ASP.NET MVC 3, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen."
+description = "Review of Professional ASP.NET MVC 3, written by Jon Galloway, Phil Haack, Brad Wilson, and K. Scott Allen."
 draft = false
 comments = true
 date = "2011-08-20T14:04:00-05:00"

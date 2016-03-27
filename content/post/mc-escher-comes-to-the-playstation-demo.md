@@ -1,6 +1,6 @@
 +++
 title = "M.C. Escher comes to the Playstation (demo)"
-summary = "After all the hype, I finally had the chance to actually play a demo of echochrome. [slnet0514:4abab0a9-78c2-48c1-97bc-309d41f25530]"
+description = "After all the hype, I finally had the chance to actually play a demo of echochrome. [slnet0514:4abab0a9-78c2-48c1-97bc-309d41f25530]"
 draft = false
 comments = true
 date = "2008-04-25T12:20:00-05:00"

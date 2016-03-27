@@ -1,6 +1,6 @@
 +++
 title = "Music Recommendations Please! version 0.5 beta"
-summary = "Version 0.5 beta of Music Recommendations Please! is now available for download."
+description = "Version 0.5 beta of Music Recommendations Please! is now available for download."
 draft = false
 comments = true
 date = "2010-05-28T07:58:00-05:00"

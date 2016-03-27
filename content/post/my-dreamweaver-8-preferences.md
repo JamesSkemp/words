@@ -1,6 +1,6 @@
 +++
 title = "My Dreamweaver 8 Preferences"
-summary = "My preferences for Dreamweaver 8. [slnet0514:1af178c7-74ce-4693-b9dc-178aaf6e3fd4]"
+description = "My preferences for Dreamweaver 8. [slnet0514:1af178c7-74ce-4693-b9dc-178aaf6e3fd4]"
 draft = false
 comments = true
 date = "2008-04-19T10:45:00-05:00"

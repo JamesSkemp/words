@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown"
-summary = "These six pieces of forum software, that run on PHP, will hopefully be covered before the end of November."
+description = "These six pieces of forum software, that run on PHP, will hopefully be covered before the end of November."
 draft = false
 comments = true
 date = "2006-11-18T19:22:00-06:00"

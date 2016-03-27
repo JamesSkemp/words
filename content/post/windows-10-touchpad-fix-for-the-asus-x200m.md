@@ -1,6 +1,6 @@
 +++
 title = "Windows 10 touchpad fix for the ASUS X200M"
-summary = "One possible way to fix an unresponsive touchpad on the ASUS X200M after a Windows 10 install."
+description = "One possible way to fix an unresponsive touchpad on the ASUS X200M after a Windows 10 install."
 draft = false
 comments = true
 date = "2015-08-07T22:21:19-05:00"

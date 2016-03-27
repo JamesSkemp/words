@@ -1,6 +1,6 @@
 +++
 title = "Internet Explorer Virtual PC images - hidden, but back"
-summary = "With Microsoft releasing Virtual PC images for testing on multiple versions of Internet Explorer, will we one day see similar options for testing on multiple operating systems?"
+description = "With Microsoft releasing Virtual PC images for testing on multiple versions of Internet Explorer, will we one day see similar options for testing on multiple operating systems?"
 draft = false
 comments = true
 date = "2008-09-04T21:38:00-05:00"

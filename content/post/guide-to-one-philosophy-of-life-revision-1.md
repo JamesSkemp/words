@@ -1,6 +1,6 @@
 +++
 title = "Guide to One Philosophy of Life: Revision 1"
-summary = "Part of my philosophical perspectives on life, from January 30, 2002 to September 29, 2002."
+description = "Part of my philosophical perspectives on life, from January 30, 2002 to September 29, 2002."
 draft = false
 comments = true
 date = "2002-09-29T21:25:00-05:00"

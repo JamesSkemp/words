@@ -1,6 +1,6 @@
 +++
 title = "Version control systems - any suggestions?"
-summary = "Version control is something that I've been interested in for the past several months but that I haven't been able to dig into as much as I'd like. I'm looking for recommendations on software that will help me get a system setup for some testing. Recommendations? Thoughts? Rants? Raves?"
+description = "Version control is something that I've been interested in for the past several months but that I haven't been able to dig into as much as I'd like. I'm looking for recommendations on software that will help me get a system setup for some testing. Recommendations? Thoughts? Rants? Raves?"
 draft = false
 comments = true
 date = "2006-09-14T18:37:00-05:00"

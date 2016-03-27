@@ -1,6 +1,6 @@
 +++
 title = "Review: Ninja Blade (2009)"
-summary = "Review of Ninja Blade (2009), released for the Xbox 360."
+description = "Review of Ninja Blade (2009), released for the Xbox 360."
 draft = false
 comments = true
 date = "2012-04-24T19:46:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: D-Link Wireless N 900 Mbps Home Cloud App-Enabled Dual-Band Gigabit Router (DIR-855L)"
-summary = "The following is a review of the D-Link Wireless N 900 Mbps Home Cloud App-Enabled Dual-Band Gigabit Router (DIR-855L)."
+description = "The following is a review of the D-Link Wireless N 900 Mbps Home Cloud App-Enabled Dual-Band Gigabit Router (DIR-855L)."
 draft = false
 comments = true
 date = "2013-07-21T18:19:00-05:00"

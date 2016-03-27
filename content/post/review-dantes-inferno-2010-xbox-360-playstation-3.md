@@ -1,6 +1,6 @@
 +++
 title = "Review: Dante's Inferno (2010) (Xbox 360/PlayStation 3)"
-summary = "Review of Dante's Inferno (2010), for the Xbox 360 and PlayStation 3."
+description = "Review of Dante's Inferno (2010), for the Xbox 360 and PlayStation 3."
 draft = false
 comments = true
 date = "2011-06-09T22:20:00-05:00"

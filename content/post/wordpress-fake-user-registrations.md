@@ -1,6 +1,6 @@
 +++
 title = "WordPress: Fake user registrations"
-summary = "New user accounts being setup, possibly for spam purposes?"
+description = "New user accounts being setup, possibly for spam purposes?"
 draft = false
 comments = false
 date = "2006-12-11T19:35:00-06:00"

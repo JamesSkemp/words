@@ -1,6 +1,6 @@
 +++
 title = "The Analytic and Phenomenological Traditions in Relation to Intentionality"
-summary = "Paper on the analytic (as seen in Michael Corrado's and Tim Crane's pieces) and the phenomenological (as seen in the articles on Edmund Husserl, as well as based upon previous reading of Husserl's work) traditions in relation to the Theory of Intentionality."
+description = "Paper on the analytic (as seen in Michael Corrado's and Tim Crane's pieces) and the phenomenological (as seen in the articles on Edmund Husserl, as well as based upon previous reading of Husserl's work) traditions in relation to the Theory of Intentionality."
 draft = false
 comments = true
 date = "2003-05-11T01:01:00-05:00"

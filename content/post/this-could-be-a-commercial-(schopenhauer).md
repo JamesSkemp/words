@@ -1,6 +1,6 @@
 +++
 title = "This could be a commercial (Schopenhauer)"
-summary = "A possible commercial, regarding Schopenhauer."
+description = "A possible commercial, regarding Schopenhauer."
 draft = false
 comments = true
 date = "2006-09-01T07:22:00-05:00"

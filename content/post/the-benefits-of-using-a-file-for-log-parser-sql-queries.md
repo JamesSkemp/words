@@ -1,6 +1,6 @@
 +++
 title = "The benefits of using a file for Log Parser SQL queries"
-summary = "With Log Parser, you can define your SQL query in a file, instead of on the command line."
+description = "With Log Parser, you can define your SQL query in a file, instead of on the command line."
 draft = false
 comments = true
 date = "2010-09-26T09:41:00-05:00"

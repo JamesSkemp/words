@@ -1,6 +1,6 @@
 +++
 title = "Why do we elect judges?"
-summary = "Should Wisconsin have a general election for Supreme Court judicial candidates? [slnet0514:b587505b-8965-48ad-a8fd-7d7b25104c81]"
+description = "Should Wisconsin have a general election for Supreme Court judicial candidates? [slnet0514:b587505b-8965-48ad-a8fd-7d7b25104c81]"
 draft = false
 comments = true
 date = "2008-03-14T20:20:00-05:00"

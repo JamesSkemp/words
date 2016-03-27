@@ -1,6 +1,6 @@
 +++
 title = "Solved: Upgrading to Windows 7 on an HP a6360t with a second hard drive"
-summary = "My experience performing the initial upgrade of my HP Pavilion a6360t to Windows 7 Home Premium, 64-bit."
+description = "My experience performing the initial upgrade of my HP Pavilion a6360t to Windows 7 Home Premium, 64-bit."
 draft = false
 comments = true
 date = "2009-10-09T20:43:00-05:00"

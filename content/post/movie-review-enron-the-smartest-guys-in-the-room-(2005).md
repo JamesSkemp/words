@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Enron: The Smartest Guys in the Room (2005)"
-summary = "Movie review of the documentary Enron: The Smartest Guys in the Room (2005)."
+description = "Movie review of the documentary Enron: The Smartest Guys in the Room (2005)."
 draft = false
 comments = true
 date = "2006-10-24T20:09:00-05:00"

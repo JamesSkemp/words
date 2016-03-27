@@ -1,6 +1,6 @@
 +++
 title = "Browser support for different versions of JavaScript"
-summary = "A look at documentation for support of JavaScript in various main-stream browsers."
+description = "A look at documentation for support of JavaScript in various main-stream browsers."
 draft = false
 comments = true
 date = "2007-01-19T22:04:00-06:00"

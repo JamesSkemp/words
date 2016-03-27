@@ -1,6 +1,6 @@
 +++
 title = "Review: Tamrac 3582 Express Case 2"
-summary = "Review of the Tamrac 3582 Express Case 2, which I use to store my Casio Exilim EX-Z1200."
+description = "Review of the Tamrac 3582 Express Case 2, which I use to store my Casio Exilim EX-Z1200."
 draft = false
 comments = true
 date = "2008-07-12T22:20:00-05:00"

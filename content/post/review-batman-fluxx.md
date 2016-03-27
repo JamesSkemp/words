@@ -1,6 +1,6 @@
 +++
 title = "Review: Batman Fluxx"
-summary = "The following is a review of Batman Fluxx, received as part of the Amazon Vine program."
+description = "The following is a review of Batman Fluxx, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-09-06T06:41:41-05:00"

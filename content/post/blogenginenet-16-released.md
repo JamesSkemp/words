@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET 1.6 released"
-summary = "BlogEngine.NET 1.6 is available for download. Too bad the memory footprint increased again."
+description = "BlogEngine.NET 1.6 is available for download. Too bad the memory footprint increased again."
 draft = false
 comments = true
 date = "2010-02-10T08:32:00-06:00"

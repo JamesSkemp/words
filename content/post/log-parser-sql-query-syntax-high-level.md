@@ -1,6 +1,6 @@
 +++
 title = "Log Parser SQL query syntax (high-level)"
-summary = "A high-level look at the Log Parser's SQL syntax."
+description = "A high-level look at the Log Parser's SQL syntax."
 draft = false
 comments = true
 date = "2007-10-25T21:45:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart"
-summary = "In this final part of the series, we use data from an XML file to create a chart of leveling information for Odin Sphere characters."
+description = "In this final part of the series, we use data from an XML file to create a chart of leveling information for Odin Sphere characters."
 draft = false
 comments = true
 date = "2010-08-15T13:00:00-05:00"

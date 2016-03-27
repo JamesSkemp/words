@@ -1,6 +1,6 @@
 +++
 title = "Review for Sin: The Movie (1999)"
-summary = "Review of Sin: The Movie (1999)."
+description = "Review of Sin: The Movie (1999)."
 draft = false
 comments = true
 date = "2007-06-09T21:13:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Template changed again (October 2007)"
-summary = "Royal Flowers is now the template for StrivingLife."
+description = "Royal Flowers is now the template for StrivingLife."
 draft = false
 comments = true
 date = "2007-10-06T14:25:00-05:00"

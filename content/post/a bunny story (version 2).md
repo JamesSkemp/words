@@ -1,6 +1,6 @@
 +++
 title = "A Bunny Story (Version 2)"
-summary = "A short story regarding the bunny named cat."
+description = "A short story regarding the bunny named cat."
 draft = false
 comments = false
 date = "2002-11-04T00:03:00-06:00"

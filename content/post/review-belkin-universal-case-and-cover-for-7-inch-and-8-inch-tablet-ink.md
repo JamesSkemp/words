@@ -1,6 +1,6 @@
 +++
 title = "Review: Belkin Universal Case and Cover for 7-Inch and 8-Inch Tablet, Ink"
-summary = "The following is a review of the Belkin Universal Case and Cover for 7-Inch and 8-Inch Tablet, Ink, which I received as part of the Amazon Vine program."
+description = "The following is a review of the Belkin Universal Case and Cover for 7-Inch and 8-Inch Tablet, Ink, which I received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-07-19T09:14:51-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "You either did or didn't waste your time playing the video game"
-summary = "Before you say that you wasted time playing a game, think about it."
+description = "Before you say that you wasted time playing a game, think about it."
 draft = false
 comments = true
 date = "2009-01-26T21:05:00-06:00"

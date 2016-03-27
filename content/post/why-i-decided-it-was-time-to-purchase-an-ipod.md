@@ -1,6 +1,6 @@
 +++
 title = "Why I decided it was time to purchase an iPod"
-summary = "Years ago I said I would never buy one, but Friday, January 4, I purchased an iPod. [slnet0514:ee9e04a1-2409-4722-98de-8317c43753e6]"
+description = "Years ago I said I would never buy one, but Friday, January 4, I purchased an iPod. [slnet0514:ee9e04a1-2409-4722-98de-8317c43753e6]"
 draft = false
 comments = true
 date = "2008-01-05T09:20:00-06:00"

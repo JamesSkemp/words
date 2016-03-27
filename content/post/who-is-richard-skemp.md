@@ -1,6 +1,6 @@
 +++
 title = "Who is Richard Skemp?"
-summary = "A short article regarding a search phrase I kept running into, 'Richard Skemp'."
+description = "A short article regarding a search phrase I kept running into, 'Richard Skemp'."
 draft = false
 comments = true
 date = "2004-11-13T01:01:00-06:00"

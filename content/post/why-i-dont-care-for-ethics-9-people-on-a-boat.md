@@ -1,6 +1,6 @@
 +++
 title = "Why I Don't Care For Ethics: 9 people on a boat"
-summary = "The ethical dilemma of x people on a boat, which can hold only x-1."
+description = "The ethical dilemma of x people on a boat, which can hold only x-1."
 draft = false
 comments = true
 date = "2009-01-01T16:00:00-06:00"

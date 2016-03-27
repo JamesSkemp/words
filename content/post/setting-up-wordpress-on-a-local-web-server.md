@@ -1,6 +1,6 @@
 +++
 title = "Setting up WordPress on a local Web server"
-summary = "In our previous tutorials, we setup an Apache-based Web server, on a Windows XP home computer. The Web server is also running PHP and MySQL, as well as ColdFusion MX. This time, we'll be installing WordPress onto our local Web server. This installation will require us to work with both PHP and MySQL, and we'll be able to setup any number of WordPresses after we have completed this one."
+description = "In our previous tutorials, we setup an Apache-based Web server, on a Windows XP home computer. The Web server is also running PHP and MySQL, as well as ColdFusion MX. This time, we'll be installing WordPress onto our local Web server. This installation will require us to work with both PHP and MySQL, and we'll be able to setup any number of WordPresses after we have completed this one."
 draft = false
 comments = true
 date = "2006-02-28T08:13:00-06:00"

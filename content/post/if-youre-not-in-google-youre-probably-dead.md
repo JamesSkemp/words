@@ -1,6 +1,6 @@
 +++
 title = "If you're not in Google, you're probably dead"
-summary = "If we can't find something in a search online, what does that mean?"
+description = "If we can't find something in a search online, what does that mean?"
 draft = false
 comments = true
 date = "2007-07-29T20:07:00-05:00"

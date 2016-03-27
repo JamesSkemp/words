@@ -1,6 +1,6 @@
 +++
 title = "Photoshop is fun!"
-summary = "Is Photoshop fun?  Duh.  Instead of using a filter, which is what I wanted to do in the first place, I did my own 'filter'. Not too shabby, but that's me."
+description = "Is Photoshop fun?  Duh.  Instead of using a filter, which is what I wanted to do in the first place, I did my own 'filter'. Not too shabby, but that's me."
 draft = false
 comments = true
 date = "2006-10-05T22:12:00-05:00"

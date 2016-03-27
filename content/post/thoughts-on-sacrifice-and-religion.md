@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on sacrifice and religion"
-summary = "I don't know how to describe this. Thoughts on sacrifice and religion is semi-close, but not really ..."
+description = "I don't know how to describe this. Thoughts on sacrifice and religion is semi-close, but not really ..."
 draft = false
 comments = true
 date = "2009-01-21T19:45:00-06:00"

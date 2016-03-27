@@ -1,6 +1,6 @@
 +++
 title = "Review: SET Dice Game"
-summary = "The following is a review of the SET Dice Game, received as part of the Amazon Vine program."
+description = "The following is a review of the SET Dice Game, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-04-05T09:56:30-05:00"

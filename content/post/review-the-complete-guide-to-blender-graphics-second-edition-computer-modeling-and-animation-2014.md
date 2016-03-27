@@ -1,6 +1,6 @@
 +++
 title = "Review: The Complete Guide to Blender Graphics, Second Edition: Computer Modeling and Animation (2014)"
-summary = "The following is a review of The Complete Guide to Blender Graphics, Second Edition: Computer Modeling and Animation, published in 2014, and written by John M. Blain."
+description = "The following is a review of The Complete Guide to Blender Graphics, Second Edition: Computer Modeling and Animation, published in 2014, and written by John M. Blain."
 draft = false
 comments = false
 date = "2014-09-27T14:29:51-05:00"

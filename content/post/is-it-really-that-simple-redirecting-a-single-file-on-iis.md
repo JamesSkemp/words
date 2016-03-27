@@ -1,6 +1,6 @@
 +++
 title = "Is it really that simple - redirecting a single file on IIS"
-summary = "Redirecting a single file on IIS really isn't that difficult. [slnet0514:0a81d74a-197a-47cd-8cba-d6d9b8a7392b]"
+description = "Redirecting a single file on IIS really isn't that difficult. [slnet0514:0a81d74a-197a-47cd-8cba-d6d9b8a7392b]"
 draft = false
 comments = true
 date = "2007-09-02T09:47:00-05:00"

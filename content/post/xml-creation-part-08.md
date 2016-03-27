@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 8"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part eight I'll be expanding upon our XSLT to group games based upon the system they belong to, as well as modify our XSLT to use xsl:appy-templates. [slnet0514:ddf229c2-23de-44be-b801-c1b8b9736632]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part eight I'll be expanding upon our XSLT to group games based upon the system they belong to, as well as modify our XSLT to use xsl:appy-templates. [slnet0514:ddf229c2-23de-44be-b801-c1b8b9736632]"
 draft = false
 comments = true
 date = "2008-01-01T13:00:00-06:00"

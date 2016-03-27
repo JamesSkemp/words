@@ -1,6 +1,6 @@
 +++
 title = "Playstation 3 Firmware 2.41 and running fine"
-summary = "Mum on what the issue was with 2.40, but ..."
+description = "Mum on what the issue was with 2.40, but ..."
 draft = false
 comments = true
 date = "2008-07-10T12:10:00-05:00"

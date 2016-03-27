@@ -1,6 +1,6 @@
 +++
 title = "Planned updates for the next couple of days"
-summary = "Since I've got a couple more days worth of tutorials already written, and since things are now going relatively smoothly (I had a couple of problems with the MySQL implementation as a whole), I figured I would give an update to what I've been doing, and what I will be doing."
+description = "Since I've got a couple more days worth of tutorials already written, and since things are now going relatively smoothly (I had a couple of problems with the MySQL implementation as a whole), I figured I would give an update to what I've been doing, and what I will be doing."
 draft = false
 comments = true
 date = "2006-02-22T07:05:00-06:00"

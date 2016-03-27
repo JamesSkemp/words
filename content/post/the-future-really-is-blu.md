@@ -1,6 +1,6 @@
 +++
 title = "The future really is Blu ..."
-summary = "With Warner switching over to Blu-ray, is the format war between Blu-ray and HD DVD over? Was it perhaps already over? [slnet0514:8e04febd-b73b-4828-a215-2fed4e4f18fd]"
+description = "With Warner switching over to Blu-ray, is the format war between Blu-ray and HD DVD over? Was it perhaps already over? [slnet0514:8e04febd-b73b-4828-a215-2fed4e4f18fd]"
 draft = false
 comments = true
 date = "2008-01-05T21:30:00-06:00"

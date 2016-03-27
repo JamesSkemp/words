@@ -1,6 +1,6 @@
 +++
 title = "Convert online image to base64 with C#"
-summary = "Code to convert an image online to base64."
+description = "Code to convert an image online to base64."
 draft = false
 comments = true
 date = "2010-12-12T16:51:00-06:00"

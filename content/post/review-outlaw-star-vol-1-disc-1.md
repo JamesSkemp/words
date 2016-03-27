@@ -1,6 +1,6 @@
 +++
 title = "Review: Outlaw Star: Vol. 1: Disc 1"
-summary = "Brief review of the first five episodes of Outlaw Star."
+description = "Brief review of the first five episodes of Outlaw Star."
 draft = false
 comments = true
 date = "2006-11-04T16:47:00-06:00"

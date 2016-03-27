@@ -1,6 +1,6 @@
 +++
 title = "C2-12828-1 and Disgaea 3: Absence of Detention"
-summary = "One possible solution to the C2-12828-1 error code when playing Disgaea 3: Absence of Detention on the PlayStation Vita."
+description = "One possible solution to the C2-12828-1 error code when playing Disgaea 3: Absence of Detention on the PlayStation Vita."
 draft = false
 comments = true
 date = "2013-08-10T17:11:00-05:00"

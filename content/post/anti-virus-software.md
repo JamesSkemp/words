@@ -1,6 +1,6 @@
 +++
 title = "Anti-Virus Software"
-summary = "An article on anti-virus software, with the recent news that Microsoft will enter the industry in the back of my mind."
+description = "An article on anti-virus software, with the recent news that Microsoft will enter the industry in the back of my mind."
 draft = false
 comments = true
 date = "2005-01-09T02:01:00-06:00"

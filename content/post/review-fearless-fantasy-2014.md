@@ -1,6 +1,6 @@
 +++
 title = "Review: Fearless Fantasy (2014)"
-summary = "The following is a review of Fearless Fantasy (2014), available for PC on Steam."
+description = "The following is a review of Fearless Fantasy (2014), available for PC on Steam."
 draft = false
 comments = false
 date = "2014-07-13T10:27:05-05:00"

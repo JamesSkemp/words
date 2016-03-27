@@ -1,6 +1,6 @@
 +++
 title = "Warhawk: January 2008 goals"
-summary = "Goals I'm making for Warhawk, to meet or beat by the end of January. [slnet0514:289dd917-6d71-4866-a385-6f465bb71d19]"
+description = "Goals I'm making for Warhawk, to meet or beat by the end of January. [slnet0514:289dd917-6d71-4866-a385-6f465bb71d19]"
 draft = false
 comments = false
 date = "2008-01-14T19:00:00-06:00"

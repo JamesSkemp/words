@@ -1,6 +1,6 @@
 +++
 title = "Review: MANGROOMER Professional Body Groomer and Trimmer Wet or Dry"
-summary = "The following is a review of the MANGROOMER Professional Body Groomer and Trimmer Wet or Dry, received as part of the Amazon Vine program."
+description = "The following is a review of the MANGROOMER Professional Body Groomer and Trimmer Wet or Dry, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-06-19T13:49:52-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Why I went to college and what I did when I got out"
-summary = "A brief story on why I went to college and what I did when I got out."
+description = "A brief story on why I went to college and what I did when I got out."
 draft = false
 comments = true
 date = "2008-07-23T23:20:00-05:00"

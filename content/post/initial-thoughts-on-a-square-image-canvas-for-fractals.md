@@ -1,6 +1,6 @@
 +++
 title = "Initial thoughts on a square image canvas for fractals"
-summary = "Just how does one determine the best canvas for a fractal?  Should they almost always be square, because of the nature of most fractals, or does a rectangular canvas work just as well?"
+description = "Just how does one determine the best canvas for a fractal?  Should they almost always be square, because of the nature of most fractals, or does a rectangular canvas work just as well?"
 draft = false
 comments = true
 date = "2006-06-09T15:44:00-05:00"

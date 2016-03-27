@@ -1,6 +1,6 @@
 +++
 title = "Review: DLO Jam Jacket with Cord Management for the 80 GB iPod classic (Black)"
-summary = "On January 5th, I purchased a DLO Jam Jacket with Cord Management for the 80 GB iPod classic. Here's the review, about one month later. [slnet0514:45ca6fb2-c944-4606-b1a1-8d35a0516749]"
+description = "On January 5th, I purchased a DLO Jam Jacket with Cord Management for the 80 GB iPod classic. Here's the review, about one month later. [slnet0514:45ca6fb2-c944-4606-b1a1-8d35a0516749]"
 draft = false
 comments = true
 date = "2008-02-10T11:10:00-06:00"

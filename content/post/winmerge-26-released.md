@@ -1,6 +1,6 @@
 +++
 title = "WinMerge 2.6 released"
-summary = "The very helpful, and always cool, WinMerge has been updated to version 2.6.  Head over to WinMerge.org and get yourself a copy."
+description = "The very helpful, and always cool, WinMerge has been updated to version 2.6.  Head over to WinMerge.org and get yourself a copy."
 draft = false
 comments = false
 date = "2006-10-16T17:58:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Old articles will be coming to this area"
-summary = "Over the coming months, I'll be porting more and more of my old articles to the new system."
+description = "Over the coming months, I'll be porting more and more of my old articles to the new system."
 draft = false
 comments = true
 date = "2006-01-10T08:20:00-06:00"

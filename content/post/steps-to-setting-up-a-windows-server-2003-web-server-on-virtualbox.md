@@ -1,6 +1,6 @@
 +++
 title = "Steps to setting up a Windows Server 2003 Web Server on VirtualBox"
-summary = "Steps to setup a Windows Server 2003 instance running IIS, on VirtualBox."
+description = "Steps to setup a Windows Server 2003 instance running IIS, on VirtualBox."
 draft = false
 comments = true
 date = "2009-10-24T15:45:00-05:00"

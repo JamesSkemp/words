@@ -1,6 +1,6 @@
 +++
 title = "XML parsing with PHP (and ColdFusion) and /ROOT"
-summary = "Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid."
+description = "Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid."
 draft = false
 comments = false
 date = "2006-04-20T20:19:00-05:00"

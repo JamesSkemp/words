@@ -1,6 +1,6 @@
 +++
 title = "Review: Sony SRSX55/BLK Powerful Portable Bluetooth Speaker"
-summary = "The following is a review of the Sony SRSX55/BLK Powerful Portable Bluetooth Speaker, received as part of the Amazon Vine program."
+description = "The following is a review of the Sony SRSX55/BLK Powerful Portable Bluetooth Speaker, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-07-26T11:26:24-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Night Walk - 7/24/2010"
-summary = "Thoughts on a night walk, on July 24 2010."
+description = "Thoughts on a night walk, on July 24 2010."
 draft = false
 comments = true
 date = "2010-07-24T22:13:00-05:00"

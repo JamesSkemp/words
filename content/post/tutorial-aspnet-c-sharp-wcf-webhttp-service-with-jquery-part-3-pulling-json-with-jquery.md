@@ -1,6 +1,6 @@
 +++
 title = "Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery"
-summary = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we complete our tutorial by modifying the WCF service to return JSON data to jQuery requests, and output that information to users."
+description = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we complete our tutorial by modifying the WCF service to return JSON data to jQuery requests, and output that information to users."
 draft = false
 comments = true
 date = "2010-06-25T08:00:00-05:00"

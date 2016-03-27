@@ -1,6 +1,6 @@
 +++
 title = "Display parts of the Waking Life Transcript on your site"
-summary = "Now it's easy to display the most current version of the Waking Life transcript on your site."
+description = "Now it's easy to display the most current version of the Waking Life transcript on your site."
 draft = false
 comments = true
 date = "2008-09-01T11:45:00-05:00"

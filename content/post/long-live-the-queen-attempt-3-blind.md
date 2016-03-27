@@ -1,6 +1,6 @@
 +++
 title = "Long Live the Queen: Attempt 3 (Blind)"
-summary = "Why, oh why, do I want Julianna dead so badly?"
+description = "Why, oh why, do I want Julianna dead so badly?"
 draft = false
 comments = true
 date = "2015-06-13T14:32:03-05:00"

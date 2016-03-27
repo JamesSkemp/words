@@ -1,6 +1,6 @@
 +++
 title = "A preview of the new StrivingLife.net network"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-10-09T18:03:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Crane's Intentionality of the Mental in Relation to Perception and Thought"
-summary = "Paper on Tim Crane's Intentionality of the mental in relation to perception and thought as seen in Elements of Mind: An Introduction to the Philosophy of Mind."
+description = "Paper on Tim Crane's Intentionality of the mental in relation to perception and thought as seen in Elements of Mind: An Introduction to the Philosophy of Mind."
 draft = false
 comments = true
 date = "2003-03-30T01:01:00-06:00"

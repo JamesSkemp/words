@@ -1,6 +1,6 @@
 +++
 title = "New style applied"
-summary = "A brief note on the new style for this content area."
+description = "A brief note on the new style for this content area."
 draft = false
 comments = true
 date = "2007-03-18T16:49:00-05:00"

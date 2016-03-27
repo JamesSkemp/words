@@ -1,6 +1,6 @@
 +++
 title = "Image thumbnails - blindingly fast on Ubuntu (vs. Windows)?"
-summary = "Thumbnail images on Windows (from CD) = way too slow."
+description = "Thumbnail images on Windows (from CD) = way too slow."
 draft = false
 comments = true
 date = "2007-07-17T10:55:00-05:00"

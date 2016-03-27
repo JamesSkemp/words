@@ -1,6 +1,6 @@
 +++
 title = "Metal Gear Solid 4 - 2.5 hours in"
-summary = "Thoughts after 2 and a half hours of Metal Gear Solid 4. [slnet0514:04346361-9bc5-4402-94c9-f0217182ead0]"
+description = "Thoughts after 2 and a half hours of Metal Gear Solid 4. [slnet0514:04346361-9bc5-4402-94c9-f0217182ead0]"
 draft = false
 comments = true
 date = "2008-06-12T22:50:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Online backups?"
-summary = "Backups - who really does them? If you don't, would you consider using an online backup utility?"
+description = "Backups - who really does them? If you don't, would you consider using an online backup utility?"
 draft = false
 comments = true
 date = "2007-02-23T07:41:00-06:00"

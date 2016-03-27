@@ -1,6 +1,6 @@
 +++
 title = "Movie review: 2001: A Space Odyssey (1968)"
-summary = "Movie review of 2001: A Space Odyssey (1958).  Quick review: visually stimulating, but overall boring."
+description = "Movie review of 2001: A Space Odyssey (1958).  Quick review: visually stimulating, but overall boring."
 draft = false
 comments = true
 date = "2006-10-20T20:28:00-05:00"

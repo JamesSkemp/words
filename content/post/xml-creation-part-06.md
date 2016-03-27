@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 6"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part six I'll be using XSLT to modify the display of the XML document's contents so that it looks like the CSS-based output. [slnet0514:9e2ed0f1-ab72-4d78-85e2-0e7b162b666a]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part six I'll be using XSLT to modify the display of the XML document's contents so that it looks like the CSS-based output. [slnet0514:9e2ed0f1-ab72-4d78-85e2-0e7b162b666a]"
 draft = false
 comments = true
 date = "2007-12-30T13:00:00-06:00"

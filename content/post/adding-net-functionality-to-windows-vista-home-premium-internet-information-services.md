@@ -1,6 +1,6 @@
 +++
 title = "Adding .NET functionality to Windows Vista Home Premium Internet Information Services"
-summary = "How to enable ASP.NET applications in IIS 7, on Windows Vista Home Premium. [slnet0514:87c5d691-ac12-4762-b35a-9a4ba13f15e3]"
+description = "How to enable ASP.NET applications in IIS 7, on Windows Vista Home Premium. [slnet0514:87c5d691-ac12-4762-b35a-9a4ba13f15e3]"
 draft = false
 comments = true
 date = "2008-03-22T09:00:00-05:00"

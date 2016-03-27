@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on objects and their underlying structure"
-summary = "Brief thoughts on objects and their underlying structure."
+description = "Brief thoughts on objects and their underlying structure."
 draft = false
 comments = true
 date = "2009-08-14T07:57:00-05:00"

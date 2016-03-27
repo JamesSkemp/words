@@ -1,6 +1,6 @@
 +++
 title = "Playing around with Subversion with a test repository"
-summary = "In this article I'll be working through creating a test repository in Subversion, and creating two working directories, to see how multiple developers works."
+description = "In this article I'll be working through creating a test repository in Subversion, and creating two working directories, to see how multiple developers works."
 draft = false
 comments = true
 date = "2008-07-12T18:00:00-05:00"

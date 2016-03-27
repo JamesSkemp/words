@@ -1,6 +1,6 @@
 +++
 title = "unfinished story 003"
-summary = "An unfinished story."
+description = "An unfinished story."
 draft = false
 comments = false
 date = "2003-02-04T00:01:00-06:00"

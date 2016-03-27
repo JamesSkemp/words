@@ -1,6 +1,6 @@
 +++
 title = "My Recent Experience at Best Buy"
-summary = "A small discussion on my recent experience at a local Best Buy."
+description = "A small discussion on my recent experience at a local Best Buy."
 draft = false
 comments = true
 date = "2004-12-29T01:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 1: bbPress"
-summary = "In this article, we'll be going over how to install bbPress 0.73.  We'll also be looking at how bbPress stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install bbPress 0.73.  We'll also be looking at how bbPress stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-19T09:00:00-06:00"

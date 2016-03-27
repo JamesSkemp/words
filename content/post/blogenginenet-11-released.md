@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET 1.1 released"
-summary = "BlogEngine.NET 1.1 released today."
+description = "BlogEngine.NET 1.1 released today."
 draft = false
 comments = true
 date = "2007-07-16T13:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Using the templates - next planned article"
-summary = "The next article I'll be writing will be on using templates to create a basic Web site."
+description = "The next article I'll be writing will be on using templates to create a basic Web site."
 draft = false
 comments = true
 date = "2006-04-01T09:48:00-06:00"

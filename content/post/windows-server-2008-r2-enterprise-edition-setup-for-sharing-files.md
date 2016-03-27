@@ -1,6 +1,6 @@
 +++
 title = "Windows Server 2008 R2 Enterprise Edition - setup for sharing files"
-summary = "With the File Server role in Windows Server 2008, it's relatively easy to share files with multiple machines."
+description = "With the File Server role in Windows Server 2008, it's relatively easy to share files with multiple machines."
 draft = false
 comments = true
 date = "2010-06-06T10:00:00-05:00"

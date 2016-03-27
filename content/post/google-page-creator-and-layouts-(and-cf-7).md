@@ -1,6 +1,6 @@
 +++
 title = "Google Page Creator and layouts (and CF 7)"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-03-20T20:47:00-06:00"

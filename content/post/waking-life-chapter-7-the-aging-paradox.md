@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 7 - The Aging Paradox"
-summary = "Transcript of the movie Waking Life; DVD Chapter 7 - The Aging Paradox."
+description = "Transcript of the movie Waking Life; DVD Chapter 7 - The Aging Paradox."
 draft = false
 comments = true
 date = "2006-05-25T19:50:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "The Kinect is selling really well; but is that good for gamers?"
-summary = "With the Kinect seemingly moving 2.5 million units so soon after release, does this bode well for what we can expect in the future?"
+description = "With the Kinect seemingly moving 2.5 million units so soon after release, does this bode well for what we can expect in the future?"
 draft = false
 comments = true
 date = "2010-11-29T21:20:00-06:00"

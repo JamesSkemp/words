@@ -1,6 +1,6 @@
 +++
 title = "\"Open\" is to \"close\" as \"start\" is to:"
-summary = "Complete this, using one of three choices.  Open is to close as start is to ..."
+description = "Complete this, using one of three choices.  Open is to close as start is to ..."
 draft = false
 comments = true
 date = "2007-01-15T10:59:00-06:00"

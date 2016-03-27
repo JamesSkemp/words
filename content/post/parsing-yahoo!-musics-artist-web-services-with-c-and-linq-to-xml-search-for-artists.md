@@ -1,6 +1,6 @@
 +++
 title = "Parsing Yahoo! Music's Artist Web Services with C# and LINQ to XML - Search for artists"
-summary = "Example of parsing Yahoo! Music's Search for artists Web service method, with C# and LINQ to XML. [slnet0514:3fb52809-c1d8-42e8-9560-7461a68a0020]"
+description = "Example of parsing Yahoo! Music's Search for artists Web service method, with C# and LINQ to XML. [slnet0514:3fb52809-c1d8-42e8-9560-7461a68a0020]"
 draft = false
 comments = true
 date = "2009-09-12T21:30:00-05:00"

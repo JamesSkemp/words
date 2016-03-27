@@ -1,6 +1,6 @@
 +++
 title = "Know thyself - or - On the examined life"
-summary = "Lingering questions to the 2006 essay Should We Examine Life?, by Gavin Schmitt."
+description = "Lingering questions to the 2006 essay Should We Examine Life?, by Gavin Schmitt."
 draft = false
 comments = true
 date = "2006-10-18T20:52:00-05:00"

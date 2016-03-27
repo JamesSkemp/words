@@ -1,6 +1,6 @@
 +++
 title = "On The Lady or the Tiger, and Other 'Questions with no answers' in the Media"
-summary = "On the relevance of open-ended questions in literature and movies."
+description = "On the relevance of open-ended questions in literature and movies."
 draft = false
 comments = true
 date = "2005-02-19T05:01:00-06:00"

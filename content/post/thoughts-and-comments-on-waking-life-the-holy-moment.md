@@ -1,6 +1,6 @@
 +++
 title = "Thoughts and comments on Waking Life: The Holy Moment"
-summary = "A short discussion on a particular section of the movie 'Waking Life' - in this case, Chapter 11: The Holy Moment."
+description = "A short discussion on a particular section of the movie 'Waking Life' - in this case, Chapter 11: The Holy Moment."
 draft = false
 comments = true
 date = "2003-12-11T16:07:00-06:00"

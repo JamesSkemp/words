@@ -1,6 +1,6 @@
 +++
 title = "Review: Amazon Fire HD 8 (2015 release) Case"
-summary = "The following is a review of the Amazon Fire HD 8 (2015 release) Case - Slim Lightweight Standing Custom Fit Cover with Auto Wake/Sleep for Amazon Fire HD 8 Tablet, received as part of the Amazon Vine Program."
+description = "The following is a review of the Amazon Fire HD 8 (2015 release) Case - Slim Lightweight Standing Custom Fit Cover with Auto Wake/Sleep for Amazon Fire HD 8 Tablet, received as part of the Amazon Vine Program."
 draft = false
 comments = false
 date = "2016-01-25T19:50:52-06:00"

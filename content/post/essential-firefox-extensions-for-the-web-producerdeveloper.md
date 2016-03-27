@@ -1,6 +1,6 @@
 +++
 title = "Essential Firefox extensions for the Web producer/developer"
-summary = "There's a handful of extensions for  Firefox that I found absolutely necessary in my day-to-day Web  production and development.  Below, I've outlined the essentials, as  well as those that are near the top of the crop."
+description = "There's a handful of extensions for  Firefox that I found absolutely necessary in my day-to-day Web  production and development.  Below, I've outlined the essentials, as  well as those that are near the top of the crop."
 draft = false
 comments = true
 date = "2006-04-21T20:28:00-05:00"

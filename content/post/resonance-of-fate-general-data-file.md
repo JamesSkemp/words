@@ -1,6 +1,6 @@
 +++
 title = "Resonance of Fate: General data file"
-summary = "Data dump for Resonance of Fate, for the Playstation 3 and Xbox 360."
+description = "Data dump for Resonance of Fate, for the Playstation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2010-04-11T12:20:00-05:00"

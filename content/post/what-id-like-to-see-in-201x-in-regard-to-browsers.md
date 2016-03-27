@@ -1,6 +1,6 @@
 +++
 title = "What I'd like to see in 201X in regard to browsers"
-summary = "Two things I'd like to see in 201X in regard to browsers."
+description = "Two things I'd like to see in 201X in regard to browsers."
 draft = false
 comments = true
 date = "2009-12-09T10:30:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition"
-summary = "How to compile a current build of BlogEngine.NET with Microsoft Visual C# 2005 Express Edition."
+description = "How to compile a current build of BlogEngine.NET with Microsoft Visual C# 2005 Express Edition."
 draft = false
 comments = true
 date = "2007-09-05T10:51:00-05:00"

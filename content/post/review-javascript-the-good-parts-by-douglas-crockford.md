@@ -1,6 +1,6 @@
 +++
 title = "Review: JavaScript: The Good Parts by Douglas Crockford"
-summary = "Review of JavaScript: The Good Parts, written by Douglas Crockford."
+description = "Review of JavaScript: The Good Parts, written by Douglas Crockford."
 draft = false
 comments = true
 date = "2011-04-29T16:50:00-05:00"

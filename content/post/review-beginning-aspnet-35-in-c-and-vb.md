@@ -1,6 +1,6 @@
 +++
 title = "Review: Beginning ASP.NET 3.5 In C# and VB"
-summary = "Review of Imar Spaanjaars' Beginning ASP.NET 3.5 In C# and VB. [slnet0514:ec5c3a1b-1915-4a43-b225-86ca56cf69b7]"
+description = "Review of Imar Spaanjaars' Beginning ASP.NET 3.5 In C# and VB. [slnet0514:ec5c3a1b-1915-4a43-b225-86ca56cf69b7]"
 draft = false
 comments = true
 date = "2008-06-08T22:45:00-05:00"

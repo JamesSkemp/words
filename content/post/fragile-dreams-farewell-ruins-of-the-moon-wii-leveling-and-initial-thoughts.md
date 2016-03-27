@@ -1,6 +1,6 @@
 +++
 title = "Fragile Dreams: Farewell Ruins of the Moon (Wii) - leveling and initial thoughts"
-summary = "Initial leveling and thoughts on Fragile Dreams: Farewell Ruins of the Moon, for the Nintendo Wii."
+description = "Initial leveling and thoughts on Fragile Dreams: Farewell Ruins of the Moon, for the Nintendo Wii."
 draft = false
 comments = true
 date = "2010-10-16T21:15:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Backing up a computer to an HP Pocket Media Drive"
-summary = "Steps I've taken to ensure that my important files are backed up."
+description = "Steps I've taken to ensure that my important files are backed up."
 draft = false
 comments = true
 date = "2009-10-04T19:11:00-05:00"

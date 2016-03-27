@@ -1,6 +1,6 @@
 +++
 title = "How GameStop can become exceptional"
-summary = "How I think GameStop could improve."
+description = "How I think GameStop could improve."
 draft = false
 comments = true
 date = "2007-04-07T17:07:00-05:00"

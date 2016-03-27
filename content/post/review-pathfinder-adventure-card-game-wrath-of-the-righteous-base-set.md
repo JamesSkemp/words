@@ -1,6 +1,6 @@
 +++
 title = "Review: Pathfinder Adventure Card Game: Wrath of the Righteous Base Set"
-summary = "The following is a review of Pathfinder Adventure Card Game: Wrath of the Righteous Base Set, received as part of the Amazon Vine program."
+description = "The following is a review of Pathfinder Adventure Card Game: Wrath of the Righteous Base Set, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-09-15T17:52:03-05:00"

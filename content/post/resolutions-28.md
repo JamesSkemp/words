@@ -1,6 +1,6 @@
 +++
 title = "Resolutions - 28"
-summary = "Resolutions, that I'm already in progress with."
+description = "Resolutions, that I'm already in progress with."
 draft = false
 comments = true
 date = "2009-05-14T14:26:00-05:00"

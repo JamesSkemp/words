@@ -1,6 +1,6 @@
 +++
 title = "Review: Rolodex Mesh Mobile Device Tablet Stand"
-summary = "The following is a review of the Rolodex Mesh Mobile Device Tablet Stand, which I received as part of the Amazon Vine program."
+description = "The following is a review of the Rolodex Mesh Mobile Device Tablet Stand, which I received as part of the Amazon Vine program."
 draft = false
 comments = true
 date = "2013-12-04T18:46:54-06:00"

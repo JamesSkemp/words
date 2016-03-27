@@ -1,6 +1,6 @@
 +++
 title = "On the Speed Limit"
-summary = "Thoughts on the speed limit and speeding, with a look at the numbers and percentages behind the latter."
+description = "Thoughts on the speed limit and speeding, with a look at the numbers and percentages behind the latter."
 draft = false
 comments = true
 date = "2004-02-04T00:00:00-06:00"

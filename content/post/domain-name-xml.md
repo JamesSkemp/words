@@ -1,6 +1,6 @@
 +++
 title = "Domain name XML"
-summary = "Here's an XML structure, with DTD, for storing domain name information. [slnet0514:ef3fdc7d-e451-484d-8874-77d9fed38538]"
+description = "Here's an XML structure, with DTD, for storing domain name information. [slnet0514:ef3fdc7d-e451-484d-8874-77d9fed38538]"
 draft = false
 comments = true
 date = "2008-06-15T10:00:00-05:00"

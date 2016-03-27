@@ -1,6 +1,6 @@
 +++
 title = "Brief notes on marriage and children"
-summary = "Notes for a forthcoming article on marriage and children. [slnet0514:2262b360-c497-492a-8d4f-533cede82dc4]"
+description = "Notes for a forthcoming article on marriage and children. [slnet0514:2262b360-c497-492a-8d4f-533cede82dc4]"
 draft = false
 comments = true
 date = "2007-09-22T19:10:00-05:00"

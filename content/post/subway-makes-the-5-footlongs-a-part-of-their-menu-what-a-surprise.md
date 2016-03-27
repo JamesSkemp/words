@@ -1,6 +1,6 @@
 +++
 title = "Subway makes the $5 footlongs a part of their menu - what a surprise"
-summary = "According to commercials yesterday and today, the $5 footlongs at Subway are now a part of the menu. Is anyone really surprised? [slnet0514:57bf038f-37f7-4794-abb2-0ebf9a61ca44]"
+description = "According to commercials yesterday and today, the $5 footlongs at Subway are now a part of the menu. Is anyone really surprised? [slnet0514:57bf038f-37f7-4794-abb2-0ebf9a61ca44]"
 draft = false
 comments = true
 date = "2008-05-13T07:30:00-05:00"

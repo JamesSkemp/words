@@ -1,6 +1,6 @@
 +++
 title = "Cassini 3.5.0.2 - built and ready to go"
-summary = "Want to run ASP.NET Web applications on your computer, without IIS? Here's a compiled version of Cassini to get you on your way."
+description = "Want to run ASP.NET Web applications on your computer, without IIS? Here's a compiled version of Cassini to get you on your way."
 draft = false
 comments = true
 date = "2010-01-03T18:10:00-06:00"

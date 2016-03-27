@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu 7.04 - Server Edition installed"
-summary = "Notes, mostly to myself, on installing Ubuntu 7.04 Server Edition."
+description = "Notes, mostly to myself, on installing Ubuntu 7.04 Server Edition."
 draft = false
 comments = true
 date = "2007-06-26T19:13:00-05:00"

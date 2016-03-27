@@ -1,6 +1,6 @@
 +++
 title = "Review: AmazonBasics High-Speed HDMI Cable (6.5 Feet/2.0 Meters)"
-summary = "The following is a review of the AmazonBasics High-Speed HDMI Cable (6.5 Feet/2.0 Meters)."
+description = "The following is a review of the AmazonBasics High-Speed HDMI Cable (6.5 Feet/2.0 Meters)."
 draft = false
 comments = true
 date = "2012-11-01T19:54:00-05:00"

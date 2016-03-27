@@ -1,6 +1,6 @@
 +++
 title = "Firebug: Don't enable for every site"
-summary = "After a deal of searching, I've finally discovered why my Firefox browser was crashing so often. The short story: don't enable Firebug for all sites. [slnet0514:dc125b8f-2b47-4a7a-8dad-7bd3376b736c]"
+description = "After a deal of searching, I've finally discovered why my Firefox browser was crashing so often. The short story: don't enable Firebug for all sites. [slnet0514:dc125b8f-2b47-4a7a-8dad-7bd3376b736c]"
 draft = false
 comments = true
 date = "2008-02-08T20:51:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Guide on Installing Jeskola Buzz, Version 2"
-summary = "Guide to installing Jeskola Buzz, written by James Skemp.  Originally written in February of 2003, but revised in November of 2003.  This guide was written based upon an installation with Windows XP SP1, but any Windows operating system that will run Jeskola Buzz follows these procedures."
+description = "Guide to installing Jeskola Buzz, written by James Skemp.  Originally written in February of 2003, but revised in November of 2003.  This guide was written based upon an installation with Windows XP SP1, but any Windows operating system that will run Jeskola Buzz follows these procedures."
 draft = false
 comments = true
 date = "2003-11-07T00:01:00-06:00"

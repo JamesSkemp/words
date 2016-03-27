@@ -1,6 +1,6 @@
 +++
 title = "IIS Logs to SQLite - version 0.1 beta released"
-summary = "Built on Microsoft Log Parser, IIS Logs to SQLite aims to import IIS logs into SQLite databases."
+description = "Built on Microsoft Log Parser, IIS Logs to SQLite aims to import IIS logs into SQLite databases."
 draft = false
 comments = true
 date = "2009-09-24T11:46:00-05:00"

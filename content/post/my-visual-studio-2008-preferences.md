@@ -1,6 +1,6 @@
 +++
 title = "My Visual Studio 2008 Preferences"
-summary = "My preferences for Visual Studio 2008. [slnet0514:efa32485-4621-4b5a-8c02-35040ace65f5]"
+description = "My preferences for Visual Studio 2008. [slnet0514:efa32485-4621-4b5a-8c02-35040ace65f5]"
 draft = false
 comments = true
 date = "2008-04-19T10:50:00-05:00"

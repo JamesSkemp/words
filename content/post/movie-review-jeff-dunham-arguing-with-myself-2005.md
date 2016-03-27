@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Jeff Dunham: Arguing With Myself (2005)"
-summary = "Quick review of Jeff Dunham: Arguing With Myself (2005). [slnet0514:8ba8301f-f457-45f5-923e-1d0d3e05e664]"
+description = "Quick review of Jeff Dunham: Arguing With Myself (2005). [slnet0514:8ba8301f-f457-45f5-923e-1d0d3e05e664]"
 draft = false
 comments = true
 date = "2008-02-17T16:15:00-06:00"

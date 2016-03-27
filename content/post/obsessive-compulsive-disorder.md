@@ -1,6 +1,6 @@
 +++
 title = "Obsessive-Compulsive Disorder"
-summary = "An old paper for a high school psychology course. [slnet0514:3e38333b-1f47-49c0-aae0-4212361eaea2]"
+description = "An old paper for a high school psychology course. [slnet0514:3e38333b-1f47-49c0-aae0-4212361eaea2]"
 draft = false
 comments = true
 date = "1999-03-18T02:01:00-06:00"

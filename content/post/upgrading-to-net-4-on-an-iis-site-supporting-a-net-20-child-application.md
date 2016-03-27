@@ -1,6 +1,6 @@
 +++
 title = "Upgrading to .NET 4 on an IIS site supporting a .NET 2.0 child application"
-summary = "Today I experienced some downtime as I tried updating one of my sites to .NET 4, while needing to keep the child application as .NET 2.0. Here's what I could have done in moments, instead of 30 minutes."
+description = "Today I experienced some downtime as I tried updating one of my sites to .NET 4, while needing to keep the child application as .NET 2.0. Here's what I could have done in moments, instead of 30 minutes."
 draft = false
 comments = true
 date = "2012-08-05T14:51:00-05:00"

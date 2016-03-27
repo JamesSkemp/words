@@ -1,6 +1,6 @@
 +++
 title = "Notes on Immanuel Kant's Critique of Pure Reason: I. Transcendental Doctrine of Elements: First Part. Transcendental Aesthetic: Introduction"
-summary = "During the month of December 2007, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the Introduction of the First Part (the Transcendental Aesthetic) of the Transcendental Doctrine of Elements. [slnet0514:b4399814-4c9e-461c-a43b-0ad8a634ff84]"
+description = "During the month of December 2007, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the Introduction of the First Part (the Transcendental Aesthetic) of the Transcendental Doctrine of Elements. [slnet0514:b4399814-4c9e-461c-a43b-0ad8a634ff84]"
 draft = false
 comments = true
 date = "2007-12-06T21:30:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "ColdFusion MX 7 - Developer's Edition"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-01-27T21:14:00-06:00"

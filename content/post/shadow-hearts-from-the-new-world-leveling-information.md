@@ -1,6 +1,6 @@
 +++
 title = "Shadow Hearts: From the New World leveling information"
-summary = "Information on experience necessary to attain levels, and character details, for Shadow Hearts: From the New World."
+description = "Information on experience necessary to attain levels, and character details, for Shadow Hearts: From the New World."
 draft = false
 comments = true
 date = "2008-12-27T22:20:00-06:00"

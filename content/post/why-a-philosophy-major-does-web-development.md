@@ -1,6 +1,6 @@
 +++
 title = "Why a philosophy major does Web development"
-summary = "I was asked a question; here's my answer."
+description = "I was asked a question; here's my answer."
 draft = false
 comments = true
 date = "2008-12-16T23:05:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Have we discovered the true goals of the United States of America?"
-summary = "On how to tell what countries the United States of America will attack next."
+description = "On how to tell what countries the United States of America will attack next."
 draft = false
 comments = true
 date = "2005-01-22T01:01:00-06:00"

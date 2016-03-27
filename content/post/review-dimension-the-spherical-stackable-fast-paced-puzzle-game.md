@@ -1,6 +1,6 @@
 +++
 title = "Review: Dimension: The Spherical Stackable Fast Paced Puzzle Game"
-summary = "The following is a review of Dimension: The Spherical Stackable Fast Paced Puzzle Game, received as part of the Amazon Vine program."
+description = "The following is a review of Dimension: The Spherical Stackable Fast Paced Puzzle Game, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-09-14T18:20:06-05:00"

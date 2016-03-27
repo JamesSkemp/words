@@ -1,6 +1,6 @@
 +++
 title = "Amazon delivery schedules to Madison WI"
-summary = "Personal delivery schedules/times for Amazon.com purchases."
+description = "Personal delivery schedules/times for Amazon.com purchases."
 draft = false
 comments = true
 date = "2010-09-08T08:13:00-05:00"

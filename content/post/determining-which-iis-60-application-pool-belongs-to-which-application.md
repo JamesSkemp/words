@@ -1,6 +1,6 @@
 +++
 title = "Determining which IIS 6.0 Application Pool belongs to which application"
-summary = "How to match an Application Pool to a process in Windows Server 2003 and IIS 6.0."
+description = "How to match an Application Pool to a process in Windows Server 2003 and IIS 6.0."
 draft = false
 comments = true
 date = "2007-10-06T22:07:00-05:00"

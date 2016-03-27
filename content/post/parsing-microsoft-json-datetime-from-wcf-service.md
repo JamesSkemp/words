@@ -1,6 +1,6 @@
 +++
 title = "Function to Parse a Microsoft JSON DateTime returned from a WCF service in JavaScript"
-summary = "A simple function to convert a Microsoft WCF JSON DateTime to a format we can use within JavaScript."
+description = "A simple function to convert a Microsoft WCF JSON DateTime to a format we can use within JavaScript."
 draft = false
 comments = true
 date = "2010-07-04T14:57:00-05:00"

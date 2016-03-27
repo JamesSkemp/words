@@ -1,6 +1,6 @@
 +++
 title = "Picture resolution requirements for prints"
-summary = "Since I keep having to do a Google search, I've decided to write on what resolutions are necessary for what size prints. [slnet0514:1c811b57-f616-4c0c-b88f-f6ed52c006aa]"
+description = "Since I keep having to do a Google search, I've decided to write on what resolutions are necessary for what size prints. [slnet0514:1c811b57-f616-4c0c-b88f-f6ed52c006aa]"
 draft = false
 comments = true
 date = "2007-04-28T07:03:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Onimusha: Dawn of Dreams data"
-summary = "Data available for the Playstation 2 game Onimusha: Dawn of Dreams."
+description = "Data available for the Playstation 2 game Onimusha: Dawn of Dreams."
 draft = false
 comments = true
 date = "2010-09-03T20:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "[Personal] New glasses"
-summary = "New glasses for James ..."
+description = "New glasses for James ..."
 draft = false
 comments = true
 date = "2007-07-12T20:55:00-05:00"

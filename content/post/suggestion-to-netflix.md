@@ -1,6 +1,6 @@
 +++
 title = "Suggestion to Netflix"
-summary = "Suggestion to Netflix re: queue. [slnet0514:0a9c1719-0651-4a04-8daf-c53f5a4efdd2]"
+description = "Suggestion to Netflix re: queue. [slnet0514:0a9c1719-0651-4a04-8daf-c53f5a4efdd2]"
 draft = false
 comments = true
 date = "2008-04-20T17:20:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Grisoft AVG 8.0 - Free version released"
-summary = "AVG 8.0 now has a free version available. [slnet0514:39dc46c5-eece-4480-915e-3ccc679bdf39]"
+description = "AVG 8.0 now has a free version available. [slnet0514:39dc46c5-eece-4480-915e-3ccc679bdf39]"
 draft = false
 comments = true
 date = "2008-05-01T20:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Quickie: Install ColdFusion 7.02 on Ubuntu 7.04 with Apache 2.2.4"
-summary = "Quick notes on installing ColdFusion MX 7 (Developer Edition) to Ubuntu 7.04."
+description = "Quick notes on installing ColdFusion MX 7 (Developer Edition) to Ubuntu 7.04."
 draft = false
 comments = true
 date = "2007-06-15T20:51:00-05:00"

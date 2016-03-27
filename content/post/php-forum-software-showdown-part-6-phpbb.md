@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 6: phpBB"
-summary = "In this article, we'll be going over how to install phpBB 2.0.21.  We'll also be looking at how phpBB stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install phpBB 2.0.21.  We'll also be looking at how phpBB stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-25T18:30:00-06:00"

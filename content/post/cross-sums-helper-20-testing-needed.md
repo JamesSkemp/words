@@ -1,6 +1,6 @@
 +++
 title = "Cross Sums Helper 2.0 - testing needed"
-summary = "A new version of Cross Sums Helper needs testing. [slnet0514:5b97f570-3765-4525-b14e-e58600f6f67e]"
+description = "A new version of Cross Sums Helper needs testing. [slnet0514:5b97f570-3765-4525-b14e-e58600f6f67e]"
 draft = false
 comments = true
 date = "2008-06-02T08:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "10 random reasons why I bought a Playstation 3"
-summary = "Here they are, ten reasons why I purchased a Playstation 3. [slnet0514:35a8e974-2877-4eb7-8ae6-3916e50e23f6]"
+description = "Here they are, ten reasons why I purchased a Playstation 3. [slnet0514:35a8e974-2877-4eb7-8ae6-3916e50e23f6]"
 draft = false
 comments = true
 date = "2007-11-21T19:30:00-06:00"

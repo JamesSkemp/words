@@ -1,6 +1,6 @@
 +++
 title = "The major failing of Akismet ..."
-summary = "What's the one major failing of Akismet?  No information about what IPs were used to deliver that spam."
+description = "What's the one major failing of Akismet?  No information about what IPs were used to deliver that spam."
 draft = false
 comments = true
 date = "2007-02-25T08:57:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Project page for iTunes Playlists to Xml now created"
-summary = "iTunes Playlists to Xml now has an actual project page."
+description = "iTunes Playlists to Xml now has an actual project page."
 draft = false
 comments = true
 date = "2009-09-07T11:20:00-05:00"

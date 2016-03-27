@@ -1,6 +1,6 @@
 +++
 title = "Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents"
-summary = "In the next week I'll be writing a tutorial on creating a RESTful Web service that can be consumed by jQuery and returns loan payoff information."
+description = "In the next week I'll be writing a tutorial on creating a RESTful Web service that can be consumed by jQuery and returns loan payoff information."
 draft = false
 comments = true
 date = "2010-06-21T08:00:00-05:00"

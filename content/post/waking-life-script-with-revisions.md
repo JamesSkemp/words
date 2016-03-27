@@ -1,6 +1,6 @@
 +++
 title = "Waking Life Script with Revisions"
-summary = "Script of the movie Waking Life, based on Tara Carreon's transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles."
+description = "Script of the movie Waking Life, based on Tara Carreon's transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles."
 draft = false
 comments = true
 date = "2006-04-09T09:43:00-05:00"

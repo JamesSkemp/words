@@ -1,6 +1,6 @@
 +++
 title = "On Arnold Schwarzenegger Having Become Governor of California"
-summary = "A short discourse on Schwarzenegger, Governor of California, and what exactly it's impact on me is."
+description = "A short discourse on Schwarzenegger, Governor of California, and what exactly it's impact on me is."
 draft = false
 comments = false
 date = "2003-10-13T00:01:00-05:00"

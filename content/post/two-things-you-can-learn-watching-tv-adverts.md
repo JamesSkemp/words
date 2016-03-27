@@ -1,6 +1,6 @@
 +++
 title = "Two things you can learn watching tv adverts"
-summary = "Two things you'll learn as you watch adverts on the tele."
+description = "Two things you'll learn as you watch adverts on the tele."
 draft = false
 comments = true
 date = "2007-10-09T21:30:00-05:00"

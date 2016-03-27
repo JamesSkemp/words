@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 5: Only a Puppet"
-summary = "Transcript of scene 5 of the movie Ghost in the Shell. [slnet0514:009da0ae-5711-447b-bade-fc6781ab12e7]"
+description = "Transcript of scene 5 of the movie Ghost in the Shell. [slnet0514:009da0ae-5711-447b-bade-fc6781ab12e7]"
 draft = false
 comments = true
 date = "2008-06-01T12:30:00-05:00"

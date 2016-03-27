@@ -1,6 +1,6 @@
 +++
 title = "Did the media forget that Kill Bill supposedly sucks, or .."
-summary = "Either Kill Bill was a bad movie, or it wasn't.  But if it was, please don't use the music from the soundtrack, eh?"
+description = "Either Kill Bill was a bad movie, or it wasn't.  But if it was, please don't use the music from the soundtrack, eh?"
 draft = false
 comments = false
 date = "2006-08-13T19:02:00-05:00"

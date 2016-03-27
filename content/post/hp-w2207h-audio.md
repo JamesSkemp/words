@@ -1,6 +1,6 @@
 +++
 title = "HP w2207h audio"
-summary = "Using an HDMI cable? You'll have less cables laying about. [slnet0514:aec4c076-b97f-4ee7-b26d-84c04053b0a1]"
+description = "Using an HDMI cable? You'll have less cables laying about. [slnet0514:aec4c076-b97f-4ee7-b26d-84c04053b0a1]"
 draft = false
 comments = true
 date = "2008-03-08T13:45:00-06:00"

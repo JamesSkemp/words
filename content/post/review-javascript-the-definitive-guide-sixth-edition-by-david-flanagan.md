@@ -1,6 +1,6 @@
 +++
 title = "Review: JavaScript: The Definitive Guide, Sixth Edition, by David Flanagan"
-summary = "Review of JavaScript: The Definitive Guide, Sixth Edition, by David Flanagan."
+description = "Review of JavaScript: The Definitive Guide, Sixth Edition, by David Flanagan."
 draft = false
 comments = true
 date = "2011-05-23T21:50:00-05:00"

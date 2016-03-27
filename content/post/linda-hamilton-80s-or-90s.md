@@ -1,6 +1,6 @@
 +++
 title = "Linda Hamilton - 80s or 90s?"
-summary = "Who's known more? 80's Linda Hamilton, or her from another decade?"
+description = "Who's known more? 80's Linda Hamilton, or her from another decade?"
 draft = false
 comments = true
 date = "2009-10-14T07:57:00-05:00"

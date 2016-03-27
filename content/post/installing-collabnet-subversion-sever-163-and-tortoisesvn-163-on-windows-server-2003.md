@@ -1,6 +1,6 @@
 +++
 title = "Installing CollabNet Subversion Server 1.6.3 and TortoiseSVN 1.6.3 on Windows Server 2003"
-summary = "In this article I install CollabNet Subversion Server 1.6.3, with TortoiseSVN 1.6.3, on Windows Server 2003 R2, Enterprise Edition, Service Pack 2."
+description = "In this article I install CollabNet Subversion Server 1.6.3, with TortoiseSVN 1.6.3, on Windows Server 2003 R2, Enterprise Edition, Service Pack 2."
 draft = false
 comments = true
 date = "2009-07-03T10:00:00-05:00"

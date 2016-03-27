@@ -1,6 +1,6 @@
 +++
 title = "Quotes from Various Fictional Writings"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2003-04-14T00:01:00-05:00"

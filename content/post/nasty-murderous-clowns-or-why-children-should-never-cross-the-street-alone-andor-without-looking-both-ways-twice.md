@@ -1,6 +1,6 @@
 +++
 title = "Nasty, Murderous, Clowns -or- Why children should never cross the street alone, and/or without looking both ways twice"
-summary = "As the title states, this is about nasty, murderous, clowns, or why children should never cross the street alone. Or perhaps it is about both. Or perhaps neither. Or perhaps part of both?"
+description = "As the title states, this is about nasty, murderous, clowns, or why children should never cross the street alone. Or perhaps it is about both. Or perhaps neither. Or perhaps part of both?"
 draft = false
 comments = true
 date = "2005-04-28T00:01:00-05:00"

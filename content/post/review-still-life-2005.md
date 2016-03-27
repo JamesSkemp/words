@@ -1,6 +1,6 @@
 +++
 title = "Review: Still Life (2005)"
-summary = "The following is a review of Still Life (2005), available for PC on Steam."
+description = "The following is a review of Still Life (2005), available for PC on Steam."
 draft = false
 comments = false
 date = "2014-07-29T19:14:03-05:00"

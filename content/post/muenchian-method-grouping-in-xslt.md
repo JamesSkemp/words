@@ -1,6 +1,6 @@
 +++
 title = "Muenchian Method grouping in XSLT"
-summary = "My investigations on how the Muenchian Method of grouping in XSLT 1.0 works."
+description = "My investigations on how the Muenchian Method of grouping in XSLT 1.0 works."
 draft = false
 comments = true
 date = "2009-07-01T22:09:00-05:00"

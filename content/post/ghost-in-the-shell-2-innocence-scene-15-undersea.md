@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 15: Undersea"
-summary = "Transcript of scene 15 of the movie Ghost in the Shell 2: Innocence."
+description = "Transcript of scene 15 of the movie Ghost in the Shell 2: Innocence."
 draft = false
 comments = true
 date = "2006-08-19T19:22:00-05:00"

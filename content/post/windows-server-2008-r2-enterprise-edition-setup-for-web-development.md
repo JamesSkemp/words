@@ -1,6 +1,6 @@
 +++
 title = "Windows Server 2008 R2 Enterprise Edition - setup for Web development"
-summary = "Steps taken to setup a fresh copy of Windows Server 2008 R2 Enterprise Edition to serve Web content via IIS."
+description = "Steps taken to setup a fresh copy of Windows Server 2008 R2 Enterprise Edition to serve Web content via IIS."
 draft = false
 comments = true
 date = "2010-06-05T20:20:00-05:00"

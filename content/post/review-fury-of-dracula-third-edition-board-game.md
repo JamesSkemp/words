@@ -1,6 +1,6 @@
 +++
 title = "Review: Fury of Dracula Third Edition Board Game"
-summary = "The following is a review of the Fury of Dracula Third Edition Board Game, which I received as part of the Amazon Vine program."
+description = "The following is a review of the Fury of Dracula Third Edition Board Game, which I received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2016-01-10T09:24:03-06:00"

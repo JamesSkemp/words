@@ -1,6 +1,6 @@
 +++
 title = "Review: LG Electronics Gaming 24GM77 24-Inch Screen LED-Lit Monitor"
-summary = "The following is a review of the LG Electronics Gaming 24GM77 24-Inch Screen LED-Lit Monitor, released in late 2014, and currently available for purchase for a little over $270. The product I received was free as part of the Amazon Vine program."
+description = "The following is a review of the LG Electronics Gaming 24GM77 24-Inch Screen LED-Lit Monitor, released in late 2014, and currently available for purchase for a little over $270. The product I received was free as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-03-08T20:12:08-05:00"

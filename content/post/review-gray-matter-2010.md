@@ -1,6 +1,6 @@
 +++
 title = "Review: Gray Matter (2010)"
-summary = "The following is a review of Gray Matter (2010), available for the PC on Steam."
+description = "The following is a review of Gray Matter (2010), available for the PC on Steam."
 draft = false
 comments = false
 date = "2014-10-26T15:35:18-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Upgrading (our local install of) ActivePerl"
-summary = "In a previous guide, we walked through installing ActivePerl on a local machine. This time, we'll be upgrading ActivePerl. For this guide, we'll be upgrading from ActivePerl 5.8.7.815 to 5.8.8.817.  Note that this guide can also be used in the upgrade to, or installation of, ActivePerl 5.8.8.819."
+description = "In a previous guide, we walked through installing ActivePerl on a local machine. This time, we'll be upgrading ActivePerl. For this guide, we'll be upgrading from ActivePerl 5.8.7.815 to 5.8.8.817.  Note that this guide can also be used in the upgrade to, or installation of, ActivePerl 5.8.8.819."
 draft = false
 comments = true
 date = "2006-05-26T18:36:00-05:00"

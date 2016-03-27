@@ -1,6 +1,6 @@
 +++
 title = "Still having problems adding a photo to my gravatar account"
-summary = "Anyone else having problems with their Gravatar account?"
+description = "Anyone else having problems with their Gravatar account?"
 draft = false
 comments = true
 date = "2007-07-27T07:07:00-05:00"

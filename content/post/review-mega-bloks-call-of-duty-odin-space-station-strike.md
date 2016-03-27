@@ -1,6 +1,6 @@
 +++
 title = "Review: Mega Bloks Call of Duty ODIN Space Station Strike"
-summary = "The following is a review of the Mega Bloks Call of Duty ODIN Space Station Strike set, provided by Amazon as part of the Amazon Vine program."
+description = "The following is a review of the Mega Bloks Call of Duty ODIN Space Station Strike set, provided by Amazon as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-10-16T17:56:43-05:00"

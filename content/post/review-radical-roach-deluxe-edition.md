@@ -1,6 +1,6 @@
 +++
 title = "Review: RADical ROACH Deluxe Edition (2014)"
-summary = "The following is a review of RADical ROACH Deluxe Edition (2014), available on Steam."
+description = "The following is a review of RADical ROACH Deluxe Edition (2014), available on Steam."
 draft = false
 comments = false
 date = "2015-01-11T11:49:14-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 9: Orange Sky"
-summary = "Transcript of scene 9 of the movie Ghost in the Shell 2: Innocence.  Great scenery in this scene."
+description = "Transcript of scene 9 of the movie Ghost in the Shell 2: Innocence.  Great scenery in this scene."
 draft = false
 comments = true
 date = "2006-08-19T15:06:00-05:00"

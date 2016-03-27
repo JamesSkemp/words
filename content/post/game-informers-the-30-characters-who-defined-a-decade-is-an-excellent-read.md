@@ -1,6 +1,6 @@
 +++
 title = "Game Informer's The 30 Characters Who Defined A Decade is an excellent read"
-summary = "The 30 Characters Who Defined A Decade, in Game Informer issue 212, is an absolutely wonderful read."
+description = "The 30 Characters Who Defined A Decade, in Game Informer issue 212, is an absolutely wonderful read."
 draft = false
 comments = true
 date = "2010-11-12T17:20:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Personal NetBeans IDE 6.9.1 setting tweaks"
-summary = "Tweaks I've made to my installation of NetBeans IDE, version 6.9.1."
+description = "Tweaks I've made to my installation of NetBeans IDE, version 6.9.1."
 draft = false
 comments = true
 date = "2010-08-29T10:28:00-05:00"

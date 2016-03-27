@@ -1,6 +1,6 @@
 +++
 title = "It's time to grow up - Why IE 7 means we all win"
-summary = "IE7 doesn't mean that Firefox, or any other browser has won, but that we've all won."
+description = "IE7 doesn't mean that Firefox, or any other browser has won, but that we've all won."
 draft = false
 comments = true
 date = "2006-10-25T18:59:00-05:00"

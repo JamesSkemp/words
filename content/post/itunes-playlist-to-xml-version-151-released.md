@@ -1,6 +1,6 @@
 +++
 title = "iTunes Playlists to Xml - version 1.5.1 released"
-summary = "Version 1.5.1 of iTunes Playlists to Xml has been released."
+description = "Version 1.5.1 of iTunes Playlists to Xml has been released."
 draft = false
 comments = false
 date = "2009-11-14T16:55:00-06:00"

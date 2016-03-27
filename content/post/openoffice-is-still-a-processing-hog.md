@@ -1,6 +1,6 @@
 +++
 title = "OpenOffice is still a processing hog"
-summary = "It's time for Windows software to look at better updating."
+description = "It's time for Windows software to look at better updating."
 draft = false
 comments = true
 date = "2006-02-07T20:08:00-06:00"

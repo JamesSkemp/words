@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Seven Samurai: Criterion Collection (1954)"
-summary = "Review of the movie Seven Samurai (1954)."
+description = "Review of the movie Seven Samurai (1954)."
 draft = false
 comments = true
 date = "2006-10-03T21:13:00-05:00"

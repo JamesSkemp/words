@@ -1,6 +1,6 @@
 +++
 title = "Web Application Development Guidelines"
-summary = "Web application development guidelines that I've written, and that may be of benefit to others as well."
+description = "Web application development guidelines that I've written, and that may be of benefit to others as well."
 draft = false
 comments = true
 date = "2010-02-27T13:25:00-06:00"

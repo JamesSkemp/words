@@ -1,6 +1,6 @@
 +++
 title = "My first job offer email"
-summary = "I received my first job offer email today."
+description = "I received my first job offer email today."
 draft = false
 comments = true
 date = "2007-10-09T20:20:00-05:00"

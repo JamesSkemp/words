@@ -1,6 +1,6 @@
 +++
 title = "The WordPress calendar is a table"
-summary = "The default calendar in WordPress is missing a valuable summary attribute - and it needs one soon!"
+description = "The default calendar in WordPress is missing a valuable summary attribute - and it needs one soon!"
 draft = false
 comments = true
 date = "2007-01-15T11:19:00-06:00"

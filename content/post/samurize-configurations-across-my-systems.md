@@ -1,6 +1,6 @@
 +++
 title = "Samurize configurations across my systems"
-summary = "The Serious Samurize configurations I have setup on the various machines I use."
+description = "The Serious Samurize configurations I have setup on the various machines I use."
 draft = false
 comments = true
 date = "2010-03-21T13:01:00-05:00"

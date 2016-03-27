@@ -1,6 +1,6 @@
 +++
 title = "Installing MySQL Query Browser 1.1.20 on a local Windows-based, Apache, server"
-summary = "In this guide, we'll be installing the MySQL Query Browser, version 1.1.20."
+description = "In this guide, we'll be installing the MySQL Query Browser, version 1.1.20."
 draft = false
 comments = true
 date = "2006-07-08T20:12:00-05:00"

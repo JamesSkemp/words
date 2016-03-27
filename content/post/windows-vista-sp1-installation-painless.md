@@ -1,6 +1,6 @@
 +++
 title = "Windows Vista SP1 installation: painless"
-summary = "Well, I'm one user who had a painless transition from Windows Vista to SP1. [slnet0514:20b05616-2ae7-4b61-8596-4962d7e824ea]"
+description = "Well, I'm one user who had a painless transition from Windows Vista to SP1. [slnet0514:20b05616-2ae7-4b61-8596-4962d7e824ea]"
 draft = false
 comments = true
 date = "2008-03-19T20:15:00-05:00"

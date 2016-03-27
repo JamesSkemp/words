@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine 1.3 upgrade issues"
-summary = "For whatever reason, when I upgraded to BlogEngine 1.3, all of the permissions on my site vanished. [slnet0514:e8115c76-8306-4aaa-9bbe-66b3f72cec25]"
+description = "For whatever reason, when I upgraded to BlogEngine 1.3, all of the permissions on my site vanished. [slnet0514:e8115c76-8306-4aaa-9bbe-66b3f72cec25]"
 draft = false
 comments = true
 date = "2007-12-24T13:10:00-06:00"

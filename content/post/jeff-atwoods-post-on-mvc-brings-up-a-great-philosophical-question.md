@@ -1,6 +1,6 @@
 +++
 title = "Jeff Atwood's post on MVC brings up a great philosophical question ..."
-summary = "Should presentation be separated from content, and/or vice versa? [slnet0514:36a1805a-b386-4d6f-a501-653c158579dc]"
+description = "Should presentation be separated from content, and/or vice versa? [slnet0514:36a1805a-b386-4d6f-a501-653c158579dc]"
 draft = false
 comments = true
 date = "2008-05-14T14:30:00-05:00"

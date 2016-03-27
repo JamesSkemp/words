@@ -1,6 +1,6 @@
 +++
 title = "On the case of weird image results for 'Dan Conderman'"
-summary = "Have you been slightly surprised by your most recent image search for Dan Conderman?"
+description = "Have you been slightly surprised by your most recent image search for Dan Conderman?"
 draft = false
 comments = true
 date = "2011-02-28T20:27:00-06:00"

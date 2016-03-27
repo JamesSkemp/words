@@ -1,6 +1,6 @@
 +++
 title = "How to get started with Microsoft Log Parser"
-summary = "The following guide will get you started with Log Parser."
+description = "The following guide will get you started with Log Parser."
 draft = false
 comments = true
 date = "2008-11-07T14:50:00-06:00"

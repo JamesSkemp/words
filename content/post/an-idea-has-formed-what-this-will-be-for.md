@@ -1,6 +1,6 @@
 +++
 title = "An idea has formed - what this will be for"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-10-05T05:51:00-05:00"

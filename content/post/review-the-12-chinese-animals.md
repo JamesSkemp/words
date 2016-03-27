@@ -1,6 +1,6 @@
 +++
 title = "Review: The 12 Chinese Animals"
-summary = "Review of The 12 Chinese Animals, by Master Zhongxian Wu."
+description = "Review of The 12 Chinese Animals, by Master Zhongxian Wu."
 draft = false
 comments = true
 date = "2010-07-25T18:40:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Content really is key (AdSense)"
-summary = "When it comes to AdSense, content is king. However, while you hear it all the time, you don't realize just how true it is until you see actual numbers."
+description = "When it comes to AdSense, content is king. However, while you hear it all the time, you don't realize just how true it is until you see actual numbers."
 draft = false
 comments = true
 date = "2006-05-06T16:52:00-05:00"

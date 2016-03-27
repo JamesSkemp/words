@@ -1,6 +1,6 @@
 +++
 title = "XML Schema Definition creation: Journal - Part 1: Primary layout"
-summary = "In part 1 of a new series, I cover how I created a new XML Schema Definition for journal-like XML files."
+description = "In part 1 of a new series, I cover how I created a new XML Schema Definition for journal-like XML files."
 draft = false
 comments = true
 date = "2009-12-21T07:50:00-06:00"

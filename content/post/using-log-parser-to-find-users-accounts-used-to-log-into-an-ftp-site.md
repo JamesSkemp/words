@@ -1,6 +1,6 @@
 +++
 title = "Using Log Parser to find users accounts used to log into an FTP site"
-summary = "Query to find what user names were passed when logging into an IIS FTP site."
+description = "Query to find what user names were passed when logging into an IIS FTP site."
 draft = false
 comments = true
 date = "2007-09-13T20:00:00-05:00"

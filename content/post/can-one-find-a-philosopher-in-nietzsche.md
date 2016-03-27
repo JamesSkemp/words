@@ -1,6 +1,6 @@
 +++
 title = "Can One Find a Philosopher in Nietzsche?"
-summary = "Paper on whether Nietzsche is a philosopher."
+description = "Paper on whether Nietzsche is a philosopher."
 draft = false
 comments = true
 date = "2003-12-08T00:01:00-06:00"

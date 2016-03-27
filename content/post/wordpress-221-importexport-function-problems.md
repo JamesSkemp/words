@@ -1,6 +1,6 @@
 +++
 title = "WordPress 2.2.1 Import/Export function problems"
-summary = "Having problems with WordPress importing? Try chunking the data."
+description = "Having problems with WordPress importing? Try chunking the data."
 draft = false
 comments = true
 date = "2007-07-18T19:18:00-05:00"

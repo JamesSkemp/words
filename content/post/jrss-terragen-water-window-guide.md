@@ -1,6 +1,6 @@
 +++
 title = "JRSs Terragen Water Window Guide"
-summary = "Information regarding the Water window in Terragen. Written during the release of 0.9.08, but, information should apply to various versions."
+description = "Information regarding the Water window in Terragen. Written during the release of 0.9.08, but, information should apply to various versions."
 draft = false
 comments = true
 date = "2003-09-17T01:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Make sure you vote next Tuesday"
-summary = "Get out and vote this Tuesday ..."
+description = "Get out and vote this Tuesday ..."
 draft = false
 comments = false
 date = "2006-11-05T10:13:00-06:00"

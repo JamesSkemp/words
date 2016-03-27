@@ -1,6 +1,6 @@
 +++
 title = "Storing watched movies and Netflix shipping/receiving in XML format"
-summary = "Thoughts on tracking movies and Netflix shipping/receiving information."
+description = "Thoughts on tracking movies and Netflix shipping/receiving information."
 draft = false
 comments = true
 date = "2011-03-06T13:21:00-06:00"

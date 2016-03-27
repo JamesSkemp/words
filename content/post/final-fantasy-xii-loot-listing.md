@@ -1,6 +1,6 @@
 +++
 title = "Final Fantasy XII - Loot listing"
-summary = "Look no further for a guide to the number of loot need in Final Fantasy XII."
+description = "Look no further for a guide to the number of loot need in Final Fantasy XII."
 draft = false
 comments = true
 date = "2007-01-07T17:09:00-06:00"

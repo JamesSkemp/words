@@ -1,6 +1,6 @@
 +++
 title = "Review: Yakuza 3 (2010) (PlayStation 3)"
-summary = "Review of Yakuza 3 (2010), released for the PlayStation 3."
+description = "Review of Yakuza 3 (2010), released for the PlayStation 3."
 draft = false
 comments = true
 date = "2011-08-21T14:23:00-05:00"

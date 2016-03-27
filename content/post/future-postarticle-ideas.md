@@ -1,6 +1,6 @@
 +++
 title = "Future post/article ideas"
-summary = "A listing of articles/posts that I need to write at some point."
+description = "A listing of articles/posts that I need to write at some point."
 draft = false
 comments = true
 date = "2007-08-16T07:15:00-05:00"

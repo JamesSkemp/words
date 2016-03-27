@@ -1,6 +1,6 @@
 +++
 title = "Review: Girl in the Arena"
-summary = "Book review of Lise Haines' Girl in the Arena."
+description = "Book review of Lise Haines' Girl in the Arena."
 draft = false
 comments = true
 date = "2009-08-07T15:50:00-05:00"

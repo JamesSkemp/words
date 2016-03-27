@@ -1,6 +1,6 @@
 +++
 title = "RESTful WCF Web services, easily"
-summary = "WCF WebHttp Services is the best of ASP.NET MVC and WCF. Or at least that seems to be the case."
+description = "WCF WebHttp Services is the best of ASP.NET MVC and WCF. Or at least that seems to be the case."
 draft = false
 comments = true
 date = "2010-06-15T22:47:00-05:00"

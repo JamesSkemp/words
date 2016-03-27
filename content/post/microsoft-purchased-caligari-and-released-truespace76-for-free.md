@@ -1,6 +1,6 @@
 +++
 title = "Microsoft purchased Caligari and released trueSpace7.6 for free?!?"
-summary = "Almost sounds like we're talking about Google ..."
+description = "Almost sounds like we're talking about Google ..."
 draft = false
 comments = true
 date = "2008-07-27T12:30:00-05:00"

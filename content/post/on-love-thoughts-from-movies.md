@@ -1,6 +1,6 @@
 +++
 title = "On Love - Thoughts from movies"
-summary = "Thoughts on love, from the movies."
+description = "Thoughts on love, from the movies."
 draft = false
 comments = true
 date = "2007-08-06T20:52:00-05:00"

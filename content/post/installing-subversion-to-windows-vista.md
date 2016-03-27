@@ -1,6 +1,6 @@
 +++
 title = "Installing Subversion to Windows Vista"
-summary = "In this article I'll be installing Subversion 1.4.6 to a Windows machine, running Vista Ultimate. [slnet0514:e9b1aa65-ad7c-4484-a26d-6e5696aec003]"
+description = "In this article I'll be installing Subversion 1.4.6 to a Windows machine, running Vista Ultimate. [slnet0514:e9b1aa65-ad7c-4484-a26d-6e5696aec003]"
 draft = false
 comments = true
 date = "2008-06-07T15:00:00-05:00"

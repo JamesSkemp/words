@@ -1,6 +1,6 @@
 +++
 title = "What makes great technical support?"
-summary = "What makes a great technical support experience?"
+description = "What makes a great technical support experience?"
 draft = false
 comments = true
 date = "2006-03-22T18:44:00-06:00"

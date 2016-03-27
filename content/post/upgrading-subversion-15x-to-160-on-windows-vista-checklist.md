@@ -1,6 +1,6 @@
 +++
 title = "Upgrading Subversion 1.5.x to 1.6.0 on Windows Vista - checklist"
-summary = "Subversion 1.6.0 released a short time ago, and all the Windows binaries are ready to go. Here's a checklist (which should be applicable for future use) on Subversion, Apache, and TortoiseSVN upgrading."
+description = "Subversion 1.6.0 released a short time ago, and all the Windows binaries are ready to go. Here's a checklist (which should be applicable for future use) on Subversion, Apache, and TortoiseSVN upgrading."
 draft = false
 comments = true
 date = "2009-03-23T20:40:00-05:00"

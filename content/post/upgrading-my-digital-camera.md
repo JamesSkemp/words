@@ -1,6 +1,6 @@
 +++
 title = "Upgrading my digital camera"
-summary = "About my experience upgrading from a Canon EOS Digital Rebel (300D) to a Canon EOS Digital Rebel XT (350D)."
+description = "About my experience upgrading from a Canon EOS Digital Rebel (300D) to a Canon EOS Digital Rebel XT (350D)."
 draft = false
 comments = true
 date = "2007-05-18T18:21:00-05:00"

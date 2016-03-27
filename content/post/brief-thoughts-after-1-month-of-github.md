@@ -1,6 +1,6 @@
 +++
 title = "Brief thoughts after 1 month of GitHub"
-summary = "Very brief thoughts after about a month of GitHub."
+description = "Very brief thoughts after about a month of GitHub."
 draft = false
 comments = true
 date = "2013-03-01T08:18:00-06:00"

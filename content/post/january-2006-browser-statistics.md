@@ -1,6 +1,6 @@
 +++
 title = "January 2006 browser statistics"
-summary = "Browser numbers for my site, and on upgrading browsers."
+description = "Browser numbers for my site, and on upgrading browsers."
 draft = false
 comments = true
 date = "2006-02-01T14:56:00-06:00"

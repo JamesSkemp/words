@@ -1,6 +1,6 @@
 +++
 title = "Review of LittleBigPlanet: BradyGames Signature Series Guide"
-summary = "Review of the LittleBigPlanet BradyGames guide."
+description = "Review of the LittleBigPlanet BradyGames guide."
 draft = false
 comments = true
 date = "2008-10-25T20:23:00-05:00"

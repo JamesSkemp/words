@@ -1,6 +1,6 @@
 +++
 title = "Upgrading to BlogEngine.NET 1.4.5"
-summary = "My experience upgrading to BlogEngine.NET 1.4.5."
+description = "My experience upgrading to BlogEngine.NET 1.4.5."
 draft = false
 comments = true
 date = "2008-08-16T12:41:00-05:00"

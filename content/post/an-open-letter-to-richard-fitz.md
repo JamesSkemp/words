@@ -1,6 +1,6 @@
 +++
 title = "An Open Letter to Richard Fitz"
-summary = "An open letter to Richard Fitz regarding his comments on March 2nd 2004. Published here as well as sent to Mr. Fitz via postal and electronic mail."
+description = "An open letter to Richard Fitz regarding his comments on March 2nd 2004. Published here as well as sent to Mr. Fitz via postal and electronic mail."
 draft = false
 comments = true
 date = "2004-03-06T01:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "On InboxDollar$.com, and similar programs"
-summary = "On InboxDollar$.com, and similar programs"
+description = "On InboxDollar$.com, and similar programs"
 draft = false
 comments = false
 date = "2004-11-13T00:01:00-06:00"

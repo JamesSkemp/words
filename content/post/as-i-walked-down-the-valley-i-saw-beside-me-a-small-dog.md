@@ -1,6 +1,6 @@
 +++
 title = "As I walked down the valley I saw beside me a small dog"
-summary = "Using Microsoft Word's speech recognition, we wrote this prose, which may or may not be complete."
+description = "Using Microsoft Word's speech recognition, we wrote this prose, which may or may not be complete."
 draft = false
 comments = true
 date = "2005-03-12T01:15:00-06:00"

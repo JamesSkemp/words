@@ -1,6 +1,6 @@
 +++
 title = "Thomas Aquinas' Summa Theologica and the Question of the Will"
-summary = "Paper regarding Thomas Aquinas' Summa Theologica in relation to the question of the will."
+description = "Paper regarding Thomas Aquinas' Summa Theologica in relation to the question of the will."
 draft = false
 comments = true
 date = "2003-05-13T01:01:00-05:00"

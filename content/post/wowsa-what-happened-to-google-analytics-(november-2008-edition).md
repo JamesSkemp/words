@@ -1,6 +1,6 @@
 +++
 title = "Wowsa - what happened to Google Analytics? (November 2008 edition)"
-summary = "Google changes Analytics, for the better, I'd say."
+description = "Google changes Analytics, for the better, I'd say."
 draft = false
 comments = true
 date = "2008-11-11T21:40:00-06:00"

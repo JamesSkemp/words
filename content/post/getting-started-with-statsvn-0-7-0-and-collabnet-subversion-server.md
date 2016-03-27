@@ -1,6 +1,6 @@
 +++
 title = "Getting started with StatSVN (0.7.0) and CollabNet Subversion Server"
-summary = "While a tool like TortoiseSVN allows limited reporting on Subversion repositories, using a tool like StatSVN generates much more useful reports."
+description = "While a tool like TortoiseSVN allows limited reporting on Subversion repositories, using a tool like StatSVN generates much more useful reports."
 draft = false
 comments = true
 date = "2010-10-31T10:00:00-05:00"

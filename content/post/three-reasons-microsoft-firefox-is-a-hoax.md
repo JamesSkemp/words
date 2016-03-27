@@ -1,6 +1,6 @@
 +++
 title = "Three reasons Microsoft Firefox is a hoax"
-summary = "Three reasons Microsoft(R) Firefox is a hoax (which turned into four reasons). [slnet0514:af095fa1-5002-4aff-9210-22132eb23344]"
+description = "Three reasons Microsoft(R) Firefox is a hoax (which turned into four reasons). [slnet0514:af095fa1-5002-4aff-9210-22132eb23344]"
 draft = false
 comments = true
 date = "2006-11-14T08:32:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "How to easily clear the window.applicationCache on select browsers"
-summary = "How to 'easily' clear application cache (cache manifest) data for Chrome, and Safari on i-devices."
+description = "How to 'easily' clear application cache (cache manifest) data for Chrome, and Safari on i-devices."
 draft = false
 comments = true
 date = "2011-04-02T19:45:00-05:00"

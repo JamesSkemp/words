@@ -1,6 +1,6 @@
 +++
 title = "Parse FileZilla Server logs with Log Parser"
-summary = "SQL to run through Log Parser to parse and transform FileZilla Server logs into W3C Extended format."
+description = "SQL to run through Log Parser to parse and transform FileZilla Server logs into W3C Extended format."
 draft = false
 comments = true
 date = "2008-11-23T22:15:00-06:00"

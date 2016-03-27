@@ -1,6 +1,6 @@
 +++
 title = "AdSense and smaller sites"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2005-10-08T20:44:00-05:00"

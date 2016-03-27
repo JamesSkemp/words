@@ -1,6 +1,6 @@
 +++
 title = "Java is silly"
-summary = "My main computer is, once again, horribly low on free space. Running through my installed programs, I once again see the wonders of installing Java. [slnet0514:8de9eb89-4456-4e14-9e07-168887850404]"
+description = "My main computer is, once again, horribly low on free space. Running through my installed programs, I once again see the wonders of installing Java. [slnet0514:8de9eb89-4456-4e14-9e07-168887850404]"
 draft = false
 comments = true
 date = "2008-04-13T19:45:00-05:00"

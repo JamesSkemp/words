@@ -1,6 +1,6 @@
 +++
 title = "Review: Mars Attacks The Dice Game"
-summary = "The following is a review of Mars Attacks: The Dice game, received as part of the Amazon Vine program."
+description = "The following is a review of Mars Attacks: The Dice game, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-04-14T18:37:34-05:00"

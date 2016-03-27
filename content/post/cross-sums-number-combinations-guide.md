@@ -1,6 +1,6 @@
 +++
 title = "Cross Sums Number Combinations Guide"
-summary = "Quite a while ago - back in May of 2003 actually - I began work on a guide that would display every possible number combination for cross sum puzzles.  Since then, a number of people have corrected mistakes that crept in, resulting in a number of different versions of the guide over the last (almost) two years."
+description = "Quite a while ago - back in May of 2003 actually - I began work on a guide that would display every possible number combination for cross sum puzzles.  Since then, a number of people have corrected mistakes that crept in, resulting in a number of different versions of the guide over the last (almost) two years."
 draft = false
 comments = true
 date = "2006-04-13T20:13:00-05:00"

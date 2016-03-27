@@ -1,6 +1,6 @@
 +++
 title = "Review: Amazon Fire 7 (2015 release) Case"
-summary = "The following is a review of the Amazon Fire 7\" (2015 release) Case - Slim Lightweight Standing Custom Fit Cover for Amazon Fire 7 Inch Tablet, received as part of the Amazon Vine Program."
+description = "The following is a review of the Amazon Fire 7\" (2015 release) Case - Slim Lightweight Standing Custom Fit Cover for Amazon Fire 7 Inch Tablet, received as part of the Amazon Vine Program."
 draft = false
 comments = false
 date = "2016-03-20T19:09:51-06:00"

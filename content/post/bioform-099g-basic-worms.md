@@ -1,6 +1,6 @@
 +++
 title = "Bioform 0.99g: Basic Worms"
-summary = "Basic worms in Bioform 0.99g."
+description = "Basic worms in Bioform 0.99g."
 draft = false
 comments = true
 date = "2003-04-17T01:01:00-05:00"

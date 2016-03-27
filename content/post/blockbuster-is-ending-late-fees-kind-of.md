@@ -1,6 +1,6 @@
 +++
 title = "Blockbuster is ending late fees? Kind of"
-summary = "On whether Blockbuster is really ‘ending’ late fees. Also includes an update regarding New Jersey."
+description = "On whether Blockbuster is really ‘ending’ late fees. Also includes an update regarding New Jersey."
 draft = false
 comments = true
 date = "2005-01-10T02:01:00-06:00"

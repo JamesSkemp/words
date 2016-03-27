@@ -1,6 +1,6 @@
 +++
 title = "Installing MySQL Administrator on a local Windows-based, Apache, server"
-summary = "Last time, we successfully installed both MySQL and phpMyAdmin on our local server.  However, we only had one user. This time, we'll be installing MySQL Administrator, to give us the ability to add administer MySQL in a way that we can't do with phpMyAdmin."
+description = "Last time, we successfully installed both MySQL and phpMyAdmin on our local server.  However, we only had one user. This time, we'll be installing MySQL Administrator, to give us the ability to add administer MySQL in a way that we can't do with phpMyAdmin."
 draft = false
 comments = true
 date = "2006-02-25T23:28:00-06:00"

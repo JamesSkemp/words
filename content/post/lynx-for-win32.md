@@ -1,6 +1,6 @@
 +++
 title = "Lynx for Win32"
-summary = "Download Lynx for Windows."
+description = "Download Lynx for Windows."
 draft = false
 comments = true
 date = "2006-09-05T07:00:00-05:00"

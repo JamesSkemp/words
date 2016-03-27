@@ -1,6 +1,6 @@
 +++
 title = "Setting up a task with SyncToy under a different account?"
-summary = "When setting up SyncToy, setup pairs using the account you'll be running the task under."
+description = "When setting up SyncToy, setup pairs using the account you'll be running the task under."
 draft = false
 comments = true
 date = "2010-07-17T12:19:00-05:00"

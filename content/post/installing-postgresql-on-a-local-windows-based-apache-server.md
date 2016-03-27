@@ -1,6 +1,6 @@
 +++
 title = "Installing PostgreSQL on a local Windows-based, Apache, server"
-summary = "While we've already setup MySQL, another popular SQL server is PostgreSQL. Like MySQL, PostgreSQL is absolutely free, and will allow us to create databases on our local server."
+description = "While we've already setup MySQL, another popular SQL server is PostgreSQL. Like MySQL, PostgreSQL is absolutely free, and will allow us to create databases on our local server."
 draft = false
 comments = true
 date = "2006-03-15T23:32:00-06:00"

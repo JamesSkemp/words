@@ -1,6 +1,6 @@
 +++
 title = "History and Analysis of Thebes, Greece"
-summary = "Paper regarding the history of Thebes (Greece) from it's origin to 336 B.C."
+description = "Paper regarding the history of Thebes (Greece) from it's origin to 336 B.C."
 draft = false
 comments = true
 date = "2003-12-01T00:01:00-06:00"

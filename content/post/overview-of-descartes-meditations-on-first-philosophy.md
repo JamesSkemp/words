@@ -1,6 +1,6 @@
 +++
 title = "Overview of Descartes' Meditations on First Philosophy"
-summary = "A brief overview of René Descartes’ Meditations on First Philosophy for those who are reading his work."
+description = "A brief overview of René Descartes’ Meditations on First Philosophy for those who are reading his work."
 draft = false
 comments = true
 date = "2004-09-03T01:01:00-05:00"

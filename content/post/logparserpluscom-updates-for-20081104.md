@@ -1,6 +1,6 @@
 +++
 title = "LogParserPlus.com - Updates for 2008.11.04"
-summary = "LogParserPlus has been updated with expressions information, and descriptions for all functions."
+description = "LogParserPlus has been updated with expressions information, and descriptions for all functions."
 draft = false
 comments = true
 date = "2008-11-05T08:18:00-06:00"

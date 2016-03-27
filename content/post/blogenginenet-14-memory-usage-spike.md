@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET 1.4 - Memory usage spike?"
-summary = "Is BlogEngine.NET starting to suffer from feature creep?"
+description = "Is BlogEngine.NET starting to suffer from feature creep?"
 draft = false
 comments = true
 date = "2008-07-06T15:25:00-05:00"

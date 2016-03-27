@@ -1,6 +1,6 @@
 +++
 title = "Two views of 'space' from Tarthang Tulku"
-summary = "Space and being."
+description = "Space and being."
 draft = false
 comments = true
 date = "2005-10-19T19:41:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 2: Opening Credits"
-summary = "Transcript of scene 2 of the movie Ghost in the Shell. [slnet0514:e45f02e7-931e-46b1-830e-31b836b4a67d]"
+description = "Transcript of scene 2 of the movie Ghost in the Shell. [slnet0514:e45f02e7-931e-46b1-830e-31b836b4a67d]"
 draft = false
 comments = true
 date = "2008-06-01T11:00:00-05:00"

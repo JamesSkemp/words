@@ -1,6 +1,6 @@
 +++
 title = "Gmail accounts - and Gmail-Talk interaction thoughts"
-summary = "On the recent Gmail revisions."
+description = "On the recent Gmail revisions."
 draft = false
 comments = true
 date = "2006-02-15T23:00:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "The problem with installing SQL Server Express via the Microsoft Web Platform Installer"
-summary = "If you use Web Platform Installer to install SQL Server Express, you might be in for a surprise if you try to install AdventureWorks."
+description = "If you use Web Platform Installer to install SQL Server Express, you might be in for a surprise if you try to install AdventureWorks."
 draft = false
 comments = true
 date = "2010-12-26T20:15:00-06:00"

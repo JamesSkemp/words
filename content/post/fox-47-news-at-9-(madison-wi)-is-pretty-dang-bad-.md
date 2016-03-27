@@ -1,6 +1,6 @@
 +++
 title = "Fox 47 News at 9 (Madison WI) is pretty dang bad ..."
-summary = "In Madison Wisconsin, why waste your time watching Fox 47 News, when you can watch NBC 15?"
+description = "In Madison Wisconsin, why waste your time watching Fox 47 News, when you can watch NBC 15?"
 draft = false
 comments = false
 date = "2007-02-04T21:27:00-06:00"

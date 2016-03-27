@@ -1,6 +1,6 @@
 +++
 title = "Apophysis 2.0: Free Fully Commented Scripts"
-summary = "A selection of free scripts for Apophysis 2.0.  Fully commented so that users can learn from them."
+description = "A selection of free scripts for Apophysis 2.0.  Fully commented so that users can learn from them."
 draft = false
 comments = false
 date = "2004-12-16T00:00:00-06:00"

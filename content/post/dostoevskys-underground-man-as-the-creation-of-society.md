@@ -1,6 +1,6 @@
 +++
 title = "Dostoevsky's Underground Man as the Creation of Society"
-summary = "Paper regarding the argument that society is responsible for Dostoevsky's Underground Man."
+description = "Paper regarding the argument that society is responsible for Dostoevsky's Underground Man."
 draft = false
 comments = true
 date = "2002-10-31T01:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Excellent Silverlight/WPF MVVM video series"
-summary = "What I believe to be an excellent video series on Silverlight/WPF/XAML and the MVVM pattern."
+description = "What I believe to be an excellent video series on Silverlight/WPF/XAML and the MVVM pattern."
 draft = false
 comments = true
 date = "2010-10-17T19:16:00-05:00"

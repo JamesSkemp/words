@@ -1,6 +1,6 @@
 +++
 title = "Review: The 3rd Birthday (2011) (PSP)"
-summary = "Review of The 3rd Birthday, available for the Sony PlayStation Portable."
+description = "Review of The 3rd Birthday, available for the Sony PlayStation Portable."
 draft = false
 comments = true
 date = "2011-10-29T10:08:00-05:00"

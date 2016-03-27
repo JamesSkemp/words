@@ -1,6 +1,6 @@
 +++
 title = "Unofficial Xbox Live API wrappers"
-summary = "This morning I created two API wrappers for the Mashape implementations of XboxApi.com and XboxLeaders.com."
+description = "This morning I created two API wrappers for the Mashape implementations of XboxApi.com and XboxLeaders.com."
 draft = false
 comments = true
 date = "2013-06-09T10:05:00-05:00"

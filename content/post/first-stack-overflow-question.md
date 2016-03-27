@@ -1,6 +1,6 @@
 +++
 title = "First Stack Overflow question"
-summary = "I posted my first Stack Overflow question."
+description = "I posted my first Stack Overflow question."
 draft = false
 comments = true
 date = "2008-09-20T08:19:00-05:00"

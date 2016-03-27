@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 9 - What's the Story?"
-summary = "Transcript of the movie Waking Life; DVD Chapter 9 - What's the Story?."
+description = "Transcript of the movie Waking Life; DVD Chapter 9 - What's the Story?."
 draft = false
 comments = true
 date = "2006-05-25T20:23:00-05:00"

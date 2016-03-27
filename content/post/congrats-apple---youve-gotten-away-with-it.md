@@ -1,6 +1,6 @@
 +++
 title = "Congrats Apple - you've gotten away with it"
-summary = "Congrats Apple, the recent buzz about Safari 3.1 being a part of your update software has proved that you've gotten away it. [slnet0514:8bf660c2-5a45-4fde-ad22-f36b91d1919c]"
+description = "Congrats Apple, the recent buzz about Safari 3.1 being a part of your update software has proved that you've gotten away it. [slnet0514:8bf660c2-5a45-4fde-ad22-f36b91d1919c]"
 draft = false
 comments = true
 date = "2008-03-22T10:07:00-05:00"

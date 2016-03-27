@@ -1,6 +1,6 @@
 +++
 title = "Are the Teenage Mutant Ninja Turtles Really Ninjas?"
-summary = "Are the Teenage Mutant Ninja Turtles really ninjas, or are they something else?"
+description = "Are the Teenage Mutant Ninja Turtles really ninjas, or are they something else?"
 draft = false
 comments = true
 date = "2005-09-04T00:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "New Log Parser Plus Web site design"
-summary = "I've been putting it off long enough - LogParserPlus.com now has a new design in place."
+description = "I've been putting it off long enough - LogParserPlus.com now has a new design in place."
 draft = false
 comments = true
 date = "2011-05-22T12:40:00-05:00"

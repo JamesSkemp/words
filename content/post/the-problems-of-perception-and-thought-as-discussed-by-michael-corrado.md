@@ -1,6 +1,6 @@
 +++
 title = "The Problems of Perception and Thought as Discussed by Michael Corrado"
-summary = "The problems of perception and thought as seen in Michael Corrado's book Analytic Tradition in Philosophy: Background and Issues."
+description = "The problems of perception and thought as seen in Michael Corrado's book Analytic Tradition in Philosophy: Background and Issues."
 draft = false
 comments = true
 date = "2003-02-16T01:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Game Informer and the Xbox 360 / Playstation 3 debate"
-summary = "In this world, there's a number of people who get paid for playing video games. I am not one of those people. This is a good reason to trust the people, with a grain of salt, when it comes to said video games. This is a look at what Game Informer has to say about the Xbox 360, in the presence of the Playstation 3. [slnet0514:9baacf14-e274-484c-91ac-17ae6f640966]"
+description = "In this world, there's a number of people who get paid for playing video games. I am not one of those people. This is a good reason to trust the people, with a grain of salt, when it comes to said video games. This is a look at what Game Informer has to say about the Xbox 360, in the presence of the Playstation 3. [slnet0514:9baacf14-e274-484c-91ac-17ae6f640966]"
 draft = false
 comments = true
 date = "2007-11-11T10:00:00-06:00"

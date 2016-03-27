@@ -1,6 +1,6 @@
 +++
 title = "My first, working, piece of jQuery"
-summary = "The first piece of jQuery that I wrote. Woohoo."
+description = "The first piece of jQuery that I wrote. Woohoo."
 draft = false
 comments = true
 date = "2009-04-23T19:00:00-05:00"

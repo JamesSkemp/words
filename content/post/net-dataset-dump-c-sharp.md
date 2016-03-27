@@ -1,6 +1,6 @@
 +++
 title = ".NET DataSet dump (C#)"
-summary = "What I'm using to dump/output the contents of a DataSet in .NET (C#)."
+description = "What I'm using to dump/output the contents of a DataSet in .NET (C#)."
 draft = false
 comments = true
 date = "2008-10-18T16:36:00-05:00"

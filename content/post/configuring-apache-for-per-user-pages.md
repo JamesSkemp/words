@@ -1,6 +1,6 @@
 +++
 title = "Configuring Apache for per-user pages"
-summary = "How to configure Apache 2.2.4 on Ubuntu 7.04 for per-user pages."
+description = "How to configure Apache 2.2.4 on Ubuntu 7.04 for per-user pages."
 draft = false
 comments = true
 date = "2007-06-18T20:30:00-05:00"

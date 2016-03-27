@@ -1,6 +1,6 @@
 +++
 title = "Eclipse SDK 3.2.2 to Ubuntu 7.04"
-summary = "Installing Eclipse 3.2.2 to Ubuntu 7.04."
+description = "Installing Eclipse 3.2.2 to Ubuntu 7.04."
 draft = false
 comments = true
 date = "2007-06-12T07:30:00-05:00"

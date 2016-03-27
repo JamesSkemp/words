@@ -1,6 +1,6 @@
 +++
 title = "Two things re: the Today show"
-summary = "Two comments on this morning's Today show; two points that should be cleared up."
+description = "Two comments on this morning's Today show; two points that should be cleared up."
 draft = false
 comments = true
 date = "2007-03-03T08:21:00-06:00"

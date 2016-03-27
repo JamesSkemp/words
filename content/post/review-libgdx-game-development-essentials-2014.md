@@ -1,6 +1,6 @@
 +++
 title = "Review: LibGDX Game Development Essentials (2014)"
-summary = "The following is a review of LibGDX Game Development Essentials, written by Juwal Bose, and released in December 2014 by Packt Publishing."
+description = "The following is a review of LibGDX Game Development Essentials, written by Juwal Bose, and released in December 2014 by Packt Publishing."
 draft = false
 comments = false
 date = "2015-03-07T16:29:50-06:00"

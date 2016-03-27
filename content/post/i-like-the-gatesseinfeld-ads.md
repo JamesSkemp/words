@@ -1,6 +1,6 @@
 +++
 title = "I like the Gates/Seinfeld ads"
-summary = "Sorry, but I actually like the Microsoft ads."
+description = "Sorry, but I actually like the Microsoft ads."
 draft = false
 comments = true
 date = "2008-09-12T07:54:00-05:00"

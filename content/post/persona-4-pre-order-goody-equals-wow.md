@@ -1,6 +1,6 @@
 +++
 title = "Persona 4 pre-order goody = wow"
-summary = "Persona 4 pre-order bonus amazes."
+description = "Persona 4 pre-order bonus amazes."
 draft = false
 comments = true
 date = "2008-12-10T19:54:00-06:00"

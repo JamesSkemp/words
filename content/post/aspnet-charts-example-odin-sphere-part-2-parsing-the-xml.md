@@ -1,6 +1,6 @@
 +++
 title = "ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML"
-summary = "In part two of a series on creating charts with ASP.NET, we grab an XML data file and populate our custom objects from part one with the necessary data."
+description = "In part two of a series on creating charts with ASP.NET, we grab an XML data file and populate our custom objects from part one with the necessary data."
 draft = false
 comments = true
 date = "2010-08-14T14:00:00-05:00"

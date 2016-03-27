@@ -1,6 +1,6 @@
 +++
 title = "Pepsi Ball released in San Francisco; injures 20, kills 1"
-summary = "Obviously, a fake story, but with a hint of truth."
+description = "Obviously, a fake story, but with a hint of truth."
 draft = false
 comments = false
 date = "2007-08-13T18:25:00-05:00"

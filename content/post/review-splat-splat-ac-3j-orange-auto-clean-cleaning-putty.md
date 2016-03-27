@@ -1,6 +1,6 @@
 +++
 title = "Review: Splat SPLAT-AC-3J Orange Auto Clean Cleaning Putty"
-summary = "Review of Splat SPLAT-AC-3J Orange Auto Clean Cleaning Putty."
+description = "Review of Splat SPLAT-AC-3J Orange Auto Clean Cleaning Putty."
 draft = false
 comments = true
 date = "2010-09-25T15:28:00-05:00"

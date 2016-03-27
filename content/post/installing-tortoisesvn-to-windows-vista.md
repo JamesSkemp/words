@@ -1,6 +1,6 @@
 +++
 title = "Installing TortoiseSVN to Windows Vista"
-summary = "In this article I'll be installing TortoiseSVN 1.4.8 to a Windows machine, running Vista Ultimate. [slnet0514:ed428114-f660-445d-a5ae-5ef4756fd2b3]"
+description = "In this article I'll be installing TortoiseSVN 1.4.8 to a Windows machine, running Vista Ultimate. [slnet0514:ed428114-f660-445d-a5ae-5ef4756fd2b3]"
 draft = false
 comments = true
 date = "2008-06-08T09:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "2007: A Year of Possibilities, Part 1"
-summary = "My plans for 2007.  What I'm looking forward to purchasing is covered in this post."
+description = "My plans for 2007.  What I'm looking forward to purchasing is covered in this post."
 draft = false
 comments = true
 date = "2006-12-31T11:55:00-06:00"

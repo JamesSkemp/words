@@ -1,6 +1,6 @@
 +++
 title = "Determine BlogEngine.NET comments that haven't been published - with LINQPad"
-summary = "Find all BlogEngine.NET posts with unapproved comments using this code and LINQPad."
+description = "Find all BlogEngine.NET posts with unapproved comments using this code and LINQPad."
 draft = false
 comments = true
 date = "2009-12-31T14:20:00-06:00"

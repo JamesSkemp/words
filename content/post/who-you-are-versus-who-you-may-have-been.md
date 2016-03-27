@@ -1,6 +1,6 @@
 +++
 title = "Who you are, versus who you may have been"
-summary = "The you that you could now be is not the you that you have become."
+description = "The you that you could now be is not the you that you have become."
 draft = false
 comments = true
 date = "2006-08-20T12:13:00-05:00"

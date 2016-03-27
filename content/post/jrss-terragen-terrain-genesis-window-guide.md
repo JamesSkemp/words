@@ -1,6 +1,6 @@
 +++
 title = "JRSs Terragen Terrain Genesis Window Guide"
-summary = "Information regarding the Landscape window in Terragen - specifically the Generate Terrain option. Written during the release of 0.9.08, but, information should apply to various versions."
+description = "Information regarding the Landscape window in Terragen - specifically the Generate Terrain option. Written during the release of 0.9.08, but, information should apply to various versions."
 draft = false
 comments = true
 date = "2003-08-09T01:01:00-05:00"

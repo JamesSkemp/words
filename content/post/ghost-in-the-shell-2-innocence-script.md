@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Script"
-summary = "Transcript of the movie Ghost in the Shell 2: Innocence. English translation, based upon a careful viewing with subtitles on. [slnet0514:3c68a35b-80cb-4cea-9477-b0cbe9086233]"
+description = "Transcript of the movie Ghost in the Shell 2: Innocence. English translation, based upon a careful viewing with subtitles on. [slnet0514:3c68a35b-80cb-4cea-9477-b0cbe9086233]"
 draft = false
 comments = true
 date = "2006-08-07T19:56:00-05:00"

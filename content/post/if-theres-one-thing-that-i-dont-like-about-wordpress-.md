@@ -1,6 +1,6 @@
 +++
 title = "If there's one thing that I don't like about WordPress .."
-summary = "WordPress definitely needs to work on their updating procedures, as well as how you enable/disable plugins."
+description = "WordPress definitely needs to work on their updating procedures, as well as how you enable/disable plugins."
 draft = false
 comments = false
 date = "2006-08-11T16:53:00-05:00"

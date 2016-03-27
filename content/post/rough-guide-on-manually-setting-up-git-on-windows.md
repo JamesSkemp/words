@@ -1,6 +1,6 @@
 +++
 title = "Rough guide on manually setting up Git on Windows"
-summary = "Rough guide on how to manually install Git on Windows."
+description = "Rough guide on how to manually install Git on Windows."
 draft = false
 comments = true
 date = "2013-10-06T08:58:25-05:00"

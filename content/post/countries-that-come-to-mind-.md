@@ -1,6 +1,6 @@
 +++
 title = "Countries that come to mind ..."
-summary = "Countries that come immediately to mind, along with those that probably should, but don't."
+description = "Countries that come immediately to mind, along with those that probably should, but don't."
 draft = false
 comments = true
 date = "2009-04-10T23:37:00-05:00"

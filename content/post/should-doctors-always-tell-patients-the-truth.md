@@ -1,6 +1,6 @@
 +++
 title = "Should Doctors Always Tell Patients the Truth?"
-summary = "Do medical doctors have an ethical obligation to tell the truth to their patients? The larger question, whether it is acceptable for individuals to lie, is also discussed."
+description = "Do medical doctors have an ethical obligation to tell the truth to their patients? The larger question, whether it is acceptable for individuals to lie, is also discussed."
 draft = false
 comments = true
 date = "2004-12-31T02:01:00-06:00"

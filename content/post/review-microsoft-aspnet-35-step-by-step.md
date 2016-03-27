@@ -1,6 +1,6 @@
 +++
 title = "Review: Microsoft ASP.NET 3.5 Step by Step"
-summary = "Book review of George Shepherd's Microsoft ASP.NET 3.5 Step by Step. [slnet0514:d22b3fe8-658b-4009-af4a-5daac43bc160]"
+description = "Book review of George Shepherd's Microsoft ASP.NET 3.5 Step by Step. [slnet0514:d22b3fe8-658b-4009-af4a-5daac43bc160]"
 draft = false
 comments = true
 date = "2008-06-08T12:00:00-05:00"

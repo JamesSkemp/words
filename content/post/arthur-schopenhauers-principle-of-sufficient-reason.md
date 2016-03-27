@@ -1,6 +1,6 @@
 +++
 title = "Arthur Schopenhauer's Principle of Sufficient Reason"
-summary = "A brief article regarding Arthur Schopenhauer's principle of sufficient reason, discussed in his work On the Fourfold Root of the Principle of Sufficient Reason."
+description = "A brief article regarding Arthur Schopenhauer's principle of sufficient reason, discussed in his work On the Fourfold Root of the Principle of Sufficient Reason."
 draft = false
 comments = true
 date = "2005-06-01T10:09:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "They gave me a home..."
-summary = "A short story."
+description = "A short story."
 draft = false
 comments = false
 date = "2003-02-13T00:02:00-06:00"

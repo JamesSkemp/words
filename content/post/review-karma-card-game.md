@@ -1,6 +1,6 @@
 +++
 title = "Review: Karma Card Game"
-summary = "The following is a review of the Karma Card Game, provided to me by the Amazon Vine program."
+description = "The following is a review of the Karma Card Game, provided to me by the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-04-10T11:30:11-05:00"

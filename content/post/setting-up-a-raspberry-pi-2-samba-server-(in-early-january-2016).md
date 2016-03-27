@@ -1,6 +1,6 @@
 +++
 title = "Setting up a Raspberry Pi 2 Samba server (in early January 2016)"
-summary = "Instructions on how to setup a Raspberry Pi 2 Samba server with a Seagate Backup Plus Slim 1TB."
+description = "Instructions on how to setup a Raspberry Pi 2 Samba server with a Seagate Backup Plus Slim 1TB."
 draft = false
 comments = true
 date = "2016-01-09T12:17:57-06:00"

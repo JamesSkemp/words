@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 2: Vanilla"
-summary = "In this article, we'll be going over how to install Vanilla 1.0.1.  We'll also be looking at how Vanilla stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install Vanilla 1.0.1.  We'll also be looking at how Vanilla stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-20T09:00:00-06:00"

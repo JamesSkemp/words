@@ -1,6 +1,6 @@
 +++
 title = "Thinking about you..."
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2003-06-21T00:01:00-05:00"

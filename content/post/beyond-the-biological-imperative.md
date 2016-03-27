@@ -1,6 +1,6 @@
 +++
 title = "Beyond the Biological Imperative"
-summary = "A look at the 'Biological Imperative' and it's implications."
+description = "A look at the 'Biological Imperative' and it's implications."
 draft = false
 comments = true
 date = "2003-10-30T01:01:00-06:00"

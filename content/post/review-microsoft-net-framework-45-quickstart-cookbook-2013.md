@@ -1,6 +1,6 @@
 +++
 title = "Review: Microsoft .NET Framework 4.5 Quickstart Cookbook (2013)"
-summary = "Review of Microsoft .NET Framework 4.5 Quickstart Cookbook (2013), written by Jose Luis Latorre Millas, and published by Packt Publishing."
+description = "Review of Microsoft .NET Framework 4.5 Quickstart Cookbook (2013), written by Jose Luis Latorre Millas, and published by Packt Publishing."
 draft = false
 comments = true
 date = "2013-06-30T15:55:00-05:00"

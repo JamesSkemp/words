@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 11: Chasing the Target"
-summary = "Transcript of scene 11 of the movie Ghost in the Shell. [slnet0514:6d57e61f-92be-499b-a714-dcb66fef5f29]"
+description = "Transcript of scene 11 of the movie Ghost in the Shell. [slnet0514:6d57e61f-92be-499b-a714-dcb66fef5f29]"
 draft = false
 comments = true
 date = "2008-06-01T16:00:00-05:00"

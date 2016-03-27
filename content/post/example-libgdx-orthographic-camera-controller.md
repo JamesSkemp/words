@@ -1,6 +1,6 @@
 +++
 title = "Example libGDX orthographic camera controller"
-summary = "The following class can be used in a libGDX project as a framework for your own orthographic camera controller."
+description = "The following class can be used in a libGDX project as a framework for your own orthographic camera controller."
 draft = false
 comments = true
 date = "2015-06-20T12:48:29-05:00"

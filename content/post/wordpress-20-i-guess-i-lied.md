@@ -1,6 +1,6 @@
 +++
 title = "WordPress 2.0?  I guess I lied"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-01-01T17:03:00-06:00"

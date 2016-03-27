@@ -1,6 +1,6 @@
 +++
 title = "Cho Seung-Hui Against All: On Societies Need to Ostracize the Ill"
-summary = "Will Cho, even in death, continue to be put on mute?"
+description = "Will Cho, even in death, continue to be put on mute?"
 draft = false
 comments = true
 date = "2007-04-20T17:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "RIAA wants CD ripping to be illegal?"
-summary = "It's true, at least from news stories currently coming in."
+description = "It's true, at least from news stories currently coming in."
 draft = false
 comments = true
 date = "2006-02-16T09:07:00-06:00"

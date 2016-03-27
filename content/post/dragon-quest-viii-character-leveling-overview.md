@@ -1,6 +1,6 @@
 +++
 title = "Dragon Quest VIII: Character leveling overview"
-summary = "A guide to leveling Dragon Quest VIII characters is now available. [slnet0514:793d3641-3fa7-4d07-adfb-ff84f1dc2107]"
+description = "A guide to leveling Dragon Quest VIII characters is now available. [slnet0514:793d3641-3fa7-4d07-adfb-ff84f1dc2107]"
 draft = false
 comments = true
 date = "2008-01-08T10:50:00-06:00"

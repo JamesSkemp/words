@@ -1,6 +1,6 @@
 +++
 title = "Playstation Home Beta: First impressions"
-summary = "Is there any reason to really use Home, if you don't want to socialize?"
+description = "Is there any reason to really use Home, if you don't want to socialize?"
 draft = false
 comments = true
 date = "2008-12-26T19:25:00-06:00"

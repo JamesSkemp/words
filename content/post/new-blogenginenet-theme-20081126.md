@@ -1,6 +1,6 @@
 +++
 title = "New BlogEngine.NET Theme: 20081126"
-summary = "I created a new theme for BlogEngine.NET, my first with the new widgets functionality."
+description = "I created a new theme for BlogEngine.NET, my first with the new widgets functionality."
 draft = false
 comments = true
 date = "2008-11-27T00:15:00-06:00"

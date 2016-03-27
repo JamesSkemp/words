@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 8: The Store"
-summary = "Transcript of scene 8 of the movie Ghost in the Shell 2: Innocence.  One of the coolest scenes of the movie, in my opinion."
+description = "Transcript of scene 8 of the movie Ghost in the Shell 2: Innocence.  One of the coolest scenes of the movie, in my opinion."
 draft = false
 comments = true
 date = "2006-08-09T21:20:00-05:00"

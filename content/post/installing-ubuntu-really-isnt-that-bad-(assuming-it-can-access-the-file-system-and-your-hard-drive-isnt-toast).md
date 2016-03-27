@@ -1,6 +1,6 @@
 +++
 title = "Installing Ubuntu really isn't that bad (assuming it can access the file system and your hard drive isn't toast)"
-summary = "After a bit of trouble, I've got a box with Ubuntu installed on it. Woot!"
+description = "After a bit of trouble, I've got a box with Ubuntu installed on it. Woot!"
 draft = false
 comments = true
 date = "2006-08-18T19:19:00-05:00"

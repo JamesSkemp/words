@@ -1,6 +1,6 @@
 +++
 title = "Subversion 1.5.3 and TortoiseSVN 1.5.4 released"
-summary = "The newest versions of Subversion and TortoiseSVN were released just last week."
+description = "The newest versions of Subversion and TortoiseSVN were released just last week."
 draft = false
 comments = true
 date = "2008-10-12T18:05:00-05:00"

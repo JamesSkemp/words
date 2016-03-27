@@ -1,6 +1,6 @@
 +++
 title = "WinMX Help: How to read those Double-Byte filenames, User ID's and Messages"
-summary = "Guide by Byte_Bucket on how to setup WinMX to display Japanese fonts for filenames, user IDs, and messages."
+description = "Guide by Byte_Bucket on how to setup WinMX to display Japanese fonts for filenames, user IDs, and messages."
 draft = false
 comments = false
 date = "2003-08-20T00:00:00-05:00"

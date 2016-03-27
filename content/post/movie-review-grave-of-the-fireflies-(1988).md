@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Grave of the Fireflies (1988)"
-summary = "Movie review of the depressing Grave of the Fireflies (1988)."
+description = "Movie review of the depressing Grave of the Fireflies (1988)."
 draft = false
 comments = true
 date = "2006-10-13T18:02:00-05:00"

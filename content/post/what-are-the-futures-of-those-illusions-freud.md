@@ -1,6 +1,6 @@
 +++
 title = "What are the futures of those illusions Freud?"
-summary = "A discussion based upon Sigmund Freud’s work titled The Future of an Illusion."
+description = "A discussion based upon Sigmund Freud’s work titled The Future of an Illusion."
 draft = false
 comments = true
 date = "2004-09-26T01:01:00-05:00"

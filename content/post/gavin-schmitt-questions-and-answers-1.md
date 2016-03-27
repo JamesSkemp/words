@@ -1,6 +1,6 @@
 +++
 title = "Gavin Schmitt: Questions and Answers 1"
-summary = "A couple of questions and answers with Gavin Schmitt."
+description = "A couple of questions and answers with Gavin Schmitt."
 draft = false
 comments = true
 date = "2007-10-31T13:50:00-05:00"

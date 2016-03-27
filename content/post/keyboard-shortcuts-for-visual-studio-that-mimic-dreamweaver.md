@@ -1,6 +1,6 @@
 +++
 title = "Keyboard shortcuts for Visual Studio that mimic Dreamweaver"
-summary = "I've been using Dreamweaver so long that I really miss some keyboard shortcuts while using Visual Studio. [slnet0514:15f0c1c8-b0da-4398-8435-7fbd5f5b089b]"
+description = "I've been using Dreamweaver so long that I really miss some keyboard shortcuts while using Visual Studio. [slnet0514:15f0c1c8-b0da-4398-8435-7fbd5f5b089b]"
 draft = false
 comments = true
 date = "2008-05-14T14:15:00-05:00"

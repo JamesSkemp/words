@@ -1,6 +1,6 @@
 +++
 title = "Review: Borderlands"
-summary = "Review of Borderlands, for the Playstation 3 and Xbox 360. (Playstation 3 version played.)"
+description = "Review of Borderlands, for the Playstation 3 and Xbox 360. (Playstation 3 version played.)"
 draft = false
 comments = true
 date = "2010-01-24T20:19:00-06:00"

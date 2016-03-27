@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 13: Unification"
-summary = "Transcript of scene 13 of the movie Ghost in the Shell. [slnet0514:f66bf96c-7581-4f45-ab9c-1fd6ddd476e0]"
+description = "Transcript of scene 13 of the movie Ghost in the Shell. [slnet0514:f66bf96c-7581-4f45-ab9c-1fd6ddd476e0]"
 draft = false
 comments = true
 date = "2008-06-01T17:00:00-05:00"

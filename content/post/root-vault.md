@@ -1,6 +1,6 @@
 +++
 title = "Root /Vault"
-summary = "Thanks to some great service yesterday, I've successfully logged into my Vault again, and am seeing actual data.  I have a day and a half of data, but I'm already quite impressed with the user interface.  I'm also extremely impressed by the feedback I've received from individuals involved in the project. This is definitely something that I'm looking forward to seeing how it develops in the near future.  They've definitely hit on something big."
+description = "Thanks to some great service yesterday, I've successfully logged into my Vault again, and am seeing actual data.  I have a day and a half of data, but I'm already quite impressed with the user interface.  I'm also extremely impressed by the feedback I've received from individuals involved in the project. This is definitely something that I'm looking forward to seeing how it develops in the near future.  They've definitely hit on something big."
 draft = false
 comments = true
 date = "2006-04-24T20:16:00-05:00"

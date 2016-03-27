@@ -1,6 +1,6 @@
 +++
 title = "Review: Perfect Fitness Pushup Stands"
-summary = "The following is a review of Perfect Fitness Pushup Stands, received as part of the Amazon Vine program."
+description = "The following is a review of Perfect Fitness Pushup Stands, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-11-22T10:20:54-06:00"

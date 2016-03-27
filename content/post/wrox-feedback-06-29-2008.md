@@ -1,6 +1,6 @@
 +++
 title = "Wrox feedback - June 29 2008"
-summary = "Feedback sent to Wrox on June 29, 2008."
+description = "Feedback sent to Wrox on June 29, 2008."
 draft = false
 comments = true
 date = "2008-06-29T16:43:00-05:00"

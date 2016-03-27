@@ -1,6 +1,6 @@
 +++
 title = "Review: To the Moon (2011)"
-summary = "The following is a review of To the Moon (2011), available for PC on Steam."
+description = "The following is a review of To the Moon (2011), available for PC on Steam."
 draft = false
 comments = false
 date = "2014-06-28T07:09:33-05:00"

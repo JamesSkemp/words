@@ -1,6 +1,6 @@
 +++
 title = "How to really compact Virtual PC hard drives"
-summary = "Experience with Virtual PC hard drives that just didn't want to compact (and what I was doing wrong)."
+description = "Experience with Virtual PC hard drives that just didn't want to compact (and what I was doing wrong)."
 draft = false
 comments = true
 date = "2008-11-18T20:16:00-06:00"

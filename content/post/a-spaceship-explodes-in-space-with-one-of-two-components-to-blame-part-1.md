@@ -1,6 +1,6 @@
 +++
 title = "A spaceship explodes in space, with one of two components to blame - Part 1"
-summary = "What if there is an equal chance of two components causing the exact same state of affairs?"
+description = "What if there is an equal chance of two components causing the exact same state of affairs?"
 draft = false
 comments = true
 date = "2007-07-14T20:48:00-05:00"

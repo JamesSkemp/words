@@ -1,6 +1,6 @@
 +++
 title = "DD-WRT and my Linksys WRT54GL"
-summary = "I tried updating my WRT54GL to DD-WRT. Can you guess what happened?"
+description = "I tried updating my WRT54GL to DD-WRT. Can you guess what happened?"
 draft = false
 comments = true
 date = "2011-04-23T17:24:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Don't let my recent posts confuse you"
-summary = "Brief comments on why I'm not yet ready for Linux-only ..."
+description = "Brief comments on why I'm not yet ready for Linux-only ..."
 draft = false
 comments = true
 date = "2007-06-18T21:24:00-05:00"

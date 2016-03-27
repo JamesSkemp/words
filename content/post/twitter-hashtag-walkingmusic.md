@@ -1,6 +1,6 @@
 +++
 title = "Twitter hashtag - #walkingmusic"
-summary = "An original Twitter hashtag - #walkingmusic. It's pretty obvious, I think."
+description = "An original Twitter hashtag - #walkingmusic. It's pretty obvious, I think."
 draft = false
 comments = true
 date = "2009-04-24T17:12:00-05:00"

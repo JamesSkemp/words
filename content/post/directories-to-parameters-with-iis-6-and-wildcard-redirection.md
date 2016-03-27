@@ -1,6 +1,6 @@
 +++
 title = "Directories to parameters with IIS 6 and wildcard redirection"
-summary = "This could be old news, and since I'm talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory, and a URL that contains directories below the virtual directory. [slnet0514:3219a695-d0e2-4fcb-9f78-9cea8220350a]"
+description = "This could be old news, and since I'm talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory, and a URL that contains directories below the virtual directory. [slnet0514:3219a695-d0e2-4fcb-9f78-9cea8220350a]"
 draft = false
 comments = true
 date = "2008-05-29T22:45:00-05:00"

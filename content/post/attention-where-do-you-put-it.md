@@ -1,6 +1,6 @@
 +++
 title = "Attention: Where do you put it?"
-summary = "In some way, I found AttentionTrust.org.  Basically, AttentionTrust operates under the principle that your attention is both yours, and of worth."
+description = "In some way, I found AttentionTrust.org.  Basically, AttentionTrust operates under the principle that your attention is both yours, and of worth."
 draft = false
 comments = true
 date = "2006-04-18T19:11:00-05:00"

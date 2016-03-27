@@ -1,6 +1,6 @@
 +++
 title = "Review of Brian J. Robb's Counterfeit Worlds"
-summary = "A review of Counterfeit Worlds, written by Brian J. Robb."
+description = "A review of Counterfeit Worlds, written by Brian J. Robb."
 draft = false
 comments = true
 date = "2007-05-26T20:26:00-05:00"

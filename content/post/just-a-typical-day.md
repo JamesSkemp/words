@@ -1,6 +1,6 @@
 +++
 title = "Just a typical day..."
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2003-03-12T00:02:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Should Obama have a personal blog?"
-summary = "Should President Obama start an official blog, giving us a deeper insight into the White House?"
+description = "Should President Obama start an official blog, giving us a deeper insight into the White House?"
 draft = false
 comments = true
 date = "2009-01-24T08:48:00-06:00"

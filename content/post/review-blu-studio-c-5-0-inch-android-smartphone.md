@@ -1,6 +1,6 @@
 +++
 title = "Review: BLU Studio C 5.0-Inch Android Smartphone"
-summary = "The following is a review of the BLU Studio C 5.0-Inch Android Smartphone, received as part of the Amazon Vine program."
+description = "The following is a review of the BLU Studio C 5.0-Inch Android Smartphone, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-06-27T10:15:05-05:00"

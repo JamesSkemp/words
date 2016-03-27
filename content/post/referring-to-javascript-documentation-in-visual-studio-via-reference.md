@@ -1,6 +1,6 @@
 +++
 title = "Referring to JavaScript documentation in Visual Studio via reference"
-summary = "How to add a reference to a VSDOC file within Visual Studio for improved Intellisense."
+description = "How to add a reference to a VSDOC file within Visual Studio for improved Intellisense."
 draft = false
 comments = true
 date = "2010-07-03T13:32:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache 2.0.59 to a Windows-based computer, locally: Part 4"
-summary = "In the last part of the Apache 2.0.59 installation guide, we cover creating batch files to switch between various instances of Apache, PHP, and ColdFusion. In a later guide we'll clean this process up considerably, but until then ..."
+description = "In the last part of the Apache 2.0.59 installation guide, we cover creating batch files to switch between various instances of Apache, PHP, and ColdFusion. In a later guide we'll clean this process up considerably, but until then ..."
 draft = false
 comments = true
 date = "2006-08-28T21:45:00-05:00"

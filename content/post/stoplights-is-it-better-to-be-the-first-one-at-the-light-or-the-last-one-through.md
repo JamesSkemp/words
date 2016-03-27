@@ -1,6 +1,6 @@
 +++
 title = "Stoplights: Is it better to be the first one at the light, or the last one through?"
-summary = "Thoughts on stopping at a yellow light versus automatically accelerating."
+description = "Thoughts on stopping at a yellow light versus automatically accelerating."
 draft = false
 comments = true
 date = "2005-01-19T02:01:00-06:00"

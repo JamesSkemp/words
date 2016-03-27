@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET 1.1 Theme - Swan Dive"
-summary = "James Skemp is proud to present Swan Dive, a theme for BlogEngine.NET 1.1."
+description = "James Skemp is proud to present Swan Dive, a theme for BlogEngine.NET 1.1."
 draft = false
 comments = false
 date = "2007-07-25T10:46:00-05:00"

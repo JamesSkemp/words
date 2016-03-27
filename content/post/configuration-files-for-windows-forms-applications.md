@@ -1,6 +1,6 @@
 +++
 title = "Configuration files for Windows Forms Applications"
-summary = "Using configuration files may be the preferred method, but if it is, why is it so difficult to find resources on how to do so? Here's what I did."
+description = "Using configuration files may be the preferred method, but if it is, why is it so difficult to find resources on how to do so? Here's what I did."
 draft = false
 comments = true
 date = "2009-03-05T22:10:00-06:00"

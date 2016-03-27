@@ -1,6 +1,6 @@
 +++
 title = "Gmail and Firefox 2.0.0.5 - issues with JavaScript?"
-summary = "Issues with Gmail and Firefox 2.0.0.5?"
+description = "Issues with Gmail and Firefox 2.0.0.5?"
 draft = false
 comments = true
 date = "2007-07-24T12:45:00-05:00"

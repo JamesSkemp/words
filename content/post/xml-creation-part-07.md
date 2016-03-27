@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 7"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part seven I'll be expanding upon our XSLT to remove elements that are empty, and change the sort order, for our existing XML file. [slnet0514:680bb8b9-f4f2-4e57-82a1-96a763c03a55]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part seven I'll be expanding upon our XSLT to remove elements that are empty, and change the sort order, for our existing XML file. [slnet0514:680bb8b9-f4f2-4e57-82a1-96a763c03a55]"
 draft = false
 comments = true
 date = "2007-12-31T13:00:00-06:00"

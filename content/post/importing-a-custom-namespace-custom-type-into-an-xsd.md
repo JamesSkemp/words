@@ -1,6 +1,6 @@
 +++
 title = "Importing a custom namespace / custom type into an XSD"
-summary = "How to save and import a custom type into an XML Schema Document (XSD)."
+description = "How to save and import a custom type into an XML Schema Document (XSD)."
 draft = false
 comments = true
 date = "2010-09-05T09:00:00-05:00"

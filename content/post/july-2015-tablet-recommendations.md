@@ -1,6 +1,6 @@
 +++
 title = "July 2015 tablet recommendations"
-summary = "The following is an email I sent on July 23, 2015, to someone who was looking to purchase her first tablet. It's now a month out of date, but I hope it helps someone, or is historically interesting."
+description = "The following is an email I sent on July 23, 2015, to someone who was looking to purchase her first tablet. It's now a month out of date, but I hope it helps someone, or is historically interesting."
 draft = false
 comments = true
 date = "2015-08-29T15:12:33-05:00"

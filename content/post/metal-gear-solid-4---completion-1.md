@@ -1,6 +1,6 @@
 +++
 title = "Metal Gear Solid 4 - Completion 1"
-summary = "First playthrough results for Metal Gear Solid 4. [slnet0514:945b2c8e-ad23-43eb-8f3d-a4350196fb9e]"
+description = "First playthrough results for Metal Gear Solid 4. [slnet0514:945b2c8e-ad23-43eb-8f3d-a4350196fb9e]"
 draft = false
 comments = true
 date = "2008-06-20T21:38:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Alice: Madness Returns (2011)"
-summary = "The following is a review of Alice: Madness Returns, released in 2011 for the PlayStation 3 and Xbox 360."
+description = "The following is a review of Alice: Madness Returns, released in 2011 for the PlayStation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2013-09-08T14:59:00-05:00"

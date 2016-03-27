@@ -1,6 +1,6 @@
 +++
 title = "Review: 30-Minute Mandalas Coloring Book"
-summary = "Review of 30-Minute Mandalas Coloring Book: Active Meditation for the Mind and Body OR Easy Meditation through Coloring."
+description = "Review of 30-Minute Mandalas Coloring Book: Active Meditation for the Mind and Body OR Easy Meditation through Coloring."
 draft = false
 comments = true
 date = "2011-04-29T16:30:00-05:00"

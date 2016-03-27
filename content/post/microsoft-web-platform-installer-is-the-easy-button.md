@@ -1,6 +1,6 @@
 +++
 title = "Microsoft Web Platform Installer = the easy button"
-summary = "Need an easy button? Microsoft's Web Platform Installer is exactly that for Windows-based machines."
+description = "Need an easy button? Microsoft's Web Platform Installer is exactly that for Windows-based machines."
 draft = false
 comments = true
 date = "2010-05-14T16:20:00-05:00"

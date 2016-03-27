@@ -1,6 +1,6 @@
 +++
 title = "Google Calendar access?"
-summary = "For the last 10 minutes, while downloading the latest Microsoft patches from Tuesday, I've been trying to access Google Calendar.  I'm prompted to login, after a long wait, and then I wait some more, only to be sent to my Google Account page."
+description = "For the last 10 minutes, while downloading the latest Microsoft patches from Tuesday, I've been trying to access Google Calendar.  I'm prompted to login, after a long wait, and then I wait some more, only to be sent to my Google Account page."
 draft = false
 comments = false
 date = "2006-04-14T20:48:00-05:00"

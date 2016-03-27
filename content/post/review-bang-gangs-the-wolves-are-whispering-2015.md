@@ -1,6 +1,6 @@
 +++
 title = "Review: Bang Gang's The Wolves Are Whispering (2015)"
-summary = "The following is a review of Bang Gang's 2015 album The Wolves Are Whispering."
+description = "The following is a review of Bang Gang's 2015 album The Wolves Are Whispering."
 draft = false
 comments = false
 date = "2015-06-26T20:21:21-05:00"

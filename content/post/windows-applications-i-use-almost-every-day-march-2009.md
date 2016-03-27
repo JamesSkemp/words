@@ -1,6 +1,6 @@
 +++
 title = "Windows applications I use almost every day (March 2009)"
-summary = "A listing of Windows applications that I use almost every day. What about you?"
+description = "A listing of Windows applications that I use almost every day. What about you?"
 draft = false
 comments = true
 date = "2009-03-14T16:34:00-05:00"

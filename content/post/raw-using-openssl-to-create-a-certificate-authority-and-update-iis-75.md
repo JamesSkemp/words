@@ -1,6 +1,6 @@
 +++
 title = "Raw: Using OpenSSL to create a certificate authority and update IIS 7.5"
-summary = "A raw dump of information on how to create a certificate authority and etcetera."
+description = "A raw dump of information on how to create a certificate authority and etcetera."
 draft = false
 comments = true
 date = "2010-12-29T20:42:00-06:00"

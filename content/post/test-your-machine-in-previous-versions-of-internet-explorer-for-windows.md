@@ -1,6 +1,6 @@
 +++
 title = "Test your machine in previous versions of Internet Explorer (for Windows)"
-summary = "Need to see what IE 6 users see when they visit your site? [slnet0514:0a8aaf94-4293-41b1-9fc1-8888a65f6564]"
+description = "Need to see what IE 6 users see when they visit your site? [slnet0514:0a8aaf94-4293-41b1-9fc1-8888a65f6564]"
 draft = false
 comments = true
 date = "2008-03-15T17:50:00-05:00"

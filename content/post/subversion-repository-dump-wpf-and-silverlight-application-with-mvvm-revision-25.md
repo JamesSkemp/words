@@ -1,6 +1,6 @@
 +++
 title = "Subversion repository dump: WPF and Silverlight application, with MVVM (revision 25)"
-summary = "Subversion repository dump and export with code for a Visual Studio 2010 solution with WPF and Silverlight clients, using the sample Northwind database, and the MVVM pattern."
+description = "Subversion repository dump and export with code for a Visual Studio 2010 solution with WPF and Silverlight clients, using the sample Northwind database, and the MVVM pattern."
 draft = false
 comments = true
 date = "2010-10-24T15:00:00-05:00"

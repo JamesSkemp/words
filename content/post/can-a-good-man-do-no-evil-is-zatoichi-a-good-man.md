@@ -1,6 +1,6 @@
 +++
 title = "Can A Good Man Do No Evil? Is Zatoichi A Good Man?"
-summary = "On whether Zatoichi is a good man. [slnet0514:7afa2dba-8eb3-4759-9104-8336b5df2eb8]"
+description = "On whether Zatoichi is a good man. [slnet0514:7afa2dba-8eb3-4759-9104-8336b5df2eb8]"
 draft = false
 comments = true
 date = "2008-02-23T19:30:00-06:00"

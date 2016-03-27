@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 12: Kim's Mansion. Again"
-summary = "Transcript of scene 12 of the movie Ghost in the Shell 2: Innocence. Chapter 2 of 4 covering Kim's Mansion."
+description = "Transcript of scene 12 of the movie Ghost in the Shell 2: Innocence. Chapter 2 of 4 covering Kim's Mansion."
 draft = false
 comments = true
 date = "2006-08-19T16:39:00-05:00"

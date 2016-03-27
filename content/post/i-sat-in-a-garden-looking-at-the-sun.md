@@ -1,6 +1,6 @@
 +++
 title = "I sat in a garden, looking at the sun..."
-summary = "Inspired by Jim Morrison and the Doors."
+description = "Inspired by Jim Morrison and the Doors."
 draft = false
 comments = false
 date = "2003-05-11T00:01:00-05:00"

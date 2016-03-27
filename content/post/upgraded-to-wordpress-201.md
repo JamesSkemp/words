@@ -1,6 +1,6 @@
 +++
 title = "Upgraded to WordPress 2.0.1"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2006-02-05T12:14:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "How to install Internet Information Services (IIS) 7 on Windows Vista Home Premium"
-summary = "In this guide I'll be covering just how easy it is to setup the default installation of IIS 7 in Windows Vista Home Premium. [slnet0514:2040411a-63de-4dd6-a7f6-31af01e13a31]"
+description = "In this guide I'll be covering just how easy it is to setup the default installation of IIS 7 in Windows Vista Home Premium. [slnet0514:2040411a-63de-4dd6-a7f6-31af01e13a31]"
 draft = false
 comments = true
 date = "2008-03-21T15:45:00-05:00"

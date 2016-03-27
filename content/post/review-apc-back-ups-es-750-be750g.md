@@ -1,6 +1,6 @@
 +++
 title = "Review: APC Back-UPS ES 750 (BE750G)"
-summary = "Review of the APC Back-UPS ES 750."
+description = "Review of the APC Back-UPS ES 750."
 draft = false
 comments = true
 date = "2008-07-04T18:30:00-05:00"

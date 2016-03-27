@@ -1,6 +1,6 @@
 +++
 title = "Migration from CollabNet Subversion to VisualSVN Server"
-summary = "Basic steps to migrate from CollabNet Subversion to VisualSVN Server."
+description = "Basic steps to migrate from CollabNet Subversion to VisualSVN Server."
 draft = false
 comments = true
 date = "2011-11-18T19:30:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "The Wiki"
-summary = "The Wikipedia - still under fire."
+description = "The Wikipedia - still under fire."
 draft = false
 comments = true
 date = "2007-03-06T18:54:00-06:00"

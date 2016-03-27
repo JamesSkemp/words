@@ -1,6 +1,6 @@
 +++
 title = "Visual Basic Programming: Tic-Tac-Toe"
-summary = "Description of a program that I created using Visual Basic called 'Tic-Tac-Toe'."
+description = "Description of a program that I created using Visual Basic called 'Tic-Tac-Toe'."
 draft = false
 comments = true
 date = "2003-12-31T00:01:00-06:00"

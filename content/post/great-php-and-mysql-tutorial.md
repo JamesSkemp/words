@@ -1,6 +1,6 @@
 +++
 title = "Great PHP and MySQL tutorial"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-11-05T15:26:00-06:00"

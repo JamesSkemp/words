@@ -1,6 +1,6 @@
 +++
 title = "Installing SQL Server Express 2008 on Windows Server 2003"
-summary = "In this article we install Microsoft SQL Server Express 2008 on a virtual machine running Windows Server 2003."
+description = "In this article we install Microsoft SQL Server Express 2008 on a virtual machine running Windows Server 2003."
 draft = false
 comments = true
 date = "2009-12-20T12:30:00-06:00"

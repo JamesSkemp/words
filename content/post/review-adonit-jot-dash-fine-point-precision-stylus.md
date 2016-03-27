@@ -1,6 +1,6 @@
 +++
 title = "Review: Adonit Jot Dash - Fine Point Precision Stylus"
-summary = "The following is a review of the Adonit Jot Dash - Fine Point Precision Stylus, received as part of the Amazon Vine program."
+description = "The following is a review of the Adonit Jot Dash - Fine Point Precision Stylus, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-11-14T11:29:52-06:00"

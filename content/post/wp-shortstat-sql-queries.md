@@ -1,6 +1,6 @@
 +++
 title = "WP-ShortStat SQL queries"
-summary = "SQL queries to update records from older versions of wp-shortstats."
+description = "SQL queries to update records from older versions of wp-shortstats."
 draft = false
 comments = true
 date = "2006-04-04T20:13:00-05:00"

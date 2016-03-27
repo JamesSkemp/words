@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Princess Mononoke (1997)"
-summary = "Review of Princess Mononoke (1997)."
+description = "Review of Princess Mononoke (1997)."
 draft = false
 comments = true
 date = "2006-11-15T21:13:00-06:00"

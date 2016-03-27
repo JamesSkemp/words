@@ -1,6 +1,6 @@
 +++
 title = "I own an Xbox 360"
-summary = "That's right, I purchased one yesterday. Yikes."
+description = "That's right, I purchased one yesterday. Yikes."
 draft = false
 comments = true
 date = "2008-12-03T21:26:00-06:00"

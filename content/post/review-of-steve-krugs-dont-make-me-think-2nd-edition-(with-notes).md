@@ -1,6 +1,6 @@
 +++
 title = "Review of Steve Krug's Don't Make Me Think: 2nd Edition (with notes)"
-summary = "A review of Steve Krug's Don't Make Me Think: 2nd Edition, plus my notes on the book."
+description = "A review of Steve Krug's Don't Make Me Think: 2nd Edition, plus my notes on the book."
 draft = false
 comments = true
 date = "2007-09-28T15:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Cisco Cache Cleaner and IE 7 on Windows XP Home"
-summary = "Cisco's Cache Cleaner may make it appear that your computer forgot all your usernames and passwords. It may not have. [slnet0514:ef4a48dd-779f-443f-97ee-4c919be7e2d0]"
+description = "Cisco's Cache Cleaner may make it appear that your computer forgot all your usernames and passwords. It may not have. [slnet0514:ef4a48dd-779f-443f-97ee-4c919be7e2d0]"
 draft = false
 comments = true
 date = "2008-02-17T09:00:00-06:00"

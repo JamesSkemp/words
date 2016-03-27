@@ -1,6 +1,6 @@
 +++
 title = "The Daily Show is now available online"
-summary = "Archives of The Daily Show have recently been made available online."
+description = "Archives of The Daily Show have recently been made available online."
 draft = false
 comments = true
 date = "2007-10-19T17:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Crisis Core: Final Fantasy VII"
-summary = "Review of Crisis Core: Final Fantasy VII, for the Sony PlayStation Portable."
+description = "Review of Crisis Core: Final Fantasy VII, for the Sony PlayStation Portable."
 draft = false
 comments = true
 date = "2010-11-28T15:40:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "On Web sites that feature Facebook Comments"
-summary = "Thoughts on Web sites that use Facebook to handle their comments."
+description = "Thoughts on Web sites that use Facebook to handle their comments."
 draft = false
 comments = true
 date = "2011-06-24T16:55:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Applications I have to install on my core development machine"
-summary = "Here's a listing of files I need to have installed on my core development machine."
+description = "Here's a listing of files I need to have installed on my core development machine."
 draft = false
 comments = true
 date = "2009-10-09T21:14:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "See you later LG UX6000 - you've been swell"
-summary = "Upgraded to a LG UX565 from a LG UX6000."
+description = "Upgraded to a LG UX565 from a LG UX6000."
 draft = false
 comments = true
 date = "2008-10-14T08:22:00-05:00"

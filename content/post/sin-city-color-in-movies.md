@@ -1,6 +1,6 @@
 +++
 title = "Sin City / color in movies"
-summary = "Thread from Facebook on color in movies."
+description = "Thread from Facebook on color in movies."
 draft = false
 comments = true
 date = "2010-10-23T10:42:00-05:00"

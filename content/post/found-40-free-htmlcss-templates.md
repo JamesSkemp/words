@@ -1,6 +1,6 @@
 +++
 title = "Found: 40 free HTML/CSS templates"
-summary = "Alessandro Fulciniti, along with an unnamed number of people, have create 40 CSS-based templates, free for download, available at http://blog.html.it/layoutgala/."
+description = "Alessandro Fulciniti, along with an unnamed number of people, have create 40 CSS-based templates, free for download, available at http://blog.html.it/layoutgala/."
 draft = false
 comments = false
 date = "2006-03-24T20:01:00-06:00"

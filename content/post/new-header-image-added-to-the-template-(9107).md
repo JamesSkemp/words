@@ -1,6 +1,6 @@
 +++
 title = "New header image added to the template (9/1/07)"
-summary = "New image used for the site template."
+description = "New image used for the site template."
 draft = false
 comments = true
 date = "2007-09-01T12:43:00-05:00"

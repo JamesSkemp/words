@@ -1,6 +1,6 @@
 +++
 title = "Review: Kathy Tyers - Star Wars: The Truce at Bakura"
-summary = "Book review of Kathy Tyers' Star Wars: The Truce at Bakura."
+description = "Book review of Kathy Tyers' Star Wars: The Truce at Bakura."
 draft = false
 comments = false
 date = "2000-10-13T01:01:00-05:00"

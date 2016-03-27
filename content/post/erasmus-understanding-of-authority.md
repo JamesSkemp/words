@@ -1,6 +1,6 @@
 +++
 title = "Erasmus' Understanding of Authority"
-summary = "Perspectives of Human Values: The Renaissance mid-term paper. Deals with Erasmus and authority. [slnet0514:c35d85ab-d839-4f73-9198-292f6b91bbd1]"
+description = "Perspectives of Human Values: The Renaissance mid-term paper. Deals with Erasmus and authority. [slnet0514:c35d85ab-d839-4f73-9198-292f6b91bbd1]"
 draft = false
 comments = true
 date = "2001-10-10T03:19:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Alienware Steam Machine ASM100-4980BLK Desktop Console (Intel Core i5, 8 GB RAM, 1 TB HDD) NVIDIA GeForce GTX GPU"
-summary = "The following is a review of the Alienware Steam Machine ASM100-4980BLK Desktop Console, featuring an Intel Core i5, 8 GB RAM, 1 TB HDD, and NVIDIA GeForce GTX GPU, received as part of the Amazon Vine program."
+description = "The following is a review of the Alienware Steam Machine ASM100-4980BLK Desktop Console, featuring an Intel Core i5, 8 GB RAM, 1 TB HDD, and NVIDIA GeForce GTX GPU, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2016-03-01T19:03:15-06:00"

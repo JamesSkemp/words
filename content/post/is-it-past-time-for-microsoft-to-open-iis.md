@@ -1,6 +1,6 @@
 +++
 title = "Is it past time for Microsoft to open IIS?"
-summary = "Is it time for Microsoft to release a developer edition of IIS?  This writer thinks so."
+description = "Is it time for Microsoft to release a developer edition of IIS?  This writer thinks so."
 draft = false
 comments = true
 date = "2006-09-23T18:42:00-05:00"

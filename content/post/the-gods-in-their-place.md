@@ -1,6 +1,6 @@
 +++
 title = "The gods in their place"
-summary = "A simple statement, with complex meaning."
+description = "A simple statement, with complex meaning."
 draft = false
 comments = true
 date = "2010-02-08T07:40:00-06:00"

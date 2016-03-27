@@ -1,6 +1,6 @@
 +++
 title = "A Bunny Story (Version 1)"
-summary = "A short piece of prose."
+description = "A short piece of prose."
 draft = false
 comments = false
 date = "2002-11-03T00:01:00-06:00"

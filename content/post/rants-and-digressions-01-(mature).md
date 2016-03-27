@@ -1,6 +1,6 @@
 +++
 title = "Rants and Digressions 01 (Mature)"
-summary = "Language warning! Yeah... don't view this unless you want to see me as this portrays me, and I mean it... It's an absolute rant, and it's a complete digression of what this site is about (which is family values, or something...)."
+description = "Language warning! Yeah... don't view this unless you want to see me as this portrays me, and I mean it... It's an absolute rant, and it's a complete digression of what this site is about (which is family values, or something...)."
 draft = false
 comments = false
 date = "2003-03-31T00:01:00-06:00"

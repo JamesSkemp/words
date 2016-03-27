@@ -1,6 +1,6 @@
 +++
 title = "Review: Parasite Eve"
-summary = "Review of Parasite Eve, for the Sony PlayStation 1."
+description = "Review of Parasite Eve, for the Sony PlayStation 1."
 draft = false
 comments = true
 date = "2011-01-16T11:05:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Searching for a Friend: The Quest for a Definition of 'Friend' -or- What is a Friend? -or- Relationships with Others"
-summary = "What exactly is it that makes an individual a 'friend'?  Why is one person a 'friend', while another not, and yet another your 'best friend'?  How should we define 'friend' in our lives?"
+description = "What exactly is it that makes an individual a 'friend'?  Why is one person a 'friend', while another not, and yet another your 'best friend'?  How should we define 'friend' in our lives?"
 draft = false
 comments = true
 date = "2002-10-29T00:01:00-06:00"

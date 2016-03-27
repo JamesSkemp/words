@@ -1,6 +1,6 @@
 +++
 title = "Favorite new (to me) music of 2010"
-summary = "Once again, I had the pleasue of purchasing a good deal of music in 2010. Here's a few lists of my favorites, of varying degrees, and disappointments, as well as a look back at changes from last year."
+description = "Once again, I had the pleasue of purchasing a good deal of music in 2010. Here's a few lists of my favorites, of varying degrees, and disappointments, as well as a look back at changes from last year."
 draft = false
 comments = true
 date = "2011-01-01T10:15:00-06:00"

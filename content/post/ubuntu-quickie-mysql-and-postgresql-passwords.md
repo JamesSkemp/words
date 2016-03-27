@@ -1,6 +1,6 @@
 +++
 title = "Ubuntu Quickie: MySQL and PostgreSQL passwords"
-summary = "Quickie on changing the passwords for MySQL and PostgreSQL, after installing from the repos."
+description = "Quickie on changing the passwords for MySQL and PostgreSQL, after installing from the repos."
 draft = false
 comments = true
 date = "2007-06-23T08:50:00-05:00"

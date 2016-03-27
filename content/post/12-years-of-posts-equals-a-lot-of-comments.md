@@ -1,6 +1,6 @@
 +++
 title = "12 years of posts = a lot of comments"
-summary = "12 years of posts/articles means I've got a slew of comments, and I'll be touching almost every single one as I migrate completely to DISQUS."
+description = "12 years of posts/articles means I've got a slew of comments, and I'll be touching almost every single one as I migrate completely to DISQUS."
 draft = false
 comments = true
 date = "2011-07-31T17:21:00-05:00"

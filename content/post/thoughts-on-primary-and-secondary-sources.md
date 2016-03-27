@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on primary and secondary sources"
-summary = "Recently, Gavin Schmitt asked me what my thoughts were on philosophy books about philosophers. When it comes to philosophy, of what import are primary and secondary sources? [slnet0514:7af76473-97d0-4f15-8f75-e708af525d48]"
+description = "Recently, Gavin Schmitt asked me what my thoughts were on philosophy books about philosophers. When it comes to philosophy, of what import are primary and secondary sources? [slnet0514:7af76473-97d0-4f15-8f75-e708af525d48]"
 draft = false
 comments = true
 date = "2007-11-09T18:45:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "First Debian install = unsuccessful"
-summary = "My first shot at installing Debian didn't go quite so well. I'm attempting to install on a HP Pavilion XE734, using pretty much the base system."
+description = "My first shot at installing Debian didn't go quite so well. I'm attempting to install on a HP Pavilion XE734, using pretty much the base system."
 draft = false
 comments = false
 date = "2006-05-20T09:00:00-05:00"

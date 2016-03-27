@@ -1,6 +1,6 @@
 +++
 title = "Recent dealings (old LiveJournal post)"
-summary = "LiveJournal post: Updates on what I was up to."
+description = "LiveJournal post: Updates on what I was up to."
 draft = false
 comments = false
 date = "2005-07-18T19:22:00-05:00"

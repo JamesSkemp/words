@@ -1,6 +1,6 @@
 +++
 title = "Review: jQuery Mobile by Jon Reid"
-summary = "The following is a review of jQuery Mobile, written by Jon Reid."
+description = "The following is a review of jQuery Mobile, written by Jon Reid."
 draft = false
 comments = true
 date = "2011-07-17T08:45:00-05:00"

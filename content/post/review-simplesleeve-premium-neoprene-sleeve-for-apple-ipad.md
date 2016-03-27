@@ -1,6 +1,6 @@
 +++
 title = "Review: SimpleSleeve, Premium Neoprene Sleeve for Apple iPad"
-summary = "The following is a review of the SimpleSleeve, Premium Neoprene Sleeve for Apple iPad."
+description = "The following is a review of the SimpleSleeve, Premium Neoprene Sleeve for Apple iPad."
 draft = false
 comments = true
 date = "2012-09-16T21:35:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Build your own Firefox extension"
-summary = "Build your own Firefox extension using these tutorials."
+description = "Build your own Firefox extension using these tutorials."
 draft = false
 comments = true
 date = "2006-06-21T18:38:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "1,000 spam caught by Akismet!"
-summary = "As of this morning, exactly 1,000 spam have been caught by Akismet for this site."
+description = "As of this morning, exactly 1,000 spam have been caught by Akismet for this site."
 draft = false
 comments = false
 date = "2006-05-26T07:26:00-05:00"

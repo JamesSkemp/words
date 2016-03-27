@@ -1,6 +1,6 @@
 +++
 title = "Windows Phone 7: Taking and restoring a SQL database"
-summary = "As I develop my first Windows Phone 7 application, My Video Game Tracker, I want to make sure that the many games I've added won't accidentally be lost (as I'm deploying test versions to my physical phone)."
+description = "As I develop my first Windows Phone 7 application, My Video Game Tracker, I want to make sure that the many games I've added won't accidentally be lost (as I'm deploying test versions to my physical phone)."
 draft = false
 comments = true
 date = "2012-04-22T16:08:00-05:00"

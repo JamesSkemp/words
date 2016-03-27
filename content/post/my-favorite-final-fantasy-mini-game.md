@@ -1,6 +1,6 @@
 +++
 title = "My favorite Final Fantasy mini-game"
-summary = "My favorite Final Fantasy mini-game has to be from Final Fantasy VIII."
+description = "My favorite Final Fantasy mini-game has to be from Final Fantasy VIII."
 draft = false
 comments = true
 date = "2011-07-06T20:49:00-05:00"

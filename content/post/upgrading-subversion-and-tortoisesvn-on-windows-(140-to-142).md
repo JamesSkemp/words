@@ -1,6 +1,6 @@
 +++
 title = "Upgrading Subversion and TortoiseSVN on Windows (1.4.0 to 1.4.2)"
-summary = "In this article, we'll be upgrading our Subversion installation from 1.4.0 to 1.4.2."
+description = "In this article, we'll be upgrading our Subversion installation from 1.4.0 to 1.4.2."
 draft = false
 comments = true
 date = "2006-11-26T12:00:00-06:00"

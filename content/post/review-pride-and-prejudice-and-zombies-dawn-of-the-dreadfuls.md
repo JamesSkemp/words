@@ -1,6 +1,6 @@
 +++
 title = "Review: Pride and Prejudice and Zombies: Dawn of the Dreadfuls"
-summary = "Book review of Pride and Prejudice and Zombies: Dawn of the Dreadfuls, written by Steve Hockensmith."
+description = "Book review of Pride and Prejudice and Zombies: Dawn of the Dreadfuls, written by Steve Hockensmith."
 draft = false
 comments = true
 date = "2010-04-17T17:33:00-05:00"

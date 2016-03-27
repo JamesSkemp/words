@@ -1,6 +1,6 @@
 +++
 title = "Dynamically generating a list of videos for OSFLV Player with ASP.NET"
-summary = "Sample code to use ASP.NET and OSFLV Player version 3 to dynamically pull a listing of Flash videos from a directory, and allow Web viewing."
+description = "Sample code to use ASP.NET and OSFLV Player version 3 to dynamically pull a listing of Flash videos from a directory, and allow Web viewing."
 draft = false
 comments = true
 date = "2010-04-13T08:20:00-05:00"

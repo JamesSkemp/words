@@ -1,6 +1,6 @@
 +++
 title = "Log Parser script: Percent of status codes across all hits/requests"
-summary = "Log Parser SQL script to determine what percent status codes are across all requests."
+description = "Log Parser SQL script to determine what percent status codes are across all requests."
 draft = false
 comments = true
 date = "2007-10-01T23:00:00-05:00"

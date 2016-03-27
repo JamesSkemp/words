@@ -1,6 +1,6 @@
 +++
 title = "On why I purchased another PlayStation 2"
-summary = "Where I attempt to explain why I purchased a PlayStation 2 slim."
+description = "Where I attempt to explain why I purchased a PlayStation 2 slim."
 draft = false
 comments = true
 date = "2010-10-02T20:39:00-05:00"

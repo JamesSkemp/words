@@ -1,6 +1,6 @@
 +++
 title = "Microsoft Log Parser custom brush for Syntax Highlighter"
-summary = "A custom Syntax Highlighter brush is now available for Microsoft Log Parser."
+description = "A custom Syntax Highlighter brush is now available for Microsoft Log Parser."
 draft = false
 comments = true
 date = "2009-10-18T13:41:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Extended iTunes Track class for PHP"
-summary = "Having created a base class in PHP for an iTunes track, here's an extended class, with sample code."
+description = "Having created a base class in PHP for an iTunes track, here's an extended class, with sample code."
 draft = false
 comments = true
 date = "2010-09-26T20:15:00-05:00"

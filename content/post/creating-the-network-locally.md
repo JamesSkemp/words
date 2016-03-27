@@ -1,6 +1,6 @@
 +++
 title = "Creating the network - locally"
-summary = "Today I'll be talking about how the StrivingLife.net network runs."
+description = "Today I'll be talking about how the StrivingLife.net network runs."
 draft = false
 comments = true
 date = "2005-10-06T07:23:00-05:00"

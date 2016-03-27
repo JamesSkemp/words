@@ -1,6 +1,6 @@
 +++
 title = "Using F8 on Sun VirtualBox 3.1.2 when installing Windows XP"
-summary = "How I ended up getting VirtualBox 3.1.2 to understand the F8 key when installing Windows XP."
+description = "How I ended up getting VirtualBox 3.1.2 to understand the F8 key when installing Windows XP."
 draft = false
 comments = true
 date = "2010-02-07T10:00:00-06:00"

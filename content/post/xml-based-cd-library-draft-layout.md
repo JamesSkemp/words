@@ -1,6 +1,6 @@
 +++
 title = "XML-based CD library: Draft layout"
-summary = "Draft layout for an XML-based CD/album library."
+description = "Draft layout for an XML-based CD/album library."
 draft = false
 comments = true
 date = "2009-01-09T17:04:00-06:00"

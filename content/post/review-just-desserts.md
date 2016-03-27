@@ -1,6 +1,6 @@
 +++
 title = "Review: Just Desserts"
-summary = "The following is a review of Looney Labs' Just Desserts, received as part of the Amazon Vine program."
+description = "The following is a review of Looney Labs' Just Desserts, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-05-15T19:11:28-05:00"

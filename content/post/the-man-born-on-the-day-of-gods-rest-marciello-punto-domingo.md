@@ -1,6 +1,6 @@
 +++
 title = "The Man Born on the Day of God's Rest - Marciello Punto, Domingo"
-summary = "A short biography of a man with little available biographical information, Marciello Punto, Domingo."
+description = "A short biography of a man with little available biographical information, Marciello Punto, Domingo."
 draft = false
 comments = true
 date = "2005-05-19T00:00:00-05:00"

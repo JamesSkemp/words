@@ -1,6 +1,6 @@
 +++
 title = "Long Live the Queen: Attempt 1 (Blind)"
-summary = "First attempt, blind, at Long Live the Queen."
+description = "First attempt, blind, at Long Live the Queen."
 draft = false
 comments = true
 date = "2015-06-13T13:55:38-05:00"

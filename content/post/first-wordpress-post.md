@@ -1,6 +1,6 @@
 +++
 title = "First WordPress post"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-04-30T08:17:00-05:00"

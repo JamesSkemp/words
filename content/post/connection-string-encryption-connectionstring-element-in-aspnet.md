@@ -1,6 +1,6 @@
 +++
 title = "Connection String encryption (connectionString element) in ASP.NET"
-summary = "ASP.NET can encrypt a connection string, whether it be stored in Web.config or a file determined by the configSource attribute."
+description = "ASP.NET can encrypt a connection string, whether it be stored in Web.config or a file determined by the configSource attribute."
 draft = false
 comments = true
 date = "2010-02-01T22:10:00-06:00"

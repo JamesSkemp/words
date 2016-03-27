@@ -1,6 +1,6 @@
 +++
 title = "On Rest"
-summary = "On activity and inactivity, commonly called rest."
+description = "On activity and inactivity, commonly called rest."
 draft = false
 comments = true
 date = "2004-06-13T01:01:00-05:00"

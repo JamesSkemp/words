@@ -1,6 +1,6 @@
 +++
 title = "Rousseau's Social Contract and the Foundation of Western Culture"
-summary = "A short discussion of Rousseau's The Social Contract."
+description = "A short discussion of Rousseau's The Social Contract."
 draft = false
 comments = true
 date = "2001-03-07T02:01:00-06:00"

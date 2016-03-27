@@ -1,6 +1,6 @@
 +++
 title = "Religion and Medieval Philosophy: Textual Analysis Paper 1"
-summary = "Paper regarding scholasticism, as I now understand it. [slnet0514:]"
+description = "Paper regarding scholasticism, as I now understand it. [slnet0514:]"
 draft = false
 comments = true
 date = "2003-03-13T22:46:00-06:00"

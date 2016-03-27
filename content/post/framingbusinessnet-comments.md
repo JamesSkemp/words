@@ -1,6 +1,6 @@
 +++
 title = "FramingBusiness.net comments"
-summary = ""
+description = ""
 draft = false
 comments = false
 date = "2005-11-12T08:51:00-06:00"

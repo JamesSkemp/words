@@ -1,6 +1,6 @@
 +++
 title = "Netflix on the Wii - my experience"
-summary = "My experience with Netflix streaming on the Wii."
+description = "My experience with Netflix streaming on the Wii."
 draft = false
 comments = true
 date = "2010-05-13T21:45:00-05:00"

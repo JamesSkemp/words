@@ -1,6 +1,6 @@
 +++
 title = "Corporate Clarity #005-06-03-001"
-summary = "An unanswered corporate memo."
+description = "An unanswered corporate memo."
 draft = false
 comments = true
 date = "2005-06-03T01:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On Clowns Taking the Souls of People, Especially the Young, and Encapsulating Them Within Balloons"
-summary = "A look at clowns, based upon God's direct contact - through intuition - with the author on the early morning of January 17th 2004."
+description = "A look at clowns, based upon God's direct contact - through intuition - with the author on the early morning of January 17th 2004."
 draft = false
 comments = true
 date = "2004-01-17T00:01:00-06:00"

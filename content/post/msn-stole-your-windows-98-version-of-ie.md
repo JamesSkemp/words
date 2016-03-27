@@ -1,6 +1,6 @@
 +++
 title = "MSN stole your Windows 98 version of IE?"
-summary = "There is a way to escape from MSN's hold on starting IE. [slnet0514:86c022a0-4362-40b4-8c56-49600374d1c7]"
+description = "There is a way to escape from MSN's hold on starting IE. [slnet0514:86c022a0-4362-40b4-8c56-49600374d1c7]"
 draft = false
 comments = true
 date = "2008-05-23T19:20:00-05:00"

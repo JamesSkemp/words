@@ -1,6 +1,6 @@
 +++
 title = "Goodbye, Pearl"
-summary = "I put my cat down today. This is sad, and something that I had to write for my own peace. You can probably skip it."
+description = "I put my cat down today. This is sad, and something that I had to write for my own peace. You can probably skip it."
 draft = false
 comments = false
 date = "2014-02-04T06:58:34-06:00"

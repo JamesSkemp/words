@@ -1,6 +1,6 @@
 +++
 title = "Playstation 3 and the HP Pocket Media Drive"
-summary = "Unfortunately, it doesn't look like it's possible to directly use a HP Pocket Media Drive on a Playstation 3."
+description = "Unfortunately, it doesn't look like it's possible to directly use a HP Pocket Media Drive on a Playstation 3."
 draft = false
 comments = true
 date = "2008-03-30T15:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Fictional band names"
-summary = "A listing of fictional band names."
+description = "A listing of fictional band names."
 draft = false
 comments = true
 date = "2005-09-19T21:04:00-05:00"

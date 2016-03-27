@@ -1,6 +1,6 @@
 +++
 title = "Review: Manufacturing Depression: The Secret History of a Modern Disease"
-summary = "Review of the book Manufacturing Depression: The Secret History of a Modern Disease, written by Gary Greenberg."
+description = "Review of the book Manufacturing Depression: The Secret History of a Modern Disease, written by Gary Greenberg."
 draft = false
 comments = true
 date = "2010-05-28T18:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Excellent news - the BlogML project is not dead."
-summary = "While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January."
+description = "While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January."
 draft = false
 comments = true
 date = "2011-02-11T07:18:00-06:00"

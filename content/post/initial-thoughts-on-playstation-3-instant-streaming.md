@@ -1,6 +1,6 @@
 +++
 title = "Initial thoughts on Playstation 3 instant streaming"
-summary = "I received my Netflix instant streaming disc for the Playstation 3 in the mail today. Here's what I think thus far."
+description = "I received my Netflix instant streaming disc for the Playstation 3 in the mail today. Here's what I think thus far."
 draft = false
 comments = true
 date = "2009-11-06T16:35:00-06:00"

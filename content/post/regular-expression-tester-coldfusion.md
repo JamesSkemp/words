@@ -1,6 +1,6 @@
 +++
 title = "Regular Expression tester - ColdFusion"
-summary = "A regular expression tester, built on ColdFusion. [slnet0514:31402614-3e73-435d-b58f-bb146f10b1b2]"
+description = "A regular expression tester, built on ColdFusion. [slnet0514:31402614-3e73-435d-b58f-bb146f10b1b2]"
 draft = false
 comments = true
 date = "2008-01-10T22:15:00-06:00"

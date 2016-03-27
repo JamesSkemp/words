@@ -1,6 +1,6 @@
 +++
 title = "Converting from Subversion to Git on Windows"
-summary = "Windows Git support sucks. Here's what I ended up doing over the course of a couple hours."
+description = "Windows Git support sucks. Here's what I ended up doing over the course of a couple hours."
 draft = false
 comments = true
 date = "2013-02-09T10:21:00-06:00"

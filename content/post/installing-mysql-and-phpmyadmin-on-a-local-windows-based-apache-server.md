@@ -1,6 +1,6 @@
 +++
 title = "Installing MySQL and phpMyAdmin on a local Windows-based, Apache, server"
-summary = "MySQL will allow us to create databases on our local server. With PHP, this will allow us to install applications like the free WordPress, as well as number of open source content management systems, not to mention bulletin boards and the like. phpMyAdmin will allow us to administer MySQL quite easily."
+description = "MySQL will allow us to create databases on our local server. With PHP, this will allow us to install applications like the free WordPress, as well as number of open source content management systems, not to mention bulletin boards and the like. phpMyAdmin will allow us to administer MySQL quite easily."
 draft = false
 comments = true
 date = "2006-02-24T23:31:00-06:00"

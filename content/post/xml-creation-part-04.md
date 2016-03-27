@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 4"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part four, I'll be adding a DTD so our XML document validates. [slnet0514:769eb188-7161-431e-ac7d-dbce70e0708d]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part four, I'll be adding a DTD so our XML document validates. [slnet0514:769eb188-7161-431e-ac7d-dbce70e0708d]"
 draft = false
 comments = true
 date = "2007-12-28T19:00:00-06:00"

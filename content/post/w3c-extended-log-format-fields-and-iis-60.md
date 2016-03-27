@@ -1,6 +1,6 @@
 +++
 title = "W3C extended log format fields and IIS 6.0"
-summary = "In this article, I'll be covering IIS 6.0 and what benefit you gain from tracking various W3C extended log format fields, for statistical and debugging purposes. [slnet0514:5263c19c-37d9-4f5e-adb8-29c85e3aee36]"
+description = "In this article, I'll be covering IIS 6.0 and what benefit you gain from tracking various W3C extended log format fields, for statistical and debugging purposes. [slnet0514:5263c19c-37d9-4f5e-adb8-29c85e3aee36]"
 draft = false
 comments = true
 date = "2007-11-06T21:30:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "On my funeral"
-summary = "For lack of a better description, when in the company of death, celebrate."
+description = "For lack of a better description, when in the company of death, celebrate."
 draft = false
 comments = true
 date = "2009-01-01T15:09:00-06:00"

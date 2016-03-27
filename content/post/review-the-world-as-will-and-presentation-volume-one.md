@@ -1,6 +1,6 @@
 +++
 title = "Review: The World as Will and Presentation, Volume One"
-summary = "Book review of Arthur Schopenhauer's The World as Will and Presentation, Volume One, translated by Richard E. Aquila. [slnet0514:3b3a85fb-3c3d-4698-a2c8-deff4fa7ccbe]"
+description = "Book review of Arthur Schopenhauer's The World as Will and Presentation, Volume One, translated by Richard E. Aquila. [slnet0514:3b3a85fb-3c3d-4698-a2c8-deff4fa7ccbe]"
 draft = false
 comments = true
 date = "2008-05-04T19:00:00-05:00"

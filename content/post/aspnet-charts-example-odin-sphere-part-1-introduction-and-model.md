@@ -1,6 +1,6 @@
 +++
 title = "ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model"
-summary = "In this series we use data from Odin Sphere to create charts with ASP.NET. After a short introduction, part one creates the object model we'll populate from the data."
+description = "In this series we use data from Odin Sphere to create charts with ASP.NET. After a short introduction, part one creates the object model we'll populate from the data."
 draft = false
 comments = true
 date = "2010-08-13T22:50:00-05:00"

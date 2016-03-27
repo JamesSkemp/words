@@ -1,6 +1,6 @@
 +++
 title = "Status update on logging into my Root /Vault"
-summary = "Thanks to some great support, I'm now able to log in to my Vault."
+description = "Thanks to some great support, I'm now able to log in to my Vault."
 draft = false
 comments = true
 date = "2006-04-22T21:26:00-05:00"

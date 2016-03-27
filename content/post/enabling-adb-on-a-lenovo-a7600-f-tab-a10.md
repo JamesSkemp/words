@@ -1,6 +1,6 @@
 +++
 title = "Enabling ADB on a Lenovo A7600-F TAB A10"
-summary = "How to enable ADB on a Lenovo A7600-F TAB A10, even though they haven't released official drivers yet."
+description = "How to enable ADB on a Lenovo A7600-F TAB A10, even though they haven't released official drivers yet."
 draft = false
 comments = false
 date = "2014-11-06T12:59:46-06:00"

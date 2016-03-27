@@ -1,6 +1,6 @@
 +++
 title = "Quick review: Dominion Tank Police (1989)"
-summary = "Quick review of Dominion Tank Police (1989)."
+description = "Quick review of Dominion Tank Police (1989)."
 draft = false
 comments = true
 date = "2007-07-05T21:48:00-05:00"

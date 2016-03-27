@@ -1,6 +1,6 @@
 +++
 title = "XML Schema Definition creation: Journal - Part 3: XSLT sample"
-summary = "Having finished creating an XML Schema Definition for a simple journal, it was time to create a quick view of the content."
+description = "Having finished creating an XML Schema Definition for a simple journal, it was time to create a quick view of the content."
 draft = false
 comments = true
 date = "2009-12-27T21:47:00-06:00"

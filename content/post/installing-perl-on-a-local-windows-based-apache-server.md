@@ -1,6 +1,6 @@
 +++
 title = "Installing Perl on a local Windows-based, Apache, server"
-summary = "Now that we've added Apache, configured our log files, and setup a log file analysis tool, it's time to install Perl. Perl will allow us to expand our horizons, and specifically will help us install a better log analyzer."
+description = "Now that we've added Apache, configured our log files, and setup a log file analysis tool, it's time to install Perl. Perl will allow us to expand our horizons, and specifically will help us install a better log analyzer."
 draft = false
 comments = true
 date = "2006-02-21T19:12:00-06:00"

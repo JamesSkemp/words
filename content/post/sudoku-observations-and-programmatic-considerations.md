@@ -1,6 +1,6 @@
 +++
 title = "Sudoku observations and programmatic considerations"
-summary = "Programmatic considerations pertaining to Sudoku puzzles."
+description = "Programmatic considerations pertaining to Sudoku puzzles."
 draft = false
 comments = true
 date = "2010-11-28T10:24:00-06:00"

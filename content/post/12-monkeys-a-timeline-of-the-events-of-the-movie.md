@@ -1,6 +1,6 @@
 +++
 title = "12 Monkeys: A Timeline of the Events of the Movie"
-summary = "A timeline for the movie '12 Monkeys', as well as a look at some aspects of the movie (interesting quotes and scenes)."
+description = "A timeline for the movie '12 Monkeys', as well as a look at some aspects of the movie (interesting quotes and scenes)."
 draft = false
 comments = true
 date = "2003-06-28T01:01:00-05:00"

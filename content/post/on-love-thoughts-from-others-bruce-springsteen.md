@@ -1,6 +1,6 @@
 +++
 title = "On Love - Thoughts from others - Bruce Springsteen"
-summary = "Thoughts on love from Bruce Springsteen."
+description = "Thoughts on love from Bruce Springsteen."
 draft = false
 comments = true
 date = "2007-08-06T19:45:00-05:00"

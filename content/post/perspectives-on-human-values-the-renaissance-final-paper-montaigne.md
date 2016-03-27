@@ -1,6 +1,6 @@
 +++
 title = "Perspectives on Human Values: The Renaissance: Final Paper: Montaigne"
-summary = "For this final paper, I will be discussing Montaigne's use of the self and the main points of the pieces that we read, followed by what I think about Montaigne's writing."
+description = "For this final paper, I will be discussing Montaigne's use of the self and the main points of the pieces that we read, followed by what I think about Montaigne's writing."
 draft = false
 comments = true
 date = "2001-12-12T01:01:00-06:00"

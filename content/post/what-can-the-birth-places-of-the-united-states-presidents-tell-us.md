@@ -1,6 +1,6 @@
 +++
 title = "What can the birth places of the United States Presidents tell us?"
-summary = "A look at the birth places of the last 43 presidents, from 1789 to 2004."
+description = "A look at the birth places of the last 43 presidents, from 1789 to 2004."
 draft = false
 comments = true
 date = "2005-03-15T00:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Yakuza Dead Souls (2012)"
-summary = "The following is a review of Yakuza Dead Souls (2012), released for the PlayStation 3."
+description = "The following is a review of Yakuza Dead Souls (2012), released for the PlayStation 3."
 draft = false
 comments = true
 date = "2012-03-27T21:28:00-05:00"

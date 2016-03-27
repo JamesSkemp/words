@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 10: Festival"
-summary = "Not only does this scene have some of the most interesting and dense scenes in the entire movie, but the music ain't bad either.  Scene 10 of the movie Ghost in the Shell 2: Innocence."
+description = "Not only does this scene have some of the most interesting and dense scenes in the entire movie, but the music ain't bad either.  Scene 10 of the movie Ghost in the Shell 2: Innocence."
 draft = false
 comments = true
 date = "2006-08-19T15:25:00-05:00"

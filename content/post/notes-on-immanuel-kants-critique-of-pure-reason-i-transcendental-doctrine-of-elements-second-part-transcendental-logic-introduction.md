@@ -1,6 +1,6 @@
 +++
 title = "Notes on Immanuel Kant's Critique of Pure Reason: I. Transcendental Doctrine of Elements: Second Part. Transcendental Logic: Introduction"
-summary = "During the months of December 2007 and January 2008, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the Introduction of the Second Part (the Transcendental Logic) of the Transcendental Doctrine of Elements. [slnet0514:06d9307d-16b9-4f27-a356-78d2bdef0843]"
+description = "During the months of December 2007 and January 2008, I'll be reading the Critique of Pure Reason, with Gavin Schmitt, and taking notes, which I'll be posting here. These are the notes to the Introduction of the Second Part (the Transcendental Logic) of the Transcendental Doctrine of Elements. [slnet0514:06d9307d-16b9-4f27-a356-78d2bdef0843]"
 draft = false
 comments = true
 date = "2007-12-17T22:15:00-06:00"

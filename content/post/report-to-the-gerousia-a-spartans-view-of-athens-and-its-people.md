@@ -1,6 +1,6 @@
 +++
 title = "Report to the Gerousia: A Spartan's View of Athens and It's People"
-summary = "An old, untitled, document regarding a Spartan's view of Athenians, for a foundations of western culture class."
+description = "An old, untitled, document regarding a Spartan's view of Athenians, for a foundations of western culture class."
 draft = false
 comments = true
 date = "2000-04-09T01:01:00-05:00"

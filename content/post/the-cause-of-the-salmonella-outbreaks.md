@@ -1,6 +1,6 @@
 +++
 title = "The cause of the salmonella outbreaks?"
-summary = "Salmonella and Prince Harry; a mostly-serious post."
+description = "Salmonella and Prince Harry; a mostly-serious post."
 draft = false
 comments = true
 date = "2007-02-18T09:12:00-06:00"

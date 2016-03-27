@@ -1,6 +1,6 @@
 +++
 title = "Making oXygen XML Editor (9.1) portable"
-summary = "A short guide on the ease of making oXygen XML Editor 9.1 portable. [slnet0514:8a9ba867-4fcc-40fe-af4a-9f8018711314]"
+description = "A short guide on the ease of making oXygen XML Editor 9.1 portable. [slnet0514:8a9ba867-4fcc-40fe-af4a-9f8018711314]"
 draft = false
 comments = true
 date = "2008-01-21T12:30:00-06:00"

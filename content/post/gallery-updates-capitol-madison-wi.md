@@ -1,6 +1,6 @@
 +++
 title = "Gallery updates: Capitol - Madison WI"
-summary = "I've added four new photos to the Capitol - Madison WI gallery at http://strivinglife.net/gallery/."
+description = "I've added four new photos to the Capitol - Madison WI gallery at http://strivinglife.net/gallery/."
 draft = false
 comments = true
 date = "2007-05-23T07:31:00-05:00"

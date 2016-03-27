@@ -1,6 +1,6 @@
 +++
 title = "Review: Cash N Guns Second Edition"
-summary = "The following is a review of Cash N Guns Second Edition, received as part of the Amazon Vine program."
+description = "The following is a review of Cash N Guns Second Edition, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2014-11-06T08:53:33-06:00"

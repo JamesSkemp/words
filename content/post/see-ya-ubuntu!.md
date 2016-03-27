@@ -1,6 +1,6 @@
 +++
 title = "See ya, Ubuntu!"
-summary = "Good-bye Ubuntu, see ya later!"
+description = "Good-bye Ubuntu, see ya later!"
 draft = false
 comments = true
 date = "2007-06-26T17:56:00-05:00"

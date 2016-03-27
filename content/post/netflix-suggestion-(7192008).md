@@ -1,6 +1,6 @@
 +++
 title = "Netflix suggestion (7/19/2008)"
-summary = "Suggestion to Netflix on being able to see all movies I've rented."
+description = "Suggestion to Netflix on being able to see all movies I've rented."
 draft = false
 comments = true
 date = "2008-07-19T19:18:00-05:00"

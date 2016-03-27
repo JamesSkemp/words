@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 14 - Ants"
-summary = "Transcript of the movie Waking Life; DVD Chapter 14 - Ants."
+description = "Transcript of the movie Waking Life; DVD Chapter 14 - Ants."
 draft = false
 comments = true
 date = "2005-10-21T00:14:00-05:00"

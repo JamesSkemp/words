@@ -1,6 +1,6 @@
 +++
 title = "Horrible interaction: The Names Database signup form"
-summary = "Don't require people to tell others about your service."
+description = "Don't require people to tell others about your service."
 draft = false
 comments = true
 date = "2007-08-05T07:25:00-05:00"

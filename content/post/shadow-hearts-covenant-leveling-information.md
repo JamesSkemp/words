@@ -1,6 +1,6 @@
 +++
 title = "Shadow Hearts: Covenant leveling information"
-summary = "Leveling information for Shadow Hearts: Covenant."
+description = "Leveling information for Shadow Hearts: Covenant."
 draft = false
 comments = true
 date = "2010-09-06T10:03:00-05:00"

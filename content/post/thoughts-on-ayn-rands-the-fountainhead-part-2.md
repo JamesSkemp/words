@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on Ayn Rand's The Fountainhead: Part 2"
-summary = "Thoughts after reading part 2 of Ayn Rand's The Fountainhead."
+description = "Thoughts after reading part 2 of Ayn Rand's The Fountainhead."
 draft = false
 comments = true
 date = "2009-05-24T20:43:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "The Great Learning of the Confucian School"
-summary = "Paper looking at the Confucian text, the Great Learning."
+description = "Paper looking at the Confucian text, the Great Learning."
 draft = false
 comments = true
 date = "2002-03-30T01:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Parsing Last.fm Web Services' artist.getSimilar with C# and LINQ to XML"
-summary = "How to programmatically make a request to Last.fm's Web Services for similar artists, and parse the response with LINQ to XML, using C# and .NET Framework 3.5"
+description = "How to programmatically make a request to Last.fm's Web Services for similar artists, and parse the response with LINQ to XML, using C# and .NET Framework 3.5"
 draft = false
 comments = true
 date = "2009-09-12T16:33:00-05:00"

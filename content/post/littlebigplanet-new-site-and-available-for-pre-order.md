@@ -1,6 +1,6 @@
 +++
 title = "LittleBigPlanet - New site and available for pre-order"
-summary = "LittleBigPlanet is now available for pre-order. But, you may want to check with your retailer to see what they're offering before you make your purchase."
+description = "LittleBigPlanet is now available for pre-order. But, you may want to check with your retailer to see what they're offering before you make your purchase."
 draft = false
 comments = false
 date = "2008-08-07T23:15:00-05:00"

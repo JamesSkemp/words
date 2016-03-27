@@ -1,6 +1,6 @@
 +++
 title = "Review: Milwaukee Mafia (2012)"
-summary = "The following if a review of Milwaukee Mafia (2012), written by Gavin Schmitt."
+description = "The following if a review of Milwaukee Mafia (2012), written by Gavin Schmitt."
 draft = false
 comments = true
 date = "2012-11-01T20:07:00-05:00"

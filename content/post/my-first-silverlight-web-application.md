@@ -1,6 +1,6 @@
 +++
 title = "My first Silverlight Web application"
-summary = "I've finally created a Silverlight application. My first test queries against a WCF WebHttp service, parses the JSON data that's returned, and outputs it to the user."
+description = "I've finally created a Silverlight application. My first test queries against a WCF WebHttp service, parses the JSON data that's returned, and outputs it to the user."
 draft = false
 comments = true
 date = "2010-07-19T22:37:00-05:00"

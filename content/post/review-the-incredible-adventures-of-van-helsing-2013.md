@@ -1,6 +1,6 @@
 +++
 title = "Review: The Incredible Adventures of Van Helsing (2013)"
-summary = "The following is a review of The Incredible Adventures of Van Helsing (2013), played on the PC."
+description = "The following is a review of The Incredible Adventures of Van Helsing (2013), played on the PC."
 draft = false
 comments = false
 date = "2014-05-15T13:27:39-05:00"

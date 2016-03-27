@@ -1,6 +1,6 @@
 +++
 title = "Why I Don't Have 'Friends'"
-summary = "A brief article on why I personally don't have friends, with some discussion of what friends may be."
+description = "A brief article on why I personally don't have friends, with some discussion of what friends may be."
 draft = false
 comments = true
 date = "2005-06-10T00:00:00-05:00"

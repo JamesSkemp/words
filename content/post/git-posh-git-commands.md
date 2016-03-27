@@ -1,6 +1,6 @@
 +++
 title = "Git/posh-git commands"
-summary = "After frustration with GitHub for Windows, thanks to Google+ I've completely switched to posh-git. Here are the commands I end up using."
+description = "After frustration with GitHub for Windows, thanks to Google+ I've completely switched to posh-git. Here are the commands I end up using."
 draft = false
 comments = true
 date = "2013-09-25T20:58:10-05:00"

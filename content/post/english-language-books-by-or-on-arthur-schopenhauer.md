@@ -1,6 +1,6 @@
 +++
 title = "English language books by or on Arthur Schopenhauer"
-summary = "Information on, and links to, works of Arthur Schopenhauer, or books on Schopenhauer, that are in English."
+description = "Information on, and links to, works of Arthur Schopenhauer, or books on Schopenhauer, that are in English."
 draft = false
 comments = true
 date = "2005-02-02T00:01:00-06:00"

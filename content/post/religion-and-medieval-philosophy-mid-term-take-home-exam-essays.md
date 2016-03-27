@@ -1,6 +1,6 @@
 +++
 title = "Religion and Medieval Philosophy: Mid Term Take Home Exam/Essays"
-summary = "Midterm take home exam/essays for a Religion and Medieval Philosophy course."
+description = "Midterm take home exam/essays for a Religion and Medieval Philosophy course."
 draft = false
 comments = true
 date = "2003-03-24T02:48:00-06:00"

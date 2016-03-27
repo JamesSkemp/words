@@ -1,6 +1,6 @@
 +++
 title = "Review: Metal Gear Solid 4: Guns of the Patriots: The Complete Official Guide (Piggyback softcover)"
-summary = "Review of Metal Gear Solid 4: Guns of the Patriots: The Complete Official Guide. [slnet0514:c6c2a19c-5f8c-4312-abc0-8565f649bfe6]"
+description = "Review of Metal Gear Solid 4: Guns of the Patriots: The Complete Official Guide. [slnet0514:c6c2a19c-5f8c-4312-abc0-8565f649bfe6]"
 draft = false
 comments = true
 date = "2008-06-22T21:25:00-05:00"

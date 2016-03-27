@@ -1,6 +1,6 @@
 +++
 title = "Determining memory, and more, with Ubuntu"
-summary = "While Crucial's system scanner tool doesn't work, there is another way to easily determine how much memory you have and can have. [slnet0514:68eae384-856a-4c34-82d2-12c883612ccc]"
+description = "While Crucial's system scanner tool doesn't work, there is another way to easily determine how much memory you have and can have. [slnet0514:68eae384-856a-4c34-82d2-12c883612ccc]"
 draft = false
 comments = true
 date = "2008-02-17T13:45:00-06:00"

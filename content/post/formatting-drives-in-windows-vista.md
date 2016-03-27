@@ -1,6 +1,6 @@
 +++
 title = "Formatting drives in Windows Vista"
-summary = "Why doesn't Vista pop-up a message of some sort when you insert a new drive? [slnet0514:9d375400-ecf0-422b-9aca-b6fa81f20687]"
+description = "Why doesn't Vista pop-up a message of some sort when you insert a new drive? [slnet0514:9d375400-ecf0-422b-9aca-b6fa81f20687]"
 draft = false
 comments = true
 date = "2008-06-18T20:40:00-05:00"

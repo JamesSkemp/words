@@ -1,6 +1,6 @@
 +++
 title = "Review: TP-LINK Archer T9E AC1900 Dual Band Wireless PCI Express Adapter, 5Ghz 1300Mbps + 2.4Ghz 600Mbps, Beamforming, 3T3R"
-summary = "The following is a review of the TP-LINK Archer T9E AC1900 Dual Band Wireless PCI Express Adapter, 5Ghz 1300Mbps + 2.4Ghz 600Mbps, Beamforming, 3T3R, received as part of the Amazon Vine program."
+description = "The following is a review of the TP-LINK Archer T9E AC1900 Dual Band Wireless PCI Express Adapter, 5Ghz 1300Mbps + 2.4Ghz 600Mbps, Beamforming, 3T3R, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-05-04T20:45:16-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Shadowrun Returns (2013)"
-summary = "The following is a review of Shadowrun Returns (2013), available for PC on Steam."
+description = "The following is a review of Shadowrun Returns (2013), available for PC on Steam."
 draft = false
 comments = false
 date = "2014-08-02T13:59:12-05:00"

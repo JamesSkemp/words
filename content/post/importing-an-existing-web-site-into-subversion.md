@@ -1,6 +1,6 @@
 +++
 title = "Importing an existing Web site into Subversion"
-summary = "In this article I move one of my smaller sites into Subversion, and work through making a change."
+description = "In this article I move one of my smaller sites into Subversion, and work through making a change."
 draft = false
 comments = true
 date = "2008-07-13T11:30:00-05:00"

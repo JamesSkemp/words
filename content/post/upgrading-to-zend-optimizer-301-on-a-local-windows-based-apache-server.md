@@ -1,6 +1,6 @@
 +++
 title = "Upgrading to Zend Optimizer 3.0.1 on a local Windows-based, Apache, server"
-summary = "Guide to upgrading Zend Optimizer 2.6.2 to Zend Optimizer 3.0.1 on Apache 1.x, running on Windows and with PHP 4.4.2."
+description = "Guide to upgrading Zend Optimizer 2.6.2 to Zend Optimizer 3.0.1 on Apache 1.x, running on Windows and with PHP 4.4.2."
 draft = false
 comments = true
 date = "2006-06-08T19:37:00-05:00"

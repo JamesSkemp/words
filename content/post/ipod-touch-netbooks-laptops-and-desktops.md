@@ -1,6 +1,6 @@
 +++
 title = "iPod Touch, netbooks, laptops, and desktops"
-summary = "I want portability, but I don't want to pay a lot for it, or get crap because of it. Here's where my reasoning and research got me."
+description = "I want portability, but I don't want to pay a lot for it, or get crap because of it. Here's where my reasoning and research got me."
 draft = false
 comments = true
 date = "2010-02-21T16:00:00-06:00"

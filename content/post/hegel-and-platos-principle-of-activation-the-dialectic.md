@@ -1,6 +1,6 @@
 +++
 title = "Hegel and Plato's Principle of Activation: The Dialectic"
-summary = "Paper attempting to answer what Hegel's dialectical method is, how it works, and why it is so important for his philosophy."
+description = "Paper attempting to answer what Hegel's dialectical method is, how it works, and why it is so important for his philosophy."
 draft = false
 comments = true
 date = "2003-09-29T01:01:00-05:00"

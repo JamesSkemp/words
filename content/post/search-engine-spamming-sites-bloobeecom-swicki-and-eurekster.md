@@ -1,6 +1,6 @@
 +++
 title = "Search engine spamming sites: Bloobee.com, swicki, and eurekster?"
-summary = "Looks like I found three spamming/content ripping sites, and going down the rabbit hole, I'm finding even more ..."
+description = "Looks like I found three spamming/content ripping sites, and going down the rabbit hole, I'm finding even more ..."
 draft = false
 comments = true
 date = "2007-03-14T20:15:00-05:00"

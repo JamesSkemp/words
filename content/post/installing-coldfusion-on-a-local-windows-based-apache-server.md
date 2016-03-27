@@ -1,6 +1,6 @@
 +++
 title = "Installing ColdFusion on a local Windows-based, Apache, server"
-summary = "In this tutorial, we'll be working through an installation of ColdFusion MX 6.1, Developer's Edition, on a local, Windows-based, Apache server. On this server, we've setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code. We'll be doing this to experience a more corporate Web-programming language - corporate primarily because of the costs associated with ColdFusion."
+description = "In this tutorial, we'll be working through an installation of ColdFusion MX 6.1, Developer's Edition, on a local, Windows-based, Apache server. On this server, we've setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code. We'll be doing this to experience a more corporate Web-programming language - corporate primarily because of the costs associated with ColdFusion."
 draft = false
 comments = true
 date = "2006-02-27T10:51:00-06:00"

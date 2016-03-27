@@ -1,6 +1,6 @@
 +++
 title = "Review: Odin Sphere"
-summary = "Review of the Playstation 2 game Odin Sphere."
+description = "Review of the Playstation 2 game Odin Sphere."
 draft = false
 comments = true
 date = "2010-09-12T14:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Passing the time online, reading the news"
-summary = "Here's a handful of sites I visit when I have a few minutes to kill, but that I want to kill productively."
+description = "Here's a handful of sites I visit when I have a few minutes to kill, but that I want to kill productively."
 draft = false
 comments = true
 date = "2009-04-22T07:55:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "The Internet - critical mass?"
-summary = "Having moved from items written in January of 2006, to items written in late-2005, then to 2001, and then back to mid-2005, I have realized for myself what many have already realized. There's a problem with the Internet."
+description = "Having moved from items written in January of 2006, to items written in late-2005, then to 2001, and then back to mid-2005, I have realized for myself what many have already realized. There's a problem with the Internet."
 draft = false
 comments = true
 date = "2006-02-09T21:54:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Installing Windows 7 beta on Virtual PC 2007"
-summary = "Try out Windows 7 beta, in the safety of a virtual machine."
+description = "Try out Windows 7 beta, in the safety of a virtual machine."
 draft = false
 comments = true
 date = "2009-01-16T17:03:00-06:00"

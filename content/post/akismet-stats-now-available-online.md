@@ -1,6 +1,6 @@
 +++
 title = "Akismet stats now available online"
-summary = "Akismet, one great WordPress plugin if you'll be accepting public comments, now has made available global stats online."
+description = "Akismet, one great WordPress plugin if you'll be accepting public comments, now has made available global stats online."
 draft = false
 comments = false
 date = "2006-05-23T06:28:00-05:00"

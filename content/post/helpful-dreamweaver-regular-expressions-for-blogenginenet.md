@@ -1,6 +1,6 @@
 +++
 title = "Helpful Dreamweaver regular expressions for BlogEngine.NET"
-summary = "Regular expression to find post titles in the relevant BlogEngine.NET directory."
+description = "Regular expression to find post titles in the relevant BlogEngine.NET directory."
 draft = false
 comments = true
 date = "2007-07-21T05:34:00-05:00"

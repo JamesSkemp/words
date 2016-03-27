@@ -1,6 +1,6 @@
 +++
 title = "Gene Involvement in Corn Seedlings"
-summary = "Second lab report for a principles of biology course I took as one of my first classes as a freshman in college. I got a D in this course because of how poorly I did on the tests."
+description = "Second lab report for a principles of biology course I took as one of my first classes as a freshman in college. I got a D in this course because of how poorly I did on the tests."
 draft = false
 comments = true
 date = "1999-11-16T01:01:00-06:00"

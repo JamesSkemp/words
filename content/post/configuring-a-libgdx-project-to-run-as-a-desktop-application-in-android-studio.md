@@ -1,6 +1,6 @@
 +++
 title = "Configuring a libGDX project to run as a desktop application in Android Studio"
-summary = "The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0."
+description = "The following will quickly cover how to setup a newly imported libGDX project to run a desktop application, via Android Studio 1.1.0."
 draft = false
 comments = true
 date = "2015-03-13T19:02:56-05:00"

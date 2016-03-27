@@ -1,6 +1,6 @@
 +++
 title = "My first video to Google Video?"
-summary = "Place for comments regarding my first Google Video."
+description = "Place for comments regarding my first Google Video."
 draft = false
 comments = true
 date = "2006-09-25T08:01:00-05:00"

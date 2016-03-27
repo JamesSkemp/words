@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 9: Doubting Your Own Ghost"
-summary = "Transcript of scene 9 of the movie Ghost in the Shell. [slnet0514:e6354fc3-0c74-4458-9f14-b9c3ec64e6f0]"
+description = "Transcript of scene 9 of the movie Ghost in the Shell. [slnet0514:e6354fc3-0c74-4458-9f14-b9c3ec64e6f0]"
 draft = false
 comments = true
 date = "2008-06-01T15:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "My Video Game Tracker (for Windows Phone 7) on GitHub"
-summary = "Yesterday morning I committed version 1.2 of My Video Game Tracker to a public repository on GitHub."
+description = "Yesterday morning I committed version 1.2 of My Video Game Tracker to a public repository on GitHub."
 draft = false
 comments = false
 date = "2013-01-15T07:58:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Without a Net"
-summary = "External link."
+description = "External link."
 draft = false
 comments = true
 date = "2006-01-25T08:22:00-06:00"

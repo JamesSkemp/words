@@ -1,6 +1,6 @@
 +++
 title = "iTunes Music to SQLite - version 0.1 beta released"
-summary = "iTunes Music to SQLite imports all 'Music' playlists in iTunes into a SQLite database."
+description = "iTunes Music to SQLite imports all 'Music' playlists in iTunes into a SQLite database."
 draft = false
 comments = true
 date = "2009-09-24T12:13:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Parsing iTunes data with C#"
-summary = "In the quest to better synch iTunes and my iPod, I've been digging into ways to export library information. Here's a test app for Windows, written in C#."
+description = "In the quest to better synch iTunes and my iPod, I've been digging into ways to export library information. Here's a test app for Windows, written in C#."
 draft = false
 comments = true
 date = "2009-02-22T22:40:00-06:00"

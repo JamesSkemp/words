@@ -1,6 +1,6 @@
 +++
 title = "Video games I'm looking forward to in 2010"
-summary = "Video games I'm looking forward to playing in 2010. Includes games released this year as well."
+description = "Video games I'm looking forward to playing in 2010. Includes games released this year as well."
 draft = false
 comments = true
 date = "2009-12-09T11:30:00-06:00"

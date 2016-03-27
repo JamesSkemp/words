@@ -1,6 +1,6 @@
 +++
 title = "Yakuza 4: Tanimura Hostess Guide"
-summary = "Very rough hostess guide for Yakuza 4, for Tanimura."
+description = "Very rough hostess guide for Yakuza 4, for Tanimura."
 draft = false
 comments = true
 date = "2011-09-18T21:18:00-05:00"

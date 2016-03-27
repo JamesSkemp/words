@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 3: Simple Machines"
-summary = "In this article, we'll be going over how to install Simple Machines 1.0.9.  We'll also be looking at how Simple Machines stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install Simple Machines 1.0.9.  We'll also be looking at how Simple Machines stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-21T18:00:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Religion and Medieval Philosophy: Final Text Analysis"
-summary = "I decided that I would take Thomas Aquinas' Summa Theologica and look at how he answers the question of what the will is, and whether or not it acts of its own accord. Then I'm going to input some of my own comments about what I got out of the Summa Theologica in this area. [slnet0514]"
+description = "I decided that I would take Thomas Aquinas' Summa Theologica and look at how he answers the question of what the will is, and whether or not it acts of its own accord. Then I'm going to input some of my own comments about what I got out of the Summa Theologica in this area. [slnet0514]"
 draft = false
 comments = true
 date = "2003-05-14T15:17:00-05:00"

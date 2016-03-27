@@ -1,6 +1,6 @@
 +++
 title = "Installing Subversion binaries for Apache 2.2.x"
-summary = "In this article we'll be covering the installation of Subversion to work with Apache 2.2.x."
+description = "In this article we'll be covering the installation of Subversion to work with Apache 2.2.x."
 draft = false
 comments = true
 date = "2008-08-19T21:30:00-05:00"

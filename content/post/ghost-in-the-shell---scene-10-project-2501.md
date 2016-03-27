@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 10: Project 2501"
-summary = "Transcript of scene 10 of the movie Ghost in the Shell. [slnet0514:e4d3c175-0dbd-4dcb-a37b-794ca589bc7b]"
+description = "Transcript of scene 10 of the movie Ghost in the Shell. [slnet0514:e4d3c175-0dbd-4dcb-a37b-794ca589bc7b]"
 draft = false
 comments = true
 date = "2008-06-01T15:30:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Radiant Historia (2011)"
-summary = "The following is a review of Radiant Historia (2011), released for the Nintendo DS."
+description = "The following is a review of Radiant Historia (2011), released for the Nintendo DS."
 draft = false
 comments = false
 date = "2014-05-30T21:57:33-05:00"

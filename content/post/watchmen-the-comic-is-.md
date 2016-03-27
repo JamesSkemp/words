@@ -1,6 +1,6 @@
 +++
 title = "Watchmen (the comic) is ..."
-summary = "Here's what Watchmen, the comic/graphic novel, is, in my opinion."
+description = "Here's what Watchmen, the comic/graphic novel, is, in my opinion."
 draft = false
 comments = false
 date = "2009-03-27T21:36:00-05:00"

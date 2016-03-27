@@ -1,6 +1,6 @@
 +++
 title = "On Mohandas and Arun Gandhi's Blunders of the World"
-summary = "The eight blunders of the world (seven from Mohandas Gandhi and one from Arun Gandhi), with descriptive text from Arun, and commentary by myself."
+description = "The eight blunders of the world (seven from Mohandas Gandhi and one from Arun Gandhi), with descriptive text from Arun, and commentary by myself."
 draft = false
 comments = true
 date = "2004-08-16T01:01:00-05:00"

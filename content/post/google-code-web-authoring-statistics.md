@@ -1,6 +1,6 @@
 +++
 title = "Google Code: Web Authoring Statistics"
-summary = "A look at HTML code from December of 2005."
+description = "A look at HTML code from December of 2005."
 draft = false
 comments = true
 date = "2006-03-29T07:51:00-06:00"

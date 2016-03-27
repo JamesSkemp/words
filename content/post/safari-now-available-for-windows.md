@@ -1,6 +1,6 @@
 +++
 title = "Safari, now available for Windows"
-summary = "Safari for Windows users?  Yup."
+description = "Safari for Windows users?  Yup."
 draft = false
 comments = true
 date = "2007-06-12T21:05:00-05:00"

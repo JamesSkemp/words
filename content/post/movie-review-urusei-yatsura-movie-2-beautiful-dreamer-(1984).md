@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Urusei Yatsura Movie 2: Beautiful Dreamer (1984)"
-summary = "Review of the movie Urusei Yatsura Movie 2: Beautiful Dreamer (1984)."
+description = "Review of the movie Urusei Yatsura Movie 2: Beautiful Dreamer (1984)."
 draft = false
 comments = true
 date = "2006-09-28T19:52:00-05:00"

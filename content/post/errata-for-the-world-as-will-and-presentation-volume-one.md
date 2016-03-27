@@ -1,6 +1,6 @@
 +++
 title = "Errata for The World As Will and Presentation Volume One"
-summary = "Minor errata for Richard E. Aquila's translation of The World As Will and Presentation, Volume One. [slnet0514:5e39e65b-43eb-4675-af86-0a407b5532e5]"
+description = "Minor errata for Richard E. Aquila's translation of The World As Will and Presentation, Volume One. [slnet0514:5e39e65b-43eb-4675-af86-0a407b5532e5]"
 draft = false
 comments = true
 date = "2008-04-29T21:05:00-05:00"

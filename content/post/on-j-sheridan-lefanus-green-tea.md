@@ -1,6 +1,6 @@
 +++
 title = "On J. Sheridan LeFanu's Green Tea"
-summary = "On J. Sheridan LeFanu's Green Tea, specifically the conclusion to the tale."
+description = "On J. Sheridan LeFanu's Green Tea, specifically the conclusion to the tale."
 draft = false
 comments = true
 date = "2009-03-07T10:45:00-06:00"

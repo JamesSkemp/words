@@ -1,6 +1,6 @@
 +++
 title = "Does 'Clown Shoes' Refer to Something Other Than Shoes?"
-summary = "What does 'clown shoes' refer to? Can someone say \"That's clown shoes.\" and be done with their sentence, properly?"
+description = "What does 'clown shoes' refer to? Can someone say \"That's clown shoes.\" and be done with their sentence, properly?"
 draft = false
 comments = true
 date = "2005-01-07T02:01:00-06:00"

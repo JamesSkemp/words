@@ -1,6 +1,6 @@
 +++
 title = "On Achievements and Trophies"
-summary = "I play games to play games, and here's some numbers to attempt to back that up."
+description = "I play games to play games, and here's some numbers to attempt to back that up."
 draft = false
 comments = true
 date = "2009-05-16T08:30:00-05:00"

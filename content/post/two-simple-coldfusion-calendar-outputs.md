@@ -1,6 +1,6 @@
 +++
 title = "Two simple ColdFusion calendar outputs"
-summary = "Two simple ways in ColdFusion to output calendars."
+description = "Two simple ways in ColdFusion to output calendars."
 draft = false
 comments = true
 date = "2009-10-26T21:28:00-05:00"

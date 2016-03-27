@@ -1,6 +1,6 @@
 +++
 title = "Reference: PostgreSQL 8.2 commands on Ubuntu"
-summary = "Reference of PostgreSQL 8.2 commands, via the command line."
+description = "Reference of PostgreSQL 8.2 commands, via the command line."
 draft = false
 comments = true
 date = "2007-06-23T08:45:00-05:00"

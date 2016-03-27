@@ -1,6 +1,6 @@
 +++
 title = "Disabling Messenger auto sign-in on the Xbox 360"
-summary = "How to disable Windows Messenger on the Xbox 360, post-blades interface."
+description = "How to disable Windows Messenger on the Xbox 360, post-blades interface."
 draft = false
 comments = true
 date = "2009-01-19T12:01:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Man's Quest for Dominance over Nature within Frankenstein"
-summary = "Paper regarding man's quest for dominance over nature, with particular reference to Mary Shelley's Frankenstein."
+description = "Paper regarding man's quest for dominance over nature, with particular reference to Mary Shelley's Frankenstein."
 draft = false
 comments = true
 date = "2002-09-18T01:01:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Chill Bag - Bean Bags Bean Bag Chair, 5-Feet, Charcoal"
-summary = "The following is a review of Chill Bag - Bean Bags Bean Bag Chair, 5-Feet, Charcoal, provided as part of the Amazon Vine program."
+description = "The following is a review of Chill Bag - Bean Bags Bean Bag Chair, 5-Feet, Charcoal, provided as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-06-02T18:54:53-05:00"

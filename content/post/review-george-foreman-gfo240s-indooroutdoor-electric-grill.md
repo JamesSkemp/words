@@ -1,6 +1,6 @@
 +++
 title = "Review: George Foreman GFO240S Indoor/Outdoor Electric Grill"
-summary = "The following is a review of the George Foreman GFO240S Indoor/Outdoor Electric Grill, received as part of the Amazon Vine program."
+description = "The following is a review of the George Foreman GFO240S Indoor/Outdoor Electric Grill, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2015-08-09T09:29:04-05:00"

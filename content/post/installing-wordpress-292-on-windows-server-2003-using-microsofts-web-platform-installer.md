@@ -1,6 +1,6 @@
 +++
 title = "Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft's Web Platform Installer"
-summary = "Microsoft's Web Platform Installer has become a little better known, but how easy does it really make installations? In this article I use the Web Platform Installer to install WordPress (with MySQL, PHP, and etcetera) on Windows Server 2003."
+description = "Microsoft's Web Platform Installer has become a little better known, but how easy does it really make installations? In this article I use the Web Platform Installer to install WordPress (with MySQL, PHP, and etcetera) on Windows Server 2003."
 draft = false
 comments = true
 date = "2010-03-12T12:40:00-06:00"

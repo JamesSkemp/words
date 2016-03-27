@@ -1,6 +1,6 @@
 +++
 title = "The evolution of the game console's controller"
-summary = ""
+description = ""
 draft = false
 comments = true
 date = "2006-05-09T21:25:00-05:00"

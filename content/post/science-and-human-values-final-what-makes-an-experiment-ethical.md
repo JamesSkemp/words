@@ -1,6 +1,6 @@
 +++
 title = "Science and Human Values Final: What makes an experiment ethical?"
-summary = "Paper written for a course dealing with the question of what makes an experiment ethical."
+description = "Paper written for a course dealing with the question of what makes an experiment ethical."
 draft = false
 comments = true
 date = "2002-12-08T01:01:00-06:00"

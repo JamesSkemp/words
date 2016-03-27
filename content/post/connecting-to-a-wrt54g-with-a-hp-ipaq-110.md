@@ -1,6 +1,6 @@
 +++
 title = "Connecting to a WRT54G with a HP iPAQ 110"
-summary = "After playing around with settings, I was finally able to access my wireless network with my HP iPAQ 110."
+description = "After playing around with settings, I was finally able to access my wireless network with my HP iPAQ 110."
 draft = false
 comments = true
 date = "2008-10-04T11:50:00-05:00"

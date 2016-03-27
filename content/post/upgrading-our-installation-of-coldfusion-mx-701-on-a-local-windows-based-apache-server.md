@@ -1,6 +1,6 @@
 +++
 title = "Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server"
-summary = "In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we'll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2."
+description = "In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we'll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2."
 draft = false
 comments = true
 date = "2006-07-12T20:16:00-05:00"

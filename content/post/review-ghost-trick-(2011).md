@@ -1,6 +1,6 @@
 +++
 title = "Review: Ghost Trick (2011)"
-summary = "The following is a review of Ghost Trick, released in 2011, for the Nintendo DS."
+description = "The following is a review of Ghost Trick, released in 2011, for the Nintendo DS."
 draft = false
 comments = false
 date = "2014-04-03T20:34:25-05:00"

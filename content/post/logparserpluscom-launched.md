@@ -1,6 +1,6 @@
 +++
 title = "LogParserPlus.com launched"
-summary = "Log Parser Plus now has content. Yay."
+description = "Log Parser Plus now has content. Yay."
 draft = false
 comments = true
 date = "2008-09-26T18:01:00-05:00"

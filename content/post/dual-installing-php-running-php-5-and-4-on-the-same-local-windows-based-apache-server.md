@@ -1,6 +1,6 @@
 +++
 title = "Dual-installing PHP: Running PHP 5 and 4 on the same local, Windows-based, Apache, server"
-summary = "In previous guides, we installed PHP 4.4.2 and later moved our installation to a different folder. This time, we'll be installing the current release of PHP 5 (5.1.4) so that we can still switch back to PHP 4.4.2 if we'd like."
+description = "In previous guides, we installed PHP 4.4.2 and later moved our installation to a different folder. This time, we'll be installing the current release of PHP 5 (5.1.4) so that we can still switch back to PHP 4.4.2 if we'd like."
 draft = false
 comments = true
 date = "2006-07-18T20:34:00-05:00"

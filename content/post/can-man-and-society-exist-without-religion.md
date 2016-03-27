@@ -1,6 +1,6 @@
 +++
 title = "Can Man and Society Exist Without Religion?"
-summary = "Paper regarding the question of whether man can live, and society can exist, without religion or mysticism."
+description = "Paper regarding the question of whether man can live, and society can exist, without religion or mysticism."
 draft = false
 comments = true
 date = "2002-11-27T02:01:00-06:00"

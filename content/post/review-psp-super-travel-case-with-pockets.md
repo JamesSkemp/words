@@ -1,6 +1,6 @@
 +++
 title = "Video review: PSP Super Travel Case With Pockets"
-summary = "Review of the PSP Super Travel Case With Pockets, by CTA."
+description = "Review of the PSP Super Travel Case With Pockets, by CTA."
 draft = false
 comments = true
 date = "2011-01-23T07:16:00-06:00"

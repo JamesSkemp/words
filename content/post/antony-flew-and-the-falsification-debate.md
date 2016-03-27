@@ -1,6 +1,6 @@
 +++
 title = "Antony Flew and The Falsification Debate"
-summary = "Paper on Antony Flew's The Falsification Debate and the existence of God."
+description = "Paper on Antony Flew's The Falsification Debate and the existence of God."
 draft = false
 comments = true
 date = "2002-10-02T01:01:00-05:00"

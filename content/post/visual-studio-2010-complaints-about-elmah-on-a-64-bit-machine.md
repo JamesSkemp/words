@@ -1,6 +1,6 @@
 +++
 title = "Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed"
-summary = "I recently added ELMAH to an ASP.NET MVC 2 site, but started getting Visual Studio 2010 warnings after. Here's how I resolved the issue."
+description = "I recently added ELMAH to an ASP.NET MVC 2 site, but started getting Visual Studio 2010 warnings after. Here's how I resolved the issue."
 draft = false
 comments = true
 date = "2010-08-23T13:44:00-05:00"

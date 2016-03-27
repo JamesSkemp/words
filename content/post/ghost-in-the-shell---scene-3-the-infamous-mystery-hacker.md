@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 3: The Infamous Mystery Hacker"
-summary = "Transcript of scene 3 of the movie Ghost in the Shell. [slnet0514:de337d5b-18c3-464a-bb48-4d4716add4a7]"
+description = "Transcript of scene 3 of the movie Ghost in the Shell. [slnet0514:de337d5b-18c3-464a-bb48-4d4716add4a7]"
 draft = false
 comments = true
 date = "2008-06-01T11:30:00-05:00"

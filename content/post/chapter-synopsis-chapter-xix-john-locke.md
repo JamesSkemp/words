@@ -1,6 +1,6 @@
 +++
 title = "Chapter Synopsis - Chapter XIX, John Locke"
-summary = "Chapter synopsis of John Locke's Chapter XIX. Of the Dissolution of Government, for a Social and Political Philosophy course."
+description = "Chapter synopsis of John Locke's Chapter XIX. Of the Dissolution of Government, for a Social and Political Philosophy course."
 draft = false
 comments = true
 date = "2001-11-03T17:28:00-06:00"

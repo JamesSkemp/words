@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Ran (1985)"
-summary = "Movie review of Akira Kurosawa's Ran (1985)."
+description = "Movie review of Akira Kurosawa's Ran (1985)."
 draft = false
 comments = true
 date = "2006-10-12T20:45:00-05:00"

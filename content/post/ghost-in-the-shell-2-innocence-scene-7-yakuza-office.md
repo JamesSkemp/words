@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 7: Yakuza Office"
-summary = "Transcript of scene 7 from the movie Ghost in the Shell 2: Innocence. Along with the next, these are two of the most action packed scenes in the movie."
+description = "Transcript of scene 7 from the movie Ghost in the Shell 2: Innocence. Along with the next, these are two of the most action packed scenes in the movie."
 draft = false
 comments = true
 date = "2006-08-09T20:54:00-05:00"

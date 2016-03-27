@@ -1,6 +1,6 @@
 +++
 title = "Personalize WordPress and save yourself a headache"
-summary = "Remove 'Powered by ...' language to save yourself headaches later."
+description = "Remove 'Powered by ...' language to save yourself headaches later."
 draft = false
 comments = true
 date = "2005-10-20T19:48:00-05:00"

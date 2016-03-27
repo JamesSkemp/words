@@ -1,6 +1,6 @@
 +++
 title = "Comment re: Go MIT!"
-summary = "Comment regarding a ZDNet post."
+description = "Comment regarding a ZDNet post."
 draft = false
 comments = true
 date = "2008-08-12T08:38:00-05:00"

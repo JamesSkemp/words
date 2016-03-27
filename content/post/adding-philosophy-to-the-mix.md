@@ -1,6 +1,6 @@
 +++
 title = "Adding philosophy to the mix"
-summary = "I'll be focusing both technology and philosophy on this site."
+description = "I'll be focusing both technology and philosophy on this site."
 draft = false
 comments = true
 date = "2005-10-16T19:05:00-05:00"

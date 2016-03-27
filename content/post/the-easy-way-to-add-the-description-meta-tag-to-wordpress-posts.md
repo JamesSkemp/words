@@ -1,6 +1,6 @@
 +++
 title = "The 'easy' way to add the description meta tag to WordPress posts"
-summary = "An easy way to add descriptions to WordPress posts without the use of excessive plugins."
+description = "An easy way to add descriptions to WordPress posts without the use of excessive plugins."
 draft = false
 comments = true
 date = "2006-04-29T11:37:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Long Live the Queen: Attempt 2 (Blind)"
-summary = "Second attempt at Long Live the Queen. In this episode we raise a killer."
+description = "Second attempt at Long Live the Queen. In this episode we raise a killer."
 draft = false
 comments = true
 date = "2015-06-13T14:00:53-05:00"

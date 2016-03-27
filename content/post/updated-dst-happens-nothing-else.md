@@ -1,6 +1,6 @@
 +++
 title = "Updated DST happens - nothing else"
-summary = "Daylight savings time; the new apocalypse."
+description = "Daylight savings time; the new apocalypse."
 draft = false
 comments = true
 date = "2007-03-11T08:59:00-05:00"

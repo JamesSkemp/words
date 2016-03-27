@@ -1,6 +1,6 @@
 +++
 title = "A Scanner Darkly (2006) - best PKD movie ever?"
-summary = "This last weekend I watched A Scanner Darkly, which had just hit a local Madison theatre on Friday.  I'd been looking forward to the film since I'd heard about it, and since it promised to showcase a look like Waking Life."
+description = "This last weekend I watched A Scanner Darkly, which had just hit a local Madison theatre on Friday.  I'd been looking forward to the film since I'd heard about it, and since it promised to showcase a look like Waking Life."
 draft = false
 comments = true
 date = "2006-07-18T20:27:00-05:00"

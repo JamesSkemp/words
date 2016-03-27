@@ -1,6 +1,6 @@
 +++
 title = "Topics for the coming days"
-summary = "Topics I'd like to cover in the coming days."
+description = "Topics I'd like to cover in the coming days."
 draft = false
 comments = true
 date = "2005-10-08T17:01:00-05:00"

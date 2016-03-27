@@ -1,6 +1,6 @@
 +++
 title = "The new Striving Life Network"
-summary = "StrivingLife.com is now open."
+description = "StrivingLife.com is now open."
 draft = false
 comments = true
 date = "2007-07-02T21:40:00-05:00"

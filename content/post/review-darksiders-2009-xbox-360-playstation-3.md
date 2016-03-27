@@ -1,6 +1,6 @@
 +++
 title = "Review: Darksiders (2009) (Xbox 360/PlayStation 3)"
-summary = "Review of Darksiders (2009), available on the Xbox 360 and PlayStation 3."
+description = "Review of Darksiders (2009), available on the Xbox 360 and PlayStation 3."
 draft = false
 comments = true
 date = "2011-05-30T19:30:00-05:00"

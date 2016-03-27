@@ -1,6 +1,6 @@
 +++
 title = "Review: Instant .NET 4.5 Extension Methods How-to (2013)"
-summary = "Review of Instant .NET 4.5 Extension Methods How-to (2013), written by Shawn R. McLean."
+description = "Review of Instant .NET 4.5 Extension Methods How-to (2013), written by Shawn R. McLean."
 draft = false
 comments = true
 date = "2013-05-03T07:58:00-05:00"

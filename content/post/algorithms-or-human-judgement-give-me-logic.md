@@ -1,6 +1,6 @@
 +++
 title = "Algorithms or human judgement?  Give me logic"
-summary = "In short, I'd rather get my search results from logic than the crazy fancy of a human being."
+description = "In short, I'd rather get my search results from logic than the crazy fancy of a human being."
 draft = false
 comments = true
 date = "2006-12-23T23:30:00-06:00"

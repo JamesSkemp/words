@@ -1,6 +1,6 @@
 +++
 title = "The State of the Web - A Trailer"
-summary = "April 22 2007 - the state of the affairs of the Web."
+description = "April 22 2007 - the state of the affairs of the Web."
 draft = false
 comments = true
 date = "2007-04-22T22:43:00-05:00"

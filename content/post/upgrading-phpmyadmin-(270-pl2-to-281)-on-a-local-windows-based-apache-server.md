@@ -1,6 +1,6 @@
 +++
 title = "Upgrading phpMyAdmin (2.7.0-pl2 to 2.8.1) on a local, Windows-based, Apache server"
-summary = "In this guide, we'll be upgrading phpMyAdmin 2.7.0-pl2 to 2.8.1, on a Windows machine, running Apache 1.x."
+description = "In this guide, we'll be upgrading phpMyAdmin 2.7.0-pl2 to 2.8.1, on a Windows machine, running Apache 1.x."
 draft = false
 comments = true
 date = "2006-06-20T15:00:00-05:00"

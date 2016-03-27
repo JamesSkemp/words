@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Bowling for Columbine (2002)"
-summary = "Movie review of Michael Moore's Bowling for Columbine (2002)."
+description = "Movie review of Michael Moore's Bowling for Columbine (2002)."
 draft = false
 comments = true
 date = "2006-10-10T20:53:00-05:00"

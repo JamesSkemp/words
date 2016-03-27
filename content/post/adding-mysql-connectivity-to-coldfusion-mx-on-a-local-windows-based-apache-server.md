@@ -1,6 +1,6 @@
 +++
 title = "Adding MySQL connectivity to ColdFusion MX on a local Windows-based, Apache, server"
-summary = "This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick."
+description = "This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick."
 draft = false
 comments = true
 date = "2006-03-18T08:55:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Contrast (2013)"
-summary = "Review of Contrast, released in November 2013, for the PlayStation 4."
+description = "Review of Contrast, released in November 2013, for the PlayStation 4."
 draft = false
 comments = true
 date = "2013-11-16T10:00:10-06:00"

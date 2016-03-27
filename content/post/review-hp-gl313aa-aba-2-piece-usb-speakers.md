@@ -1,6 +1,6 @@
 +++
 title = "Review: HP GL313AA#ABA 2-piece USB Speakers"
-summary = "A review for HP Multimedia Speakers, specifically HP GL313AA#ABA 2-piece USB Speakers."
+description = "A review for HP Multimedia Speakers, specifically HP GL313AA#ABA 2-piece USB Speakers."
 draft = false
 comments = true
 date = "2008-07-12T23:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Apache JMeter"
-summary = "A book review of Apache JMeter, written by Emily H. Halili."
+description = "A book review of Apache JMeter, written by Emily H. Halili."
 draft = false
 comments = true
 date = "2008-07-24T20:45:00-05:00"

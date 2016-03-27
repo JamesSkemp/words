@@ -1,6 +1,6 @@
 +++
 title = "2007 VW Rabbit - 10,000 miles"
-summary = "My VW Rabbit just recently turned over 10k miles. [slnet0514:d4340eed-cf24-4aaa-91da-0c0eb5aab37a]"
+description = "My VW Rabbit just recently turned over 10k miles. [slnet0514:d4340eed-cf24-4aaa-91da-0c0eb5aab37a]"
 draft = false
 comments = false
 date = "2007-12-13T19:15:00-06:00"

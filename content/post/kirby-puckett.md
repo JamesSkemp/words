@@ -1,6 +1,6 @@
 +++
 title = "Kirby Puckett"
-summary = "A quick note on Kirby Puckett and politics."
+description = "A quick note on Kirby Puckett and politics."
 draft = false
 comments = true
 date = "2006-03-07T08:04:00-06:00"

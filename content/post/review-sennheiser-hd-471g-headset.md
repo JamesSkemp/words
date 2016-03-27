@@ -1,6 +1,6 @@
 +++
 title = "Review: Sennheiser HD 471G Headset with Inline Mic and 3 Button Control"
-summary = "The following is a review of the Sennheiser HD 471G Headset with Inline Mic and 3 Button Control, received as part of the Amazon Vine program."
+description = "The following is a review of the Sennheiser HD 471G Headset with Inline Mic and 3 Button Control, received as part of the Amazon Vine program."
 draft = false
 comments = false
 date = "2016-02-12T21:32:29-06:00"

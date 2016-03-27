@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Being John Malkovich (1999)"
-summary = "Review of the movie Being John Malkovich (1999)."
+description = "Review of the movie Being John Malkovich (1999)."
 draft = false
 comments = true
 date = "2006-10-06T15:38:00-05:00"

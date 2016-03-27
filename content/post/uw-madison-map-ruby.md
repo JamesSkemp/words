@@ -1,6 +1,6 @@
 +++
 title = "UW Madison map - Ruby?"
-summary = "Is the UW Madison using Ruby to generate this map?"
+description = "Is the UW Madison using Ruby to generate this map?"
 draft = false
 comments = true
 date = "2006-12-02T11:47:00-06:00"

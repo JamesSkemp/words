@@ -1,6 +1,6 @@
 +++
 title = "Yes, I do like the Internet Explorer 7 ad"
-summary = "But can they beat Firefox?"
+description = "But can they beat Firefox?"
 draft = false
 comments = true
 date = "2006-02-10T22:05:00-06:00"

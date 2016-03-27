@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell 2: Innocence - Scene 6: Batou's Safe House"
-summary = "Transcript of scene 6 of the movie Ghost in the Shell 2: Innocence."
+description = "Transcript of scene 6 of the movie Ghost in the Shell 2: Innocence."
 draft = false
 comments = true
 date = "2006-08-08T21:16:00-05:00"

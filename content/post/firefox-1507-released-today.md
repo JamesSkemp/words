@@ -1,6 +1,6 @@
 +++
 title = "Firefox 1.5.0.7 released today"
-summary = "Firefox 1.5.0.7 was released today."
+description = "Firefox 1.5.0.7 was released today."
 draft = false
 comments = true
 date = "2006-09-14T20:47:00-05:00"

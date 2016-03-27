@@ -1,6 +1,6 @@
 +++
 title = "Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object"
-summary = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we create a simple loan object, with associated methods."
+description = "In this tutorial, leading up to a WCF WebHttp service that can be queried with jQuery, we create a simple loan object, with associated methods."
 draft = false
 comments = true
 date = "2010-06-22T21:15:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Installing Zend Optimizer on a local Windows-based, Apache, server"
-summary = "This time, we'll be installing Zend Optimizer, to decrease the load time of most of our PHP pages."
+description = "This time, we'll be installing Zend Optimizer, to decrease the load time of most of our PHP pages."
 draft = false
 comments = true
 date = "2006-02-26T18:27:00-06:00"

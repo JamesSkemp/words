@@ -1,6 +1,6 @@
 +++
 title = "Windows 7 Home Premium changes for IIS 7.5 access of Users directories"
-summary = "Tweaks to allow IIS on Windows 7 Home Premium access to content within the Users directories."
+description = "Tweaks to allow IIS on Windows 7 Home Premium access to content within the Users directories."
 draft = false
 comments = true
 date = "2010-08-28T23:07:00-05:00"

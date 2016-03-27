@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET Theme - MWRT-002"
-summary = "James Skemp is proud to present MWRT-002, a theme for BlogEngine.NET."
+description = "James Skemp is proud to present MWRT-002, a theme for BlogEngine.NET."
 draft = false
 comments = false
 date = "2007-10-13T17:00:00-05:00"

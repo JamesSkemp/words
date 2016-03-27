@@ -1,6 +1,6 @@
 +++
 title = "Written on a piece of paper: November 17 2003"
-summary = "Notes written on a piece of paper. These two notes are from November 17, 2003."
+description = "Notes written on a piece of paper. These two notes are from November 17, 2003."
 draft = false
 comments = true
 date = "2003-11-17T01:01:00-06:00"

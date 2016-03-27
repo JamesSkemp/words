@@ -1,6 +1,6 @@
 +++
 title = "BlogEngine.NET - now used by StrivingLife"
-summary = "StrivingLife moves from WordPress to BlogEngine.NET."
+description = "StrivingLife moves from WordPress to BlogEngine.NET."
 draft = false
 comments = true
 date = "2007-07-13T18:38:00-05:00"

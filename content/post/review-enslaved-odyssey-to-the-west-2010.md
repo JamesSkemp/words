@@ -1,6 +1,6 @@
 +++
 title = "Review: Enslaved: Odyssey to the West (2010)"
-summary = "Review of Enslaved: Odyssey to the West (2010), for the PlayStation 3 and Xbox 360."
+description = "Review of Enslaved: Odyssey to the West (2010), for the PlayStation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2012-01-22T17:15:00-06:00"

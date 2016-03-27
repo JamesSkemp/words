@@ -1,6 +1,6 @@
 +++
 title = "XML standards - personal suggestions"
-summary = "Personal standards I'll be applying to all future XML creation."
+description = "Personal standards I'll be applying to all future XML creation."
 draft = false
 comments = true
 date = "2010-09-03T16:20:00-05:00"

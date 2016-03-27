@@ -1,6 +1,6 @@
 +++
 title = "Review: Mafia II (2010)"
-summary = "Review of Mafia II (2010), available for the PlayStation 3 and Xbox 360."
+description = "Review of Mafia II (2010), available for the PlayStation 3 and Xbox 360."
 draft = false
 comments = true
 date = "2012-05-08T20:33:00-05:00"

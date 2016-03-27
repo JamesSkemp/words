@@ -1,6 +1,6 @@
 +++
 title = "Installing Python on a local  Windows-based, Apache, server"
-summary = "In this article, we'll be installing Python on our local server via ActiveState's ActivePython."
+description = "In this article, we'll be installing Python on our local server via ActiveState's ActivePython."
 draft = false
 comments = true
 date = "2006-10-07T08:11:00-05:00"

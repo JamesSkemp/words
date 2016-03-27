@@ -1,6 +1,6 @@
 +++
 title = "President Obama"
-summary = "Four of the big guys are saying President Obama. Here's to hope."
+description = "Four of the big guys are saying President Obama. Here's to hope."
 draft = false
 comments = true
 date = "2008-11-04T23:09:00-06:00"

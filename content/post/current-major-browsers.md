@@ -1,6 +1,6 @@
 +++
 title = "Current, major, browsers"
-summary = "Listing of the current (major) browsers, with basic versioning information."
+description = "Listing of the current (major) browsers, with basic versioning information."
 draft = false
 comments = true
 date = "2008-11-23T14:30:00-06:00"

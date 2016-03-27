@@ -1,6 +1,6 @@
 +++
 title = "More comments in WordPress 2.1.2"
-summary = "AdSense-Deluxe ads not displaying in WordPress 2.1.2? Here's something to try."
+description = "AdSense-Deluxe ads not displaying in WordPress 2.1.2? Here's something to try."
 draft = false
 comments = true
 date = "2007-03-25T20:45:00-05:00"

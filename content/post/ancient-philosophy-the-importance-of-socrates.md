@@ -1,6 +1,6 @@
 +++
 title = "Ancient Philosophy: The Importance of Socrates"
-summary = "The following paper was written for an Ancient Philosophy course that I took in college. I have not reviewed it since."
+description = "The following paper was written for an Ancient Philosophy course that I took in college. I have not reviewed it since."
 draft = false
 comments = true
 date = "2001-10-30T01:01:00-06:00"

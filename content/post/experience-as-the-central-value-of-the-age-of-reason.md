@@ -1,6 +1,6 @@
 +++
 title = "Experience as the Central Value of the Age of Reason"
-summary = "Paper written for a course studying the Age of Reason, in which Francis Bacon's New Atlantis is looked at with the view that the central value of the Age of Reason is experience. Other sources from this period are also drawn upon."
+description = "Paper written for a course studying the Age of Reason, in which Francis Bacon's New Atlantis is looked at with the view that the central value of the Age of Reason is experience. Other sources from this period are also drawn upon."
 draft = false
 comments = true
 date = "2003-05-05T01:01:00-05:00"

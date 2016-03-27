@@ -1,6 +1,6 @@
 +++
 title = "Installing Eclipse 3.2 to a Windows XP SP2 machine"
-summary = "In this guide, we'll be installing Eclipse 3.2 on a Windows XP SP2 machine."
+description = "In this guide, we'll be installing Eclipse 3.2 on a Windows XP SP2 machine."
 draft = false
 comments = true
 date = "2006-08-19T08:10:00-05:00"

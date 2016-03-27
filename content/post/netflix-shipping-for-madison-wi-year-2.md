@@ -1,6 +1,6 @@
 +++
 title = "Netflix shipping, for Madison WI - Year 2"
-summary = "Year two of my experiences with Netflix. [slnet0514:e38ccf1c-3f0d-48b9-80c3-66dc1e25c06a]"
+description = "Year two of my experiences with Netflix. [slnet0514:e38ccf1c-3f0d-48b9-80c3-66dc1e25c06a]"
 draft = false
 comments = true
 date = "2007-09-29T11:00:00-05:00"

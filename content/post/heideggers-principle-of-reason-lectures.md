@@ -1,6 +1,6 @@
 +++
 title = "Heidegger's Principle of Reason Lectures"
-summary = "A look at Heidegger's view of the principle of reason, as detailed in his lectures and address in <cite>The Principle of Reason</cite>."
+description = "A look at Heidegger's view of the principle of reason, as detailed in his lectures and address in <cite>The Principle of Reason</cite>."
 draft = false
 comments = true
 date = "2004-06-17T00:01:00-05:00"

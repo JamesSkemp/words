@@ -1,6 +1,6 @@
 +++
 title = "Movie review: North by Northwest (1959)"
-summary = "Movie review of North by Northwest, directed by Alfred Hitchcock and starring Cary Grant."
+description = "Movie review of North by Northwest, directed by Alfred Hitchcock and starring Cary Grant."
 draft = false
 comments = true
 date = "2006-10-17T21:04:00-05:00"

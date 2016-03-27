@@ -1,6 +1,6 @@
 +++
 title = "The Three Kinds of Inference"
-summary = "A brief discussion on the three types of inference; deduction, induction, and abduction, as well as a brief discussion of reduction as a kind of inference."
+description = "A brief discussion on the three types of inference; deduction, induction, and abduction, as well as a brief discussion of reduction as a kind of inference."
 draft = false
 comments = true
 date = "2002-11-12T00:01:00-06:00"

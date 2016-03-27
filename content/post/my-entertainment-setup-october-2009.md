@@ -1,6 +1,6 @@
 +++
 title = "My entertainment setup, October 2009"
-summary = "A look at my entertainment center setup, as of October 2009."
+description = "A look at my entertainment center setup, as of October 2009."
 draft = false
 comments = true
 date = "2009-10-24T12:00:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "My worst fear has come true"
-summary = "That's right, my worst fear. [slnet0514:eaaebeca-e58c-4505-a78a-ebb5ea397c0c]"
+description = "That's right, my worst fear. [slnet0514:eaaebeca-e58c-4505-a78a-ebb5ea397c0c]"
 draft = false
 comments = true
 date = "2007-09-24T18:00:00-05:00"

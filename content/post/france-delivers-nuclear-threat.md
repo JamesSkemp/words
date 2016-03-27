@@ -1,6 +1,6 @@
 +++
 title = "France delivers nuclear threat"
-summary = "If terrorists are everywhere, can you use large-force weapons (like bombs) against them?"
+description = "If terrorists are everywhere, can you use large-force weapons (like bombs) against them?"
 draft = false
 comments = true
 date = "2006-01-20T08:15:00-06:00"

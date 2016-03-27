@@ -1,6 +1,6 @@
 +++
 title = "Necessary iTunes changes"
-summary = "Changes that I need to make in iTunes before I consider it usable."
+description = "Changes that I need to make in iTunes before I consider it usable."
 draft = false
 comments = true
 date = "2008-12-26T15:07:00-06:00"

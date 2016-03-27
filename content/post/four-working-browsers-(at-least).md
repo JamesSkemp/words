@@ -1,6 +1,6 @@
 +++
 title = "Four working browsers (at least)"
-summary = "Four browsers on a computer may be a bit much, but not if you're a Web developer.  Of course, if you only have one browser, and it's not up-to-date, aren't you being a little lazy?"
+description = "Four browsers on a computer may be a bit much, but not if you're a Web developer.  Of course, if you only have one browser, and it's not up-to-date, aren't you being a little lazy?"
 draft = false
 comments = true
 date = "2006-08-10T21:45:00-05:00"

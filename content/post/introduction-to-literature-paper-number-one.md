@@ -1,6 +1,6 @@
 +++
 title = "Introduction to Literature - Paper Number One"
-summary = "Thoughts on The Glass Menagerie by Tennessee Williams."
+description = "Thoughts on The Glass Menagerie by Tennessee Williams."
 draft = false
 comments = true
 date = "2001-03-08T23:20:00-06:00"

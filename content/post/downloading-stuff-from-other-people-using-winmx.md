@@ -1,6 +1,6 @@
 +++
 title = "Downloading Stuff From Other People Using WinMX"
-summary = "A page, with images, showing some of the aspects of downloading from someone using WinMX."
+description = "A page, with images, showing some of the aspects of downloading from someone using WinMX."
 draft = false
 comments = false
 date = "2002-11-11T00:01:00-06:00"

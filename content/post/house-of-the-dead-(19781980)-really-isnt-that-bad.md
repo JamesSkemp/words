@@ -1,6 +1,6 @@
 +++
 title = "House of the Dead (1978/1980) really isn't that bad"
-summary = "One of the most commonly used hooks in scary stories is the idea that the main character is deceased, but doesn't know it.  As soon as I read the description for the movie The House of the Dead, I pictured the three young boys from Tales from the Hood and Clarence Williams III."
+description = "One of the most commonly used hooks in scary stories is the idea that the main character is deceased, but doesn't know it.  As soon as I read the description for the movie The House of the Dead, I pictured the three young boys from Tales from the Hood and Clarence Williams III."
 draft = false
 comments = true
 date = "2006-05-03T21:02:00-05:00"

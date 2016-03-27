@@ -1,6 +1,6 @@
 +++
 title = "Unreal Tournament and the HP Pavilion a620n"
-summary = "Information for HP Pavilion a620n owners, who would like to play Unreal Tournament Game of the Year Edition, Unreal Tournament 2003, and/or Unreal Tournament 2004 (Editors' Choice Edition, on DVD)."
+description = "Information for HP Pavilion a620n owners, who would like to play Unreal Tournament Game of the Year Edition, Unreal Tournament 2003, and/or Unreal Tournament 2004 (Editors' Choice Edition, on DVD)."
 draft = false
 comments = true
 date = "2005-06-12T00:01:00-05:00"

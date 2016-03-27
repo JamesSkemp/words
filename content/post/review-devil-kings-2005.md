@@ -1,6 +1,6 @@
 +++
 title = "Review: Devil Kings (2005)"
-summary = "The following is a review of Devil Kings, released in 2005 for the PlayStation 2."
+description = "The following is a review of Devil Kings, released in 2005 for the PlayStation 2."
 draft = false
 comments = false
 date = "2014-09-06T14:19:21-05:00"

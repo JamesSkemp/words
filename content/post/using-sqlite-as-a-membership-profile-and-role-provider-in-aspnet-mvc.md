@@ -1,6 +1,6 @@
 +++
 title = "Using SQLite as a membership, profile, and role provider in ASP.NET MVC"
-summary = "How I was able to get SQLite working as a membership/profile/role provider in ASP.NET MVC."
+description = "How I was able to get SQLite working as a membership/profile/role provider in ASP.NET MVC."
 draft = false
 comments = true
 date = "2009-10-25T08:20:00-05:00"

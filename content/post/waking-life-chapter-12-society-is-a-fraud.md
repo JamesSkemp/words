@@ -1,6 +1,6 @@
 +++
 title = "Waking Life: Chapter 12 - Society Is a Fraud"
-summary = "Transcript of the movie Waking Life; DVD Chapter 12 - Society Is a Fraud."
+description = "Transcript of the movie Waking Life; DVD Chapter 12 - Society Is a Fraud."
 draft = false
 comments = true
 date = "2005-10-21T00:12:00-05:00"

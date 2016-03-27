@@ -1,6 +1,6 @@
 +++
 title = "2010 resolutions (with special appearance by 2009)"
-summary = "While I don't really believe in resolutions, per se, here's a collection of things I'd like to do in 2010, and some of the things I've done in 2009."
+description = "While I don't really believe in resolutions, per se, here's a collection of things I'd like to do in 2010, and some of the things I've done in 2009."
 draft = false
 comments = false
 date = "2009-12-19T16:58:00-06:00"

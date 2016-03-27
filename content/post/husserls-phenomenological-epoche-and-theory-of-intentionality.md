@@ -1,6 +1,6 @@
 +++
 title = "Husserl's Phenomenological Epoché and Theory of Intentionality"
-summary = "Paper regarding Husserl's Phenomenlogical Epoché, his theory of Intentionality, and reality."
+description = "Paper regarding Husserl's Phenomenlogical Epoché, his theory of Intentionality, and reality."
 draft = false
 comments = true
 date = "2002-12-16T01:01:00-06:00"

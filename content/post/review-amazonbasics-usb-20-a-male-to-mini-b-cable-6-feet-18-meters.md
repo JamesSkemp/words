@@ -1,6 +1,6 @@
 +++
 title = "Review: AmazonBasics USB 2.0 A-Male to Mini-B Cable (6 Feet / 1.8 Meters)"
-summary = "Review of AmazonBasics USB 2.0 A-Male to Mini-B Cable (6 Feet / 1.8 Meters)."
+description = "Review of AmazonBasics USB 2.0 A-Male to Mini-B Cable (6 Feet / 1.8 Meters)."
 draft = false
 comments = true
 date = "2010-08-23T16:00:00-05:00"

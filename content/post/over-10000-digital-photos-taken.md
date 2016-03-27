@@ -1,6 +1,6 @@
 +++
 title = "Over 10,000 digital photos taken"
-summary = "I recently hit the 10,000 mark for digital photo taken. [slnet0514:c5c7a7b1-71ba-4621-83bc-82e988847d30]"
+description = "I recently hit the 10,000 mark for digital photo taken. [slnet0514:c5c7a7b1-71ba-4621-83bc-82e988847d30]"
 draft = false
 comments = false
 date = "2008-03-30T15:15:00-05:00"

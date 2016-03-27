@@ -1,6 +1,6 @@
 +++
 title = "The 'Four P.T. Anderson Films' weekend review"
-summary = "Thanks to Rob Lumley, I'll be watching four different P.T. Anderson films over the extended holiday weekend. [slnet0514:77ff379a-3b8f-4833-89d5-bb1cfcaf39b3]"
+description = "Thanks to Rob Lumley, I'll be watching four different P.T. Anderson films over the extended holiday weekend. [slnet0514:77ff379a-3b8f-4833-89d5-bb1cfcaf39b3]"
 draft = false
 comments = true
 date = "2007-12-21T20:35:00-06:00"

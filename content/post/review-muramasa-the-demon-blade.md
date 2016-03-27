@@ -1,6 +1,6 @@
 +++
 title = "Review: Muramasa: The Demon Blade"
-summary = "Review of Muramasa: The Demon Blade for the Nintendo Wii."
+description = "Review of Muramasa: The Demon Blade for the Nintendo Wii."
 draft = false
 comments = true
 date = "2009-10-17T20:55:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "On the Saying \"If God exists, let him strike me down where I stand\""
-summary = "Brief discourse on the saying 'If God exists, let him strike me down where I stand'."
+description = "Brief discourse on the saying 'If God exists, let him strike me down where I stand'."
 draft = false
 comments = true
 date = "2003-04-13T01:01:00-05:00"

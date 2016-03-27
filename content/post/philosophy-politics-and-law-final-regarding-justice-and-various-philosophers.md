@@ -1,6 +1,6 @@
 +++
 title = "Philosophy, Politics, and Law Final Regarding Justice and Various Philosophers"
-summary = "Paper regarding the philosophical question of justice, from a political-philosophical perspective, drawing upon various philosophers."
+description = "Paper regarding the philosophical question of justice, from a political-philosophical perspective, drawing upon various philosophers."
 draft = false
 comments = true
 date = "2002-12-18T01:01:00-06:00"

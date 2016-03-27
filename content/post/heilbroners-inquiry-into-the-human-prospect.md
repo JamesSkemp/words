@@ -1,6 +1,6 @@
 +++
 title = "Heilbroner's Inquiry Into the Human Prospect"
-summary = "A brief article regarding thoughts on Robert Heilbroner's inquiry into the human prospect."
+description = "A brief article regarding thoughts on Robert Heilbroner's inquiry into the human prospect."
 draft = false
 comments = true
 date = "2004-02-06T01:01:00-06:00"

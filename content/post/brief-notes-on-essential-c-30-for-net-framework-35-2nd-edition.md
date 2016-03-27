@@ -1,6 +1,6 @@
 +++
 title = "Brief Notes on Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)"
-summary = "Notes on Mark Michaelis' Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)."
+description = "Notes on Mark Michaelis' Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)."
 draft = false
 comments = true
 date = "2008-08-16T08:45:00-05:00"

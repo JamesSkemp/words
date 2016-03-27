@@ -1,6 +1,6 @@
 +++
 title = "PHP Forum Software Showdown Part 4: MyBB"
-summary = "In this article, we'll be going over how to install MyBB 1.2.1.  We'll also be looking at how MyBB stacks up to other PHP-based forum solutions."
+description = "In this article, we'll be going over how to install MyBB 1.2.1.  We'll also be looking at how MyBB stacks up to other PHP-based forum solutions."
 draft = false
 comments = true
 date = "2006-11-22T21:00:00-06:00"

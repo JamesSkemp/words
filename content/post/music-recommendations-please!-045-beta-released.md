@@ -1,6 +1,6 @@
 +++
 title = "Music Recommendations Please! - version 0.4.5 beta released"
-summary = "Music Recommendations Please! is an application that uses Last.fm and Yahoo! Music to get a listing of artists similar to those you've entered. Download version 0.4.5 beta."
+description = "Music Recommendations Please! is an application that uses Last.fm and Yahoo! Music to get a listing of artists similar to those you've entered. Download version 0.4.5 beta."
 draft = false
 comments = true
 date = "2009-09-13T20:20:00-05:00"

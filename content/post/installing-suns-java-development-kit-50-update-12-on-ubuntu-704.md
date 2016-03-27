@@ -1,6 +1,6 @@
 +++
 title = "Installing Sun's Java Development Kit 5.0 Update 12 on Ubuntu 7.04"
-summary = "My experience in installing Sun's JDK 5.0 (Update 12) to Ubuntu 7.04."
+description = "My experience in installing Sun's JDK 5.0 (Update 12) to Ubuntu 7.04."
 draft = false
 comments = true
 date = "2007-06-11T19:21:00-05:00"

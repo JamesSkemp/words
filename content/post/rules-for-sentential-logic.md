@@ -1,6 +1,6 @@
 +++
 title = "Rules for Sentential Logic"
-summary = "The basic rules for sentential logic. Does not include an analysis of the rules, merely an outline of them."
+description = "The basic rules for sentential logic. Does not include an analysis of the rules, merely an outline of them."
 draft = false
 comments = true
 date = "2002-10-29T00:01:00-06:00"

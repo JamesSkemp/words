@@ -1,6 +1,6 @@
 +++
 title = "Google shortening it's name in AdSense?"
-summary = "Could Google be substituting in it's favicon for it's text on AdSense ads?"
+description = "Could Google be substituting in it's favicon for it's text on AdSense ads?"
 draft = false
 comments = true
 date = "2007-02-11T15:08:00-06:00"

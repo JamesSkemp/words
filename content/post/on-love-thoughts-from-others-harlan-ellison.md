@@ -1,6 +1,6 @@
 +++
 title = "On Love - Thoughts from others - Harlan Ellison"
-summary = "Harlan Ellison's words on love."
+description = "Harlan Ellison's words on love."
 draft = false
 comments = true
 date = "2007-08-06T18:18:00-05:00"

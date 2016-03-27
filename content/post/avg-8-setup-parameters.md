@@ -1,6 +1,6 @@
 +++
 title = "AVG 8 setup parameters"
-summary = "Unfortunately, there doesn't appear to be a master list of parameters that can be passed to disable AVG 8 functionality/features. Here's an attempt at one. [slnet0514:1987c242-6a2d-403a-a420-2434de377f16]"
+description = "Unfortunately, there doesn't appear to be a master list of parameters that can be passed to disable AVG 8 functionality/features. Here's an attempt at one. [slnet0514:1987c242-6a2d-403a-a420-2434de377f16]"
 draft = false
 comments = false
 date = "2008-06-14T20:30:00-05:00"

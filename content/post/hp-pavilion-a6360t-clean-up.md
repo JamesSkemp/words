@@ -1,6 +1,6 @@
 +++
 title = "HP Pavilion a6360t clean-up"
-summary = "What I did with my new HP Pavilion a6360t. [slnet0514:4a1d3fd4-bb62-4e7f-8956-5d5bc20622c9]"
+description = "What I did with my new HP Pavilion a6360t. [slnet0514:4a1d3fd4-bb62-4e7f-8956-5d5bc20622c9]"
 draft = false
 comments = true
 date = "2008-03-04T20:50:00-06:00"

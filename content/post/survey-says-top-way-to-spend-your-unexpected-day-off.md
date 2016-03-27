@@ -1,6 +1,6 @@
 +++
 title = "Survey says: Top way to spend your unexpected day off"
-summary = "In today's world, what do you think the best way is to spend a day off?"
+description = "In today's world, what do you think the best way is to spend a day off?"
 draft = false
 comments = true
 date = "2008-09-09T19:38:00-05:00"

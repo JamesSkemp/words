@@ -1,6 +1,6 @@
 +++
 title = "Movie review: Yojimbo (1961)"
-summary = "Review of the movie Yojimbo (1961)."
+description = "Review of the movie Yojimbo (1961)."
 draft = false
 comments = true
 date = "2006-10-27T19:23:00-05:00"

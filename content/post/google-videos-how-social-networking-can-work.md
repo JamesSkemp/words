@@ -1,6 +1,6 @@
 +++
 title = "Google Videos - How social networking can work"
-summary = "I was trying to pass some time, and came upon Adventures in Linux - Episode I, on Google Video.  While the top 100 is full of material of little lasting value, it's nice to see the 1-2% of content that actually serves a purpose."
+description = "I was trying to pass some time, and came upon Adventures in Linux - Episode I, on Google Video.  While the top 100 is full of material of little lasting value, it's nice to see the 1-2% of content that actually serves a purpose."
 draft = false
 comments = true
 date = "2006-07-27T21:22:00-05:00"

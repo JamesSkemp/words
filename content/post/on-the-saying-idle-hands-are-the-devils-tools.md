@@ -1,6 +1,6 @@
 +++
 title = "On the Saying 'Idle Hands are the Devil's Tools'"
-summary = "Brief discourse on the saying \"Idle hands are the devil's tools\"."
+description = "Brief discourse on the saying \"Idle hands are the devil's tools\"."
 draft = false
 comments = true
 date = "2003-06-02T00:00:00-05:00"

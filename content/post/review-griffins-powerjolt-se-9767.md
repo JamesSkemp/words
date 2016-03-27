@@ -1,6 +1,6 @@
 +++
 title = "Review: Griffin's PowerJolt SE (9767)"
-summary = "Review of Griffin's PowerJolt SE, car charger, for iPods and iPhones."
+description = "Review of Griffin's PowerJolt SE, car charger, for iPods and iPhones."
 draft = false
 comments = true
 date = "2008-07-04T19:00:00-05:00"

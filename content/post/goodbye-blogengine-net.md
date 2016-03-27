@@ -1,6 +1,6 @@
 +++
 title = "Goodbye BlogEngine.NET"
-summary = "It's been a good 6 years of using BlogEngine.NET, but it was time to move on."
+description = "It's been a good 6 years of using BlogEngine.NET, but it was time to move on."
 draft = false
 comments = true
 date = "2013-09-22T14:04:41-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Solar-powered desk fans?"
-summary = "Help! I'm looking for information on smaller fans that are powered by solar energy."
+description = "Help! I'm looking for information on smaller fans that are powered by solar energy."
 draft = false
 comments = false
 date = "2007-03-25T19:54:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Basic .NET (C#) Traceroute library"
-summary = "A slightly enhanced version of Jim Scott's C# Traceroute."
+description = "A slightly enhanced version of Jim Scott's C# Traceroute."
 draft = false
 comments = true
 date = "2010-05-09T16:35:00-05:00"

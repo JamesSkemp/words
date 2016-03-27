@@ -1,6 +1,6 @@
 +++
 title = "AttentionTrust and problems with /ROOT"
-summary = "Did you take a look at the AttentionTrust project?"
+description = "Did you take a look at the AttentionTrust project?"
 draft = false
 comments = true
 date = "2006-04-19T18:53:00-05:00"

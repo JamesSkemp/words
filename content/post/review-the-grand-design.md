@@ -1,6 +1,6 @@
 +++
 title = "Review: The Grand Design"
-summary = "Review of The Grand Design, written by Stephen Hawking and Leonard Mlodinow."
+description = "Review of The Grand Design, written by Stephen Hawking and Leonard Mlodinow."
 draft = false
 comments = true
 date = "2010-09-16T08:27:00-05:00"

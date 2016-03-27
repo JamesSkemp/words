@@ -1,6 +1,6 @@
 +++
 title = "Installing mod_perl on a local Windows-based, Apache server"
-summary = "Installing mod_perl."
+description = "Installing mod_perl."
 draft = false
 comments = true
 date = "2006-04-08T08:41:00-05:00"

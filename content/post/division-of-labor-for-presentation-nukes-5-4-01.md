@@ -1,6 +1,6 @@
 +++
 title = "Division of Labor for Presentation: Nukes (5/4/01)"
-summary = "Outline I did for a Social and Political Philosophy course"
+description = "Outline I did for a Social and Political Philosophy course"
 draft = false
 comments = false
 date = "2001-05-04T01:01:00-05:00"

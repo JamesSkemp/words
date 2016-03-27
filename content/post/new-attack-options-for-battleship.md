@@ -1,6 +1,6 @@
 +++
 title = "New attack options for Battleship"
-summary = "New attacks to bring Battleship into the future."
+description = "New attacks to bring Battleship into the future."
 draft = false
 comments = true
 date = "2009-01-20T09:03:00-06:00"

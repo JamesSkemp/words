@@ -1,6 +1,6 @@
 +++
 title = "Initial thoughts on The Hospice"
-summary = "Robert Aickman's The Hospice?"
+description = "Robert Aickman's The Hospice?"
 draft = false
 comments = true
 date = "2007-07-28T21:51:00-05:00"

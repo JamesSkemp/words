@@ -1,6 +1,6 @@
 +++
 title = "Expanded Table of Contents for The World as Will and Representation: Volume I (Dover Edition)"
-summary = "Expanded Table of Contents for the Dover Edition of The World as Will and Representation."
+description = "Expanded Table of Contents for the Dover Edition of The World as Will and Representation."
 draft = false
 comments = true
 date = "2010-05-31T08:58:00-05:00"

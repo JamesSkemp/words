@@ -1,6 +1,6 @@
 +++
 title = "What makes a good video game great?"
-summary = "What games I've played more than once."
+description = "What games I've played more than once."
 draft = false
 comments = true
 date = "2008-12-19T23:02:00-06:00"

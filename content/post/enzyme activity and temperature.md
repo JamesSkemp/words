@@ -1,6 +1,6 @@
 +++
 title = "Enzyme Activity and Temperature"
-summary = "First lab report for a principles of biology course I took as one of my first classes as a freshman in college. Incidentally, I got a D in the course."
+description = "First lab report for a principles of biology course I took as one of my first classes as a freshman in college. Incidentally, I got a D in the course."
 draft = false
 comments = true
 date = "1999-10-12T01:01:00-05:00"

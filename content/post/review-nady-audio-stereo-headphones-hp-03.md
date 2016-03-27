@@ -1,6 +1,6 @@
 +++
 title = "Review: Nady Audio Stereo Headphones (HP-03)"
-summary = "Review of Nady Audio Stereo Headphones, HP-03 model."
+description = "Review of Nady Audio Stereo Headphones, HP-03 model."
 draft = false
 comments = true
 date = "2010-09-12T11:00:00-05:00"

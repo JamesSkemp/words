@@ -1,6 +1,6 @@
 +++
 title = "Finding the list of files Dreamweaver will reopen on startup"
-summary = "Want to make note of the files you had open in Dreamweaver? The listing of files is stored in the registry, depending upon your version."
+description = "Want to make note of the files you had open in Dreamweaver? The listing of files is stored in the registry, depending upon your version."
 draft = false
 comments = true
 date = "2009-08-19T20:00:00-05:00"

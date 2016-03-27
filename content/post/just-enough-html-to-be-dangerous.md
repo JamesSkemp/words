@@ -1,6 +1,6 @@
 +++
 title = "'Just enough HTML to be dangerous'"
-summary = "This time, we'll be covering the minimum HTML knowledge required to be truly dangerous.  While an expanded understanding of HTML is not, per se, required, having at least some understanding will help in a number of ways.  Of course, the more HTML you know, the less you rely on tools to do the work (which is a good thing, since we're not always able to use the tools that we're familiar with)."
+description = "This time, we'll be covering the minimum HTML knowledge required to be truly dangerous.  While an expanded understanding of HTML is not, per se, required, having at least some understanding will help in a number of ways.  Of course, the more HTML you know, the less you rely on tools to do the work (which is a good thing, since we're not always able to use the tools that we're familiar with)."
 draft = false
 comments = true
 date = "2006-03-27T20:26:00-06:00"

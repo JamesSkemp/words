@@ -1,6 +1,6 @@
 +++
 title = "Did you know? Xbox Live auto-renewals"
-summary = "Do you know how many screens you have to click through to turn off Xbox Live auto-renewals?"
+description = "Do you know how many screens you have to click through to turn off Xbox Live auto-renewals?"
 draft = false
 comments = true
 date = "2009-12-04T16:35:00-06:00"

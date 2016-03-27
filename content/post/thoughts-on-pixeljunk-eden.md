@@ -1,6 +1,6 @@
 +++
 title = "Thoughts on PixelJunk Eden"
-summary = "Thoughts on PixelJunk Eden."
+description = "Thoughts on PixelJunk Eden."
 draft = false
 comments = true
 date = "2008-08-01T22:35:00-05:00"

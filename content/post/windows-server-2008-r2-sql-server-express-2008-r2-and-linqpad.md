@@ -1,6 +1,6 @@
 +++
 title = "Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad"
-summary = "Quick steps on getting SQL Server Express 2008 R2 configured on Windows Server 2008 R2 (using Web Platform Installer for installation) so that we can use LINQPad to query it on another server."
+description = "Quick steps on getting SQL Server Express 2008 R2 configured on Windows Server 2008 R2 (using Web Platform Installer for installation) so that we can use LINQPad to query it on another server."
 draft = false
 comments = true
 date = "2010-06-26T21:00:00-05:00"

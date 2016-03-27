@@ -1,6 +1,6 @@
 +++
 title = "Forgotten muscles"
-summary = "We forget, until put to the test."
+description = "We forget, until put to the test."
 draft = false
 comments = false
 date = "2010-02-12T22:31:00-06:00"

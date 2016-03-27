@@ -1,6 +1,6 @@
 +++
 title = "Wrox feedback - July 11 2008"
-summary = "More feedback/errata to Wrox on their book Professional ASP.NET 3.5."
+description = "More feedback/errata to Wrox on their book Professional ASP.NET 3.5."
 draft = false
 comments = true
 date = "2008-07-11T21:55:00-05:00"

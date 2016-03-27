@@ -1,6 +1,6 @@
 +++
 title = "Tips on using the Microsoft Access Upsizing Wizard"
-summary = "Some tips I have now that I've successfully imported data from Microsoft Access (XP/2002) to SQL Server Express (2005). [slnet0514:9ff303ee-acf3-49b5-9fe1-0ff6d7b6a9c3]"
+description = "Some tips I have now that I've successfully imported data from Microsoft Access (XP/2002) to SQL Server Express (2005). [slnet0514:9ff303ee-acf3-49b5-9fe1-0ff6d7b6a9c3]"
 draft = false
 comments = true
 date = "2008-02-24T13:15:00-06:00"

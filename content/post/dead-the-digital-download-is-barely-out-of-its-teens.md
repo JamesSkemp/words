@@ -1,6 +1,6 @@
 +++
 title = "Dead? The digital download is barely out of its teens"
-summary = "Before embracing the digital media cloud, please let us embrace the promise of digital media, first, by allowing users a selection that would otherwise be unavailable."
+description = "Before embracing the digital media cloud, please let us embrace the promise of digital media, first, by allowing users a selection that would otherwise be unavailable."
 draft = false
 comments = true
 date = "2010-05-22T09:47:00-05:00"

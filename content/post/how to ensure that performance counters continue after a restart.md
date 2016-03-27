@@ -1,6 +1,6 @@
 +++
 title = "How to ensure that performance counters continue after a restart"
-summary = "A possible way to have performance counters restart automatically after your box restarts. Also, an example LogParser query to analyze those logs."
+description = "A possible way to have performance counters restart automatically after your box restarts. Also, an example LogParser query to analyze those logs."
 draft = false
 comments = true
 date = "2007-09-19T21:00:00-05:00"

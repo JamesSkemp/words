@@ -1,6 +1,6 @@
 +++
 title = "Review: Kingdom Hearts: Birth by Sleep"
-summary = "My review of Kingdom Hearts: Birth by Sleep, for the Sony PlayStation portable."
+description = "My review of Kingdom Hearts: Birth by Sleep, for the Sony PlayStation portable."
 draft = false
 comments = true
 date = "2011-01-11T08:05:00-06:00"

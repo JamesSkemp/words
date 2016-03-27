@@ -1,6 +1,6 @@
 +++
 title = "Netscape to finally be put out of its misery"
-summary = "Netscape will cease to be supported come February 2008, says AOL."
+description = "Netscape will cease to be supported come February 2008, says AOL."
 draft = false
 comments = true
 date = "2007-12-29T12:55:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Bertrand Russell's Problems of Philosophy: Notes and Comments - Chapter XV: The Value of Philosophy"
-summary = "Notes and comments on Chapter 15 of Bertrand Russell's Problems of Philosophy."
+description = "Notes and comments on Chapter 15 of Bertrand Russell's Problems of Philosophy."
 draft = false
 comments = true
 date = "2005-10-29T00:00:00-05:00"

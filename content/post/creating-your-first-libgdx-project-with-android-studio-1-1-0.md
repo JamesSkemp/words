@@ -1,6 +1,6 @@
 +++
 title = "Creating your first libGDX project with Android Studio 1.1.0"
-summary = "How to start using libGDX with Android Studio 1.1.0."
+description = "How to start using libGDX with Android Studio 1.1.0."
 draft = false
 comments = true
 date = "2015-02-28T21:22:16-06:00"

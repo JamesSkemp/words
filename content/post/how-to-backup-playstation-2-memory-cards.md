@@ -1,6 +1,6 @@
 +++
 title = "How to backup Playstation 2 memory cards?"
-summary = "I'll be needing to get a new Playstation 2 memory card shortly, since the I've got less than a MB left on each of the two cards I currently have.  While there's some extra Final Fantasy X saves that I could go through and delete, I'd really like to backup the saves that I have to my computer.  After a bit of searching, I'm just not sure what to purchase ..."
+description = "I'll be needing to get a new Playstation 2 memory card shortly, since the I've got less than a MB left on each of the two cards I currently have.  While there's some extra Final Fantasy X saves that I could go through and delete, I'd really like to backup the saves that I have to my computer.  After a bit of searching, I'm just not sure what to purchase ..."
 draft = false
 comments = true
 date = "2006-09-09T12:06:00-05:00"

@@ -1,6 +1,6 @@
 +++
 title = "Review: Spec Ops: The Line (2012)"
-summary = "Review of Spec Ops: The Line, released in 2012."
+description = "Review of Spec Ops: The Line, released in 2012."
 draft = false
 comments = true
 date = "2013-03-09T11:41:00-06:00"

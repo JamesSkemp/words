@@ -1,6 +1,6 @@
 +++
 title = "Try Netflix free"
-summary = "Try Netflix for free, for a limited time ... or not?"
+description = "Try Netflix for free, for a limited time ... or not?"
 draft = false
 comments = false
 date = "2006-12-06T20:48:00-06:00"

@@ -1,6 +1,6 @@
 +++
 title = "Programmatic SQL command timeout using a SqlDataSource (C#)"
-summary = "How to programmatically set a timeout on a Sql command, using a SqlDataSource, in C#."
+description = "How to programmatically set a timeout on a Sql command, using a SqlDataSource, in C#."
 draft = false
 comments = true
 date = "2009-06-24T08:20:00-05:00"

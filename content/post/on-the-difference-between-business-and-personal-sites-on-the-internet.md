@@ -1,6 +1,6 @@
 +++
 title = "On the Difference Between Business and Personal Sites on the Internet"
-summary = "On the differences between a business website, and a personal one - dos and don'ts."
+description = "On the differences between a business website, and a personal one - dos and don'ts."
 draft = false
 comments = true
 date = "2004-03-31T01:01:00-06:00"

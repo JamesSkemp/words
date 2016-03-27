@@ -1,6 +1,6 @@
 +++
 title = "Microsoft Log Parser timestamp formats"
-summary = "Timestamp formats supported by Microsoft Log Parser."
+description = "Timestamp formats supported by Microsoft Log Parser."
 draft = false
 comments = true
 date = "2009-02-06T20:32:00-06:00"

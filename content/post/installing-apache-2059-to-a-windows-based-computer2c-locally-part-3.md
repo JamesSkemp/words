@@ -1,6 +1,6 @@
 +++
 title = "Installing Apache 2.0.59 to a Windows-based computer, locally: Part 3"
-summary = "In part three of this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for PHP 4.4.2 and PHP 5.1.4.  We also go over how to setup MySQL and PostgreSQL for our new version of Apache. In the last guide of this series, we'll be going over how to create batch files to switch between all of the different possible servers we can now run."
+description = "In part three of this multi-part guide, we'll be porting over from an Apache 1.3.x Web server to an Apache 2.0.x Web server by adding support for PHP 4.4.2 and PHP 5.1.4.  We also go over how to setup MySQL and PostgreSQL for our new version of Apache. In the last guide of this series, we'll be going over how to create batch files to switch between all of the different possible servers we can now run."
 draft = false
 comments = true
 date = "2006-08-26T16:09:00-05:00"

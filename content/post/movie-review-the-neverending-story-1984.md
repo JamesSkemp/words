@@ -1,6 +1,6 @@
 +++
 title = "Movie review: The NeverEnding Story (1984)"
-summary = "Quick movie review of The NeverEnding Story. [slnet0514:ed8b7149-0762-4f3c-a002-fc94b2fcfcfb]"
+description = "Quick movie review of The NeverEnding Story. [slnet0514:ed8b7149-0762-4f3c-a002-fc94b2fcfcfb]"
 draft = false
 comments = true
 date = "2008-02-17T14:45:00-06:00"

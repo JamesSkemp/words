@@ -1,6 +1,6 @@
 +++
 title = "If Firefox recommends ad blocking software ..."
-summary = "Are Firefox add-ons more of a strain than Chrome?"
+description = "Are Firefox add-ons more of a strain than Chrome?"
 draft = false
 comments = true
 date = "2008-12-24T14:19:00-06:00"

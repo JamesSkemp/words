@@ -1,6 +1,6 @@
 +++
 title = "Ghost in the Shell - Scene 7: Hope in Deep Waters"
-summary = "Transcript of scene 7 of the movie Ghost in the Shell. [slnet0514:f153946f-f593-4264-b334-7b198b8defff]"
+description = "Transcript of scene 7 of the movie Ghost in the Shell. [slnet0514:f153946f-f593-4264-b334-7b198b8defff]"
 draft = false
 comments = true
 date = "2008-06-01T14:00:00-05:00"

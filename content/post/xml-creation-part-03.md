@@ -1,6 +1,6 @@
 +++
 title = "XML creation: Part 3"
-summary = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part three, I'll be adding the actual data that we'll start with. [slnet0514:22e73a03-3931-480a-8260-fbb1986356c8]"
+description = "In this guide, I'll be creating an XML file to store the Playstation games I own, and ultimately make the XML file 'pretty' for Web browsers. In part three, I'll be adding the actual data that we'll start with. [slnet0514:22e73a03-3931-480a-8260-fbb1986356c8]"
 draft = false
 comments = true
 date = "2007-12-27T19:15:00-06:00"
