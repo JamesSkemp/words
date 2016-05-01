@@ -7,7 +7,7 @@ date = "2016-03-01T19:03:15-06:00"
 slug = "review-alienware-steam-machine-asm100-4980blk-desktop-console"
 blogengine = ""
 categories = ["gaming", "review"]
-tags = ["review", "steamos"]
+tags = ["review", "steamos", "alienware"]
 +++
 
 The following is a review of the [Alienware Steam Machine ASM100-4980BLK Desktop Console, featuring an Intel Core i5, 8 GB RAM, 1 TB HDD, and NVIDIA GeForce GTX GPU][1], received as part of the Amazon Vine program.
