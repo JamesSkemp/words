@@ -50,4 +50,7 @@ So all that said ... it's so hard to rate the [Alienware Steam Machine ASM100-49
 
 As someone with a big catalog of games, it's a solid middle of the road for me; 3 of 5 stars. As a console, it's 4 stars. As a gaming PC running SteamOS, it's 3 stars. If this were the Windows version, the latter would probably (considering all else) jump to 4 stars. But would the console aspect suffer? That I don't know.
 
+[Read my review of the Alienware Alpha and Steam Machine Carrying Case (A7888952)][2].
+
 [1]: http://amzn.to/1L3RU4m
+[2]: {{< relref "review-alienware-alpha-and-steam-machine-carrying-case-a7888952.md" >}}
