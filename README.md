@@ -28,3 +28,24 @@ Update the **gh-pages** branch.
 ```
 git subtree push --prefix public git@github.com:JamesSkemp/words.git gh-pages
 ```
+
+## Post title to creation script
+
+Within LINQPad, run the following:
+
+```
+var title = "Post Title Here";
+
+title = title.ToLower().Trim()
+	.Replace(" ", "-")
+	.Replace(":", "-")
+	.Replace("+", "-")
+	.Replace("(", "-")
+	.Replace(")", "-")
+	.Replace("--", "-")
+	.Replace("--", "-")
+	.Replace("--", "-")
+	;
+
+(@"..\hugo.exe new post/" + title + ".md").Dump();
+```
