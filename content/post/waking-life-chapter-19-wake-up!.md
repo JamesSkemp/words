@@ -27,7 +27,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 </div>
 <h3 class="waking_life_chapter">[<a id="nineteen" name="nineteen" title="nineteen"></a>19 Wake Up!] </h3>
 <p>
-<a href="/files/images/WakingLife/WakingLife_19_1.jpg" onclick="window.open(this.href);return false;"><img src="/files/images/WakingLife/WakingLife_19_1_t.jpg" alt="Waking Life: Chapter 19 - Wake Up!" width="250" height="140" align="right" /></a>(The main character wakes up, is seen walking down a couple streets, exquisite piano music is playing, he walks towards a house, checks the door, walks to the driveway where a car is parked. He looks up at the sky and starts to float upwards, tries to grab onto the car door handle, misses twice, keeps floating up and floats away to nothing.) 
+<a href="/files/images/WakingLife/WakingLife_19_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_19_1_t.jpg" alt="Waking Life: Chapter 19 - Wake Up!" width="250" height="140" align="right" /></a>(The main character wakes up, is seen walking down a couple streets, exquisite piano music is playing, he walks towards a house, checks the door, walks to the driveway where a car is parked. He looks up at the sky and starts to float upwards, tries to grab onto the car door handle, misses twice, keeps floating up and floats away to nothing.) 
 </p>
 <hr />
 <p>

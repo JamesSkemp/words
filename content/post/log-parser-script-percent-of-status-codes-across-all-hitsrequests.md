@@ -64,7 +64,7 @@ Feel free to modify the scripts to your own need.
 </p>
 <h3>Example chart</h3>
 <p style="text-align: center">
-<img style="width: 640px; height: 480px" src="/files/2007/10/http_status_percent_graph-example.gif" alt="Example of the status code chart" title="Example of the status code chart" /><br />
+<img style="width: 640px; height: 480px" src="http://strivinglife.com/files/2007/10/http_status_percent_graph-example.gif" alt="Example of the status code chart" title="Example of the status code chart" /><br />
 Example of the status code chart
 </p>
 

@@ -20,7 +20,7 @@ Unfortunately, much like Google Video, you can get sucked into the program and e
 I had my photo taken back in June 2006.  I finally downloaded them to my home computer and started goofing off.  Here&#39;s a before and after image.
 </p>
 <p style="text-align: center">
-<img style="width: 400px; height: 279px" src="/files/images/20061005_400_1.jpg" alt="James Skemp, circa June 2006" title="James Skemp, circa June 2006" width="400" height="279" /><img style="width: 400px; height: 279px" src="/files/images/20061005_400_2.jpg" alt="James Skemp, circa June 2006" title="James Skemp, circa June 2006" width="400" height="279" />
+<img style="width: 400px; height: 279px" src="http://strivinglife.com/files/images/20061005_400_1.jpg" alt="James Skemp, circa June 2006" title="James Skemp, circa June 2006" width="400" height="279" /><img style="width: 400px; height: 279px" src="http://strivinglife.com/files/images/20061005_400_2.jpg" alt="James Skemp, circa June 2006" title="James Skemp, circa June 2006" width="400" height="279" />
 </p>
 <p>
 I don&#39;t know, I don&#39;t think it&#39;s too bad at all.  Photoshop CS2, with special thanks to my Wacom Graphire4.  I shudder to think how difficult this would have been with a simple mouse.  Now if only I could afford a <a href="http://www.wacom.com/lcdtablets/">Cintiq</a> ...

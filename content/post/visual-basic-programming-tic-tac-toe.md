@@ -16,7 +16,7 @@ JRSs Tic-Tac-Toe is a simple game of Tic-Tac-Toe programmed with Visual Basic 6.
 </p>
 <!--more-->
 <p>
-<img style="border: medium none ; width: 280px; height: 251px" src="/files/2003/VBTicTacToeInterface.jpg" alt="Tic-Tac-Toe Interface" title="Tic-Tac-Toe Interface" />
+<img style="border: medium none ; width: 280px; height: 251px" src="http://strivinglife.com/files/2003/VBTicTacToeInterface.jpg" alt="Tic-Tac-Toe Interface" title="Tic-Tac-Toe Interface" />
 </p>
 <p>
 Comments regarding this program are greatly appreciated.  You can find my email at the web site listed above.  Thank you for using and testing my program.

@@ -27,7 +27,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 </div>
 <h3 class="waking_life_chapter">[<a id="thirteen" name="thirteen" title="thirteen"></a>13 Dreamers] </h3>
 <p>
-<a href="/files/images/WakingLife/WakingLife_13_1.jpg" onclick="window.open(this.href);return false;"><img src="/files/images/WakingLife/WakingLife_13_1_t.jpg" alt="Waking Life: Chapter 13 - Dreamers" width="250" height="140" align="right" /></a>(Main character is walking along railroad tracks, beside a train. A guy jumps out of the train with a &quot;Free Radio&quot; t-shirt on) 
+<a href="/files/images/WakingLife/WakingLife_13_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_13_1_t.jpg" alt="Waking Life: Chapter 13 - Dreamers" width="250" height="140" align="right" /></a>(Main character is walking along railroad tracks, beside a train. A guy jumps out of the train with a &quot;Free Radio&quot; t-shirt on) 
 </p>
 <p>
 Hey. 

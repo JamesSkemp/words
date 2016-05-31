@@ -30,7 +30,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 (Main character with man walking on street covered by a red fog) 
 </p>
 <p>
-<a href="/files/images/WakingLife/WakingLife_16_1.jpg" onclick="window.open(this.href);return false;"><img src="/files/images/WakingLife/WakingLife_16_1_t.jpg" alt="Waking Life: Chapter 16 - Meet Yourself" width="250" height="140" align="right" /></a>You haven&#39;t met yourself yet. But the advantage to meeting others in the meantime is that one of them may present you to yourself. Examine the nature of everything you observe. For instance, you might find yourself walking through a dream parking lot. And yes, those are dream feet inside of your dream shoes. Part of your dream self. And so, the person that you appear to be in the dream cannot be who you really are. This is an image, a mental model. 
+<a href="/files/images/WakingLife/WakingLife_16_1.jpg" onclick="window.open(this.href);return false;"><img src="http://strivinglife.com/files/images/WakingLife/WakingLife_16_1_t.jpg" alt="Waking Life: Chapter 16 - Meet Yourself" width="250" height="140" align="right" /></a>You haven&#39;t met yourself yet. But the advantage to meeting others in the meantime is that one of them may present you to yourself. Examine the nature of everything you observe. For instance, you might find yourself walking through a dream parking lot. And yes, those are dream feet inside of your dream shoes. Part of your dream self. And so, the person that you appear to be in the dream cannot be who you really are. This is an image, a mental model. 
 </p>
 <p>
 *** 

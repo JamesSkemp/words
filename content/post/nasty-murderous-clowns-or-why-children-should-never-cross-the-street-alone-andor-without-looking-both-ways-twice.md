@@ -54,13 +54,13 @@ Now as little children do, they got into quite a mess, for they soon met the str
 &ldquo;And I shall put it down, for it is God&rsquo;s decree.&rdquo; And with that, little Bobby Ann put her foot on the street.
 </p>
 <p>
-<img style="width: 136px; height: 133px" src="/files/images/254_clip_image002.jpg" alt="1" align="left" /> &ldquo;Hello, my dear child,&rdquo; said the white man with the hat, &ldquo;I see you have taken a step.&rdquo;
+<img style="width: 136px; height: 133px" src="http://strivinglife.com/files/images/254_clip_image002.jpg" alt="1" align="left" /> &ldquo;Hello, my dear child,&rdquo; said the white man with the hat, &ldquo;I see you have taken a step.&rdquo;
 </p>
 <p>
 &ldquo;Indeed I have,&rdquo; said little Billy Ann, with some fear in her voice, &ldquo;but who are you?&rdquo;
 </p>
 <p>
-<img src="/files/images/254_clip_image004.jpg" alt="2" width="136" height="124" align="right" />&ldquo;My dear, I am Luther &lsquo;Cruise the I&rsquo; Nosman. And this is my friend and associate, Joey &lsquo;Nosey&rsquo; Manitoba. But small child, who are you?&rdquo;
+<img src="http://strivinglife.com/files/images/254_clip_image004.jpg" alt="2" width="136" height="124" align="right" />&ldquo;My dear, I am Luther &lsquo;Cruise the I&rsquo; Nosman. And this is my friend and associate, Joey &lsquo;Nosey&rsquo; Manitoba. But small child, who are you?&rdquo;
 </p>
 <p>
 &ldquo;I am little Billy &hellip;&rdquo;
@@ -70,14 +70,14 @@ Now as little children do, they got into quite a mess, for they soon met the str
 </p>
 <p>
 &ldquo;But you know our names,&rdquo; said Luther, &ldquo;so surely we are not all that?&rdquo;<br />
-<img src="/files/images/254_clip_image006.jpg" alt="3" width="136" height="121" align="right" /><br />
+<img src="http://strivinglife.com/files/images/254_clip_image006.jpg" alt="3" width="136" height="121" align="right" /><br />
 &ldquo;But who is that?&rdquo;
 </p>
 <p>
 &ldquo;That young man, is &lsquo;Greedy Beady&rsquo; Derrickel. He&rsquo;ll do you no harm. He only cares about those who forget that they owe him, or anyone that he knows, money.&rdquo;
 </p>
 <p>
-<img src="/files/images/254_clip_image008.jpg" alt="4" width="136" height="126" align="left" />&ldquo;I see, but I do not know that person.&rdquo;
+<img src="http://strivinglife.com/files/images/254_clip_image008.jpg" alt="4" width="136" height="126" align="left" />&ldquo;I see, but I do not know that person.&rdquo;
 </p>
 <p>
 &ldquo;You don&rsquo;t know &lsquo;Bowtie&rsquo; Makenzie! Well today you shall meet. Won&rsquo;t you just tell him your name?&rdquo;
@@ -98,8 +98,8 @@ Now as little children do, they got into quite a mess, for they soon met the str
 &ldquo;Your logical is concise, but I still disagree. After all, I know not that person.&rdquo;
 </p>
 <p>
-<img src="/files/images/254_clip_image010.jpg" alt="5" width="136" height="127" align="left" /> &ldquo;If you don&rsquo;t know Bobby &lsquo;Swirls&rsquo; MacKenzie, Jr. then you surely are no child, for he is known by all, and shares some of his name with you, dear Bobby &hellip;&rdquo;<br />
-<img src="/files/images/254_clip_image012.jpg" alt="6" width="136" height="124" align="right" /><br />
+<img src="http://strivinglife.com/files/images/254_clip_image010.jpg" alt="5" width="136" height="127" align="left" /> &ldquo;If you don&rsquo;t know Bobby &lsquo;Swirls&rsquo; MacKenzie, Jr. then you surely are no child, for he is known by all, and shares some of his name with you, dear Bobby &hellip;&rdquo;<br />
+<img src="http://strivinglife.com/files/images/254_clip_image012.jpg" alt="6" width="136" height="124" align="right" /><br />
 &ldquo;Not he, you tricky man, the other, the one that has one eye.&rdquo;
 </p>
 <p>
@@ -127,8 +127,8 @@ Now as little children do, they got into quite a mess, for they soon met the str
 &ldquo;But dear sir, there is no traffic here,&rdquo; said little Billy Ann, &ldquo;for this street dead-ends there, as you can plainly see.&rdquo;
 </p>
 <p>
-<img src="/files/images/254_clip_image014.jpg" alt="7" width="136" height="126" align="left" />&ldquo;But little girl, the hate that lives within them blinds siblings two, for my two dear associates can see no dead-end on this oh-so-busy street. But you have not met them, so strangers they are, and seeing as how it my duty, I shall introduce them to you.&rdquo;<br />
-<img src="/files/images/254_clip_image016.jpg" alt="8" title="8" width="136" height="121" align="right" /><br />
+<img src="http://strivinglife.com/files/images/254_clip_image014.jpg" alt="7" width="136" height="126" align="left" />&ldquo;But little girl, the hate that lives within them blinds siblings two, for my two dear associates can see no dead-end on this oh-so-busy street. But you have not met them, so strangers they are, and seeing as how it my duty, I shall introduce them to you.&rdquo;<br />
+<img src="http://strivinglife.com/files/images/254_clip_image016.jpg" alt="8" title="8" width="136" height="121" align="right" /><br />
 And with that Luther swept his arms, and two appeared, as if they had been there all along.
 </p>
 <p>

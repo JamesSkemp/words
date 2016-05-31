@@ -164,7 +164,7 @@ For this experiment, I had; three test tubes A, B, and C and I had some enzyme e
 Table 1: Color of the solution in test tubes A, B, and C at certain times and temperatures.
 </p>
 <p align="center">
-<img style="width: 379px; height: 288px" src="/files/1999/enzymeactivity.gif" alt="Figure 1: Enzyme activity against time." /><br />
+<img style="width: 379px; height: 288px" src="http://strivinglife.com/files/1999/enzymeactivity.gif" alt="Figure 1: Enzyme activity against time." /><br />
 Figure 1: Enzyme activity against time. The more that the test tube solution color changes, then the enzyme activity is greater then the activity in one that does not change much. Tube A is at 0&deg;C, tube B is at 20&deg;C, and tube C is at 40&deg;C.
 </p>
 <h3>IV. Discussion</h3>
