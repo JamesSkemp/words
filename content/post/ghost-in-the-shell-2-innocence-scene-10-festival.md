@@ -104,15 +104,15 @@ tags = ["ghost in the shell"]
 <hr />
 
 <p>
-Read the <a href="/ghost-in-the-shell-2-innocence-script/09/">previous chapter</a>.
+Read the <a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/09/">previous chapter</a>.
 </p>
 
 <p>
-Read the <a href="/ghost-in-the-shell-2-innocence-script/11/">next chapter</a>.
+Read the <a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/11/">next chapter</a>.
 </p>
 
 <p>
-<a href="/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2: Innocence - Script</a>
+<a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2: Innocence - Script</a>
 </p>
 
 <div class="tip">
@@ -120,6 +120,6 @@ Read the <a href="/ghost-in-the-shell-2-innocence-script/11/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine.  Thank you :)
 </p>
 <p>
-Permanent link: <a href="/ghost-in-the-shell-2-innocence-script/10/">http://strivinglife.com/ghost-in-the-shell-2-innocence-script/10/</a>
+Permanent link: <a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/10/">http://strivinglife.com/ghost-in-the-shell-2-innocence-script/10/</a>
 </p>
 </div>
