@@ -129,7 +129,7 @@ But what about browsers on mobile devices?
 Both Safari, Opera, and Internet Explorer have mobile versions available (in the case of Opera, they have two), which will definitely change the output of your site.
 </p>
 <p>
-To some extent <a href="/lynx/">Lynx</a> fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
+To some extent <a href="http://strivinglife.com/lynx/">Lynx</a> fills this hole by providing a text version of your site, and therefore might make sense installed on a virtual machine.
 </p>
 <p>
 The standard Opera browser also provides a mobile-like &#39;emulator&#39; for your site, by way of the Small View functionality.
