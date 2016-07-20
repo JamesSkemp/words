@@ -13,7 +13,7 @@ The following is a review of the Case Logic Kickback for Surface Pro 4 (CKSE2197
 
 ## I'm pleasantly surprised
 
-I've had my [Surface Pro 4][http://amzn.to/1WzBRfc] since November 2015, and have been pretty good about keeping it relatively safe. However, the backing was starting to show a little wear the last few months, so when I had the opportunity to try out [Case Logic's Kickback (CKSE2197)][product], I decided to do so.
+I've had my [Surface Pro 4][surface pro 4] since November 2015, and have been pretty good about keeping it relatively safe. However, the backing was starting to show a little wear the last few months, so when I had the opportunity to try out [Case Logic's Kickback (CKSE2197)][product], I decided to do so.
 
 When I received the Case Logic Kickback I admittedly had a bit of a difficult time actually getting it onto the back of my Surface. For whatever reason it took me longer than it should have to determine how to slide the backing onto the Surface's stand. However, once that was done I've kept it on my device for the last 4 weeks.
 
@@ -28,3 +28,4 @@ Talking with a co-worker, the only thing that the device is missing is a small c
 Especially given the price, I'd definitely recommend [Case Logic's Kickback (CKSE2197)][product] if you have a Surface Pro 4 and are looking for some protection on the back of the device. 5 of 5 stars.
 
 [product]: http://amzn.to/29WYQ61
+[surface pro 4]: http://amzn.to/1WzBRfc
