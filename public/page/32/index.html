@@ -57,6 +57,22 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 1, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server. If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values. SqlDataSource dataSource = new SqlDataSource(); dataSource.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString; dataSource.SelectCommand = "stored_proc"; dataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure; dataSource.SelectParameters.Add("id", value); dataSource.CacheDuration = 3600; DataView viewData = (DataView)dataSource.Select(DataSourceSelectArguments.Empty); DataTable tableData = viewData.ToTable(); //Stuff tableData = null; viewData = null; dataSource = null; From what I can tell, there's no close by doing a select this way; the connection must close after it's performed?
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Thoughts-on-Ayn-Rands-The-Fountainhead-Part-4/">Thoughts on Ayn Rand&#39;s The Fountainhead: Part 4</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>May 27, 2009</li>
@@ -199,22 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/My-first-working-piece-of-jQuery/">My first, working, piece of jQuery</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>April 23, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                This is the first piece of jQuery that I wrote, for production use, that works exactly as I'd like it to. Some code has been changed. try { $(document).ready(function(){ $('div#headerLogin') .prepend($(document.createElement('div')) .addClass('headerLoggedIn') .append('Logged in as: &lt;span&gt;&lt;cfoutput&gt;#query.displayName#&lt;/cfoutput&gt;&lt;/span&gt; &lt;span&gt;&lt;a href="http://words.strivinglife.com/logout/"&gt;logout&lt;/a&gt;&lt;/span&gt;') ); $('div.headerLoggedIn') .after('&lt;span&gt;Hello&lt;cfif IsDefined("query.first_name") AND Trim(query.first_name) NEQ ""&gt;, &lt;cfoutput&gt;#query.first_name#&lt;/cfoutput&gt;&lt;/cfif&gt;&lt;/span&gt;'); }); } catch (ex) {} It's for a site that runs ColdFusion, hence the CF tags. Basically it finds the div with an id of headerLogin and adds to that a new div, with a class and some text.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/My-first-working-piece-of-jQuery/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,6 +273,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-case-logic-kickback-for-surface-pro-4-ckse2197/">Review: Case Logic Kickback for Surface Pro 4 (CKSE2197)</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-lance-gluten-free-cookie-sandwich-peanut-butter-5-oz/">Review: Lance Gluten Free Cookie Sandwich, Peanut Butter, 5 oz</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-dii-home-essential-chevron-luxury-throw-for-indoor-outdoor-use-48x67/">Review: DII Home Essential Chevron Luxury Throw for Indoor/Outdoor Use, 48x67</a></li>
@@ -280,8 +282,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-panasonic-wings-wireless-bluetooth-sport-clips-with-mic-controller-rp-bts30-y/">Review: Panasonic WINGS Wireless Bluetooth Sport Clips with Mic &#43; Controller RP-BTS30-Y</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-tp-link-n300-wi-fi-range-extender-tl-wa855re/">Review: TP-LINK N300 Wi-Fi Range Extender (TL-WA855RE)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-alienware-alpha-and-steam-machine-carrying-case-a7888952/">Review: Alienware Alpha and Steam Machine Carrying Case (A7888952)</a></li>
                 
             </ul>
         </ul>
