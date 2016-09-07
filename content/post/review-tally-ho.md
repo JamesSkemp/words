@@ -17,7 +17,7 @@ When I was initially reading the rules of [Tally Ho!][review] I was admittedly w
 
 Tally Ho! plays out on a large board, with all but one space filled by a double-sided tile. Over the course of the game tiles are flipped over, with some being able to be moved by the players, while others cannot.
 
-Over the course of a 'round' each player will control their tiles to capture the other player's tiles, or the neutral ones. Points are then totalled and the player's roles change, for fairness.
+Over the course of a 'round' each player will control their tiles to capture the other player's tiles, or the neutral ones. Points are then totaled and the player's roles change, for fairness.
 
 Tally Ho! has an aesthetic that makes it look like it's geared for kids, but having played with adults it can be enjoyed by them too, especially given just how strategic the game can be, with pieces having different movements and capture abilities, and random, since pieces are unknown until they're flipped.
 
