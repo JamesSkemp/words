@@ -57,6 +57,54 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/">New BlogEngine.NET Theme: 20081126</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 27, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I've been working on a new theme for the site, since around 7 this evening ... and it's&nbsp;finally rolled out. This is along the lines of what I was thinking a couple weeks ago, but I actually grabbed some ideas from Microsoft's recent KB changes. This is the first theme I've created that used the widget functionality, and I can honestly say I'm still not that impressed with it. I still have to add some styles for coding that I add in, once I find a good sample (did I really just use blockquote?), and I'm sure I'll find something else that I missed, but ...
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Parse-FileZilla-Server-logs-with-Log-Parser/">Parse FileZilla Server logs with Log Parser</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 23, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While FileZilla Server is one of the best FTP servers available, it&#39;s logging leaves much to be desired. However, after a couple of hours, I&#39;ve created a script for Log Parser that will generate a W3C log from FileZilla Server&#39;s logs. Save the following to a file, for example, FileZillaServer.sql: SELECT &nbsp;SUBSTR(Text, 1, SUB(INDEX_OF(Text, &#39;)&#39;), 1)) AS RequestNumber &nbsp;, TO_TIMESTAMP( &nbsp;&nbsp;TRIM( &nbsp;&nbsp;&nbsp;SUBSTR( &nbsp;&nbsp;&nbsp;&nbsp;Text &nbsp;&nbsp;&nbsp;&nbsp;, ADD(INDEX_OF(Text, &#39;)&#39;), 1) &nbsp;&nbsp;&nbsp;&nbsp;, SUB(INDEX_OF(Text, &#39;-&#39;), ADD(INDEX_OF(Text, &#39;)&#39;), 4)) &nbsp;&nbsp;&nbsp;) &nbsp;&nbsp;) &nbsp;&nbsp;, &#39;M/d/yyyy?H:mm:ss&#39; &nbsp;) AS DateTime &nbsp;--, TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;, TRIM(SUBSTR( &nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;, 0 &nbsp;&nbsp;, LAST_INDEX_OF( &nbsp;&nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;&nbsp;, &#39;(&#39; &nbsp;&nbsp;) &nbsp;)) AS User &nbsp;, SUBSTR( &nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;, ADD(LAST_INDEX_OF( &nbsp;&nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;&nbsp;, &#39;(&#39; &nbsp;&nbsp;), 1) &nbsp;&nbsp;, SUB(LAST_INDEX_OF( &nbsp;&nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;&nbsp;, &#39;)&#39; &nbsp;&nbsp;), ADD(LAST_INDEX_OF( &nbsp;&nbsp;&nbsp;TRIM(SUBSTR(Text, ADD(INDEX_OF(Text, &#39;-&#39;), 1), SUB(INDEX_OF(Text, &#39;&gt;&#39;), ADD(INDEX_OF(Text, &#39;-&#39;), 1)))) &nbsp;&nbsp;&nbsp;, &#39;(&#39; &nbsp;&nbsp;), 1)) &nbsp;) AS IpAddress &nbsp;, SUBSTR(Text, ADD(INDEX_OF(Text, &#39;&gt;&#39;), 2), SUB(STRLEN(Text), INDEX_OF(Text, &#39;&gt;&#39;))) AS Request INTO FileZilla.log FROM fzs-*.log WHERE Text LIKE &#39;(%&#39; &nbsp;AND Request NOT LIKE &#39;Connected,%&#39; &nbsp;AND Request NOT LIKE &#39;221 %&#39; &nbsp;AND Request NOT LIKE &#39;disconnected%&#39; &nbsp;AND Request NOT LIKE &#39;QUIT%&#39; Items in bold can be easily changed.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parse-FileZilla-Server-logs-with-Log-Parser/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Current-major-browsers/">Current, major, browsers</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 23, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Do users know that they&#39;re not using the current version of their browser? While many browsers will check for updated versions (Firefox, for example), some do not. Anywho, I&#39;ve decided, looking at the numbers, that I would start adding a check on my sites to alert users if there browser is out of date, and tell them where they can get an updated version. Note that I refer to the desktop version of these browsers, and mention only the major browsers.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Current-major-browsers/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Browser-environments-for-testing/">Browser environments for testing</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>November 20, 2008</li>
@@ -167,54 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Review-of-LittleBigPlanet-BradyGames-Signature-Series-Guide/">Review of LittleBigPlanet: BradyGames Signature Series Guide</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 25, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Rated 5 stars. Rate this review on Amazon. Purchase this guide or game through Amazon. First of all, this is a beautiful guide. Every time I pick up one of the Brady Games guides I&#39;m impressed with the quality of the actual item. Nice smooth pages, great colors, etcetera. About 66% of this guide deals with the story mode. This involves a checklist of items for each level, as well as hints and tips on completing them successfully.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-of-LittleBigPlanet-BradyGames-Signature-Series-Guide/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/LittleBigPlanet-First-day-first-thoughts/">LittleBigPlanet - First day, first thoughts</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 25, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Right or wrong, GameStop was in stock and selling pre-orders of LittleBigPlanet today, so I was able to pick up my copy, along with the official guide. Thus far I&#39;ve gone through four complete areas, and picked up the trophies accordingly. On only the first level did I actually get a 100% (but not the Ace award), and with the later levels, I had to retry a number of times. It seems also that there are some issues with movement, in particular from the foreground to background, and vice versa.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/LittleBigPlanet-First-day-first-thoughts/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/oXygen-XML-Editor-10-released/">oXygen XML Editor 10 released</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 23, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Luckily I fired it up this very morning and was alerted to the new upgrade - Gmail decided to mark their automated message as spam. Luckily I was covered under the original maintenance plan, so ... free upgrade, but even if you&#39;re not, you may want to give the new features a look. Read more about oXygen XML Editor.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/oXygen-XML-Editor-10-released/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,15 +273,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-knex-beasts-alive-robo-jaws/">Review: K&#39;NEX Beasts Alive Robo-Jaws Building Set (34406)</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-tally-ho/">Review: Tally Ho!</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-smugglers-family-board-game/">Review: Smugglers Family Board Game</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-case-logic-kickback-for-surface-pro-4-ckse2197/">Review: Case Logic Kickback for Surface Pro 4 (CKSE2197)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-lance-gluten-free-cookie-sandwich-peanut-butter-5-oz/">Review: Lance Gluten Free Cookie Sandwich, Peanut Butter, 5 oz</a></li>
                 
             </ul>
         </ul>

@@ -57,6 +57,54 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/">Subversion repository dump: WPF and Silverlight application, with MVVM (revision 25)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 24, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                As&nbsp;alluded to&nbsp;in a previous post, in regards to an excellent Silverlight/WPF with MVVM tutorial, I've begun looking into the MVVM pattern, as I begin moving towards WPF and Silverlight for applications. Having fully watched the series twice, and begun a third watch working through the example, albeit with the Northwind sample database, I decided to share my labor with others. To that end I present a Subversion repository dump with a fairly step-by-step look at how to go from nothing to a simple application with WPF and Silverlight support.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Subversion-repository-dump-WPF-and-Silverlight-application-with-MVVM-revision-25/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Sin-City-color-in-movies/">Sin City / color in movies</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 23, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                A thread from Facebook that I don't want to lose. To be updated as more responses come in. Initial post Ah, color in movies. Like the bar scene - http://www.youtube.com/watch?v=sbl2LxNZ2eY - in Sin City and near the end of Avalon - http://www.youtube.com/watch?v=P28-PPzCI3k - and the obvious ones in the Wizard of Oz. Any other good examples? Response from Rob Lumley You seem to be mentioning when a particular color stands out.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Sin-City-color-in-movies/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/">iTunes Playlists to Xml: Parsing categories with LINQ</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 20, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query. Obviously, you must export the Genre field in order for the following query to work. // Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.xml&rdquo;; XDocument xml = XDocument.Load(playlistXml); var categories = from track in xml.Descendants(&ldquo;track&rdquo;) group track by track.Element(&ldquo;genre&rdquo;).Value into t orderby t.Key //orderby t.Count() descending select new { Category = t.Key, Count = t.Count() }; categories.Dump(); Note that you can switch the orderby lines depending upon how you want to sort the returned data.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Excellent-Silverlight-WPF-MVVM-video-series/">Excellent Silverlight/WPF MVVM video series</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>October 17, 2010</li>
@@ -167,54 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Northwind-Community-Edition-download/">Northwind Community Edition download</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 22, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                This article is primarily for personal reference. The Northwind sample database setup scripts can be download from the CodePlex project Northwind Community Edition. Sadly, that project is dead, but the original script can be found by going to Source Code, browsing the code, and checking in the Original Northwind Scripts directory. It contains both views and procedures, but there is Microsoft SQL Server Community Projects &amp; Samples page. Sadly, the links on the official Express page no longer work for the sample databases.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Northwind-Community-Edition-download/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Review-The-Grand-Design/">Review: The Grand Design</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 16, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                The following is a review of The Grand Design, written by Stephen Hawking and Leonard Mlodinow. Who&rsquo;s the audience? While interesting, the lack of a defined audience makes this book an extremely difficult read. Having read A Brief History of Time I was looking for something with a similar feel to it. Instead the book starts out geared towards anyone with the desire to really read and understand it, then seems to leave most of that audience towards the wayside - seemingly right around when the science gets a little iffy - and then finishes geared back towards the larger audience.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-The-Grand-Design/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Review-Odin-Sphere/">Review: Odin Sphere</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 12, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                The following is a review of Odin Sphere, for the Playstation 2. I really enjoyed the ads for Muramasa: The Demon Blade, since the game looked so very beautiful, and the game looked rather enjoyable. I bought it a few days after it came out and enjoyed it immensely. After some research I found that they had previously done this game, Odin Sphere, and thought it would be worth a play.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Odin-Sphere/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,15 +273,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-knex-beasts-alive-robo-jaws/">Review: K&#39;NEX Beasts Alive Robo-Jaws Building Set (34406)</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-tally-ho/">Review: Tally Ho!</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-smugglers-family-board-game/">Review: Smugglers Family Board Game</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-case-logic-kickback-for-surface-pro-4-ckse2197/">Review: Case Logic Kickback for Surface Pro 4 (CKSE2197)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-lance-gluten-free-cookie-sandwich-peanut-butter-5-oz/">Review: Lance Gluten Free Cookie Sandwich, Peanut Butter, 5 oz</a></li>
                 
             </ul>
         </ul>
