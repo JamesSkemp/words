@@ -57,6 +57,54 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/">Log Parser script: Percent of status codes across all hits/requests</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 1, 2007</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article. First, I assume that the below is put in the same directory as the logs you would like to parse.&nbsp; SELECT sc-status AS [HTTP Status Code], count() AS Requests INTO http_status_percent_graph-%date%.png FROM ex%date%.log GROUP BY [HTTP Status Code] ORDER BY Requests DESC Once you&#39;ve saved this, you can call the script like such, so long as you&#39;re already in the directory you saved the SQL file.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Swan-Dive-updated-for-BlogEngineNET-12-release/">Swan Dive updated for BlogEngine.NET 1.2 release</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 30, 2007</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                BlogEngine.NET 1.2.0.0 has been released. In &#39;honor&#39; of this release, I&#39;ve updated Swan Dive, using the Standard theme as a guide. Any questions or concerns can be directed to me via the comments on the original post. View the original post, and download Swan Dive.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Swan-Dive-updated-for-BlogEngineNET-12-release/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Netflix-shipping-for-Madison-WI-Year-2/">Netflix shipping, for Madison WI - Year 2</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 29, 2007</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I had previously written on how Netflix shipped and received DVDs, for Madison WI. This article continues that one, by discussing Year 2 with Netflix (first year began September 26, 2006). Plan changes On December 2, 2007, I decided to upgrade to the two at-a-time (unlimited)&nbsp;plan. Since my plan begins on the 10th of each month, that means I had to pay an extra $1.26 to upgrade now, instead of for the next month (I figure this way they&#39;ll send a movie out tomorrow morning).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Netflix-shipping-for-Madison-WI-Year-2/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-of-Steve-Krugs-Dont-Make-Me-Think-2nd-Edition-%28with-notes%29/">Review of Steve Krug&#39;s Don&#39;t Make Me Think: 2nd Edition (with notes)</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>September 28, 2007</li>
@@ -167,54 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 5, 2007</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                The follow covers how to compile BlogEngine.NET from the most recently available source code. This was originally posted to the Codeplex discussions for BlogEngine.NET, and will eventually get moved into the wiki. (Update Sept 8, 2007: Added to the BlogEngine.NET wiki, but not yet linked from other pages. Also made a minor change to step one.) Compiling source with Microsoft Visual C# 2005 Express Edition 1) Download the current source code from the Releases tab or the Source code tab on CodePlex.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/">Is it really that simple - redirecting a single file on IIS</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 2, 2007</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                For various reasons, I've been working towards migrating from an Apache server to an IIS one for my sites. For Gavin's site, I couldn't get away with it, but I don't have any problem making things more difficult for myself :D However, this means that old URLs may not be working as they should. My experience with IIS is a working knowledge of it, and therefore I know what I need to know, picking up what I can.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/New-header-image-added-to-the-template-%289107%29/">New header image added to the template (9/1/07)</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>September 1, 2007</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                On July 7, of this year, I went to the farmer&#39;s market off of the Capitol square, in Madison. I picked up some sunflowers and a bunch of flowers. I ended up taking a number of pictures before the flowers eventually died, and the picture I used for the new header image is one of those taken. The file size for the image is rather large, in my opinion, but with today&#39;s speeds, it shouldn&#39;t be an issue.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/New-header-image-added-to-the-template-%289107%29/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,15 +273,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-knex-beasts-alive-robo-jaws/">Review: K&#39;NEX Beasts Alive Robo-Jaws Building Set (34406)</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-tally-ho/">Review: Tally Ho!</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-smugglers-family-board-game/">Review: Smugglers Family Board Game</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-case-logic-kickback-for-surface-pro-4-ckse2197/">Review: Case Logic Kickback for Surface Pro 4 (CKSE2197)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-lance-gluten-free-cookie-sandwich-peanut-butter-5-oz/">Review: Lance Gluten Free Cookie Sandwich, Peanut Butter, 5 oz</a></li>
                 
             </ul>
         </ul>

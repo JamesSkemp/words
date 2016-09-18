@@ -57,6 +57,54 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/List-of-TODOs-for-July-2009/">List of TODOs for July 2009</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 29, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I may get to some of these early, but here's a listing of things that I'd like to get done in July 2009. For the most part, they are technical things. Speed-up my iTunes Playlists to Xml application. The generation of the Xml output takes longer than I would like, and if a DataTable makes sense, it would be worth caching the playlist so clicking on the playlist again doesn't cause another, slow, load.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/List-of-TODOs-for-July-2009/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/">System.Text.StringBuilder.Remove() overhead</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 28, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While working on a new version of my iTunes Playlists to Xml application, I've been playing around with the existing code, for consolidation and speed. While looking at memory usage, I played around with the StringBuilder I'm using to create the Xml output. As part of this I tried using Remove, once I had output the Xml, but experienced a large increase in used memory, after doing this. StringBuilder someSB = new StringBuilder(); someSB.Append("Some data" + System.Environment.NewLine); someSB.Append("Some more data" + System.Environment.NewLine); // Trimmed textBox.Text = someSB.ToString(); someSB.Remove(0, someSB.Length - 1); This jumped memory usage, on a pull using the defaults, against a 6460 item playlist, from ~17,000 to ~21,000 K, on my up-to-date Windows Vista Ultimate machine.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/">Windows Server 2008 Standard Edition on Sun VirtualBox 2.2.4 - Notes</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 27, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                As part of a test environment, I setup Windows Server 2008 Standard Edition, both the core and full installations,&nbsp;using Sun VirtualBox 2.2.4. Here are a couple of notes on the base installs. With the core install, it's not immediately obvious, but you need to select Other User once the system is installed, and enter Administrator for the username, with no password. As soon as you log in, you'll be prompted to add&nbsp;a password.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Windows-Server-2008-Standard-Edition-on-Sun-VirtualBox-224-Notes/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>June 24, 2009</li>
@@ -167,54 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Thoughts-on-Ayn-Rands-The-Fountainhead-Part-1/">Thoughts on Ayn Rand&#39;s The Fountainhead: Part 1</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>May 19, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                I've known of Ayn Rand for quite a number of years. The first time I can remember her being talked about was by a fellow philosophy student, approximately one year ahead of me, who was a rather big fan of her work. At least one professor got into arguments with this student, as she'd&nbsp;bring up&nbsp;Rand's approach. In 2002 and 2003 I read We the Living and Anthem, and enjoyed them well enough.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Thoughts-on-Ayn-Rands-The-Fountainhead-Part-1/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/On-Achievements-and-Trophies/">On Achievements and Trophies</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>May 16, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                To a very large extent, I consider myself to be a gamer. Around the time the NES came out, my family picked up an Atari 2600, used. I don't know who sold it to us, but I can remember going with my dad to pick it up at my school's playground (that was the meeting place). At a later point we picked up an NES, via my dad, and then my mom bought us a SNES.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/On-Achievements-and-Trophies/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-11-released/">iTunes Playlists to Xml - version 1.1 released</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>May 15, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                This application has since been updated. Read about the current version of iTunes Playlists to Xml. Update: Version 1.1.1 is available for download, which corrects the progress bar bug, noted in the comments below. To upgrade, simply replace your executable with the one in the above zip file. Version 1.1 of iTunes Playlists to Xml has been released. Download iTunes Playlists to Xml version 1.1. This update now appends the saved xml file with the current date and time, for ease.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-11-released/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,15 +273,15 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-knex-beasts-alive-robo-jaws/">Review: K&#39;NEX Beasts Alive Robo-Jaws Building Set (34406)</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-tally-ho/">Review: Tally Ho!</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-smugglers-family-board-game/">Review: Smugglers Family Board Game</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-case-logic-kickback-for-surface-pro-4-ckse2197/">Review: Case Logic Kickback for Surface Pro 4 (CKSE2197)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-lance-gluten-free-cookie-sandwich-peanut-butter-5-oz/">Review: Lance Gluten Free Cookie Sandwich, Peanut Butter, 5 oz</a></li>
                 
             </ul>
         </ul>
