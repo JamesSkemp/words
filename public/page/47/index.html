@@ -57,6 +57,22 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/">Directories to parameters with IIS 6 and wildcard redirection</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 29, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Some parameters have been changed to protect the innocent.&nbsp; This could be old news, and since I&#39;m talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory,&nbsp;and a URL that contains directories below the virtual directory. So, at work I had a horrible URL like the following (ignore the invalid space): /filename.cfm?parameterA=valueA&amp;parameterB=valueB &amp;issuemonth=4&amp;issueyear=2008&amp;groupname=publ What I wanted to do was allow someone to use a URL like this to get to that page: /enews/publ/2008/4/ &nbsp;- or - /enews/publ/2008/4 Luckily, after a lucky Google search, I found a Microsoft TechNet on this very issue, in the Server 2003 Redirect Reference (IIS 6.0).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Dynamic-user-controlled-layout-in-a-CMS/">Dynamic user-controlled layout in a CMS</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>May 25, 2008</li>
@@ -199,22 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>May 4, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                I&#39;ve posted code in ColdFusion and JavaScript for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. RegularExpression.aspx &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt; &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt; &nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt; &nbsp;&nbsp;form { &nbsp;&nbsp;&nbsp;margin:0; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;} &nbsp;&nbsp;form label, .label_kludge { &nbsp;&nbsp;&nbsp;display:block; &nbsp;&nbsp;&nbsp;float:left; &nbsp;&nbsp;&nbsp;width:180px; &nbsp;&nbsp;&nbsp;padding:0; &nbsp;&nbsp;&nbsp;margin:5px 0 0; &nbsp;&nbsp;&nbsp;text-align:right; &nbsp;&nbsp;} &nbsp;&nbsp;form input, form textarea, form select { &nbsp;&nbsp;&nbsp;width:200px; &nbsp;&nbsp;&nbsp;margin:5px 0 0 10px; &nbsp;&nbsp;} &nbsp;&nbsp;textarea { &nbsp;&nbsp;&nbsp;overflow:auto; &nbsp;&nbsp;} &nbsp;&nbsp;form br { &nbsp;&nbsp;&nbsp;clear:left; &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &nbsp;&lt;h1&gt;ASP.NET 3.5 Regular Expression Tester&lt;/h1&gt; &nbsp;&nbsp;&nbsp; &lt;form id=&quot;form1&quot; runat=&quot;server&quot;&gt; &nbsp;&nbsp;&nbsp; &lt;div&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:Label ID=&quot;lbl_RegularExpression&quot; runat=&quot;server&quot; Text=&quot;Regular Expression:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;RegularExpression&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:TextBox ID=&quot;RegularExpression&quot; runat=&quot;server&quot; Width=&quot;350&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator1&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;RegularExpression&quot; Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a regular expression.&quot; SetFocusOnError=&quot;True&quot;&gt;You &nbsp;&nbsp;must enter a regular expression.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_TestString&quot; runat=&quot;server&quot; Text=&quot;Test String:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;TestString&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;asp:TextBox ID=&quot;TestString&quot; runat=&quot;server&quot; Width=&quot;350px&quot;&gt;&lt;/asp:TextBox&gt; &nbsp;&nbsp;&lt;asp:RequiredFieldValidator ID=&quot;RequiredFieldValidator2&quot; runat=&quot;server&quot; &nbsp;&nbsp;&nbsp;Display=&quot;Dynamic&quot; &nbsp;&nbsp;&nbsp;ErrorMessage=&quot;You must enter a string to test the regular expression against.&quot; &nbsp;&nbsp;&nbsp;ControlToValidate=&quot;TestString&quot;&gt;You &nbsp;&nbsp;must enter a string to test the regular expression against.&lt;/asp:RequiredFieldValidator&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_CaseSensitive&quot; runat=&quot;server&quot; Text=&quot;Case Sensitive:&quot; &nbsp;&nbsp;&nbsp;AssociatedControlID=&quot;CaseSensitive&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;asp:CheckBox ID=&quot;CaseSensitive&quot; runat=&quot;server&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;span class=&quot;label_kludge&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;asp:Button ID=&quot;btn_Test&quot; &nbsp;&nbsp;&nbsp;runat=&quot;server&quot; Text=&quot;Test&quot; onclick=&quot;btn_Test_Click&quot; /&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&lt;asp:Label ID=&quot;lbl_Results&quot; runat=&quot;server&quot;&gt;&lt;/asp:Label&gt; &nbsp;&nbsp;&lt;br /&gt; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/div&gt; &nbsp;&nbsp;&nbsp; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; RegularExpression.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.Text.RegularExpressions; public partial class _Default : System.Web.UI.Page { &nbsp;&nbsp;&nbsp; protected void Page_Load(object sender, EventArgs e) { &nbsp;&nbsp;if (this.IsPostBack) { &nbsp;&nbsp;&nbsp;Boolean MatchCheck; &nbsp;&nbsp;&nbsp;if (this.CaseSensitive.Checked) { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text); &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;MatchCheck = Regex.IsMatch(this.TestString.Text, this.RegularExpression.Text, RegexOptions.IgnoreCase); &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;if (MatchCheck) { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: match found&quot;; &nbsp;&nbsp;&nbsp;} else { &nbsp;&nbsp;&nbsp;&nbsp;this.lbl_Results.Text = &quot;Result: no match found&quot;; &nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;} &nbsp;&nbsp;&nbsp; } &nbsp;protected void btn_Test_Click(object sender, EventArgs e) {&nbsp; &nbsp;} } See it in action!
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-ASPNET/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,6 +273,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
@@ -280,8 +282,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-knex-beasts-alive-robo-jaws/">Review: K&#39;NEX Beasts Alive Robo-Jaws Building Set (34406)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-tally-ho/">Review: Tally Ho!</a></li>
                 
             </ul>
         </ul>
