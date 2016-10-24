@@ -57,6 +57,22 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Example-batch-file-to-dump-Subversion-repositories/">Example batch file to dump Subversion repositories</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 19, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I have a large collection of repositories, and until now ran a single batch file that had to be updated each time I created a new repository, to add the new directory. To combat that, I did some research and created a new batch file that does all the heavy lifting for me. To save others time, I present it below. SET timeVar=%date:~10,4%%date:~4,2%%date:~7,2% SET repoDumpDir=..\repos_dump FOR /D %%G IN (*) DO svnadmin dump %%G &gt; %repoDumpDir%%%G%timeVar%.dump PAUSE The key items are the repoDumpDir variable, which you'll want to set accordingly.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Example-batch-file-to-dump-Subversion-repositories/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-No-Doors-No-Windows/">Review: No Doors, No Windows</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>November 15, 2009</li>
@@ -199,22 +215,6 @@
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/">Using SQLite as a membership, profile, and role provider in ASP.NET MVC</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 25, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                I'd really like to implement membership providers in my Web applications, but just don't have the user-base that requires SQL Server (Express), nor the memory on my production server. Having looked at SQLite before, I figured it would be exactly what I'd need, without going to the alternative of XML. After some research I found Roger Martin's SQLite Membership, Role, and Profile Providers, and finally decided yesterday to implement these on a dummy MVC site.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -273,6 +273,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
@@ -280,8 +282,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-tech21-evo-elite-protectective-case-for-the-samsung-galaxy-s7/">Review: tech21 EVO ELITE Protectective Case for the Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>
