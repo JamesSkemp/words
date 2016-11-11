@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Linq To Xml &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,9 @@
 										
 									</li>
                                 </ul>
-                                I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query. Obviously, you must export the Genre field in order for the following query to work. // Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.xml&rdquo;; XDocument xml = XDocument.Load(playlistXml); var categories = from track in xml.Descendants(&ldquo;track&rdquo;) group track by track.Element(&ldquo;genre&rdquo;).Value into t orderby t.Key //orderby t.Count() descending select new { Category = t.Key, Count = t.Count() }; categories.Dump(); Note that you can switch the orderby lines depending upon how you want to sort the returned data.
+                                I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query.
+Obviously, you must export the Genre field in order for the following query to work.
+// Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +83,10 @@
 										
 									</li>
                                 </ul>
-                                The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted. At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen). I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out. C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } } public class Fillup { public int Id { get; set; } public DateTime Date { get; set; } public int MilesTotal { get; set; } public Decimal MilesDriven { get; set; } public Decimal Gallons { get; set; } public Decimal CostPerGallon { get; set; } public Decimal CostTotal { get; set; } public String Notes { get; set; } }&lt;/code&gt;&lt;/pre&gt; LINQ to XML XDocument vehicleGasXml = XDocument.Load(@&ldquo;C:\path\to\vehicle_gas.xml&rdquo;); IEnumerable vehicles = from vehicle in vehicleGasXml.Descendants(&ldquo;vehicle&rdquo;) select new Vehicle { Id = int.Parse(vehicle.Attribute(&ldquo;id&rdquo;).Value), Make = vehicle.Element(&ldquo;make&rdquo;).Value, Model = vehicle.Element(&ldquo;model&rdquo;).Value, Year = int.Parse(vehicle.Element(&ldquo;year&rdquo;).Value), Fillups = from fillup in vehicle.Descendants(&ldquo;fillup&rdquo;) select new Fillup { Id = int.Parse(fillup.Attribute(&ldquo;id&rdquo;).Value), Date = DateTime.ParseExact(fillup.Element(&ldquo;date&rdquo;).Value, &ldquo;yyyy-MM-dd&rdquo;, System.Globalization.CultureInfo.InvariantCulture), MilesTotal = int.Parse(fillup.Element(&ldquo;milesCar&rdquo;).Value), MilesDriven = decimal.Parse(fillup.Element(&ldquo;milesDriven&rdquo;).Value), Gallons = decimal.Parse(fillup.Element(&ldquo;gallons&rdquo;).Value), CostPerGallon = decimal.Parse(fillup.Element(&ldquo;costGallon&rdquo;).Value), CostTotal = decimal.Parse(fillup.Element(&ldquo;costTotal&rdquo;).Value), Notes = fillup.Element(&ldquo;notes&rdquo;).Value } }; As always, suggestions appreciated.
+                                The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.
+ At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen).
+I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.
+C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } }
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +102,8 @@
 										
 									</li>
                                 </ul>
-                                At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved. Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.
+                                At the beginning of the month I wrote a post on how to find BlogEngine.NET comments that had not yet been published/approved.
+Having purchased a copy of LINQPad a short while ago (autocompletion costs, the program with all other functionality does not; give it a try if you develop in .NET - it's very cool), and having got slammed this morning with some spammer who had an hour to kill, I decided to adapt my code for LINQPad.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published-now-with-LINQPad/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +119,9 @@
 										
 									</li>
                                 </ul>
-                                Unfortunately, BlogEngine.NET doesn't currently have a very good way to determine, at a glance, all of the comments that haven't been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me. You can download the built executable, or play with the code, which is included below. Download the executable&nbsp;(7-Zip format).
+                                Unfortunately, BlogEngine.NET doesn't currently have a very good way to determine, at a glance, all of the comments that haven't been approved. While this will certainly be coming in a future release, or as an extension, I figured writing something simple to do this would be a good LINQ to XML test for me.
+You can download the built executable, or play with the code, which is included below.
+Download the executable&nbsp;(7-Zip format).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Determine-BlogEngineNET-comments-that-havent-been-published/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,7 +137,10 @@
 										
 									</li>
                                 </ul>
-                                Similar to my post on parsing Last.fm's artist.getSimilar, I've been working with Yahoo! Music's Web services today. Unfortunately, Yahoo!'s services aren't quite as friendly as those made available by Last.fm. So that I remember, and others don't have to tackle this as well, here's the class I've created. (Download JamesRSkemp.WebServices.YahooMusic.cs.) /* Created by James Skemp - http://jamesrskemp.com/ Version 1.0 More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.org/licenses/by/3.0/us/ */ using System; using System.Collections.Generic; using System.Linq; using System.Text; using System.Net; using System.IO; using System.Xml.Linq; using System.Data; namespace JamesRSkemp.WebServices { class YahooMusic { /// &lt;summary&gt; /// Key used to access Yahoo!
+                                Similar to my post on parsing Last.fm's artist.getSimilar, I've been working with Yahoo! Music's Web services today.
+Unfortunately, Yahoo!'s services aren't quite as friendly as those made available by Last.fm.
+So that I remember, and others don't have to tackle this as well, here's the class I've created. (Download JamesRSkemp.WebServices.YahooMusic.cs.)
+/* Created by James Skemp - http://jamesrskemp.com/ Version 1.0 More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -145,7 +156,10 @@
 										
 									</li>
                                 </ul>
-                                The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services. Setup and assumptions The first step is sign up for a free API account at Last.fm. You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality. When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.
+                                The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services.
+Setup and assumptions The first step is sign up for a free API account at Last.fm.
+You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality.
+When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -191,6 +205,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -198,8 +214,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

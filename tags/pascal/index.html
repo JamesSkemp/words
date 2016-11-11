@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Pascal &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,10 @@
 										
 									</li>
                                 </ul>
-                                The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated). This is the code in main.pas, which it seems is the only file really necessary. This code is covered by a Creative Commons&nbsp;Attribution-NonCommercial 3.0 license. program TicTacToe (input, output); label begingame, picknumber, checkmove, checkforwin, compmove, winner, nobodywon, playagain, illegalmove, compcrash, endgame; var playmove, turn, points : integer; place1, place2, place3, place4, place5, place6, place7, place8, place9 : char; currentplayer, ynagain, lastwinner : char; begin writeln; writeln(&lsquo;JRSs Tic-Tac-Toe v1.1&rsquo;); writeln(&lsquo;Created by James Skemp - http://jamesrskemp.net/'); {2003.11.09} writeln(&lsquo;Version 1.0: 2003.11.09&rsquo;); writeln(&lsquo;Version 1.1: 2003.11.09&rsquo;); writeln; points := 0; lastwinner := &lsquo;J&rsquo;; begingame: turn := 0; place1 := &lsquo;1&rsquo;; place2 := &lsquo;2&rsquo;; place3 := &lsquo;3&rsquo;; place4 := &lsquo;4&rsquo;; place5 := &lsquo;5&rsquo;; place6 := &lsquo;6&rsquo;; place7 := &lsquo;7&rsquo;; place8 := &lsquo;8&rsquo;; place9 := &lsquo;9&rsquo;; if (lastwinner = &lsquo;J&rsquo;) then goto picknumber; if (lastwinner = &lsquo;X&rsquo;) then goto compmove; if ((lastwinner = &lsquo;O&rsquo;) and (points &lt;10)) then goto picknumber; if ((lastwinner = &lsquo;O&rsquo;) and (points &gt;11)) then goto compmove; picknumber: currentplayer := &lsquo;X&rsquo;; writeln; writeln; writeln(&rsquo; | | &lsquo;); writeln(&rsquo; &lsquo;,place1,&rsquo; | &lsquo;,place2,&rsquo; | &lsquo;,place3,&rsquo; &lsquo;); writeln(&rsquo; | | &lsquo;); writeln(&rsquo; &mdash;+&mdash;+&mdash;&lsquo;); writeln(&rsquo; | | &lsquo;); writeln(&rsquo; &lsquo;,place4,&rsquo; | &lsquo;,place5,&rsquo; | &lsquo;,place6,&rsquo; &lsquo;); writeln(&rsquo; | | &lsquo;); writeln(&rsquo; &mdash;+&mdash;+&mdash;&lsquo;); writeln(&rsquo; | | &lsquo;); writeln(&rsquo; &lsquo;,place7,&rsquo; | &lsquo;,place8,&rsquo; | &lsquo;,place9,&rsquo; &lsquo;); writeln(&rsquo; | | &lsquo;); writeln; writeln(&lsquo;Pick a number that you would like to take (you are &ldquo;X&rdquo;).
+                                The following is a really old program (November 2003) written in Pacal using Bloodshed Dev-Pascal (which seems to no longer be updated).
+This is the code in main.pas, which it seems is the only file really necessary.
+This code is covered by a Creative Commons&nbsp;Attribution-NonCommercial 3.0 license.
+program TicTacToe (input, output); label begingame, picknumber, checkmove, checkforwin, compmove, winner, nobodywon, playagain, illegalmove, compcrash, endgame; var playmove, turn, points : integer; place1, place2, place3, place4, place5, place6, place7, place8, place9 : char; currentplayer, ynagain, lastwinner : char; begin writeln; writeln(&lsquo;JRSs Tic-Tac-Toe v1.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tic-Tac-Toe-using-Pascal/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -83,6 +86,8 @@
                                 </ul>
                                 <p>JRSs Tic-Tac-Toe is a simple game of Tic-Tac-Toe programmed with Dev-Pascal. It even keeps a tally of your points (win = +1, loss = -1).</p>
 
+<h3>Current limitations:</h3>
+<p>Runs in MS-DOS, and therefore lacks an interface of sorts</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Pascal-Programming-JRSs-Tic-Tac-Toe/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -128,6 +133,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -135,8 +142,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

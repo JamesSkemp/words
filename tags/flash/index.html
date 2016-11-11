@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Flash &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,9 @@
 										
 									</li>
                                 </ul>
-                                I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked. This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0. Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head runat="server"&gt; &lt;title&gt;FLV video player&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;form id="form1" runat="server"&gt; &lt;div&gt; &lt;a href="Default.aspx"&gt;Refresh listing&lt;/a&gt;&lt;br/&gt; &lt;asp:DropDownList ID="DropDownList1" runat="server"&gt; &lt;/asp:DropDownList&gt; &lt;asp:Button ID="Button1" runat="server" Text="View" onclick="Button1_Click" /&gt; &lt;/div&gt; &lt;div id="videoPlayer" runat="server"&gt;&lt;/div&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; Default.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.IO; public partial class _Default : System.Web.UI.Page { int videoWidth = 1000; // = 200/170 ratio int videoHeight = 680; // 400x340 = default string playerLocation = "osflv_player_v3/player.swf"; protected void Page_Load(object sender, EventArgs e) { if (!IsPostBack) { DirectoryInfo directory = new DirectoryInfo(Server.MapPath("/videos")); FileInfo[] files = directory.GetFiles(); foreach (FileInfo file in files) { if (file.Extension == ".flv") { DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4)); } } } } protected void Button1_Click(object sender, EventArgs e) { string video = "/videos/" + DropDownList1.SelectedItem.Text + ".flv"; videoPlayer.InnerHtml = "&lt;object width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' id='flvPlayer2'&gt;"; videoPlayer.InnerHtml += "&lt;param name='allowFullScreen' value='true'&gt;"; videoPlayer.InnerHtml += "&lt;param name='movie' value='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5'&gt;"; videoPlayer.InnerHtml += ""; videoPlayer.InnerHtml += "&lt;embed src='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5' width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' allowFullScreen='true' type='application/x-shockwave-flash'&gt;"; videoPlayer.InnerHtml += "&lt;/object&gt;"; videoPlayer.InnerHtml += "&lt;br/&gt;&lt;span style='color:#ccc;'&gt;" + video + "&lt;/span&gt;"; } } A default Web.config file can be created and used, and a videos directory is checked for the listing of videos.
+                                I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked.
+This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.
+Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +83,7 @@
 										
 									</li>
                                 </ul>
-                                I purchased a Casio EX-Z1200 a bit ago, which I&#39;ve been playing around with. Overall, I&#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&#39;t the best for me. After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for.
+                                I purchased a Casio EX-Z1200 a bit ago, which I&#39;ve been playing around with. Overall, I&#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&#39;t the best for me.  After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +99,7 @@
 										
 									</li>
                                 </ul>
-                                One of the view things I miss about cable is The Daily Show. Thankfully, I can now get my fix, as well as catch up on older shows, online, legally. The archives are available from the Show&#39;s Videos area. Among the gems is this one on the recent healthcare veto: Headlines - Kids&#39; Healthcare Veto. The short commercial at the beginning and end are fairly non-obtrusive, save when they cut into the end abruptly.
+                                One of the view things I miss about cable is The Daily Show. Thankfully, I can now get my fix, as well as catch up on older shows, online, legally.  The archives are available from the Show&#39;s Videos area.  Among the gems is this one on the recent healthcare veto: Headlines - Kids&#39; Healthcare Veto.  The short commercial at the beginning and end are fairly non-obtrusive, save when they cut into the end abruptly.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/The-Daily-Show-is-now-available-online/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,9 +115,9 @@
 										
 									</li>
                                 </ul>
-                                <p><p>
-After a bit of looking around, for the best gallery application, I&#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&#39;m requiring version 8 or higher for mine), and it did cost some money, it&#39;s a great little application.</p>
-
+                                <p>
+After a bit of looking around, for the best gallery application, I&#39;ve settled on SlideShowPro. While it does require Flash (version 7 or higher, but I&#39;m requiring version 8 or higher for mine), and it did cost some money, it&#39;s a great little application.
+</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/New-gallery-posted/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -161,6 +163,8 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -168,8 +172,6 @@ After a bit of looking around, for the best gallery application, I&#39;ve settle
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

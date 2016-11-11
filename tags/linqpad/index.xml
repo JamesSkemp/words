@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linqpad on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/linqpad/</link>
-    <description>Recent content in Linqpad on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/linqpad/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Sat, 26 Jun 2010 21:00:00 -0500</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/linqpad/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/linqpad/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Windows Server 2008 R2, SQL Server Express 2008 R2, and LINQPad</title>

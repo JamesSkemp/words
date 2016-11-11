@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>PHP Forum Software Showdown Part 4: MyBB &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -75,7 +75,7 @@ This time, we&#39;ll be looking at <a href="http://www.mybboard.com/">MyBB</a>. 
 In this article, we&#39;ll be installing MyBB version 1.2.1, which is the latest version, as of September 27, 2006.
 </p>
 
-<p><h4>File and folder size</h4>
+<h4>File and folder size</h4>
 <p>
 The zip file for MyBB weighs in at just over 1 MB. Unzipped, we&#39;re looking at almost 3 MB. The zip file does not contain a single folder, but rather two, so you&#39;ll want to unzip to a single MyBB folder. MyBB is also available in gzip and bzip formats.<!--adsense-->
 </p>
@@ -89,7 +89,7 @@ Unlike past articles, for these forum reviews we&#39;re going to create the nece
 </p>
 <h4>Creating the user and database via the command-line</h4>
 <p>
-First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run ... and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
 </p>
 <blockquote>
     <p>
@@ -122,19 +122,19 @@ Before you enter this, look it over, and then read the paragraph following, for 
 <blockquote>
     <p>
      GRANT select, insert, update, delete, index, alter, create, drop<br />
-    ON <strong>MyBB</strong>.<em><br />
+    ON <strong>MyBB</strong>.*<br />
     TO <strong>MyBB</strong> IDENTIFIED BY &#39;<strong>mybb</strong>&#39;;
     </p>
 </blockquote>
 <p>
-The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>MyBB</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>MyBB</strong> IDENTIFIED BY &#39;<strong>mybb</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>MyBB</strong>.*&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>MyBB</strong> IDENTIFIED BY &#39;<strong>mybb</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
 </p>
 <p>
 If the query is OK, enter the following command.
 </p>
 <blockquote>
     <p>
-     UPDATE mysql.user SET Password = OLD<em>PASSWORD(&#39;mybb&#39;) WHERE User = &#39;MyBB&#39;;
+     UPDATE mysql.user SET Password = OLD_PASSWORD(&#39;mybb&#39;) WHERE User = &#39;MyBB&#39;;
     </p>
 </blockquote>
 <p>
@@ -174,7 +174,7 @@ In Database Configuration, leave Host as is.
     Database Username: MyBB<br />
     Database Password: mybb<br />
     Database Name: MyBB<br />
-    Table Prefix: mybb</em>
+    Table Prefix: mybb_
     </p>
 </blockquote>
 <p>
@@ -232,8 +232,7 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
 </p>
 <p>
 <a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
-</p></p>
-
+</p>
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
@@ -309,6 +308,8 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -316,8 +317,6 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

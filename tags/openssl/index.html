@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Openssl &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,11 @@
 										
 									</li>
                                 </ul>
-                                A raw dump of information on how to create a certificate authority and etcetera. Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file) Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048 Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer Step 4: Create DER for public consumption "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\_ca.cer -outform DER -out certs\_ca.der Step 5: Create request from IIS IIS &gt; click on main server, Server Certificates &gt; populate all for request save to requests directory locally Step 6: Handle request "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs Step 7: Convert for IIS "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer Step 8: Add to IIS back in iis, complete request.
+                                A raw dump of information on how to create a certificate authority and etcetera.
+Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests
+Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file)
+Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048
+Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -111,6 +115,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -118,8 +124,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

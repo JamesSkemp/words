@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Iis &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,9 @@
 										
 									</li>
                                 </ul>
-                                Having recently picked up an iPod Touch, to replace my Classic, I've become very interested in HTML5's ability to navigate content offline. In my environment I decided to create a separate directory for my manifest files. I'm also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF. So that that isn't an issue, I created a Web.config file in the manifest directory with the below contents.
+                                Having recently picked up an iPod Touch, to replace my Classic, I've become very interested in HTML5's ability to navigate content offline.
+In my environment I decided to create a separate directory for my manifest files. I'm also running IIS 7, on Server 2008 R2, so .manifest files are already defined for WPF.
+So that that isn't an issue, I created a Web.config file in the manifest directory with the below contents.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Supporting-HTML5-manifest-files-on-IIS-7-using-Webconfig/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +83,11 @@
 										
 									</li>
                                 </ul>
-                                A raw dump of information on how to create a certificate authority and etcetera. Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file) Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048 Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.key -out certs/_ca.cer Step 4: Create DER for public consumption "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\_ca.cer -outform DER -out certs\_ca.der Step 5: Create request from IIS IIS &gt; click on main server, Server Certificates &gt; populate all for request save to requests directory locally Step 6: Handle request "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" ca -policy policy_anything -config openssl.cnf -cert certs\_ca.cer -in requests\jamesrskemp_req.txt -keyfile keys\_ca.key -days 365 -out certs\jamesrskemp.cer -outdir certs Step 7: Convert for IIS "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" x509 -in certs\jamesrskemp.cer -out certs\jamesrskemp_iis.cer Step 8: Add to IIS back in iis, complete request.
+                                A raw dump of information on how to create a certificate authority and etcetera.
+Step 1: Basic folder and file&nbsp;structure creation Directories: certs, keys, requests
+Files: database.txt (empty), serial.txt (01, then&nbsp;new line), openssl.cnf (based on OpenSSL file)
+Step 2: Create key "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" genrsa -des3 -out keys/_ca.key 2048
+Step 3: Create certificate authority certificate "c:\Program Files (x86)\Apache Software Foundation\Apache2.2\bin\openssl.exe" req -config openssl.cnf -new -x509 -days 365 -key keys/_ca.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +103,8 @@
 										
 									</li>
                                 </ul>
-                                I've already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn't able to get content saved via the file_put_contents function. It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.
+                                I've already installed the current verison of PHP 5.2 on my Windows Server 2008 R2 machine, but unfortunately wasn't able to get content saved via the file_put_contents function.
+It seems that you need to add and give IUSR the necessary permissions on the file (or directory) in order for writes to work properly.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Enabling-PHP-file_put_contents-support-on-IIS-75-on-Windows-Server-2008-R2/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +120,8 @@
 										
 									</li>
                                 </ul>
-                                Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory. Background I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).
+                                Not feeling much like debugging it too much, I made a couple of modifications to my IIS installation to allow access to files contained within my user directory.
+Background I turned the Internet Information Services feature on on my Windows 7 Home Premium machine before using the Web Platform Installer to add additional functionality. However, I kept running into a permissions issue, as the sites I setup were located in my Users directory (C:\Users\James).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Windows-7-Home-Premium-changes-for-IIS-75-access-of-Users-directories/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,7 +137,9 @@
 										
 									</li>
                                 </ul>
-                                This afternoon I setup a machine for the following purposes: to serve as a test bed for Web development to serve as an always-available Subversion repository server to serve as a repository for shared downloads, across all my machines As time goes by the scope of the server may also change. But for now, this will work just fine. Choosing an edition The first step was to install Windows Server 2008 R2.
+                                This afternoon I setup a machine for the following purposes:
+ to serve as a test bed for Web development to serve as an always-available Subversion repository server to serve as a repository for shared downloads, across all my machines  As time goes by the scope of the server may also change. But for now, this will work just fine.
+Choosing an edition The first step was to install Windows Server 2008 R2.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Windows-Server-2008-R2-Enterprise-Edition-setup-for-Web-development/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -145,7 +155,9 @@
 										
 									</li>
                                 </ul>
-                                Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&nbsp;a full-fledged instance of IIS. While Cassini should not be used in production environments, it's more than enough to run for minor development, or even minor projects. The last official version of Cassini at the time of this writing&nbsp;is 3.5.0.2. Since he's released the source, you can build your own, but what if you just want to download a pre-built version?
+                                Cassini is the product of Dimitry Robsman, and allows ASP.NET applications to be run without&nbsp;a full-fledged instance of IIS.
+While Cassini should not be used in production environments, it's more than enough to run for minor development, or even minor projects.
+The last official version of Cassini at the time of this writing&nbsp;is 3.5.0.2. Since he's released the source, you can build your own, but what if you just want to download a pre-built version?
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Cassini-3502-built-and-ready-to-go/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -161,7 +173,9 @@
 										
 									</li>
                                 </ul>
-                                While Cassini is a built-in Web server part of Microsoft Visual Studio, it's also available as a stand-alone application, thanks to the work of Dmitry Robsman. The current version can be downloaded from this post regarding version 3.5.0.2 but requires that you first build the solution (the code is available under a MS-PL license). Cassini++ is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.5 version of Dmitry's release).
+                                While Cassini is a built-in Web server part of Microsoft Visual Studio, it's also available as a stand-alone application, thanks to the work of Dmitry Robsman.
+The current version can be downloaded from this post regarding version 3.5.0.2 but requires that you first build the solution (the code is available under a MS-PL license).
+Cassini++ is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -177,7 +191,9 @@
 										
 									</li>
                                 </ul>
-                                Version 0.3.1 of Log Parser Plus now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed. Currently under development, Log Parser Plus (not be confused with the Web site LogParserPlus.com) is a tool to (hopefully) help work with Microsoft Log Parser. Download Log Parser Plus 0.3 BETA. You will need to download and install Microsoft Log Parser for this application to run, as well as .NET Framework 2.0.
+                                Version 0.3.1 of Log Parser Plus now features a custom LocalTime variable for IISW3C queries, and outputs the final query (for copying). The scratch pad (the unlabeled text box) will no longer clear when a new query is performed.
+ Currently under development, Log Parser Plus (not be confused with the Web site LogParserPlus.com) is a tool to (hopefully) help work with Microsoft Log Parser.
+Download Log Parser Plus 0.3 BETA.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Log-Parser-Plus-version-03-released/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -193,7 +209,10 @@
 										
 									</li>
                                 </ul>
-                                This is no longer the current version. View information about the current version of Log Parser Plus. Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more. While a number of applications exist to help use Log Parser, as well as a number of sites containing Log Parser queries, I haven&rsquo;t been very happy with them. In an attempt to make it even easier to work with Log Parser, I present version 0.2.1 BETA of Log Parser Plus (not to be confused with the Web site, LogParserPlus.com).
+                                This is no longer the current version. View information about the current version of Log Parser Plus.
+ Microsoft Log Parser is a command line-based utility useful to parse IIS logs and more.
+While a number of applications exist to help use Log Parser, as well as a number of sites containing Log Parser queries, I haven&rsquo;t been very happy with them.
+In an attempt to make it even easier to work with Log Parser, I present version 0.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Log-Parser-Plus-version-021-released/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -209,7 +228,10 @@
 										
 									</li>
                                 </ul>
-                                Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I've created IIS Logs to SQLite, which will parse IIS logs and import them into the SQLite database and table of your choice. The first beta version of this application is now available. Download IIS Logs to SQLite version 0.1. This application requires the .NET Framework version 3.5 (check your version of .NET Framework). Note that for a larger amount of logs, memory usage can spike.
+                                Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I've created IIS Logs to SQLite, which will parse IIS logs and import them into the SQLite database and table of your choice.
+The first beta version of this application is now available.
+Download IIS Logs to SQLite version 0.1.
+This application requires the .NET Framework version 3.5 (check your version of .NET Framework).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/IIS-Logs-to-SQLite-version-01-beta-released/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -225,7 +247,7 @@
 										
 									</li>
                                 </ul>
-                                Some parameters have been changed to protect the innocent.&nbsp; This could be old news, and since I&#39;m talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory,&nbsp;and a URL that contains directories below the virtual directory. So, at work I had a horrible URL like the following (ignore the invalid space): /filename.cfm?parameterA=valueA&amp;parameterB=valueB &amp;issuemonth=4&amp;issueyear=2008&amp;groupname=publ What I wanted to do was allow someone to use a URL like this to get to that page: /enews/publ/2008/4/ &nbsp;- or - /enews/publ/2008/4 Luckily, after a lucky Google search, I found a Microsoft TechNet on this very issue, in the Server 2003 Redirect Reference (IIS 6.0).
+                                Some parameters have been changed to protect the innocent.&nbsp;   This could be old news, and since I&#39;m talking about IIS 6, I know it is. But, I just discovered the other day how to pass parameters to a file using IIS 6, a virtual directory,&nbsp;and a URL that contains directories below the virtual directory.  So, at work I had a horrible URL like the following (ignore the invalid space):   /filename.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Directories-to-parameters-with-IIS-6-and-wildcard-redirection/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -241,7 +263,7 @@
 										
 									</li>
                                 </ul>
-                                I had previously covered how to install IIS 7 on Windows Vista Home Premium. This time I&#39;ll be briefly covering what you need to enable ASP.NET as well. As before, you&#39;ll want to select Control Panel from the Start menu, then click on the Programs link. Next, click on Turn Windows features on or off. Expand Internet Information Services, followed by the World Wide Web Services and Application Development Features. Since we want to be able to run ASP.NET applications, we&#39;ll need to check the ASP.NET checkbox.
+                                I had previously covered how to install IIS 7 on Windows Vista Home Premium. This time I&#39;ll be briefly covering what you need to enable ASP.NET as well.  As before, you&#39;ll want to select Control Panel from the Start menu, then click on the Programs link. Next, click on Turn Windows features on or off.  Expand Internet Information Services, followed by the World Wide Web Services and Application Development Features.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Adding-NET-functionality-to-Windows-Vista-Home-Premium-Internet-Information-Services/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -257,7 +279,7 @@
 										
 									</li>
                                 </ul>
-                                This guide covers Windows Vista Home Premium SP1, and may differ for other versions. I&#39;ll also only be covering the basic, default, installation. A guide covering the addition of additional features, like .NET capabilities, may be released as well. While limited, Windows Vista Home Premium allows Internet Information Services (IIS) 7 to be installed with little fuss, using the Control Panel interface. First, select Start &gt; Control Panel. Next click on the Programs item, followed by Turn Windows features on or off.
+                                This guide covers Windows Vista Home Premium SP1, and may differ for other versions.  I&#39;ll also only be covering the basic, default, installation. A guide covering the addition of additional features, like .NET capabilities, may be released as well.   While limited, Windows Vista Home Premium allows Internet Information Services (IIS) 7 to be installed with little fuss, using the Control Panel interface.  First, select Start &gt; Control Panel.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/How-to-install-Internet-Information-Services-IIS-7-on-Windows-Vista-Home-Premium/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -273,7 +295,7 @@
 										
 									</li>
                                 </ul>
-                                I purchased a Casio EX-Z1200 a bit ago, which I&#39;ve been playing around with. Overall, I&#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&#39;t the best for me. After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for.
+                                I purchased a Casio EX-Z1200 a bit ago, which I&#39;ve been playing around with. Overall, I&#39;ve been very happy with it, however, it outputs movies to the MOV format. While this seemed great for Apple, it wasn&#39;t the best for me.  After testing out QuickTime Pro (7. something) and Ulead Movie Wizard 3.2 SE VCD (which came with the camera), I was about to settle for less than I hoped for.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Quick-and-dirty-conversions-to-FLV-Flash-Video/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -289,7 +311,7 @@
 										
 									</li>
                                 </ul>
-                                In a previous article, I gave an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0. This time, I&#39;d like to cover what each field provides, again in relation to IIS and a Web site, for statistical and debugging purposes. What fields are available Again, we&#39;ve covered what fields are available in the W3C extended log format in a previous article.
+                                In a previous article, I gave an overview of the World Wide Web Consortium (W3C) extended log format, in relation to Internet Information Services (IIS) 6.0.  This time, I&#39;d like to cover what each field provides, again in relation to IIS and a Web site, for statistical and debugging purposes. What fields are available  Again, we&#39;ve covered what fields are available in the W3C extended log format in a previous article.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/W3C-extended-log-format-fields-and-IIS-60/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -305,7 +327,7 @@
 										
 									</li>
                                 </ul>
-                                In Microsoft Internet Information Services (IIS) 6.0, you can choose to use a number of different formats for your access logs. Access logs contain information about what files are requested, whether the request was successful or not. Of all the available formats, the World Wide Web Consortium (W3C) extended log file format is by far the most flexible format available, as you can select the information that you would like to log.
+                                In Microsoft Internet Information Services (IIS) 6.0, you can choose to use a number of different formats for your access logs.  Access logs contain information about what files are requested, whether the request was successful or not.  Of all the available formats, the World Wide Web Consortium (W3C) extended log file format is by far the most flexible format available, as you can select the information that you would like to log.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -321,7 +343,7 @@
 										
 									</li>
                                 </ul>
-                                In IIS 6.0, you can setup Application Pools for each of your sites. My knowledge of the exact benefits of this is somewhat lacking, but what I do understand is that these help applications (Web sites) stay within their own bounds, and prevent them from having a bad effect upon each other. For example, if one application is preforming poorly, as long as it&#39;s not a server-wide issue, the other sites on the server will be impacted minimally.
+                                In IIS 6.0, you can setup Application Pools for each of your sites. My knowledge of the exact benefits of this is somewhat lacking, but what I do understand is that these help applications (Web sites) stay within their own bounds, and prevent them from having a bad effect upon each other.  For example, if one application is preforming poorly, as long as it&#39;s not a server-wide issue, the other sites on the server will be impacted minimally.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Determining-which-IIS-60-Application-Pool-belongs-to-which-application/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -337,7 +359,7 @@
 										
 									</li>
                                 </ul>
-                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article. First, I assume that the below is put in the same directory as the logs you would like to parse.&nbsp; SELECT sc-status AS [HTTP Status Code], count() AS Requests INTO http_status_percent_graph-%date%.png FROM ex%date%.log GROUP BY [HTTP Status Code] ORDER BY Requests DESC Once you&#39;ve saved this, you can call the script like such, so long as you&#39;re already in the directory you saved the SQL file.
+                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.   The following SQL can be used by Log Parser to generate a chart with the total requests (for a day, month, or year) and what percent each status code is of those requests. An example chart can be found at the end of this article.  First, I assume that the below is put in the same directory as the logs you would like to parse.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Log-Parser-script-Percent-of-status-codes-across-all-hitsrequests/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -353,7 +375,7 @@
 										
 									</li>
                                 </ul>
-                                A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not. A bit of research later, it appears that there is a way to have Windows restart the logging after a system restart. To enable this, it seems you just need to have the log stop after a certain amount of time (for example, after x hours, or x days).
+                                A few days ago my server was restarted in the early morning hours. I had been logging network and processor usage using Windows built-in performance monitoring, but when the server restarted, the logs did not.  A bit of research later, it appears that there is a way to have Windows restart the logging after a system restart.  To enable this, it seems you just need to have the log stop after a certain amount of time (for example, after x hours, or x days).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/How%20to%20ensure%20that%20performance%20counters%20continue%20after%20a%20restart/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -369,7 +391,7 @@
 										
 									</li>
                                 </ul>
-                                The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site. logparser &quot;select cs-uri-stem, count(cs-method) from ex*.log where cs-method like &#39;%USER&#39; group by cs-uri-stem order by count(cs-method),cs-uri-stem&quot;&nbsp; This assumes that you&#39;ve added Log Parser to your path, and that you&#39;re running this from your log file directory. This query will tell you what ip addresses successfully logged into your FTP site.
+                                The following Log Parser query can be used on FTP log files in order to determine what user names were used to login, or attempt to login, to an FTP site.   logparser &quot;select cs-uri-stem, count(cs-method) from ex*.log where cs-method like &#39;%USER&#39; group by cs-uri-stem order by count(cs-method),cs-uri-stem&quot;&nbsp;   This assumes that you&#39;ve added Log Parser to your path, and that you&#39;re running this from your log file directory.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Using-Log-Parser-to-find-users-accounts-used-to-log-into-an-FTP-site/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -385,7 +407,7 @@
 										
 									</li>
                                 </ul>
-                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. In a previous article, I discussed how to use Log Parser to find 404 errors in IIS log files. This time, I&#39;ve made it a little broader, by giving some queries to find all 400 codes, and all 500 codes, through log files. There may be a better way to find these codes (instead of my IN statement), but a standard LIKE doesn&#39;t seem to work.
+                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.   In a previous article, I discussed how to use Log Parser to find 404 errors in IIS log files. This time, I&#39;ve made it a little broader, by giving some queries to find all 400 codes, and all 500 codes, through log files.  There may be a better way to find these codes (instead of my IN statement), but a standard LIKE doesn&#39;t seem to work.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Log-Parser-queries-to-find-400-and-500-http-status-codes/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -401,7 +423,9 @@
 										
 									</li>
                                 </ul>
-                                For various reasons, I've been working towards migrating from an Apache server to an IIS one for my sites. For Gavin's site, I couldn't get away with it, but I don't have any problem making things more difficult for myself :D However, this means that old URLs may not be working as they should. My experience with IIS is a working knowledge of it, and therefore I know what I need to know, picking up what I can.
+                                For various reasons, I've been working towards migrating from an Apache server to an IIS one for my sites. For Gavin's site, I couldn't get away with it, but I don't have any problem making things more difficult for myself :D
+However, this means that old URLs may not be working as they should.
+My experience with IIS is a working knowledge of it, and therefore I know what I need to know, picking up what I can.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Is-it-really-that-simple-redirecting-a-single-file-on-IIS/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -417,7 +441,7 @@
 										
 									</li>
                                 </ul>
-                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not. The following code will generate a listing of calls that generated a 404 error. logparser &quot;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 404report.txt FROM ex.log WHERE sc-status = 404 ORDER BY date, cs-uri-stem, cs-uri-query&quot; This assumes that you&#39;ve currently got a command line open in the folder containing your IIS logs, and that you are logging the above information, as well as that logparser is setup in your PATH line.
+                                Note: This article was written using Log Parser 2.2. Therefore, while it may work for a different version, it may not.   The following code will generate a listing of calls that generated a 404 error.   logparser &quot;SELECT cs-uri-stem, cs-uri-query, date, sc-status, cs(Referer) INTO 404report.txt FROM ex.log WHERE sc-status = 404 ORDER BY date, cs-uri-stem, cs-uri-query&quot;   This assumes that you&#39;ve currently got a command line open in the folder containing your IIS logs, and that you are logging the above information, as well as that logparser is setup in your PATH line.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Find-404-errors-using-Log-Parser/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -433,7 +457,8 @@
 										
 									</li>
                                 </ul>
-                                There's a reason PHP and Apache are so popular on the Web. It's the same reason that most beginner's, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With the right guide, a user can be up and running with Apache and PHP in a couple of hours. Unfortunately, Microsoft's IIS (Internet Information Services) is something that few home-grown Web users have the honour of using.
+                                There's a reason PHP and Apache are so popular on the Web. It's the same reason that most beginner's, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With the right guide, a user can be up and running with Apache and PHP in a couple of hours.
+Unfortunately, Microsoft's IIS (Internet Information Services) is something that few home-grown Web users have the honour of using.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Is-it-past-time-for-Microsoft-to-open-IIS/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -496,6 +521,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -503,8 +530,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

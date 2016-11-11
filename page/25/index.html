@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>James Skemp&#39;s StrivingLife &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -57,6 +57,24 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Rant-An-Oral-Biography-of-Buster-Casey/">Review: Rant: An Oral Biography of Buster Casey</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>April 25, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This is a book review of Rant: An Oral Biography of Buster Casey, written by Chuck Palahniuk.
+ Rant, like the rest of Chuck Palahniuk&rsquo;s works of fiction, features sex, facts which may or may not be true, and distinctive characters.
+However, while told in an interesting way, through the voices of over a dozen characters, Rant seems more of the same-old Chuck Palahniuk, and I fear I may have read the last of his work.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Rant-An-Oral-Biography-of-Buster-Casey/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/">Review: Pride and Prejudice and Zombies: Dawn of the Dreadfuls</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>April 17, 2010</li>
@@ -66,7 +84,10 @@
 										
 									</li>
                                 </ul>
-                                This is a book review of Pride and Prejudice and Zombies: Dawn of the Dreadfuls, written by Steve Hockensmith. First, I haven&rsquo;t read Pride and Prejudice and Zombies, and didn&rsquo;t realize that this was a prequel to that tale. However, as one who has been known to enjoy a zombie movie, now and again, this short tale was rather delightful. The language only flirts with being period, so there&rsquo;s no worry of slogging through any of that.
+                                This is a book review of Pride and Prejudice and Zombies: Dawn of the Dreadfuls, written by Steve Hockensmith.
+ First, I haven&rsquo;t read Pride and Prejudice and Zombies, and didn&rsquo;t realize that this was a prequel to that tale.
+However, as one who has been known to enjoy a zombie movie, now and again, this short tale was rather delightful.
+The language only flirts with being period, so there&rsquo;s no worry of slogging through any of that.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Pride-and-Prejudice-and-Zombies-Dawn-of-the-Dreadfuls/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -82,7 +103,9 @@
 										
 									</li>
                                 </ul>
-                                I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked. This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0. Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head runat="server"&gt; &lt;title&gt;FLV video player&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;form id="form1" runat="server"&gt; &lt;div&gt; &lt;a href="Default.aspx"&gt;Refresh listing&lt;/a&gt;&lt;br/&gt; &lt;asp:DropDownList ID="DropDownList1" runat="server"&gt; &lt;/asp:DropDownList&gt; &lt;asp:Button ID="Button1" runat="server" Text="View" onclick="Button1_Click" /&gt; &lt;/div&gt; &lt;div id="videoPlayer" runat="server"&gt;&lt;/div&gt; &lt;/form&gt; &lt;/body&gt; &lt;/html&gt; Default.aspx.cs using System; using System.Configuration; using System.Data; using System.Linq; using System.Web; using System.Web.Security; using System.Web.UI; using System.Web.UI.HtmlControls; using System.Web.UI.WebControls; using System.Web.UI.WebControls.WebParts; using System.Xml.Linq; using System.IO; public partial class _Default : System.Web.UI.Page { int videoWidth = 1000; // = 200/170 ratio int videoHeight = 680; // 400x340 = default string playerLocation = "osflv_player_v3/player.swf"; protected void Page_Load(object sender, EventArgs e) { if (!IsPostBack) { DirectoryInfo directory = new DirectoryInfo(Server.MapPath("/videos")); FileInfo[] files = directory.GetFiles(); foreach (FileInfo file in files) { if (file.Extension == ".flv") { DropDownList1.Items.Add(file.Name.Remove(file.Name.Length - 4)); } } } } protected void Button1_Click(object sender, EventArgs e) { string video = "/videos/" + DropDownList1.SelectedItem.Text + ".flv"; videoPlayer.InnerHtml = "&lt;object width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' id='flvPlayer2'&gt;"; videoPlayer.InnerHtml += "&lt;param name='allowFullScreen' value='true'&gt;"; videoPlayer.InnerHtml += "&lt;param name='movie' value='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5'&gt;"; videoPlayer.InnerHtml += ""; videoPlayer.InnerHtml += "&lt;embed src='" + playerLocation + "?movie=" + video + "&amp;fgcolor=0x0b7ba4&amp;bgcolor=0x333333&amp;autoload=on&amp;autorewind=on&amp;autoplay=on&amp;volume=5' width='" + videoWidth.ToString() + "' height='" + videoHeight.ToString() + "' allowFullScreen='true' type='application/x-shockwave-flash'&gt;"; videoPlayer.InnerHtml += "&lt;/object&gt;"; videoPlayer.InnerHtml += "&lt;br/&gt;&lt;span style='color:#ccc;'&gt;" + video + "&lt;/span&gt;"; } } A default Web.config file can be created and used, and a videos directory is checked for the listing of videos.
+                                I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked.
+This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.
+Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -98,7 +121,9 @@
 										
 									</li>
                                 </ul>
-                                Resonance of Fate, available for the Playstation 3 and Xbox 360 (I purchased for the former), has a vast amount of data associated with it, as RPGs usually do. Because I usually do, I started keeping track of levels and etcetera for the game, which is available as an XML data file. The data is currently raw (and as of this post need to finish adding data that I've got on paper and on another computer), without styling, but I've been sitting on the information for far too long.
+                                Resonance of Fate, available for the Playstation 3 and Xbox 360 (I purchased for the former), has a vast amount of data associated with it, as RPGs usually do.
+Because I usually do, I started keeping track of levels and etcetera for the game, which is available as an XML data file.
+The data is currently raw (and as of this post need to finish adding data that I've got on paper and on another computer), without styling, but I've been sitting on the information for far too long.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Resonance-of-Fate-General-data-file/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -114,7 +139,9 @@
 										
 									</li>
                                 </ul>
-                                The following book review is for Imar Spaanjaars&rsquo; Beginning ASP.NET 4 in C# and VB. While I&rsquo;ve already read Beginning ASP.NET 3.5 by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it. Would I still feel strongly about recommending his work as the #1 choice for those new (or relatively new) to ASP.NET? Would it offer enough new content over the previous iteration that I&rsquo;d recommend a new purchase if someone had the first?
+                                The following book review is for Imar Spaanjaars&rsquo; Beginning ASP.NET 4 in C# and VB.
+ While I&rsquo;ve already read Beginning ASP.NET 3.5 by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it.
+Would I still feel strongly about recommending his work as the #1 choice for those new (or relatively new) to ASP.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -130,7 +157,11 @@
 										
 									</li>
                                 </ul>
-                                The second half of year 4 with Netflix is contained below. This covers shipping from March 26, 2010 to approximately September 25, 2010. See also the first half of year 4. MRNOS = Movie Received and Next One Shipped The times 03/26/2010 (F) - MRNOS. 03/27/2010 (Sa) - Watched 1408 (2007) at my mom's (via Charter On Demand), which was pretty dang good. Received next movie, but since it's noticeably cracked, and I don't want to risk it, putting it right back in the Milwaukee (3079) mailer I received it in.
+                                The second half of year 4 with Netflix is contained below.
+This covers shipping from March 26, 2010 to approximately September 25, 2010. See also the first half of year 4.
+MRNOS = Movie Received and Next One Shipped
+The times 03/26/2010 (F) - MRNOS.
+03/27/2010 (Sa) - Watched 1408 (2007) at my mom's (via Charter On Demand), which was pretty dang good. Received next movie, but since it's noticeably cracked, and I don't want to risk it, putting it right back in the Milwaukee (3079) mailer I received it in.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Netflix-shipping-for-Madison-WI-Year-4-Part-2/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -146,7 +177,10 @@
 										
 									</li>
                                 </ul>
-                                I thought I posted this before, but I guess I did not. Here&rsquo;s one way to dump a JavaScript object for analysis (if you don&rsquo;t have access to Firebug, or a similar tool). Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the three spots one spot with whatever object you&rsquo;d like dumped. var objectInfo = &ldquo;&rdquo;; // Change ex to whatever object you want to debug.
+                                I thought I posted this before, but I guess I did not.
+Here&rsquo;s one way to dump a JavaScript object for analysis (if you don&rsquo;t have access to Firebug, or a similar tool).
+Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the three spots one spot with whatever object you&rsquo;d like dumped.
+var objectInfo = &ldquo;&rdquo;; // Change ex to whatever object you want to debug.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/JavaScript-object-dump/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -162,7 +196,8 @@
 										
 									</li>
                                 </ul>
-                                One of the applications that I consistently run across all my machines is Serious Samurize. After first finding it, years and years ago, it's quickly become a requirement&nbsp;for getting work done. While some people may have much prettier, and extensive, configurations, I prefer something that I can let sit on my screen on top of everything&nbsp;(assuming Windows doesn't let other applications bump on top of it every once in a while), giving me only the information I need.
+                                One of the applications that I consistently run across all my machines is Serious Samurize. After first finding it, years and years ago, it's quickly become a requirement&nbsp;for getting work done.
+While some people may have much prettier, and extensive, configurations, I prefer something that I can let sit on my screen on top of everything&nbsp;(assuming Windows doesn't let other applications bump on top of it every once in a while), giving me only the information I need.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Samurize-configurations-across-my-systems/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -178,7 +213,8 @@
 										
 									</li>
                                 </ul>
-                                I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was. What follows is an overview of the setup process to install WordPress 2.9.2 on Windows Server 2003, using Microsoft's Web Platform Installer.
+                                I recently had need to install and test WordPress for some possible work. While I was tempted to go the Linux route, shortly after the OS was setup I decided to skip that and stick with Windows. Since Microsoft has released a platform that supposedly makes it easy to install Web-related applications, I decided to give it a try to determine just how simple it was.
+What follows is an overview of the setup process to install WordPress 2.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-WordPress-292-on-Windows-Server-2003-using-Microsofts-Web-Platform-Installer/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -194,24 +230,10 @@
 										
 									</li>
                                 </ul>
-                                While Web application development is just as complex as other application development, if not more so, it&rsquo;s fairly difficult to find information on best practices while doing Web development. In order to move towards implementation of Subversion, I needed to write up documentation on how we&rsquo;d use it. After a couple drafts, which I ended up scrapping almost completely, I came up with the below. In the interest of sharing, I&rsquo;ve included the full document below, after removing the few instances where I had to specify a non-Subversion application (our help desk application).
+                                While Web application development is just as complex as other application development, if not more so, it&rsquo;s fairly difficult to find information on best practices while doing Web development.
+In order to move towards implementation of Subversion, I needed to write up documentation on how we&rsquo;d use it. After a couple drafts, which I ended up scrapping almost completely, I came up with the below.
+In the interest of sharing, I&rsquo;ve included the full document below, after removing the few instances where I had to specify a non-Subversion application (our help desk application).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Web-Application-Development-Guidelines/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/iPod-Touch-netbooks-laptops-and-desktops/">iPod Touch, netbooks, laptops, and desktops</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>February 21, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                For the last handful of months I've been thinking about accessing the Internet, and otherwise being productive,&nbsp;while on the go. A number of months back I picked up an HP device with Windows Mobile, unfortunately, after a few months the short battery life and inability to run the applications I wanted/needed to be truly productive forced me to sell it and start looking elsewhere ... iPod Touch The iPhone had been out for a while when I started looking at what&nbsp;an iPod Touch could offer.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iPod-Touch-netbooks-laptops-and-desktops/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
@@ -273,6 +295,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -280,8 +304,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

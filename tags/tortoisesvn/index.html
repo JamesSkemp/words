@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Tortoisesvn &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,9 @@
 										
 									</li>
                                 </ul>
-                                With CollabNet releasing a new version of Subversion Server (1.6.11), and TortoiseSVN having a release a few days earlier, it's time to do an actual update, instead of a comment like I did last time. Environment I'm currently running CollabNet Subversion Server version 1.6.9.1 on Windows 7 Home Premium, 64-bit. The install directory is C:\Program Filies (x86)\CollabNet\Subversion Server\, and I'm installing version 1.6.9.11. These instructions should work, with minor changes, for other versions of CollabNet Subversion and Windows.
+                                With CollabNet releasing a new version of Subversion Server (1.6.11), and TortoiseSVN having a release a few days earlier, it's time to do an actual update, instead of a comment like I did last time.
+Environment I'm currently running CollabNet Subversion Server version 1.6.9.1 on Windows 7 Home Premium, 64-bit.
+The install directory is C:\Program Filies (x86)\CollabNet\Subversion Server\, and I'm installing version 1.6.9.11. These instructions should work, with minor changes, for other versions of CollabNet Subversion and Windows.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Manually-updating-CollabNet-Subversion-Server-and-TortoiseSVN/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +83,8 @@
 										
 									</li>
                                 </ul>
-                                For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&nbsp;and that&nbsp;may or may not be helpful. Luckily, CollabNet offers certified binaries of Subversion, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft's, there's really no question on what your first choice should be.
+                                For a business to implement version control, they typically want some kind of support, preferrably that they need to pay for, and that may or may not be used,&nbsp;and that&nbsp;may or may not be helpful.
+Luckily, CollabNet offers certified binaries of Subversion, available for the low price of the time needed to register. Additionally, they offer support, training, installation, and hosted solutions, in addition to the large Subversion community. Compared to the other solutions out there, including Microsoft's, there's really no question on what your first choice should be.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-CollabNet-Subversion-Sever-163-and-TortoiseSVN-163-on-Windows-Server-2003/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +100,9 @@
 										
 									</li>
                                 </ul>
-                                The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0. For this I'll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that's Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11. Determine current setup. Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that's 2.2.10 and 1.5.4, respectively. Opening TortoiseSVN's menu and selecting About will display the current version.
+                                The following is how I went about performing an upgrade of Subversion 1.5.4 to Subversion 1.6.0.
+For this I'll be continuing to use the current Windows build of Apache 2.2.x, TortoiseSVN, and of course Subversion. At this time, that's Subversion 1.6.0, TortoiseSVN 1.6.0, and Apache 2.2.11.
+  Determine current setup.   Opening the Apache Service Monitor will show the version of Apache and Subversion. In my case, that's 2.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Upgrading-Subversion-15x-to-160-on-Windows-Vista-checklist/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +118,9 @@
 										
 									</li>
                                 </ul>
-                                The newest versions of Subversion and TortoiseSVN were released just last week. My install guides for Subversion on Vista (and another with Subversion on Vista with Apache 2.2.x) and TortoiseSVN on Vista&nbsp;are still applicable. If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.
+                                The newest versions of Subversion and TortoiseSVN were released just last week.
+My install guides for Subversion on Vista (and another with Subversion on Vista with Apache 2.2.x) and TortoiseSVN on Vista&nbsp;are still applicable.
+If installing Subversion with Apache 2.2.x, make sure you stop Apache before replacing files.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Subversion-153-and-TortoiseSVN-154-released/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,7 +136,13 @@
 										
 									</li>
                                 </ul>
-                                This evening I had to rename a project folder, since I was creating a site with the same name. Since I had the project (application) under Subversion, I also needed to move the repository. Here's what I did: svnadmin create b:\repos\_newName_ svnadmin dump b:\repos\_oldName_ &gt; b:\repos_dump\_oldName_.dump svnadmin load b:\repos\_newName_ &lt; b:\repos_dump\_oldName_.dump At this point I could either checkout the repository, or change where the checked out directory points to. I choose to relocate my working copy by right-clicking on my working directory and selecting Relocate from the TortoiseSVN menu.
+                                This evening I had to rename a project folder, since I was creating a site with the same name.
+Since I had the project (application) under Subversion, I also needed to move the repository.
+Here's what I did:
+ svnadmin create b:\repos\_newName_
+svnadmin dump b:\repos\_oldName_ &gt; b:\repos_dump\_oldName_.dump
+svnadmin load b:\repos\_newName_ &lt; b:\repos_dump\_oldName_.dump
+ At this point I could either checkout the repository, or change where the checked out directory points to.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Subversion-and-TortoiseSVN-Moving-a-repository/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -145,7 +158,11 @@
 										
 									</li>
                                 </ul>
-                                Recently I went ahead and installed Apache 2.2.9 to my Windows Vista Ultimate machine. The purpose of doing that was to move towards a Subversion install running on Apache. In this article, I'll be covering that installation. Getting Subversion Obviously, the first thing to do is to get Subversion. We're looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that's svn-win32-1.5.1.zip. In a previous guide, which you may have followed,&nbsp;I installed the Windows installer with the basic win32 binaries.
+                                Recently I went ahead and installed Apache 2.2.9 to my Windows Vista Ultimate machine. The purpose of doing that was to move towards a Subversion install running on Apache.
+In this article, I'll be covering that installation.
+Getting Subversion Obviously, the first thing to do is to get Subversion.
+We're looking for the Windows Apache 2.2.x binaries, in particular. At the time of this writing, that's svn-win32-1.5.1.zip.
+In a previous guide, which you may have followed,&nbsp;I installed the Windows installer with the basic win32 binaries.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-Subversion-binaries-for-Apache-22x/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -161,7 +178,10 @@
 										
 									</li>
                                 </ul>
-                                In a previous article, I installed Subversion and TortoiseSVN to a Windows XP Home Edition machine. Later, I upgraded the installation. Just recently I covered installing Subversion 1.4.6 to Windows Vista. This time I'll be installing TortoiseSVN on that same machine. The setup The system I'm using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit. Downloading TortoiseSVN Since TortoiseSVN is for Windows, it makes it even easier to&nbsp;find the version to download.
+                                In a previous article, I installed Subversion and TortoiseSVN to a Windows XP Home Edition machine. Later, I upgraded the installation.
+Just recently I covered installing Subversion 1.4.6 to Windows Vista. This time I'll be installing TortoiseSVN on that same machine.
+The setup The system I'm using is a HP Pavilion a6360t, with 4GB install RAM, 2.20 GHz, with two cores, running Windows Vista Ultimate SP1, 32-bit.
+Downloading TortoiseSVN Since TortoiseSVN is for Windows, it makes it even easier to&nbsp;find the version to download.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-TortoiseSVN-to-Windows-Vista/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -177,8 +197,7 @@
 										
 									</li>
                                 </ul>
-                                <p><p>In a previous article, <a href="http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx">Installing Subversion and TortoiseSVN to a Windows XP, Home Edition, SP2, local machine with Dreamweaver 8</a>, we installed Subversion 1.4.0 and TortoiseSVN 1.4.0 to our Windows machine. This time, we&rsquo;ll be quickly going over how to upgrade our installation.</p>
-
+                                <p>In a previous article, <a href="http://words.strivinglife.com/words/post/Installing-Subversion-and-TortoiseSVN-to-a-Windows-XP-Home-Edition-SP2-local-machine-with-Dreamweaver-8.aspx">Installing Subversion and TortoiseSVN to a Windows XP, Home Edition, SP2, local machine with Dreamweaver 8</a>, we installed Subversion 1.4.0 and TortoiseSVN 1.4.0 to our Windows machine. This time, we'll be quickly going over how to upgrade our installation.</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Upgrading-Subversion-and-TortoiseSVN-on-Windows-%28140-to-142%29/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -224,6 +243,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -231,8 +252,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

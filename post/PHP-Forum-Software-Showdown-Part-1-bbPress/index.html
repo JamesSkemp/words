@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>PHP Forum Software Showdown Part 1: bbPress &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -72,7 +72,7 @@
 A relative new-comer, <a href="http://bbpress.org/">bbPress</a> &ldquo;is forum software with a twist from the creators of WordPress&rdquo;. The first public version, 0.72, was released in mid-October 2006, and the version we&#39;ll be installing, 0.73, was released a couple of weeks later. Downloading bbPress is fairly easy, since there&#39;s only two options &ndash; one for the installer in .zip, and one in .tar.gz.
 </p>
 
-<p><h4>File and folder size</h4>
+<h4>File and folder size</h4>
 <p>
 At 170 KB, the zip file is extremely small, and is less than 500 KB unzipped. Of the six pieces of forum software that I&#39;ll be reviewing, bbPress is the smallest, but we&#39;ll see what that translates into as far as functionality.<!--adsense-->
 </p>
@@ -86,7 +86,7 @@ Unlike past articles, for these forum reviews we&#39;re going to create the nece
 </p>
 <h4>Creating the user and database via the command-line</h4>
 <p>
-First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run ... and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
 </p>
 <blockquote>
     <p>
@@ -119,12 +119,12 @@ Before you enter this, look it over, and then read the paragraph following, for 
 <blockquote>
     <p>
      GRANT select, insert, update, delete, index, alter, create, drop<br />
-    ON <strong>bbPress</strong>.<em><br />
+    ON <strong>bbPress</strong>.*<br />
     TO <strong>bbPress</strong> IDENTIFIED BY &#39;<strong>bbpress</strong>&#39;;
     </p>
 </blockquote>
 <p>
-The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>bbPress</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>bbPress</strong> IDENTIFIED BY &#39;<strong>bbpress</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>bbPress</strong>.*&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>bbPress</strong> IDENTIFIED BY &#39;<strong>bbpress</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
 </p>
 <p>
 If the query is ok, enter the following command.
@@ -163,7 +163,7 @@ First, change lines 4 to 7 (begin with &#39;define&#39;). Per the above, it&#39;
     <p>
      define(&#39;BBDB_NAME&#39;, &#39;bbPress&#39;); // The name of the database<br />
     define(&#39;BBDB_USER&#39;, &#39;bbPress&#39;); // Your MySQL username<br />
-    define(&#39;BBDB_PASSWORD&#39;, &#39;bbpress&#39;); // &hellip;and password<br />
+    define(&#39;BBDB_PASSWORD&#39;, &#39;bbpress&#39;); // ...and password<br />
     define(&#39;BBDB_HOST&#39;, &#39;localhost&#39;); // 99% chance you won&#39;t need to change this value
     </p>
 </blockquote>
@@ -172,7 +172,7 @@ Line 15 will need to be changed as well. For my installation, it was as follows.
 </p>
 <blockquote>
     <p>
-     $bb-&gt;domain = &#39;<a href="http://localhost&amp;#39;">http://localhost&amp;#39;</a>; // Example: &#39;<a href="http://bbpress.example.com&amp;#39">http://bbpress.example.com&amp;#39</a>;
+     $bb-&gt;domain = &#39;http://localhost&#39;; // Example: &#39;http://bbpress.example.com&#39;
     </p>
 </blockquote>
 <p>
@@ -220,7 +220,7 @@ You can now login to check out the Administrative interface, or you check out th
 <!--nextpage-->
 <h4>How&#39;s the code look?</h4>
 <p>
-Overall, the code validates pretty dang well. There&#39;s a minor issue with an opening and closing small tag, with nothing between, on the main interface view, and some tables missing summaries, but other than that &hellip; code looks good.<!--adsense-->
+Overall, the code validates pretty dang well. There&#39;s a minor issue with an opening and closing small tag, with nothing between, on the main interface view, and some tables missing summaries, but other than that ... code looks good.<!--adsense-->
 </p>
 <p>
 As far as the internal PHP code, like WordPress, it&#39;s full. You&#39;ll need to reference files and documentation, back and forth, but that&#39;s to be expected, I suppose.
@@ -248,8 +248,7 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
 </p>
 <p>
 <a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
-</p></p>
-
+</p>
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
@@ -325,6 +324,8 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -332,8 +333,6 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

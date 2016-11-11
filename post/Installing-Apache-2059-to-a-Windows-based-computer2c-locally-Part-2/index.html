@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Installing Apache 2.0.59 to a Windows-based computer, locally: Part 2 &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -70,70 +70,69 @@
         
         <p>In <a href="http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we'll be continuing in our quest by installing ColdFusion MX 6.1 and 7.</p>
 
-<p><h3>Assumptions</h3>
-<p>First, I assume that you&rsquo;ve already installed ColdFusion MX. Of course, you may not have installed 6.1 and 7, but I&rsquo;m going to assume you&rsquo;ve installed at least one. If you&rsquo;ve installed neither, then you may want to check out my <a href="http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/">guides on ColdFusion MX 6.1</a> and/or <a href="http://strivinglife.net/wordpress/2006/07/12/159/upgrading-our-installation-of-coldfusion-mx-701-on-a-local-windows-based-apache-server/">ColdFusion MX 7</a>.<!--adsense--></p>
-<p>Since you&rsquo;ll be making modifications to the httpd.conf file for Apache 2.0.x, you&rsquo;ll also want to back this file up.</p>
-<p>It&rsquo;s also important to determine how many installations of ColdFusion MX you&rsquo;ll be doing. You&rsquo;ll need to know this to determine whether or not you&rsquo;ll need to switch between one version of ColdFusion and another. I&rsquo;m going to assume that you&rsquo;ll be enabling both, so feel free to skip whatever steps as necessary below.</p>
-<p>Keep in mind that if you&rsquo;re just going to install ColdFusion MX, then the steps below will not be necessary. This is only if you&rsquo;ve already installed ColdFusion MX for Apache 1.3.x.</p>
+<h3>Assumptions</h3>
+<p>First, I assume that you've already installed ColdFusion MX. Of course, you may not have installed 6.1 and 7, but I'm going to assume you've installed at least one. If you've installed neither, then you may want to check out my <a href="http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/">guides on ColdFusion MX 6.1</a> and/or <a href="http://strivinglife.net/wordpress/2006/07/12/159/upgrading-our-installation-of-coldfusion-mx-701-on-a-local-windows-based-apache-server/">ColdFusion MX 7</a>.<!--adsense--></p>
+<p>Since you'll be making modifications to the httpd.conf file for Apache 2.0.x, you'll also want to back this file up.</p>
+<p>It's also important to determine how many installations of ColdFusion MX you'll be doing. You'll need to know this to determine whether or not you'll need to switch between one version of ColdFusion and another. I'm going to assume that you'll be enabling both, so feel free to skip whatever steps as necessary below.</p>
+<p>Keep in mind that if you're just going to install ColdFusion MX, then the steps below will not be necessary. This is only if you've already installed ColdFusion MX for Apache 1.3.x.</p>
 <h3>Hooking up ColdFusion MX 6.1</h3>
 <p>Start by creating a backup copy of the httpd.conf.</p>
 <p>When ColdFusion MX 6.1 is installed, it inserts the following lines into the httpd.conf file.</p>
 <blockquote>
-<p># JRun Settings<br />LoadModule jrun_module &ldquo;C:/CFusionMX/runtime/lib/wsconfig/1/mod_jrun.so&rdquo;<br />&lt;IfModule mod_jrun.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore &ldquo;C:/CFusionMX/runtime/lib/wsconfig/1/jrunserver.store&rdquo;<br />JRunConfig Bootstrap 127.0.0.1:51010<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc<br />&lt;/IfModule&gt;</p>
+<p># JRun Settings<br />LoadModule jrun_module "C:/CFusionMX/runtime/lib/wsconfig/1/mod_jrun.so"<br />&lt;IfModule mod_jrun.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore "C:/CFusionMX/runtime/lib/wsconfig/1/jrunserver.store"<br />JRunConfig Bootstrap 127.0.0.1:51010<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc<br />&lt;/IfModule&gt;</p>
 </blockquote>
-<p>Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we&rsquo;ll need to get a copy of this file, and point our httpd.conf file to it.</p>
-<p>What we&rsquo;re first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we&rsquo;ll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.</p>
+<p>Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we'll need to get a copy of this file, and point our httpd.conf file to it.</p>
+<p>What we're first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we'll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.</p>
 <blockquote>
-<p>BrowserMatch &ldquo;^Dreamweaver-WebDAV-SCM1&rdquo; redirect-carefully</p>
+<p>BrowserMatch "^Dreamweaver-WebDAV-SCM1" redirect-carefully</p>
 </blockquote>
-<p>There&rsquo;s some modifications that we&rsquo;ll need to make. As you can see below, I&rsquo;ve pointed to the /2/ folder, and mod_jrun20.so file (which doesn&rsquo;t yet exist).</p>
+<p>There's some modifications that we'll need to make. As you can see below, I've pointed to the /2/ folder, and mod_jrun20.so file (which doesn't yet exist).</p>
 <blockquote>
-<p># JRun Settings<br />LoadModule jrun_module &ldquo;C:/CFusionMX/runtime/lib/wsconfig/2/mod_jrun20.so&rdquo;<br />&lt;IfModule mod_jrun20.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore &ldquo;C:/CFusionMX/runtime/lib/wsconfig/2/jrunserver.store&rdquo;<br />JRunConfig Bootstrap 127.0.0.1:51010<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc<br />&lt;/IfModule&gt;</p>
+<p># JRun Settings<br />LoadModule jrun_module "C:/CFusionMX/runtime/lib/wsconfig/2/mod_jrun20.so"<br />&lt;IfModule mod_jrun20.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore "C:/CFusionMX/runtime/lib/wsconfig/2/jrunserver.store"<br />JRunConfig Bootstrap 127.0.0.1:51010<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc<br />&lt;/IfModule&gt;</p>
 </blockquote>
-<p>Now save httpd.conf. Next, head over to the C:\CFusionMX\runtime\lib\wsconfig\ folder. Within this folder there will be a &lsquo;1&rsquo; folder, and three files (jrunwin32.dll, wsconfig.log, and wsconfig.properties).</p>
-<p>First, create a copy of the &lsquo;1&rsquo; folder and call the copy &lsquo;2&rsquo;. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.</p>
+<p>Now save httpd.conf. Next, head over to the C:\CFusionMX\runtime\lib\wsconfig\ folder. Within this folder there will be a '1' folder, and three files (jrunwin32.dll, wsconfig.log, and wsconfig.properties).</p>
+<p>First, create a copy of the '1' folder and call the copy '2'. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.</p>
 <p>This file currently contains the following information.</p>
 <blockquote>
-<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;<br />1.srv=localhost,&ldquo;default&rdquo;<br />1.cfmx=true,&lt;null&gt;</p>
+<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,"",C:\\Program Files\\Apache Group\\Apache\\Apache.exe,""<br />1.srv=localhost,"default"<br />1.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>What we&rsquo;re going to do is copy the last three lines (they all start with &lsquo;1&rsquo;) to the end of the this file. We&rsquo;re then going to enter a bunch of &lsquo;2&rsquo;s so that we have the following in this file.</p>
+<p>What we're going to do is copy the last three lines (they all start with '1') to the end of the this file. We're then going to enter a bunch of '2's so that we have the following in this file.</p>
 <blockquote>
-<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;<br />1.srv=localhost,&ldquo;default&rdquo;<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&ldquo;&rdquo;<br />2.srv=localhost,&ldquo;default&rdquo;<br />2.cfmx=true,&lt;null&gt;</p>
+<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,"",C:\\Program Files\\Apache Group\\Apache\\Apache.exe,""<br />1.srv=localhost,"default"<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,"",C:\\Program Files\\Apache Group\\Apache2\\Apache.exe,""<br />2.srv=localhost,"default"<br />2.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://strivinglife.com/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
+<p>Save and close wsconfig.properties. Now open the '2' folder. There's a mod_jrun.so file here, but as I said earlier, this won't work with Apache 2.0.x. So, we'll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it's not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://strivinglife.com/files/2006/08/mod_jrun20.zip">mod_jrun20.zip</a>).</p>
 <p>Save all necessary files and start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 6.1 Administrator Login.</p>
-<p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you&rsquo;re ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.</p>
+<p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX6.1.conf. With that, you're ready to either hook-up ColdFusion MX 7, or begin working on ColdFusion on Apache 2.0.x.</p>
 <!--nextpage-->
 <h3>Hooking up ColdFusion MX 7.0.2</h3>
-<p>Start by creating a backup copy of the httpd.conf. If you went through the above steps, then you&rsquo;ll want to grab the pre-ColdFusion MX 6.1 httpd.conf backup file. Otherwise, you can just change the lines that we added above.</p>
+<p>Start by creating a backup copy of the httpd.conf. If you went through the above steps, then you'll want to grab the pre-ColdFusion MX 6.1 httpd.conf backup file. Otherwise, you can just change the lines that we added above.</p>
 <p>When ColdFusion MX 7 is installed, it inserts the following lines into the httpd.conf file.<!--adsense--></p>
 <blockquote>
-<p># JRun Settings<br />LoadModule jrun_module &ldquo;C:/CFusionMX7/runtime/lib/wsconfig/1/mod_jrun.so&rdquo;<br />&lt;IfModule mod_jrun.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore &ldquo;C:/CFusionMX7/runtime/lib/wsconfig/1/jrunserver.store&rdquo;<br />JRunConfig Bootstrap 127.0.0.1:51011<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />#JRunConfig ProxyRetryInterval 600<br />#JRunConfig ConnectTimeout 15<br />#JRunConfig RecvTimeout 300<br />#JRunConfig SendTimeout 15<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf<br />&lt;/IfModule&gt;</p>
+<p># JRun Settings<br />LoadModule jrun_module "C:/CFusionMX7/runtime/lib/wsconfig/1/mod_jrun.so"<br />&lt;IfModule mod_jrun.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore "C:/CFusionMX7/runtime/lib/wsconfig/1/jrunserver.store"<br />JRunConfig Bootstrap 127.0.0.1:51011<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />#JRunConfig ProxyRetryInterval 600<br />#JRunConfig ConnectTimeout 15<br />#JRunConfig RecvTimeout 300<br />#JRunConfig SendTimeout 15<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf<br />&lt;/IfModule&gt;</p>
 </blockquote>
-<p>Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we&rsquo;ll need to get a copy of this file, and point our httpd.conf file to it.</p>
-<p>What we&rsquo;re first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we&rsquo;ll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.</p>
-<p>BrowserMatch &ldquo;^Dreamweaver-WebDAV-SCM1&rdquo; redirect-carefully</p>
-<p>There&rsquo;s some modifications that we&rsquo;ll need to make. As you can see below, I&rsquo;ve pointed to the /2/ folder, the mod_jrun20.so file (which doesn&rsquo;t yet exist), and the mod_jrun20.c module.</p>
+<p>Unfortunately, Apache 2.0.x requires a different mod_jrun.so file altogether. This means that we'll need to get a copy of this file, and point our httpd.conf file to it.</p>
+<p>What we're first going to do is copy this text into the Apache 2.0.x httpd.conf file. On Apache 1.3.x, ColdFusion MX adds this after the BrowserMatch content, so we'll do a search for BrowserMatch, from the bottom of the file, and add the above lines after the following line.</p>
+<p>BrowserMatch "^Dreamweaver-WebDAV-SCM1" redirect-carefully</p>
+<p>There's some modifications that we'll need to make. As you can see below, I've pointed to the /2/ folder, the mod_jrun20.so file (which doesn't yet exist), and the mod_jrun20.c module.</p>
 <blockquote>
-<p># JRun Settings<br />LoadModule jrun_module &ldquo;C:/CFusionMX7/runtime/lib/wsconfig/2/mod_jrun20.so&rdquo;<br />&lt;IfModule mod_jrun20.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore &ldquo;C:/CFusionMX7/runtime/lib/wsconfig/2/jrunserver.store&rdquo;<br />JRunConfig Bootstrap 127.0.0.1:51011<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />#JRunConfig ProxyRetryInterval 600<br />#JRunConfig ConnectTimeout 15<br />#JRunConfig RecvTimeout 300<br />#JRunConfig SendTimeout 15<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf<br />&lt;/IfModule&gt;</p>
+<p># JRun Settings<br />LoadModule jrun_module "C:/CFusionMX7/runtime/lib/wsconfig/2/mod_jrun20.so"<br />&lt;IfModule mod_jrun20.c&gt;<br />JRunConfig Verbose false<br />JRunConfig Apialloc false<br />JRunConfig Ssl false<br />JRunConfig Ignoresuffixmap false<br />JRunConfig Serverstore "C:/CFusionMX7/runtime/lib/wsconfig/2/jrunserver.store"<br />JRunConfig Bootstrap 127.0.0.1:51011<br />#JRunConfig Errorurl &lt;optionally redirect to this URL on errors&gt;<br />#JRunConfig ProxyRetryInterval 600<br />#JRunConfig ConnectTimeout 15<br />#JRunConfig RecvTimeout 300<br />#JRunConfig SendTimeout 15<br />AddHandler jrun-handler .jsp .jws .cfm .cfml .cfc .cfr .cfswf<br />&lt;/IfModule&gt;</p>
 </blockquote>
-<p>Now save httpd.conf. Next, head over to the C:\CFusionMX7\runtime\lib\wsconfig\ folder. Within this folder there will be a &lsquo;1&rsquo; folder, and three files (wsconfig.log, and wsconfig.properties).</p>
-<p>First, create a copy of the &lsquo;1&rsquo; folder and call the copy &lsquo;2&rsquo;. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.</p>
+<p>Now save httpd.conf. Next, head over to the C:\CFusionMX7\runtime\lib\wsconfig\ folder. Within this folder there will be a '1' folder, and three files (wsconfig.log, and wsconfig.properties).</p>
+<p>First, create a copy of the '1' folder and call the copy '2'. Next, make a backup copy of the wsconfig.properties file, and open the original in Notepad.</p>
 <p>This file currently contains the following information.</p>
 <blockquote>
-<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Mar 30 17:54:42 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;,false<br />1.srv=localhost,&ldquo;coldfusion&rdquo;<br />1.cfmx=true,&lt;null&gt;</p>
+<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Mar 30 17:54:42 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,"",C:\\Program Files\\Apache Group\\Apache\\Apache.exe,"",false<br />1.srv=localhost,"coldfusion"<br />1.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>What we&rsquo;re going to do is copy the last three lines (they all start with &lsquo;1&rsquo;) to the end of the this file. We&rsquo;re then going to enter a bunch of &lsquo;2&rsquo;s so that we have the following in this file.</p>
+<p>What we're going to do is copy the last three lines (they all start with '1') to the end of the this file. We're then going to enter a bunch of '2's so that we have the following in this file.</p>
 <blockquote>
-<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache\Apache.exe,&ldquo;&rdquo;<br />1.srv=localhost,&ldquo;default&rdquo;<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,&ldquo;&rdquo;,C:\Program Files\Apache Group\Apache2\Apache.exe,&ldquo;&rdquo;,false<br />2.srv=localhost,&ldquo;coldfusion&rdquo;<br />2.cfmx=true,&lt;null&gt;</p>
+<p>#JRun/ColdFusion MX Web Server Configuration File<br />#Thu Feb 23 19:08:04 GMT-06:00 2006<br />1=Apache,C:/Program Files/Apache Group/Apache/conf,"",C:\\Program Files\\Apache Group\\Apache\\Apache.exe,""<br />1.srv=localhost,"default"<br />1.cfmx=true,&lt;null&gt;<br />2=Apache,C:/Program Files/Apache Group/Apache2/conf,"",C:\\Program Files\\Apache Group\\Apache2\\Apache.exe,"",false<br />2.srv=localhost,"coldfusion"<br />2.cfmx=true,&lt;null&gt;</p>
 </blockquote>
-<p>Save and close wsconfig.properties. Now open the &lsquo;2&rsquo; folder. There&rsquo;s a mod_jrun.so file here, but as I said earlier, this won&rsquo;t work with Apache 2.0.x. So, we&rsquo;ll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it&rsquo;s not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://strivinglife.net/wordpress/?attachment_id=200">mod_jrun20.zip</a>).</p>
-<p>Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you&rsquo;ll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.</p>
-<p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you&rsquo;re ready to begin working on ColdFusion on Apache 2.0.x.</p>
-<h3>In the next part &hellip;</h3>
-<p>In <a href="http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we&rsquo;ll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
-<p><a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p></p>
-
+<p>Save and close wsconfig.properties. Now open the '2' folder. There's a mod_jrun.so file here, but as I said earlier, this won't work with Apache 2.0.x. So, we'll need to get the mod_jrun20.so file for Apache 2.0.x. You can get this file by installing ColdFusion and selecting Apache 2.0.x as the server. Since it's not particularly helpful in this case, I did so on another box, and have attached a zip file containing this file here (<a title="mod_jrun20.so" rel="attachment" href="http://strivinglife.net/wordpress/?attachment_id=200">mod_jrun20.zip</a>).</p>
+<p>Save all necessary files and make sure that you rename the cfdocs and cfide folders as necessary (that is, you'll need to make sure you have the CFMX 7 folders available to start ColdFusion MX 7). Start the Apache2 service (either through the Services panel or through the Apache Services Monitor). Apache 2 should start, and you should be able to access the ColdFusion MX 7.0 Administrator Login.</p>
+<p>Now, make a backup copy of the httpd.conf file and call it something like httpd_CFMX7.0.conf. With that, you're ready to begin working on ColdFusion on Apache 2.0.x.</p>
+<h3>In the next part ...</h3>
+<p>In <a href="http://words.strivinglife.com/words/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-3.aspx">Part 3</a>, we'll go over the PHP 4 and 5 installation. We also still have to connect to MySQL and PostgreSQL (which may end up being Part 4). Until then, have fun in ColdFusion MX on Apache 2!</p>
+<p><a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a></p>
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
@@ -209,6 +208,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -216,8 +217,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>
