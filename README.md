@@ -23,10 +23,11 @@ Generate the site by running `..\hugo.exe`.
 
 Add the new post file to Git, as well as the newly generated/updated files.
 
-Update the **gh-pages** branch.
+Update the **gh-pages** branch via one of the following.
 
 ```
 git subtree push --prefix public https://github.com/JamesSkemp/words.git gh-pages
+git subtree push --prefix public git@github.com:JamesSkemp/words.git gh-pages
 ```
 
 ## Post title to creation script
