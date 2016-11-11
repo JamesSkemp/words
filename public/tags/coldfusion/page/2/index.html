@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Coldfusion &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,8 @@
 										
 									</li>
                                 </ul>
-                                Here's&nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality). Tables-based &lt;cfparam name="URL.CalendarMonth" default="#Month(now())#" type="integer" /&gt; &lt;cfparam name="URL.CalendarYear" default="#Year(now())#" type="integer" /&gt; &lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&gt; &lt;cfset URL.CalendarMonth = Month(now()) /&gt; &lt;/cfif&gt; &lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&gt; &lt;table style="width:375px;" summary="Calendar of events for &lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, 'mmmm yyyy')#&lt;/cfoutput&gt;."&gt; &lt;thead&gt; &lt;tr&gt; &lt;th colspan="7"&gt;&lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, "mmmm yyyy")#&lt;/cfoutput&gt;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;S&lt;/th&gt; &lt;th&gt;M&lt;/th&gt; &lt;th&gt;T&lt;/th&gt; &lt;th&gt;W&lt;/th&gt; &lt;th&gt;Th&lt;/th&gt; &lt;th&gt;F&lt;/th&gt; &lt;th&gt;S&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;cfloop from="1" to="#DaysInMonth(VARIABLES.Calendar.StartDate)#" index="iDay"&gt; &lt;cfset VARIABLES.Calendar.CurrentDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, iDay) /&gt; &lt;cfif DayOfWeek(VARIABLES.Calendar.CurrentDate) EQ 1 OR iDay EQ 1&gt;&lt;!--- This is Sunday, or the first day.
+                                Here's&nbsp;two rough drafts of calendars created via ColdFusion (7, but I believe 6.1 would have the same functionality).
+Tables-based &lt;cfparam name="URL.CalendarMonth" default="#Month(now())#" type="integer" /&gt; &lt;cfparam name="URL.CalendarYear" default="#Year(now())#" type="integer" /&gt; &lt;cfif URL.CalendarMonth LT 1 OR URL.CalendarMonth GT 12&gt; &lt;cfset URL.CalendarMonth = Month(now()) /&gt; &lt;/cfif&gt; &lt;cfset VARIABLES.Calendar.StartDate = CreateDate(URL.CalendarYear, URL.CalendarMonth, 1) /&gt; &lt;table style="width:375px;" summary="Calendar of events for &lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, 'mmmm yyyy')#&lt;/cfoutput&gt;."&gt; &lt;thead&gt; &lt;tr&gt; &lt;th colspan="7"&gt;&lt;cfoutput&gt;#DateFormat(VARIABLES.Calendar.StartDate, "mmmm yyyy")#&lt;/cfoutput&gt;&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;th&gt;S&lt;/th&gt; &lt;th&gt;M&lt;/th&gt; &lt;th&gt;T&lt;/th&gt; &lt;th&gt;W&lt;/th&gt; &lt;th&gt;Th&lt;/th&gt; &lt;th&gt;F&lt;/th&gt; &lt;th&gt;S&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;cfloop from="
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Two-simple-ColdFusion-calendar-outputs/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +82,8 @@
 										
 									</li>
                                 </ul>
-                                There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped. &lt;cfscript&gt; // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value. function checkForValueOutput(data) { if (IsDefined(data)) { return HtmlEditFormat(Trim(Evaluate(data))); } else { return ""; } } &lt;/cfscript&gt; (Obviously, this can rather easily be converted to a function.) This results in a change from: &lt;input type="text" id="someField" name="someField"&nbsp;value="&lt;cfif IsDefined("FORM.someField") AND Trim(FORM.someField) NEQ ""&gt;&lt;cfoutput&gt;#HtmlEncodedFormat(Trim(FORM.someField))#&lt;/cfoutput&gt;&lt;/cfif&gt;" /&gt; To: &lt;input type="text" id="someField" name="someField"&nbsp;value="&lt;cfoutput&gt;#checkForValueOutput("FORM.someField")#&lt;/cfoutput&gt;" /&gt; Much easier to read, and much shorter.
+                                There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped.
+&lt;cfscript&gt; // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value. function checkForValueOutput(data) { if (IsDefined(data)) { return HtmlEditFormat(Trim(Evaluate(data))); } else { return ""; } } &lt;/cfscript&gt; (Obviously, this can rather easily be converted to a function.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +99,11 @@
 										
 									</li>
                                 </ul>
-                                We've been running into an issue, off and on, with ColdFusion MX 7.0.2 having issues with Verity collections. During one of our nightly jobs, two Verity collections are purged, through ColdFusion, and then re-built.&nbsp; Sometimes this will bring the collection down, resulting in a message like the following. Collection down after opening (10) Using the mdvdk executable, you can get some information about the collection, and even bring it back up.
+                                We've been running into an issue, off and on, with ColdFusion MX 7.0.2 having issues with Verity collections.
+During one of our nightly jobs, two Verity collections are purged, through ColdFusion, and then re-built.&nbsp;
+Sometimes this will bring the collection down, resulting in a message like the following.
+ Collection down after opening (10)
+ Using the mdvdk executable, you can get some information about the collection, and even bring it back up.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Verity-Collection-down-after-opening-resolution/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +119,9 @@
 										
 									</li>
                                 </ul>
-                                I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0. It's a pity to not make it available, since it's such an easy template ... &lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.
+                                I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0.
+It's a pity to not make it available, since it's such an easy template ...
+&lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-ColdFusion/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,8 +137,7 @@
 										
 									</li>
                                 </ul>
-                                <p><p>Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).</p>
-
+                                <p>Once again, may not be the best, but installing ColdFusion 7.02 on Ubuntu 7.04 (Apache 2.2.4 already installed).</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Quickie-Install-ColdFusion-702-on-Ubuntu-704-with-Apache-224/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -146,9 +153,9 @@
 										
 									</li>
                                 </ul>
-                                <p><p>
-On this site, I have a number of articles discussing how to setup ColdFusion MX, both <a href="http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/">version 6.1</a> and <a href="http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx">version 7.0</a>. These tutorials will get you up and running on your own computer, but there&#39;s no information on how to continue on to a real, live, host.</p>
-
+                                <p>
+On this site, I have a number of articles discussing how to setup ColdFusion MX, both <a href="http://strivinglife.net/wordpress/2006/02/27/58/installing-coldfusion-on-a-local-windows-based-apache-server/">version 6.1</a> and <a href="http://strivinglife.com/words/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based%2c-Apache%2c-server.aspx">version 7.0</a>. These tutorials will get you up and running on your own computer, but there&#39;s no information on how to continue on to a real, live, host.
+</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ColdFusion-MX-7-hosting-for-free/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -164,7 +171,8 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                There's a reason PHP and Apache are so popular on the Web. It's the same reason that most beginner's, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With the right guide, a user can be up and running with Apache and PHP in a couple of hours. Unfortunately, Microsoft's IIS (Internet Information Services) is something that few home-grown Web users have the honour of using.
+                                There's a reason PHP and Apache are so popular on the Web. It's the same reason that most beginner's, especially those that have no formal training, start with these technologies. In a word, both technologies are not only open source, but free to use. With the right guide, a user can be up and running with Apache and PHP in a couple of hours.
+Unfortunately, Microsoft's IIS (Internet Information Services) is something that few home-grown Web users have the honour of using.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Is-it-past-time-for-Microsoft-to-open-IIS/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -180,7 +188,8 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we're going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups. What is a batch file? A batch file is basically a way to run a number of Windows prompts at once.
+                                In the previous three parts of this guide, we setup Apache 2.0.59 and then created the necessary connections to use ActivePerl, mod_perl, ColdFusion MX 6.1, ColdFusion MX 7.0.2, PHP 4.4.2, PHP 5.1.4, MySQL 4.1.18, and PostgreSQL 8.1.3. This time, we're going to bring everything together by creating a number of batch files to fairly easily switch between various Web server setups.
+What is a batch file? A batch file is basically a way to run a number of Windows prompts at once.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer-locally-Part-4/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -196,7 +205,8 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                In Part 1 of this Apache 2.0.59 guide, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In Part 2 of this Apache 2.0.59 guide, we setup ColdFusion MX 6.1 and 7.0. This time, we'll be continuing in our quest by adding support for both PHP 4 and PHP 5. In previous guides, we installed PHP 4 and PHP 5, so if you need to install either one, do so with the above directions.
+                                In Part 1 of this Apache 2.0.59 guide, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. In Part 2 of this Apache 2.0.59 guide, we setup ColdFusion MX 6.1 and 7.0. This time, we'll be continuing in our quest by adding support for both PHP 4 and PHP 5.
+In previous guides, we installed PHP 4 and PHP 5, so if you need to install either one, do so with the above directions.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-3/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -212,8 +222,7 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                <p>In <a href="http://strivinglife.net/wordpress/2006/08/22/198/installing-apache-2059-to-a-windows-based-computer-locally-part-1/">Part 1 of this Apache 2.0.59 guide</a>, we setup Apache 2.0.59 on a Windows XP SP2 machine. We also setup Perl and mod_perl, attempting to mimic our Apache 1.3.34 install. This time, we'll be continuing in our quest by installing ColdFusion MX 6.1 and 7.</p>
-
+                                
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-Apache-2059-to-a-Windows-based-computer2c-locally-Part-2/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -229,7 +238,7 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we&#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2. Downloading the updater ColdFusion MX 7.0.2 can either be downloaded as a full installer, or as a simple updater. Since we&#39;ve already installed 7.0.1, we can just use the updater. Go to http://www.adobe.com/support/coldfusion/downloads_updates.html and download the current updater, ColdFusion MX 7 Updater 2 (7.0.2) for Windows.
+                                In a previous guide, we installed ColdFusion MX 6.1 and ColdFusion MX 7.0.1. In this guide, we&#39;ll be leaving our installation of ColdFusion MX 6.1, and upgrading our installation of ColdFusion MX 7.0.1 to 7.0.2. Downloading the updater  ColdFusion MX 7.0.2 can either be downloaded as a full installer, or as a simple updater. Since we&#39;ve already installed 7.0.1, we can just use the updater. Go to http://www.adobe.com/support/coldfusion/downloads_updates.html and download the current updater, ColdFusion MX 7 Updater 2 (7.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Upgrading-our-installation-of-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -245,7 +254,8 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid. I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&nbsp; So, I'll be attempting to reset my password once again, in the hope that it was just a two day problem ...
+                                Last night, I was working through a great tutorial that steps through how to create a basic XML parser in PHP. Unfortunately, what I was going to use it for (a local Attention Recorder parser) isn't going to be possible, since the extension's XML isn't quite valid.
+I was hoping to at least get /ROOT Vaults to work today, in that case, but no dice on support.&nbsp; So, I'll be attempting to reset my password once again, in the hope that it was just a two day problem .
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/XML-parsing-with-PHP-%28and-ColdFusion%29-and-ROOT/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -261,7 +271,7 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                Note: For information on updating to ColdFusion MX 7.0.2, see Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server. Update: October 10, 2006 @ 7:11 pm - Thanks to Michael Bryce for his helpful comments regarding this documentation. In this article, we&#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&#39;s Edition. Since we&#39;ve already covered the installation of ColdFusion MX 6.1, Developer&#39;s Edition, you may already have CFMX 6.1 on your computer, like I did while writing this guide.
+                                Note: For information on updating to ColdFusion MX 7.0.2, see Upgrading our installation of ColdFusion MX 7.0.1 on a local Windows-based, Apache, server.  Update: October 10, 2006 @ 7:11 pm - Thanks to Michael Bryce for his helpful comments regarding this documentation.   In this article, we&#39;ll be walking through an installation of ColdFusion MX 7.0.1, Developer&#39;s Edition. Since we&#39;ve already covered the installation of ColdFusion MX 6.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-ColdFusion-MX-701-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -277,7 +287,9 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX. (This guide assumes you've already installed PostgreSQL.) Downloading and installing the JDBC Driver The first thing we'll need to do is install a special driver for ColdFusion.
+                                Having already added MySQL support for ColdFusion MX, it's time to look at adding PostgreSQL. For many of the same reasons we installed PostgreSQL with PHP, we'll be doing this to add to our potential resources. However, unlike our connection of MySQL with ColdFusion MX, we'll need to install some additional features to ColdFusion MX.
+(This guide assumes you've already installed PostgreSQL.)
+Downloading and installing the JDBC Driver The first thing we'll need to do is install a special driver for ColdFusion.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Adding-PostgreSQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -293,7 +305,9 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 										
 									</li>
                                 </ul>
-                                Until now, we've yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can't in ColdFusion. Until now. This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick. Setting up MySQL database and user First, we'll need to setup a MySQL database and user for ColdFusion.
+                                Until now, we've yet to setup a connection to MySQL from ColdFusion MX. This has meant that while we can do cool database things in PHP (like WordPress), we can't in ColdFusion. Until now.
+This time, we'll be setting up MySQL 4.1.18 and ColdFusion MX 6.1 on our local server. Because of some of the choices that we've made before, this installation is going to be fairly quick.
+Setting up MySQL database and user First, we'll need to setup a MySQL database and user for ColdFusion.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Adding-MySQL-connectivity-to-ColdFusion-MX-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -316,8 +330,11 @@ On this site, I have a number of articles discussing how to setup ColdFusion MX,
 </div>
 <p>
 In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 6.1, Developer&#39;s Edition, on a local, Windows-based, Apache server. On this server, we&#39;ve setup Apache, PHP, and MySQL, but will also want to have the ability to work with ColdFusion code (however, not necessarily on the same sites that we&#39;ll be using PHP). We&#39;ll be doing this to experience a more corporate Web-programming language &ndash; corporate primarily because of the costs associated with ColdFusion.
-</p></p>
-
+</p>
+<!--adsense-->
+<p>
+From the marketing, we see that &quot;the [ColdFusion MX 6.1] Developer Edition, [is] a fully functional server for local development purposes only that helps you learn ColdFusion MX 6.1 or deploy to third-party hosting providers. Access is limited to localhost and one remote IP address.&quot;.
+</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-ColdFusion-on-a-local-Windows-based-Apache-server/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -333,7 +350,8 @@ In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 
 										
 									</li>
                                 </ul>
-                                My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I've decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I've opted to use it as the core, instead of IIS, or the like. I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case.
+                                My intention is to write a number of guides that will help someone build a functional Web server for testing purposes. Since Windows is fairly popular, I've decided to outline how to install Web server programs on it. Since Apache is both powerful and free, I've opted to use it as the core, instead of IIS, or the like.
+I also plan on keeping the various technologies up-to-date, yet continuing to provide the instructions for past versions used, just in case.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/A-local2c-Apache-Web-server2c-on-a-Windows-XP-computer/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -394,6 +412,8 @@ In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -401,8 +421,6 @@ In this tutorial, we&#39;ll be working through an installation of ColdFusion MX 
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

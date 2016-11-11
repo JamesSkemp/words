@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Javascript &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,8 @@
 										
 									</li>
                                 </ul>
-                                The following is a review of JavaScript: The Definitive Guide, Sixth Edition, written by David Flanagan. Also available on O&rsquo;Reilly Media. Provides a deep dive into JavaScript development JavaScript: The Definitive Guide is not just a complete reference of the language, like O&rsquo;Reilly&rsquo;s other &lsquo;thick books,&rsquo; but also provides a deep dive into JavaScript development. However, if you&rsquo;re just starting out and will be using one of the various libraries (like jQuery), this book may not (yet) be for you.
+                                The following is a review of JavaScript: The Definitive Guide, Sixth Edition, written by David Flanagan. Also available on O&rsquo;Reilly Media.
+ Provides a deep dive into JavaScript development JavaScript: The Definitive Guide is not just a complete reference of the language, like O&rsquo;Reilly&rsquo;s other &lsquo;thick books,&rsquo; but also provides a deep dive into JavaScript development. However, if you&rsquo;re just starting out and will be using one of the various libraries (like jQuery), this book may not (yet) be for you.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-JavaScript-The-Definitive-Guide-Sixth-Edition-by-David-Flanagan/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +82,8 @@
 										
 									</li>
                                 </ul>
-                                The following is a&nbsp;review of JavaScript: The Good Parts, written by Douglas Crockford. Focused discussion on the parts of JavaScript to learn more about At the beginning of last month Scott Hanselman had a Hanselminutes episode titled &ldquo;JavaScript and jQuery: Moving beyond Alert().&rdquo; During this episode he spoke with two JavaScript &hellip;&nbsp;(experts? gurus?)&nbsp;users, and this book was mentioned as one to read if you wanted to get a better understanding of JavaScript.
+                                The following is a&nbsp;review of JavaScript: The Good Parts, written by Douglas Crockford.
+ Focused discussion on the parts of JavaScript to learn more about At the beginning of last month Scott Hanselman had a Hanselminutes episode titled &ldquo;JavaScript and jQuery: Moving beyond Alert().&rdquo; During this episode he spoke with two JavaScript &hellip;&nbsp;(experts? gurus?)&nbsp;users, and this book was mentioned as one to read if you wanted to get a better understanding of JavaScript.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-JavaScript-The-Good-Parts-by-Douglas-Crockford/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +99,8 @@
 										
 									</li>
                                 </ul>
-                                When a DateTime is converted to JSON in a WCF Web service (WebHttp in this particular case) it's semi-difficult to convert that to something we can use when we return the date to a client via JavaScript. For example: "LastPlayed":"\/Date(1278187099000-0400)\/" After almost an hour of research and goofing around with this, I've come up with the following, which seems to work just fine on Internet Explorer 8, Firefox 3.6, and Chrome 5.0.
+                                When a DateTime is converted to JSON in a WCF Web service (WebHttp in this particular case) it's semi-difficult to convert that to something we can use when we return the date to a client via JavaScript. For example:
+"LastPlayed":"\/Date(1278187099000-0400)\/" After almost an hour of research and goofing around with this, I've come up with the following, which seems to work just fine on Internet Explorer 8, Firefox 3.6, and Chrome 5.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parsing-Microsoft-JSON-DateTime-from-WCF-service/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +116,10 @@
 										
 									</li>
                                 </ul>
-                                I thought I posted this before, but I guess I did not. Here&rsquo;s one way to dump a JavaScript object for analysis (if you don&rsquo;t have access to Firebug, or a similar tool). Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the three spots one spot with whatever object you&rsquo;d like dumped. var objectInfo = &ldquo;&rdquo;; // Change ex to whatever object you want to debug.
+                                I thought I posted this before, but I guess I did not.
+Here&rsquo;s one way to dump a JavaScript object for analysis (if you don&rsquo;t have access to Firebug, or a similar tool).
+Note it only dumps one level of data, and the code below is specifically for dumping an exception (catch ex), but swap ex in the three spots one spot with whatever object you&rsquo;d like dumped.
+var objectInfo = &ldquo;&rdquo;; // Change ex to whatever object you want to debug.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/JavaScript-object-dump/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,7 +135,9 @@
 										
 									</li>
                                 </ul>
-                                In a previous post, I posted the code I used for a ColdFusion regular expression tester. This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ... &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type="text/css"&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type="text/javascript"&gt; &nbsp;function RemoveHTML(TextContent) { &nbsp;&nbsp;var str = ''; &nbsp;&nbsp;str = TextContent; &nbsp;&nbsp;str = str.replace(/&lt;/g, "&amp;lt;"); &nbsp;&nbsp; &nbsp;&nbsp;return str; &nbsp;} &nbsp;function TestExpression() { &nbsp;&nbsp;var Expression = ''; &nbsp;&nbsp;var ExpressionParameters = 'gm'; &nbsp;&nbsp;var ExpressionText = ''; &nbsp;&nbsp;try { &nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML = ''; &nbsp;&nbsp;&nbsp;if (document.getElementById('InputExpression').value != '' &amp;&amp; document.getElementById('InputText').value != '') { &nbsp;&nbsp;&nbsp;&nbsp;// TODO better check and error writing - use span with _s &nbsp;&nbsp;&nbsp;&nbsp;if (document.getElementById('CheckCase').checked) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionParameters += 'i'; &nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;&nbsp;Expression = document.getElementById('InputExpression').value; &nbsp;&nbsp;&nbsp;&nbsp;ExpressionText = document.getElementById('InputText').value; &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters); &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText); &nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionTest == true) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = '&lt;p&gt;The following results were found for your search:&lt;/p&gt;'; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Testing it appears to run it, so ...
+                                In a previous post, I posted the code I used for a ColdFusion regular expression tester.
+This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ...
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type="text/css"&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type="
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-JavaScript/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -145,7 +153,7 @@
 										
 									</li>
                                 </ul>
-                                Over the past couple of days I&#39;ve noticed issues with the Inbox view of Gmail being extremely slow on Firefox (2.0.0.5, the current version). Disabling JavaScript makes the load much faster (naturally), but even switching to Internet Explorer (7) works (with JS on). With Firefox 2.0.0.5 already having a security issue, I wonder if updating was a good decision in this case. Perhaps 2.0.0.5 was released a bit too quickly?&nbsp;
+                                Over the past couple of days I&#39;ve noticed issues with the Inbox view of Gmail being extremely slow on Firefox (2.0.0.5, the current version).  Disabling JavaScript makes the load much faster (naturally), but even switching to Internet Explorer (7) works (with JS on).  With Firefox 2.0.0.5 already having a security issue, I wonder if updating was a good decision in this case. Perhaps 2.0.0.5 was released a bit too quickly?
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Gmail-and-Firefox-2005-issues-with-JavaScript/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -161,9 +169,9 @@
 										
 									</li>
                                 </ul>
-                                <p><p>
-After a number of Google searches, I&#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&#39;ll be going over this information, and trying to dig up more.</p>
-
+                                <p>
+After a number of Google searches, I&#39;ve been unable to find a listing of what browsers support what versions of JavaScript.  The few sites I did find were AnyBrowser.com and Mozilla.org.  Unfortunately, the information they provide is pretty focused.  In this article I&#39;ll be going over this information, and trying to dig up more.<!--adsense-->
+</p>
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Browser-support-for-different-versions-of-JavaScript/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -179,7 +187,7 @@ After a number of Google searches, I&#39;ve been unable to find a listing of wha
 										
 									</li>
                                 </ul>
-                                The short stick: New to Ajax? You may want to look elsewhere ... I&#39;ve been working on the Web for a handful+ of years, but save for a brief stunt back in the late 90s, I haven&#39;t had much use for JavaScript (with the exception of a few one/two-liners). As such, I came to this book as a new-comer to Ajax. I also like to learn by way of example, instead of explanation, so code examples are a big plus, if not a requirement.
+                                The short stick: New to Ajax? You may want to look elsewhere ...  I&#39;ve been working on the Web for a handful+ of years, but save for a brief stunt back in the late 90s, I haven&#39;t had much use for JavaScript (with the exception of a few one/two-liners). As such, I came to this book as a new-comer to Ajax.  I also like to learn by way of example, instead of explanation, so code examples are a big plus, if not a requirement.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-of-Ajax-for-Web-Application-Developers-by-Kris-Hadlock-%282006%29/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -225,6 +233,8 @@ After a number of Google searches, I&#39;ve been unable to find a listing of wha
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -232,8 +242,6 @@ After a number of Google searches, I&#39;ve been unable to find a listing of wha
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

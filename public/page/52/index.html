@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>James Skemp&#39;s StrivingLife &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -57,6 +57,22 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Firebug-Dont-enable-for-every-site/">Firebug: Don&#39;t enable for every site</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 8, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                After a deal of searching, I&#39;ve finally discovered why my Firefox browser was crashing so often. So often, in fact, that I have Internet Explorer 7 a chance (and it showed how much of a fight it can now put up).  The short story: don&#39;t enable Firebug for all sites.  Gmail has recently been warning about this, stating that slow-downs are likely. One config setting, javascript.options.strict, when set to true, can also cause issues with Google AdSense.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Firebug-Dont-enable-for-every-site/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Romney-A-vote-for-a-democrat-president-is-aids-a-surrender-to-terror/">Romney: A vote for a democrat president aids a surrender to terror</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>February 7, 2008</li>
@@ -66,7 +82,7 @@
 										
 									</li>
                                 </ul>
-                                Special edition over my lunch break ... It seems Mitt Romney, former presidential hopeful, has withdrawn from the race. Guardian Unlimited quotes him as such: &quot;In this time of war I simply cannot let my campaign be a part of aiding a surrender to terror,&quot; he told the Conservative Political Action Committee As with the 2004 race, once again a Republican is stating that a Democrat president would result in the United States surrendering to terror (sadly, it doesn&#39;t look like that piece was moved over to the site, but I&#39;ll see if I can&#39;t dig it up and re-post it tonight).
+                                Special edition over my lunch break ...  It seems Mitt Romney, former presidential hopeful, has withdrawn from the race.  Guardian Unlimited quotes him as such:   &quot;In this time of war I simply cannot let my campaign be a part of aiding a surrender to terror,&quot; he told the Conservative Political Action Committee   As with the 2004 race, once again a Republican is stating that a Democrat president would result in the United States surrendering to terror (sadly, it doesn&#39;t look like that piece was moved over to the site, but I&#39;ll see if I can&#39;t dig it up and re-post it tonight).
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Romney-A-vote-for-a-democrat-president-is-aids-a-surrender-to-terror/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -82,7 +98,7 @@
 										
 									</li>
                                 </ul>
-                                Yes, I&#39;m still alive, I&#39;m just not posting ... Since Friday I&#39;ve been fighting a cold/flu, and the cold weather hasn&#39;t much helped. However, last Saturday morning I was feeling better, and along with lunch, picked up a camera I&#39;ll be writing about once this cold is dead. Another camera? I&#39;ve still got my Canon 350D, but I haven&#39;t used it since it&#39;s gotten so cold. I decided that if I picked up a point-and-shoot camera I&#39;d probably take more pictures.
+                                Yes, I&#39;m still alive, I&#39;m just not posting ...  Since Friday I&#39;ve been fighting a cold/flu, and the cold weather hasn&#39;t much helped. However, last Saturday morning I was feeling better, and along with lunch, picked up a camera I&#39;ll be writing about once this cold is dead.  Another camera? I&#39;ve still got my Canon 350D, but I haven&#39;t used it since it&#39;s gotten so cold. I decided that if I picked up a point-and-shoot camera I&#39;d probably take more pictures.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Still-alive-20080206/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -98,7 +114,9 @@
 										
 									</li>
                                 </ul>
-                                In a previous post, I posted the code I used for a ColdFusion regular expression tester. This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ... &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type="text/css"&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type="text/javascript"&gt; &nbsp;function RemoveHTML(TextContent) { &nbsp;&nbsp;var str = ''; &nbsp;&nbsp;str = TextContent; &nbsp;&nbsp;str = str.replace(/&lt;/g, "&amp;lt;"); &nbsp;&nbsp; &nbsp;&nbsp;return str; &nbsp;} &nbsp;function TestExpression() { &nbsp;&nbsp;var Expression = ''; &nbsp;&nbsp;var ExpressionParameters = 'gm'; &nbsp;&nbsp;var ExpressionText = ''; &nbsp;&nbsp;try { &nbsp;&nbsp;&nbsp;document.getElementById('form_error').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = ''; &nbsp;&nbsp;&nbsp;document.getElementById('form_highlighttext').innerHTML = ''; &nbsp;&nbsp;&nbsp;if (document.getElementById('InputExpression').value != '' &amp;&amp; document.getElementById('InputText').value != '') { &nbsp;&nbsp;&nbsp;&nbsp;// TODO better check and error writing - use span with _s &nbsp;&nbsp;&nbsp;&nbsp;if (document.getElementById('CheckCase').checked) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ExpressionParameters += 'i'; &nbsp;&nbsp;&nbsp;&nbsp;} &nbsp;&nbsp;&nbsp;&nbsp;Expression = document.getElementById('InputExpression').value; &nbsp;&nbsp;&nbsp;&nbsp;ExpressionText = document.getElementById('InputText').value; &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionObject = new RegExp(Expression, ExpressionParameters); &nbsp;&nbsp;&nbsp;&nbsp;var ExpressionTest = ExpressionObject.test(ExpressionText); &nbsp;&nbsp;&nbsp;&nbsp;if (ExpressionTest == true) { &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById('form_results').innerHTML = '&lt;p&gt;The following results were found for your search:&lt;/p&gt;'; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Testing it appears to run it, so ...
+                                In a previous post, I posted the code I used for a ColdFusion regular expression tester.
+This time I've got an attempt at a JavaScript version. There's a number of TODOs, but ...
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" &nbsp;"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt; &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; &lt;head&gt; &lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /&gt; &lt;title&gt;JavaScript Regular Expression Tester&lt;/title&gt; &lt;style type="text/css"&gt; &nbsp;#form_help { &nbsp;&nbsp;float:right; &nbsp;&nbsp;font-size:.8em; &nbsp;&nbsp;width:50%; &nbsp;} &nbsp;#form_results { &nbsp;&nbsp;margin:1em; &nbsp;&nbsp;width:45%; &nbsp;} &nbsp;.highlight { &nbsp;&nbsp;background-color:#ff9; &nbsp;} &nbsp;#form_highlighttext { &nbsp;&nbsp;border:1px dashed #ccc; &nbsp;&nbsp;margin-left:1em; &nbsp;&nbsp;width:45%; &nbsp;} &lt;/style&gt; &lt;script type="
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-JavaScript/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -114,7 +132,7 @@
 										
 									</li>
                                 </ul>
-                                The below information is correct for version 9.1. Comments on other versions&nbsp;are appreciated. With flash drives becoming more and relevant, it&#39;s always good to find programs that can be run on these powerful drives. &lt;oXygen/&gt; XML Editor is one such program. Making &lt;oXygen/&gt; portable On the official site, there&#39;s a post regarding making &lt;oXygen/&gt; portable. However, what does it really involve? Easily enough, it doesn&#39;t involve much more than is stated in the post.
+                                The below information is correct for version 9.1. Comments on other versions&nbsp;are appreciated.   With flash drives becoming more and relevant, it&#39;s always good to find programs that can be run on these powerful drives. &lt;oXygen/&gt; XML Editor is one such program. Making &lt;oXygen/&gt; portable  On the official site, there&#39;s a post regarding making &lt;oXygen/&gt; portable. However, what does it really involve?  Easily enough, it doesn&#39;t involve much more than is stated in the post.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Making-oXygen-XML-Editor-91-portable/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -130,7 +148,7 @@
 										
 									</li>
                                 </ul>
-                                I&#39;m a statistics kind of guy. I like numbers, since they&#39;re logical. I also like trends, and all that. So, here&#39;s a look at the current trends for what it takes to get into the top 25k, 50k, 75k, 100k, 150k, 200k, and 300k in the various game modes in Warhawk. Undoubtedly I&#39;ll have another post like this next month, around the same time. With over 417,000 players, total, these equate to around the top 6%, 12.5%, 18.75%, 25%, 37.5%, 50%, and 75%.
+                                I&#39;m a statistics kind of guy. I like numbers, since they&#39;re logical. I also like trends, and all that.  So, here&#39;s a look at the current trends for what it takes to get into the top 25k, 50k, 75k, 100k, 150k, 200k, and 300k in the various game modes in Warhawk. Undoubtedly I&#39;ll have another post like this next month, around the same time.  With over 417,000 players, total, these equate to around the top 6%, 12.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Warhawk-Game-Mode-Top-25000s-Analysis-20080118/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -146,7 +164,8 @@
 										
 									</li>
                                 </ul>
-                                Right before Christmas of 2007, I purchased a copy of Warhawk, for the Playstation 3. I didn't pick it up until the day after Christmas (what a bad idea; I should have just purchased in store, but ...) and have played a mere 16 hours (94 games). With my total points of 1153, I'm only 113315 out of the 410195 players, world wide. Granted, that's not too terribly bad, but I need to make a goal if I'm going to apply myself.
+                                Right before Christmas of 2007, I purchased a copy of Warhawk, for the Playstation 3. I didn't pick it up until the day after Christmas (what a bad idea; I should have just purchased in store, but ...) and have played a mere 16 hours (94 games).
+With my total points of 1153, I'm only 113315 out of the 410195 players, world wide. Granted, that's not too terribly bad, but I need to make a goal if I'm going to apply myself.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Warhawk-January-2008-goals/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -162,7 +181,9 @@
 										
 									</li>
                                 </ul>
-                                I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0. It's a pity to not make it available, since it's such an easy template ... &lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.
+                                I stumbled upon some code I had written back in September, for testing regular expressions. This uses ColdFusion, and is currently 'running' on ColdFusion MX 6.1 and ColdFusion 7.0.
+It's a pity to not make it available, since it's such an easy template ...
+&lt;!--- --- --- DESCRIPTION: &nbsp;Basic way to test a regular expression. CALLED BY: ??? CALLS: ??? ASSUMPTIONS: ??? MODIFICATION HISTORY: DATE USER ACTION 09/24/2007 J.Skemp Created template.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-ColdFusion/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -178,7 +199,7 @@
 										
 									</li>
                                 </ul>
-                                The other day, after a deal of research, I decided to pick up a copy of &lt;oXygen/&gt;, which&nbsp;is &quot;a complete cross platform XML editor providing the tools for XML authoring, XML conversion, XML Schema, DTD, Relax NG and Schematron development, XPath, XSLT, XQuery debugging, SOAP and WSDL testing.&quot; This provided to be the key to finally understanding XML Schema, or at least getting a working Schema for an XML file. Since I&#39;ve covered XML in a couple of tutorials/guides, I&#39;ll be adding another covering using an XML Schema, in place of a DTD.
+                                The other day, after a deal of research, I decided to pick up a copy of &lt;oXygen/&gt;, which&nbsp;is &quot;a complete cross platform XML editor providing the tools for XML authoring, XML conversion, XML Schema, DTD, Relax NG and Schematron development, XPath, XSLT, XQuery debugging, SOAP and WSDL testing.&quot;  This provided to be the key to finally understanding XML Schema, or at least getting a working Schema for an XML file.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/XML-Schema-article-coming-soon/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -194,24 +215,8 @@
 										
 									</li>
                                 </ul>
-                                A guide covering the necessary experience to, and benefits of, leveling the four major characters in Dragon Quest VIII is now available. View the Dragon Quest VIII leveling overview. Comments and corrections appreciated.
+                                 A guide covering the necessary experience to, and benefits of, leveling the four major characters in Dragon Quest VIII is now available.  View the Dragon Quest VIII leveling overview.  Comments and corrections appreciated. 
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Dragon-Quest-VIII-Character-leveling-overview/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/The-future-really-is-Blu/">The future really is Blu ...</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>January 5, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Catching up on the news, it seems Warner will be switching over to Blu-ray, exclusively, after May 2008. What surprises me is that they&#39;re just now saying that this is ending the format wars. The fact that Warner was supporting both, while Fox, Disney, Lion&#39;s Gate, MGM, and Sony were only Blu-ray (compared with Paramount and Universal going HD DVD, after Paramount was effectively paid-off) suggested, to me, that the &#39;war&#39; was already over.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/The-future-really-is-Blu/" role="button">Read More</a></p>
                             </div>
                         </div>
                     
@@ -273,6 +278,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -280,8 +287,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

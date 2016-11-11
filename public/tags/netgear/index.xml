@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Netgear on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/netgear/</link>
-    <description>Recent content in Netgear on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/netgear/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Tue, 17 Jun 2014 19:22:13 -0500</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/netgear/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/netgear/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Review: NETGEAR Trek N300 Range Extender and Travel Router (PR2000)</title>

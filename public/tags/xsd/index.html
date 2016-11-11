@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>Xsd &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -65,7 +65,10 @@
 										
 									</li>
                                 </ul>
-                                I have a custom type that I use in a couple of my documents. Unfortunately, in the past I was adding this to each xsd, as I needed it. However, I've now figured out how to import it into xsd files as needed. Original schema Currently I'm adding the following at the top of each xsd: &lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt; &lt;xs:simpleType name="customDateType"&gt; &lt;xs:restriction base="xs:string"&gt; &lt;xs:annotation&gt; &lt;xs:documentation&gt;&lt;![CDATA[Allows for a year, a year and a month, or a year, month, and day, to be defined.]]&gt;&lt;/xs:documentation&gt; &lt;/xs:annotation&gt; &lt;xs:pattern value="\d{4}(-\d{2}){0,2}"/&gt; &lt;/xs:restriction&gt; &lt;/xs:simpleType&gt; &lt;!-- Remainder of schema goes here.
+                                I have a custom type that I use in a couple of my documents.
+Unfortunately, in the past I was adding this to each xsd, as I needed it. However, I've now figured out how to import it into xsd files as needed.
+Original schema Currently I'm adding the following at the top of each xsd:
+&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt; &lt;xs:simpleType name="customDateType"&gt; &lt;xs:restriction base="xs:string"&gt; &lt;xs:annotation&gt; &lt;xs:documentation&gt;&lt;![CDATA[Allows for a year, a year and a month, or a year, month, and day, to be defined.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Importing-a-custom-namespace-custom-type-into-an-XSD/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -81,7 +84,9 @@
 										
 									</li>
                                 </ul>
-                                From the archives, I've created an XML Schema and XML data file for Onimusha: Dawn of Dreams, for the Playstation 2. Currently the data only includes armor leveling information, from level 1 to 100. The data comes from an OpenDocument Spreadsheet (OnimushaDawnofDreams.ods) from way back in May of 2006. My characters and core weapons being completely maxed (not to mention souls), I may decide to replay the game to track this information as well, or just upgrade weapons.
+                                From the archives, I've created an XML Schema and XML data file for Onimusha: Dawn of Dreams, for the Playstation 2. Currently the data only includes armor leveling information, from level 1 to 100.
+The data comes from an OpenDocument Spreadsheet (OnimushaDawnofDreams.ods) from way back in May of 2006.
+My characters and core weapons being completely maxed (not to mention souls), I may decide to replay the game to track this information as well, or just upgrade weapons.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Onimusha-Dawn-of-Dreams-data/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -97,7 +102,8 @@
 										
 									</li>
                                 </ul>
-                                As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are. Elements In the past I've used camel case, but on a recent file used Pascal case instead. I think this was more becauase I've started to using Pascal case for public items (variables), and camel case for private items, as that's fairly standard in development.
+                                As I prepare to create another XML data file, I started looking at the standards I use to create XML files, and what the recommendations are.
+Elements In the past I've used camel case, but on a recent file used Pascal case instead. I think this was more becauase I've started to using Pascal case for public items (variables), and camel case for private items, as that's fairly standard in development.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/XML-standards-personal-suggestions/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -113,7 +119,10 @@
 										
 									</li>
                                 </ul>
-                                In the first part of this series I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010. This time I'm going to create the actual XML Schema Definition file with &lt;oXygen/&gt; XML Editor, version 11.1. I've been using &lt;oXygen/&gt; since January 2008, and wouldn't trade it for any other XML editor. If you don't have &lt;oXygen/&gt; you can still follow along.
+                                In the first part of this series I had outlined a sample layout that I wanted to use for a series of XML files that I would be creating over the course of 2010.
+This time I'm going to create the actual XML Schema Definition file with &lt;oXygen/&gt; XML Editor, version 11.1.
+I've been using &lt;oXygen/&gt; since January 2008, and wouldn't trade it for any other XML editor.
+ If you don't have &lt;oXygen/&gt; you can still follow along.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-2-XSD-file-with-oXygen-XML-Editor/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -129,7 +138,9 @@
 										
 									</li>
                                 </ul>
-                                In a previous series, I went over the process of creating a new XML document to store my video games. (Although in that case I used a DTD.) This time I&rsquo;m going to work on a schema to store quasi-journal entries, which I&rsquo;m hoping will help with my goal to write every day. What I hope to accomplish Ultimately I want to store a bit of text for any particular day.
+                                In a previous series, I went over the process of creating a new XML document to store my video games. (Although in that case I used a DTD.)
+This time I&rsquo;m going to work on a schema to store quasi-journal entries, which I&rsquo;m hoping will help with my goal to write every day.
+What I hope to accomplish Ultimately I want to store a bit of text for any particular day.
                                 <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/XML-Schema-Definition-creation-Journal-Part-1-Primary-layout/" role="button">Read More</a></p>
                             </div>
                         </div>
@@ -175,6 +186,8 @@
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -182,8 +195,6 @@
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

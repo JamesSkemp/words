@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Double Negation on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/double-negation/</link>
-    <description>Recent content in Double Negation on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/double-negation/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Sun, 10 Jun 2007 11:03:00 -0500</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/double-negation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/double-negation/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>On the Dangers of &#34;Is and Is Not Not&#34;</title>

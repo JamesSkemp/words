@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Review on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/review/</link>
-    <description>Recent content in Review on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/review/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Mon, 24 Oct 2016 17:56:01 -0500</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/review/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</title>
+      <link>http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/</link>
+      <pubDate>Thu, 10 Nov 2016 18:56:59 -0600</pubDate>
+      
+      <guid>http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/</guid>
+      <description>The following is a review of Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks, received as part of the Amazon Vine program.</description>
+    </item>
     
     <item>
       <title>Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</title>
@@ -134,15 +142,6 @@
       
       <guid>http://words.strivinglife.com/post/review-tp-link-n300-wi-fi-range-extender-tl-wa855re/</guid>
       <description>The following is a review of the TP-LINK N300 Wi-Fi Range Extender (TL-WA855RE), provided to me as part of the Amazon Vine program.</description>
-    </item>
-    
-    <item>
-      <title>Review: Alienware Alpha and Steam Machine Carrying Case (A7888952)</title>
-      <link>http://words.strivinglife.com/post/review-alienware-alpha-and-steam-machine-carrying-case-a7888952/</link>
-      <pubDate>Sat, 30 Apr 2016 21:04:30 -0500</pubDate>
-      
-      <guid>http://words.strivinglife.com/post/review-alienware-alpha-and-steam-machine-carrying-case-a7888952/</guid>
-      <description>The following is a review of the Alienware Alpha and Steam Machine Carrying Case (A7888952), provided to me as part of the Amazon Vine program.</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
     <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content="Hugo 0.16" />
+    <meta name="generator" content="Hugo 0.17" />
     <title>PHP Forum Software Showdown Part 2: Vanilla &middot; James Skemp&#39;s StrivingLife</title>
     
     
@@ -72,7 +72,7 @@
 While the <a href="http://getvanilla.com/">Vanilla</a> forum&#39;s are fairly unknown, it&#39;s been around for a little over a year. &ldquo;Vanilla is an open-source, standards-compliant, multi-lingual, fully extensible discussion forum for the web.&rdquo; The version we&#39;ll be installing, 1.0.1, was released in late-August 2006.
 </p>
 
-<p><h4>File and folder size</h4>
+<h4>File and folder size</h4>
 <p>
 The zip file for Vanilla 1.0.1 (which is the only download type) weighs in at just under 400 KB. Unzipped, it&#39;s almost 1.2 MB in size. Overall, that&#39;s pretty small.<!--adsense-->
 </p>
@@ -86,7 +86,7 @@ Unlike past articles, for these forum reviews we&#39;re going to create the nece
 </p>
 <h4>Creating the user and database via the command-line</h4>
 <p>
-First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run &hellip; and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
+First, you&#39;ll need to login to MySQL. Open up the Run prompt by going to Start &gt; Run ... and type <strong>cmd</strong>, then press Enter. At the prompt, if you&#39;ve setup MySQL correctly, you can type the following command, followed by pressing Enter.
 </p>
 <blockquote>
     <p>
@@ -119,12 +119,12 @@ Before you enter this, look it over, and then read the paragraph following, for 
 <blockquote>
     <p>
      GRANT select, insert, update, delete, index, alter, create, drop<br />
-    ON <strong>Vanilla</strong>.<em><br />
+    ON <strong>Vanilla</strong>.*<br />
     TO <strong>Vanilla</strong> IDENTIFIED BY &#39;<strong>vanilla</strong>&#39;;
     </p>
 </blockquote>
 <p>
-The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>Vanilla</strong>.</em>&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>Vanilla</strong> IDENTIFIED BY &#39;<strong>vanilla</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
+The first line, &ldquo;GRANT select, insert, update, delete, index, alter, create, drop&rdquo;, states what privileges the user will be granted. The next line, &ldquo;ON <strong>Vanilla</strong>.*&rdquo;, states what the privileges are applied to. Finally, &ldquo;TO <strong>Vanilla</strong> IDENTIFIED BY &#39;<strong>vanilla</strong>&#39;;&rdquo; states what user will get these privileges. Since the user doesn&#39;t exist yet, we&#39;re also giving a password to the user.
 </p>
 <p>
 If the query is OK, enter the following command.
@@ -223,8 +223,7 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
 </p>
 <p>
 <a href="http://words.strivinglife.com/local-apache-server/">View all of the steps to creating a local Web server, for development.</a>
-</p></p>
-
+</p>
         
     <ul class="list-inline tags" style="margin-top: 15px; margin-left: 0px">
         
@@ -300,6 +299,8 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
@@ -307,8 +308,6 @@ Stay tuned for the next <a href="http://words.strivinglife.com/words/post/PHP-Fo
                     <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-otterbox-symmetry-series-case-for-samsung-galaxy-s7/">Review: OtterBox SYMMETRY SERIES Case for Samsung Galaxy S7</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-otterbox-defender-series-case-for-samsung-galaxy-s7/">Review: OtterBox DEFENDER SERIES Case for Samsung Galaxy S7</a></li>
                 
             </ul>
         </ul>

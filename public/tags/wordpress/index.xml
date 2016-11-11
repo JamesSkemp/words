@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wordpress on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/wordpress/</link>
-    <description>Recent content in Wordpress on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/wordpress/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Fri, 12 Mar 2010 12:40:00 -0600</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Installing WordPress 2.9.2 on Windows Server 2003 using Microsoft&#39;s Web Platform Installer</title>

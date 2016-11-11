@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hp on James Skemp&#39;s StrivingLife</title>
-    <link>http://words.strivinglife.com/tags/hp/</link>
-    <description>Recent content in Hp on James Skemp&#39;s StrivingLife</description>
+    <title>James Skemp&#39;s StrivingLife</title>
+    <link>http://words.strivinglife.com/tags/hp/index.xml</link>
+    <description>Recent content on James Skemp&#39;s StrivingLife</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All content copyright 1999-2016 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0.</copyright>
-    <lastBuildDate>Sat, 04 Oct 2008 11:50:00 -0500</lastBuildDate>
-    <atom:link href="http://words.strivinglife.com/tags/hp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/hp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Connecting to a WRT54G with a HP iPAQ 110</title>
