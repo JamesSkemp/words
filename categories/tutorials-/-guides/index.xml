@@ -10,6 +10,15 @@
     <atom:link href="/categories/tutorials-/-guides/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Copy a PICO-8 Game From a PocketCHIP</title>
+      <link>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</link>
+      <pubDate>Sat, 19 Nov 2016 19:43:54 -0600</pubDate>
+      
+      <guid>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</guid>
+      <description>Information on how to copy a PICO-8 game from a PocketCHIP.</description>
+    </item>
+    
+    <item>
       <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
       <link>http://words.strivinglife.com/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
@@ -133,15 +142,6 @@
       
       <guid>http://words.strivinglife.com/post/Raw-Using-OpenSSL-to-create-a-certificate-authority-and-update-IIS-75/</guid>
       <description>A raw dump of information on how to create a certificate authority and etcetera.</description>
-    </item>
-    
-    <item>
-      <title>Getting started with StatSVN (0.7.0) and CollabNet Subversion Server</title>
-      <link>http://words.strivinglife.com/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</link>
-      <pubDate>Sun, 31 Oct 2010 10:00:00 -0500</pubDate>
-      
-      <guid>http://words.strivinglife.com/post/Getting-started-with-StatSVN-0-7-0-and-CollabNet-Subversion-Server/</guid>
-      <description>While a tool like TortoiseSVN allows limited reporting on Subversion repositories, using a tool like StatSVN generates much more useful reports.</description>
     </item>
     
   </channel>

@@ -10,6 +10,15 @@
     <atom:link href="/categories/gaming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Copy a PICO-8 Game From a PocketCHIP</title>
+      <link>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</link>
+      <pubDate>Sat, 19 Nov 2016 19:43:54 -0600</pubDate>
+      
+      <guid>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</guid>
+      <description>Information on how to copy a PICO-8 game from a PocketCHIP.</description>
+    </item>
+    
+    <item>
       <title>Review: Alienware Alpha and Steam Machine Carrying Case (A7888952)</title>
       <link>http://words.strivinglife.com/post/review-alienware-alpha-and-steam-machine-carrying-case-a7888952/</link>
       <pubDate>Sat, 30 Apr 2016 21:04:30 -0500</pubDate>
@@ -133,15 +142,6 @@
       
       <guid>http://words.strivinglife.com/post/Review-Karma-Card-Game/</guid>
       <description>The following is a review of the Karma Card Game, provided to me by the Amazon Vine program.</description>
-    </item>
-    
-    <item>
-      <title>Review: SET Dice Game</title>
-      <link>http://words.strivinglife.com/post/Review-SET-Dice-Game/</link>
-      <pubDate>Sun, 05 Apr 2015 09:56:30 -0500</pubDate>
-      
-      <guid>http://words.strivinglife.com/post/Review-SET-Dice-Game/</guid>
-      <description>The following is a review of the SET Dice Game, received as part of the Amazon Vine program.</description>
     </item>
     
   </channel>

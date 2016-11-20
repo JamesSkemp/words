@@ -57,6 +57,28 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Subversion-and-TortoiseSVN-Moving-a-repository/">Subversion and TortoiseSVN: Moving a repository</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 12, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This evening I had to rename a project folder, since I was creating a site with the same name.
+Since I had the project (application) under Subversion, I also needed to move the repository.
+Here's what I did:
+ svnadmin create b:\repos\_newName_
+svnadmin dump b:\repos\_oldName_ &gt; b:\repos_dump\_oldName_.dump
+svnadmin load b:\repos\_newName_ &lt; b:\repos_dump\_oldName_.dump
+ At this point I could either checkout the repository, or change where the checked out directory points to.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Subversion-and-TortoiseSVN-Moving-a-repository/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/I-like-the-GatesSeinfeld-ads/">I like the Gates/Seinfeld ads</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>September 12, 2008</li>
@@ -204,23 +226,6 @@ In a previous guide, which you may have followed,&nbsp;I installed the Windows i
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Install-Apache-229-to-Windows-Vista-Ultimate/">Install Apache 2.2.9 to Windows Vista (Ultimate)</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>August 15, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                In this article I'll be covering an installation of Apache 2.2.9 to Windows Vista Ultimate. I'll be installing Apache so that you can run IIS as well (hence, Apache will be on a different port). You may want to do this if you want to run Subversion on Apache (as I do).
-Installing Apache 2.2 Currently the Apache HTTP Server has both a 2.0 and 2.2 version. For new development, the 2.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Install-Apache-229-to-Windows-Vista-Ultimate/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -279,6 +284,8 @@ Installing Apache 2.2 Currently the Apache HTTP Server has both a 2.0 and 2.2 ve
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/">How to Copy a PICO-8 Game From a PocketCHIP</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-isotoner-mens-microsuede-devin-hoodback-slippers/">Review: Isotoner Men&#39;s Microsuede Devin Hoodback Slippers</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
@@ -286,8 +293,6 @@ Installing Apache 2.2 Currently the Apache HTTP Server has both a 2.0 and 2.2 ve
                     <li><a href="http://words.strivinglife.com/post/review-dii-100-cotton-machine-washable-heat-resistant-everyday-kitchen-basic-oven-mitt/">Review: DII 100% Cotton, Machine Washable, Heat Resistant, Everyday Kitchen Basic Oven Mitt, 9 x 8&#34;, Set of 2, French Stripe- Chambray Blue</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-raspberry-pi-user-guide-fourth-edition/">Review: Raspberry Pi User Guide, Fourth Edition</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-treasure-hunter/">Review: Treasure Hunter</a></li>
                 
             </ul>
         </ul>
