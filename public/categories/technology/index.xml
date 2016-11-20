@@ -10,6 +10,15 @@
     <atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Copy a PICO-8 Game From a PocketCHIP</title>
+      <link>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</link>
+      <pubDate>Sat, 19 Nov 2016 19:43:54 -0600</pubDate>
+      
+      <guid>http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/</guid>
+      <description>Information on how to copy a PICO-8 game from a PocketCHIP.</description>
+    </item>
+    
+    <item>
       <title>Setting up a Raspberry Pi 2 Samba server (in early January 2016)</title>
       <link>http://words.strivinglife.com/post/Setting-up-a-Raspberry-Pi-2-Samba-server-%28in-early-January-2016%29/</link>
       <pubDate>Sat, 09 Jan 2016 12:17:57 -0600</pubDate>
@@ -133,15 +142,6 @@
       
       <guid>http://words.strivinglife.com/post/iPod-Touch-netbooks-laptops-and-desktops/</guid>
       <description>I want portability, but I don&#39;t want to pay a lot for it, or get crap because of it. Here&#39;s where my reasoning and research got me.</description>
-    </item>
-    
-    <item>
-      <title>System.Text.StringBuilder.Remove() overhead</title>
-      <link>http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/</link>
-      <pubDate>Sun, 28 Jun 2009 13:19:00 -0500</pubDate>
-      
-      <guid>http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/</guid>
-      <description></description>
     </item>
     
   </channel>
