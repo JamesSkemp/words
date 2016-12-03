@@ -57,6 +57,28 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Parse-FileZilla-Server-logs-with-Log-Parser/">Parse FileZilla Server logs with Log Parser</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 23, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While FileZilla Server is one of the best FTP servers available, it&#39;s logging leaves much to be desired.  However, after a couple of hours, I&#39;ve created a script for Log Parser that will generate a W3C log from FileZilla Server&#39;s logs.  Save the following to a file, for example, FileZillaServer.sql:   SELECT
+&nbsp;SUBSTR(Text, 1, SUB(INDEX_OF(Text, &#39;)&#39;), 1)) AS RequestNumber
+&nbsp;, TO_TIMESTAMP(
+&nbsp;&nbsp;TRIM(
+&nbsp;&nbsp;&nbsp;SUBSTR(
+&nbsp;&nbsp;&nbsp;&nbsp;Text
+&nbsp;&nbsp;&nbsp;&nbsp;, ADD(INDEX_OF(Text, &#39;)&#39;), 1)
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parse-FileZilla-Server-logs-with-Log-Parser/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Current-major-browsers/">Current, major, browsers</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>November 23, 2008</li>
@@ -201,22 +223,6 @@ Purchase this guide or game through Amazon.   First of all, this is a beautiful 
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/LittleBigPlanet-First-day-first-thoughts/">LittleBigPlanet - First day, first thoughts</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 25, 2008</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Right or wrong, GameStop was in stock and selling pre-orders of LittleBigPlanet today, so I was able to pick up my copy, along with the official guide.  Thus far I&#39;ve gone through four complete areas, and picked up the trophies accordingly.  On only the first level did I actually get a 100% (but not the Ace award), and with the later levels, I had to retry a number of times.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/LittleBigPlanet-First-day-first-thoughts/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -275,6 +281,8 @@ Purchase this guide or game through Amazon.   First of all, this is a beautiful 
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-unusual-suspects-board-game/">Review: Unusual Suspects Board Game</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-lucidsound-ls20-amplified-universal-gaming-headset/">Review: LucidSound LS20 Amplified Universal Gaming Headset</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-radiance-led-string-lights/">Review: Radiance LED String Lights</a></li>
@@ -282,8 +290,6 @@ Purchase this guide or game through Amazon.   First of all, this is a beautiful 
                     <li><a href="http://words.strivinglife.com/post/how-to-copy-a-pico-8-game-from-a-pocketchip/">How to Copy a PICO-8 Game From a PocketCHIP</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-isotoner-mens-microsuede-devin-hoodback-slippers/">Review: Isotoner Men&#39;s Microsuede Devin Hoodback Slippers</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-galiva-mens-cotton-extrasoft-no-show-cushion-socks/">Review: Galiva Men&#39;s Cotton ExtraSoft No Show Cushion Socks</a></li>
                 
             </ul>
         </ul>
