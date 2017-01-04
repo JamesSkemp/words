@@ -57,6 +57,23 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/">ColdFusion: cfscript to determine if variable exists and output html-escaped</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 8, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                There may be an easier way to do this in ColdFusion, but I finally created a function to determine whether a variable exists and if it does, returns in, all html-escaped.
+&lt;cfscript&gt; // Checks the passed CF variable to see if it exists, and if it does, outputs a trimmed and html-ready version of the value. function checkForValueOutput(data) { if (IsDefined(data)) { return HtmlEditFormat(Trim(Evaluate(data))); } else { return ""; } } &lt;/cfscript&gt; (Obviously, this can rather easily be converted to a function.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ColdFusion-cfscript-to-determine-if-variable-exists-and-output-html-escaped/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Backing-up-a-computer-to-an-HP-Pocket-Media-Drive/">Backing up a computer to an HP Pocket Media Drive</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>October 4, 2009</li>
@@ -224,23 +241,6 @@ Comments appreciated.
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/">Finding the list of files Dreamweaver will reopen on startup</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>August 19, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                As sometimes happens, a network share ended up going down while I was using Dreamweaver. Unfortunately, this can cause fairly major issues with Dreamweaver, if you have files still open, or if you have Dreamweaver closed, but need to open it up.
-Since I typically have more than one file open in Dreamweaver, and have set my preferences to remember what I've got open, I wanted to know where Dreamweaver stored the files that it was going to re-open.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Finding-the-list-of-files-Dreamweaver-will-reopen-on-startup/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -299,6 +299,8 @@ Since I typically have more than one file open in Dreamweaver, and have set my p
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-grifters-dystopian-universe/">Review: Grifters</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-onitama-board-game/">Review: Onitama</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-kanagawa-game/">Review: Kanagawa</a></li>
@@ -306,8 +308,6 @@ Since I typically have more than one file open in Dreamweaver, and have set my p
                     <li><a href="http://words.strivinglife.com/post/review-unusual-suspects-board-game/">Review: Unusual Suspects Board Game</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-lucidsound-ls20-amplified-universal-gaming-headset/">Review: LucidSound LS20 Amplified Universal Gaming Headset</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-radiance-led-string-lights/">Review: Radiance LED String Lights</a></li>
                 
             </ul>
         </ul>
