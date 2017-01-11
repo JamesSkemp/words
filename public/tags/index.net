@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.18.1" />
+    <title>.Net &middot; James Skemp&#39;s StrivingLife</title>
+    
+    
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content='' />
+    <meta name="author" content="" />
+    <link href="http://words.strivinglife.com/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s StrivingLife" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
+</head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s StrivingLife</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="http://words.strivinglife.com/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://strivinglife.com/Words/Feed">
+                            Subscribe
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Microsoft-NET-Framework-45-Quickstart-Cookbook-2013/">Review: Microsoft .NET Framework 4.5 Quickstart Cookbook (2013)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 30, 2013</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following is a review of&nbsp;Microsoft .NET Framework 4.5 Quickstart Cookbook (2013), written by&nbsp;Jose Luis Latorre Millas, and published by Packt Publishing.
+ The .NET Framework is just too big .NET 4.5 came out a short while ago, but the amount I&rsquo;ve been able to do with it has been fairly limited. So when I was asked if I wanted a review copy of Microsoft .NET Framework 4.5 Quickstart Cookbook I went ahead and took the opportunity to do so, to see what I could look forward to.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Microsoft-NET-Framework-45-Quickstart-Cookbook-2013/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Unofficial-Xbox-Live-API-wrappers/">Unofficial Xbox Live API wrappers</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 9, 2013</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This morning I created two API wrappers for the Mashape implementations of XboxApi.com and XboxLeaders.com. These unofficial APIs allow you to pull information from Xbox Live for particular users.
+I've used a simiilar structure for both (based upon XboxLeaders.com's PHP wrapper, since I thought I was working against there API when I was in fact working against XboxApi.com's ...), and both are available on Github.
+  XboxLeadersWrapper XboxApiWrapper  In order to use these APIs you'll need to have an account on Mashape, subscribe, and generate keys.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Unofficial-Xbox-Live-API-wrappers/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Instant-NET-45-Extension-Methods-How-to-2013/">Review: Instant .NET 4.5 Extension Methods How-to (2013)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 3, 2013</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following is a review of Instant .NET 4.5 Extension Methods How-to (2013), written by Shawn R. McLean, and published by Packt Publishing.
+ A quick introduction to .NET extension methods In the 5+ years that I&rsquo;ve been doing .NET I&rsquo;ve been created my own extension methods twice. I was already aware that LINQ was built on extension methods, but I very rarely found myself needing to extend something that I didn&rsquo;t already have the code for.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Instant-NET-45-Extension-Methods-How-to-2013/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Excellent-news-the-BlogML-project-is-not-dead/">Excellent news - the BlogML project is not dead.</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 11, 2011</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While it seemed to be near death, if not dead, at least as far as new releases, the BlogML project is not dead, and has been undergoing a number of needed changes since the end of January.
+My StackOverflow question "Is the BlogML project dead, and what are some alternatives?" was answered yesterday by the project originator (one of the great things about StackOverflow, and the entire network of sites).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Excellent-news-the-BlogML-project-is-not-dead/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/">Convert online image to base64 with C#</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>December 12, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following code will convert an online image to a base64 string.
+The code was specifically written for use in LINQPad, hence the use of Dump().
+String url = "http://ecx.images-amazon.com/images/I/51MVXV3QQ6L._SL500_SS150_.jpg"; Uri uri = new Uri(url); WebClient client = new WebClient(); byte[] imageBytes = client.DownloadData(uri); string base64String = Convert.ToBase64String(imageBytes); base64String.Dump(); base64String.Length.Dump(); ("&lt;img src='data:image/jpg;base64," + "' /&gt;").Length.Dump(); client.Dispose(); The length dumps are given to get an idea of what size would be added to a file if added inline.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/">ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 15, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In part one of this series we covered what we'd be doing, and what data model we'd be using.
+In part two of this series we used LINQ to XML to query the XML file with the data we want to display.
+This time we'll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I'll be implementing very basic caching.
+Preliminary requirement Before you can use the charting functionality you need to have a reference to System.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/">ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 14, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In part one of this series we covered what we'd be doing, and what model we'd be using for the data.
+This time we'll parse the XML file that contains the data we need, and populate the objects.
+Loading the XML file The XML file we'll be loading is located at&nbsp;http://jamesrskemp.com/files/OdinSphere.xml, and to keep it simple, we'll load it in assuming we're on a different server/domain.
+First we'll need to add the following so we can make use of XDocument.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/">ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 13, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                For a while now I've been meaning to work with ASP.NET 4's built-in charting functionality. While I was going to use it alongside my gas tracking, I think I'm instead going to use my Odin Sphere leveling guide, so I don't have to create an XSLT for the output.
+In this part of the series I'll outline the data model I'll be using, and preliminary setups.
+Method So that this can easily be deployed anywhere, I'm going to opt not to use the control itself, but rather programmatically create the charts/graphs.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 25, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ In this series we&rsquo;ve started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.
+In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 24, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ In the last part we created a Loan object, that we determined we would later use to power our Web service. Ths object has a handful of properties and a method to update a list of payments to bring the loan to $0.
+This time we&rsquo;re going to create a Web service to respond to requests from data.
+Requirements As this seems to be built for .
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 22, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ As already noted in the table of contents, the end goal will to have a service that returns enough information to be able to generate an amortization&nbsp;schedule for a loan. I&rsquo;m not in financial services, and haven&rsquo;t been very good in math since some point in high school, but this seems to work fairly well.
+The first thing we&rsquo;re going to do is generate an assembly that we&rsquo;ll then use in the WCF WebHttp service.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 21, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                A while ago (a year and a quarter)&nbsp;I created an amortization schedule generator in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.
+For better or worse, some of the practices I put in place aren't the best, and either way I've been meaning to tweak the interface so that I could do various comparisons.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/">Vehicle gas DTD .NET objects and XML parsing with LINQ</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 10, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The code contained below is a rough draft, and will eventually be moved into an assembly, and the code posted.
+ At some point in 2007 I started keeping track of my gas mileage in an XML file, with a custom DTD for validation (and intellisense in oXygen).
+I present below the code necessary to create an rough object from the XML, and the LINQ to parse it out.
+C# objects public class Vehicle { public int Id { get; set; } public String Make { get; set; } public String Model { get; set; } public int Year { get; set; } public IEnumerable Fillups { get; set; } }
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Vehicle-gas-DTD-NET-objects-and-XML-parsing-with-LINQ/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Music-Recommendations-Please%21-version-05-beta/">Music Recommendations Please! version 0.5 beta</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 28, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While not necessarily a step forward from version 0.4.5 of Music Recommendations Please!, version 0.5 is nonetheless a positive step. Consider this an idea-based release. As such, this application is in no way final (but might be more complete after this long weekend).
+Download Music Recommendations Please! version 0.5, beta.
+You can see a general idea of where I'd like to end up by reading my music application idea.
+.NET Framework 4 is required for this application.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Music-Recommendations-Please%21-version-05-beta/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Basic-NET-C-Sharp-Traceroute-library/">Basic .NET (C#) Traceroute library</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 9, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Spending the day researching all things DNS, I eventually came upon Jim Scott's post on C# Traceroute using .net framework. After a bit of tweaking, I've got something that I like a bit more, because I really want to know what the IP address means.
+The code for the assembly and console application are included below. Written against .NET Framework 4 (in Visual Studio 2010), but if you change the String.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Basic-NET-C-Sharp-Traceroute-library/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-16-released/">iTunes Playlists to Xml - version 1.6 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 8, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Version 1.6 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.6.
+Installing and more information If you're new to iTunes Playlists to Xml, I've created a 'product page' for iTunes Playlists to Xml with all the information needed to get started.
+Upgrading To upgrade from any version of 1.4 or 1.5&nbsp;you need to replace the following files with those in the above archive:
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-16-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/">Review: Beginning ASP.NET 4 In C# and VB</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 28, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following book review is for Imar Spaanjaars&rsquo; Beginning ASP.NET 4 in C# and VB.
+ While I&rsquo;ve already read Beginning ASP.NET 3.5 by Imar Spaanjaars and moved rather far beyond it, when I had the opportunity to recieve his new book on ASP.NET 4 for review, I took it.
+Would I still feel strongly about recommending his work as the #1 choice for those new (or relatively new) to ASP.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Beginning-ASPNET-4-In-C-and-VB/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-153-released/">iTunes Playlists to Xml - version 1.5.3 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>January 10, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.5.3 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.5.3.
+Installing and more information If you&rsquo;re new to iTunes Playlists to Xml, I&rsquo;ve created a &lsquo;product page&rsquo; for iTunes Playlists to Xml with all the information needed to get started.
+Upgrading To upgrade from any version of 1.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-153-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlist-to-Xml-version-151-released/">iTunes Playlists to Xml - version 1.5.1 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 14, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.5.2.1 is available for download, which fixes an issue with version 1.5.2. Thanks to Pierre for bringing this to my attention.
+ Version 1.5.2 is available for download, which adds the -output argument.
+ Version 1.5.1 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.5.1.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlist-to-Xml-version-151-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-15-released/">iTunes Playlists to Xml - version 1.5 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 13, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.5 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.5.
+Installing and more information If you&rsquo;re new to iTunes Playlists to Xml, I&rsquo;ve created a &lsquo;product page&rsquo; for iTunes Playlists to Xml with all the information needed to get started.
+Upgrading To upgrade from any version of 1.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-15-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-141-released/">iTunes Playlists to Xml - version 1.4.1 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 30, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.4.1 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.4.1.
+Installing and more information If you&rsquo;re new to iTunes Playlists to Xml, I&rsquo;ve created a &lsquo;product page&rsquo; for iTunes Playlists to Xml with all the information needed to get started.
+Upgrading To upgrade from version 1.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-141-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Music-to-SQLite-version-01-beta-released/">iTunes Music to SQLite - version 0.1 beta released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 24, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While it was at the same stage as it is now back on the 19th, I'm finally releasing the beta version of iTunes Music to SQLite.
+This console application finds all Music playlists in iTunes and imports them into a SQLite database (called iTunesMusic.s3db).
+You can change this by passing the database and source names as parameters.
+For example:
+iTunesMusicToSQLite.exe "datum.db" "James Skemp's 80 gig" You can run the executable and it will prompt for a key press before exiting, in case you want to view any messages.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Music-to-SQLite-version-01-beta-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/IIS-Logs-to-SQLite-version-01-beta-released/">IIS Logs to SQLite - version 0.1 beta released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 24, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I've created IIS Logs to SQLite, which will parse IIS logs and import them into the SQLite database and table of your choice.
+The first beta version of this application is now available.
+Download IIS Logs to SQLite version 0.1.
+This application requires the .NET Framework version 3.5 (check your version of .NET Framework).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/IIS-Logs-to-SQLite-version-01-beta-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Music-Recommendations-Please%21-045-beta-released/">Music Recommendations Please! - version 0.4.5 beta released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 13, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                An updated version of this application was released. Download and find out more about version 0.5.
+ The one problem I have with music is when I try to find new music that I may like. Luckily there&rsquo;s a number of services that will provide recommendations, but these are typically only based on one artist, or across my entire library (in the case of the iTunes Genius service).
+To make this a bit easier, I looked at Last.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Music-Recommendations-Please%21-045-beta-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/">Parsing Yahoo! Music&#39;s Artist Web Services with C# and LINQ to XML - Search for artists</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 12, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Similar to my post on parsing Last.fm's artist.getSimilar, I've been working with Yahoo! Music's Web services today.
+Unfortunately, Yahoo!'s services aren't quite as friendly as those made available by Last.fm.
+So that I remember, and others don't have to tackle this as well, here's the class I've created. (Download JamesRSkemp.WebServices.YahooMusic.cs.)
+/* Created by James Skemp - http://jamesrskemp.com/ Version 1.0 More information at http://strivinglife.com/words/post/Parsing-Yahoo!-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists.aspx Shared under a Creative Commons Attribution 3.0 United States License - http://creativecommons.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parsing-Yahoo%21-Musics-Artist-Web-Services-with-C-and-LINQ-to-XML-Search-for-artists/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/">Parsing Last.fm Web Services&#39; artist.getSimilar with C# and LINQ to XML</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 12, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following covers how to parse the XML response of artist.getSimilar, from Last.fm's Web Services.
+Setup and assumptions The first step is sign up for a free API account at Last.fm.
+You'll also need to target .NET Framework 3.5 when you setup your project, so as to access LINQ functionality.
+When writing the steps listed below, I was working on a Windows Forms Application, but the steps should be the same, or very similar, for other project types.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Parsing-Lastfm-Web-Services-artistgetSimilar-with-C-and-LINQ-to-XML/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Project-page-for-iTunes-Playlists-to-Xml-now-created/">Project page for iTunes Playlists to Xml now created</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 7, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                For releases of iTunes Playlists to Xml I've just been creating new posts with details, but that doesn't make all that much sense.
+So, I've created an actual project/product page for the application.
+View the project page for iTunes Playlists to Xml.
+Comments appreciated.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Project-page-for-iTunes-Playlists-to-Xml-now-created/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-14-released/">iTunes Playlists to Xml - version 1.4 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 22, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.4 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.4.
+What it does While iTunes has an Xml export option, it will export only those tracks from your computer, doesn&rsquo;t allow you to choose what data to export (unless you play with the view), uses a bulky Xml format, and won&rsquo;t export from other sources (like iPods).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-14-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-13-released/">iTunes Playlists to Xml - version 1.3 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 4, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.3 of iTunes Playlists to Xml is now available for download.
+Download iTunes Playlists to Xml 1.3.
+What it does While iTunes has an Xml export option, it will export only those tracks from your computer, doesn&rsquo;t allow you to choose what data to export (unless you play with the view), uses a bulky Xml format, and won&rsquo;t export from other sources (like iPods).
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-13-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/">System.Text.StringBuilder.Remove() overhead</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 28, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While working on a new version of my iTunes Playlists to Xml application, I've been playing around with the existing code, for consolidation and speed.
+While looking at memory usage, I played around with the StringBuilder I'm using to create the Xml output. As part of this I tried using Remove, once I had output the Xml, but experienced a large increase in used memory, after doing this.
+StringBuilder someSB = new StringBuilder(); someSB.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/SystemTextStringBuilderRemove-overhead/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/">Programmatic SQL command timeout using a SqlDataSource (C#)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 24, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Granted, in the case where this came up, I should have moved away from a SqlDataSource, but I wrote it using one, and a re-write isn't possible at the moment.
+So, I had to find a way yesterday to programmatically set the command timeout of a select, using a SqlDataSource (that was programmatically written).
+After much research, I found that you have to set the timeout on selecting. After opening a dummy document to see if I could determine how it was normally done, I came up with something like the following:
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-SQL-command-timeout-using-a-SqlDataSource-C-Sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-12-released/">iTunes Playlists to Xml - version 1.2 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 13, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.2 of iTunes Playlists to Xml is now ready for download.
+Download iTunes Playlists to Xml version 1.2.
+This update should correct issues when the playlists are changed, as well as when the source is ejected.
+Instead of immediately connecting to iTunes, the application now allows (and requires) that you manually begin that process.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-12-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/">Programmatic MSSQL data source in ASP.NET (C#) without System.Web</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 6, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In a similar article I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive.
+So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code.
+First, the following must be included in.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp-without-SystemWeb/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/">Programmatic MSSQL data source in ASP.NET (C#)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 1, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server.
+If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values.
+SqlDataSource dataSource = new SqlDataSource(); dataSource.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString; dataSource.SelectCommand = "stored_proc"; dataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure; dataSource.SelectParameters.Add("id", value); dataSource.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-11-released/">iTunes Playlists to Xml - version 1.1 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 15, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Update: Version 1.1.1 is available for download, which corrects the progress bar bug, noted in the comments below.
+To upgrade, simply replace your executable with the one in the above zip file.
+ Version 1.1 of iTunes Playlists to Xml has been released.
+Download iTunes Playlists to Xml version 1.1.
+This update now appends the saved xml file with the current date and time, for ease.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-11-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-10-released/">iTunes Playlists to Xml - version 1.0 released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 29, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Version 1.0 of iTunes Playlists to Xml has been released.
+Download iTunes Playlists to Xml version 1.0.
+Unlike the previous versions, this includes an installer (setup.exe in the zip file).
+Comments/suggestions welcome. New program icon will, naturally, be accepted; I know mine isn&rsquo;t very good, but &hellip;
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-10-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule/">Test application in ASP.NET (C#): Amortization schedule</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 16, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Having used a number of amortization schedule generators this past weekend, I thought I could do better.  It&#39;s still in-progress, but after (exactly) 2 hours of work, it functions.  View the Amortization schedule generator.  Developed in ASP.NET C#, with a limited amount of JS.  Unlike the site I crashed this weekend, this should tell you if you attempt to pay less per month than you owe in interest.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Test-application-in-ASPNET-C-sharp-Amortization-schedule/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-06b-released/">iTunes Playlists to Xml - version 0.6b released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 5, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ iTunes Playlists to Xml, version 0.6b, is now available for download.
+Download iTunes Playlists to Xml - version 0.6b.
+This version now handles the bug where playlists could be out of date, by alerting the user.
+This version also includes functionality to save the Xml file, as well as configure the name the application will use when generating the Xml file.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-06b-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Configuration-files-for-Windows-Forms-Applications/">Configuration files for Windows Forms Applications</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 5, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Since I know I&#39;ll run across this again ...  In my iTunes Playlists to Xml application I wanted to allow users the ability to persist their name across sessions. The supported method seems to be using application configuration files; in my case, something like iTunesApplication.exe.config. However, try as I could, I just couldn&#39;t find anything solid on how to create the configuration file.  First, I had to add a reference to &quot;System.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Configuration-files-for-Windows-Forms-Applications/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-04b-released/">iTunes Playlists to Xml - version 0.4b released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>March 2, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Having just released version 0.3b of iTunes Playlists to Xml, I&rsquo;ve got yet another release.
+This release includes menus, the ability to select what data you want in the Xml, and a schema for validation.
+Unfortunately, I&rsquo;ve discovered one bug (that would have existed before) with playlists getting updated in iTunes, between the refresh in this application, and the time it was clicked on.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-04b-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-03b-released/">iTunes Playlists to Xml - version 0.3b released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 27, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                This application has since been updated. Read about the current version of iTunes Playlists to Xml.
+ Having just released version 0.2b of iTunes Playlists to Xml, I&rsquo;ve done some updates, bringing it up to version 0.3b.
+This release fixes all of the known issues, from version 0.2b.
+There are no known issues with version 0.3b.
+Download iTunes Playlists to Xml - version 0.3b.
+iTunes Playlists to Xml requires .NET Framework 2.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-version-03b-released/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/">New BlogEngine.NET Theme: 20081126</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 27, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I've been working on a new theme for the site, since around 7 this evening ... and it's&nbsp;finally rolled out.
+This is along the lines of what I was thinking a couple weeks ago, but I actually grabbed some ideas from Microsoft's recent KB changes.
+This is the first theme I've created that used the widget functionality, and I can honestly say I'm still not that impressed with it.
+I still have to add some styles for coding that I add in, once I find a good sample (did I really just use blockquote?
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/New-BlogEngineNET-Theme-20081126/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/NET-DataSet-dump-C-Sharp/">.NET DataSet dump (C#)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 18, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                One thing that I really like about ColdFusion is the powerful cfdump.
+ Use the cfdump tag to get the elements, variables, and values of most kinds of ColdFusion objects. Useful for debugging. You can display the contents of simple and complex variables, objects, components, user-defined functions, and other elements.&nbsp;
+ Of all the tags in ColdFusion, cfoutput is probably the only tag that I use more.
+Unfortunately, most other languages, JavaScript and&nbsp;.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/NET-DataSet-dump-C-Sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/">Brief Notes on Essential C# 3.0: For .NET Framework 3.5 (2nd Edition)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 16, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I&#39;ll be updating this as I read, but the date/time of the post will remain the same. This will by no means make up for a reading of the book&nbsp;- Essential C# 3.0: For .NET Framework 3.5 (2nd Edition). (Link to my review will be posted once I finish the book.)  I work primarily on the Web, so that will be my main focus from reading this book. Some chapters may not be present here, depending upon what I think is note-worthy at the time.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Brief-Notes-on-Essential-C-30-For-NET-Framework-35-2nd-Edition/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Professional-ASPNET-35-In-C-and-VB/">Review: Professional ASP.NET 3.5 In C# and VB</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 11, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following is a book review of Professional ASP.NET 3.5 In C# and VB, written by Bill Evjen, Scott Hanselman, and Devin Rader.   Having read Imar Spaanjaar&#39;s Beginning ASP.NET 3.5 In C# and VB (review), I was expecting a number of good things from this book.  Imar&#39;s book is really great in that he shows you how to build a Web application with ASP.NET 3.5. However, with Professional&nbsp;ASP.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Professional-ASPNET-35-In-C-and-VB/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Wrox-feedback-July-11-2008/">Wrox feedback - July 11 2008</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 11, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I never heard from them on my last batch of feedback for the Professional version, and they still aren&#39;t posted, but Imar confirmed the one errata I pointed out on his book.   Additional errata for Professional ASP.NET 3.5 In C# and VB:  Page 579, last sentence: Welcome.html should be Welcome.htm  Page 581, first paragraph: Welcome.html should be Welcome.htm (x2) and Start.html should be Start.htm  Page 628: Figure 13-1 is the incorrect image.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Wrox-feedback-July-11-2008/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/">How to change your default language in Visual Studio 2008 (the right way)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>July 2, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                There's a number of resources online on how to change the default language in Visual Studio. However, none of them are correct.
+They all state that you should reset your settings to default and then re-setup your settings. Huh?
+Instead, if you modify the CurrentSettings.vssettings file, you can keep all your other settings, without the pain of having to re-import everything else.
+First, find your settings file, which appears to default to the My Documents\Visual Studio x\Settings\ directory.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/How-to-change-your-default-language-in-Visual-Studio-2008-the-right-way/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Wrox-feedback-06-29-2008/">Wrox feedback - June 29 2008</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 29, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Read my review of Beginning ASP.NET 3.5: In C# and VB.   Some errata for 978-0-470-18757-9, Professional ASP.NET 3.5 In C# and VB:  pg 247, second to last sentence on the page: &lt;h3&gt; should be &lt;h1&gt;.  pg 253: Figure 5-13 is incorrect.  pg 487: Figure 9-12 is incorrect.  pg 527, second to last sentence on the page: Listing 10-13 contains no highlighted text.  I was expecting more errata to be listed.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Wrox-feedback-06-29-2008/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Beginning-ASPNET-35-In-C-and-VB/">Review: Beginning ASP.NET 3.5 In C# and VB</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 8, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following book review is for Imar Spaanjaars&rsquo; Beginning ASP.NET 3.5 In C# and VB.
+Update&nbsp;July 11 2008:&nbsp;Review of Professional ASP.NET 3.5&nbsp;In C# and VB.
+Update March 28 2010: Review of Beginning ASP.NET 4 in C# and VB.&nbsp;
+ I&rsquo;ve picked up copies of Beginning ASP.NET 2.0; Build Your Own ASP.NET 2.0 Web Site Using C# &amp; VB; Beginning ASP.NET 2.0 E-Commerce in C# 2005 From Novice to Professional; and Microsoft ASP.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Beginning-ASPNET-35-In-C-and-VB/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Microsoft-ASPNET-35-Step-by-Step/">Review: Microsoft ASP.NET 3.5 Step by Step</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 8, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following book review is for George Shepherd&#39;s Microsoft ASP.NET 3.5 Step by Step.   Based upon the title, &#39;Step by Step,&#39; you might think that Shepherd&#39;s book will actually cover ASP.NET 3.5 in detail, piece by piece.  While it&#39;s true that he does this, he does it to very little detail. He also makes numerous assumptions throughout the text, which may have you scratching your head more than you usually would, picking up a new language.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Microsoft-ASPNET-35-Step-by-Step/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Regular-Expression-tester-ASPNET/">Regular Expression tester - ASP.NET</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>May 4, 2008</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I&#39;ve posted code in ColdFusion and JavaScript for a regular expression tester. Since I&#39;m looking at ASP.NET development ... here&#39;s one built on ASP.NET (3.5, but it should run fine on 2.0), in C#. RegularExpression.aspx   &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot;&nbsp; CodeFile=&quot;RegularExpression.aspx.cs&quot; Inherits=&quot;_Default&quot; %&gt;  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head runat=&quot;server&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;title&gt;ASP.NET 3.5 Regular Expression tester&lt;/title&gt;
+&nbsp;&nbsp;&nbsp; &lt;style type=&quot;text/css&quot;&gt;
+&nbsp;&nbsp;form {
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Regular-Expression-tester-ASPNET/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/">Compiling BlogEngine.NET source with Microsoft Visual C# 2005 Express Edition</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>September 5, 2007</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The follow covers how to compile BlogEngine.NET from the most recently available source code.  This was originally posted to the Codeplex discussions for BlogEngine.NET, and will eventually get moved into the wiki. (Update Sept 8, 2007: Added to the BlogEngine.NET wiki, but not yet linked from other pages. Also made a minor change to step one.) Compiling source with Microsoft Visual C# 2005 Express Edition   1) Download the current source code from the Releases tab or the Source code tab on CodePlex.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Compiling-BlogEngineNET-source-with-Microsoft-Visual-C-2005-Express-Edition/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4" style="text-align: left; padding-left: 0px">
+                    
+                </div>
+                <div class="col-md-4 col-md-offset-4" style="text-align: right; padding-right: 0px">
+                    
+                        <a class="btn btn-default" href="http://words.strivinglife.com/tags/index.net/page/2/" role="button" style="border-radius: 0px; display: block">Older</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Search</h5>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+            <div class="input-group">
+                <input class="form-control" type="search" name="q" />
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
+        </form>
+    </div>
+</div>
+
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<h5>Links of Note</h5>
+		<ul class="list-unstyled">
+			<li>
+				<a href="http://strivinglife.com/waking-life-transcript-with-revisions/">Waking Life</a>
+			</li>
+			<li>
+				<a href="http://strivinglife.com/ghost-in-the-shell-script/">Ghost in the Shell</a>
+			</li>
+			<li>
+				<a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Recent Posts</h5>
+        <ul class="list-unstyled posts-recent">
+            <ul class="list-unstyled posts-recent">
+                
+                    <li><a href="http://words.strivinglife.com/post/review-citadels-2016-edition/">Review: Citadels (2016 edition)</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-bissell-2001-hard-floor-expert-cordless-canister/">Review: Bissell 2001 Hard Floor Expert Cordless Canister</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-grifters-dystopian-universe/">Review: Grifters</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-onitama-board-game/">Review: Onitama</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-kanagawa-game/">Review: Kanagawa</a></li>
+                
+            </ul>
+        </ul>
+    </div>
+</div>
+
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-3526066001929698"
+			data-ad-slot="3689523691"
+			data-ad-format="auto">
+		</ins>
+	</div>
+</div>
+
+                    
+    
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 card">
+                <h5>categories</h5>
+                <ul class="list-unstyled posts-recent">
+                    
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
+
+    
+
+
+                    
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1 card">
+			<h5>Support This Site</h5>
+			<p>
+				If my blog was helpful to you, then please consider visiting my
+				<a href="http://amzn.to/22xk0cK" rel="external">Amazon Wishlist</a>.
+			</p>
+		</div>
+	</div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-6">
+    <ul class="list-inline links">
+        
+    </ul>
+</div>
+
+            <div class="col-md-4 col-xs-6">
+    <ul class="list-inline social-media">
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+				<p>
+					All content copyright 1999-2016 James Skemp, unless otherwise noted.
+					This work is licensed under the Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-Noncommercial-No Derivative Works 3.0</a>.
+					The opinions expressed herein are my own personal opinions and do not represent my employer's view in anyway. <a href="http://strivinglife.com/privacy_policy.html">Privacy Policy</a>.
+					For more information, contact the administrator at strivinglife [at] gmail [dot] com.
+				</p>
+                <p>
+                    Generated using <a href="https://gohugo.io/" rel="external">Hugo</a> and the <a href="https://github.com/nraboy/hugo-phlat-theme" rel="external">Phlat Theme</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div id="back-to-top" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</div>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    if(($(window).height() + 100) < $(document).height()) {
+        $('#back-to-top').removeClass('hidden').affix({
+            offset: {
+                top: 100
+            }
+        });
+    }
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    
+    if (window.location.hostname == "localhost") {
+        $(".adsbygoogle").css("text-decoration", "none");
+        $(".adsbygoogle").text("Adsense is unavailable while serving on localhost or 127.0.0.1");
+    } else {
+        [].forEach.call(document.querySelectorAll('.adsbygoogle'), function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+    }
+</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-541034-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>

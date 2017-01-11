@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Hugo 0.18.1" />
+    <title>Asp.Net &middot; James Skemp&#39;s StrivingLife</title>
+    
+    
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content='' />
+    <meta name="author" content="" />
+    <link href="http://words.strivinglife.com/index.xml" rel="alternate" type="application/rss+xml" title="James Skemp&#39;s StrivingLife" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/highlightjs-themes/androidstudio.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://words.strivinglife.com/css/phlat.css" />
+</head>
+
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://words.strivinglife.com/">James Skemp&#39;s StrivingLife</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="http://words.strivinglife.com/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="http://strivinglife.com/Words/Feed">
+                            Subscribe
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <div id="top" class="container">
+            <div class="row" id="content-main">
+                <div class="col-md-8">
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Programming-Entity-Framework-Code-First-2011/">Review: Programming Entity Framework: Code First (2011)</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>January 5, 2012</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following is a review of Programming Entity Framework: Code First, written by Julia Lerman and Rowan Miller.
+ While I had heard of Julie Lerman and her book Programming Entity Framework, after the release of code first I was on the fence on just how much I would get out of the existing book. With the release of&nbsp;Programming Entity Framework: Code First&nbsp;I knew I&rsquo;d learn something, so I picked up an electronic copy (PDF) and started digging in.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Programming-Entity-Framework-Code-First-2011/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/">Visual Studio 2010 complaints about ELMAH on a 64-bit machine - fixed</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 23, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                My laptop has quickly become my development machine for smaller projects, especially after I purchased a low-end desktop to host the Subversion repositories.
+I recently added ELMAH support to one of my sites, but since I run 64-bit, and have been using the built-in&nbsp;Cassini for quick development, I started getting a message in Visual Studio 2010 saying "ASP.NET runtime error: Could not load file or assembly 'System.Data.SQLite' or one of its dependencies.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Visual-Studio-2010-complaints-about-ELMAH-on-a-64-bit-machine/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/">ASP.NET charts example: Odin Sphere: Part 3 - Creating the chart</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 15, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In part one of this series we covered what we'd be doing, and what data model we'd be using.
+In part two of this series we used LINQ to XML to query the XML file with the data we want to display.
+This time we'll be doing the heavy lifting of actually creating the chart and displaying it to the user. For ease, I'll be implementing very basic caching.
+Preliminary requirement Before you can use the charting functionality you need to have a reference to System.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-3-Creating-the-chart/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/">ASP.NET charts example: Odin Sphere: Part 2 - Parsing the XML</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 14, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                In part one of this series we covered what we'd be doing, and what model we'd be using for the data.
+This time we'll parse the XML file that contains the data we need, and populate the objects.
+Loading the XML file The XML file we'll be loading is located at&nbsp;http://jamesrskemp.com/files/OdinSphere.xml, and to keep it simple, we'll load it in assuming we're on a different server/domain.
+First we'll need to add the following so we can make use of XDocument.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-2-Parsing-the-XML/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/">ASP.NET charts example: Odin Sphere: Part 1 - Introduction and model</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>August 13, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                For a while now I've been meaning to work with ASP.NET 4's built-in charting functionality. While I was going to use it alongside my gas tracking, I think I'm instead going to use my Odin Sphere leveling guide, so I don't have to create an XSLT for the output.
+In this part of the series I'll outline the data model I'll be using, and preliminary setups.
+Method So that this can easily be deployed anywhere, I'm going to opt not to use the control itself, but rather programmatically create the charts/graphs.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/ASPNET-charts-example-Odin-Sphere-Part-1-Introduction-and-model/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 3 - Pulling JSON with jQuery</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 25, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ In this series we&rsquo;ve started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.
+In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-3-Pulling-JSON-with-jQuery/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 2 - WCF WebHttp service</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 24, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ In the last part we created a Loan object, that we determined we would later use to power our Web service. Ths object has a handful of properties and a method to update a list of payments to bring the loan to $0.
+This time we&rsquo;re going to create a Web service to respond to requests from data.
+Requirements As this seems to be built for .
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-2-WCF-WebHttp-service/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Part 1 - Loan object</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 22, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                See the table of contents for more information.
+ As already noted in the table of contents, the end goal will to have a service that returns enough information to be able to generate an amortization&nbsp;schedule for a loan. I&rsquo;m not in financial services, and haven&rsquo;t been very good in math since some point in high school, but this seems to work fairly well.
+The first thing we&rsquo;re going to do is generate an assembly that we&rsquo;ll then use in the WCF WebHttp service.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Part-1-Loan-object/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/">Tutorial: ASP.NET (C#) WCF WebHttp service with jQuery: Table of Contents</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 21, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                A while ago (a year and a quarter)&nbsp;I created an amortization schedule generator in ASP.NET, as an attempt to help me determine when I could expect to have a loan paid off, depending upon how much money I threw at it.
+For better or worse, some of the practices I put in place aren't the best, and either way I've been meaning to tweak the interface so that I could do various comparisons.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/RESTful-WCF-Web-services-easily/">RESTful WCF Web services, easily</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>June 15, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I know I should know them better so I've been looking into WCF Web services, with a heavy lean towards an implementation based on REST principles.
+After a good deal of research, where it was highly suggested that while ASP.NET MVC may make sense, WCF is still the way to go for Web services, I stumbled upon WCF WebHttp Services, which uses functionality released in .NET 4.
+After a painless install via Visual Studio 2010's Extension Manager (more information), and troubleshooting a stupid mistake on my end, I was able to quickly create a Web service that uses an assembly I had created to parse one of my iTunes Playlists to Xml files and return a listing of tracks for a particular artist.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/RESTful-WCF-Web-services-easily/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/">Dynamically generating a list of videos for OSFLV Player with ASP.NET</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>April 13, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I've had this code for a while, but here's some simple code to pull a listing of Flash videos (FLV) from a directory, display them in a drop down, and have a video player dynamically generated based on what's picked.
+This uses OSFLV Player, version 3 specifically, but can be tweaked for the current (as of this post) version 4.0.
+Default.aspx &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %&gt; &lt;!DOCTYPE html PUBLIC "
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Dynamically-generating-a-list-of-videos-for-OSFLV-Player-with-ASPNET/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Connection-String-encryption-connectionString-element-in-ASPNET/">Connection String encryption (connectionString element) in ASP.NET</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 1, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                From what I've been able to determine, setting up an ODBC connection in Windows and using that for ASP.NET generally seems to be frowned upon. Instead, ASP.NET uses a Web.config&nbsp;file to store a number of settings, including all the connection strings you'll be using (whether you're using Windows authentication or user names and passwords).
+For example:
+&lt;?xml version="1.0"?&gt; &lt;configuration&gt; &lt;appSettings/&gt; &lt;connectionStrings&gt; &lt;add name="TestDatabase001Reader" connectionString="Data Source=192.168.56.102,1433;Initial Catalog=TestingDatabase001;User Id=DataReader;Password=DataReader" providerName="System.Data.SqlClient"/&gt; &lt;/connectionStrings&gt; &lt;system.web&gt; .
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Connection-String-encryption-connectionString-element-in-ASPNET/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Simple-Journal-10/">Simple Journal 1.0 Released</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>January 3, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Version 1.0 of Simple Journal is now available for download.
+Simple Journal is meant to be exactly that; a very simple way to keep track of a journal.
+Simple Journal uses XML files to store entries, which are edited in HTML (uses TinyMCE for the WYSIWYG editor) and which allow supplementation and later updates.
+Download Simple Journal 1.0.
+To use Simple Journal extract the contents of the zip file to a directory and start _startCassini.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Simple-Journal-10/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/">BlogEngine.NET running on Cassini Personal Web Server</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 12, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                While Cassini is a built-in Web server part of Microsoft Visual Studio, it's also available as a stand-alone application, thanks to the work of Dmitry Robsman.
+The current version can be downloaded from this post regarding version 3.5.0.2 but requires that you first build the solution (the code is available under a MS-PL license).
+Cassini++ is also available from Codeplex, and has GUI improvements, among other changes (but is based on an older 3.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/BlogEngineNET-running-on-Cassini-Personal-Web-Server/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/">Using SQLite as a membership, profile, and role provider in ASP.NET MVC</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 25, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I'd really like to implement membership providers in my Web applications, but just don't have the user-base that requires SQL Server (Express), nor the memory on my production server.
+Having looked at SQLite before, I figured it would be exactly what I'd need, without going to the alternative of XML.
+After some research I found Roger Martin's SQLite Membership, Role, and Profile Providers, and finally decided yesterday to implement these on a dummy MVC site.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-10/">Review: Professional ASP.NET MVC 1.0</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>October 18, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following is a review of Professional ASP.NET MVC 1.0, written by Rob Conery, Scott Hanselman, Phil Haack, and Scott Guthrie.
+I received a free copy of this book for review purposes from Amazon Vine, but was planning on purchasing the book nonetheless (I just had the good fortune to get a copy before they were all taken).
+ A great introduction to ASP.NET MVC Professional ASP.NET MVC 1.0 was my first real look at ASP.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Review-Professional-ASPNET-MVC-10/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4" style="text-align: left; padding-left: 0px">
+                    
+                </div>
+                <div class="col-md-4 col-md-offset-4" style="text-align: right; padding-right: 0px">
+                    
+                        <a class="btn btn-default" href="http://words.strivinglife.com/tags/asp/index.net/page/2/" role="button" style="border-radius: 0px; display: block">Older</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Search</h5>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+            <div class="input-group">
+                <input class="form-control" type="search" name="q" />
+                <span class="input-group-btn">
+                    <button class="btn btn-custom" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+            <input type="hidden" name="q" value="site:http://words.strivinglife.com/">
+        </form>
+    </div>
+</div>
+
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<h5>Links of Note</h5>
+		<ul class="list-unstyled">
+			<li>
+				<a href="http://strivinglife.com/waking-life-transcript-with-revisions/">Waking Life</a>
+			</li>
+			<li>
+				<a href="http://strivinglife.com/ghost-in-the-shell-script/">Ghost in the Shell</a>
+			</li>
+			<li>
+				<a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a>
+			</li>
+		</ul>
+	</div>
+</div>
+                    <div class="row">
+    <div class="col-md-11 col-md-offset-1 card">
+        <h5>Recent Posts</h5>
+        <ul class="list-unstyled posts-recent">
+            <ul class="list-unstyled posts-recent">
+                
+                    <li><a href="http://words.strivinglife.com/post/review-citadels-2016-edition/">Review: Citadels (2016 edition)</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-bissell-2001-hard-floor-expert-cordless-canister/">Review: Bissell 2001 Hard Floor Expert Cordless Canister</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-grifters-dystopian-universe/">Review: Grifters</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-onitama-board-game/">Review: Onitama</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-kanagawa-game/">Review: Kanagawa</a></li>
+                
+            </ul>
+        </ul>
+    </div>
+</div>
+
+                    <div class="row">
+	<div class="col-md-11 col-md-offset-1 card">
+		<ins class="adsbygoogle"
+			style="display:block"
+			data-ad-client="ca-pub-3526066001929698"
+			data-ad-slot="3689523691"
+			data-ad-format="auto">
+		</ins>
+	</div>
+</div>
+
+                    
+    
+        <div class="row">
+            <div class="col-md-11 col-md-offset-1 card">
+                <h5>categories</h5>
+                <ul class="list-unstyled posts-recent">
+                    
+                        <li><a href="http://words.strivinglife.com/categories/review">review</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/software">software</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/article">article</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/strivinglife">strivinglife</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/philosophy">philosophy</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/tutorials-/-guides">tutorials-/-guides</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/dvd-/-movie">dvd-/-movie</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/internet">internet</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/gaming">gaming</a></li>
+                    
+                        <li><a href="http://words.strivinglife.com/categories/technology">technology</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    
+
+    
+
+
+                    
+	<div class="row">
+		<div class="col-md-11 col-md-offset-1 card">
+			<h5>Support This Site</h5>
+			<p>
+				If my blog was helpful to you, then please consider visiting my
+				<a href="http://amzn.to/22xk0cK" rel="external">Amazon Wishlist</a>.
+			</p>
+		</div>
+	</div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-xs-6">
+    <ul class="list-inline links">
+        
+    </ul>
+</div>
+
+            <div class="col-md-4 col-xs-6">
+    <ul class="list-inline social-media">
+        
+        
+        
+        
+        
+    </ul>
+</div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+				<p>
+					All content copyright 1999-2016 James Skemp, unless otherwise noted.
+					This work is licensed under the Creative Commons License <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-Noncommercial-No Derivative Works 3.0</a>.
+					The opinions expressed herein are my own personal opinions and do not represent my employer's view in anyway. <a href="http://strivinglife.com/privacy_policy.html">Privacy Policy</a>.
+					For more information, contact the administrator at strivinglife [at] gmail [dot] com.
+				</p>
+                <p>
+                    Generated using <a href="https://gohugo.io/" rel="external">Hugo</a> and the <a href="https://github.com/nraboy/hugo-phlat-theme" rel="external">Phlat Theme</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <div id="back-to-top" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i> Back to Top
+    </a>
+</div>
+<script src="http://words.strivinglife.com/js/jquery-2.2.1.min.js"></script>
+<script src="http://words.strivinglife.com/js/bootstrap.min.js"></script>
+<script src="http://words.strivinglife.com/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    if(($(window).height() + 100) < $(document).height()) {
+        $('#back-to-top').removeClass('hidden').affix({
+            offset: {
+                top: 100
+            }
+        });
+    }
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    
+    if (window.location.hostname == "localhost") {
+        $(".adsbygoogle").css("text-decoration", "none");
+        $(".adsbygoogle").text("Adsense is unavailable while serving on localhost or 127.0.0.1");
+    } else {
+        [].forEach.call(document.querySelectorAll('.adsbygoogle'), function() {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        });
+    }
+</script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-541034-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+    </body>
+</html>
