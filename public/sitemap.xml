@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://words.strivinglife.com/post/review-microsoft-surface-mouse/</loc>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://words.strivinglife.com/post/review-microsoft-surface-keyboard/</loc>
+    <lastmod>2017-01-16T16:22:55-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://words.strivinglife.com/post/review-magicka-mayhem-card-game/</loc>
     <lastmod>2017-01-16T15:49:33-06:00</lastmod>
   </url>
@@ -6010,7 +6020,7 @@
   
   <url>
     <loc>http://words.strivinglife.com/</loc>
-    <lastmod>2017-01-16T15:49:33-06:00</lastmod>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -6197,6 +6207,12 @@
   <url>
     <loc>http://words.strivinglife.com/tags/microsoft-management-console/</loc>
     <lastmod>2006-06-03T07:23:00-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://words.strivinglife.com/tags/microsoft-surface/</loc>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -6502,7 +6518,7 @@
   
   <url>
     <loc>http://words.strivinglife.com/post/</loc>
-    <lastmod>2017-01-16T15:49:33-06:00</lastmod>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -6592,13 +6608,13 @@
   
   <url>
     <loc>http://words.strivinglife.com/tags/review/</loc>
-    <lastmod>2017-01-16T15:49:33-06:00</lastmod>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://words.strivinglife.com/categories/review/</loc>
-    <lastmod>2017-01-16T15:49:33-06:00</lastmod>
+    <lastmod>2017-01-16T17:31:47-06:00</lastmod>
     <priority>0</priority>
   </url>
   

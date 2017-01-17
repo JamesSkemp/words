@@ -57,6 +57,43 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/">Convert online image to base64 with C#</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>December 12, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                The following code will convert an online image to a base64 string.
+The code was specifically written for use in LINQPad, hence the use of Dump().
+String url = "http://ecx.images-amazon.com/images/I/51MVXV3QQ6L._SL500_SS150_.jpg"; Uri uri = new Uri(url); WebClient client = new WebClient(); byte[] imageBytes = client.DownloadData(uri); string base64String = Convert.ToBase64String(imageBytes); base64String.Dump(); base64String.Length.Dump(); ("&lt;img src='data:image/jpg;base64," + "' /&gt;").Length.Dump(); client.Dispose(); The length dumps are given to get an idea of what size would be added to a file if added inline.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Convert-online-image-to-base64-with-C-sharp/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/">The Kinect is selling really well; but is that good for gamers?</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 29, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                Techmeme had a couple of interesting titles this evening. "Kinect is Selling 2X as Fast as the iPad" and "Microsoft: Over 2.5M Kinect Sold."
+Even if I thought I had the space for it (I'd have to move furniture every time I wanted to play it in my current apartment) I still wouldn't pick up the Kinect.
+Why?
+First there's the price. At $150 you might as well buy a PSP (which I did) or a Nintendo DSi.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/The-Kinect-is-selling-really-well-but-is-that-good-for-gamers/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-Crisis-Core-Final-Fantasy-VII/">Review: Crisis Core: Final Fantasy VII</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>November 28, 2010</li>
@@ -199,43 +236,6 @@ Response from Rob Lumley You seem to be mentioning when a particular color stand
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/">iTunes Playlists to Xml: Parsing categories with LINQ</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 20, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                I recently had the need to determine what types of music I had within my collection of music. Since I&nbsp;created iTunes Playlists to Xml so that I could export out my library on my iPod, it was easy enough to run that and then open LINQPad to run the following query.
-Obviously, you must export the Genre field in order for the following query to work.
-// Location to the XML from iTunes Playlists to XML String playlistXml = @&ldquo;C:\Users\James\Projects\services\WcfRestService\App_Data\playlistXml.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/iTunes-Playlists-to-Xml-Parsing-categories-with-LINQ/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Excellent-Silverlight-WPF-MVVM-video-series/">Excellent Silverlight/WPF MVVM video series</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 17, 2010</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                Here&rsquo;s an excellent video series on Silverlight/WPF (XAML basically) and the MVVM pattern.
-He does, what I believe to be, an excellent job of covering XAML and MVVM during this series, and includes a bit of unit testing as well.
-Part one is included below, but another user on YouTube created a Playlist with the eight videos released.
-Update: Or you can view his blog post, time cockpit at NRWConf.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Excellent-Silverlight-WPF-MVVM-video-series/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -294,15 +294,15 @@ Update: Or you can view his blog post, time cockpit at NRWConf.
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-mouse/">Review: Microsoft Surface Mouse</a></li>
+                
+                    <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-keyboard/">Review: Microsoft Surface Keyboard</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-magicka-mayhem-card-game/">Review: Magicka Mayhem</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-luchador-mexican-wrestling-dice/">Review: Luchador! Mexican Wrestling Dice</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-citadels-2016-edition/">Review: Citadels (2016 edition)</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-bissell-2001-hard-floor-expert-cordless-canister/">Review: Bissell 2001 Hard Floor Expert Cordless Canister</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-grifters-dystopian-universe/">Review: Grifters</a></li>
                 
             </ul>
         </ul>
