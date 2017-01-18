@@ -57,6 +57,24 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Connection-String-encryption-connectionString-element-in-ASPNET/">Connection String encryption (connectionString element) in ASP.NET</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>February 1, 2010</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                From what I've been able to determine, setting up an ODBC connection in Windows and using that for ASP.NET generally seems to be frowned upon. Instead, ASP.NET uses a Web.config&nbsp;file to store a number of settings, including all the connection strings you'll be using (whether you're using Windows authentication or user names and passwords).
+For example:
+&lt;?xml version="1.0"?&gt; &lt;configuration&gt; &lt;appSettings/&gt; &lt;connectionStrings&gt; &lt;add name="TestDatabase001Reader" connectionString="Data Source=192.168.56.102,1433;Initial Catalog=TestingDatabase001;User Id=DataReader;Password=DataReader" providerName="System.Data.SqlClient"/&gt; &lt;/connectionStrings&gt; &lt;system.web&gt; .
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Connection-String-encryption-connectionString-element-in-ASPNET/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-Borderlands/">Review: Borderlands</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>January 24, 2010</li>
@@ -221,24 +239,6 @@ What I hope to accomplish Ultimately I want to store a bit of text for any parti
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/">Installing SQL Server Express 2008 on Windows Server 2003</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>December 20, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                SQL Server Express is an easy way to add Microsoft SQL Server to a Windows-based server. While limited in functionality, SQL Server Express is still a viable solution.
-In this article I'll be covering a custom install of SQL Server Express 2008 on Windows Server 2003.
-Server system For this install I was running Windows Server 2003 R2, Enterprise Edition, Service Pack 2 on Sun VirtualBox, with 256 MB of RAM.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Installing-SQL-Server-Express-2008-on-Windows-Server-2003/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -297,6 +297,8 @@ Server system For this install I was running Windows Server 2003 R2, Enterprise 
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-deception-murder-in-hong-kong/">Review: Deception: Murder in Hong Kong</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-mouse/">Review: Microsoft Surface Mouse</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-keyboard/">Review: Microsoft Surface Keyboard</a></li>
@@ -304,8 +306,6 @@ Server system For this install I was running Windows Server 2003 R2, Enterprise 
                     <li><a href="http://words.strivinglife.com/post/review-magicka-mayhem-card-game/">Review: Magicka Mayhem</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-luchador-mexican-wrestling-dice/">Review: Luchador! Mexican Wrestling Dice</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-citadels-2016-edition/">Review: Citadels (2016 edition)</a></li>
                 
             </ul>
         </ul>
