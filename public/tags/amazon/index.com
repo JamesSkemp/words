@@ -113,6 +113,8 @@ December 6, 2010&nbsp;09:27:00 AM&nbsp;Madison WI US&nbsp;Out for delivery
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-conan-board-game/">Review: Conan Board Game</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-deception-murder-in-hong-kong/">Review: Deception: Murder in Hong Kong</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-mouse/">Review: Microsoft Surface Mouse</a></li>
@@ -120,8 +122,6 @@ December 6, 2010&nbsp;09:27:00 AM&nbsp;Madison WI US&nbsp;Out for delivery
                     <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-keyboard/">Review: Microsoft Surface Keyboard</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-magicka-mayhem-card-game/">Review: Magicka Mayhem</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-luchador-mexican-wrestling-dice/">Review: Luchador! Mexican Wrestling Dice</a></li>
                 
             </ul>
         </ul>
