@@ -10,6 +10,15 @@
     <atom:link href="/tags/board-game/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Review: London Dread</title>
+      <link>http://words.strivinglife.com/post/review-london-dread/</link>
+      <pubDate>Thu, 09 Feb 2017 18:24:57 -0600</pubDate>
+      
+      <guid>http://words.strivinglife.com/post/review-london-dread/</guid>
+      <description>The following is a review of London Dread, received as part of the Amazon Vine program.</description>
+    </item>
+    
+    <item>
       <title>Review: Conan Board Game</title>
       <link>http://words.strivinglife.com/post/review-conan-board-game/</link>
       <pubDate>Fri, 03 Feb 2017 14:06:10 -0600</pubDate>
@@ -133,15 +142,6 @@
       
       <guid>http://words.strivinglife.com/post/Review-SET-Dice-Game/</guid>
       <description>The following is a review of the SET Dice Game, received as part of the Amazon Vine program.</description>
-    </item>
-    
-    <item>
-      <title>Review: Cash N Guns Second Edition</title>
-      <link>http://words.strivinglife.com/post/Review-Cash-N-Guns-Second-Edition/</link>
-      <pubDate>Thu, 06 Nov 2014 08:53:33 -0600</pubDate>
-      
-      <guid>http://words.strivinglife.com/post/Review-Cash-N-Guns-Second-Edition/</guid>
-      <description>The following is a review of Cash N Guns Second Edition, received as part of the Amazon Vine program.</description>
     </item>
     
   </channel>
