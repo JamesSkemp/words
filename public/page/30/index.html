@@ -57,6 +57,25 @@
                     
                         <div class="row">
                             <div class="col-md-12 content-card">
+                                <h1><a href="http://words.strivinglife.com/post/Example-batch-file-to-dump-Subversion-repositories/">Example batch file to dump Subversion repositories</a></h1>
+                                <ul class="list-inline">
+                                    <li><i class="fa fa-calendar"></i>November 19, 2009</li>
+                                    <li><i class="fa fa-user"></i>
+										
+										James Skemp
+										
+									</li>
+                                </ul>
+                                I have a large collection of repositories, and until now ran a single batch file that had to be updated each time I created a new repository, to add the new directory.
+To combat that, I did some research and created a new batch file that does all the heavy lifting for me.
+To save others time, I present it below.
+SET timeVar=%date:~10,4%%date:~4,2%%date:~7,2% SET repoDumpDir=..\repos_dump FOR /D %%G IN (*) DO svnadmin dump %%G &gt; %repoDumpDir%%%G%timeVar%.
+                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Example-batch-file-to-dump-Subversion-repositories/" role="button">Read More</a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-md-12 content-card">
                                 <h1><a href="http://words.strivinglife.com/post/Review-No-Doors-No-Windows/">Review: No Doors, No Windows</a></h1>
                                 <ul class="list-inline">
                                     <li><i class="fa fa-calendar"></i>November 15, 2009</li>
@@ -224,24 +243,6 @@ Tables-based &lt;cfparam name="URL.CalendarMonth" default="#Month(now())#" type=
                             </div>
                         </div>
                     
-                        <div class="row">
-                            <div class="col-md-12 content-card">
-                                <h1><a href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/">Using SQLite as a membership, profile, and role provider in ASP.NET MVC</a></h1>
-                                <ul class="list-inline">
-                                    <li><i class="fa fa-calendar"></i>October 25, 2009</li>
-                                    <li><i class="fa fa-user"></i>
-										
-										James Skemp
-										
-									</li>
-                                </ul>
-                                I'd really like to implement membership providers in my Web applications, but just don't have the user-base that requires SQL Server (Express), nor the memory on my production server.
-Having looked at SQLite before, I figured it would be exactly what I'd need, without going to the alternative of XML.
-After some research I found Roger Martin's SQLite Membership, Role, and Profile Providers, and finally decided yesterday to implement these on a dummy MVC site.
-                                <p><a class="btn btn-custom" href="http://words.strivinglife.com/post/Using-SQLite-as-a-membership-profile-and-role-provider-in-ASPNET-MVC/" role="button">Read More</a></p>
-                            </div>
-                        </div>
-                    
                     
     <div class="row">
         <div class="col-md-12">
@@ -300,6 +301,8 @@ After some research I found Roger Martin's SQLite Membership, Role, and Profile 
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
                 
+                    <li><a href="http://words.strivinglife.com/post/review-dii-natural-coir-fiber-entry-way-door-mat/">Review: DII Natural Coir Fiber, 18x30 Entry Way Outdoor Door Mat with Non Slip Backing - Home Cat</a></li>
+                
                     <li><a href="http://words.strivinglife.com/post/review-order-of-the-gilded-compass/">Review: Order of the Gilded Compass</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-london-dread/">Review: London Dread</a></li>
@@ -307,8 +310,6 @@ After some research I found Roger Martin's SQLite Membership, Role, and Profile 
                     <li><a href="http://words.strivinglife.com/post/review-conan-board-game/">Review: Conan Board Game</a></li>
                 
                     <li><a href="http://words.strivinglife.com/post/review-deception-murder-in-hong-kong/">Review: Deception: Murder in Hong Kong</a></li>
-                
-                    <li><a href="http://words.strivinglife.com/post/review-microsoft-surface-mouse/">Review: Microsoft Surface Mouse</a></li>
                 
             </ul>
         </ul>

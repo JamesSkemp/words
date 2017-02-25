@@ -1,8 +1,8 @@
 +++
 author = "James Skemp"
 date = "2017-02-24T17:25:10-06:00"
-title = "Review: DII Natural Coir Fiber, 18x30" Entry Way Outdoor Door Mat with Non Slip Backing - Home Cat"
-description = "The following is a review of the DII Natural Coir Fiber, 18x30" Entry Way Outdoor Door Mat with Non Slip Backing - Home Cat, received as part of the Amazon Vine program."
+title = "Review: DII Natural Coir Fiber, 18x30 Entry Way Outdoor Door Mat with Non Slip Backing - Home Cat"
+description = "The following is a review of the DII Natural Coir Fiber, 18x30 inch Entry Way Outdoor Door Mat with Non Slip Backing - Home Cat, received as part of the Amazon Vine program."
 draft = false
 categories = ["review"]
 tags = ["review"]
