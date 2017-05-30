@@ -2,7 +2,7 @@
 author = "James Skemp"
 categories = ["review"]
 date = "2017-05-29T19:20:23-05:00"
-description = "The following is a review of the Pfister Weller LG49-WR0K 2-Handle 8" Widespread Bathroom Faucet in Brushed Nickel, received as part of the Amazon Vine program."
+description = "The following is a review of the Pfister Weller LG49-WR0K 2-Handle 8-inch Widespread Bathroom Faucet in Brushed Nickel, received as part of the Amazon Vine program."
 draft = false
 tags = ["review"]
 title = "Review: Pfister Weller LG49-WR0K 2-Handle 8" Widespread Bathroom Faucet in Brushed Nickel"
