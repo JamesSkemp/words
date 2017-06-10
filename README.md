@@ -11,7 +11,7 @@ First, start Hugo, if you want to preview the content as you write it.
 
 > If you want to preview drafts pass the `--buildDrafts` parameter.
 
-Next create a new file in the **content\post** directory. Use the awesome [Dillinger](http://dillinger.io/) as needed.
+Next create a new file in the **content\post** directory. Use the awesome [Dillinger](http://dillinger.io/) as needed. On Mac I like [MacDown](https://macdown.uranusjr.com/).
 
 ```
 ..\hugo.exe new post/post-name.md
@@ -34,7 +34,7 @@ git subtree push --prefix public git@github.com:JamesSkemp/words.git gh-pages
 
 Within LINQPad, run the following:
 
-```
+```csharp
 var title = "Post Title Here";
 
 title = title.ToLower().Trim()
