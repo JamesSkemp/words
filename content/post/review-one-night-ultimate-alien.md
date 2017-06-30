@@ -5,7 +5,7 @@ date = "2017-06-29T17:35:48-05:00"
 description = "The following is a review of One Night Ultimate Alien, received as part of the Amazon Vine program."
 draft = false
 tags = ["review","card game"]
-title = "Review One Night Ultimate Alien"
+title = "Review: One Night Ultimate Alien"
 
 +++
 
