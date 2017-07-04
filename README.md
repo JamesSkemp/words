@@ -30,6 +30,11 @@ git subtree push --prefix public https://github.com/JamesSkemp/words.git gh-page
 git subtree push --prefix public git@github.com:JamesSkemp/words.git gh-pages
 ```
 
+## Image resizing
+The following command seems to work rather well at converting phone photos to web-ready images.
+
+	convert original.jpg -scale 20% -interpolate catrom -quality 50 new.png
+
 ## Post title to creation script
 
 Within LINQPad, run the following:
