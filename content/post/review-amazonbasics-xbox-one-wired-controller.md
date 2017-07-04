@@ -13,7 +13,7 @@ The following is a review of the AmazonBasics Xbox One Wired Controller, receive
 
 ## In My Eyes (and Hands) A Much Better Xbox One Controller
 
-> Note: This item does not yet seem to be available for purchase from Amazon.
+> Note: This item does not yet seem to be available for purchase from Amazon. For these reasons the links point to my review on Amazon.
 
 I never owned an original Xbox with the 'Duke' controller, but as a longtime PlayStation owner I recall noting how fat the Xbox 360 controller felt in my hands. The Xbox One controller too seems far too large for my hands.
 
@@ -45,7 +45,7 @@ For these reasons I give the [AmazonBasics Xbox One Wired Controller][review] a 
 
 ![Photo of an AmazonBasics controller above an Xbox One Controller.](/img/xbox-one-vertical.png)
 
-[review]: https://www.amazon.com/gp/product/B01M31KSR2/?tag=strivinglifen-20
+[review]: http://amzn.to/2tFhpVA
 [usb-cable]: http://amzn.to/2tMzz8d
 [hdmi-cable]: http://amzn.to/2tMGSNo
 [digital-cable]: http://amzn.to/2tF9TtO
