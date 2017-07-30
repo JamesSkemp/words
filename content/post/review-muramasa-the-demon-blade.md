@@ -9,10 +9,11 @@ slug = "Review-Muramasa-The-Demon-Blade"
 blogengine = "83242205-4c3b-4dac-9818-c42ba3d01989"
 categories = ["review"]
 tags = ["wii"]
+aliases = ["/post/Review-Muramasa-The-Demon-Blade/"]
 +++
 
 <div class="note">
-<p>The following is a review of <a rel="external" href="http://www.amazon.com/gp/product/B001HB7K6I?tag=strivinglifen-20">Muramasa: The Demon Blade</a>, for the Nintendo Wii.</p>
+<p>The following is a review of [Muramasa: The Demon Blade][review], for the Nintendo Wii.</p>
 </div>
 <p>Let's get it out of the way; Muramasa: The Demon Blade is the game that finally made my purchase of the Wii worthwhile.</p>
 <p>Muramasa is in some ways similar to Super Metroid in that you progress around the game by moving from screen to screen, with enemy battles occuring randomly, as you move towards the act's boss. Many paths are locked, only becoming accessible after you defeated set bosses, leading to some level of back-and-forth (especially for the male character Kisuke). Enemy lairs can also be unlocked in the same way, allowing your character to fight in multi-stage battles against set enemies.</p>
@@ -27,3 +28,5 @@ tags = ["wii"]
 <p>Overall, I must give this game a full 5 stars. There are few drawbacks to the game, with the only semi-semi-major ones being from what I believe to be hardware-related issues (the few second loading from screen to screen and the visibly square pixels), and the art, music, and forging element adding considerable value.</p>
 <p>I believe that the fast nature of battles (many standard battles will last seconds, while some boss battles may last dozens of minutes or more) allows for a very high level of replayability.</p>
 <p>If you consider yourself a gamer and your Wii has a coat of dust, go check out some gameplay videos. If it looks good, go buy this game.</p>
+
+[review]: http://amzn.to/2eZ5bBk
