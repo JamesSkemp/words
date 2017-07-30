@@ -9,6 +9,7 @@ slug = "Log-Parser-Plus-version-03-released"
 blogengine = "43604d0e-8443-4eaa-a8ca-0d0660dc696f"
 categories = ["software", "StrivingLife"]
 tags = ["iis", "log parser", "log parser plus"]
+aliases = ["/post/Log-Parser-Plus-version-03-released/"]
 +++
 
 <div class="note">

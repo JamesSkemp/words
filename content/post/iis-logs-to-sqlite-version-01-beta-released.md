@@ -9,7 +9,7 @@ slug = "IIS-Logs-to-SQLite-version-01-beta-released"
 blogengine = "f761068f-313a-4b2b-b413-355828af0caf"
 categories = ["software", "StrivingLife"]
 tags = [".net", "iis", "log parser", "sqlite"]
-aliases = ["/post/Log-Parser-Plus-version-03-released/"]
+aliases = ["/post/IIS-Logs-to-SQLite-version-01-beta-released/"]
 +++
 
 <p>Unfortunately, Microsoft Log Parser is unable to convert logs into SQLite. To work around this limitation I've created <strong>IIS Logs to SQLite</strong>, which will parse IIS logs and import them into the SQLite database and table of your choice.</p>
