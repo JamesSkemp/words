@@ -14,6 +14,6 @@ tags = ["wii"]
 <p>There aren't too many good gamer's games on the Nintendo Wii, so when Muramasa: The Demon Blade started getting advertised, I started getting really excited. Finally,&nbsp;a reason to dust off the Wii and play something other than Virtual Console games.</p>
 <p>With 108 blades available, Muramasa is also a completionist's dream. With the interest of making it a little easier to determine what weapons are available, I've crafted the following file, listing all the blades with their type, attack, secret arts, and effects, as well as which of the two character's trees it belongs to (those shared blades are noted as such, however some I still need to set).</p>
 <p>I still want to complete the requirements, as well as make it sortable and a little more robust.</p>
-<p>View the <a rel="external" href="http://jamesrskemp.com/files/MuramasaBlades.xml">Muramasa: The Demon Blade&nbsp;weapon database</a>.</p>
+<p>View the <a rel="external" href="http://media.jamesrskemp.com/xml/MuramasaBlades.xml">Muramasa: The Demon Blade&nbsp;weapon database</a>.</p>
 <p>I tried to pick semi-easy-on-the-eyes colors, to help break out the listing a bit.</p>
 <p>Comments are of course welcome.</p>
