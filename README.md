@@ -23,6 +23,10 @@ Generate the site by running `..\hugo.exe`.
 
 Add the new post file to Git, as well as the newly generated/updated files.
 
+### If using GitLab
+Just push the file and GitLab will trigger a job based upon the CI configuration file.
+
+### If using GitHub
 Update the **gh-pages** branch via one of the following.
 
 ```
