@@ -12,7 +12,7 @@ tags = ["log parser"]
 aliases = ["/post/Microsoft-Log-Parser-timestamp-formats/"]
 +++
 
-<p>The following article covers the <a rel="external" href="http://logparserplus.com/Functions#function_TO_TIMESTAMP">timestamp</a> format specifiers accepted by Microsoft Log Parser.</p>
+<p>The following article covers the <a rel="external" href="http://logparserplus.com/functions#function_TO_TIMESTAMP">timestamp</a> format specifiers accepted by Microsoft Log Parser.</p>
 <h3>Date</h3>
 <ul>
 <li>
