@@ -9,6 +9,7 @@ slug = "Microsoft-Log-Parser-timestamp-formats"
 blogengine = "cee9cabe-8990-4dce-a777-1ed280d3ffb8"
 categories = ["software", "tutorials / guides"]
 tags = ["log parser"]
+aliases = ["/post/Microsoft-Log-Parser-timestamp-formats/"]
 +++
 
 <p>The following article covers the <a rel="external" href="http://logparserplus.com/Functions#function_TO_TIMESTAMP">timestamp</a> format specifiers accepted by Microsoft Log Parser.</p>

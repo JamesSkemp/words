@@ -9,6 +9,7 @@ slug = "A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format"
 blogengine = "92218721-d037-4d0e-854e-fad30f247873"
 categories = ["software", "tutorials / guides"]
 tags = ["iis", "log parser"]
+aliases = ["/post/A-brief-overview-of-IIS-60-and-the-W3C-extended-log-format/"]
 +++
 
 <p>

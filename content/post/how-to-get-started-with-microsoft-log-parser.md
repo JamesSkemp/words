@@ -9,6 +9,7 @@ slug = "How-to-get-started-with-Microsoft-Log-Parser"
 blogengine = "820d8569-38ec-4417-ae7b-15569678e73a"
 categories = ["software", "tutorials / guides"]
 tags = ["log parser"]
+aliases = ["/post/How-to-get-started-with-Microsoft-Log-Parser/"]
 +++
 
 <p>
