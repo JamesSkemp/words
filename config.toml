@@ -1,4 +1,4 @@
-baseurl = "http://words.strivinglife.com/"
+baseurl = "https://words.strivinglife.com/"
 languageCode = "en-us"
 title = "James Skemp's StrivingLife"
 theme = "phlat"
