@@ -1,7 +1,7 @@
 +++
 title = "Review: One Week Ultimate Werewolf"
 date = 2019-03-03T10:44:17-06:00
-draft = true
+draft = false
 description = "The following is a review of One Week Ultimate Werewolf, received as part of the Amazon Vine program."
 author = "James Skemp"
 tags = [ "review", "board game" ]
