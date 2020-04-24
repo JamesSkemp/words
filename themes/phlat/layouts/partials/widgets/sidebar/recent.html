@@ -3,7 +3,7 @@
         <h5>Recent Posts</h5>
         <ul class="list-unstyled posts-recent">
             <ul class="list-unstyled posts-recent">
-                {{ range first 5 (where .Site.Pages "Type" "post") }}
+                {{ range first 5 (where .Site.RegularPages "Type" "post") }}
                     <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
