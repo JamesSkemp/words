@@ -9,6 +9,9 @@ slug = "Ghost-in-the-Shell-Script"
 blogengine = "b45b30c4-5ecb-410d-902a-d0e5799cac3a"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = [
+	"/ghost-in-the-shell-script/"
+]
 +++
 
 Description: Transcript of the movie <a href="http://www.amazon.com/gp/product/6304493681?ie=UTF8&amp;tag=strivinglifen-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=6304493681" target="_blank">Ghost in the Shell</a> (1995) based upon a viewing of the English DVD release, using the English subtitles. 

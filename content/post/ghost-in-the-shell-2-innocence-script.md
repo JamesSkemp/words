@@ -9,6 +9,9 @@ slug = "Ghost-in-the-Shell-2-Innocence-Script"
 blogengine = "3c68a35b-80cb-4cea-9477-b0cbe9086233"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = [
+	"/ghost-in-the-shell-2-innocence-script/"
+]
 +++
 
 <p>Description: Transcript of the movie <a href="http://www.amazon.com/gp/product/B0006A9FMI?ie=UTF8&amp;tag=strivinglifen-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006A9FMI" target="_blank">Ghost in the Shell 2: Innocence</a> (2004) based upon a viewing of the English DVD release, using the English subtitles.</p>
