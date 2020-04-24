@@ -3,8 +3,20 @@
 	{{ partial "head.html" . }}
 	<body>
 		{{ partial "navigation/navigation.html" . }}
-	
-		{{ block "main" . }}{{ end }}
+
+		<div id="top" class="container">
+			<div class="row" id="content-main">
+				{{ block "main" . }}{{ end }}
+				<div class="col-md-4">
+					{{ partial "widgets/sidebar/search.html" . }}
+					{{ partial "widgets/sidebar/linksofnote.html" . }}
+					{{ partial "widgets/sidebar/recent.html" . }}
+					{{ partial "widgets/sidebar/adsense.html" . }}
+					{{ partial "widgets/sidebar/categories.html" . }}
+					{{ partial "widgets/sidebar/donate.html" . }}
+				</div>
+			</div>
+		</div>
 
 		{{ partial "footer.html" . }}
 		{{ partial "foot.html" . }}
