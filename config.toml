@@ -35,3 +35,8 @@ amazonwishlist = "https://amzn.to/22xk0cK"
 	name = "Subscribe"
 	weight = 3
 	url = "http://strivinglife.com/Words/Feed"
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
