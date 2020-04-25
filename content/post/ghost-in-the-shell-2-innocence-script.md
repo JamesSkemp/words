@@ -9,9 +9,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Script"
 blogengine = "3c68a35b-80cb-4cea-9477-b0cbe9086233"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
-aliases = [
-	"/ghost-in-the-shell-2-innocence-script/"
-]
+aliases = ["/ghost-in-the-shell-2-innocence-script/"]
 +++
 
 <p>Description: Transcript of the movie <a href="http://www.amazon.com/gp/product/B0006A9FMI?ie=UTF8&amp;tag=strivinglifen-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0006A9FMI" target="_blank">Ghost in the Shell 2: Innocence</a> (2004) based upon a viewing of the English DVD release, using the English subtitles.</p>
@@ -49,5 +47,5 @@ aliases = [
 <p>If you notice any problems with the movie&rsquo;s transcript, please just let me know. Also, if you have any comments or thoughts that you&rsquo;d like to share on a particular portion of the movie (or the movie in general), please don&rsquo;t hesitate to share them with the public via the comment system, or send them privately to <strong>strivinglife [at] gmail [dot] com</strong>.</p>
 <p>Obviously, I didn&rsquo;t write the original script, and I respect all copyrights as applicable. I&rsquo;m just a fan of the philosophy of the movie, and since there wasn&rsquo;t a script online at the time of this writing, I figured I could transcribe one (after all, my <a href="/waking-life-transcript-with-revisions/">Waking Life transcript</a> turned out to be quite the resource) ... I just hope others find it a valuable resource, and a stepping stone towards further discussions on this movie.</p>
 <div class="note">
-<p><strong>Can you help?</strong> Ryan C. asks for movies in a vein similar to <a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a> and <a href="/waking-life-transcript-with-revisions/">Waking Life</a>). He suggests <cite>Mindwalk</cite> and <cite>My Dinner With Andre</cite> as two such movies. Can you, readers, recommend any other movies like these?</p>
+<p><strong>Can you help?</strong> Ryan C. asks for movies in a vein similar to <a href="/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a> and <a href="https://wakinglifemovie.net/">Waking Life</a>). He suggests <cite>Mindwalk</cite> and <cite>My Dinner With Andre</cite> as two such movies. Can you, readers, recommend any other movies like these?</p>
 </div>
