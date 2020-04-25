@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-3-The-Infamous-Mystery-Hacker"
 blogengine = "de337d5b-18c3-464a-bb48-4d4716add4a7"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/03/"]
 +++
 
 <h3>[3 The Infamous Mystery Hacker]</h3>

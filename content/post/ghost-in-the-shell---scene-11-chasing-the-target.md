@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-11-Chasing-the-Target"
 blogengine = "6d57e61f-92be-499b-a714-dcb66fef5f29"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/11/"]
 +++
 
 <h3>[11 Chasing the Target]</h3>

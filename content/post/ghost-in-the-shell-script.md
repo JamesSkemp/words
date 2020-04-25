@@ -33,21 +33,21 @@ A permanent link for this content is <a href="/ghost-in-the-shell-script/">https
 </div>
 <h3>Table of contents</h3>
 <ol>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/01/">Thermo Optic Camouflage</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/02/">Opening Credits</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/03/">The Infamous Mystery Hacker</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/04/">Ghost Hack Humans</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/05/">Only a Puppet</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/06/">Simultaneous Reality &amp; Fantasy</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/07/">Hope in Deep Waters</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/08/">Wandering the City</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/09/">Doubting Your Own Ghost</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/10/">Project 2501</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/11/">Chasing the Target</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/12/">Kusanagi Battles Tank</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/13/">Unification</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/14/">Reincarnation</a></li>
-	<li><a href="http://strivinglife.com/ghost-in-the-shell-script/15/">Closing Credits</a></li>
+	<li><a href="/ghost-in-the-shell-script/01/">Thermo Optic Camouflage</a></li>
+	<li><a href="/ghost-in-the-shell-script/02/">Opening Credits</a></li>
+	<li><a href="/ghost-in-the-shell-script/03/">The Infamous Mystery Hacker</a></li>
+	<li><a href="/ghost-in-the-shell-script/04/">Ghost Hack Humans</a></li>
+	<li><a href="/ghost-in-the-shell-script/05/">Only a Puppet</a></li>
+	<li><a href="/ghost-in-the-shell-script/06/">Simultaneous Reality &amp; Fantasy</a></li>
+	<li><a href="/ghost-in-the-shell-script/07/">Hope in Deep Waters</a></li>
+	<li><a href="/ghost-in-the-shell-script/08/">Wandering the City</a></li>
+	<li><a href="/ghost-in-the-shell-script/09/">Doubting Your Own Ghost</a></li>
+	<li><a href="/ghost-in-the-shell-script/10/">Project 2501</a></li>
+	<li><a href="/ghost-in-the-shell-script/11/">Chasing the Target</a></li>
+	<li><a href="/ghost-in-the-shell-script/12/">Kusanagi Battles Tank</a></li>
+	<li><a href="/ghost-in-the-shell-script/13/">Unification</a></li>
+	<li><a href="/ghost-in-the-shell-script/14/">Reincarnation</a></li>
+	<li><a href="/ghost-in-the-shell-script/15/">Closing Credits</a></li>
 </ol>
 <p>
 If you notice any problems with the movie&rsquo;s transcript, please just let me know. Also, if you have any comments or thoughts that you&rsquo;d like to share on a particular portion of the movie (or the movie in general), please don&rsquo;t hesitate to share them with the public via the comment system, or send them privately to <strong>strivinglife [at] gmail [dot] com</strong>. 

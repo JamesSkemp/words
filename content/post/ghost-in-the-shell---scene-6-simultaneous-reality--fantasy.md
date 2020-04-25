@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-6-Simultaneous-Reality--Fantasy"
 blogengine = "5eb3f7c0-f7ed-4e6d-a1db-a6ba7f28301e"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/06/"]
 +++
 
 <h3>[6 Simultaneous Reality &amp; Fantasy]</h3>

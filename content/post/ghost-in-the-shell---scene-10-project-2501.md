@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-10-Project-2501"
 blogengine = "e4d3c175-0dbd-4dcb-a37b-794ca589bc7b"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/10/"]
 +++
 
 <h3>[10 Project 2501]</h3>

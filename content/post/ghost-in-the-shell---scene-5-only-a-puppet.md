@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-5-Only-a-Puppet"
 blogengine = "009da0ae-5711-447b-bade-fc6781ab12e7"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/05/"]
 +++
 
 <h3>[5 Only a Puppet]</h3>

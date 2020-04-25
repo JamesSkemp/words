@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-2-Opening-Credits"
 blogengine = "e45f02e7-931e-46b1-830e-31b836b4a67d"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/02/"]
 +++
 
 <h3>[2 Opening Credits]</h3>

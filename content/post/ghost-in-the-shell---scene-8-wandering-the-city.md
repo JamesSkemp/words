@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-8-Wandering-the-City"
 blogengine = "e16ee81d-7e59-4ed4-80f9-cb751c85e1bb"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/08/"]
 +++
 
 <h3>[8 Wandering the City]</h3>

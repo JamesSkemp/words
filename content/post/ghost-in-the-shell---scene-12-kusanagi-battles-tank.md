@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-12-Kusanagi-Battles-Tank"
 blogengine = "8c4e9348-0433-4bd7-83b2-f0be4bd2f23c"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/12/"]
 +++
 
 <h3>[12 Kusanagi Battles Tank]</h3>

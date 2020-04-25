@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-15-Closing-Credits"
 blogengine = "bba3920f-ac30-4952-b2d2-8f11e2456541"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/15/"]
 +++
 
 <h3>[15 Closing Credits]</h3>

@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-9-Doubting-Your-Own-Ghost"
 blogengine = "e6354fc3-0c74-4458-9f14-b9c3ec64e6f0"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/09/"]
 +++
 
 <h3>[9 Doubting Your Own Ghost]</h3>

@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-7-Hope-in-Deep-Waters"
 blogengine = "f153946f-f593-4264-b334-7b198b8defff"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/07/"]
 +++
 
 <h3>[7 Hope in Deep Waters]</h3>

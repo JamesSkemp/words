@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-1-Thermo-Optic-Camouflage"
 blogengine = "160bb610-f457-4e6d-8834-bbdc0e544b44"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/01/"]
 +++
 
 <h3>[1 Thermo Optic Camouflage]&nbsp;</h3>

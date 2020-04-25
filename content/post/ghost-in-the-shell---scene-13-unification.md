@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-13-Unification"
 blogengine = "f66bf96c-7581-4f45-ab9c-1fd6ddd476e0"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/13/"]
 +++
 
 <h3>[13 Unification]</h3>

@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-14-Reincarnation"
 blogengine = "eb78ded2-9fba-4d06-944d-8826965cec36"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/14/"]
 +++
 
 <h3>[14 Reincarnation]</h3>

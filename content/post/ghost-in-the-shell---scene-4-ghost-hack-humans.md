@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell---Scene-4-Ghost-Hack-Humans"
 blogengine = "e623e3be-928f-4765-94ed-567c3f7e0e9c"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-script/04/"]
 +++
 
 <h3>[4 Ghost Hack Humans]</h3>
