@@ -23,7 +23,7 @@ googleplus = ""
 linkedin = ""
 youtube = ""
 paypal = ""
-amazonwishlist = "http://amzn.to/22xk0cK"
+amazonwishlist = "https://amzn.to/22xk0cK"
 
 # The header menu will appear as an inline-list at the top right of the page
 [[menu.header]]
