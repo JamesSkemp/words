@@ -204,20 +204,20 @@ Batou...
 </p>
 <hr />
 <p>
-Read the <a href="http://strivinglife.com/ghost-in-the-shell-script/12/">previous chapter</a>. 
+Read the <a href="/ghost-in-the-shell-script/12/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="http://strivinglife.com/ghost-in-the-shell-script/14/">next chapter</a>. 
+Read the <a href="/ghost-in-the-shell-script/14/">next chapter</a>. 
 </p>
 <p>
-<a href="http://strivinglife.com/ghost-in-the-shell-script/">Ghost in the Shell - Script</a> 
+<a href="/ghost-in-the-shell-script/">Ghost in the Shell - Script</a> 
 </p>
 <div class="tip">
 <p>
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="http://strivinglife.com/ghost-in-the-shell-script/13/">http://strivinglife.com/ghost-in-the-shell-script/13/</a> 
+Permanent link: <a href="/ghost-in-the-shell-script/13/">http://strivinglife.com/ghost-in-the-shell-script/13/</a> 
 </p>
 </div>
 
