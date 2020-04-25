@@ -256,7 +256,7 @@ Read the <a href="/ghost-in-the-shell-script/11/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/ghost-in-the-shell-script/10/">http://strivinglife.com/ghost-in-the-shell-script/10/</a> 
+Permanent link: <a href="/ghost-in-the-shell-script/10/">https://words.strivinglife.com/ghost-in-the-shell-script/10/</a> 
 </p>
 </div>
 
