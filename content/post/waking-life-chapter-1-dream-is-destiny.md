@@ -49,5 +49,5 @@ tags = ["waking life"]
 <div class="tip">
 <p><a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It's easy!</p>
 <p>For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :)</p>
-<p>Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/1/">http://strivinglife.com/waking-life-transcript-with-revisions/01/</a>.</p>
+<p>Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/1/">https://wakinglifemovie.net/transcript/chapter/1/</a>.</p>
 </div>

@@ -104,7 +104,7 @@ Read the <a href="https://wakinglifemovie.net/transcript/chapter/7/">next chapte
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/6/">http://strivinglife.com/waking-life-transcript-with-revisions/06/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/6/">https://wakinglifemovie.net/transcript/chapter/6/</a> 
 </p>
 </div>
 
