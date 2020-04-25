@@ -53,10 +53,10 @@ Why so few? Why is world history and evolution not stories of progress but rathe
 </p>
 <hr />
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/07/">previous chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/7/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/09/">next chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/9/">next chapter</a>. 
 </p>
 <p>
 <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
@@ -69,7 +69,7 @@ Read the <a href="/waking-life-transcript-with-revisions/09/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/waking-life-transcript-with-revisions/08/">http://strivinglife.com/waking-life-transcript-with-revisions/08/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/8/">http://strivinglife.com/waking-life-transcript-with-revisions/08/</a> 
 </p>
 </div>
 

@@ -45,11 +45,11 @@ tags = ["waking life"]
 <p>Yeah, but I mean like how did you, how did you finally get out of the dream? See, that's my problem. I'm like trapped. I keep, I keep thinking that I'm waking up, but I'm still in a dream. It seems like it's going on forever. I can't get out of it, and I want to wake up for real. How do you really wake up?</p>
 <p>I don't know, I don't know. I'm not very good at that anymore. But, um, if that's what you're thinking, I mean you, you probably should. I mean, you know if you can wake up, you should, because you know someday, you know, you won't be able to. So just, um ... But it's easy. You know. Just, just wake up.</p>
 <hr />
-<p>Read the <a href="/waking-life-transcript-with-revisions/17/">previous chapter</a>.</p>
-<p>Read the <a href="/waking-life-transcript-with-revisions/19/">next chapter</a>.</p>
+<p>Read the <a href="https://wakinglifemovie.net/transcript/chapter/17/">previous chapter</a>.</p>
+<p>Read the <a href="https://wakinglifemovie.net/transcript/chapter/19/">next chapter</a>.</p>
 <p><a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a></p>
 <div class="tip">
 <p><a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It's easy!</p>
 <p>For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :)</p>
-<p>Permanent link: <a href="/waking-life-transcript-with-revisions/18/">http://strivinglife.com/waking-life-transcript-with-revisions/18/</a></p>
+<p>Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/18/">http://strivinglife.com/waking-life-transcript-with-revisions/18/</a></p>
 </div>

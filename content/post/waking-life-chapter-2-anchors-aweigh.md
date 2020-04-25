@@ -89,10 +89,10 @@ Well I don&#39;t know either, but it&#39;s somewhere, and it&#39;s going to dete
 </p>
 <hr />
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/01/">previous chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/1/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/03/">next chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/3/">next chapter</a>. 
 </p>
 <p>
 <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
@@ -105,7 +105,7 @@ Read the <a href="/waking-life-transcript-with-revisions/03/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/waking-life-transcript-with-revisions/02/">http://strivinglife.com/waking-life-transcript-with-revisions/02/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/2/">http://strivinglife.com/waking-life-transcript-with-revisions/02/</a> 
 </p>
 </div>
 

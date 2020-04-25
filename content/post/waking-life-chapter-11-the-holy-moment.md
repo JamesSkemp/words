@@ -104,10 +104,10 @@ I mean, there&#39;s the holy moment and then there&#39;s the awareness of trying
 </p>
 <hr />
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/10/">previous chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/10/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/12/">next chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/12/">next chapter</a>. 
 </p>
 <p>
 <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
@@ -123,7 +123,7 @@ Read the <a href="/waking-life-transcript-with-revisions/12/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/waking-life-transcript-with-revisions/11/">http://strivinglife.com/waking-life-transcript-with-revisions/11/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/11/">http://strivinglife.com/waking-life-transcript-with-revisions/11/</a> 
 </p>
 </div>
 

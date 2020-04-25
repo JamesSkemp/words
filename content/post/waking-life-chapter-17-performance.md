@@ -40,10 +40,10 @@ Kierkegaard&#39;s last words were, &quot;Sweep me up.&quot;
 </p>
 <hr />
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/16/">previous chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/16/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/18/">next chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/18/">next chapter</a>. 
 </p>
 <p>
 <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
@@ -56,7 +56,7 @@ Read the <a href="/waking-life-transcript-with-revisions/18/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/waking-life-transcript-with-revisions/17/">http://strivinglife.com/waking-life-transcript-with-revisions/17/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/17/">http://strivinglife.com/waking-life-transcript-with-revisions/17/</a> 
 </p>
 </div>
 

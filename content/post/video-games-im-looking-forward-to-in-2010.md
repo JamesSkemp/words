@@ -21,7 +21,7 @@ tags = ["xbox 360", "wii", "playstation 3"]
 <li>Resonance of Fate (May 2010)</li>
 <li>Mass Effect 2 (Jan 2010)</li>
 <li>Demon's Souls (Oct <strong>2009</strong>, once it drops in price a bit more)</li>
-<li><a href="http://strivinglife.com/words/post/Review-Borderlands.aspx">Borderlands</a> (<strong>2009</strong>, once it drops in price a bit more)</li>
+<li><a href="/post/review-borderlands/">Borderlands</a> (<strong>2009</strong>, once it drops in price a bit more)</li>
 <li>BioShock (for the PS3)</li>
 </ul>
 <p>And here are the games that all signs point to interest being high, but that I'm not interested in.</p>
@@ -29,4 +29,3 @@ tags = ["xbox 360", "wii", "playstation 3"]
 <li>Assassin's Creed&nbsp;II - Disappointed by the first one, and combat on this one looks pretty boring.</li>
 <li>Dragon Age: Origins - Looks as though it would be good on the PC, but doubtfully so on consoles.</li>
 </ul>
-<p>&nbsp;</p>

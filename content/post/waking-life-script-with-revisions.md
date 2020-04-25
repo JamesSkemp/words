@@ -46,27 +46,27 @@ Please feel free to point out any problems you may find with the transcript, as 
 </p>
 <h4>Table of Contents (based on Waking Life DVD scene chapters)</h4>
 <ol>
-	<li><a href="/waking-life-transcript-with-revisions/01/">Dream is Destiny</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/02/">Anchors Aweigh</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/03/">Life Lessons</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/04/">Alienation</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/05/">Death and Reality</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/06/">Free Will and Physics</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/07/">The Aging Paradox</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/08/">Noise &amp; Silence</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/09/">What&#39;s the Story?</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/10/">Dreams</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/11/">The Holy Moment</a> <sup><em>2</em></sup><br />
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/1/">Dream is Destiny</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/2/">Anchors Aweigh</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/3/">Life Lessons</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/4/">Alienation</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/5/">Death and Reality</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/6/">Free Will and Physics</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/7/">The Aging Paradox</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/8/">Noise &amp; Silence</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/9/">What&#39;s the Story?</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/10/">Dreams</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/11/">The Holy Moment</a> <sup><em>2</em></sup><br />
 	<a href="/words/post/Thoughts-and-comments-on-Waking-Life-The-Holy-Moment.aspx">Read my thoughts and share your own</a></li>
-	<li><a href="/waking-life-transcript-with-revisions/12/">Society Is a Fraud</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/13/">Dreamers</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/14/">Ants</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/15/">We Are the Authors</a> <sup><em>2</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/16/">Meet Yourself</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/17/">Performance</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/18/">Trapped in a Dream</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/19/">Wake Up!</a> <sup><em>1</em></sup></li>
-	<li><a href="/waking-life-transcript-with-revisions/20/">End Titles</a> <em>(not included here)</em></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/12/">Society Is a Fraud</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/13/">Dreamers</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/14/">Ants</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/15/">We Are the Authors</a> <sup><em>2</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/16/">Meet Yourself</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/17/">Performance</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/18/">Trapped in a Dream</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/19/">Wake Up!</a> <sup><em>1</em></sup></li>
+	<li><a href="https://wakinglifemovie.net/transcript/chapter/20/">End Titles</a> <em>(not included here)</em></li>
 </ol>
 <p>
 <sup>1</sup> Last reviewed October 2005. 

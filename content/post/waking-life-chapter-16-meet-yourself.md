@@ -145,10 +145,10 @@ When it was over, all I could think about was how this entire notion of oneself,
 </p>
 <hr />
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/15/">previous chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/15/">previous chapter</a>. 
 </p>
 <p>
-Read the <a href="/waking-life-transcript-with-revisions/17/">next chapter</a>. 
+Read the <a href="https://wakinglifemovie.net/transcript/chapter/17/">next chapter</a>. 
 </p>
 <p>
 <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
@@ -161,7 +161,7 @@ Read the <a href="/waking-life-transcript-with-revisions/17/">next chapter</a>.
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-Permanent link: <a href="/waking-life-transcript-with-revisions/16/">http://strivinglife.com/waking-life-transcript-with-revisions/16/</a> 
+Permanent link: <a href="https://wakinglifemovie.net/transcript/chapter/16/">http://strivinglife.com/waking-life-transcript-with-revisions/16/</a> 
 </p>
 </div>
 
