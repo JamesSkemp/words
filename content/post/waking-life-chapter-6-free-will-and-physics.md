@@ -19,7 +19,7 @@ Description: Script of the movie <em>Waking Life</em>, based on Tara Carreon&#39
 Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara&#39;s transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the &#39;like, like, you know,&#39; sections ;) 
 </p>
 <p>
-Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life movie transcript, with revisions</a>. 
+Read the entire <a href="https://wakinglifemovie.net/">Waking Life movie transcript, with revisions</a>. 
 </p>
 <p>
 <a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It&#39;s easy!
@@ -94,7 +94,7 @@ Read the <a href="/waking-life-transcript-with-revisions/05/">previous chapter</
 Read the <a href="/waking-life-transcript-with-revisions/07/">next chapter</a>. 
 </p>
 <p>
-<a href="/waking-life-transcript-with-revisions/">Waking Life Script with Revisions</a> 
+<a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
 </p>
 <div class="tip">
 <p>

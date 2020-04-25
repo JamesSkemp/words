@@ -22,7 +22,7 @@ Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out 
 Thanks to Roy Christopher for his correction on this chapter (below). 
 </p>
 <p>
-Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life movie transcript, with revisions</a>. 
+Read the entire <a href="https://wakinglifemovie.net/">Waking Life movie transcript, with revisions</a>. 
 </p>
 <p>
 <a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It&#39;s easy!
@@ -124,7 +124,7 @@ Read the <a href="/waking-life-transcript-with-revisions/11/">previous chapter</
 Read the <a href="/waking-life-transcript-with-revisions/13/">next chapter</a>. 
 </p>
 <p>
-<a href="/waking-life-transcript-with-revisions/">Waking Life Script with Revisions</a> 
+<a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
 </p>
 <div class="tip">
 <p>

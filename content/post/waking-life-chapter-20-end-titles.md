@@ -16,7 +16,7 @@ tags = ["waking life"]
 Description: Script of the movie <em>Waking Life</em>, based on Tara Carreon&#39;s transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles. 
 </p>
 <p>
-Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life movie transcript, with revisions</a>. 
+Read the entire <a href="https://wakinglifemovie.net/">Waking Life movie transcript, with revisions</a>. 
 </p>
 <p>
 <a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It&#39;s easy!
@@ -31,7 +31,7 @@ Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life mo
 Read the <a href="/waking-life-transcript-with-revisions/19/">previous chapter</a>. 
 </p>
 <p>
-<a href="/waking-life-transcript-with-revisions/">Waking Life Script with Revisions</a> 
+<a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a> 
 </p>
 <div class="tip">
 <p>

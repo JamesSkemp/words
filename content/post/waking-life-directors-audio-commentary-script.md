@@ -18,6 +18,6 @@ Description: Transcript of the Director&#39;s Audio Commentary, of Waking Life,&
 This first version will be a simple rip of the subtitles, however, as able, they will be reviewed, corrected, and supplemented, as necessary.
 </p>
 <p>
-Please see also the <a href="/waking-life-transcript-with-revisions/">Waking Life Script with Revisions</a>.
+Please see also the <a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a>.
 </p>
 

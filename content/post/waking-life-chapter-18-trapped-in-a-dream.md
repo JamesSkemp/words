@@ -14,7 +14,7 @@ tags = ["waking life"]
 <div class="WPArticleInfo">
 <p>Description: Script of the movie <em>Waking Life</em>, based on Tara Carreon's transcription, but with revisions based upon a viewing of the DVD version of the movie, which was watched with subtitles.</p>
 <p>Notes: Special thanks to Andrew, Larry Redden, and Ed Sandberg for pointing out errors in Tara's transcription (numerous errors were fixed here, along with some scene information clarifications). Absolutely let me know if anything slipped by my look-over, especially in the quicker and the 'like, like, you know,' sections ;)</p>
-<p>Read the entire <a href="/waking-life-transcript-with-revisions/">Waking Life movie transcript, with revisions</a>.</p>
+<p>Read the entire <a href="https://wakinglifemovie.net/">Waking Life movie transcript, with revisions</a>.</p>
 <p><a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It's easy!</p>
 </div>
 <h3 class="waking_life_chapter">[<a id="eighteen" title="eighteen" name="eighteen"></a>18 Trapped in a Dream]</h3>
@@ -47,7 +47,7 @@ tags = ["waking life"]
 <hr />
 <p>Read the <a href="/waking-life-transcript-with-revisions/17/">previous chapter</a>.</p>
 <p>Read the <a href="/waking-life-transcript-with-revisions/19/">next chapter</a>.</p>
-<p><a href="/waking-life-transcript-with-revisions/">Waking Life Script with Revisions</a></p>
+<p><a href="https://wakinglifemovie.net/">Waking Life Script with Revisions</a></p>
 <div class="tip">
 <p><a href="/words/post/Display-parts-of-the-Waking-Life-Transcript-on-your-site.aspx">Learn how to display this transcript on your blog or site</a>. It's easy!</p>
 <p>For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site or use the code detailed above instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :)</p>

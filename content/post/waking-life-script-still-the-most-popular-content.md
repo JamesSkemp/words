@@ -11,7 +11,7 @@ tags = ["waking life"]
 +++
 
 <p>
-Did you know that the most popular content on this site is the <a href="/waking-life-transcript-with-revisions/">revised Waking Life movie transcript</a> that I host on this very site?  It&#39;s true, it&#39;s the most visited content on this site.<!--more--><!--adsense-->
+Did you know that the most popular content on this site is the <a href="https://wakinglifemovie.net/">revised Waking Life movie transcript</a> that I host on this very site?  It&#39;s true, it&#39;s the most visited content on this site.<!--more--><!--adsense-->
 </p>
 <p>
 Of course, having seen Waking Life more than just a couple times, and having watched scenes, and parts of scenes, over and over again, it comes as little surprise to me.  What is surprising is that the movie isn&#39;t an even bigger hit.

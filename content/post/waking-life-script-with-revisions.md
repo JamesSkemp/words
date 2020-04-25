@@ -93,7 +93,7 @@ For the sake of version control and in the interest of not having multiple versi
 </div>
 <div class="note">
 <p>
-<strong>Can you help?</strong> Ryan C. asks for movies in a vein similar to <a href="/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a> and <a href="/waking-life-transcript-with-revisions/">Waking Life</a>). He suggests <cite>Mindwalk</cite> and <cite>My Dinner With Andre</cite> as two such movies. Can you, readers, recommend any other movies like these? 
+<strong>Can you help?</strong> Ryan C. asks for movies in a vein similar to <a href="/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2</a> and <a href="https://wakinglifemovie.net/">Waking Life</a>). He suggests <cite>Mindwalk</cite> and <cite>My Dinner With Andre</cite> as two such movies. Can you, readers, recommend any other movies like these? 
 </p>
 <p>
 How about books? Simon K. asks for suggestions of both books and movies similar to Waking Life. 
