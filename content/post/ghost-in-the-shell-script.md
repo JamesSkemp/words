@@ -21,14 +21,14 @@ I do not speak, nor understand, Japanese, so this is an American-version transcr
 The first version will be based almost exclusively on a subtitle rip. As I&#39;m able, I&#39;ll review the subtitles and supplement the transcript as possible. 
 </p>
 <p>
-See also the <a href="http://strivinglife.com/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2: Innocence script</a>. 
+See also the <a href="/post/ghost-in-the-shell-2-innocence-script/">Ghost in the Shell 2: Innocence script</a>. 
 </p>
 <div class="tip">
 <p>
 For the sake of version control and in the interest of not having multiple versions floating about the Internet, please <strong>link</strong> to the pages on this site instead of copying the script elsewhere. Using short blurbs of a sentence or two is perfectly fine. Thank you :) 
 </p>
 <p>
-A permanent link for this content is <a href="http://strivinglife.com/ghost-in-the-shell-script/">http://strivinglife.com/ghost-in-the-shell-script/</a> 
+A permanent link for this content is <a href="/ghost-in-the-shell-script/">https://words.strivinglife.com/ghost-in-the-shell-script/</a> 
 </p>
 </div>
 <h3>Table of contents</h3>

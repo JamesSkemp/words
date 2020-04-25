@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-14-Kims-Mansion-The-4th-Encounter"
 blogengine = "0a99fd30-a73b-4994-ac1f-bf7954a16caa"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/14/"]
 +++
 
 <p style="text-align: right">

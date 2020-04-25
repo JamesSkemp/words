@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-15-Undersea"
 blogengine = "d5628d4a-503d-4c95-9711-ee09a02c3c1d"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/15/"]
 +++
 
 <p style="text-align: right">

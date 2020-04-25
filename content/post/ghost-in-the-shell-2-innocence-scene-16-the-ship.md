@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-16-The-Ship"
 blogengine = "e703dee7-ff41-4b93-8048-4692f9febad3"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/16/"]
 +++
 
 <p style="text-align: right">

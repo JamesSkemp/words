@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-3-Jurisdiction"
 blogengine = "984e1955-2e42-4891-8379-f7b2f302ff28"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/03/"]
 +++
 
 <p style="text-align: right">

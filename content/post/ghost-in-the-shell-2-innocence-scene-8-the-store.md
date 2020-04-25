@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-8-The-Store"
 blogengine = "fe718958-0894-44d7-bdd3-8e8bc7c1500a"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/08/"]
 +++
 
 <p style="text-align: right">

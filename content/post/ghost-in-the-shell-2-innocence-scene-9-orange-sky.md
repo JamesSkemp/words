@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-9-Orange-Sky"
 blogengine = "a8b7b331-a08e-4afd-9ee0-6b0c4f32adbc"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/09/"]
 +++
 
 <p style="text-align: right">

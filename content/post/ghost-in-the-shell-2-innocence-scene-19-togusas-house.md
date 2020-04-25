@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-19-Togusas-House"
 blogengine = "3f385304-92a7-419b-acff-476b734f6c4d"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/19/"]
 +++
 
 <p style="text-align: right">

@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-4-Coroner-Haraway"
 blogengine = "169240fe-e708-4bc2-97f3-05b9e754722c"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/04/"]
 +++
 
 <p style="text-align: right">

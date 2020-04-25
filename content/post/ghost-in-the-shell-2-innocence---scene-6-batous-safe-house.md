@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell-2-Innocence---Scene-6-Batous-Safe-House"
 blogengine = "90b62506-5bf7-4d4e-bba4-c02581e3ba9d"
 categories = ["dvd / movie", "philosophy"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/06/"]
 +++
 
 <p style="text-align: right">

@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-11-Kims-Mansion"
 blogengine = "72176109-50c8-4a38-96f2-1a3dd9371501"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/11/"]
 +++
 
 <p style="text-align: right">

@@ -9,6 +9,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-10-Festival"
 blogengine = "9e20e62b-147c-4901-9e45-2d1cf5997b64"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/10/"]
 +++
 
 <p style="text-align: right">

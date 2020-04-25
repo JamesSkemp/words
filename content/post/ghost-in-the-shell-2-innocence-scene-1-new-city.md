@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-1-New-City"
 blogengine = "7ec1d93d-0ae5-486d-8cbc-7ec6b9b1651e"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/01/"]
 +++
 
 <p style="text-align: right">

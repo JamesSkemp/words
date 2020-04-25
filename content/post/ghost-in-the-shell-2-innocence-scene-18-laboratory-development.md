@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-18-Laboratory-Development"
 blogengine = "4ccce239-b833-48e8-8e90-f542e7cf4cdd"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/18/"]
 +++
 
 <p style="text-align: right">

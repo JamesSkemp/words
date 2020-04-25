@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-17-Control-System"
 blogengine = "59061c52-408a-40b9-a2ec-12e14305f498"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/17/"]
 +++
 
 <p style="text-align: right">

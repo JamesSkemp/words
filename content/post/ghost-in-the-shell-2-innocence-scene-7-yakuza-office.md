@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-7-Yakuza-Office"
 blogengine = "b9556898-f2b3-4c7f-9a87-c7a2ce9d5794"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/07/"]
 +++
 
 <p style="text-align: right">

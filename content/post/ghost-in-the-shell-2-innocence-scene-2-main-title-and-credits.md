@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-2-Main-Title-and-Credits"
 blogengine = "baa0512a-92bb-4849-b083-fb3ae642f010"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/02/"]
 +++
 
 <p style="text-align: right">

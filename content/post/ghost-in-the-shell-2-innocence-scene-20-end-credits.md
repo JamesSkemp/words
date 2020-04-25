@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-20-End-Credits"
 blogengine = "3dec758b-4942-4f81-9521-f411edd6b495"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/20/"]
 +++
 
 <p style="text-align: right">

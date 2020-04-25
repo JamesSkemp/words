@@ -8,6 +8,7 @@ slug = "Ghost-in-the-Shell-2-Innocence-Scene-5-Boat-House"
 blogengine = "c2caf0bc-6a35-432e-9903-e0e7b22e53db"
 categories = ["philosophy", "dvd / movie"]
 tags = ["ghost in the shell"]
+aliases = ["/ghost-in-the-shell-2-innocence-script/05/"]
 +++
 
 <p style="text-align: right">
