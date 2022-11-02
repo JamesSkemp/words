@@ -11,15 +11,17 @@ categories = ["tutorials / guides"]
 tags = ["asp.net", ".net", "c#"]
 +++
 
-<div class="note">
-<p>See the <a href="/post/tutorial-aspnet-c-sharp-wcf-webhttp-service-with-jquery-table-of-contents/">table of contents</a> for more information.</p>
-</div>
+> See the <a href="/post/tutorial-aspnet-c-sharp-wcf-webhttp-service-with-jquery-table-of-contents/">table of contents</a> for more information.
+
 <p>As already noted in the table of contents, the end goal will to have a service that returns enough information to be able to generate an amortization&nbsp;schedule for a loan. I'm not in financial services, and haven't been very good in math since some point in high school, but this seems to work fairly well.</p>
 <p>The first thing we're going to do is generate an assembly that we'll then use in the WCF WebHttp service. We'll then create a service that works with this, and finally the jQuery to get information out of the service and display it.</p>
-<h3>Defining the loan object</h3>
+
+## Defining the loan object
 <p>A loan consists of a total amount due, an amount paid per payment, the number of payments made&nbsp; and the interest rate, per year. While not necessary, since we may want multiple loans to be available at once, we'll also say that loans can have a name, or description.</p>
 <p>While Decimal may be better, that gives us something like this for our class.</p>
-<pre class="code"><code class="csharp">using System;
+
+```csharp
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,83 +30,93 @@ using System.Data;
 namespace JamesRSkemp.Formulas {
 	public class Amortization {
 
-		/// &lt;summary&gt;
+		/// <summary>
 		/// Loan, with a total amount due, payment amount, number of payments per year, and interest rate per year.
-		/// &lt;/summary&gt;
+		/// </summary>
 		public class Loan {
-			/// &lt;summary&gt;
+			/// <summary>
 			/// Name of the loan.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public String Name { get; set; }
-			/// &lt;summary&gt;
+			/// <summary>
 			/// Total amount due on the loan.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public Double Total { get; set; }
-			/// &lt;summary&gt;
+			/// <summary>
 			/// The amount paid per payment.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public Double PaymentAmount { get; set; }
-			/// &lt;summary&gt;
+			/// <summary>
 			/// The number of payments made per year. Usually 12.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public int PaymentsPerYear { get; set; }
-			/// &lt;summary&gt;
+			/// <summary>
 			/// Percent of interest, per year.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public Double InterestPerYear { get; set; }
-			/// &lt;summary&gt;
+			/// <summary>
 			/// List of individual payments. Only populated/updated by UpdatePayments method.
-			/// &lt;/summary&gt;
-			public List&lt;Payment&gt; Payments { get; set; }
+			/// </summary>
+			public List<Payment> Payments { get; set; }
 
-			/// &lt;summary&gt;
+			/// <summary>
 			/// Creates a new instance of a loan. By default sets the number of payments per year to 12.
-			/// &lt;/summary&gt;
+			/// </summary>
 			public Loan() {
 				this.PaymentsPerYear = 12;
 			}
 		}
 	}
-}</code></pre>
-<p>You'll notice that I'm setting the number of payments per year to 12 when the object is initialized, as most loans tend to follow that.</p>
-<p>We have payments defined separately, which I've defined as follows.</p>
-<pre class="code"><code class="csharp">/// &lt;summary&gt;
+}
+```
+
+You'll notice that I'm setting the number of payments per year to 12 when the object is initialized, as most loans tend to follow that.
+
+We have payments defined separately, which I've defined as follows.
+
+```csharp
+/// <summary>
 /// Loan payment.
-/// &lt;/summary&gt;
+/// </summary>
 public class Payment {
-	/// &lt;summary&gt;
+	/// <summary>
 	/// Total payment amount.
-	/// &lt;/summary&gt;
+	/// </summary>
 	public Double Total { get; set; }
-	/// &lt;summary&gt;
+	/// <summary>
 	/// Amount of payment applied to interest.
-	/// &lt;/summary&gt;
+	/// </summary>
 	public Double Interest { get; set; }
-	/// &lt;summary&gt;
+	/// <summary>
 	/// Amount of payment applied to the principal.
-	/// &lt;/summary&gt;
+	/// </summary>
 	public Double Principal { get; set; }
-	/// &lt;summary&gt;
+	/// <summary>
 	/// Amount of the loan remaining after this payment is made.
-	/// &lt;/summary&gt;
+	/// </summary>
 	public Double LoanRemaining { get; set; }
-	/// &lt;summary&gt;
+	/// <summary>
 	/// New loan payment.
-	/// &lt;/summary&gt;
+	/// </summary>
 	public Payment() {
 	}
-}</code></pre>
-<p>You can see that I've assumed a payment will have a total amount paid, with what amount went towards interest and what towards the principal. For tracking ease, I've also put the loan's remaining amount on the payment as well, although this isn't really necessary. Of course, we don't have a date associated with the payment (which might be a good idea for expansion purposes), so perhaps it is.</p>
-<p>Now we have to come up with some way to populate the payments. For this purpose I've added a method to Loan object which allows the payments to be populated, or updated.</p>
-<pre class="code"><code class="csharp">/// &lt;summary&gt;
+}
+```
+
+You can see that I've assumed a payment will have a total amount paid, with what amount went towards interest and what towards the principal. For tracking ease, I've also put the loan's remaining amount on the payment as well, although this isn't really necessary. Of course, we don't have a date associated with the payment (which might be a good idea for expansion purposes), so perhaps it is.
+
+Now we have to come up with some way to populate the payments. For this purpose I've added a method to Loan object which allows the payments to be populated, or updated.
+
+```csharp
+/// <summary>
 /// Updates payments on a loan.
-/// &lt;/summary&gt;
-/// &lt;returns&gt;If payments cannot be updated, returns false.&lt;/returns&gt;
+/// </summary>
+/// <returns>If payments cannot be updated, returns false.</returns>
 public Boolean UpdatePayments() {
 	Boolean paymentsUpdated = false;
 
 	if (this.Payments == null) {
-		this.Payments = new List&lt;Payment&gt;();
+		this.Payments = new List<Payment>();
 	} else {
 		this.Payments.Clear();
 	}
@@ -115,12 +127,12 @@ public Boolean UpdatePayments() {
 	// Store how much we need to pay. In this case, what the first payment will be.
 	Double periodPaymentAmount = interestPerPayment * this.Total;
 
-	if (periodPaymentAmount &gt;= this.PaymentAmount) {
+	if (periodPaymentAmount >= this.PaymentAmount) {
 		throw new Exception("The amount of interest on the first payment is greater than the amount that will be paid.");
 	} else {
 		Double totalRemaining = this.Total;
 
-		while (totalRemaining &gt; 0) {
+		while (totalRemaining > 0) {
 			Payment currentPayment = new Payment();
 			currentPayment.Total = this.PaymentAmount;
 			currentPayment.Interest = Math.Round(totalRemaining * interestPerPayment, 2);
@@ -128,7 +140,7 @@ public Boolean UpdatePayments() {
 			currentPayment.LoanRemaining = Math.Round(totalRemaining - currentPayment.Principal, 2);
 						// If we now have a remaining amount on the loan less than 0, we've paid too much.
 
-			if (currentPayment.LoanRemaining &lt; 0) {
+			if (currentPayment.LoanRemaining < 0) {
 				currentPayment.Total += currentPayment.LoanRemaining;
 				currentPayment.Principal += currentPayment.LoanRemaining;
 				currentPayment.LoanRemaining = 0;
@@ -143,9 +155,13 @@ public Boolean UpdatePayments() {
 	}
 
 	return paymentsUpdated;
-}</code></pre>
+}
+```
+
 <p>You can see that this clears any existing payment information, then loops through and generates a list of payments, which are then associated with the loan. In case the remaining amount due is less than 0, we take that from the payment amount and principal paid to zero the loan.</p>
-<h3>Testing this out</h3>
-<p>At this point you're more than willing to create a simple command-line client that references this assembly. You can also grab a copy of <a rel="external download" href="http://media.jamesrskemp.com/articles/JamesRSkemp.Formulas.Amortization.cs.txt">JamesRSkemp.Formulas.Amortization</a> online, and compare results with a slightly different version that I use in my <a rel="external" href="http://jamesrskemp.com/testing/asp.net/Amortization.aspx">amortization schedule generator</a>.</p>
-<h3>Next time ...</h3>
+
+## Testing this out
+<p>At this point you're more than willing to create a simple command-line client that references this assembly. You can also grab a copy of <a rel="external download" href="https://media.jamesrskemp.com/articles/JamesRSkemp.Formulas.Amortization.cs.txt">JamesRSkemp.Formulas.Amortization</a> online, and compare results with a slightly different version that I use in my <a rel="external" href="http://jamesrskemp.com/testing/asp.net/Amortization.aspx">amortization schedule generator</a>.</p>
+
+## Next time ...
 <p>Now that we have this assembly ready we can look at the next piece, which will be to generate the WCF WebHttp service that actually makes use of this.</p>
