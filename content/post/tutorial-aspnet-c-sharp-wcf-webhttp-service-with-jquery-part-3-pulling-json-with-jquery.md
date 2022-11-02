@@ -12,7 +12,7 @@ tags = ["asp.net", ".net", "c#", "wcf webhttp", "rest", "jquery", "json"]
 +++
 
 <div class="note">
-<p>See the <a href="http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx">table of contents</a> for more information.</p>
+<p>See the <a href="/post/tutorial-aspnet-c-sharp-wcf-webhttp-service-with-jquery-table-of-contents/">table of contents</a> for more information.</p>
 </div>
 <p>In this series we've started with a new loan class, that contains information about a loan, including the total amount due, how much is to be paid per payment, the interest rate, and etcetera. A method is available that will generate information about the number of payments required to pay off the loan.</p>
 <p>In the second part we created a WCF WebHttp service, or a WCF REST service, to use the class/assembly from that loan object and return XML data for GET requests.</p>

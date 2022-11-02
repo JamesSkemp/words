@@ -12,7 +12,7 @@ tags = ["asp.net", ".net", "c#"]
 +++
 
 <div class="note">
-<p>See the <a href="http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx">table of contents</a> for more information.</p>
+<p>See the <a href="/post/tutorial-aspnet-c-sharp-wcf-webhttp-service-with-jquery-table-of-contents/">table of contents</a> for more information.</p>
 </div>
 <p>As already noted in the table of contents, the end goal will to have a service that returns enough information to be able to generate an amortization&nbsp;schedule for a loan. I'm not in financial services, and haven't been very good in math since some point in high school, but this seems to work fairly well.</p>
 <p>The first thing we're going to do is generate an assembly that we'll then use in the WCF WebHttp service. We'll then create a service that works with this, and finally the jQuery to get information out of the service and display it.</p>

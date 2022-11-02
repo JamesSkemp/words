@@ -12,7 +12,7 @@ tags = ["asp.net", ".net", "c#", "wcf webhttp", "rest"]
 +++
 
 <div class="note">
-<p>See the <a href="http://strivinglife.com/words/post/Tutorial-ASPNET-C-sharp-WCF-WebHttp-service-with-jQuery-Table-of-Contents.aspx">table of contents</a> for more information.</p>
+<p>See the <a href="/post/tutorial-aspnet-c-sharp-wcf-webhttp-service-with-jquery-table-of-contents/">table of contents</a> for more information.</p>
 </div>
 <p>In the last part we created a Loan object, that we determined we would later use to power our Web service. Ths object has a handful of properties and a method to update a list of payments to bring the loan to $0.</p>
 <p>This time we're going to create a Web service to respond to requests from data.</p>
