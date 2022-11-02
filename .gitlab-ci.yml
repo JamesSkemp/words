@@ -1,4 +1,4 @@
-image: registry.gitlab.com/pages/hugo:0.80.0
+image: registry.gitlab.com/pages/hugo/hugo_extended:0.105.0
 #image: registry.gitlab.com/pages/hugo:latest
 
 before_script:
