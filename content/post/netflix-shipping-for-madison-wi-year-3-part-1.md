@@ -8,18 +8,18 @@ modified = "2009-03-28T18:38:52-05:00"
 slug = "Netflix-shipping-for-Madison-WI-Year-3-Part-1"
 blogengine = "b320ad40-6671-4155-814e-244dbe70c24b"
 categories = ["dvd / movie", "review", "StrivingLife"]
-tags = ["madison wi"]
+tags = ["madison wi", "netflix"]
 +++
 
 <p>
-And so begins year three with Netflix. I covered <a href="/words/post/Netflix-shipping-for-Madison-WI.aspx">year one</a> and <a href="/words/post/Netflix-shipping-for-Madison-WI-Year-2.aspx">year two</a>, of what was shipped to me, when, and when I shipped them back, previously. 
+And so begins year three with Netflix. I covered <a href="/words/post/Netflix-shipping-for-Madison-WI.aspx">year one</a> and <a href="/words/post/Netflix-shipping-for-Madison-WI-Year-2.aspx">year two</a>, of what was shipped to me, when, and when I shipped them back, previously.
 </p>
 <p>
-Since last year got a bit long, I&#39;m going to break it up a bit. So, this post covers shipping from September 26, 2008, to about halfway through (I&#39;m not there yet, so ...). 
+Since last year got a bit long, I&#39;m going to break it up a bit. So, this post covers shipping from September 26, 2008, to about halfway through (I&#39;m not there yet, so ...).
 </p>
 <h3>Plan changes</h3>
 <p>
-On 12/10/2008 I moved from the two-unlimited to the one-unlimited plan. 
+On 12/10/2008 I moved from the two-unlimited to the one-unlimited plan.
 </p>
 <h3>The times</h3>
 <p>
@@ -163,7 +163,7 @@ On 12/10/2008 I moved from the two-unlimited to the one-unlimited plan.
 <strong>03/21/2009</strong> (Sa) - Received next movie.<br />
 <strong>03/22/2009</strong> (Su) - Watched Masculin Feminin (1966). I&#39;ll drop it off tomorrow, using the Milwaukee (PO Box 3079) mailer I received it in.<br />
 <strong>03/24/2009</strong> (T) - MRNOS.<br />
-<strong>03/25/2009</strong> (W) - Received and watched The Phantom of Liberty (1974). 4 stars, but tempting to purchase. I&#39;ll drop it off using the Milwaukee (3079) mailer I received it in. 
+<strong>03/25/2009</strong> (W) - Received and watched The Phantom of Liberty (1974). 4 stars, but tempting to purchase. I&#39;ll drop it off using the Milwaukee (3079) mailer I received it in.
 </p>
 <p>
 <a href="/words/post/Netflix-shipping-for-Madison-WI-Year-3-Part-2.aspx">Part two of year three</a>&nbsp;continues.

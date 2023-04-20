@@ -8,7 +8,7 @@ modified = "2009-05-27T07:15:38-05:00"
 slug = "Netflix-shipping-for-Madison-WI"
 blogengine = "975866f0-b821-4755-ade2-11ea56a96e80"
 categories = ["dvd / movie", "review", "StrivingLife"]
-tags = ["madison wi"]
+tags = ["madison wi", "netflix"]
 +++
 
 <p>Over the next couple of weeks, at least, or over the next couple of months, if I'm happy with Netflix, I'll be posting here information about where I received my Netflix movies from, what kind of turn-around I've received, and etcetera. My hope is that this information will be beneficial to other Madison folks who may be interested in Netflix.</p>

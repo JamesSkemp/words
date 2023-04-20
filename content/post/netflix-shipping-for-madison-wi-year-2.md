@@ -8,39 +8,39 @@ modified = "2008-09-24T23:07:41-05:00"
 slug = "Netflix-shipping-for-Madison-WI-Year-2"
 blogengine = "e38ccf1c-3f0d-48b9-80c3-66dc1e25c06a"
 categories = ["dvd / movie", "review", "StrivingLife"]
-tags = ["madison wi"]
+tags = ["madison wi", "netflix"]
 +++
 
 <p>
-I had previously written on <a href="/words/post/Netflix-shipping-for-Madison-WI.aspx">how Netflix shipped and received DVDs, for Madison WI</a>. This article continues that one, by discussing Year 2 with Netflix (first year began September 26, 2006). 
+I had previously written on <a href="/words/post/Netflix-shipping-for-Madison-WI.aspx">how Netflix shipped and received DVDs, for Madison WI</a>. This article continues that one, by discussing Year 2 with Netflix (first year began September 26, 2006).
 </p>
 <h3>Plan changes</h3>
 <p>
-On December 2, 2007, I decided to upgrade to the two at-a-time (unlimited)&nbsp;plan. Since my plan begins on the 10th of each month, that means I had to pay an extra $1.26 to upgrade now, instead of for the next month (I figure this way they&#39;ll send a movie out tomorrow morning). 
+On December 2, 2007, I decided to upgrade to the two at-a-time (unlimited)&nbsp;plan. Since my plan begins on the 10th of each month, that means I had to pay an extra $1.26 to upgrade now, instead of for the next month (I figure this way they&#39;ll send a movie out tomorrow morning).
 </p>
 <p>
-As of January 10, 2008, I&#39;ll be back on the 1-unlimited plan, since House should be back on the air. As always, I&#39;ll continue to track my progress below. 
+As of January 10, 2008, I&#39;ll be back on the 1-unlimited plan, since House should be back on the air. As always, I&#39;ll continue to track my progress below.
 </p>
 <p>
-As of February 22, 2008, I&#39;m back to 2-unlimited. 
+As of February 22, 2008, I&#39;m back to 2-unlimited.
 </p>
 <p>
-As of April 28, 2008, House is back on, but on Mondays. Since I get so few movies on Monday, I&#39;ll be staying with the 2-unlimited plan. 
+As of April 28, 2008, House is back on, but on Mondays. Since I get so few movies on Monday, I&#39;ll be staying with the 2-unlimited plan.
 </p>
 <p>
-As of May 7, 2008, since I&#39;m getting busier, I&#39;m downgrading to the 1-unlimited plan, as of May 10. 
+As of May 7, 2008, since I&#39;m getting busier, I&#39;m downgrading to the 1-unlimited plan, as of May 10.
 </p>
 <p>
-As of July 25, 2008, I&#39;m back to 2-unlimited. I&#39;ve got almost 200 movies in my queue, so I got to knock that down a bit. 
+As of July 25, 2008, I&#39;m back to 2-unlimited. I&#39;ve got almost 200 movies in my queue, so I got to knock that down a bit.
 </p>
 <p>
-<strike>I changed my plan back to 1-unlimited August 29, 2008, and that should take effect September 10.</strike> When I received my confirmation email, it seems that on 9/10 I&#39;ll get my 15% discount, because of the shipping problems. However, that applies to that month&#39;s plan price. Switched back to 2-unlimited. 
+<strike>I changed my plan back to 1-unlimited August 29, 2008, and that should take effect September 10.</strike> When I received my confirmation email, it seems that on 9/10 I&#39;ll get my 15% discount, because of the shipping problems. However, that applies to that month&#39;s plan price. Switched back to 2-unlimited.
 </p>
 <p>
-<a href="http://rss.netflix.com/QueueRSS?id=P1616779748901408491522711163964091" target="_blank">View my queue, in RSS format</a>. 
+<a href="http://rss.netflix.com/QueueRSS?id=P1616779748901408491522711163964091" target="_blank">View my queue, in RSS format</a>.
 </p>
 <p>
-<a rel="nofollow" href="http://feedflix.com/strivinglife-net/" target="_blank">View my FeedFlix page</a>. 
+<a rel="nofollow" href="http://feedflix.com/strivinglife-net/" target="_blank">View my FeedFlix page</a>.
 </p>
 <h3>The times</h3>
 <p>
@@ -332,7 +332,3 @@ As of July 25, 2008, I&#39;m back to 2-unlimited. I&#39;ve got almost 200 movies
 <strong>09/23/2008</strong> (T) - Was supposed to have next movie, but I don&#39;t. Watched Casino Royale (1967) online. Movie received by Netflix, and next one shipped.<br />
 <strong>09/24/2008</strong> (W) - Received next two movies. Watched Timecop (1994), which was actually pretty darn good for how it worked out. I&#39;ll drop it off tomorrow. Watched They Live (1988), another great film by a master.
 </p>
-<p>
-&nbsp;
-</p>
-
