@@ -11,13 +11,11 @@ categories = ["article"]
 tags = ["ubuntu", "postgresql"]
 +++
 
-<p>
 Below are the PostgreSQL 8.2 commands on Ubuntu.<!--more-->
-</p>
-<p>
+
 These are listed here primarily for my own benefit.
-</p>
-<pre>
+
+```
 General
 \c[onnect] [DBNAME|- USER|- HOST|- PORT|-]
 connect to new database (currently &quot;template1&quot;)
@@ -32,8 +30,9 @@ set internal variable, or list all if no parameters
 \timing        toggle timing of commands (currently off)
 \unset NAME    unset (delete) internal variable
 \! [COMMAND]   execute command in shell or start interactive shell
-</pre>
-<pre>
+```
+
+```
 Query Buffer
 \e [FILE]      edit the query buffer (or file) with external editor
 \g [FILE]      send query buffer to server (and results to file or |pipe)
@@ -49,8 +48,9 @@ Input/Output
 \o [FILE]      send all query results to file or |pipe
 \qecho [STRING]
 write string to query output stream (see \o)
-</pre>
-<pre>
+```
+
+```
 Informational
 \d [NAME]      describe table, index, sequence, or view
 \d{t|i|s|v|S} [PATTERN] (add &quot;+&quot; for more detail)
@@ -71,8 +71,9 @@ list tables/indexes/sequences/views/system tables
 \du [PATTERN]  list users
 \l             list all databases (add &quot;+&quot; for more detail)
 \z [PATTERN]   list table, view, and sequence access privileges (same as \dp)
-</pre>
-<pre>
+```
+
+```
 Formatting
 \a             toggle between unaligned and aligned output mode
 \C [STRING]    set table title, or unset if none
@@ -85,13 +86,13 @@ numericlocale|recordsep|tuples_only|title|tableattr|pager})
 \t             show only rows (currently off)
 \T [STRING]    set HTML &lt;table&gt; tag attributes, or unset if none
 \x             toggle expanded output (currently off)
-</pre>
-<pre>
+```
+
+```
 Copy, Large Object
 \copy ...      perform SQL COPY with data stream to the client host
 \lo_export LOBOID FILE
 \lo_import FILE [COMMENT]
 \lo_list
 \lo_unlink LOBOID    large object operations
-</pre>
-
+```

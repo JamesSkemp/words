@@ -11,14 +11,19 @@ categories = ["article", "tutorials / guides"]
 tags = ["ubuntu", "mysql", "postgresql"]
 +++
 
-<p>Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.</p>
-<h3>MySQL</h3>
-<pre class="code"><code class="powershell">mysql -u root
+Another Ubuntu Quickie, this time on the default passwords for MySQL and PostgreSQL.
+
+## MySQL
+```powershell
+mysql -u root
 UPDATE mysql.user SET Password = OLD_PASSWORD('***password***') WHERE User = 'root';
 FLUSH PRIVILEGES;
-\q</code></pre>
-<h3>PostgreSQL</h3>
-<pre class="code"><code class="powershell">
+\q
+```
+
+## PostgreSQL
+```powershell
 sudo -u postgres psql template1
 ALTER USER postgres WITH PASSWORD '***password***';
-\q</code></pre>
+\q
+```

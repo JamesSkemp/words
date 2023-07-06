@@ -11,9 +11,11 @@ categories = ["article", "technology"]
 tags = ["c#", "mssql", ".net"]
 +++
 
-<p>I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server.</p>
-<p>If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values.</p>
-<pre class="code"><code class="csharp">
+I keep having to search through code to find it, so, since writing about it makes it easier for me to find ... here's how I've been programmatically making calls to Microsoft SQL Server.
+
+If I'm doing something wrong, please comment below or send me an email. Some times have been changed to dummy values.
+
+```csharp
 SqlDataSource dataSource = new SqlDataSource();
 dataSource.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 dataSource.SelectCommand = "stored_proc";
@@ -29,16 +31,22 @@ DataTable tableData = viewData.ToTable();
 tableData = null;
 viewData = null;
 dataSource = null;
-</code></pre>
-<p>From what I can tell, there's no close by doing a select this way; the connection must close after it's performed?</p>
-<h3>Update June 6 2009:</h3>
-<p>To use this code you would also need to include the following, if they were not already included.</p>
-<pre class="code"><code class="csharp">// Need to add for SqlDataSource
+```
+
+From what I can tell, there's no close by doing a select this way; the connection must close after it's performed?
+
+## Update June 6 2009:
+To use this code you would also need to include the following, if they were not already included.
+
+```csharp
+// Need to add for SqlDataSource
 using System.Web.UI.WebControls;
 // Need for ConfigurationManager
 using System.Configuration;
 // Need for DataView
 using System.Data;
 // For DataSourceSelectArguments
-using System.Web.UI;</code></pre>
-<p>Because of this, there may be another way to do this, that doesn't require these additions.</p>
+using System.Web.UI;
+```
+
+Because of this, there may be another way to do this, that doesn't require these additions.

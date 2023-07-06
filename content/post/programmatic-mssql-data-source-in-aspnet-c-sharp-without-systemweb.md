@@ -11,17 +11,25 @@ categories = ["article", "technology"]
 tags = ["c#", "mssql", ".net"]
 +++
 
-<p>In <a href="http://strivinglife.com/words/post/Programmatic-MSSQL-data-source-in-ASPNET-C-Sharp.aspx">a similar article</a> I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive.</p>
-<p>So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code.</p>
-<p>First, the following must be included in.</p>
-<pre class="code"><code class="csharp">// For DataTable
+In [a similar article](/post/programmatic-mssql-data-source-in-aspnet-c-sharp) I detailed how I was doing programmatic access of Microsoft SQL Server. However, on another project I was creating a class in App_Code. Using my method required the use of a couple additional namespaces from System.Web. That seemed a bit excessive.
+
+So I did some digging around and came up with what I believe is a better solution, for use in classes/non-Web code.
+
+First, the following must be included in.
+
+```csharp
+// For DataTable
 using System.Data;
 // For SqlConnection, SqlCommand, SqlParameter, SqlDataAdapter
 using System.Data.SqlClient;
 // For ConfigurationManager
-using System.Configuration;</code></pre>
-<p>Next we have the code, with some dummy data.</p>
-<pre class="code"><code class="csharp">public DataTable returnDataTable(int Id) {
+using System.Configuration;
+```
+
+Next we have the code, with some dummy data.
+
+```csharp
+public DataTable returnDataTable(int Id) {
 	DataTable returnValue = new DataTable();
 
 	SqlConnection connection = new SqlConnection();
@@ -40,6 +48,9 @@ using System.Configuration;</code></pre>
 	connection = null;
 
 	return returnValue;
-}</code></pre>
-<p>This seems to&nbsp;be a bit better than what I had.</p>
-<p>Or not? Let me know.</p>
+}
+```
+
+This seems to be a bit better than what I had.
+
+Or not? Let me know.
