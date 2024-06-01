@@ -4,7 +4,7 @@ description = "Year two of my experiences with Netflix. [slnet0514:e38ccf1c-3f0d
 draft = false
 comments = true
 date = "2007-09-29T11:00:00-05:00"
-modified = "2008-09-24T23:07:41-05:00"
+modified = "2024-06-01T10:12:00-05:00"
 slug = "Netflix-shipping-for-Madison-WI-Year-2"
 blogengine = "e38ccf1c-3f0d-48b9-80c3-66dc1e25c06a"
 categories = ["dvd / movie", "review", "StrivingLife"]
@@ -35,12 +35,6 @@ As of July 25, 2008, I&#39;m back to 2-unlimited. I&#39;ve got almost 200 movies
 </p>
 <p>
 <strike>I changed my plan back to 1-unlimited August 29, 2008, and that should take effect September 10.</strike> When I received my confirmation email, it seems that on 9/10 I&#39;ll get my 15% discount, because of the shipping problems. However, that applies to that month&#39;s plan price. Switched back to 2-unlimited.
-</p>
-<p>
-<a href="http://rss.netflix.com/QueueRSS?id=P1616779748901408491522711163964091" target="_blank">View my queue, in RSS format</a>.
-</p>
-<p>
-<a rel="nofollow" href="http://feedflix.com/strivinglife-net/" target="_blank">View my FeedFlix page</a>.
 </p>
 <h3>The times</h3>
 <p>
