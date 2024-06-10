@@ -12,7 +12,7 @@ tags = [".net", "c#"]
 +++
 
 <p>Spending the day researching all things DNS, I eventually came upon Jim Scott's post on <a rel="external" href="http://coding.infoconex.com/post/C-Traceroute-using-net-framework.aspx">C# Traceroute using .net framework</a>. After a bit of tweaking, I've got something that I like a bit more, because I really want to know what the IP address means.</p>
-<p>The code for the assembly and console application are included below. Written against <a rel="external" href="http://smallestdotnet.com/">.NET Framework</a> 4 (in Visual Studio 2010), but if you change the String.IsNullOrWhiteSpace() reference, you should be able to compile this in 3.5.</p>
+<p>The code for the assembly and console application are included below. Written against <a rel="external" href="https://smallestdotnet.com/">.NET Framework</a> 4 (in Visual Studio 2010), but if you change the String.IsNullOrWhiteSpace() reference, you should be able to compile this in 3.5.</p>
 <h3>Trace.cs</h3>
 
 ```csharp
@@ -26,37 +26,37 @@ using System.Diagnostics;
 
 namespace JamesRSkemp.Traceroute {
 	public class TraceLocation {
-		/// &lt;summary&gt;
+		/// <summary>
 		/// Hop number in a particular trace.
-		/// &lt;/summary&gt;
+		/// </summary>
 		public int Hop { get; set; }
-		/// &lt;summary&gt;
+		/// <summary>
 		/// Time in milliseconds.
-		/// &lt;/summary&gt;
+		/// </summary>
 		public long Time { get; set; }
-		/// &lt;summary&gt;
+		/// <summary>
 		/// IP address returned.
-		/// &lt;/summary&gt;
+		/// </summary>
 		public String IpAddress { get; set; }
 	}
 
 	public class Trace {
-		/// &lt;summary&gt;
+		/// <summary>
 		/// Given an ip address or domain name, follow the trace path.
 		///
 		/// Idea and majority of the code from Jim Scott - http://coding.infoconex.com/post/C-Traceroute-using-net-framework.aspx
-		/// &lt;/summary&gt;
-		/// &lt;param name="ipAddressOrHostName"&gt;IP address or domain name to trace.&lt;/param&gt;
-		/// &lt;param name="maximumHops"&gt;Maximum number of hops before quitting.&lt;/param&gt;
-		/// &lt;returns&gt;List of TraceLocation.&lt;/returns&gt;
-		public static List&lt;TraceLocation&gt; Traceroute(string ipAddressOrHostName, int maximumHops) {
-			if (maximumHops &lt; 1 || maximumHops &gt; 100) {
+		/// </summary>
+		/// <param name="ipAddressOrHostName">IP address or domain name to trace.</param>
+		/// <param name="maximumHops">Maximum number of hops before quitting.</param>
+		/// <returns>List of TraceLocation.</returns>
+		public static List<TraceLocation> Traceroute(string ipAddressOrHostName, int maximumHops) {
+			if (maximumHops < 1 || maximumHops > 100) {
 				maximumHops = 30;
 			}
 
 			IPAddress ipAddress = Dns.GetHostEntry(ipAddressOrHostName).AddressList[0];
 
-			List&lt;TraceLocation&gt; traceLocations = new List&lt;TraceLocation&gt;();
+			List<TraceLocation> traceLocations = new List<TraceLocation>();
 
 			using (Ping pingSender = new Ping()) {
 				PingOptions pingOptions = new PingOptions();
@@ -65,7 +65,7 @@ namespace JamesRSkemp.Traceroute {
 				pingOptions.DontFragment = true;
 				pingOptions.Ttl = 1;
 
-				for (int i = 1; i &lt; maximumHops + 1; i++) {
+				for (int i = 1; i < maximumHops + 1; i++) {
 					TraceLocation traceLocation = new TraceLocation();
 
 					stopWatch.Reset();
