@@ -14,7 +14,9 @@ tags = [".net", "c#"]
 <p>Spending the day researching all things DNS, I eventually came upon Jim Scott's post on <a rel="external" href="http://coding.infoconex.com/post/C-Traceroute-using-net-framework.aspx">C# Traceroute using .net framework</a>. After a bit of tweaking, I've got something that I like a bit more, because I really want to know what the IP address means.</p>
 <p>The code for the assembly and console application are included below. Written against <a rel="external" href="http://smallestdotnet.com/">.NET Framework</a> 4 (in Visual Studio 2010), but if you change the String.IsNullOrWhiteSpace() reference, you should be able to compile this in 3.5.</p>
 <h3>Trace.cs</h3>
-<pre class="code"><code class="csharp">using System;
+
+```csharp
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -41,7 +43,7 @@ namespace JamesRSkemp.Traceroute {
 	public class Trace {
 		/// &lt;summary&gt;
 		/// Given an ip address or domain name, follow the trace path.
-		/// 
+		///
 		/// Idea and majority of the code from Jim Scott - http://coding.infoconex.com/post/C-Traceroute-using-net-framework.aspx
 		/// &lt;/summary&gt;
 		/// &lt;param name="ipAddressOrHostName"&gt;IP address or domain name to trace.&lt;/param&gt;
@@ -92,9 +94,13 @@ namespace JamesRSkemp.Traceroute {
 			return traceLocations;
 		}
 	}
-}</code></pre>
+}
+```
+
 <h3>Program.cs</h3>
-<pre class="code"><code class="csharp">using System;
+
+```csharp
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -129,7 +135,9 @@ namespace DnsConsoleApp {
 			}
 		}
 	}
-}</code></pre>
+}
+```
+
 <h3>Next steps</h3>
 <p>It would probably make sense to allow the application to accept domain names/IPs on the fly, and what an IP resolves to could be cached.</p>
 <p>Comments and etcetera welcome.</p>
