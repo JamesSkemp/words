@@ -4,7 +4,7 @@ title = "James Skemp's StrivingLife"
 theme = "phlat"
 publishdir = "public"
 canonifyurls = true
-copyright = "All content copyright 1999-2022 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0."
+copyright = "All content copyright 1999-2025 James Skemp, unless otherwise noted. This work is licensed under the Creative Commons License Attribution-Noncommercial-No Derivative Works 3.0."
 rssLimit = 15
 
 [author]
@@ -18,7 +18,7 @@ google_webmaster = ""
 google_analytics = "UA-541034-4"
 googleadsense = "ca-pub-3526066001929698"
 googleadsenseslot = "3689523691"
-disqus = "strivinglife"
+disqus = ""
 twitter = ""
 googleplus = ""
 linkedin = ""
@@ -35,7 +35,7 @@ amazonwishlist = "https://amzn.to/22xk0cK"
 [[menu.header]]
 	name = "Subscribe"
 	weight = 3
-	url = "http://strivinglife.com/Words/Feed"
+	url = "https://words.strivinglife.com/index.xml"
 
 [markup]
 	[markup.goldmark]
