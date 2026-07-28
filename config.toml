@@ -1,5 +1,5 @@
 baseurl = "https://words.strivinglife.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "James Skemp's StrivingLife"
 theme = "phlat"
 publishdir = "public"
