@@ -11,7 +11,7 @@ categories = ["software"]
 tags = ["microsoft web platform installer", "mssql"]
 +++
 
-<p>In <a href="http://strivinglife.com/words/?tag=/microsoft-web-platform-installer">the past</a> I've talked up Microsoft's <a rel="external" href="http://www.microsoft.com/web/">Web Platform Installer</a>. With this tool installed you can easily get an IIS server correctly setup.</p>
+<p>In <a href="/tags/microsoft-web-platform-installer">the past</a> I've talked up Microsoft's <a rel="external" href="http://www.microsoft.com/web/">Web Platform Installer</a>. With this tool installed you can easily get an IIS server correctly setup.</p>
 <p>However, as I work my way through Pete Brown's <a rel="external" href="http://www.amazon.com/gp/product/1935182374?tag=strivinglifen-20">Silverlight 4 in Action</a> I found myself needing to install AdventureWorks (something I had looked into in the past as well). Unfortunately, Web Platform Installer installs one of the 'lower' versions of SQL Server Express, without the advanced services, which is required for AdventureWorks.</p>
 <p>You might expect that you'd be able to upgrade via the full installer, but after a couple hours of trying to get that to work, that just doesn't seem to be the case. It doesn't appear that you can install over it, nor select the new installer in add/remove programs, which means that I've had to uninstall SQL Server Express, then completely re-install it with the missing features.</p>
 <p>Very disappointing, to say the least.</p>
