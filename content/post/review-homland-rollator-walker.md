@@ -1,6 +1,7 @@
 +++
 title = "Review: Homland Rollator Walker"
 date = 2026-07-27T18:39:56-05:00
+modified = 2026-09-30T19:10:19-05:00
 draft = false
 description = "The following is a review of the HOMLAND Rollator Walker."
 author = "James Skemp"
@@ -12,7 +13,7 @@ The following is a review of the [HOMLAND Rollator Walker](https://www.amazon.co
 
 ## Quick to assemble, sturdy, and top-tier support
 
-My mom is temporary disabled due to a fracture in her leg and is unable to put any weight on her foot.
+My mom is temporarily disabled due to a fracture in her leg and is unable to put any weight on her foot.
 
 She's been using a standard walker but was looking to get something that would allow her to do meal prep in her small kitchen (by sitting down) and then easily move the food into her living room.
 

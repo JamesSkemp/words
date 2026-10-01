@@ -40,7 +40,6 @@ The following command seems to work rather well at converting phone photos to we
 	convert original.jpg -scale 20% -interpolate catrom -quality 50 new.png
 
 ## Post title to creation script
-
 Within LINQPad, run the following:
 
 ```csharp
@@ -60,4 +59,9 @@ title = title.ToLower().Trim()
 	;
 
 (@"..\hugo.exe new post/" + title + ".md").Dump();
+```
+
+## Hugo date and time
+```powershell
+Get-Date -Format "yyyy-MM-ddTHH:mm:ssK"
 ```
