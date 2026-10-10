@@ -1,7 +1,7 @@
 {{ define "main" -}}
 	<div class="col-md-8">
 		<div class="row">
-			<div class="col-md-12 content-card">
+			<div class="col-md-12 content-card" data-pagefind-body>
 				<h1>{{ .Title }}</h1>
 				{{ if eq .Type "post" }}
 					{{ $categoryCount := .Params.categories | len }}
@@ -14,7 +14,7 @@
 							{{ .Site.Params.default_author }}
 							{{ end }}
 						</li>
-						<li><i class="fa fa-folder"></i>{{ range $index, $value := .Params.categories }}<a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ $value }}</a>{{ if lt (add $index 1) $categoryCount }}, {{ end }}{{ end }}</li>
+						<li data-pagefind-ignore><i class="fa fa-folder"></i>{{ range $index, $value := .Params.categories }}<a href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ $value }}</a>{{ if lt (add $index 1) $categoryCount }}, {{ end }}{{ end }}</li>
 					</ul>
 				{{ end }}
 				{{ .Content }}
