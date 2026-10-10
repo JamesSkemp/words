@@ -18,7 +18,7 @@ tags = ["new years", "resolutions"]
 <h4>Stopped drinking soda</h4>
 <p>I've flirted with soda for a long time, switching back to Mountain Dew after college, and drinking Dr. Pepper throughout. After putting on more weight than I cared for, I decided to quit drinking soda, period, around May of this year. I lost more than a few pounds, and while I still can see a soda and think it will taste good, I know better. I've switched to drinking mostly just water, with some periods of Gatorade and juices. I effectively gave up alcohol as well, but I never drank much as it was, so that wasn't difficult.</p>
 <h4>Purchase at least one album a month from a new-to-me artist</h4>
-<p>This is one I tried for four or five months, kicked into overdrive near the last few months, and have put on hold in December. I was so into this that I actually created a basic&nbsp;app to help me <a href="http://strivinglife.com/words/post/Music-Recommendations-Please!-045-beta-released.aspx">find new music</a>. I plan on starting this again in 2010, and sticking to it.</p>
+<p>This is one I tried for four or five months, kicked into overdrive near the last few months, and have put on hold in December. I was so into this that I actually created a basic&nbsp;app to help me <a href="/post/music-recommendations-please-045-beta-released/">find new music</a>. I plan on starting this again in 2010, and sticking to it.</p>
 <h4>Stopped chewing my nails</h4>
 <p>I seem to recall that I chewed my nails even before my parents divorced. Around October 10th I stopped chewing my nails, and over two months later, I still don't know why. This is the longest it's been in <em>well over</em> 15 years. This is my biggest accomplishment this year.</p>
 <h4>Paid off my car</h4>
