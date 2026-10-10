@@ -13,6 +13,7 @@ test:
 pages:
   script:
   - hugo
+  - npx pagefind@latest --source "public"
   artifacts:
     paths:
     - public
