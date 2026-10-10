@@ -2,6 +2,7 @@ image: hugomods/hugo:exts
 
 before_script:
   - hugo version
+  - npx --version
 
 test:
   script:
