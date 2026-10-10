@@ -290,3 +290,7 @@ pre {
     border: none;
     background-color: #282b2e;
 }
+
+pagefind-modal-trigger {
+    width: 100%;
+}
